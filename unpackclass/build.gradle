@@ -13,6 +13,6 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    compileOnly project(':deob-annotations')
-    implementation project(':unpack')
+    implementation project(path: ':unpack')
+    compileOnly project(path: ':deob-annotations')
 }

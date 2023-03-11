@@ -13,5 +13,5 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    compileOnly project(':deob-annotations')
+    compileOnly project(path: ':deob-annotations')
 }

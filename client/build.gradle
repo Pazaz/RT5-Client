@@ -16,10 +16,9 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    compileOnly project(':deob-annotations')
-    implementation project(':gl')
-    implementation project(':signlink')
-    implementation project(':loader')
+    implementation project(path: ':signlink')
+    implementation project(path: ':gl')
+    compileOnly project(path: ':deob-annotations')
 }
 
 jar {
