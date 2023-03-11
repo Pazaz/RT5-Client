@@ -322,8 +322,8 @@ public final class Class25_Sub1 extends Class25 {
 				if (this.aClass198_1.anIntArray382[arg0] != local189) {
 					throw new RuntimeException();
 				}
-				this.aClass183_1.anInt5063 = 0;
-				this.aClass183_1.anInt5062 = 0;
+				this.aClass183_1.errors = 0;
+				this.aClass183_1.response = 0;
 			} catch (@Pc(350) RuntimeException local350) {
 				this.aClass183_1.method4643();
 				local13.method6468();

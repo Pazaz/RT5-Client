@@ -295,7 +295,7 @@ public final class Class6_Sub1 extends Class6 {
 			Static8.anIntArray10 = new int[local20];
 		}
 		if (Static8.aClass2_Sub4_1.aByteArray73.length < this.anInt180 * 2) {
-			Static8.aClass2_Sub4_1 = new Class2_Sub4(this.anInt180 * 2);
+			Static8.aClass2_Sub4_1 = new Buffer(this.anInt180 * 2);
 		}
 		@Pc(47) int local47 = arg0 - arg2;
 		@Pc(49) int local49 = local47;
@@ -807,9 +807,9 @@ public final class Class6_Sub1 extends Class6 {
 		}
 		this.aClass19_Sub1_1.method790(this.aClass126_1, this.aClass126_4, this.aClass126_3, this.aClass126_2);
 		if (Static8.aClass2_Sub4_1.aByteArray73.length < this.anInt180 * 2) {
-			Static8.aClass2_Sub4_1 = new Class2_Sub4(this.anInt180 * 2);
+			Static8.aClass2_Sub4_1 = new Buffer(this.anInt180 * 2);
 		} else {
-			Static8.aClass2_Sub4_1.anInt5300 = 0;
+			Static8.aClass2_Sub4_1.position = 0;
 		}
 		@Pc(288) int local288 = 0;
 		@Pc(294) int local294;
@@ -851,7 +851,7 @@ public final class Class6_Sub1 extends Class6 {
 			}
 		}
 		if (local288 > 0) {
-			@Pc(418) Class180_Sub2 local418 = new Class180_Sub2(this.aClass19_Sub1_1, 5123, Static8.aClass2_Sub4_1.aByteArray73, Static8.aClass2_Sub4_1.anInt5300);
+			@Pc(418) Class180_Sub2 local418 = new Class180_Sub2(this.aClass19_Sub1_1, 5123, Static8.aClass2_Sub4_1.aByteArray73, Static8.aClass2_Sub4_1.position);
 			this.aClass19_Sub1_1.method811(local418, 0, local288);
 		}
 	}

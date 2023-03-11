@@ -64,22 +64,22 @@ public final class Static340 {
 	public static void method5765() {
 		@Pc(7) FileOnDisk local7 = null;
 		try {
-			@Pc(11) PrivilegedRequest local11 = Static328.aClass152_5.openPreferences2();
+			@Pc(11) PrivilegedRequest local11 = GameShell.signlink.openPreferences2();
 			while (local11.status == 0) {
 				Static231.method4023(1L);
 			}
 			if (local11.status == 1) {
 				local7 = (FileOnDisk) local11.result;
-				@Pc(41) Class2_Sub4 local41 = new Class2_Sub4(Static112.anInt2294 * 6 + 3);
-				local41.method4842(1);
+				@Pc(41) Buffer local41 = new Buffer(Static112.anInt2294 * 6 + 3);
+				local41.p1(1);
 				local41.method4843(Static112.anInt2294);
 				for (@Pc(51) int local51 = 0; local51 < Static75.anIntArray117.length; local51++) {
 					if (Static89.aBooleanArray18[local51]) {
 						local41.method4843(local51);
-						local41.method4813(Static75.anIntArray117[local51]);
+						local41.p4(Static75.anIntArray117[local51]);
 					}
 				}
-				local7.write(local41.aByteArray73, local41.anInt5300, 0);
+				local7.write(local41.aByteArray73, local41.position, 0);
 			}
 		} catch (@Pc(82) Exception local82) {
 		}

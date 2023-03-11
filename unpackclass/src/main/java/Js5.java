@@ -62,7 +62,7 @@ public abstract class Js5 {
 
 	@OriginalMember(owner = "unpackclass!aa", name = "b", descriptor = "([B)[B")
 	private static byte[] method6606(@OriginalArg(0) byte[] arg0) {
-		@Pc(4) Buffer local4 = new Buffer(arg0);
+		@Pc(4) SimpleBuffer local4 = new SimpleBuffer(arg0);
 		@Pc(7) int local7 = local4.method6585();
 		@Pc(10) int local10 = local4.method6588();
 		if (local10 < 0 || anInt7311 != 0 && local10 > anInt7311) {
@@ -94,8 +94,8 @@ public abstract class Js5 {
 
 	@OriginalMember(owner = "unpackclass!aa", name = "a", descriptor = "([B)V")
 	protected final void method6598(@OriginalArg(0) byte[] arg0) {
-		this.anInt7310 = Buffer.method6579(arg0, arg0.length);
-		@Pc(13) Buffer local13 = new Buffer(method6606(arg0));
+		this.anInt7310 = SimpleBuffer.method6579(arg0, arg0.length);
+		@Pc(13) SimpleBuffer local13 = new SimpleBuffer(method6606(arg0));
 		@Pc(16) int local16 = local13.method6585();
 		if (local16 != 5 && local16 != 6) {
 			throw new RuntimeException("Incorrect JS5 protocol number: " + local16);
@@ -284,14 +284,14 @@ public abstract class Js5 {
 				local100 = ByteArray.method6560(this.anObjectArray37[arg0], false);
 			} else {
 				local100 = ByteArray.method6560(this.anObjectArray37[arg0], true);
-				@Pc(105) Buffer local105 = new Buffer(local100);
+				@Pc(105) SimpleBuffer local105 = new SimpleBuffer(local100);
 				local105.method6592(arg1, local105.aByteArray100.length);
 			}
 			@Pc(124) byte[] local124;
 			try {
 				local124 = method6606(local100);
 			} catch (@Pc(126) RuntimeException local126) {
-				System.out.println("T3 - " + (arg1 != null) + "," + arg0 + "," + local100.length + "," + Buffer.method6579(local100, local100.length) + "," + Buffer.method6579(local100, local100.length - 2) + "," + this.anIntArray545[arg0] + "," + this.anInt7310);
+				System.out.println("T3 - " + (arg1 != null) + "," + arg0 + "," + local100.length + "," + SimpleBuffer.method6579(local100, local100.length) + "," + SimpleBuffer.method6579(local100, local100.length - 2) + "," + this.anIntArray545[arg0] + "," + this.anInt7310);
 				local124 = new byte[] { 0 };
 			}
 			if (this.aBoolean499) {
@@ -303,7 +303,7 @@ public abstract class Js5 {
 				@Pc(193) int local193 = local191 - 1;
 				@Pc(198) int local198 = local124[local193] & 0xFF;
 				@Pc(206) int local206 = local193 - local19 * local198 * 4;
-				@Pc(211) Buffer local211 = new Buffer(local124);
+				@Pc(211) SimpleBuffer local211 = new SimpleBuffer(local124);
 				@Pc(214) int[] local214 = new int[local19];
 				local211.anInt7287 = local206;
 				@Pc(225) int local225;

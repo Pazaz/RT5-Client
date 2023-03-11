@@ -18,17 +18,17 @@ public final class Static396 {
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "([B)[Lclient!dk;")
 	private static Class48[] method1679(@OriginalArg(0) byte[] arg0) {
-		@Pc(4) Class2_Sub4 local4 = new Class2_Sub4(arg0);
-		local4.anInt5300 = arg0.length - 2;
+		@Pc(4) Buffer local4 = new Buffer(arg0);
+		local4.position = arg0.length - 2;
 		@Pc(14) int local14 = local4.method4829();
 		@Pc(17) Class48[] local17 = new Class48[local14];
 		for (@Pc(19) int local19 = 0; local19 < local14; local19++) {
 			local17[local19] = new Class48();
 		}
-		local4.anInt5300 = arg0.length - local14 * 8 - 7;
+		local4.position = arg0.length - local14 * 8 - 7;
 		@Pc(44) int local44 = local4.method4829();
 		@Pc(48) int local48 = local4.method4829();
-		@Pc(56) int local56 = (local4.method4815() & 0xFF) + 1;
+		@Pc(56) int local56 = (local4.g1() & 0xFF) + 1;
 		for (@Pc(58) int local58 = 0; local58 < local14; local58++) {
 			local17[local58].anInt1535 = local4.method4829();
 		}
@@ -46,7 +46,7 @@ public final class Static396 {
 			local119.anInt1532 = local44 - local119.anInt1531 - local119.anInt1535;
 			local119.anInt1534 = local48 - local119.anInt1533 - local119.anInt1530;
 		}
-		local4.anInt5300 = arg0.length - local14 * 8 - (local56 - 1) * 3 - 7;
+		local4.position = arg0.length - local14 * 8 - (local56 - 1) * 3 - 7;
 		@Pc(160) int[] local160 = new int[local56];
 		for (@Pc(162) int local162 = 1; local162 < local56; local162++) {
 			local160[local162] = local4.method4833();
@@ -57,12 +57,12 @@ public final class Static396 {
 		for (@Pc(183) int local183 = 0; local183 < local14; local183++) {
 			local17[local183].anIntArray108 = local160;
 		}
-		local4.anInt5300 = 0;
+		local4.position = 0;
 		for (@Pc(198) int local198 = 0; local198 < local14; local198++) {
 			@Pc(203) Class48 local203 = local17[local198];
 			@Pc(209) int local209 = local203.anInt1531 * local203.anInt1533;
 			local203.aByteArray21 = new byte[local209];
-			@Pc(217) int local217 = local4.method4815();
+			@Pc(217) int local217 = local4.g1();
 			@Pc(245) int local245;
 			if ((local217 & 0x2) == 0) {
 				@Pc(227) int local227;

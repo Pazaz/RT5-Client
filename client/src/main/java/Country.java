@@ -2,11 +2,11 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!kh")
-public final class Class124 {
+public final class Country {
 
 	@OriginalMember(owner = "client!kh", name = "f", descriptor = "Ljava/lang/String;")
-	public String aString28;
+	public String name;
 
 	@OriginalMember(owner = "client!kh", name = "g", descriptor = "I")
-	public int anInt3405;
+	public int flag;
 }

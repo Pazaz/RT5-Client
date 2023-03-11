@@ -81,7 +81,7 @@ public final class Class104 {
 		local16 = new Class146();
 		local16.aClass104_1 = this;
 		if (local33 != null) {
-			local16.method3706(new Class2_Sub4(local33));
+			local16.method3706(new Buffer(local33));
 		}
 		@Pc(52) Class98 local52 = this.aClass98_19;
 		synchronized (this.aClass98_19) {

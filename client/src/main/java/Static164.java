@@ -72,9 +72,9 @@ public final class Static164 {
 		}
 		try {
 			if (++Static193.anInt3557 > 1500) {
-				if (Static335.aClass111_4 != null) {
-					Static335.aClass111_4.method2799();
-					Static335.aClass111_4 = null;
+				if (Protocol.socket != null) {
+					Protocol.socket.close();
+					Protocol.socket = null;
 				}
 				if (Static60.anInt666 >= 1) {
 					Static154.anInt2803 = 0;
@@ -82,16 +82,16 @@ public final class Static164 {
 					return;
 				}
 				Static154.anInt2803 = 1;
-				if (Static392.anInt7225 == Static278.anInt5154) {
-					Static278.anInt5154 = Static35.anInt920;
+				if (client.worldListDefaultPort == client.worldListPort) {
+					client.worldListPort = client.worldListAlternatePort;
 				} else {
-					Static278.anInt5154 = Static392.anInt7225;
+					client.worldListPort = client.worldListDefaultPort;
 				}
 				Static60.anInt666++;
 				Static193.anInt3557 = 0;
 			}
 			if (Static154.anInt2803 == 1) {
-				Static5.aClass32_1 = Static328.aClass152_5.openSocket(Static61.aString14, Static278.anInt5154);
+				Static5.aClass32_1 = GameShell.signlink.openSocket(client.worldListHostname, client.worldListPort);
 				Static154.anInt2803 = 2;
 			}
 			@Pc(125) int local125;
@@ -102,50 +102,50 @@ public final class Static164 {
 				if (Static5.aClass32_1.status != 1) {
 					return;
 				}
-				Static335.aClass111_4 = new Class111((Socket) Static5.aClass32_1.result, Static328.aClass152_5);
+				Protocol.socket = new Class111((Socket) Static5.aClass32_1.result, GameShell.signlink);
 				Static5.aClass32_1 = null;
-				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.anInt5300, Static257.aClass2_Sub4_Sub2_4.aByteArray73);
-				if (Static303.aClass221_2 != null) {
-					Static303.aClass221_2.method6325();
+				Protocol.socket.write(Protocol.outboundBuffer.position, Protocol.outboundBuffer.aByteArray73);
+				if (client.musicChannel != null) {
+					client.musicChannel.method6325();
 				}
-				if (Static190.aClass221_1 != null) {
-					Static190.aClass221_1.method6325();
+				if (client.soundChannel != null) {
+					client.soundChannel.method6325();
 				}
-				local125 = Static335.aClass111_4.method2800();
-				if (Static303.aClass221_2 != null) {
-					Static303.aClass221_2.method6325();
+				local125 = Protocol.socket.read();
+				if (client.musicChannel != null) {
+					client.musicChannel.method6325();
 				}
-				if (Static190.aClass221_1 != null) {
-					Static190.aClass221_1.method6325();
+				if (client.soundChannel != null) {
+					client.soundChannel.method6325();
 				}
 				if (local125 != 101) {
 					Static41.anInt1046 = local125;
 					Static154.anInt2803 = 0;
-					Static335.aClass111_4.method2799();
-					Static335.aClass111_4 = null;
+					Protocol.socket.close();
+					Protocol.socket = null;
 					return;
 				}
 				Static154.anInt2803 = 3;
 			}
-			if (Static154.anInt2803 == 3 && Static335.aClass111_4.method2795() >= 2) {
-				local125 = Static335.aClass111_4.method2800() << 8 | Static335.aClass111_4.method2800();
-				Static375.method6279(local125);
-				if (Static120.anInt2385 == -1) {
+			if (Static154.anInt2803 == 3 && Protocol.socket.available() >= 2) {
+				local125 = Protocol.socket.read() << 8 | Protocol.socket.read();
+				WorldList.switchWorld(local125);
+				if (client.worldId == -1) {
 					Static154.anInt2803 = 0;
 					Static41.anInt1046 = 6;
-					Static335.aClass111_4.method2799();
-					Static335.aClass111_4 = null;
+					Protocol.socket.close();
+					Protocol.socket = null;
 				} else {
 					Static154.anInt2803 = 0;
-					Static335.aClass111_4.method2799();
-					Static335.aClass111_4 = null;
+					Protocol.socket.close();
+					Protocol.socket = null;
 					Static230.method4014();
 				}
 			}
 		} catch (@Pc(208) IOException local208) {
-			if (Static335.aClass111_4 != null) {
-				Static335.aClass111_4.method2799();
-				Static335.aClass111_4 = null;
+			if (Protocol.socket != null) {
+				Protocol.socket.close();
+				Protocol.socket = null;
 			}
 			if (Static60.anInt666 >= 1) {
 				Static154.anInt2803 = 0;
@@ -153,10 +153,10 @@ public final class Static164 {
 			} else {
 				Static154.anInt2803 = 1;
 				Static193.anInt3557 = 0;
-				if (Static278.anInt5154 == Static392.anInt7225) {
-					Static278.anInt5154 = Static35.anInt920;
+				if (client.worldListPort == client.worldListDefaultPort) {
+					client.worldListPort = client.worldListAlternatePort;
 				} else {
-					Static278.anInt5154 = Static392.anInt7225;
+					client.worldListPort = client.worldListDefaultPort;
 				}
 				Static60.anInt666++;
 			}

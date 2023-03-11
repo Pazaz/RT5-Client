@@ -36,6 +36,6 @@ public final class Static150 {
 
 	@OriginalMember(owner = "client!il", name = "b", descriptor = "(B)[Lclient!kk;")
 	public static Class127[] method2740() {
-		return new Class127[] { Static189.aClass127_6, Static125.aClass127_8, Static27.aClass127_1, Static45.aClass127_2, Static231.aClass127_7, Static48.aClass127_3 };
+		return new Class127[] { client.MODE_WHERE_LIVE, Static125.aClass127_8, Static27.aClass127_1, Static45.aClass127_2, client.MODE_WHERE_LOCAL, Static48.aClass127_3 };
 	}
 }

@@ -14,9 +14,9 @@ public final class Class171 {
 	}
 
 	@OriginalMember(owner = "client!ok", name = "a", descriptor = "(ILclient!bt;)V")
-	public void method4370(@OriginalArg(1) Class2_Sub4 arg0) {
+	public void method4370(@OriginalArg(1) Buffer arg0) {
 		while (true) {
-			@Pc(12) int local12 = arg0.method4815();
+			@Pc(12) int local12 = arg0.g1();
 			if (local12 == 0) {
 				return;
 			}
@@ -25,7 +25,7 @@ public final class Class171 {
 	}
 
 	@OriginalMember(owner = "client!ok", name = "a", descriptor = "(IILclient!bt;)V")
-	private void method4374(@OriginalArg(1) int arg0, @OriginalArg(2) Class2_Sub4 arg1) {
+	private void method4374(@OriginalArg(1) int arg0, @OriginalArg(2) Buffer arg1) {
 		if (arg0 == 5) {
 			this.anInt4700 = arg1.method4829();
 		}

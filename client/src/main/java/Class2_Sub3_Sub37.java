@@ -43,11 +43,11 @@ public final class Class2_Sub3_Sub37 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!vm", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6484(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub4 arg1) {
+	public void method6484(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
-			this.aClass173Array1 = new Class173[arg1.method4815()];
+			this.aClass173Array1 = new Class173[arg1.g1()];
 			for (@Pc(33) int local33 = 0; local33 < this.aClass173Array1.length; local33++) {
-				@Pc(39) int local39 = arg1.method4815();
+				@Pc(39) int local39 = arg1.g1();
 				if (local39 == 0) {
 					this.aClass173Array1[local33] = Static354.method1393(arg1);
 				} else if (local39 == 1) {
@@ -59,7 +59,7 @@ public final class Class2_Sub3_Sub37 extends Class2_Sub3 {
 				}
 			}
 		} else if (arg0 == 1) {
-			super.aBoolean487 = arg1.method4815() == 1;
+			super.aBoolean487 = arg1.g1() == 1;
 		}
 	}
 

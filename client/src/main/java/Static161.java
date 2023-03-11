@@ -27,9 +27,9 @@ public final class Static161 {
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "([BI)[B")
 	public static byte[] method2970(@OriginalArg(0) byte[] arg0) {
-		@Pc(8) Class2_Sub4 local8 = new Class2_Sub4(arg0);
-		@Pc(12) int local12 = local8.method4815();
-		@Pc(23) int local23 = local8.method4836();
+		@Pc(8) Buffer local8 = new Buffer(arg0);
+		@Pc(12) int local12 = local8.g1();
+		@Pc(23) int local23 = local8.g4();
 		if (local23 < 0 || Static45.anInt1198 != 0 && Static45.anInt1198 < local23) {
 			throw new RuntimeException();
 		} else if (local12 == 0) {
@@ -37,7 +37,7 @@ public final class Static161 {
 			local8.method4799(local45, local23);
 			return local45;
 		} else {
-			@Pc(57) int local57 = local8.method4836();
+			@Pc(57) int local57 = local8.g4();
 			if (local57 < 0 || Static45.anInt1198 != 0 && Static45.anInt1198 < local57) {
 				throw new RuntimeException();
 			}
@@ -53,7 +53,7 @@ public final class Static161 {
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(Ljava/lang/String;ZZ)V")
 	public static void method2972(@OriginalArg(0) String arg0, @OriginalArg(1) boolean arg1) {
-		if (Static189.aClass127_6 == Static121.aClass127_4 && Static4.anInt90 < 2) {
+		if (client.MODE_WHERE_LIVE == client.modeWhere && Static4.anInt90 < 2) {
 			return;
 		}
 		if (arg0.equalsIgnoreCase("errortest")) {
@@ -126,19 +126,19 @@ public final class Static161 {
 				return;
 			}
 			if (arg0.equalsIgnoreCase("clientjs5drop")) {
-				Static287.aClass183_3.method4645();
+				Static287.js5NetQueue.method4645();
 				Static158.method2940("Dropped client js5 net queue");
 				return;
 			}
 			if (arg0.equalsIgnoreCase("serverjs5drop")) {
-				Static287.aClass183_3.method4635();
+				Static287.js5NetQueue.method4635();
 				Static158.method2940("Dropped server js5 net queue");
 				return;
 			}
 			if (arg0.equalsIgnoreCase("breakcon")) {
-				Static328.aClass152_5.breakConnection();
-				Static335.aClass111_4.method2801();
-				Static287.aClass183_3.method4633();
+				GameShell.signlink.breakConnection();
+				Protocol.socket.method2801();
+				Static287.js5NetQueue.method4633();
 				Static158.method2940("Breaking new connections for 5 seconds");
 				return;
 			}
@@ -180,7 +180,7 @@ public final class Static161 {
 				if (Static77.anInt1762 == 0) {
 					Static158.method2940("Entered tk0");
 					Static218.aClass177_Sub1_2.anInt4878 = 0;
-					Static218.aClass177_Sub1_2.method4497(Static328.aClass152_5);
+					Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
 					Static236.aBoolean288 = false;
 					return;
 				}
@@ -195,7 +195,7 @@ public final class Static161 {
 				}
 				Static158.method2940("Entered tk1");
 				Static218.aClass177_Sub1_2.anInt4878 = 1;
-				Static218.aClass177_Sub1_2.method4497(Static328.aClass152_5);
+				Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
 				Static236.aBoolean288 = false;
 				return;
 			}
@@ -207,7 +207,7 @@ public final class Static161 {
 				}
 				Static158.method2940("Entered tk2");
 				Static218.aClass177_Sub1_2.anInt4878 = 2;
-				Static218.aClass177_Sub1_2.method4497(Static328.aClass152_5);
+				Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
 				Static236.aBoolean288 = false;
 				return;
 			}
@@ -222,7 +222,7 @@ public final class Static161 {
 			}
 			if (arg0.equalsIgnoreCase("ot")) {
 				Static218.aClass177_Sub1_2.aBoolean355 = !Static218.aClass177_Sub1_2.aBoolean355;
-				Static218.aClass177_Sub1_2.method4497(Static328.aClass152_5);
+				Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
 				Static236.aBoolean288 = false;
 				Static347.method5827();
 				Static158.method2940("ot=" + Static218.aClass177_Sub1_2.aBoolean355);
@@ -230,7 +230,7 @@ public final class Static161 {
 			}
 			if (arg0.equalsIgnoreCase("gb")) {
 				Static218.aClass177_Sub1_2.aBoolean357 = !Static218.aClass177_Sub1_2.aBoolean357;
-				Static218.aClass177_Sub1_2.method4497(Static328.aClass152_5);
+				Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
 				Static236.aBoolean288 = false;
 				Static347.method5827();
 				Static158.method2940("gb=" + Static218.aClass177_Sub1_2.aBoolean357);
@@ -245,7 +245,7 @@ public final class Static161 {
 				@Pc(531) int local531 = Static132.method2485(local521) ? Static146.method2698(local521) : -1;
 				if (local531 >= 0 && local531 <= 2) {
 					Static218.aClass177_Sub1_2.anInt4886 = local531;
-					Static218.aClass177_Sub1_2.method4497(Static328.aClass152_5);
+					Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
 					Static236.aBoolean288 = false;
 					Static347.method5827();
 					Static158.method2940("shadows=" + local531);
@@ -262,7 +262,7 @@ public final class Static161 {
 				local76 = Static146.method2698(arg0.substring(6));
 				if (local76 >= 0 && local76 <= Static289.method5019(Static309.anInt5802)) {
 					Static218.aClass177_Sub1_2.anInt4883 = local76;
-					Static218.aClass177_Sub1_2.method4497(Static328.aClass152_5);
+					Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
 					Static236.aBoolean288 = false;
 					Static158.method2940("maxbuildarea=" + Static218.aClass177_Sub1_2.anInt4883);
 					return;
@@ -276,7 +276,7 @@ public final class Static161 {
 					return;
 				}
 				Static26.method864(Static146.method2698(arg0.substring(13)));
-				Static218.aClass177_Sub1_2.method4497(Static328.aClass152_5);
+				Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
 				Static236.aBoolean288 = false;
 				Static158.method2940("particles=" + Static184.method3391());
 				return;
@@ -470,11 +470,11 @@ public final class Static161 {
 			}
 			if (Static347.anInt6442 == 30) {
 				Static91.method1960(Static243.aClass145_162);
-				Static257.aClass2_Sub4_Sub2_4.method4842(arg0.length() + 2);
-				Static257.aClass2_Sub4_Sub2_4.method4842(arg1 ? 1 : 0);
-				Static257.aClass2_Sub4_Sub2_4.method4822(arg0);
+				Protocol.outboundBuffer.p1(arg0.length() + 2);
+				Protocol.outboundBuffer.p1(arg1 ? 1 : 0);
+				Protocol.outboundBuffer.method4822(arg0);
 			}
-			if (arg0.startsWith("fps ") && Static189.aClass127_6 != Static121.aClass127_4) {
+			if (arg0.startsWith("fps ") && client.MODE_WHERE_LIVE != client.modeWhere) {
 				Static250.method4346(Static146.method2698(arg0.substring(4)));
 				return;
 			}
@@ -499,11 +499,11 @@ public final class Static161 {
 			return;
 		}
 		Static367.anInt6876 = 0;
-		if (!Static101.aBoolean158 && Static335.aClass111_4 != null) {
+		if (!Static101.aBoolean158 && Protocol.socket != null) {
 			Static91.method1960(Static326.aClass145_228);
 			try {
-				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.anInt5300, Static257.aClass2_Sub4_Sub2_4.aByteArray73);
-				Static257.aClass2_Sub4_Sub2_4.anInt5300 = 0;
+				Protocol.socket.write(Protocol.outboundBuffer.position, Protocol.outboundBuffer.aByteArray73);
+				Protocol.outboundBuffer.position = 0;
 			} catch (@Pc(57) IOException local57) {
 				Static101.aBoolean158 = true;
 			}

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class154 {
 
 	@OriginalMember(owner = "client!mq", name = "h", descriptor = "Lclient!bt;")
-	private Class2_Sub4 aClass2_Sub4_6;
+	private Buffer aClass2_Sub4_6;
 
 	@OriginalMember(owner = "client!mq", name = "j", descriptor = "[Lclient!bl;")
 	private Class25_Sub1[] aClass25_Sub1Array1;
@@ -49,7 +49,7 @@ public final class Class154 {
 		if (this.aClass2_Sub2_Sub10_Sub1_1.aBoolean416) {
 			return false;
 		} else {
-			this.aClass2_Sub4_6 = new Class2_Sub4(this.aClass2_Sub2_Sub10_Sub1_1.method5648());
+			this.aClass2_Sub4_6 = new Buffer(this.aClass2_Sub2_Sub10_Sub1_1.method5648());
 			this.aClass25_Sub1Array1 = new Class25_Sub1[(this.aClass2_Sub4_6.aByteArray73.length - 5) / 8];
 			return true;
 		}
@@ -60,12 +60,12 @@ public final class Class154 {
 		if (this.aClass2_Sub4_6 == null) {
 			throw new RuntimeException();
 		}
-		this.aClass2_Sub4_6.anInt5300 = arg0 * 8 + 5;
-		if (this.aClass2_Sub4_6.anInt5300 >= this.aClass2_Sub4_6.aByteArray73.length) {
+		this.aClass2_Sub4_6.position = arg0 * 8 + 5;
+		if (this.aClass2_Sub4_6.position >= this.aClass2_Sub4_6.aByteArray73.length) {
 			throw new RuntimeException();
 		} else if (this.aClass25_Sub1Array1[arg0] == null) {
-			@Pc(45) int local45 = this.aClass2_Sub4_6.method4836();
-			@Pc(50) int local50 = this.aClass2_Sub4_6.method4836();
+			@Pc(45) int local45 = this.aClass2_Sub4_6.g4();
+			@Pc(50) int local50 = this.aClass2_Sub4_6.g4();
 			@Pc(64) Class25_Sub1 local64 = new Class25_Sub1(arg0, arg1, arg2, this.aClass183_2, this.aClass206_3, local45, local50, true);
 			this.aClass25_Sub1Array1[arg0] = local64;
 			return local64;

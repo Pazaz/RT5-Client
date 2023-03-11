@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static361 {
 
-	@OriginalMember(owner = "client!vc", name = "b", descriptor = "I")
-	public static int anInt6767;
-
 	@OriginalMember(owner = "client!vc", name = "e", descriptor = "I")
 	public static int anInt6770;
 
@@ -25,8 +22,8 @@ public final class Static361 {
 		if (Static112.aBoolean173) {
 			System.out.println("---endgpp---");
 		}
-		if (arg0.anInt5300 != arg1) {
-			throw new RuntimeException("gpi1 pos:" + arg0.anInt5300 + " psize:" + arg1);
+		if (arg0.position != arg1) {
+			throw new RuntimeException("gpi1 pos:" + arg0.position + " psize:" + arg1);
 		}
 	}
 
@@ -39,7 +36,7 @@ public final class Static361 {
 		arg0.method2868(local13, local7, local9, -10660793, local11);
 		arg0.method2868(16, local7 + 1, local9 + 1, -16777216, local11 - 2);
 		arg0.method2837(local9 + 18, local7 - -1, local13 - 19, -16777216, -2 + local11);
-		Static52.aClass130_1.method5897(local7 + 3, -1, local9 + 14, -10660793, Static180.aClass79_74.method2267(Static295.anInt5581));
+		Static52.aClass130_1.method5897(local7 + 3, -1, local9 + 14, -10660793, Static180.aClass79_74.method2267(client.language));
 		@Pc(72) int local72 = Static226.aClass119_1.method3304();
 		@Pc(76) int local76 = Static226.aClass119_1.method3313();
 		@Pc(78) int local78 = 0;

@@ -9,9 +9,6 @@ public final class Static16 {
 	@OriginalMember(owner = "client!as", name = "b", descriptor = "I")
 	public static int anInt4756;
 
-	@OriginalMember(owner = "client!as", name = "d", descriptor = "I")
-	public static int anInt4758;
-
 	@OriginalMember(owner = "client!as", name = "e", descriptor = "Lclient!wm;")
 	public static Class19 aClass19_10;
 

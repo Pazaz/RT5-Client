@@ -64,7 +64,7 @@ public final class Static6 {
 			}
 			if (Static45.method1404(arg0).method1855()) {
 				if (arg0.aString46 == null) {
-					Static1.method3(arg0.anInt4300, true, arg0.anInt4317, false, Static262.aClass79_145.method2267(Static295.anInt5581), arg0.anInt4297, 30, "", -1, 0L);
+					Static1.method3(arg0.anInt4300, true, arg0.anInt4317, false, Static262.aClass79_145.method2267(client.language), arg0.anInt4297, 30, "", -1, 0L);
 				} else {
 					Static1.method3(arg0.anInt4300, true, arg0.anInt4317, false, arg0.aString46, arg0.anInt4297, 30, "", -1, 0L);
 				}

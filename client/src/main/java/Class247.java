@@ -16,11 +16,11 @@ public final class Class247 {
 	private int anInt7194;
 
 	@OriginalMember(owner = "client!wk", name = "<init>", descriptor = "(Lclient!bt;)V")
-	public Class247(@OriginalArg(0) Class2_Sub4 arg0) {
+	public Class247(@OriginalArg(0) Buffer arg0) {
 		for (@Pc(7) int local7 = 0; local7 < 10; local7++) {
-			@Pc(12) int local12 = arg0.method4815();
+			@Pc(12) int local12 = arg0.g1();
 			if (local12 != 0) {
-				arg0.anInt5300--;
+				arg0.position--;
 				this.aClass178Array1[local7] = new Class178();
 				this.aClass178Array1[local7].method4552(arg0);
 			}

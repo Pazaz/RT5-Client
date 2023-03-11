@@ -43,7 +43,7 @@ public final class Class2_Sub23 extends Class2 {
 	private float[][] aFloatArrayArray6;
 
 	@OriginalMember(owner = "client!lb", name = "B", descriptor = "Lclient!bt;")
-	private Class2_Sub4 aClass2_Sub4_5;
+	private Buffer aClass2_Sub4_5;
 
 	@OriginalMember(owner = "client!lb", name = "C", descriptor = "Lclient!ji;")
 	private Class2_Sub4_Sub1 aClass2_Sub4_Sub1_1;
@@ -123,7 +123,7 @@ public final class Class2_Sub23 extends Class2 {
 			}
 		}
 		if (local108 > 0) {
-			this.aClass2_Sub4_5 = new Class2_Sub4(local108 * 2);
+			this.aClass2_Sub4_5 = new Buffer(local108 * 2);
 			this.aClass2_Sub4_Sub1_1 = new Class2_Sub4_Sub1(local108 * 16);
 			this.aClass4_78 = new Class4(Static162.method2977(local108));
 			local131 = 0;
@@ -168,8 +168,8 @@ public final class Class2_Sub23 extends Class2 {
 				}
 				local131++;
 			}
-			this.anInterface4_3 = this.aClass19_Sub1_20.method839(this.aClass2_Sub4_5.aByteArray73, this.aClass2_Sub4_5.anInt5300, false);
-			this.anInterface5_4 = this.aClass19_Sub1_20.method816(16, this.aClass2_Sub4_Sub1_1.aByteArray73, this.aClass2_Sub4_Sub1_1.anInt5300, false);
+			this.anInterface4_3 = this.aClass19_Sub1_20.method839(this.aClass2_Sub4_5.aByteArray73, this.aClass2_Sub4_5.position, false);
+			this.anInterface5_4 = this.aClass19_Sub1_20.method816(16, this.aClass2_Sub4_Sub1_1.aByteArray73, this.aClass2_Sub4_Sub1_1.position, false);
 			this.aClass126_5 = new Class126(this.aClass19_Sub1_20, this.anInterface5_4, 5126, 3, 0);
 			this.aClass126_6 = new Class126(this.aClass19_Sub1_20, this.anInterface5_4, 5121, 4, 12);
 		} else {
@@ -320,10 +320,10 @@ public final class Class2_Sub23 extends Class2 {
 		if (local596 > 255) {
 			local596 = 255;
 		}
-		this.aClass2_Sub4_Sub1_1.method4842(local565);
-		this.aClass2_Sub4_Sub1_1.method4842(local580);
-		this.aClass2_Sub4_Sub1_1.method4842(local596);
-		this.aClass2_Sub4_Sub1_1.method4842(255);
+		this.aClass2_Sub4_Sub1_1.p1(local565);
+		this.aClass2_Sub4_Sub1_1.p1(local580);
+		this.aClass2_Sub4_Sub1_1.p1(local596);
+		this.aClass2_Sub4_Sub1_1.p1(255);
 		this.method3525(local73);
 	}
 }

@@ -42,9 +42,9 @@ public final class Static331 {
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(Z)Z")
 	public static boolean method5660() {
-		if (Static276.aBoolean375) {
+		if (Static276.javaScript) {
 			try {
-				if ((Boolean) Static405.method4628(Static328.aClass152_5.applet, "showingVideoAd")) {
+				if ((Boolean) Static405.method4628(GameShell.signlink.applet, "showingVideoAd")) {
 					return false;
 				}
 				return true;

@@ -53,7 +53,7 @@ public final class Class219 {
 		local16.aClass219_2 = this;
 		local16.anInt2048 = arg0;
 		if (local37 != null) {
-			local16.method2097(new Class2_Sub4(local37));
+			local16.method2097(new Buffer(local37));
 		}
 		local16.method2089();
 		@Pc(67) Class98 local67 = this.aClass98_53;

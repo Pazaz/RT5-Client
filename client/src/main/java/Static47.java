@@ -49,9 +49,9 @@ public final class Static47 {
 			local12 = local12.substring(0, local17) + "," + local12.substring(local17);
 		}
 		if (local12.length() > 9) {
-			return " <col=00ff80>" + local12.substring(0, local12.length() - 8) + Static70.aClass79_37.method2267(Static295.anInt5581) + " (" + local12 + ")</col>";
+			return " <col=00ff80>" + local12.substring(0, local12.length() - 8) + Static70.aClass79_37.method2267(client.language) + " (" + local12 + ")</col>";
 		} else if (local12.length() > 6) {
-			return " <col=ffffff>" + local12.substring(0, local12.length() - 4) + Static312.aClass79_124.method2267(Static295.anInt5581) + " (" + local12 + ")</col>";
+			return " <col=ffffff>" + local12.substring(0, local12.length() - 4) + Static312.aClass79_124.method2267(client.language) + " (" + local12 + ")</col>";
 		} else {
 			return " <col=ffff00>" + local12 + "</col>";
 		}

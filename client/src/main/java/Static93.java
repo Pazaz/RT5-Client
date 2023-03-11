@@ -77,10 +77,10 @@ public final class Static93 {
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(B)V")
 	public static void method2002() {
 		Static91.method1960(Static101.aClass145_75);
-		Static257.aClass2_Sub4_Sub2_4.method4842(Static144.method2692());
-		Static257.aClass2_Sub4_Sub2_4.method4843(Static250.anInt4665);
-		Static257.aClass2_Sub4_Sub2_4.method4843(Static172.anInt3299);
-		Static257.aClass2_Sub4_Sub2_4.method4842(Static218.aClass177_Sub1_2.anInt4885);
+		Protocol.outboundBuffer.p1(Static144.method2692());
+		Protocol.outboundBuffer.method4843(Static250.anInt4665);
+		Protocol.outboundBuffer.method4843(Static172.anInt3299);
+		Protocol.outboundBuffer.p1(Static218.aClass177_Sub1_2.anInt4885);
 	}
 
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "()V")

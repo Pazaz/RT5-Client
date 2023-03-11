@@ -12,7 +12,7 @@ public final class Static89 {
 	public static Image anImage1;
 
 	@OriginalMember(owner = "client!et", name = "d", descriptor = "Lclient!bt;")
-	public static final Class2_Sub4 aClass2_Sub4_2 = new Class2_Sub4(new byte[5000]);
+	public static final Buffer aClass2_Sub4_2 = new Buffer(new byte[5000]);
 
 	@OriginalMember(owner = "client!et", name = "i", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_74 = new Class89(40, 1);

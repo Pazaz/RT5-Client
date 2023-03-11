@@ -69,20 +69,20 @@ public final class Class28 {
 	}
 
 	@OriginalMember(owner = "client!bp", name = "a", descriptor = "(Lclient!bt;ZI)V")
-	private void method947(@OriginalArg(0) Class2_Sub4 arg0, @OriginalArg(2) int arg1) {
+	private void method947(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.anInt736 = arg0.method4829();
 		} else if (arg1 == 2) {
-			arg0.method4815();
+			arg0.g1();
 		} else if (arg1 == 3) {
-			this.anInt754 = arg0.method4836();
-			this.anInt748 = arg0.method4836();
-			this.anInt741 = arg0.method4836();
+			this.anInt754 = arg0.g4();
+			this.anInt748 = arg0.g4();
+			this.anInt741 = arg0.g4();
 		} else if (arg1 == 4) {
-			this.anInt753 = arg0.method4815();
-			this.anInt750 = arg0.method4836();
+			this.anInt753 = arg0.g1();
+			this.anInt750 = arg0.g4();
 		} else if (arg1 == 6) {
-			this.anInt737 = arg0.method4815();
+			this.anInt737 = arg0.g1();
 		} else if (arg1 == 8) {
 			this.anInt743 = 1;
 		} else if (arg1 == 9) {
@@ -93,9 +93,9 @@ public final class Class28 {
 	}
 
 	@OriginalMember(owner = "client!bp", name = "a", descriptor = "(ZLclient!bt;)V")
-	public void method949(@OriginalArg(1) Class2_Sub4 arg0) {
+	public void method949(@OriginalArg(1) Buffer arg0) {
 		while (true) {
-			@Pc(14) int local14 = arg0.method4815();
+			@Pc(14) int local14 = arg0.g1();
 			if (local14 == 0) {
 				return;
 			}

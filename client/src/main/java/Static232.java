@@ -21,9 +21,6 @@ public final class Static232 {
 	@OriginalMember(owner = "client!ng", name = "l", descriptor = "I")
 	public static int anInt4087 = 0;
 
-	@OriginalMember(owner = "client!ng", name = "m", descriptor = "Lclient!rt;")
-	public static final Class209 aClass209_3 = new Class209("LIVE", 0);
-
 	@OriginalMember(owner = "client!ng", name = "p", descriptor = "Z")
 	public static boolean aBoolean268 = false;
 

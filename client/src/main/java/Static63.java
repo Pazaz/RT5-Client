@@ -18,7 +18,7 @@ public final class Static63 {
 	@OriginalMember(owner = "client!dn", name = "a", descriptor = "(B)[Lclient!oi;")
 	public static Class169[] method1703() {
 		if (Static232.aClass169Array1 == null) {
-			@Pc(15) Class169[] local15 = Static110.method2265(Static328.aClass152_5);
+			@Pc(15) Class169[] local15 = Static110.method2265(GameShell.signlink);
 			@Pc(19) Class169[] local19 = new Class169[local15.length];
 			@Pc(21) int local21 = 0;
 			@Pc(75) int local75;

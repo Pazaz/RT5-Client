@@ -9,9 +9,6 @@ public final class Static121 {
 	@OriginalMember(owner = "client!gu", name = "x", descriptor = "[I")
 	public static int[] anIntArray157;
 
-	@OriginalMember(owner = "client!gu", name = "y", descriptor = "Lclient!kk;")
-	public static Class127 aClass127_4;
-
 	@OriginalMember(owner = "client!gu", name = "w", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_53 = new Class79("Loaded core fonts", "Schriftarten geladen", "Polices chargées", "Fontes principais carregadas");
 

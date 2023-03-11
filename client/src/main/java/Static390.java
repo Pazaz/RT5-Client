@@ -15,17 +15,17 @@ public final class Static390 {
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(I)V")
 	public static void method6449() {
 		Static289.aClass197_71.anInt5558 = 1;
-		Static144.aClient1.method1382();
+		client.instance.method1382();
 		Static242.aBoolean306 = true;
 		Static343.aBoolean431 = true;
 		Static4.method77();
-		Static257.aClass2_Sub4_Sub2_4.anInt5300 = 0;
+		Protocol.outboundBuffer.position = 0;
 		Static86.anInt1870 = 0;
 		Static231.aClass89_164 = null;
 		Static334.aClass89_222 = null;
 		Static39.aClass89_35 = null;
 		Static268.anInt4955 = 0;
-		Static212.aClass2_Sub4_Sub2_3.anInt5300 = 0;
+		Static212.aClass2_Sub4_Sub2_3.position = 0;
 		Static151.anInt2773 = 0;
 		Static66.aClass89_57 = null;
 		for (@Pc(4365) int local4365 = 0; local4365 < Static50.aClass84Array1.length; local4365++) {
@@ -115,7 +115,7 @@ public final class Static390 {
 		Static348.method5828();
 		Static257.aShortArray79 = Static223.aShortArray78 = Static258.aShortArray95 = Static147.aShortArray54 = new short[256];
 		Static100.aBoolean156 = true;
-		Static330.aString62 = Static66.aClass79_34.method2267(Static295.anInt5581);
+		Static330.aString62 = Static66.aClass79_34.method2267(client.language);
 		Static292.anInt5510 = 0;
 		Static218.aClass177_Sub1_2.aBoolean365 = false;
 		Static218.aClass177_Sub1_2.aBoolean366 = false;

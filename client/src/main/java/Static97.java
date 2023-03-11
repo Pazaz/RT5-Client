@@ -32,24 +32,24 @@ public final class Static97 {
 		Static16.aString51 = arg0;
 		if (Static374.aString70.equals("") || Static16.aString51.equals("")) {
 			Static41.anInt1046 = 3;
-		} else if (Static120.anInt2385 == -1) {
+		} else if (client.worldId == -1) {
 			Static60.anInt666 = 0;
 			Static154.anInt2803 = 1;
 			Static41.anInt1046 = -3;
 			Static193.anInt3557 = 0;
-			@Pc(40) Class2_Sub4 local40 = new Class2_Sub4(128);
-			local40.method4842(10);
-			local40.method4813((int) (Math.random() * 9.9999999E7D));
+			@Pc(40) Buffer local40 = new Buffer(128);
+			local40.p1(10);
+			local40.p4((int) (Math.random() * 9.9999999E7D));
 			local40.method4832(Static80.method5985(Static374.aString70));
-			local40.method4813((int) (Math.random() * 9.9999999E7D));
+			local40.p4((int) (Math.random() * 9.9999999E7D));
 			local40.method4822(Static16.aString51);
-			local40.method4813((int) (Math.random() * 9.9999999E7D));
+			local40.p4((int) (Math.random() * 9.9999999E7D));
 			local40.method4834(Static320.aBigInteger2, Static194.aBigInteger1);
-			Static257.aClass2_Sub4_Sub2_4.anInt5300 = 0;
-			Static257.aClass2_Sub4_Sub2_4.method4842(Static43.aClass242_10.anInt7038);
-			Static257.aClass2_Sub4_Sub2_4.method4842(local40.anInt5300 + 2);
-			Static257.aClass2_Sub4_Sub2_4.method4843(578);
-			Static257.aClass2_Sub4_Sub2_4.method4857(local40.aByteArray73, local40.anInt5300);
+			Protocol.outboundBuffer.position = 0;
+			Protocol.outboundBuffer.p1(Static43.aClass242_10.anInt7038);
+			Protocol.outboundBuffer.p1(local40.position + 2);
+			Protocol.outboundBuffer.method4843(578);
+			Protocol.outboundBuffer.method4857(local40.aByteArray73, local40.position);
 		} else {
 			Static230.method4014();
 		}

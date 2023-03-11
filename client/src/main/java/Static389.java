@@ -34,34 +34,34 @@ public final class Static389 {
 		for (@Pc(10) int local10 = 0; local10 < 3; local10++) {
 			local8[local10] = (int) (Math.random() * 9.9999999E7D);
 		}
-		@Pc(28) Class2_Sub4 local28 = new Class2_Sub4(128);
-		local28.method4842(10);
+		@Pc(28) Buffer local28 = new Buffer(128);
+		local28.p1(10);
 		local28.method4843((arg7 ? 4 : 0) | (arg8 ? 2 : 0) | (arg3 ? 1 : 0));
 		local28.method4832(arg4);
-		local28.method4813(local8[0]);
+		local28.p4(local8[0]);
 		local28.method4822(arg0);
-		local28.method4813(local8[1]);
-		local28.method4843(Static165.anInt3149);
-		local28.method4842(arg1);
-		local28.method4842(arg6);
-		local28.method4813(local8[2]);
+		local28.p4(local8[1]);
+		local28.method4843(client.affiliate);
+		local28.p1(arg1);
+		local28.p1(arg6);
+		local28.p4(local8[2]);
 		local28.method4843(arg5);
 		local28.method4843(arg2);
-		local28.method4813(local8[3]);
+		local28.p4(local8[3]);
 		local28.method4834(Static320.aBigInteger2, Static194.aBigInteger1);
-		@Pc(118) Class2_Sub4 local118 = new Class2_Sub4(350);
+		@Pc(118) Buffer local118 = new Buffer(350);
 		local118.method4822(arg9);
 		@Pc(131) int local131 = 8 - Static27.method872(arg9) % 8;
 		for (@Pc(133) int local133 = 0; local133 < local131; local133++) {
-			local118.method4842((int) (Math.random() * 255.0D));
+			local118.p1((int) (Math.random() * 255.0D));
 		}
 		local118.method4862(local8);
-		Static257.aClass2_Sub4_Sub2_4.anInt5300 = 0;
-		Static257.aClass2_Sub4_Sub2_4.method4842(Static43.aClass242_8.anInt7038);
-		Static257.aClass2_Sub4_Sub2_4.method4843(local28.anInt5300 + local118.anInt5300 + 2);
-		Static257.aClass2_Sub4_Sub2_4.method4843(578);
-		Static257.aClass2_Sub4_Sub2_4.method4857(local28.aByteArray73, local28.anInt5300);
-		Static257.aClass2_Sub4_Sub2_4.method4857(local118.aByteArray73, local118.anInt5300);
+		Protocol.outboundBuffer.position = 0;
+		Protocol.outboundBuffer.p1(Static43.aClass242_8.anInt7038);
+		Protocol.outboundBuffer.method4843(local28.position + local118.position + 2);
+		Protocol.outboundBuffer.method4843(578);
+		Protocol.outboundBuffer.method4857(local28.aByteArray73, local28.position);
+		Protocol.outboundBuffer.method4857(local118.aByteArray73, local118.position);
 		Static141.anInt2652 = 1;
 		Static66.anInt1625 = 0;
 		Static318.anInt5968 = -3;

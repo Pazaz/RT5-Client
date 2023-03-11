@@ -52,7 +52,7 @@ public final class Static138 {
 		}
 		local10 = new Class2_Sub2_Sub12();
 		if (local25 != null) {
-			local10.method3797(new Class2_Sub4(local25));
+			local10.method3797(new Buffer(local25));
 		}
 		if (arg0 >= 32768) {
 			local10.method3793();

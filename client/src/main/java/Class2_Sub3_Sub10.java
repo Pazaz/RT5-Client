@@ -29,7 +29,7 @@ public class Class2_Sub3_Sub10 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!ek", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public final void method6484(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub4 arg1) {
+	public final void method6484(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
 			this.anInt6675 = arg1.method4829();
 		}

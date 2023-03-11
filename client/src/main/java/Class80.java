@@ -42,22 +42,22 @@ public final class Class80 {
 	}
 
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(IILclient!bt;)V")
-	private void method2269(@OriginalArg(0) int arg0, @OriginalArg(2) Class2_Sub4 arg1) {
+	private void method2269(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
 		if (arg0 == 1) {
-			arg1.method4815();
+			arg1.g1();
 			return;
 		}
 		@Pc(19) int local19;
 		@Pc(25) int local25;
 		if (arg0 == 2) {
-			local19 = arg1.method4815();
+			local19 = arg1.g1();
 			this.anIntArray142 = new int[local19];
 			for (local25 = 0; local25 < local19; local25++) {
 				this.anIntArray142[local25] = arg1.method4829();
 			}
 		} else if (arg0 != 3) {
 			if (arg0 == 40) {
-				local19 = arg1.method4815();
+				local19 = arg1.g1();
 				this.aShortArray44 = new short[local19];
 				this.aShortArray43 = new short[local19];
 				for (local25 = 0; local25 < local19; local25++) {
@@ -65,7 +65,7 @@ public final class Class80 {
 					this.aShortArray44[local25] = (short) arg1.method4829();
 				}
 			} else if (arg0 == 41) {
-				local19 = arg1.method4815();
+				local19 = arg1.g1();
 				this.aShortArray42 = new short[local19];
 				this.aShortArray45 = new short[local19];
 				for (local25 = 0; local25 < local19; local25++) {
@@ -96,9 +96,9 @@ public final class Class80 {
 	}
 
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method2271(@OriginalArg(0) Class2_Sub4 arg0) {
+	public void method2271(@OriginalArg(0) Buffer arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method4815();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}

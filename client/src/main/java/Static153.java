@@ -24,7 +24,7 @@ public final class Static153 {
 
 	@OriginalMember(owner = "client!ip", name = "a", descriptor = "(I)[Lclient!rt;")
 	public static Class209[] method2770() {
-		return new Class209[] { Static232.aClass209_3, Static175.aClass209_1, Static359.aClass209_4 };
+		return new Class209[] { client.MODE_ENV_LIVE, client.MODE_ENV_RC, client.MODE_ENV_WIP };
 	}
 
 	@OriginalMember(owner = "client!ip", name = "a", descriptor = "(ILjava/lang/String;)Ljava/lang/String;")

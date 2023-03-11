@@ -38,13 +38,13 @@ public final class Class187 {
 	}
 
 	@OriginalMember(owner = "client!q", name = "<init>", descriptor = "(Lclient!bt;)V")
-	public Class187(@OriginalArg(0) Class2_Sub4 arg0) {
+	public Class187(@OriginalArg(0) Buffer arg0) {
 		this.aByte57 = arg0.method4825();
 		this.anInt5105 = arg0.method4829();
-		this.anInt5108 = arg0.method4836();
-		this.anInt5111 = arg0.method4836();
-		this.anInt5106 = arg0.method4836();
-		this.anInt5114 = arg0.method4836();
+		this.anInt5108 = arg0.g4();
+		this.anInt5111 = arg0.g4();
+		this.anInt5106 = arg0.g4();
+		this.anInt5114 = arg0.g4();
 	}
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(I)I")

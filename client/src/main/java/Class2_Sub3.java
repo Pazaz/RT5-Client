@@ -87,7 +87,7 @@ public abstract class Class2_Sub3 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!jq", name = "a", descriptor = "(ILclient!bt;I)V")
-	public void method6484(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub4 arg1) {
+	public void method6484(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 	}
 
 	@OriginalMember(owner = "client!jq", name = "a", descriptor = "(BI)[I")

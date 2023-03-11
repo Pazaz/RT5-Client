@@ -52,16 +52,16 @@ public final class Static262 {
 		for (@Pc(15) int local15 = 0; local15 < Static325.anInt6079; local15++) {
 			@Pc(21) int local21 = Static52.anIntArray100[local15];
 			@Pc(25) Class11_Sub5_Sub2_Sub1 local25 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local21];
-			@Pc(29) int local29 = arg0.method4815();
+			@Pc(29) int local29 = arg0.g1();
 			if ((local29 & 0x2) != 0) {
-				local29 += arg0.method4815() << 8;
+				local29 += arg0.g1() << 8;
 			}
 			Static303.method5212(arg0, local21, local25, local29);
 		}
 	}
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;I)V")
-	public static void method6253(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
+	public static void report(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
 		try {
 			@Pc(7) String local7 = "";
 			if (arg0 != null) {

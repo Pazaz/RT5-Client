@@ -29,9 +29,9 @@ public final class Static1 {
 					Static266.anIntArray334[Static48.anInt1254] = Static291.anIntArray372[local10];
 					local23 = Static48.anInt1254++;
 				}
-				@Pc(65) Class2_Sub4 local65 = new Class2_Sub4(Static210.aByteArrayArray7[local10]);
+				@Pc(65) Buffer local65 = new Buffer(Static210.aByteArrayArray7[local10]);
 				@Pc(67) int local67 = 0;
-				while (Static210.aByteArrayArray7[local10].length > local65.anInt5300 && local67 < 511 && Static166.anInt3187 < 1023) {
+				while (Static210.aByteArrayArray7[local10].length > local65.position && local67 < 511 && Static166.anInt3187 < 1023) {
 					@Pc(88) int local88 = local23 | local67++ << 6;
 					@Pc(92) int local92 = local65.method4829();
 					@Pc(96) int local96 = local92 >> 14;

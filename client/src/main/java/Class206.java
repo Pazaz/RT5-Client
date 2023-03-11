@@ -54,7 +54,7 @@ public final class Class206 implements Runnable {
 					local14.aByteArray91 = local14.aClass207_4.method5261((int) local14.aLong215);
 				}
 			} catch (@Pc(74) Exception local74) {
-				Static262.method6253(local74, null);
+				Static262.report(local74, null);
 			}
 			local14.aBoolean416 = false;
 		}

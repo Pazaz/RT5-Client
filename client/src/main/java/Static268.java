@@ -17,8 +17,4 @@ public final class Static268 {
 	@OriginalMember(owner = "client!pg", name = "U", descriptor = "[I")
 	public static final int[] anIntArray338 = new int[25];
 
-	@OriginalMember(owner = "client!pg", name = "g", descriptor = "(I)Lclient!ac;")
-	public static Class3_Sub1 method4548() {
-		return Static300.aClass3_Sub1Array2.length > Static231.anInt4079 ? Static300.aClass3_Sub1Array2[Static231.anInt4079++] : null;
-	}
 }

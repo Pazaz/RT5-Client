@@ -16,9 +16,6 @@ public final class Static120 {
 	@OriginalMember(owner = "client!gs", name = "h", descriptor = "Lclient!ad;")
 	public static Class4 aClass4_49 = new Class4(64);
 
-	@OriginalMember(owner = "client!gs", name = "i", descriptor = "I")
-	public static int anInt2385 = -1;
-
 	@OriginalMember(owner = "client!gs", name = "j", descriptor = "S")
 	public static short aShort35 = 32767;
 
@@ -29,12 +26,12 @@ public final class Static120 {
 	public static int anInt2387 = 0;
 
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(Ljava/lang/String;ILclient!bt;)I")
-	public static int method2379(@OriginalArg(0) String arg0, @OriginalArg(2) Class2_Sub4 arg1) {
-		@Pc(6) int local6 = arg1.anInt5300;
+	public static int method2379(@OriginalArg(0) String arg0, @OriginalArg(2) Buffer arg1) {
+		@Pc(6) int local6 = arg1.position;
 		@Pc(10) byte[] local10 = Static51.method1546(arg0);
 		arg1.method4824(local10.length);
-		arg1.anInt5300 += Static370.aClass140_1.method3648(arg1.aByteArray73, local10, 0, arg1.anInt5300, local10.length);
-		return arg1.anInt5300 - local6;
+		arg1.position += Static370.aClass140_1.method3648(arg1.aByteArray73, local10, 0, arg1.position, local10.length);
+		return arg1.position - local6;
 	}
 
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(I)V")
@@ -64,7 +61,7 @@ public final class Static120 {
 							@Pc(83) int local83 = local73 / 8 + (local67 / 8 << 8);
 							for (@Pc(85) int local85 = 0; local85 < Static291.anIntArray372.length; local85++) {
 								if (Static291.anIntArray372[local85] == local83 && arg0[local85] != null) {
-									@Pc(107) Class2_Sub4 local107 = new Class2_Sub4(arg0[local85]);
+									@Pc(107) Buffer local107 = new Buffer(arg0[local85]);
 									arg1.method1091(local24 * 8, local73, local107, Static171.aClass46Array1, local67, local28 * 8, local61, local50, local18);
 									arg1.method1101(local107, local28 * 8, local18, local50, local73, local67, Static190.aClass19_8, local16[0] == -1 ? local16 : null, local24 * 8, local61);
 									local32 = true;
@@ -95,14 +92,14 @@ public final class Static120 {
 	}
 
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(ILclient!bt;B)Ljava/lang/String;")
-	public static String method2384(@OriginalArg(1) Class2_Sub4 arg0) {
+	public static String method2384(@OriginalArg(1) Buffer arg0) {
 		try {
-			@Pc(7) int local7 = arg0.method4817();
+			@Pc(7) int local7 = arg0.gsmart();
 			if (local7 > 32767) {
 				local7 = 32767;
 			}
 			@Pc(23) byte[] local23 = new byte[local7];
-			arg0.anInt5300 += Static370.aClass140_1.method3651(local7, local23, 0, arg0.anInt5300, arg0.aByteArray73);
+			arg0.position += Static370.aClass140_1.method3651(local7, local23, 0, arg0.position, arg0.aByteArray73);
 			return Static47.method1462(0, local23, local7);
 		} catch (@Pc(47) Exception local47) {
 			return "Cabbage";

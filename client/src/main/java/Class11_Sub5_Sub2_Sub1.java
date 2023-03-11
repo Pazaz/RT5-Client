@@ -143,9 +143,9 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method4066(@OriginalArg(0) Class2_Sub4 arg0) {
-		arg0.anInt5300 = 0;
-		@Pc(12) int local12 = arg0.method4815();
+	public void method4066(@OriginalArg(0) Buffer arg0) {
+		arg0.position = 0;
+		@Pc(12) int local12 = arg0.g1();
 		this.aByte39 = (byte) (local12 & 0x1);
 		@Pc(29) boolean local29 = (local12 & 0x2) != 0;
 		@Pc(37) boolean local37 = (local12 & 0x4) != 0;
@@ -164,15 +164,15 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		@Pc(143) int local143;
 		@Pc(182) int local182;
 		for (@Pc(118) int local118 = 0; local118 < 12; local118++) {
-			@Pc(124) int local124 = arg0.method4815();
+			@Pc(124) int local124 = arg0.g1();
 			if (local124 == 0) {
 				local116[local118] = 0;
 			} else {
-				local136 = arg0.method4815();
+				local136 = arg0.g1();
 				local143 = (local124 << 8) + local136;
 				if (local118 == 0 && local143 == 65535) {
 					local113 = arg0.method4829();
-					this.anInt4193 = arg0.method4815();
+					this.anInt4193 = arg0.g1();
 					break;
 				}
 				if (local143 >= 32768) {
@@ -189,7 +189,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		}
 		@Pc(207) int[] local207 = new int[5];
 		for (local136 = 0; local136 < 5; local136++) {
-			local143 = arg0.method4815();
+			local143 = arg0.g1();
 			if (local143 < 0 || local143 >= Static353.aShortArrayArray7[local136].length) {
 				local143 = 0;
 			}
@@ -202,21 +202,21 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		} else {
 			this.aString41 = this.aString42;
 		}
-		this.anInt4179 = arg0.method4815();
+		this.anInt4179 = arg0.g1();
 		if (local37) {
 			this.anInt4173 = arg0.method4829();
 			this.anInt4191 = -1;
 			this.anInt4171 = this.anInt4179;
 		} else {
 			this.anInt4173 = 0;
-			this.anInt4171 = arg0.method4815();
-			this.anInt4191 = arg0.method4815();
+			this.anInt4171 = arg0.g1();
+			this.anInt4191 = arg0.g1();
 			if (this.anInt4191 == 255) {
 				this.anInt4191 = -1;
 			}
 		}
 		local143 = this.anInt4182;
-		this.anInt4182 = arg0.method4815();
+		this.anInt4182 = arg0.g1();
 		@Pc(327) int local327;
 		if (this.anInt4182 == 0) {
 			Static298.method2423(this);
@@ -230,7 +230,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 			this.anInt4187 = arg0.method4829();
 			this.anInt4168 = arg0.method4829();
 			this.anInt4196 = arg0.method4829();
-			this.anInt4201 = arg0.method4815();
+			this.anInt4201 = arg0.g1();
 			if (local143 != this.anInt4182 || this.anInt4167 != local182 || local324 != this.anInt4187 || this.anInt4168 != local327 || this.anInt4196 != local330 || local333 != this.anInt4201) {
 				Static324.method5542(this);
 			}
@@ -284,7 +284,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 			Static163.method3105();
 		}
 		@Pc(136) int local136;
-		if (Static189.aClass127_6 != Static121.aClass127_4 && local116 < 50) {
+		if (client.MODE_WHERE_LIVE != client.modeWhere && local116 < 50) {
 			local136 = 50 - local116;
 			while (Static50.anInt1332 < local136) {
 				Static26.aByteArrayArray3[Static50.anInt1332] = new byte[102400];
@@ -294,7 +294,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 				Static50.anInt1332--;
 				Static26.aByteArrayArray3[Static50.anInt1332] = null;
 			}
-		} else if (Static121.aClass127_4 != Static189.aClass127_6) {
+		} else if (client.modeWhere != client.MODE_WHERE_LIVE) {
 			Static50.anInt1332 = 0;
 			Static26.aByteArrayArray3 = new byte[50][];
 		}
@@ -531,7 +531,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 			if (local59.aChar3 == 's') {
 				local17 = local17 + local59.method1775(this.aByte38 & 0xFF);
 			} else {
-				Static262.method6253(new Throwable(), "gdn1");
+				Static262.report(new Throwable(), "gdn1");
 				local39[this.aByte40] = -1;
 			}
 		}

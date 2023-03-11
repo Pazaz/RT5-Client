@@ -62,11 +62,11 @@ public final class Class111 implements Runnable {
 	@OriginalMember(owner = "client!iu", name = "finalize", descriptor = "()V")
 	@Override
 	public void finalize() {
-		this.method2799();
+		this.close();
 	}
 
 	@OriginalMember(owner = "client!iu", name = "a", descriptor = "([BIII)V")
-	public void method2793(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) throws IOException {
+	public void read(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) throws IOException {
 		if (this.aBoolean197) {
 			return;
 		}
@@ -81,12 +81,12 @@ public final class Class111 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!iu", name = "b", descriptor = "(I)I")
-	public int method2795() throws IOException {
+	public int available() throws IOException {
 		return this.aBoolean197 ? 0 : this.anInputStream1.available();
 	}
 
 	@OriginalMember(owner = "client!iu", name = "a", descriptor = "(ZII[B)V")
-	public void method2797(@OriginalArg(2) int arg0, @OriginalArg(3) byte[] arg1) throws IOException {
+	public void write(@OriginalArg(2) int arg0, @OriginalArg(3) byte[] arg1) throws IOException {
 		if (this.aBoolean197) {
 			return;
 		}
@@ -113,7 +113,7 @@ public final class Class111 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!iu", name = "c", descriptor = "(I)V")
-	public void method2799() {
+	public void close() {
 		if (this.aBoolean197) {
 			return;
 		}
@@ -136,7 +136,7 @@ public final class Class111 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!iu", name = "d", descriptor = "(I)I")
-	public int method2800() throws IOException {
+	public int read() throws IOException {
 		return this.aBoolean197 ? 0 : this.anInputStream1.read();
 	}
 
@@ -199,7 +199,7 @@ public final class Class111 implements Runnable {
 				break;
 			}
 		} catch (@Pc(121) Exception local121) {
-			Static262.method6253(local121, null);
+			Static262.report(local121, null);
 		}
 	}
 

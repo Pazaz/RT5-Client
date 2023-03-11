@@ -99,7 +99,7 @@ public final class Static308 {
 	}
 
 	@OriginalMember(owner = "client!rr", name = "a", descriptor = "(Lclient!bt;I)Ljava/lang/String;")
-	public static String method5276(@OriginalArg(0) Class2_Sub4 arg0) {
+	public static String method5276(@OriginalArg(0) Buffer arg0) {
 		return Static120.method2384(arg0);
 	}
 }

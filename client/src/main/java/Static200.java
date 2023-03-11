@@ -39,7 +39,7 @@ public final class Static200 {
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(I)V")
 	public static void method3644() {
 		if (Static215.anInt3795 != 3) {
-			Static120.anInt2385 = -1;
+			client.worldId = -1;
 		}
 	}
 
@@ -80,17 +80,17 @@ public final class Static200 {
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(B)Ljava/lang/String;")
 	public static String method3650() {
 		@Pc(7) String local7 = "www";
-		if (Static121.aClass127_4 == Static125.aClass127_8) {
+		if (client.modeWhere == Static125.aClass127_8) {
 			local7 = "www-wtrc";
-		} else if (Static121.aClass127_4 == Static27.aClass127_1) {
+		} else if (client.modeWhere == Static27.aClass127_1) {
 			local7 = "www-wtqa";
-		} else if (Static45.aClass127_2 == Static121.aClass127_4) {
+		} else if (Static45.aClass127_2 == client.modeWhere) {
 			local7 = "www-wtwip";
 		}
 		@Pc(28) String local28 = "";
-		if (Static74.aString17 != null) {
-			local28 = "/p=" + Static74.aString17;
+		if (Static74.settings != null) {
+			local28 = "/p=" + Static74.settings;
 		}
-		return "http://" + local7 + "." + Static343.aClass50_4.aString15 + ".com/l=" + Static295.anInt5581 + "/a=" + Static165.anInt3149 + local28 + "/";
+		return "http://" + local7 + "." + client.game.aString15 + ".com/l=" + client.language + "/a=" + client.affiliate + local28 + "/";
 	}
 }

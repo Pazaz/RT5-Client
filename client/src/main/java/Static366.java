@@ -51,11 +51,11 @@ public final class Static366 {
 			return;
 		}
 		Static91.method1960(Static105.aClass145_79);
-		Static257.aClass2_Sub4_Sub2_4.method4813(arg0.anInt4317);
-		Static257.aClass2_Sub4_Sub2_4.method4855(arg0.anInt4297);
-		Static257.aClass2_Sub4_Sub2_4.method4855(Static214.anInt3792);
-		Static257.aClass2_Sub4_Sub2_4.method4843(Static196.anInt3317);
-		Static257.aClass2_Sub4_Sub2_4.method4805(Static337.anInt6317);
-		Static257.aClass2_Sub4_Sub2_4.method4843(arg0.anInt4300);
+		Protocol.outboundBuffer.p4(arg0.anInt4317);
+		Protocol.outboundBuffer.method4855(arg0.anInt4297);
+		Protocol.outboundBuffer.method4855(Static214.anInt3792);
+		Protocol.outboundBuffer.method4843(Static196.anInt3317);
+		Protocol.outboundBuffer.method4805(Static337.anInt6317);
+		Protocol.outboundBuffer.method4843(arg0.anInt4300);
 	}
 }

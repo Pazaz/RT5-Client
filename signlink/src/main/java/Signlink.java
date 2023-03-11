@@ -411,6 +411,7 @@ public final class Signlink implements Runnable {
 							} else {
 								@Pc(227) int local227;
 								if (local45 == 11) {
+									// note: "class java.util.concurrent.ConcurrentHashMap cannot be cast to class java.util.Vector" is thrown in Java 9+, but since this happens on shutdown it doesn't matter
 									@Pc(421) Field local421 = Class.forName("java.lang.ClassLoader").getDeclaredField("nativeLibraries");
 									local421.setAccessible(true);
 									@Pc(432) Vector local432 = (Vector) local421.get(((Class) local16.objectArg).getClassLoader());

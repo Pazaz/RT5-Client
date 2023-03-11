@@ -15,7 +15,7 @@ public final class Static310 {
 
 	@OriginalMember(owner = "client!rt", name = "a", descriptor = "(I)V")
 	public static void method5283() {
-		Static23.aClass2_Sub5_1 = new Class2_Sub5(Static259.aClass79_105.method2267(Static295.anInt5581), "", Static107.anInt2219, 1001, -1, 0L, 0, 0, true, false);
+		Static23.aClass2_Sub5_1 = new Class2_Sub5(Static259.aClass79_105.method2267(client.language), "", Static107.anInt2219, 1001, -1, 0L, 0, 0, true, false);
 	}
 
 	@OriginalMember(owner = "client!rt", name = "a", descriptor = "(IIILclient!id;)J")

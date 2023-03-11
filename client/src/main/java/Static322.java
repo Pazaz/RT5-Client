@@ -146,7 +146,7 @@ public final class Static322 {
 			return;
 		}
 		if (Static246.anInt4505 != 0) {
-			Static351.method5857(Static276.aClass130_4, true, Static256.aClass79_102.method2267(Static295.anInt5581) + "<br>(100%)");
+			Static351.method5857(Static276.aClass130_4, true, Static256.aClass79_102.method2267(client.language) + "<br>(100%)");
 		}
 		Static37.method1135();
 		Static211.method3721();
@@ -270,9 +270,9 @@ public final class Static322 {
 		Static211.method3721();
 		Static3.aBoolean5 = false;
 		Static50.method1530();
-		if (Static222.aFrame1 != null && Static335.aClass111_4 != null && Static347.anInt6442 == 25) {
+		if (GameShell.frame != null && Protocol.socket != null && Static347.anInt6442 == 25) {
 			Static91.method1960(Static30.aClass145_28);
-			Static257.aClass2_Sub4_Sub2_4.method4813(1057001181);
+			Protocol.outboundBuffer.p4(1057001181);
 		}
 		if (!Static220.aBoolean252) {
 			local731 = (Static105.anInt2187 - (Static373.anInt7033 >> 4)) / 8;
@@ -292,7 +292,7 @@ public final class Static322 {
 			Static336.method5705(10);
 		} else {
 			Static336.method5705(30);
-			if (Static335.aClass111_4 != null) {
+			if (Protocol.socket != null) {
 				Static91.method1960(Static42.aClass145_230);
 			}
 		}
@@ -303,9 +303,9 @@ public final class Static322 {
 
 	@OriginalMember(owner = "client!so", name = "b", descriptor = "(I)V")
 	public static void method5485() {
-		if (Static121.aClass127_4 != Static231.aClass127_7) {
+		if (client.modeWhere != client.MODE_WHERE_LOCAL) {
 			try {
-				Static405.method4628(Static144.aClient1, "tbrefresh");
+				Static405.method4628(client.instance, "tbrefresh");
 			} catch (@Pc(14) Throwable local14) {
 			}
 		}

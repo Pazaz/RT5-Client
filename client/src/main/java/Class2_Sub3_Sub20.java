@@ -54,21 +54,21 @@ public final class Class2_Sub3_Sub20 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!kt", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6484(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub4 arg1) {
+	public void method6484(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 != 0) {
 			return;
 		}
-		@Pc(10) int local10 = arg1.method4815();
+		@Pc(10) int local10 = arg1.g1();
 		if (local10 != 0) {
 			this.method3503(local10);
 			return;
 		}
-		this.anIntArrayArray26 = new int[arg1.method4815()][4];
+		this.anIntArrayArray26 = new int[arg1.g1()][4];
 		for (@Pc(21) int local21 = 0; local21 < this.anIntArrayArray26.length; local21++) {
 			this.anIntArrayArray26[local21][0] = arg1.method4829();
-			this.anIntArrayArray26[local21][1] = arg1.method4815() << 4;
-			this.anIntArrayArray26[local21][2] = arg1.method4815() << 4;
-			this.anIntArrayArray26[local21][3] = arg1.method4815() << 4;
+			this.anIntArrayArray26[local21][1] = arg1.g1() << 4;
+			this.anIntArrayArray26[local21][2] = arg1.g1() << 4;
+			this.anIntArrayArray26[local21][3] = arg1.g1() << 4;
 		}
 	}
 

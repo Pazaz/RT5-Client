@@ -96,8 +96,8 @@ public final class Static258 {
 				}
 				Static53.anInt3971 = Static88.anInt1876;
 				Static91.method1960(Static343.aClass145_231);
-				Static257.aClass2_Sub4_Sub2_4.method4842(Static27.method872(arg0));
-				Static257.aClass2_Sub4_Sub2_4.method4822(arg0);
+				Protocol.outboundBuffer.p1(Static27.method872(arg0));
+				Protocol.outboundBuffer.method4822(arg0);
 				break;
 			}
 		}

@@ -28,22 +28,22 @@ public final class Class239 {
 
 	@OriginalMember(owner = "client!vi", name = "<init>", descriptor = "([B)V")
 	public Class239(@OriginalArg(0) byte[] arg0) {
-		@Pc(8) Class2_Sub4 local8 = new Class2_Sub4(arg0);
-		@Pc(12) int local12 = local8.method4815();
+		@Pc(8) Buffer local8 = new Buffer(arg0);
+		@Pc(12) int local12 = local8.g1();
 		if (local12 != 0) {
 			throw new RuntimeException("");
 		}
-		@Pc(31) boolean local31 = local8.method4815() == 1;
+		@Pc(31) boolean local31 = local8.g1() == 1;
 		this.aByteArray98 = new byte[256];
 		local8.method4799(this.aByteArray98, 256);
 		if (local31) {
 			@Pc(47) int[] local47 = new int[256];
 			for (@Pc(49) int local49 = 0; local49 < 256; local49++) {
-				local47[local49] = local8.method4815();
+				local47[local49] = local8.g1();
 			}
 			@Pc(64) int[] local64 = new int[256];
 			for (@Pc(66) int local66 = 0; local66 < 256; local66++) {
-				local64[local66] = local8.method4815();
+				local64[local66] = local8.g1();
 			}
 			@Pc(81) byte[][] local81 = new byte[256][];
 			@Pc(96) int local96;
@@ -77,12 +77,12 @@ public final class Class239 {
 			}
 			this.anInt6841 = local64[32] + local47[32];
 		} else {
-			this.anInt6841 = local8.method4815();
+			this.anInt6841 = local8.g1();
 		}
-		local8.method4815();
-		local8.method4815();
-		this.anInt6836 = local8.method4815();
-		this.anInt6846 = local8.method4815();
+		local8.g1();
+		local8.g1();
+		this.anInt6836 = local8.g1();
+		this.anInt6846 = local8.g1();
 	}
 
 	@OriginalMember(owner = "client!vi", name = "a", descriptor = "(I[Ljava/lang/String;Ljava/lang/String;[I[Lclient!jd;)I")

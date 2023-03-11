@@ -32,9 +32,9 @@ public final class Class220 {
 	}
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method5661(@OriginalArg(0) Class2_Sub4 arg0) {
+	public void method5661(@OriginalArg(0) Buffer arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method4815();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}
@@ -43,12 +43,12 @@ public final class Class220 {
 	}
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void method5663(@OriginalArg(1) Class2_Sub4 arg0, @OriginalArg(2) int arg1) {
+	private void method5663(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.anInt6201 = arg0.method4829();
 		} else if (arg1 == 2) {
-			this.anInt6203 = arg0.method4815();
-			this.anInt6200 = arg0.method4815();
+			this.anInt6203 = arg0.g1();
+			this.anInt6200 = arg0.g1();
 		}
 	}
 }

@@ -31,15 +31,15 @@ public final class Static372 {
 		}
 		try {
 			@Pc(50) Container local50;
-			if (Static222.aFrame1 == null) {
-				local50 = Static328.aClass152_5.applet;
+			if (GameShell.frame == null) {
+				local50 = GameShell.signlink.applet;
 			} else {
-				local50 = Static222.aFrame1;
+				local50 = GameShell.frame;
 			}
 			@Pc(57) int local57 = 0;
 			@Pc(59) int local59 = 0;
-			if (local50 == Static222.aFrame1) {
-				@Pc(65) Insets local65 = Static222.aFrame1.getInsets();
+			if (local50 == GameShell.frame) {
+				@Pc(65) Insets local65 = GameShell.frame.getInsets();
 				local59 = local65.top;
 				local57 = local65.left;
 			}
@@ -79,7 +79,7 @@ public final class Static372 {
 	}
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(BLclient!bt;)Lclient!rm;")
-	public static Class173_Sub3 method6266(@OriginalArg(1) Class2_Sub4 arg0) {
-		return new Class173_Sub3(arg0.method4823(), arg0.method4823(), arg0.method4823(), arg0.method4823(), arg0.method4833(), arg0.method4833(), arg0.method4815());
+	public static Class173_Sub3 method6266(@OriginalArg(1) Buffer arg0) {
+		return new Class173_Sub3(arg0.method4823(), arg0.method4823(), arg0.method4823(), arg0.method4823(), arg0.method4833(), arg0.method4833(), arg0.g1());
 	}
 }

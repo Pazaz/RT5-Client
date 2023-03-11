@@ -69,24 +69,4 @@ public final class Static101 {
 		return local13 == null ? null : new Class239(local13);
 	}
 
-	@OriginalMember(owner = "client!fo", name = "a", descriptor = "(II)I")
-	public static int method2166(@OriginalArg(1) int arg0) {
-		if (Static335.aClass111_4 != null) {
-			Static335.aClass111_4.method2799();
-			Static335.aClass111_4 = null;
-		}
-		Static12.anInt270++;
-		if (Static12.anInt270 > 4) {
-			Static12.anInt270 = 0;
-			Static77.anInt1751 = 0;
-			return arg0;
-		}
-		Static77.anInt1751 = 0;
-		if (Static278.anInt5154 == Static392.anInt7225) {
-			Static278.anInt5154 = Static35.anInt920;
-		} else {
-			Static278.anInt5154 = Static392.anInt7225;
-		}
-		return -1;
-	}
 }

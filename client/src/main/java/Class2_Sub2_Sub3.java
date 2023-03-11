@@ -22,24 +22,24 @@ public final class Class2_Sub2_Sub3 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!ck", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void method1342(@OriginalArg(1) Class2_Sub4 arg0, @OriginalArg(2) int arg1) {
+	private void method1342(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 != 249) {
 			return;
 		}
-		@Pc(23) int local23 = arg0.method4815();
+		@Pc(23) int local23 = arg0.g1();
 		@Pc(30) int local30;
 		if (this.aClass4_20 == null) {
 			local30 = Static162.method2977(local23);
 			this.aClass4_20 = new Class4(local30);
 		}
 		for (local30 = 0; local30 < local23; local30++) {
-			@Pc(49) boolean local49 = arg0.method4815() == 1;
+			@Pc(49) boolean local49 = arg0.g1() == 1;
 			@Pc(53) int local53 = arg0.method4833();
 			@Pc(62) Class2 local62;
 			if (local49) {
 				local62 = new Class2_Sub40(arg0.method4809());
 			} else {
-				local62 = new Class2_Sub39(arg0.method4836());
+				local62 = new Class2_Sub39(arg0.g4());
 			}
 			this.aClass4_20.method87(local62, (long) local53);
 		}
@@ -56,9 +56,9 @@ public final class Class2_Sub2_Sub3 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!ck", name = "a", descriptor = "(Lclient!bt;B)V")
-	public void method1345(@OriginalArg(0) Class2_Sub4 arg0) {
+	public void method1345(@OriginalArg(0) Buffer arg0) {
 		while (true) {
-			@Pc(16) int local16 = arg0.method4815();
+			@Pc(16) int local16 = arg0.g1();
 			if (local16 == 0) {
 				return;
 			}

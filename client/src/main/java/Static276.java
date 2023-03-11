@@ -11,7 +11,7 @@ public final class Static276 {
 	public static final Class79 aClass79_109 = new Class79("Loading core fonts - ", "Lade Schriftarten - ", "Chargement des polices - ", "Carregando fontes principais - ");
 
 	@OriginalMember(owner = "client!pr", name = "G", descriptor = "Z")
-	public static boolean aBoolean375 = false;
+	public static boolean javaScript = false;
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(ILjava/lang/String;)I")
 	public static int method4651(@OriginalArg(1) String arg0) {

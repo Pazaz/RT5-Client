@@ -15,9 +15,9 @@ public final class Static99 {
 
 	@OriginalMember(owner = "client!fm", name = "i", descriptor = "(I)V")
 	public static void method2144() {
-		if (Static335.aClass111_4 != null) {
-			Static335.aClass111_4.method2799();
-			Static335.aClass111_4 = null;
+		if (Protocol.socket != null) {
+			Protocol.socket.close();
+			Protocol.socket = null;
 		}
 		Static211.method3721();
 		Static253.method4366();
@@ -54,7 +54,7 @@ public final class Static99 {
 		Static360.method5646();
 		Static50.method1525(true);
 		try {
-			Static405.method4628(Static328.aClass152_5.applet, "loggedout");
+			Static405.method4628(GameShell.signlink.applet, "loggedout");
 		} catch (@Pc(128) Throwable local128) {
 		}
 		Static375.aLong222 = 0L;

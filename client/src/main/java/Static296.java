@@ -57,7 +57,7 @@ public final class Static296 {
 		if (Static337.aClass131_1 != null) {
 			Static337.aClass131_1.method3691(Static21.aCanvas1);
 		}
-		Static144.aClient1.method1379();
+		client.instance.method1379();
 		Static21.aCanvas1.setBackground(Color.black);
 		Static29.anInt721 = -1;
 		Static174.aClass123_2 = Static18.method556(Static21.aCanvas1);

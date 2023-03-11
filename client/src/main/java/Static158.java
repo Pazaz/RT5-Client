@@ -10,9 +10,6 @@ public final class Static158 {
 	@OriginalMember(owner = "client!jc", name = "C", descriptor = "[[I")
 	public static final int[][] anIntArrayArray22 = new int[][] { { 0, 1, 2, 3 }, { 1, -1, -1, 0 }, { -1, 2, -1, 0 }, { -1, 0, -1, 2 }, { 0, 1, -1, 2 }, { 1, 2, -1, 0 }, { -1, 4, -1, 1 }, { -1, 3, 4, -1 }, { -1, 0, 2, -1 }, { -1, -1, 2, 0 }, { 0, 2, 5, 3 }, { 0, -1, 6, -1 }, { 0, 1, 2, 3 } };
 
-	@OriginalMember(owner = "client!jc", name = "S", descriptor = "Lclient!cc;")
-	public static PrivilegedRequest aClass32_7 = null;
-
 	@OriginalMember(owner = "client!jc", name = "T", descriptor = "Lclient!ij;")
 	public static final Class105 aClass105_1 = new Class105();
 
@@ -87,18 +84,4 @@ public final class Static158 {
 		Static330.aClass67ArrayArrayArray3[3][arg0][arg1] = null;
 	}
 
-	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(I[B)Z")
-	public static boolean method2944(@OriginalArg(1) byte[] arg0) {
-		@Pc(8) Class2_Sub4 local8 = new Class2_Sub4(arg0);
-		@Pc(12) int local12 = local8.method4815();
-		if (local12 != 1) {
-			return false;
-		}
-		@Pc(34) boolean local34 = local8.method4815() == 1;
-		if (local34) {
-			Static317.method5551(local8);
-		}
-		Static4.method76(local8);
-		return true;
-	}
 }

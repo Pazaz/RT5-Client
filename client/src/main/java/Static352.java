@@ -23,12 +23,12 @@ public final class Static352 {
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(IIIII)V")
 	public static void method5876(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		Static257.aClass2_Sub4_Sub2_4.anInt5300 = 0;
-		Static257.aClass2_Sub4_Sub2_4.method4842(Static43.aClass242_6.anInt7038);
-		Static257.aClass2_Sub4_Sub2_4.method4842(arg2);
-		Static257.aClass2_Sub4_Sub2_4.method4842(arg3);
-		Static257.aClass2_Sub4_Sub2_4.method4843(arg1);
-		Static257.aClass2_Sub4_Sub2_4.method4843(arg0);
+		Protocol.outboundBuffer.position = 0;
+		Protocol.outboundBuffer.p1(Static43.aClass242_6.anInt7038);
+		Protocol.outboundBuffer.p1(arg2);
+		Protocol.outboundBuffer.p1(arg3);
+		Protocol.outboundBuffer.method4843(arg1);
+		Protocol.outboundBuffer.method4843(arg0);
 		Static327.anInt6109 = 0;
 		Static66.anInt1625 = 0;
 		Static318.anInt5968 = -3;
@@ -41,16 +41,16 @@ public final class Static352 {
 			return;
 		}
 		@Pc(13) Container local13;
-		if (Static222.aFrame1 == null) {
-			local13 = Static328.aClass152_5.applet;
+		if (GameShell.frame == null) {
+			local13 = GameShell.signlink.applet;
 		} else {
-			local13 = Static222.aFrame1;
+			local13 = GameShell.frame;
 		}
 		Static142.anInt2663 = local13.getSize().width;
 		Static178.anInt2319 = local13.getSize().height;
 		@Pc(31) Insets local31;
-		if (local13 == Static222.aFrame1) {
-			local31 = Static222.aFrame1.getInsets();
+		if (local13 == GameShell.frame) {
+			local31 = GameShell.frame.getInsets();
 			Static178.anInt2319 -= local31.bottom + local31.top;
 			Static142.anInt2663 -= local31.right + local31.left;
 		}
@@ -72,7 +72,7 @@ public final class Static352 {
 			Static68.anInt1646 = 0;
 			Static84.anInt1842 = 0;
 		}
-		if (Static189.aClass127_6 != Static121.aClass127_4) {
+		if (client.MODE_WHERE_LIVE != client.modeWhere) {
 			@Pc(130) boolean local130;
 			if (Static250.anInt4665 < 1024 && Static172.anInt3299 < 768) {
 				local130 = true;
@@ -84,8 +84,8 @@ public final class Static352 {
 		if (Static190.aClass19_8 != null) {
 			Static190.aClass19_8.method2803();
 		}
-		if (local13 == Static222.aFrame1) {
-			local31 = Static222.aFrame1.getInsets();
+		if (local13 == GameShell.frame) {
+			local31 = GameShell.frame.getInsets();
 			Static21.aCanvas1.setLocation(Static84.anInt1842 + local31.left, local31.top - -Static68.anInt1646);
 		} else {
 			Static21.aCanvas1.setLocation(Static84.anInt1842, Static68.anInt1646);

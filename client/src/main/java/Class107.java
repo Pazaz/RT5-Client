@@ -107,7 +107,7 @@ public final class Class107 {
 		local18.aStringArray50 = new String[] { null, null, Static220.aClass79_83.method2267(this.anInt2781), null, null };
 		local18.aStringArray51 = new String[] { null, null, null, null, Static239.aClass79_95.method2267(this.anInt2781) };
 		if (local44 != null) {
-			local18.method4771(new Class2_Sub4(local44));
+			local18.method4771(new Buffer(local44));
 		}
 		local18.method4777();
 		if (local18.anInt5258 != -1) {

@@ -17,9 +17,4 @@ public final class Static19 {
 		Static82.anInt1837 = arg1;
 	}
 
-	@OriginalMember(owner = "client!bc", name = "a", descriptor = "(I)Lclient!ac;")
-	public static Class3_Sub1 method559() {
-		Static231.anInt4079 = 0;
-		return Static268.method4548();
-	}
 }

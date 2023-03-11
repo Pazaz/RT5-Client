@@ -567,9 +567,9 @@ public final class Class161 {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(ILclient!bt;)V")
-	public void method4106(@OriginalArg(1) Class2_Sub4 arg0) {
-		arg0.anInt5300++;
-		this.anInt4272 = arg0.method4815();
+	public void method4106(@OriginalArg(1) Buffer arg0) {
+		arg0.position++;
+		this.anInt4272 = arg0.g1();
 		if ((this.anInt4272 & 0x80) != 0) {
 			this.anInt4272 &= 0x7F;
 			this.aString43 = arg0.method4809();
@@ -589,25 +589,25 @@ public final class Class161 {
 		} else {
 			this.anInt4275 += this.anInt4317 & 0xFFFF0000;
 		}
-		this.aBoolean284 = arg0.method4815() == 1;
+		this.aBoolean284 = arg0.g1() == 1;
 		if (this.anInt4272 == 0) {
 			this.anInt4281 = arg0.method4829();
 			this.anInt4266 = arg0.method4829();
-			this.aBoolean295 = arg0.method4815() == 1;
+			this.aBoolean295 = arg0.g1() == 1;
 		}
 		@Pc(155) int local155;
 		if (this.anInt4272 == 5) {
-			this.anInt4295 = arg0.method4836();
+			this.anInt4295 = arg0.g4();
 			this.anInt4308 = arg0.method4829();
-			local155 = arg0.method4815();
+			local155 = arg0.g1();
 			this.aBoolean283 = (local155 & 0x2) != 0;
 			this.aBoolean286 = (local155 & 0x1) != 0;
-			this.anInt4311 = arg0.method4815();
-			this.anInt4279 = arg0.method4815();
-			this.anInt4252 = arg0.method4836();
-			this.aBoolean281 = arg0.method4815() == 1;
-			this.aBoolean285 = arg0.method4815() == 1;
-			this.anInt4290 = arg0.method4836();
+			this.anInt4311 = arg0.g1();
+			this.anInt4279 = arg0.g1();
+			this.anInt4252 = arg0.g4();
+			this.aBoolean281 = arg0.g1() == 1;
+			this.aBoolean285 = arg0.g1() == 1;
+			this.anInt4290 = arg0.g4();
 		}
 		if (this.anInt4272 == 6) {
 			this.anInt4288 = 1;
@@ -625,10 +625,10 @@ public final class Class161 {
 			if (this.anInt4299 == 65535) {
 				this.anInt4299 = -1;
 			}
-			this.aBoolean290 = arg0.method4815() == 1;
+			this.aBoolean290 = arg0.g1() == 1;
 			this.aShort62 = (short) arg0.method4829();
 			this.aShort61 = (short) arg0.method4829();
-			this.aBoolean289 = arg0.method4815() == 1;
+			this.aBoolean289 = arg0.g1() == 1;
 			if (this.aByte47 != 0) {
 				this.anInt4251 = arg0.method4829();
 			}
@@ -642,24 +642,24 @@ public final class Class161 {
 				this.anInt4318 = -1;
 			}
 			this.aString47 = arg0.method4809();
-			this.anInt4303 = arg0.method4815();
-			this.anInt4298 = arg0.method4815();
-			this.anInt4293 = arg0.method4815();
-			this.aBoolean291 = arg0.method4815() == 1;
-			this.anInt4290 = arg0.method4836();
+			this.anInt4303 = arg0.g1();
+			this.anInt4298 = arg0.g1();
+			this.anInt4293 = arg0.g1();
+			this.aBoolean291 = arg0.g1() == 1;
+			this.anInt4290 = arg0.g4();
 		}
 		if (this.anInt4272 == 3) {
-			this.anInt4290 = arg0.method4836();
-			this.aBoolean293 = arg0.method4815() == 1;
-			this.anInt4311 = arg0.method4815();
+			this.anInt4290 = arg0.g4();
+			this.aBoolean293 = arg0.g1() == 1;
+			this.anInt4311 = arg0.g1();
 		}
 		if (this.anInt4272 == 9) {
-			this.anInt4237 = arg0.method4815();
-			this.anInt4290 = arg0.method4836();
-			this.aBoolean292 = arg0.method4815() == 1;
+			this.anInt4237 = arg0.g1();
+			this.anInt4290 = arg0.g4();
+			this.aBoolean292 = arg0.g1() == 1;
 		}
 		local155 = arg0.method4833();
-		@Pc(449) int local449 = arg0.method4815();
+		@Pc(449) int local449 = arg0.g1();
 		@Pc(474) int local474;
 		if (local449 != 0) {
 			this.aByteArray49 = new byte[10];
@@ -667,7 +667,7 @@ public final class Class161 {
 			this.aByteArray50 = new byte[10];
 			while (local449 != 0) {
 				local474 = (local449 >> 4) - 1;
-				local449 = local449 << 8 | arg0.method4815();
+				local449 = local449 << 8 | arg0.g1();
 				local449 &= 0xFFF;
 				if (local449 == 4095) {
 					this.anIntArray276[local474] = -1;
@@ -679,11 +679,11 @@ public final class Class161 {
 					this.aBoolean282 = true;
 				}
 				this.aByteArray50[local474] = arg0.method4825();
-				local449 = arg0.method4815();
+				local449 = arg0.g1();
 			}
 		}
 		this.aString45 = arg0.method4809();
-		local474 = arg0.method4815();
+		local474 = arg0.g1();
 		@Pc(545) int local545 = local474 & 0xF;
 		@Pc(556) int local556;
 		if (local545 > 0) {
@@ -694,7 +694,7 @@ public final class Class161 {
 		}
 		@Pc(577) int local577 = local474 >> 4;
 		if (local577 > 0) {
-			local556 = arg0.method4815();
+			local556 = arg0.g1();
 			this.anIntArray279 = new int[local556 + 1];
 			for (@Pc(594) int local594 = 0; local594 < this.anIntArray279.length; local594++) {
 				this.anIntArray279[local594] = -1;
@@ -702,16 +702,16 @@ public final class Class161 {
 			this.anIntArray279[local556] = arg0.method4829();
 		}
 		if (local577 > 1) {
-			local556 = arg0.method4815();
+			local556 = arg0.g1();
 			this.anIntArray279[local556] = arg0.method4829();
 		}
 		this.aString46 = arg0.method4809();
 		if (this.aString46.equals("")) {
 			this.aString46 = null;
 		}
-		this.anInt4239 = arg0.method4815();
-		this.anInt4271 = arg0.method4815();
-		this.anInt4285 = arg0.method4815();
+		this.anInt4239 = arg0.g1();
+		this.anInt4271 = arg0.g1();
+		this.anInt4285 = arg0.g1();
 		this.aString44 = arg0.method4809();
 		local556 = -1;
 		if (Static13.method346(local155) != 0) {
@@ -757,16 +757,16 @@ public final class Class161 {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "b", descriptor = "(ILclient!bt;)[Ljava/lang/Object;")
-	private Object[] method4107(@OriginalArg(1) Class2_Sub4 arg0) {
-		@Pc(9) int local9 = arg0.method4815();
+	private Object[] method4107(@OriginalArg(1) Buffer arg0) {
+		@Pc(9) int local9 = arg0.g1();
 		if (local9 == 0) {
 			return null;
 		}
 		@Pc(19) Object[] local19 = new Object[local9];
 		for (@Pc(28) int local28 = 0; local28 < local9; local28++) {
-			@Pc(34) int local34 = arg0.method4815();
+			@Pc(34) int local34 = arg0.g1();
 			if (local34 == 0) {
-				local19[local28] = Integer.valueOf(arg0.method4836());
+				local19[local28] = Integer.valueOf(arg0.g4());
 			} else if (local34 == 1) {
 				local19[local28] = arg0.method4809();
 			}
@@ -776,14 +776,14 @@ public final class Class161 {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(BLclient!bt;)[I")
-	private int[] method4108(@OriginalArg(1) Class2_Sub4 arg0) {
-		@Pc(9) int local9 = arg0.method4815();
+	private int[] method4108(@OriginalArg(1) Buffer arg0) {
+		@Pc(9) int local9 = arg0.g1();
 		if (local9 == 0) {
 			return null;
 		}
 		@Pc(27) int[] local27 = new int[local9];
 		for (@Pc(29) int local29 = 0; local29 < local9; local29++) {
-			local27[local29] = arg0.method4836();
+			local27[local29] = arg0.g4();
 		}
 		return local27;
 	}

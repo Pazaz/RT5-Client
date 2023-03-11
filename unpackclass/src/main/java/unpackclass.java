@@ -11,52 +11,52 @@ public final class unpackclass extends unpack {
 	private int[] anIntArray549 = new int[] { 0, 3, 0, 5, 5, 9, 9, 3, 3, 5, 5, 5, 5 };
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "b", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_1 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_1 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "c", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_2 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_2 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "d", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_3 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_3 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "e", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_4 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_4 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "f", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_5 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_5 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "g", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_6 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_6 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "h", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_7 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_7 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "i", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_8 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_8 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "j", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_9 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_9 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "k", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_10 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_10 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "l", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_11 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_11 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "m", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_12 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_12 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "n", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_13 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_13 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "o", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_14 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_14 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "p", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_15 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_15 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "q", descriptor = "Lunpackclass!e;")
-	private Buffer aClass264_Sub1_16 = new Buffer(null);
+	private SimpleBuffer aClass264_Sub1_16 = new SimpleBuffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "I", descriptor = "Lunpackclass!f;")
 	private LinkedList aClass265_1 = new LinkedList();
@@ -119,17 +119,17 @@ public final class unpackclass extends unpack {
 	private final ConstantPoolEntry aClass264_Sub2_11;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "(Lunpackclass!e;[Lunpackclass!s;)Lunpackclass!s;")
-	private static ConstantPoolEntry method6621(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
+	private static ConstantPoolEntry method6621(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		return arg1[arg0.method6586()];
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "b", descriptor = "(Lunpackclass!e;[Lunpackclass!s;)Lunpackclass!s;")
-	private static ConstantPoolEntry method6622(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
+	private static ConstantPoolEntry method6622(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		return arg1[arg0.method6586()];
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "d", descriptor = "(Lunpackclass!e;[Lunpackclass!s;)Lunpackclass!s;")
-	private static ConstantPoolEntry method6625(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
+	private static ConstantPoolEntry method6625(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		return arg1[arg0.method6586()];
 	}
 
@@ -289,14 +289,14 @@ public final class unpackclass extends unpack {
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "c", descriptor = "(Lunpackclass!e;[Lunpackclass!s;)Lunpackclass!s;")
-	private ConstantPoolEntry method6623(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
+	private ConstantPoolEntry method6623(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		@Pc(4) ConstantPoolEntry local4 = arg1[arg0.method6586()];
 		this.method6620(local4);
 		return local4;
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "(Lunpackclass!e;[Lunpackclass!s;I)Lunpackclass!s;")
-	private ConstantPoolEntry method6624(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
+	private ConstantPoolEntry method6624(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		@Pc(2) int local2 = arg0.method6586();
 		@Pc(6) ConstantPoolEntry local6 = arg1[local2];
 		if (local6 == null) {
@@ -309,7 +309,7 @@ public final class unpackclass extends unpack {
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "b", descriptor = "(Lunpackclass!e;[Lunpackclass!s;I)Lunpackclass!s;")
-	private ConstantPoolEntry method6626(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1, @OriginalArg(2) int arg2) {
+	private ConstantPoolEntry method6626(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1, @OriginalArg(2) int arg2) {
 		@Pc(2) int local2 = arg0.method6586();
 		@Pc(6) ConstantPoolEntry local6 = arg1[local2];
 		if (local6 == null) {
@@ -966,7 +966,7 @@ public final class unpackclass extends unpack {
 		local1102 += local13.length * 2;
 		local1102 += this.method6638(local16);
 		local1102 += this.method6638(local19);
-		@Pc(1916) Buffer local1916 = new Buffer(local1102);
+		@Pc(1916) SimpleBuffer local1916 = new SimpleBuffer(local1102);
 		local1916.method6582(-889275714);
 		local1916.method6581(local690);
 		local1916.method6581(local694);

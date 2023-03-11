@@ -37,18 +37,18 @@ public final class Class2_Sub26_Sub1 extends Class2_Sub26 {
 	private int anInt4386;
 
 	@OriginalMember(owner = "client!nn", name = "<init>", descriptor = "(Lclient!bt;)V")
-	public Class2_Sub26_Sub1(@OriginalArg(0) Class2_Sub4 arg0) {
+	public Class2_Sub26_Sub1(@OriginalArg(0) Buffer arg0) {
 		if (Static202.anIntArray220 == null) {
 			Static241.method4194();
 		}
-		this.anInt4380 = arg0.method4815();
+		this.anInt4380 = arg0.g1();
 		this.aBoolean301 = (this.anInt4380 & 0x8) != 0;
 		this.aBoolean300 = (this.anInt4380 & 0x10) != 0;
 		this.anInt4380 &= 0x7;
 		super.anInt4370 = arg0.method4829();
 		super.anInt4371 = arg0.method4829();
 		super.anInt4368 = arg0.method4829();
-		super.anInt4374 = arg0.method4815();
+		super.anInt4374 = arg0.g1();
 		@Pc(65) int local65 = super.anInt4374 * 2 + 1;
 		this.aShortArray92 = new short[local65];
 		for (@Pc(71) int local71 = 0; local71 < this.aShortArray92.length; local71++) {
@@ -69,7 +69,7 @@ public final class Class2_Sub26_Sub1 extends Class2_Sub26 {
 		} else {
 			super.anInt4372 = Static59.anIntArray107[arg0.method4829()];
 		}
-		@Pc(158) int local158 = arg0.method4815();
+		@Pc(158) int local158 = arg0.g1();
 		this.anInt4385 = (local158 & 0xE0) << 3;
 		this.anInt4376 = local158 & 0x1F;
 		if (this.anInt4376 != 31) {

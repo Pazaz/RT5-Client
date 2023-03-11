@@ -29,8 +29,8 @@ public final class Class2_Sub2_Sub14 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!qm", name = "<init>", descriptor = "(Lclient!bt;)V")
-	public Class2_Sub2_Sub14(@OriginalArg(0) Class2_Sub4 arg0) {
-		@Pc(7) int local7 = arg0.method4815();
+	public Class2_Sub2_Sub14(@OriginalArg(0) Buffer arg0) {
+		@Pc(7) int local7 = arg0.g1();
 		@Pc(9) int local9 = 0;
 		@Pc(11) int local11 = 0;
 		@Pc(14) int[][] local14 = new int[local7][];
@@ -47,7 +47,7 @@ public final class Class2_Sub2_Sub14 extends Class2_Sub2 {
 			@Pc(43) int local43 = local26.aClass2_Sub3Array42.length;
 			local14[local20] = new int[local43];
 			for (local50 = 0; local50 < local43; local50++) {
-				local14[local20][local50] = arg0.method4815();
+				local14[local20][local50] = arg0.g1();
 			}
 			this.aClass2_Sub3Array30[local20] = local26;
 		}
@@ -71,9 +71,9 @@ public final class Class2_Sub2_Sub14 extends Class2_Sub2 {
 			}
 			local14[local95] = null;
 		}
-		this.aClass2_Sub3_3 = this.aClass2_Sub3Array30[arg0.method4815()];
-		this.aClass2_Sub3_1 = this.aClass2_Sub3Array30[arg0.method4815()];
-		this.aClass2_Sub3_2 = this.aClass2_Sub3Array30[arg0.method4815()];
+		this.aClass2_Sub3_3 = this.aClass2_Sub3Array30[arg0.g1()];
+		this.aClass2_Sub3_1 = this.aClass2_Sub3Array30[arg0.g1()];
+		this.aClass2_Sub3_2 = this.aClass2_Sub3Array30[arg0.g1()];
 	}
 
 	@OriginalMember(owner = "client!qm", name = "a", descriptor = "(ZLclient!r;Lclient!ci;ZII)[F")

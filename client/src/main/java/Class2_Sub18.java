@@ -27,27 +27,27 @@ public final class Class2_Sub18 extends Class2 {
 	@OriginalMember(owner = "client!ib", name = "<init>", descriptor = "(I[B)V")
 	public Class2_Sub18(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1) {
 		this.anInt2677 = arg0;
-		@Pc(11) Class2_Sub4 local11 = new Class2_Sub4(arg1);
-		this.anInt2679 = local11.method4815();
+		@Pc(11) Buffer local11 = new Buffer(arg1);
+		this.anInt2679 = local11.g1();
 		this.anIntArray169 = new int[this.anInt2679];
 		this.aBooleanArray25 = new boolean[this.anInt2679];
 		this.anIntArrayArray21 = new int[this.anInt2679][];
 		this.anIntArray168 = new int[this.anInt2679];
 		for (@Pc(38) int local38 = 0; local38 < this.anInt2679; local38++) {
-			this.anIntArray168[local38] = local11.method4815();
+			this.anIntArray168[local38] = local11.g1();
 		}
 		for (@Pc(58) int local58 = 0; local58 < this.anInt2679; local58++) {
-			this.aBooleanArray25[local58] = local11.method4815() == 1;
+			this.aBooleanArray25[local58] = local11.g1() == 1;
 		}
 		for (@Pc(85) int local85 = 0; local85 < this.anInt2679; local85++) {
 			this.anIntArray169[local85] = local11.method4829();
 		}
 		for (@Pc(101) int local101 = 0; local101 < this.anInt2679; local101++) {
-			this.anIntArrayArray21[local101] = new int[local11.method4815()];
+			this.anIntArrayArray21[local101] = new int[local11.g1()];
 		}
 		for (@Pc(118) int local118 = 0; local118 < this.anInt2679; local118++) {
 			for (@Pc(122) int local122 = 0; local122 < this.anIntArrayArray21[local118].length; local122++) {
-				this.anIntArrayArray21[local118][local122] = local11.method4815();
+				this.anIntArrayArray21[local118][local122] = local11.g1();
 			}
 		}
 	}

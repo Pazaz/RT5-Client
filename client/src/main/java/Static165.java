@@ -16,9 +16,6 @@ public final class Static165 {
 	@OriginalMember(owner = "client!jm", name = "k", descriptor = "I")
 	public static int anInt3148 = 0;
 
-	@OriginalMember(owner = "client!jm", name = "l", descriptor = "I")
-	public static int anInt3149 = 0;
-
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(IBLclient!hb;)Lclient!bi;")
 	public static Class22 method3149(@OriginalArg(0) int arg0, @OriginalArg(2) Class11_Sub5 arg1) {
 		@Pc(9) Class22 local9;
@@ -111,7 +108,7 @@ public final class Static165 {
 		}
 		@Pc(41) String local41;
 		if (Static330.aBoolean419 && Static268.anInt4959 < 2) {
-			local41 = Static91.aString18 + Static161.aClass79_67.method2267(Static295.anInt5581) + Static371.aString68 + " ->";
+			local41 = Static91.aString18 + Static161.aClass79_67.method2267(client.language) + Static371.aString68 + " ->";
 		} else if (Static148.aBoolean192 && Static174.aClass123_2.method3343(81) && Static268.anInt4959 > 2) {
 			local41 = Static318.method5421((Class2_Sub5) Static129.aClass135_19.aClass2_130.aClass2_244.aClass2_244);
 		} else {
@@ -152,7 +149,7 @@ public final class Static165 {
 			}
 		}
 		if (Static268.anInt4959 > 2) {
-			local41 = local41 + "<col=ffffff> / " + (Static268.anInt4959 - 2) + Static328.aClass79_127.method2267(Static295.anInt5581);
+			local41 = local41 + "<col=ffffff> / " + (Static268.anInt4959 - 2) + Static328.aClass79_127.method2267(client.language);
 		}
 		if (Static164.aClass161_5 != null) {
 			@Pc(218) Class130 local218 = Static164.aClass161_5.method4101(arg0);
@@ -161,7 +158,7 @@ public final class Static165 {
 			}
 			local218.method5903(Static129.anInt2460, local41, Static288.anInt5464, Static61.aRandom1, Static164.aClass161_5.anInt4293, Static210.anIntArray229, Static164.aClass161_5.anInt4252, Static164.aClass161_5.anInt4248, Static164.aClass161_5.anInt4290, Static283.anInt5352, Static134.aClass13Array12, Static164.aClass161_5.anInt4261, Static164.aClass161_5.anInt4298, Static72.anIntArray114);
 			Static369.method6221(Static210.anIntArray229[2], Static210.anIntArray229[0], Static210.anIntArray229[3], Static210.anIntArray229[1]);
-		} else if (Static179.aClass161_6 != null && Static249.aClass50_3 == Static343.aClass50_4) {
+		} else if (Static179.aClass161_6 != null && client.GAME_RS == client.game) {
 			@Pc(287) int local287 = Static52.aClass130_1.method5899(Static290.anInt5498 + 4, Static283.anInt5352, Static134.aClass13Array12, Static61.aRandom1, Static63.anInt1549 + 16, Static72.anIntArray114, local41);
 			Static369.method6221(Static113.aClass239_2.method6126(local41) + local287, Static290.anInt5498 + 4, 16, Static63.anInt1549);
 		}

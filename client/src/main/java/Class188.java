@@ -191,7 +191,7 @@ public final class Class188 {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void method4768(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub4 arg1) {
+	private void method4768(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 1) {
 			this.anInt5237 = arg1.method4829();
 		} else if (arg0 == 2) {
@@ -215,7 +215,7 @@ public final class Class188 {
 		} else if (arg0 == 11) {
 			this.anInt5247 = 1;
 		} else if (arg0 == 12) {
-			this.anInt5220 = arg1.method4836();
+			this.anInt5220 = arg1.g4();
 		} else if (arg0 == 16) {
 			this.aBoolean382 = true;
 		} else if (arg0 == 23) {
@@ -234,7 +234,7 @@ public final class Class188 {
 			@Pc(162) int local162;
 			@Pc(172) int local172;
 			if (arg0 == 40) {
-				local162 = arg1.method4815();
+				local162 = arg1.g1();
 				this.aShortArray112 = new short[local162];
 				this.aShortArray113 = new short[local162];
 				for (local172 = 0; local172 < local162; local172++) {
@@ -242,7 +242,7 @@ public final class Class188 {
 					this.aShortArray112[local172] = (short) arg1.method4829();
 				}
 			} else if (arg0 == 41) {
-				local162 = arg1.method4815();
+				local162 = arg1.g1();
 				this.aShortArray110 = new short[local162];
 				this.aShortArray111 = new short[local162];
 				for (local172 = 0; local172 < local162; local172++) {
@@ -250,7 +250,7 @@ public final class Class188 {
 					this.aShortArray110[local172] = (short) arg1.method4829();
 				}
 			} else if (arg0 == 42) {
-				local162 = arg1.method4815();
+				local162 = arg1.g1();
 				this.aByteArray72 = new byte[local162];
 				for (local172 = 0; local172 < local162; local172++) {
 					this.aByteArray72[local172] = arg1.method4825();
@@ -272,7 +272,7 @@ public final class Class188 {
 			} else if (arg0 == 95) {
 				this.anInt5249 = arg1.method4829();
 			} else if (arg0 == 96) {
-				this.anInt5214 = arg1.method4815();
+				this.anInt5214 = arg1.g1();
 			} else if (arg0 == 97) {
 				this.anInt5202 = arg1.method4829();
 			} else if (arg0 == 98) {
@@ -295,7 +295,7 @@ public final class Class188 {
 			} else if (arg0 == 114) {
 				this.anInt5199 = arg1.method4825() * 5;
 			} else if (arg0 == 115) {
-				this.anInt5257 = arg1.method4815();
+				this.anInt5257 = arg1.g1();
 			} else if (arg0 == 121) {
 				this.anInt5246 = arg1.method4829();
 			} else if (arg0 == 122) {
@@ -309,37 +309,37 @@ public final class Class188 {
 				this.anInt5231 = arg1.method4825();
 				this.anInt5254 = arg1.method4825();
 			} else if (arg0 == 127) {
-				this.anInt5216 = arg1.method4815();
+				this.anInt5216 = arg1.g1();
 				this.anInt5238 = arg1.method4829();
 			} else if (arg0 == 128) {
-				this.anInt5218 = arg1.method4815();
+				this.anInt5218 = arg1.g1();
 				this.anInt5225 = arg1.method4829();
 			} else if (arg0 == 129) {
-				this.anInt5244 = arg1.method4815();
+				this.anInt5244 = arg1.g1();
 				this.anInt5204 = arg1.method4829();
 			} else if (arg0 == 130) {
-				this.anInt5221 = arg1.method4815();
+				this.anInt5221 = arg1.g1();
 				this.anInt5240 = arg1.method4829();
 			} else if (arg0 == 132) {
-				local162 = arg1.method4815();
+				local162 = arg1.g1();
 				this.anIntArray364 = new int[local162];
 				for (local172 = 0; local172 < local162; local172++) {
 					this.anIntArray364[local172] = arg1.method4829();
 				}
 			} else if (arg0 == 249) {
-				local162 = arg1.method4815();
+				local162 = arg1.g1();
 				if (this.aClass4_103 == null) {
 					local172 = Static162.method2977(local162);
 					this.aClass4_103 = new Class4(local172);
 				}
 				for (local172 = 0; local172 < local162; local172++) {
-					@Pc(503) boolean local503 = arg1.method4815() == 1;
+					@Pc(503) boolean local503 = arg1.g1() == 1;
 					@Pc(507) int local507 = arg1.method4833();
 					@Pc(516) Class2 local516;
 					if (local503) {
 						local516 = new Class2_Sub40(arg1.method4809());
 					} else {
-						local516 = new Class2_Sub39(arg1.method4836());
+						local516 = new Class2_Sub39(arg1.g4());
 					}
 					this.aClass4_103.method87(local516, (long) local507);
 				}
@@ -374,9 +374,9 @@ public final class Class188 {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(ZLclient!bt;)V")
-	public void method4771(@OriginalArg(1) Class2_Sub4 arg0) {
+	public void method4771(@OriginalArg(1) Buffer arg0) {
 		while (true) {
-			@Pc(11) int local11 = arg0.method4815();
+			@Pc(11) int local11 = arg0.g1();
 			if (local11 == 0) {
 				return;
 			}

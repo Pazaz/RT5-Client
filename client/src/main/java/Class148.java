@@ -62,11 +62,11 @@ public final class Class148 {
 	}
 
 	@OriginalMember(owner = "client!mg", name = "a", descriptor = "(ILclient!bt;Z)V")
-	private void method3715(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub4 arg1) {
+	private void method3715(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 1) {
 			this.anInt3769 = Static97.method2101(arg1.method4833());
 		} else if (arg0 == 2) {
-			this.anInt3762 = arg1.method4815();
+			this.anInt3762 = arg1.g1();
 		} else if (arg0 == 3) {
 			this.anInt3762 = arg1.method4829();
 			if (this.anInt3762 == 65535) {
@@ -88,7 +88,7 @@ public final class Class148 {
 			this.aBoolean246 = false;
 			return;
 		} else if (arg0 == 11) {
-			this.anInt3772 = arg1.method4815();
+			this.anInt3772 = arg1.g1();
 			return;
 		} else if (arg0 == 12) {
 			this.aBoolean245 = true;
@@ -98,7 +98,7 @@ public final class Class148 {
 			return;
 		} else {
 			if (arg0 == 14) {
-				this.anInt3766 = arg1.method4815();
+				this.anInt3766 = arg1.g1();
 			} else if (arg0 == 15) {
 				this.anInt3759 = arg1.method4829();
 				if (this.anInt3759 == 65535) {
@@ -106,7 +106,7 @@ public final class Class148 {
 					return;
 				}
 			} else if (arg0 == 16) {
-				this.anInt3764 = arg1.method4815();
+				this.anInt3764 = arg1.g1();
 				return;
 			} else {
 				return;
@@ -124,9 +124,9 @@ public final class Class148 {
 	}
 
 	@OriginalMember(owner = "client!mg", name = "a", descriptor = "(ILclient!bt;)V")
-	public void method3718(@OriginalArg(1) Class2_Sub4 arg0) {
+	public void method3718(@OriginalArg(1) Buffer arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method4815();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}

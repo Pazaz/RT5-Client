@@ -6,9 +6,6 @@ public final class Static249 {
 	@OriginalMember(owner = "client!of", name = "A", descriptor = "Lclient!je;")
 	public static Class113 aClass113_8;
 
-	@OriginalMember(owner = "client!of", name = "u", descriptor = "Lclient!dn;")
-	public static final Class50 aClass50_3 = new Class50("runescape", 0);
-
 	@OriginalMember(owner = "client!of", name = "a", descriptor = "(II)V")
 	public static void method4149(@OriginalArg(0) int arg0) {
 		if (Static305.anIntArray386 == null || arg0 > Static305.anIntArray386.length) {

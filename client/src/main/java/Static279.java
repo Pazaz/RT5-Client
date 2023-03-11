@@ -7,9 +7,6 @@ public final class Static279 {
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_111 = new Class79("Loading title screen - ", "Lade Titelbild - ", "Chargement de l'écran-titre - ", "Carregando tela título - ");
 
-	@OriginalMember(owner = "client!qc", name = "e", descriptor = "Lclient!ha;")
-	public static Class2_Sub16 aClass2_Sub16_1 = null;
-
 	@OriginalMember(owner = "client!qc", name = "f", descriptor = "I")
 	public static int anInt5161 = 13156520;
 

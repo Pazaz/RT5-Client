@@ -10,9 +10,6 @@ public final class Static177 {
 	@OriginalMember(owner = "client!ke", name = "F", descriptor = "[S")
 	public static short[] aShortArray56;
 
-	@OriginalMember(owner = "client!ke", name = "t", descriptor = "I")
-	public static int anInt3372 = 1;
-
 	@OriginalMember(owner = "client!ke", name = "y", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_141 = new Class89(68, 4);
 
@@ -30,7 +27,7 @@ public final class Static177 {
 		for (@Pc(21) int local21 = 0; local21 < local19; local21++) {
 			@Pc(27) byte[] local27 = arg1[local21];
 			if (local27 != null) {
-				@Pc(34) Class2_Sub4 local34 = new Class2_Sub4(local27);
+				@Pc(34) Buffer local34 = new Buffer(local27);
 				local40 = Static291.anIntArray372[local21] >> 8;
 				@Pc(46) int local46 = Static291.anIntArray372[local21] & 0xFF;
 				@Pc(53) int local53 = local40 * 64 - Static164.anInt3140;

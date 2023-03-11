@@ -150,7 +150,7 @@ public final class Class197 {
 				local128 = Static155.method2787(false, this.anObjectArray35[arg1]);
 			} else {
 				local128 = Static155.method2787(true, this.anObjectArray35[arg1]);
-				@Pc(133) Class2_Sub4 local133 = new Class2_Sub4(local128);
+				@Pc(133) Buffer local133 = new Buffer(local128);
 				local133.method4821(arg2, local133.aByteArray73.length);
 			}
 			@Pc(157) byte[] local157;
@@ -165,7 +165,7 @@ public final class Class197 {
 			@Pc(232) int local232;
 			if (local25 > 1) {
 				@Pc(239) int local239;
-				@Pc(252) Class2_Sub4 local252;
+				@Pc(252) Buffer local252;
 				@Pc(260) int local260;
 				@Pc(264) int local264;
 				@Pc(266) int local266;
@@ -178,14 +178,14 @@ public final class Class197 {
 					local232--;
 					local239 = local157[local232] & 0xFF;
 					local232 -= local239 * local25 * 4;
-					local252 = new Class2_Sub4(local157);
+					local252 = new Buffer(local157);
 					@Pc(437) int local437 = 0;
-					local252.anInt5300 = local232;
+					local252.position = local232;
 					local260 = 0;
 					for (local264 = 0; local264 < local239; local264++) {
 						local266 = 0;
 						for (local320 = 0; local320 < local25; local320++) {
-							local266 += local252.method4836();
+							local266 += local252.g4();
 							if (local31 == null) {
 								local322 = local320;
 							} else {
@@ -201,13 +201,13 @@ public final class Class197 {
 						return true;
 					}
 					@Pc(496) byte[] local496 = new byte[local437];
-					local252.anInt5300 = local232;
+					local252.position = local232;
 					local437 = 0;
 					local320 = 0;
 					for (local322 = 0; local322 < local239; local322++) {
 						local326 = 0;
 						for (local328 = 0; local328 < local25; local328++) {
-							local326 += local252.method4836();
+							local326 += local252.g4();
 							@Pc(523) int local523;
 							if (local31 == null) {
 								local523 = local328;
@@ -227,13 +227,13 @@ public final class Class197 {
 					@Pc(235) int local235 = local232 - 1;
 					local239 = local157[local235] & 0xFF;
 					@Pc(247) int local247 = local235 - local239 * local25 * 4;
-					local252 = new Class2_Sub4(local157);
+					local252 = new Buffer(local157);
 					@Pc(255) int[] local255 = new int[local25];
-					local252.anInt5300 = local247;
+					local252.position = local247;
 					for (local260 = 0; local260 < local239; local260++) {
 						local264 = 0;
 						for (local266 = 0; local266 < local25; local266++) {
-							local264 += local252.method4836();
+							local264 += local252.g4();
 							local255[local266] += local264;
 						}
 					}
@@ -242,12 +242,12 @@ public final class Class197 {
 						local296[local266] = new byte[local255[local266]];
 						local255[local266] = 0;
 					}
-					local252.anInt5300 = local247;
+					local252.position = local247;
 					local320 = 0;
 					for (local322 = 0; local322 < local239; local322++) {
 						local326 = 0;
 						for (local328 = 0; local328 < local25; local328++) {
-							local326 += local252.method4836();
+							local326 += local252.g4();
 							Static404.method4607(local157, local320, local296[local328], local255[local328], local326);
 							local320 += local326;
 							local255[local328] += local326;

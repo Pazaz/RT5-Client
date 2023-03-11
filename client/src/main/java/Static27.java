@@ -37,7 +37,7 @@ public final class Static27 {
 	}
 
 	@OriginalMember(owner = "client!bk", name = "a", descriptor = "(Lclient!bt;B)V")
-	public static void method875(@OriginalArg(0) Class2_Sub4 arg0) {
+	public static void method875(@OriginalArg(0) Buffer arg0) {
 		@Pc(8) byte[] local8 = new byte[24];
 		if (Static317.aClass205_6 != null) {
 			@Pc(20) int local20;

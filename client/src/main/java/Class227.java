@@ -61,7 +61,7 @@ public final class Class227 {
 		if (local25 <= 0) {
 			this.aClass8_Sub1_5 = null;
 		} else {
-			@Pc(91) Class2_Sub4 local91 = new Class2_Sub4(local25 * 2);
+			@Pc(91) Buffer local91 = new Buffer(local25 * 2);
 			@Pc(126) short[] local126;
 			@Pc(131) int local131;
 			@Pc(117) int local117;
@@ -90,7 +90,7 @@ public final class Class227 {
 					}
 				}
 			}
-			this.anInterface4_5 = this.aClass19_Sub1_36.method839(local91.aByteArray73, local91.anInt5300, false);
+			this.anInterface4_5 = this.aClass19_Sub1_36.method839(local91.aByteArray73, local91.position, false);
 			this.aClass180_Sub2_2 = new Class180_Sub2(this.aClass19_Sub1_36, 5123, null, 1);
 		}
 	}

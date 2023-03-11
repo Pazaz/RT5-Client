@@ -81,13 +81,13 @@ public final class Class2_Sub3_Sub15 extends Class2_Sub3 {
 
 	@OriginalMember(owner = "client!i", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void method6484(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub4 arg1) {
+	public void method6484(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
 			this.anInt2649 = arg1.method4829();
 		} else if (arg0 == 1) {
 			this.anInt2646 = arg1.method4829();
 		} else if (arg0 == 2) {
-			super.aBoolean487 = arg1.method4815() == 1;
+			super.aBoolean487 = arg1.g1() == 1;
 		}
 	}
 }

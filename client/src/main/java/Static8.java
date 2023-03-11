@@ -6,7 +6,7 @@ public final class Static8 {
 	public static int anInt184;
 
 	@OriginalMember(owner = "client!ah", name = "o", descriptor = "Lclient!bt;")
-	public static Class2_Sub4 aClass2_Sub4_1 = new Class2_Sub4(1);
+	public static Buffer aClass2_Sub4_1 = new Buffer(1);
 
 	@OriginalMember(owner = "client!ah", name = "D", descriptor = "[I")
 	public static int[] anIntArray9 = new int[1];

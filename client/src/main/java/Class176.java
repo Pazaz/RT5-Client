@@ -19,8 +19,8 @@ public final class Class176 {
 	private final int[][][] anIntArrayArrayArray11 = new int[2][2][4];
 
 	@OriginalMember(owner = "client!pc", name = "a", descriptor = "(Lclient!bt;Lclient!uf;)V")
-	public void method4468(@OriginalArg(0) Class2_Sub4 arg0, @OriginalArg(1) Class232 arg1) {
-		@Pc(3) int local3 = arg0.method4815();
+	public void method4468(@OriginalArg(0) Buffer arg0, @OriginalArg(1) Class232 arg1) {
+		@Pc(3) int local3 = arg0.g1();
 		this.anIntArray332[0] = local3 >> 4;
 		this.anIntArray332[1] = local3 & 0xF;
 		if (local3 == 0) {
@@ -29,7 +29,7 @@ public final class Class176 {
 		}
 		this.anIntArray331[0] = arg0.method4829();
 		this.anIntArray331[1] = arg0.method4829();
-		@Pc(37) int local37 = arg0.method4815();
+		@Pc(37) int local37 = arg0.g1();
 		@Pc(42) int local42;
 		for (@Pc(39) int local39 = 0; local39 < 2; local39++) {
 			for (local42 = 0; local42 < this.anIntArray332[local39]; local42++) {

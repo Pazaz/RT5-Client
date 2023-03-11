@@ -20,7 +20,7 @@ public final class Static294 {
 	}
 
 	@OriginalMember(owner = "client!qt", name = "a", descriptor = "(Lclient!bt;II)V")
-	public static void method5065(@OriginalArg(0) Class2_Sub4 arg0, @OriginalArg(1) int arg1) {
+	public static void method5065(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
 		if (Static317.aClass205_6 == null) {
 			return;
 		}

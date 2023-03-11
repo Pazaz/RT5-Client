@@ -63,17 +63,17 @@ public final class Class198 {
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "([BI)V")
 	private void method5105(@OriginalArg(0) byte[] arg0) {
-		@Pc(12) Class2_Sub4 local12 = new Class2_Sub4(Static161.method2970(arg0));
-		@Pc(16) int local16 = local12.method4815();
+		@Pc(12) Buffer local12 = new Buffer(Static161.method2970(arg0));
+		@Pc(16) int local16 = local12.g1();
 		if (local16 != 5 && local16 != 6) {
 			throw new RuntimeException();
 		}
 		if (local16 < 6) {
 			this.anInt5587 = 0;
 		} else {
-			this.anInt5587 = local12.method4836();
+			this.anInt5587 = local12.g4();
 		}
-		@Pc(45) int local45 = local12.method4815();
+		@Pc(45) int local45 = local12.g1();
 		this.anInt5591 = local12.method4829();
 		@Pc(52) int local52 = 0;
 		this.anIntArray380 = new int[this.anInt5591];
@@ -98,15 +98,15 @@ public final class Class198 {
 				this.anIntArray379[local141] = -1;
 			}
 			for (local155 = 0; local155 < this.anInt5591; local155++) {
-				this.anIntArray379[this.anIntArray380[local155]] = local12.method4836();
+				this.anIntArray379[this.anIntArray380[local155]] = local12.g4();
 			}
 			this.aClass167_1 = new Class167(this.anIntArray379);
 		}
 		for (local141 = 0; local141 < this.anInt5591; local141++) {
-			this.anIntArray382[this.anIntArray380[local141]] = local12.method4836();
+			this.anIntArray382[this.anIntArray380[local141]] = local12.g4();
 		}
 		for (local155 = 0; local155 < this.anInt5591; local155++) {
-			this.anIntArray378[this.anIntArray380[local155]] = local12.method4836();
+			this.anIntArray378[this.anIntArray380[local155]] = local12.g4();
 		}
 		for (@Pc(223) int local223 = 0; local223 < this.anInt5591; local223++) {
 			this.anIntArray376[this.anIntArray380[local223]] = local12.method4829();
@@ -152,7 +152,7 @@ public final class Class198 {
 				} else {
 					local408 = this.anIntArrayArray46[local260][local287];
 				}
-				this.anIntArrayArray47[local260][local408] = local12.method4836();
+				this.anIntArrayArray47[local260][local408] = local12.g4();
 			}
 			this.aClass167Array1[local260] = new Class167(this.anIntArrayArray47[local260]);
 		}

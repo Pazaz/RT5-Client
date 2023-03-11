@@ -11,7 +11,7 @@ public final class Static211 {
 	public static Class13 aClass13_13;
 
 	@OriginalMember(owner = "client!mh", name = "g", descriptor = "Lclient!cc;")
-	public static PrivilegedRequest aClass32_8;
+	public static PrivilegedRequest js5SocketRequest;
 
 	@OriginalMember(owner = "client!mh", name = "j", descriptor = "I")
 	public static int anInt3780;
@@ -47,7 +47,7 @@ public final class Static211 {
 		Static140.method2627();
 		Static91.method1962();
 		Static71.method6021();
-		if (Static189.aClass127_6 != Static121.aClass127_4) {
+		if (client.MODE_WHERE_LIVE != client.modeWhere) {
 			for (@Pc(80) int local80 = 0; local80 < Static26.aByteArrayArray3.length; local80++) {
 				Static26.aByteArrayArray3[local80] = null;
 			}
@@ -175,8 +175,8 @@ public final class Static211 {
 		if (Static86.anInt1870 > 0) {
 			Static99.method2144();
 		} else {
-			Static246.aClass111_2 = Static335.aClass111_4;
-			Static335.aClass111_4 = null;
+			Static246.aClass111_2 = Protocol.socket;
+			Protocol.socket = null;
 			Static336.method5705(40);
 		}
 	}

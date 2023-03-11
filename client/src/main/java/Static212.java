@@ -96,16 +96,4 @@ public final class Static212 {
 		return null;
 	}
 
-	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(IZLclient!ac;Lclient!ac;IBZ)I")
-	public static int method3730(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class3_Sub1 arg2, @OriginalArg(3) Class3_Sub1 arg3, @OriginalArg(4) int arg4, @OriginalArg(6) boolean arg5) {
-		@Pc(10) int local10 = Static70.method1786(arg5, arg2, arg3, arg4);
-		if (local10 != 0) {
-			return arg5 ? -local10 : local10;
-		} else if (arg0 == -1) {
-			return 0;
-		} else {
-			@Pc(32) int local32 = Static70.method1786(arg1, arg2, arg3, arg0);
-			return arg1 ? -local32 : local32;
-		}
-	}
 }

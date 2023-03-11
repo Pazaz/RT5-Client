@@ -10,12 +10,6 @@ public final class Static188 {
 	@OriginalMember(owner = "client!kr", name = "H", descriptor = "[I")
 	public static final int[] anIntArray206 = new int[] { 160, 192, 80, 96, 0, 144, 80, 48, 160 };
 
-	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(Ljava/lang/String;B)V")
-	public static void method3465(@OriginalArg(0) String arg0) {
-		System.out.println("Bad " + arg0 + ", Usage: worldid, <live/rc/wip>, <english/german>, <game0/game1>");
-		System.exit(1);
-	}
-
 	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(IIILjava/lang/Class;)V")
 	public static void method3466(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class arg3) {
 		@Pc(7) Class67 local7 = Static330.aClass67ArrayArrayArray3[arg0][arg1][arg2];

@@ -179,7 +179,7 @@ public final class Class157 {
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Lclient!bt;II)V")
-	private void method3988(@OriginalArg(0) Class2_Sub4 arg0, @OriginalArg(1) int arg1) {
+	private void method3988(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
 		@Pc(16) int local16;
 		@Pc(22) int local22;
 		@Pc(45) int local45;
@@ -201,28 +201,28 @@ public final class Class157 {
 			this.anInt4032 = arg0.method4829();
 		} else if (arg1 == 3) {
 			this.aBooleanArray37 = new boolean[256];
-			local16 = arg0.method4815();
+			local16 = arg0.g1();
 			for (local22 = 0; local22 < local16; local22++) {
-				this.aBooleanArray37[arg0.method4815()] = true;
+				this.aBooleanArray37[arg0.g1()] = true;
 			}
 		} else if (arg1 == 4) {
 			this.aBoolean261 = true;
 		} else if (arg1 == 5) {
-			this.anInt4023 = arg0.method4815();
+			this.anInt4023 = arg0.g1();
 		} else if (arg1 == 6) {
 			this.anInt4030 = arg0.method4829();
 		} else if (arg1 == 7) {
 			this.anInt4034 = arg0.method4829();
 		} else if (arg1 == 8) {
-			this.anInt4024 = arg0.method4815();
+			this.anInt4024 = arg0.g1();
 		} else if (arg1 == 9) {
-			this.anInt4027 = arg0.method4815();
+			this.anInt4027 = arg0.g1();
 		} else if (arg1 == 10) {
-			this.anInt4029 = arg0.method4815();
+			this.anInt4029 = arg0.g1();
 		} else if (arg1 == 11) {
-			this.anInt4022 = arg0.method4815();
+			this.anInt4022 = arg0.g1();
 		} else if (arg1 == 12) {
-			local16 = arg0.method4815();
+			local16 = arg0.g1();
 			this.anIntArray263 = new int[local16];
 			for (local22 = 0; local22 < local16; local22++) {
 				this.anIntArray263[local22] = arg0.method4829();
@@ -234,7 +234,7 @@ public final class Class157 {
 			local16 = arg0.method4829();
 			this.anIntArrayArray33 = new int[local16][];
 			for (local22 = 0; local22 < local16; local22++) {
-				local45 = arg0.method4815();
+				local45 = arg0.g1();
 				if (local45 > 0) {
 					this.anIntArrayArray33[local22] = new int[local45];
 					this.anIntArrayArray33[local22][0] = arg0.method4833();
@@ -346,9 +346,9 @@ public final class Class157 {
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method3993(@OriginalArg(0) Class2_Sub4 arg0) {
+	public void method3993(@OriginalArg(0) Buffer arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method4815();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}

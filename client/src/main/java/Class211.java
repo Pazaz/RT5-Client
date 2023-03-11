@@ -49,7 +49,7 @@ public final class Class211 {
 		local25.aClass211_1 = this;
 		local25.anInt2453 = arg0;
 		if (local48 != null) {
-			local25.method2430(new Class2_Sub4(local48));
+			local25.method2430(new Buffer(local48));
 		}
 		local6 = this.aClass98_50;
 		synchronized (this.aClass98_50) {

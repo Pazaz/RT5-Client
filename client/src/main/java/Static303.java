@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static303 {
 
-	@OriginalMember(owner = "client!rm", name = "n", descriptor = "Lclient!tg;")
-	public static Class221 aClass221_2;
-
 	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(Lclient!ld;BLclient!wm;II)V")
 	public static void method5208(@OriginalArg(0) Class135 arg0, @OriginalArg(2) Class19 arg1) {
 		Static197.aClass135_24.method3544();
@@ -85,8 +82,8 @@ public final class Static303 {
 		if ((arg3 & 0x8) != 0) {
 			local32 = arg0.method4806();
 			local36 = arg0.method4804();
-			local40 = arg0.method4815();
-			local43 = arg0.anInt5300;
+			local40 = arg0.g1();
+			local43 = arg0.position;
 			@Pc(51) boolean local51 = (local32 & 0x8000) != 0;
 			if (arg2.aString41 != null && arg2.aClass117_1 != null) {
 				@Pc(59) boolean local59 = false;
@@ -98,9 +95,9 @@ public final class Static303 {
 					}
 				}
 				if (!local59 && Static212.anInt3785 == 0) {
-					Static89.aClass2_Sub4_2.anInt5300 = 0;
+					Static89.aClass2_Sub4_2.position = 0;
 					arg0.method4858(Static89.aClass2_Sub4_2.aByteArray73, local40);
-					Static89.aClass2_Sub4_2.anInt5300 = 0;
+					Static89.aClass2_Sub4_2.position = 0;
 					@Pc(107) int local107 = -1;
 					@Pc(117) String local117;
 					if (local51) {
@@ -130,7 +127,7 @@ public final class Static303 {
 					}
 				}
 			}
-			arg0.anInt5300 = local43 + local40;
+			arg0.position = local43 + local40;
 		}
 		@Pc(283) int local283;
 		@Pc(289) int local289;
@@ -153,7 +150,7 @@ public final class Static303 {
 		if ((arg3 & 0x1) != 0) {
 			local32 = arg0.method4811();
 			@Pc(337) byte[] local337 = new byte[local32];
-			@Pc(342) Class2_Sub4 local342 = new Class2_Sub4(local337);
+			@Pc(342) Buffer local342 = new Buffer(local337);
 			arg0.method4831(local337, local32);
 			Static231.aClass2_Sub4Array1[arg1] = local342;
 			arg2.method4066(local342);
@@ -225,7 +222,7 @@ public final class Static303 {
 		}
 		if ((arg3 & 0x2000) != 0) {
 			local32 = arg0.method4853();
-			local36 = arg0.method4836();
+			local36 = arg0.g4();
 			if (local32 == 65535) {
 				local32 = -1;
 			}
@@ -282,7 +279,7 @@ public final class Static303 {
 			}
 		}
 		if ((arg3 & 0x40) != 0) {
-			local32 = arg0.method4817();
+			local32 = arg0.gsmart();
 			local36 = arg0.method4811();
 			arg2.method4334(local36, local32, Static114.anInt2348);
 			arg2.anInt4606 = Static114.anInt2348 + 300;
@@ -290,7 +287,7 @@ public final class Static303 {
 		}
 		if ((arg3 & 0x800) != 0) {
 			local32 = Static114.anInt2348;
-			local36 = arg0.method4817();
+			local36 = arg0.gsmart();
 			local40 = arg0.method4811();
 			arg2.method4334(local40, local36, local32);
 		}

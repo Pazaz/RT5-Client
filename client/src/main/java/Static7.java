@@ -338,11 +338,6 @@ public final class Static7 {
 		return local41;
 	}
 
-	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(IB)Lclient!ac;")
-	public static Class3_Sub1 method6467(@OriginalArg(0) int arg0) {
-		return Static70.aBoolean130 && arg0 >= Static375.anInt7042 && Static312.anInt5843 >= arg0 ? Static295.aClass3_Sub1Array1[arg0 - Static375.anInt7042] : null;
-	}
-
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(III)V")
 	public static void method6469(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(12) Class2_Sub2_Sub7 local12 = Static316.method5413(14, arg1);

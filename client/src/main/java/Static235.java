@@ -24,10 +24,10 @@ public final class Static235 {
 	public static final Class79 aClass79_72 = new Class79("Loaded sprites", "Sprites geladen.", "Sprites chargés", "Sprites carregados");
 
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(Lclient!ml;IILclient!bt;)V")
-	public static void method3339(@OriginalArg(0) Signlink arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class2_Sub4 arg2) {
+	public static void method3339(@OriginalArg(0) Signlink arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Buffer arg2) {
 		@Pc(9) Class2_Sub42 local9 = new Class2_Sub42();
-		local9.anInt7154 = arg2.method4815();
-		local9.anInt7156 = arg2.method4836();
+		local9.anInt7154 = arg2.g1();
+		local9.anInt7156 = arg2.g4();
 		local9.anIntArray491 = new int[local9.anInt7154];
 		local9.anIntArray493 = new int[local9.anInt7154];
 		local9.aClass32Array1 = new PrivilegedRequest[local9.anInt7154];
@@ -36,7 +36,7 @@ public final class Static235 {
 		local9.aClass32Array2 = new PrivilegedRequest[local9.anInt7154];
 		for (@Pc(56) int local56 = 0; local56 < local9.anInt7154; local56++) {
 			try {
-				@Pc(62) int local62 = arg2.method4815();
+				@Pc(62) int local62 = arg2.g1();
 				@Pc(78) String local78;
 				@Pc(82) String local82;
 				@Pc(84) int local84;
@@ -45,7 +45,7 @@ public final class Static235 {
 					local82 = arg2.method4809();
 					local84 = 0;
 					if (local62 == 1) {
-						local84 = arg2.method4836();
+						local84 = arg2.g4();
 					}
 					local9.anIntArray493[local56] = local62;
 					local9.anIntArray492[local56] = local84;
@@ -53,7 +53,7 @@ public final class Static235 {
 				} else if (local62 == 3 || local62 == 4) {
 					local78 = arg2.method4809();
 					local82 = arg2.method4809();
-					local84 = arg2.method4815();
+					local84 = arg2.g1();
 					@Pc(139) String[] local139 = new String[local84];
 					for (@Pc(141) int local141 = 0; local141 < local84; local141++) {
 						local139[local141] = arg2.method4809();
@@ -62,7 +62,7 @@ public final class Static235 {
 					@Pc(167) int local167;
 					if (local62 == 3) {
 						for (@Pc(161) int local161 = 0; local161 < local84; local161++) {
-							local167 = arg2.method4836();
+							local167 = arg2.g4();
 							local156[local161] = new byte[local167];
 							arg2.method4799(local156[local161], local167);
 						}
@@ -120,7 +120,7 @@ public final class Static235 {
 			for (@Pc(83) int local83 = 0; local83 < Static82.anInt1836 && local83 < 50; local83++) {
 				local81 = local81 + Static212.aClass2_Sub4_Sub2_3.aByteArray73[local83] + ",";
 			}
-			Static262.method6253(local21, local81);
+			Static262.report(local21, local81);
 			Static99.method2144();
 			return true;
 		}

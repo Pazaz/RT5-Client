@@ -22,29 +22,6 @@ public final class Static329 {
 	@OriginalMember(owner = "client!tc", name = "ab", descriptor = "[I")
 	public static final int[] anIntArray420 = new int[3];
 
-	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(IZIIIIZ)V")
-	public static void method5629(@OriginalArg(1) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) boolean arg5) {
-		if (arg2 >= arg4) {
-			return;
-		}
-		@Pc(22) int local22 = (arg4 + arg2) / 2;
-		@Pc(24) int local24 = arg2;
-		@Pc(28) Class3_Sub1 local28 = Static300.aClass3_Sub1Array2[local22];
-		Static300.aClass3_Sub1Array2[local22] = Static300.aClass3_Sub1Array2[arg4];
-		Static300.aClass3_Sub1Array2[arg4] = local28;
-		for (@Pc(40) int local40 = arg2; local40 < arg4; local40++) {
-			if (Static212.method3730(arg1, arg0, Static300.aClass3_Sub1Array2[local40], local28, arg3, arg5) <= 0) {
-				@Pc(57) Class3_Sub1 local57 = Static300.aClass3_Sub1Array2[local40];
-				Static300.aClass3_Sub1Array2[local40] = Static300.aClass3_Sub1Array2[local24];
-				Static300.aClass3_Sub1Array2[local24++] = local57;
-			}
-		}
-		Static300.aClass3_Sub1Array2[arg4] = Static300.aClass3_Sub1Array2[local24];
-		Static300.aClass3_Sub1Array2[local24] = local28;
-		method5629(arg0, arg1, arg2, arg3, local24 - 1, arg5);
-		method5629(arg0, arg1, local24 + 1, arg3, arg4, arg5);
-	}
-
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(Lclient!hb;Z)Z")
 	public static boolean method5630(@OriginalArg(0) Class11_Sub5 arg0, @OriginalArg(1) boolean arg1) {
 		@Pc(6) boolean local6 = Static365.aClass6Array4 == Static186.aClass6Array2;

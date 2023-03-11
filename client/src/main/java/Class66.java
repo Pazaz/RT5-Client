@@ -19,9 +19,9 @@ public final class Class66 {
 	public int anInt1883 = 2048;
 
 	@OriginalMember(owner = "client!et", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method1936(@OriginalArg(0) Class2_Sub4 arg0) {
+	public void method1936(@OriginalArg(0) Buffer arg0) {
 		while (true) {
-			@Pc(9) int local9 = arg0.method4815();
+			@Pc(9) int local9 = arg0.g1();
 			if (local9 == 0) {
 				return;
 			}
@@ -30,9 +30,9 @@ public final class Class66 {
 	}
 
 	@OriginalMember(owner = "client!et", name = "a", descriptor = "(Lclient!bt;IZ)V")
-	private void method1938(@OriginalArg(0) Class2_Sub4 arg0, @OriginalArg(1) int arg1) {
+	private void method1938(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 1) {
-			this.anInt1877 = arg0.method4815();
+			this.anInt1877 = arg0.g1();
 		} else if (arg1 == 2) {
 			this.anInt1883 = arg0.method4829();
 		} else if (arg1 == 3) {

@@ -244,7 +244,7 @@ public final class Static201 {
 										}
 									}
 									if (Static192.aClass161_8 == local19) {
-										local970 = Static131.aClass79_82.method2267(Static295.anInt5581);
+										local970 = Static131.aClass79_82.method2267(client.language);
 										local248 = local19.anInt4290;
 									}
 									if (Static88.aBoolean134) {

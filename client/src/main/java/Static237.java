@@ -14,7 +14,7 @@ public final class Static237 {
 	public static boolean aBoolean297 = false;
 
 	@OriginalMember(owner = "client!nl", name = "d", descriptor = "Z")
-	public static boolean aBoolean298 = false;
+	public static boolean objectTag = false;
 
 	@OriginalMember(owner = "client!nl", name = "e", descriptor = "[I")
 	public static final int[] anIntArray283 = new int[50];

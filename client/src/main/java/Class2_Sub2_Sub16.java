@@ -22,7 +22,7 @@ public final class Class2_Sub2_Sub16 extends Class2_Sub2 {
 	public boolean aBoolean413 = true;
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void method5594(@OriginalArg(1) Class2_Sub4 arg0, @OriginalArg(2) int arg1) {
+	private void method5594(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.aStringArray56 = Static200.method3643('<', arg0.method4809());
 			return;
@@ -30,13 +30,13 @@ public final class Class2_Sub2_Sub16 extends Class2_Sub2 {
 		@Pc(23) int local23;
 		@Pc(29) int local29;
 		if (arg1 == 2) {
-			local23 = arg0.method4815();
+			local23 = arg0.g1();
 			this.anIntArray418 = new int[local23];
 			for (local29 = 0; local29 < local23; local29++) {
 				this.anIntArray418[local29] = arg0.method4829();
 			}
 		} else if (arg1 == 3) {
-			local23 = arg0.method4815();
+			local23 = arg0.g1();
 			this.anIntArray417 = new int[local23];
 			this.anIntArrayArray52 = new int[local23][];
 			for (local29 = 0; local29 < local23; local29++) {
@@ -58,7 +58,7 @@ public final class Class2_Sub2_Sub16 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(Lclient!bt;I[I)V")
-	public void method5597(@OriginalArg(0) Class2_Sub4 arg0, @OriginalArg(2) int[] arg1) {
+	public void method5597(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int[] arg1) {
 		if (this.anIntArray417 == null) {
 			return;
 		}
@@ -74,9 +74,9 @@ public final class Class2_Sub2_Sub16 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(BLclient!bt;)V")
-	public void method5599(@OriginalArg(1) Class2_Sub4 arg0) {
+	public void method5599(@OriginalArg(1) Buffer arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method4815();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}
@@ -110,7 +110,7 @@ public final class Class2_Sub2_Sub16 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(Lclient!bt;B)Ljava/lang/String;")
-	public String method5602(@OriginalArg(0) Class2_Sub4 arg0) {
+	public String method5602(@OriginalArg(0) Buffer arg0) {
 		@Pc(10) StringBuffer local10 = new StringBuffer(80);
 		if (this.anIntArray417 != null) {
 			for (@Pc(15) int local15 = 0; local15 < this.anIntArray417.length; local15++) {

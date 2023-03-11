@@ -4,17 +4,11 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static295 {
 
-	@OriginalMember(owner = "client!r", name = "Q", descriptor = "[Lclient!ac;")
-	public static Class3_Sub1[] aClass3_Sub1Array1;
-
 	@OriginalMember(owner = "client!r", name = "w", descriptor = "I")
 	public static int anInt5567 = 0;
 
 	@OriginalMember(owner = "client!r", name = "H", descriptor = "Lclient!ld;")
 	public static final Class135 aClass135_32 = new Class135();
-
-	@OriginalMember(owner = "client!r", name = "M", descriptor = "I")
-	public static int anInt5581 = 0;
 
 	@OriginalMember(owner = "client!r", name = "O", descriptor = "[I")
 	public static final int[] anIntArray375 = new int[] { 1, 2, 4, 8 };
@@ -32,12 +26,12 @@ public final class Static295 {
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Lclient!nk;ZLclient!nk;)V")
 	public static void method5096(@OriginalArg(0) Class161 arg0, @OriginalArg(2) Class161 arg1) {
 		Static91.method1960(Static387.aClass145_110);
-		Static257.aClass2_Sub4_Sub2_4.method4813(arg1.anInt4317);
-		Static257.aClass2_Sub4_Sub2_4.method4838(arg1.anInt4300);
-		Static257.aClass2_Sub4_Sub2_4.method4855(arg1.anInt4297);
-		Static257.aClass2_Sub4_Sub2_4.method4805(arg0.anInt4317);
-		Static257.aClass2_Sub4_Sub2_4.method4838(arg0.anInt4300);
-		Static257.aClass2_Sub4_Sub2_4.method4830(arg0.anInt4297);
+		Protocol.outboundBuffer.p4(arg1.anInt4317);
+		Protocol.outboundBuffer.method4838(arg1.anInt4300);
+		Protocol.outboundBuffer.method4855(arg1.anInt4297);
+		Protocol.outboundBuffer.method4805(arg0.anInt4317);
+		Protocol.outboundBuffer.method4838(arg0.anInt4300);
+		Protocol.outboundBuffer.method4830(arg0.anInt4297);
 	}
 
 	@OriginalMember(owner = "client!r", name = "c", descriptor = "(III)I")

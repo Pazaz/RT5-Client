@@ -150,17 +150,17 @@ public final class Static178 {
 
 	@OriginalMember(owner = "client!kf", name = "b", descriptor = "(I)V")
 	public static void method2342() {
-		if (Static303.aClass221_2 != null) {
-			Static303.aClass221_2.method6326();
+		if (client.musicChannel != null) {
+			client.musicChannel.method6326();
 		}
-		if (Static190.aClass221_1 != null) {
-			Static190.aClass221_1.method6326();
+		if (client.soundChannel != null) {
+			client.soundChannel.method6326();
 		}
 		Static84.method1909(Static218.aClass177_Sub1_2.aBoolean352);
-		Static303.aClass221_2 = Static381.method6347(0, Static328.aClass152_5, Static21.aCanvas1, 22050);
-		Static303.aClass221_2.method6330(Static385.aClass2_Sub12_Sub3_3);
-		Static190.aClass221_1 = Static381.method6347(1, Static328.aClass152_5, Static21.aCanvas1, 2048);
-		Static190.aClass221_1.method6330(Static227.aClass2_Sub12_Sub2_2);
+		client.musicChannel = Static381.method6347(0, GameShell.signlink, Static21.aCanvas1, 22050);
+		client.musicChannel.method6330(Static385.aClass2_Sub12_Sub3_3);
+		client.soundChannel = Static381.method6347(1, GameShell.signlink, Static21.aCanvas1, 2048);
+		client.soundChannel.method6330(Static227.aClass2_Sub12_Sub2_2);
 	}
 
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(III)Ljava/lang/String;")

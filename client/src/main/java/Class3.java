@@ -5,31 +5,31 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class Class3 {
 
 	@OriginalMember(owner = "client!kl", name = "d", descriptor = "I")
-	public int anInt74;
+	public int flags;
 
 	@OriginalMember(owner = "client!kl", name = "f", descriptor = "I")
-	public int anInt76;
+	public int country;
 
 	@OriginalMember(owner = "client!kl", name = "h", descriptor = "I")
-	public int anInt78;
+	public int players;
 
 	@OriginalMember(owner = "client!kl", name = "a", descriptor = "(I)Z")
-	public final boolean method66() {
-		return (this.anInt74 & 0x4) != 0;
+	public final boolean isPvp() {
+		return (this.flags & 0x4) != 0;
 	}
 
 	@OriginalMember(owner = "client!kl", name = "a", descriptor = "(B)Z")
-	public final boolean method67() {
-		return (this.anInt74 & 0x8) != 0;
+	public final boolean isLootShare() {
+		return (this.flags & 0x8) != 0;
 	}
 
 	@OriginalMember(owner = "client!kl", name = "b", descriptor = "(I)Z")
-	public final boolean method69() {
-		return (this.anInt74 & 0x1) != 0;
+	public final boolean isMembers() {
+		return (this.flags & 0x1) != 0;
 	}
 
 	@OriginalMember(owner = "client!kl", name = "d", descriptor = "(I)Z")
-	public final boolean method71() {
-		return (this.anInt74 & 0x2) != 0;
+	public final boolean isQuickChat() {
+		return (this.flags & 0x2) != 0;
 	}
 }

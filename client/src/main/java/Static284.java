@@ -10,9 +10,6 @@ public final class Static284 {
 	@OriginalMember(owner = "client!qi", name = "b", descriptor = "[I")
 	public static final int[] anIntArray367 = new int[] { 1, 2, 4, 8 };
 
-	@OriginalMember(owner = "client!qi", name = "e", descriptor = "J")
-	public static long aLong157 = 0L;
-
 	@OriginalMember(owner = "client!qi", name = "f", descriptor = "Lclient!cm;")
 	public static final Class36 aClass36_7 = new Class36();
 
@@ -33,7 +30,7 @@ public final class Static284 {
 			arg5.method2901(arg4, arg2, arg3, arg1, -16777216, 0);
 			arg5.method2836(local36 - 152, local47, 304, 34, Static291.aColorArray4[Static64.anInt1555].getRGB(), 0);
 			arg5.method2901(local36 - 150, local47 - -2, Static355.anInt6581 * 3, 30, Static174.aColorArray2[Static64.anInt1555].getRGB(), 0);
-			Static52.aClass130_1.method5900(Static32.aClass79_21.method2267(Static295.anInt5581), -1, local47 + 20, Static286.aColorArray3[Static64.anInt1555].getRGB(), local36);
+			Static52.aClass130_1.method5900(Static32.aClass79_21.method2267(client.language), -1, local47 + 20, Static286.aColorArray3[Static64.anInt1555].getRGB(), local36);
 			return;
 		}
 		@Pc(111) int local111 = Static151.anInt2772 - (int) ((float) arg3 / Static344.aFloat72);
@@ -87,7 +84,7 @@ public final class Static284 {
 			return false;
 		} else {
 			Static218.aClass177_Sub1_2.aBoolean356 = arg0;
-			Static218.aClass177_Sub1_2.method4497(Static328.aClass152_5);
+			Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
 			return true;
 		}
 	}

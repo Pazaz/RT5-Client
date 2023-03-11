@@ -251,8 +251,8 @@ public final class Class100 {
 					local70 = 0;
 					local77 = local61 << this.anInt2681;
 					local79 = local61 + 1 << this.anInt2681;
-					@Pc(233) Class2_Sub4 local233 = Static8.aClass2_Sub4_1;
-					local233.anInt5300 = 0;
+					@Pc(233) Buffer local233 = Static8.aClass2_Sub4_1;
+					local233.position = 0;
 					for (@Pc(238) int local238 = local52; local238 < local59; local238++) {
 						if (-arg1 <= local238 - arg3 && arg1 >= local238 - arg3) {
 							@Pc(267) int local267 = local77 + this.aClass6_Sub1_1.anInt6320 * local238;

@@ -52,9 +52,9 @@ public final class Class91 {
 	public boolean aBoolean178 = false;
 
 	@OriginalMember(owner = "client!hf", name = "a", descriptor = "(BLclient!bt;)V")
-	public void method2430(@OriginalArg(1) Class2_Sub4 arg0) {
+	public void method2430(@OriginalArg(1) Buffer arg0) {
 		while (true) {
-			@Pc(17) int local17 = arg0.method4815();
+			@Pc(17) int local17 = arg0.g1();
 			if (local17 == 0) {
 				return;
 			}
@@ -63,7 +63,7 @@ public final class Class91 {
 	}
 
 	@OriginalMember(owner = "client!hf", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void method2431(@OriginalArg(1) Class2_Sub4 arg0, @OriginalArg(2) int arg1) {
+	private void method2431(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.anInt2452 = arg0.method4829();
 		} else if (arg1 == 2) {
@@ -75,9 +75,9 @@ public final class Class91 {
 		} else if (arg1 == 6) {
 			this.anInt2445 = arg0.method4829();
 		} else if (arg1 == 7) {
-			this.anInt2446 = arg0.method4815();
+			this.anInt2446 = arg0.g1();
 		} else if (arg1 == 8) {
-			this.anInt2450 = arg0.method4815();
+			this.anInt2450 = arg0.g1();
 		} else if (arg1 == 9) {
 			this.aBoolean178 = true;
 		} else if (arg1 == 10) {
@@ -86,7 +86,7 @@ public final class Class91 {
 			@Pc(96) int local96;
 			@Pc(106) int local106;
 			if (arg1 == 40) {
-				local96 = arg0.method4815();
+				local96 = arg0.g1();
 				this.aShortArray52 = new short[local96];
 				this.aShortArray49 = new short[local96];
 				for (local106 = 0; local106 < local96; local106++) {
@@ -94,7 +94,7 @@ public final class Class91 {
 					this.aShortArray49[local106] = (short) arg0.method4829();
 				}
 			} else if (arg1 == 41) {
-				local96 = arg0.method4815();
+				local96 = arg0.g1();
 				this.aShortArray51 = new short[local96];
 				this.aShortArray50 = new short[local96];
 				for (local106 = 0; local106 < local96; local106++) {

@@ -1,4 +1,3 @@
-import java.awt.Frame;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -7,9 +6,6 @@ public final class Static222 {
 
 	@OriginalMember(owner = "client!ms", name = "t", descriptor = "I")
 	public static int anInt3949;
-
-	@OriginalMember(owner = "client!ms", name = "x", descriptor = "Ljava/awt/Frame;")
-	public static Frame aFrame1;
 
 	@OriginalMember(owner = "client!ms", name = "l", descriptor = "I")
 	public static int anInt3944 = 0;
@@ -36,7 +32,7 @@ public final class Static222 {
 						if (local59[0] != -1) {
 							throw new IllegalStateException("if1");
 						}
-						local71.method4106(new Class2_Sub4(local59));
+						local71.method4106(new Buffer(local59));
 					}
 				}
 			}

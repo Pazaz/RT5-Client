@@ -64,13 +64,13 @@ public final class Class21 {
 	}
 
 	@OriginalMember(owner = "client!bh", name = "<init>", descriptor = "(Lclient!bt;)V")
-	public Class21(@OriginalArg(0) Class2_Sub4 arg0) {
-		@Pc(16) int local16 = arg0.method4815();
+	public Class21(@OriginalArg(0) Buffer arg0) {
+		@Pc(16) int local16 = arg0.g1();
 		if (Static218.aClass177_Sub1_2.aBoolean364 && Static65.aClass19_3.method2886() > 0) {
 			if ((local16 & 0x1) == 0) {
 				this.anInt637 = Static28.anInt686;
 			} else {
-				this.anInt637 = arg0.method4836();
+				this.anInt637 = arg0.g4();
 			}
 			if ((local16 & 0x2) == 0) {
 				this.aFloat25 = 1.1523438F;
@@ -89,7 +89,7 @@ public final class Class21 {
 			}
 		} else {
 			if ((local16 & 0x1) != 0) {
-				arg0.method4836();
+				arg0.g4();
 			}
 			if ((local16 & 0x2) != 0) {
 				arg0.method4829();
@@ -117,7 +117,7 @@ public final class Class21 {
 		if ((local16 & 0x20) == 0) {
 			this.anInt641 = Static279.anInt5161;
 		} else {
-			this.anInt641 = arg0.method4836();
+			this.anInt641 = arg0.g4();
 		}
 		if ((local16 & 0x40) == 0) {
 			this.anInt634 = 0;
@@ -132,10 +132,10 @@ public final class Class21 {
 	}
 
 	@OriginalMember(owner = "client!bh", name = "a", descriptor = "(ILclient!bt;)V")
-	public void method851(@OriginalArg(1) Class2_Sub4 arg0) {
-		this.aFloat27 = (float) (arg0.method4815() * 8) / 255.0F;
-		this.aFloat26 = (float) (arg0.method4815() * 8) / 255.0F;
-		this.aFloat22 = (float) (arg0.method4815() * 8) / 255.0F;
+	public void method851(@OriginalArg(1) Buffer arg0) {
+		this.aFloat27 = (float) (arg0.g1() * 8) / 255.0F;
+		this.aFloat26 = (float) (arg0.g1() * 8) / 255.0F;
+		this.aFloat22 = (float) (arg0.g1() * 8) / 255.0F;
 	}
 
 	@OriginalMember(owner = "client!bh", name = "a", descriptor = "(BLclient!bh;)Z")

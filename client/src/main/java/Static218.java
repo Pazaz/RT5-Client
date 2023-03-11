@@ -10,9 +10,6 @@ public final class Static218 {
 	@OriginalMember(owner = "client!mo", name = "C", descriptor = "F")
 	public static float aFloat30;
 
-	@OriginalMember(owner = "client!mo", name = "D", descriptor = "I")
-	public static int anInt914 = 0;
-
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(IZLclient!r;)Lclient!vi;")
 	public static Class239 method1088(@OriginalArg(0) int arg0, @OriginalArg(2) Class197 arg1) {
 		@Pc(13) byte[] local13 = arg1.method5082(arg0);

@@ -161,7 +161,7 @@ public final class Class202 {
 		local16.anInt1351 = arg0;
 		local16.aClass202_1 = this;
 		if (local37 != null) {
-			local16.method1526(new Class2_Sub4(local37));
+			local16.method1526(new Buffer(local37));
 		}
 		local16.method1516();
 		if (local16.aBoolean105) {

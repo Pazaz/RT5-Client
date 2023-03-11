@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static298 {
 
-	@OriginalMember(owner = "client!rc", name = "d", descriptor = "[B")
-	public static byte[] aByteArray27;
-
 	@OriginalMember(owner = "client!rc", name = "h", descriptor = "I")
 	public static int anInt2437;
 

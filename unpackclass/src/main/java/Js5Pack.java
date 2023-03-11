@@ -28,7 +28,7 @@ public final class Js5Pack extends Js5 {
 		if (local4 != 0) {
 			local7 += 4;
 		}
-		@Pc(19) Buffer local19 = new Buffer(local7 + 5);
+		@Pc(19) SimpleBuffer local19 = new SimpleBuffer(local7 + 5);
 		local19.method6580(local4);
 		local19.method6582(local9);
 		arg0.readFully(local19.aByteArray100, local19.anInt7287, local7);
@@ -40,7 +40,7 @@ public final class Js5Pack extends Js5 {
 			if (local4 != 0) {
 				local7 += 4;
 			}
-			local19 = new Buffer(local7 + 5);
+			local19 = new SimpleBuffer(local7 + 5);
 			local19.method6580(local4);
 			local19.method6582(local9);
 			while (local7 > 33554432) {

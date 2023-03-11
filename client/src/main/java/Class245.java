@@ -16,23 +16,23 @@ public final class Class245 {
 	public int anInt7078 = -1;
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(Lclient!bt;II)V")
-	private void method6311(@OriginalArg(0) Class2_Sub4 arg0, @OriginalArg(1) int arg1) {
+	private void method6311(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 1) {
 			this.anInt7072 = arg0.method4829();
 		} else if (arg1 == 2) {
-			this.anIntArray484 = new int[arg0.method4815()];
+			this.anIntArray484 = new int[arg0.g1()];
 			for (@Pc(19) int local19 = 0; local19 < this.anIntArray484.length; local19++) {
 				this.anIntArray484[local19] = arg0.method4829();
 			}
 		} else if (arg1 == 3) {
-			this.anInt7078 = arg0.method4815();
+			this.anInt7078 = arg0.g1();
 		}
 	}
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(Lclient!bt;B)V")
-	public void method6315(@OriginalArg(0) Class2_Sub4 arg0) {
+	public void method6315(@OriginalArg(0) Buffer arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method4815();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}

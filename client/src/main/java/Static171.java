@@ -19,9 +19,9 @@ public final class Static171 {
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(IILjava/lang/String;)V")
 	public static void method3256(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
 		Static91.method1960(Static382.aClass145_258);
-		Static257.aClass2_Sub4_Sub2_4.method4842(Static27.method872(arg1) + 1);
-		Static257.aClass2_Sub4_Sub2_4.method4827(arg0);
-		Static257.aClass2_Sub4_Sub2_4.method4822(arg1);
+		Protocol.outboundBuffer.p1(Static27.method872(arg1) + 1);
+		Protocol.outboundBuffer.method4827(arg0);
+		Protocol.outboundBuffer.method4822(arg1);
 	}
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(BIIZII)V")
@@ -144,12 +144,12 @@ public final class Static171 {
 			Static136.anInt6778 = local118;
 			Static265.anInt4857 = local256;
 			Static4.anInt87 = local258;
-			if (Static17.aBoolean308 && Static287.aClass183_3.method4637() == 0) {
+			if (Static17.aBoolean308 && Static287.js5NetQueue.method4637() == 0) {
 				Static17.aBoolean308 = false;
 			}
 			if (Static17.aBoolean308) {
 				Static190.aClass19_8.method2868(local108, local104, local110, -16777216, local106);
-				Static351.method5857(Static276.aClass130_4, false, Static256.aClass79_102.method2267(Static295.anInt5581));
+				Static351.method5857(Static276.aClass130_4, false, Static256.aClass79_102.method2267(client.language));
 			}
 		} else {
 			Static190.aClass19_8.method2868(arg4, arg1, arg0, -16777216, arg3);

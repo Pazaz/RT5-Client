@@ -95,7 +95,7 @@ public final class Static129 {
 			Static313.anIntArray388[local35] = (int) (Math.random() * 48.0D) + 8;
 		}
 		try {
-			Static23.aClipboard1 = Static144.aClient1.getToolkit().getSystemClipboard();
+			Static23.aClipboard1 = client.instance.getToolkit().getSystemClipboard();
 		} catch (@Pc(84) Exception local84) {
 		}
 	}

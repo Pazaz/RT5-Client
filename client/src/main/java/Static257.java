@@ -16,9 +16,6 @@ public final class Static257 {
 	@OriginalMember(owner = "client!on", name = "e", descriptor = "Lclient!jm;")
 	public static final Class116 aClass116_5 = new Class116(64);
 
-	@OriginalMember(owner = "client!on", name = "g", descriptor = "Lclient!qg;")
-	public static final Class2_Sub4_Sub2 aClass2_Sub4_Sub2_4 = new Class2_Sub4_Sub2(5000);
-
 	@OriginalMember(owner = "client!on", name = "h", descriptor = "[I")
 	public static final int[] anIntArray257 = new int[4096];
 
@@ -62,7 +59,7 @@ public final class Static257 {
 		@Pc(141) int local141 = Static178.anInt2317 * local42 / Static344.anInt6056 + local71;
 		@Pc(155) int local155 = local44 + local80 - local133 - Static21.anInt548 * local44 / Static344.anInt6052;
 		@Pc(157) int local157 = -1996554240;
-		if (Static343.aClass50_4 == Static106.aClass50_1) {
+		if (client.game == client.GAME_SD) {
 			local157 = -1996488705;
 		}
 		arg4.method2901(local141, local155, local127, local133, local157, 1);

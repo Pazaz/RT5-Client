@@ -222,14 +222,14 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;Lclient!bt;IIII[I[I)V")
-	private static void method5510(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class2_Sub4 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6, @OriginalArg(7) int[] arg7) {
-		@Pc(3) int local3 = arg1.method4815();
+	private static void method5510(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6, @OriginalArg(7) int[] arg7) {
+		@Pc(3) int local3 = arg1.g1();
 		if ((local3 & 0x1) == 0) {
 			@Pc(15) boolean local15 = (local3 & 0x2) == 0;
 			@Pc(21) int local21 = local3 >> 2 & 0x3F;
 			if (local21 != 62) {
 				if (local21 == 63) {
-					local21 = arg1.method4815();
+					local21 = arg1.g1();
 				} else if (local15) {
 					local21 = arg6[local21];
 				} else {
@@ -250,16 +250,16 @@ public final class Static344 {
 		@Pc(108) boolean local108 = (local3 & 0x8) != 0;
 		@Pc(116) boolean local116 = (local3 & 0x10) != 0;
 		for (@Pc(118) int local118 = 0; local118 < local100; local118++) {
-			@Pc(123) int local123 = arg1.method4815();
+			@Pc(123) int local123 = arg1.g1();
 			@Pc(125) int local125 = 0;
 			@Pc(127) int local127 = 0;
 			if (local108) {
-				local125 = arg1.method4815();
-				local127 = arg1.method4815();
+				local125 = arg1.g1();
+				local127 = arg1.g1();
 			}
 			@Pc(139) int local139 = 0;
 			if (local116) {
-				local139 = arg1.method4815();
+				local139 = arg1.g1();
 			}
 			@Pc(215) short[] local215;
 			@Pc(218) byte[] local218;
@@ -519,16 +519,16 @@ public final class Static344 {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;II)V")
 	public static void method5521(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(9) Class2_Sub4 local9 = new Class2_Sub4(aClass197_85.method5084(aClass2_Sub2_Sub17_3.aString67, "area"));
-		@Pc(13) int local13 = local9.method4815();
+		@Pc(9) Buffer local9 = new Buffer(aClass197_85.method5084(aClass2_Sub2_Sub17_3.aString67, "area"));
+		@Pc(13) int local13 = local9.g1();
 		@Pc(16) int[] local16 = new int[local13];
 		for (@Pc(18) int local18 = 0; local18 < local13; local18++) {
-			local16[local18] = local9.method4815();
+			local16[local18] = local9.g1();
 		}
-		@Pc(33) int local33 = local9.method4815();
+		@Pc(33) int local33 = local9.g1();
 		@Pc(36) int[] local36 = new int[local33];
 		for (@Pc(38) int local38 = 0; local38 < local33; local38++) {
-			local36[local38] = local9.method4815();
+			local36[local38] = local9.g1();
 		}
 		while (true) {
 			@Pc(58) int local58;
@@ -536,12 +536,12 @@ public final class Static344 {
 			@Pc(67) int local67;
 			@Pc(76) int local76;
 			@Pc(148) int local148;
-			while (local9.anInt5300 < local9.aByteArray73.length) {
+			while (local9.position < local9.aByteArray73.length) {
 				@Pc(62) int local62;
 				@Pc(84) int local84;
-				if (local9.method4815() == 0) {
-					local58 = local9.method4815();
-					local62 = local9.method4815();
+				if (local9.g1() == 0) {
+					local58 = local9.g1();
+					local62 = local9.g1();
 					for (local64 = 0; local64 < 64; local64++) {
 						for (local67 = 0; local67 < 64; local67++) {
 							local76 = local58 * 64 + local64 - anInt6057;
@@ -550,10 +550,10 @@ public final class Static344 {
 						}
 					}
 				} else {
-					local58 = local9.method4815();
-					local62 = local9.method4815();
-					local64 = local9.method4815();
-					local67 = local9.method4815();
+					local58 = local9.g1();
+					local62 = local9.g1();
+					local64 = local9.g1();
+					local67 = local9.g1();
 					for (local76 = 0; local76 < 8; local76++) {
 						for (local84 = 0; local84 < 8; local84++) {
 							@Pc(136) int local136 = local58 * 64 + local64 * 8 + local76 - anInt6057;
