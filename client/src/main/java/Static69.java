@@ -25,8 +25,8 @@ public final class Static69 {
 				Static365.aClass11_Sub5_Sub2_Sub2Array1[local24] = null;
 			}
 		}
-		if (Static212.aClass2_Sub4_Sub2_3.pos != Static82.anInt1836) {
-			throw new RuntimeException("gnp1 pos:" + Static212.aClass2_Sub4_Sub2_3.pos + " psize:" + Static82.anInt1836);
+		if (Protocol.inboundBuffer.pos != Static82.anInt1836) {
+			throw new RuntimeException("gnp1 pos:" + Protocol.inboundBuffer.pos + " psize:" + Static82.anInt1836);
 		}
 		for (local24 = 0; local24 < Static166.anInt3187; local24++) {
 			if (Static365.aClass11_Sub5_Sub2_Sub2Array1[Static211.anIntArray230[local24]] == null) {

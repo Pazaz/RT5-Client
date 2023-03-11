@@ -34,16 +34,16 @@ public final class Static181 {
 		@Pc(52) int local52;
 		@Pc(59) int local59;
 		if (!Static220.aBoolean252) {
-			local13 = Static212.aClass2_Sub4_Sub2_3.ig2();
-			local17 = Static212.aClass2_Sub4_Sub2_3.g2();
-			local23 = Static212.aClass2_Sub4_Sub2_3.g1();
-			local36 = Static212.aClass2_Sub4_Sub2_3.g1bneg() == 1;
+			local13 = Protocol.inboundBuffer.ig2();
+			local17 = Protocol.inboundBuffer.g2();
+			local23 = Protocol.inboundBuffer.g1();
+			local36 = Protocol.inboundBuffer.g1bneg() == 1;
 			Static217.method3795(local23);
-			local44 = (Static82.anInt1836 - Static212.aClass2_Sub4_Sub2_3.pos) / 16;
+			local44 = (Static82.anInt1836 - Protocol.inboundBuffer.pos) / 16;
 			Static277.anIntArrayArray43 = new int[local44][4];
 			for (local48 = 0; local48 < local44; local48++) {
 				for (local52 = 0; local52 < 4; local52++) {
-					Static277.anIntArrayArray43[local48][local52] = Static212.aClass2_Sub4_Sub2_3.g4();
+					Static277.anIntArrayArray43[local48][local52] = Protocol.inboundBuffer.g4();
 				}
 			}
 			Static106.aByteArrayArray6 = new byte[local44][];
@@ -71,30 +71,30 @@ public final class Static181 {
 			Static373.method6267(false, local13, local36, local17);
 			return;
 		}
-		local13 = Static212.aClass2_Sub4_Sub2_3.g2();
-		local17 = Static212.aClass2_Sub4_Sub2_3.ig2();
-		local23 = Static212.aClass2_Sub4_Sub2_3.g1bneg();
-		local36 = Static212.aClass2_Sub4_Sub2_3.g1bneg() == 1;
+		local13 = Protocol.inboundBuffer.g2();
+		local17 = Protocol.inboundBuffer.ig2();
+		local23 = Protocol.inboundBuffer.g1bneg();
+		local36 = Protocol.inboundBuffer.g1bneg() == 1;
 		Static217.method3795(local23);
-		Static212.aClass2_Sub4_Sub2_3.accessBits();
+		Protocol.inboundBuffer.accessBits();
 		for (local44 = 0; local44 < 4; local44++) {
 			for (local48 = 0; local48 < Static373.anInt7033 >> 3; local48++) {
 				for (local52 = 0; local52 < Static242.anInt4449 >> 3; local52++) {
-					local59 = Static212.aClass2_Sub4_Sub2_3.gBit(1);
+					local59 = Protocol.inboundBuffer.gBit(1);
 					if (local59 == 1) {
-						Static310.anIntArrayArrayArray12[local44][local48][local52] = Static212.aClass2_Sub4_Sub2_3.gBit(26);
+						Static310.anIntArrayArrayArray12[local44][local48][local52] = Protocol.inboundBuffer.gBit(26);
 					} else {
 						Static310.anIntArrayArrayArray12[local44][local48][local52] = -1;
 					}
 				}
 			}
 		}
-		Static212.aClass2_Sub4_Sub2_3.accessBytes();
-		local48 = (Static82.anInt1836 - Static212.aClass2_Sub4_Sub2_3.pos) / 16;
+		Protocol.inboundBuffer.accessBytes();
+		local48 = (Static82.anInt1836 - Protocol.inboundBuffer.pos) / 16;
 		Static277.anIntArrayArray43 = new int[local48][4];
 		for (local52 = 0; local52 < local48; local52++) {
 			for (local59 = 0; local59 < 4; local59++) {
-				Static277.anIntArrayArray43[local52][local59] = Static212.aClass2_Sub4_Sub2_3.g4();
+				Static277.anIntArrayArray43[local52][local59] = Protocol.inboundBuffer.g4();
 			}
 		}
 		Static374.anIntArray480 = new int[local48];

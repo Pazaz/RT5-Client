@@ -63,7 +63,7 @@ public final class Static61 {
 			Static207.method3700(Static122.aClass79_54.method2267(client.language));
 		} else {
 			Static91.method1960(Static148.aClass145_104);
-			Protocol.outboundBuffer.p1(Static27.method872(arg0));
+			Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
 			Protocol.outboundBuffer.pjstr(arg0);
 		}
 	}

@@ -95,7 +95,7 @@ public final class Static182 {
 		Static334.aClass89_222 = null;
 		Static231.aClass89_164 = null;
 		Static268.anInt4955 = 0;
-		Static212.aClass2_Sub4_Sub2_3.pos = 0;
+		Protocol.inboundBuffer.pos = 0;
 		Static66.aClass89_57 = null;
 		Static160.method2956();
 		Static309.method5280();

@@ -424,7 +424,7 @@ public final class client extends GameShell {
 		}
 		if (Static347.anInt6442 == 10) {
 			this.method1405();
-			Static142.method2663();
+			CreateManager.loop();
 			Static164.method3148();
 			Static91.method1961();
 		} else if (Static347.anInt6442 == 30) {
@@ -581,7 +581,7 @@ public final class client extends GameShell {
 				}
 			}
 		}
-		if (Static347.anInt6441 == 0 && Static141.anInt2652 == 0) {
+		if (Static347.anInt6441 == 0 && CreateManager.step == 0) {
 			if (Static314.anInt5911 == 2) {
 				Static222.method3917();
 			} else {

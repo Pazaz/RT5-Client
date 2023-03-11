@@ -6,9 +6,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static163 {
 
-	@OriginalMember(owner = "client!jj", name = "S", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray23;
-
 	@OriginalMember(owner = "client!jj", name = "Y", descriptor = "Lclient!ku;")
 	public static Class15 aClass15_1;
 
@@ -134,7 +131,7 @@ public final class Static163 {
 	public static void method3102(@OriginalArg(1) String arg0) {
 		if (Static47.aClass214Array1 != null) {
 			Static91.method1960(Static70.aClass145_57);
-			Protocol.outboundBuffer.p1(Static27.method872(arg0));
+			Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
 			Protocol.outboundBuffer.pjstr(arg0);
 		}
 	}

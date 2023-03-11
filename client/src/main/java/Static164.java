@@ -91,19 +91,19 @@ public final class Static164 {
 				Static193.anInt3557 = 0;
 			}
 			if (Static154.anInt2803 == 1) {
-				Static5.aClass32_1 = GameShell.signlink.openSocket(client.worldListHostname, client.worldListPort);
+				Protocol.socketRequest2 = GameShell.signlink.openSocket(client.worldListHostname, client.worldListPort);
 				Static154.anInt2803 = 2;
 			}
 			@Pc(125) int local125;
 			if (Static154.anInt2803 == 2) {
-				if (Static5.aClass32_1.status == 2) {
+				if (Protocol.socketRequest2.status == 2) {
 					throw new IOException();
 				}
-				if (Static5.aClass32_1.status != 1) {
+				if (Protocol.socketRequest2.status != 1) {
 					return;
 				}
-				Protocol.socket = new Class111((Socket) Static5.aClass32_1.result, GameShell.signlink);
-				Static5.aClass32_1 = null;
+				Protocol.socket = new Class111((Socket) Protocol.socketRequest2.result, GameShell.signlink);
+				Protocol.socketRequest2 = null;
 				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
 				if (client.musicChannel != null) {
 					client.musicChannel.method6325();

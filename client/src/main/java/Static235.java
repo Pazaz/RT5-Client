@@ -118,7 +118,7 @@ public final class Static235 {
 		} catch (@Pc(21) Exception local21) {
 			@Pc(81) String local81 = "T2 - " + (Static231.aClass89_164 == null ? -1 : Static231.aClass89_164.method2399()) + "," + (Static66.aClass89_57 == null ? -1 : Static66.aClass89_57.method2399()) + "," + (Static39.aClass89_35 == null ? -1 : Static39.aClass89_35.method2399()) + " - " + Static82.anInt1836 + "," + (Static164.anInt3140 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0]) + "," + (Static148.anInt2719 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0]) + " - ";
 			for (@Pc(83) int local83 = 0; local83 < Static82.anInt1836 && local83 < 50; local83++) {
-				local81 = local81 + Static212.aClass2_Sub4_Sub2_3.data[local83] + ",";
+				local81 = local81 + Protocol.inboundBuffer.data[local83] + ",";
 			}
 			Static262.report(local21, local81);
 			Static99.method2144();

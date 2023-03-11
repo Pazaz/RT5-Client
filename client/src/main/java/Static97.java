@@ -44,7 +44,7 @@ public final class Static97 {
 			local40.p4((int) (Math.random() * 9.9999999E7D));
 			local40.pjstr(Static16.aString51);
 			local40.p4((int) (Math.random() * 9.9999999E7D));
-			local40.rsaenc(Static320.aBigInteger2, Static194.aBigInteger1);
+			local40.rsaenc(Protocol.EXPONENT, Protocol.MODULUS);
 			Protocol.outboundBuffer.pos = 0;
 			Protocol.outboundBuffer.p1(Static43.aClass242_10.opcode);
 			Protocol.outboundBuffer.p1(local40.pos + 2);

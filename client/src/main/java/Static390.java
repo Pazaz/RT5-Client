@@ -25,7 +25,7 @@ public final class Static390 {
 		Static334.aClass89_222 = null;
 		Static39.aClass89_35 = null;
 		Static268.anInt4955 = 0;
-		Static212.aClass2_Sub4_Sub2_3.pos = 0;
+		Protocol.inboundBuffer.pos = 0;
 		Static151.anInt2773 = 0;
 		Static66.aClass89_57 = null;
 		for (@Pc(4365) int local4365 = 0; local4365 < Static50.aClass84Array1.length; local4365++) {

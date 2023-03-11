@@ -9,9 +9,6 @@ public final class Static318 {
 	@OriginalMember(owner = "client!sj", name = "d", descriptor = "Z")
 	public static boolean aBoolean408 = false;
 
-	@OriginalMember(owner = "client!sj", name = "i", descriptor = "I")
-	public static int anInt5968 = -2;
-
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(BLclient!cf;)Ljava/lang/String;")
 	public static String method5421(@OriginalArg(1) Class2_Sub5 arg0) {
 		return arg0.aString11 == null || arg0.aString11.length() <= 0 ? arg0.aString10 : arg0.aString10 + Static161.aClass79_67.method2267(client.language) + arg0.aString11;

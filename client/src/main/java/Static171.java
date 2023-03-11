@@ -19,7 +19,7 @@ public final class Static171 {
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(IILjava/lang/String;)V")
 	public static void method3256(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
 		Static91.method1960(Static382.aClass145_258);
-		Protocol.outboundBuffer.p1(Static27.method872(arg1) + 1);
+		Protocol.outboundBuffer.p1(Buffer.getStringLength(arg1) + 1);
 		Protocol.outboundBuffer.p1add(arg0);
 		Protocol.outboundBuffer.pjstr(arg1);
 	}

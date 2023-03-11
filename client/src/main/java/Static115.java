@@ -46,7 +46,7 @@ public final class Static115 {
 	public static void method3841(@OriginalArg(0) String arg0) {
 		if (!arg0.equals("")) {
 			Static91.method1960(Static13.aClass145_18);
-			Protocol.outboundBuffer.p1(Static27.method872(arg0));
+			Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
 			Protocol.outboundBuffer.pjstr(arg0);
 		}
 	}

@@ -31,11 +31,6 @@ public final class Static27 {
 		}
 	}
 
-	@OriginalMember(owner = "client!bk", name = "a", descriptor = "(BLjava/lang/String;)I")
-	public static int method872(@OriginalArg(1) String arg0) {
-		return arg0.length() + 1;
-	}
-
 	@OriginalMember(owner = "client!bk", name = "a", descriptor = "(Lclient!bt;B)V")
 	public static void method875(@OriginalArg(0) Buffer arg0) {
 		@Pc(8) byte[] local8 = new byte[24];

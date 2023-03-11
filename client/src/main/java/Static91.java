@@ -56,19 +56,19 @@ public final class Static91 {
 				}
 			}
 			if (Static347.anInt6441 == 1) {
-				Static5.aClass32_1 = GameShell.signlink.openSocket(client.hostname, client.port);
+				Protocol.socketRequest2 = GameShell.signlink.openSocket(client.hostname, client.port);
 				Static347.anInt6441 = 2;
 			}
 			@Pc(112) int local112;
 			if (Static347.anInt6441 == 2) {
-				if (Static5.aClass32_1.status == 2) {
+				if (Protocol.socketRequest2.status == 2) {
 					throw new IOException();
 				}
-				if (Static5.aClass32_1.status != 1) {
+				if (Protocol.socketRequest2.status != 1) {
 					return;
 				}
-				Protocol.socket = new Class111((Socket) Static5.aClass32_1.result, GameShell.signlink);
-				Static5.aClass32_1 = null;
+				Protocol.socket = new Class111((Socket) Protocol.socketRequest2.result, GameShell.signlink);
+				Protocol.socketRequest2 = null;
 				@Pc(105) long local105 = Static241.aLong130 = Static80.toBase37(Static374.aString70);
 				local112 = (int) (local105 >> 16 & 0x1FL);
 				Protocol.outboundBuffer.pos = 0;
@@ -101,9 +101,9 @@ public final class Static91 {
 				if (Protocol.socket.available() < 8) {
 					return;
 				}
-				Protocol.socket.read(Static212.aClass2_Sub4_Sub2_3.data, 8, 0);
-				Static212.aClass2_Sub4_Sub2_3.pos = 0;
-				Static201.aLong119 = Static212.aClass2_Sub4_Sub2_3.g8();
+				Protocol.socket.read(Protocol.inboundBuffer.data, 8, 0);
+				Protocol.inboundBuffer.pos = 0;
+				Static201.aLong119 = Protocol.inboundBuffer.g8();
 				@Pc(208) Buffer local208 = new Buffer(70);
 				@Pc(211) int[] local211 = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (Static201.aLong119 >> 32), (int) Static201.aLong119 };
 				local208.p1(10);
@@ -113,7 +113,7 @@ public final class Static91 {
 				local208.p4(local211[3]);
 				local208.p8(Static80.toBase37(Static374.aString70));
 				local208.pjstr(Static16.aString51);
-				local208.rsaenc(Static320.aBigInteger2, Static194.aBigInteger1);
+				local208.rsaenc(Protocol.EXPONENT, Protocol.MODULUS);
 				Protocol.outboundBuffer.pos = 0;
 				if (Static347.anInt6442 == 40) {
 					Protocol.outboundBuffer.p1(Static43.aClass242_5.opcode);
@@ -172,7 +172,7 @@ public final class Static91 {
 				for (@Pc(579) int local579 = 0; local579 < 4; local579++) {
 					local211[local579] += 50;
 				}
-				Static212.aClass2_Sub4_Sub2_3.setKey(local211);
+				Protocol.inboundBuffer.setKey(local211);
 				Static347.anInt6441 = 4;
 			}
 			@Pc(619) int local619;
@@ -227,17 +227,17 @@ public final class Static91 {
 					if (Protocol.socket.available() < 13) {
 						return;
 					}
-					Protocol.socket.read(Static212.aClass2_Sub4_Sub2_3.data, 13, 0);
-					Static212.aClass2_Sub4_Sub2_3.pos = 0;
-					Static4.anInt90 = Static212.aClass2_Sub4_Sub2_3.g1();
-					Static210.anInt3774 = Static212.aClass2_Sub4_Sub2_3.g1();
-					Static56.aBoolean123 = Static212.aClass2_Sub4_Sub2_3.g1() == 1;
-					Static101.aBoolean159 = Static212.aClass2_Sub4_Sub2_3.g1() == 1;
-					Static347.aBoolean434 = Static212.aClass2_Sub4_Sub2_3.g1() == 1;
-					Static109.aBoolean166 = Static212.aClass2_Sub4_Sub2_3.g1() == 1;
-					Static234.anInt4226 = Static212.aClass2_Sub4_Sub2_3.g2();
-					Static381.aBoolean482 = Static212.aClass2_Sub4_Sub2_3.g1() == 1;
-					Static206.aBoolean241 = Static212.aClass2_Sub4_Sub2_3.g1() == 1;
+					Protocol.socket.read(Protocol.inboundBuffer.data, 13, 0);
+					Protocol.inboundBuffer.pos = 0;
+					Static4.anInt90 = Protocol.inboundBuffer.g1();
+					Static210.anInt3774 = Protocol.inboundBuffer.g1();
+					Static56.aBoolean123 = Protocol.inboundBuffer.g1() == 1;
+					Static101.aBoolean159 = Protocol.inboundBuffer.g1() == 1;
+					Static347.aBoolean434 = Protocol.inboundBuffer.g1() == 1;
+					Static109.aBoolean166 = Protocol.inboundBuffer.g1() == 1;
+					Static234.anInt4226 = Protocol.inboundBuffer.g2();
+					Static381.aBoolean482 = Protocol.inboundBuffer.g1() == 1;
+					Static206.aBoolean241 = Protocol.inboundBuffer.g1() == 1;
 					Static359.aClass202_4.method5157(Static206.aBoolean241);
 					Static313.aClass107_2.method2762(Static206.aBoolean241);
 					Static6.aClass219_1.method5573(Static206.aBoolean241);
@@ -267,29 +267,29 @@ public final class Static91 {
 					Static347.anInt6441 = 10;
 				}
 				if (Static347.anInt6441 == 10) {
-					if (Static212.aClass2_Sub4_Sub2_3.peek1isaac()) {
+					if (Protocol.inboundBuffer.peek1isaac()) {
 						if (Protocol.socket.available() < 1) {
 							return;
 						}
-						Protocol.socket.read(Static212.aClass2_Sub4_Sub2_3.data, 1, Static212.aClass2_Sub4_Sub2_3.pos + 2);
+						Protocol.socket.read(Protocol.inboundBuffer.data, 1, Protocol.inboundBuffer.pos + 2);
 					}
-					Static231.aClass89_164 = Static166.method3188()[Static212.aClass2_Sub4_Sub2_3.method4864()];
-					Static82.anInt1836 = Static212.aClass2_Sub4_Sub2_3.g2();
+					Static231.aClass89_164 = Static166.method3188()[Protocol.inboundBuffer.method4864()];
+					Static82.anInt1836 = Protocol.inboundBuffer.g2();
 					Static347.anInt6441 = 9;
 				}
 				if (Static347.anInt6441 == 9) {
 					if (Protocol.socket.available() >= Static82.anInt1836) {
-						Protocol.socket.read(Static212.aClass2_Sub4_Sub2_3.data, Static82.anInt1836, 0);
-						Static212.aClass2_Sub4_Sub2_3.pos = 0;
+						Protocol.socket.read(Protocol.inboundBuffer.data, Static82.anInt1836, 0);
+						Protocol.inboundBuffer.pos = 0;
 						Static41.anInt1046 = 2;
 						local619 = Static82.anInt1836;
 						Static347.anInt6441 = 0;
 						Static390.method6449();
-						Static366.method6120(Static212.aClass2_Sub4_Sub2_3);
+						Static366.method6120(Protocol.inboundBuffer);
 						Static105.anInt2187 = -1;
 						Static181.method3375(false);
-						if (local619 != Static212.aClass2_Sub4_Sub2_3.pos) {
-							throw new RuntimeException("lswp pos:" + Static212.aClass2_Sub4_Sub2_3.pos + " psize:" + local619);
+						if (local619 != Protocol.inboundBuffer.pos) {
+							throw new RuntimeException("lswp pos:" + Protocol.inboundBuffer.pos + " psize:" + local619);
 						}
 						Static231.aClass89_164 = null;
 					}
@@ -298,20 +298,20 @@ public final class Static91 {
 						if (Protocol.socket.available() < 2) {
 							return;
 						}
-						Protocol.socket.read(Static212.aClass2_Sub4_Sub2_3.data, 2, 0);
-						Static212.aClass2_Sub4_Sub2_3.pos = 0;
-						Static82.anInt1836 = Static212.aClass2_Sub4_Sub2_3.g2();
+						Protocol.socket.read(Protocol.inboundBuffer.data, 2, 0);
+						Protocol.inboundBuffer.pos = 0;
+						Static82.anInt1836 = Protocol.inboundBuffer.g2();
 					}
 					if (Protocol.socket.available() >= Static82.anInt1836) {
-						Protocol.socket.read(Static212.aClass2_Sub4_Sub2_3.data, Static82.anInt1836, 0);
-						Static212.aClass2_Sub4_Sub2_3.pos = 0;
+						Protocol.socket.read(Protocol.inboundBuffer.data, Static82.anInt1836, 0);
+						Protocol.inboundBuffer.pos = 0;
 						Static41.anInt1046 = 15;
 						Static347.anInt6441 = 0;
 						local619 = Static82.anInt1836;
 						Static182.method3388();
-						Static366.method6120(Static212.aClass2_Sub4_Sub2_3);
-						if (Static212.aClass2_Sub4_Sub2_3.pos != local619) {
-							throw new RuntimeException("lswpr pos:" + Static212.aClass2_Sub4_Sub2_3.pos + " psize:" + local619);
+						Static366.method6120(Protocol.inboundBuffer);
+						if (Protocol.inboundBuffer.pos != local619) {
+							throw new RuntimeException("lswpr pos:" + Protocol.inboundBuffer.pos + " psize:" + local619);
 						}
 						Static231.aClass89_164 = null;
 					}

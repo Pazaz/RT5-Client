@@ -14,9 +14,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static5 {
 
-	@OriginalMember(owner = "client!ad", name = "x", descriptor = "Lclient!cc;")
-	public static PrivilegedRequest aClass32_1;
-
 	@OriginalMember(owner = "client!ad", name = "y", descriptor = "I")
 	public static int anInt105;
 

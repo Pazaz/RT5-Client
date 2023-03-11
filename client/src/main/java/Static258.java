@@ -96,7 +96,7 @@ public final class Static258 {
 				}
 				Static53.anInt3971 = Static88.anInt1876;
 				Static91.method1960(Static343.aClass145_231);
-				Protocol.outboundBuffer.p1(Static27.method872(arg0));
+				Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
 				Protocol.outboundBuffer.pjstr(arg0);
 				break;
 			}

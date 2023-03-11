@@ -10,9 +10,6 @@ public final class Static212 {
 	@OriginalMember(owner = "client!mi", name = "e", descriptor = "I")
 	public static int anInt3785 = 0;
 
-	@OriginalMember(owner = "client!mi", name = "m", descriptor = "Lclient!qg;")
-	public static final Packet aClass2_Sub4_Sub2_3 = new Packet(5000);
-
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(Lclient!nk;III)V")
 	public static void method3726(@OriginalArg(0) Class161 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(8) Class78 local8 = arg0.method4109(Static190.aClass19_8);

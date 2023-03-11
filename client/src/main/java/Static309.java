@@ -87,7 +87,7 @@ public final class Static309 {
 			Static207.method3700(Static47.aClass79_27.method2267(client.language));
 		} else {
 			Static91.method1960(Static192.aClass145_139);
-			Protocol.outboundBuffer.p1(Static27.method872(arg0) + 1);
+			Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0) + 1);
 			Protocol.outboundBuffer.pjstr(arg0);
 			Protocol.outboundBuffer.p1(arg1 ? 1 : 0);
 		}

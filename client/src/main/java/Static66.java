@@ -14,6 +14,4 @@ public final class Static66 {
 	@OriginalMember(owner = "client!dr", name = "U", descriptor = "I")
 	public static int anInt1624 = 0;
 
-	@OriginalMember(owner = "client!dr", name = "V", descriptor = "I")
-	public static int anInt1625 = 0;
 }

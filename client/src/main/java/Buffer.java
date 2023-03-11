@@ -100,6 +100,11 @@ public class Buffer extends Class2 {
 		return ~crc;
 	}
 
+	@OriginalMember(owner = "client!bk", name = "a", descriptor = "(BLjava/lang/String;)I")
+	public static int getStringLength(@OriginalArg(1) String arg0) {
+		return arg0.length() + 1;
+	}
+
 	// get, 8 bytes
 	@OriginalMember(owner = "client!bt", name = "b", descriptor = "(I)J")
 	public final long g8() {
@@ -276,11 +281,11 @@ public class Buffer extends Class2 {
 
 	// (extended) tiny (encryption algorithm) (XTEA), decrypt
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(II[II)V")
-	public final void tinydec(@OriginalArg(2) int[] src, @OriginalArg(3) int offset) {
+	public final void tinydec(@OriginalArg(2) int[] key, @OriginalArg(3) int len) {
+		@Pc(25) int blocks = (len - 5) / 8;
 		@Pc(16) int start = this.pos;
 		this.pos = 5;
 
-		@Pc(25) int blocks = (offset - 5) / 8;
 		for (@Pc(27) int i = 0; i < blocks; i++) {
 			@Pc(33) int v0 = this.g4();
 			@Pc(37) int v1 = this.g4();
@@ -288,9 +293,9 @@ public class Buffer extends Class2 {
 			@Pc(43) int rounds = 32;
 
 			while (rounds-- > 0) {
-				v1 -= src[sum >>> 11 & 0x3] + sum ^ (v0 >>> 5 ^ v0 << 4) + v0;
+				v1 -= key[sum >>> 11 & 0x3] + sum ^ (v0 >>> 5 ^ v0 << 4) + v0;
 				sum -= 0x9E3779B9;
-				v0 -= (v1 >>> 5 ^ v1 << 4) + v1 ^ src[sum & 0x3] + sum;
+				v0 -= (v1 >>> 5 ^ v1 << 4) + v1 ^ key[sum & 0x3] + sum;
 			}
 
 			this.pos -= 8;

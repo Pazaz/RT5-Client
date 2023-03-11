@@ -1,6 +1,6 @@
 import java.awt.Container;
 import java.awt.Insets;
-import org.openrs2.deob.annotation.OriginalArg;
+
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
@@ -20,20 +20,6 @@ public final class Static352 {
 
 	@OriginalMember(owner = "client!uh", name = "W", descriptor = "Z")
 	public static boolean aBoolean446 = false;
-
-	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(IIIII)V")
-	public static void method5876(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		Protocol.outboundBuffer.pos = 0;
-		Protocol.outboundBuffer.p1(Static43.REGISTER_STEP1.opcode);
-		Protocol.outboundBuffer.p1(arg2);
-		Protocol.outboundBuffer.p1(arg3);
-		Protocol.outboundBuffer.p2(arg1);
-		Protocol.outboundBuffer.p2(arg0);
-		Static327.anInt6109 = 0;
-		Static66.anInt1625 = 0;
-		Static318.anInt5968 = -3;
-		Static141.anInt2652 = 1;
-	}
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(I)V")
 	public static void method5877() {

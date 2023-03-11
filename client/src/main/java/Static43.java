@@ -29,15 +29,6 @@ public final class Static43 {
 	@OriginalMember(owner = "client!ck", name = "N", descriptor = "Lclient!vr;")
 	public static final OutboundPacket aClass242_5 = new OutboundPacket(18, -2);
 
-	@OriginalMember(owner = "client!ck", name = "O", descriptor = "Lclient!vr;")
-	public static final OutboundPacket REGISTER_STEP1 = new OutboundPacket(20, 6);
-
-	@OriginalMember(owner = "client!ck", name = "P", descriptor = "Lclient!vr;")
-	public static final OutboundPacket VALIDATE_USERNAME = new OutboundPacket(21, 8);
-
-	@OriginalMember(owner = "client!ck", name = "Q", descriptor = "Lclient!vr;")
-	public static final OutboundPacket REGISTER_STEP2 = new OutboundPacket(22, -2);
-
 	@OriginalMember(owner = "client!ck", name = "R", descriptor = "Lclient!vr;")
 	public static final OutboundPacket GET_WORLDLIST = new OutboundPacket(23, 4);
 
@@ -46,7 +37,7 @@ public final class Static43 {
 
 	@OriginalMember(owner = "client!kh", name = "b", descriptor = "(B)[Lclient!vr;")
 	public static OutboundPacket[] method3371() {
-		return new OutboundPacket[] { aClass242_1, aClass242_2, aClass242_3, aClass242_4, aClass242_5, REGISTER_STEP1, VALIDATE_USERNAME, REGISTER_STEP2, GET_WORLDLIST, aClass242_10 };
+		return new OutboundPacket[] { aClass242_1, aClass242_2, aClass242_3, aClass242_4, aClass242_5, CreateManager.REGISTER_STEP1, CreateManager.VALIDATE_USERNAME, CreateManager.REGISTER_STEP2, GET_WORLDLIST, aClass242_10 };
 	}
 
 }

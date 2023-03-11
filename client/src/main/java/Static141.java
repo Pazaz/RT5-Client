@@ -16,9 +16,6 @@ public final class Static141 {
 	@OriginalMember(owner = "client!i", name = "V", descriptor = "Lclient!ad;")
 	public static final Class4 aClass4_58 = new Class4(8);
 
-	@OriginalMember(owner = "client!i", name = "W", descriptor = "I")
-	public static int anInt2652 = 0;
-
 	@OriginalMember(owner = "client!i", name = "X", descriptor = "Z")
 	public static boolean aBoolean189 = false;
 
