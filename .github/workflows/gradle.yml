@@ -1,0 +1,32 @@
+name: Java CI with Gradle
+
+on:
+  push:
+    branches:
+     - '578'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up JDK 8
+      uses: actions/setup-java@v3
+      with:
+        java-version: '8'
+        distribution: 'adopt'
+
+    - name: Build with Gradle
+      uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
+      with:
+        arguments: build
+
+    - run: mv client/build/libs/client-*.jar client/build/libs/rt5-client.jar
+    - run: sha256sum client/build/libs/rt5-client.jar | cut -d ' ' -f 1 | tr -d '\n' > client/build/libs/rt5-client.jar.sha256
+
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.0
+      with:
+        name: rt5-client
+        path: client/build/libs/*
