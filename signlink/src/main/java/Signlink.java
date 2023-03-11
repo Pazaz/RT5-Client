@@ -492,10 +492,11 @@ public final class Signlink implements Runnable {
 					}
 				}
 				local16.status = 1;
-			} catch (@Pc(896) ThreadDeath local896) {
-				throw local896;
-			} catch (@Pc(899) Throwable local899) {
+			} catch (@Pc(896) ThreadDeath ex) {
+				throw ex;
+			} catch (@Pc(899) Throwable ex) {
 				local16.status = 2;
+				ex.printStackTrace();
 			}
 			synchronized (local16) {
 				local16.notify();
@@ -585,6 +586,7 @@ public final class Signlink implements Runnable {
 		local3.objectArg = arg0;
 		local3.type = arg2;
 		local3.intArg1 = arg1;
+		local3.intArg2 = arg3;
 		synchronized (this) {
 			if (this.requestQueueTail == null) {
 				this.requestQueueTail = this.requestQueueHead = local3;
