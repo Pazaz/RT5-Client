@@ -16,45 +16,52 @@ public final class client extends GameShell {
 	@OriginalMember(owner = "client!client", name = "main", descriptor = "([Ljava/lang/String;)V")
 	public static void main(@OriginalArg(0) String[] arg0) {
 		try {
-			if (arg0.length != 4) {
-				Static188.method3465("argument count");
-			}
-			Static177.anInt3372 = Integer.parseInt(arg0[0]);
-			Static121.aClass127_4 = Static231.aClass127_7;
-			if (arg0[1].equals("live")) {
-				Static202.aClass209_2 = Static232.aClass209_3;
-			} else if (arg0[1].equals("rc")) {
-				Static202.aClass209_2 = Static175.aClass209_1;
-			} else if (arg0[1].equals("wip")) {
-				Static202.aClass209_2 = Static359.aClass209_4;
-			} else {
-				Static188.method3465("modewhat");
-			}
-			Static295.anInt5581 = Static25.method860(arg0[2]);
-			if (Static295.anInt5581 == -1) {
-				if (arg0[2].equals("english")) {
-					Static295.anInt5581 = 0;
-				} else if (arg0[2].equals("german")) {
-					Static295.anInt5581 = 1;
+			if (arg0.length == 4) {
+				Static177.anInt3372 = Integer.parseInt(arg0[0]);
+				if (arg0[1].equals("live")) {
+					Static202.aClass209_2 = Static232.aClass209_3;
+				} else if (arg0[1].equals("rc")) {
+					Static202.aClass209_2 = Static175.aClass209_1;
+				} else if (arg0[1].equals("wip")) {
+					Static202.aClass209_2 = Static359.aClass209_4;
 				} else {
-					Static188.method3465("language");
+					Static188.method3465("modewhat");
 				}
+				Static295.anInt5581 = Static25.method860(arg0[2]);
+				if (Static295.anInt5581 == -1) {
+					if (arg0[2].equals("english")) {
+						Static295.anInt5581 = 0;
+					} else if (arg0[2].equals("german")) {
+						Static295.anInt5581 = 1;
+					} else {
+						Static188.method3465("language");
+					}
+				}
+				if (arg0[3].equals("game0")) {
+					Static343.aClass50_4 = Static249.aClass50_3;
+				} else if (arg0[3].equals("game1")) {
+					Static343.aClass50_4 = Static106.aClass50_1;
+				} else {
+					Static188.method3465("game");
+				}
+			} else {
+				// default arguments "1 live english game0"
+				Static177.anInt3372 = 1;
+				Static202.aClass209_2 = Static232.aClass209_3;
+				Static295.anInt5581 = 0;
+				Static343.aClass50_4 = Static249.aClass50_3;
 			}
+
+			Static121.aClass127_4 = Static231.aClass127_7;
 			Static237.aBoolean298 = false;
 			Static276.aBoolean375 = false;
-			if (arg0[3].equals("game0")) {
-				Static343.aClass50_4 = Static249.aClass50_3;
-			} else if (arg0[3].equals("game1")) {
-				Static343.aClass50_4 = Static106.aClass50_1;
-			} else {
-				Static188.method3465("game");
-			}
 			Static320.anInt6007 = 0;
 			Static31.aBoolean68 = true;
 			Static381.aBoolean482 = true;
 			Static74.aString17 = "";
 			Static165.anInt3149 = 0;
 			Static64.anInt1555 = Static343.aClass50_4.anInt1553;
+
 			@Pc(131) client local131 = new client();
 			Static144.aClient1 = local131;
 			local131.method1383(Static343.aClass50_4.aString15, Static202.aClass209_2.method5282() + 32);
