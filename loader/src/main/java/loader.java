@@ -87,7 +87,7 @@ public final class loader extends Applet implements Runnable {
 	private byte[] method6515(@OriginalArg(0) boolean arg0, @OriginalArg(2) Signlink arg1, @OriginalArg(3) Resource arg2) {
 		@Pc(5) File local5;
 		try {
-			local5 = arg1.method6530(arg2.aString73);
+			local5 = arg1.getFile(arg2.aString73);
 		} catch (@Pc(7) Exception local7) {
 			this.method6514("nocache");
 			return null;

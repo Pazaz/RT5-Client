@@ -29,15 +29,15 @@ public final class Static283 {
 	}
 
 	@OriginalMember(owner = "client!qh", name = "a", descriptor = "(Lclient!ml;Ljava/lang/Object;I)V")
-	public static void method4876(@OriginalArg(0) Class152 arg0, @OriginalArg(1) Object arg1) {
-		if (arg0.anEventQueue1 == null) {
+	public static void method4876(@OriginalArg(0) SignedLink arg0, @OriginalArg(1) Object arg1) {
+		if (arg0.eventQueue == null) {
 			return;
 		}
-		for (@Pc(11) int local11 = 0; local11 < 50 && arg0.anEventQueue1.peekEvent() != null; local11++) {
+		for (@Pc(11) int local11 = 0; local11 < 50 && arg0.eventQueue.peekEvent() != null; local11++) {
 			Static231.method4023(1L);
 		}
 		if (arg1 != null) {
-			arg0.anEventQueue1.postEvent(new ActionEvent(arg1, 1001, "dummy"));
+			arg0.eventQueue.postEvent(new ActionEvent(arg1, 1001, "dummy"));
 		}
 	}
 }

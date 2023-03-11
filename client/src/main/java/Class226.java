@@ -34,10 +34,10 @@ public final class Class226 implements Interface11 {
 		this.anIntArray430[arg0] = arg1;
 		@Pc(16) Class2_Sub35 local16 = (Class2_Sub35) this.aClass4_132.method90((long) arg0);
 		if (local16 == null) {
-			local16 = new Class2_Sub35(Static204.method3685() + 500L);
+			local16 = new Class2_Sub35(MonotonicClock.currentTimeMillis() + 500L);
 			this.aClass4_132.method87(local16, (long) arg0);
 		} else {
-			local16.aLong183 = Static204.method3685() + 500L;
+			local16.aLong183 = MonotonicClock.currentTimeMillis() + 500L;
 		}
 	}
 
@@ -66,7 +66,7 @@ public final class Class226 implements Interface11 {
 
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(IZ)I")
 	public int method5783(@OriginalArg(1) boolean arg0) {
-		@Pc(13) long local13 = Static204.method3685();
+		@Pc(13) long local13 = MonotonicClock.currentTimeMillis();
 		for (@Pc(27) Class2_Sub35 local27 = arg0 ? (Class2_Sub35) this.aClass4_132.method80() : (Class2_Sub35) this.aClass4_132.method79(); local27 != null; local27 = (Class2_Sub35) this.aClass4_132.method79()) {
 			if (local13 > (local27.aLong183 & 0x3FFFFFFFFFFFFFFFL)) {
 				if ((local27.aLong183 & 0x4000000000000000L) != 0L) {
@@ -95,7 +95,7 @@ public final class Class226 implements Interface11 {
 			local24 = new Class2_Sub35(4611686018427387905L);
 			this.aClass4_132.method87(local24, (long) arg1);
 		} else if (local24.aLong183 != 4611686018427387905L) {
-			local24.aLong183 = Static204.method3685() + 500L | 0x4000000000000000L;
+			local24.aLong183 = MonotonicClock.currentTimeMillis() + 500L | 0x4000000000000000L;
 			return;
 		}
 	}

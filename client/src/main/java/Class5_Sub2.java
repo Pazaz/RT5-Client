@@ -64,7 +64,7 @@ public final class Class5_Sub2 extends Class5 {
 
 	@OriginalMember(owner = "client!ir", name = "a", descriptor = "(Z)J")
 	private long method2778() {
-		@Pc(4) long local4 = Static204.method3685() * 1000000L;
+		@Pc(4) long local4 = MonotonicClock.currentTimeMillis() * 1000000L;
 		@Pc(10) long local10 = local4 - this.aLong88;
 		this.aLong88 = local4;
 		if (local10 > -5000000000L && local10 < 5000000000L) {

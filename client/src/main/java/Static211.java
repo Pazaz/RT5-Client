@@ -11,7 +11,7 @@ public final class Static211 {
 	public static Class13 aClass13_13;
 
 	@OriginalMember(owner = "client!mh", name = "g", descriptor = "Lclient!cc;")
-	public static Class32 aClass32_8;
+	public static PrivilegedRequest aClass32_8;
 
 	@OriginalMember(owner = "client!mh", name = "j", descriptor = "I")
 	public static int anInt3780;

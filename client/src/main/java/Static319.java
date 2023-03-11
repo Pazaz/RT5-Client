@@ -46,25 +46,25 @@ public final class Static319 {
 	public static int method5430() {
 		try {
 			if (Static77.anInt1751 == 0) {
-				if (Static349.aLong200 > Static204.method3685() - 5000L) {
+				if (Static349.aLong200 > MonotonicClock.currentTimeMillis() - 5000L) {
 					return 0;
 				}
-				Static158.aClass32_7 = Static328.aClass152_5.method3751(Static61.aString14, Static278.anInt5154);
-				Static284.aLong157 = Static204.method3685();
+				Static158.aClass32_7 = Static328.aClass152_5.openSocket(Static61.aString14, Static278.anInt5154);
+				Static284.aLong157 = MonotonicClock.currentTimeMillis();
 				Static77.anInt1751 = 1;
 			}
-			if (Static204.method3685() > Static284.aLong157 + 30000L) {
+			if (MonotonicClock.currentTimeMillis() > Static284.aLong157 + 30000L) {
 				return Static101.method2166(1000);
 			}
 			@Pc(114) int local114;
 			if (Static77.anInt1751 == 1) {
-				if (Static158.aClass32_7.anInt993 == 2) {
+				if (Static158.aClass32_7.status == 2) {
 					return Static101.method2166(1001);
 				}
-				if (Static158.aClass32_7.anInt993 != 1) {
+				if (Static158.aClass32_7.status != 1) {
 					return -1;
 				}
-				Static335.aClass111_4 = new Class111((Socket) Static158.aClass32_7.anObject2, Static328.aClass152_5);
+				Static335.aClass111_4 = new Class111((Socket) Static158.aClass32_7.result, Static328.aClass152_5);
 				Static158.aClass32_7 = null;
 				@Pc(76) int local76 = 0;
 				Static257.aClass2_Sub4_Sub2_4.anInt5300 = 0;
@@ -133,7 +133,7 @@ public final class Static319 {
 				Static12.anInt270 = 0;
 				Static298.aByteArray27 = null;
 				Static335.aClass111_4 = null;
-				Static349.aLong200 = Static204.method3685();
+				Static349.aLong200 = MonotonicClock.currentTimeMillis();
 				return 0;
 			} else {
 				return Static101.method2166(1002);

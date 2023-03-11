@@ -41,7 +41,7 @@ public final class TracingException extends RuntimeException {
 			local6 = method6503("@", local6, "%40");
 			local6 = method6503("&", local6, "%26");
 			local6 = method6503("#", local6, "%23");
-			@Pc(92) URL local92 = new URL(arg0.getCodeBase(), "loadererror.ws?c=" + anInt7269 + "&v1=" + Signlink.aString76 + "&v2=" + Signlink.aString82 + "&e=" + local6);
+			@Pc(92) URL local92 = new URL(arg0.getCodeBase(), "loadererror.ws?c=" + anInt7269 + "&v1=" + Signlink.javaVendor + "&v2=" + Signlink.javaVersion + "&e=" + local6);
 			@Pc(98) DataInputStream local98 = new DataInputStream(local92.openStream());
 			local98.read();
 			local98.close();

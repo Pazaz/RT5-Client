@@ -62,14 +62,14 @@ public final class Static340 {
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(Z)V")
 	public static void method5765() {
-		@Pc(7) Class204 local7 = null;
+		@Pc(7) FileOnDisk local7 = null;
 		try {
-			@Pc(11) Class32 local11 = Static328.aClass152_5.method3756();
-			while (local11.anInt993 == 0) {
+			@Pc(11) PrivilegedRequest local11 = Static328.aClass152_5.openPreferences2();
+			while (local11.status == 0) {
 				Static231.method4023(1L);
 			}
-			if (local11.anInt993 == 1) {
-				local7 = (Class204) local11.anObject2;
+			if (local11.status == 1) {
+				local7 = (FileOnDisk) local11.result;
 				@Pc(41) Class2_Sub4 local41 = new Class2_Sub4(Static112.anInt2294 * 6 + 3);
 				local41.method4842(1);
 				local41.method4843(Static112.anInt2294);
@@ -85,11 +85,11 @@ public final class Static340 {
 		}
 		try {
 			if (local7 != null) {
-				local7.method5193();
+				local7.close();
 			}
 		} catch (@Pc(89) Exception local89) {
 		}
-		Static375.aLong221 = Static204.method3685();
+		Static375.aLong221 = MonotonicClock.currentTimeMillis();
 		Static273.aBoolean374 = false;
 	}
 

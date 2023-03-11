@@ -14,7 +14,7 @@ public final class Static253 {
 	public static final Class145 aClass145_166 = new Class145(42, -1);
 
 	@OriginalMember(owner = "client!oj", name = "f", descriptor = "Lclient!un;")
-	public static Applet_Sub1 anApplet_Sub1_1 = null;
+	public static GameShell anApplet_Sub1_1 = null;
 
 	@OriginalMember(owner = "client!oj", name = "a", descriptor = "()V")
 	public static void method4366() {

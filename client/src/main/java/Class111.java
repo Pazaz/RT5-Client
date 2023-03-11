@@ -12,7 +12,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class111 implements Runnable {
 
 	@OriginalMember(owner = "client!iu", name = "q", descriptor = "Lclient!cc;")
-	private Class32 aClass32_6;
+	private PrivilegedRequest aClass32_6;
 
 	@OriginalMember(owner = "client!iu", name = "v", descriptor = "[B")
 	private byte[] aByteArray29;
@@ -33,7 +33,7 @@ public final class Class111 implements Runnable {
 	private final Socket aSocket1;
 
 	@OriginalMember(owner = "client!iu", name = "u", descriptor = "Lclient!ml;")
-	private final Class152 aClass152_2;
+	private final SignedLink aClass152_2;
 
 	@OriginalMember(owner = "client!iu", name = "s", descriptor = "Ljava/io/InputStream;")
 	private InputStream anInputStream1;
@@ -42,7 +42,7 @@ public final class Class111 implements Runnable {
 	private OutputStream anOutputStream1;
 
 	@OriginalMember(owner = "client!iu", name = "<init>", descriptor = "(Ljava/net/Socket;Lclient!ml;)V")
-	public Class111(@OriginalArg(0) Socket arg0, @OriginalArg(1) Class152 arg1) throws IOException {
+	public Class111(@OriginalArg(0) Socket arg0, @OriginalArg(1) SignedLink arg1) throws IOException {
 		this.aSocket1 = arg0;
 		this.aClass152_2 = arg1;
 		this.aSocket1.setSoTimeout(30000);
@@ -106,7 +106,7 @@ public final class Class111 implements Runnable {
 				}
 			}
 			if (this.aClass32_6 == null) {
-				this.aClass32_6 = this.aClass152_2.method3769(3, this);
+				this.aClass32_6 = this.aClass152_2.startThread(3, this);
 			}
 			this.notifyAll();
 		}
@@ -122,12 +122,12 @@ public final class Class111 implements Runnable {
 			this.notifyAll();
 		}
 		if (this.aClass32_6 != null) {
-			while (this.aClass32_6.anInt993 == 0) {
+			while (this.aClass32_6.status == 0) {
 				Static231.method4023(1L);
 			}
-			if (this.aClass32_6.anInt993 == 1) {
+			if (this.aClass32_6.status == 1) {
 				try {
-					((Thread) this.aClass32_6.anObject2).join();
+					((Thread) this.aClass32_6.result).join();
 				} catch (@Pc(54) InterruptedException local54) {
 				}
 			}

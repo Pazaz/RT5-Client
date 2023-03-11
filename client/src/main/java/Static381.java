@@ -15,7 +15,7 @@ public final class Static381 {
 	public static boolean aBoolean482 = false;
 
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(BILclient!ml;Ljava/awt/Component;I)Lclient!tg;")
-	public static Class221 method6347(@OriginalArg(1) int arg0, @OriginalArg(2) Class152 arg1, @OriginalArg(3) Component arg2, @OriginalArg(4) int arg3) {
+	public static Class221 method6347(@OriginalArg(1) int arg0, @OriginalArg(2) SignedLink arg1, @OriginalArg(3) Component arg2, @OriginalArg(4) int arg3) {
 		if (Static356.anInt6643 == 0) {
 			throw new IllegalStateException();
 		}
@@ -32,7 +32,7 @@ public final class Static381 {
 			if (Static200.anInt3698 > 0 && Static67.aClass129_1 == null) {
 				Static67.aClass129_1 = new Class129();
 				Static67.aClass129_1.aClass152_3 = arg1;
-				arg1.method3769(Static200.anInt3698, Static67.aClass129_1);
+				arg1.startThread(Static200.anInt3698, Static67.aClass129_1);
 			}
 			if (Static67.aClass129_1 != null) {
 				if (Static67.aClass129_1.aClass221Array1[arg0] != null) {
@@ -52,7 +52,7 @@ public final class Static381 {
 				if (Static200.anInt3698 > 0 && Static67.aClass129_1 == null) {
 					Static67.aClass129_1 = new Class129();
 					Static67.aClass129_1.aClass152_3 = arg1;
-					arg1.method3769(Static200.anInt3698, Static67.aClass129_1);
+					arg1.startThread(Static200.anInt3698, Static67.aClass129_1);
 				}
 				if (Static67.aClass129_1 != null) {
 					if (Static67.aClass129_1.aClass221Array1[arg0] != null) {

@@ -32,7 +32,7 @@ public final class Static372 {
 		try {
 			@Pc(50) Container local50;
 			if (Static222.aFrame1 == null) {
-				local50 = Static328.aClass152_5.anApplet1;
+				local50 = Static328.aClass152_5.applet;
 			} else {
 				local50 = Static222.aFrame1;
 			}

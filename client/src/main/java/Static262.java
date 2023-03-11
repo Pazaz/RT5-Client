@@ -78,13 +78,13 @@ public final class Static262 {
 			local7 = Static200.method3647(local7, "%40", "@");
 			local7 = Static200.method3647(local7, "%26", "&");
 			local7 = Static200.method3647(local7, "%23", "#");
-			if (Static392.aClass152_6.anApplet1 != null) {
-				@Pc(103) Class32 local103 = Static392.aClass152_6.method3766(new URL(Static392.aClass152_6.anApplet1.getCodeBase(), "clienterror.ws?c=" + Static277.anInt5115 + "&u=" + Static241.aLong130 + "&v1=" + Static215.aString33 + "&v2=" + Static215.aString34 + "&e=" + local7));
-				while (local103.anInt993 == 0) {
+			if (Static392.aClass152_6.applet != null) {
+				@Pc(103) PrivilegedRequest local103 = Static392.aClass152_6.openUrlStream(new URL(Static392.aClass152_6.applet.getCodeBase(), "clienterror.ws?c=" + Static277.anInt5115 + "&u=" + Static241.aLong130 + "&v1=" + SignedLink.javaVendor + "&v2=" + SignedLink.javaVersion + "&e=" + local7));
+				while (local103.status == 0) {
 					Static231.method4023(1L);
 				}
-				if (local103.anInt993 == 1) {
-					@Pc(121) DataInputStream local121 = (DataInputStream) local103.anObject2;
+				if (local103.status == 1) {
+					@Pc(121) DataInputStream local121 = (DataInputStream) local103.result;
 					local121.read();
 					local121.close();
 				}

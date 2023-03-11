@@ -15,7 +15,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static5 {
 
 	@OriginalMember(owner = "client!ad", name = "x", descriptor = "Lclient!cc;")
-	public static Class32 aClass32_1;
+	public static PrivilegedRequest aClass32_1;
 
 	@OriginalMember(owner = "client!ad", name = "y", descriptor = "I")
 	public static int anInt105;
@@ -33,7 +33,7 @@ public final class Static5 {
 	public static final Class79 aClass79_2 = new Class79("skill: ", "Fertigkeit: ", "compétence ", "habilidade: ");
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(IIILclient!ml;II)Ljava/awt/Frame;")
-	public static Frame method85(@OriginalArg(0) int arg0, @OriginalArg(3) Class152 arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3) {
+	public static Frame method85(@OriginalArg(0) int arg0, @OriginalArg(3) SignedLink arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3) {
 		if (!arg1.method3765()) {
 			return null;
 		}
@@ -51,14 +51,14 @@ public final class Static5 {
 		if (!local30) {
 			return null;
 		}
-		@Pc(98) Class32 local98 = arg1.method3749(arg2, arg0, arg3);
-		while (local98.anInt993 == 0) {
+		@Pc(98) PrivilegedRequest local98 = arg1.enterFullScreen(arg2, arg0, arg3);
+		while (local98.status == 0) {
 			Static231.method4023(10L);
 		}
-		@Pc(110) Frame local110 = (Frame) local98.anObject2;
+		@Pc(110) Frame local110 = (Frame) local98.result;
 		if (local110 == null) {
 			return null;
-		} else if (local98.anInt993 == 2) {
+		} else if (local98.status == 2) {
 			Static17.method4215(local110, arg1);
 			return null;
 		} else {
@@ -88,18 +88,18 @@ public final class Static5 {
 			@Pc(21) boolean local21 = false;
 			for (@Pc(23) int local23 = 0; local23 < local16.anInt7154; local23++) {
 				if (local16.aClass32Array1[local23] != null) {
-					if (local16.aClass32Array1[local23].anInt993 == 2) {
+					if (local16.aClass32Array1[local23].status == 2) {
 						local16.anIntArray491[local23] = -5;
 					}
-					if (local16.aClass32Array1[local23].anInt993 == 0) {
+					if (local16.aClass32Array1[local23].status == 0) {
 						local21 = true;
 					}
 				}
 				if (local16.aClass32Array2[local23] != null) {
-					if (local16.aClass32Array2[local23].anInt993 == 2) {
+					if (local16.aClass32Array2[local23].status == 2) {
 						local16.anIntArray491[local23] = -6;
 					}
-					if (local16.aClass32Array2[local23].anInt993 == 0) {
+					if (local16.aClass32Array2[local23].status == 0) {
 						local21 = true;
 					}
 				}
@@ -118,23 +118,23 @@ public final class Static5 {
 						@Pc(146) Field local146;
 						@Pc(150) int local150;
 						if (local137 == 0) {
-							local146 = (Field) local16.aClass32Array1[local113].anObject2;
+							local146 = (Field) local16.aClass32Array1[local113].result;
 							local150 = local146.getInt(null);
 							arg0.method4842(0);
 							arg0.method4813(local150);
 						} else if (local137 == 1) {
-							local146 = (Field) local16.aClass32Array1[local113].anObject2;
+							local146 = (Field) local16.aClass32Array1[local113].result;
 							local146.setInt(null, local16.anIntArray492[local113]);
 							arg0.method4842(0);
 						} else if (local137 == 2) {
-							local146 = (Field) local16.aClass32Array1[local113].anObject2;
+							local146 = (Field) local16.aClass32Array1[local113].result;
 							local150 = local146.getModifiers();
 							arg0.method4842(0);
 							arg0.method4813(local150);
 						}
 						@Pc(218) Method local218;
 						if (local137 == 3) {
-							local218 = (Method) local16.aClass32Array2[local113].anObject2;
+							local218 = (Method) local16.aClass32Array2[local113].result;
 							@Pc(223) byte[][] local223 = local16.aByteArrayArrayArray17[local113];
 							@Pc(227) Object[] local227 = new Object[local223.length];
 							for (@Pc(229) int local229 = 0; local229 < local223.length; local229++) {
@@ -154,7 +154,7 @@ public final class Static5 {
 								arg0.method4842(4);
 							}
 						} else if (local137 == 4) {
-							local218 = (Method) local16.aClass32Array2[local113].anObject2;
+							local218 = (Method) local16.aClass32Array2[local113].result;
 							local150 = local218.getModifiers();
 							arg0.method4842(0);
 							arg0.method4813(local150);

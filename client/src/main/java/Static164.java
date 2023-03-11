@@ -91,18 +91,18 @@ public final class Static164 {
 				Static193.anInt3557 = 0;
 			}
 			if (Static154.anInt2803 == 1) {
-				Static5.aClass32_1 = Static328.aClass152_5.method3751(Static61.aString14, Static278.anInt5154);
+				Static5.aClass32_1 = Static328.aClass152_5.openSocket(Static61.aString14, Static278.anInt5154);
 				Static154.anInt2803 = 2;
 			}
 			@Pc(125) int local125;
 			if (Static154.anInt2803 == 2) {
-				if (Static5.aClass32_1.anInt993 == 2) {
+				if (Static5.aClass32_1.status == 2) {
 					throw new IOException();
 				}
-				if (Static5.aClass32_1.anInt993 != 1) {
+				if (Static5.aClass32_1.status != 1) {
 					return;
 				}
-				Static335.aClass111_4 = new Class111((Socket) Static5.aClass32_1.anObject2, Static328.aClass152_5);
+				Static335.aClass111_4 = new Class111((Socket) Static5.aClass32_1.result, Static328.aClass152_5);
 				Static5.aClass32_1 = null;
 				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.anInt5300, Static257.aClass2_Sub4_Sub2_4.aByteArray73);
 				if (Static303.aClass221_2 != null) {

@@ -54,7 +54,7 @@ public final class Static99 {
 		Static360.method5646();
 		Static50.method1525(true);
 		try {
-			Static405.method4628(Static328.aClass152_5.anApplet1, "loggedout");
+			Static405.method4628(Static328.aClass152_5.applet, "loggedout");
 		} catch (@Pc(128) Throwable local128) {
 		}
 		Static375.aLong222 = 0L;

@@ -11,7 +11,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!client")
-public final class client extends Applet_Sub1 {
+public final class client extends GameShell {
 
 	@OriginalMember(owner = "client!client", name = "main", descriptor = "([Ljava/lang/String;)V")
 	public static void main(@OriginalArg(0) String[] arg0) {
@@ -86,7 +86,7 @@ public final class client extends Applet_Sub1 {
 			Static303.aClass221_2.method6317();
 		}
 		if (Static347.anInt6442 == 30 || Static347.anInt6442 == 10) {
-			if (Static338.aLong214 != 0L && Static338.aLong214 < Static204.method3685()) {
+			if (Static338.aLong214 != 0L && Static338.aLong214 < MonotonicClock.currentTimeMillis()) {
 				Static143.method2677(Static218.aClass177_Sub1_2.anInt4893, Static144.method2692(), false, Static218.aClass177_Sub1_2.anInt4884);
 			} else if (Static190.aClass19_8.method2859() && Static122.aBoolean176) {
 				Static353.method5883();
@@ -97,7 +97,7 @@ public final class client extends Applet_Sub1 {
 		if (Static363.aFrame2 == null) {
 			@Pc(84) Container local84;
 			if (Static222.aFrame1 == null) {
-				local84 = Static328.aClass152_5.anApplet1;
+				local84 = Static328.aClass152_5.applet;
 			} else {
 				local84 = Static222.aFrame1;
 			}
@@ -115,7 +115,7 @@ public final class client extends Applet_Sub1 {
 					Static142.anInt2663 = local92;
 					Static178.anInt2319 = local96;
 				}
-				Static338.aLong214 = Static204.method3685() + 500L;
+				Static338.aLong214 = MonotonicClock.currentTimeMillis() + 500L;
 			}
 		}
 		if (Static363.aFrame2 != null && !Static242.aBoolean306 && (Static347.anInt6442 == 30 || Static347.anInt6442 == 10)) {
@@ -172,7 +172,7 @@ public final class client extends Applet_Sub1 {
 		if (Static333.method6318()) {
 			Static279.method4725(Static190.aClass19_8);
 		}
-		if ((Static347.anInt6442 == 30 || Static347.anInt6442 == 10) && Static154.anInt2807 == 0 && Static144.method2692() == 1 && !local169 && Static215.aString34.equals("1.1")) {
+		if ((Static347.anInt6442 == 30 || Static347.anInt6442 == 10) && Static154.anInt2807 == 0 && Static144.method2692() == 1 && !local169 && SignedLink.javaVersion.equals("1.1")) {
 			local92 = 0;
 			for (local96 = 0; local96 < Static154.anInt2806; local96++) {
 				if (Static375.aBooleanArray64[local96]) {
@@ -317,7 +317,7 @@ public final class client extends Applet_Sub1 {
 			Static323.anInt6063 = local81;
 		}
 		if (Static190.aClass19_8 != null) {
-			Static190.aClass19_8.method2848((int) Static204.method3685());
+			Static190.aClass19_8.method2848((int) MonotonicClock.currentTimeMillis());
 		}
 		Static56.method1614();
 		Static6.anInt159 = 0;
@@ -417,26 +417,26 @@ public final class client extends Applet_Sub1 {
 		}
 		try {
 			if (Static309.anInt5800 == 0) {
-				Static211.aClass32_8 = Static328.aClass152_5.method3751(Static216.aString36, Static85.anInt1843);
+				Static211.aClass32_8 = Static328.aClass152_5.openSocket(Static216.aString36, Static85.anInt1843);
 				Static309.anInt5800++;
 			}
 			if (Static309.anInt5800 == 1) {
-				if (Static211.aClass32_8.anInt993 == 2) {
+				if (Static211.aClass32_8.status == 2) {
 					this.method1397(1000);
 					return;
 				}
-				if (Static211.aClass32_8.anInt993 == 1) {
+				if (Static211.aClass32_8.status == 1) {
 					Static309.anInt5800++;
 				}
 			}
 			if (Static309.anInt5800 == 2) {
-				Static103.aClass111_1 = new Class111((Socket) Static211.aClass32_8.anObject2, Static328.aClass152_5);
+				Static103.aClass111_1 = new Class111((Socket) Static211.aClass32_8.result, Static328.aClass152_5);
 				@Pc(186) Class2_Sub4 local186 = new Class2_Sub4(5);
 				local186.method4842(Static43.aClass242_2.anInt7038);
 				local186.method4813(578);
 				Static103.aClass111_1.method2797(5, local186.aByteArray73);
 				Static309.anInt5800++;
-				Static371.aLong220 = Static204.method3685();
+				Static371.aLong220 = MonotonicClock.currentTimeMillis();
 			}
 			if (Static309.anInt5800 == 3) {
 				if (Static347.anInt6442 == 0 || Static347.anInt6442 == 5 || Static103.aClass111_1.method2795() > 0) {
@@ -446,7 +446,7 @@ public final class client extends Applet_Sub1 {
 						return;
 					}
 					Static309.anInt5800++;
-				} else if (Static204.method3685() - Static371.aLong220 > 30000L) {
+				} else if (MonotonicClock.currentTimeMillis() - Static371.aLong220 > 30000L) {
 					this.method1397(1001);
 					return;
 				}
@@ -546,7 +546,7 @@ public final class client extends Applet_Sub1 {
 												Static322.method5485();
 											}
 											Static259.method4428();
-											if (Static273.aBoolean374 && Static375.aLong221 < Static204.method3685() - 60000L) {
+											if (Static273.aBoolean374 && Static375.aLong221 < MonotonicClock.currentTimeMillis() - 60000L) {
 												Static340.method5765();
 												return;
 											}
@@ -683,18 +683,18 @@ public final class client extends Applet_Sub1 {
 		}
 		Static367.anInt6878 = Static215.anInt3795;
 		try {
-			if (Static328.aClass152_5.aClass204_2 != null) {
-				Static110.aClass205_1 = new Class205(Static328.aClass152_5.aClass204_2, 5200, 0);
+			if (Static328.aClass152_5.cacheData != null) {
+				Static110.aClass205_1 = new Class205(Static328.aClass152_5.cacheData, 5200, 0);
 				for (@Pc(171) int local171 = 0; local171 < 29; local171++) {
-					Static185.aClass205Array1[local171] = new Class205(Static328.aClass152_5.aClass204Array1[local171], 6000, 0);
+					Static185.aClass205Array1[local171] = new Class205(Static328.aClass152_5.cacheIndexes[local171], 6000, 0);
 				}
-				Static150.aClass205_2 = new Class205(Static328.aClass152_5.aClass204_3, 6000, 0);
+				Static150.aClass205_2 = new Class205(Static328.aClass152_5.cacheMasterIndex, 6000, 0);
 				Static18.aClass207_1 = new Class207(255, Static110.aClass205_1, Static150.aClass205_2, 500000);
-				Static317.aClass205_6 = new Class205(Static328.aClass152_5.aClass204_1, 24, 0);
-				Static328.aClass152_5.aClass204_1 = null;
-				Static328.aClass152_5.aClass204_3 = null;
-				Static328.aClass152_5.aClass204Array1 = null;
-				Static328.aClass152_5.aClass204_2 = null;
+				Static317.aClass205_6 = new Class205(Static328.aClass152_5.uid, 24, 0);
+				Static328.aClass152_5.uid = null;
+				Static328.aClass152_5.cacheMasterIndex = null;
+				Static328.aClass152_5.cacheIndexes = null;
+				Static328.aClass152_5.cacheData = null;
 			}
 		} catch (@Pc(227) IOException local227) {
 			Static150.aClass205_2 = null;
@@ -723,7 +723,7 @@ public final class client extends Applet_Sub1 {
 		if (Static309.anInt5801 == 0) {
 			@Pc(45) Runtime local45 = Runtime.getRuntime();
 			local55 = (int) ((local45.totalMemory() - local45.freeMemory()) / 1024L);
-			@Pc(60) long local60 = Static204.method3685();
+			@Pc(60) long local60 = MonotonicClock.currentTimeMillis();
 			if (Static5.aLong11 == 0L) {
 				Static5.aLong11 = local60;
 			}

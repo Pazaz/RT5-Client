@@ -13,19 +13,19 @@ public final class Static383 {
 	@OriginalMember(owner = "client!wf", name = "a", descriptor = "(Ljava/lang/String;I)V")
 	public static void method6379(@OriginalArg(0) String arg0) {
 		Static74.aString17 = arg0;
-		if (Static328.aClass152_5.anApplet1 == null) {
+		if (Static328.aClass152_5.applet == null) {
 			return;
 		}
 		try {
-			@Pc(20) String local20 = Static328.aClass152_5.anApplet1.getParameter("cookieprefix");
-			@Pc(25) String local25 = Static328.aClass152_5.anApplet1.getParameter("cookiehost");
+			@Pc(20) String local20 = Static328.aClass152_5.applet.getParameter("cookieprefix");
+			@Pc(25) String local25 = Static328.aClass152_5.applet.getParameter("cookiehost");
 			@Pc(40) String local40 = local20 + "settings=" + arg0 + "; version=1; path=/; domain=" + local25;
 			if (arg0.length() == 0) {
 				local40 = local40 + "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0";
 			} else {
-				local40 = local40 + "; Expires=" + Static15.method393(Static204.method3685() + 94608000000L) + "; Max-Age=" + 94608000L;
+				local40 = local40 + "; Expires=" + Static15.method393(MonotonicClock.currentTimeMillis() + 94608000000L) + "; Max-Age=" + 94608000L;
 			}
-			Static405.method4629("document.cookie=\"" + local40 + "\"", Static328.aClass152_5.anApplet1);
+			Static405.method4629("document.cookie=\"" + local40 + "\"", Static328.aClass152_5.applet);
 		} catch (@Pc(89) Throwable local89) {
 		}
 	}

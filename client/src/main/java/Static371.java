@@ -81,14 +81,14 @@ public final class Static371 {
 		Static116.anInt2360 = 0;
 		Static336.anInt6313 = Static311.anInt5809;
 		Static311.anInt5809 = 0;
-		@Pc(16) long local16 = Static204.method3685();
+		@Pc(16) long local16 = MonotonicClock.currentTimeMillis();
 		for (@Pc(21) Class12_Sub5 local21 = (Class12_Sub5) Static131.aClass36_4.method1415(); local21 != null; local21 = (Class12_Sub5) Static131.aClass36_4.method1420()) {
 			if (local21.method4352(arg1, arg0)) {
 				Static116.anInt2360++;
 			}
 		}
 		if (Static289.aBoolean391 && arg0 % 100L == 0L) {
-			System.out.println("Particle system count: " + Static131.aClass36_4.method1419() + ", running: " + Static116.anInt2360 + ". Particles: " + Static311.anInt5809 + ". Time taken: " + (Static204.method3685() - local16) + "ms");
+			System.out.println("Particle system count: " + Static131.aClass36_4.method1419() + ", running: " + Static116.anInt2360 + ". Particles: " + Static311.anInt5809 + ". Time taken: " + (MonotonicClock.currentTimeMillis() - local16) + "ms");
 		}
 	}
 

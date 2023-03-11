@@ -80,7 +80,7 @@ public final class Static140 {
 		if (Static52.anInt1394 < 0) {
 			return;
 		}
-		@Pc(11) long local11 = Static204.method3685();
+		@Pc(11) long local11 = MonotonicClock.currentTimeMillis();
 		Static52.anInt1394 = (int) ((long) Static52.anInt1394 + Static1.aLong1 - local11);
 		if (Static52.anInt1394 > 0) {
 			@Pc(31) int local31 = (Static52.anInt1394 << 8) / Static261.anInt4803;

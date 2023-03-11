@@ -49,7 +49,7 @@ public final class Class123_Sub1 extends Class123 implements KeyListener, FocusL
 		local7.anInt1245 = arg1;
 		local7.anInt1250 = arg2;
 		local7.aChar1 = arg0;
-		local7.aLong36 = Static204.method3685();
+		local7.aLong36 = MonotonicClock.currentTimeMillis();
 		if (this.aClass37_Sub1_4 == null) {
 			this.aClass37_Sub1_3 = local7;
 		} else {
@@ -100,7 +100,7 @@ public final class Class123_Sub1 extends Class123 implements KeyListener, FocusL
 	private void method3350(@OriginalArg(0) Component arg0) {
 		this.method3351();
 		this.aComponent2 = arg0;
-		@Pc(11) Method local11 = Static215.aMethod1;
+		@Pc(11) Method local11 = SignedLink.setFocusTraversalKeysEnabled;
 		if (local11 != null) {
 			try {
 				local11.invoke(this.aComponent2, Boolean.FALSE);

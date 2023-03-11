@@ -51,7 +51,7 @@ public final class Class2_Sub2_Sub7 extends Class2_Sub2 {
 
 	@OriginalMember(owner = "client!gg", name = "d", descriptor = "(I)V")
 	public void method2312() {
-		super.aLong215 = Static204.method3685() + 500L | super.aLong215 & Long.MIN_VALUE;
+		super.aLong215 = MonotonicClock.currentTimeMillis() + 500L | super.aLong215 & Long.MIN_VALUE;
 		Static208.aClass246_4.method6341(this);
 	}
 }

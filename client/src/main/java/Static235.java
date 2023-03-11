@@ -24,16 +24,16 @@ public final class Static235 {
 	public static final Class79 aClass79_72 = new Class79("Loaded sprites", "Sprites geladen.", "Sprites chargés", "Sprites carregados");
 
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(Lclient!ml;IILclient!bt;)V")
-	public static void method3339(@OriginalArg(0) Class152 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class2_Sub4 arg2) {
+	public static void method3339(@OriginalArg(0) SignedLink arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class2_Sub4 arg2) {
 		@Pc(9) Class2_Sub42 local9 = new Class2_Sub42();
 		local9.anInt7154 = arg2.method4815();
 		local9.anInt7156 = arg2.method4836();
 		local9.anIntArray491 = new int[local9.anInt7154];
 		local9.anIntArray493 = new int[local9.anInt7154];
-		local9.aClass32Array1 = new Class32[local9.anInt7154];
+		local9.aClass32Array1 = new PrivilegedRequest[local9.anInt7154];
 		local9.aByteArrayArrayArray17 = new byte[local9.anInt7154][][];
 		local9.anIntArray492 = new int[local9.anInt7154];
-		local9.aClass32Array2 = new Class32[local9.anInt7154];
+		local9.aClass32Array2 = new PrivilegedRequest[local9.anInt7154];
 		for (@Pc(56) int local56 = 0; local56 < local9.anInt7154; local56++) {
 			try {
 				@Pc(62) int local62 = arg2.method4815();
@@ -49,7 +49,7 @@ public final class Static235 {
 					}
 					local9.anIntArray493[local56] = local62;
 					local9.anIntArray492[local56] = local84;
-					local9.aClass32Array1[local56] = arg0.method3762(Static17.method4212(local78), local82);
+					local9.aClass32Array1[local56] = arg0.getDeclaredField(Static17.method4212(local78), local82);
 				} else if (local62 == 3 || local62 == 4) {
 					local78 = arg2.method4809();
 					local82 = arg2.method4809();
@@ -72,7 +72,7 @@ public final class Static235 {
 					for (local167 = 0; local167 < local84; local167++) {
 						local192[local167] = Static17.method4212(local139[local167]);
 					}
-					local9.aClass32Array2[local56] = arg0.method3748(Static17.method4212(local78), local82, local192);
+					local9.aClass32Array2[local56] = arg0.getDeclaredMethod(Static17.method4212(local78), local82, local192);
 					local9.aByteArrayArrayArray17[local56] = local156;
 				}
 			} catch (@Pc(231) ClassNotFoundException local231) {

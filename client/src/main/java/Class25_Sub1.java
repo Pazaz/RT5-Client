@@ -195,7 +195,7 @@ public final class Class25_Sub1 extends Class25 {
 				this.aClass135_11 = null;
 			}
 		}
-		if (!this.aBoolean58 || Static204.method3685() < this.aLong21) {
+		if (!this.aBoolean58 || MonotonicClock.currentTimeMillis() < this.aLong21) {
 			return;
 		}
 		for (@Pc(329) Class2_Sub2_Sub10 local329 = (Class2_Sub2_Sub10) this.aClass4_13.method80(); local329 != null; local329 = (Class2_Sub2_Sub10) this.aClass4_13.method79()) {
@@ -210,7 +210,7 @@ public final class Class25_Sub1 extends Class25 {
 				}
 			}
 		}
-		this.aLong21 = Static204.method3685() + 1000L;
+		this.aLong21 = MonotonicClock.currentTimeMillis() + 1000L;
 	}
 
 	@OriginalMember(owner = "client!bl", name = "c", descriptor = "(B)I")

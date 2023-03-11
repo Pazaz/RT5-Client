@@ -67,18 +67,18 @@ public final class Static142 {
 				Static66.anInt1625++;
 			}
 			if (Static141.anInt2652 == 1) {
-				Static5.aClass32_1 = Static328.aClass152_5.method3751(Static216.aString36, Static85.anInt1843);
+				Static5.aClass32_1 = Static328.aClass152_5.openSocket(Static216.aString36, Static85.anInt1843);
 				Static141.anInt2652 = 2;
 			}
 			@Pc(119) int local119;
 			if (Static141.anInt2652 == 2) {
-				if (Static5.aClass32_1.anInt993 == 2) {
+				if (Static5.aClass32_1.status == 2) {
 					throw new IOException();
 				}
-				if (Static5.aClass32_1.anInt993 != 1) {
+				if (Static5.aClass32_1.status != 1) {
 					return;
 				}
-				Static335.aClass111_4 = new Class111((Socket) Static5.aClass32_1.anObject2, Static328.aClass152_5);
+				Static335.aClass111_4 = new Class111((Socket) Static5.aClass32_1.result, Static328.aClass152_5);
 				Static5.aClass32_1 = null;
 				Static335.aClass111_4.method2797(Static257.aClass2_Sub4_Sub2_4.anInt5300, Static257.aClass2_Sub4_Sub2_4.aByteArray73);
 				if (Static303.aClass221_2 != null) {

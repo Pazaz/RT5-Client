@@ -56,18 +56,18 @@ public final class Static91 {
 				}
 			}
 			if (Static347.anInt6441 == 1) {
-				Static5.aClass32_1 = Static328.aClass152_5.method3751(Static216.aString36, Static85.anInt1843);
+				Static5.aClass32_1 = Static328.aClass152_5.openSocket(Static216.aString36, Static85.anInt1843);
 				Static347.anInt6441 = 2;
 			}
 			@Pc(112) int local112;
 			if (Static347.anInt6441 == 2) {
-				if (Static5.aClass32_1.anInt993 == 2) {
+				if (Static5.aClass32_1.status == 2) {
 					throw new IOException();
 				}
-				if (Static5.aClass32_1.anInt993 != 1) {
+				if (Static5.aClass32_1.status != 1) {
 					return;
 				}
-				Static335.aClass111_4 = new Class111((Socket) Static5.aClass32_1.anObject2, Static328.aClass152_5);
+				Static335.aClass111_4 = new Class111((Socket) Static5.aClass32_1.result, Static328.aClass152_5);
 				Static5.aClass32_1 = null;
 				@Pc(105) long local105 = Static241.aLong130 = Static80.method5985(Static374.aString70);
 				local112 = (int) (local105 >> 16 & 0x1FL);
@@ -243,24 +243,24 @@ public final class Static91 {
 					Static6.aClass219_1.method5573(Static206.aBoolean241);
 					if (Static56.aBoolean123 && !Static347.aBoolean434 || Static381.aBoolean482) {
 						try {
-							Static405.method4628(Static328.aClass152_5.anApplet1, "zap");
+							Static405.method4628(Static328.aClass152_5.applet, "zap");
 						} catch (@Pc(896) Throwable local896) {
 							if (Static132.aBoolean180) {
 								try {
-									Static328.aClass152_5.anApplet1.getAppletContext().showDocument(new URL(Static328.aClass152_5.anApplet1.getCodeBase(), "blank.ws"), "tbi");
+									Static328.aClass152_5.applet.getAppletContext().showDocument(new URL(Static328.aClass152_5.applet.getCodeBase(), "blank.ws"), "tbi");
 								} catch (@Pc(912) Exception local912) {
 								}
 							}
 						}
 					} else {
 						try {
-							Static405.method4628(Static328.aClass152_5.anApplet1, "unzap");
+							Static405.method4628(Static328.aClass152_5.applet, "unzap");
 						} catch (@Pc(922) Throwable local922) {
 						}
 					}
 					if (Static189.aClass127_6 == Static121.aClass127_4) {
 						try {
-							Static405.method4628(Static328.aClass152_5.anApplet1, "loggedin");
+							Static405.method4628(Static328.aClass152_5.applet, "loggedin");
 						} catch (@Pc(934) Throwable local934) {
 						}
 					}

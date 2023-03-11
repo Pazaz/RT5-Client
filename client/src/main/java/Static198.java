@@ -3407,10 +3407,10 @@ public final class Static198 {
 						if (arg0 == 5419) {
 							local75 = "";
 							if (Static354.aClass32_5 != null) {
-								if (Static354.aClass32_5.anObject2 == null) {
-									local75 = Static150.method2739(Static354.aClass32_5.anInt992);
+								if (Static354.aClass32_5.result == null) {
+									local75 = Static150.method2739(Static354.aClass32_5.intArg1);
 								} else {
-									local75 = (String) Static354.aClass32_5.anObject2;
+									local75 = (String) Static354.aClass32_5.result;
 								}
 							}
 							aStringArray29[anInt3652++] = local75;
@@ -4168,11 +4168,11 @@ public final class Static198 {
 						}
 					} else if (arg0 < 6400) {
 						if (arg0 == 6300) {
-							anIntArray213[anInt3650++] = (int) (Static204.method3685() / 60000L);
+							anIntArray213[anInt3650++] = (int) (MonotonicClock.currentTimeMillis() / 60000L);
 							return;
 						}
 						if (arg0 == 6301) {
-							anIntArray213[anInt3650++] = (int) (Static204.method3685() / 86400000L) - 11745;
+							anIntArray213[anInt3650++] = (int) (MonotonicClock.currentTimeMillis() / 86400000L) - 11745;
 							return;
 						}
 						if (arg0 == 6302) {
@@ -4188,7 +4188,7 @@ public final class Static198 {
 						}
 						if (arg0 == 6303) {
 							aCalendar1.clear();
-							aCalendar1.setTime(new Date(Static204.method3685()));
+							aCalendar1.setTime(new Date(MonotonicClock.currentTimeMillis()));
 							anIntArray213[anInt3650++] = aCalendar1.get(1);
 							return;
 						}

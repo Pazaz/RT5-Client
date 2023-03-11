@@ -8,13 +8,13 @@ public final class Class2_Sub42 extends Class2 {
 	public int anInt7154;
 
 	@OriginalMember(owner = "client!wf", name = "v", descriptor = "[Lclient!cc;")
-	public Class32[] aClass32Array1;
+	public PrivilegedRequest[] aClass32Array1;
 
 	@OriginalMember(owner = "client!wf", name = "w", descriptor = "[I")
 	public int[] anIntArray491;
 
 	@OriginalMember(owner = "client!wf", name = "x", descriptor = "[Lclient!cc;")
-	public Class32[] aClass32Array2;
+	public PrivilegedRequest[] aClass32Array2;
 
 	@OriginalMember(owner = "client!wf", name = "y", descriptor = "[I")
 	public int[] anIntArray492;

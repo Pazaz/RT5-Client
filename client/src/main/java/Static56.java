@@ -57,11 +57,11 @@ public final class Static56 {
 		if (Static18.aClass32_2 == null) {
 			return;
 		}
-		if (Static18.aClass32_2.anInt993 == 1) {
+		if (Static18.aClass32_2.status == 1) {
 			Static18.aClass32_2 = null;
 			return;
 		}
-		if (Static18.aClass32_2.anInt993 == 2) {
+		if (Static18.aClass32_2.status == 2) {
 			Static234.method4095(Static17.aClass152_4, 2, Static257.aString39);
 			Static18.aClass32_2 = null;
 			return;

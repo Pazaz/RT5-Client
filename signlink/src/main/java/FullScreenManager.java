@@ -61,7 +61,7 @@ public final class FullScreenManager {
 	}
 
 	@OriginalMember(owner = "loader!c", name = "a", descriptor = "(I)V")
-	public void method6495() {
+	public void exit() {
 		if (this.aDisplayMode1 != null) {
 			this.aGraphicsDevice1.setDisplayMode(this.aDisplayMode1);
 			if (!this.aGraphicsDevice1.getDisplayMode().equals(this.aDisplayMode1)) {
@@ -86,7 +86,7 @@ public final class FullScreenManager {
 	}
 
 	@OriginalMember(owner = "loader!c", name = "a", descriptor = "(Ljava/awt/Frame;IIIII)V")
-	public void method6497(@OriginalArg(0) Frame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
+	public void enter(@OriginalArg(0) Frame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
 		this.aDisplayMode1 = this.aGraphicsDevice1.getDisplayMode();
 		if (this.aDisplayMode1 == null) {
 			throw new NullPointerException();

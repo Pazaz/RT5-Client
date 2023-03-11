@@ -5,7 +5,6 @@ import java.awt.Container;
 import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Insets;
-import java.awt.LayoutManager;
 import java.awt.Rectangle;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
@@ -19,7 +18,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!un")
-public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListener, WindowListener {
+public abstract class GameShell extends Applet implements Runnable, FocusListener, WindowListener {
 
 	private static double canvasScale;
 
@@ -30,7 +29,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	private boolean aBoolean94 = false;
 
 	@OriginalMember(owner = "client!un", name = "providesignlink", descriptor = "(Lclient!ml;)V")
-	public static void providesignlink(@OriginalArg(0) Class152 arg0) {
+	public static void providesignlink(@OriginalArg(0) SignedLink arg0) {
 		Static328.aClass152_5 = arg0;
 		Static392.aClass152_6 = arg0;
 	}
@@ -56,7 +55,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		if (Static363.aFrame2 != null) {
 			local18 = Static363.aFrame2;
 		} else if (Static222.aFrame1 == null) {
-			local18 = Static328.aClass152_5.anApplet1;
+			local18 = Static328.aClass152_5.applet;
 		} else {
 			local18 = Static222.aFrame1;
 		}
@@ -77,7 +76,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		Static242.aBoolean306 = true;
 		Static328.aBoolean412 = true;
 		Static122.aBoolean176 = false;
-		Static48.aLong37 = Static204.method3685();
+		Static48.aLong37 = MonotonicClock.currentTimeMillis();
 	}
 
 	@OriginalMember(owner = "client!un", name = "b", descriptor = "(I)V")
@@ -86,12 +85,12 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			return;
 		}
 		try {
-			@Pc(21) Class32 local21 = Static328.aClass152_5.method3752(Static253.anApplet_Sub1_1.getClass());
-			while (local21.anInt993 == 0) {
+			@Pc(21) PrivilegedRequest local21 = Static328.aClass152_5.loadMiscNatives(Static253.anApplet_Sub1_1.getClass());
+			while (local21.status == 0) {
 				Static231.method4023(100L);
 			}
-			if (local21.anObject2 != null) {
-				throw (Throwable) local21.anObject2;
+			if (local21.result != null) {
+				throw (Throwable) local21.result;
 			}
 			jagmisc.init();
 			this.aBoolean94 = true;
@@ -119,9 +118,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			Static222.aFrame1.toFront();
 			@Pc(48) Insets local48 = Static222.aFrame1.getInsets();
 			Static222.aFrame1.setSize(local48.right + local48.left + Static142.anInt2663, local48.bottom + local48.top + Static178.anInt2319);
-			Static392.aClass152_6 = Static328.aClass152_5 = new Class152(null, arg1, arg0, 29);
-			@Pc(82) Class32 local82 = Static328.aClass152_5.method3769(1, this);
-			while (local82.anInt993 == 0) {
+			Static392.aClass152_6 = Static328.aClass152_5 = new SignedLink(null, arg1, arg0, 29);
+			@Pc(82) PrivilegedRequest local82 = Static328.aClass152_5.startThread(1, this);
+			while (local82.status == 0) {
 				Static231.method4023(10L);
 			}
 		} catch (@Pc(95) Exception local95) {
@@ -139,7 +138,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@Override
 	public final URL getCodeBase() {
 		if (Static222.aFrame1 == null) {
-			return Static328.aClass152_5 == null || Static328.aClass152_5.anApplet1 == this ? super.getCodeBase() : Static328.aClass152_5.anApplet1.getCodeBase();
+			return Static328.aClass152_5 == null || Static328.aClass152_5.applet == this ? super.getCodeBase() : Static328.aClass152_5.applet.getCodeBase();
 		} else {
 			return null;
 		}
@@ -168,7 +167,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@Override
 	public final String getParameter(@OriginalArg(0) String arg0) {
 		if (Static222.aFrame1 == null) {
-			return Static328.aClass152_5 == null || Static328.aClass152_5.anApplet1 == this ? super.getParameter(arg0) : Static328.aClass152_5.anApplet1.getParameter(arg0);
+			return Static328.aClass152_5 == null || Static328.aClass152_5.applet == this ? super.getParameter(arg0) : Static328.aClass152_5.applet.getParameter(arg0);
 		} else {
 			return null;
 		}
@@ -179,7 +178,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
 	@OriginalMember(owner = "client!un", name = "f", descriptor = "(I)V")
 	private void method1390() {
-		@Pc(11) long local11 = Static204.method3685();
+		@Pc(11) long local11 = MonotonicClock.currentTimeMillis();
 		@Pc(15) long local15 = Static292.aLongArray9[Static255.anInt4703];
 		Static292.aLongArray9[Static255.anInt4703] = local11;
 		@Pc(34) boolean local34;
@@ -197,7 +196,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
 	@OriginalMember(owner = "client!un", name = "g", descriptor = "(I)V")
 	private void method1391() {
-		@Pc(6) long local6 = Static204.method3685();
+		@Pc(6) long local6 = MonotonicClock.currentTimeMillis();
 		@Pc(10) long local10 = Static357.aLongArray12[Static76.anInt1739];
 		Static357.aLongArray12[Static76.anInt1739] = local6;
 		if (local10 != 0L && local10 < local6) {
@@ -224,7 +223,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@Override
 	public final void destroy() {
 		if (Static253.anApplet_Sub1_1 == this && !Static111.aBoolean167) {
-			Static393.aLong231 = Static204.method3685();
+			Static393.aLong231 = MonotonicClock.currentTimeMillis();
 			Static231.method4023(5000L);
 			Static392.aClass152_6 = null;
 			this.method1395(false);
@@ -239,7 +238,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		this.aBoolean95 = true;
 		System.out.println("error_game_" + arg0);
 		try {
-			Static405.method4628(Static328.aClass152_5.anApplet1, "loggedout");
+			Static405.method4628(Static328.aClass152_5.applet, "loggedout");
 		} catch (@Pc(33) Throwable local33) {
 		}
 		try {
@@ -273,7 +272,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@Override
 	public final URL getDocumentBase() {
 		if (Static222.aFrame1 == null) {
-			return Static328.aClass152_5 == null || Static328.aClass152_5.anApplet1 == this ? super.getDocumentBase() : Static328.aClass152_5.anApplet1.getDocumentBase();
+			return Static328.aClass152_5 == null || Static328.aClass152_5.applet == this ? super.getDocumentBase() : Static328.aClass152_5.applet.getDocumentBase();
 		} else {
 			return null;
 		}
@@ -292,10 +291,10 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				Static250.anInt4665 = arg0;
 				Static142.anInt2663 = arg0;
 				if (Static328.aClass152_5 == null) {
-					Static392.aClass152_6 = Static328.aClass152_5 = new Class152(this, arg1, null, 0);
+					Static392.aClass152_6 = Static328.aClass152_5 = new SignedLink(this, arg1, null, 0);
 				}
-				@Pc(66) Class32 local66 = Static328.aClass152_5.method3769(1, this);
-				while (local66.anInt993 == 0) {
+				@Pc(66) PrivilegedRequest local66 = Static328.aClass152_5.startThread(1, this);
+				while (local66.status == 0) {
 					Static231.method4023(10L);
 				}
 			} else {
@@ -320,8 +319,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			}
 			Static111.aBoolean167 = true;
 		}
-		if (Static328.aClass152_5.anApplet1 != null) {
-			Static328.aClass152_5.anApplet1.destroy();
+		if (Static328.aClass152_5.applet != null) {
+			Static328.aClass152_5.applet.destroy();
 		}
 		try {
 			this.method1386();
@@ -334,8 +333,8 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			}
 			this.aBoolean94 = false;
 		}
-		@Pc(48) Class32 local48 = Static328.aClass152_5.method3771(Static253.anApplet_Sub1_1.getClass());
-		while (local48.anInt993 == 0) {
+		@Pc(48) PrivilegedRequest local48 = Static328.aClass152_5.unloadNatives(Static253.anApplet_Sub1_1.getClass());
+		while (local48.status == 0) {
 			Static231.method4023(100L);
 		}
 		if (Static21.aCanvas1 != null) {
@@ -347,7 +346,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		}
 		if (Static328.aClass152_5 != null) {
 			try {
-				Static328.aClass152_5.method3768();
+				Static328.aClass152_5.stop();
 			} catch (@Pc(75) Exception local75) {
 			}
 		}
@@ -365,7 +364,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@Override
 	public final AppletContext getAppletContext() {
 		if (Static222.aFrame1 == null) {
-			return Static328.aClass152_5 == null || Static328.aClass152_5.anApplet1 == this ? super.getAppletContext() : Static328.aClass152_5.anApplet1.getAppletContext();
+			return Static328.aClass152_5 == null || Static328.aClass152_5.applet == this ? super.getAppletContext() : Static328.aClass152_5.applet.getAppletContext();
 		} else {
 			return null;
 		}
@@ -387,25 +386,25 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	public final void run() {
 		try {
 			label113: {
-				if (Static215.aString33 != null) {
-					@Pc(10) String local10 = Static215.aString33.toLowerCase();
+				if (SignedLink.javaVendor != null) {
+					@Pc(10) String local10 = SignedLink.javaVendor.toLowerCase();
 					if (local10.indexOf("sun") != -1 || local10.indexOf("apple") != -1) {
-						@Pc(23) String local23 = Static215.aString34;
+						@Pc(23) String local23 = SignedLink.javaVersion;
 						if (local23.equals("1.1") || local23.startsWith("1.1.") || local23.equals("1.2") || local23.startsWith("1.2.")) {
 							this.method1392("wrongjava");
 							break label113;
 						}
-					} else if (local10.indexOf("ibm") != -1 && (Static215.aString34 == null || Static215.aString34.equals("1.4.2"))) {
+					} else if (local10.indexOf("ibm") != -1 && (SignedLink.javaVersion == null || SignedLink.javaVersion.equals("1.4.2"))) {
 						this.method1392("wrongjava");
 						break label113;
 					}
 				}
 				@Pc(70) int local70;
-				if (Static215.aString34 != null && Static215.aString34.startsWith("1.")) {
+				if (SignedLink.javaVersion != null && SignedLink.javaVersion.startsWith("1.")) {
 					local70 = 2;
 					@Pc(72) int local72 = 0;
-					while (local70 < Static215.aString34.length()) {
-						@Pc(78) char local78 = Static215.aString34.charAt(local70);
+					while (local70 < SignedLink.javaVersion.length()) {
+						@Pc(78) char local78 = SignedLink.javaVersion.charAt(local70);
 						if (local78 < '0' || local78 > '9') {
 							break;
 						}
@@ -416,11 +415,11 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 						Static370.aBoolean473 = true;
 					}
 				}
-				if (Static328.aClass152_5.anApplet1 != null) {
-					@Pc(111) Method local111 = Static215.aMethod2;
+				if (Static328.aClass152_5.applet != null) {
+					@Pc(111) Method local111 = SignedLink.setFocusCycleRoot;
 					if (local111 != null) {
 						try {
-							local111.invoke(Static328.aClass152_5.anApplet1, Boolean.TRUE);
+							local111.invoke(Static328.aClass152_5.applet, Boolean.TRUE);
 						} catch (@Pc(126) Throwable local126) {
 						}
 					}
@@ -431,7 +430,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				this.method1387();
 				Static316.aClass5_1 = Static65.method1738();
 				this.method1382();
-				while (Static393.aLong231 == 0L || Static204.method3685() < Static393.aLong231) {
+				while (Static393.aLong231 == 0L || MonotonicClock.currentTimeMillis() < Static393.aLong231) {
 					Static10.anInt247 = Static316.aClass5_1.method4409(Static44.anInt1106);
 					for (local70 = 0; local70 < Static10.anInt247; local70++) {
 						this.method1390();
@@ -469,7 +468,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			return;
 		}
 		Static328.aBoolean412 = true;
-		if (Static370.aBoolean473 && Static204.method3685() - Static48.aLong37 > 1000L) {
+		if (Static370.aBoolean473 && MonotonicClock.currentTimeMillis() - Static48.aLong37 > 1000L) {
 			@Pc(26) Rectangle local26 = arg0.getClipBounds();
 			if (local26 == null || Static142.anInt2663 <= local26.width && Static178.anInt2319 <= local26.height) {
 				Static122.aBoolean176 = true;
@@ -481,7 +480,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@Override
 	public final void stop() {
 		if (Static253.anApplet_Sub1_1 == this && !Static111.aBoolean167) {
-			Static393.aLong231 = Static204.method3685() + 4000L;
+			Static393.aLong231 = MonotonicClock.currentTimeMillis() + 4000L;
 		}
 	}
 }

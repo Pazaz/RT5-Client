@@ -1098,7 +1098,7 @@ public final class Static73 {
 											return true;
 										} else if (Static231.aClass89_164 == Static177.aClass89_141) {
 											local220 = Static212.aClass2_Sub4_Sub2_3.method4836();
-											Static354.aClass32_5 = Static328.aClass152_5.method3757(local220);
+											Static354.aClass32_5 = Static328.aClass152_5.getReverseDns(local220);
 											Static231.aClass89_164 = null;
 											return true;
 										} else if (Static272.aClass89_184 == Static231.aClass89_164) {

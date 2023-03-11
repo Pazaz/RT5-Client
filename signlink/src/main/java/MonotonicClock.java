@@ -12,7 +12,7 @@ public final class MonotonicClock {
 	private static long aLong234;
 
 	@OriginalMember(owner = "loader!lt", name = "a", descriptor = "(I)J")
-	public static synchronized long method6520() {
+	public static synchronized long currentTimeMillis() {
 		@Pc(1) long local1 = System.currentTimeMillis();
 		if (aLong233 > local1) {
 			aLong234 += aLong233 - local1;

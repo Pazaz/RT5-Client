@@ -136,7 +136,7 @@ public final class Static161 {
 				return;
 			}
 			if (arg0.equalsIgnoreCase("breakcon")) {
-				Static328.aClass152_5.method3760();
+				Static328.aClass152_5.breakConnection();
 				Static335.aClass111_4.method2801();
 				Static287.aClass183_3.method4633();
 				Static158.method2940("Breaking new connections for 5 seconds");

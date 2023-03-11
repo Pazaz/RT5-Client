@@ -30,11 +30,11 @@ public final class Static374 {
 			local17 = true;
 			local15 = Static387.method2822(0, null, null, local26, 0);
 		}
-		@Pc(43) long local43 = Static204.method3685();
+		@Pc(43) long local43 = MonotonicClock.currentTimeMillis();
 		for (@Pc(45) int local45 = 0; local45 < 10000; local45++) {
 			local15.method2853();
 		}
-		@Pc(72) int local72 = (int) (Static204.method3685() - local43);
+		@Pc(72) int local72 = (int) (MonotonicClock.currentTimeMillis() - local43);
 		local15.method2868(100, 0, 0, -16777216, 100);
 		if (local17) {
 			local15.method2825();

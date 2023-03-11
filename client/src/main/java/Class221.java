@@ -29,7 +29,7 @@ public class Class221 {
 	private boolean aBoolean480 = false;
 
 	@OriginalMember(owner = "client!tg", name = "j", descriptor = "J")
-	private long aLong224 = Static204.method3685();
+	private long aLong224 = MonotonicClock.currentTimeMillis();
 
 	@OriginalMember(owner = "client!tg", name = "A", descriptor = "Z")
 	private boolean aBoolean481 = true;
@@ -67,7 +67,7 @@ public class Class221 {
 		if (this.aBoolean480) {
 			return;
 		}
-		@Pc(12) long local12 = Static204.method3685();
+		@Pc(12) long local12 = MonotonicClock.currentTimeMillis();
 		try {
 			if (local12 > this.aLong224 + 500000L) {
 				this.aLong224 = local12 - 500000L;
@@ -146,7 +146,7 @@ public class Class221 {
 			this.method6322();
 		} catch (@Pc(16) Exception local16) {
 			this.method6324();
-			this.aLong225 = Static204.method3685() + 2000L;
+			this.aLong225 = MonotonicClock.currentTimeMillis() + 2000L;
 		}
 	}
 
@@ -266,7 +266,7 @@ public class Class221 {
 		if (this.aClass2_Sub12_8 != null) {
 			this.aClass2_Sub12_8.method4973(arg0, 0, 256);
 		}
-		this.aLong224 = Static204.method3685();
+		this.aLong224 = MonotonicClock.currentTimeMillis();
 	}
 
 	@OriginalMember(owner = "client!tg", name = "c", descriptor = "()V")

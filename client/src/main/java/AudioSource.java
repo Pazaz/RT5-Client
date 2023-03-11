@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!fc")
-public interface Interface3 {
+public interface AudioSource {
 
 	@OriginalMember(owner = "client!fc", name = "a", descriptor = "(IBI)V")
 	void method1992(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) throws Exception;

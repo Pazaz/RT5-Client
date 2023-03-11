@@ -42,7 +42,7 @@ public final class Static352 {
 		}
 		@Pc(13) Container local13;
 		if (Static222.aFrame1 == null) {
-			local13 = Static328.aClass152_5.anApplet1;
+			local13 = Static328.aClass152_5.applet;
 		} else {
 			local13 = Static222.aFrame1;
 		}

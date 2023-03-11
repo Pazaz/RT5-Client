@@ -8,7 +8,7 @@ public final class Static18 {
 	public static Class207 aClass207_1;
 
 	@OriginalMember(owner = "client!bb", name = "F", descriptor = "Lclient!cc;")
-	public static Class32 aClass32_2;
+	public static PrivilegedRequest aClass32_2;
 
 	@OriginalMember(owner = "client!bb", name = "k", descriptor = "Lclient!ti;")
 	public static final Class222 aClass222_1 = new Class222();

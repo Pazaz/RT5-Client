@@ -21,12 +21,12 @@ public final class CursorManager {
 	}
 
 	@OriginalMember(owner = "loader!b", name = "a", descriptor = "(IIB)V")
-	public void method6491(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public void setPosition(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		this.aRobot1.mouseMove(arg0, arg1);
 	}
 
 	@OriginalMember(owner = "loader!b", name = "a", descriptor = "([IIIILjava/awt/Point;Ljava/awt/Component;)V")
-	public void method6492(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) Point arg3, @OriginalArg(5) Component arg4) {
+	public void setCursor(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) Point arg3, @OriginalArg(5) Component arg4) {
 		if (arg0 == null) {
 			arg4.setCursor(null);
 		} else {
@@ -37,7 +37,7 @@ public final class CursorManager {
 	}
 
 	@OriginalMember(owner = "loader!b", name = "a", descriptor = "(BZLjava/awt/Component;)V")
-	public void method6493(@OriginalArg(1) boolean arg0, @OriginalArg(2) Component arg1) {
+	public void setComponent(@OriginalArg(1) boolean arg0, @OriginalArg(2) Component arg1) {
 		if (arg0) {
 			arg1 = null;
 		} else if (arg1 == null) {

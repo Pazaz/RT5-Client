@@ -19,14 +19,14 @@ public final class Static318 {
 
 	@OriginalMember(owner = "client!sj", name = "b", descriptor = "(I)V")
 	public static void method5425() {
-		@Pc(12) Class204 local12 = null;
+		@Pc(12) FileOnDisk local12 = null;
 		try {
-			@Pc(16) Class32 local16 = Static328.aClass152_5.method3756();
-			while (local16.anInt993 == 0) {
+			@Pc(16) PrivilegedRequest local16 = Static328.aClass152_5.openPreferences2();
+			while (local16.status == 0) {
 				Static231.method4023(1L);
 			}
-			if (local16.anInt993 == 1) {
-				local12 = (Class204) local16.anObject2;
+			if (local16.status == 1) {
+				local12 = (FileOnDisk) local16.result;
 				@Pc(40) byte[] local40 = new byte[(int) local12.method5196()];
 				@Pc(55) int local55;
 				for (@Pc(42) int local42 = 0; local42 < local40.length; local42 += local55) {
@@ -41,7 +41,7 @@ public final class Static318 {
 		}
 		try {
 			if (local12 != null) {
-				local12.method5193();
+				local12.close();
 			}
 		} catch (@Pc(89) Exception local89) {
 		}

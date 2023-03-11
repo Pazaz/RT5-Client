@@ -51,7 +51,7 @@ public final class Static129 {
 			if (local16 == null) {
 				return null;
 			}
-			if (local16.method2308() > Static204.method3685()) {
+			if (local16.method2308() > MonotonicClock.currentTimeMillis()) {
 				return null;
 			}
 			local16.method6468();

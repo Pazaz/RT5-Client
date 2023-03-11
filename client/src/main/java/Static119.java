@@ -35,7 +35,7 @@ public final class Static119 {
 
 	@OriginalMember(owner = "client!gr", name = "a", descriptor = "(I)V")
 	public static void method2378() {
-		if (Static215.aString33.toLowerCase().indexOf("microsoft") != -1) {
+		if (SignedLink.javaVendor.toLowerCase().indexOf("microsoft") != -1) {
 			Static239.anIntArray285[191] = 73;
 			Static239.anIntArray285[221] = 43;
 			Static239.anIntArray285[222] = 59;
@@ -57,7 +57,7 @@ public final class Static119 {
 		Static239.anIntArray285[46] = 72;
 		Static239.anIntArray285[44] = 71;
 		Static239.anIntArray285[91] = 42;
-		if (Static215.aMethod1 == null) {
+		if (SignedLink.setFocusTraversalKeysEnabled == null) {
 			Static239.anIntArray285[192] = 58;
 			Static239.anIntArray285[222] = 59;
 		} else {

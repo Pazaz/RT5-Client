@@ -49,7 +49,7 @@ public final class Static163 {
 			Static178.anInt2319 = arg1;
 			local81 = Static363.aFrame2;
 		} else if (Static222.aFrame1 == null) {
-			local81 = Static328.aClass152_5.anApplet1;
+			local81 = Static328.aClass152_5.applet;
 			Static142.anInt2663 = local81.getSize().width;
 			Static178.anInt2319 = local81.getSize().height;
 		} else {

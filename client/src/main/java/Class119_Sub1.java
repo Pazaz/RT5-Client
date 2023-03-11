@@ -81,7 +81,7 @@ public final class Class119_Sub1 extends Class119 implements MouseListener, Mous
 		local7.anInt5770 = arg1;
 		local7.anInt5764 = arg0;
 		local7.anInt5766 = arg2;
-		local7.aLong175 = Static204.method3685();
+		local7.aLong175 = MonotonicClock.currentTimeMillis();
 		this.aClass135_23.method3540(local7);
 	}
 

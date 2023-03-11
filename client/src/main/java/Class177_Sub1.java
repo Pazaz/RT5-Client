@@ -14,7 +14,7 @@ public final class Class177_Sub1 extends Class177 {
 	public boolean aBoolean366 = false;
 
 	@OriginalMember(owner = "client!pe", name = "<init>", descriptor = "(Lclient!ml;)V")
-	public Class177_Sub1(@OriginalArg(0) Class152 arg0) {
+	public Class177_Sub1(@OriginalArg(0) SignedLink arg0) {
 		super.anInt4879 = 3;
 		this.method4493(true);
 		super.anInt4888 = 127;
@@ -51,14 +51,14 @@ public final class Class177_Sub1 extends Class177 {
 		super.anInt4878 = 2;
 		super.anInt4887 = 0;
 		super.aBoolean351 = false;
-		@Pc(125) Class204 local125 = null;
+		@Pc(125) FileOnDisk local125 = null;
 		try {
-			@Pc(129) Class32 local129 = arg0.method3750();
-			while (local129.anInt993 == 0) {
+			@Pc(129) PrivilegedRequest local129 = arg0.openPreferences();
+			while (local129.status == 0) {
 				Static231.method4023(1L);
 			}
-			if (local129.anInt993 == 1) {
-				local125 = (Class204) local129.anObject2;
+			if (local129.status == 1) {
+				local125 = (FileOnDisk) local129.result;
 				@Pc(153) byte[] local153 = new byte[(int) local125.method5196()];
 				@Pc(168) int local168;
 				for (@Pc(155) int local155 = 0; local155 < local153.length; local155 += local168) {
@@ -73,7 +73,7 @@ public final class Class177_Sub1 extends Class177 {
 		}
 		try {
 			if (local125 != null) {
-				local125.method5193();
+				local125.close();
 			}
 		} catch (@Pc(200) Exception local200) {
 		}
@@ -149,15 +149,15 @@ public final class Class177_Sub1 extends Class177 {
 	}
 
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(ILclient!ml;)V")
-	public void method4497(@OriginalArg(1) Class152 arg0) {
-		@Pc(7) Class204 local7 = null;
+	public void method4497(@OriginalArg(1) SignedLink arg0) {
+		@Pc(7) FileOnDisk local7 = null;
 		try {
-			@Pc(17) Class32 local17 = arg0.method3750();
-			while (local17.anInt993 == 0) {
+			@Pc(17) PrivilegedRequest local17 = arg0.openPreferences();
+			while (local17.status == 0) {
 				Static231.method4023(1L);
 			}
-			if (local17.anInt993 == 1) {
-				local7 = (Class204) local17.anObject2;
+			if (local17.status == 1) {
+				local7 = (FileOnDisk) local17.result;
 				@Pc(39) Class2_Sub4 local39 = this.method4494();
 				local7.method5195(local39.aByteArray73, local39.anInt5300, 0);
 			}
@@ -165,7 +165,7 @@ public final class Class177_Sub1 extends Class177 {
 		}
 		try {
 			if (local7 != null) {
-				local7.method5193();
+				local7.close();
 			}
 		} catch (@Pc(56) Exception local56) {
 		}

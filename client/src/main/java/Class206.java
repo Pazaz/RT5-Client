@@ -19,15 +19,15 @@ public final class Class206 implements Runnable {
 	private Thread aThread3;
 
 	@OriginalMember(owner = "client!ro", name = "<init>", descriptor = "(Lclient!ml;)V")
-	public Class206(@OriginalArg(0) Class152 arg0) {
-		@Pc(20) Class32 local20 = arg0.method3769(5, this);
-		while (local20.anInt993 == 0) {
+	public Class206(@OriginalArg(0) SignedLink arg0) {
+		@Pc(20) PrivilegedRequest local20 = arg0.startThread(5, this);
+		while (local20.status == 0) {
 			Static231.method4023(10L);
 		}
-		if (local20.anInt993 == 2) {
+		if (local20.status == 2) {
 			throw new RuntimeException();
 		}
-		this.aThread3 = (Thread) local20.anObject2;
+		this.aThread3 = (Thread) local20.result;
 	}
 
 	@OriginalMember(owner = "client!ro", name = "run", descriptor = "()V")

@@ -360,7 +360,7 @@ public final class Static7 {
 			return;
 		}
 		Static311.aClass21_2 = arg0;
-		Static1.aLong1 = Static204.method3685();
+		Static1.aLong1 = MonotonicClock.currentTimeMillis();
 		Static52.anInt1394 = arg1;
 		Static261.anInt4803 = arg1;
 		if (Static261.anInt4803 != 0) {

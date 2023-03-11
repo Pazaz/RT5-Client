@@ -8,18 +8,18 @@ public final class Static280 {
 	public static int anInt5197 = 0;
 
 	@OriginalMember(owner = "client!qe", name = "a", descriptor = "(Ljava/lang/String;Lclient!ml;BZZ)V")
-	public static void method4765(@OriginalArg(0) String arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
+	public static void method4765(@OriginalArg(0) String arg0, @OriginalArg(1) SignedLink arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
 		if (!arg3) {
 			Static234.method4095(arg1, 3, arg0);
 			return;
 		}
-		if (Static215.aString30.startsWith("win") && Static215.anInt3795 != 3) {
+		if (SignedLink.osName.startsWith("win") && Static215.anInt3795 != 3) {
 			@Pc(32) String local32 = null;
-			if (arg1.anApplet1 != null) {
-				local32 = arg1.anApplet1.getParameter("haveie6");
+			if (arg1.applet != null) {
+				local32 = arg1.applet.getParameter("haveie6");
 			}
 			if (local32 == null || !local32.equals("1")) {
-				@Pc(52) Class32 local52 = Static234.method4095(arg1, 0, arg0);
+				@Pc(52) PrivilegedRequest local52 = Static234.method4095(arg1, 0, arg0);
 				Static257.aString39 = arg0;
 				Static18.aClass32_2 = local52;
 				Static17.aClass152_4 = arg1;

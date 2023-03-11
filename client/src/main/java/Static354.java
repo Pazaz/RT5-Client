@@ -10,7 +10,7 @@ public final class Static354 {
 	public static Class197 aClass197_9;
 
 	@OriginalMember(owner = "client!un", name = "I", descriptor = "Lclient!cc;")
-	public static Class32 aClass32_5;
+	public static PrivilegedRequest aClass32_5;
 
 	@OriginalMember(owner = "client!un", name = "L", descriptor = "Z")
 	private static boolean aBoolean96;

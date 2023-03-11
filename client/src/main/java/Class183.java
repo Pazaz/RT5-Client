@@ -147,7 +147,7 @@ public final class Class183 {
 							}
 						}
 						this.anInt5061 = 0;
-						this.aLong151 = Static204.method3685();
+						this.aLong151 = MonotonicClock.currentTimeMillis();
 						return;
 					}
 					this.aClass246_7.method6341(local44);
@@ -161,7 +161,7 @@ public final class Class183 {
 	public boolean method4640() {
 		@Pc(18) int local18;
 		if (this.aClass111_3 != null) {
-			@Pc(11) long local11 = Static204.method3685();
+			@Pc(11) long local11 = MonotonicClock.currentTimeMillis();
 			local18 = (int) (local11 - this.aLong151);
 			this.aLong151 = local11;
 			if (local18 > 200) {

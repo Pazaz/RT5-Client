@@ -420,7 +420,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private final Class2_Sub38_Sub1 aClass2_Sub38_Sub1_1;
 
 	@OriginalMember(owner = "client!bf", name = "<init>", descriptor = "(Ljava/awt/Canvas;Lclient!ci;IILclient!ml;)V")
-	public Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface2 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class152 arg4) {
+	public Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface2 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) SignedLink arg4) {
 		super(arg2, arg1);
 		this.aCanvas2 = arg0;
 		@Pc(185) int local185 = 0;
@@ -438,11 +438,11 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 					System.loadLibrary("jaggl");
 					Static22.aBoolean31 = Boolean.TRUE;
 				} else {
-					@Pc(219) Class32 local219 = arg4.method3754(this.getClass());
-					while (local219.anInt993 == 0) {
+					@Pc(219) PrivilegedRequest local219 = arg4.loadGlNatives(this.getClass());
+					while (local219.status == 0) {
 						Static231.method4023(100L);
 					}
-					if (local219.anInt993 == 1) {
+					if (local219.status == 1) {
 						Static22.aBoolean31 = Boolean.TRUE;
 					}
 				}
@@ -931,7 +931,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		if (this.anInt597 < 2 || this.anInt622 < 2 || this.anInt589 < 2) {
 			local1 |= 0x10;
 		}
-		if (Static215.aString30 != null) {
+		if (SignedLink.osName != null) {
 		}
 		this.aBoolean47 = false;
 		this.aBoolean53 = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
@@ -1357,9 +1357,9 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			local16 = (Class2_Sub39) this.aClass135_4.method3549();
 			this.anOpengl1.glDeleteLists((int) local16.aLong232, local16.anInt6818);
 		}
-		if (this.method2899() > 100663296 && Static204.method3685() > this.aLong20 + 60000L) {
+		if (this.method2899() > 100663296 && MonotonicClock.currentTimeMillis() > this.aLong20 + 60000L) {
 			System.gc();
-			this.aLong20 = Static204.method3685();
+			this.aLong20 = MonotonicClock.currentTimeMillis();
 		}
 		this.anInt584 = local5;
 	}

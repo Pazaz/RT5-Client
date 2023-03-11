@@ -5,23 +5,23 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class PrivilegedRequest {
 
 	@OriginalMember(owner = "loader!cc", name = "g", descriptor = "I")
-	public int anInt7265;
+	public int intArg2;
 
 	@OriginalMember(owner = "loader!cc", name = "b", descriptor = "Lloader!cc;")
-	public PrivilegedRequest aClass256_1;
+	public PrivilegedRequest next;
 
 	@OriginalMember(owner = "loader!cc", name = "c", descriptor = "I")
-	public int anInt7266;
+	public int type;
 
 	@OriginalMember(owner = "loader!cc", name = "a", descriptor = "Ljava/lang/Object;")
-	public volatile Object anObject8;
+	public volatile Object result;
 
 	@OriginalMember(owner = "loader!cc", name = "e", descriptor = "I")
-	public int anInt7267;
+	public int intArg1;
 
 	@OriginalMember(owner = "loader!cc", name = "d", descriptor = "Ljava/lang/Object;")
-	public Object anObject9;
+	public Object objectArg;
 
 	@OriginalMember(owner = "loader!cc", name = "f", descriptor = "I")
-	public volatile int anInt7268 = 0;
+	public volatile int status = 0;
 }

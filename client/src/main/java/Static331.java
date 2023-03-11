@@ -44,7 +44,7 @@ public final class Static331 {
 	public static boolean method5660() {
 		if (Static276.aBoolean375) {
 			try {
-				if ((Boolean) Static405.method4628(Static328.aClass152_5.anApplet1, "showingVideoAd")) {
+				if ((Boolean) Static405.method4628(Static328.aClass152_5.applet, "showingVideoAd")) {
 					return false;
 				}
 				return true;
