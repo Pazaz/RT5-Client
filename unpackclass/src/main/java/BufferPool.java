@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("unpackclass!c")
-public final class Class263 {
+public final class BufferPool {
 
 	@OriginalMember(owner = "unpackclass!c", name = "a", descriptor = "I")
 	private static int anInt7282;

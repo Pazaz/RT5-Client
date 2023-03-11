@@ -1,5 +1,4 @@
 import java.awt.Component;
-import java.awt.Cursor;
 import java.awt.Point;
 import java.awt.Robot;
 import java.awt.image.BufferedImage;
@@ -9,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("loader!b")
-public final class Class254 {
+public final class CursorManager {
 
 	@OriginalMember(owner = "loader!b", name = "b", descriptor = "Ljava/awt/Component;")
 	private Component aComponent4;
@@ -18,7 +17,7 @@ public final class Class254 {
 	private final Robot aRobot1 = new Robot();
 
 	@OriginalMember(owner = "loader!b", name = "<init>", descriptor = "()V")
-	public Class254() throws Exception {
+	public CursorManager() throws Exception {
 	}
 
 	@OriginalMember(owner = "loader!b", name = "a", descriptor = "(IIB)V")

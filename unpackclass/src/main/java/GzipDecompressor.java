@@ -5,22 +5,22 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("unpackclass!k")
-public final class Class270 {
+public final class GzipDecompressor {
 
 	@OriginalMember(owner = "unpackclass!k", name = "a", descriptor = "Ljava/util/zip/Inflater;")
 	private Inflater anInflater2;
 
 	@OriginalMember(owner = "unpackclass!k", name = "<init>", descriptor = "()V")
-	public Class270() {
+	public GzipDecompressor() {
 		this(-1, 1000000, 1000000);
 	}
 
 	@OriginalMember(owner = "unpackclass!k", name = "<init>", descriptor = "(III)V")
-	private Class270(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	private GzipDecompressor(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 	}
 
 	@OriginalMember(owner = "unpackclass!k", name = "a", descriptor = "(Lunpackclass!e;[B)V")
-	public void method6596(@OriginalArg(0) Class264_Sub1 arg0, @OriginalArg(1) byte[] arg1) {
+	public void method6596(@OriginalArg(0) Buffer arg0, @OriginalArg(1) byte[] arg1) {
 		if (arg0.aByteArray100[arg0.anInt7287] != 31 || arg0.aByteArray100[arg0.anInt7287 + 1] != -117) {
 			throw new RuntimeException("Invalid GZIP header!");
 		}

@@ -4,14 +4,14 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("unpackclass!u")
-public final class Class275 {
+public final class BZip2InputStream {
 
 	@OriginalMember(owner = "unpackclass!u", name = "a", descriptor = "Lunpackclass!h;")
-	private static final Class267 aClass267_1 = new Class267();
+	private static final BZip2State aClass267_1 = new BZip2State();
 
 	@OriginalMember(owner = "unpackclass!u", name = "a", descriptor = "([BI[BII)I")
 	public static int method6611(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3) {
-		@Pc(1) Class267 local1 = aClass267_1;
+		@Pc(1) BZip2State local1 = aClass267_1;
 		synchronized (aClass267_1) {
 			aClass267_1.aByteArray101 = arg2;
 			aClass267_1.anInt7289 = 9;
@@ -31,12 +31,12 @@ public final class Class275 {
 	}
 
 	@OriginalMember(owner = "unpackclass!u", name = "a", descriptor = "(Lunpackclass!h;)V")
-	private static void method6612(@OriginalArg(0) Class267 arg0) {
+	private static void method6612(@OriginalArg(0) BZip2State arg0) {
 		@Pc(2) byte local2 = arg0.aByte79;
 		@Pc(5) int local5 = arg0.anInt7294;
 		@Pc(8) int local8 = arg0.anInt7301;
 		@Pc(11) int local11 = arg0.anInt7300;
-		@Pc(13) int[] local13 = Class267.anIntArray539;
+		@Pc(13) int[] local13 = BZip2State.anIntArray539;
 		@Pc(16) int local16 = arg0.anInt7299;
 		@Pc(19) byte[] local19 = arg0.aByteArray102;
 		@Pc(22) int local22 = arg0.anInt7291;
@@ -137,7 +137,7 @@ public final class Class275 {
 		arg0.anInt7294 = local5;
 		arg0.anInt7301 = local8;
 		arg0.anInt7300 = local11;
-		Class267.anIntArray539 = local13;
+		BZip2State.anIntArray539 = local13;
 		arg0.anInt7299 = local16;
 		arg0.aByteArray102 = local19;
 		arg0.anInt7291 = local22;
@@ -145,10 +145,10 @@ public final class Class275 {
 	}
 
 	@OriginalMember(owner = "unpackclass!u", name = "b", descriptor = "(Lunpackclass!h;)V")
-	private static void method6613(@OriginalArg(0) Class267 arg0) {
+	private static void method6613(@OriginalArg(0) BZip2State arg0) {
 		arg0.anInt7297 = 1;
-		if (Class267.anIntArray539 == null) {
-			Class267.anIntArray539 = new int[arg0.anInt7297 * 100000];
+		if (BZip2State.anIntArray539 == null) {
+			BZip2State.anIntArray539 = new int[arg0.anInt7297 * 100000];
 		}
 		@Pc(56) boolean local56 = true;
 		while (true) {
@@ -323,7 +323,7 @@ public final class Class275 {
 							local60 = arg0.aByteArray103[arg0.aByteArray104[arg0.anIntArray540[0]] & 0xFF];
 							arg0.anIntArray537[local60 & 0xFF] += local541;
 							while (local541 > 0) {
-								Class267.anIntArray539[local470] = local60 & 0xFF;
+								BZip2State.anIntArray539[local470] = local60 & 0xFF;
 								local470++;
 								local541--;
 							}
@@ -375,7 +375,7 @@ public final class Class275 {
 								}
 							}
 							arg0.anIntArray537[arg0.aByteArray103[local60 & 0xFF] & 0xFF]++;
-							Class267.anIntArray539[local470] = arg0.aByteArray103[local60 & 0xFF] & 0xFF;
+							BZip2State.anIntArray539[local470] = arg0.aByteArray103[local60 & 0xFF] & 0xFF;
 							local470++;
 							if (local501 == 0) {
 								local473++;
@@ -405,13 +405,13 @@ public final class Class275 {
 						arg0.anIntArray538[local138] += arg0.anIntArray538[local138 - 1];
 					}
 					for (local138 = 0; local138 < local470; local138++) {
-						local60 = (byte) (Class267.anIntArray539[local138] & 0xFF);
-						Class267.anIntArray539[arg0.anIntArray538[local60 & 0xFF]] |= local138 << 8;
+						local60 = (byte) (BZip2State.anIntArray539[local138] & 0xFF);
+						BZip2State.anIntArray539[arg0.anIntArray538[local60 & 0xFF]] |= local138 << 8;
 						arg0.anIntArray538[local60 & 0xFF]++;
 					}
-					arg0.anInt7299 = Class267.anIntArray539[arg0.anInt7298] >> 8;
+					arg0.anInt7299 = BZip2State.anIntArray539[arg0.anInt7298] >> 8;
 					arg0.anInt7301 = 0;
-					arg0.anInt7299 = Class267.anIntArray539[arg0.anInt7299];
+					arg0.anInt7299 = BZip2State.anIntArray539[arg0.anInt7299];
 					arg0.anInt7300 = (byte) (arg0.anInt7299 & 0xFF);
 					arg0.anInt7299 >>= 0x8;
 					arg0.anInt7301++;
@@ -430,17 +430,17 @@ public final class Class275 {
 	}
 
 	@OriginalMember(owner = "unpackclass!u", name = "c", descriptor = "(Lunpackclass!h;)B")
-	private static byte method6614(@OriginalArg(0) Class267 arg0) {
+	private static byte method6614(@OriginalArg(0) BZip2State arg0) {
 		return (byte) method6616(8, arg0);
 	}
 
 	@OriginalMember(owner = "unpackclass!u", name = "d", descriptor = "(Lunpackclass!h;)B")
-	private static byte method6615(@OriginalArg(0) Class267 arg0) {
+	private static byte method6615(@OriginalArg(0) BZip2State arg0) {
 		return (byte) method6616(1, arg0);
 	}
 
 	@OriginalMember(owner = "unpackclass!u", name = "a", descriptor = "(ILunpackclass!h;)I")
-	private static int method6616(@OriginalArg(0) int arg0, @OriginalArg(1) Class267 arg1) {
+	private static int method6616(@OriginalArg(0) int arg0, @OriginalArg(1) BZip2State arg1) {
 		while (arg1.anInt7296 < arg0) {
 			arg1.anInt7295 = arg1.anInt7295 << 8 | arg1.aByteArray101[arg1.anInt7289] & 0xFF;
 			arg1.anInt7296 += 8;
@@ -453,7 +453,7 @@ public final class Class275 {
 	}
 
 	@OriginalMember(owner = "unpackclass!u", name = "e", descriptor = "(Lunpackclass!h;)V")
-	private static void method6617(@OriginalArg(0) Class267 arg0) {
+	private static void method6617(@OriginalArg(0) BZip2State arg0) {
 		arg0.anInt7302 = 0;
 		for (@Pc(4) int local4 = 0; local4 < 256; local4++) {
 			if (arg0.aBooleanArray68[local4]) {

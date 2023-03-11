@@ -84,7 +84,7 @@ public final class loader extends Applet implements Runnable {
 	}
 
 	@OriginalMember(owner = "loader!loader", name = "a", descriptor = "(ZBLloader!ml;Lloader!f;)[B")
-	private byte[] method6515(@OriginalArg(0) boolean arg0, @OriginalArg(2) Class259 arg1, @OriginalArg(3) Class257 arg2) {
+	private byte[] method6515(@OriginalArg(0) boolean arg0, @OriginalArg(2) Signlink arg1, @OriginalArg(3) Resource arg2) {
 		@Pc(5) File local5;
 		try {
 			local5 = arg1.method6530(arg2.aString73);
@@ -175,14 +175,14 @@ public final class loader extends Applet implements Runnable {
 			@Pc(43) String local43 = this.getParameter("cachesubdirid");
 			if (local43 != null) {
 				local39 = Integer.parseInt(local43);
-				if (local39 < 0 || Class253.aStringArray68.length <= local39) {
+				if (local39 < 0 || Resources.aStringArray68.length <= local39) {
 					local39 = 0;
 				}
 			}
 			@Pc(69) String local69 = this.getParameter("colourid");
 			if (local69 != null) {
 				anInt7274 = Integer.parseInt(local69);
-				if (anInt7274 < 0 || Class253.anIntArray528.length <= anInt7274) {
+				if (anInt7274 < 0 || Resources.anIntArray528.length <= anInt7274) {
 					anInt7274 = 0;
 				}
 			}
@@ -201,9 +201,9 @@ public final class loader extends Applet implements Runnable {
 				}
 			} catch (@Pc(126) Exception local126) {
 			}
-			@Pc(136) Class259 local136;
+			@Pc(136) Signlink local136;
 			try {
-				local136 = new Class259(this, local102, Class253.aStringArray68[local39], 29);
+				local136 = new Signlink(this, local102, Resources.aStringArray68[local39], 29);
 			} catch (@Pc(138) Exception local138) {
 				this.method6514("nocache");
 				return;
@@ -212,30 +212,30 @@ public final class loader extends Applet implements Runnable {
 			@Pc(155) byte[] local155;
 			try {
 				Class.forName("java.util.jar.Pack200");
-				local155 = this.method6515(false, local136, Class253.aClass257_2);
+				local155 = this.method6515(false, local136, Resources.aClass257_2);
 				if (local155 == null) {
 					return;
 				}
-				local145 = new unpack_Sub1(local155);
+				local145 = new Pack200Unpacker(local155);
 			} catch (@Pc(166) Throwable local166) {
 			}
 			if (local145 == null) {
-				local155 = this.method6515(false, local136, Class253.aClass257_1);
+				local155 = this.method6515(false, local136, Resources.aClass257_1);
 				if (local155 == null) {
 					return;
 				}
 				@Pc(185) unpack local185 = new unpack(local155);
-				@Pc(190) ClassLoader_Sub1 local190 = new ClassLoader_Sub1(local185);
+				@Pc(190) UnpackerClassLoader local190 = new UnpackerClassLoader(local185);
 				@Pc(193) Class local193 = Class.forName("unpack");
 				local190.method6513(local193.getName(), local193);
 				@Pc(203) Class local203 = local190.loadClass("unpackclass");
-				@Pc(210) byte[] local210 = this.method6515(false, local136, Class253.aClass257_3);
+				@Pc(210) byte[] local210 = this.method6515(false, local136, Resources.aClass257_3);
 				if (local210 == null) {
 					return;
 				}
 				local145 = (unpack) local203.getConstructor(Class.forName("[B"), Boolean.TYPE).newInstance(local210, Boolean.TRUE);
 			}
-			@Pc(244) ClassLoader_Sub1 local244 = new ClassLoader_Sub1(local145);
+			@Pc(244) UnpackerClassLoader local244 = new UnpackerClassLoader(local145);
 			@Pc(246) byte local246 = -1;
 			@Pc(250) String local250 = System.getProperty("os.name").toLowerCase();
 			@Pc(254) String local254 = System.getProperty("os.arch").toLowerCase();
@@ -257,11 +257,11 @@ public final class loader extends Applet implements Runnable {
 				}
 			}
 			if (local246 != -1) {
-				for (@Pc(312) int local312 = 0; local312 < Class253.aClass257ArrayArray1[local246].length; local312++) {
-					this.method6515(this.getParameter("suppress_sha") != null, local136, Class253.aClass257ArrayArray1[local246][local312]);
+				for (@Pc(312) int local312 = 0; local312 < Resources.aClass257ArrayArray1[local246].length; local312++) {
+					this.method6515(this.getParameter("suppress_sha") != null, local136, Resources.aClass257ArrayArray1[local246][local312]);
 				}
 			}
-			if (Class253.aClass257Array1 != null) {
+			if (Resources.aClass257Array1 != null) {
 				local246 = -1;
 				local250 = System.getProperty("os.name").toLowerCase();
 				local254 = System.getProperty("os.arch").toLowerCase();
@@ -273,18 +273,18 @@ public final class loader extends Applet implements Runnable {
 					}
 				}
 				if (local246 != -1) {
-					this.method6515(this.getParameter("suppress_sha") != null, local136, Class253.aClass257Array1[local246]);
+					this.method6515(this.getParameter("suppress_sha") != null, local136, Resources.aClass257Array1[local246]);
 				}
 			}
-			@Pc(398) Class local398 = Class.forName("Class260");
+			@Pc(398) Class local398 = Class.forName("FileOnDisk");
 			local244.method6513(local398.getName(), local398);
-			@Pc(407) Class local407 = Class.forName("Class259");
+			@Pc(407) Class local407 = Class.forName("Signlink");
 			local244.method6513(local407.getName(), local407);
-			@Pc(416) Class local416 = Class.forName("Class256");
+			@Pc(416) Class local416 = Class.forName("PrivilegedRequest");
 			local244.method6513(local416.getName(), local416);
-			@Pc(425) Class local425 = Class.forName("Class258");
+			@Pc(425) Class local425 = Class.forName("MonotonicClock");
 			local244.method6513(local425.getName(), local425);
-			@Pc(434) Class local434 = Class.forName("Interface12");
+			@Pc(434) Class local434 = Class.forName("AudioSource");
 			local244.method6513(local434.getName(), local434);
 			@Pc(444) Class local444 = local244.loadClass("client");
 			synchronized (this) {
@@ -302,15 +302,15 @@ public final class loader extends Applet implements Runnable {
 				}
 			}
 		} catch (@Pc(504) Exception local504) {
-			RuntimeException_Sub2.anInt7269 = -240750314;
+			TracingException.anInt7269 = -240750314;
 			if (local504 instanceof InvocationTargetException) {
 				@Pc(520) Throwable local520 = ((InvocationTargetException) local504).getTargetException();
 				if (local520 instanceof ThreadDeath) {
 					return;
 				}
-				RuntimeException_Sub2.method6501(this, local504.toString(), local520);
+				TracingException.method6501(this, local504.toString(), local520);
 			} else {
-				RuntimeException_Sub2.method6501(this, null, local504);
+				TracingException.method6501(this, null, local504);
 			}
 			this.method6514("crash");
 		}
@@ -348,11 +348,11 @@ public final class loader extends Applet implements Runnable {
 	}
 
 	@OriginalMember(owner = "loader!loader", name = "a", descriptor = "(Lloader!f;ZZ)[B")
-	private byte[] method6518(@OriginalArg(0) Class257 arg0, @OriginalArg(2) boolean arg1) {
+	private byte[] method6518(@OriginalArg(0) Resource arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(8) Font local8 = new Font("Helvetica", 1, 13);
 		@Pc(12) FontMetrics local12 = this.getFontMetrics(local8);
-		@Pc(19) Color local19 = new Color(Class253.anIntArray528[anInt7274]);
-		@Pc(26) Color local26 = new Color(Class253.anIntArray527[anInt7274]);
+		@Pc(19) Color local19 = new Color(Resources.anIntArray528[anInt7274]);
+		@Pc(26) Color local26 = new Color(Resources.anIntArray527[anInt7274]);
 		@Pc(30) byte[] local30 = new byte[arg0.anInt7271];
 		try {
 			@Pc(41) InputStream local41;
@@ -415,7 +415,7 @@ public final class loader extends Applet implements Runnable {
 	}
 
 	@OriginalMember(owner = "loader!loader", name = "a", descriptor = "(I[BZLloader!f;)Z")
-	private boolean method6519(@OriginalArg(1) byte[] arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Class257 arg2) {
+	private boolean method6519(@OriginalArg(1) byte[] arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Resource arg2) {
 		try {
 			if (arg0 == null) {
 				return false;

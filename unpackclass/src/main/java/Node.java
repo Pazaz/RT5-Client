@@ -2,13 +2,13 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("unpackclass!w")
-public class Class264 {
+public class Node {
 
 	@OriginalMember(owner = "unpackclass!w", name = "a", descriptor = "Lunpackclass!w;")
-	public Class264 aClass264_7;
+	public Node aClass264_7;
 
 	@OriginalMember(owner = "unpackclass!w", name = "b", descriptor = "Lunpackclass!w;")
-	public Class264 aClass264_8;
+	public Node aClass264_8;
 
 	@OriginalMember(owner = "unpackclass!w", name = "a", descriptor = "()V")
 	public final void method6609() {

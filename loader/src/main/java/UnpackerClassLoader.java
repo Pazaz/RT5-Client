@@ -1,4 +1,3 @@
-import java.net.URL;
 import java.security.AllPermission;
 import java.security.CodeSource;
 import java.security.Permissions;
@@ -11,7 +10,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("loader!g")
-public final class ClassLoader_Sub1 extends ClassLoader implements Interface13 {
+public final class UnpackerClassLoader extends ClassLoader implements ClassLoaderInterface {
 
 	@OriginalMember(owner = "loader!g", name = "a", descriptor = "Ljava/util/Hashtable;")
 	private final Hashtable aHashtable1 = new Hashtable();
@@ -23,7 +22,7 @@ public final class ClassLoader_Sub1 extends ClassLoader implements Interface13 {
 	private final ProtectionDomain aProtectionDomain1;
 
 	@OriginalMember(owner = "loader!g", name = "<init>", descriptor = "(Lunpack!unpack;)V")
-	public ClassLoader_Sub1(@OriginalArg(0) unpack arg0) {
+	public UnpackerClassLoader(@OriginalArg(0) unpack arg0) {
 		this.anUnpack1 = arg0;
 		@Pc(18) CodeSource local18 = new CodeSource(null, (Certificate[]) null);
 		@Pc(22) Permissions local22 = new Permissions();

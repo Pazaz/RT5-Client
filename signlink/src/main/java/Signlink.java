@@ -5,7 +5,6 @@ import java.awt.Frame;
 import java.awt.Point;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.ClipboardOwner;
 import java.awt.datatransfer.Transferable;
 import java.io.DataInputStream;
 import java.io.File;
@@ -24,7 +23,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("loader!ml")
-public final class Class259 implements Runnable {
+public final class Signlink implements Runnable {
 
 	@OriginalMember(owner = "loader!ml", name = "i", descriptor = "Ljava/lang/String;")
 	public static String aString76;
@@ -63,28 +62,28 @@ public final class Class259 implements Runnable {
 	private static final long aLong235 = 0L;
 
 	@OriginalMember(owner = "loader!ml", name = "o", descriptor = "Lloader!fc;")
-	private Interface12 anInterface12_1;
+	private AudioSource anInterface12_1;
 
 	@OriginalMember(owner = "loader!ml", name = "s", descriptor = "Lloader!cc;")
-	private Class256 aClass256_2 = null;
+	private PrivilegedRequest aClass256_2 = null;
 
 	@OriginalMember(owner = "loader!ml", name = "e", descriptor = "Ljava/applet/Applet;")
 	private Applet anApplet3 = null;
 
 	@OriginalMember(owner = "loader!ml", name = "m", descriptor = "Lloader!rl;")
-	private Class260 aClass260_1 = null;
+	private FileOnDisk aClass260_1 = null;
 
 	@OriginalMember(owner = "loader!ml", name = "b", descriptor = "Lloader!rl;")
-	private Class260 aClass260_2 = null;
+	private FileOnDisk aClass260_2 = null;
 
 	@OriginalMember(owner = "loader!ml", name = "n", descriptor = "Z")
 	private boolean aBoolean493 = false;
 
 	@OriginalMember(owner = "loader!ml", name = "j", descriptor = "Lloader!rl;")
-	private Class260 aClass260_3 = null;
+	private FileOnDisk aClass260_3 = null;
 
 	@OriginalMember(owner = "loader!ml", name = "A", descriptor = "Lloader!cc;")
-	private Class256 aClass256_3 = null;
+	private PrivilegedRequest aClass256_3 = null;
 
 	@OriginalMember(owner = "loader!ml", name = "w", descriptor = "Ljava/lang/String;")
 	private final String aString79;
@@ -96,19 +95,19 @@ public final class Class259 implements Runnable {
 	private EventQueue anEventQueue2;
 
 	@OriginalMember(owner = "loader!ml", name = "p", descriptor = "[Lloader!rl;")
-	private final Class260[] aClass260Array1;
+	private final FileOnDisk[] aClass260Array1;
 
 	@OriginalMember(owner = "loader!ml", name = "z", descriptor = "Lloader!c;")
-	private Class255 aClass255_1;
+	private FullScreenManager aClass255_1;
 
 	@OriginalMember(owner = "loader!ml", name = "y", descriptor = "Lloader!b;")
-	private Class254 aClass254_1;
+	private CursorManager aClass254_1;
 
 	@OriginalMember(owner = "loader!ml", name = "a", descriptor = "Ljava/lang/Thread;")
 	private final Thread aThread4;
 
 	@OriginalMember(owner = "loader!ml", name = "b", descriptor = "(Ljava/lang/String;II)Lloader!rl;")
-	private static Class260 method6532(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
+	private static FileOnDisk method6532(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
 		@Pc(16) String local16;
 		if (arg1 == 33) {
 			local16 = "jagex_" + arg0 + "_preferences_rc.dat";
@@ -122,7 +121,7 @@ public final class Class259 implements Runnable {
 			@Pc(91) String local91 = local75[local83];
 			if (local91.length() <= 0 || (new File(local91)).exists()) {
 				try {
-					return new Class260(new File(local91, local16), "rw", 10000L);
+					return new FileOnDisk(new File(local91, local16), "rw", 10000L);
 				} catch (@Pc(115) Exception local115) {
 				}
 			}
@@ -177,7 +176,7 @@ public final class Class259 implements Runnable {
 	}
 
 	@OriginalMember(owner = "loader!ml", name = "a", descriptor = "(IILjava/lang/String;)Lloader!rl;")
-	private static Class260 method6543(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1) {
+	private static FileOnDisk method6543(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1) {
 		@Pc(13) String local13;
 		if (arg0 == 33) {
 			local13 = "jagex_" + arg1 + "_preferences2_rc.dat";
@@ -191,7 +190,7 @@ public final class Class259 implements Runnable {
 			@Pc(100) String local100 = local77[local88];
 			if (local100.length() <= 0 || (new File(local100)).exists()) {
 				try {
-					return new Class260(new File(local100, local13), "rw", 10000L);
+					return new FileOnDisk(new File(local100, local13), "rw", 10000L);
 				} catch (@Pc(127) Exception local127) {
 				}
 			}
@@ -200,7 +199,7 @@ public final class Class259 implements Runnable {
 	}
 
 	@OriginalMember(owner = "loader!ml", name = "<init>", descriptor = "(Ljava/applet/Applet;ILjava/lang/String;I)V")
-	public Class259(@OriginalArg(0) Applet arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) int arg3) throws Exception {
+	public Signlink(@OriginalArg(0) Applet arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) int arg3) throws Exception {
 		this.aString79 = arg2;
 		aString82 = "1.1";
 		this.anInt7278 = arg1;
@@ -257,19 +256,19 @@ public final class Class259 implements Runnable {
 			}
 		} catch (@Pc(151) Exception local151) {
 		}
-		this.aClass260_2 = new Class260(method6541(null, this.anInt7278, "random.dat"), "rw", 25L);
-		this.aClass260_3 = new Class260(this.method6530("main_file_cache.dat2"), "rw", 209715200L);
-		this.aClass260_1 = new Class260(this.method6530("main_file_cache.idx255"), "rw", 1048576L);
-		this.aClass260Array1 = new Class260[arg3];
+		this.aClass260_2 = new FileOnDisk(method6541(null, this.anInt7278, "random.dat"), "rw", 25L);
+		this.aClass260_3 = new FileOnDisk(this.method6530("main_file_cache.dat2"), "rw", 209715200L);
+		this.aClass260_1 = new FileOnDisk(this.method6530("main_file_cache.idx255"), "rw", 1048576L);
+		this.aClass260Array1 = new FileOnDisk[arg3];
 		for (@Pc(192) int local192 = 0; local192 < arg3; local192++) {
-			this.aClass260Array1[local192] = new Class260(this.method6530("main_file_cache.idx" + local192), "rw", 1048576L);
+			this.aClass260Array1[local192] = new FileOnDisk(this.method6530("main_file_cache.idx" + local192), "rw", 1048576L);
 		}
 		try {
-			this.aClass255_1 = new Class255();
+			this.aClass255_1 = new FullScreenManager();
 		} catch (@Pc(224) Throwable local224) {
 		}
 		try {
-			this.aClass254_1 = new Class254();
+			this.aClass254_1 = new CursorManager();
 		} catch (@Pc(231) Throwable local231) {
 		}
 		@Pc(234) ThreadGroup local234 = Thread.currentThread().getThreadGroup();
@@ -299,7 +298,7 @@ public final class Class259 implements Runnable {
 	@Override
 	public void run() {
 		while (true) {
-			@Pc(16) Class256 local16;
+			@Pc(16) PrivilegedRequest local16;
 			synchronized (this) {
 				while (true) {
 					if (this.aBoolean493) {
@@ -322,7 +321,7 @@ public final class Class259 implements Runnable {
 			try {
 				@Pc(45) int local45 = local16.anInt7266;
 				if (local45 == 1) {
-					if (Class258.method6520() < aLong235) {
+					if (MonotonicClock.method6520() < aLong235) {
 						throw new IOException();
 					}
 					local16.anObject8 = new Socket(InetAddress.getByName((String) local16.anObject9), local16.anInt7267);
@@ -333,7 +332,7 @@ public final class Class259 implements Runnable {
 					local853.setPriority(local16.anInt7267);
 					local16.anObject8 = local853;
 				} else if (local45 == 4) {
-					if (Class258.method6520() < aLong235) {
+					if (MonotonicClock.method6520() < aLong235) {
 						throw new IOException();
 					}
 					local16.anObject8 = new DataInputStream(((URL) local16.anObject9).openStream());
@@ -361,13 +360,13 @@ public final class Class259 implements Runnable {
 					} else {
 						@Pc(211) String local211;
 						if (local45 == 3) {
-							if (Class258.method6520() < aLong235) {
+							if (MonotonicClock.method6520() < aLong235) {
 								throw new IOException();
 							}
 							local211 = (local16.anInt7267 >> 24 & 0xFF) + "." + (local16.anInt7267 >> 16 & 0xFF) + "." + (local16.anInt7267 >> 8 & 0xFF) + "." + (local16.anInt7267 & 0xFF);
 							local16.anObject8 = InetAddress.getByName(local211).getHostName();
 						} else if (local45 == 21) {
-							if (aLong235 > Class258.method6520()) {
+							if (aLong235 > MonotonicClock.method6520()) {
 								throw new IOException();
 							}
 							local16.anObject8 = InetAddress.getByName((String) local16.anObject9).getAddress();
@@ -428,7 +427,7 @@ public final class Class259 implements Runnable {
 									}
 									local421.setAccessible(false);
 								} else {
-									@Pc(156) Class260 local156;
+									@Pc(156) FileOnDisk local156;
 									if (local45 == 12) {
 										local156 = method6532(this.aString79, this.anInt7278);
 										local16.anObject8 = local156;

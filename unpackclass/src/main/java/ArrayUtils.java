@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("unpackclass!l")
-public final class Class271 {
+public final class ArrayUtils {
 
 	@OriginalMember(owner = "unpackclass!l", name = "a", descriptor = "([BI[BII)V")
 	public static void method6597(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {

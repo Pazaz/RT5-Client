@@ -11,55 +11,55 @@ public final class unpackclass extends unpack {
 	private int[] anIntArray549 = new int[] { 0, 3, 0, 5, 5, 9, 9, 3, 3, 5, 5, 5, 5 };
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "b", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_1 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_1 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "c", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_2 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_2 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "d", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_3 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_3 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "e", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_4 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_4 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "f", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_5 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_5 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "g", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_6 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_6 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "h", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_7 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_7 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "i", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_8 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_8 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "j", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_9 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_9 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "k", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_10 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_10 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "l", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_11 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_11 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "m", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_12 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_12 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "n", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_13 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_13 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "o", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_14 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_14 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "p", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_15 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_15 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "q", descriptor = "Lunpackclass!e;")
-	private Class264_Sub1 aClass264_Sub1_16 = new Class264_Sub1(null);
+	private Buffer aClass264_Sub1_16 = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "I", descriptor = "Lunpackclass!f;")
-	private Class265 aClass265_1 = new Class265();
+	private LinkedList aClass265_1 = new LinkedList();
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "J", descriptor = "I")
 	private int anInt7318 = 1;
@@ -68,74 +68,74 @@ public final class unpackclass extends unpack {
 	private int[] anIntArray550 = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 16, 1026, 1026, 1026, 1026, 1026, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1026, 1026, 1026, 1026, 1026, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1026, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 256, 1026, 0, 0, 0, 0, 0, 0, 0, 0, 64, 64, 64, 64, 128, 128, 128, 0, 4, 32, 0, 32, 0, 0, 32, 32, 0, 0, 0, 32, 256, 256, 512, 512, 16, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "A", descriptor = "[Lunpackclass!s;")
-	private Class264_Sub2[] aClass264_Sub2Array11;
+	private ConstantPoolEntry[] aClass264_Sub2Array11;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "u", descriptor = "[Lunpackclass!s;")
-	private Class264_Sub2[] aClass264_Sub2Array5;
+	private ConstantPoolEntry[] aClass264_Sub2Array5;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "w", descriptor = "[Lunpackclass!s;")
-	private Class264_Sub2[] aClass264_Sub2Array7;
+	private ConstantPoolEntry[] aClass264_Sub2Array7;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "v", descriptor = "[Lunpackclass!s;")
-	private Class264_Sub2[] aClass264_Sub2Array6;
+	private ConstantPoolEntry[] aClass264_Sub2Array6;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "x", descriptor = "[Lunpackclass!s;")
-	private Class264_Sub2[] aClass264_Sub2Array8;
+	private ConstantPoolEntry[] aClass264_Sub2Array8;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "y", descriptor = "[Lunpackclass!s;")
-	private Class264_Sub2[] aClass264_Sub2Array9;
+	private ConstantPoolEntry[] aClass264_Sub2Array9;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "z", descriptor = "[Lunpackclass!s;")
-	private Class264_Sub2[] aClass264_Sub2Array10;
+	private ConstantPoolEntry[] aClass264_Sub2Array10;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "r", descriptor = "[Lunpackclass!s;")
-	private Class264_Sub2[] aClass264_Sub2Array2;
+	private ConstantPoolEntry[] aClass264_Sub2Array2;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "s", descriptor = "[Lunpackclass!s;")
-	private Class264_Sub2[] aClass264_Sub2Array3;
+	private ConstantPoolEntry[] aClass264_Sub2Array3;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "t", descriptor = "[Lunpackclass!s;")
-	private Class264_Sub2[] aClass264_Sub2Array4;
+	private ConstantPoolEntry[] aClass264_Sub2Array4;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "B", descriptor = "[Lunpackclass!s;")
-	private Class264_Sub2[] aClass264_Sub2Array12;
+	private ConstantPoolEntry[] aClass264_Sub2Array12;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "C", descriptor = "[Lunpackclass!s;")
-	private Class264_Sub2[] aClass264_Sub2Array13;
+	private ConstantPoolEntry[] aClass264_Sub2Array13;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "E", descriptor = "Lunpackclass!s;")
-	private Class264_Sub2 aClass264_Sub2_8;
+	private ConstantPoolEntry aClass264_Sub2_8;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "F", descriptor = "Lunpackclass!s;")
-	private Class264_Sub2 aClass264_Sub2_9;
+	private ConstantPoolEntry aClass264_Sub2_9;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "D", descriptor = "Lunpackclass!s;")
-	private Class264_Sub2 aClass264_Sub2_7;
+	private ConstantPoolEntry aClass264_Sub2_7;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "G", descriptor = "Lunpackclass!s;")
-	private final Class264_Sub2 aClass264_Sub2_10;
+	private final ConstantPoolEntry aClass264_Sub2_10;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "H", descriptor = "Lunpackclass!s;")
-	private final Class264_Sub2 aClass264_Sub2_11;
+	private final ConstantPoolEntry aClass264_Sub2_11;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "(Lunpackclass!e;[Lunpackclass!s;)Lunpackclass!s;")
-	private static Class264_Sub2 method6621(@OriginalArg(0) Class264_Sub1 arg0, @OriginalArg(1) Class264_Sub2[] arg1) {
+	private static ConstantPoolEntry method6621(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		return arg1[arg0.method6586()];
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "b", descriptor = "(Lunpackclass!e;[Lunpackclass!s;)Lunpackclass!s;")
-	private static Class264_Sub2 method6622(@OriginalArg(0) Class264_Sub1 arg0, @OriginalArg(1) Class264_Sub2[] arg1) {
+	private static ConstantPoolEntry method6622(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		return arg1[arg0.method6586()];
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "d", descriptor = "(Lunpackclass!e;[Lunpackclass!s;)Lunpackclass!s;")
-	private static Class264_Sub2 method6625(@OriginalArg(0) Class264_Sub1 arg0, @OriginalArg(1) Class264_Sub2[] arg1) {
+	private static ConstantPoolEntry method6625(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		return arg1[arg0.method6586()];
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "(Ljava/lang/String;)Lunpackclass!s;")
-	private static Class264_Sub2 method6629(@OriginalArg(0) String arg0) {
-		@Pc(3) Class264_Sub2 local3 = new Class264_Sub2();
+	private static ConstantPoolEntry method6629(@OriginalArg(0) String arg0) {
+		@Pc(3) ConstantPoolEntry local3 = new ConstantPoolEntry();
 		local3.anInt7316 = 1;
 		local3.aByteArray107 = arg0.getBytes();
 		return local3;
@@ -171,7 +171,7 @@ public final class unpackclass extends unpack {
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "<init>", descriptor = "([BZ)V")
 	public unpackclass(@OriginalArg(0) byte[] arg0, @OriginalArg(1) boolean arg1) throws IOException {
-		@Pc(572) Class262_Sub1 local572 = new Class262_Sub1(arg0, true, true);
+		@Pc(572) Js5Pack local572 = new Js5Pack(arg0, true, true);
 		this.aClass264_Sub1_1.aByteArray100 = local572.method6601(1, 0);
 		this.aClass264_Sub1_1.anInt7287 = this.aClass264_Sub1_1.aByteArray100.length - 20;
 		this.aClass264_Sub2Array11 = this.method6628(1);
@@ -184,8 +184,8 @@ public final class unpackclass extends unpack {
 		this.aClass264_Sub2Array2 = this.method6628(9);
 		this.aClass264_Sub2Array3 = this.method6628(10);
 		this.aClass264_Sub2Array4 = this.method6628(11);
-		this.aClass264_Sub2Array12 = new Class264_Sub2[this.aClass264_Sub2Array11.length];
-		this.aClass264_Sub2Array13 = new Class264_Sub2[this.aClass264_Sub2Array11.length];
+		this.aClass264_Sub2Array12 = new ConstantPoolEntry[this.aClass264_Sub2Array11.length];
+		this.aClass264_Sub2Array13 = new ConstantPoolEntry[this.aClass264_Sub2Array11.length];
 		this.aClass264_Sub2Array11[0] = this.aClass264_Sub2_8 = method6629("Code");
 		this.aClass264_Sub2Array11[1] = this.aClass264_Sub2_9 = method6629("Exceptions");
 		this.aClass264_Sub2Array11[2] = method6629("Synthetic");
@@ -270,7 +270,7 @@ public final class unpackclass extends unpack {
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "(Lunpackclass!s;)V")
-	private void method6620(@OriginalArg(0) Class264_Sub2 arg0) {
+	private void method6620(@OriginalArg(0) ConstantPoolEntry arg0) {
 		if (arg0.method6610()) {
 			return;
 		}
@@ -289,18 +289,18 @@ public final class unpackclass extends unpack {
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "c", descriptor = "(Lunpackclass!e;[Lunpackclass!s;)Lunpackclass!s;")
-	private Class264_Sub2 method6623(@OriginalArg(0) Class264_Sub1 arg0, @OriginalArg(1) Class264_Sub2[] arg1) {
-		@Pc(4) Class264_Sub2 local4 = arg1[arg0.method6586()];
+	private ConstantPoolEntry method6623(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
+		@Pc(4) ConstantPoolEntry local4 = arg1[arg0.method6586()];
 		this.method6620(local4);
 		return local4;
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "(Lunpackclass!e;[Lunpackclass!s;I)Lunpackclass!s;")
-	private Class264_Sub2 method6624(@OriginalArg(0) Class264_Sub1 arg0, @OriginalArg(1) Class264_Sub2[] arg1) {
+	private ConstantPoolEntry method6624(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		@Pc(2) int local2 = arg0.method6586();
-		@Pc(6) Class264_Sub2 local6 = arg1[local2];
+		@Pc(6) ConstantPoolEntry local6 = arg1[local2];
 		if (local6 == null) {
-			local6 = new Class264_Sub2();
+			local6 = new ConstantPoolEntry();
 			local6.anInt7316 = 7;
 			local6.aClass264_Sub2_5 = this.aClass264_Sub2Array11[local2];
 			arg1[local2] = local6;
@@ -309,11 +309,11 @@ public final class unpackclass extends unpack {
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "b", descriptor = "(Lunpackclass!e;[Lunpackclass!s;I)Lunpackclass!s;")
-	private Class264_Sub2 method6626(@OriginalArg(0) Class264_Sub1 arg0, @OriginalArg(1) Class264_Sub2[] arg1, @OriginalArg(2) int arg2) {
+	private ConstantPoolEntry method6626(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1, @OriginalArg(2) int arg2) {
 		@Pc(2) int local2 = arg0.method6586();
-		@Pc(6) Class264_Sub2 local6 = arg1[local2];
+		@Pc(6) ConstantPoolEntry local6 = arg1[local2];
 		if (local6 == null) {
-			local6 = new Class264_Sub2();
+			local6 = new ConstantPoolEntry();
 			local6.anInt7316 = arg2;
 			local6.aClass264_Sub2_5 = this.aClass264_Sub2Array11[local2];
 			arg1[local2] = local6;
@@ -323,15 +323,15 @@ public final class unpackclass extends unpack {
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "()Lunpackclass!s;")
-	private Class264_Sub2 method6627() {
+	private ConstantPoolEntry method6627() {
 		@Pc(3) int local3 = this.aClass264_Sub1_1.method6586();
 		if (local3 == 0) {
 			return null;
 		}
 		local3--;
-		@Pc(13) Class264_Sub2 local13 = this.aClass264_Sub2Array13[local3];
+		@Pc(13) ConstantPoolEntry local13 = this.aClass264_Sub2Array13[local3];
 		if (local13 == null) {
-			local13 = new Class264_Sub2();
+			local13 = new ConstantPoolEntry();
 			local13.anInt7316 = 7;
 			local13.aClass264_Sub2_5 = this.aClass264_Sub2Array11[local3];
 			this.aClass264_Sub2Array13[local3] = local13;
@@ -341,10 +341,10 @@ public final class unpackclass extends unpack {
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "(I)[Lunpackclass!s;")
-	private Class264_Sub2[] method6628(@OriginalArg(0) int arg0) {
-		@Pc(4) Class264_Sub2[] local4 = new Class264_Sub2[this.aClass264_Sub1_1.method6586()];
+	private ConstantPoolEntry[] method6628(@OriginalArg(0) int arg0) {
+		@Pc(4) ConstantPoolEntry[] local4 = new ConstantPoolEntry[this.aClass264_Sub1_1.method6586()];
 		for (@Pc(6) int local6 = 0; local6 < local4.length; local6++) {
-			local4[local6] = new Class264_Sub2();
+			local4[local6] = new ConstantPoolEntry();
 			local4[local6].anInt7316 = arg0;
 		}
 		return local4;
@@ -364,28 +364,28 @@ public final class unpackclass extends unpack {
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "([Lunpackclass!s;)V")
-	private void method6631(@OriginalArg(0) Class264_Sub2[] arg0) {
+	private void method6631(@OriginalArg(0) ConstantPoolEntry[] arg0) {
 		for (@Pc(1) int local1 = 0; local1 < arg0.length; local1++) {
 			arg0[local1].aClass264_Sub2_5 = method6621(this.aClass264_Sub1_1, this.aClass264_Sub2Array11);
 		}
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "b", descriptor = "([Lunpackclass!s;)V")
-	private void method6632(@OriginalArg(0) Class264_Sub2[] arg0) {
+	private void method6632(@OriginalArg(0) ConstantPoolEntry[] arg0) {
 		for (@Pc(1) int local1 = 0; local1 < arg0.length; local1++) {
 			arg0[local1].aClass264_Sub2_5 = this.method6624(this.aClass264_Sub1_1, this.aClass264_Sub2Array13);
 		}
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "([Lunpackclass!s;[Lunpackclass!s;)V")
-	private void method6633(@OriginalArg(0) Class264_Sub2[] arg0, @OriginalArg(1) Class264_Sub2[] arg1) {
+	private void method6633(@OriginalArg(0) ConstantPoolEntry[] arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		for (@Pc(1) int local1 = 0; local1 < arg0.length; local1++) {
 			arg0[local1].aClass264_Sub2_6 = method6621(this.aClass264_Sub1_1, arg1);
 		}
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "([Lunpackclass!s;I)V")
-	private void method6634(@OriginalArg(0) Class264_Sub2[] arg0, @OriginalArg(1) int arg1) {
+	private void method6634(@OriginalArg(0) ConstantPoolEntry[] arg0, @OriginalArg(1) int arg1) {
 		@Pc(1) long local1 = 0L;
 		for (@Pc(3) int local3 = 0; local3 < arg0.length; local3++) {
 			local1 += (long) this.aClass264_Sub1_1.method6585() << arg1;
@@ -394,26 +394,26 @@ public final class unpackclass extends unpack {
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "c", descriptor = "()[Lunpackclass!g;")
-	private Class266[] method6635() {
-		@Pc(4) Class266[] local4 = new Class266[this.aClass264_Sub1_1.method6586()];
+	private Member[] method6635() {
+		@Pc(4) Member[] local4 = new Member[this.aClass264_Sub1_1.method6586()];
 		for (@Pc(6) int local6 = 0; local6 < local4.length; local6++) {
-			local4[local6] = new Class266();
+			local4[local6] = new Member();
 		}
 		return local4;
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "([Lunpackclass!g;)V")
-	private void method6636(@OriginalArg(0) Class266[] arg0) {
+	private void method6636(@OriginalArg(0) Member[] arg0) {
 		for (@Pc(1) int local1 = 0; local1 < arg0.length; local1++) {
-			arg0[local1].aClass269Array1 = new Class269[this.aClass264_Sub1_1.method6585()];
+			arg0[local1].aClass269Array1 = new Attribute[this.aClass264_Sub1_1.method6585()];
 			for (@Pc(12) int local12 = 0; local12 < arg0[local1].aClass269Array1.length; local12++) {
-				arg0[local1].aClass269Array1[local12] = new Class269();
+				arg0[local1].aClass269Array1[local12] = new Attribute();
 			}
 		}
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "b", descriptor = "([Lunpackclass!g;)V")
-	private void method6637(@OriginalArg(0) Class266[] arg0) {
+	private void method6637(@OriginalArg(0) Member[] arg0) {
 		for (@Pc(1) int local1 = 0; local1 < arg0.length; local1++) {
 			for (@Pc(4) int local4 = 0; local4 < arg0[local1].aClass269Array1.length; local4++) {
 				arg0[local1].aClass269Array1[local4].aClass264_Sub2_2 = this.method6623(this.aClass264_Sub1_1, this.aClass264_Sub2Array11);
@@ -422,12 +422,12 @@ public final class unpackclass extends unpack {
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "c", descriptor = "([Lunpackclass!g;)I")
-	private int method6638(@OriginalArg(0) Class266[] arg0) {
+	private int method6638(@OriginalArg(0) Member[] arg0) {
 		@Pc(4) int local4 = arg0.length * 8;
 		for (@Pc(6) int local6 = 0; local6 < arg0.length; local6++) {
 			local4 += arg0[local6].aClass269Array1.length * 6;
 			for (@Pc(19) int local19 = 0; local19 < arg0[local6].aClass269Array1.length; local19++) {
-				@Pc(27) Class269 local27 = arg0[local6].aClass269Array1[local19];
+				@Pc(27) Attribute local27 = arg0[local6].aClass269Array1[local19];
 				if (local27.aClass264_Sub2_2 == this.aClass264_Sub2_7) {
 					local4 += 2;
 				}
@@ -452,9 +452,9 @@ public final class unpackclass extends unpack {
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "(Z)V")
 	private void method6640(@OriginalArg(0) boolean arg0) {
 		this.aClass264_Sub1_1.anInt7287 = this.aClass264_Sub1_1.aByteArray100.length - 6;
-		@Pc(13) Class264_Sub2[] local13 = new Class264_Sub2[this.aClass264_Sub1_1.method6586()];
-		@Pc(16) Class266[] local16 = this.method6635();
-		@Pc(19) Class266[] local19 = this.method6635();
+		@Pc(13) ConstantPoolEntry[] local13 = new ConstantPoolEntry[this.aClass264_Sub1_1.method6586()];
+		@Pc(16) Member[] local16 = this.method6635();
+		@Pc(19) Member[] local19 = this.method6635();
 		this.aClass264_Sub1_1.anInt7287 = 0;
 		this.method6636(local16);
 		this.method6636(local19);
@@ -463,9 +463,9 @@ public final class unpackclass extends unpack {
 		@Pc(40) int local40;
 		for (@Pc(37) int local37 = 0; local37 < local19.length; local37++) {
 			for (local40 = 0; local40 < local19[local37].aClass269Array1.length; local40++) {
-				@Pc(48) Class269 local48 = local19[local37].aClass269Array1[local40];
+				@Pc(48) Attribute local48 = local19[local37].aClass269Array1[local40];
 				if (local48.aClass264_Sub2_2 == this.aClass264_Sub2_9) {
-					local48.aClass264_Sub2Array1 = new Class264_Sub2[this.aClass264_Sub1_1.method6585()];
+					local48.aClass264_Sub2Array1 = new ConstantPoolEntry[this.aClass264_Sub1_1.method6585()];
 				}
 			}
 		}
@@ -473,12 +473,12 @@ public final class unpackclass extends unpack {
 		@Pc(77) int local77;
 		for (local40 = 0; local40 < local19.length; local40++) {
 			for (local77 = 0; local77 < local19[local40].aClass269Array1.length; local77++) {
-				@Pc(85) Class269 local85 = local19[local40].aClass269Array1[local77];
+				@Pc(85) Attribute local85 = local19[local40].aClass269Array1[local77];
 				if (local85.aClass264_Sub2_2 == this.aClass264_Sub2_8) {
-					local85.aClass274_1 = new Class274();
-					local85.aClass274_1.aClass272Array1 = new Class272[this.aClass264_Sub1_1.method6585()];
+					local85.aClass274_1 = new Code();
+					local85.aClass274_1.aClass272Array1 = new ExceptionTableEntry[this.aClass264_Sub1_1.method6585()];
 					for (local104 = 0; local104 < local85.aClass274_1.aClass272Array1.length; local104++) {
-						local85.aClass274_1.aClass272Array1[local104] = new Class272();
+						local85.aClass274_1.aClass272Array1[local104] = new ExceptionTableEntry();
 					}
 				}
 			}
@@ -486,7 +486,7 @@ public final class unpackclass extends unpack {
 		@Pc(138) int local138;
 		for (local77 = 0; local77 < local19.length; local77++) {
 			for (local138 = 0; local138 < local19[local77].aClass269Array1.length; local138++) {
-				@Pc(146) Class269 local146 = local19[local77].aClass269Array1[local138];
+				@Pc(146) Attribute local146 = local19[local77].aClass269Array1[local138];
 				if (local146.aClass264_Sub2_2 == this.aClass264_Sub2_8) {
 					local146.aClass274_1.anInt7312 = this.aClass264_Sub1_1.method6585();
 				}
@@ -494,7 +494,7 @@ public final class unpackclass extends unpack {
 		}
 		for (local138 = 0; local138 < local19.length; local138++) {
 			for (local104 = 0; local104 < local19[local138].aClass269Array1.length; local104++) {
-				@Pc(183) Class269 local183 = local19[local138].aClass269Array1[local104];
+				@Pc(183) Attribute local183 = local19[local138].aClass269Array1[local104];
 				if (local183.aClass264_Sub2_2 == this.aClass264_Sub2_8) {
 					local183.aClass274_1.anInt7313 = this.aClass264_Sub1_1.method6585();
 				}
@@ -508,7 +508,7 @@ public final class unpackclass extends unpack {
 		@Pc(262) int local262;
 		for (@Pc(211) int local211 = 0; local211 < local19.length; local211++) {
 			for (local214 = 0; local214 < local19[local211].aClass269Array1.length; local214++) {
-				@Pc(222) Class269 local222 = local19[local211].aClass269Array1[local214];
+				@Pc(222) Attribute local222 = local19[local211].aClass269Array1[local214];
 				if (local222.aClass264_Sub2_2 == this.aClass264_Sub2_8) {
 					local231 = this.aClass264_Sub1_1.anInt7287;
 					if (this.aClass264_Sub1_1.method6590() > 0) {
@@ -519,11 +519,11 @@ public final class unpackclass extends unpack {
 						if (arg0) {
 							this.aClass264_Sub1_1.anInt7287 = local231;
 							this.method6620(this.aClass264_Sub2_11);
-							local222.aClass274_1.aClass273Array1 = new Class273[local237];
+							local222.aClass274_1.aClass273Array1 = new LineNumberTableEntry[local237];
 							local260 = -1;
 							for (local262 = 0; local262 < local237; local262++) {
 								local260 += this.aClass264_Sub1_1.method6590();
-								local222.aClass274_1.aClass273Array1[local262] = new Class273();
+								local222.aClass274_1.aClass273Array1[local262] = new LineNumberTableEntry();
 								local222.aClass274_1.aClass273Array1[local262].anInt7307 = local260;
 							}
 							this.aClass264_Sub1_1.anInt7287++;
@@ -539,7 +539,7 @@ public final class unpackclass extends unpack {
 			local214 = 0;
 			for (local319 = 0; local319 < local19.length; local319++) {
 				for (local231 = 0; local231 < local19[local319].aClass269Array1.length; local231++) {
-					@Pc(330) Class269 local330 = local19[local319].aClass269Array1[local231];
+					@Pc(330) Attribute local330 = local19[local319].aClass269Array1[local231];
 					if (local330.aClass264_Sub2_2 == this.aClass264_Sub2_8 && local330.aClass274_1.aClass273Array1 != null) {
 						for (local260 = 0; local260 < local330.aClass274_1.aClass273Array1.length; local260++) {
 							local214 += this.aClass264_Sub1_1.method6586();
@@ -566,7 +566,7 @@ public final class unpackclass extends unpack {
 			local19[local260].anInt7288 += this.aClass264_Sub1_1.method6585();
 		}
 		local262 = this.aClass264_Sub1_1.method6586();
-		@Pc(484) Class264_Sub2 local484;
+		@Pc(484) ConstantPoolEntry local484;
 		if (local262 > 0) {
 			this.method6620(this.aClass264_Sub2_10);
 			local484 = this.aClass264_Sub2Array11[local262 - 1];
@@ -577,7 +577,7 @@ public final class unpackclass extends unpack {
 		@Pc(495) int local495;
 		for (@Pc(492) int local492 = 0; local492 < local19.length; local492++) {
 			for (local495 = 0; local495 < local19[local492].aClass269Array1.length; local495++) {
-				@Pc(503) Class269 local503 = local19[local492].aClass269Array1[local495];
+				@Pc(503) Attribute local503 = local19[local492].aClass269Array1[local495];
 				if (local503.aClass264_Sub2_2 == this.aClass264_Sub2_9) {
 					for (@Pc(510) int local510 = 0; local510 < local503.aClass264_Sub2Array1.length; local510++) {
 						local503.aClass264_Sub2Array1[local510] = this.method6626(this.aClass264_Sub1_1, this.aClass264_Sub2Array13, 7);
@@ -588,7 +588,7 @@ public final class unpackclass extends unpack {
 		@Pc(561) int local561;
 		for (local495 = 0; local495 < local19.length; local495++) {
 			for (@Pc(546) int local546 = 0; local546 < local19[local495].aClass269Array1.length; local546++) {
-				@Pc(554) Class269 local554 = local19[local495].aClass269Array1[local546];
+				@Pc(554) Attribute local554 = local19[local495].aClass269Array1[local546];
 				if (local554.aClass264_Sub2_2 == this.aClass264_Sub2_8) {
 					for (local561 = 0; local561 < local554.aClass274_1.aClass272Array1.length; local561++) {
 						local554.aClass274_1.aClass272Array1[local561].aClass264_Sub2_4 = this.method6627();
@@ -596,8 +596,8 @@ public final class unpackclass extends unpack {
 				}
 			}
 		}
-		@Pc(598) Class264_Sub2 local598 = this.method6626(this.aClass264_Sub1_1, this.aClass264_Sub2Array13, 7);
-		@Pc(606) Class264_Sub2 local606 = this.method6626(this.aClass264_Sub1_1, this.aClass264_Sub2Array13, 7);
+		@Pc(598) ConstantPoolEntry local598 = this.method6626(this.aClass264_Sub1_1, this.aClass264_Sub2Array13, 7);
+		@Pc(606) ConstantPoolEntry local606 = this.method6626(this.aClass264_Sub1_1, this.aClass264_Sub2Array13, 7);
 		for (local561 = 0; local561 < local13.length; local561++) {
 			local13[local561] = this.method6626(this.aClass264_Sub1_1, this.aClass264_Sub2Array13, 7);
 		}
@@ -616,10 +616,10 @@ public final class unpackclass extends unpack {
 		@Pc(699) int local699;
 		for (@Pc(696) int local696 = 0; local696 < local16.length; local696++) {
 			for (local699 = 0; local699 < local16[local696].aClass269Array1.length; local699++) {
-				@Pc(707) Class269 local707 = local16[local696].aClass269Array1[local699];
+				@Pc(707) Attribute local707 = local16[local696].aClass269Array1[local699];
 				if (local707.aClass264_Sub2_2 == this.aClass264_Sub2_7) {
-					@Pc(717) Class264_Sub2 local717 = local16[local696].aClass264_Sub2_1;
-					@Pc(720) Class264_Sub2 local720 = local717.aClass264_Sub2_6;
+					@Pc(717) ConstantPoolEntry local717 = local16[local696].aClass264_Sub2_1;
+					@Pc(720) ConstantPoolEntry local720 = local717.aClass264_Sub2_6;
 					@Pc(725) byte local725 = local720.aByteArray107[0];
 					if (local725 == 74) {
 						local707.aClass264_Sub2_3 = this.method6623(this.aClass264_Sub1_1, this.aClass264_Sub2Array7);
@@ -641,7 +641,7 @@ public final class unpackclass extends unpack {
 		@Pc(817) int local817;
 		for (local699 = 0; local699 < local19.length; local699++) {
 			for (local800 = 0; local800 < local19[local699].aClass269Array1.length; local800++) {
-				@Pc(808) Class269 local808 = local19[local699].aClass269Array1[local800];
+				@Pc(808) Attribute local808 = local19[local699].aClass269Array1[local800];
 				if (local808.aClass264_Sub2_2 == this.aClass264_Sub2_8) {
 					local815 = 0;
 					for (local817 = 0; local817 < local808.aClass274_1.aClass272Array1.length; local817++) {
@@ -651,7 +651,7 @@ public final class unpackclass extends unpack {
 						} else if (local822 == local815) {
 							local822 = 0;
 						}
-						@Pc(837) Class272 local837 = local808.aClass274_1.aClass272Array1[local817];
+						@Pc(837) ExceptionTableEntry local837 = local808.aClass274_1.aClass272Array1[local817];
 						local815 = local822;
 						local837.anInt7304 = local822;
 					}
@@ -661,7 +661,7 @@ public final class unpackclass extends unpack {
 		@Pc(866) int local866;
 		for (local800 = 0; local800 < local19.length; local800++) {
 			for (local866 = 0; local866 < local19[local800].aClass269Array1.length; local866++) {
-				@Pc(874) Class269 local874 = local19[local800].aClass269Array1[local866];
+				@Pc(874) Attribute local874 = local19[local800].aClass269Array1[local866];
 				if (local874.aClass264_Sub2_2 == this.aClass264_Sub2_8) {
 					for (local817 = 0; local817 < local874.aClass274_1.aClass272Array1.length; local817++) {
 						local874.aClass274_1.aClass272Array1[local817].anInt7305 = this.aClass264_Sub1_1.method6587();
@@ -671,7 +671,7 @@ public final class unpackclass extends unpack {
 		}
 		for (local866 = 0; local866 < local19.length; local866++) {
 			for (local815 = 0; local815 < local19[local866].aClass269Array1.length; local815++) {
-				@Pc(924) Class269 local924 = local19[local866].aClass269Array1[local815];
+				@Pc(924) Attribute local924 = local19[local866].aClass269Array1[local815];
 				if (local924.aClass264_Sub2_2 == this.aClass264_Sub2_8) {
 					for (local822 = 0; local822 < local924.aClass274_1.aClass272Array1.length; local822++) {
 						local924.aClass274_1.aClass272Array1[local822].anInt7306 = this.aClass264_Sub1_1.method6586();
@@ -701,7 +701,7 @@ public final class unpackclass extends unpack {
 		@Pc(1102) int local1102;
 		for (@Pc(995) int local995 = 0; local995 < local19.length; local995++) {
 			for (local998 = 0; local998 < local19[local995].aClass269Array1.length; local998++) {
-				@Pc(1006) Class269 local1006 = local19[local995].aClass269Array1[local998];
+				@Pc(1006) Attribute local1006 = local19[local995].aClass269Array1[local998];
 				if (local1006.aClass264_Sub2_2 == this.aClass264_Sub2_8) {
 					local1013 = 0;
 					while (true) {
@@ -819,7 +819,7 @@ public final class unpackclass extends unpack {
 		@Pc(1448) int local1448;
 		for (local1025 = 0; local1025 < local19.length; local1025++) {
 			for (local1102 = 0; local1102 < local19[local1025].aClass269Array1.length; local1102++) {
-				@Pc(1431) Class269 local1431 = local19[local1025].aClass269Array1[local1102];
+				@Pc(1431) Attribute local1431 = local19[local1025].aClass269Array1[local1102];
 				if (local1431.aClass264_Sub2_2 == this.aClass264_Sub2_8) {
 					@Pc(1440) int local1440 = local1431.aClass274_1.anInt7314;
 					@Pc(1442) int local1442 = 0;
@@ -836,7 +836,7 @@ public final class unpackclass extends unpack {
 							local1442++;
 						}
 						if ((local1458 & 0x4) != 0) {
-							@Pc(1493) Class264_Sub2 local1493;
+							@Pc(1493) ConstantPoolEntry local1493;
 							if (local1453 == 18) {
 								local1493 = this.method6623(this.aClass264_Sub1_6, this.aClass264_Sub2Array5);
 							} else if (local1453 == 19) {
@@ -957,7 +957,7 @@ public final class unpackclass extends unpack {
 		if (local484 != null) {
 			local1102 += 8;
 		}
-		for (@Pc(1867) Class264_Sub2 local1867 = (Class264_Sub2) this.aClass265_1.method6594(); local1867 != null; local1867 = (Class264_Sub2) this.aClass265_1.method6595()) {
+		for (@Pc(1867) ConstantPoolEntry local1867 = (ConstantPoolEntry) this.aClass265_1.method6594(); local1867 != null; local1867 = (ConstantPoolEntry) this.aClass265_1.method6595()) {
 			local1102 += this.anIntArray549[local1867.anInt7316];
 			if (local1867.aByteArray107 != null) {
 				local1102 += local1867.aByteArray107.length;
@@ -966,13 +966,13 @@ public final class unpackclass extends unpack {
 		local1102 += local13.length * 2;
 		local1102 += this.method6638(local16);
 		local1102 += this.method6638(local19);
-		@Pc(1916) Class264_Sub1 local1916 = new Class264_Sub1(local1102);
+		@Pc(1916) Buffer local1916 = new Buffer(local1102);
 		local1916.method6582(-889275714);
 		local1916.method6581(local690);
 		local1916.method6581(local694);
 		local1916.method6581(this.anInt7318);
 		this.anInt7318 = 1;
-		for (@Pc(1937) Class264_Sub2 local1937 = (Class264_Sub2) this.aClass265_1.method6594(); local1937 != null; local1937 = (Class264_Sub2) this.aClass265_1.method6595()) {
+		for (@Pc(1937) ConstantPoolEntry local1937 = (ConstantPoolEntry) this.aClass265_1.method6594(); local1937 != null; local1937 = (ConstantPoolEntry) this.aClass265_1.method6595()) {
 			local1937.method6609();
 			local1916.method6580(local1937.anInt7316);
 			if (local1937.aClass264_Sub2_5 != null) {
@@ -1006,7 +1006,7 @@ public final class unpackclass extends unpack {
 			local1916.method6581(local16[local1446].aClass264_Sub2_1.aClass264_Sub2_6.anInt7317);
 			local1916.method6581(local16[local1446].aClass269Array1.length);
 			for (local1448 = 0; local1448 < local16[local1446].aClass269Array1.length; local1448++) {
-				@Pc(2083) Class269 local2083 = local16[local1446].aClass269Array1[local1448];
+				@Pc(2083) Attribute local2083 = local16[local1446].aClass269Array1[local1448];
 				local1916.method6581(local2083.aClass264_Sub2_2.anInt7317);
 				if (local2083.aClass264_Sub2_2 == this.aClass264_Sub2_7) {
 					local1916.method6582(2);
@@ -1029,7 +1029,7 @@ public final class unpackclass extends unpack {
 			local1916.method6581(local19[local2144].aClass264_Sub2_1.aClass264_Sub2_6.anInt7317);
 			local1916.method6581(local19[local2144].aClass269Array1.length);
 			for (@Pc(2176) int local2176 = 0; local2176 < local19[local2144].aClass269Array1.length; local2176++) {
-				@Pc(2184) Class269 local2184 = local19[local2144].aClass269Array1[local2176];
+				@Pc(2184) Attribute local2184 = local19[local2144].aClass269Array1[local2176];
 				local1916.method6581(local2184.aClass264_Sub2_2.anInt7317);
 				@Pc(2207) int local2207;
 				if (local2184.aClass264_Sub2_2 == this.aClass264_Sub2_8) {
@@ -1050,7 +1050,7 @@ public final class unpackclass extends unpack {
 						@Pc(2261) int local2261;
 						@Pc(2353) int local2353;
 						@Pc(2472) int local2472;
-						@Pc(2732) Class264_Sub2 local2732;
+						@Pc(2732) ConstantPoolEntry local2732;
 						if (local2253 == 204) {
 							local2127[local2249] = local1916.anInt7287;
 							for (local2253 = 0; local2253 < local2245; local2253++) {
@@ -1094,7 +1094,7 @@ public final class unpackclass extends unpack {
 						if ((local2261 & 0x2) != 0) {
 							local1916.method6580(this.aClass264_Sub1_3.method6585());
 						}
-						@Pc(2306) Class264_Sub2 local2306;
+						@Pc(2306) ConstantPoolEntry local2306;
 						if ((local2261 & 0x4) != 0) {
 							if (local2253 == 18) {
 								local2306 = method6622(this.aClass264_Sub1_6, this.aClass264_Sub2Array5);
@@ -1213,7 +1213,7 @@ public final class unpackclass extends unpack {
 						if (local2253 == 185) {
 							local2306 = method6622(this.aClass264_Sub1_11, this.aClass264_Sub2Array4);
 							local1916.method6581(local2306.anInt7317);
-							@Pc(2729) Class264_Sub2 local2729 = local2306.aClass264_Sub2_6;
+							@Pc(2729) ConstantPoolEntry local2729 = local2306.aClass264_Sub2_6;
 							local2732 = local2729.aClass264_Sub2_6;
 							@Pc(2735) byte[] local2735 = local2732.aByteArray107;
 							local1916.method6580(method6639(local2735));

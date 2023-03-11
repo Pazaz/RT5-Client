@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("unpackclass!e")
-public final class Class264_Sub1 extends Class264 {
+public final class Buffer extends Node {
 
 	@OriginalMember(owner = "unpackclass!e", name = "f", descriptor = "[I")
 	private static final int[] anIntArray536 = new int[256];
@@ -60,13 +60,13 @@ public final class Class264_Sub1 extends Class264 {
 	}
 
 	@OriginalMember(owner = "unpackclass!e", name = "<init>", descriptor = "(I)V")
-	public Class264_Sub1(@OriginalArg(0) int arg0) {
-		this.aByteArray100 = Class263.method6573(arg0);
+	public Buffer(@OriginalArg(0) int arg0) {
+		this.aByteArray100 = BufferPool.method6573(arg0);
 		this.anInt7287 = 0;
 	}
 
 	@OriginalMember(owner = "unpackclass!e", name = "<init>", descriptor = "([B)V")
-	public Class264_Sub1(@OriginalArg(0) byte[] arg0) {
+	public Buffer(@OriginalArg(0) byte[] arg0) {
 		this.aByteArray100 = arg0;
 		this.anInt7287 = 0;
 	}

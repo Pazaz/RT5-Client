@@ -10,7 +10,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("loader!d")
-public final class unpack_Sub1 extends unpack {
+public final class Pack200Unpacker extends unpack {
 
 	@OriginalMember(owner = "loader!d", name = "a", descriptor = "(B[B)[B")
 	private static byte[] method6500(@OriginalArg(1) byte[] arg0) throws IOException {
@@ -24,7 +24,7 @@ public final class unpack_Sub1 extends unpack {
 	}
 
 	@OriginalMember(owner = "loader!d", name = "<init>", descriptor = "([B)V")
-	public unpack_Sub1(@OriginalArg(0) byte[] arg0) throws IOException {
+	public Pack200Unpacker(@OriginalArg(0) byte[] arg0) throws IOException {
 		super(method6500(arg0));
 	}
 }

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("unpackclass!aa")
-public abstract class Class262 {
+public abstract class Js5 {
 
 	@OriginalMember(owner = "unpackclass!aa", name = "q", descriptor = "Z")
 	private static boolean aBoolean501;
@@ -13,7 +13,7 @@ public abstract class Class262 {
 	private static int anInt7311;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "m", descriptor = "Lunpackclass!k;")
-	private static final Class270 aClass270_2 = new Class270();
+	private static final GzipDecompressor aClass270_2 = new GzipDecompressor();
 
 	@OriginalMember(owner = "unpackclass!aa", name = "a", descriptor = "I")
 	protected int anInt7309;
@@ -40,7 +40,7 @@ public abstract class Class262 {
 	private int[][] anIntArrayArray72;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "i", descriptor = "[Lunpackclass!i;")
-	private Class268[] aClass268Array2;
+	private IntHashTable[] aClass268Array2;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "j", descriptor = "[Ljava/lang/Object;")
 	protected Object[] anObjectArray37;
@@ -62,7 +62,7 @@ public abstract class Class262 {
 
 	@OriginalMember(owner = "unpackclass!aa", name = "b", descriptor = "([B)[B")
 	private static byte[] method6606(@OriginalArg(0) byte[] arg0) {
-		@Pc(4) Class264_Sub1 local4 = new Class264_Sub1(arg0);
+		@Pc(4) Buffer local4 = new Buffer(arg0);
 		@Pc(7) int local7 = local4.method6585();
 		@Pc(10) int local10 = local4.method6588();
 		if (local10 < 0 || anInt7311 != 0 && local10 > anInt7311) {
@@ -78,7 +78,7 @@ public abstract class Class262 {
 			}
 			@Pc(50) byte[] local50 = new byte[local36];
 			if (local7 == 1) {
-				Class275.method6611(local50, local36, arg0, local10);
+				BZip2InputStream.method6611(local50, local36, arg0, local10);
 			} else {
 				aClass270_2.method6596(local4, local50);
 			}
@@ -87,15 +87,15 @@ public abstract class Class262 {
 	}
 
 	@OriginalMember(owner = "unpackclass!aa", name = "<init>", descriptor = "(ZZ)V")
-	protected Class262(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1) {
+	protected Js5(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1) {
 		this.aBoolean499 = arg0;
 		this.aBoolean500 = arg1;
 	}
 
 	@OriginalMember(owner = "unpackclass!aa", name = "a", descriptor = "([B)V")
 	protected final void method6598(@OriginalArg(0) byte[] arg0) {
-		this.anInt7310 = Class264_Sub1.method6579(arg0, arg0.length);
-		@Pc(13) Class264_Sub1 local13 = new Class264_Sub1(method6606(arg0));
+		this.anInt7310 = Buffer.method6579(arg0, arg0.length);
+		@Pc(13) Buffer local13 = new Buffer(method6606(arg0));
 		@Pc(16) int local16 = local13.method6585();
 		if (local16 != 5 && local16 != 6) {
 			throw new RuntimeException("Incorrect JS5 protocol number: " + local16);
@@ -131,7 +131,7 @@ public abstract class Class262 {
 			for (local157 = 0; local157 < this.anInt7309; local157++) {
 				this.anIntArray544[this.anIntArray543[local157]] = local13.method6588();
 			}
-			new Class268(this.anIntArray544);
+			new IntHashTable(this.anIntArray544);
 		}
 		for (local142 = 0; local142 < this.anInt7309; local142++) {
 			this.anIntArray545[this.anIntArray543[local142]] = local13.method6588();
@@ -168,7 +168,7 @@ public abstract class Class262 {
 			return;
 		}
 		this.anIntArrayArray72 = new int[local50 + 1][];
-		this.aClass268Array2 = new Class268[local50 + 1];
+		this.aClass268Array2 = new IntHashTable[local50 + 1];
 		for (local240 = 0; local240 < this.anInt7309; local240++) {
 			local245 = this.anIntArray543[local240];
 			local249 = this.anIntArray547[local245];
@@ -185,7 +185,7 @@ public abstract class Class262 {
 				}
 				this.anIntArrayArray72[local245][local375] = local13.method6588();
 			}
-			this.aClass268Array2[local245] = new Class268(this.anIntArrayArray72[local245]);
+			this.aClass268Array2[local245] = new IntHashTable(this.anIntArrayArray72[local245]);
 		}
 	}
 
@@ -231,7 +231,7 @@ public abstract class Class262 {
 				}
 			}
 		}
-		@Pc(46) byte[] local46 = Class261.method6560(this.anObjectArrayArray3[arg0][arg1], false);
+		@Pc(46) byte[] local46 = ByteArray.method6560(this.anObjectArrayArray3[arg0][arg1], false);
 		if (this.aBoolean500) {
 			this.anObjectArrayArray3[arg0][arg1] = null;
 			if (this.anIntArray548[arg0] == 1) {
@@ -281,17 +281,17 @@ public abstract class Class262 {
 			}
 			@Pc(100) byte[] local100;
 			if (arg1 == null || arg1[0] == 0 && arg1[1] == 0 && arg1[2] == 0 && arg1[3] == 0) {
-				local100 = Class261.method6560(this.anObjectArray37[arg0], false);
+				local100 = ByteArray.method6560(this.anObjectArray37[arg0], false);
 			} else {
-				local100 = Class261.method6560(this.anObjectArray37[arg0], true);
-				@Pc(105) Class264_Sub1 local105 = new Class264_Sub1(local100);
+				local100 = ByteArray.method6560(this.anObjectArray37[arg0], true);
+				@Pc(105) Buffer local105 = new Buffer(local100);
 				local105.method6592(arg1, local105.aByteArray100.length);
 			}
 			@Pc(124) byte[] local124;
 			try {
 				local124 = method6606(local100);
 			} catch (@Pc(126) RuntimeException local126) {
-				System.out.println("T3 - " + (arg1 != null) + "," + arg0 + "," + local100.length + "," + Class264_Sub1.method6579(local100, local100.length) + "," + Class264_Sub1.method6579(local100, local100.length - 2) + "," + this.anIntArray545[arg0] + "," + this.anInt7310);
+				System.out.println("T3 - " + (arg1 != null) + "," + arg0 + "," + local100.length + "," + Buffer.method6579(local100, local100.length) + "," + Buffer.method6579(local100, local100.length - 2) + "," + this.anIntArray545[arg0] + "," + this.anInt7310);
 				local124 = new byte[] { 0 };
 			}
 			if (this.aBoolean499) {
@@ -303,7 +303,7 @@ public abstract class Class262 {
 				@Pc(193) int local193 = local191 - 1;
 				@Pc(198) int local198 = local124[local193] & 0xFF;
 				@Pc(206) int local206 = local193 - local19 * local198 * 4;
-				@Pc(211) Class264_Sub1 local211 = new Class264_Sub1(local124);
+				@Pc(211) Buffer local211 = new Buffer(local124);
 				@Pc(214) int[] local214 = new int[local19];
 				local211.anInt7287 = local206;
 				@Pc(225) int local225;
@@ -327,7 +327,7 @@ public abstract class Class262 {
 					local280 = 0;
 					for (local282 = 0; local282 < local19; local282++) {
 						local280 += local211.method6588();
-						Class271.method6597(local124, local274, local250[local282], local214[local282], local280);
+						ArrayUtils.method6597(local124, local274, local250[local282], local214[local282], local280);
 						local214[local282] += local280;
 						local274 += local280;
 					}
@@ -341,7 +341,7 @@ public abstract class Class262 {
 					if (this.aBoolean500) {
 						local43[local282] = local250[local280];
 					} else {
-						local43[local282] = Class261.method6559(local250[local280]);
+						local43[local282] = ByteArray.method6559(local250[local280]);
 					}
 				}
 			} else {
@@ -353,7 +353,7 @@ public abstract class Class262 {
 				if (this.aBoolean500) {
 					local43[local191] = local124;
 				} else {
-					local43[local191] = Class261.method6559(local124);
+					local43[local191] = ByteArray.method6559(local124);
 				}
 			}
 			return true;

@@ -4,13 +4,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("unpackclass!i")
-public final class Class268 {
+public final class IntHashTable {
 
 	@OriginalMember(owner = "unpackclass!i", name = "a", descriptor = "[I")
 	private final int[] anIntArray542;
 
 	@OriginalMember(owner = "unpackclass!i", name = "<init>", descriptor = "([I)V")
-	public Class268(@OriginalArg(0) int[] arg0) {
+	public IntHashTable(@OriginalArg(0) int[] arg0) {
 		@Pc(5) int local5;
 		for (local5 = 1; local5 <= arg0.length + (arg0.length >> 1); local5 <<= 0x1) {
 		}

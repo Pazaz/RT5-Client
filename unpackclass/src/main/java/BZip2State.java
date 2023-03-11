@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("unpackclass!h")
-public final class Class267 {
+public final class BZip2State {
 
 	@OriginalMember(owner = "unpackclass!h", name = "s", descriptor = "[I")
 	public static int[] anIntArray539;

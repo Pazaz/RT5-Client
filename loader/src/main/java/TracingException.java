@@ -12,7 +12,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("loader!e")
-public final class RuntimeException_Sub2 extends RuntimeException {
+public final class TracingException extends RuntimeException {
 
 	@OriginalMember(owner = "loader!e", name = "c", descriptor = "I")
 	public static int anInt7269;
@@ -41,7 +41,7 @@ public final class RuntimeException_Sub2 extends RuntimeException {
 			local6 = method6503("@", local6, "%40");
 			local6 = method6503("&", local6, "%26");
 			local6 = method6503("#", local6, "%23");
-			@Pc(92) URL local92 = new URL(arg0.getCodeBase(), "loadererror.ws?c=" + anInt7269 + "&v1=" + Class259.aString76 + "&v2=" + Class259.aString82 + "&e=" + local6);
+			@Pc(92) URL local92 = new URL(arg0.getCodeBase(), "loadererror.ws?c=" + anInt7269 + "&v1=" + Signlink.aString76 + "&v2=" + Signlink.aString82 + "&e=" + local6);
 			@Pc(98) DataInputStream local98 = new DataInputStream(local92.openStream());
 			local98.read();
 			local98.close();
@@ -65,8 +65,8 @@ public final class RuntimeException_Sub2 extends RuntimeException {
 	@OriginalMember(owner = "loader!e", name = "a", descriptor = "(Ljava/lang/Throwable;B)Ljava/lang/String;")
 	private static String method6505(@OriginalArg(0) Throwable arg0) throws IOException {
 		@Pc(20) String local20;
-		if (arg0 instanceof RuntimeException_Sub2) {
-			@Pc(7) RuntimeException_Sub2 local7 = (RuntimeException_Sub2) arg0;
+		if (arg0 instanceof TracingException) {
+			@Pc(7) TracingException local7 = (TracingException) arg0;
 			arg0 = local7.aThrowable2;
 			local20 = local7.aString71 + " | ";
 		} else {

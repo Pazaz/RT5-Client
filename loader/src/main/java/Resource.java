@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("loader!f")
-public final class Class257 {
+public final class Resource {
 
 	@OriginalMember(owner = "loader!f", name = "d", descriptor = "[I")
 	public int[] anIntArray529 = new int[20];
@@ -24,7 +24,7 @@ public final class Class257 {
 	public final String aString72;
 
 	@OriginalMember(owner = "loader!f", name = "<init>", descriptor = "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;II[I)V")
-	public Class257(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1, @OriginalArg(2) String[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int[] arg5) {
+	public Resource(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1, @OriginalArg(2) String[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int[] arg5) {
 		this.aString73 = arg0;
 		this.anInt7272 = arg3;
 		this.aStringArray69 = arg2;

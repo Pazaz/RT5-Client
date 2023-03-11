@@ -7,15 +7,15 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("unpackclass!p")
-public final class Class262_Sub1 extends Class262 {
+public final class Js5Pack extends Js5 {
 
 	@OriginalMember(owner = "unpackclass!p", name = "<init>", descriptor = "([BZZ)V")
-	public Class262_Sub1(@OriginalArg(0) byte[] arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2) throws IOException {
+	public Js5Pack(@OriginalArg(0) byte[] arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2) throws IOException {
 		this(arg0, arg1, arg2, false);
 	}
 
 	@OriginalMember(owner = "unpackclass!p", name = "<init>", descriptor = "([BZZZ)V")
-	private Class262_Sub1(@OriginalArg(0) byte[] arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) boolean arg3) throws IOException {
+	private Js5Pack(@OriginalArg(0) byte[] arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) boolean arg3) throws IOException {
 		super(arg1, arg2);
 		this.method6607(new DataInputStream(new ByteArrayInputStream(arg0)), arg3);
 	}
@@ -28,7 +28,7 @@ public final class Class262_Sub1 extends Class262 {
 		if (local4 != 0) {
 			local7 += 4;
 		}
-		@Pc(19) Class264_Sub1 local19 = new Class264_Sub1(local7 + 5);
+		@Pc(19) Buffer local19 = new Buffer(local7 + 5);
 		local19.method6580(local4);
 		local19.method6582(local9);
 		arg0.readFully(local19.aByteArray100, local19.anInt7287, local7);
@@ -40,7 +40,7 @@ public final class Class262_Sub1 extends Class262 {
 			if (local4 != 0) {
 				local7 += 4;
 			}
-			local19 = new Class264_Sub1(local7 + 5);
+			local19 = new Buffer(local7 + 5);
 			local19.method6580(local4);
 			local19.method6582(local9);
 			while (local7 > 33554432) {
@@ -52,7 +52,7 @@ public final class Class262_Sub1 extends Class262 {
 			if (super.aBoolean499) {
 				super.anObjectArray37[super.anIntArray543[local38]] = local19.aByteArray100;
 			} else {
-				super.anObjectArray37[super.anIntArray543[local38]] = Class261.method6559(local19.aByteArray100);
+				super.anObjectArray37[super.anIntArray543[local38]] = ByteArray.method6559(local19.aByteArray100);
 			}
 		}
 	}

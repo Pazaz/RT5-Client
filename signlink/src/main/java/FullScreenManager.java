@@ -9,7 +9,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("loader!c")
-public final class Class255 {
+public final class FullScreenManager {
 
 	@OriginalMember(owner = "loader!c", name = "a", descriptor = "Ljava/awt/DisplayMode;")
 	private DisplayMode aDisplayMode1;
@@ -18,7 +18,7 @@ public final class Class255 {
 	private GraphicsDevice aGraphicsDevice1;
 
 	@OriginalMember(owner = "loader!c", name = "<init>", descriptor = "()V")
-	public Class255() throws Exception {
+	public FullScreenManager() throws Exception {
 		@Pc(3) GraphicsEnvironment local3 = GraphicsEnvironment.getLocalGraphicsEnvironment();
 		this.aGraphicsDevice1 = local3.getDefaultScreenDevice();
 		if (!this.aGraphicsDevice1.isFullScreenSupported()) {

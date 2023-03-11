@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("loader!lt")
-public final class Class258 {
+public final class MonotonicClock {
 
 	@OriginalMember(owner = "loader!lt", name = "b", descriptor = "J")
 	private static long aLong233;
