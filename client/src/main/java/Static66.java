@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static66 {
 
 	@OriginalMember(owner = "client!dr", name = "O", descriptor = "Lclient!h;")
-	public static Class89 aClass89_57;
+	public static InboundPacket aClass89_57;
 
 	@OriginalMember(owner = "client!dr", name = "N", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_34 = new Class79("Walk here", "Hierhin gehen", "Atteindre", "Caminhar para cá");

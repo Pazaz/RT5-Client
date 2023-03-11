@@ -14,7 +14,7 @@ public final class Static391 {
 	public static final int[] anIntArray495 = new int[] { 16, 32, 64, 128 };
 
 	@OriginalMember(owner = "client!wq", name = "o", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_256 = new Class89(69, -2);
+	public static final InboundPacket aClass89_256 = new InboundPacket(69, -2);
 
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(ILjava/lang/String;)Z")
 	public static boolean method6451(@OriginalArg(1) String arg0) {

@@ -11,7 +11,7 @@ public final class Static193 {
 	public static final Class79 aClass79_78 = new Class79("Connecting to update server", "Verbindung mit Update-Server...", "Connexion au serveur de mise à jour en cours", "Conectando ao servidor de atualização");
 
 	@OriginalMember(owner = "client!la", name = "i", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_146 = new Class89(63, -1);
+	public static final InboundPacket aClass89_146 = new InboundPacket(63, -1);
 
 	@OriginalMember(owner = "client!la", name = "j", descriptor = "I")
 	public static int anInt3555 = 0;

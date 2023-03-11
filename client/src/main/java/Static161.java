@@ -9,7 +9,7 @@ public final class Static161 {
 	public static boolean aBoolean208;
 
 	@OriginalMember(owner = "client!jg", name = "t", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_123 = new Class89(10, -1);
+	public static final InboundPacket aClass89_123 = new InboundPacket(10, -1);
 
 	@OriginalMember(owner = "client!jg", name = "F", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_67 = new Class79(" ", ": ", " ", " ");

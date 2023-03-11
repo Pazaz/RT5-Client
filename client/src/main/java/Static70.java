@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static70 {
 
 	@OriginalMember(owner = "client!e", name = "j", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_58 = new Class89(48, 5);
+	public static final InboundPacket aClass89_58 = new InboundPacket(48, 5);
 
 	@OriginalMember(owner = "client!e", name = "l", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_36 = new Class79("Loaded client variable data", "Client-Variablen geladen", "Variables du client chargées", "As variáveis do sistema foram carregadas");

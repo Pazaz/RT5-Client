@@ -11,7 +11,7 @@ public final class Static165 {
 	public static int[][][] anIntArrayArrayArray9;
 
 	@OriginalMember(owner = "client!jm", name = "c", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_131 = new Class89(44, 8);
+	public static final InboundPacket aClass89_131 = new InboundPacket(44, 8);
 
 	@OriginalMember(owner = "client!jm", name = "k", descriptor = "I")
 	public static int anInt3148 = 0;

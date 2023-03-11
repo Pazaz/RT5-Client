@@ -10,7 +10,7 @@ public final class Static96 {
 	public static int anInt2003;
 
 	@OriginalMember(owner = "client!fj", name = "a", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_81 = new Class89(27, 8);
+	public static final InboundPacket aClass89_81 = new InboundPacket(27, 8);
 
 	@OriginalMember(owner = "client!fj", name = "d", descriptor = "[I")
 	public static final int[] anIntArray127 = new int[] { 4, 2, 1, 1, 2, 2, 3, 1, 3, 3, 3, 2, 0 };

@@ -14,7 +14,7 @@ public final class Static142 {
 	public static final Class135 aClass135_21 = new Class135();
 
 	@OriginalMember(owner = "client!ia", name = "p", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_110 = new Class89(8, 2);
+	public static final InboundPacket aClass89_110 = new InboundPacket(8, 2);
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IIIII)Z")
 	public static boolean method2661(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {

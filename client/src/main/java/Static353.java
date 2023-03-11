@@ -15,7 +15,7 @@ public final class Static353 {
 	public static final Class4 aClass4_136 = new Class4(32);
 
 	@OriginalMember(owner = "client!ui", name = "l", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_230 = new Class89(104, 4);
+	public static final InboundPacket aClass89_230 = new InboundPacket(104, 4);
 
 	@OriginalMember(owner = "client!ui", name = "m", descriptor = "[I")
 	public static int[] anIntArray448 = new int[2];

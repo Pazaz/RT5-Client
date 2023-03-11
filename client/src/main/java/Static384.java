@@ -11,7 +11,7 @@ public final class Static384 {
 	public static int anInt7174 = 0;
 
 	@OriginalMember(owner = "client!wh", name = "v", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_253 = new Class89(77, 12);
+	public static final InboundPacket aClass89_253 = new InboundPacket(77, 12);
 
 	@OriginalMember(owner = "client!wh", name = "y", descriptor = "I")
 	public static int anInt7178 = 0;

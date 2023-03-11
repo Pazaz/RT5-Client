@@ -12,7 +12,7 @@ public final class Static112 {
 	public static int anInt2293 = 0;
 
 	@OriginalMember(owner = "client!gg", name = "O", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_91 = new Class89(41, 3);
+	public static final InboundPacket aClass89_91 = new InboundPacket(41, 3);
 
 	@OriginalMember(owner = "client!gg", name = "P", descriptor = "Z")
 	public static boolean aBoolean173 = false;

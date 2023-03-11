@@ -208,7 +208,7 @@ public class LoginManager {
 					step = 8;
 				} else if (reply == 15) {
 					step = 12;
-					Static82.anInt1836 = -2;
+					Static82.packetSize = -2;
 				} else if (reply == 23 && errors < 1) {
 					loops = 0;
 					errors++;
@@ -288,16 +288,16 @@ public class LoginManager {
 						}
 						Protocol.socket.read(Protocol.inboundBuffer.data, 1, Protocol.inboundBuffer.pos + 2);
 					}
-					Static231.aClass89_164 = Static166.method3188()[Protocol.inboundBuffer.method4864()];
-					Static82.anInt1836 = Protocol.inboundBuffer.g2();
+					Static231.packet = Static166.WORLD_PACKETS()[Protocol.inboundBuffer.gsmart_isaac()];
+					Static82.packetSize = Protocol.inboundBuffer.g2();
 					step = 9;
 				}
 				if (step == 9) {
-					if (Protocol.socket.available() >= Static82.anInt1836) {
-						Protocol.socket.read(Protocol.inboundBuffer.data, Static82.anInt1836, 0);
+					if (Protocol.socket.available() >= Static82.packetSize) {
+						Protocol.socket.read(Protocol.inboundBuffer.data, Static82.packetSize, 0);
 						Protocol.inboundBuffer.pos = 0;
 						LoginManager.reply = 2;
-						reply = Static82.anInt1836;
+						reply = Static82.packetSize;
 						step = 0;
 						Static390.method6449();
 						Static366.method6120(Protocol.inboundBuffer);
@@ -306,29 +306,29 @@ public class LoginManager {
 						if (reply != Protocol.inboundBuffer.pos) {
 							throw new RuntimeException("lswp pos:" + Protocol.inboundBuffer.pos + " psize:" + reply);
 						}
-						Static231.aClass89_164 = null;
+						Static231.packet = null;
 					}
 				} else if (step == 12) {
-					if (Static82.anInt1836 == -2) {
+					if (Static82.packetSize == -2) {
 						if (Protocol.socket.available() < 2) {
 							return;
 						}
 						Protocol.socket.read(Protocol.inboundBuffer.data, 2, 0);
 						Protocol.inboundBuffer.pos = 0;
-						Static82.anInt1836 = Protocol.inboundBuffer.g2();
+						Static82.packetSize = Protocol.inboundBuffer.g2();
 					}
-					if (Protocol.socket.available() >= Static82.anInt1836) {
-						Protocol.socket.read(Protocol.inboundBuffer.data, Static82.anInt1836, 0);
+					if (Protocol.socket.available() >= Static82.packetSize) {
+						Protocol.socket.read(Protocol.inboundBuffer.data, Static82.packetSize, 0);
 						Protocol.inboundBuffer.pos = 0;
 						LoginManager.reply = 15;
 						step = 0;
-						reply = Static82.anInt1836;
+						reply = Static82.packetSize;
 						Static182.method3388();
 						Static366.method6120(Protocol.inboundBuffer);
 						if (Protocol.inboundBuffer.pos != reply) {
 							throw new RuntimeException("lswpr pos:" + Protocol.inboundBuffer.pos + " psize:" + reply);
 						}
-						Static231.aClass89_164 = null;
+						Static231.packet = null;
 					}
 				}
 			} else if (Protocol.socket.available() >= 1) {

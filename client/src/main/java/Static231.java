@@ -11,7 +11,7 @@ public final class Static231 {
 	public static final int[] anIntArray265 = new int[1000];
 
 	@OriginalMember(owner = "client!nf", name = "t", descriptor = "Lclient!h;")
-	public static Class89 aClass89_164 = null;
+	public static InboundPacket packet = null;
 
 	@OriginalMember(owner = "client!nf", name = "w", descriptor = "[Lclient!bt;")
 	public static final Buffer[] aClass2_Sub4Array1 = new Buffer[2048];

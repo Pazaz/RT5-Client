@@ -11,7 +11,7 @@ public final class Static177 {
 	public static short[] aShortArray56;
 
 	@OriginalMember(owner = "client!ke", name = "y", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_141 = new Class89(68, 4);
+	public static final InboundPacket aClass89_141 = new InboundPacket(68, 4);
 
 	@OriginalMember(owner = "client!ke", name = "E", descriptor = "I")
 	public static int anInt3381 = 0;

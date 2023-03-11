@@ -32,7 +32,7 @@ public final class Static375 {
 	public static boolean aBoolean477 = false;
 
 	@OriginalMember(owner = "client!vs", name = "x", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_246 = new Class89(75, 0);
+	public static final InboundPacket aClass89_246 = new InboundPacket(75, 0);
 
 	@OriginalMember(owner = "client!vs", name = "y", descriptor = "I")
 	public static int anInt7051 = 0;

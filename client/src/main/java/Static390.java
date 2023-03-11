@@ -21,7 +21,7 @@ public final class Static390 {
 		Static4.method77();
 		Protocol.outboundBuffer.pos = 0;
 		Static86.anInt1870 = 0;
-		Static231.aClass89_164 = null;
+		Static231.packet = null;
 		Static334.aClass89_222 = null;
 		Static39.aClass89_35 = null;
 		Static268.anInt4955 = 0;

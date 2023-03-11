@@ -11,7 +11,7 @@ public final class Static33 {
 	public static final Class79 aClass79_96 = new Class79("level: ", "Stufe: ", "niveau ", "nível: ");
 
 	@OriginalMember(owner = "client!bs", name = "s", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_171 = new Class89(74, 4);
+	public static final InboundPacket aClass89_171 = new InboundPacket(74, 4);
 
 	@OriginalMember(owner = "client!bs", name = "t", descriptor = "I")
 	public static int anInt4462 = -1;

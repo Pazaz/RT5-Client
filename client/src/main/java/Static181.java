@@ -39,7 +39,7 @@ public final class Static181 {
 			local23 = Protocol.inboundBuffer.g1();
 			local36 = Protocol.inboundBuffer.g1bneg() == 1;
 			Static217.method3795(local23);
-			local44 = (Static82.anInt1836 - Protocol.inboundBuffer.pos) / 16;
+			local44 = (Static82.packetSize - Protocol.inboundBuffer.pos) / 16;
 			Static277.anIntArrayArray43 = new int[local44][4];
 			for (local48 = 0; local48 < local44; local48++) {
 				for (local52 = 0; local52 < 4; local52++) {
@@ -90,7 +90,7 @@ public final class Static181 {
 			}
 		}
 		Protocol.inboundBuffer.accessBytes();
-		local48 = (Static82.anInt1836 - Protocol.inboundBuffer.pos) / 16;
+		local48 = (Static82.packetSize - Protocol.inboundBuffer.pos) / 16;
 		Static277.anIntArrayArray43 = new int[local48][4];
 		for (local52 = 0; local52 < local48; local52++) {
 			for (local59 = 0; local59 < 4; local59++) {

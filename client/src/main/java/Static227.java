@@ -19,7 +19,7 @@ public final class Static227 {
 	public static final Class79 aClass79_90 = new Class79("Loading interfaces - ", "Lade Benutzeroberfläche - ", "Chargement des interfaces - ", "Carregando interfaces - ");
 
 	@OriginalMember(owner = "client!nb", name = "D", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_161 = new Class89(91, 2);
+	public static final InboundPacket aClass89_161 = new InboundPacket(91, 2);
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Z)V")
 	public static void method3989() {

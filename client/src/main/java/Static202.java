@@ -10,7 +10,7 @@ public final class Static202 {
 	public static int anInt3714 = -1;
 
 	@OriginalMember(owner = "client!lq", name = "t", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_153 = new Class89(28, 6);
+	public static final InboundPacket aClass89_153 = new InboundPacket(28, 6);
 
 	@OriginalMember(owner = "client!lq", name = "a", descriptor = "(II)V")
 	public static void method3678(@OriginalArg(1) int arg0) {

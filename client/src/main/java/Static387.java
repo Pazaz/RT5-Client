@@ -12,7 +12,7 @@ public final class Static387 {
 	public static final Class145 aClass145_110 = new Class145(13, 16);
 
 	@OriginalMember(owner = "client!wm", name = "q", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_120 = new Class89(20, 6);
+	public static final InboundPacket aClass89_120 = new InboundPacket(20, 6);
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(IILclient!ml;Lclient!ci;Ljava/awt/Canvas;I)Lclient!wm;")
 	public static synchronized Class19 method2822(@OriginalArg(1) int arg0, @OriginalArg(2) Signlink arg1, @OriginalArg(3) Interface2 arg2, @OriginalArg(4) Canvas arg3, @OriginalArg(5) int arg4) {

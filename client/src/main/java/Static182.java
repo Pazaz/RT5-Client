@@ -86,11 +86,11 @@ public final class Static182 {
 	@OriginalMember(owner = "client!kk", name = "b", descriptor = "(B)V")
 	public static void method3388() {
 		Protocol.outboundBuffer.pos = 0;
-		Static82.anInt1836 = 0;
+		Static82.packetSize = 0;
 		Static39.aClass89_35 = null;
 		Static151.anInt2773 = 0;
 		Static334.aClass89_222 = null;
-		Static231.aClass89_164 = null;
+		Static231.packet = null;
 		Static268.anInt4955 = 0;
 		Protocol.inboundBuffer.pos = 0;
 		Static66.aClass89_57 = null;

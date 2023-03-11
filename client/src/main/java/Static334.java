@@ -10,7 +10,7 @@ public final class Static334 {
 	public static int[] anIntArray424;
 
 	@OriginalMember(owner = "client!th", name = "F", descriptor = "Lclient!h;")
-	public static Class89 aClass89_222;
+	public static InboundPacket aClass89_222;
 
 	@OriginalMember(owner = "client!th", name = "a", descriptor = "(ILclient!lo;)V")
 	public static void method5687(@OriginalArg(1) Class140 arg0) {

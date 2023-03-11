@@ -12,7 +12,7 @@ public final class Static183 {
 	public static int anInt80;
 
 	@OriginalMember(owner = "client!kl", name = "a", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_6 = new Class89(1, 6);
+	public static final InboundPacket aClass89_6 = new InboundPacket(1, 6);
 
 	@OriginalMember(owner = "client!kl", name = "k", descriptor = "[I")
 	public static final int[] anIntArray2 = new int[1000];

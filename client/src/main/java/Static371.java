@@ -17,10 +17,10 @@ public final class Static371 {
 	public static String aString68 = null;
 
 	@OriginalMember(owner = "client!vo", name = "p", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_243 = new Class89(89, 6);
+	public static final InboundPacket aClass89_243 = new InboundPacket(89, 6);
 
 	@OriginalMember(owner = "client!vo", name = "z", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_244 = new Class89(33, 15);
+	public static final InboundPacket aClass89_244 = new InboundPacket(33, 15);
 
 	@OriginalMember(owner = "client!vo", name = "C", descriptor = "Z")
 	public static volatile boolean aBoolean475 = true;

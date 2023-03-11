@@ -11,7 +11,7 @@ public final class Static84 {
 	public static final Class79 aClass79_40 = new Class79("Please wait - attempting to reestablish.", "Bitte warte - es wird versucht, die Verbindung wiederherzustellen.", "Veuillez patienter - tentative de rétablissement.", "Tentando reestabelecer conexão. Aguarde.");
 
 	@OriginalMember(owner = "client!eo", name = "e", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_70 = new Class89(21, 3);
+	public static final InboundPacket aClass89_70 = new InboundPacket(21, 3);
 
 	@OriginalMember(owner = "client!eo", name = "f", descriptor = "I")
 	public static int anInt1842 = 0;

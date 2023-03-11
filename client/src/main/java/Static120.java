@@ -8,7 +8,7 @@ public final class Static120 {
 	public static final Class79 aClass79_50 = new Class79(" from your friend list first.", " zuerst von deiner Freunde-Liste!", " de votre liste d'amis.", " da sua lista de amigos primeiro.");
 
 	@OriginalMember(owner = "client!gs", name = "g", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_95 = new Class89(12, 3);
+	public static final InboundPacket aClass89_95 = new InboundPacket(12, 3);
 
 	@OriginalMember(owner = "client!gs", name = "h", descriptor = "Lclient!ad;")
 	public static Class4 aClass4_49 = new Class4(64);

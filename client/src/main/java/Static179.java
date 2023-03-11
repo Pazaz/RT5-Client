@@ -11,7 +11,7 @@ public final class Static179 {
 	public static Class161 aClass161_6 = null;
 
 	@OriginalMember(owner = "client!kg", name = "t", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_143 = new Class89(11, -1);
+	public static final InboundPacket aClass89_143 = new InboundPacket(11, -1);
 
 	@OriginalMember(owner = "client!kg", name = "v", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_73 = new Class79("Opened title screen", "Titelbild geöffnet.", "Écran-titre ouvert", "Tela título aberta");

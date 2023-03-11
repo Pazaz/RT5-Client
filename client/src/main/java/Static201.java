@@ -8,7 +8,7 @@ public final class Static201 {
 	public static int anInt3699 = 1;
 
 	@OriginalMember(owner = "client!lp", name = "b", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_151 = new Class89(13, 5);
+	public static final InboundPacket aClass89_151 = new InboundPacket(13, 5);
 
 	@OriginalMember(owner = "client!lp", name = "d", descriptor = "I")
 	public static int anInt3701 = 0;

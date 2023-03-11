@@ -10,7 +10,7 @@ public final class Static36 {
 	public static final Class145 aClass145_34 = new Class145(2, 8);
 
 	@OriginalMember(owner = "client!c", name = "d", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_31 = new Class89(3, 3);
+	public static final InboundPacket aClass89_31 = new InboundPacket(3, 3);
 
 	@OriginalMember(owner = "client!c", name = "f", descriptor = "[B")
 	public static final byte[] aByteArray7 = new byte[2048];

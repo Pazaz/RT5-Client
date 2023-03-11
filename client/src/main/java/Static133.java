@@ -8,7 +8,7 @@ public final class Static133 {
 	public static final Class98 aClass98_17 = new Class98(4);
 
 	@OriginalMember(owner = "client!hl", name = "I", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_103 = new Class89(61, 4);
+	public static final InboundPacket aClass89_103 = new InboundPacket(61, 4);
 
 	@OriginalMember(owner = "client!hl", name = "J", descriptor = "Lclient!se;")
 	public static final Class2_Sub33 aClass2_Sub33_1 = new Class2_Sub33(0, 0);

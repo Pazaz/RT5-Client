@@ -9,7 +9,7 @@ public final class Static88 {
 	public static final String[] aStringArray13 = new String[100];
 
 	@OriginalMember(owner = "client!es", name = "c", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_73 = new Class89(54, 12);
+	public static final InboundPacket aClass89_73 = new InboundPacket(54, 12);
 
 	@OriginalMember(owner = "client!es", name = "d", descriptor = "I")
 	public static int anInt1876 = 1;

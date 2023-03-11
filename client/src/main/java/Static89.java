@@ -15,7 +15,7 @@ public final class Static89 {
 	public static final Buffer aClass2_Sub4_2 = new Buffer(new byte[5000]);
 
 	@OriginalMember(owner = "client!et", name = "i", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_74 = new Class89(40, 1);
+	public static final InboundPacket aClass89_74 = new InboundPacket(40, 1);
 
 	@OriginalMember(owner = "client!et", name = "k", descriptor = "I")
 	public static int anInt1885 = 0;

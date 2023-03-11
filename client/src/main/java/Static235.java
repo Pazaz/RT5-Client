@@ -12,7 +12,7 @@ public final class Static235 {
 	public static int anInt3365 = 0;
 
 	@OriginalMember(owner = "client!nj", name = "h", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_140 = new Class89(42, 3);
+	public static final InboundPacket aClass89_140 = new InboundPacket(42, 3);
 
 	@OriginalMember(owner = "client!nj", name = "j", descriptor = "I")
 	public static int anInt3368 = 0;
@@ -113,8 +113,8 @@ public final class Static235 {
 			Static211.method3725();
 			return true;
 		} catch (@Pc(21) Exception local21) {
-			@Pc(81) String local81 = "T2 - " + (Static231.aClass89_164 == null ? -1 : Static231.aClass89_164.method2399()) + "," + (Static66.aClass89_57 == null ? -1 : Static66.aClass89_57.method2399()) + "," + (Static39.aClass89_35 == null ? -1 : Static39.aClass89_35.method2399()) + " - " + Static82.anInt1836 + "," + (Static164.anInt3140 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0]) + "," + (Static148.anInt2719 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0]) + " - ";
-			for (@Pc(83) int local83 = 0; local83 < Static82.anInt1836 && local83 < 50; local83++) {
+			@Pc(81) String local81 = "T2 - " + (Static231.packet == null ? -1 : Static231.packet.getOpcode()) + "," + (Static66.aClass89_57 == null ? -1 : Static66.aClass89_57.getOpcode()) + "," + (Static39.aClass89_35 == null ? -1 : Static39.aClass89_35.getOpcode()) + " - " + Static82.packetSize + "," + (Static164.anInt3140 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0]) + "," + (Static148.anInt2719 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0]) + " - ";
+			for (@Pc(83) int local83 = 0; local83 < Static82.packetSize && local83 < 50; local83++) {
 				local81 = local81 + Protocol.inboundBuffer.data[local83] + ",";
 			}
 			Static262.report(local21, local81);

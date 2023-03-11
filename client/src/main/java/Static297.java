@@ -8,7 +8,7 @@ public final class Static297 {
 	public static final Class98 aClass98_44 = new Class98(8);
 
 	@OriginalMember(owner = "client!rb", name = "n", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_200 = new Class89(66, 10);
+	public static final InboundPacket aClass89_200 = new InboundPacket(66, 10);
 
 	@OriginalMember(owner = "client!rb", name = "o", descriptor = "[I")
 	public static final int[] anIntArray383 = new int[] { 2, 1, 1, 1, 2, 2, 2, 1, 3, 3, 3, 2, 0, 4, 0 };

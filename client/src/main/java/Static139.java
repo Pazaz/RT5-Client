@@ -8,7 +8,7 @@ public final class Static139 {
 	public static int anInt2594;
 
 	@OriginalMember(owner = "client!hs", name = "r", descriptor = "Lclient!h;")
-	public static final Class89 aClass89_108 = new Class89(59, -2);
+	public static final InboundPacket aClass89_108 = new InboundPacket(59, -2);
 
 	@OriginalMember(owner = "client!hs", name = "s", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_60 = new Class79("Unable to find ", "Spieler kann nicht gefunden werden: ", "Impossible de trouver ", "Não é possível encontrar ");
