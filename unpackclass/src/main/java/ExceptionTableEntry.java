@@ -5,14 +5,14 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class ExceptionTableEntry {
 
 	@OriginalMember(owner = "unpackclass!n", name = "a", descriptor = "I")
-	public int anInt7304;
+	public int startPc;
 
 	@OriginalMember(owner = "unpackclass!n", name = "b", descriptor = "I")
-	public int anInt7305;
+	public int endPcToHandlerPc;
 
 	@OriginalMember(owner = "unpackclass!n", name = "c", descriptor = "I")
-	public int anInt7306;
+	public int reverseHandlerPc;
 
 	@OriginalMember(owner = "unpackclass!n", name = "d", descriptor = "Lunpackclass!s;")
-	public ConstantPoolEntry aClass264_Sub2_4;
+	public ConstantPoolEntry catchType;
 }

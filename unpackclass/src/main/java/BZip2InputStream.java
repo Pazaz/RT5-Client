@@ -10,7 +10,7 @@ public final class BZip2InputStream {
 	private static final BZip2State aClass267_1 = new BZip2State();
 
 	@OriginalMember(owner = "unpackclass!u", name = "a", descriptor = "([BI[BII)I")
-	public static int method6611(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3) {
+	public static int bunzip2(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3) {
 		@Pc(1) BZip2State local1 = aClass267_1;
 		synchronized (aClass267_1) {
 			aClass267_1.aByteArray101 = arg2;

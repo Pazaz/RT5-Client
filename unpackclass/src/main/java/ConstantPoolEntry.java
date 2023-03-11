@@ -5,20 +5,20 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class ConstantPoolEntry extends Node {
 
 	@OriginalMember(owner = "unpackclass!s", name = "d", descriptor = "Lunpackclass!s;")
-	public ConstantPoolEntry aClass264_Sub2_5;
+	public ConstantPoolEntry name;
 
 	@OriginalMember(owner = "unpackclass!s", name = "e", descriptor = "Lunpackclass!s;")
-	public ConstantPoolEntry aClass264_Sub2_6;
+	public ConstantPoolEntry descriptor;
 
 	@OriginalMember(owner = "unpackclass!s", name = "f", descriptor = "J")
-	public long aLong238;
+	public long longValue;
 
 	@OriginalMember(owner = "unpackclass!s", name = "g", descriptor = "[B")
-	public byte[] aByteArray107;
+	public byte[] bytesValue;
 
 	@OriginalMember(owner = "unpackclass!s", name = "h", descriptor = "I")
-	public int anInt7316;
+	public int tag;
 
 	@OriginalMember(owner = "unpackclass!s", name = "i", descriptor = "I")
-	public int anInt7317;
+	public int index;
 }

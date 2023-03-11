@@ -5,17 +5,17 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Code {
 
 	@OriginalMember(owner = "unpackclass!r", name = "a", descriptor = "I")
-	public int anInt7312;
+	public int maxStack;
 
 	@OriginalMember(owner = "unpackclass!r", name = "b", descriptor = "I")
-	public int anInt7313;
+	public int maxLocals;
 
 	@OriginalMember(owner = "unpackclass!r", name = "c", descriptor = "I")
-	public int anInt7314;
+	public int length;
 
 	@OriginalMember(owner = "unpackclass!r", name = "d", descriptor = "[Lunpackclass!n;")
-	public ExceptionTableEntry[] aClass272Array1;
+	public ExceptionTableEntry[] exceptionTable;
 
 	@OriginalMember(owner = "unpackclass!r", name = "e", descriptor = "[Lunpackclass!o;")
-	public LineNumberTableEntry[] aClass273Array1;
+	public LineNumberTableEntry[] lineNumberTable;
 }

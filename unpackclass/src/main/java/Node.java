@@ -5,23 +5,23 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class Node {
 
 	@OriginalMember(owner = "unpackclass!w", name = "a", descriptor = "Lunpackclass!w;")
-	public Node aClass264_7;
+	public Node next;
 
 	@OriginalMember(owner = "unpackclass!w", name = "b", descriptor = "Lunpackclass!w;")
-	public Node aClass264_8;
+	public Node prev;
 
 	@OriginalMember(owner = "unpackclass!w", name = "a", descriptor = "()V")
-	public final void method6609() {
-		if (this.aClass264_8 != null) {
-			this.aClass264_8.aClass264_7 = this.aClass264_7;
-			this.aClass264_7.aClass264_8 = this.aClass264_8;
-			this.aClass264_7 = null;
-			this.aClass264_8 = null;
+	public final void unlink() {
+		if (this.prev != null) {
+			this.prev.next = this.next;
+			this.next.prev = this.prev;
+			this.next = null;
+			this.prev = null;
 		}
 	}
 
 	@OriginalMember(owner = "unpackclass!w", name = "b", descriptor = "()Z")
-	public final boolean method6610() {
-		return this.aClass264_8 != null;
+	public final boolean isLinked() {
+		return this.prev != null;
 	}
 }

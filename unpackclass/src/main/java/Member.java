@@ -5,11 +5,11 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Member {
 
 	@OriginalMember(owner = "unpackclass!g", name = "a", descriptor = "I")
-	public int anInt7288;
+	public int accessFlags;
 
 	@OriginalMember(owner = "unpackclass!g", name = "b", descriptor = "Lunpackclass!s;")
-	public ConstantPoolEntry aClass264_Sub2_1;
+	public ConstantPoolEntry nameAndType;
 
 	@OriginalMember(owner = "unpackclass!g", name = "c", descriptor = "[Lunpackclass!j;")
-	public Attribute[] aClass269Array1;
+	public Attribute[] attributes;
 }

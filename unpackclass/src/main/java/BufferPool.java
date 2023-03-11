@@ -7,40 +7,40 @@ import org.openrs2.deob.annotation.Pc;
 public final class BufferPool {
 
 	@OriginalMember(owner = "unpackclass!c", name = "a", descriptor = "I")
-	private static int anInt7282;
+	private static int smallBufferCount;
 
 	@OriginalMember(owner = "unpackclass!c", name = "b", descriptor = "I")
-	private static int anInt7283;
+	private static int mediumBufferCount;
 
 	@OriginalMember(owner = "unpackclass!c", name = "c", descriptor = "I")
-	private static int anInt7284;
+	private static int largeBufferCount;
 
 	@OriginalMember(owner = "unpackclass!c", name = "d", descriptor = "[[B")
-	private static final byte[][] aByteArrayArray23 = new byte[1000][];
+	private static final byte[][] smallBuffers = new byte[1000][];
 
 	@OriginalMember(owner = "unpackclass!c", name = "e", descriptor = "[[B")
-	private static final byte[][] aByteArrayArray24 = new byte[250][];
+	private static final byte[][] mediumBuffers = new byte[250][];
 
 	@OriginalMember(owner = "unpackclass!c", name = "f", descriptor = "[[B")
-	private static final byte[][] aByteArrayArray25 = new byte[50][];
+	private static final byte[][] largeBuffers = new byte[50][];
 
 	@OriginalMember(owner = "unpackclass!c", name = "a", descriptor = "(I)[B")
-	public static synchronized byte[] method6573(@OriginalArg(0) int arg0) {
-		@Pc(12) byte[] local12;
-		if (arg0 == 100 && anInt7282 > 0) {
-			local12 = aByteArrayArray23[--anInt7282];
-			aByteArrayArray23[anInt7282] = null;
-			return local12;
-		} else if (arg0 == 5000 && anInt7283 > 0) {
-			local12 = aByteArrayArray24[--anInt7283];
-			aByteArrayArray24[anInt7283] = null;
-			return local12;
-		} else if (arg0 == 30000 && anInt7284 > 0) {
-			local12 = aByteArrayArray25[--anInt7284];
-			aByteArrayArray25[anInt7284] = null;
-			return local12;
+	public static synchronized byte[] allocate(@OriginalArg(0) int size) {
+		@Pc(12) byte[] bytes;
+		if (size == 100 && smallBufferCount > 0) {
+			bytes = smallBuffers[--smallBufferCount];
+			smallBuffers[smallBufferCount] = null;
+			return bytes;
+		} else if (size == 5000 && mediumBufferCount > 0) {
+			bytes = mediumBuffers[--mediumBufferCount];
+			mediumBuffers[mediumBufferCount] = null;
+			return bytes;
+		} else if (size == 30000 && largeBufferCount > 0) {
+			bytes = largeBuffers[--largeBufferCount];
+			largeBuffers[largeBufferCount] = null;
+			return bytes;
 		} else {
-			return new byte[arg0];
+			return new byte[size];
 		}
 	}
 }

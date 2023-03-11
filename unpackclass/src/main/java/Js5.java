@@ -7,353 +7,344 @@ import org.openrs2.deob.annotation.Pc;
 public abstract class Js5 {
 
 	@OriginalMember(owner = "unpackclass!aa", name = "q", descriptor = "Z")
-	private static boolean aBoolean501;
+	private static boolean RAISE_EXCEPTIONS;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "r", descriptor = "I")
-	private static int anInt7311;
+	private static int MAX_LENGTH;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "m", descriptor = "Lunpackclass!k;")
-	private static final GzipDecompressor aClass270_2 = new GzipDecompressor();
+	private static final GzipDecompressor GZIP_DECOMPRESSOR = new GzipDecompressor();
 
 	@OriginalMember(owner = "unpackclass!aa", name = "a", descriptor = "I")
-	protected int anInt7309;
+	protected int size;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "b", descriptor = "[I")
-	protected int[] anIntArray543;
+	protected int[] groupIds;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "c", descriptor = "[I")
-	private int[] anIntArray544;
+	private int[] groupNameHashes;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "d", descriptor = "[I")
-	private int[] anIntArray545;
+	private int[] groupChecksums;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "e", descriptor = "[I")
-	private int[] anIntArray546;
+	private int[] groupVersions;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "f", descriptor = "[I")
-	private int[] anIntArray547;
+	private int[] groupSizes;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "g", descriptor = "[[I")
-	private int[][] anIntArrayArray71;
+	private int[][] fileIds;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "h", descriptor = "[[I")
-	private int[][] anIntArrayArray72;
+	private int[][] fileNameHashes;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "i", descriptor = "[Lunpackclass!i;")
-	private IntHashTable[] aClass268Array2;
+	private IntHashTable[] fileNameHashTables;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "j", descriptor = "[Ljava/lang/Object;")
-	protected Object[] anObjectArray37;
+	protected Object[] packed;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "k", descriptor = "[I")
-	private int[] anIntArray548;
+	private int[] groupCapacities;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "l", descriptor = "[[Ljava/lang/Object;")
-	private Object[][] anObjectArrayArray3;
+	private Object[][] unpacked;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "n", descriptor = "I")
-	private int anInt7310;
+	private int checksum;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "o", descriptor = "Z")
-	protected final boolean aBoolean499;
+	protected final boolean discardPacked;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "p", descriptor = "Z")
-	private final boolean aBoolean500;
+	private final boolean discardUnpacked;
 
 	@OriginalMember(owner = "unpackclass!aa", name = "b", descriptor = "([B)[B")
-	private static byte[] method6606(@OriginalArg(0) byte[] arg0) {
-		@Pc(4) SimpleBuffer local4 = new SimpleBuffer(arg0);
-		@Pc(7) int local7 = local4.method6585();
-		@Pc(10) int local10 = local4.method6588();
-		if (local10 < 0 || anInt7311 != 0 && local10 > anInt7311) {
+	private static byte[] uncompress(@OriginalArg(0) byte[] src) {
+		@Pc(4) SimpleBuffer buffer = new SimpleBuffer(src);
+		@Pc(7) int type = buffer.g1();
+		@Pc(10) int len = buffer.g4();
+		if (len < 0 || MAX_LENGTH != 0 && len > MAX_LENGTH) {
 			throw new RuntimeException();
-		} else if (local7 == 0) {
-			@Pc(26) byte[] local26 = new byte[local10];
-			local4.method6589(local26, local10);
-			return local26;
+		} else if (type == 0) {
+			@Pc(26) byte[] out = new byte[len];
+			buffer.gdata(out, len);
+			return out;
 		} else {
-			@Pc(36) int local36 = local4.method6588();
-			if (local36 < 0 || anInt7311 != 0 && local36 > anInt7311) {
+			@Pc(36) int uncompressedLen = buffer.g4();
+			if (uncompressedLen < 0 || MAX_LENGTH != 0 && uncompressedLen > MAX_LENGTH) {
 				throw new RuntimeException();
 			}
-			@Pc(50) byte[] local50 = new byte[local36];
-			if (local7 == 1) {
-				BZip2InputStream.method6611(local50, local36, arg0, local10);
+			@Pc(50) byte[] out = new byte[uncompressedLen];
+			if (type == 1) {
+				BZip2InputStream.bunzip2(out, uncompressedLen, src, len);
 			} else {
-				aClass270_2.method6596(local4, local50);
+				GZIP_DECOMPRESSOR.gunzip(buffer, out);
 			}
-			return local50;
+			return out;
 		}
 	}
 
 	@OriginalMember(owner = "unpackclass!aa", name = "<init>", descriptor = "(ZZ)V")
-	protected Js5(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1) {
-		this.aBoolean499 = arg0;
-		this.aBoolean500 = arg1;
+	protected Js5(@OriginalArg(0) boolean discardPacked, @OriginalArg(1) boolean discardUnpacked) {
+		this.discardPacked = discardPacked;
+		this.discardUnpacked = discardUnpacked;
 	}
 
 	@OriginalMember(owner = "unpackclass!aa", name = "a", descriptor = "([B)V")
-	protected final void method6598(@OriginalArg(0) byte[] arg0) {
-		this.anInt7310 = SimpleBuffer.method6579(arg0, arg0.length);
-		@Pc(13) SimpleBuffer local13 = new SimpleBuffer(method6606(arg0));
-		@Pc(16) int local16 = local13.method6585();
-		if (local16 != 5 && local16 != 6) {
-			throw new RuntimeException("Incorrect JS5 protocol number: " + local16);
+	protected final void decode(@OriginalArg(0) byte[] src) {
+		this.checksum = SimpleBuffer.crc32(src, src.length);
+		@Pc(13) SimpleBuffer buffer = new SimpleBuffer(uncompress(src));
+		@Pc(16) int protocol = buffer.g1();
+		if (protocol != 5 && protocol != 6) {
+			throw new RuntimeException("Incorrect JS5 protocol number: " + protocol);
 		}
-		if (local16 >= 6) {
-			local13.method6588();
+		if (protocol >= 6) {
+			buffer.g4();
 		}
-		@Pc(42) int local42 = local13.method6585();
-		this.anInt7309 = local13.method6586();
-		@Pc(48) int local48 = 0;
-		@Pc(50) int local50 = -1;
-		this.anIntArray543 = new int[this.anInt7309];
-		for (@Pc(57) int local57 = 0; local57 < this.anInt7309; local57++) {
-			this.anIntArray543[local57] = local48 += local13.method6586();
-			if (this.anIntArray543[local57] > local50) {
-				local50 = this.anIntArray543[local57];
+		@Pc(42) int flags = buffer.g1();
+		this.size = buffer.g2();
+		@Pc(48) int prevGroupId = 0;
+		@Pc(50) int nextGroupId = -1;
+		this.groupIds = new int[this.size];
+		for (@Pc(57) int i = 0; i < this.size; i++) {
+			this.groupIds[i] = prevGroupId += buffer.g2();
+			if (this.groupIds[i] > nextGroupId) {
+				nextGroupId = this.groupIds[i];
 			}
 		}
-		this.anIntArray545 = new int[local50 + 1];
-		this.anIntArray546 = new int[local50 + 1];
-		this.anIntArray547 = new int[local50 + 1];
-		this.anIntArrayArray71 = new int[local50 + 1][];
-		this.anObjectArray37 = new Object[local50 + 1];
-		this.anIntArray548 = new int[local50 + 1];
-		this.anObjectArrayArray3 = new Object[local50 + 1][];
-		@Pc(142) int local142;
-		@Pc(157) int local157;
-		if (local42 != 0) {
-			this.anIntArray544 = new int[local50 + 1];
-			for (local142 = 0; local142 < local50 + 1; local142++) {
-				this.anIntArray544[local142] = -1;
+		this.groupChecksums = new int[nextGroupId + 1];
+		this.groupVersions = new int[nextGroupId + 1];
+		this.groupSizes = new int[nextGroupId + 1];
+		this.fileIds = new int[nextGroupId + 1][];
+		this.packed = new Object[nextGroupId + 1];
+		this.groupCapacities = new int[nextGroupId + 1];
+		this.unpacked = new Object[nextGroupId + 1][];
+		if (flags != 0) {
+			this.groupNameHashes = new int[nextGroupId + 1];
+			for (int i = 0; i < nextGroupId + 1; i++) {
+				this.groupNameHashes[i] = -1;
 			}
-			for (local157 = 0; local157 < this.anInt7309; local157++) {
-				this.anIntArray544[this.anIntArray543[local157]] = local13.method6588();
+			for (int i = 0; i < this.size; i++) {
+				this.groupNameHashes[this.groupIds[i]] = buffer.g4();
 			}
-			new IntHashTable(this.anIntArray544);
+			new IntHashTable(this.groupNameHashes);
 		}
-		for (local142 = 0; local142 < this.anInt7309; local142++) {
-			this.anIntArray545[this.anIntArray543[local142]] = local13.method6588();
+		for (int i = 0; i < this.size; i++) {
+			this.groupChecksums[this.groupIds[i]] = buffer.g4();
 		}
-		for (local157 = 0; local157 < this.anInt7309; local157++) {
-			this.anIntArray546[this.anIntArray543[local157]] = local13.method6588();
+		for (int i = 0; i < this.size; i++) {
+			this.groupVersions[this.groupIds[i]] = buffer.g4();
 		}
-		for (@Pc(215) int local215 = 0; local215 < this.anInt7309; local215++) {
-			this.anIntArray547[this.anIntArray543[local215]] = local13.method6586();
+		for (@Pc(215) int i = 0; i < this.size; i++) {
+			this.groupSizes[this.groupIds[i]] = buffer.g2();
 		}
-		@Pc(240) int local240;
-		@Pc(245) int local245;
-		@Pc(249) int local249;
-		@Pc(257) int local257;
-		@Pc(273) int local273;
-		for (@Pc(233) int local233 = 0; local233 < this.anInt7309; local233++) {
-			local240 = this.anIntArray543[local233];
-			local245 = this.anIntArray547[local240];
-			local48 = 0;
-			local249 = -1;
-			this.anIntArrayArray71[local240] = new int[local245];
-			for (local257 = 0; local257 < local245; local257++) {
-				local273 = this.anIntArrayArray71[local240][local257] = local48 += local13.method6586();
-				if (local273 > local249) {
-					local249 = local273;
+		for (@Pc(233) int i = 0; i < this.size; i++) {
+			int groupId = this.groupIds[i];
+			int groupSize = this.groupSizes[groupId];
+			int prevFileId = 0;
+			int maxFileId = -1;
+			this.fileIds[groupId] = new int[groupSize];
+			for (int j = 0; j < groupSize; j++) {
+				int fileId = this.fileIds[groupId][j] = prevFileId += buffer.g2();
+				if (fileId > maxFileId) {
+					maxFileId = fileId;
 				}
 			}
-			this.anIntArray548[local240] = local249 + 1;
-			if (local249 + 1 == local245) {
-				this.anIntArrayArray71[local240] = null;
+			this.groupCapacities[groupId] = maxFileId + 1;
+			if (maxFileId + 1 == groupSize) {
+				this.fileIds[groupId] = null;
 			}
 		}
-		if (local42 == 0) {
+		if (flags == 0) {
 			return;
 		}
-		this.anIntArrayArray72 = new int[local50 + 1][];
-		this.aClass268Array2 = new IntHashTable[local50 + 1];
-		for (local240 = 0; local240 < this.anInt7309; local240++) {
-			local245 = this.anIntArray543[local240];
-			local249 = this.anIntArray547[local245];
-			this.anIntArrayArray72[local245] = new int[this.anIntArray548[local245]];
-			for (local257 = 0; local257 < this.anIntArray548[local245]; local257++) {
-				this.anIntArrayArray72[local245][local257] = -1;
+		this.fileNameHashes = new int[nextGroupId + 1][];
+		this.fileNameHashTables = new IntHashTable[nextGroupId + 1];
+		for (int i = 0; i < this.size; i++) {
+			int groupId = this.groupIds[i];
+			int groupSize = this.groupSizes[groupId];
+			this.fileNameHashes[groupId] = new int[this.groupCapacities[groupId]];
+			for (int j = 0; j < this.groupCapacities[groupId]; j++) {
+				this.fileNameHashes[groupId][j] = -1;
 			}
-			for (local273 = 0; local273 < local249; local273++) {
-				@Pc(375) int local375;
-				if (this.anIntArrayArray71[local245] == null) {
-					local375 = local273;
+			for (int j = 0; j < groupSize; j++) {
+				@Pc(375) int fileId;
+				if (this.fileIds[groupId] == null) {
+					fileId = j;
 				} else {
-					local375 = this.anIntArrayArray71[local245][local273];
+					fileId = this.fileIds[groupId][j];
 				}
-				this.anIntArrayArray72[local245][local375] = local13.method6588();
+				this.fileNameHashes[groupId][fileId] = buffer.g4();
 			}
-			this.aClass268Array2[local245] = new IntHashTable(this.anIntArrayArray72[local245]);
+			this.fileNameHashTables[groupId] = new IntHashTable(this.fileNameHashes[groupId]);
 		}
 	}
 
 	@OriginalMember(owner = "unpackclass!aa", name = "a", descriptor = "(I)Z")
-	private boolean method6599(@OriginalArg(0) int arg0) {
-		if (arg0 >= 0 && arg0 < this.anIntArray548.length && this.anIntArray548[arg0] != 0) {
+	private boolean isGroupValid(@OriginalArg(0) int group) {
+		if (group >= 0 && group < this.groupCapacities.length && this.groupCapacities[group] != 0) {
 			return true;
-		} else if (aBoolean501) {
-			throw new IllegalArgumentException(Integer.toString(arg0));
+		} else if (RAISE_EXCEPTIONS) {
+			throw new IllegalArgumentException(Integer.toString(group));
 		} else {
 			return false;
 		}
 	}
 
 	@OriginalMember(owner = "unpackclass!aa", name = "a", descriptor = "(II)Z")
-	private boolean method6600(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (arg0 >= 0 && arg1 >= 0 && arg0 < this.anIntArray548.length && arg1 < this.anIntArray548[arg0]) {
+	private boolean isFileValid(@OriginalArg(0) int group, @OriginalArg(1) int file) {
+		if (group >= 0 && file >= 0 && group < this.groupCapacities.length && file < this.groupCapacities[group]) {
 			return true;
-		} else if (aBoolean501) {
-			throw new IllegalArgumentException(arg0 + "," + arg1);
+		} else if (RAISE_EXCEPTIONS) {
+			throw new IllegalArgumentException(group + "," + file);
 		} else {
 			return false;
 		}
 	}
 
 	@OriginalMember(owner = "unpackclass!aa", name = "b", descriptor = "(II)[B")
-	public final byte[] method6601(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		return this.method6602(arg0, arg1, null);
+	public final byte[] fetchFile(@OriginalArg(0) int group, @OriginalArg(1) int file) {
+		return this.fetchFile(group, file, null);
 	}
 
 	@OriginalMember(owner = "unpackclass!aa", name = "a", descriptor = "(II[I)[B")
-	private byte[] method6602(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int[] arg2) {
-		if (!this.method6600(arg0, arg1)) {
+	private byte[] fetchFile(@OriginalArg(0) int group, @OriginalArg(1) int file, @OriginalArg(2) int[] key) {
+		if (!this.isFileValid(group, file)) {
 			return null;
 		}
-		if (this.anObjectArrayArray3[arg0] == null || this.anObjectArrayArray3[arg0][arg1] == null) {
-			@Pc(23) boolean local23 = this.method6605(arg0, arg2);
-			if (!local23) {
-				this.method6603(arg0);
-				local23 = this.method6605(arg0, arg2);
-				if (!local23) {
+		if (this.unpacked[group] == null || this.unpacked[group][file] == null) {
+			@Pc(23) boolean success = this.unpackGroup(group, key);
+			if (!success) {
+				this.fetchGroup(group);
+				success = this.unpackGroup(group, key);
+				if (!success) {
 					return null;
 				}
 			}
 		}
-		@Pc(46) byte[] local46 = ByteArray.method6560(this.anObjectArrayArray3[arg0][arg1], false);
-		if (this.aBoolean500) {
-			this.anObjectArrayArray3[arg0][arg1] = null;
-			if (this.anIntArray548[arg0] == 1) {
-				this.anObjectArrayArray3[arg0] = null;
+		@Pc(46) byte[] bytes = ByteArray.unwrap(this.unpacked[group][file], false);
+		if (this.discardUnpacked) {
+			this.unpacked[group][file] = null;
+			if (this.groupCapacities[group] == 1) {
+				this.unpacked[group] = null;
 			}
 		}
-		return local46;
+		return bytes;
 	}
 
 	@OriginalMember(owner = "unpackclass!aa", name = "b", descriptor = "(I)V")
-	private void method6603(@OriginalArg(0) int arg0) {
+	private void fetchGroup(@OriginalArg(0) int group) {
 	}
 
 	@OriginalMember(owner = "unpackclass!aa", name = "c", descriptor = "(I)I")
-	public final int method6604() {
-		return this.method6599(0) ? this.anIntArray548[0] : 0;
+	public final int getGroupCapacity() {
+		return this.isGroupValid(0) ? this.groupCapacities[0] : 0;
 	}
 
 	@OriginalMember(owner = "unpackclass!aa", name = "a", descriptor = "(I[I)Z")
-	private boolean method6605(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1) {
-		if (!this.method6599(arg0)) {
+	private boolean unpackGroup(@OriginalArg(0) int group, @OriginalArg(1) int[] key) {
+		if (!this.isGroupValid(group)) {
 			return false;
-		} else if (this.anObjectArray37[arg0] == null) {
+		} else if (this.packed[group] == null) {
 			return false;
 		} else {
-			@Pc(19) int local19 = this.anIntArray547[arg0];
-			@Pc(24) int[] local24 = this.anIntArrayArray71[arg0];
-			if (this.anObjectArrayArray3[arg0] == null) {
-				this.anObjectArrayArray3[arg0] = new Object[this.anIntArray548[arg0]];
+			@Pc(19) int groupSize = this.groupSizes[group];
+			@Pc(24) int[] fileIds = this.fileIds[group];
+			if (this.unpacked[group] == null) {
+				this.unpacked[group] = new Object[this.groupCapacities[group]];
 			}
-			@Pc(43) Object[] local43 = this.anObjectArrayArray3[arg0];
-			@Pc(45) boolean local45 = true;
-			for (@Pc(47) int local47 = 0; local47 < local19; local47++) {
-				@Pc(53) int local53;
-				if (local24 == null) {
-					local53 = local47;
+			@Pc(43) Object[] unpacked = this.unpacked[group];
+			@Pc(45) boolean valid = true;
+			for (@Pc(47) int i = 0; i < groupSize; i++) {
+				@Pc(53) int fileId;
+				if (fileIds == null) {
+					fileId = i;
 				} else {
-					local53 = local24[local47];
+					fileId = fileIds[i];
 				}
-				if (local43[local53] == null) {
-					local45 = false;
+				if (unpacked[fileId] == null) {
+					valid = false;
 					break;
 				}
 			}
-			if (local45) {
+			if (valid) {
 				return true;
 			}
-			@Pc(100) byte[] local100;
-			if (arg1 == null || arg1[0] == 0 && arg1[1] == 0 && arg1[2] == 0 && arg1[3] == 0) {
-				local100 = ByteArray.method6560(this.anObjectArray37[arg0], false);
+			@Pc(100) byte[] compressed;
+			if (key == null || key[0] == 0 && key[1] == 0 && key[2] == 0 && key[3] == 0) {
+				compressed = ByteArray.unwrap(this.packed[group], false);
 			} else {
-				local100 = ByteArray.method6560(this.anObjectArray37[arg0], true);
-				@Pc(105) SimpleBuffer local105 = new SimpleBuffer(local100);
-				local105.method6592(arg1, local105.aByteArray100.length);
+				compressed = ByteArray.unwrap(this.packed[group], true);
+				@Pc(105) SimpleBuffer buffer = new SimpleBuffer(compressed);
+				buffer.tinydec(key, buffer.data.length);
 			}
-			@Pc(124) byte[] local124;
+			@Pc(124) byte[] uncompressed;
 			try {
-				local124 = method6606(local100);
-			} catch (@Pc(126) RuntimeException local126) {
-				System.out.println("T3 - " + (arg1 != null) + "," + arg0 + "," + local100.length + "," + SimpleBuffer.method6579(local100, local100.length) + "," + SimpleBuffer.method6579(local100, local100.length - 2) + "," + this.anIntArray545[arg0] + "," + this.anInt7310);
-				local124 = new byte[] { 0 };
+				uncompressed = uncompress(compressed);
+			} catch (@Pc(126) RuntimeException ex) {
+				System.out.println("T3 - " + (key != null) + "," + group + "," + compressed.length + "," + SimpleBuffer.crc32(compressed, compressed.length) + "," + SimpleBuffer.crc32(compressed, compressed.length - 2) + "," + this.groupChecksums[group] + "," + this.checksum);
+				uncompressed = new byte[] { 0 };
 			}
-			if (this.aBoolean499) {
-				this.anObjectArray37[arg0] = null;
+			if (this.discardPacked) {
+				this.packed[group] = null;
 			}
-			@Pc(191) int local191;
-			if (local19 > 1) {
-				local191 = local124.length;
-				@Pc(193) int local193 = local191 - 1;
-				@Pc(198) int local198 = local124[local193] & 0xFF;
-				@Pc(206) int local206 = local193 - local19 * local198 * 4;
-				@Pc(211) SimpleBuffer local211 = new SimpleBuffer(local124);
-				@Pc(214) int[] local214 = new int[local19];
-				local211.anInt7287 = local206;
-				@Pc(225) int local225;
-				for (@Pc(219) int local219 = 0; local219 < local198; local219++) {
-					@Pc(223) int local223 = 0;
-					for (local225 = 0; local225 < local19; local225++) {
-						local223 += local211.method6588();
-						local214[local225] += local223;
+			if (groupSize > 1) {
+				int pos = uncompressed.length;
+				pos--;
+				@Pc(198) int stripes = uncompressed[pos] & 0xFF;
+				pos -= groupSize * stripes * 4;
+				@Pc(211) SimpleBuffer buffer = new SimpleBuffer(uncompressed);
+				@Pc(214) int[] lens = new int[groupSize];
+				buffer.pos = pos;
+				for (@Pc(219) int i = 0; i < stripes; i++) {
+					@Pc(223) int len = 0;
+					for (int j = 0; j < groupSize; j++) {
+						len += buffer.g4();
+						lens[j] += len;
 					}
 				}
-				@Pc(250) byte[][] local250 = new byte[local19][];
-				for (local225 = 0; local225 < local19; local225++) {
-					local250[local225] = new byte[local214[local225]];
-					local214[local225] = 0;
+				@Pc(250) byte[][] extracted = new byte[groupSize][];
+				for (int i = 0; i < groupSize; i++) {
+					extracted[i] = new byte[lens[i]];
+					lens[i] = 0;
 				}
-				local211.anInt7287 = local206;
-				@Pc(274) int local274 = 0;
-				@Pc(280) int local280;
-				@Pc(282) int local282;
-				for (@Pc(276) int local276 = 0; local276 < local198; local276++) {
-					local280 = 0;
-					for (local282 = 0; local282 < local19; local282++) {
-						local280 += local211.method6588();
-						ArrayUtils.method6597(local124, local274, local250[local282], local214[local282], local280);
-						local214[local282] += local280;
-						local274 += local280;
+				buffer.pos = pos;
+				@Pc(274) int off = 0;
+				for (@Pc(276) int i = 0; i < stripes; i++) {
+					int len = 0;
+					for (int j = 0; j < groupSize; j++) {
+						len += buffer.g4();
+						ArrayUtils.copy(uncompressed, off, extracted[j], lens[j], len);
+						lens[j] += len;
+						off += len;
 					}
 				}
-				for (local280 = 0; local280 < local19; local280++) {
-					if (local24 == null) {
-						local282 = local280;
+				for (int i = 0; i < groupSize; i++) {
+					int fileId;
+					if (fileIds == null) {
+						fileId = i;
 					} else {
-						local282 = local24[local280];
+						fileId = fileIds[i];
 					}
-					if (this.aBoolean500) {
-						local43[local282] = local250[local280];
+					if (this.discardUnpacked) {
+						unpacked[fileId] = extracted[i];
 					} else {
-						local43[local282] = ByteArray.method6559(local250[local280]);
+						unpacked[fileId] = ByteArray.wrap(extracted[i]);
 					}
 				}
 			} else {
-				if (local24 == null) {
-					local191 = 0;
+				int fileId;
+				if (fileIds == null) {
+					fileId = 0;
 				} else {
-					local191 = local24[0];
+					fileId = fileIds[0];
 				}
-				if (this.aBoolean500) {
-					local43[local191] = local124;
+				if (this.discardUnpacked) {
+					unpacked[fileId] = uncompressed;
 				} else {
-					local43[local191] = ByteArray.method6559(local124);
+					unpacked[fileId] = ByteArray.wrap(uncompressed);
 				}
 			}
 			return true;

@@ -10,7 +10,7 @@ public abstract class ByteArray {
 	private static boolean aBoolean494;
 
 	@OriginalMember(owner = "unpackclass!a", name = "a", descriptor = "([BZ)Ljava/lang/Object;")
-	public static Object method6559(@OriginalArg(0) byte[] arg0) {
+	public static Object wrap(@OriginalArg(0) byte[] arg0) {
 		if (arg0 == null) {
 			return null;
 		}
@@ -27,7 +27,7 @@ public abstract class ByteArray {
 	}
 
 	@OriginalMember(owner = "unpackclass!a", name = "a", descriptor = "(Ljava/lang/Object;Z)[B")
-	public static byte[] method6560(@OriginalArg(0) Object arg0, @OriginalArg(1) boolean arg1) {
+	public static byte[] unwrap(@OriginalArg(0) Object arg0, @OriginalArg(1) boolean arg1) {
 		if (arg0 == null) {
 			return null;
 		} else if (arg0 instanceof byte[]) {
@@ -45,7 +45,7 @@ public abstract class ByteArray {
 	private static byte[] method6561(@OriginalArg(0) byte[] arg0) {
 		@Pc(2) int local2 = arg0.length;
 		@Pc(5) byte[] local5 = new byte[local2];
-		ArrayUtils.method6597(arg0, 0, local5, 0, local2);
+		ArrayUtils.copy(arg0, 0, local5, 0, local2);
 		return local5;
 	}
 

@@ -5,8 +5,8 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class LineNumberTableEntry {
 
 	@OriginalMember(owner = "unpackclass!o", name = "a", descriptor = "I")
-	public int anInt7307;
+	public int startPc;
 
 	@OriginalMember(owner = "unpackclass!o", name = "b", descriptor = "I")
-	public int anInt7308;
+	public int lineNumber;
 }
