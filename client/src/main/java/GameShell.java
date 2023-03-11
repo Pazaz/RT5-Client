@@ -29,7 +29,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	private boolean aBoolean94 = false;
 
 	@OriginalMember(owner = "client!un", name = "providesignlink", descriptor = "(Lclient!ml;)V")
-	public static void providesignlink(@OriginalArg(0) SignedLink arg0) {
+	public static void providesignlink(@OriginalArg(0) Signlink arg0) {
 		Static328.aClass152_5 = arg0;
 		Static392.aClass152_6 = arg0;
 	}
@@ -118,7 +118,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			Static222.aFrame1.toFront();
 			@Pc(48) Insets local48 = Static222.aFrame1.getInsets();
 			Static222.aFrame1.setSize(local48.right + local48.left + Static142.anInt2663, local48.bottom + local48.top + Static178.anInt2319);
-			Static392.aClass152_6 = Static328.aClass152_5 = new SignedLink(null, arg1, arg0, 29);
+			Static392.aClass152_6 = Static328.aClass152_5 = new Signlink(null, arg1, arg0, 29);
 			@Pc(82) PrivilegedRequest local82 = Static328.aClass152_5.startThread(1, this);
 			while (local82.status == 0) {
 				Static231.method4023(10L);
@@ -291,7 +291,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 				Static250.anInt4665 = arg0;
 				Static142.anInt2663 = arg0;
 				if (Static328.aClass152_5 == null) {
-					Static392.aClass152_6 = Static328.aClass152_5 = new SignedLink(this, arg1, null, 0);
+					Static392.aClass152_6 = Static328.aClass152_5 = new Signlink(this, arg1, null, 0);
 				}
 				@Pc(66) PrivilegedRequest local66 = Static328.aClass152_5.startThread(1, this);
 				while (local66.status == 0) {
@@ -386,25 +386,25 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	public final void run() {
 		try {
 			label113: {
-				if (SignedLink.javaVendor != null) {
-					@Pc(10) String local10 = SignedLink.javaVendor.toLowerCase();
+				if (Signlink.javaVendor != null) {
+					@Pc(10) String local10 = Signlink.javaVendor.toLowerCase();
 					if (local10.indexOf("sun") != -1 || local10.indexOf("apple") != -1) {
-						@Pc(23) String local23 = SignedLink.javaVersion;
+						@Pc(23) String local23 = Signlink.javaVersion;
 						if (local23.equals("1.1") || local23.startsWith("1.1.") || local23.equals("1.2") || local23.startsWith("1.2.")) {
 							this.method1392("wrongjava");
 							break label113;
 						}
-					} else if (local10.indexOf("ibm") != -1 && (SignedLink.javaVersion == null || SignedLink.javaVersion.equals("1.4.2"))) {
+					} else if (local10.indexOf("ibm") != -1 && (Signlink.javaVersion == null || Signlink.javaVersion.equals("1.4.2"))) {
 						this.method1392("wrongjava");
 						break label113;
 					}
 				}
 				@Pc(70) int local70;
-				if (SignedLink.javaVersion != null && SignedLink.javaVersion.startsWith("1.")) {
+				if (Signlink.javaVersion != null && Signlink.javaVersion.startsWith("1.")) {
 					local70 = 2;
 					@Pc(72) int local72 = 0;
-					while (local70 < SignedLink.javaVersion.length()) {
-						@Pc(78) char local78 = SignedLink.javaVersion.charAt(local70);
+					while (local70 < Signlink.javaVersion.length()) {
+						@Pc(78) char local78 = Signlink.javaVersion.charAt(local70);
 						if (local78 < '0' || local78 > '9') {
 							break;
 						}
@@ -416,7 +416,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 					}
 				}
 				if (Static328.aClass152_5.applet != null) {
-					@Pc(111) Method local111 = SignedLink.setFocusCycleRoot;
+					@Pc(111) Method local111 = Signlink.setFocusCycleRoot;
 					if (local111 != null) {
 						try {
 							local111.invoke(Static328.aClass152_5.applet, Boolean.TRUE);

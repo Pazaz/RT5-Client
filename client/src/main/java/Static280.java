@@ -8,12 +8,12 @@ public final class Static280 {
 	public static int anInt5197 = 0;
 
 	@OriginalMember(owner = "client!qe", name = "a", descriptor = "(Ljava/lang/String;Lclient!ml;BZZ)V")
-	public static void method4765(@OriginalArg(0) String arg0, @OriginalArg(1) SignedLink arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
+	public static void method4765(@OriginalArg(0) String arg0, @OriginalArg(1) Signlink arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
 		if (!arg3) {
 			Static234.method4095(arg1, 3, arg0);
 			return;
 		}
-		if (SignedLink.osName.startsWith("win") && Static215.anInt3795 != 3) {
+		if (Signlink.osName.startsWith("win") && Static215.anInt3795 != 3) {
 			@Pc(32) String local32 = null;
 			if (arg1.applet != null) {
 				local32 = arg1.applet.getParameter("haveie6");

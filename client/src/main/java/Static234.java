@@ -12,7 +12,7 @@ public final class Static234 {
 	public static final String[] aStringArray39 = new String[100];
 
 	@OriginalMember(owner = "client!ni", name = "a", descriptor = "(Lclient!ml;ILjava/lang/String;I)Lclient!cc;")
-	public static PrivilegedRequest method4095(@OriginalArg(0) SignedLink arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2) {
+	public static PrivilegedRequest method4095(@OriginalArg(0) Signlink arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2) {
 		if (arg1 == 0) {
 			return arg0.openUrl(arg2);
 		}

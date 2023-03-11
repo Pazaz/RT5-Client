@@ -33,7 +33,7 @@ public final class Static5 {
 	public static final Class79 aClass79_2 = new Class79("skill: ", "Fertigkeit: ", "compétence ", "habilidade: ");
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(IIILclient!ml;II)Ljava/awt/Frame;")
-	public static Frame method85(@OriginalArg(0) int arg0, @OriginalArg(3) SignedLink arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3) {
+	public static Frame method85(@OriginalArg(0) int arg0, @OriginalArg(3) Signlink arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3) {
 		if (!arg1.method3765()) {
 			return null;
 		}

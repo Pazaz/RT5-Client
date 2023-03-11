@@ -79,7 +79,7 @@ public final class Static340 {
 						local41.method4813(Static75.anIntArray117[local51]);
 					}
 				}
-				local7.method5195(local41.aByteArray73, local41.anInt5300, 0);
+				local7.write(local41.aByteArray73, local41.anInt5300, 0);
 			}
 		} catch (@Pc(82) Exception local82) {
 		}

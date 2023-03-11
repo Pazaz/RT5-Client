@@ -19,7 +19,7 @@ public final class Class206 implements Runnable {
 	private Thread aThread3;
 
 	@OriginalMember(owner = "client!ro", name = "<init>", descriptor = "(Lclient!ml;)V")
-	public Class206(@OriginalArg(0) SignedLink arg0) {
+	public Class206(@OriginalArg(0) Signlink arg0) {
 		@Pc(20) PrivilegedRequest local20 = arg0.startThread(5, this);
 		while (local20.status == 0) {
 			Static231.method4023(10L);

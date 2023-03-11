@@ -172,7 +172,7 @@ public final class client extends GameShell {
 		if (Static333.method6318()) {
 			Static279.method4725(Static190.aClass19_8);
 		}
-		if ((Static347.anInt6442 == 30 || Static347.anInt6442 == 10) && Static154.anInt2807 == 0 && Static144.method2692() == 1 && !local169 && SignedLink.javaVersion.equals("1.1")) {
+		if ((Static347.anInt6442 == 30 || Static347.anInt6442 == 10) && Static154.anInt2807 == 0 && Static144.method2692() == 1 && !local169 && Signlink.javaVersion.equals("1.1")) {
 			local92 = 0;
 			for (local96 = 0; local96 < Static154.anInt2806; local96++) {
 				if (Static375.aBooleanArray64[local96]) {

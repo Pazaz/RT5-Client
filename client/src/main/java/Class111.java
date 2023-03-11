@@ -33,7 +33,7 @@ public final class Class111 implements Runnable {
 	private final Socket aSocket1;
 
 	@OriginalMember(owner = "client!iu", name = "u", descriptor = "Lclient!ml;")
-	private final SignedLink aClass152_2;
+	private final Signlink aClass152_2;
 
 	@OriginalMember(owner = "client!iu", name = "s", descriptor = "Ljava/io/InputStream;")
 	private InputStream anInputStream1;
@@ -42,7 +42,7 @@ public final class Class111 implements Runnable {
 	private OutputStream anOutputStream1;
 
 	@OriginalMember(owner = "client!iu", name = "<init>", descriptor = "(Ljava/net/Socket;Lclient!ml;)V")
-	public Class111(@OriginalArg(0) Socket arg0, @OriginalArg(1) SignedLink arg1) throws IOException {
+	public Class111(@OriginalArg(0) Socket arg0, @OriginalArg(1) Signlink arg1) throws IOException {
 		this.aSocket1 = arg0;
 		this.aClass152_2 = arg1;
 		this.aSocket1.setSoTimeout(30000);

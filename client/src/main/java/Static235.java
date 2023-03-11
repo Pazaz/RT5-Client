@@ -24,7 +24,7 @@ public final class Static235 {
 	public static final Class79 aClass79_72 = new Class79("Loaded sprites", "Sprites geladen.", "Sprites chargés", "Sprites carregados");
 
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(Lclient!ml;IILclient!bt;)V")
-	public static void method3339(@OriginalArg(0) SignedLink arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class2_Sub4 arg2) {
+	public static void method3339(@OriginalArg(0) Signlink arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class2_Sub4 arg2) {
 		@Pc(9) Class2_Sub42 local9 = new Class2_Sub42();
 		local9.anInt7154 = arg2.method4815();
 		local9.anInt7156 = arg2.method4836();

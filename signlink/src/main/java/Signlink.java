@@ -25,6 +25,9 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("loader!ml")
 public final class Signlink implements Runnable {
 
+	@OriginalMember(owner = "client!ml", name = "l", descriptor = "Ljava/lang/String;")
+	public static String javaVersion;
+
 	@OriginalMember(owner = "loader!ml", name = "i", descriptor = "Ljava/lang/String;")
 	public static String javaVendor;
 
@@ -32,79 +35,76 @@ public final class Signlink implements Runnable {
 	private static String osNameRaw;
 
 	@OriginalMember(owner = "loader!ml", name = "c", descriptor = "Ljava/lang/String;")
-	private static String homeDir;
+	public static String homeDir;
 
 	@OriginalMember(owner = "loader!ml", name = "d", descriptor = "Ljava/lang/String;")
-	private static String osName;
+	public static String osName;
 
 	@OriginalMember(owner = "loader!ml", name = "f", descriptor = "Ljava/lang/String;")
-	private static String osArch;
-
-	@OriginalMember(owner = "loader!ml", name = "l", descriptor = "Ljava/lang/String;")
-	public static String javaVersion;
+	public static String osArch;
 
 	@OriginalMember(owner = "loader!ml", name = "h", descriptor = "Ljava/lang/String;")
-	private static String osVersion;
+	public static String osVersion;
 
 	@OriginalMember(owner = "loader!ml", name = "t", descriptor = "Ljava/lang/reflect/Method;")
-	private static Method setFocusTraversalKeysEnabled;
+	public static Method setFocusTraversalKeysEnabled;
 
 	@OriginalMember(owner = "loader!ml", name = "u", descriptor = "Ljava/lang/reflect/Method;")
-	private static Method setFocusCycleRoot;
+	public static Method setFocusCycleRoot;
 
 	@OriginalMember(owner = "loader!ml", name = "g", descriptor = "I")
 	private static final int anInt7277 = 1;
 
 	@OriginalMember(owner = "loader!ml", name = "r", descriptor = "Ljava/util/Hashtable;")
-	private static final Hashtable fileCache = new Hashtable(16);
+	public static final Hashtable fileCache = new Hashtable(16);
 
 	@OriginalMember(owner = "loader!ml", name = "v", descriptor = "J")
-	private static final long breakConnectionsUntil = 0L;
+	public static long breakConnectionsUntil = 0L;
 
 	@OriginalMember(owner = "loader!ml", name = "o", descriptor = "Lloader!fc;")
 	private AudioSource audioSource;
 
 	@OriginalMember(owner = "loader!ml", name = "s", descriptor = "Lloader!cc;")
-	private PrivilegedRequest requestQueueHead = null;
+	public PrivilegedRequest requestQueueHead = null;
 
 	@OriginalMember(owner = "loader!ml", name = "e", descriptor = "Ljava/applet/Applet;")
-	private Applet applet = null;
+	public Applet applet = null;
 
 	@OriginalMember(owner = "loader!ml", name = "m", descriptor = "Lloader!rl;")
-	private FileOnDisk cacheMasterIndex = null;
+	public FileOnDisk cacheMasterIndex = null;
 
 	@OriginalMember(owner = "loader!ml", name = "b", descriptor = "Lloader!rl;")
-	private FileOnDisk uid = null;
+	public FileOnDisk uid = null;
 
 	@OriginalMember(owner = "loader!ml", name = "n", descriptor = "Z")
-	private boolean stop = false;
+	public boolean stop = false;
 
 	@OriginalMember(owner = "loader!ml", name = "j", descriptor = "Lloader!rl;")
-	private FileOnDisk cacheData = null;
+	public FileOnDisk cacheData = null;
 
 	@OriginalMember(owner = "loader!ml", name = "A", descriptor = "Lloader!cc;")
-	private PrivilegedRequest requestQueueTail = null;
+	public PrivilegedRequest requestQueueTail = null;
 
 	@OriginalMember(owner = "loader!ml", name = "w", descriptor = "Ljava/lang/String;")
-	private final String cacheSubDir;
+	public final String cacheSubDir;
 
 	@OriginalMember(owner = "loader!ml", name = "x", descriptor = "I")
-	private final int cacheId;
+	public final int cacheId;
 
 	@OriginalMember(owner = "loader!ml", name = "k", descriptor = "Ljava/awt/EventQueue;")
-	private EventQueue eventQueue;
+	public EventQueue eventQueue;
 
 	@OriginalMember(owner = "loader!ml", name = "p", descriptor = "[Lloader!rl;")
-	private final FileOnDisk[] cacheIndexes;
+	public FileOnDisk[] cacheIndexes;
 
 	@OriginalMember(owner = "loader!ml", name = "z", descriptor = "Lloader!c;")
-	private FullScreenManager fullScreenManager;
+	public FullScreenManager fullScreenManager;
 
 	@OriginalMember(owner = "loader!ml", name = "y", descriptor = "Lloader!b;")
-	private CursorManager cursorManager;
+	public CursorManager cursorManager;
 
 	@OriginalMember(owner = "loader!ml", name = "a", descriptor = "Ljava/lang/Thread;")
-	private final Thread thread;
+	public final Thread thread;
 
 	@OriginalMember(owner = "loader!ml", name = "b", descriptor = "(Ljava/lang/String;II)Lloader!rl;")
 	private static FileOnDisk openPreferencesInternal(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
@@ -502,4 +502,159 @@ public final class Signlink implements Runnable {
 			}
 		}
 	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/Class;ILjava/lang/String;[Ljava/lang/Class;)Lclient!cc;")
+	public PrivilegedRequest getDeclaredMethod(@OriginalArg(0) Class arg0, @OriginalArg(2) String arg1, @OriginalArg(3) Class[] arg2) {
+		return this.enqueue(new Object[] { arg0, arg1, arg2 }, 0, 8, 0);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(IIIZI)Lclient!cc;")
+	public PrivilegedRequest enterFullScreen(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(4) int arg2) {
+		return this.enqueue(null, (arg0 << 16) + arg1, 6, arg2 << 16);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(I)Lclient!cc;")
+	public PrivilegedRequest openPreferences() {
+		return this.enqueue(null, 0, 12, 0);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/String;II)Lclient!cc;")
+	public PrivilegedRequest openSocket(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
+		return this.enqueue(arg0, arg1, 1, 0);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(ILjava/lang/Class;)Lclient!cc;")
+	public PrivilegedRequest loadMiscNatives(@OriginalArg(1) Class arg0) {
+		return this.enqueue(arg0, 0, 20, 0);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "b", descriptor = "(ILjava/lang/Class;)Lclient!cc;")
+	public PrivilegedRequest loadGlNatives(@OriginalArg(1) Class arg0) {
+		return this.enqueue(arg0, 0, 10, 0);
+	}
+
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(B)Lclient!cc;")
+	public PrivilegedRequest openPreferences2() {
+		return this.enqueue(null, 0, 13, 0);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(BI)Lclient!cc;")
+	public PrivilegedRequest getReverseDns(@OriginalArg(1) int arg0) {
+		return this.enqueue(null, arg0, 3, 0);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "b", descriptor = "(B)V")
+	public void breakConnection() {
+		breakConnectionsUntil = MonotonicClock.currentTimeMillis() + 5000L;
+	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/String;B)Lclient!cc;")
+	public PrivilegedRequest openUrl(@OriginalArg(0) String arg0) {
+		return this.enqueue(arg0, 0, 16, 0);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/Class;Ljava/lang/String;B)Lclient!cc;")
+	public PrivilegedRequest getDeclaredField(@OriginalArg(0) Class arg0, @OriginalArg(1) String arg1) {
+		return this.enqueue(new Object[] { arg0, arg1 }, 0, 9, 0);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/awt/Frame;I)Lclient!cc;")
+	public PrivilegedRequest exitFullScreen(@OriginalArg(0) Frame arg0) {
+		return this.enqueue(arg0, 0, 7, 0);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "b", descriptor = "(I)Lclient!fc;")
+	public AudioSource getAudioSource() {
+		return this.audioSource;
+	}
+
+	@OriginalMember(owner = "client!ml", name = "c", descriptor = "(I)Z")
+	public boolean method3765() {
+		return false;
+	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(ZLjava/net/URL;)Lclient!cc;")
+	public PrivilegedRequest openUrlStream(@OriginalArg(1) URL arg0) {
+		return this.enqueue(arg0, 0, 4, 0);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(Ljava/lang/Object;IIII)Lclient!cc;")
+	private PrivilegedRequest enqueue(@OriginalArg(0) Object arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
+		@Pc(3) PrivilegedRequest local3 = new PrivilegedRequest();
+		local3.objectArg = arg0;
+		local3.type = arg2;
+		local3.intArg1 = arg1;
+		synchronized (this) {
+			if (this.requestQueueTail == null) {
+				this.requestQueueTail = this.requestQueueHead = local3;
+			} else {
+				this.requestQueueTail.next = local3;
+				this.requestQueueTail = local3;
+			}
+			this.notify();
+			return local3;
+		}
+	}
+
+	@OriginalMember(owner = "client!ml", name = "d", descriptor = "(I)V")
+	public void stop() {
+		synchronized (this) {
+			this.stop = true;
+			this.notifyAll();
+		}
+		try {
+			this.thread.join();
+		} catch (@Pc(24) InterruptedException local24) {
+		}
+		if (this.cacheData != null) {
+			try {
+				this.cacheData.close();
+			} catch (@Pc(33) IOException local33) {
+			}
+		}
+		if (this.cacheMasterIndex != null) {
+			try {
+				this.cacheMasterIndex.close();
+			} catch (@Pc(43) IOException local43) {
+			}
+		}
+		if (this.cacheIndexes != null) {
+			for (@Pc(49) int local49 = 0; local49 < this.cacheIndexes.length; local49++) {
+				if (this.cacheIndexes[local49] != null) {
+					try {
+						this.cacheIndexes[local49].close();
+					} catch (@Pc(63) IOException local63) {
+					}
+				}
+			}
+		}
+		if (this.uid != null) {
+			try {
+				this.uid.close();
+			} catch (@Pc(79) IOException local79) {
+			}
+		}
+	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(IILjava/lang/Runnable;)Lclient!cc;")
+	public PrivilegedRequest startThread(@OriginalArg(0) int arg0, @OriginalArg(2) Runnable arg1) {
+		return this.enqueue(arg1, arg0, 2, 0);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "a", descriptor = "(ILjava/awt/Point;I[ILjava/awt/Component;I)Lclient!cc;")
+	public PrivilegedRequest setCursor(@OriginalArg(0) int arg0, @OriginalArg(1) Point arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) Component arg3, @OriginalArg(5) int arg4) {
+		return this.enqueue(new Object[] { arg3, arg2, arg1 }, arg0, 17, arg4);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "c", descriptor = "(ILjava/lang/Class;)Lclient!cc;")
+	public PrivilegedRequest unloadNatives(@OriginalArg(1) Class arg0) {
+		return this.enqueue(arg0, 0, 11, 0);
+	}
+
+	@OriginalMember(owner = "client!ml", name = "c", descriptor = "(B)Lclient!cc;")
+	public PrivilegedRequest getDisplayModes() {
+		return this.enqueue(null, 0, 5, 0);
+	}
+
 }

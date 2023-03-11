@@ -7,7 +7,7 @@ public final class Static328 {
 	public static int anInt6127;
 
 	@OriginalMember(owner = "client!tb", name = "W", descriptor = "Lclient!ml;")
-	public static SignedLink aClass152_5;
+	public static Signlink aClass152_5;
 
 	@OriginalMember(owner = "client!tb", name = "B", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_127 = new Class79(" more options", " weitere Optionen", " autres options", " mais opções");

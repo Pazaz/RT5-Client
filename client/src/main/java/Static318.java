@@ -27,10 +27,10 @@ public final class Static318 {
 			}
 			if (local16.status == 1) {
 				local12 = (FileOnDisk) local16.result;
-				@Pc(40) byte[] local40 = new byte[(int) local12.method5196()];
+				@Pc(40) byte[] local40 = new byte[(int) local12.length()];
 				@Pc(55) int local55;
 				for (@Pc(42) int local42 = 0; local42 < local40.length; local42 += local55) {
-					local55 = local12.method5194(local40.length - local42, local42, local40);
+					local55 = local12.read(local40.length - local42, local42, local40);
 					if (local55 == -1) {
 						throw new IOException("EOF");
 					}

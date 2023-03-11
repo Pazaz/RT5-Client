@@ -420,7 +420,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private final Class2_Sub38_Sub1 aClass2_Sub38_Sub1_1;
 
 	@OriginalMember(owner = "client!bf", name = "<init>", descriptor = "(Ljava/awt/Canvas;Lclient!ci;IILclient!ml;)V")
-	public Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface2 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) SignedLink arg4) {
+	public Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface2 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Signlink arg4) {
 		super(arg2, arg1);
 		this.aCanvas2 = arg0;
 		@Pc(185) int local185 = 0;
@@ -931,7 +931,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		if (this.anInt597 < 2 || this.anInt622 < 2 || this.anInt589 < 2) {
 			local1 |= 0x10;
 		}
-		if (SignedLink.osName != null) {
+		if (Signlink.osName != null) {
 		}
 		this.aBoolean47 = false;
 		this.aBoolean53 = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;

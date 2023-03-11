@@ -14,7 +14,7 @@ public final class Class177_Sub1 extends Class177 {
 	public boolean aBoolean366 = false;
 
 	@OriginalMember(owner = "client!pe", name = "<init>", descriptor = "(Lclient!ml;)V")
-	public Class177_Sub1(@OriginalArg(0) SignedLink arg0) {
+	public Class177_Sub1(@OriginalArg(0) Signlink arg0) {
 		super.anInt4879 = 3;
 		this.method4493(true);
 		super.anInt4888 = 127;
@@ -59,10 +59,10 @@ public final class Class177_Sub1 extends Class177 {
 			}
 			if (local129.status == 1) {
 				local125 = (FileOnDisk) local129.result;
-				@Pc(153) byte[] local153 = new byte[(int) local125.method5196()];
+				@Pc(153) byte[] local153 = new byte[(int) local125.length()];
 				@Pc(168) int local168;
 				for (@Pc(155) int local155 = 0; local155 < local153.length; local155 += local168) {
-					local168 = local125.method5194(local153.length - local155, local155, local153);
+					local168 = local125.read(local153.length - local155, local155, local153);
 					if (local168 == -1) {
 						throw new IOException("EOF");
 					}
@@ -149,7 +149,7 @@ public final class Class177_Sub1 extends Class177 {
 	}
 
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(ILclient!ml;)V")
-	public void method4497(@OriginalArg(1) SignedLink arg0) {
+	public void method4497(@OriginalArg(1) Signlink arg0) {
 		@Pc(7) FileOnDisk local7 = null;
 		try {
 			@Pc(17) PrivilegedRequest local17 = arg0.openPreferences();
@@ -159,7 +159,7 @@ public final class Class177_Sub1 extends Class177 {
 			if (local17.status == 1) {
 				local7 = (FileOnDisk) local17.result;
 				@Pc(39) Class2_Sub4 local39 = this.method4494();
-				local7.method5195(local39.aByteArray73, local39.anInt5300, 0);
+				local7.write(local39.aByteArray73, local39.anInt5300, 0);
 			}
 		} catch (@Pc(49) Exception local49) {
 		}

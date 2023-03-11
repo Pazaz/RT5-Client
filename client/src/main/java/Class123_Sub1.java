@@ -100,7 +100,7 @@ public final class Class123_Sub1 extends Class123 implements KeyListener, FocusL
 	private void method3350(@OriginalArg(0) Component arg0) {
 		this.method3351();
 		this.aComponent2 = arg0;
-		@Pc(11) Method local11 = SignedLink.setFocusTraversalKeysEnabled;
+		@Pc(11) Method local11 = Signlink.setFocusTraversalKeysEnabled;
 		if (local11 != null) {
 			try {
 				local11.invoke(this.aComponent2, Boolean.FALSE);

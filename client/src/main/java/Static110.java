@@ -17,7 +17,7 @@ public final class Static110 {
 	public static final Class145 aClass145_84 = new Class145(3, 7);
 
 	@OriginalMember(owner = "client!gd", name = "a", descriptor = "(Lclient!ml;I)[Lclient!oi;")
-	public static Class169[] method2265(@OriginalArg(0) SignedLink arg0) {
+	public static Class169[] method2265(@OriginalArg(0) Signlink arg0) {
 		if (!arg0.method3765()) {
 			return new Class169[0];
 		}

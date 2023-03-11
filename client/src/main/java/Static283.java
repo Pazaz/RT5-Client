@@ -29,7 +29,7 @@ public final class Static283 {
 	}
 
 	@OriginalMember(owner = "client!qh", name = "a", descriptor = "(Lclient!ml;Ljava/lang/Object;I)V")
-	public static void method4876(@OriginalArg(0) SignedLink arg0, @OriginalArg(1) Object arg1) {
+	public static void method4876(@OriginalArg(0) Signlink arg0, @OriginalArg(1) Object arg1) {
 		if (arg0.eventQueue == null) {
 			return;
 		}

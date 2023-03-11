@@ -15,7 +15,7 @@ public final class Static387 {
 	public static final Class89 aClass89_120 = new Class89(20, 6);
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(IILclient!ml;Lclient!ci;Ljava/awt/Canvas;I)Lclient!wm;")
-	public static synchronized Class19 method2822(@OriginalArg(1) int arg0, @OriginalArg(2) SignedLink arg1, @OriginalArg(3) Interface2 arg2, @OriginalArg(4) Canvas arg3, @OriginalArg(5) int arg4) {
+	public static synchronized Class19 method2822(@OriginalArg(1) int arg0, @OriginalArg(2) Signlink arg1, @OriginalArg(3) Interface2 arg2, @OriginalArg(4) Canvas arg3, @OriginalArg(5) int arg4) {
 		@Pc(7) int local7 = -1;
 		for (@Pc(17) int local17 = 0; local17 < 8; local17++) {
 			if (!Static168.aBooleanArray67[local17]) {

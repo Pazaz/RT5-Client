@@ -10,7 +10,7 @@ public final class Class221_Sub2 extends Class221 {
 	private final int anInt7104;
 
 	@OriginalMember(owner = "client!wb", name = "<init>", descriptor = "(Lclient!ml;I)V")
-	public Class221_Sub2(@OriginalArg(0) SignedLink arg0, @OriginalArg(1) int arg1) {
+	public Class221_Sub2(@OriginalArg(0) Signlink arg0, @OriginalArg(1) int arg1) {
 		Static379.anInterface3_2 = arg0.getAudioSource();
 		this.anInt7104 = arg1;
 	}

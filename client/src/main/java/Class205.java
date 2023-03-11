@@ -45,7 +45,7 @@ public final class Class205 {
 	@OriginalMember(owner = "client!rn", name = "<init>", descriptor = "(Lclient!rl;II)V")
 	public Class205(@OriginalArg(0) FileOnDisk arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) throws IOException {
 		this.aClass204_4 = arg0;
-		this.aLong173 = this.aLong172 = arg0.method5196();
+		this.aLong173 = this.aLong172 = arg0.length();
 		this.aByteArray75 = new byte[arg1];
 		this.aByteArray74 = new byte[arg2];
 		this.aLong168 = 0L;
@@ -79,10 +79,10 @@ public final class Class205 {
 			}
 			if (arg2 > this.aByteArray74.length) {
 				if (this.aLong168 != this.aLong169) {
-					this.aClass204_4.method5197(this.aLong168);
+					this.aClass204_4.seek(this.aLong168);
 					this.aLong169 = this.aLong168;
 				}
-				this.aClass204_4.method5195(arg1, arg2, arg0);
+				this.aClass204_4.write(arg1, arg2, arg0);
 				this.aLong169 += arg2;
 				if (this.aLong169 > this.aLong172) {
 					this.aLong172 = this.aLong169;
@@ -124,7 +124,7 @@ public final class Class205 {
 	private void method5216() throws IOException {
 		this.anInt5728 = 0;
 		if (this.aLong168 != this.aLong169) {
-			this.aClass204_4.method5197(this.aLong168);
+			this.aClass204_4.seek(this.aLong168);
 			this.aLong169 = this.aLong168;
 		}
 		this.aLong170 = this.aLong168;
@@ -133,7 +133,7 @@ public final class Class205 {
 			if (local49 > 200000000) {
 				local49 = 200000000;
 			}
-			@Pc(66) int local66 = this.aClass204_4.method5194(local49, this.anInt5728, this.aByteArray75);
+			@Pc(66) int local66 = this.aClass204_4.read(local49, this.anInt5728, this.aByteArray75);
 			if (local66 == -1) {
 				break;
 			}
@@ -144,7 +144,7 @@ public final class Class205 {
 
 	@OriginalMember(owner = "client!rn", name = "a", descriptor = "(I)Ljava/io/File;")
 	private File method5217() {
-		return this.aClass204_4.method5198();
+		return this.aClass204_4.getFile();
 	}
 
 	@OriginalMember(owner = "client!rn", name = "b", descriptor = "(B)J")
@@ -158,10 +158,10 @@ public final class Class205 {
 			return;
 		}
 		if (this.aLong169 != this.aLong171) {
-			this.aClass204_4.method5197(this.aLong171);
+			this.aClass204_4.seek(this.aLong171);
 			this.aLong169 = this.aLong171;
 		}
-		this.aClass204_4.method5195(this.aByteArray74, this.anInt5724, 0);
+		this.aClass204_4.write(this.aByteArray74, this.anInt5724, 0);
 		this.aLong169 += this.anInt5724;
 		if (this.aLong172 < this.aLong169) {
 			this.aLong172 = this.aLong169;
@@ -216,10 +216,10 @@ public final class Class205 {
 				arg2 -= local119;
 			}
 			if (this.aByteArray75.length < arg2) {
-				this.aClass204_4.method5197(this.aLong168);
+				this.aClass204_4.seek(this.aLong168);
 				this.aLong169 = this.aLong168;
 				while (arg2 > 0) {
-					local119 = this.aClass204_4.method5194(arg2, arg1, arg0);
+					local119 = this.aClass204_4.read(arg2, arg1, arg0);
 					if (local119 == -1) {
 						break;
 					}
