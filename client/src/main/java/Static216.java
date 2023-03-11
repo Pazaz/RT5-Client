@@ -4,20 +4,11 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static216 {
 
-	@OriginalMember(owner = "client!mm", name = "b", descriptor = "Lclient!r;")
-	public static Class197 aClass197_57;
-
-	@OriginalMember(owner = "client!mm", name = "j", descriptor = "Lclient!r;")
-	public static Class197 aClass197_58;
-
 	@OriginalMember(owner = "client!mm", name = "c", descriptor = "[I")
 	public static final int[] anIntArray231 = new int[3];
 
 	@OriginalMember(owner = "client!mm", name = "f", descriptor = "I")
 	public static int anInt3798 = 0;
-
-	@OriginalMember(owner = "client!mm", name = "h", descriptor = "I")
-	public static int anInt3800 = 0;
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(IIII)V")
 	public static void method3774(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
@@ -93,7 +84,7 @@ public final class Static216 {
 			if (Static237.anIntArray283[local7] >= -10) {
 				@Pc(90) Class247 local90 = Static196.aClass247Array2[local7];
 				if (local90 == null) {
-					local90 = Static409.method6435(Static85.aClass197_21, Static256.anIntArray321[local7], 0);
+					local90 = Static409.method6435(client.jsArchive4, Static256.anIntArray321[local7], 0);
 					if (local90 == null) {
 						continue;
 					}
@@ -103,7 +94,7 @@ public final class Static216 {
 				if (Static237.anIntArray283[local7] < 0) {
 					@Pc(143) int local143;
 					if (Static162.anIntArray188[local7] == 0) {
-						local143 = Static218.aClass177_Sub1_2.anInt4888 * Static223.anIntArray256[local7] >> 8;
+						local143 = client.preferences.anInt4888 * Static223.anIntArray256[local7] >> 8;
 					} else {
 						@Pc(133) int local133 = Static162.anIntArray188[local7] >> 24 & 0x3;
 						if (Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 == local133) {
@@ -126,7 +117,7 @@ public final class Static216 {
 							if (local211 < 0) {
 								local211 = 0;
 							}
-							local143 = Static223.anIntArray256[local7] * (local153 - local211) * Static218.aClass177_Sub1_2.anInt4882 / local153 >> 8;
+							local143 = Static223.anIntArray256[local7] * (local153 - local211) * client.preferences.anInt4882 / local153 >> 8;
 						} else {
 							local143 = 0;
 						}
@@ -153,11 +144,11 @@ public final class Static216 {
 			}
 		}
 		if (Static393.aBoolean486 && !Static64.method1704()) {
-			if (Static218.aClass177_Sub1_2.anInt4889 != 0 && Static171.anInt3268 != -1) {
-				Static94.method2042(Static218.aClass177_Sub1_2.anInt4889, Static171.anInt3268, Static101.aClass197_23);
+			if (client.preferences.anInt4889 != 0 && Static171.anInt3268 != -1) {
+				Static94.method2042(client.preferences.anInt4889, Static171.anInt3268, client.jsArchive6);
 			}
 			Static393.aBoolean486 = false;
-		} else if (Static218.aClass177_Sub1_2.anInt4889 != 0 && Static171.anInt3268 != -1 && !Static64.method1704()) {
+		} else if (client.preferences.anInt4889 != 0 && Static171.anInt3268 != -1 && !Static64.method1704()) {
 			Static91.method1960(Static67.aClass145_56);
 			Protocol.outboundBuffer.p4(Static171.anInt3268);
 			Static171.anInt3268 = -1;

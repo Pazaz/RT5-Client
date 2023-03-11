@@ -10,9 +10,6 @@ public final class Static182 {
 	@OriginalMember(owner = "client!kk", name = "i", descriptor = "[I")
 	public static int[] anIntArray205;
 
-	@OriginalMember(owner = "client!kk", name = "a", descriptor = "I")
-	public static int anInt3420 = 0;
-
 	@OriginalMember(owner = "client!kk", name = "d", descriptor = "I")
 	public static int anInt3423 = 0;
 
@@ -45,7 +42,7 @@ public final class Static182 {
 			}
 			Static288.anInt5463 += local70;
 		}
-		if (!Static218.aClass177_Sub1_2.aBoolean351) {
+		if (!client.preferences.aBoolean351) {
 			Static31.aFloat28 += (float) arg0 * Static296.aFloat68 / 6.0F;
 			Static277.aFloat67 += Static184.aFloat39 * (float) arg0 / 6.0F;
 		}

@@ -66,7 +66,7 @@ public final class Class202 {
 	}
 
 	@OriginalMember(owner = "client!rh", name = "a", descriptor = "(BZ)V")
-	public void method5157(@OriginalArg(1) boolean arg0) {
+	public void setAllowMembers(@OriginalArg(1) boolean arg0) {
 		if (arg0 != this.aBoolean401) {
 			this.aBoolean401 = arg0;
 			this.method5159();

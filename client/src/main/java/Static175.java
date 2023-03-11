@@ -24,9 +24,9 @@ public final class Static175 {
 
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(IIII)V")
 	public static void method3324(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(15) int local15 = arg2 * Static218.aClass177_Sub1_2.anInt4889 >> 8;
+		@Pc(15) int local15 = arg2 * client.preferences.anInt4889 >> 8;
 		if (local15 != 0 && arg0 != -1) {
-			Static94.method2042(local15, arg0, Static216.aClass197_58);
+			Static94.method2042(local15, arg0, client.jsArchive11);
 			Static393.aBoolean486 = true;
 		}
 	}

@@ -92,7 +92,7 @@ public final class Class219 {
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(ZB)V")
-	public void method5573(@OriginalArg(0) boolean arg0) {
+	public void setAllowMembers(@OriginalArg(0) boolean arg0) {
 		if (arg0 != this.aBoolean410) {
 			this.aBoolean410 = arg0;
 			this.method5571();

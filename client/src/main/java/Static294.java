@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static294 {
 
-	@OriginalMember(owner = "client!qt", name = "v", descriptor = "Lclient!r;")
-	public static Class197 aClass197_75;
-
 	@OriginalMember(owner = "client!qt", name = "u", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_117 = new Class79("Loading world list data", "Lade Liste der Welten", "Chargement de la liste des serveurs", "Carregando dados da lista de mundos");
 

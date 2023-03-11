@@ -170,7 +170,7 @@ public final class Class107 {
 	}
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(ZB)V")
-	public void method2762(@OriginalArg(0) boolean arg0) {
+	public void setAllowMembers(@OriginalArg(0) boolean arg0) {
 		if (this.aBoolean195 != arg0) {
 			this.aBoolean195 = arg0;
 			this.method2761();

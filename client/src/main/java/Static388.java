@@ -65,15 +65,15 @@ public final class Static388 {
 		local13 += 8;
 		local24 = Static268.anInt4959 * 16 + 21;
 		@Pc(54) int local54 = arg0 - local13 / 2;
-		if (local54 + local13 > Static250.anInt4665) {
-			local54 = Static250.anInt4665 - local13;
+		if (local54 + local13 > GameShell.canvasWidth) {
+			local54 = GameShell.canvasWidth - local13;
 		}
 		if (local54 < 0) {
 			local54 = 0;
 		}
 		@Pc(77) int local77 = arg1;
-		if (Static172.anInt3299 < local24 + arg1) {
-			local77 = Static172.anInt3299 - local24;
+		if (GameShell.canvasHeight < local24 + arg1) {
+			local77 = GameShell.canvasHeight - local24;
 		}
 		if (local77 < 0) {
 			local77 = 0;

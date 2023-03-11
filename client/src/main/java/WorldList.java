@@ -65,8 +65,8 @@ public class WorldList {
 				port = ":" + (world.id + 7000);
 			}
 			@Pc(55) String settings = "";
-			if (Static74.settings != null) {
-				settings = "/p=" + Static74.settings;
+			if (client.settings != null) {
+				settings = "/p=" + client.settings;
 			}
 			@Pc(109) String local109 = "http://" + world.hostname + port + "/l=" + client.language + "/a=" + client.affiliate + settings + "/j" + (Static276.javaScript ? "1" : "0") + ",o" + (Static237.objectTag ? "1" : "0") + ",a2";
 			try {

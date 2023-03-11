@@ -502,13 +502,13 @@ public final class Class29_Sub1 extends Class29 {
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(IIIIIIILclient!wm;Lclient!dg;II)V")
 	public void method1105(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) Class46 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
-		if (!Static218.aClass177_Sub1_2.method4495(Static77.anInt1762) && !Static142.method2661(arg2, Static44.anInt1115, arg4, arg1)) {
+		if (!client.preferences.method4495(Static77.anInt1762) && !Static142.method2661(arg2, Static44.anInt1115, arg4, arg1)) {
 			return;
 		}
 		if (arg5 < this.anInt922) {
 			this.anInt922 = arg5;
 		}
-		@Pc(30) Class41 local30 = Static359.aClass202_4.method5163(arg3);
+		@Pc(30) Class41 local30 = Static359.LocTypeList.method5163(arg3);
 		if (Static77.anInt1762 == 1 && local30.aBoolean112) {
 			return;
 		}
@@ -828,7 +828,7 @@ public final class Class29_Sub1 extends Class29 {
 									local1893 = 16;
 									local1899 = (Interface6) Static12.method283(arg5, arg1, arg2);
 									if (local1899 != null) {
-										local1893 = Static359.aClass202_4.method5163(local1899.method6085()).anInt1340;
+										local1893 = Static359.LocTypeList.method5163(local1899.method6085()).anInt1340;
 									}
 									if (local220) {
 										local1965 = new Class11_Sub3_Sub2(arg6, local30, arg4, local166, local158, local174, super.aBoolean73, 0, Static325.anIntArray413[arg0] * local1893, local1893 * Static148.anIntArray172[arg0], arg8, arg0);
@@ -849,7 +849,7 @@ public final class Class29_Sub1 extends Class29 {
 									local1893 = 8;
 									local1899 = (Interface6) Static12.method283(arg5, arg1, arg2);
 									if (local1899 != null) {
-										local1893 = Static359.aClass202_4.method5163(local1899.method6085()).anInt1340 / 2;
+										local1893 = Static359.LocTypeList.method5163(local1899.method6085()).anInt1340 / 2;
 									}
 									if (local220) {
 										local1965 = new Class11_Sub3_Sub2(arg6, local30, arg4, local166, local158, local174, super.aBoolean73, arg0, Static325.anIntArray413[arg0] * local1893, local1893 * Static148.anIntArray172[arg0], arg8, arg0 + 4);
@@ -888,7 +888,7 @@ public final class Class29_Sub1 extends Class29 {
 									@Pc(2204) int local2204 = 8;
 									@Pc(2210) Interface6 local2210 = (Interface6) Static12.method283(arg5, arg1, arg2);
 									if (local2210 != null) {
-										local2204 = Static359.aClass202_4.method5163(local2210.method6085()).anInt1340 / 2;
+										local2204 = Static359.LocTypeList.method5163(local2210.method6085()).anInt1340 / 2;
 									}
 									@Pc(2251) Class11_Sub3 local2251;
 									@Pc(2270) Class11_Sub3 local2270;
@@ -912,7 +912,7 @@ public final class Class29_Sub1 extends Class29 {
 					}
 				}
 			}
-		} else if (Static218.aClass177_Sub1_2.aBoolean359 || local30.anInt1335 != 0 || local30.anInt1324 == 1 || local30.aBoolean117) {
+		} else if (client.preferences.aBoolean359 || local30.anInt1335 != 0 || local30.anInt1324 == 1 || local30.aBoolean117) {
 			@Pc(266) Class11_Sub2 local266;
 			if (local220) {
 				@Pc(264) Class11_Sub2_Sub1 local264 = new Class11_Sub2_Sub1(arg6, local30, arg4, local166, local158, local174, super.aBoolean73, arg0, local186);
@@ -959,7 +959,7 @@ public final class Class29_Sub1 extends Class29 {
 				@Pc(62) int local62 = local58 >> 2;
 				@Pc(66) int local66 = local58 & 0x3;
 				if (arg1 == local54 && local50 >= arg3 && arg3 + 8 > local50 && arg9 <= local44 && arg9 + 8 > local44) {
-					@Pc(98) Class41 local98 = Static359.aClass202_4.method5163(local16);
+					@Pc(98) Class41 local98 = Static359.LocTypeList.method5163(local16);
 					@Pc(115) int local115 = arg5 + Static50.method1528(local50 & 0x7, arg0, local66, local98.anInt1356, local98.anInt1327, local44 & 0x7);
 					@Pc(132) int local132 = arg8 + Static33.method4205(arg0, local66, local50 & 0x7, local98.anInt1356, local44 & 0x7, local98.anInt1327);
 					if (local115 > 0 && local132 > 0 && super.anInt900 - 1 > local115 && local132 < super.anInt911 - 1) {
@@ -998,7 +998,7 @@ public final class Class29_Sub1 extends Class29 {
 		if (local7 == null) {
 			return;
 		}
-		@Pc(70) Class41 local70 = Static359.aClass202_4.method5163(local7.method6085());
+		@Pc(70) Class41 local70 = Static359.LocTypeList.method5163(local7.method6085());
 		@Pc(74) int local74 = local7.method6081();
 		@Pc(78) int local78 = local7.method6084();
 		if (local70.method1522()) {

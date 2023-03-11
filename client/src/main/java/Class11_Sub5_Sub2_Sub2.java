@@ -189,7 +189,7 @@ public final class Class11_Sub5_Sub2_Sub2 extends Class11_Sub5_Sub2 {
 		local17.method3936(super.anInt6781, super.anInt6782, super.anInt6783);
 		@Pc(37) Class222 local37 = this.method4332();
 		@Pc(50) Class71 local50 = this.aClass71_1.anIntArray129 == null ? this.aClass71_1 : this.aClass71_1.method2093(Static214.aClass226_1);
-		if (Static218.aClass177_Sub1_2.aBoolean358 && local50.aBoolean142 && local37.aBoolean424) {
+		if (client.preferences.aBoolean358 && local50.aBoolean142 && local37.aBoolean424) {
 			@Pc(75) Class157 local75 = super.anInt4597 != -1 && super.anInt4590 == 0 ? Static39.aClass85_1.method2371(super.anInt4597) : null;
 			@Pc(92) Class157 local92 = super.anInt4585 == -1 || super.aBoolean317 && local75 != null ? null : Static39.aClass85_1.method2371(super.anInt4585);
 			@Pc(144) Class31 local144 = Static178.method2340(local92 == null ? super.anInt4607 : super.anInt4626, this.aClass71_1.aByte15 & 0xFF, this.aClass71_1.aByte14 & 0xFF, super.anInt4596, local92 == null ? local75 : local92, this.aClass71_1.anInt2041, this.aClass71_1.aShort25 & 0xFFFF, super.aClass31Array3[0], local22, arg0, this.aClass71_1.aShort24 & 0xFFFF, super.aBoolean318, super.anInt4608, super.anInt4589);

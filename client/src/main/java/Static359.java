@@ -10,7 +10,7 @@ public final class Static359 {
 	public static int anInt6702;
 
 	@OriginalMember(owner = "client!us", name = "S", descriptor = "Lclient!rh;")
-	public static Class202 aClass202_4;
+	public static Class202 LocTypeList;
 
 	@OriginalMember(owner = "client!us", name = "V", descriptor = "[[[B")
 	public static byte[][][] aByteArrayArrayArray16;

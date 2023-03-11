@@ -22,4 +22,7 @@ public class Protocol {
 	@OriginalMember(owner = "client!ti", name = "A", descriptor = "Lclient!iu;")
 	public static Class111 socket;
 
+	@OriginalMember(owner = "client!qr", name = "n", descriptor = "I")
+	public static int verifyId = 0;
+
 }

@@ -53,7 +53,7 @@ public final class Static161 {
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(Ljava/lang/String;ZZ)V")
 	public static void method2972(@OriginalArg(0) String arg0, @OriginalArg(1) boolean arg1) {
-		if (client.MODE_WHERE_LIVE == client.modeWhere && Static4.anInt90 < 2) {
+		if (client.MODE_WHERE_LIVE == client.modeWhere && LoginManager.staffModLevel < 2) {
 			return;
 		}
 		if (arg0.equalsIgnoreCase("errortest")) {
@@ -116,11 +116,11 @@ public final class Static161 {
 			}
 			if (arg0.equalsIgnoreCase("clientdrop")) {
 				Static158.method2940("Dropped client connection");
-				if (Static347.anInt6442 == 30) {
+				if (LoginManager.reconnecting == 30) {
 					Static211.method3725();
 					return;
 				}
-				if (Static347.anInt6442 == 25) {
+				if (LoginManager.reconnecting == 25) {
 					Static101.aBoolean158 = true;
 				}
 				return;
@@ -150,7 +150,7 @@ public final class Static161 {
 			}
 			if (arg0.equalsIgnoreCase("wm1")) {
 				Static143.method2677(-1, 1, false, -1);
-				if (Static144.method2692() == 1) {
+				if (Static144.getWindowMode() == 1) {
 					Static158.method2940("wm1 succeeded");
 					return;
 				}
@@ -159,7 +159,7 @@ public final class Static161 {
 			}
 			if (arg0.equalsIgnoreCase("wm2")) {
 				Static143.method2677(-1, 2, false, -1);
-				if (Static144.method2692() == 2) {
+				if (Static144.getWindowMode() == 2) {
 					Static158.method2940("wm2 succeeded");
 					return;
 				}
@@ -168,7 +168,7 @@ public final class Static161 {
 			}
 			if (arg0.equalsIgnoreCase("wm3")) {
 				Static143.method2677(768, 3, false, 1024);
-				if (Static144.method2692() == 3) {
+				if (Static144.getWindowMode() == 3) {
 					Static158.method2940("wm3 succeeded");
 					return;
 				}
@@ -179,9 +179,9 @@ public final class Static161 {
 				Static78.method5701(0);
 				if (Static77.anInt1762 == 0) {
 					Static158.method2940("Entered tk0");
-					Static218.aClass177_Sub1_2.anInt4878 = 0;
-					Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
-					Static236.aBoolean288 = false;
+					client.preferences.anInt4878 = 0;
+					client.preferences.method4497(GameShell.signlink);
+					Preferences.sentToServer = false;
 					return;
 				}
 				Static158.method2940("Failed to enter tk0");
@@ -194,9 +194,9 @@ public final class Static161 {
 					return;
 				}
 				Static158.method2940("Entered tk1");
-				Static218.aClass177_Sub1_2.anInt4878 = 1;
-				Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
-				Static236.aBoolean288 = false;
+				client.preferences.anInt4878 = 1;
+				client.preferences.method4497(GameShell.signlink);
+				Preferences.sentToServer = false;
 				return;
 			}
 			if (arg0.equalsIgnoreCase("tk2")) {
@@ -206,9 +206,9 @@ public final class Static161 {
 					return;
 				}
 				Static158.method2940("Entered tk2");
-				Static218.aClass177_Sub1_2.anInt4878 = 2;
-				Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
-				Static236.aBoolean288 = false;
+				client.preferences.anInt4878 = 2;
+				client.preferences.method4497(GameShell.signlink);
+				Preferences.sentToServer = false;
 				return;
 			}
 			if (arg0.equalsIgnoreCase("tk3")) {
@@ -221,19 +221,19 @@ public final class Static161 {
 				return;
 			}
 			if (arg0.equalsIgnoreCase("ot")) {
-				Static218.aClass177_Sub1_2.aBoolean355 = !Static218.aClass177_Sub1_2.aBoolean355;
-				Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
-				Static236.aBoolean288 = false;
+				client.preferences.aBoolean355 = !client.preferences.aBoolean355;
+				client.preferences.method4497(GameShell.signlink);
+				Preferences.sentToServer = false;
 				Static347.method5827();
-				Static158.method2940("ot=" + Static218.aClass177_Sub1_2.aBoolean355);
+				Static158.method2940("ot=" + client.preferences.aBoolean355);
 				return;
 			}
 			if (arg0.equalsIgnoreCase("gb")) {
-				Static218.aClass177_Sub1_2.aBoolean357 = !Static218.aClass177_Sub1_2.aBoolean357;
-				Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
-				Static236.aBoolean288 = false;
+				client.preferences.aBoolean357 = !client.preferences.aBoolean357;
+				client.preferences.method4497(GameShell.signlink);
+				Preferences.sentToServer = false;
 				Static347.method5827();
-				Static158.method2940("gb=" + Static218.aClass177_Sub1_2.aBoolean357);
+				Static158.method2940("gb=" + client.preferences.aBoolean357);
 				return;
 			}
 			if (arg0.startsWith("shadows")) {
@@ -244,9 +244,9 @@ public final class Static161 {
 				@Pc(521) String local521 = arg0.substring(8);
 				@Pc(531) int local531 = Static132.method2485(local521) ? Static146.method2698(local521) : -1;
 				if (local531 >= 0 && local531 <= 2) {
-					Static218.aClass177_Sub1_2.anInt4886 = local531;
-					Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
-					Static236.aBoolean288 = false;
+					client.preferences.anInt4886 = local531;
+					client.preferences.method4497(GameShell.signlink);
+					Preferences.sentToServer = false;
 					Static347.method5827();
 					Static158.method2940("shadows=" + local531);
 					return;
@@ -261,10 +261,10 @@ public final class Static161 {
 				}
 				local76 = Static146.method2698(arg0.substring(6));
 				if (local76 >= 0 && local76 <= Static289.method5019(Static309.anInt5802)) {
-					Static218.aClass177_Sub1_2.anInt4883 = local76;
-					Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
-					Static236.aBoolean288 = false;
-					Static158.method2940("maxbuildarea=" + Static218.aClass177_Sub1_2.anInt4883);
+					client.preferences.anInt4883 = local76;
+					client.preferences.method4497(GameShell.signlink);
+					Preferences.sentToServer = false;
+					Static158.method2940("maxbuildarea=" + client.preferences.anInt4883);
 					return;
 				}
 				Static158.method2940("Invalid buildarea value");
@@ -276,8 +276,8 @@ public final class Static161 {
 					return;
 				}
 				Static26.method864(Static146.method2698(arg0.substring(13)));
-				Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
-				Static236.aBoolean288 = false;
+				client.preferences.method4497(GameShell.signlink);
+				Preferences.sentToServer = false;
 				Static158.method2940("particles=" + Static184.method3391());
 				return;
 			}
@@ -342,8 +342,8 @@ public final class Static161 {
 				return;
 			}
 			if (arg0.equalsIgnoreCase("resetminimap")) {
-				Static30.aClass197_5.method5090();
-				Static30.aClass197_5.method5068();
+				client.jsArchive8.method5090();
+				client.jsArchive8.method5068();
 				Static320.aClass104_2.method2707();
 				Static236.aClass125_1.method3380();
 				Static247.method4299();
@@ -370,7 +370,7 @@ public final class Static161 {
 			if (arg0.startsWith("cachespace")) {
 				Static158.method2940("I(s): " + Static335.aClass98_57.method2616() + "/" + Static335.aClass98_57.method2620());
 				Static158.method2940("I(m): " + Static124.aClass98_63.method2616() + "/" + Static124.aClass98_63.method2620());
-				Static158.method2940("O(s): " + Static313.aClass107_2.aClass97_1.method2587() + "/" + Static313.aClass107_2.aClass97_1.method2592());
+				Static158.method2940("O(s): " + Static313.ObjTypeList.aClass97_1.method2587() + "/" + Static313.ObjTypeList.aClass97_1.method2592());
 				return;
 			}
 			if (arg0.equalsIgnoreCase("getcamerapos")) {
@@ -453,9 +453,9 @@ public final class Static161 {
 			if (arg0.startsWith("cpuusage")) {
 				local76 = Integer.parseInt(arg0.substring(9));
 				if (local76 >= 0 && local76 <= 4) {
-					Static218.aClass177_Sub1_2.anInt4881 = local76;
+					client.preferences.anInt4881 = local76;
 				}
-				Static158.method2940("cpuusage=" + Static218.aClass177_Sub1_2.anInt4881);
+				Static158.method2940("cpuusage=" + client.preferences.anInt4881);
 				return;
 			}
 			if (arg0.startsWith("getclientvarpbit")) {
@@ -468,7 +468,7 @@ public final class Static161 {
 				Static158.method2940("varp=" + Static214.aClass226_1.method5777(local76));
 				return;
 			}
-			if (Static347.anInt6442 == 30) {
+			if (LoginManager.reconnecting == 30) {
 				Static91.method1960(Static243.aClass145_162);
 				Protocol.outboundBuffer.p1(arg0.length() + 2);
 				Protocol.outboundBuffer.p1(arg1 ? 1 : 0);
@@ -478,7 +478,7 @@ public final class Static161 {
 				Static250.method4346(Static146.method2698(arg0.substring(4)));
 				return;
 			}
-			if (Static347.anInt6442 != 30) {
+			if (LoginManager.reconnecting != 30) {
 				Static158.method2940("Unrecogonised commmand when not logged in: " + arg0);
 				return;
 			}
@@ -491,7 +491,7 @@ public final class Static161 {
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(BZ)V")
 	public static void method2973(@OriginalArg(1) boolean arg0) {
 		Static37.method1135();
-		if (Static347.anInt6442 != 30 && Static347.anInt6442 != 25) {
+		if (LoginManager.reconnecting != 30 && LoginManager.reconnecting != 25) {
 			return;
 		}
 		Static367.anInt6876++;

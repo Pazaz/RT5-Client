@@ -30,7 +30,7 @@ public final class Static242 {
 		}
 		@Pc(21) Class13 local21 = (Class13) Static61.aClass98_5.method2612((long) local7);
 		if (local21 == null) {
-			@Pc(28) Class48[] local28 = Static396.method1688(Static30.aClass197_5, local7);
+			@Pc(28) Class48[] local28 = Static396.method1688(client.jsArchive8, local7);
 			if (local28 == null) {
 				return;
 			}

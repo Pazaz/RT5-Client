@@ -11,9 +11,6 @@ public final class Static381 {
 	@OriginalMember(owner = "client!wd", name = "m", descriptor = "I")
 	public static int anInt7117 = 0;
 
-	@OriginalMember(owner = "client!wd", name = "o", descriptor = "Z")
-	public static boolean aBoolean482 = false;
-
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(BILclient!ml;Ljava/awt/Component;I)Lclient!tg;")
 	public static Class221 method6347(@OriginalArg(1) int arg0, @OriginalArg(2) Signlink arg1, @OriginalArg(3) Component arg2, @OriginalArg(4) int arg3) {
 		if (Static356.anInt6643 == 0) {

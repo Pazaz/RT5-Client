@@ -10,9 +10,6 @@ public final class Static47 {
 	@OriginalMember(owner = "client!co", name = "f", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_27 = new Class79("You can't add yourself to your own ignore list.", "Du kannst dich nicht auf deine eigene Ignorieren-Liste setzen!", "Vous ne pouvez pas ajouter votre nom à votre liste noire.", "Você não pode adicionar a si próprio à sua lista de ignorados.");
 
-	@OriginalMember(owner = "client!co", name = "l", descriptor = "I")
-	public static int anInt1248 = 0;
-
 	@OriginalMember(owner = "client!co", name = "s", descriptor = "Z")
 	public static boolean aBoolean102 = false;
 

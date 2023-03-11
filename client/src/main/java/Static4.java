@@ -19,9 +19,6 @@ public final class Static4 {
 	@OriginalMember(owner = "client!ac", name = "B", descriptor = "I")
 	public static int anInt88 = -1;
 
-	@OriginalMember(owner = "client!ac", name = "D", descriptor = "I")
-	public static int anInt90 = 0;
-
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(IIIIIIIIII)V")
 	public static void method72(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8) {
 		if (arg0 == arg8 && arg5 == arg3 && arg4 == arg7 && arg1 == arg2) {

@@ -22,21 +22,21 @@ public final class Static174 {
 	@OriginalMember(owner = "client!kb", name = "b", descriptor = "(I)V")
 	public static void method1506() {
 		@Pc(5) byte local5 = 0;
-		if (Static218.aClass177_Sub1_2.aBoolean364) {
+		if (client.preferences.aBoolean364) {
 			local5 = 55;
 		}
 		Static91.method1963(local5);
-		Static359.aClass202_4.method5155(local5);
-		Static313.aClass107_2.method2765(local5);
-		Static6.aClass219_1.method5578(local5);
+		Static359.LocTypeList.method5155(local5);
+		Static313.ObjTypeList.method2765(local5);
+		Static6.NpcTypeList.method5578(local5);
 		Static322.aClass211_2.method5412(local5);
 		Static10.method237(local5);
 		Static154.method2783(local5);
 		Static317.method5549(local5);
 		Static202.method3678(local5);
-		if (Static347.anInt6442 == 10) {
+		if (LoginManager.reconnecting == 10) {
 			Static336.method5705(28);
-		} else if (Static347.anInt6442 == 30) {
+		} else if (LoginManager.reconnecting == 30) {
 			Static336.method5705(25);
 		}
 	}

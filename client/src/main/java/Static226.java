@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static226 {
 
-	@OriginalMember(owner = "client!na", name = "U", descriptor = "Lclient!r;")
-	public static Class197 aClass197_61;
-
 	@OriginalMember(owner = "client!na", name = "Y", descriptor = "Lclient!lh;")
 	public static Class119 aClass119_1;
 
@@ -21,7 +18,7 @@ public final class Static226 {
 
 	@OriginalMember(owner = "client!na", name = "f", descriptor = "(I)V")
 	public static void method3982() {
-		@Pc(18) int local18 = Static218.aClass177_Sub1_2.method4492(Static77.anInt1762);
+		@Pc(18) int local18 = client.preferences.method4492(Static77.anInt1762);
 		if (local18 == 0) {
 			Static230.aByteArrayArrayArray13 = null;
 			Static136.method6077(0);

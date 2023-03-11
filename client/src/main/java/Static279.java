@@ -12,8 +12,8 @@ public final class Static279 {
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(ILclient!wm;)V")
 	public static void method4725(@OriginalArg(1) Class19 arg0) {
-		arg0.method2895(0, 0, Static250.anInt4665, 350);
-		arg0.method2901(0, 0, Static250.anInt4665, 350, Static214.anInt3793 << 24 | 0x332277, 1);
+		arg0.method2895(0, 0, GameShell.canvasWidth, 350);
+		arg0.method2901(0, 0, GameShell.canvasWidth, 350, Static214.anInt3793 << 24 | 0x332277, 1);
 		@Pc(37) int local37;
 		@Pc(43) int local43;
 		for (@Pc(29) int local29 = 0; local29 < 100; local29++) {
@@ -30,10 +30,10 @@ public final class Static279 {
 			if (Static368.anInt6917 > 1) {
 				local100 = (local43 - local98) * (-Static177.anInt3385 + -1 + Static368.anInt6917) / (Static368.anInt6917 - 1) + 4;
 			}
-			arg0.method2901(Static250.anInt4665 - 16, local100, 12, local98, Static214.anInt3793 << 24 | 0x332277, 2);
+			arg0.method2901(GameShell.canvasWidth - 16, local100, 12, local98, Static214.anInt3793 << 24 | 0x332277, 2);
 			for (@Pc(137) int local137 = Static177.anInt3385; Static177.anInt3385 + local37 > local137 && Static368.anInt6917 > local137; local137++) {
 				@Pc(148) String[] local148 = Static200.method3643('\b', Static124.aStringArray65[local137]);
-				@Pc(157) int local157 = (Static250.anInt4665 - 8 - 16) / local148.length;
+				@Pc(157) int local157 = (GameShell.canvasWidth - 8 - 16) / local148.length;
 				for (@Pc(159) int local159 = 0; local159 < local148.length; local159++) {
 					@Pc(168) int local168 = local159 * local157 + 8;
 					arg0.method2895(local168, 0, local168 + local157 - 8, 350);
@@ -41,8 +41,8 @@ public final class Static279 {
 				}
 			}
 		}
-		arg0.method2895(0, 0, Static250.anInt4665, 350);
-		arg0.method2890(0, Static250.anInt4665, 350 - Static284.anInt5359, -1);
+		arg0.method2895(0, 0, GameShell.canvasWidth, 350);
+		arg0.method2890(0, GameShell.canvasWidth, 350 - Static284.anInt5359, -1);
 		Static52.aClass130_1.method5897(10, -16777216, 350 - Static113.aClass239_2.anInt6846 - 1, -1, "--> " + Static25.aString9);
 		local43 = -1;
 		if (Static114.anInt2348 % 30 > 15) {

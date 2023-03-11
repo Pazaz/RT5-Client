@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static218 {
 
-	@OriginalMember(owner = "client!mo", name = "c", descriptor = "Lclient!pe;")
-	public static Class177_Sub1 aClass177_Sub1_2;
-
 	@OriginalMember(owner = "client!mo", name = "C", descriptor = "F")
 	public static float aFloat30;
 
@@ -26,9 +23,9 @@ public final class Static218 {
 		@Pc(12) String local12 = Static318.method5421(arg0);
 		@Pc(14) int[] local14 = null;
 		if (Static298.method2425(arg0.anInt1005)) {
-			local14 = Static313.aClass107_2.method2759((int) arg0.aLong30).anIntArray364;
+			local14 = Static313.ObjTypeList.method2759((int) arg0.aLong30).anIntArray364;
 		} else if (arg0.anInt1008 != -1) {
-			local14 = Static313.aClass107_2.method2759(arg0.anInt1008).anIntArray364;
+			local14 = Static313.ObjTypeList.method2759(arg0.anInt1008).anIntArray364;
 		} else if (Static297.method5111(arg0.anInt1005)) {
 			@Pc(46) Class11_Sub5_Sub2_Sub2 local46 = Static365.aClass11_Sub5_Sub2_Sub2Array1[(int) arg0.aLong30];
 			if (local46 != null) {
@@ -43,9 +40,9 @@ public final class Static218 {
 		} else if (Static241.method4190(arg0.anInt1005)) {
 			@Pc(83) Class41 local83;
 			if (arg0.anInt1005 == 1010) {
-				local83 = Static359.aClass202_4.method5163((int) arg0.aLong30);
+				local83 = Static359.LocTypeList.method5163((int) arg0.aLong30);
 			} else {
-				local83 = Static359.aClass202_4.method5163((int) (arg0.aLong30 >>> 32 & 0x7FFFFFFFL));
+				local83 = Static359.LocTypeList.method5163((int) (arg0.aLong30 >>> 32 & 0x7FFFFFFFL));
 			}
 			if (local83.anIntArray94 != null) {
 				local83 = local83.method1533(Static214.aClass226_1);

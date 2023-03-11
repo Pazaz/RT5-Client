@@ -27,22 +27,22 @@ public final class Static97 {
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Ljava/lang/String;Ljava/lang/String;IB)V")
 	public static void method2087(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
-		Static374.aString70 = arg1;
+		LoginManager.username = arg1;
 		Static202.anInt3714 = arg2;
-		Static16.aString51 = arg0;
-		if (Static374.aString70.equals("") || Static16.aString51.equals("")) {
-			Static41.anInt1046 = 3;
+		LoginManager.password = arg0;
+		if (LoginManager.username.equals("") || LoginManager.password.equals("")) {
+			LoginManager.reply = 3;
 		} else if (client.worldId == -1) {
 			Static60.anInt666 = 0;
 			Static154.anInt2803 = 1;
-			Static41.anInt1046 = -3;
+			LoginManager.reply = -3;
 			Static193.anInt3557 = 0;
 			@Pc(40) Buffer local40 = new Buffer(128);
 			local40.p1(10);
 			local40.p4((int) (Math.random() * 9.9999999E7D));
-			local40.p8(Static80.toBase37(Static374.aString70));
+			local40.p8(StringUtils.toBase37(LoginManager.username));
 			local40.p4((int) (Math.random() * 9.9999999E7D));
-			local40.pjstr(Static16.aString51);
+			local40.pjstr(LoginManager.password);
 			local40.p4((int) (Math.random() * 9.9999999E7D));
 			local40.rsaenc(Protocol.EXPONENT, Protocol.MODULUS);
 			Protocol.outboundBuffer.pos = 0;

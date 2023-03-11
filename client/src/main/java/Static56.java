@@ -7,9 +7,6 @@ public final class Static56 {
 	@OriginalMember(owner = "client!dd", name = "x", descriptor = "Lclient!rb;")
 	public static Class199 aClass199_1;
 
-	@OriginalMember(owner = "client!dd", name = "q", descriptor = "Z")
-	public static boolean aBoolean123 = false;
-
 	@OriginalMember(owner = "client!dd", name = "r", descriptor = "Lclient!ld;")
 	public static final Class135 aClass135_13 = new Class135();
 
@@ -21,7 +18,7 @@ public final class Static56 {
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(B)V")
 	public static void method1611() {
-		if (Static347.anInt6442 == 10 || Static347.anInt6442 == 28) {
+		if (LoginManager.reconnecting == 10 || LoginManager.reconnecting == 28) {
 			Static387.method2835(5000, Static136.anInt6778 >> 10, Static211.anInt3777 >> 10);
 		} else {
 			@Pc(31) int local31 = Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0] >> 3;

@@ -5,12 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static61 {
 
-	@OriginalMember(owner = "client!dj", name = "db", descriptor = "Lclient!r;")
-	public static Class197 aClass197_11;
-
-	@OriginalMember(owner = "client!dj", name = "eb", descriptor = "Lclient!r;")
-	public static Class197 aClass197_12;
-
 	@OriginalMember(owner = "client!dj", name = "Y", descriptor = "Lclient!hu;")
 	public static final Class98 aClass98_5 = new Class98(8);
 
@@ -22,7 +16,7 @@ public final class Static61 {
 		if (arg0 == null) {
 			return;
 		}
-		if (Static384.anInt7178 >= 100 && !Static381.aBoolean482 || Static384.anInt7178 >= 200) {
+		if (Static384.anInt7178 >= 100 && !MouseRecorder.enabled || Static384.anInt7178 >= 200) {
 			Static207.method3700(Static78.aClass79_129.method2267(client.language));
 			return;
 		}

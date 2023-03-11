@@ -24,13 +24,13 @@ public final class Static373 {
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(ZIZIZ)V")
 	public static void method6267(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3) {
-		if (!arg2 && Static105.anInt2187 == arg1 && Static9.anInt212 == arg3 && (Static355.anInt6585 == Static44.anInt1115 || Static218.aClass177_Sub1_2.method4495(Static77.anInt1762))) {
+		if (!arg2 && Static105.anInt2187 == arg1 && Static9.anInt212 == arg3 && (Static355.anInt6585 == Static44.anInt1115 || client.preferences.method4495(Static77.anInt1762))) {
 			return;
 		}
 		Static44.anInt1115 = Static355.anInt6585;
 		Static105.anInt2187 = arg1;
 		Static9.anInt212 = arg3;
-		if (Static218.aClass177_Sub1_2.method4495(Static77.anInt1762)) {
+		if (client.preferences.method4495(Static77.anInt1762)) {
 			Static44.anInt1115 = 0;
 		}
 		if (arg0) {

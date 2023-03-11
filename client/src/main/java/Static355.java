@@ -16,6 +16,6 @@ public final class Static355 {
 
 	@OriginalMember(owner = "client!uo", name = "a", descriptor = "(I)Z")
 	public static boolean method5934() {
-		return client.modeWhere != client.MODE_WHERE_LIVE || Static4.anInt90 >= 2;
+		return client.modeWhere != client.MODE_WHERE_LIVE || LoginManager.staffModLevel >= 2;
 	}
 }

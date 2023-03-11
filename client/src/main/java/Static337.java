@@ -22,7 +22,7 @@ public final class Static337 {
 			return;
 		}
 		@Pc(16) int local16 = 0;
-		@Pc(24) int local24 = Static218.aClass177_Sub1_2.anInt4882 * arg2.anInt2906 >> 8;
+		@Pc(24) int local24 = client.preferences.anInt4882 * arg2.anInt2906 >> 8;
 		if (arg2.anInt2896 < arg4) {
 			local16 = arg4 - arg2.anInt2896;
 		} else if (arg4 < arg2.anInt2899) {
@@ -33,7 +33,7 @@ public final class Static337 {
 		} else if (arg3 < arg2.anInt2910) {
 			local16 += arg2.anInt2910 - arg3;
 		}
-		if (arg2.anInt2901 == 0 || arg2.anInt2901 < local16 - 64 || Static218.aClass177_Sub1_2.anInt4882 == 0 || arg2.anInt2905 != arg1) {
+		if (arg2.anInt2901 == 0 || arg2.anInt2901 < local16 - 64 || client.preferences.anInt4882 == 0 || arg2.anInt2905 != arg1) {
 			if (arg2.aClass2_Sub12_Sub4_3 != null) {
 				Static227.aClass2_Sub12_Sub2_2.method2081(arg2.aClass2_Sub12_Sub4_3);
 				arg2.aClass2_Sub12_Sub4_3 = null;
@@ -52,7 +52,7 @@ public final class Static337 {
 		if (arg2.aClass2_Sub12_Sub4_3 != null) {
 			arg2.aClass2_Sub12_Sub4_3.method4979(local140);
 		} else if (arg2.anInt2894 >= 0) {
-			@Pc(155) Class247 local155 = Static409.method6435(Static85.aClass197_21, arg2.anInt2894, 0);
+			@Pc(155) Class247 local155 = Static409.method6435(client.jsArchive4, arg2.anInt2894, 0);
 			if (local155 != null) {
 				@Pc(162) Class2_Sub21_Sub1 local162 = local155.method6434().method3179(Static300.aClass249_1);
 				@Pc(167) Class2_Sub12_Sub4 local167 = Static406.method5006(local162, local140);
@@ -69,7 +69,7 @@ public final class Static337 {
 			arg2.aClass2_Sub12_Sub4_2 = null;
 		} else if (arg2.anIntArray181 != null && (arg2.anInt2907 -= arg0) <= 0) {
 			@Pc(204) int local204 = (int) ((double) arg2.anIntArray181.length * Math.random());
-			@Pc(212) Class247 local212 = Static409.method6435(Static85.aClass197_21, arg2.anIntArray181[local204], 0);
+			@Pc(212) Class247 local212 = Static409.method6435(client.jsArchive4, arg2.anIntArray181[local204], 0);
 			if (local212 != null) {
 				@Pc(219) Class2_Sub21_Sub1 local219 = local212.method6434().method3179(Static300.aClass249_1);
 				@Pc(224) Class2_Sub12_Sub4 local224 = Static406.method5006(local219, local140);

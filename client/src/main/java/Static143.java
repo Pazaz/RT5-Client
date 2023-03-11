@@ -17,7 +17,7 @@ public final class Static143 {
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(IIBZI)V")
 	public static void method2677(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {
 		Static338.aLong214 = 0L;
-		@Pc(12) int local12 = Static144.method2692();
+		@Pc(12) int local12 = Static144.getWindowMode();
 		if (arg1 == 3 || local12 == 3) {
 			arg2 = true;
 		}

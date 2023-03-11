@@ -78,7 +78,7 @@ public final class Static164 {
 				}
 				if (Static60.anInt666 >= 1) {
 					Static154.anInt2803 = 0;
-					Static41.anInt1046 = -5;
+					LoginManager.reply = -5;
 					return;
 				}
 				Static154.anInt2803 = 1;
@@ -119,7 +119,7 @@ public final class Static164 {
 					client.soundChannel.method6325();
 				}
 				if (local125 != 101) {
-					Static41.anInt1046 = local125;
+					LoginManager.reply = local125;
 					Static154.anInt2803 = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
@@ -132,7 +132,7 @@ public final class Static164 {
 				WorldList.switchWorld(local125);
 				if (client.worldId == -1) {
 					Static154.anInt2803 = 0;
-					Static41.anInt1046 = 6;
+					LoginManager.reply = 6;
 					Protocol.socket.close();
 					Protocol.socket = null;
 				} else {
@@ -149,7 +149,7 @@ public final class Static164 {
 			}
 			if (Static60.anInt666 >= 1) {
 				Static154.anInt2803 = 0;
-				Static41.anInt1046 = -4;
+				LoginManager.reply = -4;
 			} else {
 				Static154.anInt2803 = 1;
 				Static193.anInt3557 = 0;

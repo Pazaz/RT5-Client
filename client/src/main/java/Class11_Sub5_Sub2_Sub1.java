@@ -178,7 +178,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 				if (local143 >= 32768) {
 					local143 = Static12.anIntArray15[local143 - 32768];
 					local116[local118] = local143 | 0x40000000;
-					local182 = Static313.aClass107_2.method2759(local143).anInt5257;
+					local182 = Static313.ObjTypeList.method2759(local143).anInt5257;
 					if (local182 != 0) {
 						this.anInt4193 = local182;
 					}
@@ -245,10 +245,10 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 			super.anInt6781 = super.anIntArray316[0] * 128 + this.method4328() * 64;
 			super.anInt6783 = super.anIntArray317[0] * 128 + this.method4328() * 64;
 		}
-		if (Static234.anInt4226 == super.anInt4619 && local410 != null) {
+		if (PlayerList.selfId == super.anInt4619 && local410 != null) {
 			for (local327 = 0; local327 < local207.length; local327++) {
 				if (local207[local327] != local410[local327]) {
-					Static313.aClass107_2.method2760();
+					Static313.ObjTypeList.method2760();
 					break;
 				}
 			}
@@ -278,7 +278,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		if (local51 != 0 || local54 != 0 || local13.anInt6281 != 0 || local13.anInt6283 != 0) {
 			arg1 |= 0x7;
 		}
-		super.aClass31Array3[0] = this.aClass117_1.method3191(super.anInt4624, Static59.aClass7_1, Static39.aClass85_1, Static21.aClass55_1, local28, super.anInt4592, super.anInt4629, arg1, super.anInt4593, super.anInt4626, local48, Static214.aClass226_1, Static313.aClass107_2, arg0, Static6.aClass219_1, super.aClass20Array3, super.anInt4607);
+		super.aClass31Array3[0] = this.aClass117_1.method3191(super.anInt4624, Static59.aClass7_1, Static39.aClass85_1, Static21.aClass55_1, local28, super.anInt4592, super.anInt4629, arg1, super.anInt4593, super.anInt4626, local48, Static214.aClass226_1, Static313.ObjTypeList, arg0, Static6.NpcTypeList, super.aClass20Array3, super.anInt4607);
 		@Pc(116) int local116 = Static365.method6117();
 		if (Static309.anInt5802 < 96 && local116 > 50) {
 			Static163.method3105();
@@ -401,9 +401,9 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		local19.method3936(super.anInt6781, super.anInt6782, super.anInt6783);
 		@Pc(45) float local45 = arg0.method2802();
 		@Pc(48) float local48 = arg0.method2860();
-		if (Static218.aClass177_Sub1_2.aBoolean358) {
+		if (client.preferences.aBoolean358) {
 			@Pc(55) Class222 local55 = this.method4332();
-			if (local55.aBoolean424 && (this.aClass117_1.anInt3185 == -1 || Static6.aClass219_1.method5570(this.aClass117_1.anInt3185).aBoolean142)) {
+			if (local55.aBoolean424 && (this.aClass117_1.anInt3185 == -1 || Static6.NpcTypeList.method5570(this.aClass117_1.anInt3185).aBoolean142)) {
 				@Pc(87) Class157 local87 = super.anInt4597 != -1 && super.anInt4590 == 0 ? Static39.aClass85_1.method2371(super.anInt4597) : null;
 				@Pc(108) Class157 local108 = super.anInt4585 == -1 || this.aBoolean275 || super.aBoolean317 && local87 != null ? null : Static39.aClass85_1.method2371(super.anInt4585);
 				@Pc(142) Class31 local142 = Static178.method2340(local108 == null ? super.anInt4607 : super.anInt4626, 240, 160, super.anInt4596, local108 == null ? local87 : local108, 1, 0, super.aClass31Array3[0], local24, arg0, 0, super.aBoolean318, super.anInt4608, super.anInt4589);
@@ -491,7 +491,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 	@OriginalMember(owner = "client!nh", name = "b", descriptor = "(Z)I")
 	@Override
 	public int method4328() {
-		return this.aClass117_1 == null || this.aClass117_1.anInt3185 == -1 ? super.method4328() : Static6.aClass219_1.method5570(this.aClass117_1.anInt3185).anInt2041;
+		return this.aClass117_1 == null || this.aClass117_1.anInt3185 == -1 ? super.method4328() : Static6.NpcTypeList.method5570(this.aClass117_1.anInt3185).anInt2041;
 	}
 
 	@OriginalMember(owner = "client!nh", name = "d", descriptor = "(ZI)Ljava/lang/String;")

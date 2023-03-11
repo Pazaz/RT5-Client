@@ -100,8 +100,8 @@ public final class Static319 {
 
 	@OriginalMember(owner = "client!sk", name = "c", descriptor = "(B)V")
 	public static void method5435() {
-		if (Static347.anInt6441 == 5) {
-			Static347.anInt6441 = 6;
+		if (LoginManager.step == 5) {
+			LoginManager.step = 6;
 		}
 	}
 }

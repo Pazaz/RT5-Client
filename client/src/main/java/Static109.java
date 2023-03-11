@@ -13,9 +13,6 @@ public final class Static109 {
 	@OriginalMember(owner = "client!gb", name = "m", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_83 = new Class145(26, 7);
 
-	@OriginalMember(owner = "client!gb", name = "n", descriptor = "Z")
-	public static boolean aBoolean166 = false;
-
 	@OriginalMember(owner = "client!gb", name = "o", descriptor = "Lclient!s;")
 	public static final Class210 aClass210_4 = new Class210(2, 5);
 

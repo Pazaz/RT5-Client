@@ -71,18 +71,18 @@ public final class Static78 {
 		Static335.method5694();
 		Static296.method5104();
 		Static252.method4365(true, arg0);
-		Static236.method4102(Static30.aClass197_5, Static255.aClass197_64, Static190.aClass19_8);
-		Static44.method1358(Static190.aClass19_8, Static30.aClass197_5);
+		Static236.method4102(client.jsArchive8, client.jsArchive13, Static190.aClass19_8);
+		Static44.method1358(Static190.aClass19_8, client.jsArchive8);
 		Static144.method2691(Static124.aClass13Array27);
 		Static190.method3502();
 		Static98.method2107();
-		if (Static347.anInt6442 == 10) {
+		if (LoginManager.reconnecting == 10) {
 			Static50.method1525(false);
-		} else if (Static347.anInt6442 == 30) {
+		} else if (LoginManager.reconnecting == 30) {
 			Static336.method5705(25);
 			return;
-		} else if (Static347.anInt6442 == 5) {
-			Static348.method5830(Static30.aClass197_5, Static190.aClass19_8);
+		} else if (LoginManager.reconnecting == 5) {
+			Static348.method5830(client.jsArchive8, Static190.aClass19_8);
 			return;
 		}
 	}

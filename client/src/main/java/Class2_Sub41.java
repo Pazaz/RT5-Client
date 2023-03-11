@@ -91,7 +91,7 @@ public final class Class2_Sub41 extends Class2 {
 			@Pc(259) int local259 = local9;
 			@Pc(261) boolean local261 = false;
 			for (@Pc(263) int local263 = 0; local263 < local23.length; local263++) {
-				if (local23[local263] != -1 && !Static313.aClass107_2.method2759(local23[local263]).method4770(arg3)) {
+				if (local23[local263] != -1 && !Static313.ObjTypeList.method2759(local23[local263]).method4770(arg3)) {
 					local261 = true;
 				}
 			}
@@ -101,7 +101,7 @@ public final class Class2_Sub41 extends Class2 {
 			@Pc(300) Class185[] local300 = new Class185[local23.length];
 			for (@Pc(302) int local302 = 0; local302 < local23.length; local302++) {
 				if (local23[local302] != -1) {
-					local300[local302] = Static313.aClass107_2.method2759(local23[local302]).method4779(arg3);
+					local300[local302] = Static313.ObjTypeList.method2759(local23[local302]).method4779(arg3);
 				}
 			}
 			@Pc(354) int local354;

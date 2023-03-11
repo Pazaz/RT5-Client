@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static120 {
 
-	@OriginalMember(owner = "client!gs", name = "n", descriptor = "Lclient!r;")
-	public static Class197 aClass197_28;
-
 	@OriginalMember(owner = "client!gs", name = "d", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_50 = new Class79(" from your friend list first.", " zuerst von deiner Freunde-Liste!", " de votre liste d'amis.", " da sua lista de amigos primeiro.");
 

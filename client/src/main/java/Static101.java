@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static101 {
 
-	@OriginalMember(owner = "client!fo", name = "h", descriptor = "Lclient!r;")
-	public static Class197 aClass197_23;
-
 	@OriginalMember(owner = "client!fo", name = "e", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_44 = new Class79("Members object", "Gegenstand für Mitglieder", "Objet d'abonnés", "Objeto para membros");
 
@@ -15,9 +12,6 @@ public final class Static101 {
 
 	@OriginalMember(owner = "client!fo", name = "g", descriptor = "Z")
 	public static boolean aBoolean158 = false;
-
-	@OriginalMember(owner = "client!fo", name = "i", descriptor = "Z")
-	public static boolean aBoolean159 = false;
 
 	@OriginalMember(owner = "client!fo", name = "a", descriptor = "(I[IIII)V")
 	public static void method2163(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {

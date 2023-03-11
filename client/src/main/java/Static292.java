@@ -13,9 +13,6 @@ public final class Static292 {
 	@OriginalMember(owner = "client!qr", name = "m", descriptor = "[J")
 	public static final long[] aLongArray9 = new long[32];
 
-	@OriginalMember(owner = "client!qr", name = "n", descriptor = "I")
-	public static int anInt5510 = 0;
-
 	@OriginalMember(owner = "client!qr", name = "p", descriptor = "[S")
 	public static final short[] aShortArray115 = new short[] { 44, 19, 48, 47, 9, 23, 2, 18 };
 

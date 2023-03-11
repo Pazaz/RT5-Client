@@ -18,7 +18,7 @@ public final class Static363 {
 	public static int anInt6804;
 
 	@OriginalMember(owner = "client!vf", name = "X", descriptor = "Ljava/awt/Frame;")
-	public static Frame aFrame2;
+	public static Frame frame;
 
 	@OriginalMember(owner = "client!vf", name = "N", descriptor = "Z")
 	public static boolean aBoolean464 = true;
@@ -48,7 +48,7 @@ public final class Static363 {
 
 	@OriginalMember(owner = "client!vf", name = "i", descriptor = "(I)V")
 	public static void method6091() {
-		if (Static218.aClass177_Sub1_2.method4492(Static77.anInt1762) != 2) {
+		if (client.preferences.method4492(Static77.anInt1762) != 2) {
 			return;
 		}
 		@Pc(21) byte local21 = (byte) (Static163.anInt3086 - 4 & 0xFF);

@@ -12,7 +12,7 @@ public final class Static383 {
 
 	@OriginalMember(owner = "client!wf", name = "a", descriptor = "(Ljava/lang/String;I)V")
 	public static void method6379(@OriginalArg(0) String arg0) {
-		Static74.settings = arg0;
+		client.settings = arg0;
 		if (GameShell.signlink.applet == null) {
 			return;
 		}

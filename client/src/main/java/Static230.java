@@ -63,13 +63,13 @@ public final class Static230 {
 
 	@OriginalMember(owner = "client!ne", name = "c", descriptor = "(I)V")
 	public static void method4014() {
-		Static182.anInt3420 = 0;
+		LoginManager.loops = 0;
 		Static101.aBoolean158 = false;
-		Static360.anInt6186 = -1;
-		Static216.anInt3800 = 0;
-		Static347.anInt6441 = 1;
-		Static47.anInt1248 = 0;
-		Static41.anInt1046 = -3;
+		LoginManager.disallowResult = -1;
+		LoginManager.errors = 0;
+		LoginManager.step = 1;
+		LoginManager.hopTime = 0;
+		LoginManager.reply = -3;
 	}
 
 	@OriginalMember(owner = "client!ne", name = "b", descriptor = "(IIIII)V")

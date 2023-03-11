@@ -83,8 +83,8 @@ public final class Static284 {
 		if (arg0 == local11) {
 			return false;
 		} else {
-			Static218.aClass177_Sub1_2.aBoolean356 = arg0;
-			Static218.aClass177_Sub1_2.method4497(GameShell.signlink);
+			client.preferences.aBoolean356 = arg0;
+			client.preferences.method4497(GameShell.signlink);
 			return true;
 		}
 	}

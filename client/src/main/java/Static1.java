@@ -39,7 +39,7 @@ public final class Static1 {
 					@Pc(106) int local106 = local92 & 0x3F;
 					@Pc(119) int local119 = local102 + (Static291.anIntArray372[local10] >> 8) * 64 - Static164.anInt3140;
 					@Pc(132) int local132 = local106 + (Static291.anIntArray372[local10] & 0xFF) * 64 - Static148.anInt2719;
-					@Pc(139) Class71 local139 = Static6.aClass219_1.method5570(local65.g2());
+					@Pc(139) Class71 local139 = Static6.NpcTypeList.method5570(local65.g2());
 					if (Static365.aClass11_Sub5_Sub2_Sub2Array1[local88] == null && (local139.aByte16 & 0x1) > 0 && Static44.anInt1115 == local96 && local119 >= 0 && local119 + local139.anInt2041 < Static373.anInt7033 && local132 >= 0 && local132 + local139.anInt2041 < Static242.anInt4449) {
 						Static365.aClass11_Sub5_Sub2_Sub2Array1[local88] = new Class11_Sub5_Sub2_Sub2();
 						Static365.aClass11_Sub5_Sub2_Sub2Array1[local88].anInt4619 = local88;
@@ -91,7 +91,7 @@ public final class Static1 {
 			if (arg1) {
 				Static29.method939(local46, 255, 0, local40);
 			}
-		} else if (Static218.aClass177_Sub1_2.anInt4882 != 0) {
+		} else if (client.preferences.anInt4882 != 0) {
 			Static256.anIntArray321[Static243.anInt4503] = local40;
 			Static329.anIntArray419[Static243.anInt4503] = local46;
 			Static237.anIntArray283[Static243.anInt4503] = 0;

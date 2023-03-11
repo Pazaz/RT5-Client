@@ -44,7 +44,7 @@ public final class Static256 {
 			Static288.anInt5463 += local28;
 		}
 		@Pc(66) int local66 = Static348.anInt6448;
-		if (!Static218.aClass177_Sub1_2.aBoolean351) {
+		if (!client.preferences.aBoolean351) {
 			Static277.aFloat67 += Static184.aFloat39 * (float) arg0 / 40.0F * 8.0F;
 			Static31.aFloat28 += (float) arg0 * Static296.aFloat68 / 40.0F * 8.0F;
 		}

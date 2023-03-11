@@ -58,7 +58,7 @@ public final class Static318 {
 		@Pc(50) Class2_Sub17 local50;
 		if (Static77.anInt1762 == 0) {
 			for (local50 = (Class2_Sub17) Static142.aClass135_21.method3551(); local50 != null; local50 = (Class2_Sub17) Static142.aClass135_21.method3552()) {
-				Static313.aClass107_2.method2769(local50.anInt2541, Static200.aClass130_3, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1 : null, local50.anInt2537, arg0, local50.anInt2538);
+				Static313.ObjTypeList.method2769(local50.anInt2541, Static200.aClass130_3, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1 : null, local50.anInt2537, arg0, local50.anInt2538);
 				local50.method6468();
 			}
 			Static98.method2107();
@@ -68,10 +68,10 @@ public final class Static318 {
 			@Pc(18) Canvas local18 = new Canvas();
 			local18.setSize(36, 32);
 			Static179.aClass19_5 = Static387.method2822(0, GameShell.signlink, Static128.anInterface2_4, local18, 0);
-			Static76.aClass130_2 = Static179.aClass19_5.method2857(Static101.method2165(Static183.anInt80, Static255.aClass197_64), Static396.method1688(Static30.aClass197_5, Static183.anInt80));
+			Static76.aClass130_2 = Static179.aClass19_5.method2857(Static101.method2165(Static183.anInt80, client.jsArchive13), Static396.method1688(client.jsArchive8, Static183.anInt80));
 		}
 		for (local50 = (Class2_Sub17) Static142.aClass135_21.method3551(); local50 != null; local50 = (Class2_Sub17) Static142.aClass135_21.method3552()) {
-			Static313.aClass107_2.method2769(local50.anInt2541, Static76.aClass130_2, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1 : null, local50.anInt2537, Static179.aClass19_5, local50.anInt2538);
+			Static313.ObjTypeList.method2769(local50.anInt2541, Static76.aClass130_2, local50.anInt2539, arg0, false, local50.anInt2535, false, local50.aBoolean183 ? Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1 : null, local50.anInt2537, Static179.aClass19_5, local50.anInt2538);
 			local50.method6468();
 		}
 	}

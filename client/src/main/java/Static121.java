@@ -27,7 +27,7 @@ public final class Static121 {
 		if (Static140.aBoolean187) {
 			return;
 		}
-		if (Static218.aClass177_Sub1_2.aBoolean351) {
+		if (client.preferences.aBoolean351) {
 			Static31.aFloat28 = (int) Static31.aFloat28 - 17 & 0xFFFFFFF0;
 		} else {
 			Static296.aFloat68 += (-Static296.aFloat68 - 12.0F) / 2.0F;

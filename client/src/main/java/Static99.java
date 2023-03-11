@@ -48,13 +48,13 @@ public final class Static99 {
 		}
 		Static120.aClass4_49.method81();
 		Static117.method2369();
-		Static292.anInt5510 = 0;
+		Protocol.verifyId = 0;
 		Static214.aClass226_1.method5781();
 		Static114.method2362();
 		Static360.method5646();
 		Static50.method1525(true);
 		try {
-			Static405.method4628(GameShell.signlink.applet, "loggedout");
+			BrowserControl.call(GameShell.signlink.applet, "loggedout");
 		} catch (@Pc(128) Throwable local128) {
 		}
 		Static375.aLong222 = 0L;
@@ -63,7 +63,7 @@ public final class Static99 {
 
 	@OriginalMember(owner = "client!fm", name = "j", descriptor = "(I)V")
 	public static void method2146() {
-		Static65.aClass19_3.method2838(((float) Static218.aClass177_Sub1_2.anInt4879 * 0.1F + 0.7F) * 1.1523438F);
+		Static65.aClass19_3.method2838(((float) client.preferences.anInt4879 * 0.1F + 0.7F) * 1.1523438F);
 		Static65.aClass19_3.method2832(Static28.anInt686, 0.69921875F, 1.2F, -50.0F, (float) -60, -50.0F);
 		Static65.aClass19_3.method2879(Static279.anInt5161, -1);
 		Static65.aClass19_3.method2870(Static62.aClass42_5);

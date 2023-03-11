@@ -31,9 +31,9 @@ public final class Static59 {
 		Static39.aClass72_3.method2108();
 		Static336.aClass241_5.method6268();
 		Static21.aClass55_1.method1781();
-		Static359.aClass202_4.method5158();
-		Static6.aClass219_1.method5579();
-		Static313.aClass107_2.method2763();
+		Static359.LocTypeList.method5158();
+		Static6.NpcTypeList.method5579();
+		Static313.ObjTypeList.method2763();
 		Static39.aClass85_1.method2374();
 		Static322.aClass211_2.method5408();
 		Static322.aClass128_1.method3393();

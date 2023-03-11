@@ -21,21 +21,21 @@ public final class Static185 {
 		if (local27 != null) {
 			return local27;
 		}
-		@Pc(39) byte[] local39 = Static195.aClass197_54.method5082(Static195.aClass197_54.method5097(local10));
+		@Pc(39) byte[] local39 = client.jsArchive12.method5082(client.jsArchive12.method5097(local10));
 		if (local39 == null) {
 			local10 = arg1.anInt538 | arg0 + 65536 << 8;
 			local27 = (Class2_Sub2_Sub11) Static261.aClass116_7.method3152((long) local10 << 16);
 			if (local27 != null) {
 				return local27;
 			}
-			local39 = Static195.aClass197_54.method5082(Static195.aClass197_54.method5097(local10));
+			local39 = client.jsArchive12.method5082(client.jsArchive12.method5097(local10));
 			if (local39 == null) {
 				local10 = arg1.anInt538 | 0xFFFF00;
 				local27 = (Class2_Sub2_Sub11) Static261.aClass116_7.method3152((long) local10 << 16);
 				if (local27 != null) {
 					return local27;
 				}
-				local39 = Static195.aClass197_54.method5082(Static195.aClass197_54.method5097(local10));
+				local39 = client.jsArchive12.method5082(client.jsArchive12.method5097(local10));
 				if (local39 == null) {
 					return null;
 				} else if (local39.length <= 1) {

@@ -38,7 +38,7 @@ public final class Static301 {
 				if (local19.anInt4714 < 0) {
 					@Pc(111) int local111 = -local19.anInt4714 - 1;
 					@Pc(120) Class11_Sub5_Sub2_Sub1 local120;
-					if (local111 == Static234.anInt4226) {
+					if (local111 == PlayerList.selfId) {
 						local120 = Static17.aClass11_Sub5_Sub2_Sub1_3;
 					} else {
 						local120 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local111];

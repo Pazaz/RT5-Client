@@ -10,7 +10,7 @@ public final class Static366 {
 	@OriginalMember(owner = "client!vi", name = "a", descriptor = "(ILclient!qg;)V")
 	public static void method6120(@OriginalArg(1) Packet arg0) {
 		arg0.accessBits();
-		@Pc(10) int local10 = Static234.anInt4226;
+		@Pc(10) int local10 = PlayerList.selfId;
 		@Pc(20) Class11_Sub5_Sub2_Sub1 local20 = Static17.aClass11_Sub5_Sub2_Sub1_3 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local10] = new Class11_Sub5_Sub2_Sub1();
 		local20.anInt4619 = local10;
 		@Pc(28) int local28 = arg0.gBit(30);

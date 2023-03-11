@@ -163,7 +163,7 @@ public final class Static327 {
 					@Pc(1038) Class2_Sub32 local1038 = (Class2_Sub32) Static120.aClass4_49.method90((long) (local354.anInt4076 | local354.anInt4073 << 28 | local354.anInt4075 << 14));
 					if (local1038 != null) {
 						for (@Pc(1046) Class2_Sub8 local1046 = (Class2_Sub8) local1038.aClass135_34.method3548(); local1046 != null; local1046 = (Class2_Sub8) local1038.aClass135_34.method3547()) {
-							@Pc(1054) Class188 local1054 = Static313.aClass107_2.method2759(local1046.anInt1717);
+							@Pc(1054) Class188 local1054 = Static313.ObjTypeList.method2759(local1046.anInt1717);
 							if (!Static330.aBoolean419) {
 								if (local354.anInt4073 == Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) {
 									@Pc(1134) String[] local1134 = local1054.aStringArray50;
@@ -208,7 +208,7 @@ public final class Static327 {
 				}
 				if (local354.aClass11_1 instanceof Interface6) {
 					@Pc(1288) Interface6 local1288 = (Interface6) local354.aClass11_1;
-					@Pc(1297) Class41 local1297 = Static359.aClass202_4.method5163(local1288.method6085());
+					@Pc(1297) Class41 local1297 = Static359.LocTypeList.method5163(local1288.method6085());
 					if (local1297.anIntArray94 != null) {
 						local1297 = local1297.method1533(Static214.aClass226_1);
 					}

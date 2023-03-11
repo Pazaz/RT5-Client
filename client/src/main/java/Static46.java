@@ -10,16 +10,16 @@ public final class Static46 {
 	@OriginalMember(owner = "client!cm", name = "c", descriptor = "(I)V")
 	public static void method1421() {
 		Static57.aClass161Array1 = null;
-		Static199.method5246(0, Static172.anInt3299, Static250.anInt4665, Static139.anInt2595, -1, 0, 0, 0);
+		Static199.method5246(0, GameShell.canvasHeight, GameShell.canvasWidth, Static139.anInt2595, -1, 0, 0, 0);
 		if (Static57.aClass161Array1 != null) {
-			Static201.method3653(Static172.anInt3299, -1412584499, Static57.aClass161Array1, 0, Static253.anInt4689, 0, Static250.anInt4665, Static301.aClass161_13.anInt4257, Static48.anInt1256);
+			Static201.method3653(GameShell.canvasHeight, -1412584499, Static57.aClass161Array1, 0, Static253.anInt4689, 0, GameShell.canvasWidth, Static301.aClass161_13.anInt4257, Static48.anInt1256);
 			Static57.aClass161Array1 = null;
 		}
 	}
 
 	@OriginalMember(owner = "client!cm", name = "a", descriptor = "(ILclient!wm;Lclient!nk;)V")
 	public static void method1422(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Class161 arg1) {
-		@Pc(31) boolean local31 = Static313.aClass107_2.method2758(arg1.anInt4306, arg1.anInt4300, arg1.aBoolean280 ? Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1 : null, arg0, arg1.anInt4252 | 0xFF000000, arg1.anInt4279, arg1.anInt4240) == null;
+		@Pc(31) boolean local31 = Static313.ObjTypeList.method2758(arg1.anInt4306, arg1.anInt4300, arg1.aBoolean280 ? Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1 : null, arg0, arg1.anInt4252 | 0xFF000000, arg1.anInt4279, arg1.anInt4240) == null;
 		if (local31) {
 			Static142.aClass135_21.method3540(new Class2_Sub17(arg1.anInt4300, arg1.anInt4240, arg1.anInt4279, arg1.anInt4252 | 0xFF000000, arg1.anInt4306, arg1.aBoolean280));
 		}

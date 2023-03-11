@@ -66,7 +66,7 @@ public final class Class21 {
 	@OriginalMember(owner = "client!bh", name = "<init>", descriptor = "(Lclient!bt;)V")
 	public Class21(@OriginalArg(0) Buffer arg0) {
 		@Pc(16) int local16 = arg0.g1();
-		if (Static218.aClass177_Sub1_2.aBoolean364 && Static65.aClass19_3.method2886() > 0) {
+		if (client.preferences.aBoolean364 && Static65.aClass19_3.method2886() > 0) {
 			if ((local16 & 0x1) == 0) {
 				this.anInt637 = Static28.anInt686;
 			} else {

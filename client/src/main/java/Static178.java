@@ -156,7 +156,7 @@ public final class Static178 {
 		if (client.soundChannel != null) {
 			client.soundChannel.method6326();
 		}
-		Static84.method1909(Static218.aClass177_Sub1_2.aBoolean352);
+		Static84.method1909(client.preferences.aBoolean352);
 		client.musicChannel = Static381.method6347(0, GameShell.signlink, Static21.aCanvas1, 22050);
 		client.musicChannel.method6330(Static385.aClass2_Sub12_Sub3_3);
 		client.soundChannel = Static381.method6347(1, GameShell.signlink, Static21.aCanvas1, 2048);

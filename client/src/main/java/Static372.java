@@ -19,13 +19,13 @@ public final class Static372 {
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(I)V")
 	public static void method6260() {
-		if (Static363.aFrame2 != null) {
+		if (Static363.frame != null) {
 			return;
 		}
 		@Pc(8) int local8 = Static84.anInt1842;
 		@Pc(15) int local15 = Static68.anInt1646;
-		@Pc(22) int local22 = Static142.anInt2663 - local8 - Static250.anInt4665;
-		@Pc(29) int local29 = Static178.anInt2319 - local15 - Static172.anInt3299;
+		@Pc(22) int local22 = Static142.anInt2663 - local8 - GameShell.canvasWidth;
+		@Pc(29) int local29 = Static178.anInt2319 - local15 - GameShell.canvasHeight;
 		if (local8 <= 0 && local22 <= 0 && local15 <= 0 && local29 <= 0) {
 			return;
 		}

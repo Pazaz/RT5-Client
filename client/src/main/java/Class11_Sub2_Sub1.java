@@ -48,7 +48,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 		this.aBoolean65 = arg6;
 		this.aBoolean64 = arg8;
 		this.aShort1 = (short) arg1.anInt1351;
-		this.aBoolean66 = arg0.method2878() && arg1.aBoolean110 && !this.aBoolean65 && Static218.aClass177_Sub1_2.anInt4886 != 0;
+		this.aBoolean66 = arg0.method2878() && arg1.aBoolean110 && !this.aBoolean65 && client.preferences.anInt4886 != 0;
 		@Pc(70) int local70 = 1024;
 		if (this.aBoolean64) {
 			local70 |= 0x8000;
@@ -182,7 +182,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IZLclient!wm;I)Lclient!ij;")
 	private Class105 method940(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2) {
-		@Pc(18) Class41 local18 = Static359.aClass202_4.method5163(this.aShort1 & 0xFFFF);
+		@Pc(18) Class41 local18 = Static359.LocTypeList.method5163(this.aShort1 & 0xFFFF);
 		@Pc(26) Class6 local26;
 		@Pc(34) Class6 local34;
 		if (this.aBoolean65) {

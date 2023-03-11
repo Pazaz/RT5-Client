@@ -129,10 +129,10 @@ public final class Static171 {
 			Static190.aClass19_8.method2821(local104 + local106 / 2, local110 + local108 / 2, Static320.anInt6006 << 1, Static320.anInt6006 << 1);
 			Static306.method5254(Static320.anInt6006 << 1, local106 / 2 + local104, Static320.anInt6006 << 1, local110 + local108 / 2);
 			Static96.method2085(Static211.anInt3777, Static102.anInt3592, -Static342.anInt5657 & 0x3FFF, -Static4.anInt87 & 0x3FFF, -Static265.anInt4857 & 0x3FFF, Static136.anInt6778);
-			@Pc(541) byte local541 = Static218.aClass177_Sub1_2.method4492(Static77.anInt1762) == 2 ? (byte) Static163.anInt3086 : 1;
-			Static225.method3954(Static190.aClass19_8, Static114.anInt2348, Static102.anInt3591, Static76.aClass14_3, Static136.anInt6778, Static102.anInt3592, Static211.anInt3777, Static230.aByteArrayArrayArray13, Static353.anIntArray448, Static107.anIntArray136, Static248.anIntArray318, Static324.anIntArray409, Static86.anIntArray122, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 + 1, local541, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7, !Static218.aClass177_Sub1_2.aBoolean353);
+			@Pc(541) byte local541 = client.preferences.method4492(Static77.anInt1762) == 2 ? (byte) Static163.anInt3086 : 1;
+			Static225.method3954(Static190.aClass19_8, Static114.anInt2348, Static102.anInt3591, Static76.aClass14_3, Static136.anInt6778, Static102.anInt3592, Static211.anInt3777, Static230.aByteArrayArrayArray13, Static353.anIntArray448, Static107.anIntArray136, Static248.anIntArray318, Static324.anIntArray409, Static86.anIntArray122, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 + 1, local541, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7, !client.preferences.aBoolean353);
 			Static37.method1135();
-			if (Static347.anInt6442 == 30) {
+			if (LoginManager.reconnecting == 30) {
 				Static306.method5253(local110, local108, local106, local104);
 				Static228.method3995(local104, local106, local108, local110);
 				Static169.method3213(local108, local104, local106, local110);

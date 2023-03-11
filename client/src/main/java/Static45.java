@@ -27,7 +27,7 @@ public final class Static45 {
 	public static void method1398() {
 		@Pc(1) int local1 = Static31.anInt751;
 		@Pc(3) int[] local3 = Static85.anIntArray121;
-		@Pc(20) boolean local20 = Static218.aClass177_Sub1_2.anInt4895 == 1 && local1 > 200 || Static218.aClass177_Sub1_2.anInt4895 == 0 && local1 > 50;
+		@Pc(20) boolean local20 = client.preferences.anInt4895 == 1 && local1 > 200 || client.preferences.anInt4895 == 0 && local1 > 50;
 		@Pc(75) int local75;
 		for (@Pc(22) int local22 = 0; local22 < local1; local22++) {
 			@Pc(29) Class11_Sub5_Sub2_Sub1 local29 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local22]];
@@ -329,7 +329,7 @@ public final class Static45 {
 											@Pc(888) int[] local888 = new int[3];
 											local883.method6149(local888, local653, local374);
 											if (local888 != null) {
-												if (Static174.aClass123_2.method3343(82) && Static4.anInt90 > 0) {
+												if (Static174.aClass123_2.method3343(82) && LoginManager.staffModLevel > 0) {
 													Static6.method141(local888[0], local888[2], local888[1]);
 													continue;
 												}

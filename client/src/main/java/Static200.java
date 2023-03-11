@@ -88,8 +88,8 @@ public final class Static200 {
 			local7 = "www-wtwip";
 		}
 		@Pc(28) String local28 = "";
-		if (Static74.settings != null) {
-			local28 = "/p=" + Static74.settings;
+		if (client.settings != null) {
+			local28 = "/p=" + client.settings;
 		}
 		return "http://" + local7 + "." + client.game.aString15 + ".com/l=" + client.language + "/a=" + client.affiliate + local28 + "/";
 	}

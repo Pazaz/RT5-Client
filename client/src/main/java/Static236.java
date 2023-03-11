@@ -10,9 +10,6 @@ public final class Static236 {
 	@OriginalMember(owner = "client!nk", name = "Ec", descriptor = "I")
 	public static int anInt4309;
 
-	@OriginalMember(owner = "client!nk", name = "jc", descriptor = "Z")
-	public static boolean aBoolean288 = true;
-
 	@OriginalMember(owner = "client!nk", name = "pc", descriptor = "I")
 	public static int anInt4301 = -1;
 
@@ -162,7 +159,7 @@ public final class Static236 {
 				if (local25.aClass71_1.method2099()) {
 					Static154.method2781(local25);
 				}
-				local25.method4342(Static6.aClass219_1.method5570(Protocol.inboundBuffer.ig2()));
+				local25.method4342(Static6.NpcTypeList.method5570(Protocol.inboundBuffer.ig2()));
 				local25.method4322(local25.aClass71_1.anInt2041);
 				local25.anInt4604 = local25.aClass71_1.anInt2044 << 3;
 				if (local25.aClass71_1.method2099()) {

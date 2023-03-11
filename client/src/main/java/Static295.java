@@ -54,7 +54,7 @@ public final class Static295 {
 		if (local15 != null) {
 			return local15;
 		}
-		@Pc(25) byte[] local25 = Static195.aClass197_54.method5089(0, arg0);
+		@Pc(25) byte[] local25 = client.jsArchive12.method5089(0, arg0);
 		if (local25 == null || local25.length <= 1) {
 			return null;
 		} else {

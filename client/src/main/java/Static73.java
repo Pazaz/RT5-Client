@@ -249,7 +249,7 @@ public final class Static73 {
 							} else if (local228 >> 28 != 0) {
 								local497 = local228 & 0xFFFF;
 								@Pc(589) Class11_Sub5_Sub2_Sub1 local589;
-								if (Static234.anInt4226 == local497) {
+								if (PlayerList.selfId == local497) {
 									local589 = Static17.aClass11_Sub5_Sub2_Sub1_3;
 								} else {
 									local589 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local497];
@@ -539,7 +539,7 @@ public final class Static73 {
 									while (true) {
 										if (local1800 >= 100) {
 											if (local536 <= 1) {
-												if (Static56.aBoolean123 && !Static101.aBoolean159 || Static109.aBoolean166) {
+												if (LoginManager.playerUnderage && !LoginManager.parentalChatConsent || LoginManager.mapQuickChat) {
 													local1798 = true;
 												} else if (Static105.method2208(local1381)) {
 													local1798 = true;
@@ -810,8 +810,8 @@ public final class Static73 {
 										Static231.aClass89_164 = null;
 										return true;
 									} else if (Static231.aClass89_164 == Static82.aClass89_66) {
-										if (Static363.aFrame2 != null) {
-											Static143.method2677(-1, Static218.aClass177_Sub1_2.anInt4894, false, -1);
+										if (Static363.frame != null) {
+											Static143.method2677(-1, client.preferences.anInt4894, false, -1);
 										}
 										@Pc(2782) byte[] local2782 = new byte[Static82.anInt1836];
 										Protocol.inboundBuffer.gisaac(local2782, Static82.anInt1836);
@@ -979,7 +979,7 @@ public final class Static73 {
 										local249 = Protocol.inboundBuffer.img4();
 										if (Static378.method6314(local220)) {
 											Static216.method3774(local74, local249, local228);
-											@Pc(3499) Class188 local3499 = Static313.aClass107_2.method2759(local74);
+											@Pc(3499) Class188 local3499 = Static313.ObjTypeList.method2759(local74);
 											Static277.method4680(local3499.anInt5215, local3499.anInt5245, local249, local3499.anInt5241);
 											Static376.method6287(local249, local3499.anInt5249, local3499.anInt5252, local3499.anInt5232);
 										}
@@ -1230,7 +1230,7 @@ public final class Static73 {
 												while (true) {
 													if (local4314 >= 100) {
 														if (local638 <= 1) {
-															if (Static56.aBoolean123 && !Static101.aBoolean159 || Static109.aBoolean166) {
+															if (LoginManager.playerUnderage && !LoginManager.parentalChatConsent || LoginManager.mapQuickChat) {
 																local4312 = true;
 															} else if (Static105.method2208(local1381)) {
 																local4312 = true;
@@ -1419,7 +1419,7 @@ public final class Static73 {
 												local220 = Protocol.inboundBuffer.g2add();
 												local74 = Protocol.inboundBuffer.img4();
 												if (Static378.method6314(local220)) {
-													Static190.method3501(Static234.anInt4226, 0, 5, local74);
+													Static190.method3501(PlayerList.selfId, 0, 5, local74);
 												}
 												Static231.aClass89_164 = null;
 												return true;

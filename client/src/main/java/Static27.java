@@ -1,4 +1,3 @@
-import java.io.IOException;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -31,25 +30,4 @@ public final class Static27 {
 		}
 	}
 
-	@OriginalMember(owner = "client!bk", name = "a", descriptor = "(Lclient!bt;B)V")
-	public static void method875(@OriginalArg(0) Buffer arg0) {
-		@Pc(8) byte[] local8 = new byte[24];
-		if (Static317.aClass205_6 != null) {
-			@Pc(20) int local20;
-			try {
-				Static317.aClass205_6.method5214(0L);
-				Static317.aClass205_6.method5220(local8);
-				for (local20 = 0; local20 < 24 && local8[local20] == 0; local20++) {
-				}
-				if (local20 >= 24) {
-					throw new IOException();
-				}
-			} catch (@Pc(47) Exception local47) {
-				for (local20 = 0; local20 < 24; local20++) {
-					local8[local20] = -1;
-				}
-			}
-		}
-		arg0.pdata(local8, 24);
-	}
 }

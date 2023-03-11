@@ -37,7 +37,7 @@ public final class Static29 {
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IZIII)V")
 	public static void method939(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		if (Static218.aClass177_Sub1_2.anInt4888 == 0 || arg0 == 0 || Static243.anInt4503 >= 50 || arg3 == -1) {
+		if (client.preferences.anInt4888 == 0 || arg0 == 0 || Static243.anInt4503 >= 50 || arg3 == -1) {
 			return;
 		}
 		Static256.anIntArray321[Static243.anInt4503] = arg3;

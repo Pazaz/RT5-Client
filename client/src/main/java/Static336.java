@@ -21,10 +21,10 @@ public final class Static336 {
 
 	@OriginalMember(owner = "client!tj", name = "c", descriptor = "(IB)V")
 	public static void method5705(@OriginalArg(0) int arg0) {
-		if (Static347.anInt6442 == arg0) {
+		if (LoginManager.reconnecting == arg0) {
 			return;
 		}
-		if (Static347.anInt6442 == 0) {
+		if (LoginManager.reconnecting == 0) {
 			Static103.method2177();
 		}
 		if (arg0 == 40) {
@@ -34,14 +34,14 @@ public final class Static336 {
 			Static246.aClass111_2.close();
 			Static246.aClass111_2 = null;
 		}
-		if (Static347.anInt6442 == 25 || Static347.anInt6442 == 28) {
-			Static289.aClass197_71.anInt5558 = 2;
-			Static226.aClass197_61.anInt5558 = 2;
-			Static391.aClass197_96.anInt5558 = 2;
-			Static216.aClass197_57.anInt5558 = 2;
-			Static61.aClass197_12.anInt5558 = 2;
-			Static139.aClass197_35.anInt5558 = 2;
-			Static173.aClass197_45.anInt5558 = 2;
+		if (LoginManager.reconnecting == 25 || LoginManager.reconnecting == 28) {
+			client.jsArchive2.anInt5558 = 2;
+			client.jsArchive17.anInt5558 = 2;
+			client.jsArchive16.anInt5558 = 2;
+			client.jsArchive18.anInt5558 = 2;
+			client.jsArchive19.anInt5558 = 2;
+			client.jsArchive20.anInt5558 = 2;
+			client.jsArchive21.anInt5558 = 2;
 		}
 		if (arg0 == 25 || arg0 == 28) {
 			Static305.anInt5742 = 0;
@@ -50,31 +50,31 @@ public final class Static336 {
 			Static246.anInt4505 = 0;
 			Static190.anInt3541 = 1;
 			Static241.method4192(true);
-			Static289.aClass197_71.anInt5558 = 1;
-			Static226.aClass197_61.anInt5558 = 1;
-			Static391.aClass197_96.anInt5558 = 1;
-			Static216.aClass197_57.anInt5558 = 1;
-			Static61.aClass197_12.anInt5558 = 1;
-			Static139.aClass197_35.anInt5558 = 1;
-			Static173.aClass197_45.anInt5558 = 1;
+			client.jsArchive2.anInt5558 = 1;
+			client.jsArchive17.anInt5558 = 1;
+			client.jsArchive16.anInt5558 = 1;
+			client.jsArchive18.anInt5558 = 1;
+			client.jsArchive19.anInt5558 = 1;
+			client.jsArchive20.anInt5558 = 1;
+			client.jsArchive21.anInt5558 = 1;
 		}
 		if (arg0 == 25 || arg0 == 10) {
 			Static322.method5485();
 		}
 		if (arg0 == 5) {
-			Static348.method5830(Static30.aClass197_5, Static190.aClass19_8);
+			Static348.method5830(client.jsArchive8, Static190.aClass19_8);
 		} else {
 			Static67.method1772();
 		}
 		@Pc(146) boolean local146 = arg0 == 5 || arg0 == 10 || arg0 == 28;
-		@Pc(165) boolean local165 = Static347.anInt6442 == 5 || Static347.anInt6442 == 10 || Static347.anInt6442 == 28;
+		@Pc(165) boolean local165 = LoginManager.reconnecting == 5 || LoginManager.reconnecting == 10 || LoginManager.reconnecting == 28;
 		if (local146 != local165) {
 			if (local146) {
 				Static171.anInt3268 = Static97.anInt2049;
-				if (Static218.aClass177_Sub1_2.anInt4889 == 0) {
+				if (client.preferences.anInt4889 == 0) {
 					Static174.method1507();
 				} else {
-					Static249.method4150(Static218.aClass177_Sub1_2.anInt4889, Static101.aClass197_23, Static97.anInt2049);
+					Static249.method4150(client.preferences.anInt4889, client.jsArchive6, Static97.anInt2049);
 				}
 				Static287.js5NetQueue.method4647(false);
 			} else {
@@ -85,6 +85,6 @@ public final class Static336 {
 		if (arg0 == 25 || arg0 == 28 || arg0 == 40) {
 			Static190.aClass19_8.method2804();
 		}
-		Static347.anInt6442 = arg0;
+		LoginManager.reconnecting = arg0;
 	}
 }

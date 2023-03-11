@@ -12,11 +12,11 @@ public final class Static138 {
 
 	@OriginalMember(owner = "client!hr", name = "a", descriptor = "(BIII)V")
 	public static void method2578(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(6) int local6 = arg1 * Static218.aClass177_Sub1_2.anInt4889 >> 8;
+		@Pc(6) int local6 = arg1 * client.preferences.anInt4889 >> 8;
 		if (arg2 == -1 && !Static393.aBoolean486) {
 			Static368.method6192();
 		} else if (arg2 != -1 && (Static171.anInt3268 != arg2 || !Static64.method1704()) && local6 != 0 && !Static393.aBoolean486) {
-			Static180.method3367(arg2, arg0, local6, Static101.aClass197_23);
+			Static180.method3367(arg2, arg0, local6, client.jsArchive6);
 		}
 		Static171.anInt3268 = arg2;
 	}

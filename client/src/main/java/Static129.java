@@ -89,7 +89,7 @@ public final class Static129 {
 		Static121.anIntArray157 = new int[100];
 		Static14.aBoolean24 = true;
 		for (@Pc(35) int local35 = 0; local35 < 100; local35++) {
-			Static121.anIntArray157[local35] = (int) ((double) Static250.anInt4665 * Math.random()) << 4;
+			Static121.anIntArray157[local35] = (int) ((double) GameShell.canvasWidth * Math.random()) << 4;
 			Static121.anIntArray156[local35] = (int) (Math.random() * 350.0D) << 4;
 			Static353.anIntArray450[local35] = (int) (Math.random() * 102.0D) + 51;
 			Static313.anIntArray388[local35] = (int) (Math.random() * 48.0D) + 8;

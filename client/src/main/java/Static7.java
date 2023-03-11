@@ -266,7 +266,7 @@ public final class Static7 {
 						local34.method4068(local439, local432, Static335.aByteArray92[arg1]);
 					}
 					local34.aByte78 = (byte) (local146 + local34.aByte78 & 0x3);
-					if (arg1 == Static234.anInt4226) {
+					if (arg1 == PlayerList.selfId) {
 						Static355.anInt6585 = local34.aByte78;
 					}
 				} else {
@@ -284,14 +284,14 @@ public final class Static7 {
 						local34.method4068(local439, local432, Static335.aByteArray92[arg1]);
 					}
 					local34.aByte78 = (byte) (local34.aByte78 + local146 & 0x3);
-					if (Static234.anInt4226 == arg1) {
+					if (PlayerList.selfId == arg1) {
 						Static355.anInt6585 = local34.aByte78;
 					}
 				}
 			}
 		} else if (local15) {
 			local34.aBoolean276 = false;
-		} else if (arg1 == Static234.anInt4226) {
+		} else if (arg1 == PlayerList.selfId) {
 			throw new RuntimeException("s:lr");
 		} else {
 			Static360.anIntArray422[arg1] = (Static164.anInt3140 + local34.anIntArray316[0] >> 6 << 14) + (local34.aByte78 << 28) + (Static148.anInt2719 + local34.anIntArray317[0] >> 6);

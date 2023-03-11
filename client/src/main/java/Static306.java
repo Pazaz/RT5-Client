@@ -29,7 +29,7 @@ public final class Static306 {
 
 	@OriginalMember(owner = "client!rp", name = "a", descriptor = "(ILclient!id;)Z")
 	public static boolean method5252(@OriginalArg(1) Interface6 arg0) {
-		@Pc(10) Class41 local10 = Static359.aClass202_4.method5163(arg0.method6085());
+		@Pc(10) Class41 local10 = Static359.LocTypeList.method5163(arg0.method6085());
 		if (local10.anInt1316 == -1) {
 			return true;
 		} else {

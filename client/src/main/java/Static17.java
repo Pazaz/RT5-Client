@@ -76,7 +76,7 @@ public final class Static17 {
 					if (local119 == 1) {
 						Static277.anIntArray361[Static343.anInt6390++] = local16;
 					}
-					local42.method4342(Static6.aClass219_1.method5570(Protocol.inboundBuffer.gBit(14)));
+					local42.method4342(Static6.NpcTypeList.method5570(Protocol.inboundBuffer.gBit(14)));
 					@Pc(151) int local151 = Protocol.inboundBuffer.gBit(3) + 4 << 11 & 0x3929;
 					@Pc(156) int local156 = Protocol.inboundBuffer.gBit(2);
 					@Pc(161) int local161 = Protocol.inboundBuffer.gBit(1);

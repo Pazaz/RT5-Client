@@ -98,7 +98,7 @@ public final class Static257 {
 		}
 		@Pc(31) int local31;
 		@Pc(30) int local30;
-		if (Static218.aClass177_Sub1_2.method4495(Static77.anInt1762)) {
+		if (client.preferences.method4495(Static77.anInt1762)) {
 			local31 = 0;
 			local30 = 3;
 		} else {

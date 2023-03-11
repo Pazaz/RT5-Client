@@ -79,7 +79,7 @@ public final class Static262 {
 			local7 = Static200.method3647(local7, "%26", "&");
 			local7 = Static200.method3647(local7, "%23", "#");
 			if (Static392.aClass152_6.applet != null) {
-				@Pc(103) PrivilegedRequest local103 = Static392.aClass152_6.openUrlStream(new URL(Static392.aClass152_6.applet.getCodeBase(), "clienterror.ws?c=" + Static277.anInt5115 + "&u=" + Static241.aLong130 + "&v1=" + Signlink.javaVendor + "&v2=" + Signlink.javaVersion + "&e=" + local7));
+				@Pc(103) PrivilegedRequest local103 = Static392.aClass152_6.openUrlStream(new URL(Static392.aClass152_6.applet.getCodeBase(), "clienterror.ws?c=" + Static277.anInt5115 + "&u=" + LoginManager.encodedUsername + "&v1=" + Signlink.javaVendor + "&v2=" + Signlink.javaVersion + "&e=" + local7));
 				while (local103.status == 0) {
 					Static231.method4023(1L);
 				}
@@ -95,7 +95,7 @@ public final class Static262 {
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(Z)V")
 	public static void method6254() {
-		Static217.method3795(Static218.aClass177_Sub1_2.anInt4883);
+		Static217.method3795(client.preferences.anInt4883);
 		@Pc(18) int local18 = (Static136.anInt6778 >> 10) + (Static164.anInt3140 >> 3);
 		@Pc(27) int local27 = (Static211.anInt3777 >> 10) + (Static148.anInt2719 >> 3);
 		Static355.anInt6585 = Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 = 0;
@@ -118,11 +118,11 @@ public final class Static262 {
 			for (local97 = (local27 - (Static242.anInt4449 >> 4)) / 8; local97 <= (local27 + (Static242.anInt4449 >> 4)) / 8; local97++) {
 				@Pc(105) int local105 = local97 + (local87 << 8);
 				Static291.anIntArray372[local78] = local105;
-				Static221.anIntArray314[local78] = Static288.aClass197_70.method5075("m" + local87 + "_" + local97);
-				Static374.anIntArray480[local78] = Static288.aClass197_70.method5075("l" + local87 + "_" + local97);
-				Static190.anIntArray208[local78] = Static288.aClass197_70.method5075("n" + local87 + "_" + local97);
-				Static51.anIntArray98[local78] = Static288.aClass197_70.method5075("um" + local87 + "_" + local97);
-				Static62.anIntArray155[local78] = Static288.aClass197_70.method5075("ul" + local87 + "_" + local97);
+				Static221.anIntArray314[local78] = client.jsArchive5.method5075("m" + local87 + "_" + local97);
+				Static374.anIntArray480[local78] = client.jsArchive5.method5075("l" + local87 + "_" + local97);
+				Static190.anIntArray208[local78] = client.jsArchive5.method5075("n" + local87 + "_" + local97);
+				Static51.anIntArray98[local78] = client.jsArchive5.method5075("um" + local87 + "_" + local97);
+				Static62.anIntArray155[local78] = client.jsArchive5.method5075("ul" + local87 + "_" + local97);
 				if (Static190.anIntArray208[local78] == -1) {
 					Static221.anIntArray314[local78] = -1;
 					Static374.anIntArray480[local78] = -1;

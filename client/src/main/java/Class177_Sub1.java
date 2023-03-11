@@ -93,13 +93,13 @@ public final class Class177_Sub1 extends Class177 {
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(ZI)V")
 	public void method4493(@OriginalArg(0) boolean arg0) {
 		super.aBoolean354 = arg0;
-		if (Static359.aClass202_4 != null) {
-			Static359.aClass202_4.method5160(!this.method4495(Static77.anInt1762));
+		if (Static359.LocTypeList != null) {
+			Static359.LocTypeList.method5160(!this.method4495(Static77.anInt1762));
 		}
 	}
 
 	@OriginalMember(owner = "client!pe", name = "d", descriptor = "(I)Lclient!bt;")
-	public Buffer method4494() {
+	public Buffer encode() {
 		@Pc(8) Buffer local8 = new Buffer(39);
 		local8.p1(16);
 		local8.p1(super.anInt4879);
@@ -158,7 +158,7 @@ public final class Class177_Sub1 extends Class177 {
 			}
 			if (local17.status == 1) {
 				local7 = (FileOnDisk) local17.result;
-				@Pc(39) Buffer local39 = this.method4494();
+				@Pc(39) Buffer local39 = this.encode();
 				local7.write(local39.data, local39.pos, 0);
 			}
 		} catch (@Pc(49) Exception local49) {

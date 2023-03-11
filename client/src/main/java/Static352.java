@@ -23,7 +23,7 @@ public final class Static352 {
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(I)V")
 	public static void method5877() {
-		if (Static363.aFrame2 != null) {
+		if (Static363.frame != null) {
 			return;
 		}
 		@Pc(13) Container local13;
@@ -40,33 +40,33 @@ public final class Static352 {
 			Static178.anInt2319 -= local31.bottom + local31.top;
 			Static142.anInt2663 -= local31.right + local31.left;
 		}
-		if (Static144.method2692() == 1) {
-			Static172.anInt3299 = Static263.anInt4834;
-			Static250.anInt4665 = Static254.anInt4701;
+		if (Static144.getWindowMode() == 1) {
+			GameShell.canvasHeight = Static263.anInt4834;
+			GameShell.canvasWidth = Static254.anInt4701;
 			Static68.anInt1646 = 0;
 			Static84.anInt1842 = (Static142.anInt2663 - Static254.anInt4701) / 2;
 		} else if (Static309.anInt5802 < 96 && Static77.anInt1762 == 0) {
 			@Pc(70) int local70 = Static142.anInt2663 > 1024 ? 1024 : Static142.anInt2663;
 			@Pc(79) int local79 = Static178.anInt2319 > 768 ? 768 : Static178.anInt2319;
-			Static250.anInt4665 = local70;
+			GameShell.canvasWidth = local70;
 			Static84.anInt1842 = (Static142.anInt2663 - local70) / 2;
 			Static68.anInt1646 = 0;
-			Static172.anInt3299 = local79;
+			GameShell.canvasHeight = local79;
 		} else {
-			Static172.anInt3299 = Static178.anInt2319;
-			Static250.anInt4665 = Static142.anInt2663;
+			GameShell.canvasHeight = Static178.anInt2319;
+			GameShell.canvasWidth = Static142.anInt2663;
 			Static68.anInt1646 = 0;
 			Static84.anInt1842 = 0;
 		}
 		if (client.MODE_WHERE_LIVE != client.modeWhere) {
 			@Pc(130) boolean local130;
-			if (Static250.anInt4665 < 1024 && Static172.anInt3299 < 768) {
+			if (GameShell.canvasWidth < 1024 && GameShell.canvasHeight < 768) {
 				local130 = true;
 			} else {
 				local130 = false;
 			}
 		}
-		Static21.aCanvas1.setSize(Static250.anInt4665, Static172.anInt3299);
+		Static21.aCanvas1.setSize(GameShell.canvasWidth, GameShell.canvasHeight);
 		if (Static190.aClass19_8 != null) {
 			Static190.aClass19_8.method2803();
 		}
@@ -88,7 +88,7 @@ public final class Static352 {
 			return;
 		}
 		Static100.aBoolean156 = true;
-		if (Static218.aClass177_Sub1_2.aBoolean351) {
+		if (client.preferences.aBoolean351) {
 			Static277.aFloat67 = (int) Static277.aFloat67 + 191 & 0xFFFFFF80;
 		} else {
 			Static184.aFloat39 += (24.0F - Static184.aFloat39) / 2.0F;

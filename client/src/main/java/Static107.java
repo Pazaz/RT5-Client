@@ -21,7 +21,7 @@ public final class Static107 {
 		@Pc(6) long local6 = (long) arg4;
 		@Pc(12) Class31 local12 = (Class31) Static133.aClass98_17.method2612(local6);
 		if (local12 == null) {
-			@Pc(22) Class185 local22 = Static298.method2426(Static237.aClass197_63, arg4);
+			@Pc(22) Class185 local22 = Static298.method2426(client.jsArchive7, arg4);
 			if (local22 == null) {
 				return null;
 			}

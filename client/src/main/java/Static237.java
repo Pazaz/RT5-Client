@@ -7,9 +7,6 @@ public final class Static237 {
 	@OriginalMember(owner = "client!nl", name = "h", descriptor = "I")
 	public static int anInt4324;
 
-	@OriginalMember(owner = "client!nl", name = "i", descriptor = "Lclient!r;")
-	public static Class197 aClass197_63;
-
 	@OriginalMember(owner = "client!nl", name = "b", descriptor = "Z")
 	public static boolean aBoolean297 = false;
 

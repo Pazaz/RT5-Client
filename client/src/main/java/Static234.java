@@ -5,9 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static234 {
 
-	@OriginalMember(owner = "client!ni", name = "E", descriptor = "I")
-	public static int anInt4226 = -1;
-
 	@OriginalMember(owner = "client!ni", name = "P", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray39 = new String[100];
 
@@ -30,7 +27,7 @@ public final class Static234 {
 			}
 		} else if (arg1 == 3) {
 			try {
-				Static405.method4628(arg0.applet, "loggedout");
+				BrowserControl.call(arg0.applet, "loggedout");
 			} catch (@Pc(105) Throwable local105) {
 			}
 			try {

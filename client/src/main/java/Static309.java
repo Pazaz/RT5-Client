@@ -35,7 +35,7 @@ public final class Static309 {
 			local20 = Static370.aClass2_Sub24_1.method5243();
 			local24 = Static370.aClass2_Sub24_1.method5242();
 		}
-		Static257.method3927(0, Static172.anInt3299, Static250.anInt4665, 0, 0, local20, Static139.anInt2595, local24, 0);
+		Static257.method3927(0, GameShell.canvasHeight, GameShell.canvasWidth, 0, 0, local20, Static139.anInt2595, local24, 0);
 		if (Static227.aClass161_11 != null) {
 			Static12.method280(local20, local24);
 		}

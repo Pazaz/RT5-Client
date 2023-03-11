@@ -32,7 +32,7 @@ public final class Static209 {
 		}
 		if (Static355.anInt6581 < 10) {
 			if (!Static344.aClass197_85.method5072(Static344.aClass2_Sub2_Sub17_3.aString67)) {
-				Static355.anInt6581 = Static389.aClass197_66.method5085(Static344.aClass2_Sub2_Sub17_3.aString67) / 10;
+				Static355.anInt6581 = client.jsArchive23.method5085(Static344.aClass2_Sub2_Sub17_3.aString67) / 10;
 				return;
 			}
 			Static386.method6031();
@@ -124,7 +124,7 @@ public final class Static209 {
 				if (!Static344.aClass197_85.method5072(Static344.aClass2_Sub2_Sub17_3.aString67 + "_staticelements")) {
 					return;
 				}
-				Static344.aClass103_5 = Static317.method5552(Static344.aClass197_85, Static344.aClass2_Sub2_Sub17_3.aString67 + "_staticelements", Static206.aBoolean241);
+				Static344.aClass103_5 = Static317.method5552(Static344.aClass197_85, Static344.aClass2_Sub2_Sub17_3.aString67 + "_staticelements", LoginManager.mapMembers);
 			} else {
 				Static344.aClass103_5 = new Class103(0);
 			}

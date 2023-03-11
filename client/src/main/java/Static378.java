@@ -23,7 +23,7 @@ public final class Static378 {
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(BI)Z")
 	public static boolean method6314(@OriginalArg(1) int arg0) {
 		Static1.aBoolean1 = true;
-		Static292.anInt5510 = arg0 + 1 & 0xFFFF;
+		Protocol.verifyId = arg0 + 1 & 0xFFFF;
 		return true;
 	}
 }

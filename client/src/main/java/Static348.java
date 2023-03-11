@@ -27,9 +27,9 @@ public final class Static348 {
 		}
 		arg1.method2867(0);
 		Static252.aClass13_14 = arg1.method2891(Static396.method1676(arg0, Static75.anInt1736));
-		Static252.aClass13_14.method6385((Static250.anInt4665 - Static252.aClass13_14.method6399()) / 2, (Static172.anInt3299 - Static252.aClass13_14.method6384()) / 2);
+		Static252.aClass13_14.method6385((GameShell.canvasWidth - Static252.aClass13_14.method6399()) / 2, (GameShell.canvasHeight - Static252.aClass13_14.method6384()) / 2);
 		Static333.aClass13_21 = arg1.method2891(Static396.method1676(arg0, Static265.anInt4856));
-		Static333.aClass13_21.method6385((Static250.anInt4665 - Static333.aClass13_21.method6399()) / 2, 18);
+		Static333.aClass13_21.method6385((GameShell.canvasWidth - Static333.aClass13_21.method6399()) / 2, 18);
 		Static283.aBoolean383 = true;
 	}
 }

@@ -14,7 +14,7 @@ public final class Static390 {
 
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(I)V")
 	public static void method6449() {
-		Static289.aClass197_71.anInt5558 = 1;
+		client.jsArchive2.anInt5558 = 1;
 		client.instance.method1382();
 		Static242.aBoolean306 = true;
 		Static343.aBoolean431 = true;
@@ -116,13 +116,13 @@ public final class Static390 {
 		Static257.aShortArray79 = Static223.aShortArray78 = Static258.aShortArray95 = Static147.aShortArray54 = new short[256];
 		Static100.aBoolean156 = true;
 		Static330.aString62 = Static66.aClass79_34.method2267(client.language);
-		Static292.anInt5510 = 0;
-		Static218.aClass177_Sub1_2.aBoolean365 = false;
-		Static218.aClass177_Sub1_2.aBoolean366 = false;
+		Protocol.verifyId = 0;
+		client.preferences.aBoolean365 = false;
+		client.preferences.aBoolean366 = false;
 		Static160.method2956();
 		Static93.method2002();
 		Static375.aLong222 = 0L;
 		Static385.aClass2_Sub16_2 = null;
-		Static289.aClass197_71.anInt5558 = 2;
+		client.jsArchive2.anInt5558 = 2;
 	}
 }

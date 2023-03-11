@@ -64,7 +64,7 @@ public final class Static228 {
 						if (local217 != -1) {
 							@Pc(246) Class13[] local246 = (Class13[]) Static306.aClass98_49.method2612((long) local217);
 							if (local246 == null) {
-								@Pc(253) Class48[] local253 = Static396.method1688(Static30.aClass197_5, local217);
+								@Pc(253) Class48[] local253 = Static396.method1688(client.jsArchive8, local217);
 								if (local253 != null) {
 									local246 = new Class13[local253.length];
 									for (local261 = 0; local261 < local253.length; local261++) {
@@ -104,7 +104,7 @@ public final class Static228 {
 							if (local310 != -1) {
 								@Pc(420) Class13[] local420 = (Class13[]) Static139.aClass98_18.method2612((long) local310);
 								if (local420 == null) {
-									@Pc(427) Class48[] local427 = Static396.method1688(Static30.aClass197_5, local310);
+									@Pc(427) Class48[] local427 = Static396.method1688(client.jsArchive8, local310);
 									if (local427 != null) {
 										local420 = new Class13[local427.length];
 										for (local435 = 0; local435 < local427.length; local435++) {

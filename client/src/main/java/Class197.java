@@ -319,7 +319,7 @@ public final class Class197 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(B)I")
-	public int method5078() {
+	public int getChecksum() {
 		if (!this.method5086()) {
 			throw new IllegalStateException("");
 		}

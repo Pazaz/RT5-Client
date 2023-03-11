@@ -1,4 +1,3 @@
-import java.awt.datatransfer.ClipboardOwner;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.StringSelection;
 import java.awt.datatransfer.Transferable;
@@ -139,7 +138,7 @@ public final class Static105 {
 		for (local43 = 0; local43 < 100; local43++) {
 			Static121.anIntArray156[local43] += Static313.anIntArray388[local43];
 			if (Static121.anIntArray156[local43] >> 4 >= 350) {
-				Static121.anIntArray157[local43] = (int) (Math.random() * (double) Static250.anInt4665) << 4;
+				Static121.anIntArray157[local43] = (int) (Math.random() * (double) GameShell.canvasWidth) << 4;
 				Static121.anIntArray156[local43] = 0;
 				Static353.anIntArray450[local43] = (int) (Math.random() * 102.0D) + 51;
 				Static313.anIntArray388[local43] = (int) (Math.random() * 48.0D) + 8;

@@ -61,10 +61,10 @@ public final class Static181 {
 			for (local52 = (local13 - (Static373.anInt7033 >> 4)) / 8; local52 <= (local13 + (Static373.anInt7033 >> 4)) / 8; local52++) {
 				for (local59 = (local17 - (Static242.anInt4449 >> 4)) / 8; local59 <= (local17 + (Static242.anInt4449 >> 4)) / 8; local59++) {
 					Static291.anIntArray372[local44] = (local52 << 8) + local59;
-					Static221.anIntArray314[local44] = Static288.aClass197_70.method5075("m" + local52 + "_" + local59);
-					Static374.anIntArray480[local44] = Static288.aClass197_70.method5075("l" + local52 + "_" + local59);
-					Static51.anIntArray98[local44] = Static288.aClass197_70.method5075("um" + local52 + "_" + local59);
-					Static62.anIntArray155[local44] = Static288.aClass197_70.method5075("ul" + local52 + "_" + local59);
+					Static221.anIntArray314[local44] = client.jsArchive5.method5075("m" + local52 + "_" + local59);
+					Static374.anIntArray480[local44] = client.jsArchive5.method5075("l" + local52 + "_" + local59);
+					Static51.anIntArray98[local44] = client.jsArchive5.method5075("um" + local52 + "_" + local59);
+					Static62.anIntArray155[local44] = client.jsArchive5.method5075("ul" + local52 + "_" + local59);
 					local44++;
 				}
 			}
@@ -127,10 +127,10 @@ public final class Static181 {
 							Static291.anIntArray372[local48] = local235;
 							@Pc(270) int local270 = local235 >> 8 & 0xFF;
 							@Pc(274) int local274 = local235 & 0xFF;
-							Static221.anIntArray314[local48] = Static288.aClass197_70.method5075("m" + local270 + "_" + local274);
-							Static374.anIntArray480[local48] = Static288.aClass197_70.method5075("l" + local270 + "_" + local274);
-							Static51.anIntArray98[local48] = Static288.aClass197_70.method5075("um" + local270 + "_" + local274);
-							Static62.anIntArray155[local48] = Static288.aClass197_70.method5075("ul" + local270 + "_" + local274);
+							Static221.anIntArray314[local48] = client.jsArchive5.method5075("m" + local270 + "_" + local274);
+							Static374.anIntArray480[local48] = client.jsArchive5.method5075("l" + local270 + "_" + local274);
+							Static51.anIntArray98[local48] = client.jsArchive5.method5075("um" + local270 + "_" + local274);
+							Static62.anIntArray155[local48] = client.jsArchive5.method5075("ul" + local270 + "_" + local274);
 							local48++;
 						}
 					}

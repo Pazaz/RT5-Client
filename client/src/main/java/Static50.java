@@ -82,6 +82,6 @@ public final class Static50 {
 
 	@OriginalMember(owner = "client!ct", name = "e", descriptor = "(B)V")
 	public static void method1530() {
-		Static65.aClass19_3.method2879(Static99.anInt2095, Static218.aClass177_Sub1_2.aBoolean348 ? Static364.anInt6817 + 256 : -1);
+		Static65.aClass19_3.method2879(Static99.anInt2095, client.preferences.aBoolean348 ? Static364.anInt6817 + 256 : -1);
 	}
 }

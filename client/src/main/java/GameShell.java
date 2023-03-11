@@ -24,6 +24,10 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	public static Frame frame;
 	@OriginalMember(owner = "client!tb", name = "W", descriptor = "Lclient!ml;")
 	public static Signlink signlink;
+	@OriginalMember(owner = "client!og", name = "a", descriptor = "I")
+	public static int canvasWidth;
+	@OriginalMember(owner = "client!ju", name = "T", descriptor = "I")
+	public static int canvasHeight;
 	private static double canvasScale;
 
 	@OriginalMember(owner = "client!un", name = "w", descriptor = "Z")
@@ -56,8 +60,8 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			Static21.aCanvas1.getParent().remove(Static21.aCanvas1);
 		}
 		@Pc(18) Container local18;
-		if (Static363.aFrame2 != null) {
-			local18 = Static363.aFrame2;
+		if (Static363.frame != null) {
+			local18 = Static363.frame;
 		} else if (frame == null) {
 			local18 = signlink.applet;
 		} else {
@@ -66,7 +70,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		local18.setLayout(null);
 		Static21.aCanvas1 = new GameCanvas(this);
 		local18.add(Static21.aCanvas1);
-		Static21.aCanvas1.setSize(Static250.anInt4665, Static172.anInt3299);
+		Static21.aCanvas1.setSize(canvasWidth, canvasHeight);
 		Static21.aCanvas1.setVisible(true);
 		if (local18 == frame) {
 			@Pc(54) Insets local54 = frame.getInsets();
@@ -109,9 +113,9 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			Static84.anInt1842 = 0;
 			Static253.anApplet_Sub1_1 = this;
 			Static277.anInt5115 = 578;
-			Static250.anInt4665 = 1024;
+			canvasWidth = 1024;
 			Static142.anInt2663 = 1024;
-			Static172.anInt3299 = 768;
+			canvasHeight = 768;
 			Static178.anInt2319 = 768;
 			Static68.anInt1646 = 0;
 			frame = new Frame();
@@ -211,9 +215,9 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		if (Static210.anInt3761++ > 50) {
 			Static328.aBoolean412 = true;
 			Static210.anInt3761 -= 50;
-			Static21.aCanvas1.setSize(Static250.anInt4665, Static172.anInt3299);
+			Static21.aCanvas1.setSize(canvasWidth, canvasHeight);
 			Static21.aCanvas1.setVisible(true);
-			if (frame != null && Static363.aFrame2 == null) {
+			if (frame != null && Static363.frame == null) {
 				@Pc(76) Insets local76 = frame.getInsets();
 				Static21.aCanvas1.setLocation(local76.left + Static84.anInt1842, Static68.anInt1646 + local76.top);
 			} else {
@@ -242,7 +246,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		this.aBoolean95 = true;
 		System.out.println("error_game_" + arg0);
 		try {
-			Static405.method4628(signlink.applet, "loggedout");
+			BrowserControl.call(signlink.applet, "loggedout");
 		} catch (@Pc(33) Throwable local33) {
 		}
 		try {
@@ -286,13 +290,13 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	protected final void method1394(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(4) int arg2) {
 		try {
 			if (Static253.anApplet_Sub1_1 == null) {
-				Static172.anInt3299 = arg2;
+				canvasHeight = arg2;
 				Static178.anInt2319 = arg2;
 				Static277.anInt5115 = 578;
 				Static84.anInt1842 = 0;
 				Static253.anApplet_Sub1_1 = this;
 				Static68.anInt1646 = 0;
-				Static250.anInt4665 = arg0;
+				canvasWidth = arg0;
 				Static142.anInt2663 = arg0;
 				if (signlink == null) {
 					Static392.aClass152_6 = signlink = new Signlink(this, arg1, null, 0);

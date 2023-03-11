@@ -152,7 +152,7 @@ public final class Static79 {
 	public static boolean method1870() {
 		if (Static276.javaScript) {
 			try {
-				Static405.method4628(GameShell.signlink.applet, "showVideoAd");
+				BrowserControl.call(GameShell.signlink.applet, "showVideoAd");
 				return true;
 			} catch (@Pc(14) Throwable local14) {
 			}
@@ -169,7 +169,7 @@ public final class Static79 {
 		if (arg0 < 3 && Static325.method5545(arg7, arg1)) {
 			local30 = arg0 + 1;
 		}
-		if (!Static218.aClass177_Sub1_2.method4495(Static77.anInt1762) && !Static142.method2661(arg7, Static44.anInt1115, local30, arg1)) {
+		if (!client.preferences.method4495(Static77.anInt1762) && !Static142.method2661(arg7, Static44.anInt1115, local30, arg1)) {
 			return;
 		}
 		if (Static330.aClass67ArrayArrayArray3 == null) {
@@ -179,10 +179,10 @@ public final class Static79 {
 		if (arg2 < 0) {
 			return;
 		}
-		@Pc(76) boolean local76 = Static218.aClass177_Sub1_2.aBoolean359;
-		Static218.aClass177_Sub1_2.aBoolean359 = true;
+		@Pc(76) boolean local76 = client.preferences.aBoolean359;
+		client.preferences.aBoolean359 = true;
 		Static190.aClass29_Sub1_63.method1105(arg3, arg1, arg7, arg2, local30, arg0, Static190.aClass19_8, Static171.aClass46Array1[arg0], arg6, arg5);
-		Static218.aClass177_Sub1_2.aBoolean359 = local76;
+		client.preferences.aBoolean359 = local76;
 		return;
 	}
 }
