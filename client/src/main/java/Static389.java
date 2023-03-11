@@ -36,32 +36,32 @@ public final class Static389 {
 		}
 		@Pc(28) Buffer local28 = new Buffer(128);
 		local28.p1(10);
-		local28.method4843((arg7 ? 4 : 0) | (arg8 ? 2 : 0) | (arg3 ? 1 : 0));
-		local28.method4832(arg4);
+		local28.p2((arg7 ? 4 : 0) | (arg8 ? 2 : 0) | (arg3 ? 1 : 0));
+		local28.p8(arg4);
 		local28.p4(local8[0]);
-		local28.method4822(arg0);
+		local28.pjstr(arg0);
 		local28.p4(local8[1]);
-		local28.method4843(client.affiliate);
+		local28.p2(client.affiliate);
 		local28.p1(arg1);
 		local28.p1(arg6);
 		local28.p4(local8[2]);
-		local28.method4843(arg5);
-		local28.method4843(arg2);
+		local28.p2(arg5);
+		local28.p2(arg2);
 		local28.p4(local8[3]);
-		local28.method4834(Static320.aBigInteger2, Static194.aBigInteger1);
+		local28.rsaenc(Static320.aBigInteger2, Static194.aBigInteger1);
 		@Pc(118) Buffer local118 = new Buffer(350);
-		local118.method4822(arg9);
+		local118.pjstr(arg9);
 		@Pc(131) int local131 = 8 - Static27.method872(arg9) % 8;
 		for (@Pc(133) int local133 = 0; local133 < local131; local133++) {
 			local118.p1((int) (Math.random() * 255.0D));
 		}
-		local118.method4862(local8);
-		Protocol.outboundBuffer.position = 0;
+		local118.tinyenc(local8);
+		Protocol.outboundBuffer.pos = 0;
 		Protocol.outboundBuffer.p1(Static43.aClass242_8.anInt7038);
-		Protocol.outboundBuffer.method4843(local28.position + local118.position + 2);
-		Protocol.outboundBuffer.method4843(578);
-		Protocol.outboundBuffer.method4857(local28.aByteArray73, local28.position);
-		Protocol.outboundBuffer.method4857(local118.aByteArray73, local118.position);
+		Protocol.outboundBuffer.p2(local28.pos + local118.pos + 2);
+		Protocol.outboundBuffer.p2(578);
+		Protocol.outboundBuffer.pdata(local28.data, local28.pos);
+		Protocol.outboundBuffer.pdata(local118.data, local118.pos);
 		Static141.anInt2652 = 1;
 		Static66.anInt1625 = 0;
 		Static318.anInt5968 = -3;

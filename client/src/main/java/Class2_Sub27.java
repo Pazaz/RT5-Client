@@ -298,7 +298,7 @@ public final class Class2_Sub27 extends Class2 {
 				local49 += local53;
 			} while (local53 >= 255);
 			@Pc(64) byte[] local64 = new byte[local49];
-			local4.method4799(local64, local49);
+			local4.gdata(local64, local49);
 			this.aByteArrayArray14[local46] = local64;
 		}
 	}

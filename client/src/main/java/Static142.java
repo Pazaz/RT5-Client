@@ -80,7 +80,7 @@ public final class Static142 {
 				}
 				Protocol.socket = new Class111((Socket) Static5.aClass32_1.result, GameShell.signlink);
 				Static5.aClass32_1 = null;
-				Protocol.socket.write(Protocol.outboundBuffer.position, Protocol.outboundBuffer.aByteArray73);
+				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
 				if (client.musicChannel != null) {
 					client.musicChannel.method6325();
 				}
@@ -111,10 +111,10 @@ public final class Static142 {
 				Static141.anInt2652 = 4;
 			}
 			if (Static141.anInt2652 == 4 && Protocol.socket.available() >= Static163.aStringArray23.length * 8) {
-				Static212.aClass2_Sub4_Sub2_3.position = 0;
-				Protocol.socket.read(Static212.aClass2_Sub4_Sub2_3.aByteArray73, Static163.aStringArray23.length * 8, 0);
+				Static212.aClass2_Sub4_Sub2_3.pos = 0;
+				Protocol.socket.read(Static212.aClass2_Sub4_Sub2_3.data, Static163.aStringArray23.length * 8, 0);
 				for (local119 = 0; local119 < Static163.aStringArray23.length; local119++) {
-					Static163.aStringArray23[local119] = Static202.method3676(Static212.aClass2_Sub4_Sub2_3.method4798());
+					Static163.aStringArray23[local119] = Static202.method3676(Static212.aClass2_Sub4_Sub2_3.g8());
 				}
 				Static141.anInt2652 = 0;
 				Static318.anInt5968 = 21;

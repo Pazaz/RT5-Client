@@ -78,8 +78,8 @@ public final class Static93 {
 	public static void method2002() {
 		Static91.method1960(Static101.aClass145_75);
 		Protocol.outboundBuffer.p1(Static144.method2692());
-		Protocol.outboundBuffer.method4843(Static250.anInt4665);
-		Protocol.outboundBuffer.method4843(Static172.anInt3299);
+		Protocol.outboundBuffer.p2(Static250.anInt4665);
+		Protocol.outboundBuffer.p2(Static172.anInt3299);
 		Protocol.outboundBuffer.p1(Static218.aClass177_Sub1_2.anInt4885);
 	}
 

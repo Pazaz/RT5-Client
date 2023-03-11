@@ -116,17 +116,17 @@ public final class Class2_Sub3_Sub25 extends Class2_Sub3 {
 		} else if (arg0 == 1) {
 			this.anInt5013 = arg1.g1();
 		} else if (arg0 == 2) {
-			this.anInt5006 = arg1.method4829();
+			this.anInt5006 = arg1.g2();
 		} else if (arg0 == 3) {
-			this.anInt5015 = arg1.method4829();
+			this.anInt5015 = arg1.g2();
 		} else if (arg0 == 4) {
-			this.anInt5018 = arg1.method4829();
+			this.anInt5018 = arg1.g2();
 		} else if (arg0 == 5) {
-			this.anInt5009 = arg1.method4829();
+			this.anInt5009 = arg1.g2();
 		} else if (arg0 == 6) {
-			this.anInt5017 = arg1.method4829();
+			this.anInt5017 = arg1.g2();
 		} else if (arg0 == 7) {
-			this.anInt5010 = arg1.method4829();
+			this.anInt5010 = arg1.g2();
 		}
 	}
 

@@ -230,7 +230,7 @@ public final class Static317 {
 			while (local36 < local34.anInt2702) {
 				@Pc(52) Buffer local52 = new Buffer(arg0.method5089(local28[local38++], local10));
 				@Pc(58) int local58 = local52.g4();
-				@Pc(62) int local62 = local52.method4829();
+				@Pc(62) int local62 = local52.g2();
 				@Pc(66) int local66 = local52.g1();
 				if (!arg2 && local66 == 1) {
 					local34.anInt2702--;

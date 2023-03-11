@@ -88,14 +88,14 @@ public final class Static182 {
 
 	@OriginalMember(owner = "client!kk", name = "b", descriptor = "(B)V")
 	public static void method3388() {
-		Protocol.outboundBuffer.position = 0;
+		Protocol.outboundBuffer.pos = 0;
 		Static82.anInt1836 = 0;
 		Static39.aClass89_35 = null;
 		Static151.anInt2773 = 0;
 		Static334.aClass89_222 = null;
 		Static231.aClass89_164 = null;
 		Static268.anInt4955 = 0;
-		Static212.aClass2_Sub4_Sub2_3.position = 0;
+		Static212.aClass2_Sub4_Sub2_3.pos = 0;
 		Static66.aClass89_57 = null;
 		Static160.method2956();
 		Static309.method5280();

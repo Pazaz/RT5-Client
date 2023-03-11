@@ -501,7 +501,7 @@ public final class client extends GameShell {
 				@Pc(186) Buffer local186 = new Buffer(5);
 				local186.p1(Static43.aClass242_2.anInt7038);
 				local186.p4(578);
-				Static103.js5Socket.write(5, local186.aByteArray73);
+				Static103.js5Socket.write(5, local186.data);
 				Static309.js5ConnectState++;
 				Static371.aLong220 = MonotonicClock.currentTimeMillis();
 			}
@@ -659,12 +659,12 @@ public final class client extends GameShell {
 					}
 					if (local18 == 1) {
 						@Pc(109) int[] local109 = Static209.anIntArray228 = new int[6];
-						local109[0] = local14.method4829();
-						local109[1] = local14.method4829();
-						local109[2] = local14.method4829();
-						local109[3] = local14.method4829();
-						local109[4] = local14.method4829();
-						local109[5] = local14.method4829();
+						local109[0] = local14.g2();
+						local109[1] = local14.g2();
+						local109[2] = local14.g2();
+						local109[3] = local14.g2();
+						local109[4] = local14.g2();
+						local109[5] = local14.g2();
 					} else {
 						@Pc(38) int local38;
 						@Pc(33) int local33;
@@ -672,7 +672,7 @@ public final class client extends GameShell {
 							local33 = local14.g1();
 							Static117.anIntArray150 = new int[local33];
 							for (local38 = 0; local38 < local33; local38++) {
-								Static117.anIntArray150[local38] = local14.method4829();
+								Static117.anIntArray150[local38] = local14.g2();
 								if (Static117.anIntArray150[local38] == 65535) {
 									Static117.anIntArray150[local38] = -1;
 								}
@@ -681,7 +681,7 @@ public final class client extends GameShell {
 							local33 = local14.g1();
 							Static324.anIntArray412 = new int[local33];
 							for (local38 = 0; local38 < local33; local38++) {
-								Static324.anIntArray412[local38] = local14.method4829();
+								Static324.anIntArray412[local38] = local14.g2();
 								if (Static324.anIntArray412[local38] == 65535) {
 									Static324.anIntArray412[local38] = -1;
 								}

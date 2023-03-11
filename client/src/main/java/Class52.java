@@ -42,21 +42,21 @@ public final class Class52 {
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(Lclient!bt;BI)V")
 	private void method1767(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.aChar4 = Static78.method5698(arg0.method4825());
+			this.aChar4 = Static78.method5698(arg0.g1b());
 		} else if (arg1 == 2) {
-			this.aChar3 = Static78.method5698(arg0.method4825());
+			this.aChar3 = Static78.method5698(arg0.g1b());
 		} else if (arg1 == 3) {
-			this.aString16 = arg0.method4809();
+			this.aString16 = arg0.gjstr();
 		} else if (arg1 == 4) {
 			this.anInt1634 = arg0.g4();
 		} else if (arg1 == 5 || arg1 == 6) {
-			@Pc(45) int local45 = arg0.method4829();
+			@Pc(45) int local45 = arg0.g2();
 			this.aClass4_31 = new Class4(Static162.method2977(local45));
 			for (@Pc(55) int local55 = 0; local55 < local45; local55++) {
 				@Pc(61) int local61 = arg0.g4();
 				@Pc(73) Class2 local73;
 				if (arg1 == 5) {
-					local73 = new Class2_Sub40(arg0.method4809());
+					local73 = new Class2_Sub40(arg0.gjstr());
 				} else {
 					local73 = new Class2_Sub39(arg0.g4());
 				}

@@ -26,7 +26,7 @@ public final class Class40 {
 	@OriginalMember(owner = "client!cr", name = "a", descriptor = "(Lclient!bt;II)V")
 	private void method1470(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 1) {
-			this.aChar2 = Static78.method5698(arg0.method4825());
+			this.aChar2 = Static78.method5698(arg0.g1b());
 		} else if (arg1 == 2) {
 			this.anInt1258 = 0;
 		}

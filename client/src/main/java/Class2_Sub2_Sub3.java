@@ -34,10 +34,10 @@ public final class Class2_Sub2_Sub3 extends Class2_Sub2 {
 		}
 		for (local30 = 0; local30 < local23; local30++) {
 			@Pc(49) boolean local49 = arg0.g1() == 1;
-			@Pc(53) int local53 = arg0.method4833();
+			@Pc(53) int local53 = arg0.ig3();
 			@Pc(62) Class2 local62;
 			if (local49) {
-				local62 = new Class2_Sub40(arg0.method4809());
+				local62 = new Class2_Sub40(arg0.gjstr());
 			} else {
 				local62 = new Class2_Sub39(arg0.g4());
 			}

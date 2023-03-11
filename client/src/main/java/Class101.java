@@ -33,19 +33,19 @@ public final class Class101 {
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(Lclient!bt;II)V")
 	private void method2689(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.anInt2690 = arg0.method4829();
+			this.anInt2690 = arg0.g2();
 		} else if (arg1 == 2) {
 			this.aBoolean191 = true;
 		} else if (arg1 == 3) {
-			this.anInt2695 = arg0.method4823();
-			this.anInt2698 = arg0.method4823();
-			this.anInt2693 = arg0.method4823();
+			this.anInt2695 = arg0.g2b();
+			this.anInt2698 = arg0.g2b();
+			this.anInt2693 = arg0.g2b();
 		} else if (arg1 == 4) {
 			this.anInt2692 = arg0.g1();
 		} else if (arg1 == 5) {
-			this.anInt2686 = arg0.method4829();
+			this.anInt2686 = arg0.g2();
 		} else if (arg1 == 6) {
-			this.anInt2687 = arg0.method4833();
+			this.anInt2687 = arg0.ig3();
 		}
 	}
 

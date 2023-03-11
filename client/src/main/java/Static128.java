@@ -11,6 +11,6 @@ public final class Static128 {
 	@OriginalMember(owner = "client!hf", name = "b", descriptor = "(I)V")
 	public static void method2432() {
 		Static91.method1960(Static82.aClass145_64);
-		Protocol.outboundBuffer.method4843(Static292.anInt5510);
+		Protocol.outboundBuffer.p2(Static292.anInt5510);
 	}
 }

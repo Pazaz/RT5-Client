@@ -109,7 +109,7 @@ public final class Static5 {
 			}
 			arg0.method4867(arg1);
 			arg0.p1(0);
-			@Pc(106) int local106 = arg0.position;
+			@Pc(106) int local106 = arg0.pos;
 			arg0.p4(local16.anInt7156);
 			for (@Pc(113) int local113 = 0; local113 < local16.anInt7154; local113++) {
 				if (local16.anIntArray491[local113] == 0) {
@@ -146,10 +146,10 @@ public final class Static5 {
 								arg0.p1(0);
 							} else if (local260 instanceof Number) {
 								arg0.p1(1);
-								arg0.method4832(((Number) local260).longValue());
+								arg0.p8(((Number) local260).longValue());
 							} else if (local260 instanceof String) {
 								arg0.p1(2);
-								arg0.method4822((String) local260);
+								arg0.pjstr((String) local260);
 							} else {
 								arg0.p1(4);
 							}
@@ -188,8 +188,8 @@ public final class Static5 {
 					arg0.p1(local16.anIntArray491[local113]);
 				}
 			}
-			arg0.method4802(local106);
-			arg0.method4861(arg0.position - local106);
+			arg0.addcrc(local106);
+			arg0.psize1(arg0.pos - local106);
 			local16.method6468();
 		}
 	}

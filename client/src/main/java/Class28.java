@@ -71,7 +71,7 @@ public final class Class28 {
 	@OriginalMember(owner = "client!bp", name = "a", descriptor = "(Lclient!bt;ZI)V")
 	private void method947(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.anInt736 = arg0.method4829();
+			this.anInt736 = arg0.g2();
 		} else if (arg1 == 2) {
 			arg0.g1();
 		} else if (arg1 == 3) {

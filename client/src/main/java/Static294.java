@@ -26,7 +26,7 @@ public final class Static294 {
 		}
 		try {
 			Static317.aClass205_6.method5214(0L);
-			Static317.aClass205_6.method5215(arg1, arg0.aByteArray73, 24);
+			Static317.aClass205_6.method5215(arg1, arg0.data, 24);
 		} catch (@Pc(23) Exception local23) {
 		}
 	}

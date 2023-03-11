@@ -23,12 +23,12 @@ public final class Static352 {
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(IIIII)V")
 	public static void method5876(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		Protocol.outboundBuffer.position = 0;
+		Protocol.outboundBuffer.pos = 0;
 		Protocol.outboundBuffer.p1(Static43.aClass242_6.anInt7038);
 		Protocol.outboundBuffer.p1(arg2);
 		Protocol.outboundBuffer.p1(arg3);
-		Protocol.outboundBuffer.method4843(arg1);
-		Protocol.outboundBuffer.method4843(arg0);
+		Protocol.outboundBuffer.p2(arg1);
+		Protocol.outboundBuffer.p2(arg0);
 		Static327.anInt6109 = 0;
 		Static66.anInt1625 = 0;
 		Static318.anInt5968 = -3;

@@ -52,7 +52,7 @@ public final class Class2_Sub2_Sub12 extends Class2_Sub2 {
 	@OriginalMember(owner = "client!mn", name = "a", descriptor = "(BILclient!bt;)V")
 	private void method3796(@OriginalArg(1) int arg0, @OriginalArg(2) Buffer arg1) {
 		if (arg0 == 1) {
-			this.aString37 = arg1.method4809();
+			this.aString37 = arg1.gjstr();
 			return;
 		}
 		@Pc(16) int local16;
@@ -63,8 +63,8 @@ public final class Class2_Sub2_Sub12 extends Class2_Sub2 {
 			this.anIntArray233 = new int[local16];
 			this.aCharArray4 = new char[local16];
 			for (local26 = 0; local26 < local16; local26++) {
-				this.anIntArray233[local26] = arg1.method4829();
-				local39 = arg1.method4825();
+				this.anIntArray233[local26] = arg1.g2();
+				local39 = arg1.g1b();
 				this.aCharArray4[local26] = local39 == 0 ? 0 : Static78.method5698(local39);
 			}
 		} else if (arg0 == 3) {
@@ -72,8 +72,8 @@ public final class Class2_Sub2_Sub12 extends Class2_Sub2 {
 			this.aCharArray5 = new char[local16];
 			this.anIntArray232 = new int[local16];
 			for (local26 = 0; local26 < local16; local26++) {
-				this.anIntArray232[local26] = arg1.method4829();
-				local39 = arg1.method4825();
+				this.anIntArray232[local26] = arg1.g2();
+				local39 = arg1.g1b();
 				this.aCharArray5[local26] = local39 == 0 ? 0 : Static78.method5698(local39);
 			}
 		}

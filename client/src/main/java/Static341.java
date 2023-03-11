@@ -38,23 +38,23 @@ public final class Static341 {
 				if (arg0 == 1) {
 					Static91.method1960(Static7.aClass145_267);
 					Protocol.outboundBuffer.p1(0);
-					Protocol.outboundBuffer.method4838(local9[local13]);
+					Protocol.outboundBuffer.ip2add(local9[local13]);
 				} else if (arg0 == 4) {
 					Static91.method1960(Static183.aClass145_7);
-					Protocol.outboundBuffer.method4814(0);
-					Protocol.outboundBuffer.method4830(local9[local13]);
+					Protocol.outboundBuffer.p1neg(0);
+					Protocol.outboundBuffer.ip2_dup(local9[local13]);
 				} else if (arg0 == 5) {
 					Static91.method1960(Static132.aClass145_92);
-					Protocol.outboundBuffer.method4830(local9[local13]);
-					Protocol.outboundBuffer.method4819(0);
+					Protocol.outboundBuffer.ip2_dup(local9[local13]);
+					Protocol.outboundBuffer.p1sub(0);
 				} else if (arg0 == 6) {
 					Static91.method1960(Static143.aClass145_102);
-					Protocol.outboundBuffer.method4830(local9[local13]);
-					Protocol.outboundBuffer.method4827(0);
+					Protocol.outboundBuffer.ip2_dup(local9[local13]);
+					Protocol.outboundBuffer.p1add(0);
 				} else if (arg0 == 7) {
 					Static91.method1960(Static21.aClass145_25);
-					Protocol.outboundBuffer.method4819(0);
-					Protocol.outboundBuffer.method4838(local9[local13]);
+					Protocol.outboundBuffer.p1sub(0);
+					Protocol.outboundBuffer.ip2add(local9[local13]);
 				}
 				local11 = true;
 				break;

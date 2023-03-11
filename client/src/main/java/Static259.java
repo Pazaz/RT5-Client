@@ -35,10 +35,10 @@ public final class Static259 {
 			Static93.anInt1951 = 2;
 			Static313.anInt5878 = 0;
 			Static91.method1960(Static109.aClass145_83);
-			Protocol.outboundBuffer.method4838(Static148.anInt2719 + local18);
-			Protocol.outboundBuffer.method4843(local15 + Static164.anInt3140);
-			Protocol.outboundBuffer.method4819(Static174.aClass123_2.method3343(82) ? 1 : 0);
-			Protocol.outboundBuffer.method4830(local25);
+			Protocol.outboundBuffer.ip2add(Static148.anInt2719 + local18);
+			Protocol.outboundBuffer.p2(local15 + Static164.anInt3140);
+			Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Protocol.outboundBuffer.ip2_dup(local25);
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 45 || local21 == 1011) {
@@ -50,11 +50,11 @@ public final class Static259 {
 			Static291.anInt5504 = arg2;
 			Static313.anInt5878 = 0;
 			Static91.method1960(Static196.aClass145_131);
-			Protocol.outboundBuffer.method4830(Static196.anInt3317);
+			Protocol.outboundBuffer.ip2_dup(Static196.anInt3317);
 			Protocol.outboundBuffer.p4(Static337.anInt6317);
-			Protocol.outboundBuffer.method4838(local18 + Static148.anInt2719);
-			Protocol.outboundBuffer.method4830(Static214.anInt3792);
-			Protocol.outboundBuffer.method4838(Static164.anInt3140 + local15);
+			Protocol.outboundBuffer.ip2add(local18 + Static148.anInt2719);
+			Protocol.outboundBuffer.ip2_dup(Static214.anInt3792);
+			Protocol.outboundBuffer.ip2add(Static164.anInt3140 + local15);
 			Static322.method5482(true, -4, local18, 0, 1, local15, 1, 0);
 		}
 		if (local21 == 12) {
@@ -63,9 +63,9 @@ public final class Static259 {
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
 			Static91.method1960(Static166.aClass145_122);
-			Protocol.outboundBuffer.method4838((int) (local28 >>> 32) & Integer.MAX_VALUE);
-			Protocol.outboundBuffer.method4838(Static148.anInt2719 + local18);
-			Protocol.outboundBuffer.method4843(local15 + Static164.anInt3140);
+			Protocol.outboundBuffer.ip2add((int) (local28 >>> 32) & Integer.MAX_VALUE);
+			Protocol.outboundBuffer.ip2add(Static148.anInt2719 + local18);
+			Protocol.outboundBuffer.p2(local15 + Static164.anInt3140);
 			Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Static172.method3285(local18, local28, local15);
 		}
@@ -75,10 +75,10 @@ public final class Static259 {
 			Static93.anInt1951 = 2;
 			Static320.anInt6005 = arg1;
 			Static91.method1960(Static382.aClass145_260);
-			Protocol.outboundBuffer.method4855(local18 + Static148.anInt2719);
-			Protocol.outboundBuffer.method4830((int) (local28 >>> 32) & Integer.MAX_VALUE);
-			Protocol.outboundBuffer.method4855(Static164.anInt3140 + local15);
-			Protocol.outboundBuffer.method4814(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Protocol.outboundBuffer.p2add(local18 + Static148.anInt2719);
+			Protocol.outboundBuffer.ip2_dup((int) (local28 >>> 32) & Integer.MAX_VALUE);
+			Protocol.outboundBuffer.p2add(Static164.anInt3140 + local15);
+			Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Static172.method3285(local18, local28, local15);
 		}
 		@Pc(275) Class11_Sub5_Sub2_Sub1 local275;
@@ -90,8 +90,8 @@ public final class Static259 {
 				Static93.anInt1951 = 2;
 				Static320.anInt6005 = arg1;
 				Static91.method1960(Static21.aClass145_25);
-				Protocol.outboundBuffer.method4819(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Protocol.outboundBuffer.method4838(local25);
+				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Protocol.outboundBuffer.ip2add(local25);
 				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
 			}
 		}
@@ -101,7 +101,7 @@ public final class Static259 {
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
 			Static91.method1960(Static272.aClass145_180);
-			Protocol.outboundBuffer.method4843(local25);
+			Protocol.outboundBuffer.p2(local25);
 		}
 		if (local21 == 46) {
 			Static313.anInt5878 = 0;
@@ -109,10 +109,10 @@ public final class Static259 {
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
 			Static91.method1960(Static313.aClass145_209);
-			Protocol.outboundBuffer.method4830(Static148.anInt2719 + local18);
-			Protocol.outboundBuffer.method4843(local25);
-			Protocol.outboundBuffer.method4819(Static174.aClass123_2.method3343(82) ? 1 : 0);
-			Protocol.outboundBuffer.method4855(Static164.anInt3140 + local15);
+			Protocol.outboundBuffer.ip2_dup(Static148.anInt2719 + local18);
+			Protocol.outboundBuffer.p2(local25);
+			Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Protocol.outboundBuffer.p2add(Static164.anInt3140 + local15);
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 59) {
@@ -124,8 +124,8 @@ public final class Static259 {
 				Static320.anInt6005 = arg1;
 				Static93.anInt1951 = 1;
 				Static91.method1960(Static171.aClass145_127);
-				Protocol.outboundBuffer.method4843(local15 + Static164.anInt3140);
-				Protocol.outboundBuffer.method4855(local18 + Static148.anInt2719);
+				Protocol.outboundBuffer.p2(local15 + Static164.anInt3140);
+				Protocol.outboundBuffer.p2add(local18 + Static148.anInt2719);
 			}
 		}
 		@Pc(485) Class11_Sub5_Sub2_Sub2 local485;
@@ -142,7 +142,7 @@ public final class Static259 {
 				}
 				if (local490 != null) {
 					Static91.method1960(Static98.aClass145_73);
-					Protocol.outboundBuffer.method4843(local490.anInt2048);
+					Protocol.outboundBuffer.p2(local490.anInt2048);
 				}
 			}
 		}
@@ -154,7 +154,7 @@ public final class Static259 {
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
 				Static91.method1960(Static4.aClass145_8);
-				Protocol.outboundBuffer.method4838(local25);
+				Protocol.outboundBuffer.ip2add(local25);
 				Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local485.anIntArray317[0], 0, local485.method4328(), local485.anIntArray316[0], local485.method4328(), 0);
 			}
@@ -165,10 +165,10 @@ public final class Static259 {
 			Static291.anInt5504 = arg2;
 			Static93.anInt1951 = 2;
 			Static91.method1960(Static311.aClass145_204);
-			Protocol.outboundBuffer.method4838(local25);
-			Protocol.outboundBuffer.method4855(Static148.anInt2719 + local18);
-			Protocol.outboundBuffer.method4838(Static164.anInt3140 + local15);
-			Protocol.outboundBuffer.method4819(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Protocol.outboundBuffer.ip2add(local25);
+			Protocol.outboundBuffer.p2add(Static148.anInt2719 + local18);
+			Protocol.outboundBuffer.ip2add(Static164.anInt3140 + local15);
+			Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 10) {
@@ -180,10 +180,10 @@ public final class Static259 {
 				Static93.anInt1951 = 2;
 				Static91.method1960(Static47.aClass145_43);
 				Protocol.outboundBuffer.p4(Static337.anInt6317);
-				Protocol.outboundBuffer.method4819(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Protocol.outboundBuffer.method4838(Static196.anInt3317);
-				Protocol.outboundBuffer.method4830(Static214.anInt3792);
-				Protocol.outboundBuffer.method4843(local25);
+				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Protocol.outboundBuffer.ip2add(Static196.anInt3317);
+				Protocol.outboundBuffer.ip2_dup(Static214.anInt3792);
+				Protocol.outboundBuffer.p2(local25);
 				Static322.method5482(true, -2, local485.anIntArray317[0], 0, local485.method4328(), local485.anIntArray316[0], local485.method4328(), 0);
 			}
 		}
@@ -193,10 +193,10 @@ public final class Static259 {
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
 			Static91.method1960(Static262.aClass145_251);
-			Protocol.outboundBuffer.method4838(Integer.MAX_VALUE & (int) (local28 >>> 32));
+			Protocol.outboundBuffer.ip2add(Integer.MAX_VALUE & (int) (local28 >>> 32));
 			Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
-			Protocol.outboundBuffer.method4843(local15 + Static164.anInt3140);
-			Protocol.outboundBuffer.method4830(Static148.anInt2719 + local18);
+			Protocol.outboundBuffer.p2(local15 + Static164.anInt3140);
+			Protocol.outboundBuffer.ip2_dup(Static148.anInt2719 + local18);
 			Static172.method3285(local18, local28, local15);
 		}
 		if (local21 == 60) {
@@ -207,11 +207,11 @@ public final class Static259 {
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
 				Static91.method1960(Static299.aClass145_196);
-				Protocol.outboundBuffer.method4848(Static337.anInt6317);
-				Protocol.outboundBuffer.method4819(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Protocol.outboundBuffer.method4830(Static214.anInt3792);
-				Protocol.outboundBuffer.method4838(Static196.anInt3317);
-				Protocol.outboundBuffer.method4830(local25);
+				Protocol.outboundBuffer.ip4_dup(Static337.anInt6317);
+				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Protocol.outboundBuffer.ip2_dup(Static214.anInt3792);
+				Protocol.outboundBuffer.ip2add(Static196.anInt3317);
+				Protocol.outboundBuffer.ip2_dup(local25);
 				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
 			}
 		}
@@ -221,10 +221,10 @@ public final class Static259 {
 			Static93.anInt1951 = 2;
 			Static291.anInt5504 = arg2;
 			Static91.method1960(Static110.aClass145_84);
-			Protocol.outboundBuffer.method4838(Static148.anInt2719 + local18);
-			Protocol.outboundBuffer.method4855(Integer.MAX_VALUE & (int) (local28 >>> 32));
-			Protocol.outboundBuffer.method4843(Static164.anInt3140 + local15);
-			Protocol.outboundBuffer.method4814(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Protocol.outboundBuffer.ip2add(Static148.anInt2719 + local18);
+			Protocol.outboundBuffer.p2add(Integer.MAX_VALUE & (int) (local28 >>> 32));
+			Protocol.outboundBuffer.p2(Static164.anInt3140 + local15);
+			Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Static172.method3285(local18, local28, local15);
 		}
 		if (local21 == 58) {
@@ -233,10 +233,10 @@ public final class Static259 {
 			Static320.anInt6005 = arg1;
 			Static313.anInt5878 = 0;
 			Static91.method1960(Static89.aClass145_67);
-			Protocol.outboundBuffer.method4838(local25);
-			Protocol.outboundBuffer.method4827(Static174.aClass123_2.method3343(82) ? 1 : 0);
-			Protocol.outboundBuffer.method4843(Static148.anInt2719 + local18);
-			Protocol.outboundBuffer.method4830(Static164.anInt3140 + local15);
+			Protocol.outboundBuffer.ip2add(local25);
+			Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Protocol.outboundBuffer.p2(Static148.anInt2719 + local18);
+			Protocol.outboundBuffer.ip2_dup(Static164.anInt3140 + local15);
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 13) {
@@ -245,13 +245,13 @@ public final class Static259 {
 			Static291.anInt5504 = arg2;
 			Static93.anInt1951 = 2;
 			Static91.method1960(Static372.aClass145_253);
-			Protocol.outboundBuffer.method4843(Static196.anInt3317);
-			Protocol.outboundBuffer.method4838(local25);
-			Protocol.outboundBuffer.method4830(Static164.anInt3140 + local15);
-			Protocol.outboundBuffer.method4814(Static174.aClass123_2.method3343(82) ? 1 : 0);
-			Protocol.outboundBuffer.method4838(Static214.anInt3792);
-			Protocol.outboundBuffer.method4805(Static337.anInt6317);
-			Protocol.outboundBuffer.method4838(Static148.anInt2719 + local18);
+			Protocol.outboundBuffer.p2(Static196.anInt3317);
+			Protocol.outboundBuffer.ip2add(local25);
+			Protocol.outboundBuffer.ip2_dup(Static164.anInt3140 + local15);
+			Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Protocol.outboundBuffer.ip2add(Static214.anInt3792);
+			Protocol.outboundBuffer.mp4(Static337.anInt6317);
+			Protocol.outboundBuffer.ip2add(Static148.anInt2719 + local18);
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 23) {
@@ -262,8 +262,8 @@ public final class Static259 {
 				Static313.anInt5878 = 0;
 				Static291.anInt5504 = arg2;
 				Static91.method1960(Static143.aClass145_102);
-				Protocol.outboundBuffer.method4830(local25);
-				Protocol.outboundBuffer.method4827(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Protocol.outboundBuffer.ip2_dup(local25);
+				Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
 			}
 		}
@@ -273,10 +273,10 @@ public final class Static259 {
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
 			Static91.method1960(Static382.aClass145_262);
-			Protocol.outboundBuffer.method4843(local25);
-			Protocol.outboundBuffer.method4827(Static174.aClass123_2.method3343(82) ? 1 : 0);
-			Protocol.outboundBuffer.method4855(local15 + Static164.anInt3140);
-			Protocol.outboundBuffer.method4843(Static148.anInt2719 + local18);
+			Protocol.outboundBuffer.p2(local25);
+			Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Protocol.outboundBuffer.p2add(local15 + Static164.anInt3140);
+			Protocol.outboundBuffer.p2(Static148.anInt2719 + local18);
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 22) {
@@ -287,13 +287,13 @@ public final class Static259 {
 				if (local25 == 1) {
 					Protocol.outboundBuffer.p1(-1);
 					Protocol.outboundBuffer.p1(-1);
-					Protocol.outboundBuffer.method4843((int) Static277.aFloat67);
+					Protocol.outboundBuffer.p2((int) Static277.aFloat67);
 					Protocol.outboundBuffer.p1(57);
 					Protocol.outboundBuffer.p1(Static6.anInt158);
 					Protocol.outboundBuffer.p1(Static97.anInt2005);
 					Protocol.outboundBuffer.p1(89);
-					Protocol.outboundBuffer.method4843(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781);
-					Protocol.outboundBuffer.method4843(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783);
+					Protocol.outboundBuffer.p2(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781);
+					Protocol.outboundBuffer.p2(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783);
 					Protocol.outboundBuffer.p1(63);
 				} else {
 					Static320.anInt6005 = arg1;
@@ -310,9 +310,9 @@ public final class Static259 {
 			Static93.anInt1951 = 2;
 			Static320.anInt6005 = arg1;
 			Static91.method1960(Static147.aClass145_103);
-			Protocol.outboundBuffer.method4830((int) (local28 >>> 32) & Integer.MAX_VALUE);
-			Protocol.outboundBuffer.method4830(local15 + Static164.anInt3140);
-			Protocol.outboundBuffer.method4830(Static148.anInt2719 + local18);
+			Protocol.outboundBuffer.ip2_dup((int) (local28 >>> 32) & Integer.MAX_VALUE);
+			Protocol.outboundBuffer.ip2_dup(local15 + Static164.anInt3140);
+			Protocol.outboundBuffer.ip2_dup(Static148.anInt2719 + local18);
 			Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Static172.method3285(local18, local28, local15);
 		}
@@ -324,8 +324,8 @@ public final class Static259 {
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
 				Static91.method1960(Static227.aClass145_151);
-				Protocol.outboundBuffer.method4843(local25);
-				Protocol.outboundBuffer.method4827(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Protocol.outboundBuffer.p2(local25);
+				Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local485.anIntArray317[0], 0, local485.method4328(), local485.anIntArray316[0], local485.method4328(), 0);
 			}
 		}
@@ -338,7 +338,7 @@ public final class Static259 {
 				Static313.anInt5878 = 0;
 				Static91.method1960(Static5.aClass145_9);
 				Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Protocol.outboundBuffer.method4830(local25);
+				Protocol.outboundBuffer.ip2_dup(local25);
 				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
 			}
 		}
@@ -350,8 +350,8 @@ public final class Static259 {
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
 				Static91.method1960(Static382.aClass145_259);
-				Protocol.outboundBuffer.method4838(local25);
-				Protocol.outboundBuffer.method4819(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Protocol.outboundBuffer.ip2add(local25);
+				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local485.anIntArray317[0], 0, local485.method4328(), local485.anIntArray316[0], local485.method4328(), 0);
 			}
 		}
@@ -361,13 +361,13 @@ public final class Static259 {
 			Static93.anInt1951 = 2;
 			Static291.anInt5504 = arg2;
 			Static91.method1960(Static175.aClass145_132);
-			Protocol.outboundBuffer.method4830(Integer.MAX_VALUE & (int) (local28 >>> 32));
-			Protocol.outboundBuffer.method4840(Static337.anInt6317);
-			Protocol.outboundBuffer.method4843(Static196.anInt3317);
+			Protocol.outboundBuffer.ip2_dup(Integer.MAX_VALUE & (int) (local28 >>> 32));
+			Protocol.outboundBuffer.imp4(Static337.anInt6317);
+			Protocol.outboundBuffer.p2(Static196.anInt3317);
 			Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
-			Protocol.outboundBuffer.method4838(Static214.anInt3792);
-			Protocol.outboundBuffer.method4843(Static164.anInt3140 + local15);
-			Protocol.outboundBuffer.method4843(Static148.anInt2719 + local18);
+			Protocol.outboundBuffer.ip2add(Static214.anInt3792);
+			Protocol.outboundBuffer.p2(Static164.anInt3140 + local15);
+			Protocol.outboundBuffer.p2(Static148.anInt2719 + local18);
 			Static172.method3285(local18, local28, local15);
 		}
 		if (local21 == 5) {
@@ -378,8 +378,8 @@ public final class Static259 {
 				Static291.anInt5504 = arg2;
 				Static320.anInt6005 = arg1;
 				Static91.method1960(Static331.aClass145_227);
-				Protocol.outboundBuffer.method4814(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Protocol.outboundBuffer.method4830(local25);
+				Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Protocol.outboundBuffer.ip2_dup(local25);
 				Static322.method5482(true, -2, local485.anIntArray317[0], 0, local485.method4328(), local485.anIntArray316[0], local485.method4328(), 0);
 			}
 		}
@@ -391,8 +391,8 @@ public final class Static259 {
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
 				Static91.method1960(Static49.aClass145_45);
-				Protocol.outboundBuffer.method4838(local25);
-				Protocol.outboundBuffer.method4827(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Protocol.outboundBuffer.ip2add(local25);
+				Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
 			}
 		}
@@ -404,8 +404,8 @@ public final class Static259 {
 				Static291.anInt5504 = arg2;
 				Static93.anInt1951 = 2;
 				Static91.method1960(Static132.aClass145_92);
-				Protocol.outboundBuffer.method4830(local25);
-				Protocol.outboundBuffer.method4819(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Protocol.outboundBuffer.ip2_dup(local25);
+				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
 			}
 		}
@@ -430,7 +430,7 @@ public final class Static259 {
 			Static291.anInt5504 = arg2;
 			Static313.anInt5878 = 0;
 			Static91.method1960(Static374.aClass145_255);
-			Protocol.outboundBuffer.method4843(local25);
+			Protocol.outboundBuffer.p2(local25);
 		}
 		if (local21 == 19) {
 			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
@@ -440,8 +440,8 @@ public final class Static259 {
 				Static93.anInt1951 = 2;
 				Static313.anInt5878 = 0;
 				Static91.method1960(Static265.aClass145_173);
-				Protocol.outboundBuffer.method4838(local25);
-				Protocol.outboundBuffer.method4814(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Protocol.outboundBuffer.ip2add(local25);
+				Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
 			}
 		}
@@ -462,8 +462,8 @@ public final class Static259 {
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
 				Static91.method1960(Static183.aClass145_7);
-				Protocol.outboundBuffer.method4814(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Protocol.outboundBuffer.method4830(local25);
+				Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Protocol.outboundBuffer.ip2_dup(local25);
 				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
 			}
 		}
@@ -481,7 +481,7 @@ public final class Static259 {
 				Static320.anInt6005 = arg1;
 				Static91.method1960(Static7.aClass145_267);
 				Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Protocol.outboundBuffer.method4838(local25);
+				Protocol.outboundBuffer.ip2add(local25);
 				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
 			}
 		}
@@ -493,8 +493,8 @@ public final class Static259 {
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
 				Static91.method1960(Static316.aClass145_214);
-				Protocol.outboundBuffer.method4843(local25);
-				Protocol.outboundBuffer.method4814(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Protocol.outboundBuffer.p2(local25);
+				Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local485.anIntArray317[0], 0, local485.method4328(), local485.anIntArray316[0], local485.method4328(), 0);
 			}
 		}

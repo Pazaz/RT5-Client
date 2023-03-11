@@ -105,15 +105,15 @@ public final class Class225 {
 	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(Lclient!bt;IZ)V")
 	private void method5774(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 1) {
-			this.anInt6374 = arg0.method4833();
+			this.anInt6374 = arg0.ig3();
 			this.method5771(this.anInt6374);
 		} else if (arg1 == 2) {
-			this.anInt6384 = arg0.method4829();
+			this.anInt6384 = arg0.g2();
 			if (this.anInt6384 == 65535) {
 				this.anInt6384 = -1;
 			}
 		} else if (arg1 == 3) {
-			this.anInt6377 = arg0.method4829();
+			this.anInt6377 = arg0.g2();
 		} else if (arg1 == 4) {
 			this.aBoolean430 = false;
 		}

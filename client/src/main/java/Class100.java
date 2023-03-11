@@ -252,7 +252,7 @@ public final class Class100 {
 					local77 = local61 << this.anInt2681;
 					local79 = local61 + 1 << this.anInt2681;
 					@Pc(233) Buffer local233 = Static8.aClass2_Sub4_1;
-					local233.position = 0;
+					local233.pos = 0;
 					for (@Pc(238) int local238 = local52; local238 < local59; local238++) {
 						if (-arg1 <= local238 - arg3 && arg1 >= local238 - arg3) {
 							@Pc(267) int local267 = local77 + this.aClass6_Sub1_1.anInt6320 * local238;
@@ -263,12 +263,12 @@ public final class Class100 {
 										@Pc(328) int local328;
 										if (this.aClass19_Sub1_16.aBoolean53) {
 											for (local328 = 0; local328 < local319.length; local328++) {
-												local233.method4843(local319[local328] & 0xFFFF);
+												local233.p2(local319[local328] & 0xFFFF);
 												local70++;
 											}
 										} else {
 											for (local328 = 0; local328 < local319.length; local328++) {
-												local233.method4845(local319[local328] & 0xFFFF);
+												local233.ip2(local319[local328] & 0xFFFF);
 												local70++;
 											}
 										}
@@ -284,7 +284,7 @@ public final class Class100 {
 						local3.glScalef(local35, local35, 1.0F);
 						local3.glTranslatef((float) -local61 / local35, (float) -local43 / local35, 1.0F);
 						local3.glMatrixMode(GL.GL_MODELVIEW);
-						this.aClass227ArrayArray1[local61][local43].method5789(local233.aByteArray73, local70);
+						this.aClass227ArrayArray1[local61][local43].method5789(local233.data, local70);
 					}
 				}
 			}

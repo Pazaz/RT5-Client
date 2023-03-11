@@ -54,7 +54,7 @@ public final class Class2_Sub3_Sub23 extends Class2_Sub3 {
 	@Override
 	public void method6484(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
-			this.method4466(arg1.method4833());
+			this.method4466(arg1.ig3());
 		}
 	}
 }

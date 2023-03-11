@@ -56,10 +56,10 @@ public final class Class183 {
 			return;
 		}
 		try {
-			this.aClass2_Sub4_7.position = 0;
+			this.aClass2_Sub4_7.pos = 0;
 			this.aClass2_Sub4_7.p1(6);
-			this.aClass2_Sub4_7.method4846(3);
-			this.aClass111_3.write(4, this.aClass2_Sub4_7.aByteArray73);
+			this.aClass2_Sub4_7.p3(3);
+			this.aClass111_3.write(4, this.aClass2_Sub4_7.data);
 		} catch (@Pc(40) IOException local40) {
 			try {
 				this.aClass111_3.close();
@@ -84,10 +84,10 @@ public final class Class183 {
 			return;
 		}
 		try {
-			this.aClass2_Sub4_7.position = 0;
+			this.aClass2_Sub4_7.pos = 0;
 			this.aClass2_Sub4_7.p1(7);
-			this.aClass2_Sub4_7.method4846(0);
-			this.aClass111_3.write(4, this.aClass2_Sub4_7.aByteArray73);
+			this.aClass2_Sub4_7.p3(0);
+			this.aClass111_3.write(4, this.aClass2_Sub4_7.data);
 		} catch (@Pc(34) IOException local34) {
 			try {
 				this.aClass111_3.close();
@@ -121,7 +121,7 @@ public final class Class183 {
 		this.aClass111_3 = arg0;
 		this.method4632();
 		this.method4647(arg1);
-		this.aClass2_Sub4_8.position = 0;
+		this.aClass2_Sub4_8.pos = 0;
 		this.aClass2_Sub2_Sub10_Sub1_2 = null;
 		while (true) {
 			@Pc(44) Class2_Sub2_Sub10_Sub1 local44 = (Class2_Sub2_Sub10_Sub1) this.aClass246_6.method6339();
@@ -131,11 +131,11 @@ public final class Class183 {
 					if (local44 == null) {
 						if (this.aByte55 != 0) {
 							try {
-								this.aClass2_Sub4_7.position = 0;
+								this.aClass2_Sub4_7.pos = 0;
 								this.aClass2_Sub4_7.p1(4);
 								this.aClass2_Sub4_7.p1(this.aByte55);
-								this.aClass2_Sub4_7.method4843(0);
-								this.aClass111_3.write(4, this.aClass2_Sub4_7.aByteArray73);
+								this.aClass2_Sub4_7.p2(0);
+								this.aClass111_3.write(4, this.aClass2_Sub4_7.data);
 							} catch (@Pc(103) IOException local103) {
 								try {
 									this.aClass111_3.close();
@@ -182,17 +182,17 @@ public final class Class183 {
 		try {
 			this.aClass111_3.method2792();
 			for (@Pc(74) Class2_Sub2_Sub10_Sub1 local74 = (Class2_Sub2_Sub10_Sub1) this.aClass246_5.method6337(); local74 != null; local74 = (Class2_Sub2_Sub10_Sub1) this.aClass246_5.method6336()) {
-				this.aClass2_Sub4_7.position = 0;
+				this.aClass2_Sub4_7.pos = 0;
 				this.aClass2_Sub4_7.p1(1);
-				this.aClass2_Sub4_7.method4846((int) local74.aLong215);
-				this.aClass111_3.write(4, this.aClass2_Sub4_7.aByteArray73);
+				this.aClass2_Sub4_7.p3((int) local74.aLong215);
+				this.aClass111_3.write(4, this.aClass2_Sub4_7.data);
 				this.aClass246_6.method6341(local74);
 			}
 			for (@Pc(126) Class2_Sub2_Sub10_Sub1 local126 = (Class2_Sub2_Sub10_Sub1) this.aClass246_7.method6337(); local126 != null; local126 = (Class2_Sub2_Sub10_Sub1) this.aClass246_7.method6336()) {
-				this.aClass2_Sub4_7.position = 0;
+				this.aClass2_Sub4_7.pos = 0;
 				this.aClass2_Sub4_7.p1(0);
-				this.aClass2_Sub4_7.method4846((int) local126.aLong215);
-				this.aClass111_3.write(4, this.aClass2_Sub4_7.aByteArray73);
+				this.aClass2_Sub4_7.p3((int) local126.aLong215);
+				this.aClass111_3.write(4, this.aClass2_Sub4_7.data);
 				this.aClass246_8.method6341(local126);
 			}
 			for (local18 = 0; local18 < 100; local18++) {
@@ -214,22 +214,22 @@ public final class Class183 {
 				@Pc(243) int local243;
 				@Pc(301) int local301;
 				if (local191 > 0) {
-					local219 = local191 - this.aClass2_Sub4_8.position;
+					local219 = local191 - this.aClass2_Sub4_8.pos;
 					if (local175 < local219) {
 						local219 = local175;
 					}
-					this.aClass111_3.read(this.aClass2_Sub4_8.aByteArray73, local219, this.aClass2_Sub4_8.position);
+					this.aClass111_3.read(this.aClass2_Sub4_8.data, local219, this.aClass2_Sub4_8.pos);
 					if (this.aByte55 != 0) {
 						for (local243 = 0; local243 < local219; local243++) {
-							this.aClass2_Sub4_8.aByteArray73[this.aClass2_Sub4_8.position + local243] = (byte) (this.aClass2_Sub4_8.aByteArray73[this.aClass2_Sub4_8.position + local243] ^ this.aByte55);
+							this.aClass2_Sub4_8.data[this.aClass2_Sub4_8.pos + local243] = (byte) (this.aClass2_Sub4_8.data[this.aClass2_Sub4_8.pos + local243] ^ this.aByte55);
 						}
 					}
-					this.aClass2_Sub4_8.position += local219;
-					if (this.aClass2_Sub4_8.position >= local191) {
+					this.aClass2_Sub4_8.pos += local219;
+					if (this.aClass2_Sub4_8.pos >= local191) {
 						if (this.aClass2_Sub2_Sub10_Sub1_2 == null) {
-							this.aClass2_Sub4_8.position = 0;
+							this.aClass2_Sub4_8.pos = 0;
 							local243 = this.aClass2_Sub4_8.g1();
-							local301 = this.aClass2_Sub4_8.method4829();
+							local301 = this.aClass2_Sub4_8.g2();
 							@Pc(306) int local306 = this.aClass2_Sub4_8.g1();
 							@Pc(311) int local311 = this.aClass2_Sub4_8.g4();
 							@Pc(315) int local315 = local306 & 0x7F;
@@ -252,34 +252,34 @@ public final class Class183 {
 							this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.p1(local315);
 							this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.p4(local311);
 							this.aClass2_Sub2_Sub10_Sub1_2.anInt3083 = 8;
-							this.aClass2_Sub4_8.position = 0;
+							this.aClass2_Sub4_8.pos = 0;
 						} else if (this.aClass2_Sub2_Sub10_Sub1_2.anInt3083 != 0) {
 							throw new IOException();
-						} else if (this.aClass2_Sub4_8.aByteArray73[0] == -1) {
+						} else if (this.aClass2_Sub4_8.data[0] == -1) {
 							this.aClass2_Sub2_Sub10_Sub1_2.anInt3083 = 1;
-							this.aClass2_Sub4_8.position = 0;
+							this.aClass2_Sub4_8.pos = 0;
 						} else {
 							this.aClass2_Sub2_Sub10_Sub1_2 = null;
 						}
 					}
 				} else {
-					local219 = this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.aByteArray73.length - this.aClass2_Sub2_Sub10_Sub1_2.aByte27;
+					local219 = this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.data.length - this.aClass2_Sub2_Sub10_Sub1_2.aByte27;
 					local243 = 512 - this.aClass2_Sub2_Sub10_Sub1_2.anInt3083;
-					if (local219 - this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.position < local243) {
-						local243 = local219 - this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.position;
+					if (local219 - this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.pos < local243) {
+						local243 = local219 - this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.pos;
 					}
 					if (local175 < local243) {
 						local243 = local175;
 					}
-					this.aClass111_3.read(this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.aByteArray73, local243, this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.position);
+					this.aClass111_3.read(this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.data, local243, this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.pos);
 					if (this.aByte55 != 0) {
 						for (local301 = 0; local301 < local243; local301++) {
-							this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.aByteArray73[local301 + this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.position] ^= this.aByte55;
+							this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.data[local301 + this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.pos] ^= this.aByte55;
 						}
 					}
-					this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.position += local243;
+					this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.pos += local243;
 					this.aClass2_Sub2_Sub10_Sub1_2.anInt3083 += local243;
-					if (local219 == this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.position) {
+					if (local219 == this.aClass2_Sub2_Sub10_Sub1_2.aClass2_Sub4_3.pos) {
 						this.aClass2_Sub2_Sub10_Sub1_2.method6143();
 						this.aClass2_Sub2_Sub10_Sub1_2.aBoolean416 = false;
 						this.aClass2_Sub2_Sub10_Sub1_2 = null;
@@ -356,10 +356,10 @@ public final class Class183 {
 			return;
 		}
 		try {
-			this.aClass2_Sub4_7.position = 0;
+			this.aClass2_Sub4_7.pos = 0;
 			this.aClass2_Sub4_7.p1(arg0 ? 2 : 3);
-			this.aClass2_Sub4_7.method4846(0);
-			this.aClass111_3.write(4, this.aClass2_Sub4_7.aByteArray73);
+			this.aClass2_Sub4_7.p3(0);
+			this.aClass111_3.write(4, this.aClass2_Sub4_7.data);
 		} catch (@Pc(41) IOException local41) {
 			try {
 				this.aClass111_3.close();

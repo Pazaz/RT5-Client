@@ -294,7 +294,7 @@ public final class Class6_Sub1 extends Class6 {
 		if (Static8.anIntArray10.length < local20) {
 			Static8.anIntArray10 = new int[local20];
 		}
-		if (Static8.aClass2_Sub4_1.aByteArray73.length < this.anInt180 * 2) {
+		if (Static8.aClass2_Sub4_1.data.length < this.anInt180 * 2) {
 			Static8.aClass2_Sub4_1 = new Buffer(this.anInt180 * 2);
 		}
 		@Pc(47) int local47 = arg0 - arg2;
@@ -806,10 +806,10 @@ public final class Class6_Sub1 extends Class6 {
 			this.aClass19_Sub1_1.method814();
 		}
 		this.aClass19_Sub1_1.method790(this.aClass126_1, this.aClass126_4, this.aClass126_3, this.aClass126_2);
-		if (Static8.aClass2_Sub4_1.aByteArray73.length < this.anInt180 * 2) {
+		if (Static8.aClass2_Sub4_1.data.length < this.anInt180 * 2) {
 			Static8.aClass2_Sub4_1 = new Buffer(this.anInt180 * 2);
 		} else {
-			Static8.aClass2_Sub4_1.position = 0;
+			Static8.aClass2_Sub4_1.pos = 0;
 		}
 		@Pc(288) int local288 = 0;
 		@Pc(294) int local294;
@@ -825,7 +825,7 @@ public final class Class6_Sub1 extends Class6 {
 						local324 = this.aShortArrayArray1[local304];
 						if (local324 != null) {
 							for (local328 = 0; local328 < local324.length; local328++) {
-								Static8.aClass2_Sub4_1.method4843(local324[local328] & 0xFFFF);
+								Static8.aClass2_Sub4_1.p2(local324[local328] & 0xFFFF);
 								local288++;
 							}
 						}
@@ -841,7 +841,7 @@ public final class Class6_Sub1 extends Class6 {
 						local324 = this.aShortArrayArray1[local304];
 						if (local324 != null) {
 							for (local328 = 0; local328 < local324.length; local328++) {
-								Static8.aClass2_Sub4_1.method4845(local324[local328] & 0xFFFF);
+								Static8.aClass2_Sub4_1.ip2(local324[local328] & 0xFFFF);
 								local288++;
 							}
 						}
@@ -851,7 +851,7 @@ public final class Class6_Sub1 extends Class6 {
 			}
 		}
 		if (local288 > 0) {
-			@Pc(418) Class180_Sub2 local418 = new Class180_Sub2(this.aClass19_Sub1_1, 5123, Static8.aClass2_Sub4_1.aByteArray73, Static8.aClass2_Sub4_1.position);
+			@Pc(418) Class180_Sub2 local418 = new Class180_Sub2(this.aClass19_Sub1_1, 5123, Static8.aClass2_Sub4_1.data, Static8.aClass2_Sub4_1.pos);
 			this.aClass19_Sub1_1.method811(local418, 0, local288);
 		}
 	}

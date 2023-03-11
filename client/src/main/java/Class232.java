@@ -87,8 +87,8 @@ public final class Class232 {
 		this.anIntArray445 = new int[this.anInt6461];
 		this.anIntArray446 = new int[this.anInt6461];
 		for (@Pc(16) int local16 = 0; local16 < this.anInt6461; local16++) {
-			this.anIntArray445[local16] = arg0.method4829();
-			this.anIntArray446[local16] = arg0.method4829();
+			this.anIntArray445[local16] = arg0.g2();
+			this.anIntArray446[local16] = arg0.g2();
 		}
 	}
 }

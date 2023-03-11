@@ -273,7 +273,7 @@ public final class Class117 {
 
 	@OriginalMember(owner = "client!jo", name = "b", descriptor = "(Z)V")
 	private void method3189() {
-		@Pc(7) long[] local7 = Class4.aLongArray1;
+		@Pc(7) long[] local7 = Buffer.CRC64_TABLE;
 		this.aLong107 = -1L;
 		this.aLong107 = local7[(int) ((this.aLong107 ^ (long) (this.anInt3190 >> 8)) & 0xFFL)] ^ this.aLong107 >>> 8;
 		this.aLong107 = local7[(int) (((long) this.anInt3190 ^ this.aLong107) & 0xFFL)] ^ this.aLong107 >>> 8;

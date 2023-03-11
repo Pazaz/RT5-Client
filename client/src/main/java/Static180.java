@@ -32,15 +32,15 @@ public final class Static180 {
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(ILclient!bt;)V")
 	public static void method3368(@OriginalArg(1) Buffer arg0) {
-		if (arg0.aByteArray73.length - arg0.position < 1) {
+		if (arg0.data.length - arg0.pos < 1) {
 			return;
 		}
 		@Pc(21) int local21 = arg0.g1();
-		if (local21 < 0 || local21 > 1 || arg0.aByteArray73.length - arg0.position < 2) {
+		if (local21 < 0 || local21 > 1 || arg0.data.length - arg0.pos < 2) {
 			return;
 		}
-		@Pc(43) int local43 = arg0.method4829();
-		if (arg0.aByteArray73.length - arg0.position != local43 * 6) {
+		@Pc(43) int local43 = arg0.g2();
+		if (arg0.data.length - arg0.pos != local43 * 6) {
 			return;
 		}
 		while (true) {
@@ -49,10 +49,10 @@ public final class Static180 {
 			do {
 				do {
 					do {
-						if (arg0.position >= arg0.aByteArray73.length) {
+						if (arg0.pos >= arg0.data.length) {
 							return;
 						}
-						local59 = arg0.method4829();
+						local59 = arg0.g2();
 						local63 = arg0.g4();
 					} while (Static75.anIntArray117.length <= local59);
 				} while (!Static89.aBooleanArray18[local59]);

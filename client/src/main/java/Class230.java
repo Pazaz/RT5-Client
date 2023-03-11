@@ -70,7 +70,7 @@ public final class Class230 {
 				local24 = arg0.g1();
 				this.anIntArrayArray55 = new int[local24][3];
 				for (local31 = 0; local31 < local24; local31++) {
-					this.anIntArrayArray55[local31][0] = arg0.method4829();
+					this.anIntArrayArray55[local31][0] = arg0.g2();
 					this.anIntArrayArray55[local31][1] = arg0.g4();
 					this.anIntArrayArray55[local31][2] = arg0.g4();
 				}
@@ -78,12 +78,12 @@ public final class Class230 {
 				local24 = arg0.g1();
 				this.anIntArrayArray57 = new int[local24][3];
 				for (local31 = 0; local31 < local24; local31++) {
-					this.anIntArrayArray57[local31][0] = arg0.method4829();
+					this.anIntArrayArray57[local31][0] = arg0.g2();
 					this.anIntArrayArray57[local31][1] = arg0.g4();
 					this.anIntArrayArray57[local31][2] = arg0.g4();
 				}
 			} else if (arg1 == 5) {
-				arg0.method4829();
+				arg0.g2();
 			} else if (arg1 == 6) {
 				arg0.g1();
 			} else if (arg1 == 7) {
@@ -103,7 +103,7 @@ public final class Class230 {
 					local24 = arg0.g1();
 					this.anIntArray443 = new int[local24];
 					for (local31 = 0; local31 < local24; local31++) {
-						this.anIntArray443[local31] = arg0.method4829();
+						this.anIntArray443[local31] = arg0.g2();
 					}
 				} else if (arg1 == 14) {
 					local24 = arg0.g1();
@@ -113,9 +113,9 @@ public final class Class230 {
 						this.anIntArrayArray56[local31][1] = arg0.g1();
 					}
 				} else if (arg1 == 15) {
-					arg0.method4829();
+					arg0.g2();
 				} else if (arg1 == 17) {
-					this.anInt6454 = arg0.method4829();
+					this.anInt6454 = arg0.g2();
 				} else if (arg1 == 18) {
 					local24 = arg0.g1();
 					this.anIntArray437 = new int[local24];
@@ -126,7 +126,7 @@ public final class Class230 {
 						this.anIntArray442[local31] = arg0.g4();
 						this.anIntArray440[local31] = arg0.g4();
 						this.anIntArray437[local31] = arg0.g4();
-						this.aStringArray61[local31] = arg0.method4809();
+						this.aStringArray61[local31] = arg0.gjstr();
 					}
 				} else if (arg1 == 19) {
 					local24 = arg0.g1();
@@ -138,7 +138,7 @@ public final class Class230 {
 						this.anIntArray439[local31] = arg0.g4();
 						this.anIntArray438[local31] = arg0.g4();
 						this.anIntArray441[local31] = arg0.g4();
-						this.aStringArray60[local31] = arg0.method4809();
+						this.aStringArray60[local31] = arg0.gjstr();
 					}
 				} else if (arg1 == 249) {
 					local24 = arg0.g1();
@@ -148,10 +148,10 @@ public final class Class230 {
 					}
 					for (local31 = 0; local31 < local24; local31++) {
 						@Pc(329) boolean local329 = arg0.g1() == 1;
-						@Pc(333) int local333 = arg0.method4833();
+						@Pc(333) int local333 = arg0.ig3();
 						@Pc(342) Class2 local342;
 						if (local329) {
-							local342 = new Class2_Sub40(arg0.method4809());
+							local342 = new Class2_Sub40(arg0.gjstr());
 						} else {
 							local342 = new Class2_Sub39(arg0.g4());
 						}

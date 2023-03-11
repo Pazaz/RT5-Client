@@ -5,9 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static286 {
 
-	@OriginalMember(owner = "client!qk", name = "gb", descriptor = "[[B")
-	public static final byte[][] aByteArrayArray16 = new byte[1000][];
-
 	@OriginalMember(owner = "client!qk", name = "hb", descriptor = "[Ljava/awt/Color;")
 	public static final Color[] aColorArray3 = new Color[] { new Color(16777215), new Color(16777215) };
 

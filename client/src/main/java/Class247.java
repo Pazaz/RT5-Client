@@ -20,13 +20,13 @@ public final class Class247 {
 		for (@Pc(7) int local7 = 0; local7 < 10; local7++) {
 			@Pc(12) int local12 = arg0.g1();
 			if (local12 != 0) {
-				arg0.position--;
+				arg0.pos--;
 				this.aClass178Array1[local7] = new Class178();
 				this.aClass178Array1[local7].method4552(arg0);
 			}
 		}
-		this.anInt7195 = arg0.method4829();
-		this.anInt7194 = arg0.method4829();
+		this.anInt7195 = arg0.g2();
+		this.anInt7194 = arg0.g2();
 	}
 
 	@OriginalMember(owner = "client!wk", name = "a", descriptor = "()[B")

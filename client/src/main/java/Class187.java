@@ -39,8 +39,8 @@ public final class Class187 {
 
 	@OriginalMember(owner = "client!q", name = "<init>", descriptor = "(Lclient!bt;)V")
 	public Class187(@OriginalArg(0) Buffer arg0) {
-		this.aByte57 = arg0.method4825();
-		this.anInt5105 = arg0.method4829();
+		this.aByte57 = arg0.g1b();
+		this.anInt5105 = arg0.g2();
 		this.anInt5108 = arg0.g4();
 		this.anInt5111 = arg0.g4();
 		this.anInt5106 = arg0.g4();

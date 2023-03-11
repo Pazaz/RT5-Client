@@ -6,9 +6,6 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!ad")
 public final class Class4 {
 
-	@OriginalMember(owner = "client!ad", name = "t", descriptor = "[J")
-	public static final long[] aLongArray1 = new long[256];
-
 	@OriginalMember(owner = "client!ad", name = "f", descriptor = "Lclient!ag;")
 	private Class2 aClass2_9;
 
@@ -26,20 +23,6 @@ public final class Class4 {
 
 	@OriginalMember(owner = "client!ad", name = "h", descriptor = "I")
 	public final int anInt97;
-
-	static {
-		for (@Pc(43) int local43 = 0; local43 < 256; local43++) {
-			@Pc(47) long local47 = (long) local43;
-			for (@Pc(49) int local49 = 0; local49 < 8; local49++) {
-				if ((local47 & 0x1L) == 1L) {
-					local47 = local47 >>> 1 ^ 0xC96C5795D7870F42L;
-				} else {
-					local47 >>>= 0x1;
-				}
-			}
-			aLongArray1[local43] = local47;
-		}
-	}
 
 	@OriginalMember(owner = "client!ad", name = "<init>", descriptor = "(I)V")
 	public Class4(@OriginalArg(0) int arg0) {

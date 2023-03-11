@@ -54,7 +54,7 @@ public final class Static174 {
 
 	@OriginalMember(owner = "client!kb", name = "a", descriptor = "(BLclient!bt;)Lclient!vo;")
 	public static Class173_Sub4 method1508(@OriginalArg(1) Buffer arg0) {
-		return new Class173_Sub4(arg0.method4823(), arg0.method4823(), arg0.method4823(), arg0.method4823(), arg0.method4823(), arg0.method4823(), arg0.method4823(), arg0.method4823(), arg0.method4833(), arg0.g1());
+		return new Class173_Sub4(arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.ig3(), arg0.g1());
 	}
 
 	@OriginalMember(owner = "client!kb", name = "a", descriptor = "(ILjava/lang/Throwable;)Ljava/lang/String;")

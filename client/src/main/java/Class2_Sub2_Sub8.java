@@ -23,7 +23,7 @@ public final class Class2_Sub2_Sub8 extends Class2_Sub2 {
 	@OriginalMember(owner = "client!hl", name = "a", descriptor = "(ILclient!bt;I)V")
 	private void method2502(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 2) {
-			this.anInt2488 = arg0.method4829();
+			this.anInt2488 = arg0.g2();
 		}
 	}
 }

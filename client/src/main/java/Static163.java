@@ -135,7 +135,7 @@ public final class Static163 {
 		if (Static47.aClass214Array1 != null) {
 			Static91.method1960(Static70.aClass145_57);
 			Protocol.outboundBuffer.p1(Static27.method872(arg0));
-			Protocol.outboundBuffer.method4822(arg0);
+			Protocol.outboundBuffer.pjstr(arg0);
 		}
 	}
 

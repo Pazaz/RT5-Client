@@ -22,26 +22,6 @@ public final class Static47 {
 	@OriginalMember(owner = "client!co", name = "u", descriptor = "[I")
 	public static final int[] anIntArray90 = new int[4096];
 
-	@OriginalMember(owner = "client!co", name = "a", descriptor = "(I[BII)Ljava/lang/String;")
-	public static String method1462(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) char[] local8 = new char[arg2];
-		@Pc(15) int local15 = 0;
-		for (@Pc(17) int local17 = 0; local17 < arg2; local17++) {
-			@Pc(28) int local28 = arg1[arg0 + local17] & 0xFF;
-			if (local28 != 0) {
-				if (local28 >= 128 && local28 < 160) {
-					@Pc(44) char local44 = Static172.aCharArray2[local28 - 128];
-					if (local44 == '\u0000') {
-						local44 = '?';
-					}
-					local28 = local44;
-				}
-				local8[local15++] = (char) local28;
-			}
-		}
-		return new String(local8, 0, local15);
-	}
-
 	@OriginalMember(owner = "client!co", name = "a", descriptor = "(II)Ljava/lang/String;")
 	public static String method1464(@OriginalArg(1) int arg0) {
 		@Pc(12) String local12 = Integer.toString(arg0);

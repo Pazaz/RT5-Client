@@ -64,11 +64,11 @@ public final class Class148 {
 	@OriginalMember(owner = "client!mg", name = "a", descriptor = "(ILclient!bt;Z)V")
 	private void method3715(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 1) {
-			this.anInt3769 = Static97.method2101(arg1.method4833());
+			this.anInt3769 = Static97.method2101(arg1.ig3());
 		} else if (arg0 == 2) {
 			this.anInt3762 = arg1.g1();
 		} else if (arg0 == 3) {
-			this.anInt3762 = arg1.method4829();
+			this.anInt3762 = arg1.g2();
 			if (this.anInt3762 == 65535) {
 				this.anInt3762 = -1;
 				return;
@@ -77,12 +77,12 @@ public final class Class148 {
 			this.aBoolean244 = false;
 			return;
 		} else if (arg0 == 7) {
-			this.anInt3757 = Static97.method2101(arg1.method4833());
+			this.anInt3757 = Static97.method2101(arg1.ig3());
 		} else if (arg0 == 8) {
 			this.aClass72_4.anInt2060 = this.anInt3756;
 			return;
 		} else if (arg0 == 9) {
-			this.anInt3763 = arg1.method4829();
+			this.anInt3763 = arg1.g2();
 			return;
 		} else if (arg0 == 10) {
 			this.aBoolean246 = false;
@@ -94,13 +94,13 @@ public final class Class148 {
 			this.aBoolean245 = true;
 			return;
 		} else if (arg0 == 13) {
-			this.anInt3771 = arg1.method4833();
+			this.anInt3771 = arg1.ig3();
 			return;
 		} else {
 			if (arg0 == 14) {
 				this.anInt3766 = arg1.g1();
 			} else if (arg0 == 15) {
-				this.anInt3759 = arg1.method4829();
+				this.anInt3759 = arg1.g2();
 				if (this.anInt3759 == 65535) {
 					this.anInt3759 = -1;
 					return;

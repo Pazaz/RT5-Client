@@ -45,7 +45,7 @@ public final class Class220 {
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(ILclient!bt;I)V")
 	private void method5663(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.anInt6201 = arg0.method4829();
+			this.anInt6201 = arg0.g2();
 		} else if (arg1 == 2) {
 			this.anInt6203 = arg0.g1();
 			this.anInt6200 = arg0.g1();

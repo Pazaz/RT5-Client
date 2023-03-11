@@ -50,7 +50,7 @@ public final class Class154 {
 			return false;
 		} else {
 			this.aClass2_Sub4_6 = new Buffer(this.aClass2_Sub2_Sub10_Sub1_1.method5648());
-			this.aClass25_Sub1Array1 = new Class25_Sub1[(this.aClass2_Sub4_6.aByteArray73.length - 5) / 8];
+			this.aClass25_Sub1Array1 = new Class25_Sub1[(this.aClass2_Sub4_6.data.length - 5) / 8];
 			return true;
 		}
 	}
@@ -60,8 +60,8 @@ public final class Class154 {
 		if (this.aClass2_Sub4_6 == null) {
 			throw new RuntimeException();
 		}
-		this.aClass2_Sub4_6.position = arg0 * 8 + 5;
-		if (this.aClass2_Sub4_6.position >= this.aClass2_Sub4_6.aByteArray73.length) {
+		this.aClass2_Sub4_6.pos = arg0 * 8 + 5;
+		if (this.aClass2_Sub4_6.pos >= this.aClass2_Sub4_6.data.length) {
 			throw new RuntimeException();
 		} else if (this.aClass25_Sub1Array1[arg0] == null) {
 			@Pc(45) int local45 = this.aClass2_Sub4_6.g4();

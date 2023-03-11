@@ -27,7 +27,7 @@ public final class Class171 {
 	@OriginalMember(owner = "client!ok", name = "a", descriptor = "(IILclient!bt;)V")
 	private void method4374(@OriginalArg(1) int arg0, @OriginalArg(2) Buffer arg1) {
 		if (arg0 == 5) {
-			this.anInt4700 = arg1.method4829();
+			this.anInt4700 = arg1.g2();
 		}
 	}
 }

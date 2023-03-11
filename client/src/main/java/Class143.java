@@ -75,7 +75,7 @@ public final class Class143 {
 		@Pc(64) float local64 = local26 - local11;
 		@Pc(68) float local68 = local31 - local16;
 		@Pc(72) float local72 = local36 - local21;
-		this.aClass2_Sub4_Sub1_2.position = 0;
+		this.aClass2_Sub4_Sub1_2.pos = 0;
 		@Pc(83) int local83;
 		@Pc(98) int local98;
 		@Pc(104) int local104;
@@ -306,10 +306,10 @@ public final class Class143 {
 				}
 			}
 		}
-		if (this.aClass2_Sub4_Sub1_2.position != 0) {
-			this.anInterface5_5.method4602(24, this.aClass2_Sub4_Sub1_2.aByteArray73, this.aClass2_Sub4_Sub1_2.position);
+		if (this.aClass2_Sub4_Sub1_2.pos != 0) {
+			this.anInterface5_5.method4602(24, this.aClass2_Sub4_Sub1_2.data, this.aClass2_Sub4_Sub1_2.pos);
 			arg0.method790(this.aClass126_9, null, this.aClass126_7, this.aClass126_8);
-			arg0.method835(this.aClass2_Sub4_Sub1_2.position / 24);
+			arg0.method835(this.aClass2_Sub4_Sub1_2.pos / 24);
 		}
 	}
 

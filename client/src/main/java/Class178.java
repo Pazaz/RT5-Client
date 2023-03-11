@@ -268,7 +268,7 @@ public final class Class178 {
 		this.aClass232_8.method5841(arg0);
 		@Pc(21) int local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.position--;
+			arg0.pos--;
 			this.aClass232_1 = new Class232();
 			this.aClass232_1.method5841(arg0);
 			this.aClass232_6 = new Class232();
@@ -276,7 +276,7 @@ public final class Class178 {
 		}
 		local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.position--;
+			arg0.pos--;
 			this.aClass232_7 = new Class232();
 			this.aClass232_7.method5841(arg0);
 			this.aClass232_3 = new Class232();
@@ -284,7 +284,7 @@ public final class Class178 {
 		}
 		local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.position--;
+			arg0.pos--;
 			this.aClass232_4 = new Class232();
 			this.aClass232_4.method5841(arg0);
 			this.aClass232_5 = new Class232();
@@ -296,13 +296,13 @@ public final class Class178 {
 				break;
 			}
 			this.anIntArray343[local109] = local114;
-			this.anIntArray340[local109] = arg0.method4818();
+			this.anIntArray340[local109] = arg0.gsmarts();
 			this.anIntArray341[local109] = arg0.gsmart();
 		}
 		this.anInt4961 = arg0.gsmart();
 		this.anInt4962 = arg0.gsmart();
-		this.anInt4960 = arg0.method4829();
-		this.anInt4963 = arg0.method4829();
+		this.anInt4960 = arg0.g2();
+		this.anInt4963 = arg0.g2();
 		this.aClass176_1 = new Class176();
 		this.aClass232_2 = new Class232();
 		this.aClass176_1.method4468(arg0, this.aClass232_2);

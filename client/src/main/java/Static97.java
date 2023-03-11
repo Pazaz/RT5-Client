@@ -40,16 +40,16 @@ public final class Static97 {
 			@Pc(40) Buffer local40 = new Buffer(128);
 			local40.p1(10);
 			local40.p4((int) (Math.random() * 9.9999999E7D));
-			local40.method4832(Static80.method5985(Static374.aString70));
+			local40.p8(Static80.method5985(Static374.aString70));
 			local40.p4((int) (Math.random() * 9.9999999E7D));
-			local40.method4822(Static16.aString51);
+			local40.pjstr(Static16.aString51);
 			local40.p4((int) (Math.random() * 9.9999999E7D));
-			local40.method4834(Static320.aBigInteger2, Static194.aBigInteger1);
-			Protocol.outboundBuffer.position = 0;
+			local40.rsaenc(Static320.aBigInteger2, Static194.aBigInteger1);
+			Protocol.outboundBuffer.pos = 0;
 			Protocol.outboundBuffer.p1(Static43.aClass242_10.anInt7038);
-			Protocol.outboundBuffer.p1(local40.position + 2);
-			Protocol.outboundBuffer.method4843(578);
-			Protocol.outboundBuffer.method4857(local40.aByteArray73, local40.position);
+			Protocol.outboundBuffer.p1(local40.pos + 2);
+			Protocol.outboundBuffer.p2(578);
+			Protocol.outboundBuffer.pdata(local40.data, local40.pos);
 		} else {
 			Static230.method4014();
 		}

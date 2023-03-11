@@ -25,7 +25,7 @@ public final class Static193 {
 		@Pc(17) Buffer local17 = new Buffer(arg2);
 		@Pc(19) int local19 = -1;
 		label56: while (true) {
-			@Pc(23) int local23 = local17.method4839();
+			@Pc(23) int local23 = local17.gVarSmart();
 			if (local23 == 0) {
 				return local7;
 			}

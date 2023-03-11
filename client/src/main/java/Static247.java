@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static247 {
 
-	@OriginalMember(owner = "client!od", name = "bb", descriptor = "[[B")
-	public static final byte[][] aByteArrayArray12 = new byte[50][];
-
 	@OriginalMember(owner = "client!od", name = "Bb", descriptor = "Lclient!h;")
 	public static final Class89 aClass89_174 = new Class89(96, 6);
 

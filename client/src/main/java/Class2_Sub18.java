@@ -40,7 +40,7 @@ public final class Class2_Sub18 extends Class2 {
 			this.aBooleanArray25[local58] = local11.g1() == 1;
 		}
 		for (@Pc(85) int local85 = 0; local85 < this.anInt2679; local85++) {
-			this.anIntArray169[local85] = local11.method4829();
+			this.anIntArray169[local85] = local11.g2();
 		}
 		for (@Pc(101) int local101 = 0; local101 < this.anInt2679; local101++) {
 			this.anIntArrayArray21[local101] = new int[local11.g1()];

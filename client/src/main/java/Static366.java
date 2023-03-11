@@ -52,10 +52,10 @@ public final class Static366 {
 		}
 		Static91.method1960(Static105.aClass145_79);
 		Protocol.outboundBuffer.p4(arg0.anInt4317);
-		Protocol.outboundBuffer.method4855(arg0.anInt4297);
-		Protocol.outboundBuffer.method4855(Static214.anInt3792);
-		Protocol.outboundBuffer.method4843(Static196.anInt3317);
-		Protocol.outboundBuffer.method4805(Static337.anInt6317);
-		Protocol.outboundBuffer.method4843(arg0.anInt4300);
+		Protocol.outboundBuffer.p2add(arg0.anInt4297);
+		Protocol.outboundBuffer.p2add(Static214.anInt3792);
+		Protocol.outboundBuffer.p2(Static196.anInt3317);
+		Protocol.outboundBuffer.mp4(Static337.anInt6317);
+		Protocol.outboundBuffer.p2(arg0.anInt4300);
 	}
 }

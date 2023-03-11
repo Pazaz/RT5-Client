@@ -151,7 +151,7 @@ public final class Class197 {
 			} else {
 				local128 = Static155.method2787(true, this.anObjectArray35[arg1]);
 				@Pc(133) Buffer local133 = new Buffer(local128);
-				local133.method4821(arg2, local133.aByteArray73.length);
+				local133.tinydec(arg2, local133.data.length);
 			}
 			@Pc(157) byte[] local157;
 			try {
@@ -180,7 +180,7 @@ public final class Class197 {
 					local232 -= local239 * local25 * 4;
 					local252 = new Buffer(local157);
 					@Pc(437) int local437 = 0;
-					local252.position = local232;
+					local252.pos = local232;
 					local260 = 0;
 					for (local264 = 0; local264 < local239; local264++) {
 						local266 = 0;
@@ -201,7 +201,7 @@ public final class Class197 {
 						return true;
 					}
 					@Pc(496) byte[] local496 = new byte[local437];
-					local252.position = local232;
+					local252.pos = local232;
 					local437 = 0;
 					local320 = 0;
 					for (local322 = 0; local322 < local239; local322++) {
@@ -229,7 +229,7 @@ public final class Class197 {
 					@Pc(247) int local247 = local235 - local239 * local25 * 4;
 					local252 = new Buffer(local157);
 					@Pc(255) int[] local255 = new int[local25];
-					local252.position = local247;
+					local252.pos = local247;
 					for (local260 = 0; local260 < local239; local260++) {
 						local264 = 0;
 						for (local266 = 0; local266 < local25; local266++) {
@@ -242,7 +242,7 @@ public final class Class197 {
 						local296[local266] = new byte[local255[local266]];
 						local255[local266] = 0;
 					}
-					local252.position = local247;
+					local252.pos = local247;
 					local320 = 0;
 					for (local322 = 0; local322 < local239; local322++) {
 						local326 = 0;

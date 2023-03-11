@@ -24,7 +24,7 @@ public final class Class2_Sub2_Sub16 extends Class2_Sub2 {
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(ILclient!bt;I)V")
 	private void method5594(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.aStringArray56 = Static200.method3643('<', arg0.method4809());
+			this.aStringArray56 = Static200.method3643('<', arg0.gjstr());
 			return;
 		}
 		@Pc(23) int local23;
@@ -33,18 +33,18 @@ public final class Class2_Sub2_Sub16 extends Class2_Sub2 {
 			local23 = arg0.g1();
 			this.anIntArray418 = new int[local23];
 			for (local29 = 0; local29 < local23; local29++) {
-				this.anIntArray418[local29] = arg0.method4829();
+				this.anIntArray418[local29] = arg0.g2();
 			}
 		} else if (arg1 == 3) {
 			local23 = arg0.g1();
 			this.anIntArray417 = new int[local23];
 			this.anIntArrayArray52 = new int[local23][];
 			for (local29 = 0; local29 < local23; local29++) {
-				@Pc(81) int local81 = arg0.method4829();
+				@Pc(81) int local81 = arg0.g2();
 				this.anIntArray417[local29] = local81;
 				this.anIntArrayArray52[local29] = new int[Static41.anIntArray86[local81]];
 				for (@Pc(96) int local96 = 0; local96 < Static41.anIntArray86[local81]; local96++) {
-					this.anIntArrayArray52[local29][local96] = arg0.method4829();
+					this.anIntArrayArray52[local29][local96] = arg0.g2();
 				}
 			}
 		} else if (arg1 == 4) {
@@ -68,7 +68,7 @@ public final class Class2_Sub2_Sub16 extends Class2_Sub2 {
 			}
 			@Pc(28) int local28 = Static115.anIntArray234[this.method5596(local19)];
 			if (local28 > 0) {
-				arg0.method4807(local28, (long) arg1[local19]);
+				arg0.pVarLong(local28, (long) arg1[local19]);
 			}
 		}
 	}
@@ -115,7 +115,7 @@ public final class Class2_Sub2_Sub16 extends Class2_Sub2 {
 		if (this.anIntArray417 != null) {
 			for (@Pc(15) int local15 = 0; local15 < this.anIntArray417.length; local15++) {
 				local10.append(this.aStringArray56[local15]);
-				local10.append(Static341.method5770(this.anIntArrayArray52[local15], this.anIntArray417[local15], arg0.method4860(Static25.anIntArray33[this.anIntArray417[local15]])));
+				local10.append(Static341.method5770(this.anIntArrayArray52[local15], this.anIntArray417[local15], arg0.gVarLong(Static25.anIntArray33[this.anIntArray417[local15]])));
 			}
 		}
 		local10.append(this.aStringArray56[this.aStringArray56.length - 1]);

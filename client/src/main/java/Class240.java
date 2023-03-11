@@ -37,13 +37,13 @@ public final class Class240 {
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(IILclient!bt;)V")
 	private void method6264(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
 		if (arg0 == 1) {
-			this.aChar5 = Static78.method5698(arg1.method4825());
+			this.aChar5 = Static78.method5698(arg1.g1b());
 		} else if (arg0 == 2) {
 			this.anInt7023 = arg1.g4();
 		} else if (arg0 == 4) {
 			this.aBoolean476 = false;
 		} else if (arg0 == 5) {
-			this.aString69 = arg1.method4809();
+			this.aString69 = arg1.gjstr();
 		}
 	}
 }

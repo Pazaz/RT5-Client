@@ -13,15 +13,6 @@ public final class Static80 {
 	@OriginalMember(owner = "client!ek", name = "ab", descriptor = "[I")
 	public static final int[] anIntArray464 = new int[25];
 
-	@OriginalMember(owner = "client!ek", name = "a", descriptor = "(III[B)I")
-	public static int method5981(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) byte[] arg2) {
-		@Pc(7) int local7 = -1;
-		for (@Pc(16) int local16 = arg1; local16 < arg0; local16++) {
-			local7 = Class11_Sub4_Sub1.anIntArray258[(arg2[local16] ^ local7) & 0xFF] ^ local7 >>> 8;
-		}
-		return ~local7;
-	}
-
 	@OriginalMember(owner = "client!ek", name = "a", descriptor = "(ZLjava/lang/String;)J")
 	public static long method5982(@OriginalArg(1) String arg0) {
 		@Pc(8) int local8 = arg0.length();

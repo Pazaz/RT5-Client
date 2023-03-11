@@ -104,7 +104,7 @@ public final class Static164 {
 				}
 				Protocol.socket = new Class111((Socket) Static5.aClass32_1.result, GameShell.signlink);
 				Static5.aClass32_1 = null;
-				Protocol.socket.write(Protocol.outboundBuffer.position, Protocol.outboundBuffer.aByteArray73);
+				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
 				if (client.musicChannel != null) {
 					client.musicChannel.method6325();
 				}

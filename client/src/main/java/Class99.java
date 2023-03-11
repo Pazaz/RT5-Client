@@ -27,7 +27,7 @@ public final class Class99 implements Interface2 {
 		this.aClass197_36 = arg2;
 		this.aClass197_38 = arg1;
 		@Pc(24) Buffer local24 = new Buffer(arg0.method5089(0, 0));
-		@Pc(28) int local28 = local24.method4829();
+		@Pc(28) int local28 = local24.g2();
 		this.aClass229Array1 = new Class229[local28];
 		for (@Pc(34) int local34 = 0; local34 < local28; local34++) {
 			if (local24.g1() == 1) {
@@ -56,37 +56,37 @@ public final class Class99 implements Interface2 {
 		}
 		for (@Pc(166) int local166 = 0; local166 < local28; local166++) {
 			if (this.aClass229Array1[local166] != null) {
-				this.aClass229Array1[local166].aByte70 = local24.method4825();
+				this.aClass229Array1[local166].aByte70 = local24.g1b();
 			}
 		}
 		for (@Pc(187) int local187 = 0; local187 < local28; local187++) {
 			if (this.aClass229Array1[local187] != null) {
-				this.aClass229Array1[local187].aByte71 = local24.method4825();
+				this.aClass229Array1[local187].aByte71 = local24.g1b();
 			}
 		}
 		for (@Pc(208) int local208 = 0; local208 < local28; local208++) {
 			if (this.aClass229Array1[local208] != null) {
-				this.aClass229Array1[local208].aByte67 = local24.method4825();
+				this.aClass229Array1[local208].aByte67 = local24.g1b();
 			}
 		}
 		for (@Pc(229) int local229 = 0; local229 < local28; local229++) {
 			if (this.aClass229Array1[local229] != null) {
-				this.aClass229Array1[local229].aByte72 = local24.method4825();
+				this.aClass229Array1[local229].aByte72 = local24.g1b();
 			}
 		}
 		for (@Pc(250) int local250 = 0; local250 < local28; local250++) {
 			if (this.aClass229Array1[local250] != null) {
-				this.aClass229Array1[local250].aShort87 = (short) local24.method4829();
+				this.aClass229Array1[local250].aShort87 = (short) local24.g2();
 			}
 		}
 		for (@Pc(272) int local272 = 0; local272 < local28; local272++) {
 			if (this.aClass229Array1[local272] != null) {
-				this.aClass229Array1[local272].aByte68 = local24.method4825();
+				this.aClass229Array1[local272].aByte68 = local24.g1b();
 			}
 		}
 		for (@Pc(297) int local297 = 0; local297 < local28; local297++) {
 			if (this.aClass229Array1[local297] != null) {
-				this.aClass229Array1[local297].aByte69 = local24.method4825();
+				this.aClass229Array1[local297].aByte69 = local24.g1b();
 			}
 		}
 		for (@Pc(322) int local322 = 0; local322 < local28; local322++) {
@@ -101,7 +101,7 @@ public final class Class99 implements Interface2 {
 		}
 		for (@Pc(382) int local382 = 0; local382 < local28; local382++) {
 			if (this.aClass229Array1[local382] != null) {
-				this.aClass229Array1[local382].aByte66 = local24.method4825();
+				this.aClass229Array1[local382].aByte66 = local24.g1b();
 			}
 		}
 		for (@Pc(403) int local403 = 0; local403 < local28; local403++) {

@@ -37,9 +37,9 @@ public final class Class146 {
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(ILclient!bt;I)V")
 	private void method3709(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 1) {
-			this.anInt3751 = arg1.method4829();
+			this.anInt3751 = arg1.g2();
 		} else if (arg0 == 2) {
-			this.anInt3752 = arg1.method4833();
+			this.anInt3752 = arg1.ig3();
 		} else if (arg0 == 3) {
 			this.aBoolean243 = true;
 		} else if (arg0 == 4) {

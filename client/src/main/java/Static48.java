@@ -22,26 +22,6 @@ public final class Static48 {
 	@OriginalMember(owner = "client!cq", name = "g", descriptor = "Lclient!hu;")
 	public static final Class98 aClass98_3 = new Class98(10);
 
-	@OriginalMember(owner = "client!cq", name = "a", descriptor = "(II)[B")
-	public static synchronized byte[] method1465(@OriginalArg(0) int arg0) {
-		@Pc(19) byte[] local19;
-		if (arg0 == 100 && Static56.anInt1454 > 0) {
-			local19 = Static286.aByteArrayArray16[--Static56.anInt1454];
-			Static286.aByteArrayArray16[Static56.anInt1454] = null;
-			return local19;
-		} else if (arg0 == 5000 && Static270.anInt4968 > 0) {
-			local19 = Static211.aByteArrayArray8[--Static270.anInt4968];
-			Static211.aByteArrayArray8[Static270.anInt4968] = null;
-			return local19;
-		} else if (arg0 == 30000 && Static360.anInt6190 > 0) {
-			local19 = Static247.aByteArrayArray12[--Static360.anInt6190];
-			Static247.aByteArrayArray12[Static360.anInt6190] = null;
-			return local19;
-		} else {
-			return new byte[arg0];
-		}
-	}
-
 	@OriginalMember(owner = "client!cq", name = "a", descriptor = "(IIII)I")
 	public static int method1467(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) int local7 = arg2 & 0x3;

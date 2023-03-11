@@ -168,8 +168,8 @@ public final class Class2_Sub23 extends Class2 {
 				}
 				local131++;
 			}
-			this.anInterface4_3 = this.aClass19_Sub1_20.method839(this.aClass2_Sub4_5.aByteArray73, this.aClass2_Sub4_5.position, false);
-			this.anInterface5_4 = this.aClass19_Sub1_20.method816(16, this.aClass2_Sub4_Sub1_1.aByteArray73, this.aClass2_Sub4_Sub1_1.position, false);
+			this.anInterface4_3 = this.aClass19_Sub1_20.method839(this.aClass2_Sub4_5.data, this.aClass2_Sub4_5.pos, false);
+			this.anInterface5_4 = this.aClass19_Sub1_20.method816(16, this.aClass2_Sub4_Sub1_1.data, this.aClass2_Sub4_Sub1_1.pos, false);
 			this.aClass126_5 = new Class126(this.aClass19_Sub1_20, this.anInterface5_4, 5126, 3, 0);
 			this.aClass126_6 = new Class126(this.aClass19_Sub1_20, this.anInterface5_4, 5121, 4, 12);
 		} else {
@@ -187,9 +187,9 @@ public final class Class2_Sub23 extends Class2 {
 	@OriginalMember(owner = "client!lb", name = "a", descriptor = "(SI)V")
 	private void method3525(@OriginalArg(0) short arg0) {
 		if (this.aClass19_Sub1_20.aBoolean53) {
-			this.aClass2_Sub4_5.method4843(arg0);
+			this.aClass2_Sub4_5.p2(arg0);
 		} else {
-			this.aClass2_Sub4_5.method4845(arg0);
+			this.aClass2_Sub4_5.ip2(arg0);
 		}
 		this.anInt3572++;
 	}

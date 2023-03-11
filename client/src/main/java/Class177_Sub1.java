@@ -120,8 +120,8 @@ public final class Class177_Sub1 extends Class177 {
 		local8.p1(super.anInt4888);
 		local8.p1(super.anInt4889);
 		local8.p1(super.anInt4882);
-		local8.method4843(super.anInt4884);
-		local8.method4843(super.anInt4893);
+		local8.p2(super.anInt4884);
+		local8.p2(super.anInt4893);
 		local8.p1(Static184.method3391());
 		local8.p4(super.anInt4887);
 		local8.p1(super.anInt4894);
@@ -159,7 +159,7 @@ public final class Class177_Sub1 extends Class177 {
 			if (local17.status == 1) {
 				local7 = (FileOnDisk) local17.result;
 				@Pc(39) Buffer local39 = this.method4494();
-				local7.write(local39.aByteArray73, local39.position, 0);
+				local7.write(local39.data, local39.pos, 0);
 			}
 		} catch (@Pc(49) Exception local49) {
 		}
@@ -173,7 +173,7 @@ public final class Class177_Sub1 extends Class177 {
 
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(ILclient!bt;)V")
 	private void method4499(@OriginalArg(1) Buffer arg0) {
-		if (arg0.aByteArray73.length - arg0.position < 1) {
+		if (arg0.data.length - arg0.pos < 1) {
 			return;
 		}
 		@Pc(21) int local21 = arg0.g1();
@@ -216,7 +216,7 @@ public final class Class177_Sub1 extends Class177 {
 		} else {
 			local34 = 19;
 		}
-		if (local34 > arg0.aByteArray73.length - arg0.position) {
+		if (local34 > arg0.data.length - arg0.pos) {
 			return;
 		}
 		super.anInt4879 = arg0.g1();
@@ -261,8 +261,8 @@ public final class Class177_Sub1 extends Class177 {
 			super.anInt4882 = 127;
 		}
 		if (local21 >= 1) {
-			super.anInt4884 = arg0.method4829();
-			super.anInt4893 = arg0.method4829();
+			super.anInt4884 = arg0.g2();
+			super.anInt4893 = arg0.g2();
 		}
 		if (local21 >= 3 && local21 < 6) {
 			arg0.g1();

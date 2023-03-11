@@ -58,7 +58,7 @@ public final class Class53 implements Interface7 {
 	@OriginalMember(owner = "client!dt", name = "a", descriptor = "(I)J")
 	@Override
 	public long method1779() {
-		@Pc(5) long[] local5 = Class4.aLongArray1;
+		@Pc(5) long[] local5 = Buffer.CRC64_TABLE;
 		@Pc(7) long local7 = -1L;
 		@Pc(22) long local22 = local7 >>> 8 ^ local5[(int) ((local7 ^ (long) this.anInt1639) & 0xFFL)];
 		@Pc(46) long local46 = local5[(int) (((long) (this.anInt1644 >> 8) ^ local22) & 0xFFL)] ^ local22 >>> 8;

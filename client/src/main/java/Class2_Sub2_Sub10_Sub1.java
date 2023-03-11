@@ -16,15 +16,15 @@ public final class Class2_Sub2_Sub10_Sub1 extends Class2_Sub2_Sub10 {
 	@OriginalMember(owner = "client!jj", name = "e", descriptor = "(B)[B")
 	@Override
 	public byte[] method5648() {
-		if (super.aBoolean416 || this.aClass2_Sub4_3.position < this.aClass2_Sub4_3.aByteArray73.length - this.aByte27) {
+		if (super.aBoolean416 || this.aClass2_Sub4_3.pos < this.aClass2_Sub4_3.data.length - this.aByte27) {
 			throw new RuntimeException();
 		}
-		return this.aClass2_Sub4_3.aByteArray73;
+		return this.aClass2_Sub4_3.data;
 	}
 
 	@OriginalMember(owner = "client!jj", name = "b", descriptor = "(I)I")
 	@Override
 	public int method5651() {
-		return this.aClass2_Sub4_3 == null ? 0 : this.aClass2_Sub4_3.position * 100 / (this.aClass2_Sub4_3.aByteArray73.length - this.aByte27);
+		return this.aClass2_Sub4_3 == null ? 0 : this.aClass2_Sub4_3.pos * 100 / (this.aClass2_Sub4_3.data.length - this.aByte27);
 	}
 }

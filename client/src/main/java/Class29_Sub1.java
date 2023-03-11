@@ -30,7 +30,7 @@ public final class Class29_Sub1 extends Class29 {
 			@Pc(136) int local136;
 			@Pc(140) int local140;
 			@Pc(496) int local496;
-			while (arg4.position < arg4.aByteArray73.length) {
+			while (arg4.pos < arg4.data.length) {
 				local24 = arg4.g1();
 				if (local24 == 0) {
 					local13 = new Class21(arg4);
@@ -42,7 +42,7 @@ public final class Class29_Sub1 extends Class29 {
 							for (local496 = 0; local496 < local118; local496++) {
 								@Pc(503) Class2_Sub26_Sub1 local503 = new Class2_Sub26_Sub1(arg4);
 								if (local503.anInt4376 == 31) {
-									@Pc(516) Class66 local516 = Static90.aClass190_3.method4878(arg4.method4829());
+									@Pc(516) Class66 local516 = Static90.aClass190_3.method4878(arg4.g2());
 									local503.method4154(local516.anInt1880, local516.anInt1879, local516.anInt1877, local516.anInt1883);
 								}
 								local503.anInt4370 += arg2 << 7;
@@ -71,7 +71,7 @@ public final class Class29_Sub1 extends Class29 {
 						}
 						local11 = true;
 						for (local118 = 0; local118 < 4; local118++) {
-							@Pc(124) byte local124 = arg4.method4825();
+							@Pc(124) byte local124 = arg4.g1b();
 							@Pc(175) int local175;
 							if (local124 == 0 && super.aByteArrayArrayArray11[local118] != null) {
 								local136 = arg2;
@@ -111,7 +111,7 @@ public final class Class29_Sub1 extends Class29 {
 								}
 								for (local136 = 0; local136 < 64; local136 += 4) {
 									for (local140 = 0; local140 < 64; local140 += 4) {
-										@Pc(397) byte local397 = arg4.method4825();
+										@Pc(397) byte local397 = arg4.g1b();
 										for (local175 = local136 + arg2; local175 < local136 + arg2 + 4; local175++) {
 											for (@Pc(408) int local408 = arg1 + local140; local408 < local140 + arg1 + 4; local408++) {
 												if (local175 >= 0 && super.anInt900 > local175 && local408 >= 0 && super.anInt911 > local408) {
@@ -161,13 +161,13 @@ public final class Class29_Sub1 extends Class29 {
 							}
 						}
 					} else if (arg0 == null) {
-						arg4.position += 10;
+						arg4.pos += 10;
 					} else {
-						arg0[0] = arg4.method4829();
-						arg0[1] = arg4.method4823();
-						arg0[2] = arg4.method4823();
-						arg0[3] = arg4.method4823();
-						arg0[4] = arg4.method4829();
+						arg0[0] = arg4.g2();
+						arg0[1] = arg4.g2b();
+						arg0[2] = arg4.g2b();
+						arg0[3] = arg4.g2b();
+						arg0[4] = arg4.g2();
 					}
 				}
 			}
@@ -220,7 +220,7 @@ public final class Class29_Sub1 extends Class29 {
 					@Pc(117) int local117;
 					@Pc(404) int local404;
 					@Pc(153) int local153;
-					while (arg0.aByteArray73.length > arg0.position) {
+					while (arg0.data.length > arg0.pos) {
 						local36 = arg0.g1();
 						if (local36 == 0) {
 							local19 = new Class21(arg0);
@@ -235,7 +235,7 @@ public final class Class29_Sub1 extends Class29 {
 									for (local404 = 0; local404 < local117; local404++) {
 										@Pc(411) Class2_Sub26_Sub1 local411 = new Class2_Sub26_Sub1(arg0);
 										if (local411.anInt4376 == 31) {
-											@Pc(422) Class66 local422 = Static90.aClass190_3.method4878(arg0.method4829());
+											@Pc(422) Class66 local422 = Static90.aClass190_3.method4878(arg0.g2());
 											local411.method4154(local422.anInt1880, local422.anInt1879, local422.anInt1877, local422.anInt1883);
 										}
 										local157 = local411.anInt4370 >> 7;
@@ -269,7 +269,7 @@ public final class Class29_Sub1 extends Class29 {
 									super.aByteArrayArrayArray11 = new byte[4][][];
 								}
 								for (local117 = 0; local117 < 4; local117++) {
-									@Pc(123) byte local123 = arg0.method4825();
+									@Pc(123) byte local123 = arg0.g1b();
 									if (local123 == 0 && super.aByteArrayArrayArray11[arg2] != null) {
 										if (local117 <= arg3) {
 											local153 = arg8;
@@ -310,7 +310,7 @@ public final class Class29_Sub1 extends Class29 {
 										}
 										for (local153 = 0; local153 < 64; local153 += 4) {
 											for (local157 = 0; local157 < 64; local157 += 4) {
-												@Pc(163) byte local163 = arg0.method4825();
+												@Pc(163) byte local163 = arg0.g1b();
 												if (local117 <= arg3) {
 													for (local168 = local153; local168 < local153 + 4; local168++) {
 														for (local172 = local157; local172 < local157 + 4; local172++) {
@@ -329,13 +329,13 @@ public final class Class29_Sub1 extends Class29 {
 									}
 								}
 							} else if (arg7 == null) {
-								arg0.position += 10;
+								arg0.pos += 10;
 							} else {
-								arg7[0] = arg0.method4829();
-								arg7[1] = arg0.method4823();
-								arg7[2] = arg0.method4823();
-								arg7[3] = arg0.method4823();
-								arg7[4] = arg0.method4829();
+								arg7[0] = arg0.g2();
+								arg7[1] = arg0.g2b();
+								arg7[2] = arg0.g2b();
+								arg7[3] = arg0.g2b();
+								arg7[4] = arg0.g2();
 							}
 						}
 					}
@@ -940,7 +940,7 @@ public final class Class29_Sub1 extends Class29 {
 		@Pc(14) Buffer local14 = new Buffer(arg4);
 		@Pc(16) int local16 = -1;
 		while (true) {
-			@Pc(20) int local20 = local14.method4839();
+			@Pc(20) int local20 = local14.gVarSmart();
 			if (local20 == 0) {
 				return;
 			}
@@ -1059,7 +1059,7 @@ public final class Class29_Sub1 extends Class29 {
 		@Pc(10) Buffer local10 = new Buffer(arg2);
 		@Pc(16) int local16 = -1;
 		while (true) {
-			@Pc(20) int local20 = local10.method4839();
+			@Pc(20) int local20 = local10.gVarSmart();
 			if (local20 == 0) {
 				return;
 			}

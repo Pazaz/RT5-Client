@@ -16,9 +16,6 @@ public final class Static270 {
 	@OriginalMember(owner = "client!pi", name = "e", descriptor = "Z")
 	public static boolean aBoolean371 = false;
 
-	@OriginalMember(owner = "client!pi", name = "g", descriptor = "I")
-	public static int anInt4968 = 0;
-
 	@OriginalMember(owner = "client!pi", name = "a", descriptor = "(BJ)V")
 	public static void method4553(@OriginalArg(1) long arg0) {
 		try {

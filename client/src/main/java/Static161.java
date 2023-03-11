@@ -34,7 +34,7 @@ public final class Static161 {
 			throw new RuntimeException();
 		} else if (local12 == 0) {
 			@Pc(45) byte[] local45 = new byte[local23];
-			local8.method4799(local45, local23);
+			local8.gdata(local45, local23);
 			return local45;
 		} else {
 			@Pc(57) int local57 = local8.g4();
@@ -472,7 +472,7 @@ public final class Static161 {
 				Static91.method1960(Static243.aClass145_162);
 				Protocol.outboundBuffer.p1(arg0.length() + 2);
 				Protocol.outboundBuffer.p1(arg1 ? 1 : 0);
-				Protocol.outboundBuffer.method4822(arg0);
+				Protocol.outboundBuffer.pjstr(arg0);
 			}
 			if (arg0.startsWith("fps ") && client.MODE_WHERE_LIVE != client.modeWhere) {
 				Static250.method4346(Static146.method2698(arg0.substring(4)));
@@ -502,8 +502,8 @@ public final class Static161 {
 		if (!Static101.aBoolean158 && Protocol.socket != null) {
 			Static91.method1960(Static326.aClass145_228);
 			try {
-				Protocol.socket.write(Protocol.outboundBuffer.position, Protocol.outboundBuffer.aByteArray73);
-				Protocol.outboundBuffer.position = 0;
+				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
+				Protocol.outboundBuffer.pos = 0;
 			} catch (@Pc(57) IOException local57) {
 				Static101.aBoolean158 = true;
 			}

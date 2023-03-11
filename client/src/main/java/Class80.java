@@ -53,7 +53,7 @@ public final class Class80 {
 			local19 = arg1.g1();
 			this.anIntArray142 = new int[local19];
 			for (local25 = 0; local25 < local19; local25++) {
-				this.anIntArray142[local25] = arg1.method4829();
+				this.anIntArray142[local25] = arg1.g2();
 			}
 		} else if (arg0 != 3) {
 			if (arg0 == 40) {
@@ -61,19 +61,19 @@ public final class Class80 {
 				this.aShortArray44 = new short[local19];
 				this.aShortArray43 = new short[local19];
 				for (local25 = 0; local25 < local19; local25++) {
-					this.aShortArray43[local25] = (short) arg1.method4829();
-					this.aShortArray44[local25] = (short) arg1.method4829();
+					this.aShortArray43[local25] = (short) arg1.g2();
+					this.aShortArray44[local25] = (short) arg1.g2();
 				}
 			} else if (arg0 == 41) {
 				local19 = arg1.g1();
 				this.aShortArray42 = new short[local19];
 				this.aShortArray45 = new short[local19];
 				for (local25 = 0; local25 < local19; local25++) {
-					this.aShortArray45[local25] = (short) arg1.method4829();
-					this.aShortArray42[local25] = (short) arg1.method4829();
+					this.aShortArray45[local25] = (short) arg1.g2();
+					this.aShortArray42[local25] = (short) arg1.g2();
 				}
 			} else if (arg0 >= 60 && arg0 < 70) {
-				this.anIntArray141[arg0 - 60] = arg1.method4829();
+				this.anIntArray141[arg0 - 60] = arg1.g2();
 			}
 		}
 	}

@@ -31,15 +31,15 @@ public final class Static1 {
 				}
 				@Pc(65) Buffer local65 = new Buffer(Static210.aByteArrayArray7[local10]);
 				@Pc(67) int local67 = 0;
-				while (Static210.aByteArrayArray7[local10].length > local65.position && local67 < 511 && Static166.anInt3187 < 1023) {
+				while (Static210.aByteArrayArray7[local10].length > local65.pos && local67 < 511 && Static166.anInt3187 < 1023) {
 					@Pc(88) int local88 = local23 | local67++ << 6;
-					@Pc(92) int local92 = local65.method4829();
+					@Pc(92) int local92 = local65.g2();
 					@Pc(96) int local96 = local92 >> 14;
 					@Pc(102) int local102 = local92 >> 7 & 0x3F;
 					@Pc(106) int local106 = local92 & 0x3F;
 					@Pc(119) int local119 = local102 + (Static291.anIntArray372[local10] >> 8) * 64 - Static164.anInt3140;
 					@Pc(132) int local132 = local106 + (Static291.anIntArray372[local10] & 0xFF) * 64 - Static148.anInt2719;
-					@Pc(139) Class71 local139 = Static6.aClass219_1.method5570(local65.method4829());
+					@Pc(139) Class71 local139 = Static6.aClass219_1.method5570(local65.g2());
 					if (Static365.aClass11_Sub5_Sub2_Sub2Array1[local88] == null && (local139.aByte16 & 0x1) > 0 && Static44.anInt1115 == local96 && local119 >= 0 && local119 + local139.anInt2041 < Static373.anInt7033 && local132 >= 0 && local132 + local139.anInt2041 < Static242.anInt4449) {
 						Static365.aClass11_Sub5_Sub2_Sub2Array1[local88] = new Class11_Sub5_Sub2_Sub2();
 						Static365.aClass11_Sub5_Sub2_Sub2Array1[local88].anInt4619 = local88;

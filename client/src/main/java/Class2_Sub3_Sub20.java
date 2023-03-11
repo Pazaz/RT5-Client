@@ -65,7 +65,7 @@ public final class Class2_Sub3_Sub20 extends Class2_Sub3 {
 		}
 		this.anIntArrayArray26 = new int[arg1.g1()][4];
 		for (@Pc(21) int local21 = 0; local21 < this.anIntArrayArray26.length; local21++) {
-			this.anIntArrayArray26[local21][0] = arg1.method4829();
+			this.anIntArrayArray26[local21][0] = arg1.g2();
 			this.anIntArrayArray26[local21][1] = arg1.g1() << 4;
 			this.anIntArrayArray26[local21][2] = arg1.g1() << 4;
 			this.anIntArrayArray26[local21][3] = arg1.g1() << 4;

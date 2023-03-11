@@ -185,20 +185,20 @@ public final class Class157 {
 		@Pc(45) int local45;
 		@Pc(60) int local60;
 		if (arg1 == 1) {
-			local16 = arg0.method4829();
+			local16 = arg0.g2();
 			this.anIntArray261 = new int[local16];
 			for (local22 = 0; local22 < local16; local22++) {
-				this.anIntArray261[local22] = arg0.method4829();
+				this.anIntArray261[local22] = arg0.g2();
 			}
 			this.anIntArray262 = new int[local16];
 			for (local45 = 0; local45 < local16; local45++) {
-				this.anIntArray262[local45] = arg0.method4829();
+				this.anIntArray262[local45] = arg0.g2();
 			}
 			for (local60 = 0; local60 < local16; local60++) {
-				this.anIntArray262[local60] += arg0.method4829() << 16;
+				this.anIntArray262[local60] += arg0.g2() << 16;
 			}
 		} else if (arg1 == 2) {
-			this.anInt4032 = arg0.method4829();
+			this.anInt4032 = arg0.g2();
 		} else if (arg1 == 3) {
 			this.aBooleanArray37 = new boolean[256];
 			local16 = arg0.g1();
@@ -210,9 +210,9 @@ public final class Class157 {
 		} else if (arg1 == 5) {
 			this.anInt4023 = arg0.g1();
 		} else if (arg1 == 6) {
-			this.anInt4030 = arg0.method4829();
+			this.anInt4030 = arg0.g2();
 		} else if (arg1 == 7) {
-			this.anInt4034 = arg0.method4829();
+			this.anInt4034 = arg0.g2();
 		} else if (arg1 == 8) {
 			this.anInt4024 = arg0.g1();
 		} else if (arg1 == 9) {
@@ -225,21 +225,21 @@ public final class Class157 {
 			local16 = arg0.g1();
 			this.anIntArray263 = new int[local16];
 			for (local22 = 0; local22 < local16; local22++) {
-				this.anIntArray263[local22] = arg0.method4829();
+				this.anIntArray263[local22] = arg0.g2();
 			}
 			for (local45 = 0; local45 < local16; local45++) {
-				this.anIntArray263[local45] += arg0.method4829() << 16;
+				this.anIntArray263[local45] += arg0.g2() << 16;
 			}
 		} else if (arg1 == 13) {
-			local16 = arg0.method4829();
+			local16 = arg0.g2();
 			this.anIntArrayArray33 = new int[local16][];
 			for (local22 = 0; local22 < local16; local22++) {
 				local45 = arg0.g1();
 				if (local45 > 0) {
 					this.anIntArrayArray33[local22] = new int[local45];
-					this.anIntArrayArray33[local22][0] = arg0.method4833();
+					this.anIntArrayArray33[local22][0] = arg0.ig3();
 					for (local60 = 1; local60 < local45; local60++) {
-						this.anIntArrayArray33[local22][local60] = arg0.method4829();
+						this.anIntArrayArray33[local22][local60] = arg0.g2();
 					}
 				}
 			}

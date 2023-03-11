@@ -72,7 +72,7 @@ public final class Class227 {
 						local126 = arg2.aShortArrayArray1[local50++];
 						if (local126 != null) {
 							for (local131 = 0; local131 < local126.length; local131++) {
-								local91.method4843(local126[local131] & 0xFFFF);
+								local91.p2(local126[local131] & 0xFFFF);
 							}
 						}
 					}
@@ -84,13 +84,13 @@ public final class Class227 {
 						local126 = arg2.aShortArrayArray1[local50++];
 						if (local126 != null) {
 							for (local131 = 0; local131 < local126.length; local131++) {
-								local91.method4845(local126[local131] & 0xFFFF);
+								local91.ip2(local126[local131] & 0xFFFF);
 							}
 						}
 					}
 				}
 			}
-			this.anInterface4_5 = this.aClass19_Sub1_36.method839(local91.aByteArray73, local91.position, false);
+			this.anInterface4_5 = this.aClass19_Sub1_36.method839(local91.data, local91.pos, false);
 			this.aClass180_Sub2_2 = new Class180_Sub2(this.aClass19_Sub1_36, 5123, null, 1);
 		}
 	}

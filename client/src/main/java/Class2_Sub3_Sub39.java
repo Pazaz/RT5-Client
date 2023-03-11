@@ -171,8 +171,8 @@ public final class Class2_Sub3_Sub39 extends Class2_Sub3 {
 		this.anInt7259 = arg1.g1();
 		this.anIntArrayArray65 = new int[arg1.g1()][2];
 		for (@Pc(22) int local22 = 0; local22 < this.anIntArrayArray65.length; local22++) {
-			this.anIntArrayArray65[local22][0] = arg1.method4829();
-			this.anIntArrayArray65[local22][1] = arg1.method4829();
+			this.anIntArrayArray65[local22][0] = arg1.g2();
+			this.anIntArrayArray65[local22][1] = arg1.g2();
 		}
 	}
 }

@@ -144,7 +144,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(Lclient!bt;I)V")
 	public void method4066(@OriginalArg(0) Buffer arg0) {
-		arg0.position = 0;
+		arg0.pos = 0;
 		@Pc(12) int local12 = arg0.g1();
 		this.aByte39 = (byte) (local12 & 0x1);
 		@Pc(29) boolean local29 = (local12 & 0x2) != 0;
@@ -154,9 +154,9 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		this.aByte40 = (byte) (local12 >> 6 & 0x3);
 		super.anInt6781 += (this.method4328() - local41) * 64;
 		super.anInt6783 += (this.method4328() - local41) * 64;
-		this.aByte38 = arg0.method4825();
-		this.anInt4188 = arg0.method4825();
-		this.anInt4198 = arg0.method4825();
+		this.aByte38 = arg0.g1b();
+		this.anInt4188 = arg0.g1b();
+		this.anInt4198 = arg0.g1b();
 		this.anInt4193 = 0;
 		@Pc(113) int local113 = -1;
 		@Pc(116) int[] local116 = new int[12];
@@ -171,7 +171,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 				local136 = arg0.g1();
 				local143 = (local124 << 8) + local136;
 				if (local118 == 0 && local143 == 65535) {
-					local113 = arg0.method4829();
+					local113 = arg0.g2();
 					this.anInt4193 = arg0.g1();
 					break;
 				}
@@ -195,16 +195,16 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 			}
 			local207[local136] = local143;
 		}
-		this.anInt4195 = arg0.method4829();
-		this.aString42 = arg0.method4809();
+		this.anInt4195 = arg0.g2();
+		this.aString42 = arg0.gjstr();
 		if (local29) {
-			this.aString41 = arg0.method4809();
+			this.aString41 = arg0.gjstr();
 		} else {
 			this.aString41 = this.aString42;
 		}
 		this.anInt4179 = arg0.g1();
 		if (local37) {
-			this.anInt4173 = arg0.method4829();
+			this.anInt4173 = arg0.g2();
 			this.anInt4191 = -1;
 			this.anInt4171 = this.anInt4179;
 		} else {
@@ -226,10 +226,10 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 			local327 = this.anInt4168;
 			@Pc(330) int local330 = this.anInt4196;
 			@Pc(333) int local333 = this.anInt4201;
-			this.anInt4167 = arg0.method4829();
-			this.anInt4187 = arg0.method4829();
-			this.anInt4168 = arg0.method4829();
-			this.anInt4196 = arg0.method4829();
+			this.anInt4167 = arg0.g2();
+			this.anInt4187 = arg0.g2();
+			this.anInt4168 = arg0.g2();
+			this.anInt4196 = arg0.g2();
 			this.anInt4201 = arg0.g1();
 			if (local143 != this.anInt4182 || this.anInt4167 != local182 || local324 != this.anInt4187 || this.anInt4168 != local327 || this.anInt4196 != local330 || local333 != this.anInt4201) {
 				Static324.method5542(this);

@@ -88,7 +88,7 @@ public final class Static309 {
 		} else {
 			Static91.method1960(Static192.aClass145_139);
 			Protocol.outboundBuffer.p1(Static27.method872(arg0) + 1);
-			Protocol.outboundBuffer.method4822(arg0);
+			Protocol.outboundBuffer.pjstr(arg0);
 			Protocol.outboundBuffer.p1(arg1 ? 1 : 0);
 		}
 	}

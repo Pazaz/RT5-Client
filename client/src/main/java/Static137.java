@@ -43,7 +43,7 @@ public final class Static137 {
 			}
 		} else if (Static385.aClass2_Sub16_2.anInt2419 != -1) {
 			Static91.method1960(Static168.aClass145_268);
-			Protocol.outboundBuffer.method4843(Static385.aClass2_Sub16_2.anInt2419);
+			Protocol.outboundBuffer.p2(Static385.aClass2_Sub16_2.anInt2419);
 			Static385.aClass2_Sub16_2 = null;
 			Static375.aLong222 = MonotonicClock.currentTimeMillis() + 30000L;
 		}
@@ -56,8 +56,8 @@ public final class Static137 {
 		@Pc(236) int local236;
 		if (Static370.aClass2_Sub24_1 != null || Static368.aLong217 < MonotonicClock.currentTimeMillis() - 2000L) {
 			@Pc(109) boolean local109 = false;
-			local112 = Protocol.outboundBuffer.position;
-			for (@Pc(117) Class2_Sub24 local117 = (Class2_Sub24) Static277.aClass135_31.method3551(); local117 != null && Protocol.outboundBuffer.position - local112 < 240; local117 = (Class2_Sub24) Static277.aClass135_31.method3552()) {
+			local112 = Protocol.outboundBuffer.pos;
+			for (@Pc(117) Class2_Sub24 local117 = (Class2_Sub24) Static277.aClass135_31.method3551(); local117 != null && Protocol.outboundBuffer.pos - local112 < 240; local117 = (Class2_Sub24) Static277.aClass135_31.method3552()) {
 				local117.method6468();
 				local135 = local117.method5242();
 				if (local135 < 0) {
@@ -81,7 +81,7 @@ public final class Static137 {
 					if (!local109) {
 						Static91.method1960(Static91.aClass145_69);
 						Protocol.outboundBuffer.p1(0);
-						local112 = Protocol.outboundBuffer.position;
+						local112 = Protocol.outboundBuffer.pos;
 						local109 = true;
 					}
 					local219 = local153 - Static289.anInt5495;
@@ -92,14 +92,14 @@ public final class Static137 {
 					if (local236 < 8 && local219 >= -32 && local219 <= 31 && local225 >= -32 && local225 <= 31) {
 						local219 += 32;
 						local225 += 32;
-						Protocol.outboundBuffer.method4843((local219 << 6) + (local236 << 12) + local225);
+						Protocol.outboundBuffer.p2((local219 << 6) + (local236 << 12) + local225);
 					} else if (local236 < 32 && local219 >= -128 && local219 <= 127 && local225 >= -128 && local225 <= 127) {
 						local225 += 128;
 						local219 += 128;
 						Protocol.outboundBuffer.p1(local236 + 128);
-						Protocol.outboundBuffer.method4843((local219 << 8) + local225);
+						Protocol.outboundBuffer.p2((local219 << 8) + local225);
 					} else if (local236 >= 32) {
-						Protocol.outboundBuffer.method4843(local236 + 57344);
+						Protocol.outboundBuffer.p2(local236 + 57344);
 						if (local169) {
 							Protocol.outboundBuffer.p4(Integer.MIN_VALUE);
 						} else {
@@ -117,7 +117,7 @@ public final class Static137 {
 				}
 			}
 			if (local109) {
-				Protocol.outboundBuffer.method4861(Protocol.outboundBuffer.position - local112);
+				Protocol.outboundBuffer.psize1(Protocol.outboundBuffer.pos - local112);
 			}
 		}
 		@Pc(410) int local410;
@@ -146,8 +146,8 @@ public final class Static137 {
 			}
 			Static91.method1960(Static363.aClass145_240);
 			local463 = (int) local394;
-			Protocol.outboundBuffer.method4843(local446 << 15 | local463);
-			Protocol.outboundBuffer.method4848(local135 | local410 << 16);
+			Protocol.outboundBuffer.p2(local446 << 15 | local463);
+			Protocol.outboundBuffer.ip4_dup(local135 | local410 << 16);
 		}
 		@Pc(483) int local483;
 		if (Static6.anInt159 > 0) {
@@ -172,7 +172,7 @@ public final class Static137 {
 							local544 = 65535L;
 						}
 						Protocol.outboundBuffer.p1(local531.method1461());
-						Protocol.outboundBuffer.method4843((int) local544);
+						Protocol.outboundBuffer.p2((int) local544);
 					}
 				}
 			}
@@ -184,8 +184,8 @@ public final class Static137 {
 			Static100.aBoolean156 = false;
 			Static383.anInt7153 = 20;
 			Static91.method1960(Static304.aClass145_200);
-			Protocol.outboundBuffer.method4843((int) Static277.aFloat67 >> 3);
-			Protocol.outboundBuffer.method4830((int) Static31.aFloat28 >> 3);
+			Protocol.outboundBuffer.p2((int) Static277.aFloat67 >> 3);
+			Protocol.outboundBuffer.ip2_dup((int) Static31.aFloat28 >> 3);
 		}
 		if (Static242.aBoolean306 && !Static343.aBoolean431) {
 			Static343.aBoolean431 = true;
@@ -200,10 +200,10 @@ public final class Static137 {
 		if (!Static236.aBoolean288) {
 			Static91.method1960(Static253.aClass145_166);
 			Protocol.outboundBuffer.p1(0);
-			local483 = Protocol.outboundBuffer.position;
+			local483 = Protocol.outboundBuffer.pos;
 			@Pc(672) Buffer local672 = Static218.aClass177_Sub1_2.method4494();
-			Protocol.outboundBuffer.method4857(local672.aByteArray73, local672.position);
-			Protocol.outboundBuffer.method4861(Protocol.outboundBuffer.position - local483);
+			Protocol.outboundBuffer.pdata(local672.data, local672.pos);
+			Protocol.outboundBuffer.psize1(Protocol.outboundBuffer.pos - local483);
 			Static236.aBoolean288 = true;
 		}
 		if (Static330.aClass67ArrayArrayArray3 != null) {
@@ -386,7 +386,7 @@ public final class Static137 {
 		Static88.anInt1876++;
 		if (Static332.aBoolean427) {
 			Static91.method1960(Static372.aClass145_252);
-			Protocol.outboundBuffer.method4848(Static283.anInt5351 << 28 | Static282.anInt5347 << 14 | Static4.anInt89);
+			Protocol.outboundBuffer.ip4_dup(Static283.anInt5351 << 28 | Static282.anInt5347 << 14 | Static4.anInt89);
 			Static332.aBoolean427 = false;
 		}
 		while (true) {
@@ -489,11 +489,11 @@ public final class Static137 {
 												Static1.aBoolean1 = false;
 											}
 											try {
-												if (Protocol.socket != null && Protocol.outboundBuffer.position > 0) {
-													Static175.anInt3348 += Protocol.outboundBuffer.position;
-													Protocol.socket.write(Protocol.outboundBuffer.position, Protocol.outboundBuffer.aByteArray73);
+												if (Protocol.socket != null && Protocol.outboundBuffer.pos > 0) {
+													Static175.anInt3348 += Protocol.outboundBuffer.pos;
+													Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
 													Static367.anInt6876 = 0;
-													Protocol.outboundBuffer.position = 0;
+													Protocol.outboundBuffer.pos = 0;
 													return;
 												}
 												return;

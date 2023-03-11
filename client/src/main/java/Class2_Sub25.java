@@ -38,36 +38,36 @@ public final class Class2_Sub25 extends Class2 {
 	public Class2_Sub25(@OriginalArg(0) byte[] arg0) {
 		@Pc(36) Buffer local36 = new Buffer(arg0);
 		@Pc(38) int local38;
-		for (local38 = 0; local36.aByteArray73[local36.position + local38] != 0; local38++) {
+		for (local38 = 0; local36.data[local36.pos + local38] != 0; local38++) {
 		}
 		@Pc(52) byte[] local52 = new byte[local38];
 		for (@Pc(54) int local54 = 0; local54 < local38; local54++) {
-			local52[local54] = local36.method4825();
+			local52[local54] = local36.g1b();
 		}
 		local38++;
-		local36.position++;
-		@Pc(80) int local80 = local36.position;
-		local36.position += local38;
+		local36.pos++;
+		@Pc(80) int local80 = local36.pos;
+		local36.pos += local38;
 		@Pc(88) int local88;
-		for (local88 = 0; local36.aByteArray73[local36.position + local88] != 0; local88++) {
+		for (local88 = 0; local36.data[local36.pos + local88] != 0; local88++) {
 		}
 		@Pc(102) byte[] local102 = new byte[local88];
 		for (@Pc(104) int local104 = 0; local104 < local88; local104++) {
-			local102[local104] = local36.method4825();
+			local102[local104] = local36.g1b();
 		}
 		local88++;
-		local36.position++;
-		@Pc(130) int local130 = local36.position;
-		local36.position += local88;
+		local36.pos++;
+		@Pc(130) int local130 = local36.pos;
+		local36.pos += local88;
 		@Pc(138) int local138;
-		for (local138 = 0; local36.aByteArray73[local138 + local36.position] != 0; local138++) {
+		for (local138 = 0; local36.data[local138 + local36.pos] != 0; local138++) {
 		}
 		@Pc(152) byte[] local152 = new byte[local138];
 		for (@Pc(154) int local154 = 0; local154 < local138; local154++) {
-			local152[local154] = local36.method4825();
+			local152[local154] = local36.g1b();
 		}
 		local138++;
-		local36.position++;
+		local36.pos++;
 		@Pc(176) byte[] local176 = new byte[local138];
 		@Pc(187) int local187;
 		@Pc(189) int local189;
@@ -109,13 +109,13 @@ public final class Class2_Sub25 extends Class2 {
 		local195 = local36.g1();
 		@Pc(310) byte[] local310 = local195 > 0 ? new byte[local195 * 2] : null;
 		@Pc(312) int local312;
-		for (local312 = 0; local36.aByteArray73[local312 + local36.position] != 0; local312++) {
+		for (local312 = 0; local36.data[local312 + local36.pos] != 0; local312++) {
 		}
 		@Pc(329) byte[] local329 = new byte[local312];
 		for (@Pc(331) int local331 = 0; local331 < local312; local331++) {
-			local329[local331] = local36.method4825();
+			local329[local331] = local36.g1b();
 		}
-		local36.position++;
+		local36.pos++;
 		local312++;
 		@Pc(352) int local352 = 0;
 		for (@Pc(354) int local354 = 0; local354 < 128; local354++) {
@@ -137,7 +137,7 @@ public final class Class2_Sub25 extends Class2 {
 				} else {
 					local405 = local329[local407++];
 				}
-				local409 = local36.method4812();
+				local409 = local36.gVarInt();
 			}
 			this.aShortArray90[local411] = (short) (this.aShortArray90[local411] + ((local409 - 1 & 0x2) << 14));
 			this.anIntArray264[local411] = local409;
@@ -154,7 +154,7 @@ public final class Class2_Sub25 extends Class2 {
 					} else {
 						local405 = local52[local407++];
 					}
-					local468 = local36.aByteArray73[local80++] - 1;
+					local468 = local36.data[local80++] - 1;
 				}
 				this.aByteArray46[local470] = (byte) local468;
 				local405--;
@@ -171,7 +171,7 @@ public final class Class2_Sub25 extends Class2 {
 					} else {
 						local405 = -1;
 					}
-					local524 = local36.aByteArray73[local130++] + 16 << 2;
+					local524 = local36.data[local130++] + 16 << 2;
 				}
 				local405--;
 				this.aByteArray45[local526] = (byte) local524;
@@ -217,24 +217,24 @@ public final class Class2_Sub25 extends Class2 {
 			@Pc(684) Class17 local684 = local224[local678];
 			if (local684.aByteArray3 != null) {
 				for (local689 = 1; local689 < local684.aByteArray3.length; local689 += 2) {
-					local684.aByteArray3[local689] = local36.method4825();
+					local684.aByteArray3[local689] = local36.g1b();
 				}
 			}
 			if (local684.aByteArray4 != null) {
 				for (local689 = 3; local689 < local684.aByteArray4.length - 2; local689 += 2) {
-					local684.aByteArray4[local689] = local36.method4825();
+					local684.aByteArray4[local689] = local36.g1b();
 				}
 			}
 		}
 		@Pc(742) int local742;
 		if (local294 != null) {
 			for (local742 = 1; local742 < local294.length; local742 += 2) {
-				local294[local742] = local36.method4825();
+				local294[local742] = local36.g1b();
 			}
 		}
 		if (local310 != null) {
 			for (local742 = 1; local742 < local310.length; local742 += 2) {
-				local310[local742] = local36.method4825();
+				local310[local742] = local36.g1b();
 			}
 		}
 		@Pc(791) int local791;

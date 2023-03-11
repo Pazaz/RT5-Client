@@ -27,11 +27,11 @@ public final class Static120 {
 
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(Ljava/lang/String;ILclient!bt;)I")
 	public static int method2379(@OriginalArg(0) String arg0, @OriginalArg(2) Buffer arg1) {
-		@Pc(6) int local6 = arg1.position;
+		@Pc(6) int local6 = arg1.pos;
 		@Pc(10) byte[] local10 = Static51.method1546(arg0);
-		arg1.method4824(local10.length);
-		arg1.position += Static370.aClass140_1.method3648(arg1.aByteArray73, local10, 0, arg1.position, local10.length);
-		return arg1.position - local6;
+		arg1.psmarts(local10.length);
+		arg1.pos += Static370.aClass140_1.method3648(arg1.data, local10, 0, arg1.pos, local10.length);
+		return arg1.pos - local6;
 	}
 
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(I)V")
@@ -99,8 +99,8 @@ public final class Static120 {
 				local7 = 32767;
 			}
 			@Pc(23) byte[] local23 = new byte[local7];
-			arg0.position += Static370.aClass140_1.method3651(local7, local23, 0, arg0.position, arg0.aByteArray73);
-			return Static47.method1462(0, local23, local7);
+			arg0.pos += Static370.aClass140_1.method3651(local7, local23, 0, arg0.pos, arg0.data);
+			return Cp1252Charset.decodeString(0, local23, local7);
 		} catch (@Pc(47) Exception local47) {
 			return "Cabbage";
 		}

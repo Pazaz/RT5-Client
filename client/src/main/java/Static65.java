@@ -50,9 +50,9 @@ public final class Static65 {
 		if (arg2 == 1) {
 			Static91.method1960(Static310.aClass145_203);
 		}
-		Protocol.outboundBuffer.method4827(Static174.aClass123_2.method3343(82) ? 1 : 0);
-		Protocol.outboundBuffer.method4843(arg0 + Static164.anInt3140);
-		Protocol.outboundBuffer.method4830(arg1 + Static148.anInt2719);
+		Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
+		Protocol.outboundBuffer.p2(arg0 + Static164.anInt3140);
+		Protocol.outboundBuffer.ip2_dup(arg1 + Static148.anInt2719);
 		Static370.aBoolean474 = false;
 		Static358.anInt6550 = arg0;
 		Static312.anInt5844 = arg1;

@@ -55,6 +55,6 @@ public final class Static27 {
 				}
 			}
 		}
-		arg0.method4857(local8, 24);
+		arg0.pdata(local8, 24);
 	}
 }

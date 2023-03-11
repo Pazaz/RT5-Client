@@ -20,8 +20,8 @@ public final class Static171 {
 	public static void method3256(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
 		Static91.method1960(Static382.aClass145_258);
 		Protocol.outboundBuffer.p1(Static27.method872(arg1) + 1);
-		Protocol.outboundBuffer.method4827(arg0);
-		Protocol.outboundBuffer.method4822(arg1);
+		Protocol.outboundBuffer.p1add(arg0);
+		Protocol.outboundBuffer.pjstr(arg1);
 	}
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(BIIZII)V")

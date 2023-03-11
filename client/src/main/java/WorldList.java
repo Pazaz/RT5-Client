@@ -133,7 +133,7 @@ public class WorldList {
 	public static void decodePlayers(@OriginalArg(1) Buffer buffer) {
 		for (@Pc(16) int i = 0; i < size; i++) {
 			@Pc(22) int offset = buffer.gsmart();
-			@Pc(26) int players = buffer.method4829();
+			@Pc(26) int players = buffer.g2();
 			if (players == 65535) {
 				players = -1;
 			}
@@ -170,10 +170,10 @@ public class WorldList {
 				if (loaded) {
 					checksum = WorldList.checksum;
 				}
-				Protocol.outboundBuffer.position = 0;
+				Protocol.outboundBuffer.pos = 0;
 				Protocol.outboundBuffer.p1(Static43.aClass242_9.anInt7038);
 				Protocol.outboundBuffer.p4(checksum);
-				Protocol.socket.write(Protocol.outboundBuffer.position, Protocol.outboundBuffer.aByteArray73);
+				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
 				if (client.musicChannel != null) {
 					client.musicChannel.method6325();
 				}

@@ -29,7 +29,7 @@ public final class Class134 {
 	@OriginalMember(owner = "client!la", name = "a", descriptor = "(IILclient!bt;)V")
 	private void method3510(@OriginalArg(1) int arg0, @OriginalArg(2) Buffer arg1) {
 		if (arg0 == 1) {
-			this.anInt3554 = arg1.method4829();
+			this.anInt3554 = arg1.g2();
 			this.anInt3548 = arg1.g1();
 			this.anInt3549 = arg1.g1();
 		}

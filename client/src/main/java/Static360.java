@@ -13,9 +13,6 @@ public final class Static360 {
 	@OriginalMember(owner = "client!ut", name = "J", descriptor = "[I")
 	public static final int[] anIntArray422 = new int[2048];
 
-	@OriginalMember(owner = "client!ut", name = "K", descriptor = "I")
-	public static int anInt6190 = 0;
-
 	@OriginalMember(owner = "client!ut", name = "c", descriptor = "(Z)V")
 	public static void method5646() {
 		Static220.aClass4_83.method81();

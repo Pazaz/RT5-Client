@@ -18,11 +18,11 @@ public final class Class245 {
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(Lclient!bt;II)V")
 	private void method6311(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 1) {
-			this.anInt7072 = arg0.method4829();
+			this.anInt7072 = arg0.g2();
 		} else if (arg1 == 2) {
 			this.anIntArray484 = new int[arg0.g1()];
 			for (@Pc(19) int local19 = 0; local19 < this.anIntArray484.length; local19++) {
-				this.anIntArray484[local19] = arg0.method4829();
+				this.anIntArray484[local19] = arg0.g2();
 			}
 		} else if (arg1 == 3) {
 			this.anInt7078 = arg0.g1();

@@ -72,14 +72,14 @@ public final class Static340 {
 				local7 = (FileOnDisk) local11.result;
 				@Pc(41) Buffer local41 = new Buffer(Static112.anInt2294 * 6 + 3);
 				local41.p1(1);
-				local41.method4843(Static112.anInt2294);
+				local41.p2(Static112.anInt2294);
 				for (@Pc(51) int local51 = 0; local51 < Static75.anIntArray117.length; local51++) {
 					if (Static89.aBooleanArray18[local51]) {
-						local41.method4843(local51);
+						local41.p2(local51);
 						local41.p4(Static75.anIntArray117[local51]);
 					}
 				}
-				local7.write(local41.aByteArray73, local41.position, 0);
+				local7.write(local41.data, local41.pos, 0);
 			}
 		} catch (@Pc(82) Exception local82) {
 		}

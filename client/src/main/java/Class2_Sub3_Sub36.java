@@ -309,21 +309,21 @@ public final class Class2_Sub3_Sub36 extends Class2_Sub3 {
 		if (arg0 == 0) {
 			this.anInt6919 = arg1.g1();
 		} else if (arg0 == 1) {
-			this.anInt6915 = arg1.method4829();
+			this.anInt6915 = arg1.g2();
 		} else if (arg0 == 2) {
-			this.anInt6918 = arg1.method4829();
+			this.anInt6918 = arg1.g2();
 		} else if (arg0 == 3) {
-			this.anInt6916 = arg1.method4829();
+			this.anInt6916 = arg1.g2();
 		} else if (arg0 == 4) {
-			this.anInt6921 = arg1.method4829();
+			this.anInt6921 = arg1.g2();
 		} else if (arg0 == 5) {
-			this.anInt6922 = arg1.method4829();
+			this.anInt6922 = arg1.g2();
 		} else if (arg0 == 6) {
 			this.anInt6924 = arg1.g1();
 		} else if (arg0 == 7) {
-			this.anInt6928 = arg1.method4829();
+			this.anInt6928 = arg1.g2();
 		} else if (arg0 == 8) {
-			this.anInt6920 = arg1.method4829();
+			this.anInt6920 = arg1.g2();
 		}
 	}
 }

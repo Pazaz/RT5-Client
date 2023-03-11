@@ -22,8 +22,8 @@ public final class Static361 {
 		if (Static112.aBoolean173) {
 			System.out.println("---endgpp---");
 		}
-		if (arg0.position != arg1) {
-			throw new RuntimeException("gpi1 pos:" + arg0.position + " psize:" + arg1);
+		if (arg0.pos != arg1) {
+			throw new RuntimeException("gpi1 pos:" + arg0.pos + " psize:" + arg1);
 		}
 	}
 

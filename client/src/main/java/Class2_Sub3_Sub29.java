@@ -84,11 +84,11 @@ public final class Class2_Sub3_Sub29 extends Class2_Sub3 {
 	@Override
 	public void method6484(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
-			this.anInt5647 = arg1.method4823();
+			this.anInt5647 = arg1.g2b();
 		} else if (arg0 == 1) {
-			this.anInt5641 = (arg1.method4825() << 12) / 100;
+			this.anInt5641 = (arg1.g1b() << 12) / 100;
 		} else if (arg0 == 2) {
-			this.anInt5648 = (arg1.method4825() << 12) / 100;
+			this.anInt5648 = (arg1.g1b() << 12) / 100;
 		}
 	}
 

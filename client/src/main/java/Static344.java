@@ -241,7 +241,7 @@ public final class Static344 {
 				} else {
 					aByteArray90[arg4 + arg5 * anInt6056] = (byte) local21;
 					aByteArray89[arg4 + arg5 * anInt6056] = 0;
-					aByteArray88[arg4 + arg5 * anInt6056] = arg1.method4825();
+					aByteArray88[arg4 + arg5 * anInt6056] = arg1.g1b();
 				}
 			}
 			return;
@@ -269,15 +269,15 @@ public final class Static344 {
 				aByteArray90[arg4 + arg5 * anInt6056] = (byte) local125;
 				aByteArray89[arg4 + arg5 * anInt6056] = (byte) local127;
 				if (local139 == 1) {
-					aShortArray122[arg4 + arg5 * anInt6056] = (short) (arg1.method4829() + 1);
-					aByteArray87[arg4 + arg5 * anInt6056] = arg1.method4825();
+					aShortArray122[arg4 + arg5 * anInt6056] = (short) (arg1.g2() + 1);
+					aByteArray87[arg4 + arg5 * anInt6056] = arg1.g1b();
 				} else if (local139 > 1) {
 					aShortArray122[arg4 + arg5 * anInt6056] = -1;
 					local215 = new short[local139];
 					local218 = new byte[local139];
 					for (local220 = 0; local220 < local139; local220++) {
-						local215[local220] = (short) arg1.method4829();
-						local218[local220] = arg1.method4825();
+						local215[local220] = (short) arg1.g2();
+						local218[local220] = arg1.g1b();
 					}
 					aClass4_125.method87(new Class2_Sub29(local215, local218), (long) (arg4 << 16 | arg5));
 				}
@@ -288,8 +288,8 @@ public final class Static344 {
 					local215 = new short[local139];
 					local218 = new byte[local139];
 					for (local220 = 0; local220 < local139; local220++) {
-						local215[local220] = (short) arg1.method4829();
-						local218[local220] = arg1.method4825();
+						local215[local220] = (short) arg1.g2();
+						local218[local220] = arg1.g1b();
 					}
 				}
 				if (aClass36ArrayArrayArray2[local118 - 1][arg2 - (anInt6057 >> 6)][arg3 - (anInt6055 >> 6)] == null) {
@@ -536,7 +536,7 @@ public final class Static344 {
 			@Pc(67) int local67;
 			@Pc(76) int local76;
 			@Pc(148) int local148;
-			while (local9.position < local9.aByteArray73.length) {
+			while (local9.pos < local9.data.length) {
 				@Pc(62) int local62;
 				@Pc(84) int local84;
 				if (local9.g1() == 0) {

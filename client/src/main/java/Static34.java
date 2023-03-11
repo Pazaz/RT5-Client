@@ -73,7 +73,7 @@ public final class Static34 {
 				Static53.anInt3971 = Static88.anInt1876;
 				Static91.method1960(Static2.aClass145_3);
 				Protocol.outboundBuffer.p1(Static27.method872(arg0));
-				Protocol.outboundBuffer.method4822(arg0);
+				Protocol.outboundBuffer.pjstr(arg0);
 				return;
 			}
 		}

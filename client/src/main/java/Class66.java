@@ -34,11 +34,11 @@ public final class Class66 {
 		if (arg1 == 1) {
 			this.anInt1877 = arg0.g1();
 		} else if (arg1 == 2) {
-			this.anInt1883 = arg0.method4829();
+			this.anInt1883 = arg0.g2();
 		} else if (arg1 == 3) {
-			this.anInt1879 = arg0.method4829();
+			this.anInt1879 = arg0.g2();
 		} else if (arg1 == 4) {
-			this.anInt1880 = arg0.method4823();
+			this.anInt1880 = arg0.g2b();
 			return;
 		}
 	}

@@ -80,6 +80,6 @@ public final class Static372 {
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(BLclient!bt;)Lclient!rm;")
 	public static Class173_Sub3 method6266(@OriginalArg(1) Buffer arg0) {
-		return new Class173_Sub3(arg0.method4823(), arg0.method4823(), arg0.method4823(), arg0.method4823(), arg0.method4833(), arg0.method4833(), arg0.g1());
+		return new Class173_Sub3(arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.ig3(), arg0.ig3(), arg0.g1());
 	}
 }

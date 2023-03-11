@@ -27,11 +27,11 @@ public final class Static295 {
 	public static void method5096(@OriginalArg(0) Class161 arg0, @OriginalArg(2) Class161 arg1) {
 		Static91.method1960(Static387.aClass145_110);
 		Protocol.outboundBuffer.p4(arg1.anInt4317);
-		Protocol.outboundBuffer.method4838(arg1.anInt4300);
-		Protocol.outboundBuffer.method4855(arg1.anInt4297);
-		Protocol.outboundBuffer.method4805(arg0.anInt4317);
-		Protocol.outboundBuffer.method4838(arg0.anInt4300);
-		Protocol.outboundBuffer.method4830(arg0.anInt4297);
+		Protocol.outboundBuffer.ip2add(arg1.anInt4300);
+		Protocol.outboundBuffer.p2add(arg1.anInt4297);
+		Protocol.outboundBuffer.mp4(arg0.anInt4317);
+		Protocol.outboundBuffer.ip2add(arg0.anInt4300);
+		Protocol.outboundBuffer.ip2_dup(arg0.anInt4297);
 	}
 
 	@OriginalMember(owner = "client!r", name = "c", descriptor = "(III)I")

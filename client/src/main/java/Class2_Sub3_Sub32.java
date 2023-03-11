@@ -76,7 +76,7 @@ public final class Class2_Sub3_Sub32 extends Class2_Sub3 {
 		} else if (arg0 == 1) {
 			this.anInt5877 = arg1.g1();
 		} else if (arg0 == 2) {
-			this.anInt5872 = arg1.method4829();
+			this.anInt5872 = arg1.g2();
 		}
 	}
 }

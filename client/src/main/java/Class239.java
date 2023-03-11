@@ -35,7 +35,7 @@ public final class Class239 {
 		}
 		@Pc(31) boolean local31 = local8.g1() == 1;
 		this.aByteArray98 = new byte[256];
-		local8.method4799(this.aByteArray98, 256);
+		local8.gdata(this.aByteArray98, 256);
 		if (local31) {
 			@Pc(47) int[] local47 = new int[256];
 			for (@Pc(49) int local49 = 0; local49 < 256; local49++) {
@@ -51,7 +51,7 @@ public final class Class239 {
 				local81[local83] = new byte[local47[local83]];
 				@Pc(94) byte local94 = 0;
 				for (local96 = 0; local96 < local81[local83].length; local96++) {
-					local94 += local8.method4825();
+					local94 += local8.g1b();
 					local81[local83][local96] = local94;
 				}
 			}
@@ -61,7 +61,7 @@ public final class Class239 {
 				local131[local96] = new byte[local47[local96]];
 				@Pc(144) byte local144 = 0;
 				for (local146 = 0; local146 < local131[local96].length; local146++) {
-					local144 += local8.method4825();
+					local144 += local8.g1b();
 					local131[local96][local146] = local144;
 				}
 			}
