@@ -1207,7 +1207,7 @@ public final class Class31_Sub2 extends Class31 {
 		if (local105 * this.anInt3841 <= Static219.aClass2_Sub4_Sub1_3.data.length) {
 			Static219.aClass2_Sub4_Sub1_3.pos = 0;
 		} else {
-			Static219.aClass2_Sub4_Sub1_3 = new Class2_Sub4_Sub1((this.anInt3841 + 100) * local105);
+			Static219.aClass2_Sub4_Sub1_3 = new GlBuffer((this.anInt3841 + 100) * local105);
 		}
 		@Pc(192) int local192;
 		@Pc(207) int local207;
@@ -1411,14 +1411,14 @@ public final class Class31_Sub2 extends Class31 {
 				for (local235 = 0; local235 < this.anInt3841; local235++) {
 					local245 = local452[local235] & 0xFF;
 					if (local245 == 0) {
-						Static219.aClass2_Sub4_Sub1_3.method3059((float) local448[local235] * local604);
-						Static219.aClass2_Sub4_Sub1_3.method3059((float) local444[local235] * local604);
-						Static219.aClass2_Sub4_Sub1_3.method3059(local604 * (float) local440[local235]);
+						Static219.aClass2_Sub4_Sub1_3.pf((float) local448[local235] * local604);
+						Static219.aClass2_Sub4_Sub1_3.pf((float) local444[local235] * local604);
+						Static219.aClass2_Sub4_Sub1_3.pf(local604 * (float) local440[local235]);
 					} else {
 						local571 = local1088 / (float) local245;
-						Static219.aClass2_Sub4_Sub1_3.method3059((float) local448[local235] * local571);
-						Static219.aClass2_Sub4_Sub1_3.method3059(local571 * (float) local444[local235]);
-						Static219.aClass2_Sub4_Sub1_3.method3059((float) local440[local235] * local571);
+						Static219.aClass2_Sub4_Sub1_3.pf((float) local448[local235] * local571);
+						Static219.aClass2_Sub4_Sub1_3.pf(local571 * (float) local444[local235]);
+						Static219.aClass2_Sub4_Sub1_3.pf((float) local440[local235] * local571);
 					}
 					Static219.aClass2_Sub4_Sub1_3.pos += local105 - 12;
 				}
@@ -1426,14 +1426,14 @@ public final class Class31_Sub2 extends Class31 {
 				for (local235 = 0; local235 < this.anInt3841; local235++) {
 					local245 = local452[local235] & 0xFF;
 					if (local245 == 0) {
-						Static219.aClass2_Sub4_Sub1_3.method3058(local604 * (float) local448[local235]);
-						Static219.aClass2_Sub4_Sub1_3.method3058(local604 * (float) local444[local235]);
-						Static219.aClass2_Sub4_Sub1_3.method3058((float) local440[local235] * local604);
+						Static219.aClass2_Sub4_Sub1_3.ipf(local604 * (float) local448[local235]);
+						Static219.aClass2_Sub4_Sub1_3.ipf(local604 * (float) local444[local235]);
+						Static219.aClass2_Sub4_Sub1_3.ipf((float) local440[local235] * local604);
 					} else {
 						local571 = local1088 / (float) local245;
-						Static219.aClass2_Sub4_Sub1_3.method3058((float) local448[local235] * local571);
-						Static219.aClass2_Sub4_Sub1_3.method3058((float) local444[local235] * local571);
-						Static219.aClass2_Sub4_Sub1_3.method3058((float) local440[local235] * local571);
+						Static219.aClass2_Sub4_Sub1_3.ipf((float) local448[local235] * local571);
+						Static219.aClass2_Sub4_Sub1_3.ipf((float) local444[local235] * local571);
+						Static219.aClass2_Sub4_Sub1_3.ipf((float) local440[local235] * local571);
 					}
 					Static219.aClass2_Sub4_Sub1_3.pos += local105 - 12;
 				}
@@ -1443,14 +1443,14 @@ public final class Class31_Sub2 extends Class31 {
 			Static219.aClass2_Sub4_Sub1_3.pos = local117;
 			if (this.aClass19_Sub1_24.aBoolean53) {
 				for (local192 = 0; local192 < this.anInt3841; local192++) {
-					Static219.aClass2_Sub4_Sub1_3.method3059(this.aFloatArray18[local192]);
-					Static219.aClass2_Sub4_Sub1_3.method3059(this.aFloatArray19[local192]);
+					Static219.aClass2_Sub4_Sub1_3.pf(this.aFloatArray18[local192]);
+					Static219.aClass2_Sub4_Sub1_3.pf(this.aFloatArray19[local192]);
 					Static219.aClass2_Sub4_Sub1_3.pos += local105 - 8;
 				}
 			} else {
 				for (local192 = 0; local192 < this.anInt3841; local192++) {
-					Static219.aClass2_Sub4_Sub1_3.method3058(this.aFloatArray18[local192]);
-					Static219.aClass2_Sub4_Sub1_3.method3058(this.aFloatArray19[local192]);
+					Static219.aClass2_Sub4_Sub1_3.ipf(this.aFloatArray18[local192]);
+					Static219.aClass2_Sub4_Sub1_3.ipf(this.aFloatArray19[local192]);
 					Static219.aClass2_Sub4_Sub1_3.pos += local105 - 8;
 				}
 			}
@@ -1858,7 +1858,7 @@ public final class Class31_Sub2 extends Class31 {
 	@OriginalMember(owner = "client!mp", name = "a", descriptor = "(ZI)V")
 	private void method3856(@OriginalArg(0) boolean arg0) {
 		if (Static219.aClass2_Sub4_Sub1_3.data.length < this.anInt3843 * 6) {
-			Static219.aClass2_Sub4_Sub1_3 = new Class2_Sub4_Sub1((this.anInt3843 + 100) * 6);
+			Static219.aClass2_Sub4_Sub1_3 = new GlBuffer((this.anInt3843 + 100) * 6);
 		} else {
 			Static219.aClass2_Sub4_Sub1_3.pos = 0;
 		}

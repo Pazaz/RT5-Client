@@ -70,7 +70,7 @@ public final class Static303 {
 	}
 
 	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(Lclient!qg;BILclient!nh;I)V")
-	public static void method5212(@OriginalArg(0) Class2_Sub4_Sub2 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class11_Sub5_Sub2_Sub1 arg2, @OriginalArg(4) int arg3) {
+	public static void method5212(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class11_Sub5_Sub2_Sub1 arg2, @OriginalArg(4) int arg3) {
 		@Pc(11) byte local11 = -1;
 		if ((arg3 & 0x20) != 0) {
 			Static335.aByteArray92[arg1] = arg0.g1badd();

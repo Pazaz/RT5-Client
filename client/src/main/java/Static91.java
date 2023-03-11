@@ -27,7 +27,7 @@ public final class Static91 {
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!mc;I)V")
 	public static void method1960(@OriginalArg(0) Class145 arg0) {
-		Protocol.outboundBuffer.method4867(arg0.method3702());
+		Protocol.outboundBuffer.p1isaac(arg0.method3702());
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(B)V")
@@ -168,11 +168,11 @@ public final class Static91 {
 				Protocol.outboundBuffer.pdata(local208.data, local208.pos);
 				Protocol.outboundBuffer.psize2(Protocol.outboundBuffer.pos - local112);
 				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
-				Protocol.outboundBuffer.method4871(local211);
+				Protocol.outboundBuffer.setKey(local211);
 				for (@Pc(579) int local579 = 0; local579 < 4; local579++) {
 					local211[local579] += 50;
 				}
-				Static212.aClass2_Sub4_Sub2_3.method4871(local211);
+				Static212.aClass2_Sub4_Sub2_3.setKey(local211);
 				Static347.anInt6441 = 4;
 			}
 			@Pc(619) int local619;
@@ -211,7 +211,7 @@ public final class Static91 {
 			}
 			if (Static347.anInt6441 == 6) {
 				Protocol.outboundBuffer.pos = 0;
-				Protocol.outboundBuffer.method4867(Static43.aClass242_4.anInt7038);
+				Protocol.outboundBuffer.p1isaac(Static43.aClass242_4.anInt7038);
 				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
 				Static347.anInt6441 = 4;
 			} else if (Static347.anInt6441 == 7) {
@@ -267,7 +267,7 @@ public final class Static91 {
 					Static347.anInt6441 = 10;
 				}
 				if (Static347.anInt6441 == 10) {
-					if (Static212.aClass2_Sub4_Sub2_3.method4870()) {
+					if (Static212.aClass2_Sub4_Sub2_3.peek1isaac()) {
 						if (Protocol.socket.available() < 1) {
 							return;
 						}

@@ -76,20 +76,20 @@ public final class Static181 {
 		local23 = Static212.aClass2_Sub4_Sub2_3.g1bneg();
 		local36 = Static212.aClass2_Sub4_Sub2_3.g1bneg() == 1;
 		Static217.method3795(local23);
-		Static212.aClass2_Sub4_Sub2_3.method4869();
+		Static212.aClass2_Sub4_Sub2_3.accessBits();
 		for (local44 = 0; local44 < 4; local44++) {
 			for (local48 = 0; local48 < Static373.anInt7033 >> 3; local48++) {
 				for (local52 = 0; local52 < Static242.anInt4449 >> 3; local52++) {
-					local59 = Static212.aClass2_Sub4_Sub2_3.method4868(1);
+					local59 = Static212.aClass2_Sub4_Sub2_3.gBit(1);
 					if (local59 == 1) {
-						Static310.anIntArrayArrayArray12[local44][local48][local52] = Static212.aClass2_Sub4_Sub2_3.method4868(26);
+						Static310.anIntArrayArrayArray12[local44][local48][local52] = Static212.aClass2_Sub4_Sub2_3.gBit(26);
 					} else {
 						Static310.anIntArrayArrayArray12[local44][local48][local52] = -1;
 					}
 				}
 			}
 		}
-		Static212.aClass2_Sub4_Sub2_3.method4865();
+		Static212.aClass2_Sub4_Sub2_3.accessBytes();
 		local48 = (Static82.anInt1836 - Static212.aClass2_Sub4_Sub2_3.pos) / 16;
 		Static277.anIntArrayArray43 = new int[local48][4];
 		for (local52 = 0; local52 < local48; local52++) {

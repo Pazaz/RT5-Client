@@ -79,7 +79,7 @@ public final class Static5 {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(ILclient!qg;I)V")
-	public static void method88(@OriginalArg(1) Class2_Sub4_Sub2 arg0, @OriginalArg(2) int arg1) {
+	public static void method88(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		while (true) {
 			@Pc(16) Class2_Sub42 local16 = (Class2_Sub42) Static337.aClass135_37.method3551();
 			if (local16 == null) {
@@ -107,7 +107,7 @@ public final class Static5 {
 			if (local21) {
 				return;
 			}
-			arg0.method4867(arg1);
+			arg0.p1isaac(arg1);
 			arg0.p1(0);
 			@Pc(106) int local106 = arg0.pos;
 			arg0.p4(local16.anInt7156);

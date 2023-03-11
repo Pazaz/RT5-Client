@@ -26,7 +26,7 @@ public final class Static73 {
 				Static69.aBoolean129 = false;
 			}
 			Static212.aClass2_Sub4_Sub2_3.pos = 0;
-			if (Static212.aClass2_Sub4_Sub2_3.method4870()) {
+			if (Static212.aClass2_Sub4_Sub2_3.peek1isaac()) {
 				if (local15 == 0) {
 					return false;
 				}
@@ -814,7 +814,7 @@ public final class Static73 {
 											Static143.method2677(-1, Static218.aClass177_Sub1_2.anInt4894, false, -1);
 										}
 										@Pc(2782) byte[] local2782 = new byte[Static82.anInt1836];
-										Static212.aClass2_Sub4_Sub2_3.method4866(local2782, Static82.anInt1836);
+										Static212.aClass2_Sub4_Sub2_3.gisaac(local2782, Static82.anInt1836);
 										local452 = Cp1252Charset.decodeString(0, local2782, Static82.anInt1836);
 										Static280.method4765(local452, GameShell.signlink, Static77.anInt1762 == 1, true);
 										Static231.aClass89_164 = null;

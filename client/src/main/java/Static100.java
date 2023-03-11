@@ -98,17 +98,17 @@ public final class Static100 {
 	}
 
 	@OriginalMember(owner = "client!fn", name = "a", descriptor = "(Lclient!qg;B)I")
-	public static int method2161(@OriginalArg(0) Class2_Sub4_Sub2 arg0) {
-		@Pc(10) int local10 = arg0.method4868(2);
+	public static int method2161(@OriginalArg(0) Packet arg0) {
+		@Pc(10) int local10 = arg0.gBit(2);
 		@Pc(22) int local22;
 		if (local10 == 0) {
 			local22 = 0;
 		} else if (local10 == 1) {
-			local22 = arg0.method4868(5);
+			local22 = arg0.gBit(5);
 		} else if (local10 == 2) {
-			local22 = arg0.method4868(8);
+			local22 = arg0.gBit(8);
 		} else {
-			local22 = arg0.method4868(11);
+			local22 = arg0.gBit(11);
 		}
 		return local22;
 	}

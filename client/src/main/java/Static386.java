@@ -54,8 +54,8 @@ public final class Static386 {
 	}
 
 	@OriginalMember(owner = "client!wj", name = "a", descriptor = "(Lclient!qg;ZI)Z")
-	public static boolean method6033(@OriginalArg(0) Class2_Sub4_Sub2 arg0, @OriginalArg(2) int arg1) {
-		@Pc(8) int local8 = arg0.method4868(2);
+	public static boolean method6033(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
+		@Pc(8) int local8 = arg0.gBit(2);
 		@Pc(31) int local31;
 		@Pc(36) int local36;
 		@Pc(103) int local103;
@@ -63,12 +63,12 @@ public final class Static386 {
 		@Pc(113) int local113;
 		@Pc(117) int local117;
 		if (local8 == 0) {
-			if (arg0.method4868(1) != 0) {
+			if (arg0.gBit(1) != 0) {
 				method6033(arg0, arg1);
 			}
-			local31 = arg0.method4868(6);
-			local36 = arg0.method4868(6);
-			@Pc(48) boolean local48 = arg0.method4868(1) == 1;
+			local31 = arg0.gBit(6);
+			local36 = arg0.gBit(6);
+			@Pc(48) boolean local48 = arg0.gBit(1) == 1;
 			if (local48) {
 				Static52.anIntArray100[Static325.anInt6079++] = arg1;
 			}
@@ -92,7 +92,7 @@ public final class Static386 {
 			local75.aBoolean276 = false;
 			return true;
 		} else if (local8 == 1) {
-			local31 = arg0.method4868(2);
+			local31 = arg0.gBit(2);
 			local36 = Static360.anIntArray422[arg1];
 			Static360.anIntArray422[arg1] = ((local31 + (local36 >> 28) & 0x3) << 28) + (local36 & 0xFFFFFFF);
 			return false;
@@ -100,7 +100,7 @@ public final class Static386 {
 			@Pc(201) int local201;
 			@Pc(205) int local205;
 			if (local8 != 2) {
-				local31 = arg0.method4868(18);
+				local31 = arg0.gBit(18);
 				local36 = local31 >> 16;
 				local201 = local31 >> 8 & 0xFF;
 				local205 = local31 & 0xFF;
@@ -111,7 +111,7 @@ public final class Static386 {
 				Static360.anIntArray422[arg1] = (local113 << 14) + (local107 << 28) + local117;
 				return false;
 			}
-			local31 = arg0.method4868(5);
+			local31 = arg0.gBit(5);
 			local36 = local31 >> 3;
 			local201 = local31 & 0x7;
 			local205 = Static360.anIntArray422[arg1];

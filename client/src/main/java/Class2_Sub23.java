@@ -46,7 +46,7 @@ public final class Class2_Sub23 extends Class2 {
 	private Buffer aClass2_Sub4_5;
 
 	@OriginalMember(owner = "client!lb", name = "C", descriptor = "Lclient!ji;")
-	private Class2_Sub4_Sub1 aClass2_Sub4_Sub1_1;
+	private GlBuffer aClass2_Sub4_Sub1_1;
 
 	@OriginalMember(owner = "client!lb", name = "t", descriptor = "Lclient!ad;")
 	private Class4 aClass4_78;
@@ -124,7 +124,7 @@ public final class Class2_Sub23 extends Class2 {
 		}
 		if (local108 > 0) {
 			this.aClass2_Sub4_5 = new Buffer(local108 * 2);
-			this.aClass2_Sub4_Sub1_1 = new Class2_Sub4_Sub1(local108 * 16);
+			this.aClass2_Sub4_Sub1_1 = new GlBuffer(local108 * 16);
 			this.aClass4_78 = new Class4(Static162.method2977(local108));
 			local131 = 0;
 			local116 = 0;
@@ -309,13 +309,13 @@ public final class Class2_Sub23 extends Class2 {
 		}
 		@Pc(596) int local596 = (int) (local544 * (float) (local555 & 0xFF));
 		if (this.aClass19_Sub1_20.aBoolean53) {
-			this.aClass2_Sub4_Sub1_1.method3059((float) local9);
-			this.aClass2_Sub4_Sub1_1.method3059((float) local23);
-			this.aClass2_Sub4_Sub1_1.method3059((float) local17);
+			this.aClass2_Sub4_Sub1_1.pf((float) local9);
+			this.aClass2_Sub4_Sub1_1.pf((float) local23);
+			this.aClass2_Sub4_Sub1_1.pf((float) local17);
 		} else {
-			this.aClass2_Sub4_Sub1_1.method3058((float) local9);
-			this.aClass2_Sub4_Sub1_1.method3058((float) local23);
-			this.aClass2_Sub4_Sub1_1.method3058((float) local17);
+			this.aClass2_Sub4_Sub1_1.ipf((float) local9);
+			this.aClass2_Sub4_Sub1_1.ipf((float) local23);
+			this.aClass2_Sub4_Sub1_1.ipf((float) local17);
 		}
 		if (local596 > 255) {
 			local596 = 255;

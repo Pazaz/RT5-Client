@@ -14,7 +14,7 @@ public final class Static361 {
 	public static final int[][] anIntArrayArray59 = new int[][] { { 0, 2, 4, 6 }, { 6, 0, 2, 3, 5, 3 }, { 6, 0, 2, 4 }, { 2, 5, 6, 1 }, { 0, 2, 6 }, { 6, 0, 2 }, { 5, 6, 0, 1, 2, 4 }, { 7, 7, 1, 2, 4, 6 }, { 2, 4, 4, 7 }, { 6, 6, 4, 0, 1, 1, 3, 3 }, { 0, 2, 2, 6, 6, 4 }, { 0, 2, 2, 3, 7, 0, 4, 3 }, { 0, 2, 4, 6 } };
 
 	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(Lclient!qg;BI)V")
-	public static void method6054(@OriginalArg(0) Class2_Sub4_Sub2 arg0, @OriginalArg(2) int arg1) {
+	public static void method6054(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		Static112.aBoolean173 = false;
 		Static325.anInt6079 = 0;
 		Static1.method5(arg0);

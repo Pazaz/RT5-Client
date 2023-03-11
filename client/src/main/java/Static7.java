@@ -140,19 +140,19 @@ public final class Static7 {
 	}
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!qg;II)V")
-	public static void method6464(@OriginalArg(0) Class2_Sub4_Sub2 arg0, @OriginalArg(2) int arg1) {
-		@Pc(15) boolean local15 = arg0.method4868(1) == 1;
+	public static void method6464(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
+		@Pc(15) boolean local15 = arg0.gBit(1) == 1;
 		if (local15) {
 			Static52.anIntArray100[Static325.anInt6079++] = arg1;
 		}
-		@Pc(30) int local30 = arg0.method4868(2);
+		@Pc(30) int local30 = arg0.gBit(2);
 		@Pc(34) Class11_Sub5_Sub2_Sub1 local34 = Static12.aClass11_Sub5_Sub2_Sub1Array1[arg1];
 		if (local30 != 0) {
 			@Pc(136) int local136;
 			@Pc(141) int local141;
 			@Pc(146) int local146;
 			if (local30 == 1) {
-				local136 = arg0.method4868(3);
+				local136 = arg0.gBit(3);
 				local141 = local34.anIntArray316[0];
 				local146 = local34.anIntArray317[0];
 				if (local136 == 0) {
@@ -184,7 +184,7 @@ public final class Static7 {
 					local34.method4068(local146, local141, Static335.aByteArray92[arg1]);
 				}
 			} else if (local30 == 2) {
-				local136 = arg0.method4868(4);
+				local136 = arg0.gBit(4);
 				local141 = local34.anIntArray316[0];
 				local146 = local34.anIntArray317[0];
 				if (local136 == 0) {
@@ -240,13 +240,13 @@ public final class Static7 {
 					local34.method4068(local146, local141, Static335.aByteArray92[arg1]);
 				}
 			} else {
-				local136 = arg0.method4868(1);
+				local136 = arg0.gBit(1);
 				@Pc(411) int local411;
 				@Pc(419) int local419;
 				@Pc(432) int local432;
 				@Pc(439) int local439;
 				if (local136 == 0) {
-					local141 = arg0.method4868(12);
+					local141 = arg0.gBit(12);
 					local146 = local141 >> 10;
 					local411 = local141 >> 5 & 0x1F;
 					if (local411 > 15) {
@@ -270,7 +270,7 @@ public final class Static7 {
 						Static355.anInt6585 = local34.aByte78;
 					}
 				} else {
-					local141 = arg0.method4868(30);
+					local141 = arg0.gBit(30);
 					local146 = local141 >> 28;
 					local411 = local141 >> 14 & 0x3FFF;
 					local419 = local141 & 0x3FFF;
@@ -305,7 +305,7 @@ public final class Static7 {
 				Static298.method2423(local34);
 			}
 			Static12.aClass11_Sub5_Sub2_Sub1Array1[arg1] = null;
-			if (arg0.method4868(1) != 0) {
+			if (arg0.gBit(1) != 0) {
 				Static386.method6033(arg0, arg1);
 			}
 		}

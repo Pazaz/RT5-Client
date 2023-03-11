@@ -37,21 +37,21 @@ public final class Class33_Sub1 extends Class33 {
 			}
 			@Pc(36) int[][] local36 = Static225.method3956(0.4F);
 			@Pc(47) int[][] local47 = Static225.method3956(0.4F);
-			@Pc(52) Class2_Sub4_Sub1 local52 = new Class2_Sub4_Sub1(262144);
+			@Pc(52) GlBuffer local52 = new GlBuffer(262144);
 			for (@Pc(54) int local54 = 0; local54 < 256; local54++) {
 				@Pc(61) int[] local61 = local36[local54];
 				@Pc(65) int[] local65 = local47[local54];
 				for (@Pc(67) int local67 = 0; local67 < 64; local67++) {
 					if (this.aClass19_Sub1_35.aBoolean53) {
-						local52.method3059((float) local61[local67] / 4096.0F);
-						local52.method3059((float) local65[local67] / 4096.0F);
-						local52.method3059(1.0F);
-						local52.method3059(1.0F);
+						local52.pf((float) local61[local67] / 4096.0F);
+						local52.pf((float) local65[local67] / 4096.0F);
+						local52.pf(1.0F);
+						local52.pf(1.0F);
 					} else {
-						local52.method3058((float) local61[local67] / 4096.0F);
-						local52.method3058((float) local65[local67] / 4096.0F);
-						local52.method3058(1.0F);
-						local52.method3058(1.0F);
+						local52.ipf((float) local61[local67] / 4096.0F);
+						local52.ipf((float) local65[local67] / 4096.0F);
+						local52.ipf(1.0F);
+						local52.ipf(1.0F);
 					}
 				}
 			}
