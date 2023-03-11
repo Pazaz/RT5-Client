@@ -356,7 +356,7 @@ public final class Static330 {
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(BLjava/lang/String;)Ljava/lang/String;")
 	public static String method5657(@OriginalArg(1) String arg0) {
-		@Pc(16) String local16 = Static170.method3229(Static80.method5985(arg0));
+		@Pc(16) String local16 = Static170.method3229(Static80.toBase37(arg0));
 		if (local16 == null) {
 			local16 = "";
 		}

@@ -24,7 +24,7 @@ public final class Static80 {
 	}
 
 	@OriginalMember(owner = "client!ek", name = "a", descriptor = "(BLjava/lang/String;)J")
-	public static long method5985(@OriginalArg(1) String arg0) {
+	public static long toBase37(@OriginalArg(1) String arg0) {
 		@Pc(5) long local5 = 0L;
 		@Pc(8) int local8 = arg0.length();
 		for (@Pc(10) int local10 = 0; local10 < local8; local10++) {

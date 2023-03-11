@@ -7,17 +7,17 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class2_Sub2_Sub3 extends Class2_Sub2 {
 
 	@OriginalMember(owner = "client!ck", name = "T", descriptor = "[Lclient!vr;")
-	private static final Class242[] aClass242Array1;
+	private static final OutboundPacket[] aClass242Array1;
 
 	@OriginalMember(owner = "client!ck", name = "E", descriptor = "Lclient!ad;")
 	private Class4 aClass4_20;
 
 	static {
 		new Class79("Select", "Auswählen", "Sélectionner", "Selecionar");
-		aClass242Array1 = new Class242[32];
-		@Pc(80) Class242[] local80 = Static180.method3371();
+		aClass242Array1 = new OutboundPacket[32];
+		@Pc(80) OutboundPacket[] local80 = Static43.method3371();
 		for (@Pc(82) int local82 = 0; local82 < local80.length; local82++) {
-			aClass242Array1[local80[local82].anInt7038] = local80[local82];
+			aClass242Array1[local80[local82].opcode] = local80[local82];
 		}
 	}
 

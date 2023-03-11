@@ -499,7 +499,7 @@ public final class client extends GameShell {
 			if (Static309.js5ConnectState == 2) {
 				Static103.js5Socket = new Class111((Socket) Static211.js5SocketRequest.result, GameShell.signlink);
 				@Pc(186) Buffer local186 = new Buffer(5);
-				local186.p1(Static43.aClass242_2.anInt7038);
+				local186.p1(Static43.aClass242_2.opcode);
 				local186.p4(578);
 				Static103.js5Socket.write(5, local186.data);
 				Static309.js5ConnectState++;

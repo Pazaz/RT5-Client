@@ -3656,7 +3656,7 @@ public final class Static198 {
 								return;
 							}
 							if (Static154.anInt2803 == 0 && Static347.anInt6441 == 0 && Static141.anInt2652 == 0 && WorldList.step == 0) {
-								Static72.method1809(Static80.method5985(aStringArray29[anInt3652]));
+								Static72.method1809(Static80.toBase37(aStringArray29[anInt3652]));
 								return;
 							}
 							return;
@@ -3668,7 +3668,7 @@ public final class Static198 {
 								return;
 							}
 							if (Static154.anInt2803 == 0 && Static347.anInt6441 == 0 && Static141.anInt2652 == 0 && WorldList.step == 0) {
-								Static389.method4488(aStringArray29[anInt3652 + 1], anIntArray213[anInt3650], anIntArray213[anInt3650 + 3], anIntArray213[anInt3650 + 4] == 1, Static80.method5985(aStringArray29[anInt3652]), anIntArray213[anInt3650 + 2], anIntArray213[anInt3650 + 1], anIntArray213[anInt3650 + 6] == 1, anIntArray213[anInt3650 + 5] == 1, aStringArray29[anInt3652 + 2]);
+								Static389.method4488(aStringArray29[anInt3652 + 1], anIntArray213[anInt3650], anIntArray213[anInt3650 + 3], anIntArray213[anInt3650 + 4] == 1, Static80.toBase37(aStringArray29[anInt3652]), anIntArray213[anInt3650 + 2], anIntArray213[anInt3650 + 1], anIntArray213[anInt3650 + 6] == 1, anIntArray213[anInt3650 + 5] == 1, aStringArray29[anInt3652 + 2]);
 								return;
 							}
 							return;

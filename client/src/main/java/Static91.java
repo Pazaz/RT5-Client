@@ -69,10 +69,10 @@ public final class Static91 {
 				}
 				Protocol.socket = new Class111((Socket) Static5.aClass32_1.result, GameShell.signlink);
 				Static5.aClass32_1 = null;
-				@Pc(105) long local105 = Static241.aLong130 = Static80.method5985(Static374.aString70);
+				@Pc(105) long local105 = Static241.aLong130 = Static80.toBase37(Static374.aString70);
 				local112 = (int) (local105 >> 16 & 0x1FL);
 				Protocol.outboundBuffer.pos = 0;
-				Protocol.outboundBuffer.p1(Static43.aClass242_1.anInt7038);
+				Protocol.outboundBuffer.p1(Static43.aClass242_1.opcode);
 				Protocol.outboundBuffer.p1(local112);
 				Protocol.socket.write(2, Protocol.outboundBuffer.data);
 				if (client.musicChannel != null) {
@@ -111,14 +111,14 @@ public final class Static91 {
 				local208.p4(local211[1]);
 				local208.p4(local211[2]);
 				local208.p4(local211[3]);
-				local208.p8(Static80.method5985(Static374.aString70));
+				local208.p8(Static80.toBase37(Static374.aString70));
 				local208.pjstr(Static16.aString51);
 				local208.rsaenc(Static320.aBigInteger2, Static194.aBigInteger1);
 				Protocol.outboundBuffer.pos = 0;
 				if (Static347.anInt6442 == 40) {
-					Protocol.outboundBuffer.p1(Static43.aClass242_5.anInt7038);
+					Protocol.outboundBuffer.p1(Static43.aClass242_5.opcode);
 				} else {
-					Protocol.outboundBuffer.p1(Static43.aClass242_3.anInt7038);
+					Protocol.outboundBuffer.p1(Static43.aClass242_3.opcode);
 				}
 				Protocol.outboundBuffer.p2(0);
 				local112 = Protocol.outboundBuffer.pos;
@@ -211,7 +211,7 @@ public final class Static91 {
 			}
 			if (Static347.anInt6441 == 6) {
 				Protocol.outboundBuffer.pos = 0;
-				Protocol.outboundBuffer.p1isaac(Static43.aClass242_4.anInt7038);
+				Protocol.outboundBuffer.p1isaac(Static43.aClass242_4.opcode);
 				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
 				Static347.anInt6441 = 4;
 			} else if (Static347.anInt6441 == 7) {

@@ -75,8 +75,4 @@ public final class Static180 {
 		Static133.aClass98_17.method2615(5);
 	}
 
-	@OriginalMember(owner = "client!kh", name = "b", descriptor = "(B)[Lclient!vr;")
-	public static Class242[] method3371() {
-		return new Class242[] { Static43.aClass242_1, Static43.aClass242_2, Static43.aClass242_3, Static43.aClass242_4, Static43.aClass242_5, Static43.aClass242_6, Static43.aClass242_7, Static43.aClass242_8, Static43.aClass242_9, Static43.aClass242_10 };
-	}
 }

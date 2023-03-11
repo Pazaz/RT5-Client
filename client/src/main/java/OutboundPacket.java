@@ -3,14 +3,14 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!vr")
-public final class Class242 {
+public final class OutboundPacket {
 
 	@OriginalMember(owner = "client!vr", name = "g", descriptor = "I")
-	public final int anInt7038;
+	public final int opcode;
 
 	@OriginalMember(owner = "client!vr", name = "<init>", descriptor = "(II)V")
-	public Class242(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		this.anInt7038 = arg0;
+	public OutboundPacket(@OriginalArg(0) int opcode, @OriginalArg(1) int length) {
+		this.opcode = opcode;
 	}
 
 	@OriginalMember(owner = "client!vr", name = "toString", descriptor = "()Ljava/lang/String;")

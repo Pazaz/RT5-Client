@@ -57,7 +57,7 @@ public final class Static389 {
 		}
 		local118.tinyenc(local8);
 		Protocol.outboundBuffer.pos = 0;
-		Protocol.outboundBuffer.p1(Static43.aClass242_8.anInt7038);
+		Protocol.outboundBuffer.p1(Static43.REGISTER_STEP2.opcode);
 		Protocol.outboundBuffer.p2(local28.pos + local118.pos + 2);
 		Protocol.outboundBuffer.p2(578);
 		Protocol.outboundBuffer.pdata(local28.data, local28.pos);
