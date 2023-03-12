@@ -24,13 +24,13 @@ public final class Static154 {
 
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "(Lclient!kb;III[Z)V")
 	public static void method2780(@OriginalArg(0) Class2_Sub2_Sub4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean[] arg4) {
-		if (Static365.aClass6Array4 == Static186.aClass6Array2) {
+		if (Scene.aClass6Array4 == Scene.aClass6Array2) {
 			return;
 		}
-		@Pc(9) int local9 = Static330.aClass6Array3[arg1].method5728(arg2, arg3);
+		@Pc(9) int local9 = Scene.aClass6Array3[arg1].method5728(arg2, arg3);
 		for (@Pc(11) int local11 = 0; local11 <= arg1; local11++) {
 			if (arg4 == null || arg4[local11]) {
-				@Pc(22) Class6 local22 = Static330.aClass6Array3[local11];
+				@Pc(22) Class6 local22 = Scene.aClass6Array3[local11];
 				if (local22 != null) {
 					local22.method5724(arg0, arg2, local9 - local22.method5728(arg2, arg3), arg3);
 				}

@@ -169,12 +169,12 @@ public final class Class11_Sub5_Sub1 extends Entity implements Interface6 {
 		@Pc(21) Class6 local21;
 		@Pc(32) Class6 local32;
 		if (this.aBoolean154) {
-			local32 = Static330.aClass6Array3[0];
-			local21 = Static186.aClass6Array2[this.aByte22];
+			local32 = Scene.aClass6Array3[0];
+			local21 = Scene.aClass6Array2[this.aByte22];
 		} else {
-			local21 = Static330.aClass6Array3[this.aByte22];
+			local21 = Scene.aClass6Array3[this.aByte22];
 			if (this.aByte22 < 3) {
-				local32 = Static330.aClass6Array3[this.aByte22 + 1];
+				local32 = Scene.aClass6Array3[this.aByte22 + 1];
 			} else {
 				local32 = null;
 			}

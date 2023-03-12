@@ -10,18 +10,6 @@ public final class Static341 {
 	@OriginalMember(owner = "client!tq", name = "c", descriptor = "[I")
 	public static final int[] anIntArray429 = new int[14];
 
-	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(Z)V")
-	public static void method5767(@OriginalArg(0) boolean arg0) {
-		if (arg0) {
-			Static330.aClass67ArrayArrayArray3 = Static90.aClass67ArrayArrayArray4;
-			Static365.aClass6Array4 = Static186.aClass6Array2;
-		} else {
-			Static330.aClass67ArrayArrayArray3 = Static390.aClass67ArrayArrayArray5;
-			Static365.aClass6Array4 = Static330.aClass6Array3;
-		}
-		Static92.anInt1914 = Static330.aClass67ArrayArrayArray3.length;
-	}
-
 	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(II)I")
 	public static int method5768(@OriginalArg(1) int arg0) {
 		return arg0 & 0x7F;

@@ -12,7 +12,7 @@ public final class Static83 {
 
 	@OriginalMember(owner = "client!en", name = "a", descriptor = "(ILclient!ug;)V")
 	public static void method1906(@OriginalArg(1) Class2_Sub37 arg0) {
-		if (Static330.aClass67ArrayArrayArray3 == null) {
+		if (Scene.aClass67ArrayArrayArray3 == null) {
 			return;
 		}
 		@Pc(8) Interface6 local8 = null;

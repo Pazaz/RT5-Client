@@ -27,9 +27,9 @@ public final class Static65 {
 	@OriginalMember(owner = "client!dq", name = "a", descriptor = "(IIII)Z")
 	public static boolean method1734(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		if (Static35.method1106(arg0, arg1, arg2)) {
-			@Pc(10) int local10 = arg1 << Static322.anInt6029;
-			@Pc(14) int local14 = arg2 << Static322.anInt6029;
-			return Static46.method1423(local10 + 1, Static365.aClass6Array4[arg0].method5719(arg1, arg2) + arg3, local14 + 1) && Static46.method1423(local10 + Static256.anInt4716 - 1, Static365.aClass6Array4[arg0].method5719(arg1 + 1, arg2) + arg3, local14 + 1) && Static46.method1423(local10 + Static256.anInt4716 - 1, Static365.aClass6Array4[arg0].method5719(arg1 + 1, arg2 + 1) + arg3, local14 + Static256.anInt4716 - 1) && Static46.method1423(local10 + 1, Static365.aClass6Array4[arg0].method5719(arg1, arg2 + 1) + arg3, local14 + Static256.anInt4716 - 1);
+			@Pc(10) int local10 = arg1 << Scene.scale;
+			@Pc(14) int local14 = arg2 << Scene.scale;
+			return Static46.method1423(local10 + 1, Scene.aClass6Array4[arg0].method5719(arg1, arg2) + arg3, local14 + 1) && Static46.method1423(local10 + Scene.anInt4716 - 1, Scene.aClass6Array4[arg0].method5719(arg1 + 1, arg2) + arg3, local14 + 1) && Static46.method1423(local10 + Scene.anInt4716 - 1, Scene.aClass6Array4[arg0].method5719(arg1 + 1, arg2 + 1) + arg3, local14 + Scene.anInt4716 - 1) && Static46.method1423(local10 + 1, Scene.aClass6Array4[arg0].method5719(arg1, arg2 + 1) + arg3, local14 + Scene.anInt4716 - 1);
 		} else {
 			return false;
 		}
@@ -60,7 +60,7 @@ public final class Static65 {
 	}
 
 	@OriginalMember(owner = "client!dq", name = "a", descriptor = "(Lclient!bu;I[[B)V")
-	public static void method1737(@OriginalArg(0) Class29_Sub1 arg0, @OriginalArg(2) byte[][] arg1) {
+	public static void method1737(@OriginalArg(0) SceneBuilder arg0, @OriginalArg(2) byte[][] arg1) {
 		for (@Pc(3) int local3 = 0; local3 < arg0.anInt912; local3++) {
 			Static37.method1135();
 			for (@Pc(9) int local9 = 0; local9 < Static373.anInt7033 >> 3; local9++) {

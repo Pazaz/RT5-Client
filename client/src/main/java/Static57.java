@@ -20,10 +20,10 @@ public final class Static57 {
 	@OriginalMember(owner = "client!df", name = "a", descriptor = "(Lclient!kb;III[Z)Z")
 	public static boolean method1619(@OriginalArg(0) Class2_Sub2_Sub4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean[] arg4) {
 		@Pc(1) boolean local1 = false;
-		if (Static365.aClass6Array4 != Static186.aClass6Array2) {
-			@Pc(11) int local11 = Static330.aClass6Array3[arg1].method5728(arg2, arg3);
+		if (Scene.aClass6Array4 != Scene.aClass6Array2) {
+			@Pc(11) int local11 = Scene.aClass6Array3[arg1].method5728(arg2, arg3);
 			for (@Pc(13) int local13 = 0; local13 <= arg1; local13++) {
-				@Pc(18) Class6 local18 = Static330.aClass6Array3[local13];
+				@Pc(18) Class6 local18 = Scene.aClass6Array3[local13];
 				if (local18 != null) {
 					@Pc(27) int local27 = local11 - local18.method5728(arg2, arg3);
 					if (arg4 != null) {

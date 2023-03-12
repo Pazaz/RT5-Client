@@ -106,7 +106,7 @@ public final class Static81 {
 					}
 				}
 				if (local129) {
-					local168 = Static365.aClass6Array4[Static355.anInt6585 + 1].method5719(local74, local96);
+					local168 = Scene.aClass6Array4[Static355.anInt6585 + 1].method5719(local74, local96);
 					if (Static353.anIntArray448[arg4] < local168) {
 						Static353.anIntArray448[arg4] = local168;
 					}

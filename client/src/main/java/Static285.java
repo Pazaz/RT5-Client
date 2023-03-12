@@ -61,16 +61,16 @@ public final class Static285 {
 	public static void method4893(@OriginalArg(1) int arg0) {
 		@Pc(1) Class2_Sub2_Sub4 local1 = null;
 		for (@Pc(3) int local3 = 1; local3 < arg0; local3++) {
-			@Pc(8) Class6 local8 = Static330.aClass6Array3[local3];
+			@Pc(8) Class6 local8 = Scene.aClass6Array3[local3];
 			if (local8 != null) {
-				for (@Pc(12) int local12 = 0; local12 < Static210.anInt3773; local12++) {
-					for (@Pc(15) int local15 = 0; local15 < Static72.anInt1684; local15++) {
+				for (@Pc(12) int local12 = 0; local12 < Scene.anInt3773; local12++) {
+					for (@Pc(15) int local15 = 0; local15 < Scene.anInt1684; local15++) {
 						local1 = local8.method5730(local15, local12, local1);
 						if (local1 != null) {
-							@Pc(28) int local28 = local15 << Static322.anInt6029;
-							@Pc(32) int local32 = local12 << Static322.anInt6029;
+							@Pc(28) int local28 = local15 << Scene.scale;
+							@Pc(32) int local32 = local12 << Scene.scale;
 							for (@Pc(36) int local36 = local3 - 1; local36 >= 0; local36--) {
-								@Pc(41) Class6 local41 = Static330.aClass6Array3[local36];
+								@Pc(41) Class6 local41 = Scene.aClass6Array3[local36];
 								if (local41 != null) {
 									@Pc(53) int local53 = local8.method5719(local15, local12) - local41.method5719(local15, local12);
 									@Pc(67) int local67 = local8.method5719(local15 + 1, local12) - local41.method5719(local15 + 1, local12);
@@ -88,7 +88,7 @@ public final class Static285 {
 
 	@OriginalMember(owner = "client!qj", name = "a", descriptor = "(IIII)V")
 	public static void method4894(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(7) Class67 local7 = Static330.aClass67ArrayArrayArray3[arg0][arg1][arg2];
+		@Pc(7) Class67 local7 = Scene.aClass67ArrayArrayArray3[arg0][arg1][arg2];
 		if (local7 == null) {
 			return;
 		}

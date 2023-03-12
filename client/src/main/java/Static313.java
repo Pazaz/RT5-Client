@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static313 {
 
-	@OriginalMember(owner = "client!sb", name = "U", descriptor = "I")
-	public static int anInt5876;
-
 	@OriginalMember(owner = "client!sb", name = "V", descriptor = "[I")
 	public static int[] anIntArray388;
 

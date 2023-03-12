@@ -117,10 +117,10 @@ public final class Static237 {
 
 	@OriginalMember(owner = "client!nl", name = "a", descriptor = "(III)V")
 	public static void method4119(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(20) boolean local20 = Static330.aClass67ArrayArrayArray3[0][arg1][arg2] != null && Static330.aClass67ArrayArrayArray3[0][arg1][arg2].aClass67_1 != null;
+		@Pc(20) boolean local20 = Scene.aClass67ArrayArrayArray3[0][arg1][arg2] != null && Scene.aClass67ArrayArrayArray3[0][arg1][arg2].aClass67_1 != null;
 		for (@Pc(22) int local22 = arg0; local22 >= 0; local22--) {
-			if (Static330.aClass67ArrayArrayArray3[local22][arg1][arg2] == null) {
-				@Pc(46) Class67 local46 = Static330.aClass67ArrayArrayArray3[local22][arg1][arg2] = new Class67(local22, arg1, arg2);
+			if (Scene.aClass67ArrayArrayArray3[local22][arg1][arg2] == null) {
+				@Pc(46) Class67 local46 = Scene.aClass67ArrayArrayArray3[local22][arg1][arg2] = new Class67(local22, arg1, arg2);
 				if (local20) {
 					local46.aByte7++;
 				}

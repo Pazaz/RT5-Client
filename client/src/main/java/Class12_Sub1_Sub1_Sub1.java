@@ -57,16 +57,16 @@ public final class Class12_Sub1_Sub1_Sub1 extends Class12_Sub1_Sub1 {
 		@Pc(4) int local4 = super.anInt4465 >> 19;
 		@Pc(9) int local9 = super.anInt4467 >> 19;
 		@Pc(14) int local14 = super.anInt4470 >> Static111.anInt2254;
-		if (local14 > 0 || local14 < -65535 || local4 < 0 || local4 >= Static72.anInt1684 || local9 < 0 || local9 >= Static210.anInt3773) {
+		if (local14 > 0 || local14 < -65535 || local4 < 0 || local4 >= Scene.anInt1684 || local9 < 0 || local9 >= Scene.anInt3773) {
 			this.method4220();
 			return;
 		}
 		@Pc(36) ParticleSystem local36 = this.aClass12_Sub8_1.aClass12_Sub5_6;
 		@Pc(40) Class235 local40 = this.aClass12_Sub8_1.aClass235_1;
-		@Pc(42) Class6[] local42 = Static365.aClass6Array4;
+		@Pc(42) Class6[] local42 = Scene.aClass6Array4;
 		@Pc(50) int local50 = local42[local36.anInt4679].method5719(local4, local9);
 		@Pc(66) int local66;
-		if (local36.anInt4679 < Static92.anInt1914 - 1) {
+		if (local36.anInt4679 < Scene.anInt1914 - 1) {
 			local66 = local42[local36.anInt4679 + 1].method5719(local4, local9);
 		} else {
 			local66 = local50 - 1024;
@@ -94,26 +94,26 @@ public final class Class12_Sub1_Sub1_Sub1 extends Class12_Sub1_Sub1 {
 			return;
 		}
 		@Pc(152) int local152;
-		for (local152 = Static92.anInt1914 - 1; local152 > 0 && local14 > local42[local152].method5719(local4, local9); local152--) {
+		for (local152 = Scene.anInt1914 - 1; local152 > 0 && local14 > local42[local152].method5719(local4, local9); local152--) {
 		}
 		if (local152 == 0 && local14 > local42[0].method5719(local4, local9)) {
 			this.method4220();
-		} else if (local152 == Static92.anInt1914 - 1 && local42[local152].method5719(local4, local9) - local14 > 1024) {
+		} else if (local152 == Scene.anInt1914 - 1 && local42[local152].method5719(local4, local9) - local14 > 1024) {
 			this.method4220();
 		} else {
-			@Pc(203) Class67 local203 = Static330.aClass67ArrayArrayArray3[local152][local4][local9];
+			@Pc(203) Class67 local203 = Scene.aClass67ArrayArrayArray3[local152][local4][local9];
 			if (local203 == null) {
 				if (local152 == 0) {
-					local203 = Static330.aClass67ArrayArrayArray3[0][local4][local9] = new Class67(0, local4, local9);
+					local203 = Scene.aClass67ArrayArrayArray3[0][local4][local9] = new Class67(0, local4, local9);
 				}
-				@Pc(235) boolean local235 = Static330.aClass67ArrayArrayArray3[0][local4][local9].aClass67_1 != null;
+				@Pc(235) boolean local235 = Scene.aClass67ArrayArrayArray3[0][local4][local9].aClass67_1 != null;
 				if (local152 == 3 && local235) {
 					this.method4220();
 					return;
 				}
 				for (@Pc(245) int local245 = 1; local245 <= local152; local245++) {
-					if (Static330.aClass67ArrayArrayArray3[local245][local4][local9] == null) {
-						local203 = Static330.aClass67ArrayArrayArray3[local245][local4][local9] = new Class67(local245, local4, local9);
+					if (Scene.aClass67ArrayArrayArray3[local245][local4][local9] == null) {
+						local203 = Scene.aClass67ArrayArrayArray3[local245][local4][local9] = new Class67(local245, local4, local9);
 						if (local235) {
 							local203.aByte7++;
 						}

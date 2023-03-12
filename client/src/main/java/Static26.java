@@ -53,7 +53,7 @@ public final class Static26 {
 
 	@OriginalMember(owner = "client!bj", name = "a", descriptor = "(III)Lclient!el;")
 	public static Class11_Sub2 method865(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(7) Class67 local7 = Static330.aClass67ArrayArrayArray3[arg0][arg1][arg2];
+		@Pc(7) Class67 local7 = Scene.aClass67ArrayArrayArray3[arg0][arg1][arg2];
 		return local7 == null || local7.aClass11_Sub2_2 == null ? null : local7.aClass11_Sub2_2;
 	}
 
@@ -64,9 +64,9 @@ public final class Static26 {
 			return;
 		}
 		@Pc(8) int local8 = 0;
-		arg4.anInt3968 = (arg1 << Static322.anInt6029) + Static253.anInt4693;
+		arg4.anInt3968 = (arg1 << Scene.scale) + Scene.anInt4693;
 		arg4.anInt3965 = arg3;
-		arg4.anInt3967 = (arg2 << Static322.anInt6029) + Static253.anInt4693;
+		arg4.anInt3967 = (arg2 << Scene.scale) + Scene.anInt4693;
 		for (@Pc(28) Class22 local28 = local4.aClass22_2; local28 != null; local28 = local28.aClass22_1) {
 			if (local28.aClass11_Sub5_1.aBoolean463) {
 				@Pc(38) int local38 = local28.aClass11_Sub5_1.method6080();

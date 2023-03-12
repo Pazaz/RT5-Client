@@ -203,19 +203,19 @@ public final class Static173 {
 	public static void method3316(@OriginalArg(0) Class90 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		if (arg1 == 1 && arg3 > 0) {
 			Static156.method2796(arg0, arg2, arg3 - 1, arg4);
-		} else if (arg1 == 4 && arg3 <= Static72.anInt1684) {
+		} else if (arg1 == 4 && arg3 <= Scene.anInt1684) {
 			Static156.method2796(arg0, arg2, arg3 + 1, arg4);
 		} else if (arg1 == 8 && arg4 > 0) {
 			Static156.method2796(arg0, arg2, arg3, arg4 - 1);
-		} else if (arg1 == 2 && arg4 <= Static210.anInt3773) {
+		} else if (arg1 == 2 && arg4 <= Scene.anInt3773) {
 			Static156.method2796(arg0, arg2, arg3, arg4 + 1);
-		} else if (arg1 == 16 && arg3 > 0 && arg4 <= Static210.anInt3773) {
+		} else if (arg1 == 16 && arg3 > 0 && arg4 <= Scene.anInt3773) {
 			Static156.method2796(arg0, arg2, arg3 - 1, arg4 + 1);
-		} else if (arg1 == 32 && arg3 <= Static72.anInt1684 && arg4 <= Static210.anInt3773) {
+		} else if (arg1 == 32 && arg3 <= Scene.anInt1684 && arg4 <= Scene.anInt3773) {
 			Static156.method2796(arg0, arg2, arg3 + 1, arg4 + 1);
 		} else if (arg1 == 128 && arg3 > 0 && arg4 > 0) {
 			Static156.method2796(arg0, arg2, arg3 - 1, arg4 - 1);
-		} else if (arg1 == 64 && arg3 <= Static72.anInt1684 && arg4 > 0) {
+		} else if (arg1 == 64 && arg3 <= Scene.anInt1684 && arg4 > 0) {
 			Static156.method2796(arg0, arg2, arg3 + 1, arg4 - 1);
 		} else {
 			throw new RuntimeException("Unsupported wall shape " + arg1 + " in world2.setclosestlights_wall");

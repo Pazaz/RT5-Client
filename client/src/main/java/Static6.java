@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static6 {
 
-	@OriginalMember(owner = "client!ae", name = "X", descriptor = "[[Z")
-	public static boolean[][] aBooleanArrayArray1;
-
 	@OriginalMember(owner = "client!ae", name = "O", descriptor = "[I")
 	public static final int[] anIntArray4 = new int[13];
 

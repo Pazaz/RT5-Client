@@ -29,23 +29,23 @@ public final class Static67 {
 
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "()V")
 	public static void method1765() {
-		for (@Pc(1) int local1 = 0; local1 < Static164.anInt3139; local1++) {
-			if (!Static351.aBooleanArray57[local1]) {
-				@Pc(10) Class2_Sub26_Sub1 local10 = Static306.aClass2_Sub26_Sub1Array2[local1];
+		for (@Pc(1) int local1 = 0; local1 < Scene.anInt3139; local1++) {
+			if (!Scene.aBooleanArray57[local1]) {
+				@Pc(10) Class2_Sub26_Sub1 local10 = Scene.aClass2_Sub26_Sub1Array2[local1];
 				@Pc(13) int local13 = local10.anInt4380;
-				@Pc(18) int local18 = local10.anInt4374 - Static253.anInt4693;
-				@Pc(26) int local26 = (local18 * 2 >> Static322.anInt6029) + 1;
+				@Pc(18) int local18 = local10.anInt4374 - Scene.anInt4693;
+				@Pc(26) int local26 = (local18 * 2 >> Scene.scale) + 1;
 				@Pc(28) int local28 = 0;
 				@Pc(33) int[] local33 = new int[local26 * local26];
-				@Pc(40) int local40 = local10.anInt4370 - local18 >> Static322.anInt6029;
-				@Pc(47) int local47 = local10.anInt4371 - local18 >> Static322.anInt6029;
-				@Pc(54) int local54 = local10.anInt4371 + local18 >> Static322.anInt6029;
+				@Pc(40) int local40 = local10.anInt4370 - local18 >> Scene.scale;
+				@Pc(47) int local47 = local10.anInt4371 - local18 >> Scene.scale;
+				@Pc(54) int local54 = local10.anInt4371 + local18 >> Scene.scale;
 				if (local47 < 0) {
 					local28 = -local47;
 					local47 = 0;
 				}
-				if (local54 >= Static210.anInt3773) {
-					local54 = Static210.anInt3773 - 1;
+				if (local54 >= Scene.anInt3773) {
+					local54 = Scene.anInt3773 - 1;
 				}
 				for (@Pc(71) int local71 = local47; local71 <= local54; local71++) {
 					@Pc(77) short local77 = local10.aShortArray92[local28];
@@ -57,8 +57,8 @@ public final class Static67 {
 						local87 -= local93;
 						local93 = 0;
 					}
-					if (local101 >= Static72.anInt1684) {
-						local101 = Static72.anInt1684 - 1;
+					if (local101 >= Scene.anInt1684) {
+						local101 = Scene.anInt1684 - 1;
 					}
 					for (@Pc(118) int local118 = local93; local118 <= local101; local118++) {
 						@Pc(121) byte local121 = 1;
@@ -115,8 +115,8 @@ public final class Static67 {
 					}
 					local28++;
 				}
-				Static351.aBooleanArray57[local1] = true;
-				Static365.aClass6Array4[local13].method5721(local10, local33);
+				Scene.aBooleanArray57[local1] = true;
+				Scene.aClass6Array4[local13].method5721(local10, local33);
 			}
 		}
 	}

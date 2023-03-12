@@ -38,7 +38,7 @@ public final class Static120 {
 	}
 
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "([[BBLclient!bu;)V")
-	public static void method2381(@OriginalArg(0) byte[][] arg0, @OriginalArg(2) Class29_Sub1 arg1) {
+	public static void method2381(@OriginalArg(0) byte[][] arg0, @OriginalArg(2) SceneBuilder arg1) {
 		@Pc(16) int[] local16 = new int[] { -1, 0, 0, 0, 0 };
 		for (@Pc(18) int local18 = 0; local18 < arg1.anInt912; local18++) {
 			Static37.method1135();

@@ -5,9 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static351 {
 
-	@OriginalMember(owner = "client!ug", name = "x", descriptor = "[Z")
-	public static boolean[] aBooleanArray57;
-
 	@OriginalMember(owner = "client!ug", name = "b", descriptor = "(IB)I")
 	public static int method5855(@OriginalArg(0) int arg0) {
 		@Pc(12) int local12 = arg0 >>> 1;

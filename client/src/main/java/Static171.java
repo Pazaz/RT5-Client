@@ -26,7 +26,7 @@ public final class Static171 {
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(BIIZII)V")
 	public static void method3258(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		if (Static330.aClass67ArrayArrayArray3 == null) {
+		if (Scene.aClass67ArrayArrayArray3 == null) {
 			Static190.aClass19_8.method2868(arg4, arg1, arg0, -16777216, arg3);
 		} else if (Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >= 0 && Static17.aClass11_Sub5_Sub2_Sub1_3.xFine < Static373.anInt7033 * 128 && Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >= 0 && Static17.aClass11_Sub5_Sub2_Sub1_3.zFine < Static242.anInt4449 * 128) {
 			Static163.anInt3086++;
@@ -107,11 +107,11 @@ public final class Static171 {
 			if (Static211.anInt3777 < 0) {
 				Static211.anInt3777 = 0;
 			}
-			if ((Static72.anInt1684 << 7) - 1 < Static136.anInt6778) {
-				Static136.anInt6778 = (Static72.anInt1684 << 7) - 1;
+			if ((Scene.anInt1684 << 7) - 1 < Static136.anInt6778) {
+				Static136.anInt6778 = (Scene.anInt1684 << 7) - 1;
 			}
-			if (Static211.anInt3777 > (Static210.anInt3773 << 7) - 1) {
-				Static211.anInt3777 = (Static210.anInt3773 << 7) - 1;
+			if (Static211.anInt3777 > (Scene.anInt3773 << 7) - 1) {
+				Static211.anInt3777 = (Scene.anInt3773 << 7) - 1;
 			}
 			Static363.method6091();
 			Static56.method1611();

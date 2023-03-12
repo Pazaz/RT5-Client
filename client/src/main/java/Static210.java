@@ -7,9 +7,6 @@ public final class Static210 {
 	@OriginalMember(owner = "client!mg", name = "x", descriptor = "[[B")
 	public static byte[][] aByteArrayArray7;
 
-	@OriginalMember(owner = "client!mg", name = "y", descriptor = "I")
-	public static int anInt3773;
-
 	@OriginalMember(owner = "client!mg", name = "h", descriptor = "I")
 	public static int anInt3761 = 500;
 
@@ -21,7 +18,7 @@ public final class Static210 {
 
 	@OriginalMember(owner = "client!mg", name = "a", descriptor = "(IIIIIB)I")
 	public static int method3719(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		if (Static365.aClass6Array4 == null) {
+		if (Scene.aClass6Array4 == null) {
 			return 0;
 		}
 		if (arg1 < 3) {
@@ -54,7 +51,7 @@ public final class Static210 {
 				arg1++;
 			}
 		}
-		return Static365.aClass6Array4[arg1].method5728(arg3, arg4);
+		return Scene.aClass6Array4[arg1].method5728(arg3, arg4);
 	}
 
 	@OriginalMember(owner = "client!mg", name = "b", descriptor = "(I)V")

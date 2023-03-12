@@ -17,7 +17,7 @@ public final class Static177 {
 	public static int anInt3385 = 0;
 
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(Lclient!bu;[[BI)V")
-	public static void method3346(@OriginalArg(0) Class29_Sub1 arg0, @OriginalArg(1) byte[][] arg1) {
+	public static void method3346(@OriginalArg(0) SceneBuilder arg0, @OriginalArg(1) byte[][] arg1) {
 		@Pc(16) int[] local16 = new int[] { -1, 0, 0, 0, 0 };
 		@Pc(19) int local19 = arg1.length;
 		@Pc(40) int local40;

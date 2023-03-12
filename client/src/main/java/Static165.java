@@ -7,9 +7,6 @@ public final class Static165 {
 	@OriginalMember(owner = "client!jm", name = "j", descriptor = "Lclient!vi;")
 	public static Class239 aClass239_3;
 
-	@OriginalMember(owner = "client!jm", name = "p", descriptor = "[[[I")
-	public static int[][][] anIntArrayArrayArray9;
-
 	@OriginalMember(owner = "client!jm", name = "k", descriptor = "I")
 	public static int anInt3148 = 0;
 
@@ -52,7 +49,7 @@ public final class Static165 {
 
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(IIII)V")
 	public static void method3154(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		if (Static330.aClass67ArrayArrayArray3 == null) {
+		if (Scene.aClass67ArrayArrayArray3 == null) {
 			return;
 		}
 		@Pc(19) long local19 = (long) (arg0 | arg1 << 28 | arg2 << 14);

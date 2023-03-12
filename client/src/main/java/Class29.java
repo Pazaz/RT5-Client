@@ -37,13 +37,13 @@ public class Class29 {
 	private final byte[][][] aByteArrayArrayArray8;
 
 	@OriginalMember(owner = "client!mo", name = "l", descriptor = "[[[I")
-	public final int[][][] anIntArrayArrayArray8;
+	public final int[][][] levelHeightmap;
 
 	@OriginalMember(owner = "client!mo", name = "h", descriptor = "[[[B")
 	private final byte[][][] aByteArrayArrayArray10;
 
 	@OriginalMember(owner = "client!mo", name = "d", descriptor = "[[[B")
-	protected byte[][][] aByteArrayArrayArray9;
+	protected byte[][][] levelOccludemap;
 
 	static {
 		new LocalizedString(" joined the channel.", " hat den Chatraum betreten.", " a rejoint le canal.", " entrou no canal.");
@@ -60,9 +60,9 @@ public class Class29 {
 		this.aByteArrayArrayArray7 = new byte[this.anInt912][this.anInt900][this.anInt911];
 		this.aByteArrayArrayArray12 = new byte[this.anInt912][this.anInt900][this.anInt911];
 		this.aByteArrayArrayArray8 = new byte[this.anInt912][this.anInt900][this.anInt911];
-		this.anIntArrayArrayArray8 = new int[this.anInt912][this.anInt900 + 1][this.anInt911 + 1];
+		this.levelHeightmap = new int[this.anInt912][this.anInt900 + 1][this.anInt911 + 1];
 		this.aByteArrayArrayArray10 = new byte[this.anInt912][this.anInt900][this.anInt911];
-		this.aByteArrayArrayArray9 = new byte[this.anInt912][this.anInt900 + 1][this.anInt911 + 1];
+		this.levelOccludemap = new byte[this.anInt912][this.anInt900 + 1][this.anInt911 + 1];
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(B[[[I[Lclient!dg;Lclient!wm;)V")
@@ -107,8 +107,8 @@ public class Class29 {
 			if (Static246.aBoolean312) {
 				local14 |= 0x7;
 			}
-			@Pc(151) int[][] local151 = arg0 == null || arg0.length <= local6 ? this.anIntArrayArrayArray8[local6] : arg0[local6];
-			Static25.method858(local6, arg2.method2807(this.anInt900, this.anInt911, this.anIntArrayArrayArray8[local6], local151, local10, local14));
+			@Pc(151) int[][] local151 = arg0 == null || arg0.length <= local6 ? this.levelHeightmap[local6] : arg0[local6];
+			Static25.method858(local6, arg2.method2807(this.anInt900, this.anInt911, this.levelHeightmap[local6], local151, local10, local14));
 		}
 	}
 
@@ -251,7 +251,7 @@ public class Class29 {
 								local583 = false;
 							}
 							if (local583 && local368 == local372 && local454 == local368 && local460 == local368) {
-								this.aByteArrayArrayArray9[arg4][local7][local11] = (byte) (this.aByteArrayArrayArray9[arg4][local7][local11] | 0x4);
+								this.levelOccludemap[arg4][local7][local11] = (byte) (this.levelOccludemap[arg4][local7][local11] | 0x4);
 							}
 						}
 						@Pc(636) int local636 = 0;
@@ -334,30 +334,30 @@ public class Class29 {
 			local69 = arg6.g1();
 			if (local69 == 0) {
 				if (this.aBoolean73) {
-					this.anIntArrayArrayArray8[0][arg7 + arg4][arg0 + arg2] = 0;
+					this.levelHeightmap[0][arg7 + arg4][arg0 + arg2] = 0;
 					return;
 				} else if (arg8 == 0) {
-					this.anIntArrayArrayArray8[0][arg4 + arg7][arg0 + arg2] = -Static7.method6466(arg1 + 932731, arg5 + 556238) * 8;
+					this.levelHeightmap[0][arg4 + arg7][arg0 + arg2] = -Static7.method6466(arg1 + 932731, arg5 + 556238) * 8;
 					return;
 				} else {
-					this.anIntArrayArrayArray8[arg8][arg7 + arg4][arg2 + arg0] = this.anIntArrayArrayArray8[arg8 - 1][arg4 + arg7][arg0 + arg2] - 240;
+					this.levelHeightmap[arg8][arg7 + arg4][arg2 + arg0] = this.levelHeightmap[arg8 - 1][arg4 + arg7][arg0 + arg2] - 240;
 					return;
 				}
 			}
 			if (local69 == 1) {
 				@Pc(152) int local152 = arg6.g1();
 				if (this.aBoolean73) {
-					this.anIntArrayArrayArray8[0][arg7 + arg4][arg0 + arg2] = local152 * 8;
+					this.levelHeightmap[0][arg7 + arg4][arg0 + arg2] = local152 * 8;
 					return;
 				}
 				if (local152 == 1) {
 					local152 = 0;
 				}
 				if (arg8 == 0) {
-					this.anIntArrayArrayArray8[0][arg4 + arg7][arg0 + arg2] = -local152 * 8;
+					this.levelHeightmap[0][arg4 + arg7][arg0 + arg2] = -local152 * 8;
 					return;
 				}
-				this.anIntArrayArrayArray8[arg8][arg7 + arg4][arg0 + arg2] = this.anIntArrayArrayArray8[arg8 - 1][arg4 + arg7][arg0 + arg2] - local152 * 8;
+				this.levelHeightmap[arg8][arg7 + arg4][arg0 + arg2] = this.levelHeightmap[arg8 - 1][arg4 + arg7][arg0 + arg2] - local152 * 8;
 				return;
 			}
 			if (local69 <= 49) {
@@ -452,7 +452,7 @@ public class Class29 {
 									local292 = local101 + arg0 + 8 - local265;
 								}
 								if (local292 >= 0 && this.anInt900 > local292 && local284 >= 0 && local284 < this.anInt911) {
-									this.anIntArrayArrayArray8[arg8][local292][local284] = this.anIntArrayArrayArray8[arg8][local211 + local115][local117 + local224];
+									this.levelHeightmap[arg8][local292][local284] = this.levelHeightmap[arg8][local211 + local115][local117 + local224];
 								}
 							}
 						}
@@ -470,21 +470,21 @@ public class Class29 {
 		for (@Pc(3) int local3 = arg1; local3 < arg1 + arg0; local3++) {
 			for (local7 = arg2; local7 < arg2 + arg3; local7++) {
 				if (local7 >= 0 && this.anInt900 > local7 && local3 >= 0 && local3 < this.anInt911) {
-					this.anIntArrayArrayArray8[arg4][local7][local3] = arg4 <= 0 ? 0 : this.anIntArrayArrayArray8[arg4 - 1][local7][local3] - 240;
+					this.levelHeightmap[arg4][local7][local3] = arg4 <= 0 ? 0 : this.levelHeightmap[arg4 - 1][local7][local3] - 240;
 				}
 			}
 		}
 		if (arg2 > 0 && arg2 < this.anInt900) {
 			for (local7 = arg1 + 1; local7 < arg0 + arg1; local7++) {
 				if (local7 >= 0 && local7 < this.anInt911) {
-					this.anIntArrayArrayArray8[arg4][arg2][local7] = this.anIntArrayArrayArray8[arg4][arg2 - 1][local7];
+					this.levelHeightmap[arg4][arg2][local7] = this.levelHeightmap[arg4][arg2 - 1][local7];
 				}
 			}
 		}
 		if (arg1 > 0 && arg1 < this.anInt911) {
 			for (@Pc(154) int local154 = arg2 + 1; local154 < arg3 + arg2; local154++) {
 				if (local154 >= 0 && this.anInt900 > local154) {
-					this.anIntArrayArrayArray8[arg4][local154][arg1] = this.anIntArrayArrayArray8[arg4][local154][arg1 - 1];
+					this.levelHeightmap[arg4][local154][arg1] = this.levelHeightmap[arg4][local154][arg1 - 1];
 				}
 			}
 		}
@@ -492,30 +492,30 @@ public class Class29 {
 			return;
 		}
 		if (arg4 == 0) {
-			if (arg2 > 0 && this.anIntArrayArrayArray8[arg4][arg2 - 1][arg1] != 0) {
-				this.anIntArrayArrayArray8[arg4][arg2][arg1] = this.anIntArrayArrayArray8[arg4][arg2 - 1][arg1];
+			if (arg2 > 0 && this.levelHeightmap[arg4][arg2 - 1][arg1] != 0) {
+				this.levelHeightmap[arg4][arg2][arg1] = this.levelHeightmap[arg4][arg2 - 1][arg1];
 				return;
 			}
-			if (arg1 > 0 && this.anIntArrayArrayArray8[arg4][arg2][arg1 - 1] != 0) {
-				this.anIntArrayArrayArray8[arg4][arg2][arg1] = this.anIntArrayArrayArray8[arg4][arg2][arg1 - 1];
+			if (arg1 > 0 && this.levelHeightmap[arg4][arg2][arg1 - 1] != 0) {
+				this.levelHeightmap[arg4][arg2][arg1] = this.levelHeightmap[arg4][arg2][arg1 - 1];
 				return;
 			}
-			if (arg2 > 0 && arg1 > 0 && this.anIntArrayArrayArray8[arg4][arg2 - 1][arg1 - 1] != 0) {
-				this.anIntArrayArrayArray8[arg4][arg2][arg1] = this.anIntArrayArrayArray8[arg4][arg2 - 1][arg1 - 1];
+			if (arg2 > 0 && arg1 > 0 && this.levelHeightmap[arg4][arg2 - 1][arg1 - 1] != 0) {
+				this.levelHeightmap[arg4][arg2][arg1] = this.levelHeightmap[arg4][arg2 - 1][arg1 - 1];
 				return;
 			}
 			return;
 		}
-		if (arg2 > 0 && this.anIntArrayArrayArray8[arg4][arg2 - 1][arg1] != this.anIntArrayArrayArray8[arg4 - 1][arg2 - 1][arg1]) {
-			this.anIntArrayArrayArray8[arg4][arg2][arg1] = this.anIntArrayArrayArray8[arg4][arg2 - 1][arg1];
+		if (arg2 > 0 && this.levelHeightmap[arg4][arg2 - 1][arg1] != this.levelHeightmap[arg4 - 1][arg2 - 1][arg1]) {
+			this.levelHeightmap[arg4][arg2][arg1] = this.levelHeightmap[arg4][arg2 - 1][arg1];
 			return;
 		}
-		if (arg1 > 0 && this.anIntArrayArrayArray8[arg4 - 1][arg2][arg1 - 1] != this.anIntArrayArrayArray8[arg4][arg2][arg1 - 1]) {
-			this.anIntArrayArrayArray8[arg4][arg2][arg1] = this.anIntArrayArrayArray8[arg4][arg2][arg1 - 1];
+		if (arg1 > 0 && this.levelHeightmap[arg4 - 1][arg2][arg1 - 1] != this.levelHeightmap[arg4][arg2][arg1 - 1]) {
+			this.levelHeightmap[arg4][arg2][arg1] = this.levelHeightmap[arg4][arg2][arg1 - 1];
 			return;
 		}
-		if (arg2 > 0 && arg1 > 0 && this.anIntArrayArrayArray8[arg4 - 1][arg2 - 1][arg1 - 1] != this.anIntArrayArrayArray8[arg4][arg2 - 1][arg1 - 1]) {
-			this.anIntArrayArrayArray8[arg4][arg2][arg1] = this.anIntArrayArrayArray8[arg4][arg2 - 1][arg1 - 1];
+		if (arg2 > 0 && arg1 > 0 && this.levelHeightmap[arg4 - 1][arg2 - 1][arg1 - 1] != this.levelHeightmap[arg4][arg2 - 1][arg1 - 1]) {
+			this.levelHeightmap[arg4][arg2][arg1] = this.levelHeightmap[arg4][arg2 - 1][arg1 - 1];
 			return;
 		}
 	}
@@ -600,9 +600,9 @@ public class Class29 {
 				}
 			}
 			if (Static132.aBoolean179) {
-				this.method1099(local44, arg1, local44 == 0 ? arg2 : null, local44 == 0 ? arg0 : null, Static365.aClass6Array4[local44], local11);
+				this.method1099(local44, arg1, local44 == 0 ? arg2 : null, local44 == 0 ? arg0 : null, Scene.aClass6Array4[local44], local11);
 			} else {
-				this.method1086(local44 == 0 ? arg2 : null, local11, local44 == 0 ? arg0 : null, arg1, local44, Static365.aClass6Array4[local44]);
+				this.method1086(local44 == 0 ? arg2 : null, local11, local44 == 0 ? arg0 : null, arg1, local44, Scene.aClass6Array4[local44]);
 			}
 			this.aByteArrayArrayArray8[local44] = null;
 			this.aByteArrayArrayArray10[local44] = null;
@@ -618,7 +618,7 @@ public class Class29 {
 			}
 		}
 		for (local60 = 0; local60 < this.anInt912; local60++) {
-			Static365.aClass6Array4[local60].method5718();
+			Scene.aClass6Array4[local60].method5718();
 		}
 	}
 
@@ -895,7 +895,7 @@ public class Class29 {
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(IZ[[I)V")
 	public final void method1097(@OriginalArg(2) int[][] arg0) {
-		@Pc(14) int[][] local14 = this.anIntArrayArrayArray8[0];
+		@Pc(14) int[][] local14 = this.levelHeightmap[0];
 		for (@Pc(16) int local16 = 0; local16 < this.anInt900 + 1; local16++) {
 			for (@Pc(20) int local20 = 0; local20 < this.anInt911 + 1; local20++) {
 				local14[local16][local20] += arg0[local16][local20];
@@ -1394,7 +1394,7 @@ public class Class29 {
 									local2351 = false;
 								}
 								if (local2351 && local1035 == local1033 && local1267 == local1033 && local1273 == local1033) {
-									this.aByteArrayArrayArray9[arg0][local35][local51] = (byte) (this.aByteArrayArrayArray9[arg0][local35][local51] | 0x4);
+									this.levelOccludemap[arg0][local35][local51] = (byte) (this.levelOccludemap[arg0][local35][local51] | 0x4);
 								}
 							}
 							local1282 = 0;

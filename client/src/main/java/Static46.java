@@ -27,8 +27,8 @@ public final class Static46 {
 
 	@OriginalMember(owner = "client!cm", name = "a", descriptor = "(III)Z")
 	public static boolean method1423(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		for (@Pc(1) int local1 = 0; local1 < Static66.anInt1622; local1++) {
-			@Pc(6) Class58 local6 = Static183.aClass58Array2[local1];
+		for (@Pc(1) int local1 = 0; local1 < Scene.anInt1622; local1++) {
+			@Pc(6) Occluder local6 = Scene.aClass58Array2[local1];
 			@Pc(15) int local15;
 			@Pc(27) int local27;
 			@Pc(37) int local37;

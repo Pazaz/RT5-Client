@@ -7,9 +7,6 @@ public final class Static98 {
 	@OriginalMember(owner = "client!fl", name = "a", descriptor = "[Lclient!ns;")
 	public static Class12_Sub1_Sub1_Sub1[] aClass12_Sub1_Sub1_Sub1Array1;
 
-	@OriginalMember(owner = "client!fl", name = "j", descriptor = "[Lclient!hb;")
-	public static Entity[] aClass11_Sub5Array1;
-
 	@OriginalMember(owner = "client!fl", name = "f", descriptor = "Lclient!hu;")
 	public static final LruHashTable aClass98_10 = new LruHashTable(32);
 

@@ -19,7 +19,7 @@ public final class Static324 {
 		@Pc(7) int local7;
 		label56: for (@Pc(4) int local4 = arg2; local4 <= arg4; local4++) {
 			label54: for (local7 = arg3; local7 <= arg5; local7++) {
-				@Pc(16) long local16 = Static51.aLongArrayArrayArray1[arg1][local4][local7];
+				@Pc(16) long local16 = Scene.aLongArrayArrayArray1[arg1][local4][local7];
 				@Pc(18) long local18 = 0L;
 				while (true) {
 					label49: while (true) {
@@ -30,7 +30,7 @@ public final class Static324 {
 						if (local27 <= 0) {
 							continue label54;
 						}
-						@Pc(35) Class2_Sub26_Sub1 local35 = Static306.aClass2_Sub26_Sub1Array2[local27 - 1];
+						@Pc(35) Class2_Sub26_Sub1 local35 = Scene.aClass2_Sub26_Sub1Array2[local27 - 1];
 						for (@Pc(37) int local37 = 0; local37 < arg0.anInt7113; local37++) {
 							if (arg0.aClass2_Sub26_Sub1Array3[local37] == local35) {
 								local18 += 16L;

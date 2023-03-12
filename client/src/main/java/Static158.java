@@ -43,9 +43,9 @@ public final class Static158 {
 
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(II)V")
 	public static void method2943(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(7) Class67 local7 = Static330.aClass67ArrayArrayArray3[0][arg0][arg1];
+		@Pc(7) Class67 local7 = Scene.aClass67ArrayArrayArray3[0][arg0][arg1];
 		for (@Pc(9) int local9 = 0; local9 < 3; local9++) {
-			@Pc(28) Class67 local28 = Static330.aClass67ArrayArrayArray3[local9][arg0][arg1] = Static330.aClass67ArrayArrayArray3[local9 + 1][arg0][arg1];
+			@Pc(28) Class67 local28 = Scene.aClass67ArrayArrayArray3[local9][arg0][arg1] = Scene.aClass67ArrayArrayArray3[local9 + 1][arg0][arg1];
 			if (local28 != null) {
 				local28.aByte10--;
 				for (@Pc(40) Class22 local40 = local28.aClass22_2; local40 != null; local40 = local40.aClass22_1) {
@@ -56,12 +56,12 @@ public final class Static158 {
 				}
 			}
 		}
-		if (Static330.aClass67ArrayArrayArray3[0][arg0][arg1] == null) {
-			Static330.aClass67ArrayArrayArray3[0][arg0][arg1] = new Class67(0, arg0, arg1);
-			Static330.aClass67ArrayArrayArray3[0][arg0][arg1].aByte7 = 1;
+		if (Scene.aClass67ArrayArrayArray3[0][arg0][arg1] == null) {
+			Scene.aClass67ArrayArrayArray3[0][arg0][arg1] = new Class67(0, arg0, arg1);
+			Scene.aClass67ArrayArrayArray3[0][arg0][arg1].aByte7 = 1;
 		}
-		Static330.aClass67ArrayArrayArray3[0][arg0][arg1].aClass67_1 = local7;
-		Static330.aClass67ArrayArrayArray3[3][arg0][arg1] = null;
+		Scene.aClass67ArrayArrayArray3[0][arg0][arg1].aClass67_1 = local7;
+		Scene.aClass67ArrayArrayArray3[3][arg0][arg1] = null;
 	}
 
 }

@@ -24,12 +24,12 @@ public final class Static329 {
 
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(Lclient!hb;Z)Z")
 	public static boolean method5630(@OriginalArg(0) Entity arg0, @OriginalArg(1) boolean arg1) {
-		@Pc(6) boolean local6 = Static365.aClass6Array4 == Static186.aClass6Array2;
+		@Pc(6) boolean local6 = Scene.aClass6Array4 == Scene.aClass6Array2;
 		@Pc(8) int local8 = 0;
 		@Pc(10) byte local10 = 0;
 		@Pc(12) byte local12 = 0;
 		arg0.method6078();
-		if (arg0.aShort103 < 0 || arg0.aShort101 < 0 || arg0.aShort104 >= Static72.anInt1684 || arg0.aShort102 >= Static210.anInt3773) {
+		if (arg0.aShort103 < 0 || arg0.aShort101 < 0 || arg0.aShort104 >= Scene.anInt1684 || arg0.aShort102 >= Scene.anInt3773) {
 			return false;
 		}
 		@Pc(38) int local38;
@@ -61,10 +61,10 @@ public final class Static329 {
 						local77.aClass22_1 = local74;
 					}
 					local45.aByte8 = (byte) (local45.aByte8 | local49);
-					if (local6 && (Static82.anIntArrayArray16[local34][local38] & 0xFF000000) != 0) {
-						local8 = Static82.anIntArrayArray16[local34][local38];
-						local10 = Static32.aByteArrayArray4[local34][local38];
-						local12 = Static314.aByteArrayArray17[local34][local38];
+					if (local6 && (Scene.anIntArrayArray16[local34][local38] & 0xFF000000) != 0) {
+						local8 = Scene.anIntArrayArray16[local34][local38];
+						local10 = Scene.aByteArrayArray4[local34][local38];
+						local12 = Scene.aByteArrayArray17[local34][local38];
 					}
 				}
 			}
@@ -72,16 +72,16 @@ public final class Static329 {
 		if (local6 && (local8 & 0xFF000000) != 0) {
 			for (local38 = arg0.aShort103; local38 <= arg0.aShort104; local38++) {
 				for (@Pc(150) int local150 = arg0.aShort101; local150 <= arg0.aShort102; local150++) {
-					if ((Static82.anIntArrayArray16[local38][local150] & 0xFF000000) == 0) {
-						Static82.anIntArrayArray16[local38][local150] = local8;
-						Static32.aByteArrayArray4[local38][local150] = local10;
-						Static314.aByteArrayArray17[local38][local150] = local12;
+					if ((Scene.anIntArrayArray16[local38][local150] & 0xFF000000) == 0) {
+						Scene.anIntArrayArray16[local38][local150] = local8;
+						Scene.aByteArrayArray4[local38][local150] = local10;
+						Scene.aByteArrayArray17[local38][local150] = local12;
 					}
 				}
 			}
 		}
 		if (arg1) {
-			Static98.aClass11_Sub5Array1[Static378.anInt7077++] = arg0;
+			Scene.aClass11_Sub5Array1[Scene.anInt7077++] = arg0;
 		}
 		return true;
 	}

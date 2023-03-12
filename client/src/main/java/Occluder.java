@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ec")
-public final class Class58 {
+public final class Occluder {
 
 	@OriginalMember(owner = "client!ec", name = "c", descriptor = "I")
 	public int anInt1685;
@@ -11,10 +11,10 @@ public final class Class58 {
 	public int anInt1686;
 
 	@OriginalMember(owner = "client!ec", name = "f", descriptor = "I")
-	public int anInt1687;
+	public int maxTileX;
 
 	@OriginalMember(owner = "client!ec", name = "h", descriptor = "I")
-	public int anInt1688;
+	public int minTileZ;
 
 	@OriginalMember(owner = "client!ec", name = "i", descriptor = "I")
 	public int anInt1689;
@@ -23,7 +23,7 @@ public final class Class58 {
 	public int anInt1690;
 
 	@OriginalMember(owner = "client!ec", name = "k", descriptor = "I")
-	public int anInt1691;
+	public int maxTileZ;
 
 	@OriginalMember(owner = "client!ec", name = "l", descriptor = "I")
 	public int anInt1692;
@@ -35,7 +35,7 @@ public final class Class58 {
 	public int anInt1695;
 
 	@OriginalMember(owner = "client!ec", name = "q", descriptor = "I")
-	public int anInt1696;
+	public int minTileX;
 
 	@OriginalMember(owner = "client!ec", name = "r", descriptor = "I")
 	public int anInt1697;

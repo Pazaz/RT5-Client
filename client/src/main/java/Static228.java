@@ -333,7 +333,7 @@ public final class Static228 {
 
 	@OriginalMember(owner = "client!nc", name = "a", descriptor = "(IIII)Lclient!mr;")
 	public static PathingEntity method3997(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(16) Class67 local16 = Static330.aClass67ArrayArrayArray3[arg0][arg1][arg2];
+		@Pc(16) Class67 local16 = Scene.aClass67ArrayArrayArray3[arg0][arg1][arg2];
 		if (local16 == null) {
 			return null;
 		}

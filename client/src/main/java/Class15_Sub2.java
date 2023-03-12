@@ -56,10 +56,10 @@ public final class Class15_Sub2 extends Class15 {
 			}
 		} else if (this.anInt1415 >= 30 && this.anInt1415 <= 33) {
 			Static16.aClass19_10.method2823(3000.0F, super.aFloatArray11[local8] * 1.5F);
-			((Class6) local34).method5729(Static248.anInt4650, Static211.anInt3780, Static212.anInt3788, Static6.aBooleanArrayArray1, this.anInt1415 - 30 == 0);
+			((Class6) local34).method5729(Static248.anInt4650, Static211.anInt3780, Scene.anInt3788, Scene.aBooleanArrayArray1, this.anInt1415 - 30 == 0);
 		} else if (this.anInt1415 >= 40 && this.anInt1415 <= 43) {
 			Static16.aClass19_10.method2823(3000.0F, super.aFloatArray11[local8] * 1.5F);
-			((Class6) local34).method5729(Static248.anInt4650, Static211.anInt3780, Static212.anInt3788, Static364.aBooleanArrayArray5, this.anInt1415 - 40 == 0);
+			((Class6) local34).method5729(Static248.anInt4650, Static211.anInt3780, Scene.anInt3788, Scene.aBooleanArrayArray5, this.anInt1415 - 40 == 0);
 		} else if (this.anInt1415 == 22) {
 			Static16.aClass19_10.method2880();
 		} else if (this.anInt1415 == 23) {

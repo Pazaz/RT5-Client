@@ -650,7 +650,7 @@ public class LoginManager {
 		if (Static190.aClass19_8.method2888()) {
 			local268++;
 		}
-		Static354.method1381(Static373.anInt7033, Static242.anInt4449, local268, local375, Static190.aClass19_8.method2886() > 0);
+		Scene.method1381(Static373.anInt7033, Static242.anInt4449, local268, local375, Static190.aClass19_8.method2886() > 0);
 		for (local279 = 0; local279 < 4; local279++) {
 			Static171.aClass46Array1[local279].method1626();
 		}
@@ -668,7 +668,7 @@ public class LoginManager {
 		Static141.aBoolean190 = !client.preferences.ot;
 		Static158.anInt2911 = client.preferences.method4495(Static77.anInt1762) ? -1 : Static44.anInt1115;
 		Static132.aBoolean179 = Static77.anInt1762 == 1 || client.preferences.gb;
-		Static190.aClass29_Sub1_63 = new Class29_Sub1(4, Static373.anInt7033, Static242.anInt4449, false);
+		Static190.aClass29_Sub1_63 = new SceneBuilder(4, Static373.anInt7033, Static242.anInt4449, false);
 		if (!Static220.aBoolean252) {
 			Static177.method3346(Static190.aClass29_Sub1_63, Static106.aByteArrayArray6);
 		}
@@ -678,8 +678,8 @@ public class LoginManager {
 		Static195.method3559(Static373.anInt7033 >> 4, Static242.anInt4449 >> 4);
 		Static56.method1611();
 		if (local375) {
-			Static341.method5767(true);
-			Static7.aClass29_Sub1_120 = new Class29_Sub1(1, Static373.anInt7033, Static242.anInt4449, true);
+			Scene.method5767(true);
+			Static7.aClass29_Sub1_120 = new SceneBuilder(1, Static373.anInt7033, Static242.anInt4449, true);
 			if (!Static220.aBoolean252) {
 				Static177.method3346(Static7.aClass29_Sub1_120, Static232.aByteArrayArray9);
 				Static161.method2973(true);
@@ -688,11 +688,11 @@ public class LoginManager {
 				Static120.method2381(Static232.aByteArrayArray9, Static7.aClass29_Sub1_120);
 				Static161.method2973(true);
 			}
-			Static7.aClass29_Sub1_120.method1097(Static190.aClass29_Sub1_63.anIntArrayArrayArray8[0]);
+			Static7.aClass29_Sub1_120.method1097(Static190.aClass29_Sub1_63.levelHeightmap[0]);
 			Static7.aClass29_Sub1_120.method1085(null, null, Static190.aClass19_8);
-			Static341.method5767(false);
+			Scene.method5767(false);
 		}
-		Static190.aClass29_Sub1_63.method1085(local375 ? Static7.aClass29_Sub1_120.anIntArrayArrayArray8 : null, Static171.aClass46Array1, Static190.aClass19_8);
+		Static190.aClass29_Sub1_63.method1085(local375 ? Static7.aClass29_Sub1_120.levelHeightmap : null, Static171.aClass46Array1, Static190.aClass19_8);
 		if (!Static220.aBoolean252) {
 			Static161.method2973(true);
 			Static170.method3231(Static190.aClass29_Sub1_63, Static82.aByteArrayArray5);
@@ -706,11 +706,11 @@ public class LoginManager {
 		}
 		Static211.method3721();
 		Static161.method2973(true);
-		Static190.aClass29_Sub1_63.method1093(local375 ? Static186.aClass6Array2[0] : null, Static190.aClass19_8, null);
+		Static190.aClass29_Sub1_63.method1093(local375 ? Scene.aClass6Array2[0] : null, Static190.aClass19_8, null);
 		Static190.aClass29_Sub1_63.method1104(Static190.aClass19_8);
 		Static161.method2973(true);
 		if (local375) {
-			Static341.method5767(true);
+			Scene.method5767(true);
 			Static161.method2973(true);
 			if (!Static220.aBoolean252) {
 				Static170.method3231(Static7.aClass29_Sub1_120, Static270.aByteArrayArray15);
@@ -720,10 +720,10 @@ public class LoginManager {
 			}
 			Static211.method3721();
 			Static161.method2973(true);
-			Static7.aClass29_Sub1_120.method1093(null, Static190.aClass19_8, Static330.aClass6Array3[0]);
+			Static7.aClass29_Sub1_120.method1093(null, Static190.aClass19_8, Scene.aClass6Array3[0]);
 			Static7.aClass29_Sub1_120.method1104(Static190.aClass19_8);
 			Static161.method2973(true);
-			Static341.method5767(false);
+			Scene.method5767(false);
 		}
 		Static295.method5094();
 		@Pc(692) int local692 = Static190.aClass29_Sub1_63.anInt922;

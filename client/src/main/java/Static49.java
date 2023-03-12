@@ -71,7 +71,7 @@ public final class Static49 {
 							local193[local220][local224] = Static142.method2661(local224 + local199, arg1, local216, local195 + local220);
 						}
 					}
-					Static330.aClass6Array3[local216].method5722(local195, local199, local195 + Static285.anInt5368, Static285.anInt5368 + local199, local193);
+					Scene.aClass6Array3[local216].method5722(local195, local199, local195 + Static285.anInt5368, Static285.anInt5368 + local199, local193);
 					if (!Static46.aBoolean100) {
 						for (local224 = -4; local224 < Static285.anInt5368; local224++) {
 							for (local277 = -4; local277 < Static285.anInt5368; local277++) {

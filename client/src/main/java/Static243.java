@@ -36,7 +36,7 @@ public final class Static243 {
 
 	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(IIIIIIIIIIIIII)V")
 	public static void method4239(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(12) int arg11, @OriginalArg(13) int arg12) {
-		if (Static365.aClass6Array4 == null) {
+		if (Scene.aClass6Array4 == null) {
 			return;
 		}
 		@Pc(27) PathingEntity local27;
@@ -69,7 +69,7 @@ public final class Static243 {
 		@Pc(96) int local96 = arg0 + (local62 + 1 >> 1);
 		@Pc(102) int local102 = (local65 >> 1) + arg11;
 		@Pc(110) int local110 = (local65 + 1 >> 1) + arg11;
-		@Pc(114) Class6 local114 = Static365.aClass6Array4[arg12];
+		@Pc(114) Class6 local114 = Scene.aClass6Array4[arg12];
 		@Pc(138) int local138 = local114.method5719(local79, local102) + local114.method5719(local96, local102) + local114.method5719(local79, local110) + local114.method5719(local96, local110) >> 2;
 		@Pc(142) Class2_Sub6 local142 = new Class2_Sub6();
 		local142.anInt1110 = local27.aByte78;

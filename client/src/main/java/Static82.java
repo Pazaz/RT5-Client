@@ -7,9 +7,6 @@ public final class Static82 {
 	@OriginalMember(owner = "client!em", name = "b", descriptor = "[[B")
 	public static byte[][] aByteArrayArray5;
 
-	@OriginalMember(owner = "client!em", name = "c", descriptor = "[[I")
-	public static int[][] anIntArrayArray16;
-
 	@OriginalMember(owner = "client!em", name = "g", descriptor = "I")
 	public static int anInt1835 = 0;
 

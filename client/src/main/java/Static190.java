@@ -11,7 +11,7 @@ public final class Static190 {
 	public static Class19 aClass19_8;
 
 	@OriginalMember(owner = "client!kt", name = "db", descriptor = "Lclient!bu;")
-	public static Class29_Sub1 aClass29_Sub1_63;
+	public static SceneBuilder aClass29_Sub1_63;
 
 	@OriginalMember(owner = "client!kt", name = "O", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_138 = new ClientProt(58, 2);

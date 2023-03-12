@@ -21,7 +21,7 @@ public final class Static156 {
 
 	@OriginalMember(owner = "client!iu", name = "a", descriptor = "(Lclient!hc;III)V")
 	public static void method2796(@OriginalArg(0) Class90 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(7) long local7 = Static51.aLongArrayArrayArray1[arg1][arg2][arg3];
+		@Pc(7) long local7 = Scene.aLongArrayArrayArray1[arg1][arg2][arg3];
 		@Pc(9) long local9 = 0L;
 		arg0.anInt7113 = 0;
 		@Pc(21) int local21;
@@ -30,7 +30,7 @@ public final class Static156 {
 			if (local21 <= 0) {
 				break;
 			}
-			arg0.aClass2_Sub26_Sub1Array3[arg0.anInt7113++] = Static306.aClass2_Sub26_Sub1Array2[local21 - 1];
+			arg0.aClass2_Sub26_Sub1Array3[arg0.anInt7113++] = Scene.aClass2_Sub26_Sub1Array2[local21 - 1];
 			local9 += 16L;
 		}
 		for (local21 = arg0.anInt7113; local21 < 4; local21++) {

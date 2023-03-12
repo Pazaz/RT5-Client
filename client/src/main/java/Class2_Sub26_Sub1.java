@@ -63,7 +63,7 @@ public final class Class2_Sub26_Sub1 extends Class2_Sub26 {
 			}
 			this.aShortArray92[local71] = (short) (local97 | local82 << 8);
 		}
-		super.anInt4374 = (super.anInt4374 << Static322.anInt6029) + Static253.anInt4693;
+		super.anInt4374 = (super.anInt4374 << Scene.scale) + Scene.anInt4693;
 		if (Static59.anIntArray107 == null) {
 			super.anInt4372 = Static181.anIntArray204[Static26.method863(arg0.g2()) & 0xFFFF];
 		} else {

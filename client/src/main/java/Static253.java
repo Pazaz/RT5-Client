@@ -7,9 +7,6 @@ public final class Static253 {
 	@OriginalMember(owner = "client!oj", name = "c", descriptor = "I")
 	public static int anInt4689;
 
-	@OriginalMember(owner = "client!oj", name = "h", descriptor = "I")
-	public static int anInt4693;
-
 	@OriginalMember(owner = "client!oj", name = "a", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_166 = new ClientProt(42, -1);
 
@@ -21,68 +18,68 @@ public final class Static253 {
 		@Pc(3) int local3;
 		@Pc(6) int local6;
 		@Pc(9) int local9;
-		if (Static390.aClass67ArrayArrayArray5 != null) {
-			for (local3 = 0; local3 < Static390.aClass67ArrayArrayArray5.length; local3++) {
-				for (local6 = 0; local6 < Static72.anInt1684; local6++) {
-					for (local9 = 0; local9 < Static210.anInt3773; local9++) {
-						if (Static390.aClass67ArrayArrayArray5[local3][local6][local9] != null) {
-							Static390.aClass67ArrayArrayArray5[local3][local6][local9].method1964();
+		if (Scene.aClass67ArrayArrayArray5 != null) {
+			for (local3 = 0; local3 < Scene.aClass67ArrayArrayArray5.length; local3++) {
+				for (local6 = 0; local6 < Scene.anInt1684; local6++) {
+					for (local9 = 0; local9 < Scene.anInt3773; local9++) {
+						if (Scene.aClass67ArrayArrayArray5[local3][local6][local9] != null) {
+							Scene.aClass67ArrayArrayArray5[local3][local6][local9].method1964();
 						}
-						Static390.aClass67ArrayArrayArray5[local3][local6][local9] = null;
+						Scene.aClass67ArrayArrayArray5[local3][local6][local9] = null;
 					}
 				}
 			}
 		}
-		Static390.aClass67ArrayArrayArray5 = null;
-		Static330.aClass6Array3 = null;
-		if (Static90.aClass67ArrayArrayArray4 != null) {
-			for (local3 = 0; local3 < Static90.aClass67ArrayArrayArray4.length; local3++) {
-				for (local6 = 0; local6 < Static72.anInt1684; local6++) {
-					for (local9 = 0; local9 < Static210.anInt3773; local9++) {
-						if (Static90.aClass67ArrayArrayArray4[local3][local6][local9] != null) {
-							Static90.aClass67ArrayArrayArray4[local3][local6][local9].method1964();
+		Scene.aClass67ArrayArrayArray5 = null;
+		Scene.aClass6Array3 = null;
+		if (Scene.aClass67ArrayArrayArray4 != null) {
+			for (local3 = 0; local3 < Scene.aClass67ArrayArrayArray4.length; local3++) {
+				for (local6 = 0; local6 < Scene.anInt1684; local6++) {
+					for (local9 = 0; local9 < Scene.anInt3773; local9++) {
+						if (Scene.aClass67ArrayArrayArray4[local3][local6][local9] != null) {
+							Scene.aClass67ArrayArrayArray4[local3][local6][local9].method1964();
 						}
-						Static90.aClass67ArrayArrayArray4[local3][local6][local9] = null;
+						Scene.aClass67ArrayArrayArray4[local3][local6][local9] = null;
 					}
 				}
 			}
 		}
-		Static90.aClass67ArrayArrayArray4 = null;
-		Static186.aClass6Array2 = null;
-		Static330.aClass67ArrayArrayArray3 = null;
-		Static365.aClass6Array4 = null;
-		Static266.anInt4901 = 0;
-		if (Static246.aClass58Array3 != null) {
-			for (local3 = 0; local3 < Static266.anInt4901; local3++) {
-				Static246.aClass58Array3[local3] = null;
+		Scene.aClass67ArrayArrayArray4 = null;
+		Scene.aClass6Array2 = null;
+		Scene.aClass67ArrayArrayArray3 = null;
+		Scene.aClass6Array4 = null;
+		Scene.levelOccluderCount = 0;
+		if (Scene.levelOccluders != null) {
+			for (local3 = 0; local3 < Scene.levelOccluderCount; local3++) {
+				Scene.levelOccluders[local3] = null;
 			}
 		}
-		if (Static98.aClass11_Sub5Array1 != null) {
-			for (local3 = 0; local3 < Static378.anInt7077; local3++) {
-				Static98.aClass11_Sub5Array1[local3] = null;
+		if (Scene.aClass11_Sub5Array1 != null) {
+			for (local3 = 0; local3 < Scene.anInt7077; local3++) {
+				Scene.aClass11_Sub5Array1[local3] = null;
 			}
-			Static378.anInt7077 = 0;
+			Scene.anInt7077 = 0;
 		}
-		if (Static306.aClass2_Sub26_Sub1Array2 != null) {
-			for (local3 = 0; local3 < Static164.anInt3139; local3++) {
-				Static306.aClass2_Sub26_Sub1Array2[local3] = null;
+		if (Scene.aClass2_Sub26_Sub1Array2 != null) {
+			for (local3 = 0; local3 < Scene.anInt3139; local3++) {
+				Scene.aClass2_Sub26_Sub1Array2[local3] = null;
 			}
-			for (local6 = 0; local6 < Static92.anInt1914; local6++) {
-				for (local9 = 0; local9 < Static72.anInt1684; local9++) {
-					for (@Pc(160) int local160 = 0; local160 < Static210.anInt3773; local160++) {
-						Static51.aLongArrayArrayArray1[local6][local9][local160] = 0L;
+			for (local6 = 0; local6 < Scene.anInt1914; local6++) {
+				for (local9 = 0; local9 < Scene.anInt1684; local9++) {
+					for (@Pc(160) int local160 = 0; local160 < Scene.anInt3773; local160++) {
+						Scene.aLongArrayArrayArray1[local6][local9][local160] = 0L;
 					}
 				}
 			}
-			Static164.anInt3139 = 0;
+			Scene.anInt3139 = 0;
 		}
-		Static165.anIntArrayArrayArray9 = null;
+		Scene.anIntArrayArrayArray9 = null;
 		Static339.method5759();
 		Static34.aClass36_6.method1416();
-		Static314.aByteArrayArray17 = null;
-		Static82.anIntArrayArray16 = null;
-		Static32.aByteArrayArray4 = null;
-		Static163.aClass15_1 = null;
+		Scene.aByteArrayArray17 = null;
+		Scene.anIntArrayArray16 = null;
+		Scene.aByteArrayArray4 = null;
+		Scene.aClass15_1 = null;
 		Static51.aClass14_2 = null;
 		Static16.aClass19_10 = null;
 	}

@@ -4,11 +4,8 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static256 {
 
-	@OriginalMember(owner = "client!om", name = "A", descriptor = "I")
-	public static int anInt4716;
-
 	@OriginalMember(owner = "client!om", name = "F", descriptor = "I")
-	public static final int anInt4720 = anInt4716;
+	public static final int anInt4720 = Scene.anInt4716;
 
 	@OriginalMember(owner = "client!om", name = "K", descriptor = "[I")
 	public static final int[] anIntArray321 = new int[50];
@@ -17,7 +14,7 @@ public final class Static256 {
 	public static final LocalizedString aClass79_102 = new LocalizedString("Loading - please wait.", "Ladevorgang - bitte warte.", "Chargement en cours. Veuillez patienter.", "Carregando. Aguarde.");
 
 	@OriginalMember(owner = "client!om", name = "nb", descriptor = "I")
-	public static final int anInt4744 = anInt4716 >> 2;
+	public static final int anInt4744 = Scene.anInt4716 >> 2;
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(IJ)V")
 	public static void method4395(@OriginalArg(1) long arg0) {

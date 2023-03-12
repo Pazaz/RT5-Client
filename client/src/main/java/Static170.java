@@ -40,7 +40,7 @@ public final class Static170 {
 	}
 
 	@OriginalMember(owner = "client!js", name = "a", descriptor = "(ILclient!bu;[[B)V")
-	public static void method3231(@OriginalArg(1) Class29_Sub1 arg0, @OriginalArg(2) byte[][] arg1) {
+	public static void method3231(@OriginalArg(1) SceneBuilder arg0, @OriginalArg(2) byte[][] arg1) {
 		@Pc(8) int local8 = Static106.aByteArrayArray6.length;
 		for (@Pc(18) int local18 = 0; local18 < local8; local18++) {
 			@Pc(24) byte[] local24 = arg1[local18];

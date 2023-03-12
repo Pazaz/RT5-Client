@@ -186,14 +186,14 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 		@Pc(26) Class6 local26;
 		@Pc(34) Class6 local34;
 		if (this.aBoolean65) {
-			local26 = Static186.aClass6Array2[this.aByte2];
-			local34 = Static330.aClass6Array3[0];
+			local26 = Scene.aClass6Array2[this.aByte2];
+			local34 = Scene.aClass6Array3[0];
 		} else {
-			local26 = Static330.aClass6Array3[this.aByte2];
+			local26 = Scene.aClass6Array3[this.aByte2];
 			if (this.aByte2 >= 3) {
 				local34 = null;
 			} else {
-				local34 = Static330.aClass6Array3[this.aByte2 + 1];
+				local34 = Scene.aClass6Array3[this.aByte2 + 1];
 			}
 		}
 		return local18.method1519(super.anInt3706, local26, this.aByte3, super.anInt3708, super.anInt3710, arg0, arg1, arg2, local34, 22);

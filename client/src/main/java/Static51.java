@@ -10,9 +10,6 @@ public final class Static51 {
 	@OriginalMember(owner = "client!cu", name = "v", descriptor = "Lclient!on;")
 	public static Class14 aClass14_2;
 
-	@OriginalMember(owner = "client!cu", name = "B", descriptor = "[[[J")
-	public static long[][][] aLongArrayArrayArray1;
-
 	@OriginalMember(owner = "client!cu", name = "u", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_28 = new LocalizedString("red:", "rot:", "rouge:", "vermelho:");
 
@@ -124,6 +121,6 @@ public final class Static51 {
 
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(II)I")
 	public static int method1548(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		return Static314.aByteArrayArray17 == null ? 0 : Static314.aByteArrayArray17[arg0][arg1] & 0xFF;
+		return Scene.aByteArrayArray17 == null ? 0 : Scene.aByteArrayArray17[arg0][arg1] & 0xFF;
 	}
 }

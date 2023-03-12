@@ -591,7 +591,7 @@ public final class client extends GameShell {
 			Protocol.outboundBuffer.psize1(Protocol.outboundBuffer.pos - local483);
 			Preferences.sentToServer = true;
 		}
-		if (Static330.aClass67ArrayArrayArray3 != null) {
+		if (Scene.aClass67ArrayArrayArray3 != null) {
 			if (Static314.anInt5911 == 2) {
 				Static222.method3917();
 			} else if (Static314.anInt5911 == 3) {

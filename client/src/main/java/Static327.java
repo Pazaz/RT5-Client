@@ -28,7 +28,7 @@ public final class Static327 {
 		@Pc(112) int[] local112;
 		@Pc(144) int local144;
 		@Pc(152) int local152;
-		if (Static330.aClass6Array3 != null) {
+		if (Scene.aClass6Array3 != null) {
 			@Pc(54) int local54 = -1;
 			@Pc(56) int local56 = -1;
 			@Pc(59) int local59 = arg0.method2814();
@@ -55,7 +55,7 @@ public final class Static327 {
 					if (local206 < 3 && (Static359.aByteArrayArrayArray16[1][local178][local193] & 0x2) != 0) {
 						local206++;
 					}
-					if ((float) Static330.aClass6Array3[local206].method5728(local174, local189) < (float) local152 * local135 + (float) local112[1]) {
+					if ((float) Scene.aClass6Array3[local206].method5728(local174, local189) < (float) local152 * local135 + (float) local112[1]) {
 						local54 = local174 + (Static17.aClass11_Sub5_Sub2_Sub1_3.getSize() - 1) * 64 >> 7;
 						local56 = local189 + (Static17.aClass11_Sub5_Sub2_Sub1_3.getSize() - 1) * 64 >> 7;
 						break;

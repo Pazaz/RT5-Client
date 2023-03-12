@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static212 {
 
-	@OriginalMember(owner = "client!mi", name = "k", descriptor = "I")
-	public static int anInt3788;
-
 	@OriginalMember(owner = "client!mi", name = "e", descriptor = "I")
 	public static int anInt3785 = 0;
 

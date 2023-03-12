@@ -4,12 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static330 {
 
-	@OriginalMember(owner = "client!td", name = "U", descriptor = "[Lclient!tf;")
-	public static Class6[] aClass6Array3;
-
-	@OriginalMember(owner = "client!td", name = "V", descriptor = "[[[Lclient!f;")
-	public static Class67[][][] aClass67ArrayArrayArray3;
-
 	@OriginalMember(owner = "client!td", name = "Y", descriptor = "Ljava/lang/String;")
 	public static String aString62;
 

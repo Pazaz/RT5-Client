@@ -15,14 +15,14 @@ public final class Static199 {
 
 	@OriginalMember(owner = "client!lm", name = "a", descriptor = "(IIIII)V")
 	public static void method5241(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		if (Static82.anIntArrayArray16 != null) {
-			Static82.anIntArrayArray16[arg0][arg1] = arg2 | 0xFF000000;
+		if (Scene.anIntArrayArray16 != null) {
+			Scene.anIntArrayArray16[arg0][arg1] = arg2 | 0xFF000000;
 		}
-		if (Static32.aByteArrayArray4 != null) {
-			Static32.aByteArrayArray4[arg0][arg1] = (byte) (arg3 >> 3);
+		if (Scene.aByteArrayArray4 != null) {
+			Scene.aByteArrayArray4[arg0][arg1] = (byte) (arg3 >> 3);
 		}
-		if (Static314.aByteArrayArray17 != null) {
-			Static314.aByteArrayArray17[arg0][arg1] = (byte) arg4;
+		if (Scene.aByteArrayArray17 != null) {
+			Scene.aByteArrayArray17[arg0][arg1] = (byte) arg4;
 		}
 	}
 

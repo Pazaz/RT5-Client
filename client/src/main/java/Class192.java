@@ -307,12 +307,12 @@ public final class Class192 {
 		if (local117) {
 			Static154.method2780(this.aClass2_Sub2_Sub4_6, this.aByte58, this.anInt5422, this.anInt5438, this.aBooleanArray49);
 		}
-		@Pc(149) Class6 local149 = Static365.aClass6Array4[this.aByte58];
+		@Pc(149) Class6 local149 = Scene.aClass6Array4[this.aByte58];
 		@Pc(167) Class6 local167;
 		if (this.aBoolean387) {
-			local167 = Static330.aClass6Array3[0];
+			local167 = Scene.aClass6Array3[0];
 		} else {
-			local167 = this.aByte58 < 3 ? Static365.aClass6Array4[this.aByte58 + 1] : null;
+			local167 = this.aByte58 < 3 ? Scene.aClass6Array4[this.aByte58 + 1] : null;
 		}
 		@Pc(175) Model local175 = null;
 		if (this.aClass157_2 != null) {

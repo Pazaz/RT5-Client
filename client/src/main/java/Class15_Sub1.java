@@ -117,10 +117,10 @@ public final class Class15_Sub1 extends Class15 {
 				}
 			} else if (local45 >= 30 && local45 <= 33) {
 				Static16.aClass19_10.method2823(3000.0F, local11 * 1.5F);
-				((Class6) arg0.anObject7).method5729(Static248.anInt4650, Static211.anInt3780, Static212.anInt3788, Static6.aBooleanArrayArray1, local45 - 30 == 0);
+				((Class6) arg0.anObject7).method5729(Static248.anInt4650, Static211.anInt3780, Scene.anInt3788, Scene.aBooleanArrayArray1, local45 - 30 == 0);
 			} else if (local45 >= 40 && local45 <= 43) {
 				Static16.aClass19_10.method2823(3000.0F, local11 * 1.5F);
-				((Class6) arg0.anObject7).method5729(Static248.anInt4650, Static211.anInt3780, Static212.anInt3788, Static364.aBooleanArrayArray5, local45 - 40 == 0);
+				((Class6) arg0.anObject7).method5729(Static248.anInt4650, Static211.anInt3780, Scene.anInt3788, Scene.aBooleanArrayArray5, local45 - 40 == 0);
 			} else if (local45 == 22) {
 				Static16.aClass19_10.method2880();
 			} else if (local45 == 23) {

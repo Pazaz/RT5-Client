@@ -121,7 +121,7 @@ public final class Static12 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(III)Lclient!gq;")
 	public static Class11_Sub1 method283(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(7) Class67 local7 = Static330.aClass67ArrayArrayArray3[arg0][arg1][arg2];
+		@Pc(7) Class67 local7 = Scene.aClass67ArrayArrayArray3[arg0][arg1][arg2];
 		return local7 == null ? null : local7.aClass11_Sub1_3;
 	}
 }

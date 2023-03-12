@@ -35,7 +35,7 @@ public final class Static386 {
 
 	@OriginalMember(owner = "client!wj", name = "a", descriptor = "(IIII)I")
 	public static int method6032(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		if (Static365.aClass6Array4 == null) {
+		if (Scene.aClass6Array4 == null) {
 			return 0;
 		}
 		@Pc(11) int local11 = arg0 >> 7;
@@ -47,7 +47,7 @@ public final class Static386 {
 		if (arg2 < 3 && (Static359.aByteArrayArrayArray16[1][local11][local15] & 0x2) != 0) {
 			local51 = arg2 + 1;
 		}
-		return Static365.aClass6Array4[local51].method5728(arg0, arg1);
+		return Scene.aClass6Array4[local51].method5728(arg0, arg1);
 	}
 
 }

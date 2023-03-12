@@ -4,13 +4,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!bu")
-public final class Class29_Sub1 extends Class29 {
+public final class SceneBuilder extends Class29 {
 
 	@OriginalMember(owner = "client!bu", name = "M", descriptor = "I")
 	public int anInt922 = 99;
 
 	@OriginalMember(owner = "client!bu", name = "<init>", descriptor = "(IIIZ)V")
-	public Class29_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3) {
+	public SceneBuilder(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3) {
 		super(arg0, arg1, arg2, arg3, client.FloTypes, client.FluTypes);
 	}
 
@@ -50,7 +50,7 @@ public final class Class29_Sub1 extends Class29 {
 								local140 = local503.anInt4370 >> 7;
 								local142 = local503.anInt4371 >> 7;
 								if (local140 >= 0 && local142 >= 0 && local140 < super.anInt900 && local142 < super.anInt911) {
-									local503.anInt4368 = super.anIntArrayArrayArray8[local503.anInt4380][local140][local142] - local503.anInt4368;
+									local503.anInt4368 = super.levelHeightmap[local503.anInt4380][local140][local142] - local503.anInt4368;
 									if (arg3.method2886() > 0) {
 										Static314.method5368(local503);
 									}
@@ -248,7 +248,7 @@ public final class Class29_Sub1 extends Class29 {
 											local289 = local411.anInt4371 >> 7;
 											local157 = local411.anInt4370 >> 7;
 											if (local157 >= 0 && local289 >= 0 && local157 < super.anInt900 && local289 < super.anInt911) {
-												local411.anInt4368 = super.anIntArrayArrayArray8[arg3][local157][local289] - local411.anInt4368;
+												local411.anInt4368 = super.levelHeightmap[arg3][local157][local289] - local411.anInt4368;
 												if (arg6.method2886() > 0) {
 													Static314.method5368(local411);
 												}
@@ -383,20 +383,20 @@ public final class Class29_Sub1 extends Class29 {
 					@Pc(245) int local245;
 					@Pc(265) int local265;
 					@Pc(269) int local269;
-					if ((super.aByteArrayArrayArray9[local21][local61][local25] & 0x1) != 0) {
+					if ((super.levelOccludemap[local21][local61][local25] & 0x1) != 0) {
 						local79 = local25;
 						local81 = local25;
 						local83 = local21;
-						while (local79 > 0 && (super.aByteArrayArrayArray9[local21][local61][local79 - 1] & 0x1) != 0) {
+						while (local79 > 0 && (super.levelOccludemap[local21][local61][local79 - 1] & 0x1) != 0) {
 							local79--;
 						}
 						local109 = local21;
-						while (super.anInt911 > local81 && (super.aByteArrayArrayArray9[local21][local61][local81 + 1] & 0x1) != 0) {
+						while (super.anInt911 > local81 && (super.levelOccludemap[local21][local61][local81 + 1] & 0x1) != 0) {
 							local81++;
 						}
 						label164: while (local83 > 0) {
 							for (local140 = local79; local140 <= local81; local140++) {
-								if ((super.aByteArrayArrayArray9[local83 - 1][local61][local140] & 0x1) == 0) {
+								if ((super.levelOccludemap[local83 - 1][local61][local140] & 0x1) == 0) {
 									break label164;
 								}
 							}
@@ -404,7 +404,7 @@ public final class Class29_Sub1 extends Class29 {
 						}
 						label153: while (local109 < 3) {
 							for (local140 = local79; local140 <= local81; local140++) {
-								if ((super.aByteArrayArrayArray9[local109 + 1][local61][local140] & 0x1) == 0) {
+								if ((super.levelOccludemap[local109 + 1][local61][local140] & 0x1) == 0) {
 									break label153;
 								}
 							}
@@ -412,30 +412,30 @@ public final class Class29_Sub1 extends Class29 {
 						}
 						local140 = (local109 + 1 - local83) * (local81 + 1 - local79);
 						if (local140 >= 2) {
-							local236 = super.anIntArrayArrayArray8[local109][local61][local79] - 240;
-							local245 = super.anIntArrayArrayArray8[local83][local61][local79];
-							Static168.method6474(1, local61 * 128, local61 * 128, local79 * 128, local81 * 128 + 128, local236, local245);
+							local236 = super.levelHeightmap[local109][local61][local79] - 240;
+							local245 = super.levelHeightmap[local83][local61][local79];
+							Scene.addOccluder(1, local61 * 128, local61 * 128, local79 * 128, local81 * 128 + 128, local236, local245);
 							for (local265 = local83; local265 <= local109; local265++) {
 								for (local269 = local79; local269 <= local81; local269++) {
-									super.aByteArrayArrayArray9[local265][local61][local269] &= 0xFFFFFFFE;
+									super.levelOccludemap[local265][local61][local269] &= 0xFFFFFFFE;
 								}
 							}
 						}
 					}
-					if ((super.aByteArrayArrayArray9[local21][local61][local25] & 0x2) != 0) {
+					if ((super.levelOccludemap[local21][local61][local25] & 0x2) != 0) {
 						local79 = local61;
 						local81 = local61;
 						local83 = local21;
-						while (local79 > 0 && (super.aByteArrayArrayArray9[local21][local79 - 1][local25] & 0x2) != 0) {
+						while (local79 > 0 && (super.levelOccludemap[local21][local79 - 1][local25] & 0x2) != 0) {
 							local79--;
 						}
-						while (super.anInt900 > local81 && (super.aByteArrayArrayArray9[local21][local81 + 1][local25] & 0x2) != 0) {
+						while (super.anInt900 > local81 && (super.levelOccludemap[local21][local81 + 1][local25] & 0x2) != 0) {
 							local81++;
 						}
 						local109 = local21;
 						label218: while (local83 > 0) {
 							for (local140 = local79; local140 <= local81; local140++) {
-								if ((super.aByteArrayArrayArray9[local83 - 1][local140][local25] & 0x2) == 0) {
+								if ((super.levelOccludemap[local83 - 1][local140][local25] & 0x2) == 0) {
 									break label218;
 								}
 							}
@@ -443,7 +443,7 @@ public final class Class29_Sub1 extends Class29 {
 						}
 						label207: while (local109 < 3) {
 							for (local140 = local79; local140 <= local81; local140++) {
-								if ((super.aByteArrayArrayArray9[local109 + 1][local140][local25] & 0x2) == 0) {
+								if ((super.levelOccludemap[local109 + 1][local140][local25] & 0x2) == 0) {
 									break label207;
 								}
 							}
@@ -451,26 +451,26 @@ public final class Class29_Sub1 extends Class29 {
 						}
 						local140 = (local109 + 1 - local83) * (local81 + 1 - local79);
 						if (local140 >= 2) {
-							local236 = super.anIntArrayArrayArray8[local109][local79][local25] - 240;
-							local245 = super.anIntArrayArrayArray8[local83][local79][local25];
-							Static168.method6474(2, local79 * 128, local81 * 128 + 128, local25 * 128, local25 * 128, local236, local245);
+							local236 = super.levelHeightmap[local109][local79][local25] - 240;
+							local245 = super.levelHeightmap[local83][local79][local25];
+							Scene.addOccluder(2, local79 * 128, local81 * 128 + 128, local25 * 128, local25 * 128, local236, local245);
 							for (local265 = local83; local265 <= local109; local265++) {
 								for (local269 = local79; local269 <= local81; local269++) {
-									super.aByteArrayArrayArray9[local265][local269][local25] &= 0xFFFFFFFD;
+									super.levelOccludemap[local265][local269][local25] &= 0xFFFFFFFD;
 								}
 							}
 						}
 					}
-					if ((super.aByteArrayArrayArray9[local21][local61][local25] & 0x4) != 0) {
+					if ((super.levelOccludemap[local21][local61][local25] & 0x4) != 0) {
 						local79 = local61;
 						local81 = local61;
-						for (local83 = local25; local83 > 0 && (super.aByteArrayArrayArray9[local21][local61][local83 - 1] & 0x4) != 0; local83--) {
+						for (local83 = local25; local83 > 0 && (super.levelOccludemap[local21][local61][local83 - 1] & 0x4) != 0; local83--) {
 						}
-						for (local109 = local25; local109 < super.anInt911 && (super.aByteArrayArrayArray9[local21][local61][local109 + 1] & 0x4) != 0; local109++) {
+						for (local109 = local25; local109 < super.anInt911 && (super.levelOccludemap[local21][local61][local109 + 1] & 0x4) != 0; local109++) {
 						}
 						label272: while (local79 > 0) {
 							for (local140 = local83; local140 <= local109; local140++) {
-								if ((super.aByteArrayArrayArray9[local21][local79 - 1][local140] & 0x4) == 0) {
+								if ((super.levelOccludemap[local21][local79 - 1][local140] & 0x4) == 0) {
 									break label272;
 								}
 							}
@@ -478,18 +478,18 @@ public final class Class29_Sub1 extends Class29 {
 						}
 						label261: while (super.anInt900 > local81) {
 							for (local140 = local83; local140 <= local109; local140++) {
-								if ((super.aByteArrayArrayArray9[local21][local81 + 1][local140] & 0x4) == 0) {
+								if ((super.levelOccludemap[local21][local81 + 1][local140] & 0x4) == 0) {
 									break label261;
 								}
 							}
 							local81++;
 						}
 						if ((local109 + 1 - local83) * (local81 - (local79 - 1)) >= 4) {
-							local140 = super.anIntArrayArrayArray8[local21][local79][local83];
-							Static168.method6474(4, local79 * 128, local81 * 128 + 128, local83 * 128, local109 * 128 + 128, local140, local140);
+							local140 = super.levelHeightmap[local21][local79][local83];
+							Scene.addOccluder(4, local79 * 128, local81 * 128 + 128, local83 * 128, local109 * 128 + 128, local140, local140);
 							for (@Pc(706) int local706 = local79; local706 <= local81; local706++) {
 								for (local236 = local83; local236 <= local109; local236++) {
-									super.aByteArrayArrayArray9[local21][local706][local236] &= 0xFFFFFFFB;
+									super.levelOccludemap[local21][local706][local236] &= 0xFFFFFFFB;
 								}
 							}
 						}
@@ -497,7 +497,7 @@ public final class Class29_Sub1 extends Class29 {
 				}
 			}
 		}
-		super.aByteArrayArrayArray9 = null;
+		super.levelOccludemap = null;
 	}
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(IIIIIIILclient!wm;Lclient!dg;II)V")
@@ -539,7 +539,7 @@ public final class Class29_Sub1 extends Class29 {
 			local114 = arg2 + (local51 >> 1);
 			local112 = (local51 + 1 >> 1) + arg2;
 		}
-		@Pc(134) Class6 local134 = Static365.aClass6Array4[arg4];
+		@Pc(134) Class6 local134 = Scene.aClass6Array4[arg4];
 		@Pc(158) int local158 = local134.method5719(local93, local114) + local134.method5719(local87, local114) + local134.method5719(local93, local112) + local134.method5719(local87, local112) >> 2;
 		@Pc(166) int local166 = (local48 << 6) + (arg1 << 7);
 		@Pc(174) int local174 = (local51 << 6) + (arg2 << 7);
@@ -609,7 +609,7 @@ public final class Class29_Sub1 extends Class29 {
 						Static329.method5630(local373, false);
 					}
 					if (Static263.aBoolean330 && !super.aBoolean73 && arg8 >= 12 && arg8 <= 17 && arg8 != 13 && arg5 > 0 && local30.anInt1321 != 0) {
-						super.aByteArrayArrayArray9[arg5][arg1][arg2] = (byte) (super.aByteArrayArrayArray9[arg5][arg1][arg2] | 0x4);
+						super.levelOccludemap[arg5][arg1][arg2] = (byte) (super.levelOccludemap[arg5][arg1][arg2] | 0x4);
 					}
 					if (local30.anInt1324 != 0 && arg7 != null) {
 						arg7.method1639(local30.aBoolean114, local51, arg1, !local30.aBoolean105, arg2, local48);
@@ -643,7 +643,7 @@ public final class Class29_Sub1 extends Class29 {
 									local134.method5723(arg1, arg2 + 1, 50);
 								}
 								if (local714 == 1 && !super.aBoolean73) {
-									super.aByteArrayArrayArray9[arg5][arg1][arg2] = (byte) (super.aByteArrayArrayArray9[arg5][arg1][arg2] | 0x1);
+									super.levelOccludemap[arg5][arg1][arg2] = (byte) (super.levelOccludemap[arg5][arg1][arg2] | 0x1);
 								}
 							} else if (arg0 == 1) {
 								if (local30.aBoolean106) {
@@ -651,7 +651,7 @@ public final class Class29_Sub1 extends Class29 {
 									local134.method5723(arg1 + 1, arg2 + 1, 50);
 								}
 								if (local714 == 1 && !super.aBoolean73) {
-									super.aByteArrayArrayArray9[arg5][arg1][arg2 + 1] = (byte) (super.aByteArrayArrayArray9[arg5][arg1][arg2 + 1] | 0x2);
+									super.levelOccludemap[arg5][arg1][arg2 + 1] = (byte) (super.levelOccludemap[arg5][arg1][arg2 + 1] | 0x2);
 								}
 							} else if (arg0 == 2) {
 								if (local30.aBoolean106) {
@@ -659,7 +659,7 @@ public final class Class29_Sub1 extends Class29 {
 									local134.method5723(arg1 + 1, arg2 + 1, 50);
 								}
 								if (local714 == 1 && !super.aBoolean73) {
-									super.aByteArrayArrayArray9[arg5][arg1 + 1][arg2] = (byte) (super.aByteArrayArrayArray9[arg5][arg1 + 1][arg2] | 0x1);
+									super.levelOccludemap[arg5][arg1 + 1][arg2] = (byte) (super.levelOccludemap[arg5][arg1 + 1][arg2] | 0x1);
 								}
 							} else if (arg0 == 3) {
 								if (local30.aBoolean106) {
@@ -667,7 +667,7 @@ public final class Class29_Sub1 extends Class29 {
 									local134.method5723(arg1 + 1, arg2, 50);
 								}
 								if (local714 == 1 && !super.aBoolean73) {
-									super.aByteArrayArrayArray9[arg5][arg1][arg2] = (byte) (super.aByteArrayArrayArray9[arg5][arg1][arg2] | 0x2);
+									super.levelOccludemap[arg5][arg1][arg2] = (byte) (super.levelOccludemap[arg5][arg1][arg2] | 0x2);
 								}
 							}
 						}
@@ -730,17 +730,17 @@ public final class Class29_Sub1 extends Class29 {
 							Static4.method73(arg5, arg1, arg2, local1052, local742);
 							if (local30.anInt1321 == 1 && Static263.aBoolean330 && !super.aBoolean73) {
 								if (arg0 == 0) {
-									super.aByteArrayArrayArray9[arg5][arg1][arg2] = (byte) (super.aByteArrayArrayArray9[arg5][arg1][arg2] | 0x1);
-									super.aByteArrayArrayArray9[arg5][arg1][arg2 + 1] = (byte) (super.aByteArrayArrayArray9[arg5][arg1][arg2 + 1] | 0x2);
+									super.levelOccludemap[arg5][arg1][arg2] = (byte) (super.levelOccludemap[arg5][arg1][arg2] | 0x1);
+									super.levelOccludemap[arg5][arg1][arg2 + 1] = (byte) (super.levelOccludemap[arg5][arg1][arg2 + 1] | 0x2);
 								} else if (arg0 == 1) {
-									super.aByteArrayArrayArray9[arg5][arg1][arg2 + 1] = (byte) (super.aByteArrayArrayArray9[arg5][arg1][arg2 + 1] | 0x2);
-									super.aByteArrayArrayArray9[arg5][arg1 + 1][arg2] = (byte) (super.aByteArrayArrayArray9[arg5][arg1 + 1][arg2] | 0x1);
+									super.levelOccludemap[arg5][arg1][arg2 + 1] = (byte) (super.levelOccludemap[arg5][arg1][arg2 + 1] | 0x2);
+									super.levelOccludemap[arg5][arg1 + 1][arg2] = (byte) (super.levelOccludemap[arg5][arg1 + 1][arg2] | 0x1);
 								} else if (arg0 == 2) {
-									super.aByteArrayArrayArray9[arg5][arg1 + 1][arg2] = (byte) (super.aByteArrayArrayArray9[arg5][arg1 + 1][arg2] | 0x1);
-									super.aByteArrayArrayArray9[arg5][arg1][arg2] = (byte) (super.aByteArrayArrayArray9[arg5][arg1][arg2] | 0x2);
+									super.levelOccludemap[arg5][arg1 + 1][arg2] = (byte) (super.levelOccludemap[arg5][arg1 + 1][arg2] | 0x1);
+									super.levelOccludemap[arg5][arg1][arg2] = (byte) (super.levelOccludemap[arg5][arg1][arg2] | 0x2);
 								} else if (arg0 == 3) {
-									super.aByteArrayArrayArray9[arg5][arg1][arg2] = (byte) (super.aByteArrayArrayArray9[arg5][arg1][arg2] | 0x2);
-									super.aByteArrayArrayArray9[arg5][arg1][arg2] = (byte) (super.aByteArrayArrayArray9[arg5][arg1][arg2] | 0x1);
+									super.levelOccludemap[arg5][arg1][arg2] = (byte) (super.levelOccludemap[arg5][arg1][arg2] | 0x2);
+									super.levelOccludemap[arg5][arg1][arg2] = (byte) (super.levelOccludemap[arg5][arg1][arg2] | 0x1);
 								}
 							}
 							if (local30.anInt1324 != 0 && arg7 != null) {

@@ -16,10 +16,10 @@ public final class Static77 {
 	@OriginalMember(owner = "client!eh", name = "d", descriptor = "(I)V")
 	public static void method1856(@OriginalArg(0) int arg0) {
 		Static66.anInt1624 = arg0;
-		for (@Pc(3) int local3 = 0; local3 < Static72.anInt1684; local3++) {
-			for (@Pc(6) int local6 = 0; local6 < Static210.anInt3773; local6++) {
-				if (Static330.aClass67ArrayArrayArray3[arg0][local3][local6] == null) {
-					Static330.aClass67ArrayArrayArray3[arg0][local3][local6] = new Class67(arg0, local3, local6);
+		for (@Pc(3) int local3 = 0; local3 < Scene.anInt1684; local3++) {
+			for (@Pc(6) int local6 = 0; local6 < Scene.anInt3773; local6++) {
+				if (Scene.aClass67ArrayArrayArray3[arg0][local3][local6] == null) {
+					Scene.aClass67ArrayArrayArray3[arg0][local3][local6] = new Class67(arg0, local3, local6);
 				}
 			}
 		}

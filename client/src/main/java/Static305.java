@@ -20,22 +20,22 @@ public final class Static305 {
 		if (arg1 != arg2 || arg3 != arg4) {
 			for (local16 = arg1; local16 <= arg2; local16++) {
 				for (local20 = arg3; local20 <= arg4; local20++) {
-					if (Static165.anIntArrayArrayArray9[arg0][local16][local20] == -Static193.anInt3556) {
+					if (Scene.anIntArrayArrayArray9[arg0][local16][local20] == -Static193.anInt3556) {
 						return false;
 					}
 				}
 			}
-			local20 = (arg1 << Static322.anInt6029) + 1;
-			@Pc(142) int local142 = (arg3 << Static322.anInt6029) + 2;
-			@Pc(151) int local151 = Static365.aClass6Array4[arg0].method5719(arg1, arg3) + arg5;
+			local20 = (arg1 << Scene.scale) + 1;
+			@Pc(142) int local142 = (arg3 << Scene.scale) + 2;
+			@Pc(151) int local151 = Scene.aClass6Array4[arg0].method5719(arg1, arg3) + arg5;
 			if (!Static46.method1423(local20, local151, local142)) {
 				return false;
 			}
-			@Pc(164) int local164 = (arg2 << Static322.anInt6029) - 1;
+			@Pc(164) int local164 = (arg2 << Scene.scale) - 1;
 			if (!Static46.method1423(local164, local151, local142)) {
 				return false;
 			}
-			@Pc(177) int local177 = (arg4 << Static322.anInt6029) - 1;
+			@Pc(177) int local177 = (arg4 << Scene.scale) - 1;
 			if (!Static46.method1423(local20, local151, local177)) {
 				return false;
 			} else if (Static46.method1423(local164, local151, local177)) {
@@ -44,9 +44,9 @@ public final class Static305 {
 				return false;
 			}
 		} else if (Static35.method1106(arg0, arg1, arg3)) {
-			local16 = arg1 << Static322.anInt6029;
-			local20 = arg3 << Static322.anInt6029;
-			return Static46.method1423(local16 + 1, Static365.aClass6Array4[arg0].method5719(arg1, arg3) + arg5, local20 + 1) && Static46.method1423(local16 + Static256.anInt4716 - 1, Static365.aClass6Array4[arg0].method5719(arg1 + 1, arg3) + arg5, local20 + 1) && Static46.method1423(local16 + Static256.anInt4716 - 1, Static365.aClass6Array4[arg0].method5719(arg1 + 1, arg3 + 1) + arg5, local20 + Static256.anInt4716 - 1) && Static46.method1423(local16 + 1, Static365.aClass6Array4[arg0].method5719(arg1, arg3 + 1) + arg5, local20 + Static256.anInt4716 - 1);
+			local16 = arg1 << Scene.scale;
+			local20 = arg3 << Scene.scale;
+			return Static46.method1423(local16 + 1, Scene.aClass6Array4[arg0].method5719(arg1, arg3) + arg5, local20 + 1) && Static46.method1423(local16 + Scene.anInt4716 - 1, Scene.aClass6Array4[arg0].method5719(arg1 + 1, arg3) + arg5, local20 + 1) && Static46.method1423(local16 + Scene.anInt4716 - 1, Scene.aClass6Array4[arg0].method5719(arg1 + 1, arg3 + 1) + arg5, local20 + Scene.anInt4716 - 1) && Static46.method1423(local16 + 1, Scene.aClass6Array4[arg0].method5719(arg1, arg3 + 1) + arg5, local20 + Scene.anInt4716 - 1);
 		} else {
 			return false;
 		}

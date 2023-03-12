@@ -6,9 +6,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static163 {
 
-	@OriginalMember(owner = "client!jj", name = "Y", descriptor = "Lclient!ku;")
-	public static Class15 aClass15_1;
-
 	@OriginalMember(owner = "client!jj", name = "R", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_68 = new LocalizedString("Loading world map - ", "Lade Weltkarte - ", "Chargement de la mappemonde - ", "Carregando mapa-múndi - ");
 
@@ -139,9 +136,9 @@ public final class Static163 {
 		if (Static3.aBoolean5) {
 			return;
 		}
-		Static175.method3325(Static390.aClass67ArrayArrayArray5);
-		if (Static90.aClass67ArrayArrayArray4 != null) {
-			Static175.method3325(Static90.aClass67ArrayArrayArray4);
+		Static175.method3325(Scene.aClass67ArrayArrayArray5);
+		if (Scene.aClass67ArrayArrayArray4 != null) {
+			Static175.method3325(Scene.aClass67ArrayArrayArray4);
 		}
 		Static3.aBoolean5 = true;
 	}

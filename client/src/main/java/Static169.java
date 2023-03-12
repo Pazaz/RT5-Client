@@ -20,10 +20,10 @@ public final class Static169 {
 
 	@OriginalMember(owner = "client!jr", name = "a", descriptor = "(Lclient!wm;)V")
 	public static void method3212(@OriginalArg(0) Class19 arg0) {
-		for (@Pc(1) int local1 = Static66.anInt1624; local1 < Static92.anInt1914; local1++) {
-			for (@Pc(4) int local4 = 0; local4 < Static72.anInt1684; local4++) {
-				for (@Pc(7) int local7 = 0; local7 < Static210.anInt3773; local7++) {
-					@Pc(16) Class67 local16 = Static330.aClass67ArrayArrayArray3[local1][local4][local7];
+		for (@Pc(1) int local1 = Static66.anInt1624; local1 < Scene.anInt1914; local1++) {
+			for (@Pc(4) int local4 = 0; local4 < Scene.anInt1684; local4++) {
+				for (@Pc(7) int local7 = 0; local7 < Scene.anInt3773; local7++) {
+					@Pc(16) Class67 local16 = Scene.aClass67ArrayArrayArray3[local1][local4][local7];
 					if (local16 != null) {
 						@Pc(21) Class11_Sub1 local21 = local16.aClass11_Sub1_3;
 						@Pc(24) Class11_Sub1 local24 = local16.aClass11_Sub1_2;

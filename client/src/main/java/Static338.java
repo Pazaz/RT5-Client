@@ -39,7 +39,7 @@ public final class Static338 {
 					if (Static190.aClass29_Sub1_63.aByteArrayArrayArray11 != null && Static190.aClass29_Sub1_63.aByteArrayArrayArray11[local86] != null) {
 						local99 = (Static190.aClass29_Sub1_63.aByteArrayArrayArray11[local86][local76][local82] & 0xFF) * 8;
 					}
-					@Pc(132) int local132 = local99 + local56 - Static365.aClass6Array4[local86].method5719(local76, local82);
+					@Pc(132) int local132 = local99 + local56 - Scene.aClass6Array4[local86].method5719(local76, local82);
 					if (local132 > local58) {
 						local58 = local132;
 					}

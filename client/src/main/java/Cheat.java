@@ -291,7 +291,7 @@ public class Cheat {
 				return;
 			}
 			if (cmd.equalsIgnoreCase("getheight")) {
-				DevConsole.log("Height: " + Static365.aClass6Array4[Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78].method5719(Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7));
+				DevConsole.log("Height: " + Scene.aClass6Array4[Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78].method5719(Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7));
 				return;
 			}
 			if (cmd.equalsIgnoreCase("resetminimap")) {

@@ -24,7 +24,7 @@ public final class Static25 {
 
 	@OriginalMember(owner = "client!bi", name = "a", descriptor = "(ILclient!tf;)V")
 	public static void method858(@OriginalArg(0) int arg0, @OriginalArg(1) Class6 arg1) {
-		Static365.aClass6Array4[arg0] = arg1;
+		Scene.aClass6Array4[arg0] = arg1;
 	}
 
 	@OriginalMember(owner = "client!bi", name = "a", descriptor = "(Ljava/lang/String;I)I")

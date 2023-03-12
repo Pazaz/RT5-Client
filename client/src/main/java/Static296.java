@@ -23,18 +23,18 @@ public final class Static296 {
 			}
 		}
 		label51: for (@Pc(22) int local22 = 0; local22 < arg0.anInt7113; local22++) {
-			@Pc(31) long local31 = Static51.aLongArrayArrayArray1[arg1][arg2][arg3];
+			@Pc(31) long local31 = Scene.aLongArrayArrayArray1[arg1][arg2][arg3];
 			@Pc(41) Class2_Sub26_Sub1 local41;
 			while (local31 != 0L) {
-				local41 = Static306.aClass2_Sub26_Sub1Array2[(int) ((local31 & 0xFFFFL) - 1L)];
+				local41 = Scene.aClass2_Sub26_Sub1Array2[(int) ((local31 & 0xFFFFL) - 1L)];
 				local31 >>>= 0x10;
 				if (local41 == arg0.aClass2_Sub26_Sub1Array3[local22]) {
 					continue label51;
 				}
 			}
-			local31 = Static51.aLongArrayArrayArray1[arg1][arg4][arg5];
+			local31 = Scene.aLongArrayArrayArray1[arg1][arg4][arg5];
 			while (local31 != 0L) {
-				local41 = Static306.aClass2_Sub26_Sub1Array2[(int) ((local31 & 0xFFFFL) - 1L)];
+				local41 = Scene.aClass2_Sub26_Sub1Array2[(int) ((local31 & 0xFFFFL) - 1L)];
 				local31 >>>= 0x10;
 				if (local41 == arg0.aClass2_Sub26_Sub1Array3[local22]) {
 					continue label51;
