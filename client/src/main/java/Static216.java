@@ -20,7 +20,7 @@ public final class Static216 {
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(ILclient!nk;ILclient!wm;IILclient!kf;II)V")
 	public static void method3776(@OriginalArg(0) int arg0, @OriginalArg(1) Class161 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) int arg4, @OriginalArg(6) Class78 arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
-		@Pc(14) Class164 local14 = client.aClass125_1.method3379(arg2);
+		@Pc(14) MelType local14 = client.MelTypes.method3379(arg2);
 		if (local14 == null || !local14.aBoolean304 || !local14.method4180(Static214.aClass226_1)) {
 			return;
 		}

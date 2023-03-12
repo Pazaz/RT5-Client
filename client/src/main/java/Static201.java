@@ -301,7 +301,7 @@ public final class Static201 {
 											Static200.method3645(local19);
 										}
 									} else {
-										local19.method4111(client.aClass213_1, client.aClass160_1).method1612(local19.anInt4302 << 3, 0, Static190.aClass19_8, local19.anInt4261, local19.anInt4270 << 3, 0, local90, local19.anInt4248, local95);
+										local19.method4111(client.SkyboxTypes, client.SkyboxSphereTypes).method1612(local19.anInt4302 << 3, 0, Static190.aClass19_8, local19.anInt4261, local19.anInt4270 << 3, 0, local90, local19.anInt4248, local95);
 									}
 								} else if (local19.anInt4272 == 6) {
 									Static99.method2146();

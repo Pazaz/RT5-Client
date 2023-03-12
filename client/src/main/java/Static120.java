@@ -73,7 +73,7 @@ public final class Static120 {
 		if (local16[0] == -1) {
 			Static368.aClass43_1 = null;
 		} else {
-			Static368.aClass43_1 = client.aClass213_1.method5424(local16[0], local16[1], local16[2], client.aClass160_1, local16[3]);
+			Static368.aClass43_1 = client.SkyboxTypes.method5424(local16[0], local16[1], local16[2], client.SkyboxSphereTypes, local16[3]);
 			Static72.anInt1683 = local16[4];
 		}
 	}

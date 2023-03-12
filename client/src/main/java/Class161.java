@@ -843,7 +843,7 @@ public final class Class161 {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(ILclient!sj;Lclient!ng;)Lclient!dd;")
-	public Class43 method4111(@OriginalArg(1) Class213 arg0, @OriginalArg(2) Class160 arg1) {
+	public Class43 method4111(@OriginalArg(1) SkyboxTypeList arg0, @OriginalArg(2) SkyboxSphereTypeList arg1) {
 		if (this.anInt4280 == -1) {
 			return null;
 		}

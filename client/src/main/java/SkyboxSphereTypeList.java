@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ng")
-public final class Class160 {
+public final class SkyboxSphereTypeList {
 
 	@OriginalMember(owner = "client!ng", name = "f", descriptor = "Lclient!hu;")
 	private final LruHashTable aClass98_35 = new LruHashTable(16);
@@ -13,7 +13,7 @@ public final class Class160 {
 	private final Js5 aClass197_62;
 
 	@OriginalMember(owner = "client!ng", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class160(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
+	public SkyboxSphereTypeList(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aClass197_62 = arg2;
 		this.aClass197_62.getGroupCapacity(30);
 	}
@@ -35,17 +35,17 @@ public final class Class160 {
 	}
 
 	@OriginalMember(owner = "client!ng", name = "b", descriptor = "(II)Lclient!ie;")
-	public Class101 method4031(@OriginalArg(0) int arg0) {
+	public SkyboxSphereType method4031(@OriginalArg(0) int arg0) {
 		@Pc(6) LruHashTable local6 = this.aClass98_35;
-		@Pc(16) Class101 local16;
+		@Pc(16) SkyboxSphereType local16;
 		synchronized (this.aClass98_35) {
-			local16 = (Class101) this.aClass98_35.get((long) arg0);
+			local16 = (SkyboxSphereType) this.aClass98_35.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
 		@Pc(38) byte[] local38 = this.aClass197_62.fetchFile(arg0, 30);
-		local16 = new Class101();
+		local16 = new SkyboxSphereType();
 		if (local38 != null) {
 			local16.decode(new Buffer(local38));
 		}

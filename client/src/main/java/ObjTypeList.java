@@ -37,7 +37,7 @@ public final class ObjTypeList {
 	private boolean aBoolean195;
 
 	@OriginalMember(owner = "client!io", name = "c", descriptor = "I")
-	public final int anInt2779;
+	public final int capacity;
 
 	@OriginalMember(owner = "client!io", name = "v", descriptor = "[Ljava/lang/String;")
 	private final String[] aStringArray21;
@@ -53,10 +53,10 @@ public final class ObjTypeList {
 		this.aClass197_42 = arg4;
 		this.aBoolean195 = arg2;
 		if (this.aClass197_42 == null) {
-			this.anInt2779 = 0;
+			this.capacity = 0;
 		} else {
 			@Pc(54) int local54 = this.aClass197_42.capacity() - 1;
-			this.anInt2779 = local54 * 256 + this.aClass197_42.getGroupCapacity(local54);
+			this.capacity = local54 * 256 + this.aClass197_42.getGroupCapacity(local54);
 		}
 		this.aStringArray21 = new String[] { null, null, Static220.aClass79_83.method2267(this.anInt2781), null, null };
 		this.aStringArray22 = new String[] { null, null, null, null, Static239.aClass79_95.method2267(this.anInt2781) };

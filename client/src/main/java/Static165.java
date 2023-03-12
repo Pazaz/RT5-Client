@@ -37,7 +37,7 @@ public final class Static165 {
 		}
 		@Pc(16) int local16 = 0;
 		for (@Pc(18) int local18 = 0; local18 < local10.anIntArray489.length; local18++) {
-			if (local10.anIntArray489[local18] >= 0 && local10.anIntArray489[local18] < client.ObjTypes.anInt2779) {
+			if (local10.anIntArray489[local18] >= 0 && local10.anIntArray489[local18] < client.ObjTypes.capacity) {
 				@Pc(44) ObjType local44 = client.ObjTypes.get(local10.anIntArray489[local18]);
 				@Pc(54) int local54 = local44.method4772(client.ParamTypes.method565(arg0).anInt7023, arg0);
 				if (arg1) {

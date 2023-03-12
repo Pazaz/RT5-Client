@@ -154,7 +154,7 @@ public final class client extends GameShell {
 	@OriginalMember(owner = "client!dh", name = "a", descriptor = "Lclient!ak;")
 	public static BasTypeList BasTypes;
 	@OriginalMember(owner = "client!mr", name = "fb", descriptor = "Lclient!mi;")
-	public static CursorTypeList aClass150_3;
+	public static CursorTypeList CursorTypes;
 	@OriginalMember(owner = "client!cf", name = "F", descriptor = "Lclient!fl;")
 	public static FloTypeList FloTypes;
 	@OriginalMember(owner = "client!tj", name = "t", descriptor = "Lclient!vq;")
@@ -168,7 +168,7 @@ public final class client extends GameShell {
 	@OriginalMember(owner = "client!us", name = "S", descriptor = "Lclient!rh;")
 	public static LocTypeList LocTypes;
 	@OriginalMember(owner = "client!nk", name = "H", descriptor = "Lclient!ki;")
-	public static Class125 aClass125_1;
+	public static MelTypeList MelTypes;
 	@OriginalMember(owner = "client!sm", name = "A", descriptor = "Lclient!ii;")
 	public static MsiTypeList MsiType;
 	@OriginalMember(owner = "client!ae", name = "T", descriptor = "Lclient!ta;")
@@ -180,9 +180,9 @@ public final class client extends GameShell {
 	@OriginalMember(owner = "client!cf", name = "B", descriptor = "Lclient!gp;")
 	public static SeqTypeList SeqTypes;
 	@OriginalMember(owner = "client!ai", name = "R", descriptor = "Lclient!sj;")
-	public static Class213 aClass213_1;
+	public static SkyboxTypeList SkyboxTypes;
 	@OriginalMember(owner = "client!qb", name = "W", descriptor = "Lclient!ng;")
-	public static Class160 aClass160_1;
+	public static SkyboxSphereTypeList SkyboxSphereTypes;
 	@OriginalMember(owner = "client!so", name = "l", descriptor = "Lclient!sg;")
 	public static SpotAnimTypeList SpotAnimTypes;
 	@OriginalMember(owner = "client!vj", name = "V", descriptor = "Lclient!ks;")
@@ -1778,7 +1778,7 @@ public final class client extends GameShell {
 			} else {
 				ParamTypes = new ParamTypeList(game, language, jsArchive2);
 				BasTypes = new BasTypeList(game, language, jsArchive2);
-				aClass150_3 = new CursorTypeList(game, language, jsArchive2, jsArchive8);
+				CursorTypes = new CursorTypeList(game, language, jsArchive2, jsArchive8);
 				EnumTypes = new EnumTypeList(game, language, jsArchive17);
 				FloTypes = new FloTypeList(game, language, jsArchive2);
 				FluTypes = new FluTypeList(game, language, jsArchive2);
@@ -1786,14 +1786,14 @@ public final class client extends GameShell {
 				InvTypes = new InvTypeList(game, language, jsArchive2);
 				LightTypes = new LightTypeList(game, language, jsArchive2);
 				LocTypes = new LocTypeList(game, language, true, jsArchive16, jsArchive7);
-				aClass125_1 = new Class125(game, language, jsArchive2, jsArchive8);
+				MelTypes = new MelTypeList(game, language, jsArchive2, jsArchive8);
 				MsiType = new MsiTypeList(game, language, jsArchive2, jsArchive8);
 				NpcTypes = new NpcTypeList(game, language, true, jsArchive18, jsArchive7);
 				ObjTypes = new ObjTypeList(game, language, true, ParamTypes, jsArchive19, jsArchive7);
 				aClass233_1 = new Class233(game, language, jsArchive2);
 				SeqTypes = new SeqTypeList(game, language, jsArchive20, jsArchive0, jsArchive1);
-				aClass213_1 = new Class213(game, language, jsArchive2);
-				aClass160_1 = new Class160(game, language, jsArchive2);
+				SkyboxTypes = new SkyboxTypeList(game, language, jsArchive2);
+				SkyboxSphereTypes = new SkyboxSphereTypeList(game, language, jsArchive2);
 				SpotAnimTypes = new SpotAnimTypeList(game, language, jsArchive21, jsArchive7);
 				StructTypes = new StructTypeList(game, language, jsArchive2);
 				aClass193_2 = new Class193(game, language, jsArchive2);
@@ -1805,7 +1805,7 @@ public final class client extends GameShell {
 				QuickChatCatTypeList.init(jsArchive24, jsArchive25);
 				mainLoadSecondaryText = Static336.aClass79_130.method2267(language);
 				mainLoadPercentage = 65;
-				Static156.method2798();
+				Equipment.init();
 				LocTypes.method5160(!preferences.method4495(Static77.anInt1762));
 				Static214.aClass226_1 = new Class226();
 				Static174.method1506();
@@ -1828,8 +1828,8 @@ public final class client extends GameShell {
 			}
 		} else if (mainLoadState == 130) {
 			if (jsArchive10.isFileReady("huffman", "")) {
-				@Pc(1242) Class140 local1242 = new Class140(jsArchive10.fetchFile("huffman", ""));
-				Static334.method5687(local1242);
+				@Pc(1242) HuffmanCodec local1242 = new HuffmanCodec(jsArchive10.fetchFile("huffman", ""));
+				WordPack.init(local1242);
 				mainLoadSecondaryText = Static134.aClass79_59.method2267(language);
 				mainLoadState = 140;
 				mainLoadPercentage = 75;
@@ -1866,7 +1866,7 @@ public final class client extends GameShell {
 			}
 		} else if (mainLoadState == 170) {
 			if (jsArchive23.isGroupReady("details")) {
-				Static344.method5512(jsArchive23, FloTypes, FluTypes, LocTypes, aClass125_1, MsiType, Static214.aClass226_1);
+				Static344.method5512(jsArchive23, FloTypes, FluTypes, LocTypes, MelTypes, MsiType, Static214.aClass226_1);
 				mainLoadSecondaryText = Static300.aClass79_118.method2267(language);
 				mainLoadState = 180;
 				mainLoadPercentage = 89;

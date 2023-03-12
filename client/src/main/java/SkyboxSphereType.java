@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ie")
-public final class Class101 {
+public final class SkyboxSphereType {
 
 	@OriginalMember(owner = "client!ie", name = "b", descriptor = "I")
 	public int anInt2686;

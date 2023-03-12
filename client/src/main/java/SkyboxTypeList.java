@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!sj")
-public final class Class213 {
+public final class SkyboxTypeList {
 
 	@OriginalMember(owner = "client!sj", name = "c", descriptor = "Lclient!hu;")
 	private final LruHashTable aClass98_52 = new LruHashTable(16);
@@ -13,7 +13,7 @@ public final class Class213 {
 	private final Js5 aClass197_83;
 
 	@OriginalMember(owner = "client!sj", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class213(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
+	public SkyboxTypeList(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aClass197_83 = arg2;
 		this.aClass197_83.getGroupCapacity(29);
 	}
@@ -35,13 +35,13 @@ public final class Class213 {
 	}
 
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(IIILclient!ng;IB)Lclient!dd;")
-	public Class43 method5424(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class160 arg3, @OriginalArg(4) int arg4) {
+	public Class43 method5424(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) SkyboxSphereTypeList arg3, @OriginalArg(4) int arg4) {
 		@Pc(7) Class112[] local7 = null;
-		@Pc(19) Class245 local19 = this.method5427(arg0);
+		@Pc(19) SkyboxType local19 = this.method5427(arg0);
 		if (local19.anIntArray484 != null) {
 			local7 = new Class112[local19.anIntArray484.length];
 			for (@Pc(29) int local29 = 0; local29 < local7.length; local29++) {
-				@Pc(41) Class101 local41 = arg3.method4031(local19.anIntArray484[local29]);
+				@Pc(41) SkyboxSphereType local41 = arg3.method4031(local19.anIntArray484[local29]);
 				local7[local29] = new Class112(local41.anInt2692, local41.anInt2686, local41.anInt2695, local41.anInt2698, local41.anInt2693, local41.anInt2690, local41.anInt2687, local41.aBoolean191);
 			}
 		}
@@ -57,17 +57,17 @@ public final class Class213 {
 	}
 
 	@OriginalMember(owner = "client!sj", name = "b", descriptor = "(II)Lclient!wa;")
-	private Class245 method5427(@OriginalArg(0) int arg0) {
+	private SkyboxType method5427(@OriginalArg(0) int arg0) {
 		@Pc(6) LruHashTable local6 = this.aClass98_52;
-		@Pc(24) Class245 local24;
+		@Pc(24) SkyboxType local24;
 		synchronized (this.aClass98_52) {
-			local24 = (Class245) this.aClass98_52.get((long) arg0);
+			local24 = (SkyboxType) this.aClass98_52.get((long) arg0);
 		}
 		if (local24 != null) {
 			return local24;
 		}
 		@Pc(41) byte[] local41 = this.aClass197_83.fetchFile(arg0, 29);
-		local24 = new Class245();
+		local24 = new SkyboxType();
 		if (local41 != null) {
 			local24.decode(new Buffer(local41));
 		}

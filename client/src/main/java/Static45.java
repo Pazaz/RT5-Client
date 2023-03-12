@@ -616,7 +616,7 @@ public final class Static45 {
 								}
 							}
 							if (local6.anInt4272 == 5 && local6.anInt4280 != -1) {
-								local6.method4111(client.aClass213_1, client.aClass160_1).method1617(local6.anInt4261, Static190.aClass19_8);
+								local6.method4111(client.SkyboxTypes, client.SkyboxSphereTypes).method1617(local6.anInt4261, Static190.aClass19_8);
 							}
 							Static24.method852(local6);
 							if (local6.anInt4272 == 0) {

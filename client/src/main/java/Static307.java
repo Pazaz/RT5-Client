@@ -23,7 +23,7 @@ public final class Static307 {
 			return;
 		}
 		if (arg0 != -1) {
-			@Pc(25) CursorType local25 = client.aClass150_3.method3731(arg0);
+			@Pc(25) CursorType local25 = client.CursorTypes.method3731(arg0);
 			@Pc(29) Class48 local29 = local25.method5658();
 			if (local29 == null) {
 				arg0 = -1;

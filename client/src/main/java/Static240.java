@@ -19,7 +19,7 @@ public final class Static240 {
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(Lclient!jg;Lclient!np;Lclient!wm;I)V")
-	public static void method4184(@OriginalArg(0) Class2_Sub20 arg0, @OriginalArg(1) Class164 arg1, @OriginalArg(2) Class19 arg2) {
+	public static void method4184(@OriginalArg(0) Class2_Sub20 arg0, @OriginalArg(1) MelType arg1, @OriginalArg(2) Class19 arg2) {
 		@Pc(10) Sprite local10 = arg1.method4183(arg2);
 		if (local10 == null) {
 			return;

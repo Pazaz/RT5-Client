@@ -316,7 +316,7 @@ public final class Static161 {
 				client.jsArchive8.discardPacked();
 				client.jsArchive8.discardUnpacked();
 				client.MsiType.method2707();
-				client.aClass125_1.method3380();
+				client.MelTypes.method3380();
 				Static247.method4299();
 				Static158.method2940("Minimap reset");
 				return;

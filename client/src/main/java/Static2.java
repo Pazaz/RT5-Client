@@ -24,14 +24,14 @@ public final class Static2 {
 		client.VarbitTypes.method3390();
 		client.VarpTypes.method5109();
 		client.BasTypes.method243();
-		client.aClass125_1.method3376();
+		client.MelTypes.method3376();
 		client.MsiType.method2704();
 		client.ParamTypes.method566();
 		client.aClass233_1.method5884();
-		client.aClass213_1.method5423();
-		client.aClass160_1.method4029();
+		client.SkyboxTypes.method5423();
+		client.SkyboxSphereTypes.method4029();
 		client.LightTypes.method4879();
-		client.aClass150_3.method3732();
+		client.CursorTypes.method3732();
 		client.StructTypes.method3472();
 		Static31.method944();
 		Static367.method6146();

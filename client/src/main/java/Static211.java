@@ -30,13 +30,13 @@ public final class Static211 {
 		client.VarpTypes.method5108();
 		client.BasTypes.method241();
 		client.MsiType.method2707();
-		client.aClass125_1.method3380();
+		client.MelTypes.method3380();
 		client.aClass233_1.method5881();
 		client.ParamTypes.method563();
-		client.aClass213_1.method5426();
-		client.aClass160_1.method4033();
+		client.SkyboxTypes.method5426();
+		client.SkyboxSphereTypes.method4033();
 		client.LightTypes.method4885();
-		client.aClass150_3.method3733();
+		client.CursorTypes.method3733();
 		client.StructTypes.method3475();
 		Static140.method2627();
 		Static91.method1962();

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ki")
-public final class Class125 {
+public final class MelTypeList {
 
 	@OriginalMember(owner = "client!ki", name = "g", descriptor = "Lclient!hu;")
 	private LruHashTable aClass98_26 = new LruHashTable(128);
@@ -19,7 +19,7 @@ public final class Class125 {
 	public final Js5 aClass197_50;
 
 	@OriginalMember(owner = "client!ki", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;Lclient!r;)V")
-	public Class125(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
+	public MelTypeList(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
 		this.aClass197_49 = arg2;
 		this.aClass197_50 = arg3;
 		this.aClass197_49.getGroupCapacity(36);
@@ -56,17 +56,17 @@ public final class Class125 {
 	}
 
 	@OriginalMember(owner = "client!ki", name = "b", descriptor = "(II)Lclient!np;")
-	public Class164 method3379(@OriginalArg(1) int arg0) {
+	public MelType method3379(@OriginalArg(1) int arg0) {
 		@Pc(6) LruHashTable local6 = this.aClass98_26;
-		@Pc(16) Class164 local16;
+		@Pc(16) MelType local16;
 		synchronized (this.aClass98_26) {
-			local16 = (Class164) this.aClass98_26.get((long) arg0);
+			local16 = (MelType) this.aClass98_26.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
 		@Pc(33) byte[] local33 = this.aClass197_49.fetchFile(arg0, 36);
-		local16 = new Class164();
+		local16 = new MelType();
 		local16.anInt4430 = arg0;
 		local16.aClass125_2 = this;
 		if (local33 != null) {

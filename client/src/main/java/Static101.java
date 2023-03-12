@@ -43,7 +43,7 @@ public final class Static101 {
 	}
 
 	@OriginalMember(owner = "client!fo", name = "a", descriptor = "(ILclient!np;)Z")
-	public static boolean method2164(@OriginalArg(1) Class164 arg0) {
+	public static boolean method2164(@OriginalArg(1) MelType arg0) {
 		if (arg0 == null) {
 			return false;
 		} else if (!arg0.aBoolean305) {

@@ -11,7 +11,7 @@ public final class Static303 {
 			return;
 		}
 		for (@Pc(20) Class2_Sub20 local20 = (Class2_Sub20) arg0.head(); local20 != null; local20 = (Class2_Sub20) arg0.next()) {
-			@Pc(28) Class164 local28 = Static344.aClass125_4.method3379(local20.anInt2947);
+			@Pc(28) MelType local28 = Static344.aClass125_4.method3379(local20.anInt2947);
 			if (Static101.method2164(local28)) {
 				@Pc(40) boolean local40 = Static286.method4923(local20, arg1, local28);
 				if (local40) {

@@ -72,7 +72,7 @@ public final class Static12 {
 			return;
 		}
 		for (@Pc(170) Class2_Sub15 local170 = (Class2_Sub15) Static197.aClass135_24.head(); local170 != null; local170 = (Class2_Sub15) Static197.aClass135_24.next()) {
-			@Pc(179) Class164 local179 = Static344.aClass125_4.method3379(local170.aClass2_Sub20_1.anInt2947);
+			@Pc(179) MelType local179 = Static344.aClass125_4.method3379(local170.aClass2_Sub20_1.anInt2947);
 			if (local170.method2357(arg0, arg1)) {
 				if (local179.aStringArray41 != null) {
 					if (local179.aStringArray41[4] != null) {

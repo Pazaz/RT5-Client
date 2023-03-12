@@ -20,7 +20,7 @@ public final class Static209 {
 		if (local18 == null) {
 			return null;
 		} else {
-			@Pc(33) Class164 local33 = Static344.aClass125_4.method3379(local18.anInt2947);
+			@Pc(33) MelType local33 = Static344.aClass125_4.method3379(local18.anInt2947);
 			return local33 != null && local33.aBoolean302 && local33.method4180(Static344.anInterface11_2) ? local18 : Static115.method3829();
 		}
 	}

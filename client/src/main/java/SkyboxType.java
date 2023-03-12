@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!wa")
-public final class Class245 {
+public final class SkyboxType {
 
 	@OriginalMember(owner = "client!wa", name = "i", descriptor = "[I")
 	public int[] anIntArray484;

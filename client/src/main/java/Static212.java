@@ -25,7 +25,7 @@ public final class Static212 {
 	}
 
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(IIILclient!je;Lclient!wm;Lclient!jg;Lclient!np;I)V")
-	public static void method3727(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class113 arg3, @OriginalArg(4) Class19 arg4, @OriginalArg(5) Class2_Sub20 arg5, @OriginalArg(6) Class164 arg6) {
+	public static void method3727(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class113 arg3, @OriginalArg(4) Class19 arg4, @OriginalArg(5) Class2_Sub20 arg5, @OriginalArg(6) MelType arg6) {
 		@Pc(14) int local14 = arg5.anInt2948 - arg0 / 2 - 5;
 		@Pc(18) int local18 = arg2 + 2;
 		if (arg6.anInt4437 != 0) {

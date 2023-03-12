@@ -37,13 +37,13 @@ public final class Static59 {
 		client.VarpTypes.method5112();
 		client.BasTypes.method242();
 		client.MsiType.method2705();
-		client.aClass125_1.method3373();
+		client.MelTypes.method3373();
 		client.aClass233_1.method5882();
 		client.ParamTypes.method564();
-		client.aClass213_1.method5422();
-		client.aClass160_1.method4030();
+		client.SkyboxTypes.method5422();
+		client.SkyboxSphereTypes.method4030();
 		client.LightTypes.method4884();
-		client.aClass150_3.method3728();
+		client.CursorTypes.method3728();
 		client.StructTypes.method3473();
 		Static225.method3957();
 		Static13.method345();

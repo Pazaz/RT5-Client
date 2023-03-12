@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!np")
-public final class Class164 {
+public final class MelType {
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "I")
 	private int anInt4404;
@@ -13,7 +13,7 @@ public final class Class164 {
 	private int anInt4407;
 
 	@OriginalMember(owner = "client!np", name = "h", descriptor = "Lclient!ki;")
-	public Class125 aClass125_2;
+	public MelTypeList aClass125_2;
 
 	@OriginalMember(owner = "client!np", name = "j", descriptor = "[I")
 	public int[] anIntArray290;

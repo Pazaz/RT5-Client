@@ -26,7 +26,7 @@ public final class Static344 {
 	private static FluTypeList aClass241_4;
 
 	@OriginalMember(owner = "client!tt", name = "i", descriptor = "Lclient!ki;")
-	public static Class125 aClass125_4;
+	public static MelTypeList aClass125_4;
 
 	@OriginalMember(owner = "client!tt", name = "k", descriptor = "I")
 	public static int anInt6047;
@@ -316,7 +316,7 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!r;Lclient!fl;Lclient!vq;Lclient!rh;Lclient!ki;Lclient!ii;Lclient!wl;)V")
-	public static void method5512(@OriginalArg(0) Js5 arg0, @OriginalArg(1) FloTypeList arg1, @OriginalArg(2) FluTypeList arg2, @OriginalArg(3) LocTypeList arg3, @OriginalArg(4) Class125 arg4, @OriginalArg(5) MsiTypeList arg5, @OriginalArg(6) Interface11 arg6) {
+	public static void method5512(@OriginalArg(0) Js5 arg0, @OriginalArg(1) FloTypeList arg1, @OriginalArg(2) FluTypeList arg2, @OriginalArg(3) LocTypeList arg3, @OriginalArg(4) MelTypeList arg4, @OriginalArg(5) MsiTypeList arg5, @OriginalArg(6) Interface11 arg6) {
 		aClass197_85 = arg0;
 		aClass72_6 = arg1;
 		aClass241_4 = arg2;

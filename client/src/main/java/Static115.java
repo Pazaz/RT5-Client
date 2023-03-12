@@ -34,7 +34,7 @@ public final class Static115 {
 			return null;
 		}
 		for (@Pc(16) Class2_Sub20 local16 = (Class2_Sub20) Static116.aClass75_1.method2178(); local16 != null; local16 = (Class2_Sub20) Static116.aClass75_1.method2178()) {
-			@Pc(24) Class164 local24 = Static344.aClass125_4.method3379(local16.anInt2947);
+			@Pc(24) MelType local24 = Static344.aClass125_4.method3379(local16.anInt2947);
 			if (local24 != null && local24.aBoolean302 && local24.method4180(Static344.anInterface11_2)) {
 				return local16;
 			}

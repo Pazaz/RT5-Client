@@ -4512,10 +4512,10 @@ public final class Static198 {
 							return;
 						}
 					} else if (arg0 < 6900) {
-						@Pc(7207) Class164 local7207;
+						@Pc(7207) MelType local7207;
 						if (arg0 == 6800) {
 							local157 = anIntArray213[--anInt3650];
-							local7207 = client.aClass125_1.method3379(local157);
+							local7207 = client.MelTypes.method3379(local157);
 							if (local7207.aString48 == null) {
 								aStringArray29[anInt3652++] = "";
 								return;
@@ -4525,19 +4525,19 @@ public final class Static198 {
 						}
 						if (arg0 == 6801) {
 							local157 = anIntArray213[--anInt3650];
-							local7207 = client.aClass125_1.method3379(local157);
+							local7207 = client.MelTypes.method3379(local157);
 							anIntArray213[anInt3650++] = local7207.anInt4420;
 							return;
 						}
 						if (arg0 == 6802) {
 							local157 = anIntArray213[--anInt3650];
-							local7207 = client.aClass125_1.method3379(local157);
+							local7207 = client.MelTypes.method3379(local157);
 							anIntArray213[anInt3650++] = local7207.anInt4418;
 							return;
 						}
 						if (arg0 == 6803) {
 							local157 = anIntArray213[--anInt3650];
-							local7207 = client.aClass125_1.method3379(local157);
+							local7207 = client.MelTypes.method3379(local157);
 							anIntArray213[anInt3650++] = local7207.anInt4424;
 							return;
 						}
@@ -4547,10 +4547,10 @@ public final class Static198 {
 							local192 = anIntArray213[anInt3650 + 1];
 							@Pc(7329) ParamType local7329 = client.ParamTypes.method565(local192);
 							if (local7329.method6263()) {
-								aStringArray29[anInt3652++] = client.aClass125_1.method3379(local157).method4185(local192, local7329.aString69);
+								aStringArray29[anInt3652++] = client.MelTypes.method3379(local157).method4185(local192, local7329.aString69);
 								return;
 							}
-							anIntArray213[anInt3650++] = client.aClass125_1.method3379(local157).method4188(local7329.anInt7023, local192);
+							anIntArray213[anInt3650++] = client.MelTypes.method3379(local157).method4188(local7329.anInt7023, local192);
 							return;
 						}
 					}
