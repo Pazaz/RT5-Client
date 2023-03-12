@@ -11,7 +11,7 @@ public final class Static254 {
 	public static short aShort73 = 256;
 
 	@OriginalMember(owner = "client!ok", name = "i", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_39 = new Class98(8);
+	public static final LruHashTable aClass98_39 = new LruHashTable(8);
 
 	@OriginalMember(owner = "client!ok", name = "j", descriptor = "I")
 	public static int anInt4701 = 765;

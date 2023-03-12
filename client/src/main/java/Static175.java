@@ -55,7 +55,7 @@ public final class Static175 {
 							((Interface6) local29.aClass11_Sub1_2).method6082();
 						}
 						for (@Pc(81) Class22 local81 = local29.aClass22_2; local81 != null; local81 = local81.aClass22_1) {
-							@Pc(86) Class11_Sub5 local86 = local81.aClass11_Sub5_1;
+							@Pc(86) Entity local86 = local81.aClass11_Sub5_1;
 							if (local86 instanceof Interface6) {
 								((Interface6) local86).method6082();
 							}

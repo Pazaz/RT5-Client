@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static335 {
 
 	@OriginalMember(owner = "client!ti", name = "r", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_57 = new Class98(200);
+	public static final LruHashTable aClass98_57 = new LruHashTable(200);
 
 	@OriginalMember(owner = "client!ti", name = "L", descriptor = "[B")
 	public static final byte[] aByteArray92 = new byte[2048];

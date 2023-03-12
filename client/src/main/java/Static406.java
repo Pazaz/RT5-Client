@@ -280,7 +280,7 @@ public final class Static406 {
 	}
 
 	@OriginalMember(owner = "client!qn", name = "a", descriptor = "(Lclient!jn;III)Lclient!qn;")
-	public static Class2_Sub12_Sub4 method4998(@OriginalArg(0) Class2_Sub21_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public static Class2_Sub12_Sub4 method4998(@OriginalArg(0) PcmSound arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		return arg0.aByteArray31 == null || arg0.aByteArray31.length == 0 ? null : new Class2_Sub12_Sub4(arg0, arg1, arg2, arg3);
 	}
 
@@ -454,7 +454,7 @@ public final class Static406 {
 	}
 
 	@OriginalMember(owner = "client!qn", name = "a", descriptor = "(Lclient!jn;II)Lclient!qn;")
-	public static Class2_Sub12_Sub4 method5006(@OriginalArg(0) Class2_Sub21_Sub1 arg0, @OriginalArg(2) int arg1) {
+	public static Class2_Sub12_Sub4 method5006(@OriginalArg(0) PcmSound arg0, @OriginalArg(2) int arg1) {
 		return arg0.aByteArray31 == null || arg0.aByteArray31.length == 0 ? null : new Class2_Sub12_Sub4(arg0, (int) ((long) arg0.anInt3176 * 256L * (long) 100 / (long) (AudioChannel.sampleRate * 100)), arg1 << 6);
 	}
 

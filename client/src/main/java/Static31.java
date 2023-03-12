@@ -19,13 +19,13 @@ public final class Static31 {
 
 	@OriginalMember(owner = "client!bp", name = "a", descriptor = "(ZI)V")
 	public static void method944() {
-		@Pc(5) Class98 local5 = Static92.aClass98_9;
+		@Pc(5) LruHashTable local5 = Static92.aClass98_9;
 		synchronized (Static92.aClass98_9) {
-			Static92.aClass98_9.method2615(5);
+			Static92.aClass98_9.clean(5);
 		}
 		local5 = Static349.aClass98_58;
 		synchronized (Static349.aClass98_58) {
-			Static349.aClass98_58.method2615(5);
+			Static349.aClass98_58.clean(5);
 		}
 	}
 

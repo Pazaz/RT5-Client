@@ -11,7 +11,7 @@ public final class Static176 {
 
 	@OriginalMember(owner = "client!kd", name = "a", descriptor = "(Lclient!bf;ILjava/lang/String;)Lclient!kd;")
 	public static Class122 method3326(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(2) String arg1) {
-		@Pc(2) opengl local2 = arg0.anOpengl1;
+		@Pc(2) opengl local2 = arg0.gl;
 		local2.glGenProgramsARB(1, anIntArray202, 0);
 		@Pc(11) int local11 = anIntArray202[0];
 		local2.glBindProgramARB(GL.GL_VERTEX_PROGRAM_ARB, local11);

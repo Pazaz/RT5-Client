@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static287 {
 
-	@OriginalMember(owner = "client!ql", name = "g", descriptor = "Lclient!ui;")
-	public static Class233 aClass233_1;
-
 	@OriginalMember(owner = "client!ql", name = "k", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray52 = new String[5];
 
@@ -44,7 +41,7 @@ public final class Static287 {
 		if (arg1 == 11) {
 			arg1 = 10;
 		}
-		@Pc(15) Class41 local15 = Static359.LocTypeList.method5163(arg0);
+		@Pc(15) LocType local15 = client.LocTypes.method5163(arg0);
 		if (arg1 >= 5 && arg1 <= 8) {
 			arg1 = 4;
 		}
@@ -82,7 +79,7 @@ public final class Static287 {
 		if (!Static18.aBoolean30) {
 			return;
 		}
-		if (Static45.method1404(arg0).anInt1758 == 0 && arg0.anInt4272 != 0) {
+		if (Static45.method1404(arg0).events == 0 && arg0.anInt4272 != 0) {
 			return;
 		}
 		if (arg0.anInt4254 < 0) {

@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static56 {
 
-	@OriginalMember(owner = "client!dd", name = "x", descriptor = "Lclient!rb;")
-	public static Class199 aClass199_1;
-
 	@OriginalMember(owner = "client!dd", name = "r", descriptor = "Lclient!ld;")
 	public static final LinkedList aClass135_13 = new LinkedList();
 
@@ -33,12 +30,12 @@ public final class Static56 {
 	}
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(ILclient!ll;)V")
-	public static void method1613(@OriginalArg(1) Class2_Sub12 arg0) {
+	public static void method1613(@OriginalArg(1) PcmStream arg0) {
 		arg0.aBoolean389 = false;
 		if (arg0.aClass2_Sub21_5 != null) {
 			arg0.aClass2_Sub21_5.anInt3175 = 0;
 		}
-		for (@Pc(23) Class2_Sub12 local23 = arg0.method4978(); local23 != null; local23 = arg0.method4972()) {
+		for (@Pc(23) PcmStream local23 = arg0.method4978(); local23 != null; local23 = arg0.method4972()) {
 			method1613(local23);
 		}
 	}
@@ -66,7 +63,7 @@ public final class Static56 {
 		}
 		for (@Pc(33) Class2_Sub19 local33 = (Class2_Sub19) Static363.aClass135_39.head(); local33 != null; local33 = (Class2_Sub19) Static363.aClass135_39.next()) {
 			@Pc(37) byte local37 = 1;
-			@Pc(42) Class222 local42 = local33.aClass11_Sub5_Sub2_Sub2_1.method4332();
+			@Pc(42) BasType local42 = local33.aClass11_Sub5_Sub2_Sub2_1.method4332();
 			if (local33.aClass11_Sub5_Sub2_Sub2_1.aBoolean317) {
 				local37 = 0;
 			} else if (local42.anInt6263 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6292 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6301 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585 || local42.anInt6271 == local33.aClass11_Sub5_Sub2_Sub2_1.anInt4585) {
@@ -93,7 +90,7 @@ public final class Static56 {
 		}
 		for (@Pc(208) Class2_Sub19 local208 = (Class2_Sub19) Static232.aClass4_86.method80(); local208 != null; local208 = (Class2_Sub19) Static232.aClass4_86.method79()) {
 			@Pc(212) byte local212 = 1;
-			@Pc(217) Class222 local217 = local208.aClass11_Sub5_Sub2_Sub1_2.method4332();
+			@Pc(217) BasType local217 = local208.aClass11_Sub5_Sub2_Sub1_2.method4332();
 			if (local208.aClass11_Sub5_Sub2_Sub1_2.aBoolean317) {
 				local212 = 0;
 			} else if (local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6263 || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6292 || local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585 == local217.anInt6301 || local217.anInt6271 == local208.aClass11_Sub5_Sub2_Sub1_2.anInt4585) {

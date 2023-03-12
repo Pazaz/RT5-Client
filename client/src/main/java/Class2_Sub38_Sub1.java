@@ -171,7 +171,7 @@ public final class Class2_Sub38_Sub1 extends Class2_Sub38 {
 	@OriginalMember(owner = "client!w", name = "c", descriptor = "(I)V")
 	@Override
 	public void method6307(@OriginalArg(0) int arg0) {
-		this.aClass19_Sub1_41.anOpengl1.glUseProgramObjectARB(0);
+		this.aClass19_Sub1_41.gl.glUseProgramObjectARB(0);
 		this.aClass19_Sub1_41.method832(1);
 		this.aClass19_Sub1_41.method848(null);
 		this.aClass19_Sub1_41.method832(0);
@@ -180,7 +180,7 @@ public final class Class2_Sub38_Sub1 extends Class2_Sub38 {
 	@OriginalMember(owner = "client!w", name = "a", descriptor = "(ILclient!al;Lclient!al;)V")
 	@Override
 	public void method6309(@OriginalArg(0) int arg0, @OriginalArg(1) Class8_Sub1 arg1, @OriginalArg(2) Class8_Sub1 arg2) {
-		@Pc(3) opengl local3 = this.aClass19_Sub1_41.anOpengl1;
+		@Pc(3) opengl local3 = this.aClass19_Sub1_41.gl;
 		local3.glPushAttrib(GL.GL_VIEWPORT_BIT);
 		local3.glMatrixMode(GL.GL_PROJECTION);
 		local3.glPushMatrix();

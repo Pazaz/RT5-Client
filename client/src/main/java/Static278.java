@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static278 {
 
-	@OriginalMember(owner = "client!qb", name = "W", descriptor = "Lclient!ng;")
-	public static Class160 aClass160_1;
-
 	@OriginalMember(owner = "client!qb", name = "N", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_110 = new LocalizedString("purple:", "lila:", "violet:", "roxo:");
 

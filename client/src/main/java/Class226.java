@@ -10,14 +10,14 @@ public final class Class226 implements Interface11 {
 	private HashTable aClass4_132 = new HashTable(128);
 
 	@OriginalMember(owner = "client!ts", name = "j", descriptor = "[I")
-	private final int[] anIntArray431 = new int[Static56.aClass199_1.anInt5596];
+	private final int[] anIntArray431 = new int[client.VarpTypes.anInt5596];
 
 	@OriginalMember(owner = "client!ts", name = "b", descriptor = "[I")
-	public final int[] anIntArray430 = new int[Static56.aClass199_1.anInt5596];
+	public final int[] anIntArray430 = new int[client.VarpTypes.anInt5596];
 
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(III)V")
 	public void method5779(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(8) Class134 local8 = Static322.aClass128_1.method3394(arg0);
+		@Pc(8) VarbitType local8 = client.VarbitTypes.method3394(arg0);
 		@Pc(11) int local11 = local8.anInt3554;
 		@Pc(14) int local14 = local8.anInt3548;
 		@Pc(17) int local17 = local8.anInt3549;
@@ -43,8 +43,8 @@ public final class Class226 implements Interface11 {
 
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(B)V")
 	public void method5781() {
-		for (@Pc(3) int local3 = 0; local3 < Static56.aClass199_1.anInt5596; local3++) {
-			@Pc(10) Class171 local10 = Static56.aClass199_1.method5114(local3);
+		for (@Pc(3) int local3 = 0; local3 < client.VarpTypes.anInt5596; local3++) {
+			@Pc(10) Class171 local10 = client.VarpTypes.method5114(local3);
 			if (local10 != null && local10.anInt4700 == 0) {
 				this.anIntArray431[local3] = 0;
 				this.anIntArray430[local3] = 0;
@@ -56,7 +56,7 @@ public final class Class226 implements Interface11 {
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(BI)I")
 	@Override
 	public int method5778(@OriginalArg(1) int arg0) {
-		@Pc(8) Class134 local8 = Static322.aClass128_1.method3394(arg0);
+		@Pc(8) VarbitType local8 = client.VarbitTypes.method3394(arg0);
 		@Pc(11) int local11 = local8.anInt3554;
 		@Pc(20) int local20 = local8.anInt3548;
 		@Pc(23) int local23 = local8.anInt3549;
@@ -102,7 +102,7 @@ public final class Class226 implements Interface11 {
 
 	@OriginalMember(owner = "client!ts", name = "b", descriptor = "(III)V")
 	public void method5786(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(8) Class134 local8 = Static322.aClass128_1.method3394(arg0);
+		@Pc(8) VarbitType local8 = client.VarbitTypes.method3394(arg0);
 		@Pc(11) int local11 = local8.anInt3554;
 		@Pc(14) int local14 = local8.anInt3548;
 		@Pc(17) int local17 = local8.anInt3549;

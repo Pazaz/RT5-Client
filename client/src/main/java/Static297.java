@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static297 {
 
 	@OriginalMember(owner = "client!rb", name = "k", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_44 = new Class98(8);
+	public static final LruHashTable aClass98_44 = new LruHashTable(8);
 
 	@OriginalMember(owner = "client!rb", name = "o", descriptor = "[I")
 	public static final int[] anIntArray383 = new int[] { 2, 1, 1, 1, 2, 2, 2, 1, 3, 3, 3, 2, 0, 4, 0 };
@@ -13,10 +13,10 @@ public final class Static297 {
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(IIIIIII)Lclient!rc;")
 	public static Class42 method5107(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		@Pc(33) long local33 = (long) arg3 * 97549L ^ (long) arg4 * 67481L ^ (long) arg0 * 475427L ^ (long) arg5 * 986053L ^ (long) arg1 * 32147369L ^ (long) arg2 * 76724863L;
-		@Pc(44) Class42 local44 = (Class42) Static254.aClass98_39.method2612(local33);
+		@Pc(44) Class42 local44 = (Class42) Static254.aClass98_39.get(local33);
 		if (local44 == null) {
 			local44 = Static65.aClass19_3.method2877(arg4, arg3, arg0, arg5, arg1, arg2);
-			Static254.aClass98_39.method2624(local33, local44);
+			Static254.aClass98_39.put(local33, local44);
 			return local44;
 		} else {
 			return local44;

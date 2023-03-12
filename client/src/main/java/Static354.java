@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static354 {
 
 	@OriginalMember(owner = "client!un", name = "h", descriptor = "Z")
-	public static boolean aBoolean93;
+	public static boolean stereo;
 
 	@OriginalMember(owner = "client!un", name = "I", descriptor = "Lclient!cc;")
 	public static PrivilegedRequest aClass32_5;
@@ -62,7 +62,7 @@ public final class Static354 {
 		Static183.aClass58Array2 = new Class58[500];
 		Static66.anInt1622 = 0;
 		Static165.anIntArrayArrayArray9 = new int[4][Static72.anInt1684 + 1][Static210.anInt3773 + 1];
-		Static98.aClass11_Sub5Array1 = new Class11_Sub5[5000];
+		Static98.aClass11_Sub5Array1 = new Entity[5000];
 		Static378.anInt7077 = 0;
 		Static6.aBooleanArrayArray1 = new boolean[Static212.anInt3788 + Static212.anInt3788 + 1][Static212.anInt3788 + Static212.anInt3788 + 1];
 		Static364.aBooleanArrayArray5 = new boolean[Static212.anInt3788 + Static212.anInt3788 + 2][Static212.anInt3788 + Static212.anInt3788 + 2];

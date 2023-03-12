@@ -5,9 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static281 {
 
-	@OriginalMember(owner = "client!qf", name = "f", descriptor = "Lclient!wj;")
-	public static final Class236 aClass236_1 = Static17.method4214();
-
 	@OriginalMember(owner = "client!qf", name = "qb", descriptor = "[Ljava/awt/Rectangle;")
 	public static final Rectangle[] aRectangleArray2 = new Rectangle[100];
 

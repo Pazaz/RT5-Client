@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!oo")
-public final class Class12_Sub6 extends Class12 {
+public final class Class12_Sub6 extends ParticleNode {
 
 	@OriginalMember(owner = "client!oo", name = "j", descriptor = "Lclient!mr;")
 	public PathingEntity aClass11_Sub5_Sub2_1;

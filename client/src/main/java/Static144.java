@@ -20,9 +20,9 @@ public final class Static144 {
 	}
 
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "([Lclient!jd;I)V")
-	public static void method2691(@OriginalArg(0) Class13[] arg0) {
+	public static void method2691(@OriginalArg(0) Sprite[] arg0) {
 		Static361.anInt6770 = arg0.length;
-		Static134.aClass13Array12 = new Class13[Static361.anInt6770 + 10];
+		Static134.aClass13Array12 = new Sprite[Static361.anInt6770 + 10];
 		Static72.anIntArray114 = new int[Static361.anInt6770 + 10];
 		Static404.method4609(arg0, 0, Static134.aClass13Array12, 0, Static361.anInt6770);
 		for (@Pc(31) int local31 = 0; local31 < Static361.anInt6770; local31++) {

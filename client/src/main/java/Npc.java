@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!oe", name = "tc", descriptor = "Lclient!fk;")
-	public Class71 type;
+	public NpcType type;
 
 	@OriginalMember(owner = "client!oe", name = "Ac", descriptor = "I")
 	public int anInt4657 = -1;
@@ -18,15 +18,15 @@ public final class Npc extends PathingEntity {
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IILclient!wm;)Z")
 	private boolean method4335(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1) {
 		@Pc(7) int local7 = arg0;
-		@Pc(11) Class222 local11 = this.method4332();
-		@Pc(27) Class157 local27 = super.anInt4597 != -1 && super.anInt4590 == 0 ? Static39.aClass85_1.method2371(super.anInt4597) : null;
-		@Pc(45) Class157 local45 = super.anInt4585 == -1 || super.aBoolean317 && local27 != null ? null : Static39.aClass85_1.method2371(super.anInt4585);
+		@Pc(11) BasType local11 = this.method4332();
+		@Pc(27) Class157 local27 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
+		@Pc(45) Class157 local45 = super.anInt4585 == -1 || super.aBoolean317 && local27 != null ? null : client.SeqTypes.method2371(super.anInt4585);
 		@Pc(48) int local48 = local11.anInt6287;
 		@Pc(51) int local51 = local11.anInt6290;
 		if (local48 != 0 || local51 != 0 || local11.anInt6281 != 0 || local11.anInt6283 != 0) {
 			arg0 |= 0x7;
 		}
-		@Pc(102) Class31 local102 = super.aClass31Array3[0] = this.type.method2086(Static59.aClass7_1, super.anInt4607, local27, arg1, Static39.aClass85_1, super.anInt4629, super.anInt4626, super.anInt4593, local45, arg0, super.aClass20Array3, super.anInt4624, Static214.aClass226_1, super.anInt4592);
+		@Pc(102) Model local102 = super.aClass31Array3[0] = this.type.getBodyModel(client.BasTypes, super.anInt4607, local27, arg1, client.SeqTypes, super.anInt4629, super.anInt4626, super.anInt4593, local45, arg0, super.aClass20Array3, super.anInt4624, Static214.aClass226_1, super.anInt4592);
 		if (local102 == null) {
 			return false;
 		}
@@ -52,8 +52,8 @@ public final class Npc extends PathingEntity {
 		}
 		super.aClass31Array3[1] = null;
 		if (super.anInt4594 != -1 && super.anInt4582 != -1) {
-			@Pc(218) Class91 local218 = Static322.aClass211_2.method5407(super.anInt4594);
-			@Pc(238) Class31 local238 = local218.method2433(super.anInt4612, super.anInt4620, arg1, (local218.aBoolean178 ? 7 : 2) | local7, Static39.aClass85_1, super.anInt4582);
+			@Pc(218) SpotAnimType local218 = client.SpotAnimTypes.method5407(super.anInt4594);
+			@Pc(238) Model local238 = local218.method2433(super.anInt4612, super.anInt4620, arg1, (local218.aBoolean178 ? 7 : 2) | local7, client.SeqTypes, super.anInt4582);
 			if (local238 != null) {
 				local238.method3813(0, -super.anInt4639, 0);
 				if (local218.aBoolean178 && (local48 != 0 || local51 != 0)) {
@@ -75,7 +75,7 @@ public final class Npc extends PathingEntity {
 			if (super.aClass2_Sub6_3.anInt1118 <= client.cycle) {
 				super.aClass2_Sub6_3 = null;
 			} else if (client.cycle >= super.aClass2_Sub6_3.anInt1100) {
-				@Pc(331) Class31 local331 = super.aClass2_Sub6_3.method1360(arg1, local7 | 0x7);
+				@Pc(331) Model local331 = super.aClass2_Sub6_3.method1360(arg1, local7 | 0x7);
 				if (local331 != null) {
 					local331.method3813(-super.xFine + super.aClass2_Sub6_3.anInt1104, super.aClass2_Sub6_3.anInt1114 + -super.anInt6782, -super.zFine + super.aClass2_Sub6_3.anInt1101);
 					if (local119 != 0) {
@@ -90,7 +90,7 @@ public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) Class11 arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		throw new IllegalStateException();
 	}
 
@@ -114,8 +114,8 @@ public final class Npc extends PathingEntity {
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(Z)I")
 	@Override
 	public int method4324() {
-		if (this.type.anIntArray129 != null) {
-			@Pc(18) Class71 local18 = this.type.method2093(Static214.aClass226_1);
+		if (this.type.multiNpcs != null) {
+			@Pc(18) NpcType local18 = this.type.getMultiNpc(Static214.aClass226_1);
 			if (local18 != null && local18.anInt2031 != -1) {
 				return local18.anInt2031;
 			}
@@ -155,12 +155,12 @@ public final class Npc extends PathingEntity {
 			local10--;
 			local15++;
 		}
-		if (super.anInt4597 != -1 && Static39.aClass85_1.method2371(super.anInt4597).anInt4029 == 1) {
+		if (super.anInt4597 != -1 && client.SeqTypes.method2371(super.anInt4597).anInt4029 == 1) {
 			super.anInt4597 = -1;
 		}
 		if (super.anInt4594 != -1) {
-			@Pc(83) Class91 local83 = Static322.aClass211_2.method5407(super.anInt4594);
-			if (local83.aBoolean177 && local83.anInt2448 != -1 && Static39.aClass85_1.method2371(local83.anInt2448).anInt4029 == 1) {
+			@Pc(83) SpotAnimType local83 = client.SpotAnimTypes.method5407(super.anInt4594);
+			if (local83.aBoolean177 && local83.anInt2448 != -1 && client.SeqTypes.method2371(local83.anInt2448).anInt4029 == 1) {
 				super.anInt4594 = -1;
 			}
 		}
@@ -187,12 +187,12 @@ public final class Npc extends PathingEntity {
 		@Pc(22) int local22 = super.aClass248_7.method6441();
 		local17.method3925(local22);
 		local17.method3936(super.xFine, super.anInt6782, super.zFine);
-		@Pc(37) Class222 local37 = this.method4332();
-		@Pc(50) Class71 local50 = this.type.anIntArray129 == null ? this.type : this.type.method2093(Static214.aClass226_1);
+		@Pc(37) BasType local37 = this.method4332();
+		@Pc(50) NpcType local50 = this.type.multiNpcs == null ? this.type : this.type.getMultiNpc(Static214.aClass226_1);
 		if (client.preferences.aBoolean358 && local50.aBoolean142 && local37.aBoolean424) {
-			@Pc(75) Class157 local75 = super.anInt4597 != -1 && super.anInt4590 == 0 ? Static39.aClass85_1.method2371(super.anInt4597) : null;
-			@Pc(92) Class157 local92 = super.anInt4585 == -1 || super.aBoolean317 && local75 != null ? null : Static39.aClass85_1.method2371(super.anInt4585);
-			@Pc(144) Class31 local144 = Static178.method2340(local92 == null ? super.anInt4607 : super.anInt4626, this.type.aByte15 & 0xFF, this.type.aByte14 & 0xFF, super.anInt4596, local92 == null ? local75 : local92, this.type.size, this.type.aShort25 & 0xFFFF, super.aClass31Array3[0], local22, arg0, this.type.aShort24 & 0xFFFF, super.aBoolean318, super.anInt4608, super.anInt4589);
+			@Pc(75) Class157 local75 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
+			@Pc(92) Class157 local92 = super.anInt4585 == -1 || super.aBoolean317 && local75 != null ? null : client.SeqTypes.method2371(super.anInt4585);
+			@Pc(144) Model local144 = Static178.method2340(local92 == null ? super.anInt4607 : super.anInt4626, this.type.aByte15 & 0xFF, this.type.aByte14 & 0xFF, super.anInt4596, local92 == null ? local75 : local92, this.type.size, this.type.aShort25 & 0xFFFF, super.aClass31Array3[0], local22, arg0, this.type.aShort24 & 0xFFFF, super.aBoolean318, super.anInt4608, super.anInt4589);
 			if (local144 != null) {
 				@Pc(149) float local149 = arg0.method2802();
 				@Pc(152) float local152 = arg0.method2860();
@@ -227,12 +227,12 @@ public final class Npc extends PathingEntity {
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IIIIZI)V")
 	public void teleport(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4) {
 		super.aByte78 = (byte) arg1;
-		if (super.anInt4597 != -1 && Static39.aClass85_1.method2371(super.anInt4597).anInt4029 == 1) {
+		if (super.anInt4597 != -1 && client.SeqTypes.method2371(super.anInt4597).anInt4029 == 1) {
 			super.anInt4597 = -1;
 		}
 		if (super.anInt4594 != -1) {
-			@Pc(37) Class91 local37 = Static322.aClass211_2.method5407(super.anInt4594);
-			if (local37.aBoolean177 && local37.anInt2448 != -1 && Static39.aClass85_1.method2371(local37.anInt2448).anInt4029 == 1) {
+			@Pc(37) SpotAnimType local37 = client.SpotAnimTypes.method5407(super.anInt4594);
+			if (local37.aBoolean177 && local37.anInt2448 != -1 && client.SeqTypes.method2371(local37.anInt2448).anInt4029 == 1) {
 				super.anInt4594 = -1;
 			}
 		}
@@ -293,8 +293,8 @@ public final class Npc extends PathingEntity {
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(I)I")
 	@Override
 	public int method4323() {
-		if (this.type.anIntArray129 != null) {
-			@Pc(21) Class71 local21 = this.type.method2093(Static214.aClass226_1);
+		if (this.type.multiNpcs != null) {
+			@Pc(21) NpcType local21 = this.type.getMultiNpc(Static214.aClass226_1);
 			if (local21 != null && local21.anInt2010 != -1) {
 				return local21.anInt2010;
 			}
@@ -310,8 +310,8 @@ public final class Npc extends PathingEntity {
 	@OriginalMember(owner = "client!oe", name = "e", descriptor = "(B)I")
 	@Override
 	protected int method4329() {
-		if (this.type.anIntArray129 != null) {
-			@Pc(19) Class71 local19 = this.type.method2093(Static214.aClass226_1);
+		if (this.type.multiNpcs != null) {
+			@Pc(19) NpcType local19 = this.type.getMultiNpc(Static214.aClass226_1);
 			if (local19 != null && local19.anInt2032 != -1) {
 				return local19.anInt2032;
 			}
@@ -328,7 +328,7 @@ public final class Npc extends PathingEntity {
 	}
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(Lclient!fk;I)V")
-	public void setType(@OriginalArg(0) Class71 arg0) {
+	public void setType(@OriginalArg(0) NpcType arg0) {
 		this.type = arg0;
 		if (super.particleSystem != null) {
 			super.particleSystem.method4359();

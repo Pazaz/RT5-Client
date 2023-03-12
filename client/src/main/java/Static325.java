@@ -21,19 +21,6 @@ public final class Static325 {
 	@OriginalMember(owner = "client!sr", name = "i", descriptor = "[I")
 	public static final int[] anIntArray414 = new int[25];
 
-	@OriginalMember(owner = "client!sr", name = "a", descriptor = "(Lclient!o;Lclient!r;Lclient!r;B)V")
-	public static void method5544(@OriginalArg(0) Interface9 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2) {
-		Static137.aClass197_33 = arg1;
-		anInterface9_1 = arg0;
-		Static308.aClass197_80 = arg2;
-		if (Static137.aClass197_33 != null) {
-			Static21.anInt554 = Static137.aClass197_33.getGroupCapacity(1);
-		}
-		if (Static308.aClass197_80 != null) {
-			Static361.anInt6769 = Static308.aClass197_80.getGroupCapacity(1);
-		}
-	}
-
 	@OriginalMember(owner = "client!sr", name = "a", descriptor = "(BII)Z")
 	public static boolean method5545(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		return (Static359.aByteArrayArrayArray16[1][arg1][arg0] & 0x2) != 0;

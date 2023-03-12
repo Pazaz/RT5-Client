@@ -9,7 +9,7 @@ public final class Static116 {
 	public static Js5 aClass197_26;
 
 	@OriginalMember(owner = "client!go", name = "s", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array8;
+	public static Sprite[] aClass13Array8;
 
 	@OriginalMember(owner = "client!go", name = "i", descriptor = "I")
 	public static int anInt2357 = 0;
@@ -24,7 +24,7 @@ public final class Static116 {
 	public static int anInt2360 = 0;
 
 	@OriginalMember(owner = "client!go", name = "q", descriptor = "[Lclient!nt;")
-	public static final Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array3 = new Class2_Sub2_Sub13[14];
+	public static final AnimFrameset[] aClass2_Sub2_Sub13Array3 = new AnimFrameset[14];
 
 	@OriginalMember(owner = "client!go", name = "a", descriptor = "(BI)[B")
 	public static byte[] method2364(@OriginalArg(1) int arg0) {

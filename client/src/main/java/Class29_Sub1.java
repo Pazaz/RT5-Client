@@ -11,7 +11,7 @@ public final class Class29_Sub1 extends Class29 {
 
 	@OriginalMember(owner = "client!bu", name = "<init>", descriptor = "(IIIZ)V")
 	public Class29_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3) {
-		super(arg0, arg1, arg2, arg3, Static39.aClass72_3, Static336.aClass241_5);
+		super(arg0, arg1, arg2, arg3, client.FloTypes, client.FluTypes);
 	}
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "([IIILclient!wm;Lclient!bt;Z)V")
@@ -42,7 +42,7 @@ public final class Class29_Sub1 extends Class29 {
 							for (local496 = 0; local496 < local118; local496++) {
 								@Pc(503) Class2_Sub26_Sub1 local503 = new Class2_Sub26_Sub1(arg4);
 								if (local503.anInt4376 == 31) {
-									@Pc(516) Class66 local516 = Static90.aClass190_3.method4878(arg4.g2());
+									@Pc(516) LightType local516 = client.LightTypes.method4878(arg4.g2());
 									local503.method4154(local516.anInt1880, local516.anInt1879, local516.anInt1877, local516.anInt1883);
 								}
 								local503.anInt4370 += arg2 << 7;
@@ -235,7 +235,7 @@ public final class Class29_Sub1 extends Class29 {
 									for (local404 = 0; local404 < local117; local404++) {
 										@Pc(411) Class2_Sub26_Sub1 local411 = new Class2_Sub26_Sub1(arg0);
 										if (local411.anInt4376 == 31) {
-											@Pc(422) Class66 local422 = Static90.aClass190_3.method4878(arg0.g2());
+											@Pc(422) LightType local422 = client.LightTypes.method4878(arg0.g2());
 											local411.method4154(local422.anInt1880, local422.anInt1879, local422.anInt1877, local422.anInt1883);
 										}
 										local157 = local411.anInt4370 >> 7;
@@ -508,7 +508,7 @@ public final class Class29_Sub1 extends Class29 {
 		if (arg5 < this.anInt922) {
 			this.anInt922 = arg5;
 		}
-		@Pc(30) Class41 local30 = Static359.LocTypeList.method5163(arg3);
+		@Pc(30) LocType local30 = client.LocTypes.method5163(arg3);
 		if (Static77.anInt1762 == 1 && local30.aBoolean112) {
 			return;
 		}
@@ -552,7 +552,7 @@ public final class Class29_Sub1 extends Class29 {
 			return;
 		}
 		if (arg8 != 22) {
-			@Pc(373) Class11_Sub5 local373;
+			@Pc(373) Entity local373;
 			@Pc(334) Class11_Sub5_Sub1 local334;
 			@Pc(369) int local369;
 			if (arg8 == 10 || arg8 == 11) {
@@ -566,7 +566,7 @@ public final class Class29_Sub1 extends Class29 {
 					local373 = new Class11_Sub5_Sub5(arg6, local30, arg5, arg4, local166, local158, local174, super.aBoolean73, arg1, arg1 + local48 - 1, arg2, arg2 + local51 - 1, arg8, arg0, arg9);
 					local369 = 15;
 				}
-				@Pc(417) Class11_Sub5 local417 = Static105.method2207(arg5, arg1, arg2, Interface6.class);
+				@Pc(417) Entity local417 = Static105.method2207(arg5, arg1, arg2, Interface6.class);
 				@Pc(419) boolean local419 = false;
 				if (local417 instanceof Class11_Sub5_Sub6 && arg1 == local417.aShort103 && local417.aShort101 == arg2) {
 					((Class11_Sub5_Sub6) local417).aClass11_Sub5_2 = local373;
@@ -591,7 +591,7 @@ public final class Class29_Sub1 extends Class29 {
 					arg7.method1639(local30.aBoolean114, local51, arg1, !local30.aBoolean105, arg2, local48);
 				}
 			} else {
-				@Pc(621) Class11_Sub5 local621;
+				@Pc(621) Entity local621;
 				if (arg8 >= 12 && arg8 <= 17 || arg8 >= 18 && arg8 <= 21) {
 					if (local220) {
 						local334 = new Class11_Sub5_Sub1(arg6, local30, arg5, arg4, local166, local158, local174, super.aBoolean73, arg1, arg1 + local48 - 1, arg2, local51 + arg2 - 1, arg8, arg0, local186);
@@ -828,7 +828,7 @@ public final class Class29_Sub1 extends Class29 {
 									local1893 = 16;
 									local1899 = (Interface6) Static12.method283(arg5, arg1, arg2);
 									if (local1899 != null) {
-										local1893 = Static359.LocTypeList.method5163(local1899.method6085()).anInt1340;
+										local1893 = client.LocTypes.method5163(local1899.method6085()).anInt1340;
 									}
 									if (local220) {
 										local1965 = new Class11_Sub3_Sub2(arg6, local30, arg4, local166, local158, local174, super.aBoolean73, 0, Static325.anIntArray413[arg0] * local1893, local1893 * Static148.anIntArray172[arg0], arg8, arg0);
@@ -849,7 +849,7 @@ public final class Class29_Sub1 extends Class29 {
 									local1893 = 8;
 									local1899 = (Interface6) Static12.method283(arg5, arg1, arg2);
 									if (local1899 != null) {
-										local1893 = Static359.LocTypeList.method5163(local1899.method6085()).anInt1340 / 2;
+										local1893 = client.LocTypes.method5163(local1899.method6085()).anInt1340 / 2;
 									}
 									if (local220) {
 										local1965 = new Class11_Sub3_Sub2(arg6, local30, arg4, local166, local158, local174, super.aBoolean73, arg0, Static325.anIntArray413[arg0] * local1893, local1893 * Static148.anIntArray172[arg0], arg8, arg0 + 4);
@@ -888,7 +888,7 @@ public final class Class29_Sub1 extends Class29 {
 									@Pc(2204) int local2204 = 8;
 									@Pc(2210) Interface6 local2210 = (Interface6) Static12.method283(arg5, arg1, arg2);
 									if (local2210 != null) {
-										local2204 = Static359.LocTypeList.method5163(local2210.method6085()).anInt1340 / 2;
+										local2204 = client.LocTypes.method5163(local2210.method6085()).anInt1340 / 2;
 									}
 									@Pc(2251) Class11_Sub3 local2251;
 									@Pc(2270) Class11_Sub3 local2270;
@@ -959,7 +959,7 @@ public final class Class29_Sub1 extends Class29 {
 				@Pc(62) int local62 = local58 >> 2;
 				@Pc(66) int local66 = local58 & 0x3;
 				if (arg1 == local54 && local50 >= arg3 && arg3 + 8 > local50 && arg9 <= local44 && arg9 + 8 > local44) {
-					@Pc(98) Class41 local98 = Static359.LocTypeList.method5163(local16);
+					@Pc(98) LocType local98 = client.LocTypes.method5163(local16);
 					@Pc(115) int local115 = arg5 + Static50.method1528(local50 & 0x7, arg0, local66, local98.anInt1356, local98.anInt1327, local44 & 0x7);
 					@Pc(132) int local132 = arg8 + Static33.method4205(arg0, local66, local50 & 0x7, local98.anInt1356, local44 & 0x7, local98.anInt1327);
 					if (local115 > 0 && local132 > 0 && super.anInt900 - 1 > local115 && local132 < super.anInt911 - 1) {
@@ -998,7 +998,7 @@ public final class Class29_Sub1 extends Class29 {
 		if (local7 == null) {
 			return;
 		}
-		@Pc(70) Class41 local70 = Static359.LocTypeList.method5163(local7.method6085());
+		@Pc(70) LocType local70 = client.LocTypes.method5163(local7.method6085());
 		@Pc(74) int local74 = local7.method6081();
 		@Pc(78) int local78 = local7.method6084();
 		if (local70.method1522()) {
@@ -1018,7 +1018,7 @@ public final class Class29_Sub1 extends Class29 {
 				return;
 			}
 			if (arg3 == 2) {
-				@Pc(168) Class11_Sub5 local168 = Static105.method2207(arg0, arg1, arg4, Interface6.class);
+				@Pc(168) Entity local168 = Static105.method2207(arg0, arg1, arg4, Interface6.class);
 				if (local168 instanceof Class11_Sub5_Sub6 && arg1 == local168.aShort103 && local168.aShort101 == arg4) {
 					((Class11_Sub5_Sub6) local168).aClass11_Sub5_2 = null;
 				} else {

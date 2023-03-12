@@ -124,7 +124,7 @@ public final class Class200 {
 		if (!this.method5119()) {
 			return;
 		}
-		@Pc(7) opengl local7 = this.aClass19_Sub1_32.anOpengl1;
+		@Pc(7) opengl local7 = this.aClass19_Sub1_32.gl;
 		this.aClass19_Sub1_32.method824();
 		this.aClass19_Sub1_32.method779(0);
 		this.aClass19_Sub1_32.method2898();

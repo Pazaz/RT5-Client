@@ -9,9 +9,6 @@ public final class Static359 {
 	@OriginalMember(owner = "client!us", name = "H", descriptor = "I")
 	public static int anInt6702;
 
-	@OriginalMember(owner = "client!us", name = "S", descriptor = "Lclient!rh;")
-	public static Class202 LocTypeList;
-
 	@OriginalMember(owner = "client!us", name = "V", descriptor = "[[[B")
 	public static byte[][][] aByteArrayArrayArray16;
 

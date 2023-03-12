@@ -32,7 +32,7 @@ public final class Static330 {
 
 	@OriginalMember(owner = "client!td", name = "c", descriptor = "(IB)Lclient!uo;")
 	public static Class235 method5655(@OriginalArg(0) int arg0) {
-		@Pc(10) Class235 local10 = (Class235) Static233.aClass98_37.method2612((long) arg0);
+		@Pc(10) Class235 local10 = (Class235) Static233.aClass98_37.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -42,7 +42,7 @@ public final class Static330 {
 			local10.method5933(new Buffer(local28));
 		}
 		local10.method5931();
-		Static233.aClass98_37.method2624((long) arg0, local10);
+		Static233.aClass98_37.put((long) arg0, local10);
 		return local10;
 	}
 
@@ -155,7 +155,7 @@ public final class Static330 {
 							}
 						}
 						if (local491 != null) {
-							@Pc(525) Class222 local525 = local491.method4332();
+							@Pc(525) BasType local525 = local491.method4332();
 							if (local525.anIntArrayArray53 != null && local525.anIntArrayArray53[local483] != null) {
 								local487 = local525.anIntArrayArray53[local483][0];
 								@Pc(547) int local547 = local525.anIntArrayArray53[local483][2];
@@ -238,7 +238,7 @@ public final class Static330 {
 			} else if (arg0 == Static72.aClass210_3) {
 				local12 = Protocol.inboundBuffer.g2();
 				local23 = Protocol.inboundBuffer.g1();
-				Static359.LocTypeList.method5163(local12).method1521(local23);
+				client.LocTypes.method5163(local12).method1521(local23);
 			} else if (Static110.aClass210_5 == arg0) {
 				Protocol.inboundBuffer.g1();
 				local12 = Protocol.inboundBuffer.g1();

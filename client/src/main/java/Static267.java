@@ -44,7 +44,7 @@ public final class Static267 {
 	public static int anInt4926;
 
 	@OriginalMember(owner = "client!pf", name = "O", descriptor = "[Lclient!p;")
-	public static Class175[] aClass175Array1;
+	public static Class175[] codebooks;
 
 	@OriginalMember(owner = "client!pf", name = "P", descriptor = "[F")
 	public static float[] aFloatArray26;
@@ -53,7 +53,7 @@ public final class Static267 {
 	public static float[] aFloatArray27;
 
 	@OriginalMember(owner = "client!pf", name = "R", descriptor = "[Lclient!pt;")
-	public static Class186[] aClass186Array1;
+	public static VorbisResidue[] aClass186Array1;
 
 	@OriginalMember(owner = "client!pf", name = "S", descriptor = "[F")
 	public static float[] aFloatArray28;
@@ -79,7 +79,7 @@ public final class Static267 {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "c", descriptor = "(I)I")
-	public static int method4513(@OriginalArg(0) int arg0) {
+	public static int readBits(@OriginalArg(0) int arg0) {
 		@Pc(1) int local1 = 0;
 		@Pc(3) int local3 = 0;
 		@Pc(8) int local8;
@@ -103,8 +103,8 @@ public final class Static267 {
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "([B)V")
 	private static void method4514(@OriginalArg(0) byte[] arg0) {
 		method4517(arg0);
-		anInt4926 = 0x1 << method4513(4);
-		anInt4923 = 0x1 << method4513(4);
+		anInt4926 = 0x1 << readBits(4);
+		anInt4923 = 0x1 << readBits(4);
 		aFloatArray23 = new float[anInt4923];
 		@Pc(24) int local24;
 		@Pc(28) int local28;
@@ -151,38 +151,38 @@ public final class Static267 {
 				anIntArray337 = local185;
 			}
 		}
-		local24 = method4513(8) + 1;
-		aClass175Array1 = new Class175[local24];
+		local24 = readBits(8) + 1;
+		codebooks = new Class175[local24];
 		for (local28 = 0; local28 < local24; local28++) {
-			aClass175Array1[local28] = new Class175();
+			codebooks[local28] = new Class175();
 		}
-		local32 = method4513(6) + 1;
+		local32 = readBits(6) + 1;
 		for (local36 = 0; local36 < local32; local36++) {
-			method4513(16);
+			readBits(16);
 		}
-		@Pc(269) int local269 = method4513(6) + 1;
+		@Pc(269) int local269 = readBits(6) + 1;
 		aClass238Array1 = new Class238[local269];
 		for (local41 = 0; local41 < local269; local41++) {
 			aClass238Array1[local41] = new Class238();
 		}
-		@Pc(290) int local290 = method4513(6) + 1;
-		aClass186Array1 = new Class186[local290];
+		@Pc(290) int local290 = readBits(6) + 1;
+		aClass186Array1 = new VorbisResidue[local290];
 		for (local86 = 0; local86 < local290; local86++) {
-			aClass186Array1[local86] = new Class186();
+			aClass186Array1[local86] = new VorbisResidue();
 		}
-		@Pc(311) int local311 = method4513(6) + 1;
+		@Pc(311) int local311 = readBits(6) + 1;
 		aClass88Array1 = new Class88[local311];
 		for (local138 = 0; local138 < local311; local138++) {
 			aClass88Array1[local138] = new Class88();
 		}
-		@Pc(332) int local332 = method4513(6) + 1;
+		@Pc(332) int local332 = readBits(6) + 1;
 		aBooleanArray43 = new boolean[local332];
 		anIntArray336 = new int[local332];
 		for (local191 = 0; local191 < local332; local191++) {
-			aBooleanArray43[local191] = method4522() != 0;
-			method4513(16);
-			method4513(16);
-			anIntArray336[local191] = method4513(8);
+			aBooleanArray43[local191] = readBit() != 0;
+			readBits(16);
+			readBits(16);
+			anIntArray336[local191] = readBits(8);
 		}
 	}
 
@@ -218,7 +218,7 @@ public final class Static267 {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "b", descriptor = "()I")
-	public static int method4522() {
+	public static int readBit() {
 		@Pc(7) int local7 = aByteArray58[anInt4925] >> anInt4922 & 0x1;
 		anInt4922++;
 		anInt4925 += anInt4922 >> 3;

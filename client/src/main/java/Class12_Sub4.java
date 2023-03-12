@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!nf")
-public final class Class12_Sub4 extends Class12 {
+public final class Class12_Sub4 extends ParticleNode {
 
 	@OriginalMember(owner = "client!nf", name = "l", descriptor = "I")
 	public int anInt4073;
@@ -16,7 +16,7 @@ public final class Class12_Sub4 extends Class12 {
 	public int anInt4075;
 
 	@OriginalMember(owner = "client!nf", name = "p", descriptor = "Lclient!hp;")
-	public Class11 aClass11_1;
+	public BaseEntity aClass11_1;
 
 	@OriginalMember(owner = "client!nf", name = "r", descriptor = "I")
 	public int anInt4076;

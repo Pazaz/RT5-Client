@@ -24,7 +24,7 @@ public final class Static111 {
 				@Pc(298) Class11_Sub1_Sub1 local298;
 				@Pc(54) Class11_Sub3 local54;
 				@Pc(117) Class11_Sub2 local117;
-				@Pc(162) Class11_Sub5 local162;
+				@Pc(162) Entity local162;
 				@Pc(90) Class11_Sub3_Sub1 local90;
 				@Pc(136) Class11_Sub2_Sub2 local136;
 				if (client.cycle >= local15.anInt1118) {
@@ -95,7 +95,7 @@ public final class Static111 {
 							local15.unlink();
 						} else {
 							Static188.method3466(local15.anInt1110, local15.anInt1117, local15.anInt1109, Interface6.class);
-							@Pc(191) Class41 local191 = Static359.LocTypeList.method5163(local15.anInt1112);
+							@Pc(191) LocType local191 = client.LocTypes.method5163(local15.anInt1112);
 							@Pc(207) int local207;
 							@Pc(204) int local204;
 							if (local15.anInt1111 == 1 || local15.anInt1111 == 3) {

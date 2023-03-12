@@ -61,7 +61,7 @@ public final class Class12_Sub1_Sub1_Sub1 extends Class12_Sub1_Sub1 {
 			this.method4220();
 			return;
 		}
-		@Pc(36) Class12_Sub5 local36 = this.aClass12_Sub8_1.aClass12_Sub5_6;
+		@Pc(36) ParticleSystem local36 = this.aClass12_Sub8_1.aClass12_Sub5_6;
 		@Pc(40) Class235 local40 = this.aClass12_Sub8_1.aClass235_1;
 		@Pc(42) Class6[] local42 = Static365.aClass6Array4;
 		@Pc(50) int local50 = local42[local36.anInt4679].method5719(local4, local9);
@@ -173,7 +173,7 @@ public final class Class12_Sub1_Sub1_Sub1 extends Class12_Sub1_Sub1 {
 		@Pc(17) int local17 = super.anInt4465 >> Static111.anInt2254;
 		@Pc(22) int local22 = super.anInt4470 >> Static111.anInt2254;
 		@Pc(27) int local27 = super.anInt4467 >> Static111.anInt2254;
-		@Pc(31) Class12_Sub5 local31 = this.aClass12_Sub8_1.aClass12_Sub5_6;
+		@Pc(31) ParticleSystem local31 = this.aClass12_Sub8_1.aClass12_Sub5_6;
 		@Pc(35) Class235 local35 = this.aClass12_Sub8_1.aClass235_1;
 		@Pc(65) int local65;
 		@Pc(82) int local82;

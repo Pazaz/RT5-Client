@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!od")
-public final class MidiPcmStream extends Class2_Sub12 {
+public final class MidiPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!od", name = "Lb", descriptor = "I")
 	private int anInt4565;
@@ -119,7 +119,7 @@ public final class MidiPcmStream extends Class2_Sub12 {
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "()Lclient!ll;")
 	@Override
-	public synchronized Class2_Sub12 method4972() {
+	public synchronized PcmStream method4972() {
 		return null;
 	}
 
@@ -715,7 +715,7 @@ public final class MidiPcmStream extends Class2_Sub12 {
 
 	@OriginalMember(owner = "client!od", name = "d", descriptor = "()Lclient!ll;")
 	@Override
-	public synchronized Class2_Sub12 method4978() {
+	public synchronized PcmStream method4978() {
 		return this.aClass2_Sub12_Sub1_1;
 	}
 
@@ -787,7 +787,7 @@ public final class MidiPcmStream extends Class2_Sub12 {
 		if (local105 == null) {
 			return;
 		}
-		@Pc(113) Class2_Sub21_Sub1 local113 = local105.aClass2_Sub21_Sub1Array1[arg1];
+		@Pc(113) PcmSound local113 = local105.aClass2_Sub21_Sub1Array1[arg1];
 		if (local113 == null) {
 			return;
 		}

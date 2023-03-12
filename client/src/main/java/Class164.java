@@ -135,19 +135,19 @@ public final class Class164 {
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(BLclient!bt;)V")
-	public void method4182(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Buffer arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}
-			this.method4186(local5, arg0);
+			this.decode(local5, arg0);
 		}
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(BLclient!wm;)Lclient!jd;")
-	public Class13 method4183(@OriginalArg(1) Class19 arg0) {
-		@Pc(28) Class13 local28 = (Class13) this.aClass125_2.aClass98_27.method2612((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29));
+	public Sprite method4183(@OriginalArg(1) Class19 arg0) {
+		@Pc(28) Sprite local28 = (Sprite) this.aClass125_2.aClass98_27.get((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29));
 		if (local28 != null) {
 			return local28;
 		}
@@ -155,7 +155,7 @@ public final class Class164 {
 		@Pc(48) Class48 local48 = Static396.method1682(this.aClass125_2.aClass197_50, this.anInt4413, 0);
 		if (local48 != null) {
 			local28 = arg0.method2891(local48);
-			this.aClass125_2.aClass98_27.method2624((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29), local28);
+			this.aClass125_2.aClass98_27.put((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29), local28);
 		}
 		return local28;
 	}
@@ -171,7 +171,7 @@ public final class Class164 {
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(IILclient!bt;)V")
-	private void method4186(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
+	private void decode(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
 		if (arg0 == 1) {
 			this.anInt4420 = arg1.g2();
 		} else if (arg0 == 2) {
@@ -294,17 +294,17 @@ public final class Class164 {
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(Lclient!wm;ZZ)Lclient!jd;")
-	public Class13 method4189(@OriginalArg(0) Class19 arg0, @OriginalArg(2) boolean arg1) {
+	public Sprite method4189(@OriginalArg(0) Class19 arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(17) int local17 = arg1 ? this.anInt4438 : this.anInt4420;
 		@Pc(24) int local24 = local17 | arg0.anInt2836 << 29;
-		@Pc(33) Class13 local33 = (Class13) this.aClass125_2.aClass98_27.method2612((long) local24);
+		@Pc(33) Sprite local33 = (Sprite) this.aClass125_2.aClass98_27.get((long) local24);
 		if (local33 != null) {
 			return local33;
 		} else if (this.aClass125_2.aClass197_50.isFileReady(local17)) {
 			@Pc(53) Class48 local53 = Static396.method1682(this.aClass125_2.aClass197_50, local17, 0);
 			if (local53 != null) {
 				local33 = arg0.method2891(local53);
-				this.aClass125_2.aClass98_27.method2624((long) local24, local33);
+				this.aClass125_2.aClass98_27.put((long) local24, local33);
 			}
 			return local33;
 		} else {

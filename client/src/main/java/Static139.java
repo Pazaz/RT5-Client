@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static139 {
 
-	@OriginalMember(owner = "client!hs", name = "v", descriptor = "I")
-	public static int anInt2594;
-
 	@OriginalMember(owner = "client!hs", name = "s", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_60 = new LocalizedString("Unable to find ", "Spieler kann nicht gefunden werden: ", "Impossible de trouver ", "Não é possível encontrar ");
 
@@ -23,7 +20,7 @@ public final class Static139 {
 	public static int anInt2595 = -1;
 
 	@OriginalMember(owner = "client!hs", name = "A", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_18 = new Class98(4);
+	public static final LruHashTable aClass98_18 = new LruHashTable(4);
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(II)V")
 	public static void method2585(@OriginalArg(0) int arg0) {

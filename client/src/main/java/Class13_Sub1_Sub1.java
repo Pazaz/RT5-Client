@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!b")
-public final class Class13_Sub1_Sub1 extends Class13_Sub1 {
+public final class Class13_Sub1_Sub1 extends SoftwareSprite {
 
 	@OriginalMember(owner = "client!b", name = "H", descriptor = "[I")
 	private final int[] anIntArray22;

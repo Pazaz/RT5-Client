@@ -32,7 +32,7 @@ public final class Class11_Sub1_Sub1 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(ILclient!wm;I)Lclient!gn;")
 	@Override
-	public Class31 method6088(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
+	public Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
 		return null;
 	}
 
@@ -43,7 +43,7 @@ public final class Class11_Sub1_Sub1 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) Class11 arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 	}
 
 	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(I)I")

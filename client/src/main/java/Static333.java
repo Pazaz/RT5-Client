@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static333 {
 
 	@OriginalMember(owner = "client!tg", name = "F", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_21;
+	public static Sprite aClass13_21;
 
 	@OriginalMember(owner = "client!tg", name = "K", descriptor = "[Ljava/lang/String;")
 	public static String[] aStringArray67;
 
 	@OriginalMember(owner = "client!tg", name = "m", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_65 = new Class98(20);
+	public static final LruHashTable aClass98_65 = new LruHashTable(20);
 
 	@OriginalMember(owner = "client!tg", name = "I", descriptor = "Lclient!s;")
 	public static final Class210 aClass210_17 = new Class210(10, 6);

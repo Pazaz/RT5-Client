@@ -86,7 +86,7 @@ public final class Class239 {
 	}
 
 	@OriginalMember(owner = "client!vi", name = "a", descriptor = "(I[Ljava/lang/String;Ljava/lang/String;[I[Lclient!jd;)I")
-	public int method6119(@OriginalArg(1) String[] arg0, @OriginalArg(2) String arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) Class13[] arg3) {
+	public int method6119(@OriginalArg(1) String[] arg0, @OriginalArg(2) String arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) Sprite[] arg3) {
 		if (arg1 == null) {
 			return 0;
 		}
@@ -238,7 +238,7 @@ public final class Class239 {
 	}
 
 	@OriginalMember(owner = "client!vi", name = "a", descriptor = "(ILjava/lang/String;B[Lclient!jd;I)I")
-	public int method6121(@OriginalArg(1) String arg0, @OriginalArg(3) Class13[] arg1) {
+	public int method6121(@OriginalArg(1) String arg0, @OriginalArg(3) Sprite[] arg1) {
 		@Pc(4) int local4 = this.anInt6841;
 		@Pc(21) int local21 = this.method6119(Static112.aStringArray18, arg0, new int[] { 100 }, arg1);
 		@Pc(27) int local27 = local4 * (local21 - 1);
@@ -251,12 +251,12 @@ public final class Class239 {
 	}
 
 	@OriginalMember(owner = "client!vi", name = "a", descriptor = "(BLjava/lang/String;I[Lclient!jd;)I")
-	public int method6123(@OriginalArg(1) String arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class13[] arg2) {
+	public int method6123(@OriginalArg(1) String arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Sprite[] arg2) {
 		return this.method6119(Static112.aStringArray18, arg0, new int[] { arg1 }, arg2);
 	}
 
 	@OriginalMember(owner = "client!vi", name = "a", descriptor = "([Lclient!jd;Ljava/lang/String;BI)I")
-	public int method6124(@OriginalArg(0) Class13[] arg0, @OriginalArg(1) String arg1, @OriginalArg(3) int arg2) {
+	public int method6124(@OriginalArg(0) Sprite[] arg0, @OriginalArg(1) String arg1, @OriginalArg(3) int arg2) {
 		@Pc(18) int local18 = this.method6119(Static112.aStringArray18, arg1, new int[] { arg2 }, arg0);
 		@Pc(20) int local20 = 0;
 		for (@Pc(22) int local22 = 0; local22 < local18; local22++) {
@@ -279,7 +279,7 @@ public final class Class239 {
 	}
 
 	@OriginalMember(owner = "client!vi", name = "a", descriptor = "([Lclient!jd;ZLjava/lang/String;)I")
-	public int method6127(@OriginalArg(0) Class13[] arg0, @OriginalArg(2) String arg1) {
+	public int method6127(@OriginalArg(0) Sprite[] arg0, @OriginalArg(2) String arg1) {
 		if (arg1 == null) {
 			return 0;
 		}

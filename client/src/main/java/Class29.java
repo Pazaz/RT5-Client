@@ -10,7 +10,7 @@ public class Class29 {
 	public byte[][][] aByteArrayArrayArray11;
 
 	@OriginalMember(owner = "client!mo", name = "e", descriptor = "Lclient!vq;")
-	private final Class241 aClass241_2;
+	private final FluTypeList aClass241_2;
 
 	@OriginalMember(owner = "client!mo", name = "p", descriptor = "Z")
 	public final boolean aBoolean73;
@@ -25,7 +25,7 @@ public class Class29 {
 	public final int anInt912;
 
 	@OriginalMember(owner = "client!mo", name = "k", descriptor = "Lclient!fl;")
-	private final Class72 aClass72_2;
+	private final FloTypeList aClass72_2;
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "[[[B")
 	private final byte[][][] aByteArrayArrayArray7;
@@ -50,7 +50,7 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "<init>", descriptor = "(IIIZLclient!fl;Lclient!vq;)V")
-	protected Class29(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) Class72 arg4, @OriginalArg(5) Class241 arg5) {
+	protected Class29(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) FloTypeList arg4, @OriginalArg(5) FluTypeList arg5) {
 		this.aClass241_2 = arg5;
 		this.aBoolean73 = arg3;
 		this.anInt900 = arg1;
@@ -121,8 +121,8 @@ public class Class29 {
 					@Pc(43) byte local43 = this.aByteArrayArrayArray7[arg4][local7][local11];
 					@Pc(54) int local54 = this.aByteArrayArrayArray10[arg4][local7][local11] & 0xFF;
 					@Pc(65) int local65 = this.aByteArrayArrayArray8[arg4][local7][local11] & 0xFF;
-					@Pc(82) Class148 local82 = local54 == 0 ? null : this.aClass72_2.method2105(local54 - 1);
-					@Pc(97) Class225 local97 = local65 == 0 ? null : this.aClass241_2.method6271(local65 - 1);
+					@Pc(82) FloType local82 = local54 == 0 ? null : this.aClass72_2.get(local54 - 1);
+					@Pc(97) FluType local97 = local65 == 0 ? null : this.aClass241_2.method6271(local65 - 1);
 					@Pc(99) int local99 = 0;
 					@Pc(101) int local101 = 0;
 					if (local34 != 0) {
@@ -143,34 +143,34 @@ public class Class29 {
 						@Pc(157) boolean local157 = false;
 						@Pc(181) int local181;
 						@Pc(187) int local187;
-						if (local82 == null || local82.anInt3769 == -1 && local82.anInt3757 == -1 && local82.anInt3762 == -1) {
+						if (local82 == null || local82.baseColor == -1 && local82.secondaryColor == -1 && local82.texture == -1) {
 							for (local181 = 0; local181 < local101; local181++) {
 								local146[local141] = -1;
 								local141++;
 							}
 						} else {
-							local181 = arg3.method2871() ? local82.anInt3762 : local82.anInt3759;
+							local181 = arg3.method2871() ? local82.texture : local82.anInt3759;
 							if (Static141.aBoolean190) {
 								local181 = -1;
 							}
 							for (local187 = 0; local187 < local101; local187++) {
 								local152[local141] = local181;
 								local155[local141] = local82.anInt3763;
-								if (local82.anInt3769 == -1) {
+								if (local82.baseColor == -1) {
 									local146[local141] = -1;
 								} else {
-									local146[local141] = local82.anInt3769;
+									local146[local141] = local82.baseColor;
 								}
-								if (local82.anInt3757 == -1) {
+								if (local82.secondaryColor == -1) {
 									local149[local141] = -1;
 								} else {
 									local157 = true;
-									local149[local141] = local82.anInt3757;
+									local149[local141] = local82.secondaryColor;
 								}
 								local141++;
 							}
 							if (!this.aBoolean73 && arg4 == 0) {
-								Static199.method5241(local7, local11, local82.anInt3771, local82.anInt3766 * 8, local82.anInt3764);
+								Static199.method5241(local7, local11, local82.waterColor, local82.waterOpacity * 8, local82.anInt3764);
 							}
 						}
 						if (!local157) {
@@ -247,7 +247,7 @@ public class Class29 {
 							if (local65 == 0 && local34 != 0) {
 								local583 = false;
 							}
-							if (local54 > 0 && local82 != null && !local82.aBoolean244) {
+							if (local54 > 0 && local82 != null && !local82.occludeUnderlay) {
 								local583 = false;
 							}
 							if (local583 && local368 == local372 && local454 == local368 && local460 == local368) {
@@ -549,7 +549,7 @@ public class Class29 {
 					if (this.anInt900 > local99) {
 						local118 = this.aByteArrayArrayArray8[local44][local99][local93] & 0xFF;
 						if (local118 > 0) {
-							@Pc(128) Class225 local128 = this.aClass241_2.method6271(local118 - 1);
+							@Pc(128) FluType local128 = this.aClass241_2.method6271(local118 - 1);
 							Static65.anIntArray110[local93] += local128.anInt6378;
 							Static274.anIntArray352[local93] += local128.anInt6379;
 							Static322.anIntArray404[local93] += local128.anInt6381;
@@ -561,7 +561,7 @@ public class Class29 {
 					if (local118 >= 0) {
 						local187 = this.aByteArrayArrayArray8[local44][local118][local93] & 0xFF;
 						if (local187 > 0) {
-							@Pc(199) Class225 local199 = this.aClass241_2.method6271(local187 - 1);
+							@Pc(199) FluType local199 = this.aClass241_2.method6271(local187 - 1);
 							Static65.anIntArray110[local93] -= local199.anInt6378;
 							Static274.anIntArray352[local93] -= local199.anInt6379;
 							Static322.anIntArray404[local93] -= local199.anInt6381;
@@ -623,11 +623,11 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(Lclient!tq;Lclient!mg;II[[B[ZILclient!wm;III[[BI[[B)V")
-	private void method1095(@OriginalArg(0) Class225 arg0, @OriginalArg(1) Class148 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte[][] arg4, @OriginalArg(5) boolean[] arg5, @OriginalArg(6) int arg6, @OriginalArg(7) Class19 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) byte[][] arg10, @OriginalArg(12) int arg11, @OriginalArg(13) byte[][] arg12) {
+	private void method1095(@OriginalArg(0) FluType arg0, @OriginalArg(1) FloType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte[][] arg4, @OriginalArg(5) boolean[] arg5, @OriginalArg(6) int arg6, @OriginalArg(7) Class19 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) byte[][] arg10, @OriginalArg(12) int arg11, @OriginalArg(13) byte[][] arg12) {
 		@Pc(49) int local49;
 		if (arg1 != null && arg0 != null || arg0 != null && arg6 == 12 || arg1 != null && arg6 == 0) {
-			@Pc(30) boolean[] local30 = arg1 != null && arg1.aBoolean245 ? Static207.aBooleanArrayArray2[arg6] : Static283.aBooleanArrayArray3[arg6];
-			@Pc(59) Class148 local59;
+			@Pc(30) boolean[] local30 = arg1 != null && arg1.blendTexture ? Static207.aBooleanArrayArray2[arg6] : Static283.aBooleanArrayArray3[arg6];
+			@Pc(59) FloType local59;
 			@Pc(76) byte local76;
 			@Pc(92) int local92;
 			@Pc(99) int local99;
@@ -635,17 +635,17 @@ public class Class29 {
 				if (arg11 > 0) {
 					local49 = arg12[arg11 - 1][arg2 - 1] & 0xFF;
 					if (local49 > 0) {
-						local59 = this.aClass72_2.method2105(local49 - 1);
-						if (local59.anInt3769 != -1 && local59.aBoolean245) {
+						local59 = this.aClass72_2.get(local49 - 1);
+						if (local59.baseColor != -1 && local59.blendTexture) {
 							local76 = arg4[arg11 - 1][arg2 - 1];
 							local92 = arg10[arg11 - 1][arg2 - 1] * 2 + 4 & 0x7;
 							local99 = Static78.method5699(arg7, local59);
 							if (Static375.aBooleanArrayArray6[local76][local92]) {
-								Static382.anIntArray490[0] = local59.anInt3769;
+								Static382.anIntArray490[0] = local59.baseColor;
 								Static319.anIntArray403[0] = local99;
-								Static259.anIntArray323[0] = arg7.method2871() ? local59.anInt3762 : local59.anInt3759;
+								Static259.anIntArray323[0] = arg7.method2871() ? local59.texture : local59.anInt3759;
 								Static11.anIntArray12[0] = local59.anInt3763;
-								Static6.anIntArray4[0] = local59.anInt3772;
+								Static6.anIntArray4[0] = local59.textureBrightness;
 								Static82.anIntArray120[0] = 256;
 							}
 						}
@@ -654,17 +654,17 @@ public class Class29 {
 				if (arg11 < arg8 - 1) {
 					local49 = arg12[arg11 + 1][arg2 - 1] & 0xFF;
 					if (local49 > 0) {
-						local59 = this.aClass72_2.method2105(local49 - 1);
-						if (local59.anInt3769 != -1 && local59.aBoolean245) {
+						local59 = this.aClass72_2.get(local49 - 1);
+						if (local59.baseColor != -1 && local59.blendTexture) {
 							local76 = arg4[arg11 + 1][arg2 - 1];
 							local92 = arg10[arg11 + 1][arg2 - 1] * 2 + 6 & 0x7;
 							local99 = Static78.method5699(arg7, local59);
 							if (Static375.aBooleanArrayArray6[local76][local92]) {
-								Static382.anIntArray490[2] = local59.anInt3769;
+								Static382.anIntArray490[2] = local59.baseColor;
 								Static319.anIntArray403[2] = local99;
-								Static259.anIntArray323[2] = arg7.method2871() ? local59.anInt3762 : local59.anInt3759;
+								Static259.anIntArray323[2] = arg7.method2871() ? local59.texture : local59.anInt3759;
 								Static11.anIntArray12[2] = local59.anInt3763;
-								Static6.anIntArray4[2] = local59.anInt3772;
+								Static6.anIntArray4[2] = local59.textureBrightness;
 								Static82.anIntArray120[2] = 512;
 							}
 						}
@@ -675,17 +675,17 @@ public class Class29 {
 				if (arg11 > 0) {
 					local49 = arg12[arg11 - 1][arg2 + 1] & 0xFF;
 					if (local49 > 0) {
-						local59 = this.aClass72_2.method2105(local49 - 1);
-						if (local59.anInt3769 != -1 && local59.aBoolean245) {
+						local59 = this.aClass72_2.get(local49 - 1);
+						if (local59.baseColor != -1 && local59.blendTexture) {
 							local76 = arg4[arg11 - 1][arg2 + 1];
 							local92 = arg10[arg11 - 1][arg2 + 1] * 2 + 2 & 0x7;
 							local99 = Static78.method5699(arg7, local59);
 							if (Static375.aBooleanArrayArray6[local76][local92]) {
-								Static382.anIntArray490[6] = local59.anInt3769;
+								Static382.anIntArray490[6] = local59.baseColor;
 								Static319.anIntArray403[6] = local99;
-								Static259.anIntArray323[6] = arg7.method2871() ? local59.anInt3762 : local59.anInt3759;
+								Static259.anIntArray323[6] = arg7.method2871() ? local59.texture : local59.anInt3759;
 								Static11.anIntArray12[6] = local59.anInt3763;
-								Static6.anIntArray4[6] = local59.anInt3772;
+								Static6.anIntArray4[6] = local59.textureBrightness;
 								Static82.anIntArray120[6] = 64;
 							}
 						}
@@ -694,17 +694,17 @@ public class Class29 {
 				if (arg11 < arg8 - 1) {
 					local49 = arg12[arg11 + 1][arg2 + 1] & 0xFF;
 					if (local49 > 0) {
-						local59 = this.aClass72_2.method2105(local49 - 1);
-						if (local59.anInt3769 != -1 && local59.aBoolean245) {
+						local59 = this.aClass72_2.get(local49 - 1);
+						if (local59.baseColor != -1 && local59.blendTexture) {
 							local76 = arg4[arg11 + 1][arg2 + 1];
 							local92 = arg10[arg11 + 1][arg2 + 1] * 2 & 0x7;
 							local99 = Static78.method5699(arg7, local59);
 							if (Static375.aBooleanArrayArray6[local76][local92]) {
-								Static382.anIntArray490[4] = local59.anInt3769;
+								Static382.anIntArray490[4] = local59.baseColor;
 								Static319.anIntArray403[4] = local99;
-								Static259.anIntArray323[4] = arg7.method2871() ? local59.anInt3762 : local59.anInt3759;
+								Static259.anIntArray323[4] = arg7.method2871() ? local59.texture : local59.anInt3759;
 								Static11.anIntArray12[4] = local59.anInt3763;
-								Static6.anIntArray4[4] = local59.anInt3772;
+								Static6.anIntArray4[4] = local59.textureBrightness;
 								Static82.anIntArray120[4] = 128;
 							}
 						}
@@ -718,28 +718,28 @@ public class Class29 {
 			if (arg2 > 0) {
 				local49 = arg12[arg11][arg2 - 1] & 0xFF;
 				if (local49 > 0) {
-					local59 = this.aClass72_2.method2105(local49 - 1);
-					if (local59.anInt3769 != -1) {
+					local59 = this.aClass72_2.get(local49 - 1);
+					if (local59.baseColor != -1) {
 						local76 = arg4[arg11][arg2 - 1];
 						local512 = arg10[arg11][arg2 - 1];
-						if (local59.aBoolean245) {
+						if (local59.blendTexture) {
 							local99 = 2;
 							local523 = local512 * 2 + 4;
 							local528 = Static78.method5699(arg7, local59);
 							for (local530 = 0; local530 < 3; local530++) {
 								local99 &= 0x7;
 								local523 &= 0x7;
-								if (Static375.aBooleanArrayArray6[local76][local523] && local59.anInt3772 >= Static6.anIntArray4[local99]) {
-									Static382.anIntArray490[local99] = local59.anInt3769;
+								if (Static375.aBooleanArrayArray6[local76][local523] && local59.textureBrightness >= Static6.anIntArray4[local99]) {
+									Static382.anIntArray490[local99] = local59.baseColor;
 									Static319.anIntArray403[local99] = local528;
-									Static259.anIntArray323[local99] = arg7.method2871() ? local59.anInt3762 : local59.anInt3759;
+									Static259.anIntArray323[local99] = arg7.method2871() ? local59.texture : local59.anInt3759;
 									Static11.anIntArray12[local99] = local59.anInt3763;
-									if (Static6.anIntArray4[local99] == local59.anInt3772) {
+									if (Static6.anIntArray4[local99] == local59.textureBrightness) {
 										Static82.anIntArray120[local99] |= 0x20;
 									} else {
 										Static82.anIntArray120[local99] = 32;
 									}
-									Static6.anIntArray4[local99] = local59.anInt3772;
+									Static6.anIntArray4[local99] = local59.textureBrightness;
 								}
 								local523++;
 								local99--;
@@ -756,28 +756,28 @@ public class Class29 {
 			if (arg2 < arg9 - 1) {
 				local49 = arg12[arg11][arg2 + 1] & 0xFF;
 				if (local49 > 0) {
-					local59 = this.aClass72_2.method2105(local49 - 1);
-					if (local59.anInt3769 != -1) {
+					local59 = this.aClass72_2.get(local49 - 1);
+					if (local59.baseColor != -1) {
 						local76 = arg4[arg11][arg2 + 1];
 						local512 = arg10[arg11][arg2 + 1];
-						if (local59.aBoolean245) {
+						if (local59.blendTexture) {
 							local99 = 4;
 							local523 = local512 * 2 + 2;
 							local528 = Static78.method5699(arg7, local59);
 							for (local530 = 0; local530 < 3; local530++) {
 								local99 &= 0x7;
 								local523 &= 0x7;
-								if (Static375.aBooleanArrayArray6[local76][local523] && local59.anInt3772 >= Static6.anIntArray4[local99]) {
-									Static382.anIntArray490[local99] = local59.anInt3769;
+								if (Static375.aBooleanArrayArray6[local76][local523] && local59.textureBrightness >= Static6.anIntArray4[local99]) {
+									Static382.anIntArray490[local99] = local59.baseColor;
 									Static319.anIntArray403[local99] = local528;
-									Static259.anIntArray323[local99] = arg7.method2871() ? local59.anInt3762 : local59.anInt3759;
+									Static259.anIntArray323[local99] = arg7.method2871() ? local59.texture : local59.anInt3759;
 									Static11.anIntArray12[local99] = local59.anInt3763;
-									if (local59.anInt3772 == Static6.anIntArray4[local99]) {
+									if (local59.textureBrightness == Static6.anIntArray4[local99]) {
 										Static82.anIntArray120[local99] |= 0x10;
 									} else {
 										Static82.anIntArray120[local99] = 16;
 									}
-									Static6.anIntArray4[local99] = local59.anInt3772;
+									Static6.anIntArray4[local99] = local59.textureBrightness;
 								}
 								local99++;
 								local523--;
@@ -794,28 +794,28 @@ public class Class29 {
 			if (arg11 > 0) {
 				local49 = arg12[arg11 - 1][arg2] & 0xFF;
 				if (local49 > 0) {
-					local59 = this.aClass72_2.method2105(local49 - 1);
-					if (local59.anInt3769 != -1) {
+					local59 = this.aClass72_2.get(local49 - 1);
+					if (local59.baseColor != -1) {
 						local76 = arg4[arg11 - 1][arg2];
 						local512 = arg10[arg11 - 1][arg2];
-						if (local59.aBoolean245) {
+						if (local59.blendTexture) {
 							local99 = 6;
 							local523 = local512 * 2 + 4;
 							local528 = Static78.method5699(arg7, local59);
 							for (local530 = 0; local530 < 3; local530++) {
 								local523 &= 0x7;
 								local99 &= 0x7;
-								if (Static375.aBooleanArrayArray6[local76][local523] && Static6.anIntArray4[local99] <= local59.anInt3772) {
-									Static382.anIntArray490[local99] = local59.anInt3769;
+								if (Static375.aBooleanArrayArray6[local76][local523] && Static6.anIntArray4[local99] <= local59.textureBrightness) {
+									Static382.anIntArray490[local99] = local59.baseColor;
 									Static319.anIntArray403[local99] = local528;
-									Static259.anIntArray323[local99] = arg7.method2871() ? local59.anInt3762 : local59.anInt3759;
+									Static259.anIntArray323[local99] = arg7.method2871() ? local59.texture : local59.anInt3759;
 									Static11.anIntArray12[local99] = local59.anInt3763;
-									if (Static6.anIntArray4[local99] == local59.anInt3772) {
+									if (Static6.anIntArray4[local99] == local59.textureBrightness) {
 										Static82.anIntArray120[local99] |= 0x8;
 									} else {
 										Static82.anIntArray120[local99] = 8;
 									}
-									Static6.anIntArray4[local99] = local59.anInt3772;
+									Static6.anIntArray4[local99] = local59.textureBrightness;
 								}
 								local523--;
 								local99++;
@@ -832,28 +832,28 @@ public class Class29 {
 			if (arg11 < arg8 - 1) {
 				local49 = arg12[arg11 + 1][arg2] & 0xFF;
 				if (local49 > 0) {
-					local59 = this.aClass72_2.method2105(local49 - 1);
-					if (local59.anInt3769 != -1) {
+					local59 = this.aClass72_2.get(local49 - 1);
+					if (local59.baseColor != -1) {
 						local76 = arg4[arg11 + 1][arg2];
 						local512 = arg10[arg11 + 1][arg2];
-						if (local59.aBoolean245) {
+						if (local59.blendTexture) {
 							local99 = 4;
 							local523 = local512 * 2 + 6;
 							local528 = Static78.method5699(arg7, local59);
 							for (local530 = 0; local530 < 3; local530++) {
 								local99 &= 0x7;
 								local523 &= 0x7;
-								if (Static375.aBooleanArrayArray6[local76][local523] && local59.anInt3772 >= Static6.anIntArray4[local99]) {
-									Static382.anIntArray490[local99] = local59.anInt3769;
+								if (Static375.aBooleanArrayArray6[local76][local523] && local59.textureBrightness >= Static6.anIntArray4[local99]) {
+									Static382.anIntArray490[local99] = local59.baseColor;
 									Static319.anIntArray403[local99] = local528;
-									Static259.anIntArray323[local99] = arg7.method2871() ? local59.anInt3762 : local59.anInt3759;
+									Static259.anIntArray323[local99] = arg7.method2871() ? local59.texture : local59.anInt3759;
 									Static11.anIntArray12[local99] = local59.anInt3763;
-									if (Static6.anIntArray4[local99] == local59.anInt3772) {
+									if (Static6.anIntArray4[local99] == local59.textureBrightness) {
 										Static82.anIntArray120[local99] |= 0x4;
 									} else {
 										Static82.anIntArray120[local99] = 4;
 									}
-									Static6.anIntArray4[local99] = local59.anInt3772;
+									Static6.anIntArray4[local99] = local59.textureBrightness;
 								}
 								local99--;
 								local523++;
@@ -872,22 +872,22 @@ public class Class29 {
 			return;
 		}
 		@Pc(1242) int local1242 = Static78.method5699(arg7, arg1);
-		if (!arg1.aBoolean245) {
+		if (!arg1.blendTexture) {
 			return;
 		}
 		for (local49 = 0; local49 < 8; local49++) {
 			@Pc(1257) int local1257 = local49 - arg3 * 2 & 0x7;
-			if (Static375.aBooleanArrayArray6[arg6][local49] && arg1.anInt3772 >= Static6.anIntArray4[local1257]) {
-				Static382.anIntArray490[local1257] = arg1.anInt3769;
+			if (Static375.aBooleanArrayArray6[arg6][local49] && arg1.textureBrightness >= Static6.anIntArray4[local1257]) {
+				Static382.anIntArray490[local1257] = arg1.baseColor;
 				Static319.anIntArray403[local1257] = local1242;
-				Static259.anIntArray323[local1257] = arg7.method2871() ? arg1.anInt3762 : arg1.anInt3759;
+				Static259.anIntArray323[local1257] = arg7.method2871() ? arg1.texture : arg1.anInt3759;
 				Static11.anIntArray12[local1257] = arg1.anInt3763;
-				if (Static6.anIntArray4[local1257] == arg1.anInt3772) {
+				if (Static6.anIntArray4[local1257] == arg1.textureBrightness) {
 					Static82.anIntArray120[local1257] |= 0x2;
 				} else {
 					Static82.anIntArray120[local1257] = 2;
 				}
-				Static6.anIntArray4[local1257] = arg1.anInt3772;
+				Static6.anIntArray4[local1257] = arg1.textureBrightness;
 			}
 		}
 		return;
@@ -932,18 +932,18 @@ public class Class29 {
 					@Pc(128) int local128 = local28[local49][local65] & 0xFF;
 					@Pc(136) int local136 = local28[local49][local51] & 0xFF;
 					if (local104 != 0 || local112 != 0) {
-						@Pc(158) Class148 local158 = local104 == 0 ? null : this.aClass72_2.method2105(local104 - 1);
+						@Pc(158) FloType local158 = local104 == 0 ? null : this.aClass72_2.get(local104 - 1);
 						if (local90 == 0 && local158 == null) {
 							local90 = 12;
 						}
-						@Pc(179) Class225 local179 = local112 == 0 ? null : this.aClass241_2.method6271(local112 - 1);
-						@Pc(181) Class148 local181 = local158;
+						@Pc(179) FluType local179 = local112 == 0 ? null : this.aClass241_2.method6271(local112 - 1);
+						@Pc(181) FloType local181 = local158;
 						if (local158 != null) {
-							if (local158.anInt3769 == -1 && local158.anInt3757 == -1) {
+							if (local158.baseColor == -1 && local158.secondaryColor == -1) {
 								local181 = local158;
 								local158 = null;
 							} else if (local179 != null && local90 != 0) {
-								local81 = local158.aBoolean245;
+								local81 = local158.blendTexture;
 							}
 						}
 						@Pc(275) int local275;
@@ -1007,9 +1007,9 @@ public class Class29 {
 							Static6.anIntArray4[local275] = -1;
 							Static82.anIntArray120[local275] = 1;
 						}
-						@Pc(462) boolean[] local462 = local158 != null && local158.aBoolean245 ? Static207.aBooleanArrayArray2[local90] : Static283.aBooleanArrayArray3[local90];
+						@Pc(462) boolean[] local462 = local158 != null && local158.blendTexture ? Static207.aBooleanArrayArray2[local90] : Static283.aBooleanArrayArray3[local90];
 						this.method1095(local179, local158, local51, local96, local18, local84, local90, arg1, this.anInt900, this.anInt911, local23, local35, local33);
-						@Pc(491) boolean local491 = local158 != null && local158.anInt3769 != local158.anInt3757;
+						@Pc(491) boolean local491 = local158 != null && local158.baseColor != local158.secondaryColor;
 						if (!local491) {
 							for (local320 = 0; local320 < 8; local320++) {
 								if (Static6.anIntArray4[local320] >= 0 && Static382.anIntArray490[local320] != Static319.anIntArray403[local320]) {
@@ -1118,8 +1118,8 @@ public class Class29 {
 							@Pc(1354) int local1354;
 							@Pc(1360) int local1360;
 							if (local158 != null) {
-								local979 = local158.anInt3769;
-								local981 = arg1.method2871() ? local158.anInt3762 : local158.anInt3759;
+								local979 = local158.baseColor;
+								local981 = arg1.method2871() ? local158.texture : local158.anInt3759;
 								local983 = local158.anInt3763;
 								local1033 = Static78.method5699(arg1, local158);
 								for (local1035 = 0; local1035 < local380; local1035++) {
@@ -1198,7 +1198,7 @@ public class Class29 {
 												local977[local935] = arg3.method5728(local1354, local1360) - arg4.method5728(local1354, local1360);
 											}
 										}
-										if (local1273 < 8 && local158.anInt3772 < Static6.anIntArray4[local1282]) {
+										if (local1273 < 8 && local158.textureBrightness < Static6.anIntArray4[local1282]) {
 											if (local946 != null) {
 												local946[local935] = Static319.anIntArray403[local1282];
 											}
@@ -1209,7 +1209,7 @@ public class Class29 {
 											if (local946 != null) {
 												local946[local935] = local1033;
 											}
-											local958[local935] = arg1.method2871() ? local158.anInt3762 : local158.anInt3759;
+											local958[local935] = arg1.method2871() ? local158.texture : local158.anInt3759;
 											local961[local935] = local158.anInt3763;
 											local955[local935] = local979;
 										}
@@ -1217,9 +1217,9 @@ public class Class29 {
 									}
 								}
 								if (!this.aBoolean73 && arg0 == 0) {
-									Static199.method5241(local35, local51, local158.anInt3771, local158.anInt3766 * 8, local158.anInt3764);
+									Static199.method5241(local35, local51, local158.waterColor, local158.waterOpacity * 8, local158.anInt3764);
 								}
-								if (local90 != 12 && local158.anInt3769 != -1 && local158.aBoolean246) {
+								if (local90 != 12 && local158.baseColor != -1 && local158.aBoolean246) {
 									local79 = true;
 								}
 							} else if (local798) {
@@ -1239,10 +1239,10 @@ public class Class29 {
 								if (local120 == 0) {
 									local120 = local112;
 								}
-								@Pc(1581) Class225 local1581 = this.aClass241_2.method6271(local112 - 1);
-								@Pc(1589) Class225 local1589 = this.aClass241_2.method6271(local120 - 1);
-								@Pc(1597) Class225 local1597 = this.aClass241_2.method6271(local128 - 1);
-								@Pc(1605) Class225 local1605 = this.aClass241_2.method6271(local136 - 1);
+								@Pc(1581) FluType local1581 = this.aClass241_2.method6271(local112 - 1);
+								@Pc(1589) FluType local1589 = this.aClass241_2.method6271(local120 - 1);
+								@Pc(1597) FluType local1597 = this.aClass241_2.method6271(local128 - 1);
+								@Pc(1605) FluType local1605 = this.aClass241_2.method6271(local136 - 1);
 								for (local1282 = 0; local1282 < local370; local1282++) {
 									if (local84[-local96 & 0x3] && local800[0] == local933) {
 										Static67.anIntArray111[0] = local830[local933];
@@ -1390,7 +1390,7 @@ public class Class29 {
 								if (local112 == 0 && local90 != 0) {
 									local2351 = false;
 								}
-								if (local104 > 0 && local181 != null && !local181.aBoolean244) {
+								if (local104 > 0 && local181 != null && !local181.occludeUnderlay) {
 									local2351 = false;
 								}
 								if (local2351 && local1035 == local1033 && local1267 == local1033 && local1273 == local1033) {

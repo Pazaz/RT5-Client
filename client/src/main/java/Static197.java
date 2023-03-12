@@ -6,5 +6,5 @@ public final class Static197 {
 	public static LinkedList aClass135_24;
 
 	@OriginalMember(owner = "client!li", name = "Q", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_12;
+	public static Sprite aClass13_12;
 }

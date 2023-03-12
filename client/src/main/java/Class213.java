@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class213 {
 
 	@OriginalMember(owner = "client!sj", name = "c", descriptor = "Lclient!hu;")
-	private final Class98 aClass98_52 = new Class98(16);
+	private final LruHashTable aClass98_52 = new LruHashTable(16);
 
 	@OriginalMember(owner = "client!sj", name = "e", descriptor = "Lclient!r;")
 	private final Js5 aClass197_83;
@@ -20,7 +20,7 @@ public final class Class213 {
 
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(I)V")
 	public void method5422() {
-		@Pc(10) Class98 local10 = this.aClass98_52;
+		@Pc(10) LruHashTable local10 = this.aClass98_52;
 		synchronized (this.aClass98_52) {
 			this.aClass98_52.method2621();
 		}
@@ -28,9 +28,9 @@ public final class Class213 {
 
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(II)V")
 	public void method5423() {
-		@Pc(2) Class98 local2 = this.aClass98_52;
+		@Pc(2) LruHashTable local2 = this.aClass98_52;
 		synchronized (this.aClass98_52) {
-			this.aClass98_52.method2615(5);
+			this.aClass98_52.clean(5);
 		}
 	}
 
@@ -50,7 +50,7 @@ public final class Class213 {
 
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(B)V")
 	public void method5426() {
-		@Pc(12) Class98 local12 = this.aClass98_52;
+		@Pc(12) LruHashTable local12 = this.aClass98_52;
 		synchronized (this.aClass98_52) {
 			this.aClass98_52.method2614();
 		}
@@ -58,10 +58,10 @@ public final class Class213 {
 
 	@OriginalMember(owner = "client!sj", name = "b", descriptor = "(II)Lclient!wa;")
 	private Class245 method5427(@OriginalArg(0) int arg0) {
-		@Pc(6) Class98 local6 = this.aClass98_52;
+		@Pc(6) LruHashTable local6 = this.aClass98_52;
 		@Pc(24) Class245 local24;
 		synchronized (this.aClass98_52) {
-			local24 = (Class245) this.aClass98_52.method2612((long) arg0);
+			local24 = (Class245) this.aClass98_52.get((long) arg0);
 		}
 		if (local24 != null) {
 			return local24;
@@ -69,11 +69,11 @@ public final class Class213 {
 		@Pc(41) byte[] local41 = this.aClass197_83.fetchFile(arg0, 29);
 		local24 = new Class245();
 		if (local41 != null) {
-			local24.method6315(new Buffer(local41));
+			local24.decode(new Buffer(local41));
 		}
 		local6 = this.aClass98_52;
 		synchronized (this.aClass98_52) {
-			this.aClass98_52.method2624((long) arg0, local24);
+			this.aClass98_52.put((long) arg0, local24);
 			return local24;
 		}
 	}

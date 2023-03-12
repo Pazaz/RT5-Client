@@ -56,14 +56,14 @@ public final class Static180 {
 						local63 = arg0.g4();
 					} while (Static75.anIntArray117.length <= local59);
 				} while (!Static89.aBooleanArray18[local59]);
-			} while (Static162.aClass45_1.method1623(local59).aChar2 == '1' && (local63 < -1 || local63 > 1));
+			} while (client.aClass45_1.method1623(local59).aChar2 == '1' && (local63 < -1 || local63 > 1));
 			Static75.anIntArray117[local59] = local63;
 		}
 	}
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(II)V")
 	public static void method3370() {
-		Static133.aClass98_17.method2615(5);
+		Static133.aClass98_17.clean(5);
 	}
 
 }

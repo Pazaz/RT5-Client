@@ -23,26 +23,26 @@ public final class Static218 {
 		@Pc(12) String local12 = Static318.method5421(arg0);
 		@Pc(14) int[] local14 = null;
 		if (Static298.method2425(arg0.anInt1005)) {
-			local14 = Static313.ObjTypeList.get((int) arg0.aLong30).anIntArray364;
+			local14 = client.ObjTypes.get((int) arg0.aLong30).anIntArray364;
 		} else if (arg0.anInt1008 != -1) {
-			local14 = Static313.ObjTypeList.get(arg0.anInt1008).anIntArray364;
+			local14 = client.ObjTypes.get(arg0.anInt1008).anIntArray364;
 		} else if (Static297.method5111(arg0.anInt1005)) {
 			@Pc(46) Npc local46 = NpcList.npcs[(int) arg0.aLong30];
 			if (local46 != null) {
-				@Pc(51) Class71 local51 = local46.type;
-				if (local51.anIntArray129 != null) {
-					local51 = local51.method2093(Static214.aClass226_1);
+				@Pc(51) NpcType local51 = local46.type;
+				if (local51.multiNpcs != null) {
+					local51 = local51.getMultiNpc(Static214.aClass226_1);
 				}
 				if (local51 != null) {
 					local14 = local51.anIntArray131;
 				}
 			}
 		} else if (Static241.method4190(arg0.anInt1005)) {
-			@Pc(83) Class41 local83;
+			@Pc(83) LocType local83;
 			if (arg0.anInt1005 == 1010) {
-				local83 = Static359.LocTypeList.method5163((int) arg0.aLong30);
+				local83 = client.LocTypes.method5163((int) arg0.aLong30);
 			} else {
-				local83 = Static359.LocTypeList.method5163((int) (arg0.aLong30 >>> 32 & 0x7FFFFFFFL));
+				local83 = client.LocTypes.method5163((int) (arg0.aLong30 >>> 32 & 0x7FFFFFFFL));
 			}
 			if (local83.anIntArray94 != null) {
 				local83 = local83.method1533(Static214.aClass226_1);

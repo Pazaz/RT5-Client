@@ -26,13 +26,13 @@ public final class Static105 {
 	public static final int[] anIntArray134 = new int[5];
 
 	@OriginalMember(owner = "client!ft", name = "a", descriptor = "(IIILjava/lang/Class;)Lclient!hb;")
-	public static Class11_Sub5 method2207(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class arg3) {
+	public static Entity method2207(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class arg3) {
 		@Pc(7) Class67 local7 = Static330.aClass67ArrayArrayArray3[arg0][arg1][arg2];
 		if (local7 == null) {
 			return null;
 		}
 		for (@Pc(14) Class22 local14 = local7.aClass22_2; local14 != null; local14 = local14.aClass22_1) {
-			@Pc(18) Class11_Sub5 local18 = local14.aClass11_Sub5_1;
+			@Pc(18) Entity local18 = local14.aClass11_Sub5_1;
 			if (arg3.isAssignableFrom(local18.getClass()) && local18.aShort103 == arg1 && local18.aShort101 == arg2) {
 				return local18;
 			}

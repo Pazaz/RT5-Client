@@ -17,12 +17,12 @@ public final class Class2_Sub41 extends Node {
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IIIIZLclient!nb;IILclient!jo;Lclient!wm;)Lclient!gn;")
-	public Class31 method6360(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(8) PlayerAppearance arg6, @OriginalArg(9) Class19 arg7) {
-		@Pc(7) Class31 local7 = null;
+	public Model method6360(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(8) PlayerAppearance arg6, @OriginalArg(9) Class19 arg7) {
+		@Pc(7) Model local7 = null;
 		@Pc(9) int local9 = 1024;
-		@Pc(11) Class222 local11 = null;
+		@Pc(11) BasType local11 = null;
 		if (arg2 != -1) {
-			local11 = Static59.aClass7_1.method245(arg2);
+			local11 = client.BasTypes.method245(arg2);
 		}
 		@Pc(23) int[] local23 = this.anIntArray489;
 		if (local11 != null && local11.anIntArray425 != null) {
@@ -42,14 +42,14 @@ public final class Class2_Sub41 extends Node {
 		@Pc(81) int local81 = -1;
 		@Pc(83) int local83 = -1;
 		@Pc(85) int local85 = 0;
-		@Pc(87) Class2_Sub2_Sub13 local87 = null;
-		@Pc(89) Class2_Sub2_Sub13 local89 = null;
+		@Pc(87) AnimFrameset local87 = null;
+		@Pc(89) AnimFrameset local89 = null;
 		if (arg4 != null) {
 			local81 = arg4.anIntArray262[arg0];
 			local9 = 1056;
 			@Pc(104) int local104 = local81 >>> 16;
 			local81 &= 0xFFFF;
-			local87 = Static39.aClass85_1.method2368(local104);
+			local87 = client.SeqTypes.method2368(local104);
 			if (local87 != null) {
 				local77 = local87.method4237(local81) | false;
 				local70 = local87.method4235(local81) | false;
@@ -63,7 +63,7 @@ public final class Class2_Sub41 extends Node {
 				if (local166 == local104) {
 					local89 = local87;
 				} else {
-					local89 = Static39.aClass85_1.method2368(local83 >>> 16);
+					local89 = client.SeqTypes.method2368(local83 >>> 16);
 				}
 				if (local89 != null) {
 					local77 |= local89.method4237(local83);
@@ -82,7 +82,7 @@ public final class Class2_Sub41 extends Node {
 		}
 		@Pc(230) long local230 = this.method6363(arg6 == null ? null : arg6.anIntArray194, local23, arg3, arg2);
 		if (Static48.aClass98_3 != null) {
-			local7 = (Class31) Static48.aClass98_3.method2612(local230);
+			local7 = (Model) Static48.aClass98_3.get(local230);
 		}
 		if (local7 == null || arg7.method2863(local7.method3827(), local9) != 0) {
 			if (local7 != null) {
@@ -91,7 +91,7 @@ public final class Class2_Sub41 extends Node {
 			@Pc(259) int local259 = local9;
 			@Pc(261) boolean local261 = false;
 			for (@Pc(263) int local263 = 0; local263 < local23.length; local263++) {
-				if (local23[local263] != -1 && !Static313.ObjTypeList.get(local23[local263]).method4770(arg3)) {
+				if (local23[local263] != -1 && !client.ObjTypes.get(local23[local263]).method4770(arg3)) {
 					local261 = true;
 				}
 			}
@@ -101,7 +101,7 @@ public final class Class2_Sub41 extends Node {
 			@Pc(300) Class185[] local300 = new Class185[local23.length];
 			for (@Pc(302) int local302 = 0; local302 < local23.length; local302++) {
 				if (local23[local302] != -1) {
-					local300[local302] = Static313.ObjTypeList.get(local23[local302]).method4779(arg3);
+					local300[local302] = client.ObjTypes.get(local23[local302]).method4779(arg3);
 				}
 			}
 			@Pc(354) int local354;
@@ -140,13 +140,13 @@ public final class Class2_Sub41 extends Node {
 			}
 			if (Static48.aClass98_3 != null) {
 				local7.method3814(local9);
-				Static48.aClass98_3.method2624(local230, local7);
+				Static48.aClass98_3.put(local230, local7);
 			}
 		}
 		if (arg4 == null || local87 == null) {
 			return local7;
 		} else {
-			@Pc(536) Class31 local536 = local7.method3800((byte) 1, local9, true);
+			@Pc(536) Model local536 = local7.method3800((byte) 1, local9, true);
 			local536.method3828(local85, local89, local83, arg4.aBoolean263, arg1 - 1, local81, local87, 0);
 			return local536;
 		}

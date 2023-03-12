@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static169 {
 
-	@OriginalMember(owner = "client!jr", name = "p", descriptor = "I")
-	public static int anInt3205;
-
 	@OriginalMember(owner = "client!jr", name = "l", descriptor = "Ljava/lang/String;")
 	public static String aString25 = null;
 
@@ -40,7 +37,7 @@ public final class Static169 {
 							local21.method6069();
 						}
 						for (@Pc(70) Class22 local70 = local16.aClass22_2; local70 != null; local70 = local70.aClass22_1) {
-							@Pc(74) Class11_Sub5 local74 = local70.aClass11_Sub5_1;
+							@Pc(74) Entity local74 = local70.aClass11_Sub5_1;
 							if (local74 != null && local74.method6076()) {
 								Static258.method4403(arg0, local74, local1, local4, local7, local74.aShort104 + 1 - local74.aShort103, local74.aShort102 - local74.aShort101 + 1);
 								local74.method6069();

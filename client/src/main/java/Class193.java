@@ -13,7 +13,7 @@ public final class Class193 {
 
 	@OriginalMember(owner = "client!qo", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
 	public Class193(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
-		new Class98(64);
+		new LruHashTable(64);
 		this.aClass197_72 = arg2;
 		this.anInt5494 = this.aClass197_72.getGroupCapacity(15);
 	}

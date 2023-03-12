@@ -125,7 +125,7 @@ public final class Static163 {
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILclient!nk;)Ljava/lang/String;")
 	public static String method3104(@OriginalArg(1) Class161 arg0) {
-		if (Static45.method1404(arg0).method1852() == 0) {
+		if (Static45.method1404(arg0).getTargetMask() == 0) {
 			return null;
 		} else if (arg0.aString44 == null || arg0.aString44.trim().length() == 0) {
 			return Static18.aBoolean30 ? "Hidden-use" : null;

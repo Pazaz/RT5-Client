@@ -51,7 +51,7 @@ public abstract class Class130 {
 	}
 
 	@OriginalMember(owner = "client!ur", name = "a", descriptor = "(BI[I[II[Lclient!jd;Ljava/lang/String;[I)V")
-	private void method5890(@OriginalArg(1) int arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class13[] arg4, @OriginalArg(6) String arg5, @OriginalArg(7) int[] arg6) {
+	private void method5890(@OriginalArg(1) int arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Sprite[] arg4, @OriginalArg(6) String arg5, @OriginalArg(7) int[] arg6) {
 		@Pc(19) int local19 = arg3 - this.aClass239_8.anInt6841;
 		@Pc(21) int local21 = -1;
 		@Pc(23) int local23 = -1;
@@ -97,7 +97,7 @@ public abstract class Class130 {
 									}
 									local25++;
 									@Pc(144) int local144 = Static146.method2698(local63.substring(4));
-									@Pc(148) Class13 local148 = arg4[local144];
+									@Pc(148) Sprite local148 = arg4[local144];
 									@Pc(157) int local157 = arg1 == null ? local148.method6384() : arg1[local144];
 									local148.method6401(local121 + arg0, local131 + -local157 + local19 + this.aClass239_8.anInt6841, 0, 0);
 									local23 = -1;
@@ -175,7 +175,7 @@ public abstract class Class130 {
 	protected abstract void method5892(@OriginalArg(0) char arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4);
 
 	@OriginalMember(owner = "client!ur", name = "a", descriptor = "(IIIII[IILclient!kf;ILjava/lang/String;III[Lclient!jd;II)I")
-	public final int method5893(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int[] arg5, @OriginalArg(6) int arg6, @OriginalArg(7) Class78 arg7, @OriginalArg(8) int arg8, @OriginalArg(9) String arg9, @OriginalArg(11) int arg10, @OriginalArg(12) int arg11, @OriginalArg(13) Class13[] arg12, @OriginalArg(14) int arg13, @OriginalArg(15) int arg14) {
+	public final int method5893(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int[] arg5, @OriginalArg(6) int arg6, @OriginalArg(7) Class78 arg7, @OriginalArg(8) int arg8, @OriginalArg(9) String arg9, @OriginalArg(11) int arg10, @OriginalArg(12) int arg11, @OriginalArg(13) Sprite[] arg12, @OriginalArg(14) int arg13, @OriginalArg(15) int arg14) {
 		if (arg9 == null) {
 			return 0;
 		}
@@ -302,7 +302,7 @@ public abstract class Class130 {
 	}
 
 	@OriginalMember(owner = "client!ur", name = "a", descriptor = "(II[Lclient!jd;Ljava/util/Random;III[ILjava/lang/String;I)I")
-	public final int method5899(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class13[] arg2, @OriginalArg(3) Random arg3, @OriginalArg(5) int arg4, @OriginalArg(7) int[] arg5, @OriginalArg(8) String arg6) {
+	public final int method5899(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Sprite[] arg2, @OriginalArg(3) Random arg3, @OriginalArg(5) int arg4, @OriginalArg(7) int[] arg5, @OriginalArg(8) String arg6) {
 		if (arg6 == null) {
 			return 0;
 		}
@@ -331,7 +331,7 @@ public abstract class Class130 {
 	}
 
 	@OriginalMember(owner = "client!ur", name = "a", descriptor = "([I[Lclient!jd;ILjava/lang/String;IIII)V")
-	public final void method5901(@OriginalArg(0) int[] arg0, @OriginalArg(1) Class13[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) String arg3, @OriginalArg(4) int arg4, @OriginalArg(7) int arg5) {
+	public final void method5901(@OriginalArg(0) int[] arg0, @OriginalArg(1) Sprite[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) String arg3, @OriginalArg(4) int arg4, @OriginalArg(7) int arg5) {
 		if (arg3 != null) {
 			this.method5887(0, arg5);
 			this.method5904(arg4, 0, arg3, null, arg2, arg1, arg0, 0);
@@ -342,7 +342,7 @@ public abstract class Class130 {
 	protected abstract void method5902(@OriginalArg(0) char arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) Class78 arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7);
 
 	@OriginalMember(owner = "client!ur", name = "a", descriptor = "(ILjava/lang/String;ILjava/util/Random;I[IIIII[Lclient!jd;II[IZ)I")
-	public final int method5903(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Random arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int[] arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Class13[] arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int[] arg13) {
+	public final int method5903(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Random arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int[] arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Sprite[] arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int[] arg13) {
 		if (arg1 == null) {
 			return 0;
 		}
@@ -387,7 +387,7 @@ public abstract class Class130 {
 	}
 
 	@OriginalMember(owner = "client!ur", name = "a", descriptor = "(IILjava/lang/String;Lclient!kf;I[Lclient!jd;Z[II)V")
-	private void method5904(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) Class78 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) Class13[] arg5, @OriginalArg(7) int[] arg6, @OriginalArg(8) int arg7) {
+	private void method5904(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) Class78 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) Sprite[] arg5, @OriginalArg(7) int[] arg6, @OriginalArg(8) int arg7) {
 		@Pc(15) int local15 = arg0 - this.aClass239_8.anInt6841;
 		@Pc(17) int local17 = -1;
 		@Pc(19) int local19 = -1;
@@ -419,7 +419,7 @@ public abstract class Class130 {
 							if (local56.startsWith("img=")) {
 								try {
 									@Pc(122) int local122 = Static146.method2698(local56.substring(4));
-									@Pc(126) Class13 local126 = arg5[local122];
+									@Pc(126) Sprite local126 = arg5[local122];
 									@Pc(135) int local135 = arg6 == null ? local126.method6384() : arg6[local122];
 									if ((-16777216 & Static280.anInt5197) == -16777216) {
 										local126.method6401(arg4, this.aClass239_8.anInt6841 + local15 - local135, 0, 0);

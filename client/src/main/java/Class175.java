@@ -9,7 +9,7 @@ public final class Class175 {
 	private int[] anIntArray330;
 
 	@OriginalMember(owner = "client!p", name = "b", descriptor = "I")
-	public final int anInt4804;
+	public final int dimensions;
 
 	@OriginalMember(owner = "client!p", name = "d", descriptor = "I")
 	private final int anInt4805;
@@ -25,52 +25,52 @@ public final class Class175 {
 
 	@OriginalMember(owner = "client!p", name = "<init>", descriptor = "()V")
 	public Class175() {
-		Static267.method4513(24);
-		this.anInt4804 = Static267.method4513(16);
-		this.anInt4805 = Static267.method4513(24);
+		Static267.readBits(24);
+		this.dimensions = Static267.readBits(16);
+		this.anInt4805 = Static267.readBits(24);
 		this.anIntArray329 = new int[this.anInt4805];
-		@Pc(23) boolean local23 = Static267.method4522() != 0;
+		@Pc(23) boolean local23 = Static267.readBit() != 0;
 		@Pc(27) int local27;
 		@Pc(32) int local32;
 		@Pc(43) int local43;
 		if (local23) {
 			local27 = 0;
-			local32 = Static267.method4513(5) + 1;
+			local32 = Static267.readBits(5) + 1;
 			while (local27 < this.anInt4805) {
-				@Pc(41) int local41 = Static267.method4513(Static287.method4929(this.anInt4805 - local27));
+				@Pc(41) int local41 = Static267.readBits(Static287.method4929(this.anInt4805 - local27));
 				for (local43 = 0; local43 < local41; local43++) {
 					this.anIntArray329[local27++] = local32;
 				}
 				local32++;
 			}
 		} else {
-			@Pc(66) boolean local66 = Static267.method4522() != 0;
+			@Pc(66) boolean local66 = Static267.readBit() != 0;
 			for (local32 = 0; local32 < this.anInt4805; local32++) {
-				if (local66 && Static267.method4522() == 0) {
+				if (local66 && Static267.readBit() == 0) {
 					this.anIntArray329[local32] = 0;
 				} else {
-					this.anIntArray329[local32] = Static267.method4513(5) + 1;
+					this.anIntArray329[local32] = Static267.readBits(5) + 1;
 				}
 			}
 		}
 		this.method4440();
-		local27 = Static267.method4513(4);
+		local27 = Static267.readBits(4);
 		if (local27 > 0) {
-			@Pc(103) float local103 = Static267.method4512(Static267.method4513(32));
-			@Pc(107) float local107 = Static267.method4512(Static267.method4513(32));
-			local43 = Static267.method4513(4) + 1;
-			@Pc(118) boolean local118 = Static267.method4522() != 0;
+			@Pc(103) float local103 = Static267.method4512(Static267.readBits(32));
+			@Pc(107) float local107 = Static267.method4512(Static267.readBits(32));
+			local43 = Static267.readBits(4) + 1;
+			@Pc(118) boolean local118 = Static267.readBit() != 0;
 			@Pc(127) int local127;
 			if (local27 == 1) {
-				local127 = Static403.method4441(this.anInt4805, this.anInt4804);
+				local127 = Static403.method4441(this.anInt4805, this.dimensions);
 			} else {
-				local127 = this.anInt4805 * this.anInt4804;
+				local127 = this.anInt4805 * this.dimensions;
 			}
 			this.anIntArray328 = new int[local127];
 			for (@Pc(140) int local140 = 0; local140 < local127; local140++) {
-				this.anIntArray328[local140] = Static267.method4513(local43);
+				this.anIntArray328[local140] = Static267.readBits(local43);
 			}
-			this.aFloatArrayArray7 = new float[this.anInt4805][this.anInt4804];
+			this.aFloatArrayArray7 = new float[this.anInt4805][this.dimensions];
 			@Pc(163) int local163;
 			@Pc(166) float local166;
 			@Pc(168) int local168;
@@ -79,7 +79,7 @@ public final class Class175 {
 				for (local163 = 0; local163 < this.anInt4805; local163++) {
 					local166 = 0.0F;
 					local168 = 1;
-					for (local170 = 0; local170 < this.anInt4804; local170++) {
+					for (local170 = 0; local170 < this.dimensions; local170++) {
 						@Pc(177) int local177 = local163 / local168 % local127;
 						@Pc(189) float local189 = (float) this.anIntArray328[local177] * local107 + local103 + local166;
 						this.aFloatArrayArray7[local163][local170] = local189;
@@ -93,8 +93,8 @@ public final class Class175 {
 			}
 			for (local163 = 0; local163 < this.anInt4805; local163++) {
 				local166 = 0.0F;
-				local168 = local163 * this.anInt4804;
-				for (local170 = 0; local170 < this.anInt4804; local170++) {
+				local168 = local163 * this.dimensions;
+				for (local170 = 0; local170 < this.dimensions; local170++) {
 					@Pc(240) float local240 = (float) this.anIntArray328[local168] * local107 + local103 + local166;
 					this.aFloatArrayArray7[local163][local170] = local240;
 					if (local118) {
@@ -108,13 +108,13 @@ public final class Class175 {
 
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "()[F")
 	public float[] method4438() {
-		return this.aFloatArrayArray7[this.method4439()];
+		return this.aFloatArrayArray7[this.decodeScalar()];
 	}
 
 	@OriginalMember(owner = "client!p", name = "b", descriptor = "()I")
-	public int method4439() {
+	public int decodeScalar() {
 		@Pc(1) int local1;
-		for (local1 = 0; this.anIntArray330[local1] >= 0; local1 = Static267.method4522() == 0 ? local1 + 1 : this.anIntArray330[local1]) {
+		for (local1 = 0; this.anIntArray330[local1] >= 0; local1 = Static267.readBit() == 0 ? local1 + 1 : this.anIntArray330[local1]) {
 		}
 		return ~this.anIntArray330[local1];
 	}

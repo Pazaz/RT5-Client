@@ -73,7 +73,7 @@ public final class SoftLruHashTable {
 
 	@OriginalMember(owner = "client!hs", name = "b", descriptor = "(II)V")
 	public void method2589() {
-		if (Static281.aClass236_1 == null) {
+		if (ReferenceNodeFactory.SOFT_REFERENCE_NODE_FACTORY == null) {
 			return;
 		}
 		for (@Pc(19) ReferenceNode local19 = (ReferenceNode) this.queue.head(); local19 != null; local19 = (ReferenceNode) this.queue.next()) {
@@ -84,7 +84,7 @@ public final class SoftLruHashTable {
 					this.available += local19.anInt5040;
 				}
 			} else if ((long) 5 < ++local19.secondaryKey) {
-				@Pc(66) ReferenceNode local66 = Static281.aClass236_1.method6030(local19);
+				@Pc(66) ReferenceNode local66 = ReferenceNodeFactory.SOFT_REFERENCE_NODE_FACTORY.create(local19);
 				this.table.put(local66, local19.key);
 				Static145.method2696(local19, local66);
 				local19.unlink();

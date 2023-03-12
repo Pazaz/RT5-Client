@@ -7,13 +7,13 @@ public final class Static119 {
 	public static byte aByte25;
 
 	@OriginalMember(owner = "client!gr", name = "e", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_7;
+	public static Sprite aClass13_7;
 
 	@OriginalMember(owner = "client!gr", name = "f", descriptor = "Lclient!bh;")
 	public static Class21 aClass21_1;
 
 	@OriginalMember(owner = "client!gr", name = "h", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_16 = new Class98(64);
+	public static final LruHashTable aClass98_16 = new LruHashTable(64);
 
 	@OriginalMember(owner = "client!gr", name = "j", descriptor = "[I")
 	public static final int[] anIntArray152 = new int[] { 16, 32, 64, 128 };

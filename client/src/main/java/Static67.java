@@ -62,7 +62,7 @@ public final class Static67 {
 					}
 					for (@Pc(118) int local118 = local93; local118 <= local101; local118++) {
 						@Pc(121) byte local121 = 1;
-						@Pc(134) Class11_Sub5 local134 = Static105.method2207(local13, local118, local71, Class11_Sub5.class);
+						@Pc(134) Entity local134 = Static105.method2207(local13, local118, local71, Entity.class);
 						if (local134 != null && local134.aByte77 != 0) {
 							@Pc(152) boolean local152;
 							@Pc(161) boolean local161;

@@ -6,7 +6,7 @@ public final class Static332 {
 	public static int[] anIntArray428;
 
 	@OriginalMember(owner = "client!tf", name = "d", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array23;
+	public static Sprite[] aClass13Array23;
 
 	@OriginalMember(owner = "client!tf", name = "g", descriptor = "[[Lclient!bh;")
 	public static Class21[][] aClass21ArrayArray3;

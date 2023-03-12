@@ -11,7 +11,7 @@ public final class Static233 {
 	public static float aFloat63;
 
 	@OriginalMember(owner = "client!nh", name = "qc", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_37 = new Class98(64);
+	public static final LruHashTable aClass98_37 = new LruHashTable(64);
 
 	@OriginalMember(owner = "client!nh", name = "c", descriptor = "(ZI)I")
 	public static int method4063(@OriginalArg(1) int arg0) {

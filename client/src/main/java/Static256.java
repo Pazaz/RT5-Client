@@ -7,9 +7,6 @@ public final class Static256 {
 	@OriginalMember(owner = "client!om", name = "A", descriptor = "I")
 	public static int anInt4716;
 
-	@OriginalMember(owner = "client!om", name = "ob", descriptor = "I")
-	public static int anInt4745;
-
 	@OriginalMember(owner = "client!om", name = "F", descriptor = "I")
 	public static final int anInt4720 = anInt4716;
 

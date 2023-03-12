@@ -14,7 +14,7 @@ public class Class90 {
 	public final int[] anIntArray486 = new int[100];
 
 	@OriginalMember(owner = "client!hc", name = "h", descriptor = "[Lclient!hb;")
-	public final Class11_Sub5[] aClass11_Sub5Array3 = new Class11_Sub5[100];
+	public final Entity[] aClass11_Sub5Array3 = new Entity[100];
 
 	@OriginalMember(owner = "client!hc", name = "e", descriptor = "[I")
 	public final int[] anIntArray487 = new int[3];

@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!sc")
-public final class Class12_Sub7 extends Class12 {
+public final class Class12_Sub7 extends ParticleNode {
 
 	@OriginalMember(owner = "client!sc", name = "l", descriptor = "B")
 	public final byte aByte62;

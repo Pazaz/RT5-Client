@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static140 {
 
-	@OriginalMember(owner = "client!hu", name = "t", descriptor = "Lclient!is;")
-	public static Class109 aClass109_1;
-
 	@OriginalMember(owner = "client!hu", name = "i", descriptor = "Lclient!s;")
 	public static final Class210 aClass210_6 = new Class210(13, 7);
 
@@ -117,7 +114,7 @@ public final class Static140 {
 
 	@OriginalMember(owner = "client!hu", name = "h", descriptor = "(I)V")
 	public static void method2627() {
-		@Pc(1) Class98 local1 = Static92.aClass98_9;
+		@Pc(1) LruHashTable local1 = Static92.aClass98_9;
 		synchronized (Static92.aClass98_9) {
 			Static92.aClass98_9.method2614();
 		}

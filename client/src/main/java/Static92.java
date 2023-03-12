@@ -8,7 +8,7 @@ public final class Static92 {
 	public static int anInt1914;
 
 	@OriginalMember(owner = "client!fa", name = "b", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_9 = new Class98(260);
+	public static final LruHashTable aClass98_9 = new LruHashTable(260);
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "([I[ILclient!oe;I[I)V")
 	public static void method1966(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) Npc arg2, @OriginalArg(4) int[] arg3) {
@@ -22,7 +22,7 @@ public final class Static92 {
 					if (local9 == -1) {
 						arg2.aClass20Array3[local19] = null;
 					} else {
-						@Pc(41) Class157 local41 = Static39.aClass85_1.method2371(local9);
+						@Pc(41) Class157 local41 = client.SeqTypes.method2371(local9);
 						@Pc(44) int local44 = local41.anInt4022;
 						@Pc(49) Class20 local49 = arg2.aClass20Array3[local19];
 						if (local49 != null) {
@@ -39,7 +39,7 @@ public final class Static92 {
 								} else if (local44 == 2) {
 									local49.anInt626 = 0;
 								}
-							} else if (local41.anInt4023 >= Static39.aClass85_1.method2371(local49.anInt624).anInt4023) {
+							} else if (local41.anInt4023 >= client.SeqTypes.method2371(local49.anInt624).anInt4023) {
 								local49 = arg2.aClass20Array3[local19] = null;
 							}
 						}
@@ -105,7 +105,7 @@ public final class Static92 {
 		for (local165 = 0; local165 < Static387.anInt2831; local165++) {
 			local174 = Static388.anIntArray494[local165] * 4 + 2 - local61 / 32;
 			local185 = Static183.anIntArray2[local165] * 4 + 2 - local58 / 32;
-			@Pc(253) Class41 local253 = Static359.LocTypeList.method5163(Static231.anIntArray265[local165]);
+			@Pc(253) LocType local253 = client.LocTypes.method5163(Static231.anIntArray265[local165]);
 			if (local253.anIntArray94 != null) {
 				local253 = local253.method1533(Static214.aClass226_1);
 				if (local253 == null || local253.anInt1306 == -1) {
@@ -126,9 +126,9 @@ public final class Static92 {
 		for (local185 = 0; local185 < NpcList.size; local185++) {
 			@Pc(365) Npc local365 = NpcList.npcs[NpcList.ids[local185]];
 			if (local365 != null && local365.method4336() && local365.aByte78 == Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) {
-				@Pc(383) Class71 local383 = local365.type;
-				if (local383 != null && local383.anIntArray129 != null) {
-					local383 = local383.method2093(Static214.aClass226_1);
+				@Pc(383) NpcType local383 = local365.type;
+				if (local383 != null && local383.multiNpcs != null) {
+					local383 = local383.getMultiNpc(Static214.aClass226_1);
 				}
 				if (local383 != null && local383.aBoolean147 && local383.aBoolean145) {
 					local410 = local365.xFine / 32 - local61 / 32;

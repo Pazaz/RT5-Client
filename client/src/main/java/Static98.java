@@ -8,10 +8,10 @@ public final class Static98 {
 	public static Class12_Sub1_Sub1_Sub1[] aClass12_Sub1_Sub1_Sub1Array1;
 
 	@OriginalMember(owner = "client!fl", name = "j", descriptor = "[Lclient!hb;")
-	public static Class11_Sub5[] aClass11_Sub5Array1;
+	public static Entity[] aClass11_Sub5Array1;
 
 	@OriginalMember(owner = "client!fl", name = "f", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_10 = new Class98(32);
+	public static final LruHashTable aClass98_10 = new LruHashTable(32);
 
 	@OriginalMember(owner = "client!fl", name = "i", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_73 = new ClientProt(46, 2);

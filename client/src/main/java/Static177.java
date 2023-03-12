@@ -36,7 +36,7 @@ public final class Static177 {
 					if (local16[0] == -1) {
 						Static368.aClass43_1 = null;
 					} else {
-						Static368.aClass43_1 = Static9.aClass213_1.method5424(local16[0], local16[1], local16[2], Static278.aClass160_1, local16[3]);
+						Static368.aClass43_1 = client.aClass213_1.method5424(local16[0], local16[1], local16[2], client.aClass160_1, local16[3]);
 						Static72.anInt1683 = local16[4];
 					}
 				}
@@ -55,7 +55,7 @@ public final class Static177 {
 
 	@OriginalMember(owner = "client!ke", name = "d", descriptor = "(I)V")
 	public static void method3347() {
-		@Pc(1) Class98 local1 = Static98.aClass98_10;
+		@Pc(1) LruHashTable local1 = Static98.aClass98_10;
 		synchronized (Static98.aClass98_10) {
 			Static98.aClass98_10.method2621();
 		}

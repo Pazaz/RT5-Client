@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!fi")
-public final class MixerPcmStream extends Class2_Sub12 {
+public final class MixerPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!fi", name = "w", descriptor = "Lclient!ld;")
 	private final LinkedList aClass135_16 = new LinkedList();
@@ -53,8 +53,8 @@ public final class MixerPcmStream extends Class2_Sub12 {
 
 	@OriginalMember(owner = "client!fi", name = "d", descriptor = "()Lclient!ll;")
 	@Override
-	public Class2_Sub12 method4978() {
-		return (Class2_Sub12) this.aClass135_16.head();
+	public PcmStream method4978() {
+		return (PcmStream) this.aClass135_16.head();
 	}
 
 	@OriginalMember(owner = "client!fi", name = "e", descriptor = "()V")
@@ -115,7 +115,7 @@ public final class MixerPcmStream extends Class2_Sub12 {
 
 	@OriginalMember(owner = "client!fi", name = "c", descriptor = "(I)V")
 	private void method2079(@OriginalArg(0) int arg0) {
-		for (@Pc(5) Class2_Sub12 local5 = (Class2_Sub12) this.aClass135_16.head(); local5 != null; local5 = (Class2_Sub12) this.aClass135_16.next()) {
+		for (@Pc(5) PcmStream local5 = (PcmStream) this.aClass135_16.head(); local5 != null; local5 = (PcmStream) this.aClass135_16.next()) {
 			local5.method4974(arg0);
 		}
 	}
@@ -136,25 +136,25 @@ public final class MixerPcmStream extends Class2_Sub12 {
 	}
 
 	@OriginalMember(owner = "client!fi", name = "a", descriptor = "(Lclient!ll;)V")
-	public synchronized void method2081(@OriginalArg(0) Class2_Sub12 arg0) {
+	public synchronized void method2081(@OriginalArg(0) PcmStream arg0) {
 		arg0.unlink();
 	}
 
 	@OriginalMember(owner = "client!fi", name = "c", descriptor = "([III)V")
 	private void method2082(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		for (@Pc(5) Class2_Sub12 local5 = (Class2_Sub12) this.aClass135_16.head(); local5 != null; local5 = (Class2_Sub12) this.aClass135_16.next()) {
+		for (@Pc(5) PcmStream local5 = (PcmStream) this.aClass135_16.head(); local5 != null; local5 = (PcmStream) this.aClass135_16.next()) {
 			local5.method4975(arg0, arg1, arg2);
 		}
 	}
 
 	@OriginalMember(owner = "client!fi", name = "a", descriptor = "()Lclient!ll;")
 	@Override
-	public Class2_Sub12 method4972() {
-		return (Class2_Sub12) this.aClass135_16.next();
+	public PcmStream method4972() {
+		return (PcmStream) this.aClass135_16.next();
 	}
 
 	@OriginalMember(owner = "client!fi", name = "b", descriptor = "(Lclient!ll;)V")
-	public synchronized void method2083(@OriginalArg(0) Class2_Sub12 arg0) {
+	public synchronized void method2083(@OriginalArg(0) PcmStream arg0) {
 		this.aClass135_16.addHead(arg0);
 	}
 }

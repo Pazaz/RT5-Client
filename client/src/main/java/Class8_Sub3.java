@@ -1,5 +1,5 @@
 import jaggl.opengl;
-import java.nio.Buffer;
+
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
 import javax.media.opengl.GL;
@@ -20,7 +20,7 @@ public final class Class8_Sub3 extends Class8 {
 	@OriginalMember(owner = "client!qd", name = "<init>", descriptor = "(Lclient!bf;II)V")
 	public Class8_Sub3(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		super(arg0, 34067, arg1, arg2 * arg2 * 6, false);
-		@Pc(14) opengl local14 = this.aClass19_Sub1_40.anOpengl1;
+		@Pc(14) opengl local14 = this.aClass19_Sub1_40.gl;
 		this.anInt5167 = arg2;
 		this.aClass19_Sub1_40.method848(this);
 		for (@Pc(23) int local23 = 0; local23 < 6; local23++) {
@@ -32,7 +32,7 @@ public final class Class8_Sub3 extends Class8 {
 	@OriginalMember(owner = "client!qd", name = "<init>", descriptor = "(Lclient!bf;IIZ[[BI)V")
 	public Class8_Sub3(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) byte[][] arg4, @OriginalArg(5) int arg5) {
 		super(arg0, 34067, arg1, arg2 * arg2 * 6, arg3);
-		@Pc(14) opengl local14 = this.aClass19_Sub1_40.anOpengl1;
+		@Pc(14) opengl local14 = this.aClass19_Sub1_40.gl;
 		this.anInt5167 = arg2;
 		this.aClass19_Sub1_40.method848(this);
 		for (@Pc(23) int local23 = 0; local23 < 6; local23++) {
@@ -44,7 +44,7 @@ public final class Class8_Sub3 extends Class8 {
 	@OriginalMember(owner = "client!qd", name = "<init>", descriptor = "(Lclient!bf;IIZ[[I)V")
 	public Class8_Sub3(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) int[][] arg4) {
 		super(arg0, 34067, arg1, arg2 * arg2 * 6, arg3);
-		@Pc(14) opengl local14 = this.aClass19_Sub1_40.anOpengl1;
+		@Pc(14) opengl local14 = this.aClass19_Sub1_40.gl;
 		this.anInt5167 = arg2;
 		this.aClass19_Sub1_40.method848(this);
 		@Pc(25) int local25;
@@ -63,13 +63,13 @@ public final class Class8_Sub3 extends Class8 {
 	@OriginalMember(owner = "client!qd", name = "a", descriptor = "()V")
 	@Override
 	public void method6152() {
-		this.aClass19_Sub1_40.anOpengl1.glFramebufferTexture2DEXT(GL.GL_FRAMEBUFFER, this.anInt5168, GL.GL_TEXTURE_2D, 0, 0);
+		this.aClass19_Sub1_40.gl.glFramebufferTexture2DEXT(GL.GL_FRAMEBUFFER, this.anInt5168, GL.GL_TEXTURE_2D, 0, 0);
 		this.anInt5168 = -1;
 	}
 
 	@OriginalMember(owner = "client!qd", name = "a", descriptor = "(III)V")
 	public void method4740(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		this.aClass19_Sub1_40.anOpengl1.glFramebufferTexture2DEXT(GL.GL_FRAMEBUFFER, arg0, arg1, this.anInt6881, 0);
+		this.aClass19_Sub1_40.gl.glFramebufferTexture2DEXT(GL.GL_FRAMEBUFFER, arg0, arg1, this.anInt6881, 0);
 		this.anInt5168 = arg0;
 	}
 }

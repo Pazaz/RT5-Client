@@ -163,7 +163,7 @@ public final class Static327 {
 					@Pc(1038) Class2_Sub32 local1038 = (Class2_Sub32) Static120.aClass4_49.get((long) (local354.anInt4076 | local354.anInt4073 << 28 | local354.anInt4075 << 14));
 					if (local1038 != null) {
 						for (@Pc(1046) Class2_Sub8 local1046 = (Class2_Sub8) local1038.aClass135_34.tail(); local1046 != null; local1046 = (Class2_Sub8) local1038.aClass135_34.method3547()) {
-							@Pc(1054) Class188 local1054 = Static313.ObjTypeList.get(local1046.anInt1717);
+							@Pc(1054) ObjType local1054 = client.ObjTypes.get(local1046.anInt1717);
 							if (!Static330.aBoolean419) {
 								if (local354.anInt4073 == Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) {
 									@Pc(1134) String[] local1134 = local1054.aStringArray50;
@@ -198,7 +198,7 @@ public final class Static327 {
 								}
 								Static1.method3(-1, true, local354.anInt4075, local354.anInt4073 != Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78, Static368.aClass79_143.method2267(client.language), local354.anInt4076, 1009, "<col=ff9040>" + local1054.aString55, Static135.anInt2523, (long) local1046.anInt1717);
 							} else if (Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 == local354.anInt4073) {
-								@Pc(1071) Class240 local1071 = Static172.anInt3298 == -1 ? null : Static363.aClass18_2.method565(Static172.anInt3298);
+								@Pc(1071) ParamType local1071 = Static172.anInt3298 == -1 ? null : client.ParamTypes.method565(Static172.anInt3298);
 								if ((Static115.anInt3837 & 0x1) != 0 && (local1071 == null || local1054.method4772(local1071.anInt7023, Static172.anInt3298) != local1071.anInt7023)) {
 									Static1.method3(-1, true, local354.anInt4075, false, Static91.aString18, local354.anInt4076, 13, Static371.aString68 + " -> <col=ff9040>" + local1054.aString55, Static41.anInt1044, (long) local1046.anInt1717);
 								}
@@ -208,7 +208,7 @@ public final class Static327 {
 				}
 				if (local354.aClass11_1 instanceof Interface6) {
 					@Pc(1288) Interface6 local1288 = (Interface6) local354.aClass11_1;
-					@Pc(1297) Class41 local1297 = Static359.LocTypeList.method5163(local1288.method6085());
+					@Pc(1297) LocType local1297 = client.LocTypes.method5163(local1288.method6085());
 					if (local1297.anIntArray94 != null) {
 						local1297 = local1297.method1533(Static214.aClass226_1);
 					}
@@ -249,7 +249,7 @@ public final class Static327 {
 							}
 							Static1.method3(-1, true, local354.anInt4075, local354.anInt4073 != Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78, Static368.aClass79_143.method2267(client.language), local354.anInt4076, 1010, "<col=00ffff>" + local1297.aString12, Static135.anInt2523, (long) local1297.anInt1351);
 						} else if (local354.anInt4073 == Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) {
-							@Pc(1324) Class240 local1324 = Static172.anInt3298 == -1 ? null : Static363.aClass18_2.method565(Static172.anInt3298);
+							@Pc(1324) ParamType local1324 = Static172.anInt3298 == -1 ? null : client.ParamTypes.method565(Static172.anInt3298);
 							if ((Static115.anInt3837 & 0x4) != 0 && (local1324 == null || local1297.method1532(local1324.anInt7023, Static172.anInt3298) != local1324.anInt7023)) {
 								Static1.method3(-1, true, local354.anInt4075, false, Static91.aString18, local354.anInt4076, 57, Static371.aString68 + " -> <col=00ffff>" + local1297.aString12, Static41.anInt1044, Static310.method5284(local354.anInt4075, local354.anInt4076, local1288));
 							}

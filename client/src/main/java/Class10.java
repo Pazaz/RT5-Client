@@ -30,7 +30,7 @@ public abstract class Class10 {
 		this.anInt2295 = arg1;
 		this.anInt2296 = arg3;
 		this.aBoolean174 = arg4;
-		@Pc(16) opengl local16 = arg0.anOpengl1;
+		@Pc(16) opengl local16 = arg0.gl;
 		local16.glGenBuffersARB(1, Static87.anIntArray146, 0);
 		this.anInt2297 = Static87.anIntArray146[0];
 		this.method2315();
@@ -44,7 +44,7 @@ public abstract class Class10 {
 		this.anInt2295 = arg1;
 		this.anInt2296 = arg2.limit();
 		this.aBoolean174 = arg3;
-		@Pc(17) opengl local17 = arg0.anOpengl1;
+		@Pc(17) opengl local17 = arg0.gl;
 		local17.glGenBuffersARB(1, Static87.anIntArray146, 0);
 		this.anInt2297 = Static87.anIntArray146[0];
 		this.method2315();
@@ -68,11 +68,11 @@ public abstract class Class10 {
 	protected final void method2314(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1) {
 		this.method2315();
 		if (arg1 > this.anInt2296) {
-			this.aClass19_Sub1_11.anOpengl1.glBufferDataARB(this.anInt2295, arg1, ByteBuffer.wrap(arg0, 0, arg1), this.aBoolean174 ? GL.GL_STREAM_DRAW : GL.GL_STATIC_DRAW);
+			this.aClass19_Sub1_11.gl.glBufferDataARB(this.anInt2295, arg1, ByteBuffer.wrap(arg0, 0, arg1), this.aBoolean174 ? GL.GL_STREAM_DRAW : GL.GL_STATIC_DRAW);
 			this.aClass19_Sub1_11.anInt581 += arg1 - this.anInt2296;
 			this.anInt2296 = arg1;
 		} else {
-			this.aClass19_Sub1_11.anOpengl1.glBufferSubDataARB(this.anInt2295, 0, arg1, ByteBuffer.wrap(arg0, 0, arg1));
+			this.aClass19_Sub1_11.gl.glBufferSubDataARB(this.anInt2295, 0, arg1, ByteBuffer.wrap(arg0, 0, arg1));
 		}
 	}
 

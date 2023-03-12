@@ -12,7 +12,7 @@ public final class Static173 {
 		arg0.aBoolean318 = false;
 		@Pc(20) Class157 local20;
 		if (arg0.anInt4585 != -1) {
-			local20 = Static39.aClass85_1.method2371(arg0.anInt4585);
+			local20 = client.SeqTypes.method2371(arg0.anInt4585);
 			if (local20 == null || local20.anIntArray262 == null) {
 				arg0.aBoolean317 = false;
 				arg0.anInt4585 = -1;
@@ -34,7 +34,7 @@ public final class Static173 {
 								arg0.aBoolean317 = false;
 								break label297;
 							}
-							local20 = Static39.aClass85_1.method2371(arg0.anInt4585);
+							local20 = client.SeqTypes.method2371(arg0.anInt4585);
 						}
 						Static1.method4(local20, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4626);
 					}
@@ -47,13 +47,13 @@ public final class Static173 {
 		}
 		@Pc(196) Class157 local196;
 		if (arg0.anInt4594 != -1 && arg0.anInt4595 <= client.cycle) {
-			@Pc(184) Class91 local184 = Static322.aClass211_2.method5407(arg0.anInt4594);
+			@Pc(184) SpotAnimType local184 = client.SpotAnimTypes.method5407(arg0.anInt4594);
 			@Pc(187) int local187 = local184.anInt2448;
 			if (local187 == -1) {
 				arg0.anInt4594 = -1;
 			} else {
 				label299: {
-					local196 = Static39.aClass85_1.method2371(local187);
+					local196 = client.SeqTypes.method2371(local187);
 					if (local184.aBoolean177) {
 						if (local196.anInt4027 == 3) {
 							if (arg0.anInt4642 > 0 && arg0.anInt4622 <= client.cycle && arg0.anInt4584 < client.cycle) {
@@ -111,7 +111,7 @@ public final class Static173 {
 			}
 		}
 		if (arg0.anInt4597 != -1 && arg0.anInt4590 <= 1) {
-			local20 = Static39.aClass85_1.method2371(arg0.anInt4597);
+			local20 = client.SeqTypes.method2371(arg0.anInt4597);
 			if (local20.anInt4027 == 3) {
 				if (arg0.anInt4642 > 0 && arg0.anInt4622 <= client.cycle && client.cycle > arg0.anInt4584) {
 					arg0.anInt4597 = -1;
@@ -121,7 +121,7 @@ public final class Static173 {
 			}
 		}
 		if (arg0.anInt4597 != -1 && arg0.anInt4590 == 0) {
-			local20 = Static39.aClass85_1.method2371(arg0.anInt4597);
+			local20 = client.SeqTypes.method2371(arg0.anInt4597);
 			if (local20 == null || local20.anIntArray262 == null) {
 				arg0.anInt4597 = -1;
 			} else {
@@ -163,7 +163,7 @@ public final class Static173 {
 				if (local777.anInt629 > 0) {
 					local777.anInt629--;
 				} else {
-					local196 = Static39.aClass85_1.method2371(local777.anInt624);
+					local196 = client.SeqTypes.method2371(local777.anInt624);
 					if (local196 == null || local196.anIntArray262 == null) {
 						arg0.aClass20Array3[local765] = null;
 					} else {

@@ -22,12 +22,6 @@ public final class Static117 {
 	@OriginalMember(owner = "client!gp", name = "s", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_49 = new LocalizedString("Loading sprites - ", "Lade Sprites - ", "Chargement des sprites - ", "Carregando sprites - ");
 
-	@OriginalMember(owner = "client!gp", name = "a", descriptor = "(Lclient!r;Lclient!r;Z)V")
-	public static void method2366(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1) {
-		Static43.aClass197_7 = arg1;
-		Static367.aClass197_92 = arg0;
-	}
-
 	@OriginalMember(owner = "client!gp", name = "a", descriptor = "(ILclient!wm;)V")
 	public static void method2367(@OriginalArg(1) Class19 arg0) {
 		@Pc(7) int local7 = Static305.anInt5743;
@@ -103,26 +97,26 @@ public final class Static117 {
 			}
 			@Pc(499) int[] local499 = null;
 			if (Static298.method2425(local436.anInt1005)) {
-				local499 = Static313.ObjTypeList.get((int) local436.aLong30).anIntArray364;
+				local499 = client.ObjTypes.get((int) local436.aLong30).anIntArray364;
 			} else if (local436.anInt1008 != -1) {
-				local499 = Static313.ObjTypeList.get(local436.anInt1008).anIntArray364;
+				local499 = client.ObjTypes.get(local436.anInt1008).anIntArray364;
 			} else if (Static297.method5111(local436.anInt1005)) {
 				@Pc(572) Npc local572 = NpcList.npcs[(int) local436.aLong30];
 				if (local572 != null) {
-					@Pc(577) Class71 local577 = local572.type;
-					if (local577.anIntArray129 != null) {
-						local577 = local577.method2093(Static214.aClass226_1);
+					@Pc(577) NpcType local577 = local572.type;
+					if (local577.multiNpcs != null) {
+						local577 = local577.getMultiNpc(Static214.aClass226_1);
 					}
 					if (local577 != null) {
 						local499 = local577.anIntArray131;
 					}
 				}
 			} else if (Static241.method4190(local436.anInt1005)) {
-				@Pc(540) Class41 local540;
+				@Pc(540) LocType local540;
 				if (local436.anInt1005 == 1010) {
-					local540 = Static359.LocTypeList.method5163((int) local436.aLong30);
+					local540 = client.LocTypes.method5163((int) local436.aLong30);
 				} else {
-					local540 = Static359.LocTypeList.method5163((int) (local436.aLong30 >>> 32 & 0x7FFFFFFFL));
+					local540 = client.LocTypes.method5163((int) (local436.aLong30 >>> 32 & 0x7FFFFFFFL));
 				}
 				if (local540.anIntArray94 != null) {
 					local540 = local540.method1533(Static214.aClass226_1);

@@ -315,8 +315,8 @@ public final class Static161 {
 			if (arg0.equalsIgnoreCase("resetminimap")) {
 				client.jsArchive8.discardPacked();
 				client.jsArchive8.discardUnpacked();
-				Static320.aClass104_2.method2707();
-				Static236.aClass125_1.method3380();
+				client.MsiType.method2707();
+				client.aClass125_1.method3380();
 				Static247.method4299();
 				Static158.method2940("Minimap reset");
 				return;
@@ -341,7 +341,7 @@ public final class Static161 {
 			if (arg0.startsWith("cachespace")) {
 				Static158.method2940("I(s): " + Static335.aClass98_57.method2616() + "/" + Static335.aClass98_57.method2620());
 				Static158.method2940("I(m): " + Static124.aClass98_63.method2616() + "/" + Static124.aClass98_63.method2620());
-				Static158.method2940("O(s): " + Static313.ObjTypeList.aClass97_1.method2587() + "/" + Static313.ObjTypeList.aClass97_1.method2592());
+				Static158.method2940("O(s): " + client.ObjTypes.aClass97_1.method2587() + "/" + client.ObjTypes.aClass97_1.method2592());
 				return;
 			}
 			if (arg0.equalsIgnoreCase("getcamerapos")) {

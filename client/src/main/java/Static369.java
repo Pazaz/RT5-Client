@@ -22,7 +22,7 @@ public final class Static369 {
 
 	@OriginalMember(owner = "client!vm", name = "f", descriptor = "(I)V")
 	public static void method6217() {
-		@Pc(5) Class98 local5 = Static98.aClass98_10;
+		@Pc(5) LruHashTable local5 = Static98.aClass98_10;
 		synchronized (Static98.aClass98_10) {
 			Static98.aClass98_10.method2614();
 		}
@@ -37,7 +37,7 @@ public final class Static369 {
 	@OriginalMember(owner = "client!vm", name = "a", descriptor = "(IIIII)V")
 	public static void method6221(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		for (@Pc(3) int local3 = 0; local3 < Static154.anInt2806; local3++) {
-			@Pc(9) Rectangle local9 = Class55.aRectangleArray1[local3];
+			@Pc(9) Rectangle local9 = IdkTypeList.aRectangleArray1[local3];
 			if (local9.x + local9.width > arg1 && local9.x < arg0 + arg1 && arg3 < local9.y + local9.height && local9.y < arg2 + arg3) {
 				Static357.aBooleanArray59[local3] = true;
 			}

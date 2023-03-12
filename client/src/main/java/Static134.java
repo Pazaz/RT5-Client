@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static134 {
 
 	@OriginalMember(owner = "client!hn", name = "e", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array12;
+	public static Sprite[] aClass13Array12;
 
 	@OriginalMember(owner = "client!hn", name = "f", descriptor = "F")
 	public static float aFloat33;
@@ -22,52 +22,52 @@ public final class Static134 {
 	@OriginalMember(owner = "client!hn", name = "a", descriptor = "(BLclient!r;)I")
 	public static int method2509(@OriginalArg(1) Js5 arg0) {
 		@Pc(5) int local5 = 0;
-		if (arg0.isFileReady(Static373.anInt7028)) {
+		if (arg0.isFileReady(Sprites.hitMarksId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static192.anInt3545)) {
+		if (arg0.isFileReady(Sprites.hitBarDefaultId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static256.anInt4745)) {
+		if (arg0.isFileReady(Sprites.timerBarDefaultId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static382.anInt7140)) {
+		if (arg0.isFileReady(Sprites.headIconsPkId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static166.anInt3193)) {
+		if (arg0.isFileReady(Sprites.headIconsPrayerId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static390.anInt7206)) {
+		if (arg0.isFileReady(Sprites.hintHeadIconsId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static363.anInt6792)) {
+		if (arg0.isFileReady(Sprites.hintMapMarkersId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static237.anInt4324)) {
+		if (arg0.isFileReady(Sprites.mapFlagId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static155.anInt2811)) {
+		if (arg0.isFileReady(Sprites.crossId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static326.anInt6236)) {
+		if (arg0.isFileReady(Sprites.mapDotsId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static169.anInt3205)) {
+		if (arg0.isFileReady(Sprites.scrollbarId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static102.anInt3590)) {
+		if (arg0.isFileReady(Sprites.nameIconsId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static32.anInt798)) {
+		if (arg0.isFileReady(Sprites.floorShadowsId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static139.anInt2594)) {
+		if (arg0.isFileReady(Sprites.compassId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static322.anInt6031)) {
+		if (arg0.isFileReady(Sprites.otherLevelId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static373.anInt7030)) {
+		if (arg0.isFileReady(Sprites.hintMapEdgeId)) {
 			local5++;
 		}
 		return local5;

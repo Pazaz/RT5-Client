@@ -6,10 +6,10 @@ public final class Static288 {
 	public static int anInt5463;
 
 	@OriginalMember(owner = "client!qm", name = "P", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array21;
+	public static Sprite[] aClass13Array21;
 
 	@OriginalMember(owner = "client!qm", name = "J", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_42 = new Class98(4);
+	public static final LruHashTable aClass98_42 = new LruHashTable(4);
 
 	@OriginalMember(owner = "client!qm", name = "N", descriptor = "I")
 	public static int anInt5464 = -1;

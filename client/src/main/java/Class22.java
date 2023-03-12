@@ -11,7 +11,7 @@ public final class Class22 {
 	public Class22 aClass22_1;
 
 	@OriginalMember(owner = "client!bi", name = "l", descriptor = "Lclient!hb;")
-	public Class11_Sub5 aClass11_Sub5_1;
+	public Entity aClass11_Sub5_1;
 
 	@OriginalMember(owner = "client!bi", name = "a", descriptor = "(I)V")
 	public void method857() {

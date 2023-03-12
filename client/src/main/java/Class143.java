@@ -315,7 +315,7 @@ public final class Class143 {
 
 	@OriginalMember(owner = "client!lu", name = "a", descriptor = "(Lclient!bf;Lclient!tp;)V")
 	public void method3688(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) Class224 arg1) {
-		this.anOpengl2 = arg0.anOpengl1;
+		this.anOpengl2 = arg0.gl;
 		if (arg0.aClass14_Sub2_2 == null) {
 			return;
 		}

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class45 {
 
 	@OriginalMember(owner = "client!df", name = "h", descriptor = "Lclient!hu;")
-	private final Class98 aClass98_4 = new Class98(64);
+	private final LruHashTable aClass98_4 = new LruHashTable(64);
 
 	@OriginalMember(owner = "client!df", name = "j", descriptor = "Lclient!r;")
 	private final Js5 aClass197_10;
@@ -23,10 +23,10 @@ public final class Class45 {
 
 	@OriginalMember(owner = "client!df", name = "a", descriptor = "(ZI)Lclient!cr;")
 	public Class40 method1623(@OriginalArg(1) int arg0) {
-		@Pc(6) Class98 local6 = this.aClass98_4;
+		@Pc(6) LruHashTable local6 = this.aClass98_4;
 		@Pc(16) Class40 local16;
 		synchronized (this.aClass98_4) {
-			local16 = (Class40) this.aClass98_4.method2612((long) arg0);
+			local16 = (Class40) this.aClass98_4.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -36,9 +36,9 @@ public final class Class45 {
 		if (local33 != null) {
 			local16.method1468(new Buffer(local33));
 		}
-		@Pc(54) Class98 local54 = this.aClass98_4;
+		@Pc(54) LruHashTable local54 = this.aClass98_4;
 		synchronized (this.aClass98_4) {
-			this.aClass98_4.method2624((long) arg0, local16);
+			this.aClass98_4.put((long) arg0, local16);
 			return local16;
 		}
 	}

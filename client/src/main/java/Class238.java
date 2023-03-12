@@ -29,16 +29,16 @@ public final class Class238 {
 
 	@OriginalMember(owner = "client!vd", name = "<init>", descriptor = "()V")
 	public Class238() {
-		@Pc(4) int local4 = Static267.method4513(16);
+		@Pc(4) int local4 = Static267.readBits(16);
 		if (local4 != 1) {
 			throw new RuntimeException();
 		}
-		@Pc(14) int local14 = Static267.method4513(5);
+		@Pc(14) int local14 = Static267.readBits(5);
 		@Pc(16) int local16 = 0;
 		this.anIntArray474 = new int[local14];
 		@Pc(26) int local26;
 		for (@Pc(22) int local22 = 0; local22 < local14; local22++) {
-			local26 = Static267.method4513(4);
+			local26 = Static267.readBits(4);
 			this.anIntArray474[local22] = local26;
 			if (local26 >= local16) {
 				local16 = local26 + 1;
@@ -51,20 +51,20 @@ public final class Class238 {
 		@Pc(77) int local77;
 		@Pc(99) int local99;
 		for (local26 = 0; local26 < local16; local26++) {
-			this.anIntArray472[local26] = Static267.method4513(3) + 1;
-			local77 = this.anIntArray473[local26] = Static267.method4513(2);
+			this.anIntArray472[local26] = Static267.readBits(3) + 1;
+			local77 = this.anIntArray473[local26] = Static267.readBits(2);
 			if (local77 != 0) {
-				this.anIntArray469[local26] = Static267.method4513(8);
+				this.anIntArray469[local26] = Static267.readBits(8);
 			}
 			local77 = 0x1 << local77;
 			@Pc(92) int[] local92 = new int[local77];
 			this.anIntArrayArray60[local26] = local92;
 			for (local99 = 0; local99 < local77; local99++) {
-				local92[local99] = Static267.method4513(8) - 1;
+				local92[local99] = Static267.readBits(8) - 1;
 			}
 		}
-		this.anInt6772 = Static267.method4513(2) + 1;
-		local77 = Static267.method4513(4);
+		this.anInt6772 = Static267.readBits(2) + 1;
+		local77 = Static267.readBits(4);
 		@Pc(126) int local126 = 2;
 		for (local99 = 0; local99 < local14; local99++) {
 			local126 += this.anIntArray472[this.anIntArray474[local99]];
@@ -76,7 +76,7 @@ public final class Class238 {
 		for (@Pc(163) int local163 = 0; local163 < local14; local163++) {
 			@Pc(169) int local169 = this.anIntArray474[local163];
 			for (@Pc(171) int local171 = 0; local171 < this.anIntArray472[local169]; local171++) {
-				this.anIntArray475[local126++] = Static267.method4513(local77);
+				this.anIntArray475[local126++] = Static267.readBits(local77);
 			}
 		}
 		if (Static362.anIntArray470 == null || Static362.anIntArray470.length < local126) {
@@ -193,7 +193,7 @@ public final class Class238 {
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "()Z")
 	public boolean method6061() {
-		@Pc(5) boolean local5 = Static267.method4522() != 0;
+		@Pc(5) boolean local5 = Static267.readBit() != 0;
 		if (!local5) {
 			return false;
 		}
@@ -203,8 +203,8 @@ public final class Class238 {
 		}
 		@Pc(34) int local34 = Static362.anIntArray471[this.anInt6772 - 1];
 		@Pc(40) int local40 = Static287.method4929(local34 - 1);
-		Static362.anIntArray468[0] = Static267.method4513(local40);
-		Static362.anIntArray468[1] = Static267.method4513(local40);
+		Static362.anIntArray468[0] = Static267.readBits(local40);
+		Static362.anIntArray468[1] = Static267.readBits(local40);
 		@Pc(52) int local52 = 2;
 		for (@Pc(54) int local54 = 0; local54 < this.anIntArray474.length; local54++) {
 			@Pc(60) int local60 = this.anIntArray474[local54];
@@ -213,12 +213,12 @@ public final class Class238 {
 			@Pc(76) int local76 = (0x1 << local70) - 1;
 			@Pc(78) int local78 = 0;
 			if (local70 > 0) {
-				local78 = Static267.aClass175Array1[this.anIntArray469[local60]].method4439();
+				local78 = Static267.codebooks[this.anIntArray469[local60]].decodeScalar();
 			}
 			for (@Pc(90) int local90 = 0; local90 < local65; local90++) {
 				@Pc(100) int local100 = this.anIntArrayArray60[local60][local78 & local76];
 				local78 >>>= local70;
-				Static362.anIntArray468[local52++] = local100 >= 0 ? Static267.aClass175Array1[local100].method4439() : 0;
+				Static362.anIntArray468[local52++] = local100 >= 0 ? Static267.codebooks[local100].decodeScalar() : 0;
 			}
 		}
 		return true;

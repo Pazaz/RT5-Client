@@ -17,7 +17,7 @@ public final class Static188 {
 			return;
 		}
 		for (@Pc(13) Class22 local13 = local7.aClass22_2; local13 != null; local13 = local13.aClass22_1) {
-			@Pc(17) Class11_Sub5 local17 = local13.aClass11_Sub5_1;
+			@Pc(17) Entity local17 = local13.aClass11_Sub5_1;
 			if (arg3.isAssignableFrom(local17.getClass()) && local17.aShort103 == arg1 && local17.aShort101 == arg2) {
 				Static331.method5659(local17);
 				return;

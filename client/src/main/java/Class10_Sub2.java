@@ -36,19 +36,19 @@ public final class Class10_Sub2 extends Class10 implements Interface5 {
 	@OriginalMember(owner = "client!gh", name = "a", descriptor = "(Lclient!kj;)V")
 	@Override
 	public void method4598(@OriginalArg(0) Class126 arg0) {
-		this.aClass19_Sub1_11.anOpengl1.glVertexPointer(arg0.aByte29, arg0.aShort39, this.anInt2298, (long) arg0.aByte28);
+		this.aClass19_Sub1_11.gl.glVertexPointer(arg0.aByte29, arg0.aShort39, this.anInt2298, (long) arg0.aByte28);
 	}
 
 	@OriginalMember(owner = "client!gh", name = "c", descriptor = "(Lclient!kj;)V")
 	@Override
 	public void method4601(@OriginalArg(0) Class126 arg0) {
-		this.aClass19_Sub1_11.anOpengl1.glTexCoordPointer(arg0.aByte29, arg0.aShort39, this.anInt2298, (long) arg0.aByte28);
+		this.aClass19_Sub1_11.gl.glTexCoordPointer(arg0.aByte29, arg0.aShort39, this.anInt2298, (long) arg0.aByte28);
 	}
 
 	@OriginalMember(owner = "client!gh", name = "d", descriptor = "(Lclient!kj;)V")
 	@Override
 	public void method4603(@OriginalArg(0) Class126 arg0) {
-		this.aClass19_Sub1_11.anOpengl1.glNormalPointer(arg0.aShort39, this.anInt2298, (long) arg0.aByte28);
+		this.aClass19_Sub1_11.gl.glNormalPointer(arg0.aShort39, this.anInt2298, (long) arg0.aByte28);
 	}
 
 	@OriginalMember(owner = "client!gh", name = "a", descriptor = "(I[BI)V")
@@ -61,6 +61,6 @@ public final class Class10_Sub2 extends Class10 implements Interface5 {
 	@OriginalMember(owner = "client!gh", name = "b", descriptor = "(Lclient!kj;)V")
 	@Override
 	public void method4600(@OriginalArg(0) Class126 arg0) {
-		this.aClass19_Sub1_11.anOpengl1.glColorPointer(arg0.aByte29, arg0.aShort39, this.anInt2298, (long) arg0.aByte28);
+		this.aClass19_Sub1_11.gl.glColorPointer(arg0.aByte29, arg0.aShort39, this.anInt2298, (long) arg0.aByte28);
 	}
 }

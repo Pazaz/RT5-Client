@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!uh")
-public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
+public final class Class11_Sub5_Sub4 extends Entity {
 
 	@OriginalMember(owner = "client!uh", name = "y", descriptor = "Lclient!oh;")
-	private Class12_Sub5 aClass12_Sub5_7;
+	private ParticleSystem aClass12_Sub5_7;
 
 	@OriginalMember(owner = "client!uh", name = "N", descriptor = "I")
 	private int anInt6518 = -32768;
@@ -38,12 +38,12 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 		super(arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, false, (byte) 0);
 		this.anInt6505 = arg0;
 		this.anInt6504 = arg1 + arg2;
-		@Pc(41) int local41 = Static322.aClass211_2.method5407(this.anInt6505).anInt2448;
+		@Pc(41) int local41 = client.SpotAnimTypes.method5407(this.anInt6505).anInt2448;
 		if (local41 == -1) {
 			this.aBoolean445 = true;
 		} else {
 			this.aBoolean445 = false;
-			this.aClass157_3 = Static39.aClass85_1.method2371(local41);
+			this.aClass157_3 = client.SeqTypes.method2371(local41);
 		}
 		if (arg2 == this.anInt6504) {
 			Static1.method4(this.aClass157_3, false, super.aByte78, super.xFine, super.zFine, this.anInt6509);
@@ -59,7 +59,7 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
 	public void method6070(@OriginalArg(0) Class19 arg0) {
-		@Pc(9) Class31 local9 = this.method5874(0, arg0);
+		@Pc(9) Model local9 = this.method5874(0, arg0);
 		if (local9 != null) {
 			this.method5873(local9, arg0);
 		}
@@ -72,11 +72,11 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 	}
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(Lclient!gn;Lclient!wm;Z)V")
-	private void method5873(@OriginalArg(0) Class31 arg0, @OriginalArg(1) Class19 arg1) {
+	private void method5873(@OriginalArg(0) Model arg0, @OriginalArg(1) Class19 arg1) {
 		@Pc(6) Class114[] local6 = arg0.method3808();
 		@Pc(9) Class163[] local9 = arg0.method3840();
 		if ((this.aClass12_Sub5_7 == null || this.aClass12_Sub5_7.aBoolean322) && (local6 != null || local9 != null)) {
-			this.aClass12_Sub5_7 = new Class12_Sub5(client.cycle);
+			this.aClass12_Sub5_7 = new ParticleSystem(client.cycle);
 		}
 		if (this.aClass12_Sub5_7 != null) {
 			this.aClass12_Sub5_7.method4357(arg1, (long) client.cycle, local6, local9);
@@ -87,7 +87,7 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 	@OriginalMember(owner = "client!uh", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
 	public Class12_Sub4 method6073(@OriginalArg(0) Class19 arg0) {
-		@Pc(9) Class31 local9 = this.method5874(1024, arg0);
+		@Pc(9) Model local9 = this.method5874(1024, arg0);
 		if (local9 == null) {
 			return null;
 		}
@@ -111,14 +111,14 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 	}
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(ILclient!wm;Z)Lclient!gn;")
-	private Class31 method5874(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
-		@Pc(9) Class91 local9 = Static322.aClass211_2.method5407(this.anInt6505);
-		return this.aBoolean445 ? local9.method2433(-1, 0, arg1, arg0, Static39.aClass85_1, -1) : local9.method2433(this.anInt6510, this.anInt6524, arg1, arg0, Static39.aClass85_1, this.anInt6509);
+	private Model method5874(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
+		@Pc(9) SpotAnimType local9 = client.SpotAnimTypes.method5407(this.anInt6505);
+		return this.aBoolean445 ? local9.method2433(-1, 0, arg1, arg0, client.SeqTypes, -1) : local9.method2433(this.anInt6510, this.anInt6524, arg1, arg0, client.SeqTypes, this.anInt6509);
 	}
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) Class11 arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		throw new IllegalStateException();
 	}
 

@@ -129,44 +129,44 @@ public final class Class250 {
 	private final Class19_Sub2 aClass19_Sub2_11;
 
 	@OriginalMember(owner = "client!wq", name = "g", descriptor = "Lclient!gf;")
-	public Class81 aClass81_2;
+	public Rasteriser aClass81_2;
 
 	@OriginalMember(owner = "client!wq", name = "K", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_11;
+	public final SoftwareModel aClass31_Sub1_11;
 
 	@OriginalMember(owner = "client!wq", name = "fb", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_14;
+	public final SoftwareModel aClass31_Sub1_14;
 
 	@OriginalMember(owner = "client!wq", name = "s", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_9;
+	public final SoftwareModel aClass31_Sub1_9;
 
 	@OriginalMember(owner = "client!wq", name = "W", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_13;
+	public final SoftwareModel aClass31_Sub1_13;
 
 	@OriginalMember(owner = "client!wq", name = "F", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_10;
+	public final SoftwareModel aClass31_Sub1_10;
 
 	@OriginalMember(owner = "client!wq", name = "ib", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_15;
+	public final SoftwareModel aClass31_Sub1_15;
 
 	@OriginalMember(owner = "client!wq", name = "V", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_12;
+	public final SoftwareModel aClass31_Sub1_12;
 
 	@OriginalMember(owner = "client!wq", name = "jb", descriptor = "Lclient!cb;")
-	public final Class31_Sub1 aClass31_Sub1_16;
+	public final SoftwareModel aClass31_Sub1_16;
 
 	@OriginalMember(owner = "client!wq", name = "<init>", descriptor = "(Lclient!j;)V")
 	public Class250(@OriginalArg(0) Class19_Sub2 arg0) {
 		this.aClass19_Sub2_11 = arg0;
-		this.aClass81_2 = new Class81(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_11 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_14 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_9 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_13 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_10 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_15 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_12 = new Class31_Sub1(this.aClass19_Sub2_11);
-		this.aClass31_Sub1_16 = new Class31_Sub1(this.aClass19_Sub2_11);
+		this.aClass81_2 = new Rasteriser(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_11 = new SoftwareModel(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_14 = new SoftwareModel(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_9 = new SoftwareModel(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_13 = new SoftwareModel(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_10 = new SoftwareModel(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_15 = new SoftwareModel(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_12 = new SoftwareModel(this.aClass19_Sub2_11);
+		this.aClass31_Sub1_16 = new SoftwareModel(this.aClass19_Sub2_11);
 	}
 
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(ILjava/lang/Runnable;)V")
@@ -176,6 +176,6 @@ public final class Class250 {
 
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(I)V")
 	public void method6457() {
-		this.aClass81_2 = new Class81(this.aClass19_Sub2_11);
+		this.aClass81_2 = new Rasteriser(this.aClass19_Sub2_11);
 	}
 }

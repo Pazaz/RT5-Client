@@ -52,7 +52,7 @@ public final class Class2_Sub6 extends Node {
 	public int anInt1118;
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(Lclient!wm;II)Lclient!gn;")
-	public Class31 method1360(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
+	public Model method1360(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
 		@Pc(13) int local13 = Static150.anIntArray174[this.anInt1116];
 		if (local13 == 0) {
 			@Pc(119) Class11_Sub1 local119 = Static12.method283(this.anInt1110, this.anInt1117, this.anInt1109);
@@ -71,7 +71,7 @@ public final class Class2_Sub6 extends Node {
 				}
 			}
 		} else if (local13 == 2) {
-			@Pc(94) Class11_Sub5 local94 = Static105.method2207(this.anInt1110, this.anInt1117, this.anInt1109, Interface6.class);
+			@Pc(94) Entity local94 = Static105.method2207(this.anInt1110, this.anInt1117, this.anInt1109, Interface6.class);
 			if (local94 instanceof Class11_Sub5_Sub6) {
 				@Pc(100) Class11_Sub5_Sub6 local100 = (Class11_Sub5_Sub6) local94;
 				if (local100.aClass11_Sub5_2 != null) {

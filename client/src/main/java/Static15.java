@@ -9,7 +9,7 @@ public final class Static15 {
 	public static int anInt366;
 
 	@OriginalMember(owner = "client!ar", name = "U", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array3;
+	public static Sprite[] aClass13Array3;
 
 	@OriginalMember(owner = "client!ar", name = "a", descriptor = "(IJ)Ljava/lang/String;")
 	public static String method393(@OriginalArg(1) long arg0) {
@@ -31,8 +31,8 @@ public final class Static15 {
 	}
 
 	@OriginalMember(owner = "client!ar", name = "a", descriptor = "(ILclient!ct;IILclient!wm;Z)V")
-	public static void method395(@OriginalArg(0) int arg0, @OriginalArg(1) Class41 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class19 arg4) {
-		@Pc(9) Class146 local9 = Static320.aClass104_2.method2708(arg1.anInt1316);
+	public static void method395(@OriginalArg(0) int arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class19 arg4) {
+		@Pc(9) MsiType local9 = client.MsiType.method2708(arg1.anInt1316);
 		if (local9.anInt3751 == -1) {
 			return;
 		}
@@ -42,7 +42,7 @@ public final class Static15 {
 		} else {
 			arg0 = 0;
 		}
-		@Pc(39) Class13 local39 = local9.method3711(arg1.aBoolean118, arg0, arg4);
+		@Pc(39) Sprite local39 = local9.method3711(arg1.aBoolean118, arg0, arg4);
 		if (local39 == null) {
 			return;
 		}

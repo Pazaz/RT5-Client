@@ -23,7 +23,7 @@ public final class Static307 {
 			return;
 		}
 		if (arg0 != -1) {
-			@Pc(25) Class220 local25 = Static221.aClass150_3.method3731(arg0);
+			@Pc(25) CursorType local25 = client.aClass150_3.method3731(arg0);
 			@Pc(29) Class48 local29 = local25.method5658();
 			if (local29 == null) {
 				arg0 = -1;
@@ -41,7 +41,7 @@ public final class Static307 {
 	@OriginalMember(owner = "client!rq", name = "a", descriptor = "(ILclient!oe;BI)V")
 	public static void method5256(@OriginalArg(0) int arg0, @OriginalArg(1) Npc arg1, @OriginalArg(3) int arg2) {
 		if (arg0 == arg1.anInt4597 && arg0 != -1) {
-			@Pc(78) Class157 local78 = Static39.aClass85_1.method2371(arg0);
+			@Pc(78) Class157 local78 = client.SeqTypes.method2371(arg0);
 			@Pc(81) int local81 = local78.anInt4022;
 			if (local81 == 1) {
 				arg1.anInt4592 = 1;
@@ -54,7 +54,7 @@ public final class Static307 {
 			if (local81 == 2) {
 				arg1.anInt4598 = 0;
 			}
-		} else if (arg0 == -1 || arg1.anInt4597 == -1 || Static39.aClass85_1.method2371(arg0).anInt4023 >= Static39.aClass85_1.method2371(arg1.anInt4597).anInt4023) {
+		} else if (arg0 == -1 || arg1.anInt4597 == -1 || client.SeqTypes.method2371(arg0).anInt4023 >= client.SeqTypes.method2371(arg1.anInt4597).anInt4023) {
 			arg1.anInt4597 = arg0;
 			arg1.anInt4598 = 0;
 			arg1.anInt4607 = 0;
@@ -63,7 +63,7 @@ public final class Static307 {
 			arg1.anInt4590 = arg2;
 			arg1.anInt4642 = arg1.anInt4643;
 			if (arg1.anInt4597 != -1) {
-				Static1.method4(Static39.aClass85_1.method2371(arg1.anInt4597), false, arg1.aByte78, arg1.xFine, arg1.zFine, arg1.anInt4607);
+				Static1.method4(client.SeqTypes.method2371(arg1.anInt4597), false, arg1.aByte78, arg1.xFine, arg1.zFine, arg1.anInt4607);
 			}
 		}
 	}

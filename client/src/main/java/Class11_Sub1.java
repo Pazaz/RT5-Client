@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!gq")
-public abstract class Class11_Sub1 extends Class11 {
+public abstract class Class11_Sub1 extends BaseEntity {
 
 	@OriginalMember(owner = "client!gq", name = "k", descriptor = "I")
 	protected int anInt3486;

@@ -51,7 +51,7 @@ public final class Class2_Sub19 extends Node {
 	public int anInt2907;
 
 	@OriginalMember(owner = "client!jc", name = "O", descriptor = "Lclient!ct;")
-	public Class41 aClass41_1;
+	public LocType aClass41_1;
 
 	@OriginalMember(owner = "client!jc", name = "P", descriptor = "[I")
 	public int[] anIntArray181;
@@ -71,7 +71,7 @@ public final class Class2_Sub19 extends Node {
 	public void method2941() {
 		@Pc(8) int local8 = this.anInt2894;
 		if (this.aClass41_1 != null) {
-			@Pc(88) Class41 local88 = this.aClass41_1.method1533(Static214.aClass226_1);
+			@Pc(88) LocType local88 = this.aClass41_1.method1533(Static214.aClass226_1);
 			if (local88 == null) {
 				this.anInt2894 = -1;
 				this.anInt2903 = 0;
@@ -91,9 +91,9 @@ public final class Class2_Sub19 extends Node {
 			@Pc(42) int local42 = Static340.method5764(this.aClass11_Sub5_Sub2_Sub2_1);
 			if (local42 != local8) {
 				this.anInt2894 = local42;
-				@Pc(52) Class71 local52 = this.aClass11_Sub5_Sub2_Sub2_1.type;
-				if (local52.anIntArray129 != null) {
-					local52 = local52.method2093(Static214.aClass226_1);
+				@Pc(52) NpcType local52 = this.aClass11_Sub5_Sub2_Sub2_1.type;
+				if (local52.multiNpcs != null) {
+					local52 = local52.getMultiNpc(Static214.aClass226_1);
 				}
 				if (local52 == null) {
 					this.anInt2906 = this.anInt2901 = 0;

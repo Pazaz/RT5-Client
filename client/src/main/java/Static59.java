@@ -2,9 +2,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static59 {
 
-	@OriginalMember(owner = "client!dh", name = "a", descriptor = "Lclient!ak;")
-	public static Class7 aClass7_1;
-
 	@OriginalMember(owner = "client!dh", name = "f", descriptor = "[I")
 	public static int[] anIntArray107;
 
@@ -28,26 +25,26 @@ public final class Static59 {
 
 	@OriginalMember(owner = "client!dh", name = "a", descriptor = "(B)V")
 	public static void method1643() {
-		Static39.aClass72_3.method2108();
-		Static336.aClass241_5.method6268();
-		Static21.aClass55_1.method1781();
-		Static359.LocTypeList.method5158();
-		Static6.NpcTypeList.method5579();
-		Static313.ObjTypeList.method2763();
-		Static39.aClass85_1.method2374();
-		Static322.aClass211_2.method5408();
-		Static322.aClass128_1.method3393();
-		Static56.aClass199_1.method5112();
-		aClass7_1.method242();
-		Static320.aClass104_2.method2705();
-		Static236.aClass125_1.method3373();
-		Static287.aClass233_1.method5882();
-		Static363.aClass18_2.method564();
-		Static9.aClass213_1.method5422();
-		Static278.aClass160_1.method4030();
-		Static90.aClass190_3.method4884();
-		Static221.aClass150_3.method3728();
-		Static367.aClass132_1.method3473();
+		client.FloTypes.method2108();
+		client.FluTypes.method6268();
+		client.IdkTypes.method1781();
+		client.LocTypes.method5158();
+		client.NpcTypes.method5579();
+		client.ObjTypes.method2763();
+		client.SeqTypes.method2374();
+		client.SpotAnimTypes.method5408();
+		client.VarbitTypes.method3393();
+		client.VarpTypes.method5112();
+		client.BasTypes.method242();
+		client.MsiType.method2705();
+		client.aClass125_1.method3373();
+		client.aClass233_1.method5882();
+		client.ParamTypes.method564();
+		client.aClass213_1.method5422();
+		client.aClass160_1.method4030();
+		client.LightTypes.method4884();
+		client.aClass150_3.method3728();
+		client.StructTypes.method3473();
 		Static225.method3957();
 		Static13.method345();
 		Static320.method5461();

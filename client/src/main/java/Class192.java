@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class192 {
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "Lclient!gn;")
-	private Class31 aClass31_7;
+	private Model aClass31_7;
 
 	@OriginalMember(owner = "client!ql", name = "c", descriptor = "[Z")
 	private boolean[] aBooleanArray49;
@@ -28,7 +28,7 @@ public final class Class192 {
 	private int anInt5441;
 
 	@OriginalMember(owner = "client!ql", name = "K", descriptor = "Lclient!oh;")
-	public Class12_Sub5 aClass12_Sub5_5;
+	public ParticleSystem aClass12_Sub5_5;
 
 	@OriginalMember(owner = "client!ql", name = "L", descriptor = "Lclient!kb;")
 	private Class2_Sub2_Sub4 aClass2_Sub2_Sub4_6;
@@ -73,7 +73,7 @@ public final class Class192 {
 	private final boolean aBoolean386;
 
 	@OriginalMember(owner = "client!ql", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIIIZI)V")
-	public Class192(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class41 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) boolean arg8, @OriginalArg(9) int arg9) {
+	public Class192(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) boolean arg8, @OriginalArg(9) int arg9) {
 		this.anInt5433 = arg2;
 		this.anInt5438 = arg7;
 		this.aBoolean387 = arg8;
@@ -99,8 +99,8 @@ public final class Class192 {
 		@Pc(11) int local11 = arg0;
 		@Pc(13) boolean local13 = false;
 		if (arg0 == -1) {
-			@Pc(22) Class41 local22 = Static359.LocTypeList.method5163(this.anInt5432);
-			@Pc(24) Class41 local24 = local22;
+			@Pc(22) LocType local22 = client.LocTypes.method5163(this.anInt5432);
+			@Pc(24) LocType local24 = local22;
 			if (local22.anIntArray94 != null) {
 				local22 = local22.method1533(Static214.aClass226_1);
 			}
@@ -142,7 +142,7 @@ public final class Class192 {
 		}
 		this.aClass31_7 = null;
 		if (this.aClass157_2 == null || local11 != this.aClass157_2.anInt4028) {
-			this.aClass157_2 = Static39.aClass85_1.method2371(local11);
+			this.aClass157_2 = client.SeqTypes.method2371(local11);
 		} else if (this.aClass157_2.anInt4022 == 0) {
 			return;
 		}
@@ -230,16 +230,16 @@ public final class Class192 {
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(Lclient!wm;ILclient!gn;IIZBI)V")
-	public void method4935(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class31 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5, @OriginalArg(7) int arg6) {
+	public void method4935(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Model arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5, @OriginalArg(7) int arg6) {
 		@Pc(6) Class114[] local6 = arg2.method3808();
 		@Pc(9) Class163[] local9 = arg2.method3840();
 		if ((this.aClass12_Sub5_5 == null || this.aClass12_Sub5_5.aBoolean322) && (local6 != null || local9 != null)) {
-			@Pc(26) Class41 local26 = Static359.LocTypeList.method5163(this.anInt5432);
+			@Pc(26) LocType local26 = client.LocTypes.method5163(this.anInt5432);
 			if (local26.anIntArray94 != null) {
 				local26 = local26.method1533(Static214.aClass226_1);
 			}
 			if (local26 != null) {
-				this.aClass12_Sub5_5 = new Class12_Sub5(client.cycle);
+				this.aClass12_Sub5_5 = new ParticleSystem(client.cycle);
 			}
 		}
 		if (this.aClass12_Sub5_5 == null) {
@@ -281,8 +281,8 @@ public final class Class192 {
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(ZZLclient!wm;IIIB)Lclient!gn;")
-	public Class31 method4941(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
-		@Pc(11) Class41 local11 = Static359.LocTypeList.method5163(this.anInt5432);
+	public Model method4941(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+		@Pc(11) LocType local11 = client.LocTypes.method5163(this.anInt5432);
 		if (local11.anIntArray94 != null) {
 			local11 = local11.method1533(Static214.aClass226_1);
 		}
@@ -314,7 +314,7 @@ public final class Class192 {
 		} else {
 			local167 = this.aByte58 < 3 ? Static365.aClass6Array4[this.aByte58 + 1] : null;
 		}
-		@Pc(175) Class31 local175 = null;
+		@Pc(175) Model local175 = null;
 		if (this.aClass157_2 != null) {
 			if (local117) {
 				arg3 |= 0x20000;

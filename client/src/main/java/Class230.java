@@ -58,7 +58,7 @@ public final class Class230 {
 	public int anInt6454 = -1;
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(BLclient!bt;I)V")
-	private void method5832(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
+	private void decode(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.aString64 = arg0.gjstr2();
 		} else if (arg1 == 2) {
@@ -170,13 +170,13 @@ public final class Class230 {
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(BLclient!bt;)V")
-	public void method5836(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Buffer arg0) {
 		while (true) {
 			@Pc(13) int local13 = arg0.g1();
 			if (local13 == 0) {
 				return;
 			}
-			this.method5832(arg0, local13);
+			this.decode(arg0, local13);
 		}
 	}
 }

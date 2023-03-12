@@ -7,9 +7,6 @@ public final class Static192 {
 	@OriginalMember(owner = "client!l", name = "e", descriptor = "F")
 	public static float aFloat40;
 
-	@OriginalMember(owner = "client!l", name = "f", descriptor = "I")
-	public static int anInt3545;
-
 	@OriginalMember(owner = "client!l", name = "c", descriptor = "Lclient!bc;")
 	public static final Class16 aClass16_5 = new Class16("", 11);
 

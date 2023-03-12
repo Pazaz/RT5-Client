@@ -87,15 +87,6 @@ public final class Static17 {
 		local8.method2312();
 	}
 
-	@OriginalMember(owner = "client!at", name = "c", descriptor = "(B)Lclient!wj;")
-	public static Class236 method4214() {
-		try {
-			return (Class236) Class.forName("Class236_Sub1").getDeclaredConstructor().newInstance();
-		} catch (@Pc(14) Throwable local14) {
-			return null;
-		}
-	}
-
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(Ljava/awt/Frame;ILclient!ml;)V")
 	public static void method4215(@OriginalArg(0) Frame arg0, @OriginalArg(2) Signlink arg1) {
 		while (true) {

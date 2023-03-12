@@ -36,7 +36,7 @@ public final class Static1 {
 					@Pc(106) int local106 = local92 & 0x3F;
 					@Pc(119) int local119 = local102 + (Static291.mapSquares[local10] >> 8) * 64 - Static164.anInt3140;
 					@Pc(132) int local132 = local106 + (Static291.mapSquares[local10] & 0xFF) * 64 - Static148.anInt2719;
-					@Pc(139) Class71 local139 = Static6.NpcTypeList.method5570(local65.g2());
+					@Pc(139) NpcType local139 = client.NpcTypes.method5570(local65.g2());
 					if (NpcList.npcs[local88] == null && (local139.aByte16 & 0x1) > 0 && Static44.anInt1115 == local96 && local119 >= 0 && local119 + local139.size < Static373.anInt7033 && local132 >= 0 && local132 + local139.size < Static242.anInt4449) {
 						NpcList.npcs[local88] = new Npc();
 						NpcList.npcs[local88].anInt4619 = local88;

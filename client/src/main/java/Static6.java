@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static6 {
 
-	@OriginalMember(owner = "client!ae", name = "T", descriptor = "Lclient!ta;")
-	public static Class219 NpcTypeList;
-
 	@OriginalMember(owner = "client!ae", name = "X", descriptor = "[[Z")
 	public static boolean[][] aBooleanArrayArray1;
 

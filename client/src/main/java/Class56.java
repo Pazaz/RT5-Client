@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class56 {
 
 	@OriginalMember(owner = "client!ea", name = "c", descriptor = "Lclient!hu;")
-	private final Class98 aClass98_8 = new Class98(256);
+	private final LruHashTable aClass98_8 = new LruHashTable(256);
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "Lclient!bf;")
 	private final Class19_Sub1 aClass19_Sub1_9;
@@ -28,7 +28,7 @@ public final class Class56 {
 
 	@OriginalMember(owner = "client!ea", name = "a", descriptor = "(IB)Lclient!al;")
 	public Class8_Sub1 method1788(@OriginalArg(0) int arg0) {
-		@Pc(6) Object local6 = this.aClass98_8.method2612((long) arg0);
+		@Pc(6) Object local6 = this.aClass98_8.get((long) arg0);
 		if (local6 != null) {
 			return (Class8_Sub1) local6;
 		} else if (this.anInterface2_3.method2657(arg0)) {
@@ -43,7 +43,7 @@ public final class Class56 {
 				local73 = new Class8_Sub1(this.aClass19_Sub1_9, 3553, 6408, local35, local35, local28.aByte66 != 0, local84, false);
 			}
 			local73.method3638(local28.aBoolean436, local28.aBoolean439);
-			this.aClass98_8.method2624((long) arg0, local73);
+			this.aClass98_8.put((long) arg0, local73);
 			return local73;
 		} else {
 			return null;

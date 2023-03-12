@@ -30,7 +30,7 @@ public final class Static148 {
 	@OriginalMember(owner = "client!ij", name = "a", descriptor = "(IIIII)V")
 	public static void method2710(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		for (@Pc(8) int local8 = 0; local8 < Static154.anInt2806; local8++) {
-			@Pc(14) Rectangle local14 = Class55.aRectangleArray1[local8];
+			@Pc(14) Rectangle local14 = IdkTypeList.aRectangleArray1[local8];
 			if (arg1 < local14.x + local14.width && local14.x < arg3 + arg1 && local14.y + local14.height > arg0 && arg0 + arg2 > local14.y) {
 				Static375.aBooleanArray64[local8] = true;
 			}

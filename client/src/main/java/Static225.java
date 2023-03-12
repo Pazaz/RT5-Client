@@ -140,7 +140,7 @@ public final class Static225 {
 
 	@OriginalMember(owner = "client!n", name = "a", descriptor = "(B)V")
 	public static void method3957() {
-		@Pc(1) Class98 local1 = Static92.aClass98_9;
+		@Pc(1) LruHashTable local1 = Static92.aClass98_9;
 		synchronized (Static92.aClass98_9) {
 			Static92.aClass98_9.method2621();
 		}

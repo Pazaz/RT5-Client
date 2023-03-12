@@ -16,7 +16,7 @@ public final class Class8_Sub2 extends Class8 {
 	public Class8_Sub2(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) byte[] arg3, @OriginalArg(4) int arg4) {
 		super(arg0, 3552, arg1, arg2, false);
 		this.anInt2600 = arg2;
-		@Pc(12) opengl local12 = arg0.anOpengl1;
+		@Pc(12) opengl local12 = arg0.gl;
 		this.aClass19_Sub1_40.method848(this);
 		local12.glPixelStorei(GL.GL_UNPACK_ALIGNMENT, GL.GL_LINES);
 		local12.glTexImage1D(this.anInt6882, 0, this.anInt6883, this.anInt2600, 0, arg4, GL.GL_UNSIGNED_BYTE, ByteBuffer.wrap(arg3));
@@ -26,7 +26,7 @@ public final class Class8_Sub2 extends Class8 {
 
 	@OriginalMember(owner = "client!ht", name = "a", descriptor = "(ZI)V")
 	public void method2611() {
-		@Pc(3) opengl local3 = this.aClass19_Sub1_40.anOpengl1;
+		@Pc(3) opengl local3 = this.aClass19_Sub1_40.gl;
 		this.aClass19_Sub1_40.method848(this);
 		local3.glTexParameteri(this.anInt6882, GL.GL_TEXTURE_WRAP_S, GL.GL_CLAMP_TO_EDGE);
 	}

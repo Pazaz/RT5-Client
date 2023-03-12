@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static61 {
 
 	@OriginalMember(owner = "client!dj", name = "Y", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_5 = new Class98(8);
+	public static final LruHashTable aClass98_5 = new LruHashTable(8);
 
 	@OriginalMember(owner = "client!dj", name = "bb", descriptor = "Ljava/util/Random;")
 	public static final Random aRandom1 = new Random();

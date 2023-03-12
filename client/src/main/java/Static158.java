@@ -21,14 +21,14 @@ public final class Static158 {
 		@Pc(9) StringBuffer local9 = new StringBuffer();
 		@Pc(11) int local11 = Static361.anInt6770;
 		for (@Pc(13) int local13 = 0; local13 < arg0.length; local13++) {
-			@Pc(27) Class230 local27 = Static287.aClass233_1.method5885(arg0[local13]);
+			@Pc(27) Class230 local27 = client.aClass233_1.method5885(arg0[local13]);
 			if (local27.anInt6454 != -1) {
-				@Pc(39) Class13 local39 = (Class13) Static210.aClass98_31.method2612((long) local27.anInt6454);
+				@Pc(39) Sprite local39 = (Sprite) Static210.aClass98_31.get((long) local27.anInt6454);
 				if (local39 == null) {
 					@Pc(47) Class48 local47 = Static396.method1682(client.jsArchive8, local27.anInt6454, 0);
 					if (local47 != null) {
 						local39 = Static190.aClass19_8.method2891(local47);
-						Static210.aClass98_31.method2624((long) local27.anInt6454, local39);
+						Static210.aClass98_31.put((long) local27.anInt6454, local39);
 					}
 				}
 				if (local39 != null) {
@@ -69,7 +69,7 @@ public final class Static158 {
 			if (local28 != null) {
 				local28.aByte10--;
 				for (@Pc(40) Class22 local40 = local28.aClass22_2; local40 != null; local40 = local40.aClass22_1) {
-					@Pc(44) Class11_Sub5 local44 = local40.aClass11_Sub5_1;
+					@Pc(44) Entity local44 = local40.aClass11_Sub5_1;
 					if (local44.aShort103 == arg0 && local44.aShort101 == arg1) {
 						local44.aByte78--;
 					}

@@ -58,7 +58,7 @@ public final class Class19_Sub2 extends Class19 {
 	public int anInt2865;
 
 	@OriginalMember(owner = "client!j", name = "fb", descriptor = "Lclient!hu;")
-	private Class98 aClass98_25;
+	private LruHashTable aClass98_25;
 
 	@OriginalMember(owner = "client!j", name = "lb", descriptor = "Lclient!aa;")
 	private Class2_Sub1 aClass2_Sub1_1;
@@ -133,7 +133,7 @@ public final class Class19_Sub2 extends Class19 {
 	private boolean aBoolean202 = false;
 
 	@OriginalMember(owner = "client!j", name = "cb", descriptor = "Lclient!hu;")
-	private final Class98 aClass98_24 = new Class98(16);
+	private final LruHashTable aClass98_24 = new LruHashTable(16);
 
 	@OriginalMember(owner = "client!j", name = "N", descriptor = "Ljava/awt/Canvas;")
 	private Canvas aCanvas3;
@@ -214,7 +214,7 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method2845(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		@Pc(3) Class250 local3 = this.method2905(Thread.currentThread());
-		@Pc(6) Class81 local6 = local3.aClass81_2;
+		@Pc(6) Rasteriser local6 = local3.aClass81_2;
 		@Pc(10) int local10 = arg2 - arg0;
 		@Pc(14) int local14 = arg3 - arg1;
 		@Pc(21) int local21 = local10 >= 0 ? local10 : -local10;
@@ -248,9 +248,9 @@ public final class Class19_Sub2 extends Class19 {
 		@Pc(132) int local132 = local98 + local14 - local88;
 		@Pc(138) int local138 = local98 + local14 + local80;
 		local6.anInt2264 = 0;
-		local6.aBoolean169 = local102 < 0 || local102 > local6.anInt2265 || local106 < 0 || local106 > local6.anInt2265 || local112 < 0 || local112 > local6.anInt2265;
+		local6.textX = local102 < 0 || local102 > local6.width || local106 < 0 || local106 > local6.width || local112 < 0 || local112 > local6.width;
 		local6.method2282(local122, local126, local132, local102, local106, local112, arg4);
-		local6.aBoolean169 = local102 < 0 || local102 > local6.anInt2265 || local106 < 0 || local106 > local6.anInt2265 || local118 < 0 || local118 > local6.anInt2265;
+		local6.textX = local102 < 0 || local102 > local6.width || local106 < 0 || local106 > local6.width || local118 < 0 || local118 > local6.width;
 		local6.method2282(local122, local132, local138, local102, local112, local118, arg4);
 	}
 
@@ -261,14 +261,14 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "([Lclient!gn;Lclient!on;[Lclient!au;I)V")
 	@Override
-	public void method2881(@OriginalArg(0) Class31[] arg0, @OriginalArg(1) Class14 arg1, @OriginalArg(2) Class12_Sub2[] arg2, @OriginalArg(3) int arg3) {
-		@Pc(3) Class31_Sub1[] local3 = new Class31_Sub1[arg0.length];
+	public void method2881(@OriginalArg(0) Model[] arg0, @OriginalArg(1) Class14 arg1, @OriginalArg(2) Class12_Sub2[] arg2, @OriginalArg(3) int arg3) {
+		@Pc(3) SoftwareModel[] local3 = new SoftwareModel[arg0.length];
 		for (@Pc(5) int local5 = 0; local5 < arg0.length; local5++) {
 			if (arg0[local5] != null) {
-				local3[local5] = (Class31_Sub1) arg0[local5];
+				local3[local5] = (SoftwareModel) arg0[local5];
 			}
 		}
-		@Pc(26) Class31_Sub1 local26 = Static38.method1259(this, local3);
+		@Pc(26) SoftwareModel local26 = Static38.method1259(this, local3);
 		local26.method1249(arg1, arg2 == null ? null : arg2[0], null, arg3);
 	}
 
@@ -323,11 +323,11 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method2853() {
 		@Pc(3) Class250 local3 = this.method2905(Thread.currentThread());
-		@Pc(6) Class81 local6 = local3.aClass81_2;
+		@Pc(6) Rasteriser local6 = local3.aClass81_2;
 		local6.aBoolean168 = false;
 		local6.aBoolean168 = false;
 		local6.anInt2264 = 0;
-		local6.aBoolean169 = true;
+		local6.textX = true;
 		local6.method2289(10, 50, 90, 5, 75, 15, -65536, -65536, -65536);
 		local6.aBoolean168 = true;
 	}
@@ -352,8 +352,8 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(Lclient!gn;Lclient!tp;Lclient!on;Lclient!au;I)V")
 	@Override
-	public void method2824(@OriginalArg(0) Class31 arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2 arg3) {
-		((Class31_Sub1) arg0).method1249(arg2, arg3, arg1, 0);
+	public void method2824(@OriginalArg(0) Model arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2 arg3) {
+		((SoftwareModel) arg0).method1249(arg2, arg3, arg1, 0);
 	}
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(II)I")
@@ -512,7 +512,7 @@ public final class Class19_Sub2 extends Class19 {
 			return;
 		}
 		if (this.aClass2_Sub1_1 == null || this.aClass2_Sub1_1.key != (long) local6) {
-			this.aClass2_Sub1_1 = (Class2_Sub1) this.aClass98_24.method2612((long) local6);
+			this.aClass2_Sub1_1 = (Class2_Sub1) this.aClass98_24.get((long) local6);
 		}
 		if (this.aClass2_Sub1_1 == null) {
 			@Pc(44) int[] local44 = this.method2910(local6);
@@ -523,7 +523,7 @@ public final class Class19_Sub2 extends Class19 {
 			this.aClass2_Sub1_1.aBoolean2 = this.method2914(local6);
 			@Pc(65) int local65 = this.aClass2_Sub1_1.aBoolean2 ? 64 : 128;
 			this.aClass2_Sub1_1.aClass13_1 = this.method2884(local44, local65, local65, local65);
-			this.aClass98_24.method2624((long) local6, this.aClass2_Sub1_1);
+			this.aClass98_24.put((long) local6, this.aClass2_Sub1_1);
 		}
 		if (this.aClass2_Sub1_1.aBoolean2) {
 			local3 <<= 0x1;
@@ -657,10 +657,10 @@ public final class Class19_Sub2 extends Class19 {
 		this.anInt2844 = this.anInt2857 - this.anInt2860;
 		this.anInt2862 = this.anInt2859 - this.anInt2860;
 		for (@Pc(29) int local29 = 0; local29 < this.anInt2846; local29++) {
-			@Pc(36) Class81 local36 = this.aClass250Array1[local29].aClass81_2;
+			@Pc(36) Rasteriser local36 = this.aClass250Array1[local29].aClass81_2;
 			local36.anInt2266 = this.anInt2855 - this.anInt2868;
 			local36.anInt2263 = this.anInt2860 - this.anInt2857;
-			local36.anInt2265 = this.anInt2854 - this.anInt2868;
+			local36.width = this.anInt2854 - this.anInt2868;
 			local36.anInt2267 = this.anInt2859 - this.anInt2857;
 		}
 		@Pc(78) int local78 = this.anInt2857 * this.anInt2863 + this.anInt2868;
@@ -740,10 +740,10 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "k", descriptor = "(I)[I")
 	private int[] method2910(@OriginalArg(0) int arg0) {
-		@Pc(2) Class98 local2 = this.aClass98_25;
+		@Pc(2) LruHashTable local2 = this.aClass98_25;
 		@Pc(12) Class2_Sub14 local12;
 		synchronized (this.aClass98_25) {
-			local12 = (Class2_Sub14) this.aClass98_25.method2612((long) arg0);
+			local12 = (Class2_Sub14) this.aClass98_25.get((long) arg0);
 			if (local12 == null) {
 				if (!super.anInterface2_5.method2657(arg0)) {
 					return null;
@@ -751,7 +751,7 @@ public final class Class19_Sub2 extends Class19 {
 				@Pc(32) Class229 local32 = super.anInterface2_5.method2658(arg0);
 				@Pc(42) int local42 = local32.aBoolean441 || this.aBoolean201 ? 64 : 128;
 				local12 = new Class2_Sub14(arg0, local42, super.anInterface2_5.method2656(0.7F, local42, local42, arg0), local32.aBoolean440);
-				this.aClass98_25.method2624((long) arg0, local12);
+				this.aClass98_25.put((long) arg0, local12);
 			}
 		}
 		local12.aBoolean165 = true;
@@ -760,7 +760,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(IIIIZ)Lclient!jd;")
 	@Override
-	public Class13 method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
+	public Sprite method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
 		@Pc(4) int[] local4 = new int[arg2 * arg3];
 		@Pc(11) int local11 = arg1 * this.anInt2863 + arg0;
 		@Pc(16) int local16 = this.anInt2863 - arg2;
@@ -842,10 +842,10 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "l", descriptor = "(I)[I")
 	public int[] method2911(@OriginalArg(0) int arg0) {
-		@Pc(2) Class98 local2 = this.aClass98_25;
+		@Pc(2) LruHashTable local2 = this.aClass98_25;
 		@Pc(12) Class2_Sub14 local12;
 		synchronized (this.aClass98_25) {
-			local12 = (Class2_Sub14) this.aClass98_25.method2612((long) arg0);
+			local12 = (Class2_Sub14) this.aClass98_25.get((long) arg0);
 			if (local12 == null) {
 				if (!super.anInterface2_5.method2657(arg0)) {
 					return null;
@@ -853,7 +853,7 @@ public final class Class19_Sub2 extends Class19 {
 				@Pc(32) Class229 local32 = super.anInterface2_5.method2658(arg0);
 				@Pc(42) int local42 = local32.aBoolean441 || this.aBoolean201 ? 64 : 128;
 				local12 = new Class2_Sub14(arg0, local42, super.anInterface2_5.method2659(arg0, true, local42, 0.7F, local42), local32.aBoolean440);
-				this.aClass98_25.method2624((long) arg0, local12);
+				this.aClass98_25.put((long) arg0, local12);
 			}
 		}
 		local12.aBoolean165 = true;
@@ -943,8 +943,8 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(Lclient!pr;IIII)Lclient!gn;")
 	@Override
-	public Class31 method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		return new Class31_Sub1(this, arg0, arg1, arg3, arg4, arg2);
+	public Model method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+		return new SoftwareModel(this, arg0, arg1, arg3, arg4, arg2);
 	}
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(F)V")
@@ -1456,14 +1456,14 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "([Lclient!gn;Lclient!tp;Lclient!on;[Lclient!au;I)V")
 	@Override
-	public void method2830(@OriginalArg(0) Class31[] arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2[] arg3, @OriginalArg(4) int arg4) {
-		@Pc(3) Class31_Sub1[] local3 = new Class31_Sub1[arg0.length];
+	public void method2830(@OriginalArg(0) Model[] arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2[] arg3, @OriginalArg(4) int arg4) {
+		@Pc(3) SoftwareModel[] local3 = new SoftwareModel[arg0.length];
 		for (@Pc(5) int local5 = 0; local5 < arg0.length; local5++) {
 			if (arg0[local5] != null) {
-				local3[local5] = (Class31_Sub1) arg0[local5];
+				local3[local5] = (SoftwareModel) arg0[local5];
 			}
 		}
-		@Pc(26) Class31_Sub1 local26 = Static38.method1259(this, local3);
+		@Pc(26) SoftwareModel local26 = Static38.method1259(this, local3);
 		local26.method1249(arg2, arg3 == null ? null : arg3[0], arg1, arg4);
 	}
 
@@ -1502,12 +1502,12 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(Lclient!dk;Z)Lclient!jd;")
 	@Override
-	public Class13 method2891(@OriginalArg(0) Class48 arg0) {
+	public Sprite method2891(@OriginalArg(0) Class48 arg0) {
 		@Pc(2) int[] local2 = arg0.anIntArray108;
 		@Pc(5) byte[] local5 = arg0.aByteArray21;
 		@Pc(8) int local8 = arg0.anInt1531;
 		@Pc(11) int local11 = arg0.anInt1533;
-		@Pc(76) Class13_Sub1 local76;
+		@Pc(76) SoftwareSprite local76;
 		@Pc(20) int[] local20;
 		@Pc(25) byte[] local25;
 		@Pc(27) int local27;
@@ -1570,7 +1570,7 @@ public final class Class19_Sub2 extends Class19 {
 			}
 		}
 		this.anInt2849 = arg0;
-		this.aClass98_24.method2615(5);
+		this.aClass98_24.clean(5);
 	}
 
 	@OriginalMember(owner = "client!j", name = "b", descriptor = "(IIIII)V")
@@ -1808,7 +1808,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "M", descriptor = "()V")
 	private void method2915() {
-		this.aClass98_25 = new Class98(20);
+		this.aClass98_25 = new LruHashTable(20);
 		this.aClass14_Sub1_2 = new Class14_Sub1();
 		Static280.method4766(false);
 		this.aBoolean202 = true;
@@ -1828,7 +1828,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "([IIIII)Lclient!jd;")
 	@Override
-	public Class13 method2884(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
+	public Sprite method2884(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(1) boolean local1 = false;
 		@Pc(3) int local3 = 0;
 		for (@Pc(5) int local5 = 0; local5 < arg3; local5++) {

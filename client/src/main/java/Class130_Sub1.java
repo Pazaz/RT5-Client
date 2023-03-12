@@ -24,7 +24,7 @@ public final class Class130_Sub1 extends Class130 {
 	public Class130_Sub1(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) Class239 arg1, @OriginalArg(2) Class48[] arg2, @OriginalArg(3) boolean arg3) {
 		super(arg0, arg1);
 		this.aClass19_Sub1_19 = arg0;
-		@Pc(9) opengl local9 = arg0.anOpengl1;
+		@Pc(9) opengl local9 = arg0.gl;
 		@Pc(11) int local11 = 0;
 		@Pc(13) int local13;
 		for (local13 = 0; local13 < 256; local13++) {
@@ -96,7 +96,7 @@ public final class Class130_Sub1 extends Class130 {
 	protected void method5902(@OriginalArg(0) char arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) Class78 arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
 		@Pc(2) Class78_Sub2 local2 = (Class78_Sub2) arg5;
 		@Pc(5) Class8_Sub1_Sub1 local5 = local2.aClass8_Sub1_Sub1_2;
-		@Pc(9) opengl local9 = this.aClass19_Sub1_19.anOpengl1;
+		@Pc(9) opengl local9 = this.aClass19_Sub1_19.gl;
 		this.aClass19_Sub1_19.method844();
 		this.aClass19_Sub1_19.method848(this.aClass8_Sub1_Sub1_3);
 		if (this.aBoolean228 || arg4) {
@@ -133,7 +133,7 @@ public final class Class130_Sub1 extends Class130 {
 	@OriginalMember(owner = "client!ko", name = "a", descriptor = "(CIIIZ)V")
 	@Override
 	protected void method5892(@OriginalArg(0) char arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
-		@Pc(3) opengl local3 = this.aClass19_Sub1_19.anOpengl1;
+		@Pc(3) opengl local3 = this.aClass19_Sub1_19.gl;
 		this.aClass19_Sub1_19.method844();
 		this.aClass19_Sub1_19.method848(this.aClass8_Sub1_Sub1_3);
 		if (this.aBoolean228 || arg4) {

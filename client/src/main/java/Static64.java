@@ -18,22 +18,22 @@ public final class Static64 {
 	@OriginalMember(owner = "client!dp", name = "a", descriptor = "(ILclient!r;Lclient!r;)I")
 	public static int method1707(@OriginalArg(1) Js5 arg0, @OriginalArg(2) Js5 arg1) {
 		@Pc(5) int local5 = 0;
-		if (arg1.isFileReady(Static183.anInt80)) {
+		if (arg1.isFileReady(Sprites.p11FullId)) {
 			local5++;
 		}
-		if (arg1.isFileReady(Static371.anInt7014)) {
+		if (arg1.isFileReady(Sprites.p12FullId)) {
 			local5++;
 		}
-		if (arg1.isFileReady(Static80.anInt6679)) {
+		if (arg1.isFileReady(Sprites.b12FullId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static183.anInt80)) {
+		if (arg0.isFileReady(Sprites.p11FullId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static371.anInt7014)) {
+		if (arg0.isFileReady(Sprites.p12FullId)) {
 			local5++;
 		}
-		if (arg0.isFileReady(Static80.anInt6679)) {
+		if (arg0.isFileReady(Sprites.b12FullId)) {
 			local5++;
 		}
 		return local5;

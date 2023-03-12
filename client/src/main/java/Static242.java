@@ -25,14 +25,14 @@ public final class Static242 {
 		if (local7 == -1) {
 			return;
 		}
-		@Pc(21) Class13 local21 = (Class13) Static61.aClass98_5.method2612((long) local7);
+		@Pc(21) Sprite local21 = (Sprite) Static61.aClass98_5.get((long) local7);
 		if (local21 == null) {
 			@Pc(28) Class48[] local28 = Static396.method1688(client.jsArchive8, local7);
 			if (local28 == null) {
 				return;
 			}
 			local21 = Static190.aClass19_8.method2891(local28[0]);
-			Static61.aClass98_5.method2624((long) local7, local21);
+			Static61.aClass98_5.put((long) local7, local21);
 		}
 		Static324.method5541(0, arg3.zFine, arg3.aByte78, arg3.getSize() * 64, arg4 >> 1, arg3.xFine, arg5 >> 1);
 		@Pc(75) int local75 = arg2 + Static216.anIntArray231[0] - 18;

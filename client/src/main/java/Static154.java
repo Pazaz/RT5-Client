@@ -41,7 +41,7 @@ public final class Static154 {
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "(II)V")
 	public static void method2783(@OriginalArg(0) int arg0) {
 		Static199.anInt5756 = arg0;
-		@Pc(7) Class98 local7 = Static98.aClass98_10;
+		@Pc(7) LruHashTable local7 = Static98.aClass98_10;
 		synchronized (Static98.aClass98_10) {
 			Static98.aClass98_10.method2614();
 		}
@@ -51,7 +51,7 @@ public final class Static154 {
 	public static int method2784(@OriginalArg(0) int arg0) {
 		@Pc(14) Class2_Sub41 local14 = Static374.method6275(false, arg0);
 		if (local14 == null) {
-			return Static178.aClass51_3.method1706(arg0).anInt2488;
+			return client.InvTypes.method1706(arg0).anInt2488;
 		}
 		@Pc(29) int local29 = 0;
 		for (@Pc(31) int local31 = 0; local31 < local14.anIntArray489.length; local31++) {
@@ -59,7 +59,7 @@ public final class Static154 {
 				local29++;
 			}
 		}
-		return local29 + Static178.aClass51_3.method1706(arg0).anInt2488 - local14.anIntArray489.length;
+		return local29 + client.InvTypes.method1706(arg0).anInt2488 - local14.anIntArray489.length;
 	}
 
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "([I[I[IILclient!nh;)V")
@@ -73,7 +73,7 @@ public final class Static154 {
 					if (local11 == -1) {
 						arg3.aClass20Array3[local21] = null;
 					} else {
-						@Pc(46) Class157 local46 = Static39.aClass85_1.method2371(local11);
+						@Pc(46) Class157 local46 = client.SeqTypes.method2371(local11);
 						@Pc(49) int local49 = local46.anInt4022;
 						@Pc(54) Class20 local54 = arg3.aClass20Array3[local21];
 						if (local54 != null) {
@@ -90,7 +90,7 @@ public final class Static154 {
 								} else if (local49 == 2) {
 									local54.anInt626 = 0;
 								}
-							} else if (local46.anInt4023 >= Static39.aClass85_1.method2371(local54.anInt624).anInt4023) {
+							} else if (local46.anInt4023 >= client.SeqTypes.method2371(local54.anInt624).anInt4023) {
 								local54 = arg3.aClass20Array3[local21] = null;
 							}
 						}

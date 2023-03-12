@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!au")
-public final class Class12_Sub2 extends Class12 {
+public final class Class12_Sub2 extends ParticleNode {
 
 	@OriginalMember(owner = "client!au", name = "i", descriptor = "I")
 	public int anInt423;

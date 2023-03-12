@@ -8,7 +8,7 @@ public final class Static141 {
 	public static float aFloat34;
 
 	@OriginalMember(owner = "client!i", name = "P", descriptor = "Lclient!jh;")
-	public static Class115 aClass115_1 = new Class115(8);
+	public static SecondaryHashTable aClass115_1 = new SecondaryHashTable(8);
 
 	@OriginalMember(owner = "client!i", name = "V", descriptor = "Lclient!ad;")
 	public static final HashTable aClass4_58 = new HashTable(8);

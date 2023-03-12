@@ -23,7 +23,7 @@ public final class Static329 {
 	public static final int[] anIntArray420 = new int[3];
 
 	@OriginalMember(owner = "client!tc", name = "a", descriptor = "(Lclient!hb;Z)Z")
-	public static boolean method5630(@OriginalArg(0) Class11_Sub5 arg0, @OriginalArg(1) boolean arg1) {
+	public static boolean method5630(@OriginalArg(0) Entity arg0, @OriginalArg(1) boolean arg1) {
 		@Pc(6) boolean local6 = Static365.aClass6Array4 == Static186.aClass6Array2;
 		@Pc(8) int local8 = 0;
 		@Pc(10) byte local10 = 0;

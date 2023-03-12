@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static137 {
 
 	@OriginalMember(owner = "client!hq", name = "v", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array13;
+	public static Sprite[] aClass13Array13;
 
 	@OriginalMember(owner = "client!hq", name = "C", descriptor = "Lclient!r;")
 	public static Js5 aClass197_33;
@@ -20,13 +20,13 @@ public final class Static137 {
 			local31.aClass135_34.addTail(arg2);
 			return;
 		}
-		@Pc(54) Class188 local54 = Static313.ObjTypeList.get(arg2.anInt1717);
+		@Pc(54) ObjType local54 = client.ObjTypes.get(arg2.anInt1717);
 		@Pc(57) int local57 = local54.anInt5220;
 		if (local54.anInt5247 == 1) {
 			local57 *= arg2.anInt1719 + 1;
 		}
 		for (@Pc(76) Class2_Sub8 local76 = (Class2_Sub8) local31.aClass135_34.head(); local76 != null; local76 = (Class2_Sub8) local31.aClass135_34.next()) {
-			local54 = Static313.ObjTypeList.get(local76.anInt1717);
+			local54 = client.ObjTypes.get(local76.anInt1717);
 			@Pc(87) int local87 = local54.anInt5220;
 			if (local54.anInt5247 == 1) {
 				local87 *= local76.anInt1719 + 1;

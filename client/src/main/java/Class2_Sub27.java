@@ -53,15 +53,15 @@ public final class Class2_Sub27 extends Node {
 	@OriginalMember(owner = "client!pf", name = "d", descriptor = "(I)[F")
 	private float[] method4515(@OriginalArg(0) int arg0) {
 		Static267.method4517(this.aByteArrayArray14[arg0]);
-		Static267.method4522();
-		@Pc(15) int local15 = Static267.method4513(Static287.method4929(Static267.anIntArray336.length - 1));
+		Static267.readBit();
+		@Pc(15) int local15 = Static267.readBits(Static287.method4929(Static267.anIntArray336.length - 1));
 		@Pc(19) boolean local19 = Static267.aBooleanArray43[local15];
 		@Pc(25) int local25 = local19 ? Static267.anInt4923 : Static267.anInt4926;
 		@Pc(27) boolean local27 = false;
 		@Pc(29) boolean local29 = false;
 		if (local19) {
-			local27 = Static267.method4522() != 0;
-			local29 = Static267.method4522() != 0;
+			local27 = Static267.readBit() != 0;
+			local29 = Static267.readBit() != 0;
 		}
 		@Pc(47) int local47 = local25 >> 1;
 		@Pc(59) int local59;
@@ -94,9 +94,9 @@ public final class Class2_Sub27 extends Node {
 		@Pc(140) boolean local140 = !Static267.aClass238Array1[local131].method6061();
 		@Pc(154) float[] local154;
 		for (@Pc(144) int local144 = 0; local144 < local123.anInt2388; local144++) {
-			@Pc(152) Class186 local152 = Static267.aClass186Array1[local123.anIntArray154[local144]];
+			@Pc(152) VorbisResidue local152 = Static267.aClass186Array1[local123.anIntArray154[local144]];
 			local154 = Static267.aFloatArray23;
-			local152.method4677(local154, local25 >> 1, local140);
+			local152.synthesize(local154, local25 >> 1, local140);
 		}
 		@Pc(171) int local171;
 		@Pc(176) int local176;
@@ -304,7 +304,7 @@ public final class Class2_Sub27 extends Node {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "([I)Lclient!jn;")
-	public Class2_Sub21_Sub1 method4519(@OriginalArg(0) int[] arg0) {
+	public PcmSound method4519(@OriginalArg(0) int[] arg0) {
 		if (arg0 != null && arg0[0] <= 0) {
 			return null;
 		}
@@ -343,6 +343,6 @@ public final class Class2_Sub27 extends Node {
 		this.aFloatArray29 = null;
 		@Pc(129) byte[] local129 = this.aByteArray59;
 		this.aByteArray59 = null;
-		return new Class2_Sub21_Sub1(this.anInt4927, local129, this.anInt4921, this.anInt4918, this.aBoolean369);
+		return new PcmSound(this.anInt4927, local129, this.anInt4921, this.anInt4918, this.aBoolean369);
 	}
 }

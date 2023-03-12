@@ -45,7 +45,7 @@ public final class Class11_Sub3_Sub1 extends Class11_Sub3 implements Interface6 
 
 	@OriginalMember(owner = "client!eq", name = "a", descriptor = "(ILclient!wm;I)Lclient!gn;")
 	@Override
-	public Class31 method6088(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
+	public Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
 		return null;
 	}
 

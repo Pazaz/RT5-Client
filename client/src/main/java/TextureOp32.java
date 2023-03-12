@@ -72,7 +72,7 @@ public final class TextureOp32 extends TextureOp {
 				if (local102 > 255) {
 					local102 = 255;
 				}
-				@Pc(135) int local135 = Class148.aByteArray39[((local102 + 1) * local102 >> 1) + local90] & 0xFF;
+				@Pc(135) int local135 = FloType.aByteArray39[((local102 + 1) * local102 >> 1) + local90] & 0xFF;
 				@Pc(141) int local141 = local135 * local86 >> 8;
 				@Pc(147) int local147 = local135 * 4096 >> 8;
 				@Pc(153) int local153 = local65 * local135 >> 8;

@@ -10,7 +10,7 @@ public final class Static196 {
 	public static final ClientProt aClass145_131 = new ClientProt(52, 12);
 
 	@OriginalMember(owner = "client!lh", name = "d", descriptor = "[Lclient!wk;")
-	public static final Class247[] aClass247Array2 = new Class247[50];
+	public static final SynthSound[] aClass247Array2 = new SynthSound[50];
 
 	@OriginalMember(owner = "client!lh", name = "e", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_70 = new LocalizedString("scroll:", "scrollen:", "déroulement:", "rolagem:");

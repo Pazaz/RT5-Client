@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!cj")
-public abstract class Class11_Sub3 extends Class11 {
+public abstract class Class11_Sub3 extends BaseEntity {
 
 	@OriginalMember(owner = "client!cj", name = "q", descriptor = "I")
 	protected final int anInt6348;
@@ -54,7 +54,7 @@ public abstract class Class11_Sub3 extends Class11 {
 
 	@OriginalMember(owner = "client!cj", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public final void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) Class11 arg5) {
+	public final void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		throw new IllegalStateException();
 	}
 

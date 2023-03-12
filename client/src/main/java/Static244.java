@@ -16,7 +16,7 @@ public final class Static244 {
 				return null;
 			}
 		}
-		@Pc(21) opengl local21 = arg0.anOpengl1;
+		@Pc(21) opengl local21 = arg0.gl;
 		@Pc(24) int local24 = local21.glCreateProgramObjectARB();
 		@Pc(26) int local26;
 		for (local26 = 0; local26 < arg1.length; local26++) {

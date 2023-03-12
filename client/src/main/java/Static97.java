@@ -78,8 +78,4 @@ public final class Static97 {
 		arg0.next.prev = arg0;
 	}
 
-	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(IB)I")
-	public static int method2101(@OriginalArg(0) int arg0) {
-		return arg0 == 16711935 ? -1 : Static376.method6285(arg0);
-	}
 }

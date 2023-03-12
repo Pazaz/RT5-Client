@@ -52,7 +52,7 @@ public final class Static296 {
 		Static174.aClass123_2.method3338();
 		Static226.aClass119_1.method3312();
 		if (Static337.aClass131_1 != null) {
-			Static337.aClass131_1.method3691(GameShell.canvas);
+			Static337.aClass131_1.stop(GameShell.canvas);
 		}
 		client.instance.method1379();
 		GameShell.canvas.setBackground(Color.black);
@@ -60,7 +60,7 @@ public final class Static296 {
 		Static174.aClass123_2 = Static18.method556(GameShell.canvas);
 		Static226.aClass119_1 = Static31.method948(GameShell.canvas);
 		if (Static337.aClass131_1 != null) {
-			Static337.aClass131_1.method3692(GameShell.canvas);
+			Static337.aClass131_1.start(GameShell.canvas);
 		}
 	}
 }

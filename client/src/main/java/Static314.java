@@ -12,7 +12,7 @@ public final class Static314 {
 
 	@OriginalMember(owner = "client!sd", name = "b", descriptor = "(II)Lclient!bp;")
 	public static Class28 method5367(@OriginalArg(0) int arg0) {
-		@Pc(10) Class28 local10 = (Class28) Static119.aClass98_16.method2612((long) arg0);
+		@Pc(10) Class28 local10 = (Class28) Static119.aClass98_16.get((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -27,7 +27,7 @@ public final class Static314 {
 			Static7.aClass4_151.put(new Class2_Sub39(Static307.anInt5780), (long) arg0);
 			Static278.aClass28Array1[Static307.anInt5780++] = local10;
 		}
-		Static119.aClass98_16.method2624((long) arg0, local10);
+		Static119.aClass98_16.put((long) arg0, local10);
 		return local10;
 	}
 

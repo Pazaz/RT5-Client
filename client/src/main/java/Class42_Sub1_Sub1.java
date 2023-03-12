@@ -33,7 +33,7 @@ public final class Class42_Sub1_Sub1 extends Class42_Sub1 {
 
 	@OriginalMember(owner = "client!dc", name = "a", descriptor = "(FLclient!qd;BLclient!qd;)V")
 	public void method1610(@OriginalArg(0) float arg0, @OriginalArg(1) Class8_Sub3 arg1, @OriginalArg(3) Class8_Sub3 arg2) {
-		@Pc(3) opengl local3 = this.aClass19_Sub1_8.anOpengl1;
+		@Pc(3) opengl local3 = this.aClass19_Sub1_8.gl;
 		@Pc(7) Class228 local7 = this.aClass19_Sub1_8.aClass228_1;
 		if (this.aClass19_Sub1_8.aClass8_Sub1_2.anInt3684 != arg2.anInt5167 || arg2.anInt5167 != this.aClass19_Sub1_8.aClass8_Sub1_2.anInt3685) {
 			this.aClass19_Sub1_8.aClass8_Sub1_2 = new Class8_Sub1(this.aClass19_Sub1_8, 3553, 6408, arg2.anInt5167, arg2.anInt5167);

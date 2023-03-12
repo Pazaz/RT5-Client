@@ -20,7 +20,7 @@ public final class Static216 {
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(ILclient!nk;ILclient!wm;IILclient!kf;II)V")
 	public static void method3776(@OriginalArg(0) int arg0, @OriginalArg(1) Class161 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) int arg4, @OriginalArg(6) Class78 arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
-		@Pc(14) Class164 local14 = Static236.aClass125_1.method3379(arg2);
+		@Pc(14) Class164 local14 = client.aClass125_1.method3379(arg2);
 		if (local14 == null || !local14.aBoolean304 || !local14.method4180(Static214.aClass226_1)) {
 			return;
 		}
@@ -49,7 +49,7 @@ public final class Static216 {
 			}
 			arg3.method2815(local32[local32.length - 2], local32[local32.length - 1], local32[0], local32[1], local14.anInt4422, arg5, arg0, arg7);
 		}
-		@Pc(267) Class13 local267 = null;
+		@Pc(267) Sprite local267 = null;
 		if (local14.anInt4420 != -1) {
 			local267 = local14.method4189(arg3, false);
 			if (local267 != null) {
@@ -82,13 +82,13 @@ public final class Static216 {
 		for (@Pc(7) int local7 = 0; local7 < Static243.anInt4503; local7++) {
 			@Pc(15) int local15 = Static237.anIntArray283[local7]--;
 			if (Static237.anIntArray283[local7] >= -10) {
-				@Pc(90) Class247 local90 = Static196.aClass247Array2[local7];
+				@Pc(90) SynthSound local90 = Static196.aClass247Array2[local7];
 				if (local90 == null) {
 					local90 = Static409.method6435(client.jsArchive4, Static256.anIntArray321[local7], 0);
 					if (local90 == null) {
 						continue;
 					}
-					Static237.anIntArray283[local7] += local90.method6436();
+					Static237.anIntArray283[local7] += local90.getStart();
 					Static196.aClass247Array2[local7] = local90;
 				}
 				if (Static237.anIntArray283[local7] < 0) {
@@ -123,7 +123,7 @@ public final class Static216 {
 						}
 					}
 					if (local143 > 0) {
-						@Pc(264) Class2_Sub21_Sub1 local264 = local90.method6434().method3179(client.resampler);
+						@Pc(264) PcmSound local264 = local90.toPcmSound().method3179(client.resampler);
 						@Pc(269) Class2_Sub12_Sub4 local269 = Static406.method5006(local264, local143);
 						local269.method4984(Static329.anIntArray419[local7] - 1);
 						client.soundStream.method2083(local269);

@@ -36,7 +36,7 @@ public abstract class Class8 implements Interface1 {
 		this.anInt6883 = arg2;
 		this.aBoolean467 = arg4;
 		this.anInt6884 = arg3;
-		this.aClass19_Sub1_40.anOpengl1.glGenTextures(1, Static187.anIntArray478, 0);
+		this.aClass19_Sub1_40.gl.glGenTextures(1, Static187.anIntArray478, 0);
 		this.anInt6881 = Static187.anIntArray478[0];
 		this.method6154(0);
 	}
@@ -62,7 +62,7 @@ public abstract class Class8 implements Interface1 {
 
 	@OriginalMember(owner = "client!kq", name = "d", descriptor = "()Z")
 	public final boolean method6159() {
-		@Pc(3) opengl local3 = this.aClass19_Sub1_40.anOpengl1;
+		@Pc(3) opengl local3 = this.aClass19_Sub1_40.gl;
 		if (!this.aClass19_Sub1_40.aBoolean36) {
 			return false;
 		}
@@ -85,7 +85,7 @@ public abstract class Class8 implements Interface1 {
 
 	@OriginalMember(owner = "client!kq", name = "e", descriptor = "()V")
 	private void method6161() {
-		@Pc(3) opengl local3 = this.aClass19_Sub1_40.anOpengl1;
+		@Pc(3) opengl local3 = this.aClass19_Sub1_40.gl;
 		this.aClass19_Sub1_40.method848(this);
 		if (this.aBoolean468) {
 			local3.glTexParameteri(this.anInt6882, GL.GL_TEXTURE_MIN_FILTER, this.aBoolean467 ? GL.GL_LINEAR_MIPMAP_LINEAR : GL.GL_LINEAR);

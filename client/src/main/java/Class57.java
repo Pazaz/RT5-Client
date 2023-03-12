@@ -109,10 +109,10 @@ public abstract class Class57 {
 						@Pc(249) int local249 = local137 - 4096;
 						@Pc(253) int local253 = local145 - 4096;
 						@Pc(258) short local258 = this.aShortArray127[local188];
-						@Pc(262) int local262 = Class187.anIntArray360[local145];
-						@Pc(266) int local266 = Class187.anIntArray360[local137];
+						@Pc(262) int local262 = StockMarketOffer.anIntArray360[local145];
+						@Pc(266) int local266 = StockMarketOffer.anIntArray360[local137];
 						@Pc(271) short local271 = this.aShortArray127[local192];
-						@Pc(275) int local275 = Class187.anIntArray360[local129];
+						@Pc(275) int local275 = StockMarketOffer.anIntArray360[local129];
 						@Pc(279) int local279 = local129 - 4096;
 						@Pc(287) short local287 = this.aShortArray127[local180 + local258];
 						@Pc(294) short local294 = this.aShortArray127[local271 + local180];

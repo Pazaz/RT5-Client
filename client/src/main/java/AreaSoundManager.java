@@ -19,7 +19,7 @@ public class AreaSoundManager {
 	}
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(Lclient!ct;IILclient!nh;Lclient!oe;BII)V")
-	public static void add(@OriginalArg(0) Class41 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Player arg3, @OriginalArg(4) Npc arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
+	public static void add(@OriginalArg(0) LocType arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Player arg3, @OriginalArg(4) Npc arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		@Pc(7) Class2_Sub19 local7 = new Class2_Sub19();
 		local7.anInt2905 = arg6;
 		local7.anInt2899 = arg5 * 128;
@@ -50,10 +50,10 @@ public class AreaSoundManager {
 			Static83.aClass135_14.addTail(local7);
 		} else if (arg4 != null) {
 			local7.aClass11_Sub5_Sub2_Sub2_1 = arg4;
-			@Pc(131) Class71 local131 = arg4.type;
-			if (local131.anIntArray129 != null) {
+			@Pc(131) NpcType local131 = arg4.type;
+			if (local131.multiNpcs != null) {
 				local7.aBoolean204 = true;
-				local131 = local131.method2093(Static214.aClass226_1);
+				local131 = local131.getMultiNpc(Static214.aClass226_1);
 			}
 			if (local131 != null) {
 				local7.anInt2904 = (arg1 + local131.size) * 128;

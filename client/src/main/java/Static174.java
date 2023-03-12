@@ -26,10 +26,10 @@ public final class Static174 {
 			local5 = 55;
 		}
 		Static91.method1963(local5);
-		Static359.LocTypeList.method5155(local5);
-		Static313.ObjTypeList.method2765(local5);
-		Static6.NpcTypeList.method5578(local5);
-		Static322.aClass211_2.method5412(local5);
+		client.LocTypes.method5155(local5);
+		client.ObjTypes.method2765(local5);
+		client.NpcTypes.method5578(local5);
+		client.SpotAnimTypes.method5412(local5);
 		Static10.method237(local5);
 		Static154.method2783(local5);
 		Static317.method5549(local5);

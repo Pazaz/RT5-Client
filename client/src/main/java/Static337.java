@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static337 {
 
 	@OriginalMember(owner = "client!tk", name = "e", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_17;
+	public static Sprite aClass13_17;
 
 	@OriginalMember(owner = "client!tk", name = "f", descriptor = "Lclient!kp;")
-	public static Class131 aClass131_1;
+	public static MouseWheel aClass131_1;
 
 	@OriginalMember(owner = "client!tk", name = "g", descriptor = "I")
 	public static int anInt6317;
@@ -52,9 +52,9 @@ public final class Static337 {
 		if (arg2.aClass2_Sub12_Sub4_3 != null) {
 			arg2.aClass2_Sub12_Sub4_3.method4979(local140);
 		} else if (arg2.anInt2894 >= 0) {
-			@Pc(155) Class247 local155 = Static409.method6435(client.jsArchive4, arg2.anInt2894, 0);
+			@Pc(155) SynthSound local155 = Static409.method6435(client.jsArchive4, arg2.anInt2894, 0);
 			if (local155 != null) {
-				@Pc(162) Class2_Sub21_Sub1 local162 = local155.method6434().method3179(client.resampler);
+				@Pc(162) PcmSound local162 = local155.toPcmSound().method3179(client.resampler);
 				@Pc(167) Class2_Sub12_Sub4 local167 = Static406.method5006(local162, local140);
 				local167.method4984(-1);
 				client.soundStream.method2083(local167);
@@ -69,9 +69,9 @@ public final class Static337 {
 			arg2.aClass2_Sub12_Sub4_2 = null;
 		} else if (arg2.anIntArray181 != null && (arg2.anInt2907 -= arg0) <= 0) {
 			@Pc(204) int local204 = (int) ((double) arg2.anIntArray181.length * Math.random());
-			@Pc(212) Class247 local212 = Static409.method6435(client.jsArchive4, arg2.anIntArray181[local204], 0);
+			@Pc(212) SynthSound local212 = Static409.method6435(client.jsArchive4, arg2.anIntArray181[local204], 0);
 			if (local212 != null) {
-				@Pc(219) Class2_Sub21_Sub1 local219 = local212.method6434().method3179(client.resampler);
+				@Pc(219) PcmSound local219 = local212.toPcmSound().method3179(client.resampler);
 				@Pc(224) Class2_Sub12_Sub4 local224 = Static406.method5006(local219, local140);
 				local224.method4984(0);
 				client.soundStream.method2083(local224);
@@ -85,7 +85,7 @@ public final class Static337 {
 	@OriginalMember(owner = "client!tk", name = "a", descriptor = "(ILclient!nh;II)V")
 	public static void method5707(@OriginalArg(1) Player arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (arg0.anInt4597 == arg2 && arg2 != -1) {
-			@Pc(18) Class157 local18 = Static39.aClass85_1.method2371(arg2);
+			@Pc(18) Class157 local18 = client.SeqTypes.method2371(arg2);
 			@Pc(21) int local21 = local18.anInt4022;
 			if (local21 == 1) {
 				arg0.anInt4590 = arg1;
@@ -98,7 +98,7 @@ public final class Static337 {
 			if (local21 == 2) {
 				arg0.anInt4598 = 0;
 			}
-		} else if (arg2 == -1 || arg0.anInt4597 == -1 || Static39.aClass85_1.method2371(arg2).anInt4023 >= Static39.aClass85_1.method2371(arg0.anInt4597).anInt4023) {
+		} else if (arg2 == -1 || arg0.anInt4597 == -1 || client.SeqTypes.method2371(arg2).anInt4023 >= client.SeqTypes.method2371(arg0.anInt4597).anInt4023) {
 			arg0.anInt4597 = arg2;
 			arg0.anInt4598 = 0;
 			arg0.anInt4624 = 0;
@@ -107,7 +107,7 @@ public final class Static337 {
 			arg0.anInt4592 = 1;
 			arg0.anInt4607 = 0;
 			if (arg0.anInt4597 != -1) {
-				Static1.method4(Static39.aClass85_1.method2371(arg0.anInt4597), arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4607);
+				Static1.method4(client.SeqTypes.method2371(arg0.anInt4597), arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4607);
 			}
 		}
 	}

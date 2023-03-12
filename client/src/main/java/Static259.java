@@ -133,9 +133,9 @@ public final class Static259 {
 			Static291.anInt5504 = arg2;
 			local485 = NpcList.npcs[local25];
 			if (local485 != null) {
-				@Pc(490) Class71 local490 = local485.type;
-				if (local490.anIntArray129 != null) {
-					local490 = local490.method2093(Static214.aClass226_1);
+				@Pc(490) NpcType local490 = local485.type;
+				if (local490.multiNpcs != null) {
+					local490 = local490.getMultiNpc(Static214.aClass226_1);
 				}
 				if (local490 != null) {
 					Protocol.method1960(Static98.aClass145_73);
@@ -411,8 +411,8 @@ public final class Static259 {
 			local1723 = Static207.method3705(local18, local15);
 			if (local1723 != null) {
 				Static207.method3699();
-				@Pc(1730) Class2_Sub10 local1730 = Static45.method1404(local1723);
-				Static185.method3400(local1723.anInt4238, local1730.method1852(), local18, local15, local1723.anInt4286, local1730.anInt1759);
+				@Pc(1730) ServerActiveProperties local1730 = Static45.method1404(local1723);
+				Static185.method3400(local1723.anInt4238, local1730.getTargetMask(), local18, local15, local1723.anInt4286, local1730.anInt1759);
 				Static91.aString18 = Static163.method3104(local1723);
 				if (Static91.aString18 == null) {
 					Static91.aString18 = "Null";

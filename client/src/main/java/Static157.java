@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static157 {
 
 	@OriginalMember(owner = "client!ja", name = "f", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_9;
+	public static Sprite aClass13_9;
 
 	@OriginalMember(owner = "client!ja", name = "h", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_10;
+	public static Sprite aClass13_10;
 
 	@OriginalMember(owner = "client!ja", name = "o", descriptor = "Lclient!gn;")
-	public static Class31 aClass31_4;
+	public static Model aClass31_4;
 
 	@OriginalMember(owner = "client!ja", name = "g", descriptor = "[I")
 	public static final int[] anIntArray180 = new int[4];

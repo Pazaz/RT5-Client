@@ -38,15 +38,15 @@ public final class Static340 {
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(BLclient!oe;)I")
 	public static int method5764(@OriginalArg(1) Npc arg0) {
-		@Pc(8) Class71 local8 = arg0.type;
-		if (local8.anIntArray129 != null) {
-			local8 = local8.method2093(Static214.aClass226_1);
+		@Pc(8) NpcType local8 = arg0.type;
+		if (local8.multiNpcs != null) {
+			local8 = local8.getMultiNpc(Static214.aClass226_1);
 			if (local8 == null) {
 				return -1;
 			}
 		}
 		@Pc(28) int local28 = local8.anInt2015;
-		@Pc(32) Class222 local32 = arg0.method4332();
+		@Pc(32) BasType local32 = arg0.method4332();
 		if (arg0.aBoolean317) {
 			local28 = local8.anInt2038;
 		} else if (local32.anInt6263 == arg0.anInt4585 || arg0.anInt4585 == local32.anInt6292 || local32.anInt6301 == arg0.anInt4585 || local32.anInt6271 == arg0.anInt4585) {

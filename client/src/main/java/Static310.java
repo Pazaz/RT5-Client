@@ -23,7 +23,7 @@ public final class Static310 {
 		@Pc(13) long local13 = 4194304L;
 		@Pc(15) long local15 = 2147483648L;
 		@Pc(17) long local17 = Long.MIN_VALUE;
-		@Pc(24) Class41 local24 = Static359.LocTypeList.method5163(arg2.method6085());
+		@Pc(24) LocType local24 = client.LocTypes.method5163(arg2.method6085());
 		@Pc(45) long local45 = (long) ((arg2.method6081() | 0x10000) << 14 | arg1 | arg0 << 7 | arg2.method6084() << 20);
 		if (local24.anInt1335 == 0) {
 			local45 |= local17;

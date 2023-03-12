@@ -30,20 +30,20 @@ public final class Class11_Sub4_Sub1 extends Class11_Sub4 {
 		@Pc(6) Class14 local6 = arg0.method2808();
 		local6.method3922(super.anInt3968, super.anInt3965, super.anInt3967);
 		@Pc(18) Class12_Sub4 local18 = Static147.method2706(3);
-		@Pc(40) Class31 local40;
+		@Pc(40) Model local40;
 		if (this.anInt3981 != -1) {
-			local40 = Static313.ObjTypeList.get(this.anInt3981).method4776(0, 1024, -1, null, arg0, this.anInt3982, null, 0);
+			local40 = client.ObjTypes.get(this.anInt3981).method4776(0, 1024, -1, null, arg0, this.anInt3982, null, 0);
 			if (local40 != null) {
 				local40.method3835(local6, local18.aClass12_Sub2Array1[2], 0);
 			}
 		}
 		if (this.anInt3980 != -1) {
-			local40 = Static313.ObjTypeList.get(this.anInt3980).method4776(0, 1024, -1, null, arg0, this.anInt3978, null, 0);
+			local40 = client.ObjTypes.get(this.anInt3980).method4776(0, 1024, -1, null, arg0, this.anInt3978, null, 0);
 			if (local40 != null) {
 				local40.method3835(local6, local18.aClass12_Sub2Array1[1], 0);
 			}
 		}
-		local40 = Static313.ObjTypeList.get(this.anInt3985).method4776(0, 1024, -1, null, arg0, this.anInt3984, null, 0);
+		local40 = client.ObjTypes.get(this.anInt3985).method4776(0, 1024, -1, null, arg0, this.anInt3984, null, 0);
 		if (local40 != null) {
 			local40.method3835(local6, local18.aClass12_Sub2Array1[0], 0);
 		}
@@ -55,18 +55,18 @@ public final class Class11_Sub4_Sub1 extends Class11_Sub4 {
 	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class19 arg2) {
 		@Pc(11) Class14 local11 = arg2.method2808();
 		local11.method3922(super.anInt3968, super.anInt3965, super.anInt3967);
-		@Pc(36) Class31 local36 = Static313.ObjTypeList.get(this.anInt3985).method4776(0, 65536, -1, null, arg2, this.anInt3984, null, 0);
+		@Pc(36) Model local36 = client.ObjTypes.get(this.anInt3985).method4776(0, 65536, -1, null, arg2, this.anInt3984, null, 0);
 		if (local36 != null && local36.method3820(arg0, arg1, local11, true)) {
 			return true;
 		}
 		if (this.anInt3980 != -1) {
-			local36 = Static313.ObjTypeList.get(this.anInt3980).method4776(0, 65536, -1, null, arg2, this.anInt3978, null, 0);
+			local36 = client.ObjTypes.get(this.anInt3980).method4776(0, 65536, -1, null, arg2, this.anInt3978, null, 0);
 			if (local36 != null && local36.method3820(arg0, arg1, local11, true)) {
 				return true;
 			}
 		}
 		if (this.anInt3981 != -1) {
-			local36 = Static313.ObjTypeList.get(this.anInt3981).method4776(0, 65536, -1, null, arg2, this.anInt3982, null, 0);
+			local36 = client.ObjTypes.get(this.anInt3981).method4776(0, 65536, -1, null, arg2, this.anInt3982, null, 0);
 			if (local36 != null && local36.method3820(arg0, arg1, local11, true)) {
 				return true;
 			}

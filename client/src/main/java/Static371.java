@@ -5,10 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static371 {
 
 	@OriginalMember(owner = "client!vo", name = "y", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_20;
-
-	@OriginalMember(owner = "client!vo", name = "B", descriptor = "I")
-	public static int anInt7014;
+	public static Sprite aClass13_20;
 
 	@OriginalMember(owner = "client!vo", name = "F", descriptor = "J")
 	public static long aLong220;
@@ -46,7 +43,7 @@ public final class Static371 {
 		if (arg3.aByte44 == 4) {
 			arg3.anInt4261 = arg3.anInt4291 * arg3.anInt4248 / arg3.anInt4243;
 		}
-		if (Static18.aBoolean30 && (Static45.method1404(arg3).anInt1758 != 0 || arg3.anInt4272 == 0)) {
+		if (Static18.aBoolean30 && (Static45.method1404(arg3).events != 0 || arg3.anInt4272 == 0)) {
 			if (arg3.anInt4261 < 5 && arg3.anInt4248 < 5) {
 				arg3.anInt4261 = 5;
 				arg3.anInt4248 = 5;
@@ -76,7 +73,7 @@ public final class Static371 {
 		Static336.anInt6313 = Static311.anInt5809;
 		Static311.anInt5809 = 0;
 		@Pc(16) long local16 = MonotonicClock.currentTimeMillis();
-		for (@Pc(21) Class12_Sub5 local21 = (Class12_Sub5) Static131.aClass36_4.method1415(); local21 != null; local21 = (Class12_Sub5) Static131.aClass36_4.method1420()) {
+		for (@Pc(21) ParticleSystem local21 = (ParticleSystem) Static131.aClass36_4.method1415(); local21 != null; local21 = (ParticleSystem) Static131.aClass36_4.method1420()) {
 			if (local21.method4352(arg1, arg0)) {
 				Static116.anInt2360++;
 			}

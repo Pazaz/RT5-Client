@@ -7,9 +7,9 @@ public final class Static63 {
 	public static int anInt1549 = -1;
 
 	@OriginalMember(owner = "client!dn", name = "a", descriptor = "(Z)Lclient!kp;")
-	public static Class131 method1702() {
+	public static MouseWheel method1702() {
 		try {
-			return (Class131) Class.forName("Class131_Sub1").getDeclaredConstructor().newInstance();
+			return (MouseWheel) Class.forName("JavaMouseWheel").getDeclaredConstructor().newInstance();
 		} catch (@Pc(15) Throwable local15) {
 			return null;
 		}

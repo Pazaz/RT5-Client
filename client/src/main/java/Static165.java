@@ -14,7 +14,7 @@ public final class Static165 {
 	public static int anInt3148 = 0;
 
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(IBLclient!hb;)Lclient!bi;")
-	public static Class22 method3149(@OriginalArg(0) int arg0, @OriginalArg(2) Class11_Sub5 arg1) {
+	public static Class22 method3149(@OriginalArg(0) int arg0, @OriginalArg(2) Entity arg1) {
 		@Pc(9) Class22 local9;
 		if (Static290.aClass22_3 == null) {
 			local9 = new Class22();
@@ -37,9 +37,9 @@ public final class Static165 {
 		}
 		@Pc(16) int local16 = 0;
 		for (@Pc(18) int local18 = 0; local18 < local10.anIntArray489.length; local18++) {
-			if (local10.anIntArray489[local18] >= 0 && local10.anIntArray489[local18] < Static313.ObjTypeList.anInt2779) {
-				@Pc(44) Class188 local44 = Static313.ObjTypeList.get(local10.anIntArray489[local18]);
-				@Pc(54) int local54 = local44.method4772(Static363.aClass18_2.method565(arg0).anInt7023, arg0);
+			if (local10.anIntArray489[local18] >= 0 && local10.anIntArray489[local18] < client.ObjTypes.anInt2779) {
+				@Pc(44) ObjType local44 = client.ObjTypes.get(local10.anIntArray489[local18]);
+				@Pc(54) int local54 = local44.method4772(client.ParamTypes.method565(arg0).anInt7023, arg0);
 				if (arg1) {
 					local16 += local10.anIntArray488[local18] * local54;
 				} else {
@@ -113,26 +113,26 @@ public final class Static165 {
 			local41 = Static318.method5421(local68);
 			@Pc(74) int[] local74 = null;
 			if (Static298.method2425(local68.anInt1005)) {
-				local74 = Static313.ObjTypeList.get((int) local68.aLong30).anIntArray364;
+				local74 = client.ObjTypes.get((int) local68.aLong30).anIntArray364;
 			} else if (local68.anInt1008 != -1) {
-				local74 = Static313.ObjTypeList.get(local68.anInt1008).anIntArray364;
+				local74 = client.ObjTypes.get(local68.anInt1008).anIntArray364;
 			} else if (Static297.method5111(local68.anInt1005)) {
 				@Pc(140) Npc local140 = NpcList.npcs[(int) local68.aLong30];
 				if (local140 != null) {
-					@Pc(145) Class71 local145 = local140.type;
-					if (local145.anIntArray129 != null) {
-						local145 = local145.method2093(Static214.aClass226_1);
+					@Pc(145) NpcType local145 = local140.type;
+					if (local145.multiNpcs != null) {
+						local145 = local145.getMultiNpc(Static214.aClass226_1);
 					}
 					if (local145 != null) {
 						local74 = local145.anIntArray131;
 					}
 				}
 			} else if (Static241.method4190(local68.anInt1005)) {
-				@Pc(108) Class41 local108;
+				@Pc(108) LocType local108;
 				if (local68.anInt1005 == 1010) {
-					local108 = Static359.LocTypeList.method5163((int) local68.aLong30);
+					local108 = client.LocTypes.method5163((int) local68.aLong30);
 				} else {
-					local108 = Static359.LocTypeList.method5163((int) (local68.aLong30 >>> 32 & 0x7FFFFFFFL));
+					local108 = client.LocTypes.method5163((int) (local68.aLong30 >>> 32 & 0x7FFFFFFFL));
 				}
 				if (local108.anIntArray94 != null) {
 					local108 = local108.method1533(Static214.aClass226_1);

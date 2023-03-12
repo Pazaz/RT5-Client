@@ -11,19 +11,19 @@ public final class Static344 {
 	public static Interface11 anInterface11_2;
 
 	@OriginalMember(owner = "client!tt", name = "c", descriptor = "Lclient!rh;")
-	public static Class202 aClass202_3;
+	public static LocTypeList aClass202_3;
 
 	@OriginalMember(owner = "client!tt", name = "d", descriptor = "Lclient!ii;")
-	public static Class104 aClass104_4;
+	public static MsiTypeList aClass104_4;
 
 	@OriginalMember(owner = "client!tt", name = "e", descriptor = "Lclient!fl;")
-	private static Class72 aClass72_6;
+	private static FloTypeList aClass72_6;
 
 	@OriginalMember(owner = "client!tt", name = "g", descriptor = "Lclient!r;")
 	public static Js5 aClass197_85;
 
 	@OriginalMember(owner = "client!tt", name = "h", descriptor = "Lclient!vq;")
-	private static Class241 aClass241_4;
+	private static FluTypeList aClass241_4;
 
 	@OriginalMember(owner = "client!tt", name = "i", descriptor = "Lclient!ki;")
 	public static Class125 aClass125_4;
@@ -163,7 +163,7 @@ public final class Static344 {
 		for (@Pc(100) int local100 = 0; local100 < arg8.length; local100++) {
 			@Pc(107) int local107 = arg9[local100] & 0x3F;
 			if (local107 == 0 || local107 == 2 || local107 == 3 || local107 == 9) {
-				@Pc(127) Class41 local127 = aClass202_3.method5163(arg8[local100] & 0xFFFF);
+				@Pc(127) LocType local127 = aClass202_3.method5163(arg8[local100] & 0xFFFF);
 				if (local127.anInt1316 == -1) {
 					@Pc(133) int local133 = -3355444;
 					if (local127.anInt1335 == 1) {
@@ -316,7 +316,7 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!r;Lclient!fl;Lclient!vq;Lclient!rh;Lclient!ki;Lclient!ii;Lclient!wl;)V")
-	public static void method5512(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Class72 arg1, @OriginalArg(2) Class241 arg2, @OriginalArg(3) Class202 arg3, @OriginalArg(4) Class125 arg4, @OriginalArg(5) Class104 arg5, @OriginalArg(6) Interface11 arg6) {
+	public static void method5512(@OriginalArg(0) Js5 arg0, @OriginalArg(1) FloTypeList arg1, @OriginalArg(2) FluTypeList arg2, @OriginalArg(3) LocTypeList arg3, @OriginalArg(4) Class125 arg4, @OriginalArg(5) MsiTypeList arg5, @OriginalArg(6) Interface11 arg6) {
 		aClass197_85 = arg0;
 		aClass72_6 = arg1;
 		aClass241_4 = arg2;
@@ -355,11 +355,11 @@ public final class Static344 {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!ci;III)I")
 	private static int method5515(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(4) Class148 local4 = aClass72_6.method2105(arg1);
+		@Pc(4) FloType local4 = aClass72_6.get(arg1);
 		if (local4 == null) {
 			return 0;
 		}
-		@Pc(11) int local11 = local4.anInt3762;
+		@Pc(11) int local11 = local4.texture;
 		if (local11 >= 0 && arg0.method2658(local11).aBoolean438) {
 			local11 = -1;
 		}
@@ -367,8 +367,8 @@ public final class Static344 {
 		@Pc(27) int local27;
 		@Pc(33) int local33;
 		@Pc(55) int local55;
-		if (local4.anInt3757 >= 0) {
-			local27 = local4.anInt3757;
+		if (local4.secondaryColor >= 0) {
+			local27 = local4.secondaryColor;
 			local33 = (local27 & 0x7F) + arg3;
 			if (local33 < 0) {
 				local33 = 0;
@@ -379,10 +379,10 @@ public final class Static344 {
 			local68 = Static181.anIntArray204[Static26.method863(Static27.method870(local55)) & 0xFFFF] | 0xFF000000;
 		} else if (local11 >= 0) {
 			local68 = Static181.anIntArray204[Static26.method863(Static27.method870(arg0.method2658(local11).aShort87)) & 0xFFFF] | 0xFF000000;
-		} else if (local4.anInt3769 == -1) {
+		} else if (local4.baseColor == -1) {
 			local68 = 0;
 		} else {
-			local27 = local4.anInt3769;
+			local27 = local4.baseColor;
 			local33 = (local27 & 0x7F) + arg3;
 			if (local33 < 0) {
 				local33 = 0;
@@ -428,7 +428,7 @@ public final class Static344 {
 		aByteArray87 = new byte[anInt6056 * anInt6052];
 		aClass4_125 = new HashTable(1024);
 		aClass36ArrayArrayArray2 = new Class36[3][anInt6056 >> 6][anInt6052 >> 6];
-		anIntArray406 = new int[aClass72_6.anInt2059 + 1];
+		anIntArray406 = new int[aClass72_6.capacity + 1];
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "([B[B[SII)V")
@@ -443,7 +443,7 @@ public final class Static344 {
 			@Pc(25) int local25 = local16 - 5;
 			@Pc(41) int local41;
 			for (@Pc(27) int local27 = 0; local27 < anInt6052; local27++) {
-				@Pc(50) Class225 local50;
+				@Pc(50) FluType local50;
 				@Pc(86) int local86;
 				if (local21 < anInt6056) {
 					local41 = arg0[local21 + local27 * anInt6056] & 0xFF;
@@ -812,11 +812,11 @@ public final class Static344 {
 			return;
 		}
 		for (@Pc(4) int local4 = 0; local4 < arg5.length; local4++) {
-			@Pc(14) Class41 local14 = aClass202_3.method5163(arg5[local4] & 0xFFFF);
+			@Pc(14) LocType local14 = aClass202_3.method5163(arg5[local4] & 0xFFFF);
 			@Pc(17) int local17 = local14.anInt1316;
 			if (local17 != -1) {
-				@Pc(25) Class146 local25 = aClass104_4.method2708(local17);
-				@Pc(49) Class13 local49 = local25.method3711(local14.aBoolean118 ? local14.aBoolean113 : false, local14.aBoolean115 ? arg6[local4] >> 6 & 0x3 : 0, arg0);
+				@Pc(25) MsiType local25 = aClass104_4.method2708(local17);
+				@Pc(49) Sprite local49 = local25.method3711(local14.aBoolean118 ? local14.aBoolean113 : false, local14.aBoolean115 ? arg6[local4] >> 6 & 0x3 : 0, arg0);
 				if (local49 != null) {
 					@Pc(58) int local58 = arg3 * local49.method6399() >> 2;
 					@Pc(65) int local65 = arg4 * local49.method6384() >> 2;
@@ -855,7 +855,7 @@ public final class Static344 {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!ci;II)V")
 	public static void method5528(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		for (@Pc(1) int local1 = 0; local1 < aClass72_6.anInt2059; local1++) {
+		for (@Pc(1) int local1 = 0; local1 < aClass72_6.capacity; local1++) {
 			anIntArray406[local1 + 1] = method5515(arg0, local1, arg1, arg2);
 		}
 	}
@@ -892,7 +892,7 @@ public final class Static344 {
 						@Pc(31) Class2_Sub29 local31 = (Class2_Sub29) aClass4_125.get((long) (local1 << 16 | local4));
 						if (local31 != null) {
 							for (local35 = 0; local35 < local31.aShortArray109.length; local35++) {
-								@Pc(46) Class41 local46 = aClass202_3.method5163(local31.aShortArray109[local35] & 0xFFFF);
+								@Pc(46) LocType local46 = aClass202_3.method5163(local31.aShortArray109[local35] & 0xFFFF);
 								local49 = local46.anInt1306;
 								if (local46.anIntArray94 != null) {
 									local46 = local46.method1533(anInterface11_2);
@@ -909,7 +909,7 @@ public final class Static344 {
 							}
 						}
 					} else {
-						@Pc(94) Class41 local94 = aClass202_3.method5163(local15 - 1);
+						@Pc(94) LocType local94 = aClass202_3.method5163(local15 - 1);
 						local35 = local94.anInt1306;
 						if (local94.anIntArray94 != null) {
 							local94 = local94.method1533(anInterface11_2);
@@ -935,7 +935,7 @@ public final class Static344 {
 						for (@Pc(160) Class12_Sub7 local160 = (Class12_Sub7) local153.method1415(); local160 != null; local160 = (Class12_Sub7) local153.method1420()) {
 							if (local160.aShortArray116 != null) {
 								for (local49 = 0; local49 < local160.aShortArray116.length; local49++) {
-									@Pc(177) Class41 local177 = aClass202_3.method5163(local160.aShortArray116[local49] & 0xFFFF);
+									@Pc(177) LocType local177 = aClass202_3.method5163(local160.aShortArray116[local49] & 0xFFFF);
 									@Pc(180) int local180 = local177.anInt1306;
 									if (local177.anIntArray94 != null) {
 										local177 = local177.method1533(anInterface11_2);

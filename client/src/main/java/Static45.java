@@ -143,7 +143,7 @@ public final class Static45 {
 					local32 = local40 < arg4 ? local40 : arg4;
 					local34 = local45 < arg5 ? local45 : arg5;
 				}
-				if (local6.anInt4272 == 0 || local6.aBoolean296 || method1404(local6).anInt1758 != 0 || local6 == Static301.aClass161_13 || local6.anInt4273 == Static135.anInt2521) {
+				if (local6.anInt4272 == 0 || local6.aBoolean296 || method1404(local6).events != 0 || local6 == Static301.aClass161_13 || local6.anInt4273 == Static135.anInt2521) {
 					if (!method1403(local6)) {
 						if (local6 == Static375.aClass161_14) {
 							Static301.aBoolean403 = true;
@@ -616,7 +616,7 @@ public final class Static45 {
 								}
 							}
 							if (local6.anInt4272 == 5 && local6.anInt4280 != -1) {
-								local6.method4111(Static9.aClass213_1, Static278.aClass160_1).method1617(local6.anInt4261, Static190.aClass19_8);
+								local6.method4111(client.aClass213_1, client.aClass160_1).method1617(local6.anInt4261, Static190.aClass19_8);
 							}
 							Static24.method852(local6);
 							if (local6.anInt4272 == 0) {
@@ -758,7 +758,7 @@ public final class Static45 {
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "(Lclient!nk;)Z")
 	public static boolean method1403(@OriginalArg(0) Class161 arg0) {
 		if (Static18.aBoolean30) {
-			if (method1404(arg0).anInt1758 != 0) {
+			if (method1404(arg0).events != 0) {
 				return false;
 			}
 			if (arg0.anInt4272 == 0) {
@@ -769,8 +769,8 @@ public final class Static45 {
 	}
 
 	@OriginalMember(owner = "client!client", name = "b", descriptor = "(Lclient!nk;)Lclient!eh;")
-	public static Class2_Sub10 method1404(@OriginalArg(0) Class161 arg0) {
-		@Pc(13) Class2_Sub10 local13 = (Class2_Sub10) Static327.aClass4_127.get(((long) arg0.anInt4317 << 32) + (long) arg0.anInt4297);
+	public static ServerActiveProperties method1404(@OriginalArg(0) Class161 arg0) {
+		@Pc(13) ServerActiveProperties local13 = (ServerActiveProperties) Static327.aClass4_127.get(((long) arg0.anInt4317 << 32) + (long) arg0.anInt4297);
 		return local13 == null ? arg0.aClass2_Sub10_1 : local13;
 	}
 

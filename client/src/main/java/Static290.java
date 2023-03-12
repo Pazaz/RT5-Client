@@ -11,7 +11,7 @@ public final class Static290 {
 	public static int anInt5498 = -1;
 
 	@OriginalMember(owner = "client!qp", name = "d", descriptor = "[Lclient!q;")
-	public static final Class187[] aClass187Array1 = new Class187[6];
+	public static final StockMarketOffer[] aClass187Array1 = new StockMarketOffer[6];
 
 	@OriginalMember(owner = "client!qp", name = "i", descriptor = "Ljava/lang/String;")
 	public static String aString56 = null;

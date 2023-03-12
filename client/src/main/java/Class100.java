@@ -204,7 +204,7 @@ public final class Class100 {
 
 	@OriginalMember(owner = "client!ic", name = "a", descriptor = "([[ZIZIII)V")
 	public void method2688(@OriginalArg(0) boolean[][] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		@Pc(3) opengl local3 = this.aClass19_Sub1_16.anOpengl1;
+		@Pc(3) opengl local3 = this.aClass19_Sub1_16.gl;
 		this.aClass19_Sub1_16.method828();
 		this.aClass19_Sub1_16.method782(false);
 		this.aClass19_Sub1_16.method817(false);

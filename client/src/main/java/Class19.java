@@ -85,7 +85,7 @@ public abstract class Class19 {
 	public abstract void method2817(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(IIIIZ)Lclient!jd;")
-	public abstract Class13 method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4);
+	public abstract Sprite method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4);
 
 	@OriginalMember(owner = "client!wm", name = "l", descriptor = "()V")
 	public abstract void method2819();
@@ -100,7 +100,7 @@ public abstract class Class19 {
 	public abstract void method2823(@OriginalArg(0) float arg0, @OriginalArg(1) float arg1);
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(Lclient!gn;Lclient!tp;Lclient!on;Lclient!au;I)V")
-	public abstract void method2824(@OriginalArg(0) Class31 arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2 arg3);
+	public abstract void method2824(@OriginalArg(0) Model arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2 arg3);
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(I)V")
 	public final void method2825() {
@@ -121,7 +121,7 @@ public abstract class Class19 {
 	public abstract boolean method2829();
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "([Lclient!gn;Lclient!tp;Lclient!on;[Lclient!au;I)V")
-	public abstract void method2830(@OriginalArg(0) Class31[] arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2[] arg3, @OriginalArg(4) int arg4);
+	public abstract void method2830(@OriginalArg(0) Model[] arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2[] arg3, @OriginalArg(4) int arg4);
 
 	@OriginalMember(owner = "client!wm", name = "o", descriptor = "()V")
 	public abstract void method2831();
@@ -232,7 +232,7 @@ public abstract class Class19 {
 	public abstract int method2863(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(Lclient!pr;IIII)Lclient!gn;")
-	public abstract Class31 method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4);
+	public abstract Model method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4);
 
 	@OriginalMember(owner = "client!wm", name = "d", descriptor = "(I)V")
 	public abstract void method2865(@OriginalArg(0) int arg0);
@@ -285,7 +285,7 @@ public abstract class Class19 {
 	public abstract void method2880();
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "([Lclient!gn;Lclient!on;[Lclient!au;I)V")
-	public abstract void method2881(@OriginalArg(0) Class31[] arg0, @OriginalArg(1) Class14 arg1, @OriginalArg(2) Class12_Sub2[] arg2, @OriginalArg(3) int arg3);
+	public abstract void method2881(@OriginalArg(0) Model[] arg0, @OriginalArg(1) Class14 arg1, @OriginalArg(2) Class12_Sub2[] arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!wm", name = "B", descriptor = "()V")
 	public abstract void method2882();
@@ -294,7 +294,7 @@ public abstract class Class19 {
 	public abstract void method2883();
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "([IIIII)Lclient!jd;")
-	public abstract Class13 method2884(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3);
+	public abstract Sprite method2884(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3);
 
 	@OriginalMember(owner = "client!wm", name = "D", descriptor = "()I")
 	public abstract int method2886();
@@ -314,7 +314,7 @@ public abstract class Class19 {
 	}
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(Lclient!dk;Z)Lclient!jd;")
-	public abstract Class13 method2891(@OriginalArg(0) Class48 arg0);
+	public abstract Sprite method2891(@OriginalArg(0) Class48 arg0);
 
 	@OriginalMember(owner = "client!wm", name = "G", descriptor = "()Z")
 	public abstract boolean method2892();

@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!om")
-public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
+public final class Class11_Sub5_Sub3 extends Entity {
 
 	@OriginalMember(owner = "client!om", name = "w", descriptor = "Lclient!oh;")
-	private Class12_Sub5 aClass12_Sub5_4;
+	private ParticleSystem aClass12_Sub5_4;
 
 	@OriginalMember(owner = "client!om", name = "y", descriptor = "D")
 	private double aDouble2;
@@ -89,18 +89,18 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 		this.anInt4735 = arg8;
 		this.anInt4725 = arg5;
 		this.aBoolean326 = false;
-		@Pc(65) int local65 = Static322.aClass211_2.method5407(this.anInt4732).anInt2448;
+		@Pc(65) int local65 = client.SpotAnimTypes.method5407(this.anInt4732).anInt2448;
 		if (local65 == -1) {
 			this.aClass157_1 = null;
 		} else {
-			this.aClass157_1 = Static39.aClass85_1.method2371(local65);
+			this.aClass157_1 = client.SeqTypes.method2371(local65);
 		}
 	}
 
 	@OriginalMember(owner = "client!om", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
 	public Class12_Sub4 method6073(@OriginalArg(0) Class19 arg0) {
-		@Pc(21) Class31 local21 = this.method4396(1024, arg0);
+		@Pc(21) Model local21 = this.method4396(1024, arg0);
 		if (local21 == null) {
 			return null;
 		}
@@ -172,11 +172,11 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 	}
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(BLclient!wm;Lclient!gn;)V")
-	private void method4393(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Class31 arg1) {
+	private void method4393(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Model arg1) {
 		@Pc(12) Class114[] local12 = arg1.method3808();
 		@Pc(15) Class163[] local15 = arg1.method3840();
 		if ((this.aClass12_Sub5_4 == null || this.aClass12_Sub5_4.aBoolean322) && (local12 != null || local15 != null)) {
-			this.aClass12_Sub5_4 = new Class12_Sub5(client.cycle);
+			this.aClass12_Sub5_4 = new ParticleSystem(client.cycle);
 		}
 		if (this.aClass12_Sub5_4 != null) {
 			this.aClass12_Sub5_4.method4357(arg0, (long) client.cycle, local12, local15);
@@ -186,7 +186,7 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) Class11 arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		throw new IllegalStateException();
 	}
 
@@ -209,15 +209,15 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 	}
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(IBLclient!wm;)Lclient!gn;")
-	private Class31 method4396(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1) {
-		@Pc(17) Class91 local17 = Static322.aClass211_2.method5407(this.anInt4732);
-		return local17.method2433(this.anInt4718, this.anInt4742, arg1, arg0, Static39.aClass85_1, this.anInt4728);
+	private Model method4396(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1) {
+		@Pc(17) SpotAnimType local17 = client.SpotAnimTypes.method5407(this.anInt4732);
+		return local17.method2433(this.anInt4718, this.anInt4742, arg1, arg0, client.SeqTypes, this.anInt4728);
 	}
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
 	public void method6070(@OriginalArg(0) Class19 arg0) {
-		@Pc(9) Class31 local9 = this.method4396(0, arg0);
+		@Pc(9) Model local9 = this.method4396(0, arg0);
 		if (local9 == null) {
 			return;
 		}

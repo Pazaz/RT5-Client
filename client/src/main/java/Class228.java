@@ -31,7 +31,7 @@ public final class Class228 implements Interface8 {
 			throw new IllegalStateException("");
 		}
 		this.aClass19_Sub1_37 = arg0;
-		this.aClass19_Sub1_37.anOpengl1.glGenFramebuffersEXT(1, Static346.anIntArray433, 0);
+		this.aClass19_Sub1_37.gl.glGenFramebuffersEXT(1, Static346.anIntArray433, 0);
 		this.anInt6406 = Static346.anIntArray433[0];
 	}
 
@@ -61,7 +61,7 @@ public final class Class228 implements Interface8 {
 		if (this.aClass19_Sub1_37.method821() != this) {
 			throw new RuntimeException();
 		}
-		this.aClass19_Sub1_37.anOpengl1.glDrawBuffer(Static346.anIntArray434[arg0]);
+		this.aClass19_Sub1_37.gl.glDrawBuffer(Static346.anIntArray434[arg0]);
 	}
 
 	@OriginalMember(owner = "client!ua", name = "a", descriptor = "(ILclient!al;I)V")
@@ -84,13 +84,13 @@ public final class Class228 implements Interface8 {
 	@OriginalMember(owner = "client!ua", name = "a", descriptor = "()V")
 	@Override
 	public void method5791() {
-		this.aClass19_Sub1_37.anOpengl1.glBindFramebufferEXT(GL.GL_FRAMEBUFFER, this.anInt6406);
+		this.aClass19_Sub1_37.gl.glBindFramebufferEXT(GL.GL_FRAMEBUFFER, this.anInt6406);
 	}
 
 	@OriginalMember(owner = "client!ua", name = "b", descriptor = "()V")
 	@Override
 	public void method5792() {
-		this.aClass19_Sub1_37.anOpengl1.glBindFramebufferEXT(GL.GL_FRAMEBUFFER, 0);
+		this.aClass19_Sub1_37.gl.glBindFramebufferEXT(GL.GL_FRAMEBUFFER, 0);
 	}
 
 	@OriginalMember(owner = "client!ua", name = "b", descriptor = "(I)V")
@@ -104,7 +104,7 @@ public final class Class228 implements Interface8 {
 
 	@OriginalMember(owner = "client!ua", name = "d", descriptor = "()Z")
 	public boolean method5799() {
-		@Pc(5) int local5 = this.aClass19_Sub1_37.anOpengl1.glCheckFramebufferStatusEXT(GL.GL_FRAMEBUFFER);
+		@Pc(5) int local5 = this.aClass19_Sub1_37.gl.glCheckFramebufferStatusEXT(GL.GL_FRAMEBUFFER);
 		return local5 == GL.GL_FRAMEBUFFER_COMPLETE;
 	}
 

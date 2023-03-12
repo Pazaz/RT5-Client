@@ -5,12 +5,6 @@ public final class Static183 {
 	@OriginalMember(owner = "client!kl", name = "j", descriptor = "[Lclient!ec;")
 	public static Class58[] aClass58Array2;
 
-	@OriginalMember(owner = "client!kl", name = "m", descriptor = "Lclient!qo;")
-	public static Class193 aClass193_2;
-
-	@OriginalMember(owner = "client!kl", name = "n", descriptor = "I")
-	public static int anInt80;
-
 	@OriginalMember(owner = "client!kl", name = "k", descriptor = "[I")
 	public static final int[] anIntArray2 = new int[1000];
 

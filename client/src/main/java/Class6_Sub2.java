@@ -126,7 +126,7 @@ public final class Class6_Sub2 extends Class6 {
 	}
 
 	@OriginalMember(owner = "client!tn", name = "a", descriptor = "(IIIIIII[[ZLclient!gf;[I[I)V")
-	private void method5733(@OriginalArg(3) int arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) int arg3, @OriginalArg(7) boolean[][] arg4, @OriginalArg(8) Class81 arg5, @OriginalArg(9) int[] arg6, @OriginalArg(10) int[] arg7) {
+	private void method5733(@OriginalArg(3) int arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) int arg3, @OriginalArg(7) boolean[][] arg4, @OriginalArg(8) Rasteriser arg5, @OriginalArg(9) int[] arg6, @OriginalArg(10) int[] arg7) {
 		@Pc(7) int local7 = (arg3 - arg1) * 1024 / 256;
 		arg5.aBoolean168 = false;
 		@Pc(16) int local16 = 0;
@@ -249,7 +249,7 @@ public final class Class6_Sub2 extends Class6 {
 	}
 
 	@OriginalMember(owner = "client!tn", name = "a", descriptor = "(IIZLclient!gf;[I[I[I)V")
-	private void method5735(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class81 arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) int[] arg5, @OriginalArg(6) int[] arg6) {
+	private void method5735(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Rasteriser arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) int[] arg5, @OriginalArg(6) int[] arg6) {
 		@Pc(6) Class201 local6 = this.aClass201ArrayArray1[arg0][arg1];
 		@Pc(29) int local29;
 		@Pc(255) int local255;
@@ -349,7 +349,7 @@ public final class Class6_Sub2 extends Class6 {
 						local616 = arg5[local42];
 						@Pc(1886) int local1886 = arg6[local38] + arg6[local40] + arg6[local42];
 						if ((local163 - local56) * (local616 - local227) - (local222 - local227) * (local61 - local56) > 0) {
-							arg3.aBoolean169 = local163 < 0 || local56 < 0 || local61 < 0 || local163 > arg3.anInt2265 || local56 > arg3.anInt2265 || local61 > arg3.anInt2265;
+							arg3.textX = local163 < 0 || local56 < 0 || local61 < 0 || local163 > arg3.width || local56 > arg3.width || local61 > arg3.width;
 							@Pc(1930) short local1930 = local1426.aShortArray59[local36];
 							if (local1886 < 765) {
 								if (local1930 != -1 && this.method5734(this.aClass19_Sub2_9.anInterface2_5.method2658(local1930).aByte67)) {
@@ -386,7 +386,7 @@ public final class Class6_Sub2 extends Class6 {
 					local328 = arg5[local451];
 					local384 = arg6[local339] + arg6[local395] + arg6[local451];
 					if ((local244 - local300) * (local328 - local272) - (local412 - local272) * (local356 - local300) > 0) {
-						arg3.aBoolean169 = local244 < 0 || local300 < 0 || local356 < 0 || local244 > arg3.anInt2265 || local300 > arg3.anInt2265 || local356 > arg3.anInt2265;
+						arg3.textX = local244 < 0 || local300 < 0 || local356 < 0 || local244 > arg3.width || local300 > arg3.width || local356 > arg3.width;
 						if (local384 >= 765) {
 							arg3.method2282(local412, local272, local328, local244, local300, local356, this.aClass19_Sub2_9.anInt2853);
 						} else if (local384 > 0) {
@@ -591,7 +591,7 @@ public final class Class6_Sub2 extends Class6 {
 			@Pc(1038) boolean local1038 = local6.aShort84 != -1 && this.method5734(this.aClass19_Sub2_9.anInterface2_5.method2658(local6.aShort84).aByte67);
 			local61 = local38 + local40 + local42;
 			if ((local367 - local423) * (local339 - local451) - (local395 - local451) * (local311 - local423) > 0) {
-				arg3.aBoolean169 = local367 < 0 || local423 < 0 || local311 < 0 || local367 > arg3.anInt2265 || local423 > arg3.anInt2265 || local311 > arg3.anInt2265;
+				arg3.textX = local367 < 0 || local423 < 0 || local311 < 0 || local367 > arg3.width || local423 > arg3.width || local311 > arg3.width;
 				if (local61 < 765) {
 					if (local1038) {
 						arg3.anInt2264 = 100;
@@ -614,7 +614,7 @@ public final class Class6_Sub2 extends Class6 {
 			}
 			local61 = local36 + local38 + local42;
 			if ((local255 - local311) * (local451 - local339) - (local283 - local339) * (local423 - local311) > 0) {
-				arg3.aBoolean169 = local255 < 0 || local311 < 0 || local423 < 0 || local255 > arg3.anInt2265 || local311 > arg3.anInt2265 || local423 > arg3.anInt2265;
+				arg3.textX = local255 < 0 || local311 < 0 || local423 < 0 || local255 > arg3.width || local311 > arg3.width || local423 > arg3.width;
 				if (local61 < 765) {
 					if (local1038) {
 						arg3.anInt2264 = 100;
@@ -639,7 +639,7 @@ public final class Class6_Sub2 extends Class6 {
 	}
 
 	@OriginalMember(owner = "client!tn", name = "a", descriptor = "(IILclient!gf;[I[I[I)V")
-	private void method5736(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class81 arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) int[] arg5) {
+	private void method5736(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Rasteriser arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) int[] arg5) {
 		@Pc(6) Class38 local6 = this.aClass38ArrayArray1[arg0][arg1];
 		@Pc(24) int local24;
 		@Pc(29) int local29;
@@ -709,7 +709,7 @@ public final class Class6_Sub2 extends Class6 {
 						@Pc(1379) int local1379 = arg4[local1354];
 						@Pc(1383) int local1383 = arg4[local1359];
 						if ((local1363 - local1367) * (local1383 - local1379) - (local1375 - local1379) * (local1371 - local1367) > 0) {
-							arg2.aBoolean169 = local1363 < 0 || local1367 < 0 || local1371 < 0 || local1363 > arg2.anInt2265 || local1367 > arg2.anInt2265 || local1371 > arg2.anInt2265;
+							arg2.textX = local1363 < 0 || local1367 < 0 || local1371 < 0 || local1363 > arg2.width || local1367 > arg2.width || local1371 > arg2.width;
 							@Pc(1427) short local1427 = local996.aShortArray13[local46];
 							if (local1427 == -1) {
 								@Pc(1482) int local1482 = local996.anIntArray81[local46];
@@ -740,7 +740,7 @@ public final class Class6_Sub2 extends Class6 {
 					if ((local170 - local226) * (local254 - local198) - (local338 - local198) * (local282 - local226) > 0) {
 						local310 = local996.anIntArray81[local209];
 						if (local310 != -1) {
-							arg2.aBoolean169 = local170 < 0 || local226 < 0 || local282 < 0 || local170 > arg2.anInt2265 || local226 > arg2.anInt2265 || local282 > arg2.anInt2265;
+							arg2.textX = local170 < 0 || local226 < 0 || local282 < 0 || local170 > arg2.width || local226 > arg2.width || local282 > arg2.width;
 							arg2.method2286(local338, local198, local254, local170, local226, local282, Static253.method4368(local310, local996.aShortArray16[local1528]), Static253.method4368(local310, local996.aShortArray16[local1533]), Static253.method4368(local310, local996.aShortArray16[local1538]));
 						}
 					}
@@ -830,7 +830,7 @@ public final class Class6_Sub2 extends Class6 {
 				local377 = arg2.anInt2263 + local366 * this.aClass19_Sub2_9.anInt2841 / local137;
 			}
 			if ((local293 - local349) * (local265 - local377) - (local321 - local377) * (local237 - local349) > 0) {
-				arg2.aBoolean169 = local293 < 0 || local349 < 0 || local237 < 0 || local293 > arg2.anInt2265 || local349 > arg2.anInt2265 || local237 > arg2.anInt2265;
+				arg2.textX = local293 < 0 || local349 < 0 || local237 < 0 || local293 > arg2.width || local349 > arg2.width || local237 > arg2.width;
 				if (local6.aShort11 >= 0) {
 					if (this.method5734(this.aClass19_Sub2_9.anInterface2_5.method2658(local6.aShort11).aByte67)) {
 						arg2.anInt2264 = 100;
@@ -842,7 +842,7 @@ public final class Class6_Sub2 extends Class6 {
 				}
 			}
 			if ((local181 - local237) * (local377 - local265) - (local209 - local265) * (local349 - local237) > 0) {
-				arg2.aBoolean169 = local181 < 0 || local237 < 0 || local349 < 0 || local181 > arg2.anInt2265 || local237 > arg2.anInt2265 || local349 > arg2.anInt2265;
+				arg2.textX = local181 < 0 || local237 < 0 || local349 < 0 || local181 > arg2.width || local237 > arg2.width || local349 > arg2.width;
 				if (local6.aShort11 >= 0) {
 					if (this.method5734(this.aClass19_Sub2_9.anInterface2_5.method2658(local6.aShort11).aByte67)) {
 						arg2.anInt2264 = 100;
@@ -860,9 +860,9 @@ public final class Class6_Sub2 extends Class6 {
 	@Override
 	public void method5722(@OriginalArg(3) int arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) int arg3, @OriginalArg(7) boolean[][] arg4) {
 		@Pc(4) Class250 local4 = this.aClass19_Sub2_9.method2905(Thread.currentThread());
-		@Pc(7) Class81 local7 = local4.aClass81_2;
+		@Pc(7) Rasteriser local7 = local4.aClass81_2;
 		local7.anInt2264 = 0;
-		local7.aBoolean169 = false;
+		local7.textX = false;
 		if (this.aClass201ArrayArray1 != null) {
 			this.method5737(arg0, arg1, arg2, arg3, arg4, local7, local4.anIntArray508, local4.anIntArray516);
 		} else if (this.aClass38ArrayArray1 != null) {
@@ -871,7 +871,7 @@ public final class Class6_Sub2 extends Class6 {
 	}
 
 	@OriginalMember(owner = "client!tn", name = "b", descriptor = "(IIIIIII[[ZLclient!gf;[I[I)V")
-	private void method5737(@OriginalArg(3) int arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) int arg3, @OriginalArg(7) boolean[][] arg4, @OriginalArg(8) Class81 arg5, @OriginalArg(9) int[] arg6, @OriginalArg(10) int[] arg7) {
+	private void method5737(@OriginalArg(3) int arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) int arg3, @OriginalArg(7) boolean[][] arg4, @OriginalArg(8) Rasteriser arg5, @OriginalArg(9) int[] arg6, @OriginalArg(10) int[] arg7) {
 		@Pc(7) int local7 = (arg3 - arg1) * 1024 / 256;
 		arg5.aBoolean168 = false;
 		@Pc(16) int local16 = 0;

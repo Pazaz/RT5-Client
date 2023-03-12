@@ -34,26 +34,26 @@ public final class Static361 {
 			}
 			@Pc(138) int[] local138 = null;
 			if (Static298.method2425(local88.anInt1005)) {
-				local138 = Static313.ObjTypeList.get((int) local88.aLong30).anIntArray364;
+				local138 = client.ObjTypes.get((int) local88.aLong30).anIntArray364;
 			} else if (local88.anInt1008 != -1) {
-				local138 = Static313.ObjTypeList.get(local88.anInt1008).anIntArray364;
+				local138 = client.ObjTypes.get(local88.anInt1008).anIntArray364;
 			} else if (Static297.method5111(local88.anInt1005)) {
 				@Pc(166) Npc local166 = NpcList.npcs[(int) local88.aLong30];
 				if (local166 != null) {
-					@Pc(171) Class71 local171 = local166.type;
-					if (local171.anIntArray129 != null) {
-						local171 = local171.method2093(Static214.aClass226_1);
+					@Pc(171) NpcType local171 = local166.type;
+					if (local171.multiNpcs != null) {
+						local171 = local171.getMultiNpc(Static214.aClass226_1);
 					}
 					if (local171 != null) {
 						local138 = local171.anIntArray131;
 					}
 				}
 			} else if (Static241.method4190(local88.anInt1005)) {
-				@Pc(207) Class41 local207;
+				@Pc(207) LocType local207;
 				if (local88.anInt1005 == 1010) {
-					local207 = Static359.LocTypeList.method5163((int) local88.aLong30);
+					local207 = client.LocTypes.method5163((int) local88.aLong30);
 				} else {
-					local207 = Static359.LocTypeList.method5163((int) (local88.aLong30 >>> 32 & 0x7FFFFFFFL));
+					local207 = client.LocTypes.method5163((int) (local88.aLong30 >>> 32 & 0x7FFFFFFFL));
 				}
 				if (local207.anIntArray94 != null) {
 					local207 = local207.method1533(Static214.aClass226_1);

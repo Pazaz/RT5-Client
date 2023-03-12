@@ -16,7 +16,7 @@ public final class Static384 {
 	@OriginalMember(owner = "client!wh", name = "a", descriptor = "(ZLclient!nh;)I")
 	public static int method6415(@OriginalArg(1) Player arg0) {
 		@Pc(8) int local8 = arg0.walkSound;
-		@Pc(12) Class222 local12 = arg0.method4332();
+		@Pc(12) BasType local12 = arg0.method4332();
 		if (arg0.aBoolean317) {
 			local8 = arg0.crawlSound;
 		} else if (local12.anInt6263 == arg0.anInt4585 || local12.anInt6292 == arg0.anInt4585 || local12.anInt6301 == arg0.anInt4585 || local12.anInt6271 == arg0.anInt4585) {

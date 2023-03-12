@@ -14,7 +14,7 @@ public final class Static210 {
 	public static int anInt3761 = 500;
 
 	@OriginalMember(owner = "client!mg", name = "v", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_31 = new Class98(8);
+	public static final LruHashTable aClass98_31 = new LruHashTable(8);
 
 	@OriginalMember(owner = "client!mg", name = "C", descriptor = "[I")
 	public static final int[] anIntArray229 = new int[4];

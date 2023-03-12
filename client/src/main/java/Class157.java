@@ -22,7 +22,7 @@ public final class Class157 {
 	public int anInt4028;
 
 	@OriginalMember(owner = "client!nb", name = "t", descriptor = "Lclient!gp;")
-	public Class85 aClass85_2;
+	public SeqTypeList aClass85_2;
 
 	@OriginalMember(owner = "client!nb", name = "w", descriptor = "[I")
 	private int[] anIntArray263;
@@ -64,22 +64,22 @@ public final class Class157 {
 	public boolean aBoolean262 = false;
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Lclient!gn;IZIII)Lclient!gn;")
-	public Class31 method3986(@OriginalArg(0) Class31 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+	public Model method3986(@OriginalArg(0) Model arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		@Pc(8) int local8 = this.anIntArray261[arg1];
 		@Pc(13) int local13 = this.anIntArray262[arg1];
-		@Pc(21) Class2_Sub2_Sub13 local21 = this.aClass85_2.method2368(local13 >> 16);
+		@Pc(21) AnimFrameset local21 = this.aClass85_2.method2368(local13 >> 16);
 		@Pc(25) int local25 = local13 & 0xFFFF;
 		if (local21 == null) {
 			return arg0.method3800((byte) 1, arg2, true);
 		}
-		@Pc(35) Class2_Sub2_Sub13 local35 = null;
+		@Pc(35) AnimFrameset local35 = null;
 		if ((this.aBoolean264 || Static318.aBoolean408) && arg4 != -1 && this.anIntArray262.length > arg4) {
 			@Pc(54) int local54 = this.anIntArray262[arg4];
 			local35 = this.aClass85_2.method2368(local54 >> 16);
 			arg4 = local54 & 0xFFFF;
 		}
-		@Pc(68) Class2_Sub2_Sub13 local68 = null;
-		@Pc(70) Class2_Sub2_Sub13 local70 = null;
+		@Pc(68) AnimFrameset local68 = null;
+		@Pc(70) AnimFrameset local70 = null;
 		@Pc(72) int local72 = 0;
 		@Pc(74) int local74 = 0;
 		if (this.anIntArray263 != null) {
@@ -132,7 +132,7 @@ public final class Class157 {
 			}
 		}
 		arg2 |= 0x20;
-		@Pc(234) Class31 local234 = arg0.method3800((byte) 1, arg2, true);
+		@Pc(234) Model local234 = arg0.method3800((byte) 1, arg2, true);
 		local234.method3828(local8, local35, arg4, this.aBoolean263, arg3 - 1, local25, local21, 0);
 		if (local68 != null) {
 			local234.method3828(local8, local70, local74, this.aBoolean263, arg3 - 1, local72, local68, 0);
@@ -141,15 +141,15 @@ public final class Class157 {
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(IBIIIIBLclient!gn;)Lclient!gn;")
-	public Class31 method3987(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(7) Class31 arg6) {
+	public Model method3987(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(7) Model arg6) {
 		@Pc(8) int local8 = this.anIntArray261[arg2];
 		@Pc(13) int local13 = this.anIntArray262[arg2];
-		@Pc(21) Class2_Sub2_Sub13 local21 = this.aClass85_2.method2368(local13 >> 16);
+		@Pc(21) AnimFrameset local21 = this.aClass85_2.method2368(local13 >> 16);
 		@Pc(25) int local25 = local13 & 0xFFFF;
 		if (local21 == null) {
 			return arg6.method3800(arg1, arg5, true);
 		}
-		@Pc(35) Class2_Sub2_Sub13 local35 = null;
+		@Pc(35) AnimFrameset local35 = null;
 		if ((this.aBoolean264 || Static318.aBoolean408) && arg0 != -1 && arg0 < this.anIntArray262.length) {
 			@Pc(53) int local53 = this.anIntArray262[arg0];
 			local35 = this.aClass85_2.method2368(local53 >> 16);
@@ -173,7 +173,7 @@ public final class Class157 {
 			}
 		}
 		arg5 |= 0x20;
-		@Pc(125) Class31 local125 = arg6.method3800(arg1, arg5, true);
+		@Pc(125) Model local125 = arg6.method3800(arg1, arg5, true);
 		local125.method3828(local8, local35, arg0, this.aBoolean263, arg4 - 1, local25, local21, arg3);
 		return local125;
 	}
@@ -261,8 +261,8 @@ public final class Class157 {
 		@Pc(5) int local5 = 0;
 		@Pc(7) int local7 = 0;
 		@Pc(12) int local12 = this.anIntArray262[arg0];
-		@Pc(14) Class2_Sub2_Sub13 local14 = null;
-		@Pc(22) Class2_Sub2_Sub13 local22 = this.aClass85_2.method2368(local12 >> 16);
+		@Pc(14) AnimFrameset local14 = null;
+		@Pc(22) AnimFrameset local22 = this.aClass85_2.method2368(local12 >> 16);
 		@Pc(26) int local26 = local12 & 0xFFFF;
 		if (local22 == null) {
 			return 0;
@@ -291,7 +291,7 @@ public final class Class157 {
 		}
 		if (this.anIntArray263 != null && arg1) {
 			@Pc(125) int local125;
-			@Pc(138) Class2_Sub2_Sub13 local138;
+			@Pc(138) AnimFrameset local138;
 			if (arg0 < this.anIntArray263.length) {
 				local125 = this.anIntArray263[arg0];
 				if (local125 != 65535) {

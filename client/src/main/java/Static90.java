@@ -14,9 +14,6 @@ public final class Static90 {
 	@OriginalMember(owner = "client!eu", name = "G", descriptor = "[[[Lclient!f;")
 	public static Class67[][][] aClass67ArrayArrayArray4;
 
-	@OriginalMember(owner = "client!eu", name = "H", descriptor = "Lclient!qi;")
-	public static Class190 aClass190_3;
-
 	@OriginalMember(owner = "client!eu", name = "E", descriptor = "[I")
 	public static final int[] anIntArray460 = new int[] { 1, 2, 4, 8 };
 
@@ -107,7 +104,7 @@ public final class Static90 {
 					local249.method6073(Static16.aClass19_10);
 				}
 				for (@Pc(286) Class22 local286 = local86.aClass22_2; local286 != null; local286 = local286.aClass22_1) {
-					@Pc(290) Class11_Sub5 local290 = local286.aClass11_Sub5_1;
+					@Pc(290) Entity local290 = local286.aClass11_Sub5_1;
 					if (local290 != null) {
 						if (Static161.aBoolean208) {
 							Static156.method2796(arg0, local12, local6, local9);
@@ -407,7 +404,7 @@ public final class Static90 {
 				arg1.aBoolean137 = false;
 				@Pc(1245) int local1245 = 0;
 				label629: for (local1030 = arg1.aClass22_2; local1030 != null; local1030 = local1030.aClass22_1) {
-					@Pc(1252) Class11_Sub5 local1252 = local1030.aClass11_Sub5_1;
+					@Pc(1252) Entity local1252 = local1030.aClass11_Sub5_1;
 					if (local1252.anInt6779 != Static193.anInt3556) {
 						for (local1074 = local1252.aShort103; local1074 <= local1252.aShort104; local1074++) {
 							for (local1078 = local1252.aShort101; local1078 <= local1252.aShort102; local1078++) {
@@ -454,7 +451,7 @@ public final class Static90 {
 				while (local1245 > 0) {
 					local408 = -50;
 					local1074 = -1;
-					@Pc(1384) Class11_Sub5 local1384;
+					@Pc(1384) Entity local1384;
 					for (local1078 = 0; local1078 < local1245; local1078++) {
 						local1384 = arg0.aClass11_Sub5Array3[local1078];
 						if (local1384.anInt6779 != Static193.anInt3556) {

@@ -14,30 +14,7 @@ public final class Static62 {
 	public static Class42 aClass42_5;
 
 	@OriginalMember(owner = "client!dm", name = "r", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array9;
-
-	@OriginalMember(owner = "client!dm", name = "a", descriptor = "(BLclient!r;)V")
-	public static void method2390(@OriginalArg(1) Js5 arg0) {
-		Static183.anInt80 = arg0.getGroupId("p11_full");
-		Static371.anInt7014 = arg0.getGroupId("p12_full");
-		Static80.anInt6679 = arg0.getGroupId("b12_full");
-		Static373.anInt7028 = arg0.getGroupId("hitmarks");
-		Static192.anInt3545 = arg0.getGroupId("hitbar_default");
-		Static256.anInt4745 = arg0.getGroupId("timerbar_default");
-		Static382.anInt7140 = arg0.getGroupId("headicons_pk");
-		Static166.anInt3193 = arg0.getGroupId("headicons_prayer");
-		Static390.anInt7206 = arg0.getGroupId("hint_headicons");
-		Static363.anInt6792 = arg0.getGroupId("hint_mapmarkers");
-		Static237.anInt4324 = arg0.getGroupId("mapflag");
-		Static155.anInt2811 = arg0.getGroupId("cross");
-		Static326.anInt6236 = arg0.getGroupId("mapdots");
-		Static169.anInt3205 = arg0.getGroupId("scrollbar");
-		Static102.anInt3590 = arg0.getGroupId("name_icons");
-		Static32.anInt798 = arg0.getGroupId("floorshadows");
-		Static139.anInt2594 = arg0.getGroupId("compass");
-		Static322.anInt6031 = arg0.getGroupId("otherlevel");
-		Static373.anInt7030 = arg0.getGroupId("hint_mapedge");
-	}
+	public static Sprite[] aClass13Array9;
 
 	@OriginalMember(owner = "client!dm", name = "a", descriptor = "(IBIIIZ)V")
 	public static void method2391(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4) {

@@ -8,7 +8,7 @@ public final class Static230 {
 	public static byte[][][] aByteArrayArrayArray13;
 
 	@OriginalMember(owner = "client!ne", name = "B", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array16;
+	public static Sprite[] aClass13Array16;
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(IIIII)V")
 	public static void method4012(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {

@@ -13,7 +13,7 @@ public final class Static232 {
 	public static Class14 aClass14_4;
 
 	@OriginalMember(owner = "client!ng", name = "q", descriptor = "[Lclient!jd;")
-	public static Class13[] aClass13Array17;
+	public static Sprite[] aClass13Array17;
 
 	@OriginalMember(owner = "client!ng", name = "g", descriptor = "Lclient!ad;")
 	public static final HashTable aClass4_86 = new HashTable(16);

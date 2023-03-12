@@ -44,7 +44,7 @@ public final class Class2_Sub11 extends Node {
 	public int anInt1788;
 
 	@OriginalMember(owner = "client!ej", name = "M", descriptor = "Lclient!jn;")
-	public Class2_Sub21_Sub1 aClass2_Sub21_Sub1_1;
+	public PcmSound aClass2_Sub21_Sub1_1;
 
 	@OriginalMember(owner = "client!ej", name = "O", descriptor = "I")
 	public int anInt1790;

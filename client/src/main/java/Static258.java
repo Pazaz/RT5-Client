@@ -25,7 +25,7 @@ public final class Static258 {
 	}
 
 	@OriginalMember(owner = "client!oo", name = "a", descriptor = "(Lclient!wm;Lclient!hp;IIIII)V")
-	public static void method4403(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class11 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+	public static void method4403(@OriginalArg(0) Class19 arg0, @OriginalArg(1) BaseEntity arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		@Pc(1) boolean local1 = true;
 		@Pc(3) int local3 = arg3;
 		@Pc(7) int local7 = arg3 + arg5;
@@ -49,7 +49,7 @@ public final class Static258 {
 										arg1.method6075((local23 - arg3) * Static256.anInt4716 + (1 - arg5) * Static253.anInt4693, (local32 - arg4) * Static256.anInt4716 + (1 - arg6) * Static253.anInt4693, local140, arg0, local1, local146);
 									}
 									for (@Pc(219) Class22 local219 = local62.aClass22_2; local219 != null; local219 = local219.aClass22_1) {
-										@Pc(223) Class11_Sub5 local223 = local219.aClass11_Sub5_1;
+										@Pc(223) Entity local223 = local219.aClass11_Sub5_1;
 										if (local223 != null && local223.method6076() && (local23 == local223.aShort103 || local23 == local3) && (local32 == local223.aShort101 || local32 == local11)) {
 											@Pc(252) int local252 = local223.aShort104 + 1 - local223.aShort103;
 											@Pc(260) int local260 = local223.aShort102 + 1 - local223.aShort101;

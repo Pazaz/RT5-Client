@@ -12,7 +12,7 @@ public final class Static317 {
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!mr;BZ)V")
 	public static void method5548(@OriginalArg(0) PathingEntity arg0, @OriginalArg(2) boolean arg1) {
-		@Pc(9) Class222 local9 = arg0.method4332();
+		@Pc(9) BasType local9 = arg0.method4332();
 		if (arg0.anInt4643 == 0) {
 			arg0.anInt4641 = 0;
 			Static16.anInt4756 = 0;
@@ -20,7 +20,7 @@ public final class Static317 {
 			return;
 		}
 		if (arg0.anInt4597 != -1 && arg0.anInt4590 == 0) {
-			@Pc(39) Class157 local39 = Static39.aClass85_1.method2371(arg0.anInt4597);
+			@Pc(39) Class157 local39 = client.SeqTypes.method2371(arg0.anInt4597);
 			if (arg0.anInt4642 > 0 && local39.anInt4027 == 0) {
 				Static16.anInt4756 = 0;
 				Static170.anInt3229 = -1;
@@ -35,9 +35,9 @@ public final class Static317 {
 			}
 		}
 		if (arg0.anInt4594 != -1 && arg0.anInt4595 <= client.cycle) {
-			@Pc(97) Class91 local97 = Static322.aClass211_2.method5407(arg0.anInt4594);
+			@Pc(97) SpotAnimType local97 = client.SpotAnimTypes.method5407(arg0.anInt4594);
 			if (local97.aBoolean177 && local97.anInt2448 != -1) {
-				@Pc(111) Class157 local111 = Static39.aClass85_1.method2371(local97.anInt2448);
+				@Pc(111) Class157 local111 = client.SeqTypes.method2371(local97.anInt2448);
 				if (arg0.anInt4642 > 0 && local111.anInt4027 == 0) {
 					Static16.anInt4756 = 0;
 					arg0.anInt4641++;
@@ -206,7 +206,7 @@ public final class Static317 {
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(BI)V")
 	public static void method5549(@OriginalArg(1) int arg0) {
 		Static233.anInt4199 = arg0;
-		@Pc(15) Class98 local15 = Static349.aClass98_58;
+		@Pc(15) LruHashTable local15 = Static349.aClass98_58;
 		synchronized (Static349.aClass98_58) {
 			Static349.aClass98_58.method2614();
 		}

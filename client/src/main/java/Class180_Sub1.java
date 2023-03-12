@@ -24,7 +24,7 @@ public final class Class180_Sub1 extends Class180 implements Interface5 {
 	@OriginalMember(owner = "client!pl", name = "d", descriptor = "(Lclient!kj;)V")
 	@Override
 	public void method4603(@OriginalArg(0) Class126 arg0) {
-		this.aClass19_Sub1_39.anOpengl1.glNormalPointer(arg0.aShort39, this.anInt5024, this.aByteBuffer7.position(arg0.aByte28));
+		this.aClass19_Sub1_39.gl.glNormalPointer(arg0.aShort39, this.anInt5024, this.aByteBuffer7.position(arg0.aByte28));
 	}
 
 	@OriginalMember(owner = "client!pl", name = "a", descriptor = "()I")
@@ -36,19 +36,19 @@ public final class Class180_Sub1 extends Class180 implements Interface5 {
 	@OriginalMember(owner = "client!pl", name = "c", descriptor = "(Lclient!kj;)V")
 	@Override
 	public void method4601(@OriginalArg(0) Class126 arg0) {
-		this.aClass19_Sub1_39.anOpengl1.glTexCoordPointer(arg0.aByte29, arg0.aShort39, this.anInt5024, this.aByteBuffer7.position(arg0.aByte28));
+		this.aClass19_Sub1_39.gl.glTexCoordPointer(arg0.aByte29, arg0.aShort39, this.anInt5024, this.aByteBuffer7.position(arg0.aByte28));
 	}
 
 	@OriginalMember(owner = "client!pl", name = "a", descriptor = "(Lclient!kj;)V")
 	@Override
 	public void method4598(@OriginalArg(0) Class126 arg0) {
-		this.aClass19_Sub1_39.anOpengl1.glVertexPointer(arg0.aByte29, arg0.aShort39, this.anInt5024, this.aByteBuffer7.position(arg0.aByte28));
+		this.aClass19_Sub1_39.gl.glVertexPointer(arg0.aByte29, arg0.aShort39, this.anInt5024, this.aByteBuffer7.position(arg0.aByte28));
 	}
 
 	@OriginalMember(owner = "client!pl", name = "b", descriptor = "(Lclient!kj;)V")
 	@Override
 	public void method4600(@OriginalArg(0) Class126 arg0) {
-		this.aClass19_Sub1_39.anOpengl1.glColorPointer(arg0.aByte29, arg0.aShort39, this.anInt5024, this.aByteBuffer7.position(arg0.aByte28));
+		this.aClass19_Sub1_39.gl.glColorPointer(arg0.aByte29, arg0.aShort39, this.anInt5024, this.aByteBuffer7.position(arg0.aByte28));
 	}
 
 	@OriginalMember(owner = "client!pl", name = "a", descriptor = "(I[BI)V")

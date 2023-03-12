@@ -34,7 +34,7 @@ public final class Class10_Sub1 extends Class10 implements Interface4 {
 	@OriginalMember(owner = "client!an", name = "a", descriptor = "(III)V")
 	@Override
 	public void method6065(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		this.aClass19_Sub1_11.anOpengl1.glDrawElements(GL.GL_TRIANGLES, arg1, this.anInt278, (long) (arg0 * this.anInt277));
+		this.aClass19_Sub1_11.gl.glDrawElements(GL.GL_TRIANGLES, arg1, this.anInt278, (long) (arg0 * this.anInt277));
 	}
 
 	@OriginalMember(owner = "client!an", name = "a", descriptor = "(I[BI)V")

@@ -754,7 +754,7 @@ public final class Class6_Sub1 extends Class6 {
 		if (this.anInt185 <= 0) {
 			return;
 		}
-		@Pc(7) opengl local7 = this.aClass19_Sub1_1.anOpengl1;
+		@Pc(7) opengl local7 = this.aClass19_Sub1_1.gl;
 		this.aClass19_Sub1_1.method806();
 		this.aClass19_Sub1_1.method786(false);
 		this.aClass19_Sub1_1.method782(false);

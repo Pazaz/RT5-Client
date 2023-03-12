@@ -1,4 +1,3 @@
-import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static13 {
@@ -18,8 +17,4 @@ public final class Static13 {
 		Static288.aClass98_42.method2621();
 	}
 
-	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(IB)I")
-	public static int method346(@OriginalArg(0) int arg0) {
-		return arg0 >> 11 & 0x7F;
-	}
 }

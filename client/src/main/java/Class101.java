@@ -28,10 +28,10 @@ public final class Class101 {
 	public int anInt2690 = 8;
 
 	@OriginalMember(owner = "client!ie", name = "c", descriptor = "I")
-	public int anInt2687 = 16777215;
+	public int anInt2687 = 0xffffff;
 
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(Lclient!bt;II)V")
-	private void method2689(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
+	private void decode(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.anInt2690 = arg0.g2();
 		} else if (arg1 == 2) {
@@ -50,13 +50,13 @@ public final class Class101 {
 	}
 
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(ILclient!bt;)V")
-	public void method2694(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Buffer arg0) {
 		while (true) {
 			@Pc(17) int local17 = arg0.g1();
 			if (local17 == 0) {
 				return;
 			}
-			this.method2689(arg0, local17);
+			this.decode(arg0, local17);
 		}
 	}
 }

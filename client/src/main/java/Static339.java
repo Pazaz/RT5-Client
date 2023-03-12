@@ -8,7 +8,7 @@ public final class Static339 {
 	public static float aFloat76;
 
 	@OriginalMember(owner = "client!to", name = "K", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_18;
+	public static Sprite aClass13_18;
 
 	@OriginalMember(owner = "client!to", name = "j", descriptor = "(I)V")
 	public static void method5759() {

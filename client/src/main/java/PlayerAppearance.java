@@ -46,7 +46,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(Lclient!e;III)V")
-	public void method3181(@OriginalArg(0) Class55 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public void method3181(@OriginalArg(0) IdkTypeList arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) int local7 = Static328.anIntArray416[arg1];
 		if (this.anIntArray193[local7] != 0 && arg0.method1784(arg2) != null) {
 			this.anIntArray193[local7] = Integer.MIN_VALUE | arg2;
@@ -61,7 +61,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ILclient!gp;Lclient!wl;ZIILclient!nb;Lclient!ta;Lclient!e;Lclient!wm;ILclient!io;)Lclient!gn;")
-	public Class31 method3184(@OriginalArg(0) int arg0, @OriginalArg(1) Class85 arg1, @OriginalArg(2) Interface11 arg2, @OriginalArg(5) int arg3, @OriginalArg(6) Class157 arg4, @OriginalArg(7) Class219 arg5, @OriginalArg(8) Class55 arg6, @OriginalArg(9) Class19 arg7, @OriginalArg(10) int arg8, @OriginalArg(11) Class107 arg9) {
+	public Model method3184(@OriginalArg(0) int arg0, @OriginalArg(1) SeqTypeList arg1, @OriginalArg(2) Interface11 arg2, @OriginalArg(5) int arg3, @OriginalArg(6) Class157 arg4, @OriginalArg(7) NpcTypeList arg5, @OriginalArg(8) IdkTypeList arg6, @OriginalArg(9) Class19 arg7, @OriginalArg(10) int arg8, @OriginalArg(11) ObjTypeList arg9) {
 		if (this.npcId != -1) {
 			return arg5.method5570(this.npcId).method2088(arg3, arg8, arg0, arg7, arg4, arg2, arg1);
 		}
@@ -79,7 +79,7 @@ public final class PlayerAppearance {
 			local27 = 1056;
 			local56 = local46 >>> 16;
 			@Pc(60) int local60 = local46 & 0xFFFF;
-			@Pc(65) Class2_Sub2_Sub13 local65 = arg1.method2368(local56);
+			@Pc(65) AnimFrameset local65 = arg1.method2368(local56);
 			if (local65 != null) {
 				local33 = local65.method4237(local60) | false;
 				local31 = local65.method4235(local60) | false;
@@ -89,7 +89,7 @@ public final class PlayerAppearance {
 				local109 = arg4.anIntArray262[arg8];
 				local113 = local109 >>> 16;
 				@Pc(117) int local117 = local109 & 0xFFFF;
-				@Pc(127) Class2_Sub2_Sub13 local127 = local113 == local56 ? local65 : arg1.method2368(local113);
+				@Pc(127) AnimFrameset local127 = local113 == local56 ? local65 : arg1.method2368(local113);
 				if (local127 != null) {
 					local33 |= local127.method4237(local117);
 					local31 |= local127.method4235(local117);
@@ -105,10 +105,10 @@ public final class PlayerAppearance {
 				local27 |= 0x200;
 			}
 		}
-		@Pc(163) Class98 local163 = Static349.aClass98_58;
-		@Pc(172) Class31 local172;
+		@Pc(163) LruHashTable local163 = Static349.aClass98_58;
+		@Pc(172) Model local172;
 		synchronized (Static349.aClass98_58) {
-			local172 = (Class31) Static349.aClass98_58.method2612(this.aLong107);
+			local172 = (Model) Static349.aClass98_58.get(this.aLong107);
 		}
 		if (local172 == null || arg7.method2863(local172.method3827(), local27) != 0) {
 			if (local172 != null) {
@@ -157,9 +157,9 @@ public final class PlayerAppearance {
 				}
 			}
 			local172.method3814(local27);
-			@Pc(398) Class98 local398 = Static349.aClass98_58;
+			@Pc(398) LruHashTable local398 = Static349.aClass98_58;
 			synchronized (Static349.aClass98_58) {
-				Static349.aClass98_58.method2624(this.aLong107, local172);
+				Static349.aClass98_58.put(this.aLong107, local172);
 			}
 		}
 		if (arg4 == null) {
@@ -171,7 +171,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(IILclient!e;ILclient!nb;IIILclient!gp;Lclient!wm;II)Lclient!gn;")
-	public Class31 method3185(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class55 arg2, @OriginalArg(4) Class157 arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) Class85 arg6, @OriginalArg(9) Class19 arg7, @OriginalArg(10) int arg8, @OriginalArg(11) int arg9) {
+	public Model method3185(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) IdkTypeList arg2, @OriginalArg(4) Class157 arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) SeqTypeList arg6, @OriginalArg(9) Class19 arg7, @OriginalArg(10) int arg8, @OriginalArg(11) int arg9) {
 		@Pc(7) int local7 = 1024;
 		@Pc(32) int local32;
 		@Pc(36) int local36;
@@ -183,7 +183,7 @@ public final class PlayerAppearance {
 			local32 = arg3.anIntArray262[arg8];
 			local36 = local32 >>> 16;
 			@Pc(40) int local40 = local32 & 0xFFFF;
-			@Pc(45) Class2_Sub2_Sub13 local45 = arg6.method2368(local36);
+			@Pc(45) AnimFrameset local45 = arg6.method2368(local36);
 			if (local45 != null) {
 				local13 = local45.method4237(local40) | false;
 				local11 = local45.method4235(local40) | false;
@@ -193,7 +193,7 @@ public final class PlayerAppearance {
 				@Pc(84) int local84 = arg3.anIntArray262[arg4];
 				@Pc(88) int local88 = local84 >>> 16;
 				@Pc(92) int local92 = local84 & 0xFFFF;
-				@Pc(108) Class2_Sub2_Sub13 local108;
+				@Pc(108) AnimFrameset local108;
 				if (local88 == local36) {
 					local108 = local45;
 				} else {
@@ -215,10 +215,10 @@ public final class PlayerAppearance {
 			}
 		}
 		@Pc(160) long local160 = (long) (arg1 << 16) | (long) arg0 << 32 | (long) arg5;
-		@Pc(162) Class98 local162 = Static349.aClass98_58;
-		@Pc(170) Class31 local170;
+		@Pc(162) LruHashTable local162 = Static349.aClass98_58;
+		@Pc(170) Model local170;
 		synchronized (Static349.aClass98_58) {
-			local170 = (Class31) Static349.aClass98_58.method2612(local160);
+			local170 = (Model) Static349.aClass98_58.get(local160);
 		}
 		if (local170 == null || arg7.method2863(local170.method3827(), local7) != 0) {
 			if (local170 != null) {
@@ -254,9 +254,9 @@ public final class PlayerAppearance {
 				}
 			}
 			local170.method3814(local7);
-			@Pc(347) Class98 local347 = Static349.aClass98_58;
+			@Pc(347) LruHashTable local347 = Static349.aClass98_58;
 			synchronized (Static349.aClass98_58) {
-				Static349.aClass98_58.method2624(local160, local170);
+				Static349.aClass98_58.put(local160, local170);
 			}
 		}
 		if (arg3 == null) {
@@ -292,9 +292,9 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(IZLclient!ak;Lclient!gp;Lclient!e;Lclient!nb;IIIIZILclient!nb;Lclient!wl;Lclient!io;Lclient!wm;Lclient!ta;[Lclient!bg;I)Lclient!gn;")
-	public Class31 method3191(@OriginalArg(0) int arg0, @OriginalArg(2) Class7 arg1, @OriginalArg(3) Class85 arg2, @OriginalArg(4) Class55 arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(11) int arg9, @OriginalArg(12) Class157 arg10, @OriginalArg(13) Interface11 arg11, @OriginalArg(14) Class107 arg12, @OriginalArg(15) Class19 arg13, @OriginalArg(16) Class219 arg14, @OriginalArg(17) Class20[] arg15, @OriginalArg(18) int arg16) {
+	public Model method3191(@OriginalArg(0) int arg0, @OriginalArg(2) BasTypeList arg1, @OriginalArg(3) SeqTypeList arg2, @OriginalArg(4) IdkTypeList arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(11) int arg9, @OriginalArg(12) Class157 arg10, @OriginalArg(13) Interface11 arg11, @OriginalArg(14) ObjTypeList arg12, @OriginalArg(15) Class19 arg13, @OriginalArg(16) NpcTypeList arg14, @OriginalArg(17) Class20[] arg15, @OriginalArg(18) int arg16) {
 		if (this.npcId != -1) {
-			return arg14.method5570(this.npcId).method2086(arg1, arg16, arg4, arg13, arg2, arg6, arg9, arg8, arg10, arg7, arg15, arg0, arg11, arg5);
+			return arg14.method5570(this.npcId).getBodyModel(arg1, arg16, arg4, arg13, arg2, arg6, arg9, arg8, arg10, arg7, arg15, arg0, arg11, arg5);
 		}
 		@Pc(33) int local33 = arg7;
 		@Pc(36) long local36 = this.aLong107;
@@ -369,13 +369,13 @@ public final class PlayerAppearance {
 		@Pc(339) int local339 = -1;
 		local190 = -1;
 		local195 = 0;
-		@Pc(345) Class2_Sub2_Sub13 local345 = null;
-		@Pc(347) Class2_Sub2_Sub13 local347 = null;
+		@Pc(345) AnimFrameset local345 = null;
+		@Pc(347) AnimFrameset local347 = null;
 		@Pc(349) int local349 = -1;
 		@Pc(351) int local351 = -1;
 		@Pc(353) int local353 = 0;
-		@Pc(355) Class2_Sub2_Sub13 local355 = null;
-		@Pc(357) Class2_Sub2_Sub13 local357 = null;
+		@Pc(355) AnimFrameset local355 = null;
+		@Pc(357) AnimFrameset local357 = null;
 		if (local149) {
 			@Pc(370) int local370;
 			@Pc(427) int local427;
@@ -429,12 +429,12 @@ public final class PlayerAppearance {
 				local33 |= 0x100;
 			}
 		}
-		@Pc(581) Class98 local581 = Static92.aClass98_9;
-		@Pc(589) Class31 local589;
+		@Pc(581) LruHashTable local581 = Static92.aClass98_9;
+		@Pc(589) Model local589;
 		synchronized (Static92.aClass98_9) {
-			local589 = (Class31) Static92.aClass98_9.method2612(local36);
+			local589 = (Model) Static92.aClass98_9.get(local36);
 		}
-		@Pc(597) Class222 local597 = null;
+		@Pc(597) BasType local597 = null;
 		if (this.anInt3190 != -1) {
 			local597 = arg1.method245(this.anInt3190);
 		}
@@ -450,9 +450,9 @@ public final class PlayerAppearance {
 				if (local640 >= 12) {
 					if (local638) {
 						if (this.aLong106 != -1L) {
-							@Pc(696) Class98 local696 = Static92.aClass98_9;
+							@Pc(696) LruHashTable local696 = Static92.aClass98_9;
 							synchronized (Static92.aClass98_9) {
-								local589 = (Class31) Static92.aClass98_9.method2612(this.aLong106);
+								local589 = (Model) Static92.aClass98_9.get(this.aLong106);
 							}
 						}
 						if (local589 == null || arg13.method2863(local589.method3827(), local33) != 0 || local597 != null && local597.anIntArrayArray53 != null && this.anIntArrayArray24 == null) {
@@ -543,9 +543,9 @@ public final class PlayerAppearance {
 							}
 						}
 						local589.method3814(local33);
-						@Pc(1288) Class98 local1288 = Static92.aClass98_9;
+						@Pc(1288) LruHashTable local1288 = Static92.aClass98_9;
 						synchronized (Static92.aClass98_9) {
-							Static92.aClass98_9.method2624(local36, local589);
+							Static92.aClass98_9.put(local36, local589);
 						}
 						this.aLong106 = local36;
 					}
@@ -562,7 +562,7 @@ public final class PlayerAppearance {
 				local640++;
 			}
 		}
-		@Pc(1310) Class31 local1310 = local589.method3800((byte) 4, local33, true);
+		@Pc(1310) Model local1310 = local589.method3800((byte) 4, local33, true);
 		if (!local149) {
 			return local1310;
 		}

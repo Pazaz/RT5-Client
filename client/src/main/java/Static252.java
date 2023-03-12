@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static252 {
 
 	@OriginalMember(owner = "client!oi", name = "i", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_14;
+	public static Sprite aClass13_14;
 
 	@OriginalMember(owner = "client!oi", name = "h", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_100 = new LocalizedString("Starting 3d Library", "Starte 3D-Softwarebibliothek.", "Démarrage de la librairie 3D", "Iniciando biblioteca 3D");
@@ -25,8 +25,8 @@ public final class Static252 {
 			if (arg0) {
 				Static190.aClass19_8 = Static387.method2822(0, GameShell.signlink, Static128.anInterface2_4, GameShell.canvas, 0);
 				Static190.aClass19_8.method2867(0);
-				@Pc(22) Class239 local22 = Static101.method2165(Static371.anInt7014, client.jsArchive13);
-				@Pc(31) Class130 local31 = Static190.aClass19_8.method2857(local22, Static396.method1688(client.jsArchive8, Static371.anInt7014));
+				@Pc(22) Class239 local22 = Static101.method2165(Sprites.p12FullId, client.jsArchive13);
+				@Pc(31) Class130 local31 = Static190.aClass19_8.method2857(local22, Static396.method1688(client.jsArchive8, Sprites.p12FullId));
 				Static351.method5857(local31, true, Static256.aClass79_102.method2267(client.language));
 				Static190.aClass19_8.method2883();
 				Static372.method6260();

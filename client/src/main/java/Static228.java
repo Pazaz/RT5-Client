@@ -20,13 +20,13 @@ public final class Static228 {
 		@Pc(663) int local663;
 		@Pc(322) int local322;
 		for (@Pc(13) int local13 = 0; local13 < NpcList.size + local7; local13++) {
-			@Pc(17) Class71 local17 = null;
+			@Pc(17) NpcType local17 = null;
 			@Pc(33) PathingEntity local33;
 			if (local7 <= local13) {
 				local33 = NpcList.npcs[NpcList.ids[local13 - local7]];
 				local17 = ((Npc) local33).type;
-				if (local17.anIntArray129 != null) {
-					local17 = local17.method2093(Static214.aClass226_1);
+				if (local17.multiNpcs != null) {
+					local17 = local17.getMultiNpc(Static214.aClass226_1);
 					if (local17 == null) {
 						continue;
 					}
@@ -47,9 +47,9 @@ public final class Static228 {
 						Static319.aStringArray55[Static45.anInt1196] = local33.aString50;
 						Static45.anInt1196++;
 					}
-					@Pc(180) Class13 local180 = Static62.aClass13Array9[0];
+					@Pc(180) Sprite local180 = Static62.aClass13Array9[0];
 					local194 = arg3 + Static216.anIntArray231[1] - Math.max(Static113.aClass239_2.anInt6836, local180.method6382());
-					@Pc(209) Class13 local209;
+					@Pc(209) Sprite local209;
 					@Pc(310) int local310;
 					if (!local33.aBoolean320 && client.cycle < local33.anInt4606) {
 						local209 = Static62.aClass13Array9[1];
@@ -62,15 +62,15 @@ public final class Static228 {
 							local217 = local33.method4332().anInt6304;
 						}
 						if (local217 != -1) {
-							@Pc(246) Class13[] local246 = (Class13[]) Static306.aClass98_49.method2612((long) local217);
+							@Pc(246) Sprite[] local246 = (Sprite[]) Static306.aClass98_49.get((long) local217);
 							if (local246 == null) {
 								@Pc(253) Class48[] local253 = Static396.method1688(client.jsArchive8, local217);
 								if (local253 != null) {
-									local246 = new Class13[local253.length];
+									local246 = new Sprite[local253.length];
 									for (local261 = 0; local261 < local253.length; local261++) {
 										local246[local261] = Static190.aClass19_8.method2891(local253[local261]);
 									}
-									Static306.aClass98_49.method2624((long) local217, local246);
+									Static306.aClass98_49.put((long) local217, local246);
 								}
 							}
 							if (local246 != null && local246.length == 2) {
@@ -92,7 +92,7 @@ public final class Static228 {
 					if (!local33.aBoolean320) {
 						if (client.cycle < local33.anInt4621) {
 							local209 = Static332.aClass13Array23[local33.aBoolean319 ? 2 : 0];
-							@Pc(386) Class13 local386 = Static332.aClass13Array23[local33.aBoolean319 ? 3 : 1];
+							@Pc(386) Sprite local386 = Static332.aClass13Array23[local33.aBoolean319 ? 3 : 1];
 							if (local33 instanceof Npc) {
 								local310 = local17.anInt2042;
 								if (local310 == -1) {
@@ -102,15 +102,15 @@ public final class Static228 {
 								local310 = local33.method4332().anInt6288;
 							}
 							if (local310 != -1) {
-								@Pc(420) Class13[] local420 = (Class13[]) Static139.aClass98_18.method2612((long) local310);
+								@Pc(420) Sprite[] local420 = (Sprite[]) Static139.aClass98_18.get((long) local310);
 								if (local420 == null) {
 									@Pc(427) Class48[] local427 = Static396.method1688(client.jsArchive8, local310);
 									if (local427 != null) {
-										local420 = new Class13[local427.length];
+										local420 = new Sprite[local427.length];
 										for (local435 = 0; local435 < local427.length; local435++) {
 											local420[local435] = Static190.aClass19_8.method2891(local427[local435]);
 										}
-										Static139.aClass98_18.method2624((long) local310, local420);
+										Static139.aClass98_18.put((long) local310, local420);
 									}
 								}
 								if (local420 != null && local420.length == 4) {
@@ -156,7 +156,7 @@ public final class Static228 {
 					}
 					@Pc(665) Class84[] local665;
 					@Pc(673) Class84 local673;
-					@Pc(695) Class13 local695;
+					@Pc(695) Sprite local695;
 					if (!(local33 instanceof Player)) {
 						local663 = 0;
 						local665 = Static50.aClass84Array1;
@@ -340,7 +340,7 @@ public final class Static228 {
 		@Pc(22) PathingEntity local22 = null;
 		@Pc(24) int local24 = -1;
 		for (@Pc(27) Class22 local27 = local16.aClass22_2; local27 != null; local27 = local27.aClass22_1) {
-			@Pc(31) Class11_Sub5 local31 = local27.aClass11_Sub5_1;
+			@Pc(31) Entity local31 = local27.aClass11_Sub5_1;
 			if (local31 instanceof PathingEntity) {
 				@Pc(37) PathingEntity local37 = (PathingEntity) local31;
 				@Pc(47) int local47 = (local37.getSize() - 1) * 64 + 60;

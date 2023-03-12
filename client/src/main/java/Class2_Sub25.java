@@ -10,7 +10,7 @@ public final class Class2_Sub25 extends Node {
 	public final byte[] aByteArray45 = new byte[128];
 
 	@OriginalMember(owner = "client!ne", name = "v", descriptor = "[Lclient!jn;")
-	public final Class2_Sub21_Sub1[] aClass2_Sub21_Sub1Array1 = new Class2_Sub21_Sub1[128];
+	public final PcmSound[] aClass2_Sub21_Sub1Array1 = new PcmSound[128];
 
 	@OriginalMember(owner = "client!ne", name = "x", descriptor = "[B")
 	public final byte[] aByteArray46 = new byte[128];
@@ -391,7 +391,7 @@ public final class Class2_Sub25 extends Node {
 	public boolean method4018(@OriginalArg(0) byte[] arg0, @OriginalArg(1) Class24 arg1, @OriginalArg(3) int[] arg2) {
 		@Pc(7) boolean local7 = true;
 		@Pc(15) int local15 = 0;
-		@Pc(17) Class2_Sub21_Sub1 local17 = null;
+		@Pc(17) PcmSound local17 = null;
 		for (@Pc(19) int local19 = 0; local19 < 128; local19++) {
 			if (arg0 == null || arg0[local19] != 0) {
 				@Pc(34) int local34 = this.anIntArray264[local19];

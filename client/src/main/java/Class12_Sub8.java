@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!th")
-public final class Class12_Sub8 extends Class12 {
+public final class Class12_Sub8 extends ParticleNode {
 
 	@OriginalMember(owner = "client!th", name = "i", descriptor = "I")
 	private int anInt6237;
@@ -82,7 +82,7 @@ public final class Class12_Sub8 extends Class12 {
 	private final long aLong198;
 
 	@OriginalMember(owner = "client!th", name = "J", descriptor = "Lclient!oh;")
-	public final Class12_Sub5 aClass12_Sub5_6;
+	public final ParticleSystem aClass12_Sub5_6;
 
 	@OriginalMember(owner = "client!th", name = "P", descriptor = "Lclient!uo;")
 	public Class235 aClass235_1;
@@ -95,7 +95,7 @@ public final class Class12_Sub8 extends Class12 {
 	}
 
 	@OriginalMember(owner = "client!th", name = "<init>", descriptor = "(Lclient!wm;Lclient!jf;Lclient!oh;J)V")
-	public Class12_Sub8(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class114 arg1, @OriginalArg(2) Class12_Sub5 arg2, @OriginalArg(3) long arg3) {
+	public Class12_Sub8(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class114 arg1, @OriginalArg(2) ParticleSystem arg2, @OriginalArg(3) long arg3) {
 		this.aClass114_2 = arg1;
 		this.aLong198 = arg3;
 		this.aClass12_Sub5_6 = arg2;

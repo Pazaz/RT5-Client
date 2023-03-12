@@ -252,9 +252,9 @@ public class LoginManager {
 					PlayerList.selfId = Protocol.inboundBuffer.g2();
 					MouseRecorder.enabled = Protocol.inboundBuffer.g1() == 1;
 					mapMembers = Protocol.inboundBuffer.g1() == 1;
-					Static359.LocTypeList.setAllowMembers(mapMembers);
-					Static313.ObjTypeList.setAllowMembers(mapMembers);
-					Static6.NpcTypeList.setAllowMembers(mapMembers);
+					client.LocTypes.setAllowMembers(mapMembers);
+					client.ObjTypes.setAllowMembers(mapMembers);
+					client.NpcTypes.setAllowMembers(mapMembers);
 					if (playerUnderage && !parentalAdvertConsent || MouseRecorder.enabled) {
 						try {
 							BrowserControl.call(GameShell.signlink.applet, "zap");

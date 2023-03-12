@@ -33,7 +33,7 @@ public final class Static60 {
 	@OriginalMember(owner = "client!di", name = "a", descriptor = "()V")
 	public static void method890() {
 		for (@Pc(1) int local1 = 0; local1 < Static378.anInt7077; local1++) {
-			@Pc(6) Class11_Sub5 local6 = Static98.aClass11_Sub5Array1[local1];
+			@Pc(6) Entity local6 = Static98.aClass11_Sub5Array1[local1];
 			Static331.method5659(local6);
 			Static98.aClass11_Sub5Array1[local1] = null;
 		}

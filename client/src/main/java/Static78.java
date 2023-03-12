@@ -47,17 +47,17 @@ public final class Static78 {
 	}
 
 	@OriginalMember(owner = "client!ei", name = "a", descriptor = "(Lclient!wm;ILclient!mg;)I")
-	public static int method5699(@OriginalArg(0) Class19 arg0, @OriginalArg(2) Class148 arg1) {
-		if (arg1.anInt3757 != -1) {
-			return arg1.anInt3757;
+	public static int method5699(@OriginalArg(0) Class19 arg0, @OriginalArg(2) FloType arg1) {
+		if (arg1.secondaryColor != -1) {
+			return arg1.secondaryColor;
 		}
-		if (arg1.anInt3762 != -1) {
-			@Pc(30) Class229 local30 = arg0.anInterface2_5.method2658(arg0.method2871() ? arg1.anInt3762 : arg1.anInt3759);
+		if (arg1.texture != -1) {
+			@Pc(30) Class229 local30 = arg0.anInterface2_5.method2658(arg0.method2871() ? arg1.texture : arg1.anInt3759);
 			if (!local30.aBoolean438) {
 				return local30.aShort87;
 			}
 		}
-		return arg1.anInt3769;
+		return arg1.baseColor;
 	}
 
 	@OriginalMember(owner = "client!ei", name = "b", descriptor = "(IB)V")

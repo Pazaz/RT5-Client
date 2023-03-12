@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ff")
-public final class Class2_Sub12_Sub1 extends Class2_Sub12 {
+public final class Class2_Sub12_Sub1 extends PcmStream {
 
 	@OriginalMember(owner = "client!ff", name = "I", descriptor = "Lclient!ld;")
 	public final LinkedList aClass135_15 = new LinkedList();
@@ -26,7 +26,7 @@ public final class Class2_Sub12_Sub1 extends Class2_Sub12 {
 
 	@OriginalMember(owner = "client!ff", name = "d", descriptor = "()Lclient!ll;")
 	@Override
-	public Class2_Sub12 method4978() {
+	public PcmStream method4978() {
 		@Pc(9) Class2_Sub11 local9 = (Class2_Sub11) this.aClass135_15.head();
 		if (local9 == null) {
 			return null;
@@ -61,7 +61,7 @@ public final class Class2_Sub12_Sub1 extends Class2_Sub12 {
 
 	@OriginalMember(owner = "client!ff", name = "a", descriptor = "()Lclient!ll;")
 	@Override
-	public Class2_Sub12 method4972() {
+	public PcmStream method4972() {
 		@Pc(9) Class2_Sub11 local9;
 		do {
 			local9 = (Class2_Sub11) this.aClass135_15.next();

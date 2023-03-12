@@ -20,7 +20,7 @@ public final class Static41 {
 	public static final int[] anIntArray85 = new int[32];
 
 	@OriginalMember(owner = "client!ch", name = "gb", descriptor = "[Lclient!nt;")
-	public static final Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array2 = new Class2_Sub2_Sub13[14];
+	public static final AnimFrameset[] aClass2_Sub2_Sub13Array2 = new AnimFrameset[14];
 
 	@OriginalMember(owner = "client!ch", name = "ib", descriptor = "[I")
 	public static final int[] anIntArray86 = new int[] { 1, 0, 0, 0, 1, 0, 2, 1, 1, 1, 0, 2, 0, 0, 1, 0 };

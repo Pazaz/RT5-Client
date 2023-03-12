@@ -8,7 +8,7 @@ public final class Static306 {
 	public static Class2_Sub26_Sub1[] aClass2_Sub26_Sub1Array2;
 
 	@OriginalMember(owner = "client!rp", name = "z", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_49 = new Class98(4);
+	public static final LruHashTable aClass98_49 = new LruHashTable(4);
 
 	@OriginalMember(owner = "client!rp", name = "G", descriptor = "[I")
 	public static final int[] anIntArray387 = new int[] { 19, 55, 38, 155, 255, 110, 137, 205, 76 };
@@ -29,11 +29,11 @@ public final class Static306 {
 
 	@OriginalMember(owner = "client!rp", name = "a", descriptor = "(ILclient!id;)Z")
 	public static boolean method5252(@OriginalArg(1) Interface6 arg0) {
-		@Pc(10) Class41 local10 = Static359.LocTypeList.method5163(arg0.method6085());
+		@Pc(10) LocType local10 = client.LocTypes.method5163(arg0.method6085());
 		if (local10.anInt1316 == -1) {
 			return true;
 		} else {
-			@Pc(22) Class146 local22 = Static320.aClass104_2.method2708(local10.anInt1316);
+			@Pc(22) MsiType local22 = client.MsiType.method2708(local10.anInt1316);
 			return local22.anInt3751 == -1 ? true : local22.method3708();
 		}
 	}

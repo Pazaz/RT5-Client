@@ -17,7 +17,7 @@ public final class Static48 {
 	public static final Class127 aClass127_3 = new Class127("WTI", 5);
 
 	@OriginalMember(owner = "client!cq", name = "g", descriptor = "Lclient!hu;")
-	public static final Class98 aClass98_3 = new Class98(10);
+	public static final LruHashTable aClass98_3 = new LruHashTable(10);
 
 	@OriginalMember(owner = "client!cq", name = "a", descriptor = "(IIII)I")
 	public static int method1467(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {

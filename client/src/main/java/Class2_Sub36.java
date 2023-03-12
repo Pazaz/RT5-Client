@@ -210,7 +210,7 @@ public final class Class2_Sub36 extends Node {
 		if (local1 <= 0) {
 			return;
 		}
-		@Pc(185) opengl local185 = this.aClass19_Sub1_34.anOpengl1;
+		@Pc(185) opengl local185 = this.aClass19_Sub1_34.gl;
 		this.aClass180_Sub2_1.method6067(local3.data, local3.pos);
 		this.aClass19_Sub1_34.method790(this.aClass6_Sub1_3.aClass126_1, this.aClass6_Sub1_3.aClass126_4, this.aClass126_14, this.aClass6_Sub1_3.aClass126_2);
 		this.aClass19_Sub1_34.method846(this.anInt6095, (this.aClass6_Sub1_3.anInt181 & 0x7) != 0, (this.aClass6_Sub1_3.anInt181 & 0x8) != 0);

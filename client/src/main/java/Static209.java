@@ -111,7 +111,7 @@ public final class Static209 {
 			Static344.aClass125_4.method3377(256, 1024);
 			Static344.aClass104_4.method2702(256, 256);
 			Static344.aClass202_3.method5161(4096);
-			Static322.aClass128_1.method3392(256);
+			client.VarbitTypes.method3392(256);
 			Static355.anInt6581 = 20;
 		} else if (Static355.anInt6581 == 20) {
 			Static161.method2973(true);

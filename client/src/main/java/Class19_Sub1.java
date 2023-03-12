@@ -60,7 +60,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private boolean aBoolean34;
 
 	@OriginalMember(owner = "client!bf", name = "kb", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_1;
+	public GlModel aClass31_Sub2_1;
 
 	@OriginalMember(owner = "client!bf", name = "mb", descriptor = "F")
 	public float aFloat7;
@@ -78,13 +78,13 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private Class8[] aClass8Array1;
 
 	@OriginalMember(owner = "client!bf", name = "zb", descriptor = "Z")
-	public boolean aBoolean38;
+	public boolean arbTextureCubeMapSupported;
 
 	@OriginalMember(owner = "client!bf", name = "Bb", descriptor = "I")
 	public int anInt597;
 
 	@OriginalMember(owner = "client!bf", name = "Cb", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_2;
+	public GlModel aClass31_Sub2_2;
 
 	@OriginalMember(owner = "client!bf", name = "Db", descriptor = "I")
 	private int anInt598;
@@ -99,7 +99,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private long aLong20;
 
 	@OriginalMember(owner = "client!bf", name = "Ib", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_3;
+	public GlModel aClass31_Sub2_3;
 
 	@OriginalMember(owner = "client!bf", name = "Kb", descriptor = "Lclient!al;")
 	public Class8_Sub1 aClass8_Sub1_1;
@@ -159,7 +159,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private Interface4 anInterface4_1;
 
 	@OriginalMember(owner = "client!bf", name = "jc", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_4;
+	public GlModel aClass31_Sub2_4;
 
 	@OriginalMember(owner = "client!bf", name = "mc", descriptor = "Z")
 	private boolean aBoolean47;
@@ -177,7 +177,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public boolean aBoolean50;
 
 	@OriginalMember(owner = "client!bf", name = "vc", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_5;
+	public GlModel aClass31_Sub2_5;
 
 	@OriginalMember(owner = "client!bf", name = "wc", descriptor = "I")
 	private int anInt609;
@@ -192,13 +192,13 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public boolean aBoolean53;
 
 	@OriginalMember(owner = "client!bf", name = "Gc", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_6;
+	public GlModel aClass31_Sub2_6;
 
 	@OriginalMember(owner = "client!bf", name = "Jc", descriptor = "F")
 	public float aFloat20;
 
 	@OriginalMember(owner = "client!bf", name = "Lc", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_7;
+	public GlModel aClass31_Sub2_7;
 
 	@OriginalMember(owner = "client!bf", name = "Mc", descriptor = "Z")
 	private boolean aBoolean54;
@@ -207,7 +207,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public Class8_Sub1 aClass8_Sub1_3;
 
 	@OriginalMember(owner = "client!bf", name = "Tc", descriptor = "Lclient!mp;")
-	public Class31_Sub2 aClass31_Sub2_8;
+	public GlModel aClass31_Sub2_8;
 
 	@OriginalMember(owner = "client!bf", name = "Uc", descriptor = "Lclient!dl;")
 	private Class42_Sub1 aClass42_Sub1_1;
@@ -384,7 +384,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private context aContext1;
 
 	@OriginalMember(owner = "client!bf", name = "s", descriptor = "Lclient!jaggl/opengl;")
-	public opengl anOpengl1;
+	public opengl gl;
 
 	@OriginalMember(owner = "client!bf", name = "ob", descriptor = "I")
 	public final int anInt592;
@@ -455,7 +455,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 				throw new RuntimeException("");
 			} else if (this.aContext1.createContext()) {
 				this.method829();
-				this.anOpengl1 = this.aContext1.getGL();
+				this.gl = this.aContext1.getGL();
 				@Pc(286) int local286 = this.method789();
 				if (local286 != 0) {
 					throw new RuntimeException("");
@@ -503,7 +503,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 					if (!local318 || local316 < 4000) {
 						this.aBoolean51 = false;
 					}
-					this.aBoolean41 &= this.anOpengl1.isExtensionAvailable("GL_ARB_half_float_pixel");
+					this.aBoolean41 &= this.gl.isExtensionAvailable("GL_ARB_half_float_pixel");
 					this.aBoolean49 = this.aBoolean37;
 				}
 				if (local305.contains("intel")) {
@@ -512,7 +512,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 				if (this.aBoolean37) {
 					try {
 						@Pc(460) int[] local460 = new int[1];
-						this.anOpengl1.glGenBuffersARB(1, local460, 0);
+						this.gl.glGenBuffersARB(1, local460, 0);
 					} catch (@Pc(468) Throwable local468) {
 						throw new RuntimeException("", local468);
 					}
@@ -528,7 +528,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 				this.aClass200_1 = new Class200(this);
 				this.aClass2_Sub38_Sub1_1 = new Class2_Sub38_Sub1(this);
 				this.method795();
-				this.anOpengl1.glClear(GL.GL_DEPTH_BUFFER_BIT | GL.GL_COLOR_BUFFER_BIT);
+				this.gl.glClear(GL.GL_DEPTH_BUFFER_BIT | GL.GL_COLOR_BUFFER_BIT);
 				local185 = 0;
 				while (true) {
 					try {
@@ -541,7 +541,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 						ThreadUtils.sleep(100L);
 					}
 				}
-				this.anOpengl1.glClear(GL.GL_COLOR_BUFFER_BIT);
+				this.gl.glClear(GL.GL_COLOR_BUFFER_BIT);
 			} else {
 				throw new RuntimeException("");
 			}
@@ -656,36 +656,36 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			local12 = false;
 		}
 		if (local10 != this.aBoolean42) {
-			this.anOpengl1.glColorMask(local10, local10, local10, true);
+			this.gl.glColorMask(local10, local10, local10, true);
 			this.aBoolean42 = local10;
 		}
 		if (local12 != this.aBoolean46) {
 			if (local12) {
-				this.anOpengl1.glEnable(GL.GL_ALPHA_TEST);
+				this.gl.glEnable(GL.GL_ALPHA_TEST);
 			} else {
-				this.anOpengl1.glDisable(GL.GL_ALPHA_TEST);
+				this.gl.glDisable(GL.GL_ALPHA_TEST);
 			}
 			this.aBoolean46 = local12;
 		}
 		if (local8 != this.anInt605) {
 			if (local8 == 1) {
-				this.anOpengl1.glEnable(GL.GL_BLEND);
-				this.anOpengl1.glBlendEquation(GL.GL_FUNC_ADD);
-				this.anOpengl1.glBlendFunc(GL.GL_SRC_ALPHA, GL.GL_ONE_MINUS_SRC_ALPHA);
+				this.gl.glEnable(GL.GL_BLEND);
+				this.gl.glBlendEquation(GL.GL_FUNC_ADD);
+				this.gl.glBlendFunc(GL.GL_SRC_ALPHA, GL.GL_ONE_MINUS_SRC_ALPHA);
 			} else if (local8 == 2) {
-				this.anOpengl1.glEnable(GL.GL_BLEND);
-				this.anOpengl1.glBlendEquation(GL.GL_FUNC_ADD);
-				this.anOpengl1.glBlendFunc(GL.GL_ONE, GL.GL_ONE);
+				this.gl.glEnable(GL.GL_BLEND);
+				this.gl.glBlendEquation(GL.GL_FUNC_ADD);
+				this.gl.glBlendFunc(GL.GL_ONE, GL.GL_ONE);
 			} else if (local8 == 3) {
-				this.anOpengl1.glEnable(GL.GL_BLEND);
-				this.anOpengl1.glBlendEquation(GL.GL_FUNC_SUBTRACT);
-				this.anOpengl1.glBlendFunc(GL.GL_ONE, GL.GL_ONE);
+				this.gl.glEnable(GL.GL_BLEND);
+				this.gl.glBlendEquation(GL.GL_FUNC_SUBTRACT);
+				this.gl.glBlendFunc(GL.GL_ONE, GL.GL_ONE);
 			} else if (local8 == 4) {
-				this.anOpengl1.glEnable(GL.GL_BLEND);
-				this.anOpengl1.glBlendEquation(GL.GL_FUNC_ADD);
-				this.anOpengl1.glBlendFunc(GL.GL_DST_COLOR, GL.GL_ONE);
+				this.gl.glEnable(GL.GL_BLEND);
+				this.gl.glBlendEquation(GL.GL_FUNC_ADD);
+				this.gl.glBlendFunc(GL.GL_DST_COLOR, GL.GL_ONE);
 			} else {
-				this.anOpengl1.glDisable(GL.GL_BLEND);
+				this.gl.glDisable(GL.GL_BLEND);
 			}
 			this.anInt605 = local8;
 		}
@@ -699,7 +699,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		Static22.aFloatArray4[1] = (float) (arg0 & 0xFFFF) / 65535.0F;
 		Static22.aFloatArray4[2] = (float) (arg0 & 0xFF) / 255.0F;
 		Static22.aFloatArray4[3] = (float) (arg0 >>> 24) / 255.0F;
-		this.anOpengl1.glTexEnvfv(GL.GL_TEXTURE_ENV, GL.GL_TEXTURE_ENV_COLOR, Static22.aFloatArray4, 0);
+		this.gl.glTexEnvfv(GL.GL_TEXTURE_ENV, GL.GL_TEXTURE_ENV_COLOR, Static22.aFloatArray4, 0);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "M", descriptor = "()V")
@@ -736,7 +736,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!fg;)V")
 	public void method783(@OriginalArg(0) Interface5 arg0) {
 		if (this.anInterface5_2 != arg0 && this.aBoolean37) {
-			this.anOpengl1.glBindBufferARB(GL.GL_ARRAY_BUFFER, arg0.method6066());
+			this.gl.glBindBufferARB(GL.GL_ARRAY_BUFFER, arg0.method6066());
 			this.anInterface5_2 = arg0;
 		}
 	}
@@ -807,7 +807,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		if (this.anInt607 > arg3) {
 			this.anInt607 = arg3;
 		}
-		this.anOpengl1.glEnable(GL.GL_SCISSOR_TEST);
+		this.gl.glEnable(GL.GL_SCISSOR_TEST);
 		this.method807();
 		this.method825();
 	}
@@ -840,18 +840,18 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		@Pc(23) float local23 = local9 + (float) arg3 - 1.0F;
 		this.method781();
 		this.method779(arg5);
-		this.anOpengl1.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
+		this.gl.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
 		if (this.aBoolean44) {
-			this.anOpengl1.glDisable(GL.GL_MULTISAMPLE);
+			this.gl.glDisable(GL.GL_MULTISAMPLE);
 		}
-		this.anOpengl1.glBegin(GL.GL_LINE_LOOP);
-		this.anOpengl1.glVertex2f(local4, local9);
-		this.anOpengl1.glVertex2f(local4, local23);
-		this.anOpengl1.glVertex2f(local16, local23);
-		this.anOpengl1.glVertex2f(local16, local9);
-		this.anOpengl1.glEnd();
+		this.gl.glBegin(GL.GL_LINE_LOOP);
+		this.gl.glVertex2f(local4, local9);
+		this.gl.glVertex2f(local4, local23);
+		this.gl.glVertex2f(local16, local23);
+		this.gl.glVertex2f(local16, local9);
+		this.gl.glEnd();
 		if (this.aBoolean44) {
-			this.anOpengl1.glEnable(GL.GL_MULTISAMPLE);
+			this.gl.glEnable(GL.GL_MULTISAMPLE);
 		}
 	}
 
@@ -860,13 +860,13 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		if (this.anInt588 == 1) {
 			return;
 		}
-		this.anOpengl1.glMatrixMode(GL.GL_PROJECTION);
-		this.anOpengl1.glLoadIdentity();
+		this.gl.glMatrixMode(GL.GL_PROJECTION);
+		this.gl.glLoadIdentity();
 		if (this.anInt582 > 0 && this.anInt587 > 0) {
-			this.anOpengl1.glOrtho(0.0D, (double) this.anInt582, (double) this.anInt587, 0.0D, -1.0D, 1.0D);
+			this.gl.glOrtho(0.0D, (double) this.anInt582, (double) this.anInt587, 0.0D, -1.0D, 1.0D);
 		}
-		this.anOpengl1.glMatrixMode(GL.GL_MODELVIEW);
-		this.anOpengl1.glLoadIdentity();
+		this.gl.glMatrixMode(GL.GL_MODELVIEW);
+		this.gl.glLoadIdentity();
 		this.anInt588 = 1;
 		this.anInt602 &= 0xFFFFFFE7;
 	}
@@ -890,8 +890,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "O", descriptor = "()I")
 	private int method789() {
 		@Pc(1) int local1 = 0;
-		this.aString7 = this.anOpengl1.glGetString(GL.GL_VENDOR);
-		this.aString8 = this.anOpengl1.glGetString(GL.GL_RENDERER);
+		this.aString7 = this.gl.glGetString(GL.GL_VENDOR);
+		this.aString8 = this.gl.glGetString(GL.GL_RENDERER);
 		@Pc(17) String local17 = this.aString7.toLowerCase();
 		if (local17.indexOf("microsoft") != -1) {
 			local1 = 1;
@@ -899,7 +899,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		if (local17.indexOf("brian paul") != -1 || local17.indexOf("mesa") != -1) {
 			local1 |= 0x1;
 		}
-		@Pc(45) String local45 = this.anOpengl1.glGetString(GL.GL_VERSION);
+		@Pc(45) String local45 = this.gl.glGetString(GL.GL_VERSION);
 		@Pc(53) String[] local53 = Static200.method3643(' ', local45.replace('.', ' '));
 		if (local53.length >= 2) {
 			try {
@@ -915,18 +915,18 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		if (this.anInt603 < 12) {
 			local1 |= 0x2;
 		}
-		if (!this.anOpengl1.isExtensionAvailable("GL_ARB_multitexture")) {
+		if (!this.gl.isExtensionAvailable("GL_ARB_multitexture")) {
 			local1 |= 0x8;
 		}
-		if (!this.anOpengl1.isExtensionAvailable("GL_ARB_texture_env_combine")) {
+		if (!this.gl.isExtensionAvailable("GL_ARB_texture_env_combine")) {
 			local1 |= 0x20;
 		}
 		@Pc(116) int[] local116 = new int[1];
-		this.anOpengl1.glGetIntegerv(GL.GL_MAX_TEXTURE_UNITS, local116, 0);
+		this.gl.glGetIntegerv(GL.GL_MAX_TEXTURE_UNITS, local116, 0);
 		this.anInt597 = local116[0];
-		this.anOpengl1.glGetIntegerv(GL.GL_MAX_TEXTURE_COORDS, local116, 0);
+		this.gl.glGetIntegerv(GL.GL_MAX_TEXTURE_COORDS, local116, 0);
 		this.anInt622 = local116[0];
-		this.anOpengl1.glGetIntegerv(GL.GL_MAX_TEXTURE_IMAGE_UNITS, local116, 0);
+		this.gl.glGetIntegerv(GL.GL_MAX_TEXTURE_IMAGE_UNITS, local116, 0);
 		this.anInt589 = local116[0];
 		if (this.anInt597 < 2 || this.anInt622 < 2 || this.anInt589 < 2) {
 			local1 |= 0x10;
@@ -935,18 +935,18 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		}
 		this.aBoolean47 = false;
 		this.aBoolean53 = ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN;
-		this.aBoolean37 = this.anOpengl1.isExtensionAvailable("GL_ARB_vertex_buffer_object");
-		this.aBoolean44 = this.anOpengl1.isExtensionAvailable("GL_ARB_multisample");
-		this.aBoolean40 = this.anOpengl1.isExtensionAvailable("GL_ARB_vertex_program");
-		this.anOpengl1.isExtensionAvailable("GL_ARB_fragment_program");
-		this.anOpengl1.isExtensionAvailable("GL_ARB_vertex_shader");
-		this.aBoolean35 = this.anOpengl1.isExtensionAvailable("GL_ARB_fragment_shader");
-		this.aBoolean55 = this.anOpengl1.isExtensionAvailable("GL_EXT_texture3D");
-		this.aBoolean41 = this.anOpengl1.isExtensionAvailable("GL_ARB_texture_rectangle");
-		this.aBoolean38 = this.anOpengl1.isExtensionAvailable("GL_ARB_texture_cube_map");
-		this.aBoolean51 = this.anOpengl1.isExtensionAvailable("GL_ARB_texture_float");
+		this.aBoolean37 = this.gl.isExtensionAvailable("GL_ARB_vertex_buffer_object");
+		this.aBoolean44 = this.gl.isExtensionAvailable("GL_ARB_multisample");
+		this.aBoolean40 = this.gl.isExtensionAvailable("GL_ARB_vertex_program");
+		this.gl.isExtensionAvailable("GL_ARB_fragment_program");
+		this.gl.isExtensionAvailable("GL_ARB_vertex_shader");
+		this.aBoolean35 = this.gl.isExtensionAvailable("GL_ARB_fragment_shader");
+		this.aBoolean55 = this.gl.isExtensionAvailable("GL_EXT_texture3D");
+		this.aBoolean41 = this.gl.isExtensionAvailable("GL_ARB_texture_rectangle");
+		this.arbTextureCubeMapSupported = this.gl.isExtensionAvailable("GL_ARB_texture_cube_map");
+		this.aBoolean51 = this.gl.isExtensionAvailable("GL_ARB_texture_float");
 		this.aBoolean45 = false;
-		this.aBoolean36 = this.anOpengl1.isExtensionAvailable("GL_EXT_framebuffer_object");
+		this.aBoolean36 = this.gl.isExtensionAvailable("GL_EXT_framebuffer_object");
 		return local1 == 0 ? 0 : local1;
 	}
 
@@ -967,18 +967,18 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			Static22.aFloatArray5[1] = local8.anInt4368;
 			Static22.aFloatArray5[2] = local8.anInt4371;
 			Static22.aFloatArray5[3] = 1.0F;
-			this.anOpengl1.glLightfv(local12, GL.GL_POSITION, Static22.aFloatArray5, 0);
+			this.gl.glLightfv(local12, GL.GL_POSITION, Static22.aFloatArray5, 0);
 			@Pc(44) int local44 = local8.anInt4372;
 			@Pc(49) float local49 = local8.aFloat65 / 255.0F;
 			Static22.aFloatArray5[0] = (float) (local44 >> 16 & 0xFF) * local49;
 			Static22.aFloatArray5[1] = (float) (local44 >> 8 & 0xFF) * local49;
 			Static22.aFloatArray5[2] = (float) (local44 & 0xFF) * local49;
-			this.anOpengl1.glLightfv(local12, GL.GL_DIFFUSE, Static22.aFloatArray5, 0);
-			this.anOpengl1.glLightf(local12, GL.GL_QUADRATIC_ATTENUATION, 1.0F / (float) (local8.anInt4374 * local8.anInt4374));
-			this.anOpengl1.glEnable(local12);
+			this.gl.glLightfv(local12, GL.GL_DIFFUSE, Static22.aFloatArray5, 0);
+			this.gl.glLightf(local12, GL.GL_QUADRATIC_ATTENUATION, 1.0F / (float) (local8.anInt4374 * local8.anInt4374));
+			this.gl.glEnable(local12);
 		}
 		while (local1 < this.anInt593) {
-			this.anOpengl1.glDisable(local1 + GL.GL_LIGHT2);
+			this.gl.glDisable(local1 + GL.GL_LIGHT2);
 			local1++;
 		}
 		this.anInt593 = arg0;
@@ -993,27 +993,27 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!kj;Lclient!kj;Lclient!kj;Lclient!kj;)V")
 	public void method790(@OriginalArg(0) Class126 arg0, @OriginalArg(1) Class126 arg1, @OriginalArg(2) Class126 arg2, @OriginalArg(3) Class126 arg3) {
 		if (arg0 == null) {
-			this.anOpengl1.glDisableClientState(GL.GL_VERTEX_ARRAY);
+			this.gl.glDisableClientState(GL.GL_VERTEX_ARRAY);
 		} else {
-			this.anOpengl1.glEnableClientState(GL.GL_VERTEX_ARRAY);
+			this.gl.glEnableClientState(GL.GL_VERTEX_ARRAY);
 			arg0.method3383();
 		}
 		if (arg1 == null) {
-			this.anOpengl1.glDisableClientState(GL.GL_NORMAL_ARRAY);
+			this.gl.glDisableClientState(GL.GL_NORMAL_ARRAY);
 		} else {
-			this.anOpengl1.glEnableClientState(GL.GL_NORMAL_ARRAY);
+			this.gl.glEnableClientState(GL.GL_NORMAL_ARRAY);
 			arg1.method3382();
 		}
 		if (arg2 == null) {
-			this.anOpengl1.glDisableClientState(GL.GL_COLOR_ARRAY);
+			this.gl.glDisableClientState(GL.GL_COLOR_ARRAY);
 		} else {
-			this.anOpengl1.glEnableClientState(GL.GL_COLOR_ARRAY);
+			this.gl.glEnableClientState(GL.GL_COLOR_ARRAY);
 			arg2.method3384();
 		}
 		if (arg3 == null) {
-			this.anOpengl1.glDisableClientState(GL.GL_TEXTURE_COORD_ARRAY);
+			this.gl.glDisableClientState(GL.GL_TEXTURE_COORD_ARRAY);
 		} else {
-			this.anOpengl1.glEnableClientState(GL.GL_TEXTURE_COORD_ARRAY);
+			this.gl.glEnableClientState(GL.GL_TEXTURE_COORD_ARRAY);
 			arg3.method3385();
 		}
 	}
@@ -1037,20 +1037,20 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		this.anInt612 = arg1;
 		this.anInt608 = arg2;
 		this.anInt607 = arg3;
-		this.anOpengl1.glEnable(GL.GL_SCISSOR_TEST);
+		this.gl.glEnable(GL.GL_SCISSOR_TEST);
 		this.method807();
 		this.method825();
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "([IIIII)Lclient!jd;")
 	@Override
-	public Class13 method2884(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		return new Class13_Sub2(this, arg2, arg3, arg0, 0, arg1);
+	public Sprite method2884(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
+		return new GlSprite(this, arg2, arg3, arg0, 0, arg1);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "P", descriptor = "()V")
 	public void method791() {
-		this.anOpengl1.glPopMatrix();
+		this.gl.glPopMatrix();
 	}
 
 	@OriginalMember(owner = "client!bf", name = "m", descriptor = "(I)V")
@@ -1076,13 +1076,13 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		this.method793(0, 34167, 768);
 		@Pc(30) float local30 = local5.aFloat42 / (float) local5.anInt3688;
 		@Pc(37) float local37 = local5.aFloat43 / (float) local5.anInt3687;
-		this.anOpengl1.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
-		this.anOpengl1.glBegin(GL.GL_LINES);
-		this.anOpengl1.glTexCoord2f(local30 * (float) (arg0 - arg6), local37 * (float) (arg1 - arg7));
-		this.anOpengl1.glVertex2f((float) arg0 + 0.35F, (float) arg1 + 0.35F);
-		this.anOpengl1.glTexCoord2f(local30 * (float) (arg2 - arg6), local37 * (float) (arg3 - arg7));
-		this.anOpengl1.glVertex2f((float) arg2 + 0.35F, (float) arg3 + 0.35F);
-		this.anOpengl1.glEnd();
+		this.gl.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
+		this.gl.glBegin(GL.GL_LINES);
+		this.gl.glTexCoord2f(local30 * (float) (arg0 - arg6), local37 * (float) (arg1 - arg7));
+		this.gl.glVertex2f((float) arg0 + 0.35F, (float) arg1 + 0.35F);
+		this.gl.glTexCoord2f(local30 * (float) (arg2 - arg6), local37 * (float) (arg3 - arg7));
+		this.gl.glVertex2f((float) arg2 + 0.35F, (float) arg3 + 0.35F);
+		this.gl.glEnd();
 		this.method793(0, 5890, 768);
 	}
 
@@ -1115,7 +1115,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public void method2803() {
 		this.anInt582 = this.aCanvas2.getWidth();
 		this.anInt587 = this.aCanvas2.getHeight();
-		this.anOpengl1.glViewport(this.anInt619, this.anInt594, this.anInt582, this.anInt587);
+		this.gl.glViewport(this.anInt619, this.anInt594, this.anInt582, this.anInt587);
 		this.method806();
 		this.method2898();
 	}
@@ -1135,8 +1135,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(III)V")
 	public void method793(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		this.anOpengl1.glTexEnvi(GL.GL_TEXTURE_ENV, arg0 + GL.GL_SRC0_RGB, arg1);
-		this.anOpengl1.glTexEnvi(GL.GL_TEXTURE_ENV, arg0 + GL.GL_OPERAND0_RGB, arg2);
+		this.gl.glTexEnvi(GL.GL_TEXTURE_ENV, arg0 + GL.GL_SRC0_RGB, arg1);
+		this.gl.glTexEnvi(GL.GL_TEXTURE_ENV, arg0 + GL.GL_OPERAND0_RGB, arg2);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "g", descriptor = "()Z")
@@ -1160,18 +1160,18 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "f", descriptor = "(II)V")
 	public void method794(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		if (this.anInt609 != 0) {
-			this.anOpengl1.glTexEnvi(GL.GL_TEXTURE_ENV, GL.GL_COMBINE_RGB, arg0);
-			this.anOpengl1.glTexEnvi(GL.GL_TEXTURE_ENV, GL.GL_COMBINE_ALPHA, arg1);
+			this.gl.glTexEnvi(GL.GL_TEXTURE_ENV, GL.GL_COMBINE_RGB, arg0);
+			this.gl.glTexEnvi(GL.GL_TEXTURE_ENV, GL.GL_COMBINE_ALPHA, arg1);
 			return;
 		}
 		@Pc(4) boolean local4 = false;
 		if (this.anInt595 != arg0) {
-			this.anOpengl1.glTexEnvi(GL.GL_TEXTURE_ENV, GL.GL_COMBINE_RGB, arg0);
+			this.gl.glTexEnvi(GL.GL_TEXTURE_ENV, GL.GL_COMBINE_RGB, arg0);
 			this.anInt595 = arg0;
 			local4 = true;
 		}
 		if (this.anInt614 != arg1) {
-			this.anOpengl1.glTexEnvi(GL.GL_TEXTURE_ENV, GL.GL_COMBINE_ALPHA, arg1);
+			this.gl.glTexEnvi(GL.GL_TEXTURE_ENV, GL.GL_COMBINE_ALPHA, arg1);
 			this.anInt614 = arg1;
 			local4 = true;
 		}
@@ -1226,55 +1226,55 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		for (@Pc(7) int local7 = this.anInt597 - 1; local7 >= 0; local7--) {
 			this.method832(local7);
 			this.method848(null);
-			this.anOpengl1.glTexEnvi(GL.GL_TEXTURE_ENV, GL.GL_TEXTURE_ENV_MODE, GL.GL_COMBINE);
+			this.gl.glTexEnvi(GL.GL_TEXTURE_ENV, GL.GL_TEXTURE_ENV_MODE, GL.GL_COMBINE);
 		}
 		this.method794(8448, 8448);
 		this.method793(2, 34168, 770);
 		this.method819();
 		this.anInt604 = 1;
-		this.anOpengl1.glEnable(GL.GL_BLEND);
-		this.anOpengl1.glBlendFunc(GL.GL_SRC_ALPHA, GL.GL_ONE_MINUS_SRC_ALPHA);
+		this.gl.glEnable(GL.GL_BLEND);
+		this.gl.glBlendFunc(GL.GL_SRC_ALPHA, GL.GL_ONE_MINUS_SRC_ALPHA);
 		this.anInt605 = 1;
-		this.anOpengl1.glEnable(GL.GL_ALPHA_TEST);
-		this.anOpengl1.glAlphaFunc(GL.GL_GREATER, 0.0F);
+		this.gl.glEnable(GL.GL_ALPHA_TEST);
+		this.gl.glAlphaFunc(GL.GL_GREATER, 0.0F);
 		this.aBoolean46 = true;
-		this.anOpengl1.glColorMask(true, true, true, true);
+		this.gl.glColorMask(true, true, true, true);
 		this.aBoolean42 = true;
 		this.method786(true);
 		this.method782(true);
 		this.method813(true);
 		this.method817(true);
 		this.method806();
-		this.anOpengl1.setSwapInterval(0);
-		this.anOpengl1.glShadeModel(GL.GL_SMOOTH);
-		this.anOpengl1.glClearDepth(1.0F);
-		this.anOpengl1.glDepthFunc(GL.GL_LEQUAL);
-		this.anOpengl1.glPolygonMode(GL.GL_FRONT, GL.GL_FILL);
-		this.anOpengl1.glEnable(GL.GL_CULL_FACE);
-		this.anOpengl1.glCullFace(GL.GL_BACK);
-		this.anOpengl1.glMatrixMode(GL.GL_MODELVIEW);
-		this.anOpengl1.glLoadIdentity();
-		this.anOpengl1.glColorMaterial(GL.GL_FRONT, GL.GL_AMBIENT_AND_DIFFUSE);
-		this.anOpengl1.glEnable(GL.GL_COLOR_MATERIAL);
+		this.gl.setSwapInterval(0);
+		this.gl.glShadeModel(GL.GL_SMOOTH);
+		this.gl.glClearDepth(1.0F);
+		this.gl.glDepthFunc(GL.GL_LEQUAL);
+		this.gl.glPolygonMode(GL.GL_FRONT, GL.GL_FILL);
+		this.gl.glEnable(GL.GL_CULL_FACE);
+		this.gl.glCullFace(GL.GL_BACK);
+		this.gl.glMatrixMode(GL.GL_MODELVIEW);
+		this.gl.glLoadIdentity();
+		this.gl.glColorMaterial(GL.GL_FRONT, GL.GL_AMBIENT_AND_DIFFUSE);
+		this.gl.glEnable(GL.GL_COLOR_MATERIAL);
 		@Pc(149) float[] local149 = new float[] { 0.0F, 0.0F, 0.0F, 1.0F };
 		for (@Pc(151) int local151 = 0; local151 < 8; local151++) {
 			@Pc(158) int local158 = local151 + 16384;
-			this.anOpengl1.glLightfv(local158, GL.GL_AMBIENT, local149, 0);
-			this.anOpengl1.glLightf(local158, GL.GL_CONSTANT_ATTENUATION, 0.0F);
-			this.anOpengl1.glLightf(local158, GL.GL_LINEAR_ATTENUATION, 0.0F);
+			this.gl.glLightfv(local158, GL.GL_AMBIENT, local149, 0);
+			this.gl.glLightf(local158, GL.GL_CONSTANT_ATTENUATION, 0.0F);
+			this.gl.glLightf(local158, GL.GL_LINEAR_ATTENUATION, 0.0F);
 		}
-		this.anOpengl1.glEnable(GL.GL_LIGHT0);
-		this.anOpengl1.glEnable(GL.GL_LIGHT1);
-		this.anOpengl1.glFogf(GL.GL_FOG_DENSITY, 0.95F);
-		this.anOpengl1.glFogi(GL.GL_FOG_MODE, GL.GL_LINEAR);
-		this.anOpengl1.glHint(GL.GL_FOG_HINT, GL.GL_FASTEST);
+		this.gl.glEnable(GL.GL_LIGHT0);
+		this.gl.glEnable(GL.GL_LIGHT1);
+		this.gl.glFogf(GL.GL_FOG_DENSITY, 0.95F);
+		this.gl.glFogi(GL.GL_FOG_MODE, GL.GL_LINEAR);
+		this.gl.glHint(GL.GL_FOG_HINT, GL.GL_FASTEST);
 		this.anInt616 = this.anInt613 = -1;
 		this.method2898();
 	}
 
 	@OriginalMember(owner = "client!bf", name = "R", descriptor = "()V")
 	private void method796() {
-		this.anOpengl1.glDepthMask(this.aBoolean39 && this.aBoolean43);
+		this.gl.glDepthMask(this.aBoolean39 && this.aBoolean43);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "b", descriptor = "(I)V")
@@ -1288,12 +1288,12 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			Static22.anIntArray32[local1++] = (int) local16.key;
 			this.anInt581 -= local16.anInt6818;
 			if (local1 == 1000) {
-				this.anOpengl1.glDeleteBuffersARB(local1, Static22.anIntArray32, 0);
+				this.gl.glDeleteBuffersARB(local1, Static22.anIntArray32, 0);
 				local1 = 0;
 			}
 		}
 		if (local1 > 0) {
-			this.anOpengl1.glDeleteBuffersARB(local1, Static22.anIntArray32, 0);
+			this.gl.glDeleteBuffersARB(local1, Static22.anIntArray32, 0);
 			local1 = 0;
 		}
 		while (!this.aClass135_6.method3550()) {
@@ -1301,24 +1301,24 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			Static22.anIntArray32[local1++] = (int) local16.key;
 			this.anInt585 -= local16.anInt6818;
 			if (local1 == 1000) {
-				this.anOpengl1.glDeleteTextures(local1, Static22.anIntArray32, 0);
+				this.gl.glDeleteTextures(local1, Static22.anIntArray32, 0);
 				local1 = 0;
 			}
 		}
 		if (local1 > 0) {
-			this.anOpengl1.glDeleteTextures(local1, Static22.anIntArray32, 0);
+			this.gl.glDeleteTextures(local1, Static22.anIntArray32, 0);
 			local1 = 0;
 		}
 		while (!this.aClass135_7.method3550()) {
 			local16 = (Class2_Sub39) this.aClass135_7.method3549();
 			Static22.anIntArray32[local1++] = local16.anInt6818;
 			if (local1 == 1000) {
-				this.anOpengl1.glDeleteFramebuffersEXT(local1, Static22.anIntArray32, 0);
+				this.gl.glDeleteFramebuffersEXT(local1, Static22.anIntArray32, 0);
 				local1 = 0;
 			}
 		}
 		if (local1 > 0) {
-			this.anOpengl1.glDeleteFramebuffersEXT(local1, Static22.anIntArray32, 0);
+			this.gl.glDeleteFramebuffersEXT(local1, Static22.anIntArray32, 0);
 			local1 = 0;
 		}
 		while (!this.aClass135_8.method3550()) {
@@ -1326,36 +1326,36 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			Static22.anIntArray32[local1++] = (int) local16.key;
 			this.anInt586 -= local16.anInt6818;
 			if (local1 == 1000) {
-				this.anOpengl1.glDeleteRenderbuffersEXT(local1, Static22.anIntArray32, 0);
+				this.gl.glDeleteRenderbuffersEXT(local1, Static22.anIntArray32, 0);
 				local1 = 0;
 			}
 		}
 		if (local1 > 0) {
-			this.anOpengl1.glDeleteRenderbuffersEXT(local1, Static22.anIntArray32, 0);
+			this.gl.glDeleteRenderbuffersEXT(local1, Static22.anIntArray32, 0);
 			local1 = 0;
 		}
 		while (!this.aClass135_9.method3550()) {
 			local16 = (Class2_Sub39) this.aClass135_9.method3549();
 			Static22.anIntArray32[local1++] = (int) local16.key;
 			if (local1 == 1000) {
-				this.anOpengl1.glDeleteProgramsARB(local1, Static22.anIntArray32, 0);
+				this.gl.glDeleteProgramsARB(local1, Static22.anIntArray32, 0);
 				local1 = 0;
 			}
 		}
 		if (local1 > 0) {
-			this.anOpengl1.glDeleteProgramsARB(local1, Static22.anIntArray32, 0);
+			this.gl.glDeleteProgramsARB(local1, Static22.anIntArray32, 0);
 		}
 		while (!this.aClass135_4.method3550()) {
 			local16 = (Class2_Sub39) this.aClass135_4.method3549();
-			this.anOpengl1.glDeleteLists((int) local16.key, local16.anInt6818);
+			this.gl.glDeleteLists((int) local16.key, local16.anInt6818);
 		}
 		while (!this.aClass135_10.method3550()) {
 			local16 = (Class2_Sub39) this.aClass135_10.method3549();
-			this.anOpengl1.glDeleteObjectARB(local16.anInt6818);
+			this.gl.glDeleteObjectARB(local16.anInt6818);
 		}
 		while (!this.aClass135_4.method3550()) {
 			local16 = (Class2_Sub39) this.aClass135_4.method3549();
-			this.anOpengl1.glDeleteLists((int) local16.key, local16.anInt6818);
+			this.gl.glDeleteLists((int) local16.key, local16.anInt6818);
 		}
 		if (this.method2899() > 100663296 && MonotonicClock.currentTimeMillis() > this.aLong20 + 60000L) {
 			System.gc();
@@ -1373,27 +1373,27 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		@Pc(19) float local19 = local9 + (float) arg3;
 		this.method781();
 		this.method779(arg5);
-		this.anOpengl1.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
+		this.gl.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
 		if (this.aBoolean44) {
-			this.anOpengl1.glDisable(GL.GL_MULTISAMPLE);
+			this.gl.glDisable(GL.GL_MULTISAMPLE);
 		}
-		this.anOpengl1.glBegin(GL.GL_QUADS);
-		this.anOpengl1.glVertex2f(local4, local9);
-		this.anOpengl1.glVertex2f(local4, local19);
-		this.anOpengl1.glVertex2f(local14, local19);
-		this.anOpengl1.glVertex2f(local14, local9);
-		this.anOpengl1.glEnd();
+		this.gl.glBegin(GL.GL_QUADS);
+		this.gl.glVertex2f(local4, local9);
+		this.gl.glVertex2f(local4, local19);
+		this.gl.glVertex2f(local14, local19);
+		this.gl.glVertex2f(local14, local9);
+		this.gl.glEnd();
 		if (this.aBoolean44) {
-			this.anOpengl1.glEnable(GL.GL_MULTISAMPLE);
+			this.gl.glEnable(GL.GL_MULTISAMPLE);
 		}
 	}
 
 	@OriginalMember(owner = "client!bf", name = "S", descriptor = "()V")
 	private void method797() {
 		if (this.aBoolean54 && !this.aBoolean33) {
-			this.anOpengl1.glEnable(GL.GL_LIGHTING);
+			this.gl.glEnable(GL.GL_LIGHTING);
 		} else {
-			this.anOpengl1.glDisable(GL.GL_LIGHTING);
+			this.gl.glDisable(GL.GL_LIGHTING);
 		}
 	}
 
@@ -1401,7 +1401,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@Override
 	public void method2819() {
 		this.method817(true);
-		this.anOpengl1.glClear(GL.GL_DEPTH_BUFFER_BIT);
+		this.gl.glClear(GL.GL_DEPTH_BUFFER_BIT);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "J", descriptor = "()V")
@@ -1411,7 +1411,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		this.anInt612 = 0;
 		this.anInt608 = this.anInt582;
 		this.anInt607 = this.anInt587;
-		this.anOpengl1.glDisable(GL.GL_SCISSOR_TEST);
+		this.gl.glDisable(GL.GL_SCISSOR_TEST);
 		this.method807();
 	}
 
@@ -1443,9 +1443,9 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(IIIIIII)V")
 	@Override
 	public void method2845(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
-		this.anOpengl1.glLineWidth((float) arg5);
+		this.gl.glLineWidth((float) arg5);
 		this.method2809(arg0, arg1, arg2, arg3, arg4, 0);
-		this.anOpengl1.glLineWidth(1.0F);
+		this.gl.glLineWidth(1.0F);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "A", descriptor = "()Z")
@@ -1466,12 +1466,12 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		@Pc(23) float local23 = (float) -this.anInt620 * this.aFloat9 / (float) this.anInt600;
 		@Pc(37) float local37 = (float) (this.anInt582 - this.anInt606) * this.aFloat9 / (float) this.anInt596;
 		@Pc(51) float local51 = (float) (this.anInt587 - this.anInt620) * this.aFloat9 / (float) this.anInt600;
-		this.anOpengl1.glMatrixMode(GL.GL_PROJECTION);
-		this.anOpengl1.glLoadIdentity();
+		this.gl.glMatrixMode(GL.GL_PROJECTION);
+		this.gl.glLoadIdentity();
 		if (local11 != local37 && local51 != local23) {
-			this.anOpengl1.glOrtho((double) local11, (double) local37, (double) -local51, (double) -local23, (double) ((float) this.anInt617 - this.aFloat20), (double) ((float) this.anInt618 - this.aFloat20));
+			this.gl.glOrtho((double) local11, (double) local37, (double) -local51, (double) -local23, (double) ((float) this.anInt617 - this.aFloat20), (double) ((float) this.anInt618 - this.aFloat20));
 		}
-		this.anOpengl1.glMatrixMode(GL.GL_MODELVIEW);
+		this.gl.glMatrixMode(GL.GL_MODELVIEW);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "f", descriptor = "(Z)V")
@@ -1491,7 +1491,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!fd;)V")
 	public void method801(@OriginalArg(0) Interface4 arg0) {
 		if (this.anInterface4_1 != arg0 && this.aBoolean37) {
-			this.anOpengl1.glBindBufferARB(GL.GL_ELEMENT_ARRAY_BUFFER, arg0.method6066());
+			this.gl.glBindBufferARB(GL.GL_ELEMENT_ARRAY_BUFFER, arg0.method6066());
 			this.anInterface4_1 = arg0;
 		}
 	}
@@ -1518,8 +1518,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		@Pc(15) int local15 = this.anInt612;
 		@Pc(18) int local18 = this.anInt607;
 		this.method2898();
-		this.anOpengl1.glReadBuffer(GL.GL_FRONT);
-		this.anOpengl1.glDrawBuffer(GL.GL_BACK);
+		this.gl.glReadBuffer(GL.GL_FRONT);
+		this.gl.glDrawBuffer(GL.GL_BACK);
 		this.method806();
 		this.method786(false);
 		this.method782(false);
@@ -1529,16 +1529,16 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		this.method784();
 		this.method792(0);
 		this.method779(0);
-		this.anOpengl1.glMatrixMode(GL.GL_PROJECTION);
-		this.anOpengl1.glLoadIdentity();
-		this.anOpengl1.glOrtho(0.0D, 1.0D, 0.0D, 1.0D, -1.0D, 1.0D);
-		this.anOpengl1.glMatrixMode(GL.GL_MODELVIEW);
-		this.anOpengl1.glLoadIdentity();
-		this.anOpengl1.glRasterPos2i(0, 0);
-		this.anOpengl1.glCopyPixels(0, 0, this.anInt582, this.anInt587, GL.GL_COLOR);
-		this.anOpengl1.glFlush();
-		this.anOpengl1.glReadBuffer(GL.GL_BACK);
-		this.anOpengl1.glDrawBuffer(GL.GL_BACK);
+		this.gl.glMatrixMode(GL.GL_PROJECTION);
+		this.gl.glLoadIdentity();
+		this.gl.glOrtho(0.0D, 1.0D, 0.0D, 1.0D, -1.0D, 1.0D);
+		this.gl.glMatrixMode(GL.GL_MODELVIEW);
+		this.gl.glLoadIdentity();
+		this.gl.glRasterPos2i(0, 0);
+		this.gl.glCopyPixels(0, 0, this.anInt582, this.anInt587, GL.GL_COLOR);
+		this.gl.glFlush();
+		this.gl.glReadBuffer(GL.GL_BACK);
+		this.gl.glDrawBuffer(GL.GL_BACK);
 		this.method2895(local9, local15, local12, local18);
 	}
 
@@ -1555,7 +1555,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		Static22.aFloatArray4[1] = arg1;
 		Static22.aFloatArray4[2] = arg2;
 		Static22.aFloatArray4[3] = arg3;
-		this.anOpengl1.glTexEnvfv(GL.GL_TEXTURE_ENV, GL.GL_TEXTURE_ENV_COLOR, Static22.aFloatArray4, 0);
+		this.gl.glTexEnvfv(GL.GL_TEXTURE_ENV, GL.GL_TEXTURE_ENV_COLOR, Static22.aFloatArray4, 0);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "c", descriptor = "(II)V")
@@ -1598,8 +1598,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(IIIIZ)Lclient!jd;")
 	@Override
-	public Class13 method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
-		return new Class13_Sub2(this, arg0, arg1, arg2, arg3);
+	public Sprite method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4) {
+		return new GlSprite(this, arg0, arg1, arg2, arg3);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "W", descriptor = "()V")
@@ -1634,17 +1634,17 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		this.method793(0, 34167, 768);
 		@Pc(30) float local30 = local5.aFloat42 / (float) local5.anInt3688;
 		@Pc(37) float local37 = local5.aFloat43 / (float) local5.anInt3687;
-		this.anOpengl1.glColor4ub((byte) 0, (byte) 0, (byte) 0, (byte) -1);
-		this.anOpengl1.glBegin(GL.GL_QUADS);
-		this.anOpengl1.glTexCoord2f(local30 * (float) (this.anInt590 - arg1), local37 * (float) (this.anInt612 - arg2));
-		this.anOpengl1.glVertex2i(this.anInt590, this.anInt612);
-		this.anOpengl1.glTexCoord2f(local30 * (float) (this.anInt590 - arg1), local37 * (float) (this.anInt607 - arg2));
-		this.anOpengl1.glVertex2i(this.anInt590, this.anInt607);
-		this.anOpengl1.glTexCoord2f(local30 * (float) (this.anInt608 - arg1), local37 * (float) (this.anInt607 - arg2));
-		this.anOpengl1.glVertex2i(this.anInt608, this.anInt607);
-		this.anOpengl1.glTexCoord2f(local30 * (float) (this.anInt608 - arg1), local37 * (float) (this.anInt612 - arg2));
-		this.anOpengl1.glVertex2i(this.anInt608, this.anInt612);
-		this.anOpengl1.glEnd();
+		this.gl.glColor4ub((byte) 0, (byte) 0, (byte) 0, (byte) -1);
+		this.gl.glBegin(GL.GL_QUADS);
+		this.gl.glTexCoord2f(local30 * (float) (this.anInt590 - arg1), local37 * (float) (this.anInt612 - arg2));
+		this.gl.glVertex2i(this.anInt590, this.anInt612);
+		this.gl.glTexCoord2f(local30 * (float) (this.anInt590 - arg1), local37 * (float) (this.anInt607 - arg2));
+		this.gl.glVertex2i(this.anInt590, this.anInt607);
+		this.gl.glTexCoord2f(local30 * (float) (this.anInt608 - arg1), local37 * (float) (this.anInt607 - arg2));
+		this.gl.glVertex2i(this.anInt608, this.anInt607);
+		this.gl.glTexCoord2f(local30 * (float) (this.anInt608 - arg1), local37 * (float) (this.anInt612 - arg2));
+		this.gl.glVertex2i(this.anInt608, this.anInt612);
+		this.gl.glEnd();
 		this.method793(0, 5890, 768);
 	}
 
@@ -1652,8 +1652,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private void method809() {
 		@Pc(15) int local15;
 		if (this.aBoolean50) {
-			this.anOpengl1.glFogf(GL.GL_FOG_START, 0.0F);
-			this.anOpengl1.glFogf(GL.GL_FOG_END, 1.0F);
+			this.gl.glFogf(GL.GL_FOG_START, 0.0F);
+			this.gl.glFogf(GL.GL_FOG_END, 1.0F);
 			local15 = this.anInt611;
 		} else {
 			this.aFloat2 = (float) (this.anInt618 - 256) - this.aFloat15;
@@ -1661,14 +1661,14 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			if (this.aFloat5 < (float) this.anInt617) {
 				this.aFloat5 = this.anInt617;
 			}
-			this.anOpengl1.glFogf(GL.GL_FOG_START, this.aFloat5);
-			this.anOpengl1.glFogf(GL.GL_FOG_END, this.aFloat2);
+			this.gl.glFogf(GL.GL_FOG_START, this.aFloat5);
+			this.gl.glFogf(GL.GL_FOG_END, this.aFloat2);
 			local15 = this.anInt613;
 		}
 		Static22.aFloatArray4[0] = (float) (local15 & 0xFF0000) / 1.671168E7F;
 		Static22.aFloatArray4[1] = (float) (local15 & 0xFFFF) / 65535.0F;
 		Static22.aFloatArray4[2] = (float) (local15 & 0xFF) / 255.0F;
-		this.anOpengl1.glFogfv(GL.GL_FOG_COLOR, Static22.aFloatArray4, 0);
+		this.gl.glFogfv(GL.GL_FOG_COLOR, Static22.aFloatArray4, 0);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(IIIIII)V")
@@ -1676,18 +1676,18 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public void method2809(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		this.method781();
 		this.method779(arg5);
-		this.anOpengl1.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
-		this.anOpengl1.glBegin(GL.GL_LINE_LOOP);
-		this.anOpengl1.glVertex2f((float) arg0 + 0.35F, (float) arg1 + 0.35F);
-		this.anOpengl1.glVertex2f((float) arg2 + 0.35F, (float) arg3 + 0.35F);
-		this.anOpengl1.glEnd();
+		this.gl.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
+		this.gl.glBegin(GL.GL_LINE_LOOP);
+		this.gl.glVertex2f((float) arg0 + 0.35F, (float) arg1 + 0.35F);
+		this.gl.glVertex2f((float) arg2 + 0.35F, (float) arg3 + 0.35F);
+		this.gl.glEnd();
 	}
 
 	@OriginalMember(owner = "client!bf", name = "Y", descriptor = "()V")
 	private void method810() {
-		this.anOpengl1.glLoadIdentity();
-		this.anOpengl1.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
-		this.anOpengl1.glMultMatrixf(this.aClass14_Sub2_2.method3941(), 0);
+		this.gl.glLoadIdentity();
+		this.gl.glRotatef(180.0F, 1.0F, 0.0F, 0.0F);
+		this.gl.glMultMatrixf(this.aClass14_Sub2_2.method3941(), 0);
 		this.method814();
 	}
 
@@ -1703,12 +1703,12 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		Static22.aFloatArray4[1] = this.aFloat8 * this.aFloat19;
 		Static22.aFloatArray4[2] = this.aFloat8 * this.aFloat6;
 		Static22.aFloatArray4[3] = 1.0F;
-		this.anOpengl1.glLightfv(GL.GL_LIGHT0, GL.GL_DIFFUSE, Static22.aFloatArray4, 0);
+		this.gl.glLightfv(GL.GL_LIGHT0, GL.GL_DIFFUSE, Static22.aFloatArray4, 0);
 		Static22.aFloatArray4[0] = -this.aFloat16 * this.aFloat1;
 		Static22.aFloatArray4[1] = -this.aFloat16 * this.aFloat19;
 		Static22.aFloatArray4[2] = -this.aFloat16 * this.aFloat6;
 		Static22.aFloatArray4[3] = 1.0F;
-		this.anOpengl1.glLightfv(GL.GL_LIGHT1, GL.GL_DIFFUSE, Static22.aFloatArray4, 0);
+		this.gl.glLightfv(GL.GL_LIGHT1, GL.GL_DIFFUSE, Static22.aFloatArray4, 0);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "g", descriptor = "(Z)V")
@@ -1717,9 +1717,9 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			return;
 		}
 		if (arg0) {
-			this.anOpengl1.glEnable(GL.GL_DEPTH_TEST);
+			this.gl.glEnable(GL.GL_DEPTH_TEST);
 		} else {
-			this.anOpengl1.glDisable(GL.GL_DEPTH_TEST);
+			this.gl.glDisable(GL.GL_DEPTH_TEST);
 		}
 		this.aBoolean48 = arg0;
 		this.anInt602 &= 0xFFFFFFE0;
@@ -1727,8 +1727,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "ab", descriptor = "()V")
 	public void method814() {
-		this.anOpengl1.glLightfv(GL.GL_LIGHT0, GL.GL_POSITION, this.aFloatArray7, 0);
-		this.anOpengl1.glLightfv(GL.GL_LIGHT1, GL.GL_POSITION, this.aFloatArray9, 0);
+		this.gl.glLightfv(GL.GL_LIGHT0, GL.GL_POSITION, this.aFloatArray7, 0);
+		this.gl.glLightfv(GL.GL_LIGHT1, GL.GL_POSITION, this.aFloatArray9, 0);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "bb", descriptor = "()V")
@@ -1755,7 +1755,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "g", descriptor = "(IIIIII)Lclient!rc;")
 	@Override
 	public Class42 method2877(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
-		return this.aBoolean38 ? new Class42_Sub1_Sub2(this, arg0, arg1, arg2, arg3, arg4, arg5) : null;
+		return this.arbTextureCubeMapSupported ? new Class42_Sub1_Sub2(this, arg0, arg1, arg2, arg3, arg4, arg5) : null;
 	}
 
 	@OriginalMember(owner = "client!bf", name = "h", descriptor = "(Z)V")
@@ -1781,14 +1781,14 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		this.aClass8_Sub1_1 = new Class8_Sub1(this, 3553, 6408, 1, 1);
 		this.aClass8_Sub1_2 = new Class8_Sub1(this, 3553, 6408, 1, 1);
 		this.aClass8_Sub1_3 = new Class8_Sub1(this, 3553, 6408, 1, 1);
-		this.aClass31_Sub2_4 = new Class31_Sub2(this);
-		this.aClass31_Sub2_1 = new Class31_Sub2(this);
-		this.aClass31_Sub2_2 = new Class31_Sub2(this);
-		this.aClass31_Sub2_8 = new Class31_Sub2(this);
-		this.aClass31_Sub2_5 = new Class31_Sub2(this);
-		this.aClass31_Sub2_3 = new Class31_Sub2(this);
-		this.aClass31_Sub2_7 = new Class31_Sub2(this);
-		this.aClass31_Sub2_6 = new Class31_Sub2(this);
+		this.aClass31_Sub2_4 = new GlModel(this);
+		this.aClass31_Sub2_1 = new GlModel(this);
+		this.aClass31_Sub2_2 = new GlModel(this);
+		this.aClass31_Sub2_8 = new GlModel(this);
+		this.aClass31_Sub2_5 = new GlModel(this);
+		this.aClass31_Sub2_3 = new GlModel(this);
+		this.aClass31_Sub2_7 = new GlModel(this);
+		this.aClass31_Sub2_6 = new GlModel(this);
 		if (this.aBoolean36) {
 			this.aClass228_1 = new Class228(this);
 		}
@@ -1804,9 +1804,9 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "db", descriptor = "()V")
 	private void method819() {
 		if (this.aBoolean34) {
-			this.anOpengl1.glMatrixMode(GL.GL_TEXTURE);
-			this.anOpengl1.glLoadIdentity();
-			this.anOpengl1.glMatrixMode(GL.GL_MODELVIEW);
+			this.gl.glMatrixMode(GL.GL_TEXTURE);
+			this.gl.glLoadIdentity();
+			this.gl.glMatrixMode(GL.GL_MODELVIEW);
 			this.aBoolean34 = false;
 		}
 	}
@@ -1851,7 +1851,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		this.method824();
 		this.method848(this.aClass8_Sub1_Sub1_1);
 		this.method779(arg8);
-		this.anOpengl1.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
+		this.gl.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
 		this.method780(arg5);
 		this.method794(34165, 34165);
 		this.method793(0, 34166, 768);
@@ -1862,16 +1862,16 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		@Pc(132) float local132 = (float) arg1;
 		@Pc(137) float local137 = local129 + (float) arg2;
 		@Pc(142) float local142 = local132 + (float) arg3;
-		this.anOpengl1.glBegin(GL.GL_QUADS);
-		this.anOpengl1.glTexCoord2f(0.0F, 0.0F);
-		this.anOpengl1.glVertex2f(local129, local132);
-		this.anOpengl1.glTexCoord2f(0.0F, local36);
-		this.anOpengl1.glVertex2f(local129, local142);
-		this.anOpengl1.glTexCoord2f(local32, local36);
-		this.anOpengl1.glVertex2f(local137, local142);
-		this.anOpengl1.glTexCoord2f(local32, 0.0F);
-		this.anOpengl1.glVertex2f(local137, local132);
-		this.anOpengl1.glEnd();
+		this.gl.glBegin(GL.GL_QUADS);
+		this.gl.glTexCoord2f(0.0F, 0.0F);
+		this.gl.glVertex2f(local129, local132);
+		this.gl.glTexCoord2f(0.0F, local36);
+		this.gl.glVertex2f(local129, local142);
+		this.gl.glTexCoord2f(local32, local36);
+		this.gl.glVertex2f(local137, local142);
+		this.gl.glTexCoord2f(local32, 0.0F);
+		this.gl.glVertex2f(local137, local132);
+		this.gl.glEnd();
 		this.method793(0, 5890, 768);
 		this.method793(2, 34166, 770);
 		this.method833(0, 5890);
@@ -1885,7 +1885,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!dk;Z)Lclient!jd;")
 	@Override
-	public Class13 method2891(@OriginalArg(0) Class48 arg0) {
+	public Sprite method2891(@OriginalArg(0) Class48 arg0) {
 		@Pc(6) int[] local6 = new int[arg0.anInt1531 * arg0.anInt1533];
 		@Pc(8) int local8 = 0;
 		@Pc(10) int local10 = 0;
@@ -1906,14 +1906,14 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 				}
 			}
 		}
-		@Pc(100) Class13 local100 = this.method2884(local6, arg0.anInt1531, arg0.anInt1531, arg0.anInt1533);
+		@Pc(100) Sprite local100 = this.method2884(local6, arg0.anInt1531, arg0.anInt1531, arg0.anInt1533);
 		local100.method6391(arg0.anInt1535, arg0.anInt1530, arg0.anInt1532, arg0.anInt1534);
 		return local100;
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!gn;Lclient!tp;Lclient!on;Lclient!au;I)V")
 	@Override
-	public void method2824(@OriginalArg(0) Class31 arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2 arg3) {
+	public void method2824(@OriginalArg(0) Model arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2 arg3) {
 		arg0.method3835(arg2, arg3, 0);
 		this.method2833(arg1);
 	}
@@ -1925,11 +1925,11 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		this.method779(arg4);
 		@Pc(9) float local9 = (float) arg0 + 0.35F;
 		@Pc(14) float local14 = (float) arg1 + 0.35F;
-		this.anOpengl1.glColor4ub((byte) (arg3 >> 16), (byte) (arg3 >> 8), (byte) arg3, (byte) (arg3 >> 24));
-		this.anOpengl1.glBegin(GL.GL_LINES);
-		this.anOpengl1.glVertex2f(local9, local14);
-		this.anOpengl1.glVertex2f(local9, local14 + (float) arg2);
-		this.anOpengl1.glEnd();
+		this.gl.glColor4ub((byte) (arg3 >> 16), (byte) (arg3 >> 8), (byte) arg3, (byte) (arg3 >> 24));
+		this.gl.glBegin(GL.GL_LINES);
+		this.gl.glVertex2f(local9, local14);
+		this.gl.glVertex2f(local9, local14 + (float) arg2);
+		this.gl.glEnd();
 	}
 
 	@OriginalMember(owner = "client!bf", name = "p", descriptor = "(I)V")
@@ -1940,9 +1940,9 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "fb", descriptor = "()V")
 	private void method823() {
-		this.anOpengl1.glMatrixMode(GL.GL_PROJECTION);
-		this.anOpengl1.glLoadMatrixf(this.aFloatArray10, 0);
-		this.anOpengl1.glMatrixMode(GL.GL_MODELVIEW);
+		this.gl.glMatrixMode(GL.GL_PROJECTION);
+		this.gl.glLoadMatrixf(this.aFloatArray10, 0);
+		this.gl.glMatrixMode(GL.GL_MODELVIEW);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "gb", descriptor = "()V")
@@ -1962,9 +1962,9 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "hb", descriptor = "()V")
 	private void method825() {
 		if (this.anInt590 <= this.anInt608 && this.anInt612 <= this.anInt607) {
-			this.anOpengl1.glScissor(this.anInt619 + this.anInt590, this.anInt594 + this.anInt587 - this.anInt607, this.anInt608 - this.anInt590, this.anInt607 - this.anInt612);
+			this.gl.glScissor(this.anInt619 + this.anInt590, this.anInt594 + this.anInt587 - this.anInt607, this.anInt608 - this.anInt590, this.anInt607 - this.anInt612);
 		} else {
-			this.anOpengl1.glScissor(0, 0, 0, 0);
+			this.gl.glScissor(0, 0, 0, 0);
 		}
 	}
 
@@ -2046,14 +2046,14 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@Override
 	public void method2867(@OriginalArg(0) int arg0) {
 		this.method779(0);
-		this.anOpengl1.glClearColor((float) (arg0 & 0xFF0000) / 1.671168E7F, (float) (arg0 & 0xFFFF) / 65535.0F, (float) (arg0 & 0xFF) / 255.0F, (float) (arg0 >>> 24) / 255.0F);
-		this.anOpengl1.glClear(GL.GL_COLOR_BUFFER_BIT);
+		this.gl.glClearColor((float) (arg0 & 0xFF0000) / 1.671168E7F, (float) (arg0 & 0xFFFF) / 65535.0F, (float) (arg0 & 0xFF) / 255.0F, (float) (arg0 >>> 24) / 255.0F);
+		this.gl.glClear(GL.GL_COLOR_BUFFER_BIT);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!mu;)V")
 	public void method831(@OriginalArg(0) Class14_Sub2 arg0) {
-		this.anOpengl1.glPushMatrix();
-		this.anOpengl1.glMultMatrixf(arg0.method3941(), 0);
+		this.gl.glPushMatrix();
+		this.gl.glMultMatrixf(arg0.method3941(), 0);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "f", descriptor = "(IIII)V")
@@ -2072,15 +2072,15 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "q", descriptor = "(I)V")
 	public void method832(@OriginalArg(0) int arg0) {
 		if (this.anInt609 != arg0) {
-			this.anOpengl1.glActiveTexture(arg0 + GL.GL_TEXTURE0);
+			this.gl.glActiveTexture(arg0 + GL.GL_TEXTURE0);
 			this.anInt609 = arg0;
 		}
 	}
 
 	@OriginalMember(owner = "client!bf", name = "b", descriptor = "(III)V")
 	public void method833(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		this.anOpengl1.glTexEnvi(GL.GL_TEXTURE_ENV, arg0 + GL.GL_SRC0_ALPHA, arg1);
-		this.anOpengl1.glTexEnvi(GL.GL_TEXTURE_ENV, arg0 + GL.GL_OPERAND0_ALPHA, GL.GL_SRC_ALPHA);
+		this.gl.glTexEnvi(GL.GL_TEXTURE_ENV, arg0 + GL.GL_SRC0_ALPHA, arg1);
+		this.gl.glTexEnvi(GL.GL_TEXTURE_ENV, arg0 + GL.GL_OPERAND0_ALPHA, GL.GL_SRC_ALPHA);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Z)V")
@@ -2092,18 +2092,18 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "b", descriptor = "(FFF)V")
 	private void method834(@OriginalArg(0) float arg0, @OriginalArg(1) float arg1, @OriginalArg(2) float arg2) {
-		this.anOpengl1.glMatrixMode(GL.GL_TEXTURE);
+		this.gl.glMatrixMode(GL.GL_TEXTURE);
 		if (this.aBoolean34) {
-			this.anOpengl1.glLoadIdentity();
+			this.gl.glLoadIdentity();
 		}
-		this.anOpengl1.glTranslatef(arg0, arg1, arg2);
-		this.anOpengl1.glMatrixMode(GL.GL_MODELVIEW);
+		this.gl.glTranslatef(arg0, arg1, arg2);
+		this.gl.glMatrixMode(GL.GL_MODELVIEW);
 		this.aBoolean34 = true;
 	}
 
 	@OriginalMember(owner = "client!bf", name = "c", descriptor = "(III)V")
 	public void method835(@OriginalArg(2) int arg0) {
-		this.anOpengl1.glDrawArrays(GL.GL_QUADS, 0, arg0);
+		this.gl.glDrawArrays(GL.GL_QUADS, 0, arg0);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "r", descriptor = "(I)V")
@@ -2119,11 +2119,11 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		this.method779(arg4);
 		@Pc(9) float local9 = (float) arg0 + 0.35F;
 		@Pc(14) float local14 = (float) arg1 + 0.35F;
-		this.anOpengl1.glColor4ub((byte) (arg3 >> 16), (byte) (arg3 >> 8), (byte) arg3, (byte) (arg3 >> 24));
-		this.anOpengl1.glBegin(GL.GL_LINES);
-		this.anOpengl1.glVertex2f(local9, local14);
-		this.anOpengl1.glVertex2f(local9 + (float) arg2, local14);
-		this.anOpengl1.glEnd();
+		this.gl.glColor4ub((byte) (arg3 >> 16), (byte) (arg3 >> 8), (byte) arg3, (byte) (arg3 >> 24));
+		this.gl.glBegin(GL.GL_LINES);
+		this.gl.glVertex2f(local9, local14);
+		this.gl.glVertex2f(local9 + (float) arg2, local14);
+		this.gl.glEnd();
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "([I)V")
@@ -2175,9 +2175,9 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "lb", descriptor = "()V")
 	private void method837() {
 		if (this.aBoolean52 && this.aBoolean50 | this.anInt601 >= 0) {
-			this.anOpengl1.glEnable(GL.GL_FOG);
+			this.gl.glEnable(GL.GL_FOG);
 		} else {
-			this.anOpengl1.glDisable(GL.GL_FOG);
+			this.gl.glDisable(GL.GL_FOG);
 		}
 	}
 
@@ -2205,7 +2205,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "([Lclient!gn;Lclient!tp;Lclient!on;[Lclient!au;I)V")
 	@Override
-	public void method2830(@OriginalArg(0) Class31[] arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2[] arg3, @OriginalArg(4) int arg4) {
+	public void method2830(@OriginalArg(0) Model[] arg0, @OriginalArg(1) Class224 arg1, @OriginalArg(2) Class14 arg2, @OriginalArg(3) Class12_Sub2[] arg3, @OriginalArg(4) int arg4) {
 		this.method2881(arg0, arg2, arg3, arg4);
 		this.method2833(arg1);
 	}
@@ -2319,7 +2319,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		Static22.aFloatArray4[1] = this.aFloat3 * this.aFloat19;
 		Static22.aFloatArray4[2] = this.aFloat3 * this.aFloat6;
 		Static22.aFloatArray4[3] = 1.0F;
-		this.anOpengl1.glLightModelfv(GL.GL_LIGHT_MODEL_AMBIENT, Static22.aFloatArray4, 0);
+		this.gl.glLightModelfv(GL.GL_LIGHT_MODEL_AMBIENT, Static22.aFloatArray4, 0);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "e", descriptor = "(IIII)V")
@@ -2332,7 +2332,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public void method843(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		this.anInt619 = arg0;
 		this.anInt594 = arg1;
-		this.anOpengl1.glViewport(arg0, arg1, this.anInt582, this.anInt587);
+		this.gl.glViewport(arg0, arg1, this.anInt582, this.anInt587);
 		this.method825();
 	}
 
@@ -2343,8 +2343,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!pr;IIII)Lclient!gn;")
 	@Override
-	public Class31 method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		return new Class31_Sub2(this, arg0, arg1, arg3, arg4, arg2);
+	public Model method2864(@OriginalArg(0) Class185 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+		return new GlModel(this, arg0, arg1, arg3, arg4, arg2);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "pb", descriptor = "()V")
@@ -2386,7 +2386,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!rc;Lclient!rc;FLclient!rc;)Lclient!rc;")
 	@Override
 	public Class42 method2827(@OriginalArg(0) Class42 arg0, @OriginalArg(1) Class42 arg1, @OriginalArg(2) float arg2, @OriginalArg(3) Class42 arg3) {
-		if (arg0 != null && arg1 != null && this.aBoolean38 && this.aBoolean36) {
+		if (arg0 != null && arg1 != null && this.arbTextureCubeMapSupported && this.aBoolean36) {
 			@Pc(11) Class42_Sub1_Sub1 local11 = null;
 			@Pc(14) Class42_Sub1 local14 = (Class42_Sub1) arg0;
 			@Pc(17) Class42_Sub1 local17 = (Class42_Sub1) arg1;
@@ -2477,7 +2477,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "([Lclient!gn;Lclient!on;[Lclient!au;I)V")
 	@Override
-	public void method2881(@OriginalArg(0) Class31[] arg0, @OriginalArg(1) Class14 arg1, @OriginalArg(2) Class12_Sub2[] arg2, @OriginalArg(3) int arg3) {
+	public void method2881(@OriginalArg(0) Model[] arg0, @OriginalArg(1) Class14 arg1, @OriginalArg(2) Class12_Sub2[] arg2, @OriginalArg(3) int arg3) {
 		for (@Pc(1) int local1 = 0; local1 < arg0.length; local1++) {
 			if (arg0[local1] != null) {
 				arg0[local1].method3835(arg1, arg2 == null ? null : arg2[local1], arg3);
@@ -2496,7 +2496,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public int[] method2850() {
 		@Pc(4) int[] local4 = new int[1152];
 		for (@Pc(6) int local6 = 0; local6 < 32; local6++) {
-			this.anOpengl1.glReadPixels(0, this.anInt587 - local6, 36, 1, GL.GL_BGRA, this.anInt592, IntBuffer.wrap(local4, local6 * 36, 36));
+			this.gl.glReadPixels(0, this.anInt587 - local6, 36, 1, GL.GL_BGRA, this.anInt592, IntBuffer.wrap(local4, local6 * 36, 36));
 		}
 		return local4;
 	}
@@ -2520,15 +2520,15 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		@Pc(5) Class8 local5 = this.aClass8Array1[this.anInt609];
 		if (local5 != arg0) {
 			if (arg0 == null) {
-				this.anOpengl1.glDisable(local5.anInt6882);
+				this.gl.glDisable(local5.anInt6882);
 			} else {
 				if (local5 == null) {
-					this.anOpengl1.glEnable(arg0.anInt6882);
+					this.gl.glEnable(arg0.anInt6882);
 				} else if (arg0.anInt6882 != local5.anInt6882) {
-					this.anOpengl1.glDisable(local5.anInt6882);
-					this.anOpengl1.glEnable(arg0.anInt6882);
+					this.gl.glDisable(local5.anInt6882);
+					this.gl.glEnable(arg0.anInt6882);
 				}
-				this.anOpengl1.glBindTexture(arg0.anInt6882, arg0.method6158());
+				this.gl.glBindTexture(arg0.anInt6882, arg0.method6158());
 			}
 			this.aClass8Array1[this.anInt609] = arg0;
 		}
@@ -2570,12 +2570,12 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "p", descriptor = "()V")
 	@Override
 	protected void method2839() {
-		if (this.anOpengl1 != null) {
+		if (this.gl != null) {
 			try {
 				this.aClass200_1.method5120();
 			} catch (@Pc(7) Throwable local7) {
 			}
-			this.anOpengl1 = null;
+			this.gl = null;
 		}
 		if (this.aContext1 != null) {
 			this.method805();

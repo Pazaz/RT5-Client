@@ -8,7 +8,7 @@ public final class Static385 {
 	public static Class2_Sub16 aClass2_Sub16_2;
 
 	@OriginalMember(owner = "client!wi", name = "A", descriptor = "[Lclient!nt;")
-	public static final Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array4 = new Class2_Sub2_Sub13[14];
+	public static final AnimFrameset[] aClass2_Sub2_Sub13Array4 = new AnimFrameset[14];
 
 	@OriginalMember(owner = "client!wi", name = "b", descriptor = "(III)I")
 	public static int method6429(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {

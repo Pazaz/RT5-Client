@@ -46,7 +46,7 @@ public final class Static81 {
 				@Pc(210) int local210;
 				label231: for (@Pc(133) int local133 = Static355.anInt6585 + 1; local133 <= 3; local133++) {
 					if ((Static359.aByteArrayArrayArray16[local133][local74][local96] & 0x8) == 0) {
-						@Pc(313) Class11_Sub5 local313;
+						@Pc(313) Entity local313;
 						@Pc(325) int local325;
 						@Pc(302) Class67 local302;
 						@Pc(308) Class22 local308;

@@ -8,5 +8,5 @@ public final class Class105 {
 	public Class2_Sub2_Sub4 aClass2_Sub2_Sub4_3;
 
 	@OriginalMember(owner = "client!ij", name = "g", descriptor = "Lclient!gn;")
-	public Class31 aClass31_3;
+	public Model aClass31_3;
 }

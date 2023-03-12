@@ -21,9 +21,9 @@ public final class Static241 {
 		if (Static268.anInt4959 >= 400) {
 			return;
 		}
-		@Pc(16) Class71 local16 = arg0.type;
-		if (local16.anIntArray129 != null) {
-			local16 = local16.method2093(Static214.aClass226_1);
+		@Pc(16) NpcType local16 = arg0.type;
+		if (local16.multiNpcs != null) {
+			local16 = local16.getMultiNpc(Static214.aClass226_1);
 			if (local16 == null) {
 				return;
 			}
@@ -106,7 +106,7 @@ public final class Static241 {
 			}
 			Static1.method3(-1, true, 0, arg1, Static368.aClass79_143.method2267(client.language), 0, 1006, "<col=ffff00>" + local34, Static135.anInt2523, (long) arg0.anInt4619);
 		} else if (!arg1) {
-			@Pc(335) Class240 local335 = Static172.anInt3298 == -1 ? null : Static363.aClass18_2.method565(Static172.anInt3298);
+			@Pc(335) ParamType local335 = Static172.anInt3298 == -1 ? null : client.ParamTypes.method565(Static172.anInt3298);
 			if ((Static115.anInt3837 & 0x2) != 0) {
 				if (local335 == null || local16.method2098(local335.anInt7023, Static172.anInt3298) != local335.anInt7023) {
 					Static1.method3(-1, true, 0, false, Static91.aString18, 0, 10, Static371.aString68 + " -> <col=ffff00>" + local34, Static41.anInt1044, (long) arg0.anInt4619);
@@ -145,7 +145,7 @@ public final class Static241 {
 		Static344.aClass104_4.method2702(64, 64);
 		Static344.aClass125_4.method3377(64, 128);
 		Static344.aClass202_3.method5161(64);
-		Static322.aClass128_1.method3392(64);
+		client.VarbitTypes.method3392(64);
 	}
 
 	@OriginalMember(owner = "client!nq", name = "b", descriptor = "(B)V")

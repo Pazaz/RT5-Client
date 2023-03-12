@@ -29,7 +29,7 @@ public final class Class113 {
 	private boolean aBoolean205 = false;
 
 	@OriginalMember(owner = "client!je", name = "c", descriptor = "[Lclient!jd;")
-	private final Class13[] aClass13Array14;
+	private final Sprite[] aClass13Array14;
 
 	@OriginalMember(owner = "client!je", name = "d", descriptor = "[I")
 	private final int[] anIntArray183;
@@ -47,7 +47,7 @@ public final class Class113 {
 	@OriginalMember(owner = "client!je", name = "<init>", descriptor = "(Lclient!wm;IZLjava/awt/Component;)V")
 	public Class113(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Component arg3) {
 		this.aBoolean205 = false;
-		this.aClass13Array14 = new Class13[256];
+		this.aClass13Array14 = new Sprite[256];
 		this.anIntArray183 = new int[256];
 		@Pc(30) Font local30 = new Font("Helvetica", 1, arg1);
 		@Pc(34) FontMetrics local34 = arg3.getFontMetrics(local30);

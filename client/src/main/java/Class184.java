@@ -35,7 +35,7 @@ public final class Class184 implements Interface1 {
 		this.anInt5067 = arg2;
 		this.anInt5065 = arg3;
 		this.anInt5066 = arg1;
-		@Pc(20) opengl local20 = this.aClass19_Sub1_30.anOpengl1;
+		@Pc(20) opengl local20 = this.aClass19_Sub1_30.gl;
 		local20.glGenRenderbuffersEXT(1, Static275.anIntArray353, 0);
 		this.anInt5068 = Static275.anIntArray353[0];
 		local20.glBindRenderbufferEXT(GL.GL_RENDERBUFFER, this.anInt5068);
@@ -52,14 +52,14 @@ public final class Class184 implements Interface1 {
 
 	@OriginalMember(owner = "client!pq", name = "a", descriptor = "(I)V")
 	public void method4649(@OriginalArg(0) int arg0) {
-		this.aClass19_Sub1_30.anOpengl1.glFramebufferRenderbufferEXT(GL.GL_FRAMEBUFFER, arg0, GL.GL_RENDERBUFFER, this.anInt5068);
+		this.aClass19_Sub1_30.gl.glFramebufferRenderbufferEXT(GL.GL_FRAMEBUFFER, arg0, GL.GL_RENDERBUFFER, this.anInt5068);
 		this.anInt5069 = arg0;
 	}
 
 	@OriginalMember(owner = "client!pq", name = "a", descriptor = "()V")
 	@Override
 	public void method6152() {
-		this.aClass19_Sub1_30.anOpengl1.glFramebufferRenderbufferEXT(GL.GL_FRAMEBUFFER, this.anInt5069, GL.GL_RENDERBUFFER, 0);
+		this.aClass19_Sub1_30.gl.glFramebufferRenderbufferEXT(GL.GL_FRAMEBUFFER, this.anInt5069, GL.GL_RENDERBUFFER, 0);
 		this.anInt5069 = -1;
 	}
 

@@ -93,8 +93,8 @@ public final class Class177_Sub1 extends Class177 {
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(ZI)V")
 	public void method4493(@OriginalArg(0) boolean arg0) {
 		super.aBoolean354 = arg0;
-		if (Static359.LocTypeList != null) {
-			Static359.LocTypeList.method5160(!this.method4495(Static77.anInt1762));
+		if (client.LocTypes != null) {
+			client.LocTypes.method5160(!this.method4495(Static77.anInt1762));
 		}
 	}
 

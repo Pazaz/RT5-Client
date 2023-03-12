@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!us")
-public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 {
+public final class Class11_Sub5_Sub5 extends Entity implements Interface6 {
 
 	@OriginalMember(owner = "client!us", name = "J", descriptor = "Lclient!ql;")
 	public final Class192 aClass192_4;
@@ -13,7 +13,7 @@ public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 
 	private final boolean aBoolean459;
 
 	@OriginalMember(owner = "client!us", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIIZIIIIIII)V")
-	public Class11_Sub5_Sub5(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class41 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14) {
+	public Class11_Sub5_Sub5(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) int arg14) {
 		super(arg2, arg4, arg5, arg6, arg8, arg9, arg10, arg11, arg1.anInt1354 == 1, Static330.method5653(arg13, arg12));
 		this.aClass192_4 = new Class192(arg0, arg1, arg12, arg13, super.aByte78, arg3, arg4, arg6, arg7, arg14);
 		this.aBoolean459 = arg1.anInt1335 != 0 && !arg7;
@@ -26,14 +26,14 @@ public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 
 
 	@OriginalMember(owner = "client!us", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) Class11 arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		throw new IllegalStateException();
 	}
 
 	@OriginalMember(owner = "client!us", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
 	public Class12_Sub4 method6073(@OriginalArg(0) Class19 arg0) {
-		@Pc(16) Class31 local16 = this.aClass192_4.method4941(true, false, arg0, 1024, super.zFine, super.xFine);
+		@Pc(16) Model local16 = this.aClass192_4.method4941(true, false, arg0, 1024, super.zFine, super.xFine);
 		if (local16 == null) {
 			return null;
 		}
@@ -86,7 +86,7 @@ public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 
 	@OriginalMember(owner = "client!us", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
 	public void method6070(@OriginalArg(0) Class19 arg0) {
-		@Pc(16) Class31 local16 = this.aClass192_4.method4941(true, true, arg0, 131072, super.zFine, super.xFine);
+		@Pc(16) Model local16 = this.aClass192_4.method4941(true, true, arg0, 131072, super.zFine, super.xFine);
 		if (local16 != null) {
 			this.aClass192_4.method4935(arg0, super.aShort101, local16, super.aShort103, super.aShort102, false, super.aShort104);
 		}
@@ -107,7 +107,7 @@ public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 
 	@OriginalMember(owner = "client!us", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
 	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class19 arg2) {
-		@Pc(23) Class31 local23 = this.aClass192_4.method4941(false, false, arg2, 65536, super.zFine, super.xFine);
+		@Pc(23) Model local23 = this.aClass192_4.method4941(false, false, arg2, 65536, super.zFine, super.xFine);
 		if (local23 == null) {
 			return false;
 		} else {
@@ -119,7 +119,7 @@ public final class Class11_Sub5_Sub5 extends Class11_Sub5 implements Interface6 
 
 	@OriginalMember(owner = "client!us", name = "a", descriptor = "(ILclient!wm;I)Lclient!gn;")
 	@Override
-	public Class31 method6088(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
+	public Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
 		return this.aClass192_4.method4941(false, false, arg1, arg0, 0, 0);
 	}
 

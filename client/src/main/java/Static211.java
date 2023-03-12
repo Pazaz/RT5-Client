@@ -8,7 +8,7 @@ public final class Static211 {
 	public static int anInt3777;
 
 	@OriginalMember(owner = "client!mh", name = "f", descriptor = "Lclient!jd;")
-	public static Class13 aClass13_13;
+	public static Sprite aClass13_13;
 
 	@OriginalMember(owner = "client!mh", name = "g", descriptor = "Lclient!cc;")
 	public static PrivilegedRequest js5SocketRequest;
@@ -18,26 +18,26 @@ public final class Static211 {
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(I)V")
 	public static void method3721() {
-		Static39.aClass72_3.method2103();
-		Static336.aClass241_5.method6270();
-		Static21.aClass55_1.method1782();
-		Static359.LocTypeList.method5159();
-		Static6.NpcTypeList.method5571();
-		Static313.ObjTypeList.method2761();
-		Static39.aClass85_1.method2373();
-		Static322.aClass211_2.method5410();
-		Static322.aClass128_1.method3395();
-		Static56.aClass199_1.method5108();
-		Static59.aClass7_1.method241();
-		Static320.aClass104_2.method2707();
-		Static236.aClass125_1.method3380();
-		Static287.aClass233_1.method5881();
-		Static363.aClass18_2.method563();
-		Static9.aClass213_1.method5426();
-		Static278.aClass160_1.method4033();
-		Static90.aClass190_3.method4885();
-		Static221.aClass150_3.method3733();
-		Static367.aClass132_1.method3475();
+		client.FloTypes.method2103();
+		client.FluTypes.method6270();
+		client.IdkTypes.method1782();
+		client.LocTypes.method5159();
+		client.NpcTypes.method5571();
+		client.ObjTypes.method2761();
+		client.SeqTypes.method2373();
+		client.SpotAnimTypes.method5410();
+		client.VarbitTypes.method3395();
+		client.VarpTypes.method5108();
+		client.BasTypes.method241();
+		client.MsiType.method2707();
+		client.aClass125_1.method3380();
+		client.aClass233_1.method5881();
+		client.ParamTypes.method563();
+		client.aClass213_1.method5426();
+		client.aClass160_1.method4033();
+		client.LightTypes.method4885();
+		client.aClass150_3.method3733();
+		client.StructTypes.method3475();
 		Static140.method2627();
 		Static91.method1962();
 		Static71.method6021();

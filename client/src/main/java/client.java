@@ -56,9 +56,9 @@ public final class client extends GameShell {
 	@OriginalMember(owner = "client!qb", name = "P", descriptor = "I")
 	public static int worldListPort;
 	@OriginalMember(owner = "client!rm", name = "n", descriptor = "Lclient!tg;")
-	public static Class221 musicChannel;
+	public static AudioChannel musicChannel;
 	@OriginalMember(owner = "client!kt", name = "Z", descriptor = "Lclient!tg;")
-	public static Class221 soundChannel;
+	public static AudioChannel soundChannel;
 	@OriginalMember(owner = "client!wr", name = "a", descriptor = "I")
 	public static int worldListDefaultPort;
 	@OriginalMember(owner = "client!bu", name = "J", descriptor = "I")
@@ -147,6 +147,54 @@ public final class client extends GameShell {
 	public static MidiPcmStream musicStream;
 	@OriginalMember(owner = "client!dd", name = "t", descriptor = "Ljava/lang/String;")
 	public static String mainLoadSecondaryText = "";
+	@OriginalMember(owner = "client!hu", name = "t", descriptor = "Lclient!is;")
+	public static EnumTypeList EnumTypes;
+	@OriginalMember(owner = "client!vf", name = "M", descriptor = "Lclient!be;")
+	public static ParamTypeList ParamTypes;
+	@OriginalMember(owner = "client!dh", name = "a", descriptor = "Lclient!ak;")
+	public static BasTypeList BasTypes;
+	@OriginalMember(owner = "client!mr", name = "fb", descriptor = "Lclient!mi;")
+	public static CursorTypeList aClass150_3;
+	@OriginalMember(owner = "client!cf", name = "F", descriptor = "Lclient!fl;")
+	public static FloTypeList FloTypes;
+	@OriginalMember(owner = "client!tj", name = "t", descriptor = "Lclient!vq;")
+	public static FluTypeList FluTypes;
+	@OriginalMember(owner = "client!be", name = "a", descriptor = "Lclient!e;")
+	public static IdkTypeList IdkTypes;
+	@OriginalMember(owner = "client!kf", name = "e", descriptor = "Lclient!dp;")
+	public static InvTypeList InvTypes;
+	@OriginalMember(owner = "client!eu", name = "H", descriptor = "Lclient!qi;")
+	public static LightTypeList LightTypes;
+	@OriginalMember(owner = "client!us", name = "S", descriptor = "Lclient!rh;")
+	public static LocTypeList LocTypes;
+	@OriginalMember(owner = "client!nk", name = "H", descriptor = "Lclient!ki;")
+	public static Class125 aClass125_1;
+	@OriginalMember(owner = "client!sm", name = "A", descriptor = "Lclient!ii;")
+	public static MsiTypeList MsiType;
+	@OriginalMember(owner = "client!ae", name = "T", descriptor = "Lclient!ta;")
+	public static NpcTypeList NpcTypes;
+	@OriginalMember(owner = "client!sb", name = "Q", descriptor = "Lclient!io;")
+	public static ObjTypeList ObjTypes;
+	@OriginalMember(owner = "client!ql", name = "g", descriptor = "Lclient!ui;")
+	public static Class233 aClass233_1;
+	@OriginalMember(owner = "client!cf", name = "B", descriptor = "Lclient!gp;")
+	public static SeqTypeList SeqTypes;
+	@OriginalMember(owner = "client!ai", name = "R", descriptor = "Lclient!sj;")
+	public static Class213 aClass213_1;
+	@OriginalMember(owner = "client!qb", name = "W", descriptor = "Lclient!ng;")
+	public static Class160 aClass160_1;
+	@OriginalMember(owner = "client!so", name = "l", descriptor = "Lclient!sg;")
+	public static SpotAnimTypeList SpotAnimTypes;
+	@OriginalMember(owner = "client!vj", name = "V", descriptor = "Lclient!ks;")
+	public static StructTypeList StructTypes;
+	@OriginalMember(owner = "client!kl", name = "m", descriptor = "Lclient!qo;")
+	public static Class193 aClass193_2;
+	@OriginalMember(owner = "client!jh", name = "l", descriptor = "Lclient!df;")
+	public static Class45 aClass45_1;
+	@OriginalMember(owner = "client!so", name = "c", descriptor = "Lclient!km;")
+	public static VarbitTypeList VarbitTypes;
+	@OriginalMember(owner = "client!dd", name = "x", descriptor = "Lclient!rb;")
+	public static VarpTypeList VarpTypes;
 
 	@OriginalMember(owner = "client!client", name = "main", descriptor = "([Ljava/lang/String;)V")
 	public static void main(@OriginalArg(0) String[] args) {
@@ -330,7 +378,7 @@ public final class client extends GameShell {
 		Static389.aString53 = null;
 		Static47.aClass214Array1 = null;
 		for (@Pc(4636) int local4636 = 0; local4636 < 6; local4636++) {
-			Static290.aClass187Array1[local4636] = new Class187();
+			Static290.aClass187Array1[local4636] = new StockMarketOffer();
 		}
 		for (@Pc(4650) int local4650 = 0; local4650 < 25; local4650++) {
 			Static268.anIntArray338[local4650] = 0;
@@ -977,7 +1025,7 @@ public final class client extends GameShell {
 		}
 		if (Static154.anInt2807 == 3) {
 			for (local92 = 0; local92 < Static154.anInt2806; local92++) {
-				@Pc(398) Rectangle local398 = Class55.aRectangleArray1[local92];
+				@Pc(398) Rectangle local398 = IdkTypeList.aRectangleArray1[local92];
 				if (Static20.aBooleanArray6[local92]) {
 					Static190.aClass19_8.method2868(local398.height, local398.x, local398.y, -1996553985, local398.width);
 				} else if (Static375.aBooleanArray64[local92]) {
@@ -993,7 +1041,7 @@ public final class client extends GameShell {
 			for (local96 = 0; local96 < Static154.anInt2806; local96++) {
 				if (Static375.aBooleanArray64[local96]) {
 					Static375.aBooleanArray64[local96] = false;
-					Static281.aRectangleArray2[local92++] = Class55.aRectangleArray1[local96];
+					Static281.aRectangleArray2[local92++] = IdkTypeList.aRectangleArray1[local96];
 				}
 			}
 			Static190.aClass19_8.method2842(Static281.aRectangleArray2, local92);
@@ -1129,7 +1177,7 @@ public final class client extends GameShell {
 		Static174.aClass123_2.method3337();
 		Static226.aClass119_1.method3307();
 		if (Static337.aClass131_1 != null) {
-			@Pc(81) int local81 = Static337.aClass131_1.method3693();
+			@Pc(81) int local81 = Static337.aClass131_1.getRotation();
 			Static323.anInt6063 = local81;
 		}
 		if (Static190.aClass19_8 != null) {
@@ -1495,7 +1543,7 @@ public final class client extends GameShell {
 		Static226.aClass119_1 = Static31.method948(GameShell.canvas);
 		Static337.aClass131_1 = Static63.method1702();
 		if (Static337.aClass131_1 != null) {
-			Static337.aClass131_1.method3692(GameShell.canvas);
+			Static337.aClass131_1.start(GameShell.canvas);
 		}
 		Static367.anInt6878 = Static215.anInt3795;
 		try {
@@ -1611,7 +1659,7 @@ public final class client extends GameShell {
 			if (local6 == 100) {
 				mainLoadSecondaryText = Static226.aClass79_89.method2267(language);
 				mainLoadPercentage = 20;
-				Static62.method2390(jsArchive8);
+				Sprites.init(jsArchive8);
 				Static44.method1359(jsArchive8);
 				mainLoadState = 40;
 			} else {
@@ -1728,37 +1776,37 @@ public final class client extends GameShell {
 				mainLoadSecondaryText = Static36.aClass79_22.method2267(language) + local6 / 11 + "%";
 				mainLoadPercentage = 65;
 			} else {
-				Static363.aClass18_2 = new Class18(game, language, jsArchive2);
-				Static59.aClass7_1 = new Class7(game, language, jsArchive2);
-				Static221.aClass150_3 = new Class150(game, language, jsArchive2, jsArchive8);
-				Static140.aClass109_1 = new Class109(game, language, jsArchive17);
-				Static39.aClass72_3 = new Class72(game, language, jsArchive2);
-				Static336.aClass241_5 = new Class241(game, language, jsArchive2);
-				Static21.aClass55_1 = new Class55(game, language, jsArchive2, jsArchive7);
-				Static178.aClass51_3 = new Class51(game, language, jsArchive2);
-				Static90.aClass190_3 = new Class190(game, language, jsArchive2);
-				Static359.LocTypeList = new Class202(game, language, true, jsArchive16, jsArchive7);
-				Static236.aClass125_1 = new Class125(game, language, jsArchive2, jsArchive8);
-				Static320.aClass104_2 = new Class104(game, language, jsArchive2, jsArchive8);
-				Static6.NpcTypeList = new Class219(game, language, true, jsArchive18, jsArchive7);
-				Static313.ObjTypeList = new Class107(game, language, true, Static363.aClass18_2, jsArchive19, jsArchive7);
-				Static287.aClass233_1 = new Class233(game, language, jsArchive2);
-				Static39.aClass85_1 = new Class85(game, language, jsArchive20, jsArchive0, jsArchive1);
-				Static9.aClass213_1 = new Class213(game, language, jsArchive2);
-				Static278.aClass160_1 = new Class160(game, language, jsArchive2);
-				Static322.aClass211_2 = new Class211(game, language, jsArchive21, jsArchive7);
-				Static367.aClass132_1 = new Class132(game, language, jsArchive2);
-				Static183.aClass193_2 = new Class193(game, language, jsArchive2);
-				Static162.aClass45_1 = new Class45(game, language, jsArchive2);
-				Static322.aClass128_1 = new Class128(game, language, jsArchive22);
-				Static56.aClass199_1 = new Class199(game, language, jsArchive2);
-				Static126.method5702(jsArchive13, jsArchive7, jsArchive3, jsArchive8);
-				Static325.method5544(new Class83(), jsArchive24, jsArchive25);
-				Static117.method2366(jsArchive24, jsArchive25);
+				ParamTypes = new ParamTypeList(game, language, jsArchive2);
+				BasTypes = new BasTypeList(game, language, jsArchive2);
+				aClass150_3 = new CursorTypeList(game, language, jsArchive2, jsArchive8);
+				EnumTypes = new EnumTypeList(game, language, jsArchive17);
+				FloTypes = new FloTypeList(game, language, jsArchive2);
+				FluTypes = new FluTypeList(game, language, jsArchive2);
+				IdkTypes = new IdkTypeList(game, language, jsArchive2, jsArchive7);
+				InvTypes = new InvTypeList(game, language, jsArchive2);
+				LightTypes = new LightTypeList(game, language, jsArchive2);
+				LocTypes = new LocTypeList(game, language, true, jsArchive16, jsArchive7);
+				aClass125_1 = new Class125(game, language, jsArchive2, jsArchive8);
+				MsiType = new MsiTypeList(game, language, jsArchive2, jsArchive8);
+				NpcTypes = new NpcTypeList(game, language, true, jsArchive18, jsArchive7);
+				ObjTypes = new ObjTypeList(game, language, true, ParamTypes, jsArchive19, jsArchive7);
+				aClass233_1 = new Class233(game, language, jsArchive2);
+				SeqTypes = new SeqTypeList(game, language, jsArchive20, jsArchive0, jsArchive1);
+				aClass213_1 = new Class213(game, language, jsArchive2);
+				aClass160_1 = new Class160(game, language, jsArchive2);
+				SpotAnimTypes = new SpotAnimTypeList(game, language, jsArchive21, jsArchive7);
+				StructTypes = new StructTypeList(game, language, jsArchive2);
+				aClass193_2 = new Class193(game, language, jsArchive2);
+				aClass45_1 = new Class45(game, language, jsArchive2);
+				VarbitTypes = new VarbitTypeList(game, language, jsArchive22);
+				VarpTypes = new VarpTypeList(game, language, jsArchive2);
+				InterfaceList.init(jsArchive13, jsArchive7, jsArchive3, jsArchive8);
+				QuickChatPhraseTypeList.init(new Js5QuickChatCommandDecoder(), jsArchive24, jsArchive25);
+				QuickChatCatTypeList.init(jsArchive24, jsArchive25);
 				mainLoadSecondaryText = Static336.aClass79_130.method2267(language);
 				mainLoadPercentage = 65;
 				Static156.method2798();
-				Static359.LocTypeList.method5160(!preferences.method4495(Static77.anInt1762));
+				LocTypes.method5160(!preferences.method4495(Static77.anInt1762));
 				Static214.aClass226_1 = new Class226();
 				Static174.method1506();
 				Static382.method6362(jsArchive27);
@@ -1818,7 +1866,7 @@ public final class client extends GameShell {
 			}
 		} else if (mainLoadState == 170) {
 			if (jsArchive23.isGroupReady("details")) {
-				Static344.method5512(jsArchive23, Static39.aClass72_3, Static336.aClass241_5, Static359.LocTypeList, Static236.aClass125_1, Static320.aClass104_2, Static214.aClass226_1);
+				Static344.method5512(jsArchive23, FloTypes, FluTypes, LocTypes, aClass125_1, MsiType, Static214.aClass226_1);
 				mainLoadSecondaryText = Static300.aClass79_118.method2267(language);
 				mainLoadState = 180;
 				mainLoadPercentage = 89;
@@ -1843,11 +1891,11 @@ public final class client extends GameShell {
 				Static336.method5705(1000);
 			}
 		} else if (mainLoadState == 190) {
-			Static89.aBooleanArray18 = new boolean[Static162.aClass45_1.anInt1466];
-			Static75.aStringArray11 = new String[Static183.aClass193_2.anInt5494];
-			Static75.anIntArray117 = new int[Static162.aClass45_1.anInt1466];
-			for (local6 = 0; local6 < Static162.aClass45_1.anInt1466; local6++) {
-				if (Static162.aClass45_1.method1623(local6).anInt1258 == 0) {
+			Static89.aBooleanArray18 = new boolean[aClass45_1.anInt1466];
+			Static75.aStringArray11 = new String[aClass193_2.anInt5494];
+			Static75.anIntArray117 = new int[aClass45_1.anInt1466];
+			for (local6 = 0; local6 < aClass45_1.anInt1466; local6++) {
+				if (aClass45_1.method1623(local6).anInt1258 == 0) {
 					Static89.aBooleanArray18[local6] = true;
 					Static112.anInt2294++;
 				}
@@ -1904,7 +1952,7 @@ public final class client extends GameShell {
 			Protocol.socket = null;
 		}
 		if (Static337.aClass131_1 != null) {
-			Static337.aClass131_1.method3691(GameShell.canvas);
+			Static337.aClass131_1.stop(GameShell.canvas);
 		}
 		Static337.aClass131_1 = null;
 		if (musicChannel != null) {

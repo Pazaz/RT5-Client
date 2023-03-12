@@ -11,7 +11,7 @@ public final class Static331 {
 	public static int anInt6206 = 0;
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(Lclient!hb;)V")
-	public static void method5659(@OriginalArg(0) Class11_Sub5 arg0) {
+	public static void method5659(@OriginalArg(0) Entity arg0) {
 		for (@Pc(2) int local2 = arg0.aShort103; local2 <= arg0.aShort104; local2++) {
 			for (@Pc(6) int local6 = arg0.aShort101; local6 <= arg0.aShort102; local6++) {
 				@Pc(16) Class67 local16 = Static330.aClass67ArrayArrayArray3[arg0.aByte78][local2][local6];

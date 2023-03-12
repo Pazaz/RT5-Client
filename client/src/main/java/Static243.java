@@ -55,7 +55,7 @@ public final class Static243 {
 		if (local27 == null) {
 			return;
 		}
-		@Pc(51) Class41 local51 = Static359.LocTypeList.method5163(arg1);
+		@Pc(51) LocType local51 = client.LocTypes.method5163(arg1);
 		@Pc(62) int local62;
 		@Pc(65) int local65;
 		if (arg10 == 1 || arg10 == 3) {

@@ -30,9 +30,9 @@ public final class Static120 {
 
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(I)V")
 	public static void method2380() {
-		Static141.aClass115_1 = new Class115(8);
+		Static141.aClass115_1 = new SecondaryHashTable(8);
 		Static201.anInt3701 = 0;
-		for (@Pc(17) Class12_Sub5 local17 = (Class12_Sub5) Static131.aClass36_4.method1415(); local17 != null; local17 = (Class12_Sub5) Static131.aClass36_4.method1420()) {
+		for (@Pc(17) ParticleSystem local17 = (ParticleSystem) Static131.aClass36_4.method1415(); local17 != null; local17 = (ParticleSystem) Static131.aClass36_4.method1420()) {
 			local17.method4356();
 		}
 	}
@@ -73,7 +73,7 @@ public final class Static120 {
 		if (local16[0] == -1) {
 			Static368.aClass43_1 = null;
 		} else {
-			Static368.aClass43_1 = Static9.aClass213_1.method5424(local16[0], local16[1], local16[2], Static278.aClass160_1, local16[3]);
+			Static368.aClass43_1 = client.aClass213_1.method5424(local16[0], local16[1], local16[2], client.aClass160_1, local16[3]);
 			Static72.anInt1683 = local16[4];
 		}
 	}

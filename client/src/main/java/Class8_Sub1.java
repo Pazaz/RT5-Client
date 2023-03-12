@@ -1,5 +1,5 @@
 import jaggl.opengl;
-import java.nio.Buffer;
+
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
@@ -26,7 +26,7 @@ public class Class8_Sub1 extends Class8 {
 		super(arg0, arg1, arg2, arg3 * arg4, arg5);
 		this.anInt3684 = arg3;
 		this.anInt3685 = arg4;
-		@Pc(20) opengl local20 = arg0.anOpengl1;
+		@Pc(20) opengl local20 = arg0.gl;
 		this.aClass19_Sub1_40.method848(this);
 		if (arg5 && this.anInt6882 != 34037) {
 			Static187.method6153(local20, arg1, arg2, arg3, arg4, arg7, arg6);
@@ -43,7 +43,7 @@ public class Class8_Sub1 extends Class8 {
 		super(arg0, arg1, arg2, arg3 * arg4, arg5);
 		this.anInt3684 = arg3;
 		this.anInt3685 = arg4;
-		@Pc(20) opengl local20 = arg0.anOpengl1;
+		@Pc(20) opengl local20 = arg0.gl;
 		if (arg7) {
 			@Pc(26) int[] local26 = new int[arg6.length];
 			for (@Pc(28) int local28 = 0; local28 < arg4; local28++) {
@@ -71,7 +71,7 @@ public class Class8_Sub1 extends Class8 {
 		super(arg0, arg1, arg2, arg3 * arg4, false);
 		this.anInt3684 = arg3;
 		this.anInt3685 = arg4;
-		@Pc(20) opengl local20 = arg0.anOpengl1;
+		@Pc(20) opengl local20 = arg0.gl;
 		this.aClass19_Sub1_40.method848(this);
 		local20.glTexImage2D(this.anInt6882, 0, this.anInt6883, arg3, arg4, 0, Static187.method6155(this.anInt6883), GL.GL_UNSIGNED_BYTE, null);
 		this.method6160(true);
@@ -82,7 +82,7 @@ public class Class8_Sub1 extends Class8 {
 		super(arg0, arg1, arg2, arg3 * arg4, arg5);
 		this.anInt3684 = arg3;
 		this.anInt3685 = arg4;
-		@Pc(20) opengl local20 = arg0.anOpengl1;
+		@Pc(20) opengl local20 = arg0.gl;
 		if (arg8) {
 			@Pc(26) byte[] local26 = new byte[arg6.length];
 			for (@Pc(28) int local28 = 0; local28 < arg4; local28++) {
@@ -112,7 +112,7 @@ public class Class8_Sub1 extends Class8 {
 		super(arg0, arg1, 6407, arg4 * arg5, false);
 		this.anInt3684 = arg4;
 		this.anInt3685 = arg5;
-		@Pc(20) opengl local20 = arg0.anOpengl1;
+		@Pc(20) opengl local20 = arg0.gl;
 		@Pc(29) int local29 = this.aClass19_Sub1_40.method821().method5793() - arg3 - arg5;
 		this.aClass19_Sub1_40.method848(this);
 		local20.glCopyTexImage2D(this.anInt6882, 0, this.anInt6883, arg2, local29, arg4, arg5, 0);
@@ -122,13 +122,13 @@ public class Class8_Sub1 extends Class8 {
 	@OriginalMember(owner = "client!al", name = "a", descriptor = "()V")
 	@Override
 	public final void method6152() {
-		this.aClass19_Sub1_40.anOpengl1.glFramebufferTexture2DEXT(GL.GL_FRAMEBUFFER, this.anInt3686, this.anInt6882, 0, 0);
+		this.aClass19_Sub1_40.gl.glFramebufferTexture2DEXT(GL.GL_FRAMEBUFFER, this.anInt3686, this.anInt6882, 0, 0);
 		this.anInt3686 = -1;
 	}
 
 	@OriginalMember(owner = "client!al", name = "a", descriptor = "(IIII[BIIIZ)V")
 	public final void method3635(@OriginalArg(2) int arg0, @OriginalArg(3) int arg1, @OriginalArg(4) byte[] arg2, @OriginalArg(5) int arg3, @OriginalArg(8) boolean arg4) {
-		@Pc(3) opengl local3 = this.aClass19_Sub1_40.anOpengl1;
+		@Pc(3) opengl local3 = this.aClass19_Sub1_40.gl;
 		if (arg4) {
 			@Pc(12) int local12 = Static187.method6163(6406);
 			@Pc(16) int local16 = local12 * arg0;
@@ -159,13 +159,13 @@ public class Class8_Sub1 extends Class8 {
 	public final void method3636(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(8) int local8 = this.aClass19_Sub1_40.method821().method5793() - arg3;
 		this.aClass19_Sub1_40.method848(this);
-		this.aClass19_Sub1_40.anOpengl1.glCopyTexSubImage2D(this.anInt6882, GL.GL_POINTS, arg0, this.anInt3685 - arg1 - arg3, 0, local8, arg2, arg3);
-		this.aClass19_Sub1_40.anOpengl1.glFlush();
+		this.aClass19_Sub1_40.gl.glCopyTexSubImage2D(this.anInt6882, GL.GL_POINTS, arg0, this.anInt3685 - arg1 - arg3, 0, local8, arg2, arg3);
+		this.aClass19_Sub1_40.gl.glFlush();
 	}
 
 	@OriginalMember(owner = "client!al", name = "a", descriptor = "(IIII[IIIZ)V")
 	protected final void method3637(@OriginalArg(2) int arg0, @OriginalArg(3) int arg1, @OriginalArg(4) int[] arg2) {
-		@Pc(3) opengl local3 = this.aClass19_Sub1_40.anOpengl1;
+		@Pc(3) opengl local3 = this.aClass19_Sub1_40.gl;
 		@Pc(14) int[] local14 = new int[arg0 * arg1];
 		for (@Pc(16) int local16 = 0; local16 < arg1; local16++) {
 			@Pc(23) int local23 = local16 * arg0;
@@ -186,7 +186,7 @@ public class Class8_Sub1 extends Class8 {
 
 	@OriginalMember(owner = "client!al", name = "a", descriptor = "(ZZ)V")
 	public final void method3638(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1) {
-		@Pc(3) opengl local3 = this.aClass19_Sub1_40.anOpengl1;
+		@Pc(3) opengl local3 = this.aClass19_Sub1_40.gl;
 		if (this.anInt6882 == 3553) {
 			this.aClass19_Sub1_40.method848(this);
 			local3.glTexParameteri(this.anInt6882, GL.GL_TEXTURE_WRAP_S, arg0 ? GL.GL_REPEAT : GL.GL_CLAMP_TO_EDGE);
@@ -196,7 +196,7 @@ public class Class8_Sub1 extends Class8 {
 
 	@OriginalMember(owner = "client!al", name = "a", descriptor = "(II)V")
 	public final void method3639(@OriginalArg(0) int arg0) {
-		this.aClass19_Sub1_40.anOpengl1.glFramebufferTexture2DEXT(GL.GL_FRAMEBUFFER, arg0, this.anInt6882, this.anInt6881, 0);
+		this.aClass19_Sub1_40.gl.glFramebufferTexture2DEXT(GL.GL_FRAMEBUFFER, arg0, this.anInt6882, this.anInt6881, 0);
 		this.anInt3686 = arg0;
 	}
 }

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!mr")
-public abstract class PathingEntity extends Class11_Sub5 {
+public abstract class PathingEntity extends Entity {
 
 	@OriginalMember(owner = "client!mr", name = "x", descriptor = "I")
 	public int anInt4577;
@@ -55,7 +55,7 @@ public abstract class PathingEntity extends Class11_Sub5 {
 	public int anInt4639;
 
 	@OriginalMember(owner = "client!mr", name = "hc", descriptor = "Lclient!oh;")
-	protected Class12_Sub5 particleSystem;
+	protected ParticleSystem particleSystem;
 
 	@OriginalMember(owner = "client!mr", name = "ic", descriptor = "Lclient!cl;")
 	public Class2_Sub6 aClass2_Sub6_3;
@@ -202,7 +202,7 @@ public abstract class PathingEntity extends Class11_Sub5 {
 	public int anInt4640 = 0;
 
 	@OriginalMember(owner = "client!mr", name = "fc", descriptor = "[Lclient!gn;")
-	public final Class31[] aClass31Array3 = new Class31[3];
+	public final Model[] aClass31Array3 = new Model[3];
 
 	@OriginalMember(owner = "client!mr", name = "cc", descriptor = "[B")
 	public final byte[] aByteArray51 = new byte[10];
@@ -229,7 +229,7 @@ public abstract class PathingEntity extends Class11_Sub5 {
 	}
 
 	@OriginalMember(owner = "client!mr", name = "a", descriptor = "(ZLclient!gn;)V")
-	protected final void method4320(@OriginalArg(1) Class31 arg0) {
+	protected final void method4320(@OriginalArg(1) Model arg0) {
 		@Pc(7) int local7 = this.aClass248_8.anInt7197;
 		@Pc(11) int local11 = this.aClass248_9.anInt7197;
 		if (local7 == 0 && local11 == 0) {
@@ -329,7 +329,7 @@ public abstract class PathingEntity extends Class11_Sub5 {
 
 	@OriginalMember(owner = "client!mr", name = "a", descriptor = "(I)I")
 	public int method4323() {
-		@Pc(7) Class222 local7 = this.method4332();
+		@Pc(7) BasType local7 = this.method4332();
 		if (local7.anInt6272 == -1) {
 			return this.anInt4630 == -32768 ? 200 : -this.anInt4630;
 		} else {
@@ -353,7 +353,7 @@ public abstract class PathingEntity extends Class11_Sub5 {
 
 	@OriginalMember(owner = "client!mr", name = "d", descriptor = "(B)I")
 	public final int method4327() {
-		@Pc(9) Class222 local9 = this.method4332();
+		@Pc(9) BasType local9 = this.method4332();
 		@Pc(13) int local13 = this.aClass248_7.anInt7197;
 		@Pc(30) boolean local30;
 		if (local9.anInt6266 == 0) {
@@ -423,16 +423,16 @@ public abstract class PathingEntity extends Class11_Sub5 {
 	}
 
 	@OriginalMember(owner = "client!mr", name = "c", descriptor = "(I)Lclient!ti;")
-	public final Class222 method4332() {
+	public final BasType method4332() {
 		@Pc(13) int local13 = this.method4329();
-		return local13 == -1 ? Static18.aClass222_1 : Static59.aClass7_1.method245(local13);
+		return local13 == -1 ? Static18.aClass222_1 : client.BasTypes.method245(local13);
 	}
 
 	@OriginalMember(owner = "client!mr", name = "a", descriptor = "(ILclient!wm;[Lclient!gn;Z)V")
-	protected final void method4333(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Class31[] arg1, @OriginalArg(3) boolean arg2) {
+	protected final void method4333(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Model[] arg1, @OriginalArg(3) boolean arg2) {
 		if (!arg2) {
-			@Pc(15) Class31 local15 = arg1[0];
-			@Pc(19) Class31 local19 = arg1[1];
+			@Pc(15) Model local15 = arg1[0];
+			@Pc(19) Model local19 = arg1[1];
 			if (local15 != null) {
 				@Pc(24) Class114[] local24 = local15.method3808();
 				@Pc(27) Class163[] local27 = local15.method3840();
@@ -443,7 +443,7 @@ public abstract class PathingEntity extends Class11_Sub5 {
 					local31 = local19.method3840();
 				}
 				if ((this.particleSystem == null || this.particleSystem.aBoolean322) && (local24 != null || local27 != null || local19 != null && (local29 != null || local31 != null))) {
-					this.particleSystem = new Class12_Sub5(client.cycle);
+					this.particleSystem = new ParticleSystem(client.cycle);
 				}
 				if (this.particleSystem != null) {
 					@Pc(78) Class114[] local78;

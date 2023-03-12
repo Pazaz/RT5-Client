@@ -27,7 +27,7 @@ public final class Class2_Sub2_Sub5 extends SecondaryNode {
 	public final Class28 aClass28_1;
 
 	@OriginalMember(owner = "client!d", name = "<init>", descriptor = "(Lclient!nm;Lclient!oh;)V")
-	public Class2_Sub2_Sub5(@OriginalArg(0) Class163 arg0, @OriginalArg(1) Class12_Sub5 arg1) {
+	public Class2_Sub2_Sub5(@OriginalArg(0) Class163 arg0, @OriginalArg(1) ParticleSystem arg1) {
 		this.aClass163_1 = arg0;
 		this.aClass28_1 = Static314.method5367(arg0.anInt4330);
 		this.method1564();

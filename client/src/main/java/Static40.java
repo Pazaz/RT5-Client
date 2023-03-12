@@ -11,7 +11,7 @@ public final class Static40 {
 
 	@OriginalMember(owner = "client!cg", name = "a", descriptor = "(Lclient!bf;ILjava/lang/String;)Lclient!cg;")
 	public static Class35 method1280(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(2) String arg1) {
-		@Pc(2) opengl local2 = arg0.anOpengl1;
+		@Pc(2) opengl local2 = arg0.gl;
 		@Pc(6) int local6 = local2.glCreateShaderObjectARB(GL.GL_FRAGMENT_SHADER);
 		local2.glShaderSourceARB(local6, 1, new String[] { arg1 }, new int[] { arg1.length() }, 0);
 		local2.glCompileShaderARB(local6);
