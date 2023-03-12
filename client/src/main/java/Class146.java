@@ -31,7 +31,7 @@ public final class Class146 {
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(Z)Z")
 	public boolean method3708() {
-		return this.aClass104_1.aClass197_39.method5087(this.anInt3751);
+		return this.aClass104_1.aClass197_39.isFileReady(this.anInt3751);
 	}
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(ILclient!bt;I)V")
@@ -53,7 +53,7 @@ public final class Class146 {
 		@Pc(32) Class13 local32 = (Class13) this.aClass104_1.aClass98_20.method2612(local24);
 		if (local32 != null) {
 			return local32;
-		} else if (this.aClass104_1.aClass197_39.method5087(this.anInt3751)) {
+		} else if (this.aClass104_1.aClass197_39.isFileReady(this.anInt3751)) {
 			@Pc(54) Class48 local54 = Static396.method1682(this.aClass104_1.aClass197_39, this.anInt3751, 0);
 			if (local54 != null) {
 				local54.anInt1534 = local54.anInt1535 = local54.anInt1532 = local54.anInt1530 = 0;

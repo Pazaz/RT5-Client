@@ -16,7 +16,7 @@ public final class Class41 {
 	private short[] aShortArray23;
 
 	@OriginalMember(owner = "client!ct", name = "B", descriptor = "Lclient!ad;")
-	private Class4 aClass4_24;
+	private HashTable aClass4_24;
 
 	@OriginalMember(owner = "client!ct", name = "K", descriptor = "[B")
 	private byte[] aByteArray15;
@@ -363,21 +363,21 @@ public final class Class41 {
 		if (this.aClass4_24 == null) {
 			return arg0;
 		} else {
-			@Pc(21) Class2_Sub40 local21 = (Class2_Sub40) this.aClass4_24.method90((long) arg1);
+			@Pc(21) Class2_Sub40 local21 = (Class2_Sub40) this.aClass4_24.get((long) arg1);
 			return local21 == null ? arg0 : local21.aString65;
 		}
 	}
 
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(II)Z")
 	public boolean method1521(@OriginalArg(1) int arg0) {
-		@Pc(31) Class197 local31;
+		@Pc(31) Js5 local31;
 		@Pc(35) int local35;
 		if (this.anIntArray97 != null) {
 			local31 = this.aClass202_1.aClass197_78;
 			synchronized (this.aClass202_1.aClass197_78) {
 				for (local35 = 0; local35 < this.anIntArray97.length; local35++) {
 					if (this.anIntArray97[local35] == arg0) {
-						return this.aClass202_1.aClass197_78.method5088(0, this.anIntArray92[local35] & 0xFFFF);
+						return this.aClass202_1.aClass197_78.isFileReady(0, this.anIntArray92[local35] & 0xFFFF);
 					}
 				}
 				return true;
@@ -389,7 +389,7 @@ public final class Class41 {
 			local31 = this.aClass202_1.aClass197_78;
 			synchronized (this.aClass202_1.aClass197_78) {
 				for (local35 = 0; local35 < this.anIntArray92.length; local35++) {
-					local27 &= this.aClass202_1.aClass197_78.method5088(0, this.anIntArray92[local35] & 0xFFFF);
+					local27 &= this.aClass202_1.aClass197_78.isFileReady(0, this.anIntArray92[local35] & 0xFFFF);
 				}
 				return local27;
 			}
@@ -633,18 +633,18 @@ public final class Class41 {
 				local12 = arg0.g1();
 				if (this.aClass4_24 == null) {
 					local31 = Static162.method2977(local12);
-					this.aClass4_24 = new Class4(local31);
+					this.aClass4_24 = new HashTable(local31);
 				}
 				for (local31 = 0; local31 < local12; local31++) {
 					@Pc(760) boolean local760 = arg0.g1() == 1;
 					@Pc(764) int local764 = arg0.ig3();
-					@Pc(775) Class2 local775;
+					@Pc(775) Node local775;
 					if (local760) {
 						local775 = new Class2_Sub40(arg0.gjstr());
 					} else {
 						local775 = new Class2_Sub39(arg0.g4());
 					}
-					this.aClass4_24.method87(local775, (long) local764);
+					this.aClass4_24.put(local775, (long) local764);
 				}
 			}
 		}
@@ -725,7 +725,7 @@ public final class Class41 {
 							}
 							break;
 						}
-						@Pc(230) Class197 local230 = this.aClass202_1.aClass197_78;
+						@Pc(230) Js5 local230 = this.aClass202_1.aClass197_78;
 						synchronized (this.aClass202_1.aClass197_78) {
 							local219 = Static298.method2426(this.aClass202_1.aClass197_78, this.anIntArray92[local225] & 0xFFFF);
 						}
@@ -773,7 +773,7 @@ public final class Class41 {
 				if (local165 != null) {
 					local130 = arg3.method2806(local130, local165.method3827());
 				}
-				@Pc(435) Class197 local435 = this.aClass202_1.aClass197_78;
+				@Pc(435) Js5 local435 = this.aClass202_1.aClass197_78;
 				@Pc(447) Class185 local447;
 				synchronized (this.aClass202_1.aClass197_78) {
 					local447 = Static298.method2426(this.aClass202_1.aClass197_78, local364 & 0xFFFF);
@@ -860,10 +860,10 @@ public final class Class41 {
 			return true;
 		}
 		@Pc(12) boolean local12 = true;
-		@Pc(16) Class197 local16 = this.aClass202_1.aClass197_78;
+		@Pc(16) Js5 local16 = this.aClass202_1.aClass197_78;
 		synchronized (this.aClass202_1.aClass197_78) {
 			for (@Pc(28) int local28 = 0; local28 < this.anIntArray92.length; local28++) {
-				local12 &= this.aClass202_1.aClass197_78.method5088(0, this.anIntArray92[local28] & 0xFFFF);
+				local12 &= this.aClass202_1.aClass197_78.isFileReady(0, this.anIntArray92[local28] & 0xFFFF);
 			}
 			return local12;
 		}
@@ -892,7 +892,7 @@ public final class Class41 {
 		if (this.aClass4_24 == null) {
 			return arg0;
 		} else {
-			@Pc(21) Class2_Sub39 local21 = (Class2_Sub39) this.aClass4_24.method90((long) arg1);
+			@Pc(21) Class2_Sub39 local21 = (Class2_Sub39) this.aClass4_24.get((long) arg1);
 			return local21 == null ? arg0 : local21.anInt6818;
 		}
 	}

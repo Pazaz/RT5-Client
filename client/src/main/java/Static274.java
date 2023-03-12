@@ -4,13 +4,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static274 {
 
 	@OriginalMember(owner = "client!pp", name = "h", descriptor = "Lclient!ci;")
-	public static Interface2 anInterface2_7;
+	public static TextureProvider anInterface2_7;
 
 	@OriginalMember(owner = "client!pp", name = "s", descriptor = "[I")
 	public static int[] anIntArray352;
 
 	@OriginalMember(owner = "client!pp", name = "w", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_30 = new Class135();
+	public static final LinkedList aClass135_30 = new LinkedList();
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(ZLclient!nk;I)I")
 	public static int method4631(@OriginalArg(1) Class161 arg0, @OriginalArg(2) int arg1) {

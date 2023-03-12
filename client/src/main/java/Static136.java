@@ -8,7 +8,7 @@ public final class Static136 {
 	public static int anInt6778;
 
 	@OriginalMember(owner = "client!hp", name = "d", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_141 = new Class79("wave:", "welle:", "ondulation:", "onda:");
+	public static final LocalizedString aClass79_141 = new LocalizedString("wave:", "welle:", "ondulation:", "onda:");
 
 	@OriginalMember(owner = "client!hp", name = "a", descriptor = "(III)I")
 	public static int method6071(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {

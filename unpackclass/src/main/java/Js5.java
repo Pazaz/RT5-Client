@@ -62,7 +62,7 @@ public abstract class Js5 {
 
 	@OriginalMember(owner = "unpackclass!aa", name = "b", descriptor = "([B)[B")
 	private static byte[] uncompress(@OriginalArg(0) byte[] src) {
-		@Pc(4) SimpleBuffer buffer = new SimpleBuffer(src);
+		@Pc(4) Buffer buffer = new Buffer(src);
 		@Pc(7) int type = buffer.g1();
 		@Pc(10) int len = buffer.g4();
 		if (len < 0 || MAX_LENGTH != 0 && len > MAX_LENGTH) {
@@ -94,8 +94,8 @@ public abstract class Js5 {
 
 	@OriginalMember(owner = "unpackclass!aa", name = "a", descriptor = "([B)V")
 	protected final void decode(@OriginalArg(0) byte[] src) {
-		this.checksum = SimpleBuffer.crc32(src, src.length);
-		@Pc(13) SimpleBuffer buffer = new SimpleBuffer(uncompress(src));
+		this.checksum = Buffer.crc32(src, src.length);
+		@Pc(13) Buffer buffer = new Buffer(uncompress(src));
 		@Pc(16) int protocol = buffer.g1();
 		if (protocol != 5 && protocol != 6) {
 			throw new RuntimeException("Incorrect JS5 protocol number: " + protocol);
@@ -277,14 +277,14 @@ public abstract class Js5 {
 				compressed = ByteArray.unwrap(this.packed[group], false);
 			} else {
 				compressed = ByteArray.unwrap(this.packed[group], true);
-				@Pc(105) SimpleBuffer buffer = new SimpleBuffer(compressed);
+				@Pc(105) Buffer buffer = new Buffer(compressed);
 				buffer.tinydec(key, buffer.data.length);
 			}
 			@Pc(124) byte[] uncompressed;
 			try {
 				uncompressed = uncompress(compressed);
 			} catch (@Pc(126) RuntimeException ex) {
-				System.out.println("T3 - " + (key != null) + "," + group + "," + compressed.length + "," + SimpleBuffer.crc32(compressed, compressed.length) + "," + SimpleBuffer.crc32(compressed, compressed.length - 2) + "," + this.groupChecksums[group] + "," + this.checksum);
+				System.out.println("T3 - " + (key != null) + "," + group + "," + compressed.length + "," + Buffer.crc32(compressed, compressed.length) + "," + Buffer.crc32(compressed, compressed.length - 2) + "," + this.groupChecksums[group] + "," + this.checksum);
 				uncompressed = new byte[] { 0 };
 			}
 			if (this.discardPacked) {
@@ -295,7 +295,7 @@ public abstract class Js5 {
 				pos--;
 				@Pc(198) int stripes = uncompressed[pos] & 0xFF;
 				pos -= groupSize * stripes * 4;
-				@Pc(211) SimpleBuffer buffer = new SimpleBuffer(uncompressed);
+				@Pc(211) Buffer buffer = new Buffer(uncompressed);
 				@Pc(214) int[] lens = new int[groupSize];
 				buffer.pos = pos;
 				for (@Pc(219) int i = 0; i < stripes; i++) {

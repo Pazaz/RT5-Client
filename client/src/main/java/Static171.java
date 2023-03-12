@@ -132,7 +132,7 @@ public final class Static171 {
 			@Pc(541) byte local541 = client.preferences.method4492(Static77.anInt1762) == 2 ? (byte) Static163.anInt3086 : 1;
 			Static225.method3954(Static190.aClass19_8, client.cycle, Static102.anInt3591, Static76.aClass14_3, Static136.anInt6778, Static102.anInt3592, Static211.anInt3777, Static230.aByteArrayArrayArray13, Static353.anIntArray448, Static107.anIntArray136, Static248.anIntArray318, Static324.anIntArray409, Static86.anIntArray122, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 + 1, local541, Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7, !client.preferences.aBoolean353);
 			Static37.method1135();
-			if (LoginManager.reconnecting == 30) {
+			if (client.gameState == 30) {
 				Static306.method5253(local110, local108, local106, local104);
 				Static228.method3995(local104, local106, local108, local110);
 				Static169.method3213(local108, local104, local106, local110);
@@ -144,7 +144,7 @@ public final class Static171 {
 			Static136.anInt6778 = local118;
 			Static265.anInt4857 = local256;
 			Static4.anInt87 = local258;
-			if (Static17.aBoolean308 && Static287.js5NetQueue.method4637() == 0) {
+			if (Static17.aBoolean308 && client.js5NetQueue.getUrgentRequestCount() == 0) {
 				Static17.aBoolean308 = false;
 			}
 			if (Static17.aBoolean308) {

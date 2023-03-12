@@ -8,11 +8,11 @@ public final class Static315 {
 
 	@OriginalMember(owner = "client!se", name = "b", descriptor = "(B)V")
 	public static void method5381() {
-		Static295.aClass135_32.method3544();
-		for (@Pc(13) Class2_Sub5 local13 = (Class2_Sub5) Static129.aClass135_19.method3551(); local13 != null; local13 = (Class2_Sub5) Static129.aClass135_19.method3552()) {
+		Static295.aClass135_32.clear();
+		for (@Pc(13) Class2_Sub5 local13 = (Class2_Sub5) Static129.aClass135_19.head(); local13 != null; local13 = (Class2_Sub5) Static129.aClass135_19.next()) {
 			if (local13.anInt1005 < 1000) {
-				local13.method6468();
-				Static295.aClass135_32.method3540(local13);
+				local13.unlink();
+				Static295.aClass135_32.addTail(local13);
 			}
 		}
 		Static295.aClass135_32.method3542(Static129.aClass135_19);

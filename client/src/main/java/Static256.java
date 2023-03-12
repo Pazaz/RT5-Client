@@ -17,7 +17,7 @@ public final class Static256 {
 	public static final int[] anIntArray321 = new int[50];
 
 	@OriginalMember(owner = "client!om", name = "fb", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_102 = new Class79("Loading - please wait.", "Ladevorgang - bitte warte.", "Chargement en cours. Veuillez patienter.", "Carregando. Aguarde.");
+	public static final LocalizedString aClass79_102 = new LocalizedString("Loading - please wait.", "Ladevorgang - bitte warte.", "Chargement en cours. Veuillez patienter.", "Carregando. Aguarde.");
 
 	@OriginalMember(owner = "client!om", name = "nb", descriptor = "I")
 	public static final int anInt4744 = anInt4716 >> 2;

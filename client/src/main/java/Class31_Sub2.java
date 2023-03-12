@@ -189,7 +189,7 @@ public final class Class31_Sub2 extends Class31 {
 		if (Static399.method2470(arg2, arg5)) {
 			this.aClass82_1 = new Class82();
 		}
-		@Pc(108) Interface2 local108 = arg0.anInterface2_5;
+		@Pc(108) TextureProvider local108 = arg0.anInterface2_5;
 		@Pc(112) int[] local112 = new int[arg1.anInt5071];
 		this.anIntArray239 = new int[arg1.anInt5087 + 1];
 		for (@Pc(121) int local121 = 0; local121 < arg1.anInt5071; local121++) {
@@ -2465,7 +2465,7 @@ public final class Class31_Sub2 extends Class31 {
 	@OriginalMember(owner = "client!mp", name = "a", descriptor = "(SS)V")
 	@Override
 	public void method3816(@OriginalArg(0) short arg0, @OriginalArg(1) short arg1) {
-		@Pc(3) Interface2 local3 = this.aClass19_Sub1_24.anInterface2_5;
+		@Pc(3) TextureProvider local3 = this.aClass19_Sub1_24.anInterface2_5;
 		for (@Pc(5) int local5 = 0; local5 < this.anInt3843; local5++) {
 			if (this.aShortArray72[local5] == arg0) {
 				this.aShortArray72[local5] = arg1;

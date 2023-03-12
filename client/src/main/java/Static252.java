@@ -8,22 +8,22 @@ public final class Static252 {
 	public static Class13 aClass13_14;
 
 	@OriginalMember(owner = "client!oi", name = "h", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_100 = new Class79("Starting 3d Library", "Starte 3D-Softwarebibliothek.", "Démarrage de la librairie 3D", "Iniciando biblioteca 3D");
+	public static final LocalizedString aClass79_100 = new LocalizedString("Starting 3d Library", "Starte 3D-Softwarebibliothek.", "Démarrage de la librairie 3D", "Iniciando biblioteca 3D");
 
 	@OriginalMember(owner = "client!oi", name = "a", descriptor = "(B)V")
 	public static void method4363() {
-		Static296.aClass4_109.method81();
-		Static208.aClass246_4.method6342();
-		Static368.aClass246_10.method6342();
+		Static296.aClass4_109.clear();
+		Static208.aClass246_4.clear();
+		Static368.aClass246_10.clear();
 	}
 
 	@OriginalMember(owner = "client!oi", name = "a", descriptor = "(ZII)V")
 	public static void method4365(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 0) {
-			Static190.aClass19_8 = Static387.method2822(client.preferences.anInt4885 * 2, GameShell.signlink, Static128.anInterface2_4, Static21.aCanvas1, arg1);
+			Static190.aClass19_8 = Static387.method2822(client.preferences.anInt4885 * 2, GameShell.signlink, Static128.anInterface2_4, GameShell.canvas, arg1);
 		} else {
 			if (arg0) {
-				Static190.aClass19_8 = Static387.method2822(0, GameShell.signlink, Static128.anInterface2_4, Static21.aCanvas1, 0);
+				Static190.aClass19_8 = Static387.method2822(0, GameShell.signlink, Static128.anInterface2_4, GameShell.canvas, 0);
 				Static190.aClass19_8.method2867(0);
 				@Pc(22) Class239 local22 = Static101.method2165(Static371.anInt7014, client.jsArchive13);
 				@Pc(31) Class130 local31 = Static190.aClass19_8.method2857(local22, Static396.method1688(client.jsArchive8, Static371.anInt7014));
@@ -33,9 +33,9 @@ public final class Static252 {
 				Static190.aClass19_8.method2825();
 			}
 			try {
-				Static190.aClass19_8 = Static387.method2822(client.preferences.anInt4885 * 2, GameShell.signlink, Static128.anInterface2_4, Static21.aCanvas1, arg1);
+				Static190.aClass19_8 = Static387.method2822(client.preferences.anInt4885 * 2, GameShell.signlink, Static128.anInterface2_4, GameShell.canvas, arg1);
 			} catch (@Pc(61) Throwable local61) {
-				Static190.aClass19_8 = Static387.method2822(0, GameShell.signlink, Static128.anInterface2_4, Static21.aCanvas1, 0);
+				Static190.aClass19_8 = Static387.method2822(0, GameShell.signlink, Static128.anInterface2_4, GameShell.canvas, 0);
 				arg1 = 0;
 			}
 		}

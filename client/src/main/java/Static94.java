@@ -8,7 +8,7 @@ public final class Static94 {
 	public static int anInt1979 = 0;
 
 	@OriginalMember(owner = "client!ff", name = "a", descriptor = "(IBIZILclient!r;)V")
-	public static void method2042(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(5) Class197 arg2) {
+	public static void method2042(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(5) Js5 arg2) {
 		Static341.anInt6376 = 0;
 		Static105.anInt2183 = arg1;
 		Static28.anInt672 = 10000;

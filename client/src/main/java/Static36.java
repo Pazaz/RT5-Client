@@ -10,7 +10,7 @@ public final class Static36 {
 	public static final ClientProt aClass145_34 = new ClientProt(2, 8);
 
 	@OriginalMember(owner = "client!c", name = "g", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_22 = new Class79("Loading config - ", "Lade Konfiguration - ", "Chargement des fichiers config - ", "Carregando config - ");
+	public static final LocalizedString aClass79_22 = new LocalizedString("Loading config - ", "Lade Konfiguration - ", "Chargement des fichiers config - ", "Carregando config - ");
 
 	@OriginalMember(owner = "client!c", name = "a", descriptor = "([BIB)I")
 	public static int method1111(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1) {

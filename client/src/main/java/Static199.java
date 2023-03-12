@@ -8,7 +8,7 @@ public final class Static199 {
 	public static int anInt5756;
 
 	@OriginalMember(owner = "client!lm", name = "s", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_120 = new Class79("flash3:", "blinken3:", "clignotant3:", "brilho3:");
+	public static final LocalizedString aClass79_120 = new LocalizedString("flash3:", "blinken3:", "clignotant3:", "brilho3:");
 
 	@OriginalMember(owner = "client!lm", name = "t", descriptor = "I")
 	public static final int anInt5755 = 1337;

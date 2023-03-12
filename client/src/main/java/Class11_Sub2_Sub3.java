@@ -13,7 +13,7 @@ public final class Class11_Sub2_Sub3 extends Class11_Sub2 implements Interface6 
 	private final boolean aBoolean240;
 
 	static {
-		new Class79("Thank-you, your abuse report has been received.", "Vielen Dank, deine Meldung ist bei uns eingegangen.", "Merci, nous avons bien reçu votre rapport d'abus.", "Obrigado. Sua denúncia de abuso foi recebida.");
+		new LocalizedString("Thank-you, your abuse report has been received.", "Vielen Dank, deine Meldung ist bei uns eingegangen.", "Merci, nous avons bien reçu votre rapport d'abus.", "Obrigado. Sua denúncia de abuso foi recebida.");
 	}
 
 	@OriginalMember(owner = "client!lq", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIIZII)V")

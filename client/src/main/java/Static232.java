@@ -16,7 +16,7 @@ public final class Static232 {
 	public static Class13[] aClass13Array17;
 
 	@OriginalMember(owner = "client!ng", name = "g", descriptor = "Lclient!ad;")
-	public static final Class4 aClass4_86 = new Class4(16);
+	public static final HashTable aClass4_86 = new HashTable(16);
 
 	@OriginalMember(owner = "client!ng", name = "l", descriptor = "I")
 	public static int anInt4087 = 0;

@@ -45,7 +45,7 @@ public final class Class5_Sub2 extends Class5 {
 		@Pc(11) long local11 = (long) arg0 * 1000000L;
 		this.aLong87 += this.method2778();
 		if (this.aLong86 > this.aLong87) {
-			Static231.method4023((this.aLong86 - this.aLong87) / 1000000L);
+			ThreadUtils.sleep((this.aLong86 - this.aLong87) / 1000000L);
 			this.aLong88 += this.aLong86 - this.aLong87;
 			this.aLong87 += this.aLong86 - this.aLong87;
 			this.aLong86 += local11;

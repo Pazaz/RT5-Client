@@ -71,20 +71,4 @@ public final class Static6 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(IZ[B)Ljava/lang/Object;")
-	public static Object method143(@OriginalArg(2) byte[] arg0) {
-		if (arg0 == null) {
-			return null;
-		}
-		if (arg0.length > 136 && !Static141.aBoolean189) {
-			try {
-				@Pc(18) Class212 local18 = (Class212) Class.forName("Class212_Sub1").getDeclaredConstructor().newInstance();
-				local18.method5547(arg0);
-				return local18;
-			} catch (@Pc(25) Throwable local25) {
-				Static141.aBoolean189 = true;
-			}
-		}
-		return arg0;
-	}
 }

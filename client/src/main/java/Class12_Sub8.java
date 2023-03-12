@@ -91,7 +91,7 @@ public final class Class12_Sub8 extends Class12 {
 	public final Class36 aClass36_8;
 
 	static {
-		new Class79("Unable to send message - player unavailable.", "Deine Nachricht konnte nicht verschickt werden,", "Impossible d'envoyer un message - joueur indisponible.", "Não foi possível enviar a mensagem. O jogador não está disponível.");
+		new LocalizedString("Unable to send message - player unavailable.", "Deine Nachricht konnte nicht verschickt werden,", "Impossible d'envoyer un message - joueur indisponible.", "Não foi possível enviar a mensagem. O jogador não está disponível.");
 	}
 
 	@OriginalMember(owner = "client!th", name = "<init>", descriptor = "(Lclient!wm;Lclient!jf;Lclient!oh;J)V")

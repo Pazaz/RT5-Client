@@ -70,7 +70,7 @@ public final class Class221_Sub1 extends Class221 {
 				}
 			}
 		}
-		this.anAudioFormat1 = new AudioFormat((float) Static356.anInt6643, 16, Static354.aBoolean93 ? 2 : 1, true, false);
+		this.anAudioFormat1 = new AudioFormat((float) AudioChannel.sampleRate, 16, Static354.aBoolean93 ? 2 : 1, true, false);
 		this.aByteArray97 = new byte[0x100 << (Static354.aBoolean93 ? 2 : 1)];
 	}
 

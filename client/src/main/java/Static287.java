@@ -7,9 +7,6 @@ public final class Static287 {
 	@OriginalMember(owner = "client!ql", name = "g", descriptor = "Lclient!ui;")
 	public static Class233 aClass233_1;
 
-	@OriginalMember(owner = "client!ql", name = "z", descriptor = "Lclient!pp;")
-	public static Class183 js5NetQueue;
-
 	@OriginalMember(owner = "client!ql", name = "k", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray52 = new String[5];
 

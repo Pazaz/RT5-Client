@@ -19,22 +19,22 @@ public final class Class219 {
 	public final Class98 aClass98_55 = new Class98(5);
 
 	@OriginalMember(owner = "client!ta", name = "c", descriptor = "Lclient!r;")
-	private final Class197 aClass197_87;
+	private final Js5 aClass197_87;
 
 	@OriginalMember(owner = "client!ta", name = "l", descriptor = "Lclient!r;")
-	public final Class197 aClass197_88;
+	public final Js5 aClass197_88;
 
 	@OriginalMember(owner = "client!ta", name = "m", descriptor = "Z")
 	public boolean aBoolean410;
 
 	@OriginalMember(owner = "client!ta", name = "<init>", descriptor = "(Lclient!dn;IZLclient!r;Lclient!r;)V")
-	public Class219(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class197 arg3, @OriginalArg(4) Class197 arg4) {
+	public Class219(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
 		this.aClass197_87 = arg3;
 		this.aClass197_88 = arg4;
 		this.aBoolean410 = arg2;
 		if (this.aClass197_87 != null) {
-			@Pc(38) int local38 = this.aClass197_87.method5092() - 1;
-			this.aClass197_87.method5081(local38);
+			@Pc(38) int local38 = this.aClass197_87.capacity() - 1;
+			this.aClass197_87.getGroupCapacity(local38);
 		}
 	}
 
@@ -48,7 +48,7 @@ public final class Class219 {
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(37) byte[] local37 = this.aClass197_87.method5089(Static349.method5831(arg0), Static65.method1732(arg0));
+		@Pc(37) byte[] local37 = this.aClass197_87.fetchFile(Static349.method5831(arg0), Static65.method1732(arg0));
 		local16 = new Class71();
 		local16.aClass219_2 = this;
 		local16.anInt2048 = arg0;

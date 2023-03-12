@@ -8,7 +8,7 @@ public final class Static44 {
 	public static int anInt1105;
 
 	@OriginalMember(owner = "client!cl", name = "u", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_26 = new Class79(" is already on your ignore list.", " steht bereits auf deiner Ignorieren-Liste!", " est déjà dans votre liste noire.", " já está na sua lista de ignorados.");
+	public static final LocalizedString aClass79_26 = new LocalizedString(" is already on your ignore list.", " steht bereits auf deiner Ignorieren-Liste!", " est déjà dans votre liste noire.", " já está na sua lista de ignorados.");
 
 	@OriginalMember(owner = "client!cl", name = "B", descriptor = "I")
 	public static int anInt1106 = 20;
@@ -20,7 +20,7 @@ public final class Static44 {
 	public static final boolean[] aBooleanArray11 = new boolean[8];
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(Lclient!wm;BLclient!r;)V")
-	public static void method1358(@OriginalArg(0) Class19 arg0, @OriginalArg(2) Class197 arg1) {
+	public static void method1358(@OriginalArg(0) Class19 arg0, @OriginalArg(2) Js5 arg1) {
 		@Pc(10) Class48[] local10 = Static396.method1688(arg1, Static373.anInt7028);
 		Static15.aClass13Array3 = new Class13[local10.length];
 		for (@Pc(16) int local16 = 0; local16 < local10.length; local16++) {
@@ -91,7 +91,7 @@ public final class Static44 {
 	}
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(Lclient!r;I)V")
-	public static void method1359(@OriginalArg(0) Class197 arg0) {
+	public static void method1359(@OriginalArg(0) Js5 arg0) {
 		Static75.anInt1736 = arg0.getGroupId("titlebg");
 		Static265.anInt4856 = arg0.getGroupId("logo");
 	}

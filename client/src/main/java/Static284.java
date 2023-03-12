@@ -17,7 +17,7 @@ public final class Static284 {
 	public static int anInt5362 = 0;
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(ILclient!ci;IIIILclient!wm;)V")
-	public static void method4881(@OriginalArg(1) Interface2 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) Class19 arg5) {
+	public static void method4881(@OriginalArg(1) TextureProvider arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) Class19 arg5) {
 		if (Static355.anInt6581 < 100) {
 			Static209.method3714(arg5, arg0);
 		}
@@ -43,7 +43,7 @@ public final class Static284 {
 		Static178.anInt2317 = Static151.anInt2772 - (int) ((float) arg3 / Static344.aFloat72);
 		Static344.method5530(local111 + Static344.anInt6057, local36 - -Static344.anInt6055, Static344.anInt6057 + local47, Static344.anInt6055 + local160, arg4, arg2, arg3 + arg4, arg2 - (-arg1 - 1));
 		Static344.method5522(arg5);
-		@Pc(203) Class135 local203 = Static344.method5524(arg5);
+		@Pc(203) LinkedList local203 = Static344.method5524(arg5);
 		Static303.method5208(local203, arg5);
 		if (Static243.anInt4495 > 0) {
 			Static90.anInt6637--;

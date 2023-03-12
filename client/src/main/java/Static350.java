@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static350 {
 
 	@OriginalMember(owner = "client!ue", name = "a", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_135 = new Class79("K", "T", "K", "K");
+	public static final LocalizedString aClass79_135 = new LocalizedString("K", "T", "K", "K");
 
 	@OriginalMember(owner = "client!ue", name = "a", descriptor = "(I)V")
 	public static void method5837() {

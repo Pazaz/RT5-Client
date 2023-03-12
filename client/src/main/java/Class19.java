@@ -18,7 +18,7 @@ public abstract class Class19 {
 	public final int anInt2836;
 
 	@OriginalMember(owner = "client!wm", name = "b", descriptor = "Lclient!ci;")
-	public final Interface2 anInterface2_5;
+	public final TextureProvider anInterface2_5;
 
 	static {
 		@Pc(9) double local9 = 3.834951969714103E-4D;
@@ -29,7 +29,7 @@ public abstract class Class19 {
 	}
 
 	@OriginalMember(owner = "client!wm", name = "<init>", descriptor = "(ILclient!ci;)V")
-	protected Class19(@OriginalArg(0) int arg0, @OriginalArg(1) Interface2 arg1) {
+	protected Class19(@OriginalArg(0) int arg0, @OriginalArg(1) TextureProvider arg1) {
 		this.anInt2836 = arg0;
 		this.anInterface2_5 = arg1;
 	}

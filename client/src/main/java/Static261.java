@@ -6,7 +6,7 @@ public final class Static261 {
 	public static final Class116 aClass116_7 = new Class116(128);
 
 	@OriginalMember(owner = "client!ot", name = "H", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_107 = new Class79("Please remove ", "Bitte entferne ", "Veuillez commencer par supprimer ", "Remova ");
+	public static final LocalizedString aClass79_107 = new LocalizedString("Please remove ", "Bitte entferne ", "Veuillez commencer par supprimer ", "Remova ");
 
 	@OriginalMember(owner = "client!ot", name = "J", descriptor = "I")
 	public static int anInt4803 = 0;

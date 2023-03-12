@@ -12,8 +12,8 @@ public final class Static360 {
 
 	@OriginalMember(owner = "client!ut", name = "c", descriptor = "(Z)V")
 	public static void method5646() {
-		Static220.aClass4_83.method81();
-		Static141.aClass4_58.method81();
+		Static220.aClass4_83.clear();
+		Static141.aClass4_58.clear();
 	}
 
 	@OriginalMember(owner = "client!ut", name = "a", descriptor = "(IIIBII)Z")

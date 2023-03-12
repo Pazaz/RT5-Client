@@ -11,7 +11,7 @@ public final class Static179 {
 	public static Class161 aClass161_6 = null;
 
 	@OriginalMember(owner = "client!kg", name = "v", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_73 = new Class79("Opened title screen", "Titelbild geöffnet.", "Écran-titre ouvert", "Tela título aberta");
+	public static final LocalizedString aClass79_73 = new LocalizedString("Opened title screen", "Titelbild geöffnet.", "Écran-titre ouvert", "Tela título aberta");
 
 	@OriginalMember(owner = "client!kg", name = "a", descriptor = "(BI)V")
 	public static void method3364(@OriginalArg(1) int arg0) {

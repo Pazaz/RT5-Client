@@ -8,7 +8,7 @@ public final class Static84 {
 	public static final ClientProt aClass145_65 = new ClientProt(10, 8);
 
 	@OriginalMember(owner = "client!eo", name = "d", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_40 = new Class79("Please wait - attempting to reestablish.", "Bitte warte - es wird versucht, die Verbindung wiederherzustellen.", "Veuillez patienter - tentative de rétablissement.", "Tentando reestabelecer conexão. Aguarde.");
+	public static final LocalizedString aClass79_40 = new LocalizedString("Please wait - attempting to reestablish.", "Bitte warte - es wird versucht, die Verbindung wiederherzustellen.", "Veuillez patienter - tentative de rétablissement.", "Tentando reestabelecer conexão. Aguarde.");
 
 	@OriginalMember(owner = "client!eo", name = "f", descriptor = "I")
 	public static int anInt1842 = 0;
@@ -30,10 +30,4 @@ public final class Static84 {
 		return false;
 	}
 
-	@OriginalMember(owner = "client!eo", name = "a", descriptor = "(ZIIZ)V")
-	public static void method1909(@OriginalArg(3) boolean arg0) {
-		Static354.aBoolean93 = arg0;
-		Static200.anInt3698 = 2;
-		Static356.anInt6643 = 22050;
-	}
 }

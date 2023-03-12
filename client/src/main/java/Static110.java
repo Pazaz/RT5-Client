@@ -23,7 +23,7 @@ public final class Static110 {
 		}
 		@Pc(21) PrivilegedRequest local21 = arg0.getDisplayModes();
 		while (local21.status == 0) {
-			Static231.method4023(10L);
+			ThreadUtils.sleep(10L);
 		}
 		if (local21.status == 2) {
 			return new Class169[0];

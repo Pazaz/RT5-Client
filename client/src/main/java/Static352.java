@@ -66,15 +66,15 @@ public final class Static352 {
 				local130 = false;
 			}
 		}
-		Static21.aCanvas1.setSize(GameShell.canvasWidth, GameShell.canvasHeight);
+		GameShell.canvas.setSize(GameShell.canvasWidth, GameShell.canvasHeight);
 		if (Static190.aClass19_8 != null) {
 			Static190.aClass19_8.method2803();
 		}
 		if (local13 == GameShell.frame) {
 			local31 = GameShell.frame.getInsets();
-			Static21.aCanvas1.setLocation(Static84.anInt1842 + local31.left, local31.top - -Static68.anInt1646);
+			GameShell.canvas.setLocation(Static84.anInt1842 + local31.left, local31.top - -Static68.anInt1646);
 		} else {
-			Static21.aCanvas1.setLocation(Static84.anInt1842, Static68.anInt1646);
+			GameShell.canvas.setLocation(Static84.anInt1842, Static68.anInt1646);
 		}
 		if (Static139.anInt2595 != -1) {
 			Static60.method891(true);

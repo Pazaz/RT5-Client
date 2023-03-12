@@ -8,10 +8,10 @@ public final class Static207 {
 	public static int anInt3746;
 
 	@OriginalMember(owner = "client!mc", name = "h", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_25 = new Class135();
+	public static final LinkedList aClass135_25 = new LinkedList();
 
 	@OriginalMember(owner = "client!mc", name = "l", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_26 = new Class135();
+	public static LinkedList aClass135_26 = new LinkedList();
 
 	@OriginalMember(owner = "client!mc", name = "m", descriptor = "[[Z")
 	public static final boolean[][] aBooleanArrayArray2 = new boolean[][] { new boolean[4], { false, true, true, false }, { true, false, true, false }, { true, false, true, false }, { false, false, true, false }, { false, false, true, false }, { true, false, true, false }, { true, false, false, true }, { true, false, false, true }, { true, true, false, false }, new boolean[4], { false, true, false, true }, new boolean[4] };

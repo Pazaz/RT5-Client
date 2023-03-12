@@ -38,7 +38,7 @@ public final class Class2_Sub21_Sub1 extends Class2_Sub21 {
 	}
 
 	@OriginalMember(owner = "client!jn", name = "a", descriptor = "(Lclient!wp;)Lclient!jn;")
-	public Class2_Sub21_Sub1 method3179(@OriginalArg(0) Class249 arg0) {
+	public Class2_Sub21_Sub1 method3179(@OriginalArg(0) PcmResampler arg0) {
 		this.aByteArray31 = arg0.method6446(this.aByteArray31);
 		this.anInt3176 = arg0.method6445(this.anInt3176);
 		if (this.anInt3178 == this.anInt3177) {

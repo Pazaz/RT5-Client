@@ -9,9 +9,6 @@ public final class Static356 {
 	@OriginalMember(owner = "client!up", name = "S", descriptor = "[I")
 	public static int[] anIntArray462;
 
-	@OriginalMember(owner = "client!up", name = "T", descriptor = "I")
-	public static int anInt6643;
-
 	@OriginalMember(owner = "client!up", name = "C", descriptor = "Lclient!cm;")
 	public static final Class36 aClass36_10 = new Class36();
 

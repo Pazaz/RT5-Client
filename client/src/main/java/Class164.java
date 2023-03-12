@@ -25,7 +25,7 @@ public final class Class164 {
 	public int anInt4417;
 
 	@OriginalMember(owner = "client!np", name = "t", descriptor = "Lclient!ad;")
-	private Class4 aClass4_89;
+	private HashTable aClass4_89;
 
 	@OriginalMember(owner = "client!np", name = "x", descriptor = "Ljava/lang/String;")
 	public String aString48;
@@ -151,7 +151,7 @@ public final class Class164 {
 		if (local28 != null) {
 			return local28;
 		}
-		this.aClass125_2.aClass197_50.method5087(this.anInt4413);
+		this.aClass125_2.aClass197_50.isFileReady(this.anInt4413);
 		@Pc(48) Class48 local48 = Static396.method1682(this.aClass125_2.aClass197_50, this.anInt4413, 0);
 		if (local48 != null) {
 			local28 = arg0.method2891(local48);
@@ -165,7 +165,7 @@ public final class Class164 {
 		if (this.aClass4_89 == null) {
 			return arg1;
 		} else {
-			@Pc(22) Class2_Sub40 local22 = (Class2_Sub40) this.aClass4_89.method90((long) arg0);
+			@Pc(22) Class2_Sub40 local22 = (Class2_Sub40) this.aClass4_89.get((long) arg0);
 			return local22 == null ? arg1 : local22.aString65;
 		}
 	}
@@ -246,18 +246,18 @@ public final class Class164 {
 					local57 = arg1.g1();
 					if (this.aClass4_89 == null) {
 						local196 = Static162.method2977(local57);
-						this.aClass4_89 = new Class4(local196);
+						this.aClass4_89 = new HashTable(local196);
 					}
 					for (local196 = 0; local196 < local57; local196++) {
 						@Pc(215) boolean local215 = arg1.g1() == 1;
 						@Pc(219) int local219 = arg1.ig3();
-						@Pc(228) Class2 local228;
+						@Pc(228) Node local228;
 						if (local215) {
 							local228 = new Class2_Sub40(arg1.gjstr());
 						} else {
 							local228 = new Class2_Sub39(arg1.g4());
 						}
-						this.aClass4_89.method87(local228, (long) local219);
+						this.aClass4_89.put(local228, (long) local219);
 					}
 				}
 			}
@@ -288,7 +288,7 @@ public final class Class164 {
 		if (this.aClass4_89 == null) {
 			return arg0;
 		} else {
-			@Pc(25) Class2_Sub39 local25 = (Class2_Sub39) this.aClass4_89.method90((long) arg1);
+			@Pc(25) Class2_Sub39 local25 = (Class2_Sub39) this.aClass4_89.get((long) arg1);
 			return local25 == null ? arg0 : local25.anInt6818;
 		}
 	}
@@ -300,7 +300,7 @@ public final class Class164 {
 		@Pc(33) Class13 local33 = (Class13) this.aClass125_2.aClass98_27.method2612((long) local24);
 		if (local33 != null) {
 			return local33;
-		} else if (this.aClass125_2.aClass197_50.method5087(local17)) {
+		} else if (this.aClass125_2.aClass197_50.isFileReady(local17)) {
 			@Pc(53) Class48 local53 = Static396.method1682(this.aClass125_2.aClass197_50, local17, 0);
 			if (local53 != null) {
 				local33 = arg0.method2891(local53);

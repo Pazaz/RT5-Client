@@ -27,7 +27,7 @@ public final class Static363 {
 	public static final ClientProt aClass145_239 = new ClientProt(67, 4);
 
 	@OriginalMember(owner = "client!vf", name = "U", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_39 = new Class135();
+	public static final LinkedList aClass135_39 = new LinkedList();
 
 	@OriginalMember(owner = "client!vf", name = "W", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_240 = new ClientProt(37, 6);

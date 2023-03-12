@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static396 {
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "(Lclient!r;I)Lclient!dk;")
-	public static Class48 method1676(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1) {
+	public static Class48 method1676(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) byte[] local4 = arg0.method5082(arg1);
 		return local4 == null ? null : method1679(local4)[0];
 	}
 
 	@OriginalMember(owner = "client!dk", name = "b", descriptor = "(Lclient!r;I)[Lclient!dk;")
-	public static Class48[] method1678(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1) {
+	public static Class48[] method1678(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) byte[] local4 = arg0.method5082(arg1);
 		return local4 == null ? null : method1679(local4);
 	}
@@ -111,14 +111,14 @@ public final class Static396 {
 	}
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "(Lclient!r;II)Lclient!dk;")
-	public static Class48 method1682(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(5) byte[] local5 = arg0.method5089(arg2, arg1);
+	public static Class48 method1682(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+		@Pc(5) byte[] local5 = arg0.fetchFile(arg2, arg1);
 		return local5 == null ? null : method1679(local5)[0];
 	}
 
 	@OriginalMember(owner = "client!dk", name = "b", descriptor = "(Lclient!r;II)[Lclient!dk;")
-	public static Class48[] method1688(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1) {
-		@Pc(5) byte[] local5 = arg0.method5089(0, arg1);
+	public static Class48[] method1688(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
+		@Pc(5) byte[] local5 = arg0.fetchFile(0, arg1);
 		return local5 == null ? null : method1679(local5);
 	}
 }

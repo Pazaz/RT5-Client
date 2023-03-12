@@ -8,14 +8,14 @@ public final class Static131 {
 	public static Class36 aClass36_4;
 
 	@OriginalMember(owner = "client!hi", name = "a", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_82 = new Class79("Please wait...", "Bitte warte...", "Veuillez patienter...", "Aguarde...");
+	public static final LocalizedString aClass79_82 = new LocalizedString("Please wait...", "Bitte warte...", "Veuillez patienter...", "Aguarde...");
 
 	@OriginalMember(owner = "client!hi", name = "c", descriptor = "[S")
 	public static final short[] aShortArray65 = new short[] { -10304, 9104, -1, -1, -1 };
 
 	@OriginalMember(owner = "client!hi", name = "a", descriptor = "(Ljava/lang/String;BZ)V")
 	public static void method3697(@OriginalArg(0) String arg0, @OriginalArg(2) boolean arg1) {
-		client.jsArchive19.anInt5558 = 1;
+		client.jsArchive19.discardUnpacked = 1;
 		@Pc(18) String local18 = arg0.toLowerCase();
 		@Pc(21) short[] local21 = new short[16];
 		@Pc(23) int local23 = 0;
@@ -45,7 +45,7 @@ public final class Static131 {
 			local128[local130] = Static313.ObjTypeList.get(local21[local130]).aString55;
 		}
 		Static135.method2534(local128, Static177.aShortArray56);
-		client.jsArchive19.method5068();
-		client.jsArchive19.anInt5558 = 2;
+		client.jsArchive19.discardUnpacked();
+		client.jsArchive19.discardUnpacked = 2;
 	}
 }

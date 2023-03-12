@@ -28,7 +28,7 @@ public final class Class53 implements Interface7 {
 	public int anInt1645;
 
 	static {
-		new Class79("Error sending message to clan chat - please try again later!", "Fehler beim Versenden der Nachricht - bitte versuch es später erneut.", "Erreur lors de l'envoi du message au canal de clan - veuillez réessayer ultérieurement.", "Erro ao enviar mensagem ao canal de clã. Tente de novo depois!");
+		new LocalizedString("Error sending message to clan chat - please try again later!", "Fehler beim Versenden der Nachricht - bitte versuch es später erneut.", "Erreur lors de l'envoi du message au canal de clan - veuillez réessayer ultérieurement.", "Erro ao enviar mensagem ao canal de clã. Tente de novo depois!");
 	}
 
 	@OriginalMember(owner = "client!dt", name = "a", descriptor = "(BLclient!iq;)Z")

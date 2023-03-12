@@ -101,14 +101,14 @@ public final class Static17 {
 		while (true) {
 			@Pc(19) PrivilegedRequest local19 = arg1.exitFullScreen(arg0);
 			while (local19.status == 0) {
-				Static231.method4023(10L);
+				ThreadUtils.sleep(10L);
 			}
 			if (local19.status == 1) {
 				arg0.setVisible(false);
 				arg0.dispose();
 				return;
 			}
-			Static231.method4023(100L);
+			ThreadUtils.sleep(100L);
 		}
 	}
 }

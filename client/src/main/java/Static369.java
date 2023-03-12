@@ -12,7 +12,7 @@ public final class Static369 {
 	public static final int[] anIntArray479 = new int[] { -1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048 };
 
 	@OriginalMember(owner = "client!vm", name = "S", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_144 = new Class79("Prepared sound engine", "Musik-Engine vorbereitet.", "Moteur son préparé", "Mecanismo de som preparado");
+	public static final LocalizedString aClass79_144 = new LocalizedString("Prepared sound engine", "Musik-Engine vorbereitet.", "Moteur son préparé", "Mecanismo de som preparado");
 
 	@OriginalMember(owner = "client!vm", name = "W", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_248 = new ClientProt(19, -1);

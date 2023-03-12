@@ -9,7 +9,7 @@ public final class Static353 {
 	public static int[] anIntArray450;
 
 	@OriginalMember(owner = "client!ui", name = "a", descriptor = "Lclient!ad;")
-	public static final Class4 aClass4_136 = new Class4(32);
+	public static final HashTable aClass4_136 = new HashTable(32);
 
 	@OriginalMember(owner = "client!ui", name = "m", descriptor = "[I")
 	public static int[] anIntArray448 = new int[2];
@@ -27,7 +27,7 @@ public final class Static353 {
 	public static void method5883() {
 		if (Static190.aClass19_8.method2859()) {
 			Static296.method5104();
-			Static190.aClass19_8.method2828(Static21.aCanvas1);
+			Static190.aClass19_8.method2828(GameShell.canvas);
 			Static98.method2107();
 		} else {
 			Static78.method5701(Static77.anInt1762);

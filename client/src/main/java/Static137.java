@@ -8,16 +8,16 @@ public final class Static137 {
 	public static Class13[] aClass13Array13;
 
 	@OriginalMember(owner = "client!hq", name = "C", descriptor = "Lclient!r;")
-	public static Class197 aClass197_33;
+	public static Js5 aClass197_33;
 
 	@OriginalMember(owner = "client!hq", name = "a", descriptor = "(IIILclient!ed;I)V")
 	public static void method2550(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class2_Sub8 arg2, @OriginalArg(4) int arg3) {
 		@Pc(25) long local25 = (long) (arg1 | arg3 << 28 | arg0 << 14);
-		@Pc(31) Class2_Sub32 local31 = (Class2_Sub32) Static120.aClass4_49.method90(local25);
+		@Pc(31) Class2_Sub32 local31 = (Class2_Sub32) Static120.aClass4_49.get(local25);
 		if (local31 == null) {
 			local31 = new Class2_Sub32();
-			Static120.aClass4_49.method87(local31, local25);
-			local31.aClass135_34.method3540(arg2);
+			Static120.aClass4_49.put(local31, local25);
+			local31.aClass135_34.addTail(arg2);
 			return;
 		}
 		@Pc(54) Class188 local54 = Static313.ObjTypeList.get(arg2.anInt1717);
@@ -25,7 +25,7 @@ public final class Static137 {
 		if (local54.anInt5247 == 1) {
 			local57 *= arg2.anInt1719 + 1;
 		}
-		for (@Pc(76) Class2_Sub8 local76 = (Class2_Sub8) local31.aClass135_34.method3551(); local76 != null; local76 = (Class2_Sub8) local31.aClass135_34.method3552()) {
+		for (@Pc(76) Class2_Sub8 local76 = (Class2_Sub8) local31.aClass135_34.head(); local76 != null; local76 = (Class2_Sub8) local31.aClass135_34.next()) {
 			local54 = Static313.ObjTypeList.get(local76.anInt1717);
 			@Pc(87) int local87 = local54.anInt5220;
 			if (local54.anInt5247 == 1) {
@@ -36,7 +36,7 @@ public final class Static137 {
 				return;
 			}
 		}
-		local31.aClass135_34.method3540(arg2);
+		local31.aClass135_34.addTail(arg2);
 	}
 
 	@OriginalMember(owner = "client!hq", name = "a", descriptor = "(IZ)V")

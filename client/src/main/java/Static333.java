@@ -37,12 +37,12 @@ public final class Static333 {
 	}
 
 	@OriginalMember(owner = "client!tg", name = "a", descriptor = "(ILclient!r;)I")
-	public static int method6333(@OriginalArg(1) Class197 arg0) {
+	public static int method6333(@OriginalArg(1) Js5 arg0) {
 		@Pc(5) int local5 = 0;
-		if (arg0.method5087(Static75.anInt1736)) {
+		if (arg0.isFileReady(Static75.anInt1736)) {
 			local5++;
 		}
-		if (arg0.method5087(Static265.anInt4856)) {
+		if (arg0.isFileReady(Static265.anInt4856)) {
 			local5++;
 		}
 		return local5;

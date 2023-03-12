@@ -59,7 +59,7 @@ public class Class221 {
 	private int anInt7101 = 0;
 
 	static {
-		new Class79("You do not have permission to kick users in this channel.", "Du darfst keine Benutzer aus diesem Chatraum rauswerfen.", "Vous n'êtes pas autorisé à expulser des utilisateurs de ce canal.", "Você não tem permissão para expulsar usuários neste canal.");
+		new LocalizedString("You do not have permission to kick users in this channel.", "Du darfst keine Benutzer aus diesem Chatraum rauswerfen.", "Vous n'êtes pas autorisé à expulser des utilisateurs de ce canal.", "Você não tem permissão para expulsar usuários neste canal.");
 	}
 
 	@OriginalMember(owner = "client!tg", name = "a", descriptor = "(I)V")
@@ -74,7 +74,7 @@ public class Class221 {
 			}
 			while (this.aLong224 + 5000L < local12) {
 				this.method6328();
-				this.aLong224 += 256000 / Static356.anInt6643;
+				this.aLong224 += 256000 / AudioChannel.sampleRate;
 			}
 		} catch (@Pc(52) Exception local52) {
 			this.aLong224 = local12;
@@ -181,7 +181,7 @@ public class Class221 {
 		Static404.method4608(arg0, 0, local1);
 		this.anInt7101 -= 256;
 		if (this.aClass2_Sub12_8 != null && this.anInt7101 <= 0) {
-			this.anInt7101 += Static356.anInt6643 >> 4;
+			this.anInt7101 += AudioChannel.sampleRate >> 4;
 			Static56.method1613(this.aClass2_Sub12_8);
 			this.method6320(this.aClass2_Sub12_8, this.aClass2_Sub12_8.method4976());
 			@Pc(45) int local45 = 0;
@@ -293,7 +293,7 @@ public class Class221 {
 			if (local9) {
 				Static67.aClass129_1.aBoolean227 = true;
 				while (Static67.aClass129_1.aBoolean226) {
-					Static231.method4023(50L);
+					ThreadUtils.sleep(50L);
 				}
 				Static67.aClass129_1 = null;
 			}
@@ -323,7 +323,7 @@ public class Class221 {
 	}
 
 	@OriginalMember(owner = "client!tg", name = "a", descriptor = "(ILclient!ll;)V")
-	public final synchronized void method6330(@OriginalArg(1) Class2_Sub12 arg0) {
+	public final synchronized void setStream(@OriginalArg(1) Class2_Sub12 arg0) {
 		this.aClass2_Sub12_8 = arg0;
 	}
 

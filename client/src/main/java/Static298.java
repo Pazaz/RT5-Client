@@ -41,8 +41,8 @@ public final class Static298 {
 	}
 
 	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(IZLclient!r;I)Lclient!pr;")
-	public static Class185 method2426(@OriginalArg(2) Class197 arg0, @OriginalArg(3) int arg1) {
-		@Pc(9) byte[] local9 = arg0.method5089(0, arg1);
+	public static Class185 method2426(@OriginalArg(2) Js5 arg0, @OriginalArg(3) int arg1) {
+		@Pc(9) byte[] local9 = arg0.fetchFile(0, arg1);
 		return local9 == null ? null : new Class185(local9);
 	}
 

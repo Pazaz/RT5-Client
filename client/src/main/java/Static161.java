@@ -9,7 +9,7 @@ public final class Static161 {
 	public static boolean aBoolean208;
 
 	@OriginalMember(owner = "client!jg", name = "F", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_67 = new Class79(" ", ": ", " ", " ");
+	public static final LocalizedString aClass79_67 = new LocalizedString(" ", ": ", " ", " ");
 
 	@OriginalMember(owner = "client!jg", name = "H", descriptor = "I")
 	public static int anInt2954 = 100;
@@ -20,32 +20,6 @@ public final class Static161 {
 	@OriginalMember(owner = "client!jg", name = "b", descriptor = "(B)V")
 	public static void method2969() {
 		Static119.aClass98_16.method2614();
-	}
-
-	@OriginalMember(owner = "client!jg", name = "a", descriptor = "([BI)[B")
-	public static byte[] method2970(@OriginalArg(0) byte[] arg0) {
-		@Pc(8) Buffer local8 = new Buffer(arg0);
-		@Pc(12) int local12 = local8.g1();
-		@Pc(23) int local23 = local8.g4();
-		if (local23 < 0 || Static45.anInt1198 != 0 && Static45.anInt1198 < local23) {
-			throw new RuntimeException();
-		} else if (local12 == 0) {
-			@Pc(45) byte[] local45 = new byte[local23];
-			local8.gdata(local45, local23);
-			return local45;
-		} else {
-			@Pc(57) int local57 = local8.g4();
-			if (local57 < 0 || Static45.anInt1198 != 0 && Static45.anInt1198 < local57) {
-				throw new RuntimeException();
-			}
-			@Pc(71) byte[] local71 = new byte[local57];
-			if (local12 == 1) {
-				Static213.method3742(local71, local57, arg0, local23);
-			} else {
-				Static92.aClass92_1.method2436(local71, local8);
-			}
-			return local71;
-		}
 	}
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(Ljava/lang/String;ZZ)V")
@@ -113,29 +87,29 @@ public final class Static161 {
 			}
 			if (arg0.equalsIgnoreCase("clientdrop")) {
 				Static158.method2940("Dropped client connection");
-				if (LoginManager.reconnecting == 30) {
+				if (client.gameState == 30) {
 					Static211.method3725();
 					return;
 				}
-				if (LoginManager.reconnecting == 25) {
+				if (client.gameState == 25) {
 					Static101.aBoolean158 = true;
 				}
 				return;
 			}
 			if (arg0.equalsIgnoreCase("clientjs5drop")) {
-				Static287.js5NetQueue.method4645();
+				client.js5NetQueue.quit();
 				Static158.method2940("Dropped client js5 net queue");
 				return;
 			}
 			if (arg0.equalsIgnoreCase("serverjs5drop")) {
-				Static287.js5NetQueue.method4635();
+				client.js5NetQueue.writeTerminate();
 				Static158.method2940("Dropped server js5 net queue");
 				return;
 			}
 			if (arg0.equalsIgnoreCase("breakcon")) {
 				GameShell.signlink.breakConnection();
-				Protocol.socket.method2801();
-				Static287.js5NetQueue.method4633();
+				Protocol.socket.breakConnection();
+				client.js5NetQueue.breakConnection();
 				Static158.method2940("Breaking new connections for 5 seconds");
 				return;
 			}
@@ -339,8 +313,8 @@ public final class Static161 {
 				return;
 			}
 			if (arg0.equalsIgnoreCase("resetminimap")) {
-				client.jsArchive8.method5090();
-				client.jsArchive8.method5068();
+				client.jsArchive8.discardPacked();
+				client.jsArchive8.discardUnpacked();
 				Static320.aClass104_2.method2707();
 				Static236.aClass125_1.method3380();
 				Static247.method4299();
@@ -465,7 +439,7 @@ public final class Static161 {
 				Static158.method2940("varp=" + Static214.aClass226_1.method5777(local76));
 				return;
 			}
-			if (LoginManager.reconnecting == 30) {
+			if (client.gameState == 30) {
 				Protocol.method1960(Static243.aClass145_162);
 				Protocol.outboundBuffer.p1(arg0.length() + 2);
 				Protocol.outboundBuffer.p1(arg1 ? 1 : 0);
@@ -475,7 +449,7 @@ public final class Static161 {
 				Static250.method4346(Static146.method2698(arg0.substring(4)));
 				return;
 			}
-			if (LoginManager.reconnecting != 30) {
+			if (client.gameState != 30) {
 				Static158.method2940("Unrecogonised commmand when not logged in: " + arg0);
 				return;
 			}
@@ -488,7 +462,7 @@ public final class Static161 {
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(BZ)V")
 	public static void method2973(@OriginalArg(1) boolean arg0) {
 		Static37.method1135();
-		if (LoginManager.reconnecting != 30 && LoginManager.reconnecting != 25) {
+		if (client.gameState != 30 && client.gameState != 25) {
 			return;
 		}
 		Static367.anInt6876++;

@@ -102,10 +102,10 @@ public final class Static160 {
 	}
 
 	@OriginalMember(owner = "client!jf", name = "a", descriptor = "(Ljava/awt/Canvas;Lclient!ml;ILclient!ci;II)Lclient!wm;")
-	public static Class19 method2955(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Signlink arg1, @OriginalArg(3) Interface2 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+	public static Class19 method2955(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Signlink arg1, @OriginalArg(3) TextureProvider arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		try {
 			@Pc(6) Class local6 = Class.forName("Class19_Sub1");
-			@Pc(58) Constructor local58 = local6.getConstructor(Canvas.class, Interface2.class, Integer.TYPE, Integer.TYPE, Signlink.class);
+			@Pc(58) Constructor local58 = local6.getConstructor(Canvas.class, TextureProvider.class, Integer.TYPE, Integer.TYPE, Signlink.class);
 			return (Class19) local58.newInstance(arg0, arg2, Integer.valueOf(arg4), new Integer(arg3), arg1);
 		} catch (@Pc(91) Exception local91) {
 			throw new RuntimeException();
@@ -115,7 +115,7 @@ public final class Static160 {
 	@OriginalMember(owner = "client!jf", name = "b", descriptor = "(I)V")
 	public static void method2956() {
 		Static268.anInt4959 = 0;
-		Static129.aClass135_19.method3544();
+		Static129.aClass135_19.clear();
 		Static375.aBoolean477 = false;
 	}
 

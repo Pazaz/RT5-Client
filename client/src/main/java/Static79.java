@@ -8,7 +8,7 @@ public final class Static79 {
 	public static Class42 aClass42_4;
 
 	@OriginalMember(owner = "client!ej", name = "H", descriptor = "Lclient!r;")
-	public static Class197 aClass197_19;
+	public static Js5 aClass197_19;
 
 	@OriginalMember(owner = "client!ej", name = "N", descriptor = "Z")
 	public static boolean aBoolean131 = true;

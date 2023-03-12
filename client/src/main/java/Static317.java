@@ -217,18 +217,18 @@ public final class Static317 {
 	}
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!r;Ljava/lang/String;ZI)Lclient!ih;")
-	public static Class103 method5552(@OriginalArg(0) Class197 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) boolean arg2) {
+	public static Class103 method5552(@OriginalArg(0) Js5 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) boolean arg2) {
 		@Pc(10) int local10 = arg0.getGroupId(arg1);
 		if (local10 == -1) {
 			return new Class103(0);
 		}
-		@Pc(28) int[] local28 = arg0.method5077(local10);
+		@Pc(28) int[] local28 = arg0.getFileIds(local10);
 		@Pc(34) Class103 local34 = new Class103(local28.length);
 		@Pc(36) int local36 = 0;
 		@Pc(38) int local38 = 0;
 		while (true) {
 			while (local36 < local34.anInt2702) {
-				@Pc(52) Buffer local52 = new Buffer(arg0.method5089(local28[local38++], local10));
+				@Pc(52) Buffer local52 = new Buffer(arg0.fetchFile(local28[local38++], local10));
 				@Pc(58) int local58 = local52.g4();
 				@Pc(62) int local62 = local52.g2();
 				@Pc(66) int local66 = local52.g1();

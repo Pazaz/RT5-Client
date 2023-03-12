@@ -15,7 +15,7 @@ public abstract class Class173 {
 	public final int anInt6996;
 
 	static {
-		new Class79("You have been temporarily muted due to breaking a rule.", "Aufgrund eines Regelverstoßes wurdest du vorübergehend stumm geschaltet.", "La messagerie instantanée a été temporairement bloquée suite à une infraction.", "Você foi temporariamente vetado por ter violado uma regra.");
+		new LocalizedString("You have been temporarily muted due to breaking a rule.", "Aufgrund eines Regelverstoßes wurdest du vorübergehend stumm geschaltet.", "La messagerie instantanée a été temporairement bloquée suite à une infraction.", "Você foi temporariamente vetado por ter violado uma regra.");
 	}
 
 	@OriginalMember(owner = "client!pa", name = "<init>", descriptor = "(III)V")

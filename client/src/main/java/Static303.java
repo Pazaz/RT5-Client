@@ -5,12 +5,12 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static303 {
 
 	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(Lclient!ld;BLclient!wm;II)V")
-	public static void method5208(@OriginalArg(0) Class135 arg0, @OriginalArg(2) Class19 arg1) {
-		Static197.aClass135_24.method3544();
+	public static void method5208(@OriginalArg(0) LinkedList arg0, @OriginalArg(2) Class19 arg1) {
+		Static197.aClass135_24.clear();
 		if (Static175.aBoolean225) {
 			return;
 		}
-		for (@Pc(20) Class2_Sub20 local20 = (Class2_Sub20) arg0.method3551(); local20 != null; local20 = (Class2_Sub20) arg0.method3552()) {
+		for (@Pc(20) Class2_Sub20 local20 = (Class2_Sub20) arg0.head(); local20 != null; local20 = (Class2_Sub20) arg0.next()) {
 			@Pc(28) Class164 local28 = Static344.aClass125_4.method3379(local20.anInt2947);
 			if (Static101.method2164(local28)) {
 				@Pc(40) boolean local40 = Static286.method4923(local20, arg1, local28);

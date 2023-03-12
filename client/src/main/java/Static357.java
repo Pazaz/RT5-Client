@@ -7,13 +7,13 @@ public final class Static357 {
 	public static int[][] anIntArrayArray58;
 
 	@OriginalMember(owner = "client!uq", name = "db", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_137 = new Class79("Connection lost.", "Verbindung abgebrochen.", "Connexion perdue.", "Conexão perdida.");
+	public static final LocalizedString aClass79_137 = new LocalizedString("Connection lost.", "Verbindung abgebrochen.", "Connexion perdue.", "Conexão perdida.");
 
 	@OriginalMember(owner = "client!uq", name = "fb", descriptor = "[Z")
 	public static final boolean[] aBooleanArray59 = new boolean[100];
 
 	@OriginalMember(owner = "client!uq", name = "gb", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_138 = new Class79("Started 3d Library", "3D-Softwarebibliothek gestartet.", "Librairie 3D démarrée", "Biblioteca 3D iniciada");
+	public static final LocalizedString aClass79_138 = new LocalizedString("Started 3d Library", "3D-Softwarebibliothek gestartet.", "Librairie 3D démarrée", "Biblioteca 3D iniciada");
 
 	@OriginalMember(owner = "client!uq", name = "hb", descriptor = "[J")
 	public static final long[] aLongArray12 = new long[32];

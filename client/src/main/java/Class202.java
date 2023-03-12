@@ -25,26 +25,26 @@ public final class Class202 {
 	public final Class98 aClass98_48 = new Class98(50);
 
 	@OriginalMember(owner = "client!rh", name = "n", descriptor = "Lclient!r;")
-	private final Class197 aClass197_79;
+	private final Js5 aClass197_79;
 
 	@OriginalMember(owner = "client!rh", name = "o", descriptor = "Z")
 	public boolean aBoolean401;
 
 	@OriginalMember(owner = "client!rh", name = "d", descriptor = "Lclient!r;")
-	public final Class197 aClass197_78;
+	public final Js5 aClass197_78;
 
 	static {
-		new Class79("Unable to send message - system busy.", "Deine Nachricht konnte nicht verschickt werden, das System ist derzeit ausgelastet.", "Impossible d'envoyer un message - système occupé.", "Não foi possível enviar a mensagem. O sistema está ocupado.");
+		new LocalizedString("Unable to send message - system busy.", "Deine Nachricht konnte nicht verschickt werden, das System ist derzeit ausgelastet.", "Impossible d'envoyer un message - système occupé.", "Não foi possível enviar a mensagem. O sistema está ocupado.");
 	}
 
 	@OriginalMember(owner = "client!rh", name = "<init>", descriptor = "(Lclient!dn;IZLclient!r;Lclient!r;)V")
-	public Class202(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class197 arg3, @OriginalArg(4) Class197 arg4) {
+	public Class202(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
 		this.aClass197_79 = arg3;
 		this.aBoolean401 = arg2;
 		this.aClass197_78 = arg4;
 		if (this.aClass197_79 != null) {
-			@Pc(47) int local47 = this.aClass197_79.method5092() - 1;
-			this.aClass197_79.method5081(local47);
+			@Pc(47) int local47 = this.aClass197_79.capacity() - 1;
+			this.aClass197_79.getGroupCapacity(local47);
 		}
 	}
 
@@ -156,7 +156,7 @@ public final class Class202 {
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(37) byte[] local37 = this.aClass197_79.method5089(Static381.method6348(arg0), Static324.method5540(arg0));
+		@Pc(37) byte[] local37 = this.aClass197_79.fetchFile(Static381.method6348(arg0), Static324.method5540(arg0));
 		local16 = new Class41();
 		local16.anInt1351 = arg0;
 		local16.aClass202_1 = this;

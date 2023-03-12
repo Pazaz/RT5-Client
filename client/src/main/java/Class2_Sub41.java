@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!we")
-public final class Class2_Sub41 extends Class2 {
+public final class Class2_Sub41 extends Node {
 
 	@OriginalMember(owner = "client!we", name = "u", descriptor = "[I")
 	public int[] anIntArray488 = new int[1];
@@ -13,7 +13,7 @@ public final class Class2_Sub41 extends Class2 {
 	public int[] anIntArray489 = new int[] { -1 };
 
 	static {
-		new Class79("You cannot send a quick chat message to a player on this world at this time.", "Einem Spieler auf dieser Welt können derzeit keine Direktchat-Nachrichten", "Impossible d'envoyer un message rapide à un joueur de ce serveur à l'heure actuelle.", "Você não pode enviar uma mensagem de papo rápido para um jogador neste mundo neste momento.");
+		new LocalizedString("You cannot send a quick chat message to a player on this world at this time.", "Einem Spieler auf dieser Welt können derzeit keine Direktchat-Nachrichten", "Impossible d'envoyer un message rapide à un joueur de ce serveur à l'heure actuelle.", "Você não pode enviar uma mensagem de papo rápido para um jogador neste mundo neste momento.");
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IIIIZLclient!nb;IILclient!jo;Lclient!wm;)Lclient!gn;")

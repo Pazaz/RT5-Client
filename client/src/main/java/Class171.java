@@ -10,7 +10,7 @@ public final class Class171 {
 	public int anInt4700 = 0;
 
 	static {
-		new Class79("If you are not, please change your password to something more obscure!", "nicht der Fall ist, ändere dein Passwort zu einem ungewöhnlicheren Begriff!", "Si ce n'est pas le cas, remplacez votre mot de passe par une formule moins évidente !", "Caso não esteja, altere sua senha para algo mais obscuro!");
+		new LocalizedString("If you are not, please change your password to something more obscure!", "nicht der Fall ist, ändere dein Passwort zu einem ungewöhnlicheren Begriff!", "Si ce n'est pas le cas, remplacez votre mot de passe par une formule moins évidente !", "Caso não esteja, altere sua senha para algo mais obscuro!");
 	}
 
 	@OriginalMember(owner = "client!ok", name = "a", descriptor = "(ILclient!bt;)V")

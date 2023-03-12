@@ -16,15 +16,15 @@ public final class Static314 {
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(20) byte[] local20 = Static188.aClass197_52.method5089(arg0, 1);
+		@Pc(20) byte[] local20 = Static188.aClass197_52.fetchFile(arg0, 1);
 		local10 = new Class28();
 		local10.anInt749 = arg0;
 		if (local20 != null) {
 			local10.method949(new Buffer(local20));
 		}
 		local10.method945();
-		if (local10.anInt737 == 2 && Static7.aClass4_151.method90((long) arg0) == null) {
-			Static7.aClass4_151.method87(new Class2_Sub39(Static307.anInt5780), (long) arg0);
+		if (local10.anInt737 == 2 && Static7.aClass4_151.get((long) arg0) == null) {
+			Static7.aClass4_151.put(new Class2_Sub39(Static307.anInt5780), (long) arg0);
 			Static278.aClass28Array1[Static307.anInt5780++] = local10;
 		}
 		Static119.aClass98_16.method2624((long) arg0, local10);

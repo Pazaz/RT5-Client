@@ -14,7 +14,7 @@ public final class Static105 {
 	public static int anInt2187;
 
 	@OriginalMember(owner = "client!ft", name = "S", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_45 = new Class79("flash1:", "blinken1:", "clignotant1:", "flash1:");
+	public static final LocalizedString aClass79_45 = new LocalizedString("flash1:", "blinken1:", "clignotant1:", "flash1:");
 
 	@OriginalMember(owner = "client!ft", name = "U", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_79 = new ClientProt(11, 16);

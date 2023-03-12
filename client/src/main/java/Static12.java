@@ -71,7 +71,7 @@ public final class Static12 {
 		if (!Static206.aBoolean242 || Static197.aClass135_24 == null) {
 			return;
 		}
-		for (@Pc(170) Class2_Sub15 local170 = (Class2_Sub15) Static197.aClass135_24.method3551(); local170 != null; local170 = (Class2_Sub15) Static197.aClass135_24.method3552()) {
+		for (@Pc(170) Class2_Sub15 local170 = (Class2_Sub15) Static197.aClass135_24.head(); local170 != null; local170 = (Class2_Sub15) Static197.aClass135_24.next()) {
 			@Pc(179) Class164 local179 = Static344.aClass125_4.method3379(local170.aClass2_Sub20_1.anInt2947);
 			if (local170.method2357(arg0, arg1)) {
 				if (local179.aStringArray41 != null) {
@@ -107,12 +107,12 @@ public final class Static12 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(I)V")
 	public static void method282() {
-		for (@Pc(10) Class2_Sub19 local10 = (Class2_Sub19) Static83.aClass135_14.method3551(); local10 != null; local10 = (Class2_Sub19) Static83.aClass135_14.method3552()) {
+		for (@Pc(10) Class2_Sub19 local10 = (Class2_Sub19) Static83.aClass135_14.head(); local10 != null; local10 = (Class2_Sub19) Static83.aClass135_14.next()) {
 			if (local10.aBoolean204) {
 				local10.method2941();
 			}
 		}
-		for (@Pc(30) Class2_Sub19 local30 = (Class2_Sub19) Static363.aClass135_39.method3551(); local30 != null; local30 = (Class2_Sub19) Static363.aClass135_39.method3552()) {
+		for (@Pc(30) Class2_Sub19 local30 = (Class2_Sub19) Static363.aClass135_39.head(); local30 != null; local30 = (Class2_Sub19) Static363.aClass135_39.next()) {
 			if (local30.aBoolean204) {
 				local30.method2941();
 			}

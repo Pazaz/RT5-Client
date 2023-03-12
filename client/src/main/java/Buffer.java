@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!bt")
-public class Buffer extends Class2 {
+public class Buffer extends Node {
 
 	@OriginalMember(owner = "client!qk", name = "gb", descriptor = "[[B")
 	public static final byte[][] allocatedMin = new byte[1000][];

@@ -20,7 +20,7 @@ public final class GzipDecompressor {
 	}
 
 	@OriginalMember(owner = "unpackclass!k", name = "a", descriptor = "(Lunpackclass!e;[B)V")
-	public void gunzip(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) byte[] arg1) {
+	public void gunzip(@OriginalArg(0) Buffer arg0, @OriginalArg(1) byte[] arg1) {
 		if (arg0.data[arg0.pos] != 31 || arg0.data[arg0.pos + 1] != -117) {
 			throw new RuntimeException("Invalid GZIP header!");
 		}

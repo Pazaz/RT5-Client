@@ -13,54 +13,6 @@ public final class Static99 {
 		return local7 == null ? null : local7.aClass11_Sub1_2;
 	}
 
-	@OriginalMember(owner = "client!fm", name = "i", descriptor = "(I)V")
-	public static void logout() {
-		if (Protocol.socket != null) {
-			Protocol.socket.close();
-			Protocol.socket = null;
-		}
-		Static211.method3721();
-		Static253.method4366();
-		for (@Pc(17) int local17 = 0; local17 < 4; local17++) {
-			Static171.aClass46Array1[local17].method1626();
-		}
-		Static241.method4192(false);
-		System.gc();
-		Static174.method1507();
-		Static393.aBoolean486 = false;
-		Static171.anInt3268 = -1;
-		Static239.method4152(true);
-		Static164.anInt3140 = 0;
-		Static9.anInt212 = 0;
-		Static220.aBoolean252 = false;
-		Static105.anInt2187 = 0;
-		Static148.anInt2719 = 0;
-		for (@Pc(56) int local56 = 0; local56 < Static50.aClass84Array1.length; local56++) {
-			Static50.aClass84Array1[local56] = null;
-		}
-		Static358.method5888();
-		for (@Pc(75) int local75 = 0; local75 < 2048; local75++) {
-			Static12.aClass11_Sub5_Sub2_Sub1Array1[local75] = null;
-		}
-		NpcList.size = 0;
-		for (@Pc(91) int local91 = 0; local91 < 32768; local91++) {
-			NpcList.npcs[local91] = null;
-		}
-		Static120.aClass4_49.method81();
-		Static117.method2369();
-		Protocol.verifyId = 0;
-		Static214.aClass226_1.method5781();
-		Static114.method2362();
-		Static360.method5646();
-		Static50.method1525(true);
-		try {
-			BrowserControl.call(GameShell.signlink.applet, "loggedout");
-		} catch (@Pc(128) Throwable local128) {
-		}
-		Static375.aLong222 = 0L;
-		Static385.aClass2_Sub16_2 = null;
-	}
-
 	@OriginalMember(owner = "client!fm", name = "j", descriptor = "(I)V")
 	public static void method2146() {
 		Static65.aClass19_3.method2838(((float) client.preferences.anInt4879 * 0.1F + 0.7F) * 1.1523438F);

@@ -14,7 +14,7 @@ public final class Static32 {
 	public static Class2_Sub5 aClass2_Sub5_2;
 
 	@OriginalMember(owner = "client!br", name = "T", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_21 = new Class79("Loading...", "Lade...", "Chargement en cours...", "Carregando...");
+	public static final LocalizedString aClass79_21 = new LocalizedString("Loading...", "Lade...", "Chargement en cours...", "Carregando...");
 
 	@OriginalMember(owner = "client!br", name = "X", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_32 = new ClientProt(62, 3);

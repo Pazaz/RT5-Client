@@ -26,13 +26,13 @@ public final class Static209 {
 	}
 
 	@OriginalMember(owner = "client!me", name = "a", descriptor = "(ILclient!wm;Lclient!ci;)V")
-	public static void method3714(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Interface2 arg1) {
+	public static void method3714(@OriginalArg(1) Class19 arg0, @OriginalArg(2) TextureProvider arg1) {
 		if (Static344.aClass2_Sub2_Sub17_3 == null) {
 			return;
 		}
 		if (Static355.anInt6581 < 10) {
-			if (!Static344.aClass197_85.method5072(Static344.aClass2_Sub2_Sub17_3.aString67)) {
-				Static355.anInt6581 = client.jsArchive23.method5085(Static344.aClass2_Sub2_Sub17_3.aString67) / 10;
+			if (!Static344.aClass197_85.isGroupReady(Static344.aClass2_Sub2_Sub17_3.aString67)) {
+				Static355.anInt6581 = client.jsArchive23.getPercentageComplete(Static344.aClass2_Sub2_Sub17_3.aString67) / 10;
 				return;
 			}
 			Static386.method6031();
@@ -92,7 +92,7 @@ public final class Static209 {
 			Static344.aByteArrayArrayArray15 = Static260.method6018(Static344.anInt6047);
 			Static298.method2422();
 			Static344.method5519();
-			Static197.aClass135_24 = new Class135();
+			Static197.aClass135_24 = new LinkedList();
 			Static344.anInt6048 += (int) (Math.random() * 5.0D) - 2;
 			if (Static344.anInt6048 < -8) {
 				Static344.anInt6048 = -8;
@@ -118,10 +118,10 @@ public final class Static209 {
 			Static344.method5521(arg0, Static344.anInt6048, Static344.anInt6049);
 			Static355.anInt6581 = 60;
 			Static161.method2973(true);
-			Static142.method2662();
+			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 60) {
-			if (Static344.aClass197_85.method5101(Static344.aClass2_Sub2_Sub17_3.aString67 + "_staticelements")) {
-				if (!Static344.aClass197_85.method5072(Static344.aClass2_Sub2_Sub17_3.aString67 + "_staticelements")) {
+			if (Static344.aClass197_85.isGroupNameValid(Static344.aClass2_Sub2_Sub17_3.aString67 + "_staticelements")) {
+				if (!Static344.aClass197_85.isGroupReady(Static344.aClass2_Sub2_Sub17_3.aString67 + "_staticelements")) {
 					return;
 				}
 				Static344.aClass103_5 = Static317.method5552(Static344.aClass197_85, Static344.aClass2_Sub2_Sub17_3.aString67 + "_staticelements", LoginManager.mapMembers);
@@ -131,47 +131,47 @@ public final class Static209 {
 			Static344.method5511();
 			Static355.anInt6581 = 70;
 			Static161.method2973(true);
-			Static142.method2662();
+			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 70) {
-			Static74.aClass113_4 = new Class113(arg0, 11, true, Static21.aCanvas1);
+			Static74.aClass113_4 = new Class113(arg0, 11, true, GameShell.canvas);
 			Static355.anInt6581 = 73;
 			Static161.method2973(true);
-			Static142.method2662();
+			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 73) {
-			Static107.aClass113_5 = new Class113(arg0, 12, true, Static21.aCanvas1);
+			Static107.aClass113_5 = new Class113(arg0, 12, true, GameShell.canvas);
 			Static355.anInt6581 = 76;
 			Static161.method2973(true);
-			Static142.method2662();
+			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 76) {
-			Static2.aClass113_1 = new Class113(arg0, 14, true, Static21.aCanvas1);
+			Static2.aClass113_1 = new Class113(arg0, 14, true, GameShell.canvas);
 			Static355.anInt6581 = 79;
 			Static161.method2973(true);
-			Static142.method2662();
+			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 79) {
-			Static175.aClass113_6 = new Class113(arg0, 17, true, Static21.aCanvas1);
+			Static175.aClass113_6 = new Class113(arg0, 17, true, GameShell.canvas);
 			Static355.anInt6581 = 82;
 			Static161.method2973(true);
-			Static142.method2662();
+			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 82) {
-			Static249.aClass113_8 = new Class113(arg0, 19, true, Static21.aCanvas1);
+			Static249.aClass113_8 = new Class113(arg0, 19, true, GameShell.canvas);
 			Static355.anInt6581 = 85;
 			Static161.method2973(true);
-			Static142.method2662();
+			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 85) {
-			Static30.aClass113_3 = new Class113(arg0, 22, true, Static21.aCanvas1);
+			Static30.aClass113_3 = new Class113(arg0, 22, true, GameShell.canvas);
 			Static355.anInt6581 = 88;
 			Static161.method2973(true);
-			Static142.method2662();
+			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 88) {
-			Static27.aClass113_2 = new Class113(arg0, 26, true, Static21.aCanvas1);
+			Static27.aClass113_2 = new Class113(arg0, 26, true, GameShell.canvas);
 			Static355.anInt6581 = 91;
 			Static161.method2973(true);
-			Static142.method2662();
+			GameShell.resetTimer();
 		} else {
-			Static369.aClass113_9 = new Class113(arg0, 30, true, Static21.aCanvas1);
+			Static369.aClass113_9 = new Class113(arg0, 30, true, GameShell.canvas);
 			Static355.anInt6581 = 100;
 			Static161.method2973(true);
-			Static142.method2662();
+			GameShell.resetTimer();
 			System.gc();
 		}
 	}

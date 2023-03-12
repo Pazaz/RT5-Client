@@ -20,10 +20,10 @@ public final class Static301 {
 
 	@OriginalMember(owner = "client!ri", name = "c", descriptor = "(Z)V")
 	public static void method5188() {
-		for (@Pc(14) Class2_Sub2_Sub9 local14 = (Class2_Sub2_Sub9) Static332.aClass135_38.method3551(); local14 != null; local14 = (Class2_Sub2_Sub9) Static332.aClass135_38.method3552()) {
+		for (@Pc(14) Class2_Sub2_Sub9 local14 = (Class2_Sub2_Sub9) Static332.aClass135_38.head(); local14 != null; local14 = (Class2_Sub2_Sub9) Static332.aClass135_38.next()) {
 			@Pc(19) Class11_Sub5_Sub3 local19 = local14.aClass11_Sub5_Sub3_1;
 			if (local19.aByte78 != Static355.anInt6585 || local19.anInt4722 < client.cycle) {
-				local14.method6468();
+				local14.unlink();
 				local19.method4391();
 			} else if (client.cycle >= local19.anInt4725) {
 				if (local19.anInt4714 > 0) {

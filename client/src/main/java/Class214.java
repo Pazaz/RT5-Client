@@ -23,6 +23,6 @@ public final class Class214 {
 	public String aString61;
 
 	static {
-		new Class79("Attempting to join channel...", "Chatraum wird betreten...", "Tentative de connexion au canal...", "Tentando acessar canal...");
+		new LocalizedString("Attempting to join channel...", "Chatraum wird betreten...", "Tentative de connexion au canal...", "Tentando acessar canal...");
 	}
 }

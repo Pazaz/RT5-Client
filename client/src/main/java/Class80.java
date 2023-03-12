@@ -30,10 +30,10 @@ public final class Class80 {
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(B)Z")
 	public boolean method2268() {
 		@Pc(7) boolean local7 = true;
-		@Pc(11) Class197 local11 = this.aClass55_2.aClass197_16;
+		@Pc(11) Js5 local11 = this.aClass55_2.aClass197_16;
 		synchronized (this.aClass55_2.aClass197_16) {
 			for (@Pc(27) int local27 = 0; local27 < 5; local27++) {
-				if (this.anIntArray141[local27] != -1 && !this.aClass55_2.aClass197_16.method5088(0, this.anIntArray141[local27])) {
+				if (this.anIntArray141[local27] != -1 && !this.aClass55_2.aClass197_16.isFileReady(0, this.anIntArray141[local27])) {
 					local7 = false;
 				}
 			}
@@ -84,10 +84,10 @@ public final class Class80 {
 			return true;
 		}
 		@Pc(12) boolean local12 = true;
-		@Pc(16) Class197 local16 = this.aClass55_2.aClass197_16;
+		@Pc(16) Js5 local16 = this.aClass55_2.aClass197_16;
 		synchronized (this.aClass55_2.aClass197_16) {
 			for (@Pc(20) int local20 = 0; local20 < this.anIntArray142.length; local20++) {
-				if (!this.aClass55_2.aClass197_16.method5088(0, this.anIntArray142[local20])) {
+				if (!this.aClass55_2.aClass197_16.isFileReady(0, this.anIntArray142[local20])) {
 					local12 = false;
 				}
 			}
@@ -110,7 +110,7 @@ public final class Class80 {
 	public Class185 method2273() {
 		@Pc(13) Class185[] local13 = new Class185[5];
 		@Pc(15) int local15 = 0;
-		@Pc(19) Class197 local19 = this.aClass55_2.aClass197_16;
+		@Pc(19) Js5 local19 = this.aClass55_2.aClass197_16;
 		synchronized (this.aClass55_2.aClass197_16) {
 			for (@Pc(23) int local23 = 0; local23 < 5; local23++) {
 				if (this.anIntArray141[local23] != -1) {
@@ -139,7 +139,7 @@ public final class Class80 {
 			return null;
 		}
 		@Pc(23) Class185[] local23 = new Class185[this.anIntArray142.length];
-		@Pc(27) Class197 local27 = this.aClass55_2.aClass197_16;
+		@Pc(27) Js5 local27 = this.aClass55_2.aClass197_16;
 		synchronized (this.aClass55_2.aClass197_16) {
 			@Pc(31) int local31 = 0;
 			while (true) {

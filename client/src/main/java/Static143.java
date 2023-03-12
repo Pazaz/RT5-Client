@@ -1,12 +1,8 @@
-import java.util.zip.CRC32;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 public final class Static143 {
-
-	@OriginalMember(owner = "client!ib", name = "y", descriptor = "Ljava/util/zip/CRC32;")
-	public static final CRC32 aCRC32_1 = new CRC32();
 
 	@OriginalMember(owner = "client!ib", name = "C", descriptor = "Lclient!s;")
 	public static final Class210 aClass210_7 = new Class210(0, 4);

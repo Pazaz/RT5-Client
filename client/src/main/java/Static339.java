@@ -12,10 +12,10 @@ public final class Static339 {
 
 	@OriginalMember(owner = "client!to", name = "j", descriptor = "(I)V")
 	public static void method5759() {
-		@Pc(7) Class36[] local7 = Class2_Sub43.aClass36Array1;
-		synchronized (Class2_Sub43.aClass36Array1) {
-			for (@Pc(11) int local11 = 0; local11 < Class2_Sub43.aClass36Array1.length; local11++) {
-				Class2_Sub43.aClass36Array1[local11] = new Class36();
+		@Pc(7) Class36[] local7 = ColorImageCacheEntry.aClass36Array1;
+		synchronized (ColorImageCacheEntry.aClass36Array1) {
+			for (@Pc(11) int local11 = 0; local11 < ColorImageCacheEntry.aClass36Array1.length; local11++) {
+				ColorImageCacheEntry.aClass36Array1[local11] = new Class36();
 				Static206.anIntArray224[local11] = 0;
 			}
 		}

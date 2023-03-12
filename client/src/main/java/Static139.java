@@ -8,16 +8,16 @@ public final class Static139 {
 	public static int anInt2594;
 
 	@OriginalMember(owner = "client!hs", name = "s", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_60 = new Class79("Unable to find ", "Spieler kann nicht gefunden werden: ", "Impossible de trouver ", "Não é possível encontrar ");
+	public static final LocalizedString aClass79_60 = new LocalizedString("Unable to find ", "Spieler kann nicht gefunden werden: ", "Impossible de trouver ", "Não é possível encontrar ");
 
 	@OriginalMember(owner = "client!hs", name = "t", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_61 = new Class79("Discard", "Ablegen", "Jeter", "Descartar");
+	public static final LocalizedString aClass79_61 = new LocalizedString("Discard", "Ablegen", "Jeter", "Descartar");
 
 	@OriginalMember(owner = "client!hs", name = "u", descriptor = "I")
 	public static int anInt2593 = -50;
 
 	@OriginalMember(owner = "client!hs", name = "x", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_62 = new Class79("glow3:", "leuchten3:", "brillant3:", "brilho3:");
+	public static final LocalizedString aClass79_62 = new LocalizedString("glow3:", "leuchten3:", "brillant3:", "brilho3:");
 
 	@OriginalMember(owner = "client!hs", name = "z", descriptor = "I")
 	public static int anInt2595 = -1;

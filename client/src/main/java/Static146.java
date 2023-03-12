@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static146 {
 
 	@OriginalMember(owner = "client!ih", name = "b", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_63 = new Class79("Allocated memory", "Zugewiesener Speicher.", "Mémoire attribuée", "Memória alocada");
+	public static final LocalizedString aClass79_63 = new LocalizedString("Allocated memory", "Zugewiesener Speicher.", "Mémoire attribuée", "Memória alocada");
 
 	@OriginalMember(owner = "client!ih", name = "f", descriptor = "I")
 	public static int anInt2703 = 0;
@@ -40,9 +40,9 @@ public final class Static146 {
 		}
 		@Pc(28) byte[] local28;
 		if (arg0 < 32768) {
-			local28 = Static137.aClass197_33.method5089(arg0, 1);
+			local28 = Static137.aClass197_33.fetchFile(arg0, 1);
 		} else {
-			local28 = Static308.aClass197_80.method5089(arg0 & 0x7FFF, 1);
+			local28 = Static308.aClass197_80.fetchFile(arg0 & 0x7FFF, 1);
 		}
 		local10 = new Class2_Sub2_Sub16();
 		if (local28 != null) {

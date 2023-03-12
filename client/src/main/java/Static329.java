@@ -17,7 +17,7 @@ public final class Static329 {
 	public static final boolean[][] aBooleanArrayArray4 = new boolean[][] { new boolean[13], { false, false, true, true, true, true, true, false, false, false, false, false, true }, { true, true, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, false, false, true, true, true, false, false, false, false, false }, { true, false, false, false, false, true, true, true, false, false, false, false, false }, { false, false, true, true, true, true, false, false, false, false, false, false, false }, { false, true, true, true, true, true, false, false, false, false, false, false, true }, { false, true, true, true, true, true, true, true, false, false, false, false, true }, { true, true, false, false, false, false, false, true, false, false, false, false, false }, { true, true, true, true, true, false, false, false, true, true, false, false, false }, { true, false, false, false, true, true, true, true, true, true, false, false, false }, { true, false, true, true, true, true, true, true, false, false, true, true, false }, { true, true, true, true, true, true, true, true, true, true, true, true, true }, new boolean[13], { true, true, true, true, true, true, true, true, true, true, true, true, true } };
 
 	@OriginalMember(owner = "client!tc", name = "Y", descriptor = "Lclient!ad;")
-	public static Class4 aClass4_130 = new Class4(8);
+	public static HashTable aClass4_130 = new HashTable(8);
 
 	@OriginalMember(owner = "client!tc", name = "ab", descriptor = "[I")
 	public static final int[] anIntArray420 = new int[3];

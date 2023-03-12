@@ -28,7 +28,7 @@ public final class Js5Pack extends Js5 {
 		if (indexType != 0) {
 			indexRemaining += 4;
 		}
-		@Pc(19) SimpleBuffer indexBuffer = new SimpleBuffer(indexRemaining + 5);
+		@Pc(19) Buffer indexBuffer = new Buffer(indexRemaining + 5);
 		indexBuffer.p1(indexType);
 		indexBuffer.p4(indexCompressedLen);
 		in.readFully(indexBuffer.data, indexBuffer.pos, indexRemaining);
@@ -40,7 +40,7 @@ public final class Js5Pack extends Js5 {
 			if (indexType != 0) {
 				indexRemaining += 4;
 			}
-			indexBuffer = new SimpleBuffer(indexRemaining + 5);
+			indexBuffer = new Buffer(indexRemaining + 5);
 			indexBuffer.p1(indexType);
 			indexBuffer.p4(indexCompressedLen);
 			while (indexRemaining > 0x2000000) {

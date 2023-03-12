@@ -123,10 +123,10 @@ public final class Static216 {
 						}
 					}
 					if (local143 > 0) {
-						@Pc(264) Class2_Sub21_Sub1 local264 = local90.method6434().method3179(Static300.aClass249_1);
+						@Pc(264) Class2_Sub21_Sub1 local264 = local90.method6434().method3179(client.resampler);
 						@Pc(269) Class2_Sub12_Sub4 local269 = Static406.method5006(local264, local143);
 						local269.method4984(Static329.anIntArray419[local7] - 1);
-						Static227.aClass2_Sub12_Sub2_2.method2083(local269);
+						client.soundStream.method2083(local269);
 					}
 					Static237.anIntArray283[local7] = -100;
 				}

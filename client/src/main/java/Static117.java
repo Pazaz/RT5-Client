@@ -11,19 +11,19 @@ public final class Static117 {
 	public static int anInt2375;
 
 	@OriginalMember(owner = "client!gp", name = "c", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_47 = new Class79("Checking for updates - ", "Suche nach Updates - ", "Vérification des mises à jour - ", "Verificando atualizações - ");
+	public static final LocalizedString aClass79_47 = new LocalizedString("Checking for updates - ", "Suche nach Updates - ", "Vérification des mises à jour - ", "Verificando atualizações - ");
 
 	@OriginalMember(owner = "client!gp", name = "o", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_48 = new Class79("Loaded defaults", "Standardeinstellungen geladen", "Paramètres par défaut chargés", "Padrões carregados");
+	public static final LocalizedString aClass79_48 = new LocalizedString("Loaded defaults", "Standardeinstellungen geladen", "Paramètres par défaut chargés", "Padrões carregados");
 
 	@OriginalMember(owner = "client!gp", name = "r", descriptor = "I")
 	public static int anInt2376 = -1;
 
 	@OriginalMember(owner = "client!gp", name = "s", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_49 = new Class79("Loading sprites - ", "Lade Sprites - ", "Chargement des sprites - ", "Carregando sprites - ");
+	public static final LocalizedString aClass79_49 = new LocalizedString("Loading sprites - ", "Lade Sprites - ", "Chargement des sprites - ", "Carregando sprites - ");
 
 	@OriginalMember(owner = "client!gp", name = "a", descriptor = "(Lclient!r;Lclient!r;Z)V")
-	public static void method2366(@OriginalArg(0) Class197 arg0, @OriginalArg(1) Class197 arg1) {
+	public static void method2366(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1) {
 		Static43.aClass197_7 = arg1;
 		Static367.aClass197_92 = arg0;
 	}
@@ -35,7 +35,7 @@ public final class Static117 {
 		@Pc(11) int local11 = Static107.anInt2220;
 		@Pc(15) int local15 = Static352.anInt6519 - 3;
 		if (Static197.aClass13_12 == null || Static138.aClass13_8 == null) {
-			if (client.jsArchive8.method5087(Static186.anInt3731) && client.jsArchive8.method5087(Static67.anInt1636)) {
+			if (client.jsArchive8.isFileReady(Static186.anInt3731) && client.jsArchive8.isFileReady(Static67.anInt1636)) {
 				Static197.aClass13_12 = arg0.method2891(Static396.method1682(client.jsArchive8, Static186.anInt3731, 0));
 				@Pc(44) Class48 local44 = Static396.method1682(client.jsArchive8, Static67.anInt1636, 0);
 				Static138.aClass13_8 = arg0.method2891(local44);
@@ -61,14 +61,14 @@ public final class Static117 {
 		local89 = Static226.aClass119_1.method3313();
 		@Pc(169) int local169 = 0;
 		@Pc(192) int local192;
-		for (@Pc(174) Class2_Sub5 local174 = (Class2_Sub5) Static129.aClass135_19.method3551(); local174 != null; local174 = (Class2_Sub5) Static129.aClass135_19.method3552()) {
+		for (@Pc(174) Class2_Sub5 local174 = (Class2_Sub5) Static129.aClass135_19.head(); local174 != null; local174 = (Class2_Sub5) Static129.aClass135_19.next()) {
 			local192 = local9 + (-local169 + -1 + Static268.anInt4959) * 16 + 33;
 			local169++;
 			if (local7 < local87 && local87 < local7 + local11 && local89 > local192 - 13 && local192 + 4 > local89 && local174.aBoolean83) {
 				arg0.method2901(local7, local192 - 12, local11, 16, Static200.anInt3697 | 255 - Static86.anInt1868 << 24, 1);
 			}
 		}
-		if ((Static337.aClass13_17 == null || Static211.aClass13_13 == null || Static35.aClass13_3 == null) && client.jsArchive8.method5087(Static74.anInt1722) && client.jsArchive8.method5087(Static363.anInt6804) && client.jsArchive8.method5087(Static390.anInt7211)) {
+		if ((Static337.aClass13_17 == null || Static211.aClass13_13 == null || Static35.aClass13_3 == null) && client.jsArchive8.isFileReady(Static74.anInt1722) && client.jsArchive8.isFileReady(Static363.anInt6804) && client.jsArchive8.isFileReady(Static390.anInt7211)) {
 			@Pc(275) Class48 local275 = Static396.method1682(client.jsArchive8, Static363.anInt6804, 0);
 			Static211.aClass13_13 = arg0.method2891(local275);
 			local275.method1684();
@@ -95,7 +95,7 @@ public final class Static117 {
 			Static35.aClass13_3.method6385(local7, local9 + local15 - Static35.aClass13_3.method6382());
 			Static110.aClass13_6.method6385(local7 + local11 - Static35.aClass13_3.method6389(), local15 + local9 + -Static35.aClass13_3.method6382());
 		}
-		for (@Pc(436) Class2_Sub5 local436 = (Class2_Sub5) Static129.aClass135_19.method3551(); local436 != null; local436 = (Class2_Sub5) Static129.aClass135_19.method3552()) {
+		for (@Pc(436) Class2_Sub5 local436 = (Class2_Sub5) Static129.aClass135_19.head(); local436 != null; local436 = (Class2_Sub5) Static129.aClass135_19.next()) {
 			local333 = (Static268.anInt4959 - local169 - 1) * 16 + local9 + 13 + 20;
 			local368 = Static322.anInt6030 | 0xFF000000;
 			if (local7 < local87 && local87 < local7 + local11 && local89 > local333 - 13 && local89 < local333 + 4 && local436.aBoolean83) {

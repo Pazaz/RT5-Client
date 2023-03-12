@@ -98,7 +98,7 @@ public final class Static243 {
 		local142.anInt1101 = (local65 << 6) + (local142.anInt1109 << 7);
 		local142.anInt1113 = arg11 + arg2;
 		local142.anInt1114 = local138;
-		Static366.aClass135_40.method3540(local142);
+		Static366.aClass135_40.addTail(local142);
 		local27.aClass2_Sub6_3 = local142;
 	}
 }

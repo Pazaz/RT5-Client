@@ -16,13 +16,13 @@ public final class Class107 {
 	public final Class98 aClass98_22 = new Class98(50);
 
 	@OriginalMember(owner = "client!io", name = "t", descriptor = "Lclient!hs;")
-	public final Class97 aClass97_1 = new Class97(250);
+	public final SoftLruHashTable aClass97_1 = new SoftLruHashTable(250);
 
 	@OriginalMember(owner = "client!io", name = "u", descriptor = "Lclient!dt;")
 	private final Class53 aClass53_1 = new Class53();
 
 	@OriginalMember(owner = "client!io", name = "e", descriptor = "Lclient!r;")
-	public final Class197 aClass197_41;
+	public final Js5 aClass197_41;
 
 	@OriginalMember(owner = "client!io", name = "f", descriptor = "I")
 	public final int anInt2781;
@@ -31,7 +31,7 @@ public final class Class107 {
 	private final Class18 aClass18_1;
 
 	@OriginalMember(owner = "client!io", name = "r", descriptor = "Lclient!r;")
-	private final Class197 aClass197_42;
+	private final Js5 aClass197_42;
 
 	@OriginalMember(owner = "client!io", name = "o", descriptor = "Z")
 	private boolean aBoolean195;
@@ -46,7 +46,7 @@ public final class Class107 {
 	private final String[] aStringArray22;
 
 	@OriginalMember(owner = "client!io", name = "<init>", descriptor = "(Lclient!dn;IZLclient!be;Lclient!r;Lclient!r;)V")
-	public Class107(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class18 arg3, @OriginalArg(4) Class197 arg4, @OriginalArg(5) Class197 arg5) {
+	public Class107(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class18 arg3, @OriginalArg(4) Js5 arg4, @OriginalArg(5) Js5 arg5) {
 		this.aClass197_41 = arg5;
 		this.anInt2781 = arg1;
 		this.aClass18_1 = arg3;
@@ -55,8 +55,8 @@ public final class Class107 {
 		if (this.aClass197_42 == null) {
 			this.anInt2779 = 0;
 		} else {
-			@Pc(54) int local54 = this.aClass197_42.method5092() - 1;
-			this.anInt2779 = local54 * 256 + this.aClass197_42.method5081(local54);
+			@Pc(54) int local54 = this.aClass197_42.capacity() - 1;
+			this.anInt2779 = local54 * 256 + this.aClass197_42.getGroupCapacity(local54);
 		}
 		this.aStringArray21 = new String[] { null, null, Static220.aClass79_83.method2267(this.anInt2781), null, null };
 		this.aStringArray22 = new String[] { null, null, null, null, Static239.aClass79_95.method2267(this.anInt2781) };
@@ -72,7 +72,7 @@ public final class Class107 {
 		synchronized (this.aClass98_22) {
 			this.aClass98_22.method2615(5);
 		}
-		@Pc(42) Class97 local42 = this.aClass97_1;
+		@Pc(42) SoftLruHashTable local42 = this.aClass97_1;
 		synchronized (this.aClass97_1) {
 			this.aClass97_1.method2589();
 		}
@@ -100,7 +100,7 @@ public final class Class107 {
 		if (local18 != null) {
 			return local18;
 		}
-		@Pc(44) byte[] local44 = this.aClass197_42.method5089(Static240.method4179(arg0), Static274.method4641(arg0));
+		@Pc(44) byte[] local44 = this.aClass197_42.fetchFile(Static240.method4179(arg0), Static274.method4641(arg0));
 		local18 = new Class188();
 		local18.anInt5255 = arg0;
 		local18.aClass107_1 = this;
@@ -125,10 +125,10 @@ public final class Class107 {
 			local18.aStringArray50 = this.aStringArray21;
 			if (local18.aClass4_103 != null) {
 				@Pc(194) boolean local194 = false;
-				for (@Pc(199) Class2 local199 = local18.aClass4_103.method80(); local199 != null; local199 = local18.aClass4_103.method79()) {
-					@Pc(211) Class240 local211 = this.aClass18_1.method565((int) local199.aLong232);
+				for (@Pc(199) Node local199 = local18.aClass4_103.method80(); local199 != null; local199 = local18.aClass4_103.method79()) {
+					@Pc(211) Class240 local211 = this.aClass18_1.method565((int) local199.key);
 					if (local211.aBoolean476) {
-						local199.method6468();
+						local199.unlink();
 					} else {
 						local194 = true;
 					}
@@ -147,9 +147,9 @@ public final class Class107 {
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(I)V")
 	public void method2760() {
-		@Pc(6) Class97 local6 = this.aClass97_1;
+		@Pc(6) SoftLruHashTable local6 = this.aClass97_1;
 		synchronized (this.aClass97_1) {
-			this.aClass97_1.method2584();
+			this.aClass97_1.clear();
 		}
 	}
 
@@ -163,9 +163,9 @@ public final class Class107 {
 		synchronized (this.aClass98_22) {
 			this.aClass98_22.method2614();
 		}
-		@Pc(54) Class97 local54 = this.aClass97_1;
+		@Pc(54) SoftLruHashTable local54 = this.aClass97_1;
 		synchronized (this.aClass97_1) {
-			this.aClass97_1.method2584();
+			this.aClass97_1.clear();
 		}
 	}
 
@@ -187,7 +187,7 @@ public final class Class107 {
 		synchronized (this.aClass98_22) {
 			this.aClass98_22.method2621();
 		}
-		@Pc(40) Class97 local40 = this.aClass97_1;
+		@Pc(40) SoftLruHashTable local40 = this.aClass97_1;
 		synchronized (this.aClass97_1) {
 			this.aClass97_1.method2590();
 		}

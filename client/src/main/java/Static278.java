@@ -8,7 +8,7 @@ public final class Static278 {
 	public static Class160 aClass160_1;
 
 	@OriginalMember(owner = "client!qb", name = "N", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_110 = new Class79("purple:", "lila:", "violet:", "roxo:");
+	public static final LocalizedString aClass79_110 = new LocalizedString("purple:", "lila:", "violet:", "roxo:");
 
 	@OriginalMember(owner = "client!qb", name = "T", descriptor = "Z")
 	public static boolean aBoolean377 = false;
@@ -20,7 +20,7 @@ public final class Static278 {
 	public static final int[] anIntArray362 = new int[] { 4, 4, 1, 2, 6, 4, 2, 48, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
 
 	@OriginalMember(owner = "client!qb", name = "a", descriptor = "(Ljava/lang/String;I)I")
-	public static int method4722(@OriginalArg(0) String arg0) {
+	public static int getHash(@OriginalArg(0) String arg0) {
 		@Pc(8) int local8 = arg0.length();
 		@Pc(10) int local10 = 0;
 		for (@Pc(12) int local12 = 0; local12 < local8; local12++) {

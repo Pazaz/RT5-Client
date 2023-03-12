@@ -128,7 +128,7 @@ public final class Static241 {
 		Static355.anInt6581 = 0;
 		Static197.aClass135_24 = null;
 		Static344.method5513();
-		Static344.aClass135_36.method3544();
+		Static344.aClass135_36.clear();
 		Static27.aClass113_2 = null;
 		Static249.aClass113_8 = null;
 		Static30.aClass113_3 = null;

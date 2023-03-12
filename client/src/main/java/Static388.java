@@ -15,7 +15,7 @@ public final class Static388 {
 	public static final int[] anIntArray494 = new int[1000];
 
 	@OriginalMember(owner = "client!wn", name = "a", descriptor = "(Lclient!ci;IBLjava/awt/Canvas;)Lclient!wm;")
-	public static Class19 method6437(@OriginalArg(0) Interface2 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Canvas arg2) {
+	public static Class19 method6437(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Canvas arg2) {
 		return new Class19_Sub2(arg2, arg0, arg1);
 	}
 
@@ -56,7 +56,7 @@ public final class Static388 {
 	public static void method6439(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(13) int local13 = Static113.aClass239_2.method6126(Static180.aClass79_74.method2267(client.language));
 		@Pc(24) int local24;
-		for (@Pc(18) Class2_Sub5 local18 = (Class2_Sub5) Static129.aClass135_19.method3551(); local18 != null; local18 = (Class2_Sub5) Static129.aClass135_19.method3552()) {
+		for (@Pc(18) Class2_Sub5 local18 = (Class2_Sub5) Static129.aClass135_19.head(); local18 != null; local18 = (Class2_Sub5) Static129.aClass135_19.next()) {
 			local24 = Static218.method1096(local18);
 			if (local24 > local13) {
 				local13 = local24;

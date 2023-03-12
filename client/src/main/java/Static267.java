@@ -194,20 +194,20 @@ public final class Static267 {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(Lclient!r;II)Lclient!pf;")
-	public static Class2_Sub27 method4520(@OriginalArg(0) Class197 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static Class2_Sub27 method4520(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (method4521(arg0)) {
-			@Pc(16) byte[] local16 = arg0.method5089(arg2, arg1);
+			@Pc(16) byte[] local16 = arg0.fetchFile(arg2, arg1);
 			return local16 == null ? null : new Class2_Sub27(local16);
 		} else {
-			arg0.method5088(arg2, arg1);
+			arg0.isFileReady(arg2, arg1);
 			return null;
 		}
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(Lclient!r;)Z")
-	private static boolean method4521(@OriginalArg(0) Class197 arg0) {
+	private static boolean method4521(@OriginalArg(0) Js5 arg0) {
 		if (!aBoolean368) {
-			@Pc(7) byte[] local7 = arg0.method5089(0, 0);
+			@Pc(7) byte[] local7 = arg0.fetchFile(0, 0);
 			if (local7 == null) {
 				return false;
 			}

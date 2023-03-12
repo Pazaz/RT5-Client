@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!sl")
-public final class Class2_Sub34 extends Class2 {
+public final class Class2_Sub34 extends Node {
 
 	@OriginalMember(owner = "client!sl", name = "s", descriptor = "Lclient!ad;")
-	public Class4 aClass4_119;
+	public HashTable aClass4_119;
 
 	@OriginalMember(owner = "client!sl", name = "t", descriptor = "[B")
 	public final byte[] aByteArray77;
@@ -305,7 +305,7 @@ public final class Class2_Sub34 extends Class2 {
 		if (this.aClass4_119 != null) {
 			return;
 		}
-		this.aClass4_119 = new Class4(16);
+		this.aClass4_119 = new HashTable(16);
 		@Pc(12) int[] local12 = new int[16];
 		@Pc(15) int[] local15 = new int[16];
 		local12[9] = local15[9] = 128;
@@ -354,10 +354,10 @@ public final class Class2_Sub34 extends Class2 {
 						local99 = local64 >> 16 & 0x7F;
 						if (local99 > 0) {
 							@Pc(174) int local174 = local15[local87];
-							@Pc(182) Class2_Sub44 local182 = (Class2_Sub44) this.aClass4_119.method90((long) local174);
+							@Pc(182) Class2_Sub44 local182 = (Class2_Sub44) this.aClass4_119.get((long) local174);
 							if (local182 == null) {
 								local182 = new Class2_Sub44(new byte[128]);
-								this.aClass4_119.method87(local182, (long) local174);
+								this.aClass4_119.put(local182, (long) local174);
 							}
 							local182.aByteArray99[local93] = 1;
 						}

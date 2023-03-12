@@ -42,7 +42,7 @@ public final class Static82 {
 	public static void method1904() {
 		Protocol.method1960(Static186.aClass145_145);
 		for (@Pc(21) Class2_Sub7 local21 = (Class2_Sub7) Static329.aClass4_130.method80(); local21 != null; local21 = (Class2_Sub7) Static329.aClass4_130.method79()) {
-			if (!local21.method6462()) {
+			if (!local21.isLinked()) {
 				local21 = (Class2_Sub7) Static329.aClass4_130.method80();
 				if (local21 == null) {
 					break;

@@ -10,7 +10,7 @@ public final class Static121 {
 	public static int[] anIntArray157;
 
 	@OriginalMember(owner = "client!gu", name = "w", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_53 = new Class79("Loaded core fonts", "Schriftarten geladen", "Polices chargées", "Fontes principais carregadas");
+	public static final LocalizedString aClass79_53 = new LocalizedString("Loaded core fonts", "Schriftarten geladen", "Polices chargées", "Fontes principais carregadas");
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(ZI)I")
 	public static int method2393(@OriginalArg(1) int arg0) {

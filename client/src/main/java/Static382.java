@@ -15,7 +15,7 @@ public final class Static382 {
 	public static final int[] anIntArray490 = new int[13];
 
 	@OriginalMember(owner = "client!we", name = "C", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_147 = new Class79("Face here", "Hierhin drehen", "Regarder dans cette direction", "Virar para cá");
+	public static final LocalizedString aClass79_147 = new LocalizedString("Face here", "Hierhin drehen", "Regarder dans cette direction", "Virar para cá");
 
 	@OriginalMember(owner = "client!we", name = "D", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_258 = new ClientProt(49, -1);
@@ -49,7 +49,7 @@ public final class Static382 {
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(Lclient!r;I)V")
-	public static void method6362(@OriginalArg(0) Class197 arg0) {
+	public static void method6362(@OriginalArg(0) Js5 arg0) {
 		Static146.anInt2706 = 0;
 		Static82.anInt1835 = 0;
 		Static131.aClass36_4 = new Class36();
@@ -59,7 +59,7 @@ public final class Static382 {
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;)Lclient!hk;")
-	public static RuntimeException_Sub1 method6364(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
+	public static RuntimeException_Sub1 rethrow(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
 		@Pc(9) RuntimeException_Sub1 local9;
 		if (arg0 instanceof RuntimeException_Sub1) {
 			local9 = (RuntimeException_Sub1) arg0;
@@ -75,7 +75,7 @@ public final class Static382 {
 		@Pc(7) Class2_Sub7 local7 = new Class2_Sub7();
 		local7.anInt1370 = arg3;
 		local7.anInt1373 = arg1;
-		Static329.aClass4_130.method87(local7, (long) arg0);
+		Static329.aClass4_130.put(local7, (long) arg0);
 		Static160.method2957(arg3);
 		@Pc(26) Class161 local26 = Static6.method140(arg0);
 		if (local26 != null) {

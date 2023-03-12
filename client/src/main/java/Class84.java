@@ -38,6 +38,6 @@ public final class Class84 {
 	public int anInt2361 = -1;
 
 	static {
-		new Class79("clan_chat", "clanchat", "conversation_clan", "clan_chat");
+		new LocalizedString("clan_chat", "clanchat", "conversation_clan", "clan_chat");
 	}
 }

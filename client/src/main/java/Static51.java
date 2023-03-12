@@ -14,7 +14,7 @@ public final class Static51 {
 	public static long[][][] aLongArrayArrayArray1;
 
 	@OriginalMember(owner = "client!cu", name = "u", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_28 = new Class79("red:", "rot:", "rouge:", "vermelho:");
+	public static final LocalizedString aClass79_28 = new LocalizedString("red:", "rot:", "rouge:", "vermelho:");
 
 	@OriginalMember(owner = "client!cu", name = "w", descriptor = "I")
 	public static int anInt1369 = 0;

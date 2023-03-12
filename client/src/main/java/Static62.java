@@ -17,7 +17,7 @@ public final class Static62 {
 	public static Class13[] aClass13Array9;
 
 	@OriginalMember(owner = "client!dm", name = "a", descriptor = "(BLclient!r;)V")
-	public static void method2390(@OriginalArg(1) Class197 arg0) {
+	public static void method2390(@OriginalArg(1) Js5 arg0) {
 		Static183.anInt80 = arg0.getGroupId("p11_full");
 		Static371.anInt7014 = arg0.getGroupId("p12_full");
 		Static80.anInt6679 = arg0.getGroupId("b12_full");
@@ -42,10 +42,10 @@ public final class Static62 {
 	@OriginalMember(owner = "client!dm", name = "a", descriptor = "(IBIIIZ)V")
 	public static void method2391(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) boolean arg4) {
 		@Pc(14) long local14 = (long) (arg2 | (arg4 ? Integer.MIN_VALUE : 0));
-		@Pc(20) Class2_Sub41 local20 = (Class2_Sub41) Static353.aClass4_136.method90(local14);
+		@Pc(20) Class2_Sub41 local20 = (Class2_Sub41) Static353.aClass4_136.get(local14);
 		if (local20 == null) {
 			local20 = new Class2_Sub41();
-			Static353.aClass4_136.method87(local20, local14);
+			Static353.aClass4_136.put(local20, local14);
 		}
 		if (local20.anIntArray489.length <= arg0) {
 			@Pc(50) int[] local50 = new int[arg0 + 1];

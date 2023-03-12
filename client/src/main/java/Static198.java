@@ -1160,7 +1160,7 @@ public final class Static198 {
 							}
 							if (arg0 == 2702) {
 								local13 = anIntArray213[--anInt3650];
-								local3254 = (Class2_Sub7) Static329.aClass4_130.method90((long) local13);
+								local3254 = (Class2_Sub7) Static329.aClass4_130.get((long) local13);
 								if (local3254 != null) {
 									anIntArray213[anInt3650++] = 1;
 									return;
@@ -1188,7 +1188,7 @@ public final class Static198 {
 								anInt3650 -= 2;
 								local13 = anIntArray213[anInt3650];
 								local19 = anIntArray213[anInt3650 + 1];
-								local3356 = (Class2_Sub7) Static329.aClass4_130.method90((long) local13);
+								local3356 = (Class2_Sub7) Static329.aClass4_130.get((long) local13);
 								if (local3356 != null && local3356.anInt1370 == local19) {
 									anIntArray213[anInt3650++] = 1;
 									return;
@@ -1295,7 +1295,7 @@ public final class Static198 {
 									anInt3650 -= 2;
 									local13 = anIntArray213[anInt3650];
 									local19 = anIntArray213[anInt3650 + 1];
-									local3356 = (Class2_Sub7) Static329.aClass4_130.method90((long) local13);
+									local3356 = (Class2_Sub7) Static329.aClass4_130.get((long) local13);
 									if (local3356 != null) {
 										Static276.method4655(true, local3356, local3356.anInt1370 != local19);
 									}
@@ -1305,7 +1305,7 @@ public final class Static198 {
 								if (arg0 == 3112) {
 									anInt3650--;
 									local13 = anIntArray213[anInt3650];
-									local3254 = (Class2_Sub7) Static329.aClass4_130.method90((long) local13);
+									local3254 = (Class2_Sub7) Static329.aClass4_130.get((long) local13);
 									if (local3254 != null && local3254.anInt1373 == 3) {
 										Static276.method4655(true, local3254, true);
 									}
@@ -3091,9 +3091,9 @@ public final class Static198 {
 					anInt3650 -= 2;
 					local157 = anIntArray213[anInt3650];
 					local192 = anIntArray213[anInt3650 + 1];
-					@Pc(1901) Class246 local1901 = Static344.method5516(local157 >> 14 & 0x3FFF, local157 & 0x3FFF);
+					@Pc(1901) SecondaryLinkedList local1901 = Static344.method5516(local157 >> 14 & 0x3FFF, local157 & 0x3FFF);
 					local1903 = false;
-					for (@Pc(1908) Class2_Sub2_Sub17 local1908 = (Class2_Sub2_Sub17) local1901.method6337(); local1908 != null; local1908 = (Class2_Sub2_Sub17) local1901.method6336()) {
+					for (@Pc(1908) Class2_Sub2_Sub17 local1908 = (Class2_Sub2_Sub17) local1901.head(); local1908 != null; local1908 = (Class2_Sub2_Sub17) local1901.next()) {
 						if (local1908.anInt6869 == local192) {
 							local1903 = true;
 							break;
@@ -3209,29 +3209,29 @@ public final class Static198 {
 					Static232.method4027(local157);
 					return;
 				}
-				@Pc(2421) Class2 local2421;
+				@Pc(2421) Node local2421;
 				if (arg0 == 5231) {
 					anInt3650 -= 2;
 					local157 = anIntArray213[anInt3650];
 					local1292 = anIntArray213[anInt3650 + 1] == 1;
 					if (Static141.aClass4_58 != null) {
-						local2421 = Static141.aClass4_58.method90((long) local157);
+						local2421 = Static141.aClass4_58.get((long) local157);
 						if (local2421 != null && !local1292) {
-							local2421.method6468();
+							local2421.unlink();
 							return;
 						}
 						if (local2421 == null && local1292) {
-							local2421 = new Class2();
-							Static141.aClass4_58.method87(local2421, (long) local157);
+							local2421 = new Node();
+							Static141.aClass4_58.put(local2421, (long) local157);
 						}
 					}
 					return;
 				}
-				@Pc(2463) Class2 local2463;
+				@Pc(2463) Node local2463;
 				if (arg0 == 5232) {
 					local157 = anIntArray213[--anInt3650];
 					if (Static141.aClass4_58 != null) {
-						local2463 = Static141.aClass4_58.method90((long) local157);
+						local2463 = Static141.aClass4_58.get((long) local157);
 						anIntArray213[anInt3650++] = local2463 == null ? 0 : 1;
 						return;
 					}
@@ -3243,14 +3243,14 @@ public final class Static198 {
 					local157 = anIntArray213[anInt3650];
 					local1292 = anIntArray213[anInt3650 + 1] == 1;
 					if (Static220.aClass4_83 != null) {
-						local2421 = Static220.aClass4_83.method90((long) local157);
+						local2421 = Static220.aClass4_83.get((long) local157);
 						if (local2421 != null && !local1292) {
-							local2421.method6468();
+							local2421.unlink();
 							return;
 						}
 						if (local2421 == null && local1292) {
-							local2421 = new Class2();
-							Static220.aClass4_83.method87(local2421, (long) local157);
+							local2421 = new Node();
+							Static220.aClass4_83.put(local2421, (long) local157);
 						}
 					}
 					return;
@@ -3258,7 +3258,7 @@ public final class Static198 {
 				if (arg0 == 5234) {
 					local157 = anIntArray213[--anInt3650];
 					if (Static220.aClass4_83 != null) {
-						local2463 = Static220.aClass4_83.method90((long) local157);
+						local2463 = Static220.aClass4_83.get((long) local157);
 						anIntArray213[anInt3650++] = local2463 == null ? 0 : 1;
 						return;
 					}
@@ -3466,11 +3466,11 @@ public final class Static198 {
 							Static390.anInt7211 = anIntArray213[anInt3650 + 8];
 							Static322.anInt6030 = anIntArray213[anInt3650 + 9];
 							Static381.anInt7118 = anIntArray213[anInt3650 + 10];
-							client.jsArchive8.method5087(Static186.anInt3731);
-							client.jsArchive8.method5087(Static67.anInt1636);
-							client.jsArchive8.method5087(Static74.anInt1722);
-							client.jsArchive8.method5087(Static363.anInt6804);
-							client.jsArchive8.method5087(Static390.anInt7211);
+							client.jsArchive8.isFileReady(Static186.anInt3731);
+							client.jsArchive8.isFileReady(Static67.anInt1636);
+							client.jsArchive8.isFileReady(Static74.anInt1722);
+							client.jsArchive8.isFileReady(Static363.anInt6804);
+							client.jsArchive8.isFileReady(Static390.anInt7211);
 							Static337.aClass13_17 = null;
 							Static110.aClass13_6 = null;
 							Static35.aClass13_3 = null;
@@ -3620,7 +3620,7 @@ public final class Static198 {
 							local75 = aStringArray29[anInt3652];
 							local81 = aStringArray29[anInt3652 + 1];
 							local89 = anIntArray213[--anInt3650];
-							if (LoginManager.reconnecting != 10) {
+							if (client.gameState != 10) {
 								return;
 							}
 							if (Static154.anInt2803 == 0 && LoginManager.step == 0 && CreateManager.step == 0 && WorldList.step == 0) {
@@ -3641,7 +3641,7 @@ public final class Static198 {
 						}
 						if (arg0 == 5603) {
 							anInt3650 -= 4;
-							if (LoginManager.reconnecting != 10) {
+							if (client.gameState != 10) {
 								return;
 							}
 							if (Static154.anInt2803 == 0 && LoginManager.step == 0 && CreateManager.step == 0 && WorldList.step == 0) {
@@ -3652,7 +3652,7 @@ public final class Static198 {
 						}
 						if (arg0 == 5604) {
 							anInt3652--;
-							if (LoginManager.reconnecting != 10) {
+							if (client.gameState != 10) {
 								return;
 							}
 							if (Static154.anInt2803 == 0 && LoginManager.step == 0 && CreateManager.step == 0 && WorldList.step == 0) {
@@ -3664,7 +3664,7 @@ public final class Static198 {
 						if (arg0 == 5605) {
 							anInt3652 -= 3;
 							anInt3650 -= 7;
-							if (LoginManager.reconnecting != 10) {
+							if (client.gameState != 10) {
 								return;
 							}
 							if (Static154.anInt2803 == 0 && LoginManager.step == 0 && CreateManager.step == 0 && WorldList.step == 0) {
@@ -3814,7 +3814,7 @@ public final class Static198 {
 							return;
 						}
 						if (arg0 == 6017) {
-							client.preferences.aBoolean352 = anIntArray213[--anInt3650] == 1;
+							client.preferences.stereo = anIntArray213[--anInt3650] == 1;
 							Static178.method2342();
 							client.preferences.method4497(GameShell.signlink);
 							Preferences.sentToServer = false;
@@ -4028,7 +4028,7 @@ public final class Static198 {
 							return;
 						}
 						if (arg0 == 6117) {
-							anIntArray213[anInt3650++] = client.preferences.aBoolean352 ? 1 : 0;
+							anIntArray213[anInt3650++] = client.preferences.stereo ? 1 : 0;
 							return;
 						}
 						if (arg0 == 6118) {
@@ -4220,7 +4220,7 @@ public final class Static198 {
 						}
 					} else if (arg0 < 6600) {
 						if (arg0 == 6500) {
-							if (LoginManager.reconnecting == 10 && Static154.anInt2803 == 0 && LoginManager.step == 0 && CreateManager.step == 0) {
+							if (client.gameState == 10 && Static154.anInt2803 == 0 && LoginManager.step == 0 && CreateManager.step == 0) {
 								anIntArray213[anInt3650++] = WorldList.fetch() == -1 ? 0 : 1;
 								return;
 							}
@@ -4275,7 +4275,7 @@ public final class Static198 {
 						}
 						if (arg0 == 6503) {
 							local157 = anIntArray213[--anInt3650];
-							if (LoginManager.reconnecting == 10 && Static154.anInt2803 == 0 && LoginManager.step == 0 && CreateManager.step == 0) {
+							if (client.gameState == 10 && Static154.anInt2803 == 0 && LoginManager.step == 0 && CreateManager.step == 0) {
 								anIntArray213[anInt3650++] = WorldList.switchWorld(local157) ? 1 : 0;
 								return;
 							}
@@ -4326,7 +4326,7 @@ public final class Static198 {
 							return;
 						}
 						if (arg0 == 6509) {
-							if (LoginManager.reconnecting != 10) {
+							if (client.gameState != 10) {
 								return;
 							}
 							WorldList.refreshing = anIntArray213[--anInt3650] == 1;
@@ -4757,8 +4757,8 @@ public final class Static198 {
 							Static75.aStringArray11[local54] = aStringArray29[--anInt3652];
 							Static290.method5023(local54);
 						} else if (local31 == 51) {
-							@Pc(774) Class4 local774 = arg0.aClass4Array1[local11[local5]];
-							@Pc(787) Class2_Sub39 local787 = (Class2_Sub39) local774.method90((long) anIntArray213[--anInt3650]);
+							@Pc(774) HashTable local774 = arg0.aClass4Array1[local11[local5]];
+							@Pc(787) Class2_Sub39 local787 = (Class2_Sub39) local774.get((long) anIntArray213[--anInt3650]);
 							if (local787 != null) {
 								local5 += local787.anInt6818;
 							}
@@ -4770,9 +4770,9 @@ public final class Static198 {
 			@Pc(855) StringBuffer local855;
 			if (arg0.aString27 == null) {
 				local855 = new StringBuffer(30);
-				local855.append("CS2: ").append(arg0.aLong232).append(" ");
+				local855.append("CS2: ").append(arg0.key).append(" ");
 				for (local603 = anInt3661 - 1; local603 >= 0; local603--) {
-					local855.append("v: ").append(aClass172Array1[local603].aClass2_Sub2_Sub11_1.aLong232).append(" ");
+					local855.append("v: ").append(aClass172Array1[local603].aClass2_Sub2_Sub11_1.key).append(" ");
 				}
 				local855.append("op: ").append(local13);
 				Static262.report(local837, local855.toString());

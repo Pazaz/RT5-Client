@@ -1,4 +1,3 @@
-import java.awt.Canvas;
 import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static21 {
@@ -8,9 +7,6 @@ public final class Static21 {
 
 	@OriginalMember(owner = "client!be", name = "b", descriptor = "I")
 	public static int anInt548;
-
-	@OriginalMember(owner = "client!be", name = "m", descriptor = "Ljava/awt/Canvas;")
-	public static Canvas aCanvas1;
 
 	@OriginalMember(owner = "client!be", name = "e", descriptor = "I")
 	public static int anInt551 = 0;

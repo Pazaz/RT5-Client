@@ -8,7 +8,7 @@ public final class Static295 {
 	public static int anInt5567 = 0;
 
 	@OriginalMember(owner = "client!r", name = "H", descriptor = "Lclient!ld;")
-	public static final Class135 aClass135_32 = new Class135();
+	public static final LinkedList aClass135_32 = new LinkedList();
 
 	@OriginalMember(owner = "client!r", name = "O", descriptor = "[I")
 	public static final int[] anIntArray375 = new int[] { 1, 2, 4, 8 };
@@ -54,7 +54,7 @@ public final class Static295 {
 		if (local15 != null) {
 			return local15;
 		}
-		@Pc(25) byte[] local25 = client.jsArchive12.method5089(0, arg0);
+		@Pc(25) byte[] local25 = client.jsArchive12.fetchFile(0, arg0);
 		if (local25 == null || local25.length <= 1) {
 			return null;
 		} else {

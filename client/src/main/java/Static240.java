@@ -104,6 +104,6 @@ public final class Static240 {
 		local385.anInt2343 = local267;
 		local385.anInt2340 = local28 + local16;
 		local385.anInt2338 = local28 - local16;
-		Static197.aClass135_24.method3540(local385);
+		Static197.aClass135_24.addTail(local385);
 	}
 }

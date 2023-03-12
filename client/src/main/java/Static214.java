@@ -30,15 +30,15 @@ public final class Static214 {
 		@Pc(85) int local85;
 		@Pc(91) int local91;
 		if (local74 > 0) {
-			local16.aClass4Array1 = new Class4[local74];
+			local16.aClass4Array1 = new HashTable[local74];
 			for (local85 = 0; local85 < local74; local85++) {
 				local91 = local21.g2();
-				@Pc(98) Class4 local98 = new Class4(Static162.method2977(local91));
+				@Pc(98) HashTable local98 = new HashTable(Static162.method2977(local91));
 				local16.aClass4Array1[local85] = local98;
 				while (local91-- > 0) {
 					@Pc(109) int local109 = local21.g4();
 					@Pc(115) int local115 = local21.g4();
-					local98.method87(new Class2_Sub39(local115), (long) local109);
+					local98.put(new Class2_Sub39(local115), (long) local109);
 				}
 			}
 		}

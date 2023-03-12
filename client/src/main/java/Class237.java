@@ -4,6 +4,6 @@ import org.openrs2.deob.annotation.OriginalClass;
 public final class Class237 {
 
 	static {
-		new Class79(null, "Dieses System darf nicht missbraucht werden!", null, null);
+		new LocalizedString(null, "Dieses System darf nicht missbraucht werden!", null, null);
 	}
 }

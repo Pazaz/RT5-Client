@@ -8,19 +8,19 @@ public final class Static78 {
 	public static int anInt6309;
 
 	@OriginalMember(owner = "client!ei", name = "j", descriptor = "Lclient!r;")
-	public static Class197 aClass197_89;
+	public static Js5 aClass197_89;
 
 	@OriginalMember(owner = "client!ei", name = "g", descriptor = "[S")
 	public static final short[] aShortArray123 = new short[] { 6798, 8741, 25238, 4626, 4550 };
 
 	@OriginalMember(owner = "client!ei", name = "h", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_128 = new Class79("Loaded interfaces", "Benutzeroberfläche geladen.", "Interfaces chargées", "Interfaces carregadas");
+	public static final LocalizedString aClass79_128 = new LocalizedString("Loaded interfaces", "Benutzeroberfläche geladen.", "Interfaces chargées", "Interfaces carregadas");
 
 	@OriginalMember(owner = "client!ei", name = "i", descriptor = "S")
 	public static short aShort86 = 1;
 
 	@OriginalMember(owner = "client!ei", name = "k", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_129 = new Class79("Your friend list is full. Max of 100 for free users, and 200 for members.", "Deine Freunde-Liste ist voll! Maximale Einträge: Mitglieder 200/freie Spieler 100", "Votre liste d'amis est pleine (100 noms maximum pour la version gratuite et 200 pour les abonnés).", "Sua lista de amigos está cheia. O limite é 100 para os usuários não pagantes e 200 para os membros.");
+	public static final LocalizedString aClass79_129 = new LocalizedString("Your friend list is full. Max of 100 for free users, and 200 for members.", "Deine Freunde-Liste ist voll! Maximale Einträge: Mitglieder 200/freie Spieler 100", "Votre liste d'amis est pleine (100 noms maximum pour la version gratuite et 200 pour les abonnés).", "Sua lista de amigos está cheia. O limite é 100 para os usuários não pagantes e 200 para os membros.");
 
 	@OriginalMember(owner = "client!ei", name = "a", descriptor = "(BI)V")
 	public static void method5697(@OriginalArg(1) int arg0) {
@@ -70,12 +70,12 @@ public final class Static78 {
 		Static144.method2691(Static124.aClass13Array27);
 		Static190.method3502();
 		Static98.method2107();
-		if (LoginManager.reconnecting == 10) {
+		if (client.gameState == 10) {
 			Static50.method1525(false);
-		} else if (LoginManager.reconnecting == 30) {
+		} else if (client.gameState == 30) {
 			Static336.method5705(25);
 			return;
-		} else if (LoginManager.reconnecting == 5) {
+		} else if (client.gameState == 5) {
 			Static348.method5830(client.jsArchive8, Static190.aClass19_8);
 			return;
 		}

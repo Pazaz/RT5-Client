@@ -12,10 +12,10 @@ public final class Static283 {
 	public static boolean aBoolean383;
 
 	@OriginalMember(owner = "client!qh", name = "c", descriptor = "I")
-	public static int anInt5352;
+	public static int gregorianDateSeed;
 
 	@OriginalMember(owner = "client!qh", name = "f", descriptor = "Lclient!r;")
-	public static Class197 aClass197_68;
+	public static Js5 aClass197_68;
 
 	@OriginalMember(owner = "client!qh", name = "e", descriptor = "[[Z")
 	public static final boolean[][] aBooleanArrayArray3 = new boolean[][] { new boolean[4], new boolean[4], { false, false, true, false }, { false, false, true, false }, { false, false, true, false }, { false, false, true, false }, { true, false, true, false }, { true, false, false, true }, { true, false, false, true }, new boolean[4], new boolean[4], new boolean[4], new boolean[4] };
@@ -34,7 +34,7 @@ public final class Static283 {
 			return;
 		}
 		for (@Pc(11) int local11 = 0; local11 < 50 && arg0.eventQueue.peekEvent() != null; local11++) {
-			Static231.method4023(1L);
+			ThreadUtils.sleep(1L);
 		}
 		if (arg1 != null) {
 			arg0.eventQueue.postEvent(new ActionEvent(arg1, 1001, "dummy"));

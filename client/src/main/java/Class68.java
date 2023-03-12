@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 public final class Class68 {
 
 	static {
-		new Class79(" days.", " Tage.", " jours.", " dias.");
-		new Class79(null, "der Spieler ist momentan nicht verfügbar.", null, null);
+		new LocalizedString(" days.", " Tage.", " jours.", " dias.");
+		new LocalizedString(null, "der Spieler ist momentan nicht verfügbar.", null, null);
 	}
 }

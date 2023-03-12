@@ -28,19 +28,6 @@ public final class Static231 {
 		Static100.aBoolean156 = true;
 	}
 
-	@OriginalMember(owner = "client!nf", name = "a", descriptor = "(IJ)V")
-	public static void method4023(@OriginalArg(1) long arg0) {
-		if (arg0 <= 0L) {
-			return;
-		}
-		if (arg0 % 10L == 0L) {
-			Static270.method4553(arg0 - 1L);
-			Static270.method4553(1L);
-		} else {
-			Static270.method4553(arg0);
-		}
-	}
-
 	@OriginalMember(owner = "client!nf", name = "a", descriptor = "(III)I")
 	public static int method4024(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(7) int local7 = arg1 >>> 24;

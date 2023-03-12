@@ -8,7 +8,7 @@ public final class Static193 {
 	public static int anInt3556;
 
 	@OriginalMember(owner = "client!la", name = "f", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_78 = new Class79("Connecting to update server", "Verbindung mit Update-Server...", "Connexion au serveur de mise à jour en cours", "Conectando ao servidor de atualização");
+	public static final LocalizedString aClass79_78 = new LocalizedString("Connecting to update server", "Verbindung mit Update-Server...", "Connexion au serveur de mise à jour en cours", "Conectando ao servidor de atualização");
 
 	@OriginalMember(owner = "client!la", name = "j", descriptor = "I")
 	public static int anInt3555 = 0;
@@ -72,8 +72,8 @@ public final class Static193 {
 		@Pc(58) int local58 = GameShell.canvasHeight / 2 - 18;
 		arg1.method2836(GameShell.canvasWidth / 2 - 152, local58, 304, 34, arg4, 0);
 		arg1.method2836(GameShell.canvasWidth / 2 - 151, local58 + 1, 302, 32, 0, 0);
-		arg1.method2901(GameShell.canvasWidth / 2 - 150, local58 + 2, Static141.anInt2650 * 3, 30, arg5, 0);
-		arg1.method2901(GameShell.canvasWidth / 2 + Static141.anInt2650 * 3 - 150, local58 + 2, 300 - Static141.anInt2650 * 3, 30, 0, 0);
-		arg2.method5900(Static56.aString13, -1, GameShell.canvasHeight / 2 + 4, arg0, GameShell.canvasWidth / 2);
+		arg1.method2901(GameShell.canvasWidth / 2 - 150, local58 + 2, client.mainLoadPercentage * 3, 30, arg5, 0);
+		arg1.method2901(GameShell.canvasWidth / 2 + client.mainLoadPercentage * 3 - 150, local58 + 2, 300 - client.mainLoadPercentage * 3, 30, 0, 0);
+		arg2.method5900(client.mainLoadSecondaryText, -1, GameShell.canvasHeight / 2 + 4, arg0, GameShell.canvasWidth / 2);
 	}
 }

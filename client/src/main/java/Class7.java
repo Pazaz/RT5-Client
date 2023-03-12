@@ -10,12 +10,12 @@ public final class Class7 {
 	private final Class98 aClass98_1 = new Class98(64);
 
 	@OriginalMember(owner = "client!ak", name = "e", descriptor = "Lclient!r;")
-	private final Class197 aClass197_1;
+	private final Js5 aClass197_1;
 
 	@OriginalMember(owner = "client!ak", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class7(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class197 arg2) {
+	public Class7(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aClass197_1 = arg2;
-		this.aClass197_1.method5081(32);
+		this.aClass197_1.getGroupCapacity(32);
 	}
 
 	@OriginalMember(owner = "client!ak", name = "a", descriptor = "(I)V")
@@ -52,7 +52,7 @@ public final class Class7 {
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(33) byte[] local33 = this.aClass197_1.method5089(arg0, 32);
+		@Pc(33) byte[] local33 = this.aClass197_1.fetchFile(arg0, 32);
 		local16 = new Class222();
 		if (local33 != null) {
 			local16.method5690(new Buffer(local33));

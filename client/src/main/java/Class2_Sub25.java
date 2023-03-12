@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ne")
-public final class Class2_Sub25 extends Class2 {
+public final class Class2_Sub25 extends Node {
 
 	@OriginalMember(owner = "client!ne", name = "s", descriptor = "[B")
 	public final byte[] aByteArray45 = new byte[128];
@@ -31,7 +31,7 @@ public final class Class2_Sub25 extends Class2 {
 	public final byte[] aByteArray47 = new byte[128];
 
 	static {
-		new Class79("Changes will take effect on your clan in the next 60 seconds.", "Die Änderungen am Chatraum werden innerhalb von 60 Sekunden gültig.", "Les modifications seront apportées à votre clan dans les prochaines 60 secondes.", "As alterações passarão a valer no seu clã nos próximos 60 segundos.");
+		new LocalizedString("Changes will take effect on your clan in the next 60 seconds.", "Die Änderungen am Chatraum werden innerhalb von 60 Sekunden gültig.", "Les modifications seront apportées à votre clan dans les prochaines 60 secondes.", "As alterações passarão a valer no seu clã nos próximos 60 segundos.");
 	}
 
 	@OriginalMember(owner = "client!ne", name = "<init>", descriptor = "([B)V")

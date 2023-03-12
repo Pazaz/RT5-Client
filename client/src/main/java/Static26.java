@@ -11,7 +11,7 @@ public final class Static26 {
 	public static Class161[][] aClass161ArrayArray1;
 
 	@OriginalMember(owner = "client!bj", name = "d", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_18 = new Class79("Loading defaults - ", "Lade Standardeinstellungen - ", "Chargement des paramètres par défaut - ", "Carregando padrões - ");
+	public static final LocalizedString aClass79_18 = new LocalizedString("Loading defaults - ", "Lade Standardeinstellungen - ", "Chargement des paramètres par défaut - ", "Carregando padrões - ");
 
 	@OriginalMember(owner = "client!bj", name = "a", descriptor = "(I)V")
 	public static void method862() {

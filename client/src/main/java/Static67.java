@@ -16,7 +16,7 @@ public final class Static67 {
 	public static int anInt1637;
 
 	@OriginalMember(owner = "client!ds", name = "q", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_35 = new Class79("Loading interface scripts - ", "Lade Interface-Skripte - ", "Chargement des interfaces - ", "Carregando interfaces - ");
+	public static final LocalizedString aClass79_35 = new LocalizedString("Loading interface scripts - ", "Lade Interface-Skripte - ", "Chargement des interfaces - ", "Carregando interfaces - ");
 
 	@OriginalMember(owner = "client!ds", name = "s", descriptor = "[I")
 	public static final int[] anIntArray111 = new int[6];

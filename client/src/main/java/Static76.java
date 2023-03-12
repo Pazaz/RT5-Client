@@ -15,7 +15,7 @@ public final class Static76 {
 	public static int anInt1739;
 
 	@OriginalMember(owner = "client!eg", name = "a", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_39 = new Class79("shake:", "schütteln:", "tremblement:", "tremor:");
+	public static final LocalizedString aClass79_39 = new LocalizedString("shake:", "schütteln:", "tremblement:", "tremor:");
 
 	@OriginalMember(owner = "client!eg", name = "c", descriptor = "I")
 	public static final int anInt1738 = 328;

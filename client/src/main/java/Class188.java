@@ -46,7 +46,7 @@ public final class Class188 {
 	public int anInt5255;
 
 	@OriginalMember(owner = "client!qf", name = "wb", descriptor = "Lclient!ad;")
-	public Class4 aClass4_103;
+	public HashTable aClass4_103;
 
 	@OriginalMember(owner = "client!qf", name = "b", descriptor = "I")
 	private int anInt5200 = -1;
@@ -187,7 +187,7 @@ public final class Class188 {
 	public int anInt5250 = -1;
 
 	static {
-		new Class79("To use this item please login to a members' server.", "Du musst auf einer Mitglieder-Welt sein, um diesen Gegenstand zu benutzen.", "Veuillez vous connecter à un serveur d'abonnés pour utiliser cet objet.", "Acesse um servidor para membros para usar este objeto.");
+		new LocalizedString("To use this item please login to a members' server.", "Du musst auf einer Mitglieder-Welt sein, um diesen Gegenstand zu benutzen.", "Veuillez vous connecter à un serveur d'abonnés pour utiliser cet objet.", "Acesse um servidor para membros para usar este objeto.");
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(ILclient!bt;I)V")
@@ -330,18 +330,18 @@ public final class Class188 {
 				local162 = arg1.g1();
 				if (this.aClass4_103 == null) {
 					local172 = Static162.method2977(local162);
-					this.aClass4_103 = new Class4(local172);
+					this.aClass4_103 = new HashTable(local172);
 				}
 				for (local172 = 0; local172 < local162; local172++) {
 					@Pc(503) boolean local503 = arg1.g1() == 1;
 					@Pc(507) int local507 = arg1.ig3();
-					@Pc(516) Class2 local516;
+					@Pc(516) Node local516;
 					if (local503) {
 						local516 = new Class2_Sub40(arg1.gjstr());
 					} else {
 						local516 = new Class2_Sub39(arg1.g4());
 					}
-					this.aClass4_103.method87(local516, (long) local507);
+					this.aClass4_103.put(local516, (long) local507);
 				}
 			}
 		}
@@ -361,13 +361,13 @@ public final class Class188 {
 			return true;
 		}
 		@Pc(36) boolean local36 = true;
-		if (!this.aClass107_1.aClass197_41.method5088(0, local6)) {
+		if (!this.aClass107_1.aClass197_41.isFileReady(0, local6)) {
 			local36 = false;
 		}
-		if (local14 != -1 && !this.aClass107_1.aClass197_41.method5088(0, local14)) {
+		if (local14 != -1 && !this.aClass107_1.aClass197_41.isFileReady(0, local14)) {
 			local36 = false;
 		}
-		if (local17 != -1 && !this.aClass107_1.aClass197_41.method5088(0, local17)) {
+		if (local17 != -1 && !this.aClass107_1.aClass197_41.isFileReady(0, local17)) {
 			local36 = false;
 		}
 		return local36;
@@ -389,7 +389,7 @@ public final class Class188 {
 		if (this.aClass4_103 == null) {
 			return arg0;
 		} else {
-			@Pc(22) Class2_Sub39 local22 = (Class2_Sub39) this.aClass4_103.method90((long) arg1);
+			@Pc(22) Class2_Sub39 local22 = (Class2_Sub39) this.aClass4_103.get((long) arg1);
 			return local22 == null ? arg0 : local22.anInt6818;
 		}
 	}
@@ -399,7 +399,7 @@ public final class Class188 {
 		if (this.aClass4_103 == null) {
 			return arg0;
 		} else {
-			@Pc(24) Class2_Sub40 local24 = (Class2_Sub40) this.aClass4_103.method90((long) arg1);
+			@Pc(24) Class2_Sub40 local24 = (Class2_Sub40) this.aClass4_103.get((long) arg1);
 			return local24 == null ? arg0 : local24.aString65;
 		}
 	}
@@ -773,10 +773,10 @@ public final class Class188 {
 			return true;
 		}
 		@Pc(29) boolean local29 = true;
-		if (!this.aClass107_1.aClass197_41.method5088(0, local6)) {
+		if (!this.aClass107_1.aClass197_41.isFileReady(0, local6)) {
 			local29 = false;
 		}
-		if (local9 != -1 && !this.aClass107_1.aClass197_41.method5088(0, local9)) {
+		if (local9 != -1 && !this.aClass107_1.aClass197_41.isFileReady(0, local9)) {
 			local29 = false;
 		}
 		return local29;

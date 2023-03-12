@@ -73,7 +73,7 @@ public final class Class67 {
 	public final short aShort23;
 
 	static {
-		new Class79("Join your channel by clicking 'Join Chat' and typing: ", "Klick auf 'Betreten' und gib ein: ", "Pour rejoindre votre canal, cliquez sur « Participer » et entrez : ", "Para entrar no seu canal, clique em \"Acessar bate-papo\" e digite: ");
+		new LocalizedString("Join your channel by clicking 'Join Chat' and typing: ", "Klick auf 'Betreten' und gib ein: ", "Pour rejoindre votre canal, cliquez sur « Participer » et entrez : ", "Para entrar no seu canal, clique em \"Acessar bate-papo\" e digite: ");
 	}
 
 	@OriginalMember(owner = "client!f", name = "<init>", descriptor = "(III)V")

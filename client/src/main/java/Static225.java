@@ -124,14 +124,14 @@ public final class Static225 {
 	@OriginalMember(owner = "client!n", name = "a", descriptor = "(IIZIIIFII)[[I")
 	public static int[][] method3956(@OriginalArg(6) float arg0) {
 		@Pc(9) int[][] local9 = new int[256][64];
-		@Pc(13) Class2_Sub3_Sub6 local13 = new Class2_Sub3_Sub6();
+		@Pc(13) TextureOp34 local13 = new TextureOp34();
 		local13.anInt1051 = 8;
 		local13.anInt1043 = 3;
 		local13.aBoolean85 = false;
 		local13.anInt1049 = (int) (arg0 * 4096.0F);
 		local13.anInt1050 = 4;
-		local13.method6480();
-		Static155.method2789(64, 256);
+		local13.postDecode();
+		Texture.setSize(64, 256);
 		for (@Pc(40) int local40 = 0; local40 < 256; local40++) {
 			local13.method1308(local9[local40], local40);
 		}

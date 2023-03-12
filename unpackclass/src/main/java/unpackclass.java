@@ -11,52 +11,52 @@ public final class unpackclass extends unpack {
 	private int[] CONSTANT_POOL_ENTRY_LENGTHS = new int[] { 0, 3, 0, 5, 5, 9, 9, 3, 3, 5, 5, 5, 5 };
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "b", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer in = new SimpleBuffer(null);
+	private Buffer in = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "c", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer newArrayBuffer = new SimpleBuffer(null);
+	private Buffer newArrayBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "d", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer localVariableBuffer = new SimpleBuffer(null);
+	private Buffer localVariableBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "e", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer wideLocalVariableBuffer = new SimpleBuffer(null);
+	private Buffer wideLocalVariableBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "f", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer sipushAndSwitchBuffer = new SimpleBuffer(null);
+	private Buffer sipushAndSwitchBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "g", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer constantBuffer = new SimpleBuffer(null);
+	private Buffer constantBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "h", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer wideConstantBuffer = new SimpleBuffer(null);
+	private Buffer wideConstantBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "i", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer classBuffer = new SimpleBuffer(null);
+	private Buffer classBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "j", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer fieldRefBuffer = new SimpleBuffer(null);
+	private Buffer fieldRefBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "k", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer methodRefBuffer = new SimpleBuffer(null);
+	private Buffer methodRefBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "l", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer interfaceMethodRefBuffer = new SimpleBuffer(null);
+	private Buffer interfaceMethodRefBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "m", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer branchBuffer = new SimpleBuffer(null);
+	private Buffer branchBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "n", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer bipushBuffer = new SimpleBuffer(null);
+	private Buffer bipushBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "o", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer wideIincBuffer = new SimpleBuffer(null);
+	private Buffer wideIincBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "p", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer iincBuffer = new SimpleBuffer(null);
+	private Buffer iincBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "q", descriptor = "Lunpackclass!e;")
-	private SimpleBuffer multiANewArrayBuffer = new SimpleBuffer(null);
+	private Buffer multiANewArrayBuffer = new Buffer(null);
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "I", descriptor = "Lunpackclass!f;")
 	private LinkedList constantPool = new LinkedList();
@@ -119,17 +119,17 @@ public final class unpackclass extends unpack {
 	private final ConstantPoolEntry lineNumberTable;
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "(Lunpackclass!e;[Lunpackclass!s;)Lunpackclass!s;")
-	private static ConstantPoolEntry readEntry1(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
+	private static ConstantPoolEntry readEntry1(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		return arg1[arg0.g2()];
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "b", descriptor = "(Lunpackclass!e;[Lunpackclass!s;)Lunpackclass!s;")
-	private static ConstantPoolEntry readEntry2(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
+	private static ConstantPoolEntry readEntry2(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		return arg1[arg0.g2()];
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "d", descriptor = "(Lunpackclass!e;[Lunpackclass!s;)Lunpackclass!s;")
-	private static ConstantPoolEntry readEntry3(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
+	private static ConstantPoolEntry readEntry3(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		return arg1[arg0.g2()];
 	}
 
@@ -288,14 +288,14 @@ public final class unpackclass extends unpack {
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "c", descriptor = "(Lunpackclass!e;[Lunpackclass!s;)Lunpackclass!s;")
-	private ConstantPoolEntry readAndAddEntry(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
+	private ConstantPoolEntry readAndAddEntry(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		@Pc(4) ConstantPoolEntry local4 = arg1[arg0.g2()];
 		this.addConstantPoolEntry(local4);
 		return local4;
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "a", descriptor = "(Lunpackclass!e;[Lunpackclass!s;I)Lunpackclass!s;")
-	private ConstantPoolEntry readClass(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
+	private ConstantPoolEntry readClass(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1) {
 		@Pc(2) int local2 = arg0.g2();
 		@Pc(6) ConstantPoolEntry local6 = arg1[local2];
 		if (local6 == null) {
@@ -308,7 +308,7 @@ public final class unpackclass extends unpack {
 	}
 
 	@OriginalMember(owner = "unpackclass!unpackclass", name = "b", descriptor = "(Lunpackclass!e;[Lunpackclass!s;I)Lunpackclass!s;")
-	private ConstantPoolEntry readNamedEntry(@OriginalArg(0) SimpleBuffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1, @OriginalArg(2) int arg2) {
+	private ConstantPoolEntry readNamedEntry(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ConstantPoolEntry[] arg1, @OriginalArg(2) int arg2) {
 		@Pc(2) int local2 = arg0.g2();
 		@Pc(6) ConstantPoolEntry local6 = arg1[local2];
 		if (local6 == null) {
@@ -965,7 +965,7 @@ public final class unpackclass extends unpack {
 		local1102 += local13.length * 2;
 		local1102 += this.getMembersLength(local16);
 		local1102 += this.getMembersLength(local19);
-		@Pc(1916) SimpleBuffer local1916 = new SimpleBuffer(local1102);
+		@Pc(1916) Buffer local1916 = new Buffer(local1102);
 		local1916.p4(0xcafebabe);
 		local1916.p2(local690);
 		local1916.p2(local694);

@@ -10,7 +10,7 @@ public final class Static262 {
 	public static final ClientProt aClass145_251 = new ClientProt(72, 7);
 
 	@OriginalMember(owner = "client!pa", name = "f", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_145 = new Class79("Continue", "Weiter", "Continuer", "Continuar");
+	public static final LocalizedString aClass79_145 = new LocalizedString("Continue", "Weiter", "Continuer", "Continuar");
 
 	@OriginalMember(owner = "client!pa", name = "i", descriptor = "I")
 	public static int anInt6999 = 2;
@@ -68,7 +68,7 @@ public final class Static262 {
 			if (Static392.aClass152_6.applet != null) {
 				@Pc(103) PrivilegedRequest local103 = Static392.aClass152_6.openUrlStream(new URL(Static392.aClass152_6.applet.getCodeBase(), "clienterror.ws?c=" + Static277.anInt5115 + "&u=" + LoginManager.encodedUsername + "&v1=" + Signlink.javaVendor + "&v2=" + Signlink.javaVersion + "&e=" + local7));
 				while (local103.status == 0) {
-					Static231.method4023(1L);
+					ThreadUtils.sleep(1L);
 				}
 				if (local103.status == 1) {
 					@Pc(121) DataInputStream local121 = (DataInputStream) local103.result;

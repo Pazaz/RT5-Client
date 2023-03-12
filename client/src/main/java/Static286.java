@@ -160,7 +160,7 @@ public final class Static286 {
 			local760.anInt2340 = local127;
 			local760.anInt2342 = local242;
 			local760.anInt2341 = local129;
-			Static197.aClass135_24.method3540(local760);
+			Static197.aClass135_24.addTail(local760);
 		}
 		return false;
 	}
@@ -383,17 +383,17 @@ public final class Static286 {
 	}
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(Lclient!bt;I)Lclient!jq;")
-	public static Class2_Sub3 method4928(@OriginalArg(0) Buffer arg0) {
+	public static TextureOp method4928(@OriginalArg(0) Buffer arg0) {
 		arg0.g1();
 		@Pc(13) int local13 = arg0.g1();
-		@Pc(17) Class2_Sub3 local17 = Static246.method4248(local13);
+		@Pc(17) TextureOp local17 = Texture.create(local13);
 		local17.anInt7251 = arg0.g1();
 		@Pc(26) int local26 = arg0.g1();
 		for (@Pc(28) int local28 = 0; local28 < local26; local28++) {
 			@Pc(34) int local34 = arg0.g1();
-			local17.method6484(local34, arg0);
+			local17.decode(local34, arg0);
 		}
-		local17.method6480();
+		local17.postDecode();
 		return local17;
 	}
 }

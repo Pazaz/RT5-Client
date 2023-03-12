@@ -36,7 +36,7 @@ public final class Static330 {
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(28) byte[] local28 = Static289.aClass197_73.method5089(arg0, 0);
+		@Pc(28) byte[] local28 = Static289.aClass197_73.fetchFile(arg0, 0);
 		local10 = new Class235();
 		if (local28 != null) {
 			local10.method5933(new Buffer(local28));
@@ -86,7 +86,7 @@ public final class Static330 {
 				local32 *= 64;
 				local181 = new Class11_Sub5_Sub3(local57, Static243.anInt4502, local23, local32, Static386.method6032(local23, local32, Static243.anInt4502) - local63, local73 - -client.cycle, client.cycle + local77, local81, local85, local53, local69);
 				local181.method4397(Static386.method6032(local40, local49, Static243.anInt4502) - local69, local40, client.cycle + local73, local49);
-				Static332.aClass135_38.method3540(new Class2_Sub2_Sub9(local181));
+				Static332.aClass135_38.addTail(new Class2_Sub2_Sub9(local181));
 			}
 		} else if (arg0 == Static285.aClass210_12) {
 			local12 = Protocol.inboundBuffer.g1();
@@ -96,11 +96,11 @@ public final class Static330 {
 			local49 = Protocol.inboundBuffer.g2();
 			local53 = Protocol.inboundBuffer.g2();
 			if (Static120.aClass4_49 != null && local23 >= 0 && local32 >= 0 && local23 < Static373.anInt7033 && Static242.anInt4449 > local32) {
-				@Pc(269) Class2_Sub32 local269 = (Class2_Sub32) Static120.aClass4_49.method90((long) (local23 | Static243.anInt4502 << 28 | local32 << 14));
+				@Pc(269) Class2_Sub32 local269 = (Class2_Sub32) Static120.aClass4_49.get((long) (local23 | Static243.anInt4502 << 28 | local32 << 14));
 				if (local269 != null) {
-					for (@Pc(277) Class2_Sub8 local277 = (Class2_Sub8) local269.aClass135_34.method3551(); local277 != null; local277 = (Class2_Sub8) local269.aClass135_34.method3552()) {
+					for (@Pc(277) Class2_Sub8 local277 = (Class2_Sub8) local269.aClass135_34.head(); local277 != null; local277 = (Class2_Sub8) local269.aClass135_34.next()) {
 						if (local277.anInt1717 == (local40 & 0x7FFF) && local49 == local277.anInt1719) {
-							local277.method6468();
+							local277.unlink();
 							local277.anInt1719 = local53;
 							Static137.method2550(local32, local23, local277, Static243.anInt4502);
 							break;
@@ -172,7 +172,7 @@ public final class Static330 {
 					}
 					@Pc(628) Class11_Sub5_Sub3 local628 = new Class11_Sub5_Sub3(local63, Static243.anInt4502, local23, local32, Static386.method6032(local23, local32, Static243.anInt4502) - local69, client.cycle + local77, local81 + client.cycle, local85, local403, local57, local73);
 					local628.method4397(Static386.method6032(local40, local49, Static243.anInt4502) - local73, local40, client.cycle + local77, local49);
-					Static332.aClass135_38.method3540(new Class2_Sub2_Sub9(local628));
+					Static332.aClass135_38.addTail(new Class2_Sub2_Sub9(local628));
 				}
 			} else if (Static27.aClass210_2 == arg0) {
 				local12 = Protocol.inboundBuffer.g1bneg();
@@ -180,16 +180,16 @@ public final class Static330 {
 				local32 = Static7.anInt7240 + (local12 & 0x7);
 				local40 = Protocol.inboundBuffer.ig2add();
 				if (local23 >= 0 && local32 >= 0 && local23 < Static373.anInt7033 && local32 < Static242.anInt4449) {
-					@Pc(713) Class2_Sub32 local713 = (Class2_Sub32) Static120.aClass4_49.method90((long) (local23 | Static243.anInt4502 << 28 | local32 << 14));
+					@Pc(713) Class2_Sub32 local713 = (Class2_Sub32) Static120.aClass4_49.get((long) (local23 | Static243.anInt4502 << 28 | local32 << 14));
 					if (local713 != null) {
-						for (@Pc(721) Class2_Sub8 local721 = (Class2_Sub8) local713.aClass135_34.method3551(); local721 != null; local721 = (Class2_Sub8) local713.aClass135_34.method3552()) {
+						for (@Pc(721) Class2_Sub8 local721 = (Class2_Sub8) local713.aClass135_34.head(); local721 != null; local721 = (Class2_Sub8) local713.aClass135_34.next()) {
 							if ((local40 & 0x7FFF) == local721.anInt1717) {
-								local721.method6468();
+								local721.unlink();
 								break;
 							}
 						}
 						if (local713.aClass135_34.method3550()) {
-							local713.method6468();
+							local713.unlink();
 						}
 						Static165.method3154(local23, Static243.anInt4502, local32);
 					}
@@ -273,7 +273,7 @@ public final class Static330 {
 					local57 = local23 * 128 + 64;
 					local63 = local32 * 128 + 64;
 					@Pc(1208) Class11_Sub5_Sub4 local1208 = new Class11_Sub5_Sub4(local40, local53, client.cycle, Static243.anInt4502, local57, Static386.method6032(local57, local63, Static243.anInt4502) - local49, local63, local23, local23, local32, local32);
-					Static129.aClass135_20.method3540(new Class2_Sub2_Sub1(local1208));
+					Static129.aClass135_20.addTail(new Class2_Sub2_Sub1(local1208));
 				}
 			} else if (Static333.aClass210_17 == arg0) {
 				local12 = Protocol.inboundBuffer.g1();
@@ -335,7 +335,7 @@ public final class Static330 {
 					local40 = local40 * 128 + 64;
 					local181 = new Class11_Sub5_Sub3(local57, Static243.anInt4502, local23, local32, Static386.method6032(local23, local32, Static243.anInt4502) - local63, local73 + client.cycle, local77 + client.cycle, local81, local85, local53, local69);
 					local181.method4397(Static386.method6032(local40, local49, Static243.anInt4502) - local69, local40, client.cycle + local73, local49);
-					Static332.aClass135_38.method3540(new Class2_Sub2_Sub9(local181));
+					Static332.aClass135_38.addTail(new Class2_Sub2_Sub9(local181));
 				}
 			} else if (Static109.aClass210_4 == arg0) {
 				local12 = Protocol.inboundBuffer.g2();
@@ -349,7 +349,7 @@ public final class Static330 {
 				}
 			} else {
 				Static262.report(null, "T3 - " + arg0);
-				Static99.logout();
+				LoginManager.logout();
 			}
 		}
 	}

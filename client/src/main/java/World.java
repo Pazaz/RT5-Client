@@ -17,7 +17,7 @@ public final class World extends Class3 {
 	public int ping = -1;
 
 	static {
-		new Class79("Leave request already in progress - please wait...", "Du versuchst bereits, einen Chatraum zu verlassen - bitte warte.", "Demande de sortie déjà effectuée - veuillez patienter...", "Solicitação de saída já em andamento. Aguarde...");
+		new LocalizedString("Leave request already in progress - please wait...", "Du versuchst bereits, einen Chatraum zu verlassen - bitte warte.", "Demande de sortie déjà effectuée - veuillez patienter...", "Solicitação de saída já em andamento. Aguarde...");
 	}
 
 	@OriginalMember(owner = "client!ac", name = "f", descriptor = "(I)Lclient!kh;")

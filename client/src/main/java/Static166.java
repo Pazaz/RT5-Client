@@ -14,7 +14,7 @@ public final class Static166 {
 	public static void method3186(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1) {
 		@Pc(8) Class2_Sub41 local8 = Static374.method6275(arg0, arg1);
 		if (local8 != null) {
-			local8.method6468();
+			local8.unlink();
 		}
 	}
 

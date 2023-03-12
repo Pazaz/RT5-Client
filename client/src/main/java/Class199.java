@@ -10,18 +10,18 @@ public final class Class199 {
 	private final Class98 aClass98_43 = new Class98(64);
 
 	@OriginalMember(owner = "client!rb", name = "d", descriptor = "Lclient!r;")
-	private final Class197 aClass197_76;
+	private final Js5 aClass197_76;
 
 	@OriginalMember(owner = "client!rb", name = "f", descriptor = "I")
 	public final int anInt5596;
 
 	@OriginalMember(owner = "client!rb", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class199(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class197 arg2) {
+	public Class199(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aClass197_76 = arg2;
 		if (this.aClass197_76 == null) {
 			this.anInt5596 = 0;
 		} else {
-			this.anInt5596 = this.aClass197_76.method5081(16);
+			this.anInt5596 = this.aClass197_76.getGroupCapacity(16);
 		}
 	}
 
@@ -59,7 +59,7 @@ public final class Class199 {
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(33) byte[] local33 = this.aClass197_76.method5089(arg0, 16);
+		@Pc(33) byte[] local33 = this.aClass197_76.fetchFile(arg0, 16);
 		local16 = new Class171();
 		if (local33 != null) {
 			local16.method4370(new Buffer(local33));

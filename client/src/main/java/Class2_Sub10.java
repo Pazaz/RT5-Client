@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!eh")
-public final class Class2_Sub10 extends Class2 {
+public final class Class2_Sub10 extends Node {
 
 	@OriginalMember(owner = "client!eh", name = "A", descriptor = "I")
 	public final int anInt1759;
@@ -12,7 +12,7 @@ public final class Class2_Sub10 extends Class2 {
 	public final int anInt1758;
 
 	static {
-		new Class79("You can spot a Jagex moderator by the gold crown next to their name.", "Jagex-Mitarbeiter haben eine goldene Krone neben ihrem Namen.", "Vous pouvez reconnaître les modérateurs Jagex à la couronne dorée en regard de leur nom.", "Os moderadores da Jagex são identificados por uma coroa dourada próxima ao \u007fnome.");
+		new LocalizedString("You can spot a Jagex moderator by the gold crown next to their name.", "Jagex-Mitarbeiter haben eine goldene Krone neben ihrem Namen.", "Vous pouvez reconnaître les modérateurs Jagex à la couronne dorée en regard de leur nom.", "Os moderadores da Jagex são identificados por uma coroa dourada próxima ao \u007fnome.");
 	}
 
 	@OriginalMember(owner = "client!eh", name = "<init>", descriptor = "(II)V")

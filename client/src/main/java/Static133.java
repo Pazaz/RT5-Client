@@ -7,9 +7,6 @@ public final class Static133 {
 	@OriginalMember(owner = "client!hl", name = "H", descriptor = "Lclient!hu;")
 	public static final Class98 aClass98_17 = new Class98(4);
 
-	@OriginalMember(owner = "client!hl", name = "J", descriptor = "Lclient!se;")
-	public static final Class2_Sub33 aClass2_Sub33_1 = new Class2_Sub33(0, 0);
-
 	@OriginalMember(owner = "client!hl", name = "K", descriptor = "I")
 	public static final int anInt2489 = 1406;
 

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!lb")
-public final class Class2_Sub23 extends Class2 {
+public final class Class2_Sub23 extends Node {
 
 	@OriginalMember(owner = "client!lb", name = "I", descriptor = "I")
 	private int anInt3572;
@@ -49,7 +49,7 @@ public final class Class2_Sub23 extends Class2 {
 	private GlBuffer aClass2_Sub4_Sub1_1;
 
 	@OriginalMember(owner = "client!lb", name = "t", descriptor = "Lclient!ad;")
-	private Class4 aClass4_78;
+	private HashTable aClass4_78;
 
 	@OriginalMember(owner = "client!lb", name = "F", descriptor = "Lclient!fd;")
 	private final Interface4 anInterface4_3;
@@ -125,7 +125,7 @@ public final class Class2_Sub23 extends Class2 {
 		if (local108 > 0) {
 			this.aClass2_Sub4_5 = new Buffer(local108 * 2);
 			this.aClass2_Sub4_Sub1_1 = new GlBuffer(local108 * 16);
-			this.aClass4_78 = new Class4(Static162.method2977(local108));
+			this.aClass4_78 = new HashTable(Static162.method2977(local108));
 			local131 = 0;
 			local116 = 0;
 			for (local144 = this.anInt3569; local144 <= this.anInt3571; local144++) {
@@ -221,7 +221,7 @@ public final class Class2_Sub23 extends Class2 {
 		@Pc(23) int local23 = this.aClass6_Sub1_2.method5728(local9, local17);
 		if ((arg0 & 0x7F) == 0 || (arg5 & 0x7F) == 0) {
 			local1 = ((long) local17 & 0xFFFFL) << 16 | (long) local9 & 0xFFFFL;
-			@Pc(53) Class2 local53 = this.aClass4_78.method90(local1);
+			@Pc(53) Node local53 = this.aClass4_78.get(local1);
 			if (local53 != null) {
 				this.method3525(((Class2_Sub9) local53).aShort20);
 				return;
@@ -229,7 +229,7 @@ public final class Class2_Sub23 extends Class2 {
 		}
 		@Pc(73) short local73 = (short) this.anInt3573++;
 		if (local1 != -1L) {
-			this.aClass4_78.method87(new Class2_Sub9(local73), local1);
+			this.aClass4_78.put(new Class2_Sub9(local73), local1);
 		}
 		@Pc(140) float local140;
 		@Pc(131) float local131;

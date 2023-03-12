@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jc")
-public final class Class2_Sub19 extends Class2 {
+public final class Class2_Sub19 extends Node {
 
 	@OriginalMember(owner = "client!jc", name = "s", descriptor = "Lclient!nh;")
 	public Player aClass11_Sub5_Sub2_Sub1_2;
@@ -63,8 +63,8 @@ public final class Class2_Sub19 extends Class2 {
 	public int anInt2900 = 0;
 
 	static {
-		new Class79("Error joining clan channel - please try again later!", "Fehler beim Betreten des Chatraums - bitte versuch es später erneut.", "Erreur lors de la connexion au canal de clan - veuillez réessayer ultérieurement.", "Erro ao entrar no canal do clã. Tente de novo depois!");
-		new Class79("Chat disabled", "Deaktiviert", "Messagerie désactivée", "Bate-papo desativado");
+		new LocalizedString("Error joining clan channel - please try again later!", "Fehler beim Betreten des Chatraums - bitte versuch es später erneut.", "Erreur lors de la connexion au canal de clan - veuillez réessayer ultérieurement.", "Erro ao entrar no canal do clã. Tente de novo depois!");
+		new LocalizedString("Chat disabled", "Deaktiviert", "Messagerie désactivée", "Bate-papo desativado");
 	}
 
 	@OriginalMember(owner = "client!jc", name = "b", descriptor = "(Z)V")
@@ -108,7 +108,7 @@ public final class Class2_Sub19 extends Class2 {
 			this.anInt2906 = this.aClass11_Sub5_Sub2_Sub1_2.soundVolume;
 		}
 		if (this.anInt2894 != local8 && this.aClass2_Sub12_Sub4_3 != null) {
-			Static227.aClass2_Sub12_Sub2_2.method2081(this.aClass2_Sub12_Sub4_3);
+			client.soundStream.method2081(this.aClass2_Sub12_Sub4_3);
 			this.aClass2_Sub12_Sub4_3 = null;
 		}
 	}

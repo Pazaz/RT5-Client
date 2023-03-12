@@ -10,9 +10,6 @@ public final class Static92 {
 	@OriginalMember(owner = "client!fa", name = "b", descriptor = "Lclient!hu;")
 	public static final Class98 aClass98_9 = new Class98(260);
 
-	@OriginalMember(owner = "client!fa", name = "e", descriptor = "Lclient!hg;")
-	public static final Class92 aClass92_1 = new Class92();
-
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "([I[ILclient!oe;I[I)V")
 	public static void method1966(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) Npc arg2, @OriginalArg(4) int[] arg3) {
 		for (@Pc(3) int local3 = 0; local3 < arg0.length; local3++) {
@@ -97,7 +94,7 @@ public final class Static92 {
 		@Pc(174) int local174;
 		@Pc(185) int local185;
 		@Pc(196) int local196;
-		for (@Pc(149) Class2_Sub39 local149 = (Class2_Sub39) Static56.aClass135_13.method3551(); local149 != null; local149 = (Class2_Sub39) Static56.aClass135_13.method3552()) {
+		for (@Pc(149) Class2_Sub39 local149 = (Class2_Sub39) Static56.aClass135_13.head(); local149 != null; local149 = (Class2_Sub39) Static56.aClass135_13.next()) {
 			@Pc(154) int local154 = local149.anInt6818;
 			local165 = (Static34.aClass103_3.anIntArray170[local154] >> 14 & 0x3FFF) - Static164.anInt3140;
 			local174 = (Static34.aClass103_3.anIntArray170[local154] & 0x3FFF) - Static148.anInt2719;
@@ -118,10 +115,10 @@ public final class Static92 {
 			Static216.method3776(arg3, arg0, local253.anInt1306, arg1, local185, local14, local174, arg2);
 		}
 		for (@Pc(293) Class2_Sub32 local293 = (Class2_Sub32) Static120.aClass4_49.method80(); local293 != null; local293 = (Class2_Sub32) Static120.aClass4_49.method79()) {
-			local185 = (int) (local293.aLong232 >> 28 & 0x3L);
+			local185 = (int) (local293.key >> 28 & 0x3L);
 			if (local185 == Static343.anInt6389) {
-				local196 = (int) (local293.aLong232 & 0x3FFFL) * 4 + 2 - local61 / 32;
-				@Pc(337) int local337 = (int) (local293.aLong232 >> 14 & 0x3FFFL) * 4 + 2 - local58 / 32;
+				local196 = (int) (local293.key & 0x3FFFL) * 4 + 2 - local61 / 32;
+				@Pc(337) int local337 = (int) (local293.key >> 14 & 0x3FFFL) * 4 + 2 - local58 / 32;
 				Static376.method6288(local14, local196, arg3, local337, Static76.aClass13Array5[0], arg2, arg0);
 			}
 		}

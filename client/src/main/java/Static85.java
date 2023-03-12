@@ -12,7 +12,7 @@ public final class Static85 {
 		if (arg1.aClass161Array2 != null) {
 			Static364.method6105(arg0, local24, arg1.anInt4317, arg1.aClass161Array2, local12);
 		}
-		@Pc(57) Class2_Sub7 local57 = (Class2_Sub7) Static329.aClass4_130.method90((long) arg1.anInt4317);
+		@Pc(57) Class2_Sub7 local57 = (Class2_Sub7) Static329.aClass4_130.get((long) arg1.anInt4317);
 		if (local57 != null) {
 			Static129.method2435(local24, local57.anInt1370, arg0, local12);
 		}

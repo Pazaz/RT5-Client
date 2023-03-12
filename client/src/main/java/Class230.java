@@ -40,7 +40,7 @@ public final class Class230 {
 	private int[] anIntArray442;
 
 	@OriginalMember(owner = "client!ud", name = "u", descriptor = "Lclient!ad;")
-	private Class4 aClass4_134;
+	private HashTable aClass4_134;
 
 	@OriginalMember(owner = "client!ud", name = "v", descriptor = "[I")
 	private int[] anIntArray443;
@@ -144,18 +144,18 @@ public final class Class230 {
 					local24 = arg0.g1();
 					if (this.aClass4_134 == null) {
 						local31 = Static162.method2977(local24);
-						this.aClass4_134 = new Class4(local31);
+						this.aClass4_134 = new HashTable(local31);
 					}
 					for (local31 = 0; local31 < local24; local31++) {
 						@Pc(329) boolean local329 = arg0.g1() == 1;
 						@Pc(333) int local333 = arg0.ig3();
-						@Pc(342) Class2 local342;
+						@Pc(342) Node local342;
 						if (local329) {
 							local342 = new Class2_Sub40(arg0.gjstr());
 						} else {
 							local342 = new Class2_Sub39(arg0.g4());
 						}
-						this.aClass4_134.method87(local342, (long) local333);
+						this.aClass4_134.put(local342, (long) local333);
 					}
 				}
 			}

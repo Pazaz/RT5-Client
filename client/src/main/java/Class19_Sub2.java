@@ -151,7 +151,7 @@ public final class Class19_Sub2 extends Class19 {
 	private int anInt2861;
 
 	@OriginalMember(owner = "client!j", name = "<init>", descriptor = "(Ljava/awt/Canvas;Lclient!ci;I)V")
-	public Class19_Sub2(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface2 arg1, @OriginalArg(2) int arg2) {
+	public Class19_Sub2(@OriginalArg(0) Canvas arg0, @OriginalArg(1) TextureProvider arg1, @OriginalArg(2) int arg2) {
 		super(arg2, arg1);
 		this.aCanvas3 = arg0;
 		this.aClass155_1 = Static351.method5856(this.aCanvas3);
@@ -511,7 +511,7 @@ public final class Class19_Sub2 extends Class19 {
 			this.method2816(arg1, arg2, local3, arg0.anInt4469);
 			return;
 		}
-		if (this.aClass2_Sub1_1 == null || this.aClass2_Sub1_1.aLong232 != (long) local6) {
+		if (this.aClass2_Sub1_1 == null || this.aClass2_Sub1_1.key != (long) local6) {
 			this.aClass2_Sub1_1 = (Class2_Sub1) this.aClass98_24.method2612((long) local6);
 		}
 		if (this.aClass2_Sub1_1 == null) {

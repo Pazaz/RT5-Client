@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!tb")
-public final class Class2_Sub2_Sub16 extends Class2_Sub2 {
+public final class Class2_Sub2_Sub16 extends SecondaryNode {
 
 	@OriginalMember(owner = "client!tb", name = "F", descriptor = "[Ljava/lang/String;")
 	private String[] aStringArray56;

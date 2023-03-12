@@ -27,7 +27,7 @@ public final class Static5 {
 	public static final int[] anIntArray3 = new int[] { 0, 1, 2, 3, 4, 5, 6, 14 };
 
 	@OriginalMember(owner = "client!ad", name = "w", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_2 = new Class79("skill: ", "Fertigkeit: ", "compétence ", "habilidade: ");
+	public static final LocalizedString aClass79_2 = new LocalizedString("skill: ", "Fertigkeit: ", "compétence ", "habilidade: ");
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(IIILclient!ml;II)Ljava/awt/Frame;")
 	public static Frame method85(@OriginalArg(0) int arg0, @OriginalArg(3) Signlink arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3) {
@@ -50,7 +50,7 @@ public final class Static5 {
 		}
 		@Pc(98) PrivilegedRequest local98 = arg1.enterFullScreen(arg2, arg0, arg3);
 		while (local98.status == 0) {
-			Static231.method4023(10L);
+			ThreadUtils.sleep(10L);
 		}
 		@Pc(110) Frame local110 = (Frame) local98.result;
 		if (local110 == null) {
@@ -63,22 +63,10 @@ public final class Static5 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(DI)V")
-	public static void method86(@OriginalArg(0) double arg0) {
-		if (Static109.aDouble1 == arg0) {
-			return;
-		}
-		for (@Pc(7) int local7 = 0; local7 < 256; local7++) {
-			@Pc(19) int local19 = (int) (Math.pow((double) local7 / 255.0D, arg0) * 255.0D);
-			Static112.anIntArray145[local7] = local19 > 255 ? 255 : local19;
-		}
-		Static109.aDouble1 = arg0;
-	}
-
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(ILclient!qg;I)V")
 	public static void method88(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		while (true) {
-			@Pc(16) Class2_Sub42 local16 = (Class2_Sub42) Static337.aClass135_37.method3551();
+			@Pc(16) Class2_Sub42 local16 = (Class2_Sub42) Static337.aClass135_37.head();
 			if (local16 == null) {
 				return;
 			}
@@ -187,7 +175,7 @@ public final class Static5 {
 			}
 			arg0.addcrc(local106);
 			arg0.psize1(arg0.pos - local106);
-			local16.method6468();
+			local16.unlink();
 		}
 	}
 }

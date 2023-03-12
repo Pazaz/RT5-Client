@@ -10,11 +10,8 @@ public final class Static141 {
 	@OriginalMember(owner = "client!i", name = "P", descriptor = "Lclient!jh;")
 	public static Class115 aClass115_1 = new Class115(8);
 
-	@OriginalMember(owner = "client!i", name = "T", descriptor = "I")
-	public static int anInt2650 = 10;
-
 	@OriginalMember(owner = "client!i", name = "V", descriptor = "Lclient!ad;")
-	public static final Class4 aClass4_58 = new Class4(8);
+	public static final HashTable aClass4_58 = new HashTable(8);
 
 	@OriginalMember(owner = "client!i", name = "X", descriptor = "Z")
 	public static boolean aBoolean189 = false;

@@ -10,5 +10,5 @@ public final class Static23 {
 	public static Class2_Sub5 aClass2_Sub5_1;
 
 	@OriginalMember(owner = "client!bg", name = "h", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_17 = new Class79("white:", "weiss:", "blanc:", "branco:");
+	public static final LocalizedString aClass79_17 = new LocalizedString("white:", "weiss:", "blanc:", "branco:");
 }

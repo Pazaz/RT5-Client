@@ -10,7 +10,7 @@ public final class Static163 {
 	public static Class15 aClass15_1;
 
 	@OriginalMember(owner = "client!jj", name = "R", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_68 = new Class79("Loading world map - ", "Lade Weltkarte - ", "Chargement de la mappemonde - ", "Carregando mapa-múndi - ");
+	public static final LocalizedString aClass79_68 = new LocalizedString("Loading world map - ", "Lade Weltkarte - ", "Chargement de la mappemonde - ", "Carregando mapa-múndi - ");
 
 	@OriginalMember(owner = "client!jj", name = "U", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_116 = new ClientProt(34, -1);
@@ -86,15 +86,15 @@ public final class Static163 {
 		if (arg4) {
 			Static78.method5701(Static77.anInt1762);
 		} else {
-			Static21.aCanvas1.setSize(GameShell.canvasWidth, GameShell.canvasHeight);
+			GameShell.canvas.setSize(GameShell.canvasWidth, GameShell.canvasHeight);
 			if (Static190.aClass19_8 != null) {
 				Static190.aClass19_8.method2803();
 			}
 			if (GameShell.frame == local81) {
 				local88 = GameShell.frame.getInsets();
-				Static21.aCanvas1.setLocation(Static84.anInt1842 + local88.left, local88.top + Static68.anInt1646);
+				GameShell.canvas.setLocation(Static84.anInt1842 + local88.left, local88.top + Static68.anInt1646);
 			} else {
-				Static21.aCanvas1.setLocation(Static84.anInt1842, Static68.anInt1646);
+				GameShell.canvas.setLocation(Static84.anInt1842, Static68.anInt1646);
 			}
 		}
 		if (arg3 >= 2) {
@@ -105,26 +105,13 @@ public final class Static163 {
 		if (Static139.anInt2595 != -1) {
 			Static60.method891(true);
 		}
-		if (Protocol.socket != null && (LoginManager.reconnecting == 30 || LoginManager.reconnecting == 25)) {
+		if (Protocol.socket != null && (client.gameState == 30 || client.gameState == 25)) {
 			Static93.method2002();
 		}
 		for (local159 = 0; local159 < 100; local159++) {
 			Static357.aBooleanArray59[local159] = true;
 		}
 		Static328.aBoolean412 = true;
-	}
-
-	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(IZBIZ)Lclient!r;")
-	public static Class197 method3101(@OriginalArg(1) boolean arg0, @OriginalArg(3) int arg1, @OriginalArg(4) boolean arg2) {
-		@Pc(5) Class207 local5 = null;
-		if (Static110.aClass205_1 != null) {
-			local5 = new Class207(arg1, Static110.aClass205_1, Static185.aClass205Array1[arg1], 1000000);
-		}
-		Static374.aClass25_Sub1Array2[arg1] = Static54.aClass154_1.method3871(arg1, Static18.aClass207_1, local5);
-		if (arg0) {
-			Static374.aClass25_Sub1Array2[arg1].method899();
-		}
-		return new Class197(Static374.aClass25_Sub1Array2[arg1], arg2, 1);
 	}
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILjava/lang/String;)V")

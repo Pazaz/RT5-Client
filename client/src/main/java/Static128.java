@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static128 {
 
 	@OriginalMember(owner = "client!hf", name = "a", descriptor = "Lclient!ci;")
-	public static Interface2 anInterface2_4;
+	public static TextureProvider anInterface2_4;
 
 	@OriginalMember(owner = "client!hf", name = "i", descriptor = "[Z")
 	public static boolean[] aBooleanArray21;

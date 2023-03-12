@@ -220,7 +220,7 @@ public abstract class PathingEntity extends Class11_Sub5 {
 	public final int[] movementQueueZ = new int[10];
 
 	static {
-		new Class79("Use", "Benutzen", "Utiliser", "Usar");
+		new LocalizedString("Use", "Benutzen", "Utiliser", "Usar");
 	}
 
 	@OriginalMember(owner = "client!mr", name = "<init>", descriptor = "()V")

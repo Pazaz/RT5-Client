@@ -13,7 +13,7 @@ public final class Static196 {
 	public static final Class247[] aClass247Array2 = new Class247[50];
 
 	@OriginalMember(owner = "client!lh", name = "e", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_70 = new Class79("scroll:", "scrollen:", "déroulement:", "rolagem:");
+	public static final LocalizedString aClass79_70 = new LocalizedString("scroll:", "scrollen:", "déroulement:", "rolagem:");
 
 	@OriginalMember(owner = "client!lh", name = "f", descriptor = "I")
 	public static int anInt3317 = -1;

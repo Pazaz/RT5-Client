@@ -10,9 +10,6 @@ public final class Static309 {
 	@OriginalMember(owner = "client!rs", name = "f", descriptor = "I")
 	public static int js5ConnectState = 0;
 
-	@OriginalMember(owner = "client!rs", name = "g", descriptor = "I")
-	public static int anInt5801 = 0;
-
 	@OriginalMember(owner = "client!rs", name = "h", descriptor = "I")
 	public static int anInt5802 = 64;
 

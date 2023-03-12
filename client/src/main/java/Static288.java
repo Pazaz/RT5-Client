@@ -15,5 +15,5 @@ public final class Static288 {
 	public static int anInt5464 = -1;
 
 	@OriginalMember(owner = "client!qm", name = "O", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_114 = new Class79("wave2:", "welle2:", "ondulation2:", "onda2:");
+	public static final LocalizedString aClass79_114 = new LocalizedString("wave2:", "welle2:", "ondulation2:", "onda2:");
 }

@@ -13,21 +13,6 @@ public final class Static155 {
 	@OriginalMember(owner = "client!it", name = "a", descriptor = "I")
 	public static int anInt2808 = 0;
 
-	@OriginalMember(owner = "client!it", name = "a", descriptor = "(BZLjava/lang/Object;)[B")
-	public static byte[] method2787(@OriginalArg(1) boolean arg0, @OriginalArg(2) Object arg1) {
-		if (arg1 == null) {
-			return null;
-		} else if (arg1 instanceof byte[]) {
-			@Pc(13) byte[] local13 = (byte[]) arg1;
-			return arg0 ? Static371.method6258(local13) : local13;
-		} else if (arg1 instanceof Class212) {
-			@Pc(27) Class212 local27 = (Class212) arg1;
-			return local27.method5546();
-		} else {
-			throw new IllegalArgumentException();
-		}
-	}
-
 	@OriginalMember(owner = "client!it", name = "a", descriptor = "([II[B[[BI[I[[BI)I")
 	public static int method2788(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) byte[][] arg3, @OriginalArg(5) int[] arg4, @OriginalArg(6) byte[][] arg5, @OriginalArg(7) int arg6) {
 		@Pc(9) int local9 = arg4[arg1];
@@ -57,32 +42,6 @@ public final class Static155 {
 			}
 		}
 		return -local45;
-	}
-
-	@OriginalMember(owner = "client!it", name = "a", descriptor = "(IIB)V")
-	public static void method2789(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (arg0 != Static227.anInt4036) {
-			Static334.anIntArray424 = new int[arg0];
-			for (@Pc(9) int local9 = 0; local9 < arg0; local9++) {
-				Static334.anIntArray424[local9] = (local9 << 12) / arg0;
-			}
-			Static73.anInt1721 = arg0 - 1;
-			Static227.anInt4036 = arg0;
-			Static299.anInt5653 = arg0 * 32;
-		}
-		if (arg1 == Static24.anInt638) {
-			return;
-		}
-		if (arg1 == Static227.anInt4036) {
-			Static16.anIntArray322 = Static334.anIntArray424;
-		} else {
-			Static16.anIntArray322 = new int[arg1];
-			for (@Pc(72) int local72 = 0; local72 < arg1; local72++) {
-				Static16.anIntArray322[local72] = (local72 << 12) / arg1;
-			}
-		}
-		Static148.anInt2718 = arg1 - 1;
-		Static24.anInt638 = arg1;
 	}
 
 	@OriginalMember(owner = "client!it", name = "b", descriptor = "(I)V")

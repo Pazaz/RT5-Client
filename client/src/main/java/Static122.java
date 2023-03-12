@@ -10,7 +10,7 @@ public final class Static122 {
 	public static volatile boolean aBoolean176 = false;
 
 	@OriginalMember(owner = "client!h", name = "h", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_54 = new Class79("You can't add yourself to your own friend list.", "Du kannst dich nicht auf deine eigene Freunde-Liste setzen!", "Vous ne pouvez pas ajouter votre nom à votre liste d'amis.", "Você não pode adicionar a si próprio à sua lista de amigos.");
+	public static final LocalizedString aClass79_54 = new LocalizedString("You can't add yourself to your own friend list.", "Du kannst dich nicht auf deine eigene Freunde-Liste setzen!", "Vous ne pouvez pas ajouter votre nom à votre liste d'amis.", "Você não pode adicionar a si próprio à sua lista de amigos.");
 
 	@OriginalMember(owner = "client!h", name = "a", descriptor = "(B)V")
 	public static void method2398() {

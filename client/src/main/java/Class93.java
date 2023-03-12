@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class Class93 {
 
 	static {
-		new Class79("To go here you must login to a members' server.", "Du musst auf einer Mitglieder-Welt sein, um dort hinzukommen.", "Vous devez vous connecter à un serveur d'abonnés pour aller à cet endroit.", "Para entrar aqui, acesse um servidor para membros.");
+		new LocalizedString("To go here you must login to a members' server.", "Du musst auf einer Mitglieder-Welt sein, um dort hinzukommen.", "Vous devez vous connecter à un serveur d'abonnés pour aller à cet endroit.", "Para entrar aqui, acesse um servidor para membros.");
 	}
 
 	@OriginalMember(owner = "client!hi", name = "a", descriptor = "(ILclient!eu;)Lclient!eu;")

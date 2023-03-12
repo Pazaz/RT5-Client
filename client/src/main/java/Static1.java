@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static1 {
 
-	@OriginalMember(owner = "client!a", name = "g", descriptor = "Lclient!ro;")
-	public static Class206 aClass206_1;
-
 	@OriginalMember(owner = "client!a", name = "d", descriptor = "J")
 	public static long aLong1 = 0L;
 
@@ -66,7 +63,7 @@ public final class Static1 {
 		if (!Static375.aBoolean477 && Static268.anInt4959 < 500) {
 			@Pc(16) int local16 = arg8 == -1 ? Static107.anInt2219 : arg8;
 			@Pc(30) Class2_Sub5 local30 = new Class2_Sub5(arg4, arg7, local16, arg6, arg0, arg9, arg5, arg2, arg1, arg3);
-			Static129.aClass135_19.method3540(local30);
+			Static129.aClass135_19.addTail(local30);
 			Static268.anInt4959++;
 		}
 	}

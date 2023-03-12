@@ -31,9 +31,9 @@ public final class Static138 {
 
 	@OriginalMember(owner = "client!hr", name = "b", descriptor = "(II)V")
 	public static void method2580(@OriginalArg(0) int arg0) {
-		for (@Pc(16) Class2 local16 = Static327.aClass4_127.method80(); local16 != null; local16 = Static327.aClass4_127.method79()) {
-			if ((long) arg0 == (local16.aLong232 >> 48 & 0xFFFFL)) {
-				local16.method6468();
+		for (@Pc(16) Node local16 = Static327.aClass4_127.method80(); local16 != null; local16 = Static327.aClass4_127.method79()) {
+			if ((long) arg0 == (local16.key >> 48 & 0xFFFFL)) {
+				local16.unlink();
 			}
 		}
 	}
@@ -46,9 +46,9 @@ public final class Static138 {
 		}
 		@Pc(25) byte[] local25;
 		if (arg0 >= 32768) {
-			local25 = Static43.aClass197_7.method5089(arg0 & 0x7FFF, 0);
+			local25 = Static43.aClass197_7.fetchFile(arg0 & 0x7FFF, 0);
 		} else {
-			local25 = Static367.aClass197_92.method5089(arg0, 0);
+			local25 = Static367.aClass197_92.fetchFile(arg0, 0);
 		}
 		local10 = new Class2_Sub2_Sub12();
 		if (local25 != null) {

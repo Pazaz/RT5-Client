@@ -34,7 +34,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 	private Class2_Sub2_Sub4 aClass2_Sub2_Sub4_1;
 
 	static {
-		new Class79("You have been removed from this channel.", "Du wurdest aus dem Chatraum entfernt.", "Vous avez été supprimé de ce canal.", "Você foi retirado desse canal.");
+		new LocalizedString("You have been removed from this channel.", "Du wurdest aus dem Chatraum entfernt.", "Vous avez été supprimé de ce canal.", "Você foi retirado desse canal.");
 	}
 
 	@OriginalMember(owner = "client!bm", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIZIZ)V")

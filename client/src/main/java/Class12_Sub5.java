@@ -37,7 +37,7 @@ public final class Class12_Sub5 extends Class12 {
 	private int anInt4674 = 0;
 
 	@OriginalMember(owner = "client!oh", name = "s", descriptor = "Lclient!ld;")
-	public Class135 aClass135_29 = new Class135();
+	public LinkedList aClass135_29 = new LinkedList();
 
 	@OriginalMember(owner = "client!oh", name = "y", descriptor = "I")
 	private int anInt4678 = 0;
@@ -156,16 +156,16 @@ public final class Class12_Sub5 extends Class12 {
 	@OriginalMember(owner = "client!oh", name = "d", descriptor = "()V")
 	public void method4356() {
 		this.aBoolean322 = true;
-		for (@Pc(8) Class2_Sub2_Sub5 local8 = (Class2_Sub2_Sub5) this.aClass135_29.method3551(); local8 != null; local8 = (Class2_Sub2_Sub5) this.aClass135_29.method3552()) {
+		for (@Pc(8) Class2_Sub2_Sub5 local8 = (Class2_Sub2_Sub5) this.aClass135_29.head(); local8 != null; local8 = (Class2_Sub2_Sub5) this.aClass135_29.next()) {
 			if (local8.aClass28_1.anInt737 == 1) {
-				local8.method6143();
+				local8.unlinkSecondary();
 			}
 		}
 		this.aClass12_Sub1_Sub1_Sub1Array2 = new Class12_Sub1_Sub1_Sub1[8192];
 		this.anInt4673 = 0;
 		this.aClass36_5 = new Class36();
 		this.anInt4674 = 0;
-		this.aClass135_29 = new Class135();
+		this.aClass135_29 = new LinkedList();
 		this.anInt4678 = 0;
 		this.method5684();
 	}
@@ -204,7 +204,7 @@ public final class Class12_Sub5 extends Class12 {
 			Static251.aBooleanArray38[local1] = false;
 		}
 		@Pc(21) int local21;
-		label68: for (@Pc(16) Class2_Sub2_Sub5 local16 = (Class2_Sub2_Sub5) this.aClass135_29.method3551(); local16 != null; local16 = (Class2_Sub2_Sub5) this.aClass135_29.method3552()) {
+		label68: for (@Pc(16) Class2_Sub2_Sub5 local16 = (Class2_Sub2_Sub5) this.aClass135_29.head(); local16 != null; local16 = (Class2_Sub2_Sub5) this.aClass135_29.next()) {
 			if (arg0 != null) {
 				for (local21 = 0; local21 < arg0.length; local21++) {
 					if (local16.aClass163_1 == arg0[local21] || local16.aClass163_1 == arg0[local21].aClass163_2) {
@@ -214,10 +214,10 @@ public final class Class12_Sub5 extends Class12 {
 					}
 				}
 			}
-			local16.method6468();
+			local16.unlink();
 			this.anInt4678--;
-			if (local16.method6142()) {
-				local16.method6143();
+			if (local16.islinkedSecondary()) {
+				local16.unlinkSecondary();
 				Static201.anInt3701--;
 			}
 		}
@@ -235,7 +235,7 @@ public final class Class12_Sub5 extends Class12 {
 				if (local93 == null) {
 					local93 = new Class2_Sub2_Sub5(arg0[local21], this);
 				}
-				this.aClass135_29.method3540(local93);
+				this.aClass135_29.addTail(local93);
 				this.anInt4678++;
 				Static251.aBooleanArray38[local21] = true;
 			}

@@ -11,7 +11,7 @@ public final class Static201 {
 	public static int anInt3701 = 0;
 
 	@OriginalMember(owner = "client!lp", name = "f", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_80 = new Class79("Loaded title screen", "Titelbild geladen.", "Écran-titre chargé", "Tela título carregada");
+	public static final LocalizedString aClass79_80 = new LocalizedString("Loaded title screen", "Titelbild geladen.", "Écran-titre chargé", "Tela título carregada");
 
 	@OriginalMember(owner = "client!lp", name = "g", descriptor = "[C")
 	public static final char[] aCharArray3 = new char[] { ' ', ' ', '_', '-', 'à', 'á', 'â', 'ä', 'ã', 'À', 'Á', 'Â', 'Ä', 'Ã', 'è', 'é', 'ê', 'ë', 'È', 'É', 'Ê', 'Ë', 'í', 'î', 'ï', 'Í', 'Î', 'Ï', 'ò', 'ó', 'ô', 'ö', 'õ', 'Ò', 'Ó', 'Ô', 'Ö', 'Õ', 'ù', 'ú', 'û', 'ü', 'Ù', 'Ú', 'Û', 'Ü', 'ç', 'Ç', 'ÿ', 'Ÿ', 'ñ', 'Ñ', 'ß' };
@@ -199,7 +199,7 @@ public final class Static201 {
 							if (local19.aClass161Array2 != null) {
 								method3653(local286, local19.anInt4317, local19.aClass161Array2, local155, local95 - local19.anInt4259, local151, local275, local66, local90 - local19.anInt4258);
 							}
-							@Pc(820) Class2_Sub7 local820 = (Class2_Sub7) Static329.aClass4_130.method90((long) local19.anInt4317);
+							@Pc(820) Class2_Sub7 local820 = (Class2_Sub7) Static329.aClass4_130.get((long) local19.anInt4317);
 							if (local820 != null) {
 								Static199.method5246(local155, local286, local275, local820.anInt1370, local66, local95, local151, local90);
 							}

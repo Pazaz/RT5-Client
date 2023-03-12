@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static312 {
 
 	@OriginalMember(owner = "client!sa", name = "P", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_123 = new Class79("Loaded textures", "Texturen geladen.", "Textures chargées", "Texturas carregadas");
+	public static final LocalizedString aClass79_123 = new LocalizedString("Loaded textures", "Texturen geladen.", "Textures chargées", "Texturas carregadas");
 
 	@OriginalMember(owner = "client!sa", name = "U", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_124 = new Class79("K", "T", "K", "K");
+	public static final LocalizedString aClass79_124 = new LocalizedString("K", "T", "K", "K");
 
 	@OriginalMember(owner = "client!sa", name = "W", descriptor = "I")
 	public static int anInt5844 = -1;

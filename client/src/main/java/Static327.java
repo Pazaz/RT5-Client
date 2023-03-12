@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static327 {
 
 	@OriginalMember(owner = "client!ta", name = "b", descriptor = "Lclient!ad;")
-	public static final Class4 aClass4_127 = new Class4(512);
+	public static final HashTable aClass4_127 = new HashTable(512);
 
 	@OriginalMember(owner = "client!ta", name = "p", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_222 = new ClientProt(77, -1);
@@ -160,9 +160,9 @@ public final class Static327 {
 					}
 				}
 				if (local354.aClass11_1 instanceof Class11_Sub4_Sub1) {
-					@Pc(1038) Class2_Sub32 local1038 = (Class2_Sub32) Static120.aClass4_49.method90((long) (local354.anInt4076 | local354.anInt4073 << 28 | local354.anInt4075 << 14));
+					@Pc(1038) Class2_Sub32 local1038 = (Class2_Sub32) Static120.aClass4_49.get((long) (local354.anInt4076 | local354.anInt4073 << 28 | local354.anInt4075 << 14));
 					if (local1038 != null) {
-						for (@Pc(1046) Class2_Sub8 local1046 = (Class2_Sub8) local1038.aClass135_34.method3548(); local1046 != null; local1046 = (Class2_Sub8) local1038.aClass135_34.method3547()) {
+						for (@Pc(1046) Class2_Sub8 local1046 = (Class2_Sub8) local1038.aClass135_34.tail(); local1046 != null; local1046 = (Class2_Sub8) local1038.aClass135_34.method3547()) {
 							@Pc(1054) Class188 local1054 = Static313.ObjTypeList.get(local1046.anInt1717);
 							if (!Static330.aBoolean419) {
 								if (local354.anInt4073 == Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) {

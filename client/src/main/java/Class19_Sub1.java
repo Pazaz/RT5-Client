@@ -246,25 +246,25 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public final int anInt583 = 3;
 
 	@OriginalMember(owner = "client!bf", name = "M", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_4 = new Class135();
+	private final LinkedList aClass135_4 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "R", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_5 = new Class135();
+	private final LinkedList aClass135_5 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "S", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_6 = new Class135();
+	private final LinkedList aClass135_6 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "T", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_7 = new Class135();
+	private final LinkedList aClass135_7 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "U", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_8 = new Class135();
+	private final LinkedList aClass135_8 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "V", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_9 = new Class135();
+	private final LinkedList aClass135_9 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "W", descriptor = "Lclient!ld;")
-	private final Class135 aClass135_10 = new Class135();
+	private final LinkedList aClass135_10 = new LinkedList();
 
 	@OriginalMember(owner = "client!bf", name = "Y", descriptor = "[F")
 	private final float[] aFloatArray6 = new float[4];
@@ -420,7 +420,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private final Class2_Sub38_Sub1 aClass2_Sub38_Sub1_1;
 
 	@OriginalMember(owner = "client!bf", name = "<init>", descriptor = "(Ljava/awt/Canvas;Lclient!ci;IILclient!ml;)V")
-	public Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface2 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Signlink arg4) {
+	public Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) TextureProvider arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Signlink arg4) {
 		super(arg2, arg1);
 		this.aCanvas2 = arg0;
 		@Pc(185) int local185 = 0;
@@ -428,7 +428,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			if (local185++ > 5) {
 				throw new RuntimeException("");
 			}
-			Static231.method4023(1000L);
+			ThreadUtils.sleep(1000L);
 		}
 		this.aCanvas2.setIgnoreRepaint(true);
 		try {
@@ -440,7 +440,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 				} else {
 					@Pc(219) PrivilegedRequest local219 = arg4.loadGlNatives(this.getClass());
 					while (local219.status == 0) {
-						Static231.method4023(100L);
+						ThreadUtils.sleep(100L);
 					}
 					if (local219.status == 1) {
 						Static22.aBoolean31 = Boolean.TRUE;
@@ -538,7 +538,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 						if (local185++ > 5) {
 							throw new RuntimeException("");
 						}
-						Static231.method4023(100L);
+						ThreadUtils.sleep(100L);
 					}
 				}
 				this.anOpengl1.glClear(GL.GL_COLOR_BUFFER_BIT);
@@ -776,8 +776,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "e", descriptor = "(II)V")
 	public synchronized void method785(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) Class2_Sub39 local4 = new Class2_Sub39(arg1);
-		local4.aLong232 = arg0;
-		this.aClass135_7.method3540(local4);
+		local4.key = arg0;
+		this.aClass135_7.addTail(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "s", descriptor = "()Z")
@@ -1285,7 +1285,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		@Pc(16) Class2_Sub39 local16;
 		while (!this.aClass135_5.method3550()) {
 			local16 = (Class2_Sub39) this.aClass135_5.method3549();
-			Static22.anIntArray32[local1++] = (int) local16.aLong232;
+			Static22.anIntArray32[local1++] = (int) local16.key;
 			this.anInt581 -= local16.anInt6818;
 			if (local1 == 1000) {
 				this.anOpengl1.glDeleteBuffersARB(local1, Static22.anIntArray32, 0);
@@ -1298,7 +1298,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		}
 		while (!this.aClass135_6.method3550()) {
 			local16 = (Class2_Sub39) this.aClass135_6.method3549();
-			Static22.anIntArray32[local1++] = (int) local16.aLong232;
+			Static22.anIntArray32[local1++] = (int) local16.key;
 			this.anInt585 -= local16.anInt6818;
 			if (local1 == 1000) {
 				this.anOpengl1.glDeleteTextures(local1, Static22.anIntArray32, 0);
@@ -1323,7 +1323,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		}
 		while (!this.aClass135_8.method3550()) {
 			local16 = (Class2_Sub39) this.aClass135_8.method3549();
-			Static22.anIntArray32[local1++] = (int) local16.aLong232;
+			Static22.anIntArray32[local1++] = (int) local16.key;
 			this.anInt586 -= local16.anInt6818;
 			if (local1 == 1000) {
 				this.anOpengl1.glDeleteRenderbuffersEXT(local1, Static22.anIntArray32, 0);
@@ -1336,7 +1336,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		}
 		while (!this.aClass135_9.method3550()) {
 			local16 = (Class2_Sub39) this.aClass135_9.method3549();
-			Static22.anIntArray32[local1++] = (int) local16.aLong232;
+			Static22.anIntArray32[local1++] = (int) local16.key;
 			if (local1 == 1000) {
 				this.anOpengl1.glDeleteProgramsARB(local1, Static22.anIntArray32, 0);
 				local1 = 0;
@@ -1347,7 +1347,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		}
 		while (!this.aClass135_4.method3550()) {
 			local16 = (Class2_Sub39) this.aClass135_4.method3549();
-			this.anOpengl1.glDeleteLists((int) local16.aLong232, local16.anInt6818);
+			this.anOpengl1.glDeleteLists((int) local16.key, local16.anInt6818);
 		}
 		while (!this.aClass135_10.method3550()) {
 			local16 = (Class2_Sub39) this.aClass135_10.method3549();
@@ -1355,7 +1355,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		}
 		while (!this.aClass135_4.method3550()) {
 			local16 = (Class2_Sub39) this.aClass135_4.method3549();
-			this.anOpengl1.glDeleteLists((int) local16.aLong232, local16.anInt6818);
+			this.anOpengl1.glDeleteLists((int) local16.key, local16.anInt6818);
 		}
 		if (this.method2899() > 100663296 && MonotonicClock.currentTimeMillis() > this.aLong20 + 60000L) {
 			System.gc();
@@ -1545,8 +1545,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "g", descriptor = "(II)V")
 	public synchronized void method803(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) Class2_Sub39 local4 = new Class2_Sub39(arg1);
-		local4.aLong232 = arg0;
-		this.aClass135_6.method3540(local4);
+		local4.key = arg0;
+		this.aClass135_6.addTail(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(FFFF)V")
@@ -1814,7 +1814,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "o", descriptor = "(I)V")
 	public synchronized void method820(@OriginalArg(0) int arg0) {
 		@Pc(4) Class2_Sub39 local4 = new Class2_Sub39(arg0);
-		this.aClass135_10.method3540(local4);
+		this.aClass135_10.addTail(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "m", descriptor = "()I")
@@ -1935,7 +1935,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "p", descriptor = "(I)V")
 	public synchronized void method822(@OriginalArg(0) int arg0) {
 		@Pc(4) Class2_Sub39 local4 = new Class2_Sub39(arg0);
-		this.aClass135_7.method3540(local4);
+		this.aClass135_7.addTail(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "fb", descriptor = "()V")
@@ -2017,7 +2017,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 			if (local1++ > 5) {
 				throw new RuntimeException("");
 			}
-			Static231.method4023(1000L);
+			ThreadUtils.sleep(1000L);
 		}
 	}
 
@@ -2109,7 +2109,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "r", descriptor = "(I)V")
 	public synchronized void method836(@OriginalArg(0) int arg0) {
 		@Pc(4) Class2_Sub39 local4 = new Class2_Sub39(arg0);
-		this.aClass135_9.method3540(local4);
+		this.aClass135_9.addTail(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "b", descriptor = "(IIIII)V")
@@ -2297,8 +2297,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	@OriginalMember(owner = "client!bf", name = "h", descriptor = "(II)V")
 	public synchronized void method841(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) Class2_Sub39 local4 = new Class2_Sub39(arg1);
-		local4.aLong232 = arg0;
-		this.aClass135_5.method3540(local4);
+		local4.key = arg0;
+		this.aClass135_5.addTail(local4);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(II[[I[[IIII)Lclient!tf;")

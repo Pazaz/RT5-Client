@@ -19,7 +19,7 @@ public final class Class173_Sub1 extends Class173 {
 	private final int anInt4780;
 
 	static {
-		new Class79("Unable to add name - system busy.", "Der Name konnte nicht hinzugefügt werden, das System ist derzeit ausgelastet.", "Impossible d'ajouter un nom - système occupé.", "Não foi possível adicionar o nome. O sistema está ocupado.");
+		new LocalizedString("Unable to add name - system busy.", "Der Name konnte nicht hinzugefügt werden, das System ist derzeit ausgelastet.", "Impossible d'ajouter un nom - système occupé.", "Não foi possível adicionar o nome. O sistema está ocupado.");
 	}
 
 	@OriginalMember(owner = "client!oq", name = "<init>", descriptor = "(IIIIII)V")

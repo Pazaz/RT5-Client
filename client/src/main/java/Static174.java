@@ -34,9 +34,9 @@ public final class Static174 {
 		Static154.method2783(local5);
 		Static317.method5549(local5);
 		Static202.method3678(local5);
-		if (LoginManager.reconnecting == 10) {
+		if (client.gameState == 10) {
 			Static336.method5705(28);
-		} else if (LoginManager.reconnecting == 30) {
+		} else if (client.gameState == 30) {
 			Static336.method5705(25);
 		}
 	}

@@ -10,7 +10,7 @@ public final class Static3 {
 	public static boolean aBoolean5 = false;
 
 	@OriginalMember(owner = "client!ab", name = "H", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_1 = new Class79("green:", "grün:", "vert:", "verde:");
+	public static final LocalizedString aClass79_1 = new LocalizedString("green:", "grün:", "vert:", "verde:");
 
 	@OriginalMember(owner = "client!ab", name = "I", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray1 = new String[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };

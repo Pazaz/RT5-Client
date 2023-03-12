@@ -37,7 +37,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 	private Class2_Sub2_Sub4 aClass2_Sub2_Sub4_4;
 
 	static {
-		new Class79("Your friendlist is full, max of 100 for free users, and 200 for members.", "Ihre Freunde-Liste ist voll!", "Votre liste d'amis est pleine (100 noms maximum pour la version gratuite et 200 pour les abonnés).", "Sua lista de amigos está cheia. O limite é 100 para usuários não pagantes, e 200 para membros.");
+		new LocalizedString("Your friendlist is full, max of 100 for free users, and 200 for members.", "Ihre Freunde-Liste ist voll!", "Votre liste d'amis est pleine (100 noms maximum pour la version gratuite et 200 pour les abonnés).", "Sua lista de amigos está cheia. O limite é 100 para usuários não pagantes, e 200 para membros.");
 	}
 
 	@OriginalMember(owner = "client!kr", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIZIIZ)V")

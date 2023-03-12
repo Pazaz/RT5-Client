@@ -10,18 +10,18 @@ public final class Class128 {
 	private Class98 aClass98_28 = new Class98(64);
 
 	@OriginalMember(owner = "client!km", name = "c", descriptor = "Lclient!r;")
-	private final Class197 aClass197_51;
+	private final Js5 aClass197_51;
 
 	static {
-		new Class79("Login to a members' server to use this object.", "Du musst auf einer Mitglieder-Welt sein, um diesen Gegenstand zu benutzen.", "Connectez-vous à un serveur d'abonnés pour utiliser cet objet.", "Acesse um servidor para membros para usar este objeto.");
+		new LocalizedString("Login to a members' server to use this object.", "Du musst auf einer Mitglieder-Welt sein, um diesen Gegenstand zu benutzen.", "Connectez-vous à un serveur d'abonnés pour utiliser cet objet.", "Acesse um servidor para membros para usar este objeto.");
 	}
 
 	@OriginalMember(owner = "client!km", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class128(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class197 arg2) {
+	public Class128(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aClass197_51 = arg2;
 		if (this.aClass197_51 != null) {
-			@Pc(20) int local20 = this.aClass197_51.method5092() - 1;
-			this.aClass197_51.method5081(local20);
+			@Pc(20) int local20 = this.aClass197_51.capacity() - 1;
+			this.aClass197_51.getGroupCapacity(local20);
 		}
 	}
 
@@ -60,7 +60,7 @@ public final class Class128 {
 		if (local24 != null) {
 			return local24;
 		}
-		@Pc(45) byte[] local45 = this.aClass197_51.method5089(Static75.method1837(arg0), Static319.method5431(arg0));
+		@Pc(45) byte[] local45 = this.aClass197_51.fetchFile(Static75.method1837(arg0), Static319.method5431(arg0));
 		local24 = new Class134();
 		if (local45 != null) {
 			local24.method3509(new Buffer(local45));

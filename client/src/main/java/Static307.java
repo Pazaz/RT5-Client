@@ -9,7 +9,7 @@ public final class Static307 {
 	public static String aString57;
 
 	@OriginalMember(owner = "client!rq", name = "l", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_121 = new Class79("Loading wordpack - ", "Lade Wordpack - ", "Chargement du module texte - ", "Carregando pacote de palavras - ");
+	public static final LocalizedString aClass79_121 = new LocalizedString("Loading wordpack - ", "Lade Wordpack - ", "Chargement du module texte - ", "Carregando pacote de palavras - ");
 
 	@OriginalMember(owner = "client!rq", name = "n", descriptor = "I")
 	public static int anInt5780 = 0;
@@ -28,12 +28,12 @@ public final class Static307 {
 			if (local29 == null) {
 				arg0 = -1;
 			} else {
-				GameShell.signlink.setCursor(local29.method1680(), new Point(local25.anInt6203, local25.anInt6200), local29.method1685(), Static21.aCanvas1, local29.method1683());
+				GameShell.signlink.setCursor(local29.method1680(), new Point(local25.anInt6203, local25.anInt6200), local29.method1685(), GameShell.canvas, local29.method1683());
 				Static29.anInt721 = arg0;
 			}
 		}
 		if (arg0 == -1 && Static29.anInt721 != -1) {
-			GameShell.signlink.setCursor(-1, new Point(), null, Static21.aCanvas1, -1);
+			GameShell.signlink.setCursor(-1, new Point(), null, GameShell.canvas, -1);
 			Static29.anInt721 = -1;
 		}
 	}

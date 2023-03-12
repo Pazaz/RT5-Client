@@ -60,7 +60,7 @@ public final class Static115 {
 					if (local9.aClass161Array2 != null) {
 						method3847(arg0, local9.aClass161Array2);
 					}
-					@Pc(30) Class2_Sub7 local30 = (Class2_Sub7) Static329.aClass4_130.method90((long) local9.anInt4317);
+					@Pc(30) Class2_Sub7 local30 = (Class2_Sub7) Static329.aClass4_130.get((long) local9.anInt4317);
 					if (local30 != null) {
 						Static392.method6460(local30.anInt1370, arg0);
 					}

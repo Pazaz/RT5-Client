@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static279 {
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_111 = new Class79("Loading title screen - ", "Lade Titelbild - ", "Chargement de l'écran-titre - ", "Carregando tela título - ");
+	public static final LocalizedString aClass79_111 = new LocalizedString("Loading title screen - ", "Lade Titelbild - ", "Chargement de l'écran-titre - ", "Carregando tela título - ");
 
 	@OriginalMember(owner = "client!qc", name = "f", descriptor = "I")
 	public static int anInt5161 = 13156520;

@@ -8,7 +8,7 @@ public final class Static391 {
 	public static int anInt7216;
 
 	@OriginalMember(owner = "client!wq", name = "j", descriptor = "Lclient!r;")
-	public static Class197 aClass197_95;
+	public static Js5 aClass197_95;
 
 	@OriginalMember(owner = "client!wq", name = "h", descriptor = "[I")
 	public static final int[] anIntArray495 = new int[] { 16, 32, 64, 128 };
@@ -116,7 +116,7 @@ public final class Static391 {
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(Lclient!cf;B)V")
 	public static void method6454(@OriginalArg(0) Class2_Sub5 arg0) {
 		if (!Static375.aBoolean477) {
-			arg0.method6468();
+			arg0.unlink();
 			Static268.anInt4959--;
 		}
 	}

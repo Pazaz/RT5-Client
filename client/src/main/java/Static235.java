@@ -14,7 +14,7 @@ public final class Static235 {
 	public static int anInt3368 = 0;
 
 	@OriginalMember(owner = "client!nj", name = "k", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_72 = new Class79("Loaded sprites", "Sprites geladen.", "Sprites chargés", "Sprites carregados");
+	public static final LocalizedString aClass79_72 = new LocalizedString("Loaded sprites", "Sprites geladen.", "Sprites chargés", "Sprites carregados");
 
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(Lclient!ml;IILclient!bt;)V")
 	public static void method3339(@OriginalArg(0) Signlink arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Buffer arg2) {
@@ -80,7 +80,7 @@ public final class Static235 {
 				local9.anIntArray491[local56] = -5;
 			}
 		}
-		Static337.aClass135_37.method3540(local9);
+		Static337.aClass135_37.addTail(local9);
 	}
 
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(IIII)Z")

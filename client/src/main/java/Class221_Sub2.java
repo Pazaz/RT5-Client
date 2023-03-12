@@ -18,7 +18,7 @@ public final class Class221_Sub2 extends Class221 {
 	@OriginalMember(owner = "client!wb", name = "a", descriptor = "(Ljava/awt/Component;)V")
 	@Override
 	public void method6327(@OriginalArg(0) Component arg0) throws Exception {
-		Static379.anInterface3_2.method1993(Static356.anInt6643, arg0, Static354.aBoolean93);
+		Static379.anInterface3_2.method1993(AudioChannel.sampleRate, arg0, Static354.aBoolean93);
 	}
 
 	@OriginalMember(owner = "client!wb", name = "c", descriptor = "()V")

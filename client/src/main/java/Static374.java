@@ -12,7 +12,7 @@ public final class Static374 {
 	public static final Class210 aClass210_16 = new Class210(9, 17);
 
 	@OriginalMember(owner = "client!vr", name = "e", descriptor = "[Lclient!bl;")
-	public static final Class25_Sub1[] aClass25_Sub1Array2 = new Class25_Sub1[29];
+	public static final Js5CachedResourceProvider[] aClass25_Sub1Array2 = new Js5CachedResourceProvider[29];
 
 	@OriginalMember(owner = "client!vr", name = "k", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_255 = new ClientProt(66, 2);
@@ -49,6 +49,6 @@ public final class Static374 {
 	@OriginalMember(owner = "client!vr", name = "a", descriptor = "(ZII)Lclient!we;")
 	public static Class2_Sub41 method6275(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1) {
 		@Pc(12) long local12 = (long) ((arg0 ? Integer.MIN_VALUE : 0) | arg1);
-		return (Class2_Sub41) Static353.aClass4_136.method90(local12);
+		return (Class2_Sub41) Static353.aClass4_136.get(local12);
 	}
 }

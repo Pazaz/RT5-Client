@@ -455,7 +455,7 @@ public final class Static406 {
 
 	@OriginalMember(owner = "client!qn", name = "a", descriptor = "(Lclient!jn;II)Lclient!qn;")
 	public static Class2_Sub12_Sub4 method5006(@OriginalArg(0) Class2_Sub21_Sub1 arg0, @OriginalArg(2) int arg1) {
-		return arg0.aByteArray31 == null || arg0.aByteArray31.length == 0 ? null : new Class2_Sub12_Sub4(arg0, (int) ((long) arg0.anInt3176 * 256L * (long) 100 / (long) (Static356.anInt6643 * 100)), arg1 << 6);
+		return arg0.aByteArray31 == null || arg0.aByteArray31.length == 0 ? null : new Class2_Sub12_Sub4(arg0, (int) ((long) arg0.anInt3176 * 256L * (long) 100 / (long) (AudioChannel.sampleRate * 100)), arg1 << 6);
 	}
 
 	@OriginalMember(owner = "client!qn", name = "b", descriptor = "(II[B[IIIIIIILclient!qn;II)I")

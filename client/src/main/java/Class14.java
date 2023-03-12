@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class Class14 {
 
 	static {
-		new Class79("Invalid teleport!", "Unzulässiger Teleport!", "Téléportation non valide !", "Teleporte inválido!");
+		new LocalizedString("Invalid teleport!", "Unzulässiger Teleport!", "Téléportation non valide !", "Teleporte inválido!");
 	}
 
 	@OriginalMember(owner = "client!on", name = "a", descriptor = "(III)V")

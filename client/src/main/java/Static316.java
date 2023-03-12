@@ -15,10 +15,10 @@ public final class Static316 {
 
 	@OriginalMember(owner = "client!sg", name = "a", descriptor = "(III)Lclient!gg;")
 	public static Class2_Sub2_Sub7 method5413(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(15) Class2_Sub2_Sub7 local15 = (Class2_Sub2_Sub7) Static296.aClass4_109.method90((long) arg1 | (long) arg0 << 32);
+		@Pc(15) Class2_Sub2_Sub7 local15 = (Class2_Sub2_Sub7) Static296.aClass4_109.get((long) arg1 | (long) arg0 << 32);
 		if (local15 == null) {
 			local15 = new Class2_Sub2_Sub7(arg0, arg1);
-			Static296.aClass4_109.method87(local15, local15.aLong232);
+			Static296.aClass4_109.put(local15, local15.key);
 		}
 		return local15;
 	}

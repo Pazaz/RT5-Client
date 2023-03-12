@@ -13,14 +13,14 @@ public final class Class85 {
 	private final Class98 aClass98_15 = new Class98(100);
 
 	@OriginalMember(owner = "client!gp", name = "n", descriptor = "Lclient!r;")
-	private final Class197 aClass197_27;
+	private final Js5 aClass197_27;
 
 	@OriginalMember(owner = "client!gp", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;Lclient!r;Lclient!r;)V")
-	public Class85(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class197 arg2, @OriginalArg(3) Class197 arg3, @OriginalArg(4) Class197 arg4) {
+	public Class85(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
 		this.aClass197_27 = arg2;
 		if (this.aClass197_27 != null) {
-			@Pc(26) int local26 = this.aClass197_27.method5092() - 1;
-			this.aClass197_27.method5081(local26);
+			@Pc(26) int local26 = this.aClass197_27.capacity() - 1;
+			this.aClass197_27.getGroupCapacity(local26);
 		}
 		Static81.method3665(arg3, arg4);
 	}
@@ -51,7 +51,7 @@ public final class Class85 {
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(37) byte[] local37 = this.aClass197_27.method5089(Static341.method5768(arg0), Static98.method2104(arg0));
+		@Pc(37) byte[] local37 = this.aClass197_27.fetchFile(Static341.method5768(arg0), Static98.method2104(arg0));
 		local16 = new Class157();
 		local16.anInt4028 = arg0;
 		local16.aClass85_2 = this;

@@ -14,8 +14,8 @@ public final class Static222 {
 	public static boolean method3916(@OriginalArg(0) int arg0) {
 		if (Static128.aBooleanArray21[arg0]) {
 			return true;
-		} else if (Static283.aClass197_68.method5071(arg0)) {
-			@Pc(23) int local23 = Static283.aClass197_68.method5081(arg0);
+		} else if (Static283.aClass197_68.isGroupReady(arg0)) {
+			@Pc(23) int local23 = Static283.aClass197_68.getGroupCapacity(arg0);
 			if (local23 == 0) {
 				Static128.aBooleanArray21[arg0] = true;
 				return true;
@@ -25,7 +25,7 @@ public final class Static222 {
 			}
 			for (@Pc(45) int local45 = 0; local45 < local23; local45++) {
 				if (Static26.aClass161ArrayArray1[arg0][local45] == null) {
-					@Pc(59) byte[] local59 = Static283.aClass197_68.method5089(local45, arg0);
+					@Pc(59) byte[] local59 = Static283.aClass197_68.fetchFile(local45, arg0);
 					if (local59 != null) {
 						@Pc(71) Class161 local71 = Static26.aClass161ArrayArray1[arg0][local45] = new Class161();
 						local71.anInt4317 = local45 + (arg0 << 16);

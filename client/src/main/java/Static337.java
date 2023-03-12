@@ -14,7 +14,7 @@ public final class Static337 {
 	public static int anInt6317;
 
 	@OriginalMember(owner = "client!tk", name = "b", descriptor = "Lclient!ld;")
-	public static Class135 aClass135_37 = new Class135();
+	public static LinkedList aClass135_37 = new LinkedList();
 
 	@OriginalMember(owner = "client!tk", name = "a", descriptor = "(IILclient!jc;III)V")
 	public static void method5706(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class2_Sub19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
@@ -35,11 +35,11 @@ public final class Static337 {
 		}
 		if (arg2.anInt2901 == 0 || arg2.anInt2901 < local16 - 64 || client.preferences.anInt4882 == 0 || arg2.anInt2905 != arg1) {
 			if (arg2.aClass2_Sub12_Sub4_3 != null) {
-				Static227.aClass2_Sub12_Sub2_2.method2081(arg2.aClass2_Sub12_Sub4_3);
+				client.soundStream.method2081(arg2.aClass2_Sub12_Sub4_3);
 				arg2.aClass2_Sub12_Sub4_3 = null;
 			}
 			if (arg2.aClass2_Sub12_Sub4_2 != null) {
-				Static227.aClass2_Sub12_Sub2_2.method2081(arg2.aClass2_Sub12_Sub4_2);
+				client.soundStream.method2081(arg2.aClass2_Sub12_Sub4_2);
 				arg2.aClass2_Sub12_Sub4_2 = null;
 			}
 			return;
@@ -54,16 +54,16 @@ public final class Static337 {
 		} else if (arg2.anInt2894 >= 0) {
 			@Pc(155) Class247 local155 = Static409.method6435(client.jsArchive4, arg2.anInt2894, 0);
 			if (local155 != null) {
-				@Pc(162) Class2_Sub21_Sub1 local162 = local155.method6434().method3179(Static300.aClass249_1);
+				@Pc(162) Class2_Sub21_Sub1 local162 = local155.method6434().method3179(client.resampler);
 				@Pc(167) Class2_Sub12_Sub4 local167 = Static406.method5006(local162, local140);
 				local167.method4984(-1);
-				Static227.aClass2_Sub12_Sub2_2.method2083(local167);
+				client.soundStream.method2083(local167);
 				arg2.aClass2_Sub12_Sub4_3 = local167;
 			}
 		}
 		if (arg2.aClass2_Sub12_Sub4_2 != null) {
 			arg2.aClass2_Sub12_Sub4_2.method4979(local140);
-			if (arg2.aClass2_Sub12_Sub4_2.method6462()) {
+			if (arg2.aClass2_Sub12_Sub4_2.isLinked()) {
 				return;
 			}
 			arg2.aClass2_Sub12_Sub4_2 = null;
@@ -71,10 +71,10 @@ public final class Static337 {
 			@Pc(204) int local204 = (int) ((double) arg2.anIntArray181.length * Math.random());
 			@Pc(212) Class247 local212 = Static409.method6435(client.jsArchive4, arg2.anIntArray181[local204], 0);
 			if (local212 != null) {
-				@Pc(219) Class2_Sub21_Sub1 local219 = local212.method6434().method3179(Static300.aClass249_1);
+				@Pc(219) Class2_Sub21_Sub1 local219 = local212.method6434().method3179(client.resampler);
 				@Pc(224) Class2_Sub12_Sub4 local224 = Static406.method5006(local219, local140);
 				local224.method4984(0);
-				Static227.aClass2_Sub12_Sub2_2.method2083(local224);
+				client.soundStream.method2083(local224);
 				arg2.anInt2907 = (int) ((double) (arg2.anInt2897 - arg2.anInt2903) * Math.random()) + arg2.anInt2903;
 				arg2.aClass2_Sub12_Sub4_2 = local224;
 				return;

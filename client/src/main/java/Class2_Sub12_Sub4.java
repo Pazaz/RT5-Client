@@ -175,7 +175,7 @@ public final class Class2_Sub12_Sub4 extends Class2_Sub12 {
 		} else if (this.anInt5479 == Integer.MIN_VALUE) {
 			this.anInt5479 = 0;
 			this.anInt5488 = this.anInt5481 = this.anInt5482 = 0;
-			this.method6468();
+			this.unlink();
 			return true;
 		} else {
 			this.method4985();
@@ -192,12 +192,12 @@ public final class Class2_Sub12_Sub4 extends Class2_Sub12 {
 	public synchronized void method4990(@OriginalArg(0) int arg0) {
 		if (arg0 == 0) {
 			this.method5018();
-			this.method6468();
+			this.unlink();
 		} else if (this.anInt5481 == 0 && this.anInt5482 == 0) {
 			this.anInt5483 = 0;
 			this.anInt5479 = 0;
 			this.anInt5488 = 0;
-			this.method6468();
+			this.unlink();
 		} else {
 			@Pc(31) int local31 = -this.anInt5488;
 			if (this.anInt5488 > local31) {
@@ -255,7 +255,7 @@ public final class Class2_Sub12_Sub4 extends Class2_Sub12 {
 		if (this.anInt5490 < 0) {
 			if (this.anInt5489 <= 0) {
 				this.method5007();
-				this.method6468();
+				this.unlink();
 				return;
 			}
 			this.anInt5490 = 0;
@@ -263,7 +263,7 @@ public final class Class2_Sub12_Sub4 extends Class2_Sub12 {
 		if (this.anInt5490 >= local29) {
 			if (this.anInt5489 >= 0) {
 				this.method5007();
-				this.method6468();
+				this.unlink();
 				return;
 			}
 			this.anInt5490 = local29 - 1;
@@ -341,7 +341,7 @@ public final class Class2_Sub12_Sub4 extends Class2_Sub12 {
 				if (this.anInt5490 < 0) {
 					this.anInt5490 = -1;
 					this.method5007();
-					this.method6468();
+					this.unlink();
 					return;
 				}
 			} else {
@@ -349,7 +349,7 @@ public final class Class2_Sub12_Sub4 extends Class2_Sub12 {
 				if (this.anInt5490 >= local29) {
 					this.anInt5490 = local29;
 					this.method5007();
-					this.method6468();
+					this.unlink();
 				}
 			}
 		} else if (this.aBoolean390) {
@@ -508,7 +508,7 @@ public final class Class2_Sub12_Sub4 extends Class2_Sub12 {
 				if (this.anInt5479 == Integer.MIN_VALUE) {
 					this.anInt5479 = 0;
 					this.anInt5488 = this.anInt5481 = this.anInt5482 = 0;
-					this.method6468();
+					this.unlink();
 					arg0 = this.anInt5483;
 				}
 				this.anInt5483 = 0;
@@ -531,7 +531,7 @@ public final class Class2_Sub12_Sub4 extends Class2_Sub12 {
 		if (this.anInt5490 < 0) {
 			if (this.anInt5489 <= 0) {
 				this.method5007();
-				this.method6468();
+				this.unlink();
 				return;
 			}
 			this.anInt5490 = 0;
@@ -539,7 +539,7 @@ public final class Class2_Sub12_Sub4 extends Class2_Sub12 {
 		if (this.anInt5490 >= local87) {
 			if (this.anInt5489 >= 0) {
 				this.method5007();
-				this.method6468();
+				this.unlink();
 				return;
 			}
 			this.anInt5490 = local87 - 1;
@@ -607,13 +607,13 @@ public final class Class2_Sub12_Sub4 extends Class2_Sub12 {
 				if (this.anInt5490 < 0) {
 					this.anInt5490 = -1;
 					this.method5007();
-					this.method6468();
+					this.unlink();
 					return;
 				}
 			} else if (this.anInt5490 >= local87) {
 				this.anInt5490 = local87;
 				this.method5007();
-				this.method6468();
+				this.unlink();
 			}
 		} else if (this.aBoolean390) {
 			if (this.anInt5489 < 0) {

@@ -26,6 +26,6 @@ public final class Class12_Sub3 extends Class12 {
 	public String aString26;
 
 	static {
-		new Class79("Invalid channel name entered!", "Ungültiger Chatraum-Name angegeben.", "Nom de canal incorrect !", "Nome de canal inválido!");
+		new LocalizedString("Invalid channel name entered!", "Ungültiger Chatraum-Name angegeben.", "Nom de canal incorrect !", "Nome de canal inválido!");
 	}
 }

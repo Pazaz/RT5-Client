@@ -10,18 +10,18 @@ public final class Class109 {
 	private final Class98 aClass98_23 = new Class98(128);
 
 	@OriginalMember(owner = "client!is", name = "f", descriptor = "Lclient!r;")
-	private final Class197 aClass197_43;
+	private final Js5 aClass197_43;
 
 	static {
-		new Class79("You do not have permission to kick this user.", "Du darfst diesen Benutzer nicht rauswerfen.", "Vous n'êtes pas autorisé à expulser cet utilisateur.", "Você não tem permissão para expulsar este usuário.");
+		new LocalizedString("You do not have permission to kick this user.", "Du darfst diesen Benutzer nicht rauswerfen.", "Vous n'êtes pas autorisé à expulser cet utilisateur.", "Você não tem permissão para expulsar este usuário.");
 	}
 
 	@OriginalMember(owner = "client!is", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class109(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class197 arg2) {
+	public Class109(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aClass197_43 = arg2;
 		if (this.aClass197_43 != null) {
-			@Pc(20) int local20 = this.aClass197_43.method5092() - 1;
-			this.aClass197_43.method5081(local20);
+			@Pc(20) int local20 = this.aClass197_43.capacity() - 1;
+			this.aClass197_43.getGroupCapacity(local20);
 		}
 	}
 
@@ -35,7 +35,7 @@ public final class Class109 {
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(37) byte[] local37 = this.aClass197_43.method5089(Static121.method2393(arg0), Static266.method4498(arg0));
+		@Pc(37) byte[] local37 = this.aClass197_43.fetchFile(Static121.method2393(arg0), Static266.method4498(arg0));
 		local16 = new Class52();
 		if (local37 != null) {
 			local16.method1774(new Buffer(local37));

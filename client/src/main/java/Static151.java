@@ -7,7 +7,7 @@ public final class Static151 {
 	public static int anInt2772;
 
 	@OriginalMember(owner = "client!im", name = "E", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_65 = new Class79(" from your ignore list first.", " zuerst von deiner Ignorieren-Liste!", " de votre liste noire.", " da sua lista de ignorados primeiro.");
+	public static final LocalizedString aClass79_65 = new LocalizedString(" from your ignore list first.", " zuerst von deiner Ignorieren-Liste!", " de votre liste noire.", " da sua lista de ignorados primeiro.");
 
 	@OriginalMember(owner = "client!im", name = "G", descriptor = "I")
 	public static int rebootTimer = 0;

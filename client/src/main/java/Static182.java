@@ -67,15 +67,15 @@ public final class Static182 {
 
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "(B)V")
 	public static void method3387() {
-		for (@Pc(15) Class2_Sub2_Sub1 local15 = (Class2_Sub2_Sub1) Static129.aClass135_20.method3551(); local15 != null; local15 = (Class2_Sub2_Sub1) Static129.aClass135_20.method3552()) {
+		for (@Pc(15) Class2_Sub2_Sub1 local15 = (Class2_Sub2_Sub1) Static129.aClass135_20.head(); local15 != null; local15 = (Class2_Sub2_Sub1) Static129.aClass135_20.next()) {
 			@Pc(20) Class11_Sub5_Sub4 local20 = local15.aClass11_Sub5_Sub4_1;
 			if (local20.aBoolean445) {
-				local15.method6468();
+				local15.unlink();
 				local20.method5878();
 			} else if (local20.anInt6504 <= client.cycle) {
 				local20.method5879(Static165.anInt3148);
 				if (local20.aBoolean445) {
-					local15.method6468();
+					local15.unlink();
 				} else {
 					Static329.method5630(local20, true);
 				}

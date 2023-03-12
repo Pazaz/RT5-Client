@@ -2,9 +2,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static112 {
 
-	@OriginalMember(owner = "client!gg", name = "B", descriptor = "[I")
-	public static final int[] anIntArray145 = new int[256];
-
 	@OriginalMember(owner = "client!gg", name = "C", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_86 = new ClientProt(63, 8);
 

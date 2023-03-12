@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static340 {
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_133 = new Class79("Loaded world list data", "Liste der Welten geladen", "Liste des serveurs chargée", "Dados da lista de mundos carregados");
+	public static final LocalizedString aClass79_133 = new LocalizedString("Loaded world list data", "Liste der Welten geladen", "Liste des serveurs chargée", "Dados da lista de mundos carregados");
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(CB)C")
 	public static char method5762(@OriginalArg(0) char arg0) {
@@ -63,7 +63,7 @@ public final class Static340 {
 		try {
 			@Pc(11) PrivilegedRequest local11 = GameShell.signlink.openPreferences2();
 			while (local11.status == 0) {
-				Static231.method4023(1L);
+				ThreadUtils.sleep(1L);
 			}
 			if (local11.status == 1) {
 				local7 = (FileOnDisk) local11.result;

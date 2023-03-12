@@ -8,7 +8,7 @@ public final class Static33 {
 	public static int anInt4463;
 
 	@OriginalMember(owner = "client!bs", name = "q", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_96 = new Class79("level: ", "Stufe: ", "niveau ", "nível: ");
+	public static final LocalizedString aClass79_96 = new LocalizedString("level: ", "Stufe: ", "niveau ", "nível: ");
 
 	@OriginalMember(owner = "client!bs", name = "t", descriptor = "I")
 	public static int anInt4462 = -1;
@@ -23,9 +23,9 @@ public final class Static33 {
 		if (Static375.aClass161_14 == null) {
 			if (!Static375.aBoolean477 && Static268.anInt4959 > 0) {
 				if (Static148.aBoolean192 && Static174.aClass123_2.method3343(81) && Static268.anInt4959 > 2) {
-					return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.aClass2_244.aClass2_244).anInt1007;
+					return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev.prev).anInt1007;
 				}
-				return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.aClass2_244).anInt1007;
+				return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev).anInt1007;
 			}
 			@Pc(23) int local23 = Static226.aClass119_1.method3304();
 			@Pc(27) int local27 = Static226.aClass119_1.method3313();

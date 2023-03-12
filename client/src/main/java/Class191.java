@@ -13,7 +13,7 @@ public final class Class191 {
 	public final Class12_Sub1 aClass12_Sub1_7 = new Class12_Sub1();
 
 	static {
-		new Class79("Loaded additional fonts", "Zusatzschriftarten geladen", "Polices secondaires chargées", "Fontes principais carregadas");
+		new LocalizedString("Loaded additional fonts", "Zusatzschriftarten geladen", "Polices secondaires chargées", "Fontes principais carregadas");
 	}
 
 	@OriginalMember(owner = "client!qj", name = "<init>", descriptor = "()V")

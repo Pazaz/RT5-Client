@@ -46,7 +46,7 @@ public class Class29 {
 	protected byte[][][] aByteArrayArrayArray9;
 
 	static {
-		new Class79(" joined the channel.", " hat den Chatraum betreten.", " a rejoint le canal.", " entrou no canal.");
+		new LocalizedString(" joined the channel.", " hat den Chatraum betreten.", " a rejoint le canal.", " entrou no canal.");
 	}
 
 	@OriginalMember(owner = "client!mo", name = "<init>", descriptor = "(IIIZLclient!fl;Lclient!vq;)V")

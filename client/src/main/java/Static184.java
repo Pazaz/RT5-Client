@@ -7,9 +7,6 @@ public final class Static184 {
 	@OriginalMember(owner = "client!km", name = "k", descriptor = "I")
 	public static int anInt3435;
 
-	@OriginalMember(owner = "client!km", name = "j", descriptor = "Lclient!wh;")
-	public static final Class2_Sub43 aClass2_Sub43_1 = new Class2_Sub43(0, 0);
-
 	@OriginalMember(owner = "client!km", name = "l", descriptor = "F")
 	public static float aFloat39 = 0.0F;
 
@@ -84,7 +81,7 @@ public final class Static184 {
 		if (arg0) {
 			return;
 		}
-		for (@Pc(385) Class2_Sub5 local385 = (Class2_Sub5) Static129.aClass135_19.method3551(); local385 != null; local385 = (Class2_Sub5) Static129.aClass135_19.method3552()) {
+		for (@Pc(385) Class2_Sub5 local385 = (Class2_Sub5) Static129.aClass135_19.head(); local385 != null; local385 = (Class2_Sub5) Static129.aClass135_19.next()) {
 			if (local385.anInt1005 == 22) {
 				local385.aString11 = "<col=ffffff>" + local146;
 				return;

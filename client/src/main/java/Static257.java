@@ -73,7 +73,7 @@ public final class Static257 {
 		} else {
 			local194 = Static90.anInt6637 * 5;
 		}
-		for (@Pc(205) Class2_Sub20 local205 = (Class2_Sub20) Static344.aClass135_36.method3551(); local205 != null; local205 = (Class2_Sub20) Static344.aClass135_36.method3552()) {
+		for (@Pc(205) Class2_Sub20 local205 = (Class2_Sub20) Static344.aClass135_36.head(); local205 != null; local205 = (Class2_Sub20) Static344.aClass135_36.next()) {
 			@Pc(213) Class164 local213 = Static344.aClass125_4.method3379(local205.anInt2947);
 			if (Static101.method2164(local213)) {
 				@Pc(242) int local242;

@@ -114,7 +114,7 @@ public final class Class113 {
 		@Pc(49) int local49 = arg2.getMaxAscent();
 		@Pc(55) int local55 = arg2.getMaxAscent() + arg2.getMaxDescent();
 		@Pc(58) int local58 = arg2.getHeight();
-		@Pc(63) Image local63 = Static21.aCanvas1.createImage(local3, local55);
+		@Pc(63) Image local63 = GameShell.canvas.createImage(local3, local55);
 		@Pc(66) Graphics local66 = local63.getGraphics();
 		local66.setColor(Color.black);
 		local66.fillRect(0, 0, local3, local55);

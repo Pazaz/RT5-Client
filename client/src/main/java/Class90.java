@@ -23,6 +23,6 @@ public class Class90 {
 	public final Class2_Sub26_Sub1[] aClass2_Sub26_Sub1Array3 = new Class2_Sub26_Sub1[8];
 
 	static {
-		new Class79("That player is offline, or has privacy mode enabled.", "Dieser Spieler ist offline oder hat den Privatsphären-Modus aktiviert.", "Ce joueur est déconnecté ou en mode privé.", "O jogador está offline ou está com o modo de privacidade ativado.");
+		new LocalizedString("That player is offline, or has privacy mode enabled.", "Dieser Spieler ist offline oder hat den Privatsphären-Modus aktiviert.", "Ce joueur est déconnecté ou en mode privé.", "O jogador está offline ou está com o modo de privacidade ativado.");
 	}
 }

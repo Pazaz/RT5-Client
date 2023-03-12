@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static285 {
 
 	@OriginalMember(owner = "client!qj", name = "d", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_113 = new Class79("glow2:", "leuchten2:", "brillant2:", "brilho2:");
+	public static final LocalizedString aClass79_113 = new LocalizedString("glow2:", "leuchten2:", "brillant2:", "brilho2:");
 
 	@OriginalMember(owner = "client!qj", name = "g", descriptor = "I")
 	public static final int anInt5368 = 52;
@@ -105,7 +105,7 @@ public final class Static285 {
 	}
 
 	@OriginalMember(owner = "client!qj", name = "a", descriptor = "(ILclient!r;)V")
-	public static void method4895(@OriginalArg(1) Class197 arg0) {
+	public static void method4895(@OriginalArg(1) Js5 arg0) {
 		Static289.aClass197_73 = arg0;
 	}
 }

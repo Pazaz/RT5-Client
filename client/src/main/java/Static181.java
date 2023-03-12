@@ -150,7 +150,7 @@ public final class Static181 {
 					if (local13.aClass161Array2 != null) {
 						method3378(local13.aClass161Array2, local13.anInt4317);
 					}
-					@Pc(51) Class2_Sub7 local51 = (Class2_Sub7) Static329.aClass4_130.method90((long) local13.anInt4317);
+					@Pc(51) Class2_Sub7 local51 = (Class2_Sub7) Static329.aClass4_130.get((long) local13.anInt4317);
 					if (local51 != null) {
 						Static232.method4028(local51.anInt1370);
 					}

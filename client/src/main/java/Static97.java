@@ -7,17 +7,11 @@ public final class Static97 {
 	@OriginalMember(owner = "client!fk", name = "Z", descriptor = "I")
 	public static int anInt2034;
 
-	@OriginalMember(owner = "client!fk", name = "xb", descriptor = "I")
-	public static int anInt2049;
-
 	@OriginalMember(owner = "client!fk", name = "Ab", descriptor = "I")
 	public static int anInt2052;
 
 	@OriginalMember(owner = "client!fk", name = "c", descriptor = "I")
 	public static int anInt2005 = 0;
-
-	@OriginalMember(owner = "client!fk", name = "v", descriptor = "Z")
-	public static final boolean aBoolean144 = false;
 
 	@OriginalMember(owner = "client!fk", name = "lb", descriptor = "I")
 	public static int anInt2040 = -50;
@@ -74,14 +68,14 @@ public final class Static97 {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Lclient!ag;BLclient!ag;)V")
-	public static void method2100(@OriginalArg(0) Class2 arg0, @OriginalArg(2) Class2 arg1) {
-		if (arg0.aClass2_244 != null) {
-			arg0.method6468();
+	public static void method2100(@OriginalArg(0) Node arg0, @OriginalArg(2) Node arg1) {
+		if (arg0.prev != null) {
+			arg0.unlink();
 		}
-		arg0.aClass2_244 = arg1.aClass2_244;
-		arg0.aClass2_243 = arg1;
-		arg0.aClass2_244.aClass2_243 = arg0;
-		arg0.aClass2_243.aClass2_244 = arg0;
+		arg0.prev = arg1.prev;
+		arg0.next = arg1;
+		arg0.prev.next = arg0;
+		arg0.next.prev = arg0;
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(IB)I")

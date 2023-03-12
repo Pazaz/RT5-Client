@@ -32,7 +32,7 @@ public final class Class177_Sub1 extends Class177 {
 		super.aBoolean358 = true;
 		super.aBoolean348 = true;
 		super.anInt4889 = 255;
-		super.aBoolean352 = true;
+		super.stereo = true;
 		super.aBoolean350 = true;
 		super.aBoolean359 = true;
 		super.aBoolean349 = true;
@@ -55,7 +55,7 @@ public final class Class177_Sub1 extends Class177 {
 		try {
 			@Pc(129) PrivilegedRequest local129 = arg0.openPreferences();
 			while (local129.status == 0) {
-				Static231.method4023(1L);
+				ThreadUtils.sleep(1L);
 			}
 			if (local129.status == 1) {
 				local125 = (FileOnDisk) local129.result;
@@ -116,7 +116,7 @@ public final class Class177_Sub1 extends Class177 {
 		local8.p1(super.aBoolean361 ? 1 : 0);
 		local8.p1(super.aBoolean348 ? 1 : 0);
 		local8.p1(super.anInt4891);
-		local8.p1(super.aBoolean352 ? 1 : 0);
+		local8.p1(super.stereo ? 1 : 0);
 		local8.p1(super.anInt4888);
 		local8.p1(super.anInt4889);
 		local8.p1(super.anInt4882);
@@ -154,7 +154,7 @@ public final class Class177_Sub1 extends Class177 {
 		try {
 			@Pc(17) PrivilegedRequest local17 = arg0.openPreferences();
 			while (local17.status == 0) {
-				Static231.method4023(1L);
+				ThreadUtils.sleep(1L);
 			}
 			if (local17.status == 1) {
 				local7 = (FileOnDisk) local17.result;
@@ -250,7 +250,7 @@ public final class Class177_Sub1 extends Class177 {
 			super.anInt4891 = 2;
 		}
 		super.anInt4885 = super.anInt4891;
-		super.aBoolean352 = arg0.g1() == 1;
+		super.stereo = arg0.g1() == 1;
 		super.anInt4888 = arg0.g1();
 		if (super.anInt4888 > 127) {
 			super.anInt4888 = 127;

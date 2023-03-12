@@ -4,14 +4,11 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static259 {
 
-	@OriginalMember(owner = "client!oq", name = "w", descriptor = "Lclient!ci;")
-	public static Interface2 anInterface2_6;
-
 	@OriginalMember(owner = "client!oq", name = "r", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_105 = new Class79("Cancel", "Abbrechen", "Annuler", "Cancelar");
+	public static final LocalizedString aClass79_105 = new LocalizedString("Cancel", "Abbrechen", "Annuler", "Cancelar");
 
 	@OriginalMember(owner = "client!oq", name = "v", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_106 = new Class79("M", "M", "M", "M");
+	public static final LocalizedString aClass79_106 = new LocalizedString("M", "M", "M", "M");
 
 	@OriginalMember(owner = "client!oq", name = "x", descriptor = "[I")
 	public static final int[] anIntArray323 = new int[13];

@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static120 {
 
 	@OriginalMember(owner = "client!gs", name = "d", descriptor = "Lclient!gd;")
-	public static final Class79 aClass79_50 = new Class79(" from your friend list first.", " zuerst von deiner Freunde-Liste!", " de votre liste d'amis.", " da sua lista de amigos primeiro.");
+	public static final LocalizedString aClass79_50 = new LocalizedString(" from your friend list first.", " zuerst von deiner Freunde-Liste!", " de votre liste d'amis.", " da sua lista de amigos primeiro.");
 
 	@OriginalMember(owner = "client!gs", name = "h", descriptor = "Lclient!ad;")
-	public static Class4 aClass4_49 = new Class4(64);
+	public static HashTable aClass4_49 = new HashTable(64);
 
 	@OriginalMember(owner = "client!gs", name = "j", descriptor = "S")
 	public static short aShort35 = 32767;

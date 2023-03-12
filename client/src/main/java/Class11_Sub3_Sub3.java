@@ -13,8 +13,8 @@ public final class Class11_Sub3_Sub3 extends Class11_Sub3 implements Interface6 
 	private final boolean aBoolean428;
 
 	static {
-		new Class79("I can't reach that!", "Da kommst du nicht hin.", "Je ne peux pas l'atteindre !", "Não consigo alcançar!");
-		new Class79(null, "die kürzlich gesprochen oder gehandelt haben.", null, null);
+		new LocalizedString("I can't reach that!", "Da kommst du nicht hin.", "Je ne peux pas l'atteindre !", "Não consigo alcançar!");
+		new LocalizedString(null, "die kürzlich gesprochen oder gehandelt haben.", null, null);
 	}
 
 	@OriginalMember(owner = "client!to", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIIZIIIIII)V")
