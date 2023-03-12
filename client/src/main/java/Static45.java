@@ -626,7 +626,7 @@ public final class Static45 {
 								}
 								@Pc(2017) Class2_Sub7 local2017 = (Class2_Sub7) Static329.aClass4_130.get((long) local6.anInt4317);
 								if (local2017 != null) {
-									if (client.game == client.GAME_RS && local2017.anInt1373 == 0 && !Static375.aBoolean477 && local207 && !Static18.aBoolean30) {
+									if (client.game == client.GAME_RS && local2017.anInt1373 == 0 && !Static375.aBoolean477 && local207 && !Static18.qa_op_test) {
 										Static147.method2703();
 									}
 									Static257.method3927(local17, local34, local32, local30, local22, arg8, local2017.anInt1370, arg9, local28);
@@ -757,7 +757,7 @@ public final class Static45 {
 
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "(Lclient!nk;)Z")
 	public static boolean method1403(@OriginalArg(0) Class161 arg0) {
-		if (Static18.aBoolean30) {
+		if (Static18.qa_op_test) {
 			if (method1404(arg0).events != 0) {
 				return false;
 			}
@@ -862,7 +862,7 @@ public final class Static45 {
 	public static void method1409(@OriginalArg(0) int arg0) {
 		@Pc(1) int local1 = PlayerList.anInt751;
 		@Pc(3) int[] local3 = PlayerList.anIntArray121;
-		@Pc(11) int local11 = Static47.aBoolean102 ? local1 : local1 + NpcList.size;
+		@Pc(11) int local11 = Static47.nonpcs ? local1 : local1 + NpcList.size;
 		for (@Pc(13) int local13 = 0; local13 < local11; local13++) {
 			@Pc(23) PathingEntity local23;
 			if (local13 < local1) {
@@ -933,7 +933,7 @@ public final class Static45 {
 	public static void method1410() {
 		@Pc(1) int local1 = PlayerList.anInt751;
 		@Pc(3) int[] local3 = PlayerList.anIntArray121;
-		@Pc(11) int local11 = Static47.aBoolean102 ? local1 : local1 + NpcList.size;
+		@Pc(11) int local11 = Static47.nonpcs ? local1 : local1 + NpcList.size;
 		for (@Pc(13) int local13 = 0; local13 < local11; local13++) {
 			@Pc(23) PathingEntity local23;
 			if (local13 < local1) {

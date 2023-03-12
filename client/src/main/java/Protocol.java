@@ -1346,7 +1346,7 @@ public class Protocol {
 											}
 											local1391 = inboundBuffer.gjstr();
 											if (local220 == 99) {
-												Static158.method2940(local1391);
+												DevConsole.log(local1391);
 											} else if (local1627.equals("") || !Static105.method2208(local1627)) {
 												Static33.method4200(local3809, local74, local1391, local220, local1627);
 											} else {

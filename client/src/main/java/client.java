@@ -1023,7 +1023,7 @@ public final class client extends GameShell {
 		} else if (gameState == 40) {
 			Static351.method5857(Static276.aClass130_4, true, Static357.aClass79_137.method2267(language) + "<br>" + Static84.aClass79_40.method2267(language));
 		}
-		if (Static154.anInt2807 == 3) {
+		if (Static154.rect_debug == 3) {
 			for (local92 = 0; local92 < Static154.anInt2806; local92++) {
 				@Pc(398) Rectangle local398 = IdkTypeList.aRectangleArray1[local92];
 				if (Static20.aBooleanArray6[local92]) {
@@ -1036,7 +1036,7 @@ public final class client extends GameShell {
 		if (Static333.method6318()) {
 			Static279.method4725(Static190.aClass19_8);
 		}
-		if ((gameState == 30 || gameState == 10) && Static154.anInt2807 == 0 && Static144.getWindowMode() == 1 && !local169 && Signlink.javaVersion.equals("1.1")) {
+		if ((gameState == 30 || gameState == 10) && Static154.rect_debug == 0 && Static144.getWindowMode() == 1 && !local169 && Signlink.javaVersion.equals("1.1")) {
 			local92 = 0;
 			for (local96 = 0; local96 < Static154.anInt2806; local96++) {
 				if (Static375.aBooleanArray64[local96]) {
@@ -1567,7 +1567,7 @@ public final class client extends GameShell {
 			Static18.aClass207_1 = null;
 		}
 		if (MODE_WHERE_LIVE != modeWhere) {
-			Static356.aBoolean456 = true;
+			Static356.displayfps = true;
 		}
 		Static290.aString56 = (GAME_RS == game ? Static221.aClass79_99 : Static221.aClass79_98).method2267(language);
 	}

@@ -548,7 +548,7 @@ public final class Class29_Sub1 extends Class29 {
 			AreaSoundManager.add(local30, arg2, arg0, null, null, arg1, arg5);
 		}
 		@Pc(220) boolean local220 = arg9 == -1 && local30.anInt1326 == -1 && local30.anIntArray95 == null && local30.anIntArray94 == null && !local30.aBoolean107;
-		if (Static160.aBoolean206 && local30.anInt1321 != 1) {
+		if (Static160.showocc && local30.anInt1321 != 1) {
 			return;
 		}
 		if (arg8 != 22) {
@@ -618,7 +618,7 @@ public final class Class29_Sub1 extends Class29 {
 					@Pc(742) Class11_Sub1 local742;
 					if (arg8 == 0) {
 						@Pc(714) int local714 = local30.anInt1321;
-						if (Static263.aBoolean329 && local30.anInt1321 == -1) {
+						if (Static263.wallocc && local30.anInt1321 == -1) {
 							local714 = 1;
 						}
 						if (local220) {

@@ -10,7 +10,7 @@ public final class Static160 {
 	public static int[] anIntArray185;
 
 	@OriginalMember(owner = "client!jf", name = "f", descriptor = "Z")
-	public static boolean aBoolean206 = false;
+	public static boolean showocc = false;
 
 	@OriginalMember(owner = "client!jf", name = "r", descriptor = "[I")
 	public static final int[] anIntArray186 = new int[500];

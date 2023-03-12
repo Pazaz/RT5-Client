@@ -33,7 +33,7 @@ public final class Static6 {
 	public static void method141(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(43) String local43 = "tele " + arg0 + "," + (arg2 >> 6) + "," + (arg1 >> 6) + "," + (arg2 & 0x3F) + "," + (arg1 & 0x3F);
 		System.out.println(local43);
-		Static161.method2972(local43, true);
+		Cheat.execute(local43, true);
 	}
 
 	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(Lclient!nk;III)V")

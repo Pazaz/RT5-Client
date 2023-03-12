@@ -8,7 +8,7 @@ public final class Static294 {
 	public static final LocalizedString aClass79_117 = new LocalizedString("Loading world list data", "Lade Liste der Welten", "Chargement de la liste des serveurs", "Carregando dados da lista de mundos");
 
 	@OriginalMember(owner = "client!qt", name = "E", descriptor = "Z")
-	public static boolean aBoolean392 = false;
+	public static boolean renderprofile = false;
 
 	@OriginalMember(owner = "client!qt", name = "a", descriptor = "(IILclient!r;)Lclient!ne;")
 	public static Class2_Sub25 method5062(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1) {

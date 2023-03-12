@@ -128,7 +128,7 @@ public final class Static163 {
 		if (Static45.method1404(arg0).getTargetMask() == 0) {
 			return null;
 		} else if (arg0.aString44 == null || arg0.aString44.trim().length() == 0) {
-			return Static18.aBoolean30 ? "Hidden-use" : null;
+			return Static18.qa_op_test ? "Hidden-use" : null;
 		} else {
 			return arg0.aString44;
 		}

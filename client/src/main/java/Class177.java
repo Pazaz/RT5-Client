@@ -83,7 +83,7 @@ public abstract class Class177 {
 	public int anInt4891 = 0;
 
 	@OriginalMember(owner = "client!wo", name = "n", descriptor = "Z")
-	public boolean aBoolean355 = true;
+	public boolean ot = true;
 
 	@OriginalMember(owner = "client!wo", name = "x", descriptor = "Z")
 	public boolean aBoolean361 = true;
@@ -95,7 +95,7 @@ public abstract class Class177 {
 	public int anInt4895 = 1;
 
 	@OriginalMember(owner = "client!wo", name = "r", descriptor = "Z")
-	public boolean aBoolean357 = true;
+	public boolean gb = true;
 
 	@OriginalMember(owner = "client!wo", name = "b", descriptor = "I")
 	public int anInt4879 = 3;

@@ -41,26 +41,6 @@ public final class Static158 {
 		return local9.toString();
 	}
 
-	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(Ljava/lang/String;I)V")
-	public static void method2940(@OriginalArg(0) String arg0) {
-		if (Static124.aStringArray65 == null) {
-			Static148.method2709();
-		}
-		@Pc(22) String[] local22 = Static200.method3643('\n', arg0);
-		for (@Pc(24) int local24 = 0; local24 < local22.length; local24++) {
-			for (@Pc(28) int local28 = Static368.anInt6917; local28 > 0; local28--) {
-				Static124.aStringArray65[local28] = Static124.aStringArray65[local28 - 1];
-			}
-			Static124.aStringArray65[0] = local22[local24];
-			if (Static124.aStringArray65.length - 1 > Static368.anInt6917) {
-				if (Static177.anInt3385 > 0) {
-					Static177.anInt3385++;
-				}
-				Static368.anInt6917++;
-			}
-		}
-	}
-
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(II)V")
 	public static void method2943(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(7) Class67 local7 = Static330.aClass67ArrayArrayArray3[0][arg0][arg1];

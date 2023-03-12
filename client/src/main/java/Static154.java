@@ -14,7 +14,7 @@ public final class Static154 {
 	public static int anInt2806 = 0;
 
 	@OriginalMember(owner = "client!is", name = "k", descriptor = "I")
-	public static int anInt2807 = 0;
+	public static int rect_debug = 0;
 
 	@OriginalMember(owner = "client!is", name = "l", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_66 = new LocalizedString("cyan:", "blaugrün:", "cyan:", "cyan:");

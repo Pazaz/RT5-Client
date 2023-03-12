@@ -16,8 +16,8 @@ public final class Static59 {
 		if (Static25.aString9.length() == 0) {
 			return;
 		}
-		Static158.method2940("--> " + Static25.aString9);
-		Static161.method2972(Static25.aString9, false);
+		DevConsole.log("--> " + Static25.aString9);
+		Cheat.execute(Static25.aString9, false);
 		Static25.aString9 = "";
 		Static141.anInt2653 = 0;
 		Static357.anInt6683 = 0;

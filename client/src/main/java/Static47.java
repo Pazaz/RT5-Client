@@ -11,7 +11,7 @@ public final class Static47 {
 	public static final LocalizedString aClass79_27 = new LocalizedString("You can't add yourself to your own ignore list.", "Du kannst dich nicht auf deine eigene Ignorieren-Liste setzen!", "Vous ne pouvez pas ajouter votre nom à votre liste noire.", "Você não pode adicionar a si próprio à sua lista de ignorados.");
 
 	@OriginalMember(owner = "client!co", name = "s", descriptor = "Z")
-	public static boolean aBoolean102 = false;
+	public static boolean nonpcs = false;
 
 	@OriginalMember(owner = "client!co", name = "t", descriptor = "Lclient!mc;")
 	public static final ClientProt aClass145_43 = new ClientProt(75, 11);

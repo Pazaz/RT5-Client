@@ -76,7 +76,7 @@ public final class Static287 {
 		} else {
 			arg0.anInt4305 = arg1 - arg0.anInt4248 - (arg1 * arg0.anInt4241 >> 14);
 		}
-		if (!Static18.aBoolean30) {
+		if (!Static18.qa_op_test) {
 			return;
 		}
 		if (Static45.method1404(arg0).events == 0 && arg0.anInt4272 != 0) {

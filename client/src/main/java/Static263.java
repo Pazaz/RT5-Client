@@ -8,7 +8,7 @@ public final class Static263 {
 	public static boolean aBoolean330;
 
 	@OriginalMember(owner = "client!pb", name = "Q", descriptor = "Z")
-	public static boolean aBoolean329 = false;
+	public static boolean wallocc = false;
 
 	@OriginalMember(owner = "client!pb", name = "R", descriptor = "I")
 	public static int anInt4834 = 503;

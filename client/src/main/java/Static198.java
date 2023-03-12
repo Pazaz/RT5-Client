@@ -3506,7 +3506,7 @@ public final class Static198 {
 							return;
 						}
 						if (arg0 == 5429) {
-							Static161.method2972(aStringArray29[--anInt3652], false);
+							Cheat.execute(aStringArray29[--anInt3652], false);
 							return;
 						}
 					} else if (arg0 < 5600) {
@@ -3759,7 +3759,7 @@ public final class Static198 {
 							return;
 						}
 						if (arg0 == 6009) {
-							client.preferences.aBoolean355 = anIntArray213[--anInt3650] == 1;
+							client.preferences.ot = anIntArray213[--anInt3650] == 1;
 							Static347.method5827();
 							client.preferences.method4497(GameShell.signlink);
 							Preferences.sentToServer = false;
@@ -3932,7 +3932,7 @@ public final class Static198 {
 							return;
 						}
 						if (arg0 == 6030) {
-							client.preferences.aBoolean357 = anIntArray213[--anInt3650] != 0;
+							client.preferences.gb = anIntArray213[--anInt3650] != 0;
 							client.preferences.method4497(GameShell.signlink);
 							Static347.method5827();
 							return;
@@ -4000,7 +4000,7 @@ public final class Static198 {
 							return;
 						}
 						if (arg0 == 6109) {
-							anIntArray213[anInt3650++] = client.preferences.aBoolean355 ? 1 : 0;
+							anIntArray213[anInt3650++] = client.preferences.ot ? 1 : 0;
 							return;
 						}
 						if (arg0 == 6110) {
@@ -4076,7 +4076,7 @@ public final class Static198 {
 							return;
 						}
 						if (arg0 == 6130) {
-							anIntArray213[anInt3650++] = client.preferences.aBoolean357 ? 1 : 0;
+							anIntArray213[anInt3650++] = client.preferences.gb ? 1 : 0;
 							return;
 						}
 						if (arg0 == 6131) {
@@ -4789,7 +4789,7 @@ public final class Static198 {
 					local855.append("Message: ").append(local895).append("\n");
 				}
 				Static262.report(local837, local855.toString());
-				Static158.method2940(local855.toString());
+				DevConsole.log(local855.toString());
 			}
 		}
 	}

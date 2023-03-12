@@ -24,7 +24,7 @@ public final class Class177_Sub1 extends Class177 {
 		super.aBoolean361 = true;
 		super.anInt4895 = 1;
 		super.anInt4884 = 0;
-		super.aBoolean355 = true;
+		super.ot = true;
 		super.aBoolean353 = true;
 		super.anInt4886 = 2;
 		super.anInt4891 = 0;
@@ -42,7 +42,7 @@ public final class Class177_Sub1 extends Class177 {
 			Static26.method864(2);
 		}
 		super.aBoolean363 = true;
-		super.aBoolean357 = true;
+		super.gb = true;
 		super.aBoolean362 = false;
 		super.anInt4894 = 2;
 		super.anInt4883 = 0;
@@ -109,7 +109,7 @@ public final class Class177_Sub1 extends Class177 {
 		local8.p1(super.aBoolean350 ? 1 : 0);
 		local8.p1(0);
 		local8.p1(super.aBoolean353 ? 1 : 0);
-		local8.p1(super.aBoolean355 ? 1 : 0);
+		local8.p1(super.ot ? 1 : 0);
 		local8.p1(super.aBoolean358 ? 1 : 0);
 		local8.p1(super.anInt4886);
 		local8.p1(super.aBoolean364 ? 1 : 0);
@@ -131,7 +131,7 @@ public final class Class177_Sub1 extends Class177 {
 		local8.p1(super.aBoolean356 ? 1 : 0);
 		local8.p1(super.aBoolean363 ? 1 : 0);
 		local8.p1(super.anInt4895);
-		local8.p1(super.aBoolean357 ? 1 : 0);
+		local8.p1(super.gb ? 1 : 0);
 		local8.p1(super.anInt4878);
 		local8.p1(super.anInt4881);
 		local8.p1(super.aBoolean360 ? 0 : 1);
@@ -231,7 +231,7 @@ public final class Class177_Sub1 extends Class177 {
 		super.aBoolean350 = arg0.g1() == 1;
 		super.anInt4895 = arg0.g1() == 1 ? 1 : 0;
 		super.aBoolean353 = arg0.g1() == 1;
-		super.aBoolean355 = arg0.g1() == 1;
+		super.ot = arg0.g1() == 1;
 		super.aBoolean358 = arg0.g1() == 1;
 		super.anInt4886 = arg0.g1();
 		if (super.anInt4886 > 2) {
@@ -313,7 +313,7 @@ public final class Class177_Sub1 extends Class177 {
 			super.anInt4895 = 1;
 		}
 		if (local21 >= 13) {
-			super.aBoolean357 = arg0.g1() == 1;
+			super.gb = arg0.g1() == 1;
 		}
 		if (local21 >= 14) {
 			super.anInt4878 = arg0.g1();

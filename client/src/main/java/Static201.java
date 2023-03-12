@@ -41,7 +41,7 @@ public final class Static201 {
 					@Pc(90) int local90 = arg8 + local19.anInt4305;
 					@Pc(95) int local95 = arg4 + local19.anInt4254;
 					@Pc(98) int local98 = local19.anInt4311;
-					if (Static18.aBoolean30 && (Static45.method1404(local19).events != 0 || local19.anInt4272 == 0) && local98 > 127) {
+					if (Static18.qa_op_test && (Static45.method1404(local19).events != 0 || local19.anInt4272 == 0) && local98 > 127) {
 						local98 = 127;
 					}
 					@Pc(151) int local151;
@@ -141,12 +141,12 @@ public final class Static201 {
 								continue;
 							}
 							if (local19.anInt4273 == Static60.anInt667) {
-								if (!Static356.aBoolean456 && !Static294.aBoolean392) {
+								if (!Static356.displayfps && !Static294.renderprofile) {
 									continue;
 								}
 								local243 = local19.anInt4248 + local90;
 								local248 = local95 + 15;
-								if (Static356.aBoolean456) {
+								if (Static356.displayfps) {
 									Static276.aClass130_4.method5898(local243, local248, "Fps:" + Static3.anInt62, -256);
 									local248 += 15;
 									@Pc(504) Runtime local504 = Runtime.getRuntime();
@@ -180,7 +180,7 @@ public final class Static201 {
 									Static200.aClass130_3.method5898(local243, local248, "Particles: " + Static116.anInt2360 + " / " + Static311.anInt5809, -256);
 								}
 								local248 += 12;
-								if (Static294.aBoolean392) {
+								if (Static294.renderprofile) {
 									Static200.aClass130_3.method5898(local243, local248, "Polys: " + Static190.aClass19_8.method2843() + " Models: " + Static190.aClass19_8.method2820(), -256);
 									local248 += 12;
 									Static200.aClass130_3.method5898(local243, local248, "Ls: " + Static347.anInt6443 + " La: " + Static326.anInt6235 + " NPC: " + Static376.anInt7054 + " Pl: " + Static182.anInt3423, -256);
@@ -209,7 +209,7 @@ public final class Static201 {
 							}
 							Static190.aClass19_8.method2895(arg5, arg3, arg6, arg0);
 						}
-						if (Static20.aBooleanArray6[local66] || Static154.anInt2807 > 1) {
+						if (Static20.aBooleanArray6[local66] || Static154.rect_debug > 1) {
 							if (local19.anInt4272 == 3) {
 								if (local98 == 0) {
 									if (local19.aBoolean293) {
@@ -241,11 +241,11 @@ public final class Static201 {
 										local970 = Static131.aClass79_82.method2267(client.language);
 										local248 = local19.anInt4290;
 									}
-									if (Static88.aBoolean134) {
+									if (Static88.clipcomponents) {
 										Static190.aClass19_8.method2817(local90, local95, local90 + local19.anInt4248, local19.anInt4261 + local95);
 									}
 									local955.method5893(0, local19.anInt4303, local90, local19.anInt4298, local19.aBoolean291 ? 255 - (local98 & 0xFF) << 24 : -1, null, 0, null, local19.anInt4261, local970, local19.anInt4293, local95, Static124.aClass13Array27, local248 | 255 - (local98 & 0xFF) << 24, local19.anInt4248);
-									if (Static88.aBoolean134) {
+									if (Static88.clipcomponents) {
 										Static190.aClass19_8.method2895(arg5, arg3, arg6, arg0);
 									}
 								} else if (Static86.aBoolean133) {
@@ -382,7 +382,7 @@ public final class Static201 {
 										Static232.aClass14_4.method3926(local19.anInt4274 << 3);
 										Static232.aClass14_4.method3936(local19.anInt4278, local19.anInt4250 + local588 + local248, local590 + local19.anInt4250);
 										Static232.aClass14_4.method3929(local19.anInt4320 << 3);
-										if (Static88.aBoolean134) {
+										if (Static88.clipcomponents) {
 											Static190.aClass19_8.method2817(local90, local95, local90 + local19.anInt4248, local95 + local19.anInt4261);
 										}
 										if (local19.aBoolean290) {
@@ -390,7 +390,7 @@ public final class Static201 {
 										} else {
 											local1477.method3835(Static232.aClass14_4, null, 1);
 										}
-										if (Static88.aBoolean134) {
+										if (Static88.clipcomponents) {
 											Static190.aClass19_8.method2895(arg5, arg3, arg6, arg0);
 										}
 										if (local19.aBoolean289) {

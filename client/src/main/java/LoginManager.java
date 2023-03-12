@@ -665,9 +665,9 @@ public class LoginManager {
 		Static105.aBoolean162 = client.preferences.aBoolean361;
 		Static183.aBoolean8 = Static309.anInt5802 >= 96;
 		Static174.anInt1300 = client.preferences.anInt4886;
-		Static141.aBoolean190 = !client.preferences.aBoolean355;
+		Static141.aBoolean190 = !client.preferences.ot;
 		Static158.anInt2911 = client.preferences.method4495(Static77.anInt1762) ? -1 : Static44.anInt1115;
-		Static132.aBoolean179 = Static77.anInt1762 == 1 || client.preferences.aBoolean357;
+		Static132.aBoolean179 = Static77.anInt1762 == 1 || client.preferences.gb;
 		Static190.aClass29_Sub1_63 = new Class29_Sub1(4, Static373.anInt7033, Static242.anInt4449, false);
 		if (!Static220.aBoolean252) {
 			Static177.method3346(Static190.aClass29_Sub1_63, Static106.aByteArrayArray6);

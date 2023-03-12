@@ -43,7 +43,7 @@ public final class Static371 {
 		if (arg3.aByte44 == 4) {
 			arg3.anInt4261 = arg3.anInt4291 * arg3.anInt4248 / arg3.anInt4243;
 		}
-		if (Static18.aBoolean30 && (Static45.method1404(arg3).events != 0 || arg3.anInt4272 == 0)) {
+		if (Static18.qa_op_test && (Static45.method1404(arg3).events != 0 || arg3.anInt4272 == 0)) {
 			if (arg3.anInt4261 < 5 && arg3.anInt4248 < 5) {
 				arg3.anInt4261 = 5;
 				arg3.anInt4248 = 5;

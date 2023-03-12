@@ -52,7 +52,7 @@ public final class Static284 {
 				Static243.anInt4495--;
 			}
 		}
-		if (!Static356.aBoolean456) {
+		if (!Static356.displayfps) {
 			return;
 		}
 		@Pc(237) int local237 = arg3 + arg4 - 5;
@@ -94,7 +94,7 @@ public final class Static284 {
 		if (!Static45.method1404(arg0).method1854(arg1) && arg0.anObjectArray27 == null) {
 			return null;
 		} else if (arg0.aStringArray40 == null || arg1 >= arg0.aStringArray40.length || arg0.aStringArray40[arg1] == null || arg0.aStringArray40[arg1].trim().length() == 0) {
-			return Static18.aBoolean30 ? "Hidden-" + arg1 : null;
+			return Static18.qa_op_test ? "Hidden-" + arg1 : null;
 		} else {
 			return arg0.aStringArray40[arg1];
 		}
