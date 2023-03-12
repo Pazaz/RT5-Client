@@ -70,6 +70,10 @@ public class Scene {
 
 	@OriginalMember(owner = "client!jq", name = "a", descriptor = "(IIIIIII)V")
 	public static void addOccluder(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+		if (levelOccluderCount + 1 >= levelOccluders.length) {
+			return;
+		}
+
 		@Pc(3) Occluder occluder = new Occluder();
 		occluder.minTileX = arg1 >> scale;
 		occluder.maxTileX = arg2 >> scale;
