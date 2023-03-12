@@ -19,7 +19,7 @@ public final class Static46 {
 
 	@OriginalMember(owner = "client!cm", name = "a", descriptor = "(ILclient!wm;Lclient!nk;)V")
 	public static void method1422(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Class161 arg1) {
-		@Pc(31) boolean local31 = Static313.ObjTypeList.method2758(arg1.anInt4306, arg1.anInt4300, arg1.aBoolean280 ? Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1 : null, arg0, arg1.anInt4252 | 0xFF000000, arg1.anInt4279, arg1.anInt4240) == null;
+		@Pc(31) boolean local31 = Static313.ObjTypeList.method2758(arg1.anInt4306, arg1.anInt4300, arg1.aBoolean280 ? Static17.aClass11_Sub5_Sub2_Sub1_3.appearance : null, arg0, arg1.anInt4252 | 0xFF000000, arg1.anInt4279, arg1.anInt4240) == null;
 		if (local31) {
 			Static142.aClass135_21.method3540(new Class2_Sub17(arg1.anInt4300, arg1.anInt4240, arg1.anInt4279, arg1.anInt4252 | 0xFF000000, arg1.anInt4306, arg1.aBoolean280));
 		}

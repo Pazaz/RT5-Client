@@ -103,9 +103,9 @@ public final class Static117 {
 			}
 			@Pc(499) int[] local499 = null;
 			if (Static298.method2425(local436.anInt1005)) {
-				local499 = Static313.ObjTypeList.method2759((int) local436.aLong30).anIntArray364;
+				local499 = Static313.ObjTypeList.get((int) local436.aLong30).anIntArray364;
 			} else if (local436.anInt1008 != -1) {
-				local499 = Static313.ObjTypeList.method2759(local436.anInt1008).anIntArray364;
+				local499 = Static313.ObjTypeList.get(local436.anInt1008).anIntArray364;
 			} else if (Static297.method5111(local436.anInt1005)) {
 				@Pc(572) Npc local572 = NpcList.npcs[(int) local436.aLong30];
 				if (local572 != null) {

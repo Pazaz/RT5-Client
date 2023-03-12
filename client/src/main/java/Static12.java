@@ -10,11 +10,8 @@ public final class Static12 {
 	@OriginalMember(owner = "client!am", name = "f", descriptor = "Lclient!jd;")
 	public static Class13 aClass13_2;
 
-	@OriginalMember(owner = "client!am", name = "i", descriptor = "[I")
-	public static int[] anIntArray15;
-
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "[Lclient!nh;")
-	public static final Class11_Sub5_Sub2_Sub1[] aClass11_Sub5_Sub2_Sub1Array1 = new Class11_Sub5_Sub2_Sub1[2048];
+	public static final Player[] aClass11_Sub5_Sub2_Sub1Array1 = new Player[2048];
 
 	@OriginalMember(owner = "client!am", name = "c", descriptor = "Lclient!oj;")
 	public static final Class170 aClass170_1 = new Class170(2);

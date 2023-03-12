@@ -11,7 +11,7 @@ public final class Static317 {
 	public static Class205 aClass205_6;
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!mr;BZ)V")
-	public static void method5548(@OriginalArg(0) Class11_Sub5_Sub2 arg0, @OriginalArg(2) boolean arg1) {
+	public static void method5548(@OriginalArg(0) PathingEntity arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(9) Class222 local9 = arg0.method4332();
 		if (arg0.anInt4643 == 0) {
 			arg0.anInt4641 = 0;
@@ -52,10 +52,10 @@ public final class Static317 {
 				}
 			}
 		}
-		@Pc(154) int local154 = arg0.anInt6781;
-		@Pc(157) int local157 = arg0.anInt6783;
-		@Pc(174) int local174 = arg0.anIntArray316[arg0.anInt4643 - 1] * 128 + arg0.method4328() * 64;
-		@Pc(191) int local191 = arg0.anIntArray317[arg0.anInt4643 - 1] * 128 + arg0.method4328() * 64;
+		@Pc(154) int local154 = arg0.xFine;
+		@Pc(157) int local157 = arg0.zFine;
+		@Pc(174) int local174 = arg0.movementQueueX[arg0.anInt4643 - 1] * 128 + arg0.getSize() * 64;
+		@Pc(191) int local191 = arg0.movementQueueZ[arg0.anInt4643 - 1] * 128 + arg0.getSize() * 64;
 		if (local174 > local154) {
 			if (local157 < local191) {
 				arg0.method4325(10240);
@@ -79,8 +79,8 @@ public final class Static317 {
 		}
 		@Pc(289) byte local289 = arg0.aByteArray51[arg0.anInt4643 - 1];
 		if (!arg1 && (local174 - local154 > 256 || local174 - local154 < -256 || local191 - local157 > 256 || local191 - local157 < -256)) {
-			arg0.anInt6783 = local191;
-			arg0.anInt6781 = local174;
+			arg0.zFine = local191;
+			arg0.xFine = local174;
 			arg0.method4330(arg0.anInt4616);
 			arg0.anInt4643--;
 			Static170.anInt3229 = -1;
@@ -129,8 +129,8 @@ public final class Static317 {
 			local354 <<= 0x7;
 			if (arg0.anInt4643 == 1) {
 				local396 = arg0.anInt4640 * arg0.anInt4640;
-				@Pc(554) int local554 = (local174 >= arg0.anInt6781 ? local174 - arg0.anInt6781 : -local174 + arg0.anInt6781) << 7;
-				@Pc(572) int local572 = (arg0.anInt6783 <= local191 ? local191 - arg0.anInt6783 : -local191 + arg0.anInt6783) << 7;
+				@Pc(554) int local554 = (local174 >= arg0.xFine ? local174 - arg0.xFine : -local174 + arg0.xFine) << 7;
+				@Pc(572) int local572 = (arg0.zFine <= local191 ? local191 - arg0.zFine : -local191 + arg0.zFine) << 7;
 				@Pc(583) int local583 = local572 < local554 ? local554 : local572;
 				@Pc(590) int local590 = local9.anInt6274 * 2 * local583;
 				if (local396 > local590) {
@@ -164,28 +164,28 @@ public final class Static317 {
 		}
 		if (local154 < local174) {
 			Static16.anInt4756 |= 0x4;
-			arg0.anInt6781 += local354;
-			if (local174 < arg0.anInt6781) {
-				arg0.anInt6781 = local174;
+			arg0.xFine += local354;
+			if (local174 < arg0.xFine) {
+				arg0.xFine = local174;
 			}
 		} else if (local174 < local154) {
 			Static16.anInt4756 |= 0x8;
-			arg0.anInt6781 -= local354;
-			if (local174 > arg0.anInt6781) {
-				arg0.anInt6781 = local174;
+			arg0.xFine -= local354;
+			if (local174 > arg0.xFine) {
+				arg0.xFine = local174;
 			}
 		}
 		if (local157 < local191) {
-			arg0.anInt6783 += local354;
+			arg0.zFine += local354;
 			Static16.anInt4756 |= 0x1;
-			if (local191 < arg0.anInt6783) {
-				arg0.anInt6783 = local191;
+			if (local191 < arg0.zFine) {
+				arg0.zFine = local191;
 			}
 		} else if (local157 > local191) {
 			Static16.anInt4756 |= 0x2;
-			arg0.anInt6783 -= local354;
-			if (local191 > arg0.anInt6783) {
-				arg0.anInt6783 = local191;
+			arg0.zFine -= local354;
+			if (local191 > arg0.zFine) {
+				arg0.zFine = local191;
 			}
 		}
 		if (local354 < 8) {
@@ -193,7 +193,7 @@ public final class Static317 {
 		} else {
 			Static170.anInt3229 = 2;
 		}
-		if (local174 != arg0.anInt6781 || local191 != arg0.anInt6783) {
+		if (local174 != arg0.xFine || local191 != arg0.zFine) {
 			return;
 		}
 		arg0.anInt4643--;

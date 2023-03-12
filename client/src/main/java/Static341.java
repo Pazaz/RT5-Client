@@ -29,11 +29,11 @@ public final class Static341 {
 
 	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(IBLjava/lang/String;)V")
 	public static void method5769(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
-		@Pc(7) int local7 = Static31.anInt751;
-		@Pc(9) int[] local9 = Static85.anIntArray121;
+		@Pc(7) int local7 = PlayerList.anInt751;
+		@Pc(9) int[] local9 = PlayerList.anIntArray121;
 		@Pc(11) boolean local11 = false;
 		for (@Pc(13) int local13 = 0; local13 < local7; local13++) {
-			@Pc(21) Class11_Sub5_Sub2_Sub1 local21 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local9[local13]];
+			@Pc(21) Player local21 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local9[local13]];
 			if (local21 != null && Static17.aClass11_Sub5_Sub2_Sub1_3 != local21 && local21.aString41 != null && local21.aString41.equalsIgnoreCase(arg1)) {
 				if (arg0 == 1) {
 					Static91.method1960(Static7.aClass145_267);

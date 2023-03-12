@@ -136,7 +136,7 @@ public final class Static330 {
 					local49 *= 64;
 					if (local53 != 0) {
 						@Pc(483) int local483;
-						@Pc(491) Class11_Sub5_Sub2 local491;
+						@Pc(491) PathingEntity local491;
 						@Pc(477) int local477;
 						@Pc(487) int local487;
 						if (local53 >= 0) {
@@ -290,7 +290,7 @@ public final class Static330 {
 				local69 = Protocol.inboundBuffer.g1();
 				if (local23 >= 0 && local32 >= 0 && local23 < Static373.anInt7033 && Static242.anInt4449 > local32) {
 					local73 = local53 + 1;
-					if (local23 - local73 <= Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0] && Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0] <= local23 + local73 && Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0] >= local32 - local73 && local32 + local73 >= Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0] && client.preferences.anInt4882 != 0 && local57 > 0 && Static243.anInt4503 < 50 && local40 != -1) {
+					if (local23 - local73 <= Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueX[0] && Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueX[0] <= local23 + local73 && Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueZ[0] >= local32 - local73 && local32 + local73 >= Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueZ[0] && client.preferences.anInt4882 != 0 && local57 > 0 && Static243.anInt4503 < 50 && local40 != -1) {
 						Static256.anIntArray321[Static243.anInt4503] = local40;
 						Static329.anIntArray419[Static243.anInt4503] = local57;
 						Static237.anIntArray283[Static243.anInt4503] = local63;

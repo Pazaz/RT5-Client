@@ -18,8 +18,8 @@ public final class Static182 {
 
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "(IJ)V")
 	public static void method3386(@OriginalArg(1) long arg0) {
-		@Pc(10) int local10 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 + Static24.anInt642;
-		@Pc(15) int local15 = Static14.anInt327 + Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783;
+		@Pc(10) int local10 = Static17.aClass11_Sub5_Sub2_Sub1_3.xFine + Static24.anInt642;
+		@Pc(15) int local15 = Static14.anInt327 + Static17.aClass11_Sub5_Sub2_Sub1_3.zFine;
 		if (Static288.anInt5463 - local10 < -500 || Static288.anInt5463 - local10 > 500 || Static62.anInt2395 - local15 < -500 || Static62.anInt2395 - local15 > 500) {
 			Static288.anInt5463 = local10;
 			Static62.anInt2395 = local15;

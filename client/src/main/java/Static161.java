@@ -331,11 +331,11 @@ public final class Static161 {
 				return;
 			}
 			if (arg0.equalsIgnoreCase("getcgcoord")) {
-				Static158.method2940("x:" + (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7) + " z:" + (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7));
+				Static158.method2940("x:" + (Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7) + " z:" + (Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7));
 				return;
 			}
 			if (arg0.equalsIgnoreCase("getheight")) {
-				Static158.method2940("Height: " + Static365.aClass6Array4[Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78].method5719(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7));
+				Static158.method2940("Height: " + Static365.aClass6Array4[Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78].method5719(Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7));
 				return;
 			}
 			if (arg0.equalsIgnoreCase("resetminimap")) {

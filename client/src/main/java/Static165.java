@@ -38,7 +38,7 @@ public final class Static165 {
 		@Pc(16) int local16 = 0;
 		for (@Pc(18) int local18 = 0; local18 < local10.anIntArray489.length; local18++) {
 			if (local10.anIntArray489[local18] >= 0 && local10.anIntArray489[local18] < Static313.ObjTypeList.anInt2779) {
-				@Pc(44) Class188 local44 = Static313.ObjTypeList.method2759(local10.anIntArray489[local18]);
+				@Pc(44) Class188 local44 = Static313.ObjTypeList.get(local10.anIntArray489[local18]);
 				@Pc(54) int local54 = local44.method4772(Static363.aClass18_2.method565(arg0).anInt7023, arg0);
 				if (arg1) {
 					local16 += local10.anIntArray488[local18] * local54;
@@ -113,9 +113,9 @@ public final class Static165 {
 			local41 = Static318.method5421(local68);
 			@Pc(74) int[] local74 = null;
 			if (Static298.method2425(local68.anInt1005)) {
-				local74 = Static313.ObjTypeList.method2759((int) local68.aLong30).anIntArray364;
+				local74 = Static313.ObjTypeList.get((int) local68.aLong30).anIntArray364;
 			} else if (local68.anInt1008 != -1) {
-				local74 = Static313.ObjTypeList.method2759(local68.anInt1008).anIntArray364;
+				local74 = Static313.ObjTypeList.get(local68.anInt1008).anIntArray364;
 			} else if (Static297.method5111(local68.anInt1005)) {
 				@Pc(140) Npc local140 = NpcList.npcs[(int) local68.aLong30];
 				if (local140 != null) {

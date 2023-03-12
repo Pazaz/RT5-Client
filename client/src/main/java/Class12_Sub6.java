@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class12_Sub6 extends Class12 {
 
 	@OriginalMember(owner = "client!oo", name = "j", descriptor = "Lclient!mr;")
-	public Class11_Sub5_Sub2 aClass11_Sub5_Sub2_1;
+	public PathingEntity aClass11_Sub5_Sub2_1;
 
 	@OriginalMember(owner = "client!oo", name = "l", descriptor = "I")
 	public int anInt4751;

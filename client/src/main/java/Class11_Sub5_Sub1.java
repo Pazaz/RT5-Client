@@ -93,7 +93,7 @@ public final class Class11_Sub5_Sub1 extends Class11_Sub5 implements Interface6 
 			return null;
 		}
 		@Pc(11) Class14 local11 = arg0.method2808();
-		local11.method3922(super.anInt6781, super.anInt6782, super.anInt6783);
+		local11.method3922(super.xFine, super.anInt6782, super.zFine);
 		@Pc(27) Class12_Sub4 local27 = null;
 		if (this.aBoolean152) {
 			local27 = Static147.method2706(1);
@@ -159,7 +159,7 @@ public final class Class11_Sub5_Sub1 extends Class11_Sub5 implements Interface6 
 			this.aClass2_Sub2_Sub4_2 = null;
 		}
 		if (local29 != null) {
-			Static57.method1619(local29, this.aByte22, super.anInt6781, super.anInt6783, null);
+			Static57.method1619(local29, this.aByte22, super.xFine, super.zFine, null);
 		}
 	}
 
@@ -179,7 +179,7 @@ public final class Class11_Sub5_Sub1 extends Class11_Sub5 implements Interface6 
 				local32 = null;
 			}
 		}
-		return local13.method1519(super.anInt6782, local21, this.aByte23 == 11 ? this.aByte24 + 4 : this.aByte24, super.anInt6783, super.anInt6781, arg2, arg0, arg1, local32, this.aByte23 == 11 ? 10 : this.aByte23);
+		return local13.method1519(super.anInt6782, local21, this.aByte23 == 11 ? this.aByte24 + 4 : this.aByte24, super.zFine, super.xFine, arg2, arg0, arg1, local32, this.aByte23 == 11 ? 10 : this.aByte23);
 	}
 
 	@OriginalMember(owner = "client!fm", name = "a", descriptor = "(Lclient!wm;B)V")
@@ -212,7 +212,7 @@ public final class Class11_Sub5_Sub1 extends Class11_Sub5 implements Interface6 
 			return false;
 		} else {
 			@Pc(14) Class14 local14 = arg2.method2808();
-			local14.method3922(super.anInt6781, super.anInt6782, super.anInt6783);
+			local14.method3922(super.xFine, super.anInt6782, super.zFine);
 			return local9.method3820(arg0, arg1, local14, false);
 		}
 	}
@@ -235,7 +235,7 @@ public final class Class11_Sub5_Sub1 extends Class11_Sub5 implements Interface6 
 			this.aClass2_Sub2_Sub4_2 = null;
 		}
 		if (local18 != null) {
-			Static154.method2780(local18, this.aByte22, super.anInt6781, super.anInt6783, null);
+			Static154.method2780(local18, this.aByte22, super.xFine, super.zFine, null);
 		}
 	}
 }

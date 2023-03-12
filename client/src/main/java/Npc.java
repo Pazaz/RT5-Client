@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!oe")
-public final class Npc extends Class11_Sub5_Sub2 {
+public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!oe", name = "tc", descriptor = "Lclient!fk;")
 	public Class71 type;
@@ -37,7 +37,7 @@ public final class Npc extends Class11_Sub5_Sub2 {
 		super.anInt4608 = 0;
 		super.anInt4596 = 0;
 		if (local48 == 0 && local51 == 0) {
-			this.method4321(this.method4328() << 7, this.method4328() << 7, local119);
+			this.method4321(this.getSize() << 7, this.getSize() << 7, local119);
 		} else {
 			this.method4321(local51, local48, local119);
 			if (super.anInt4589 != 0) {
@@ -77,7 +77,7 @@ public final class Npc extends Class11_Sub5_Sub2 {
 			} else if (client.cycle >= super.aClass2_Sub6_3.anInt1100) {
 				@Pc(331) Class31 local331 = super.aClass2_Sub6_3.method1360(arg1, local7 | 0x7);
 				if (local331 != null) {
-					local331.method3813(-super.anInt6781 + super.aClass2_Sub6_3.anInt1104, super.aClass2_Sub6_3.anInt1114 + -super.anInt6782, -super.anInt6783 + super.aClass2_Sub6_3.anInt1101);
+					local331.method3813(-super.xFine + super.aClass2_Sub6_3.anInt1104, super.aClass2_Sub6_3.anInt1114 + -super.anInt6782, -super.zFine + super.aClass2_Sub6_3.anInt1101);
 					if (local119 != 0) {
 						local331.method3833(local119);
 					}
@@ -125,8 +125,8 @@ public final class Npc extends Class11_Sub5_Sub2 {
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IZI)V")
 	public void move(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(10) int local10 = super.anIntArray316[0];
-		@Pc(15) int local15 = super.anIntArray317[0];
+		@Pc(10) int local10 = super.movementQueueX[0];
+		@Pc(15) int local15 = super.movementQueueZ[0];
 		if (arg1 == 0) {
 			local15++;
 		}
@@ -168,13 +168,13 @@ public final class Npc extends Class11_Sub5_Sub2 {
 			super.anInt4643++;
 		}
 		for (@Pc(118) int local118 = super.anInt4643; local118 > 0; local118--) {
-			super.anIntArray316[local118] = super.anIntArray316[local118 - 1];
-			super.anIntArray317[local118] = super.anIntArray317[local118 - 1];
+			super.movementQueueX[local118] = super.movementQueueX[local118 - 1];
+			super.movementQueueZ[local118] = super.movementQueueZ[local118 - 1];
 			super.aByteArray51[local118] = super.aByteArray51[local118 - 1];
 		}
-		super.anIntArray316[0] = local10;
+		super.movementQueueX[0] = local10;
 		super.aByteArray51[0] = (byte) arg0;
-		super.anIntArray317[0] = local15;
+		super.movementQueueZ[0] = local15;
 	}
 
 	@OriginalMember(owner = "client!oe", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
@@ -186,7 +186,7 @@ public final class Npc extends Class11_Sub5_Sub2 {
 		@Pc(17) Class14 local17 = arg0.method2808();
 		@Pc(22) int local22 = super.aClass248_7.method6441();
 		local17.method3925(local22);
-		local17.method3936(super.anInt6781, super.anInt6782, super.anInt6783);
+		local17.method3936(super.xFine, super.anInt6782, super.zFine);
 		@Pc(37) Class222 local37 = this.method4332();
 		@Pc(50) Class71 local50 = this.type.anIntArray129 == null ? this.type : this.type.method2093(Static214.aClass226_1);
 		if (client.preferences.aBoolean358 && local50.aBoolean142 && local37.aBoolean424) {
@@ -207,10 +207,10 @@ public final class Npc extends Class11_Sub5_Sub2 {
 		if (this.method4340()) {
 			local175 = Static147.method2706(super.aClass31Array3.length);
 		}
-		if (super.aClass12_Sub5_3 == null) {
+		if (super.particleSystem == null) {
 			arg0.method2881(super.aClass31Array3, local17, local175 == null ? null : local175.aClass12_Sub2Array1, 0);
 		} else {
-			@Pc(211) Class224 local211 = super.aClass12_Sub5_3.method4358();
+			@Pc(211) Class224 local211 = super.particleSystem.method4358();
 			arg0.method2830(super.aClass31Array3, local211, local17, local175 == null ? null : local175.aClass12_Sub2Array1, 0);
 		}
 		this.method4333(arg0, super.aClass31Array3, false);
@@ -218,7 +218,7 @@ public final class Npc extends Class11_Sub5_Sub2 {
 			if (local22 != 0) {
 				super.aClass31Array3[2].method3833(local22);
 			}
-			super.aClass31Array3[2].method3813(-super.aClass2_Sub6_3.anInt1104 + super.anInt6781, super.anInt6782 + -super.aClass2_Sub6_3.anInt1114, super.anInt6783 - super.aClass2_Sub6_3.anInt1101);
+			super.aClass31Array3[2].method3813(-super.aClass2_Sub6_3.anInt1104 + super.xFine, super.anInt6782 + -super.aClass2_Sub6_3.anInt1114, super.zFine - super.aClass2_Sub6_3.anInt1101);
 		}
 		super.anInt4603 = Static163.anInt3086;
 		return local175;
@@ -237,32 +237,32 @@ public final class Npc extends Class11_Sub5_Sub2 {
 			}
 		}
 		if (!arg3) {
-			@Pc(67) int local67 = arg2 - super.anIntArray316[0];
-			@Pc(75) int local75 = arg4 - super.anIntArray317[0];
+			@Pc(67) int local67 = arg2 - super.movementQueueX[0];
+			@Pc(75) int local75 = arg4 - super.movementQueueZ[0];
 			if (local67 >= -8 && local67 <= 8 && local75 >= -8 && local75 <= 8) {
 				if (super.anInt4643 < 9) {
 					super.anInt4643++;
 				}
 				for (@Pc(108) int local108 = super.anInt4643; local108 > 0; local108--) {
-					super.anIntArray316[local108] = super.anIntArray316[local108 - 1];
-					super.anIntArray317[local108] = super.anIntArray317[local108 - 1];
+					super.movementQueueX[local108] = super.movementQueueX[local108 - 1];
+					super.movementQueueZ[local108] = super.movementQueueZ[local108 - 1];
 					super.aByteArray51[local108] = super.aByteArray51[local108 - 1];
 				}
-				super.anIntArray316[0] = arg2;
-				super.anIntArray317[0] = arg4;
+				super.movementQueueX[0] = arg2;
+				super.movementQueueZ[0] = arg4;
 				super.aByteArray51[0] = 1;
 				return;
 			}
 		}
 		super.anInt4643 = 0;
-		super.anIntArray316[0] = arg2;
+		super.movementQueueX[0] = arg2;
 		super.anInt4641 = 0;
 		super.anInt4642 = 0;
-		super.anIntArray317[0] = arg4;
-		super.anInt6781 = arg0 * 64 + super.anIntArray316[0] * 128;
-		super.anInt6783 = super.anIntArray317[0] * 128 + arg0 * 64;
-		if (super.aClass12_Sub5_3 != null) {
-			super.aClass12_Sub5_3.method4359();
+		super.movementQueueZ[0] = arg4;
+		super.xFine = arg0 * 64 + super.movementQueueX[0] * 128;
+		super.zFine = super.movementQueueZ[0] * 128 + arg0 * 64;
+		if (super.particleSystem != null) {
+			super.particleSystem.method4359();
 		}
 	}
 
@@ -281,7 +281,7 @@ public final class Npc extends Class11_Sub5_Sub2 {
 		@Pc(19) Class14 local19 = arg2.method2808();
 		@Pc(24) int local24 = super.aClass248_7.method6441();
 		local19.method3925(local24);
-		local19.method3936(super.anInt6781, super.anInt6782, super.anInt6783);
+		local19.method3936(super.xFine, super.anInt6782, super.zFine);
 		for (@Pc(43) int local43 = 0; super.aClass31Array3.length > local43; local43++) {
 			if (super.aClass31Array3[local43] != null && super.aClass31Array3[local43].method3820(arg0, arg1, local19, this.type.size == 1)) {
 				return true;
@@ -330,8 +330,8 @@ public final class Npc extends Class11_Sub5_Sub2 {
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(Lclient!fk;I)V")
 	public void setType(@OriginalArg(0) Class71 arg0) {
 		this.type = arg0;
-		if (super.aClass12_Sub5_3 != null) {
-			super.aClass12_Sub5_3.method4359();
+		if (super.particleSystem != null) {
+			super.particleSystem.method4359();
 		}
 	}
 }

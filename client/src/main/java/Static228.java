@@ -9,9 +9,9 @@ public final class Static228 {
 
 	@OriginalMember(owner = "client!nc", name = "a", descriptor = "(IIIIIII)V")
 	public static void method3995(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(4) int arg2, @OriginalArg(6) int arg3) {
-		@Pc(7) int local7 = Static31.anInt751;
+		@Pc(7) int local7 = PlayerList.anInt751;
 		Static45.anInt1196 = 0;
-		@Pc(11) int[] local11 = Static85.anIntArray121;
+		@Pc(11) int[] local11 = PlayerList.anIntArray121;
 		@Pc(194) int local194;
 		@Pc(217) int local217;
 		@Pc(261) int local261;
@@ -21,7 +21,7 @@ public final class Static228 {
 		@Pc(322) int local322;
 		for (@Pc(13) int local13 = 0; local13 < NpcList.size + local7; local13++) {
 			@Pc(17) Class71 local17 = null;
-			@Pc(33) Class11_Sub5_Sub2 local33;
+			@Pc(33) PathingEntity local33;
 			if (local7 <= local13) {
 				local33 = NpcList.npcs[NpcList.ids[local13 - local7]];
 				local17 = ((Npc) local33).type;
@@ -37,7 +37,7 @@ public final class Static228 {
 			if (local33.anInt4638 >= 0 && (Static163.anInt3086 == local33.anInt4603 || Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 == local33.aByte78)) {
 				Static250.method4344(local33.method4323(), local33, arg1 >> 1, arg2 >> 1);
 				if (Static216.anIntArray231[0] >= 0) {
-					if (local33.aString50 != null && (local13 >= local7 || Static20.anInt545 == 0 || Static20.anInt545 == 3 || Static20.anInt545 == 1 && Static391.method6451(((Class11_Sub5_Sub2_Sub1) local33).aString41)) && Static319.anInt5977 > Static45.anInt1196) {
+					if (local33.aString50 != null && (local13 >= local7 || Static20.anInt545 == 0 || Static20.anInt545 == 3 || Static20.anInt545 == 1 && Static391.method6451(((Player) local33).aString41)) && Static319.anInt5977 > Static45.anInt1196) {
 						Static319.anIntArray398[Static45.anInt1196] = Static113.aClass239_2.method6126(local33.aString50) / 2;
 						Static319.anIntArray397[Static45.anInt1196] = Static216.anIntArray231[0];
 						Static319.anIntArray402[Static45.anInt1196] = Static216.anIntArray231[1];
@@ -136,15 +136,15 @@ public final class Static228 {
 							Static190.aClass19_8.method2895(arg0, arg3, arg1 + arg0, arg3 - -arg2);
 						}
 						if (local13 < local7) {
-							@Pc(587) Class11_Sub5_Sub2_Sub1 local587 = (Class11_Sub5_Sub2_Sub1) local33;
-							if (local587.anInt4188 != -1) {
+							@Pc(587) Player local587 = (Player) local33;
+							if (local587.pkIcon != -1) {
 								local194 -= 25;
-								Static232.aClass13Array17[local587.anInt4188].method6385(Static216.anIntArray231[0] + arg0 - 12, local194);
+								Static232.aClass13Array17[local587.pkIcon].method6385(Static216.anIntArray231[0] + arg0 - 12, local194);
 								local194 -= 2;
 							}
-							if (local587.anInt4198 != -1) {
+							if (local587.prayerIcon != -1) {
 								local194 -= 25;
-								Static137.aClass13Array13[local587.anInt4198].method6385(arg0 + Static216.anIntArray231[0] - 12, local194);
+								Static137.aClass13Array13[local587.prayerIcon].method6385(arg0 + Static216.anIntArray231[0] - 12, local194);
 								local194 -= 2;
 							}
 						} else if (local17.anInt2050 >= 0 && local17.anInt2050 < Static137.aClass13Array13.length) {
@@ -157,7 +157,7 @@ public final class Static228 {
 					@Pc(665) Class84[] local665;
 					@Pc(673) Class84 local673;
 					@Pc(695) Class13 local695;
-					if (!(local33 instanceof Class11_Sub5_Sub2_Sub1)) {
+					if (!(local33 instanceof Player)) {
 						local663 = 0;
 						local665 = Static50.aClass84Array1;
 						for (local310 = 0; local310 < local665.length; local310++) {
@@ -217,14 +217,14 @@ public final class Static228 {
 		@Pc(965) int local965;
 		for (@Pc(959) int local959 = 0; local959 < Static51.anInt1369; local959++) {
 			local965 = Static150.anIntArray175[local959];
-			@Pc(974) Class11_Sub5_Sub2 local974;
+			@Pc(974) PathingEntity local974;
 			if (local965 >= 2048) {
 				local974 = NpcList.npcs[local965 - 2048];
 			} else {
 				local974 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local965];
 			}
 			local194 = Static160.anIntArray186[local959];
-			@Pc(991) Class11_Sub5_Sub2 local991;
+			@Pc(991) PathingEntity local991;
 			if (local194 < 2048) {
 				local991 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local194];
 			} else {
@@ -332,22 +332,22 @@ public final class Static228 {
 	}
 
 	@OriginalMember(owner = "client!nc", name = "a", descriptor = "(IIII)Lclient!mr;")
-	public static Class11_Sub5_Sub2 method3997(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public static PathingEntity method3997(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(16) Class67 local16 = Static330.aClass67ArrayArrayArray3[arg0][arg1][arg2];
 		if (local16 == null) {
 			return null;
 		}
-		@Pc(22) Class11_Sub5_Sub2 local22 = null;
+		@Pc(22) PathingEntity local22 = null;
 		@Pc(24) int local24 = -1;
 		for (@Pc(27) Class22 local27 = local16.aClass22_2; local27 != null; local27 = local27.aClass22_1) {
 			@Pc(31) Class11_Sub5 local31 = local27.aClass11_Sub5_1;
-			if (local31 instanceof Class11_Sub5_Sub2) {
-				@Pc(37) Class11_Sub5_Sub2 local37 = (Class11_Sub5_Sub2) local31;
-				@Pc(47) int local47 = (local37.method4328() - 1) * 64 + 60;
-				@Pc(55) int local55 = local37.anInt6781 - local47 >> 7;
-				@Pc(63) int local63 = local37.anInt6783 - local47 >> 7;
-				@Pc(70) int local70 = local47 + local37.anInt6781 >> 7;
-				@Pc(77) int local77 = local37.anInt6783 + local47 >> 7;
+			if (local31 instanceof PathingEntity) {
+				@Pc(37) PathingEntity local37 = (PathingEntity) local31;
+				@Pc(47) int local47 = (local37.getSize() - 1) * 64 + 60;
+				@Pc(55) int local55 = local37.xFine - local47 >> 7;
+				@Pc(63) int local63 = local37.zFine - local47 >> 7;
+				@Pc(70) int local70 = local47 + local37.xFine >> 7;
+				@Pc(77) int local77 = local37.zFine + local47 >> 7;
 				if (arg1 >= local55 && local63 <= arg2 && arg1 <= local70 && local77 >= arg2) {
 					@Pc(106) int local106 = (local70 + 1 - arg1) * (local77 + 1 + -arg2);
 					if (local24 < local106) {

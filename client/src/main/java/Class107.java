@@ -79,7 +79,7 @@ public final class Class107 {
 	}
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(IIILclient!jo;Lclient!wm;III)Lclient!jd;")
-	public Class13 method2758(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class117 arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
+	public Class13 method2758(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) PlayerAppearance arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		this.aClass53_1.aBoolean128 = arg2 != null;
 		this.aClass53_1.anInt1645 = arg6;
 		this.aClass53_1.anInt1644 = arg1;
@@ -91,7 +91,7 @@ public final class Class107 {
 	}
 
 	@OriginalMember(owner = "client!io", name = "b", descriptor = "(II)Lclient!qf;")
-	public Class188 method2759(@OriginalArg(0) int arg0) {
+	public Class188 get(@OriginalArg(0) int arg0) {
 		@Pc(8) Class98 local8 = this.aClass98_21;
 		@Pc(18) Class188 local18;
 		synchronized (this.aClass98_21) {
@@ -111,16 +111,16 @@ public final class Class107 {
 		}
 		local18.method4777();
 		if (local18.anInt5258 != -1) {
-			local18.method4780(this.method2759(local18.anInt5202), this.method2759(local18.anInt5258));
+			local18.method4780(this.get(local18.anInt5202), this.get(local18.anInt5258));
 		}
 		if (local18.anInt5235 != -1) {
-			local18.method4784(this.method2759(local18.anInt5235), this.method2759(local18.anInt5246));
+			local18.method4784(this.get(local18.anInt5235), this.get(local18.anInt5246));
 		}
 		if (!this.aBoolean195 && local18.aBoolean382) {
 			local18.aString55 = Static101.aClass79_44.method2267(this.anInt2781);
 			local18.aStringArray51 = this.aStringArray22;
 			local18.anIntArray364 = null;
-			local18.anInt5257 = 0;
+			local18.team = 0;
 			local18.aBoolean381 = false;
 			local18.aStringArray50 = this.aStringArray21;
 			if (local18.aClass4_103 != null) {
@@ -211,12 +211,12 @@ public final class Class107 {
 	}
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(ILclient!ur;ILclient!wm;ZIZLclient!jo;ILclient!wm;IB)Lclient!jd;")
-	public Class13 method2769(@OriginalArg(0) int arg0, @OriginalArg(1) Class130 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) Class117 arg7, @OriginalArg(8) int arg8, @OriginalArg(9) Class19 arg9, @OriginalArg(10) int arg10) {
+	public Class13 method2769(@OriginalArg(0) int arg0, @OriginalArg(1) Class130 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) PlayerAppearance arg7, @OriginalArg(8) int arg8, @OriginalArg(9) Class19 arg9, @OriginalArg(10) int arg10) {
 		@Pc(22) Class13 local22 = this.method2758(arg8, arg0, arg7, arg3, arg5, arg10, arg2);
 		if (local22 != null) {
 			return local22;
 		}
-		@Pc(33) Class188 local33 = this.method2759(arg0);
+		@Pc(33) Class188 local33 = this.get(arg0);
 		if (arg2 > 1 && local33.anIntArray365 != null) {
 			@Pc(43) int local43 = -1;
 			for (@Pc(45) int local45 = 0; local45 < 10; local45++) {
@@ -225,7 +225,7 @@ public final class Class107 {
 				}
 			}
 			if (local43 != -1) {
-				local33 = this.method2759(local43);
+				local33 = this.get(local43);
 			}
 		}
 		@Pc(97) int[] local97 = local33.method4781(arg1, arg7, arg3, arg5, arg9, arg8, arg10, arg2, arg6);

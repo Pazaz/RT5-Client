@@ -43,14 +43,14 @@ public final class Static156 {
 		@Pc(9) int[] local9 = new int[Static313.ObjTypeList.anInt2779];
 		@Pc(11) int local11 = 0;
 		for (@Pc(13) int local13 = 0; local13 < Static313.ObjTypeList.anInt2779; local13++) {
-			@Pc(20) Class188 local20 = Static313.ObjTypeList.method2759(local13);
+			@Pc(20) Class188 local20 = Static313.ObjTypeList.get(local13);
 			if (local20.anInt5205 >= 0 || local20.anInt5250 >= 0) {
 				local9[local11++] = local13;
 			}
 		}
-		Static12.anIntArray15 = new int[local11];
+		Equipment.objIds = new int[local11];
 		for (@Pc(52) int local52 = 0; local52 < local11; local52++) {
-			Static12.anIntArray15[local52] = local9[local52];
+			Equipment.objIds[local52] = local9[local52];
 		}
 	}
 }

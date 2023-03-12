@@ -48,7 +48,7 @@ public final class Static133 {
 			local97 = Static394.anInt7263;
 		}
 		Static307.method5255(local97);
-		Static56.method1616(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783, Static165.anInt3148, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78);
+		Static56.method1616(Static17.aClass11_Sub5_Sub2_Sub1_3.xFine, Static17.aClass11_Sub5_Sub2_Sub1_3.zFine, Static165.anInt3148, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78);
 		Static165.anInt3148 = 0;
 	}
 }

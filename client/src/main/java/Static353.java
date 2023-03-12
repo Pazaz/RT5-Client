@@ -5,9 +5,6 @@ public final class Static353 {
 	@OriginalMember(owner = "client!ui", name = "j", descriptor = "I")
 	public static int anInt6532;
 
-	@OriginalMember(owner = "client!ui", name = "k", descriptor = "[[S")
-	public static short[][] aShortArrayArray7;
-
 	@OriginalMember(owner = "client!ui", name = "q", descriptor = "[I")
 	public static int[] anIntArray450;
 

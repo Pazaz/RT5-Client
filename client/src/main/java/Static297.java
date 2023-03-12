@@ -33,12 +33,12 @@ public final class Static297 {
 	}
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(BLclient!mr;)V")
-	public static void method5113(@OriginalArg(1) Class11_Sub5_Sub2 arg0) {
+	public static void method5113(@OriginalArg(1) PathingEntity arg0) {
 		@Pc(16) int local16 = arg0.anInt4622 - client.cycle;
-		@Pc(27) int local27 = arg0.anInt4615 * 128 + arg0.method4328() * 64;
-		@Pc(39) int local39 = arg0.anInt4588 * 128 + arg0.method4328() * 64;
-		arg0.anInt6781 += (local27 - arg0.anInt6781) / local16;
-		arg0.anInt6783 += (local39 - arg0.anInt6783) / local16;
+		@Pc(27) int local27 = arg0.anInt4615 * 128 + arg0.getSize() * 64;
+		@Pc(39) int local39 = arg0.anInt4588 * 128 + arg0.getSize() * 64;
+		arg0.xFine += (local27 - arg0.xFine) / local16;
+		arg0.zFine += (local39 - arg0.zFine) / local16;
 		arg0.anInt4641 = 0;
 		if (arg0.anInt4614 == 0) {
 			arg0.method4325(8192);

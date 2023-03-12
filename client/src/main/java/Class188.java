@@ -166,7 +166,7 @@ public final class Class188 {
 	private int anInt5260 = 0;
 
 	@OriginalMember(owner = "client!qf", name = "xb", descriptor = "I")
-	public int anInt5257 = 0;
+	public int team = 0;
 
 	@OriginalMember(owner = "client!qf", name = "lb", descriptor = "I")
 	public int anInt5247 = 0;
@@ -295,7 +295,7 @@ public final class Class188 {
 			} else if (arg0 == 114) {
 				this.anInt5199 = arg1.g1b() * 5;
 			} else if (arg0 == 115) {
-				this.anInt5257 = arg1.g1();
+				this.team = arg1.g1();
 			} else if (arg0 == 121) {
 				this.anInt5246 = arg1.g2();
 			} else if (arg0 == 122) {
@@ -441,7 +441,7 @@ public final class Class188 {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(IIIILclient!nb;Lclient!wm;ILclient!jo;I)Lclient!gn;")
-	public Class31 method4776(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class157 arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) Class117 arg6, @OriginalArg(8) int arg7) {
+	public Class31 method4776(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class157 arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) int arg7) {
 		@Pc(15) int local15;
 		if (this.anIntArray365 != null && arg5 > 1) {
 			local15 = -1;
@@ -451,7 +451,7 @@ public final class Class188 {
 				}
 			}
 			if (local15 != -1) {
-				return this.aClass107_1.method2759(local15).method4776(arg0, arg1, arg2, arg3, arg4, 1, arg6, arg7);
+				return this.aClass107_1.get(local15).method4776(arg0, arg1, arg2, arg3, arg4, 1, arg6, arg7);
 			}
 		}
 		local15 = arg1;
@@ -508,8 +508,8 @@ public final class Class188 {
 			}
 			if (arg6 != null) {
 				for (local229 = 0; local229 < 5; local229++) {
-					if (Static353.aShortArrayArray7[local229].length > arg6.anIntArray194[local229]) {
-						local102.method3838(Static10.aShortArray1[local229], Static353.aShortArrayArray7[local229][arg6.anIntArray194[local229]]);
+					if (PlayerAppearance.destinationBodyColors[local229].length > arg6.anIntArray194[local229]) {
+						local102.method3838(Static10.aShortArray1[local229], PlayerAppearance.destinationBodyColors[local229][arg6.anIntArray194[local229]]);
 					}
 					if (arg6.anIntArray194[local229] < Static186.aShortArrayArray6[local229].length) {
 						local102.method3838(Static43.aShortArray20[local229], Static186.aShortArrayArray6[local229][arg6.anIntArray194[local229]]);
@@ -633,7 +633,7 @@ public final class Class188 {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(Lclient!ur;Lclient!jo;BLclient!wm;ILclient!wm;IIIZ)[I")
-	public int[] method4781(@OriginalArg(0) Class130 arg0, @OriginalArg(1) Class117 arg1, @OriginalArg(3) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) boolean arg8) {
+	public int[] method4781(@OriginalArg(0) Class130 arg0, @OriginalArg(1) PlayerAppearance arg1, @OriginalArg(3) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) boolean arg8) {
 		@Pc(14) Class185 local14 = Static298.method2426(this.aClass107_1.aClass197_41, this.anInt5237);
 		if (local14 == null) {
 			return null;
@@ -655,8 +655,8 @@ public final class Class188 {
 		}
 		if (arg1 != null) {
 			for (local23 = 0; local23 < 5; local23++) {
-				if (arg1.anIntArray194[local23] < Static353.aShortArrayArray7[local23].length) {
-					local14.method4663(Static10.aShortArray1[local23], Static353.aShortArrayArray7[local23][arg1.anIntArray194[local23]]);
+				if (arg1.anIntArray194[local23] < PlayerAppearance.destinationBodyColors[local23].length) {
+					local14.method4663(Static10.aShortArray1[local23], PlayerAppearance.destinationBodyColors[local23][arg1.anIntArray194[local23]]);
 				}
 				if (arg1.anIntArray194[local23] < Static186.aShortArrayArray6[local23].length) {
 					local14.method4663(Static43.aShortArray20[local23], Static186.aShortArrayArray6[local23][arg1.anIntArray194[local23]]);
@@ -755,7 +755,7 @@ public final class Class188 {
 				}
 			}
 			if (local13 != -1) {
-				return this.aClass107_1.method2759(local13);
+				return this.aClass107_1.get(local13);
 			}
 		}
 		return this;
@@ -815,7 +815,7 @@ public final class Class188 {
 		this.anInt5250 = arg1.anInt5250;
 		this.aByteArray72 = arg1.aByteArray72;
 		this.aShortArray112 = arg1.aShortArray112;
-		this.anInt5257 = arg1.anInt5257;
+		this.team = arg1.team;
 		this.anInt5245 = arg0.anInt5245;
 		this.anInt5205 = arg1.anInt5205;
 		this.anInt5260 = arg1.anInt5260;

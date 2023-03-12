@@ -479,7 +479,7 @@ public final class Class161 {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(IILclient!io;Lclient!wl;ILclient!nb;Lclient!ak;Lclient!jo;Lclient!ta;ILclient!gp;ILclient!e;Lclient!wm;)Lclient!gn;")
-	public Class31 method4105(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class107 arg2, @OriginalArg(3) Interface11 arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) Class7 arg5, @OriginalArg(7) Class117 arg6, @OriginalArg(8) Class219 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class85 arg9, @OriginalArg(11) int arg10, @OriginalArg(12) Class55 arg11, @OriginalArg(13) Class19 arg12) {
+	public Class31 method4105(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class107 arg2, @OriginalArg(3) Interface11 arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) Class7 arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) Class219 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class85 arg9, @OriginalArg(11) int arg10, @OriginalArg(12) Class55 arg11, @OriginalArg(13) Class19 arg12) {
 		Static86.aBoolean133 = false;
 		if (this.anInt4288 == 0) {
 			return null;
@@ -531,7 +531,7 @@ public final class Class161 {
 					return local151;
 				}
 			} else if (this.anInt4288 == 4) {
-				@Pc(205) Class188 local205 = arg2.method2759(this.anInt4313);
+				@Pc(205) Class188 local205 = arg2.get(this.anInt4313);
 				local61 = local205.method4776(arg0, 1024, arg1, arg4, arg12, 10, arg6, arg8);
 				if (local61 == null) {
 					Static86.aBoolean133 = true;

@@ -36,11 +36,11 @@ public final class Static50 {
 		Static310.method5283();
 		Static107.anInt2219 = -1;
 		Static307.method5255(Static394.anInt7263);
-		Static17.aClass11_Sub5_Sub2_Sub1_3 = new Class11_Sub5_Sub2_Sub1();
-		Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 = 6656;
-		Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0] = 52;
-		Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 = 6656;
-		Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0] = 52;
+		Static17.aClass11_Sub5_Sub2_Sub1_3 = new Player();
+		Static17.aClass11_Sub5_Sub2_Sub1_3.xFine = 6656;
+		Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueX[0] = 52;
+		Static17.aClass11_Sub5_Sub2_Sub1_3.zFine = 6656;
+		Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueZ[0] = 52;
 		Static211.anInt3777 = 0;
 		Static136.anInt6778 = 0;
 		if (Static314.anInt5911 == 2) {

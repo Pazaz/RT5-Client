@@ -39,7 +39,7 @@ public final class Static243 {
 		if (Static365.aClass6Array4 == null) {
 			return;
 		}
-		@Pc(27) Class11_Sub5_Sub2 local27;
+		@Pc(27) PathingEntity local27;
 		@Pc(18) int local18;
 		if (arg8 < 0) {
 			local18 = -arg8 - 1;

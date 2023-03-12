@@ -4,8 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jo")
-public final class Class117 {
+public final class PlayerAppearance {
 
+	@OriginalMember(owner = "client!ui", name = "k", descriptor = "[[S")
+	public static short[][] destinationBodyColors;
 	@OriginalMember(owner = "client!jo", name = "d", descriptor = "Z")
 	public boolean aBoolean220;
 
@@ -28,10 +30,10 @@ public final class Class117 {
 	private long aLong107;
 
 	@OriginalMember(owner = "client!jo", name = "j", descriptor = "I")
-	public int anInt3185 = -1;
+	public int npcId = -1;
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "([I[IZIIZ)V")
-	public void method3180(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public void set(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		this.aBoolean220 = arg2;
 		if (this.anInt3190 != arg4) {
 			this.anInt3190 = arg4;
@@ -39,7 +41,7 @@ public final class Class117 {
 		}
 		this.anIntArray193 = arg1;
 		this.anIntArray194 = arg0;
-		this.anInt3185 = arg3;
+		this.npcId = arg3;
 		this.method3189();
 	}
 
@@ -60,8 +62,8 @@ public final class Class117 {
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ILclient!gp;Lclient!wl;ZIILclient!nb;Lclient!ta;Lclient!e;Lclient!wm;ILclient!io;)Lclient!gn;")
 	public Class31 method3184(@OriginalArg(0) int arg0, @OriginalArg(1) Class85 arg1, @OriginalArg(2) Interface11 arg2, @OriginalArg(5) int arg3, @OriginalArg(6) Class157 arg4, @OriginalArg(7) Class219 arg5, @OriginalArg(8) Class55 arg6, @OriginalArg(9) Class19 arg7, @OriginalArg(10) int arg8, @OriginalArg(11) Class107 arg9) {
-		if (this.anInt3185 != -1) {
-			return arg5.method5570(this.anInt3185).method2088(arg3, arg8, arg0, arg7, arg4, arg2, arg1);
+		if (this.npcId != -1) {
+			return arg5.method5570(this.npcId).method2088(arg3, arg8, arg0, arg7, arg4, arg2, arg1);
 		}
 		@Pc(27) int local27 = 1024;
 		@Pc(35) boolean local35;
@@ -119,7 +121,7 @@ public final class Class117 {
 					if ((Integer.MIN_VALUE & local109) != 0 && !arg6.method1784(local109 & 0x3FFFFFFF).method2268()) {
 						local35 = true;
 					}
-				} else if (!arg9.method2759(local109 & 0x3FFFFFFF).method4783(this.aBoolean220)) {
+				} else if (!arg9.get(local109 & 0x3FFFFFFF).method4783(this.aBoolean220)) {
 					local35 = true;
 				}
 			}
@@ -132,7 +134,7 @@ public final class Class117 {
 				local56 = this.anIntArray193[local264];
 				@Pc(286) Class185 local286;
 				if ((local56 & 0x40000000) != 0) {
-					local286 = arg9.method2759(local56 & 0x3FFFFFFF).method4778(this.aBoolean220);
+					local286 = arg9.get(local56 & 0x3FFFFFFF).method4778(this.aBoolean220);
 					if (local286 != null) {
 						local260[local262++] = local286;
 					}
@@ -147,8 +149,8 @@ public final class Class117 {
 			@Pc(329) int local329 = local27 | 0x2000;
 			local172 = arg7.method2864(local325, local329, Static233.anInt4199, 64, 768);
 			for (local113 = 0; local113 < 5; local113++) {
-				if (this.anIntArray194[local113] < Static353.aShortArrayArray7[local113].length) {
-					local172.method3838(Static10.aShortArray1[local113], Static353.aShortArrayArray7[local113][this.anIntArray194[local113]]);
+				if (this.anIntArray194[local113] < destinationBodyColors[local113].length) {
+					local172.method3838(Static10.aShortArray1[local113], destinationBodyColors[local113][this.anIntArray194[local113]]);
 				}
 				if (Static186.aShortArrayArray6[local113].length > this.anIntArray194[local113]) {
 					local172.method3838(Static43.aShortArray20[local113], Static186.aShortArrayArray6[local113][this.anIntArray194[local113]]);
@@ -244,8 +246,8 @@ public final class Class117 {
 			local32 = local7 | 0x2000;
 			local170 = arg7.method2864(local227, local32, Static233.anInt4199, 64, 768);
 			for (local36 = 0; local36 < 5; local36++) {
-				if (Static353.aShortArrayArray7[local36].length > this.anIntArray194[local36]) {
-					local170.method3838(Static10.aShortArray1[local36], Static353.aShortArrayArray7[local36][this.anIntArray194[local36]]);
+				if (destinationBodyColors[local36].length > this.anIntArray194[local36]) {
+					local170.method3838(Static10.aShortArray1[local36], destinationBodyColors[local36][this.anIntArray194[local36]]);
 				}
 				if (Static186.aShortArrayArray6[local36].length > this.anIntArray194[local36]) {
 					local170.method3838(Static43.aShortArray20[local36], Static186.aShortArrayArray6[local36][this.anIntArray194[local36]]);
@@ -291,8 +293,8 @@ public final class Class117 {
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(IZLclient!ak;Lclient!gp;Lclient!e;Lclient!nb;IIIIZILclient!nb;Lclient!wl;Lclient!io;Lclient!wm;Lclient!ta;[Lclient!bg;I)Lclient!gn;")
 	public Class31 method3191(@OriginalArg(0) int arg0, @OriginalArg(2) Class7 arg1, @OriginalArg(3) Class85 arg2, @OriginalArg(4) Class55 arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(11) int arg9, @OriginalArg(12) Class157 arg10, @OriginalArg(13) Interface11 arg11, @OriginalArg(14) Class107 arg12, @OriginalArg(15) Class19 arg13, @OriginalArg(16) Class219 arg14, @OriginalArg(17) Class20[] arg15, @OriginalArg(18) int arg16) {
-		if (this.anInt3185 != -1) {
-			return arg14.method5570(this.anInt3185).method2086(arg1, arg16, arg4, arg13, arg2, arg6, arg9, arg8, arg10, arg7, arg15, arg0, arg11, arg5);
+		if (this.npcId != -1) {
+			return arg14.method5570(this.npcId).method2086(arg1, arg16, arg4, arg13, arg2, arg6, arg9, arg8, arg10, arg7, arg15, arg0, arg11, arg5);
 		}
 		@Pc(33) int local33 = arg7;
 		@Pc(36) long local36 = this.aLong107;
@@ -463,7 +465,7 @@ public final class Class117 {
 							local743 = local39[local737];
 							@Pc(763) Class185 local763;
 							if ((local743 & 0x40000000) != 0) {
-								local763 = arg12.method2759(local743 & 0x3FFFFFFF).method4779(this.aBoolean220);
+								local763 = arg12.get(local743 & 0x3FFFFFFF).method4779(this.aBoolean220);
 								if (local763 != null) {
 									local735[local737] = local763;
 								}
@@ -533,8 +535,8 @@ public final class Class117 {
 						@Pc(1213) int local1213 = local33 | 0x2000;
 						local589 = arg13.method2864(local1209, local1213, Static233.anInt4199, 64, 850);
 						for (local821 = 0; local821 < 5; local821++) {
-							if (this.anIntArray194[local821] < Static353.aShortArrayArray7[local821].length) {
-								local589.method3838(Static10.aShortArray1[local821], Static353.aShortArrayArray7[local821][this.anIntArray194[local821]]);
+							if (this.anIntArray194[local821] < destinationBodyColors[local821].length) {
+								local589.method3838(Static10.aShortArray1[local821], destinationBodyColors[local821][this.anIntArray194[local821]]);
 							}
 							if (Static186.aShortArrayArray6[local821].length > this.anIntArray194[local821]) {
 								local589.method3838(Static43.aShortArray20[local821], Static186.aShortArrayArray6[local821][this.anIntArray194[local821]]);
@@ -554,7 +556,7 @@ public final class Class117 {
 					if ((local646 & Integer.MIN_VALUE) != 0 && !arg3.method1784(local646 & 0x3FFFFFFF).method2270()) {
 						local638 = true;
 					}
-				} else if (!arg12.method2759(local646 & 0x3FFFFFFF).method4770(this.aBoolean220)) {
+				} else if (!arg12.get(local646 & 0x3FFFFFFF).method4770(this.aBoolean220)) {
 					local638 = true;
 				}
 				local640++;

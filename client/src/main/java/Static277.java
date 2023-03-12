@@ -89,7 +89,7 @@ public final class Static277 {
 	}
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(Lclient!mr;B)V")
-	public static void method4682(@OriginalArg(0) Class11_Sub5_Sub2 arg0) {
+	public static void method4682(@OriginalArg(0) PathingEntity arg0) {
 		@Pc(5) boolean local5 = false;
 		if (arg0.anInt4584 == client.cycle || arg0.anInt4597 == -1 || arg0.anInt4590 != 0) {
 			local5 = true;
@@ -102,12 +102,12 @@ public final class Static277 {
 		if (local5) {
 			@Pc(57) int local57 = arg0.anInt4584 - arg0.anInt4622;
 			@Pc(63) int local63 = client.cycle - arg0.anInt4622;
-			@Pc(75) int local75 = arg0.anInt4615 * 128 + arg0.method4328() * 64;
-			@Pc(86) int local86 = arg0.anInt4588 * 128 + arg0.method4328() * 64;
-			@Pc(97) int local97 = arg0.anInt4577 * 128 + arg0.method4328() * 64;
-			@Pc(109) int local109 = arg0.anInt4599 * 128 + arg0.method4328() * 64;
-			arg0.anInt6781 = ((local57 - local63) * local75 + local63 * local97) / local57;
-			arg0.anInt6783 = ((local57 - local63) * local86 + local63 * local109) / local57;
+			@Pc(75) int local75 = arg0.anInt4615 * 128 + arg0.getSize() * 64;
+			@Pc(86) int local86 = arg0.anInt4588 * 128 + arg0.getSize() * 64;
+			@Pc(97) int local97 = arg0.anInt4577 * 128 + arg0.getSize() * 64;
+			@Pc(109) int local109 = arg0.anInt4599 * 128 + arg0.getSize() * 64;
+			arg0.xFine = ((local57 - local63) * local75 + local63 * local97) / local57;
+			arg0.zFine = ((local57 - local63) * local86 + local63 * local109) / local57;
 		}
 		arg0.anInt4641 = 0;
 		if (arg0.anInt4614 == 0) {

@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static85 {
 
-	@OriginalMember(owner = "client!ep", name = "a", descriptor = "[I")
-	public static final int[] anIntArray121 = new int[2048];
-
 	@OriginalMember(owner = "client!ep", name = "a", descriptor = "(ZLclient!nk;B)V")
 	public static void method1911(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class161 arg1) {
 		@Pc(12) int local12 = arg1.anInt4281 == 0 ? arg1.anInt4248 : arg1.anInt4281;

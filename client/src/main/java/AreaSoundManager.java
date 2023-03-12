@@ -19,7 +19,7 @@ public class AreaSoundManager {
 	}
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(Lclient!ct;IILclient!nh;Lclient!oe;BII)V")
-	public static void add(@OriginalArg(0) Class41 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class11_Sub5_Sub2_Sub1 arg3, @OriginalArg(4) Npc arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
+	public static void add(@OriginalArg(0) Class41 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Player arg3, @OriginalArg(4) Npc arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		@Pc(7) Class2_Sub19 local7 = new Class2_Sub19();
 		local7.anInt2905 = arg6;
 		local7.anInt2899 = arg5 * 128;
@@ -65,12 +65,35 @@ public class AreaSoundManager {
 			Static363.aClass135_39.method3540(local7);
 		} else if (arg3 != null) {
 			local7.aClass11_Sub5_Sub2_Sub1_2 = arg3;
-			local7.anInt2896 = (arg5 + arg3.method4328()) * 128;
-			local7.anInt2904 = (arg1 + arg3.method4328()) * 128;
+			local7.anInt2896 = (arg5 + arg3.getSize()) * 128;
+			local7.anInt2904 = (arg1 + arg3.getSize()) * 128;
 			local7.anInt2894 = Static384.method6415(arg3);
-			local7.anInt2906 = arg3.anInt4201;
-			local7.anInt2901 = arg3.anInt4182 * 128;
+			local7.anInt2906 = arg3.soundVolume;
+			local7.anInt2901 = arg3.soundRadius * 128;
 			Static232.aClass4_86.method87(local7, (long) arg3.anInt4619);
+		}
+	}
+
+	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(ILclient!nh;)V")
+	public static void remove(@OriginalArg(1) Player arg0) {
+		@Pc(11) Class2_Sub19 local11 = (Class2_Sub19) Static232.aClass4_86.method90((long) arg0.anInt4619);
+		if (local11 == null) {
+			return;
+		}
+		if (local11.aClass2_Sub12_Sub4_3 != null) {
+			Static227.aClass2_Sub12_Sub2_2.method2081(local11.aClass2_Sub12_Sub4_3);
+			local11.aClass2_Sub12_Sub4_3 = null;
+		}
+		local11.method6468();
+	}
+
+	@OriginalMember(owner = "client!sq", name = "a", descriptor = "(Lclient!nh;I)V")
+	public static void update(@OriginalArg(0) Player arg0) {
+		@Pc(19) Class2_Sub19 local19 = (Class2_Sub19) Static232.aClass4_86.method90((long) arg0.anInt4619);
+		if (local19 == null) {
+			add(null, arg0.movementQueueZ[0], 0, arg0, null, arg0.movementQueueX[0], arg0.aByte78);
+		} else {
+			local19.method2941();
 		}
 	}
 

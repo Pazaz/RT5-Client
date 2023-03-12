@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static17 {
 
 	@OriginalMember(owner = "client!at", name = "N", descriptor = "Lclient!nh;")
-	public static Class11_Sub5_Sub2_Sub1 aClass11_Sub5_Sub2_Sub1_3;
+	public static Player aClass11_Sub5_Sub2_Sub1_3;
 
 	@OriginalMember(owner = "client!at", name = "P", descriptor = "Lclient!ml;")
 	public static Signlink aClass152_4;

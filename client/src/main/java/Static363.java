@@ -78,16 +78,16 @@ public final class Static363 {
 			}
 			return;
 		}
-		if ((Static359.aByteArrayArrayArray16[Static355.anInt6585][Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7][Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7] & 0x4) != 0) {
-			Static81.method3667(Static330.aClass67ArrayArrayArray3, false, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7, 0);
+		if ((Static359.aByteArrayArrayArray16[Static355.anInt6585][Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7][Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7] & 0x4) != 0) {
+			Static81.method3667(Static330.aClass67ArrayArrayArray3, false, Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7, 0);
 		}
 		if (Static265.anInt4857 >= 2560) {
 			return;
 		}
 		local94 = Static136.anInt6778 >> 7;
 		@Pc(175) int local175 = Static211.anInt3777 >> 7;
-		@Pc(180) int local180 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7;
-		@Pc(185) int local185 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7;
+		@Pc(180) int local180 = Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7;
+		@Pc(185) int local185 = Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7;
 		@Pc(196) int local196;
 		if (local180 <= local94) {
 			local196 = local94 - local180;

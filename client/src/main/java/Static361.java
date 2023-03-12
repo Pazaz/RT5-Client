@@ -34,9 +34,9 @@ public final class Static361 {
 			}
 			@Pc(138) int[] local138 = null;
 			if (Static298.method2425(local88.anInt1005)) {
-				local138 = Static313.ObjTypeList.method2759((int) local88.aLong30).anIntArray364;
+				local138 = Static313.ObjTypeList.get((int) local88.aLong30).anIntArray364;
 			} else if (local88.anInt1008 != -1) {
-				local138 = Static313.ObjTypeList.method2759(local88.anInt1008).anIntArray364;
+				local138 = Static313.ObjTypeList.get(local88.anInt1008).anIntArray364;
 			} else if (Static297.method5111(local88.anInt1005)) {
 				@Pc(166) Npc local166 = NpcList.npcs[(int) local88.aLong30];
 				if (local166 != null) {

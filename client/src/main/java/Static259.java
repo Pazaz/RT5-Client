@@ -81,7 +81,7 @@ public final class Static259 {
 			Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Static172.method3285(local18, local28, local15);
 		}
-		@Pc(275) Class11_Sub5_Sub2_Sub1 local275;
+		@Pc(275) Player local275;
 		if (local21 == 2) {
 			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
 			if (local275 != null) {
@@ -92,7 +92,7 @@ public final class Static259 {
 				Static91.method1960(Static21.aClass145_25);
 				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Protocol.outboundBuffer.ip2add(local25);
-				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
 			}
 		}
 		if (local21 == 1009) {
@@ -156,7 +156,7 @@ public final class Static259 {
 				Static91.method1960(Static4.aClass145_8);
 				Protocol.outboundBuffer.ip2add(local25);
 				Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Static322.method5482(true, -2, local485.anIntArray317[0], 0, local485.method4328(), local485.anIntArray316[0], local485.method4328(), 0);
+				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
 			}
 		}
 		if (local21 == 15) {
@@ -184,7 +184,7 @@ public final class Static259 {
 				Protocol.outboundBuffer.ip2add(Static196.anInt3317);
 				Protocol.outboundBuffer.ip2_dup(Static214.anInt3792);
 				Protocol.outboundBuffer.p2(local25);
-				Static322.method5482(true, -2, local485.anIntArray317[0], 0, local485.method4328(), local485.anIntArray316[0], local485.method4328(), 0);
+				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
 			}
 		}
 		if (local21 == 17) {
@@ -212,7 +212,7 @@ public final class Static259 {
 				Protocol.outboundBuffer.ip2_dup(Static214.anInt3792);
 				Protocol.outboundBuffer.ip2add(Static196.anInt3317);
 				Protocol.outboundBuffer.ip2_dup(local25);
-				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
 			}
 		}
 		if (local21 == 20) {
@@ -264,7 +264,7 @@ public final class Static259 {
 				Static91.method1960(Static143.aClass145_102);
 				Protocol.outboundBuffer.ip2_dup(local25);
 				Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
 			}
 		}
 		if (local21 == 6) {
@@ -292,8 +292,8 @@ public final class Static259 {
 					Protocol.outboundBuffer.p1(Static6.anInt158);
 					Protocol.outboundBuffer.p1(Static97.anInt2005);
 					Protocol.outboundBuffer.p1(89);
-					Protocol.outboundBuffer.p2(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781);
-					Protocol.outboundBuffer.p2(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783);
+					Protocol.outboundBuffer.p2(Static17.aClass11_Sub5_Sub2_Sub1_3.xFine);
+					Protocol.outboundBuffer.p2(Static17.aClass11_Sub5_Sub2_Sub1_3.zFine);
 					Protocol.outboundBuffer.p1(63);
 				} else {
 					Static320.anInt6005 = arg1;
@@ -326,7 +326,7 @@ public final class Static259 {
 				Static91.method1960(Static227.aClass145_151);
 				Protocol.outboundBuffer.p2(local25);
 				Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Static322.method5482(true, -2, local485.anIntArray317[0], 0, local485.method4328(), local485.anIntArray316[0], local485.method4328(), 0);
+				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
 			}
 		}
 		if (local21 == 48) {
@@ -339,7 +339,7 @@ public final class Static259 {
 				Static91.method1960(Static5.aClass145_9);
 				Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Protocol.outboundBuffer.ip2_dup(local25);
-				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
 			}
 		}
 		if (local21 == 25) {
@@ -352,7 +352,7 @@ public final class Static259 {
 				Static91.method1960(Static382.aClass145_259);
 				Protocol.outboundBuffer.ip2add(local25);
 				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Static322.method5482(true, -2, local485.anIntArray317[0], 0, local485.method4328(), local485.anIntArray316[0], local485.method4328(), 0);
+				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
 			}
 		}
 		if (local21 == 57) {
@@ -380,7 +380,7 @@ public final class Static259 {
 				Static91.method1960(Static331.aClass145_227);
 				Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Protocol.outboundBuffer.ip2_dup(local25);
-				Static322.method5482(true, -2, local485.anIntArray317[0], 0, local485.method4328(), local485.anIntArray316[0], local485.method4328(), 0);
+				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
 			}
 		}
 		if (local21 == 18) {
@@ -393,7 +393,7 @@ public final class Static259 {
 				Static91.method1960(Static49.aClass145_45);
 				Protocol.outboundBuffer.ip2add(local25);
 				Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
 			}
 		}
 		if (local21 == 9) {
@@ -406,7 +406,7 @@ public final class Static259 {
 				Static91.method1960(Static132.aClass145_92);
 				Protocol.outboundBuffer.ip2_dup(local25);
 				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
 			}
 		}
 		@Pc(1723) Class161 local1723;
@@ -442,7 +442,7 @@ public final class Static259 {
 				Static91.method1960(Static265.aClass145_173);
 				Protocol.outboundBuffer.ip2add(local25);
 				Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
 			}
 		}
 		if (local21 == 1008 || local21 == 1002 || local21 == 1012 || local21 == 1003 || local21 == 1007) {
@@ -464,7 +464,7 @@ public final class Static259 {
 				Static91.method1960(Static183.aClass145_7);
 				Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Protocol.outboundBuffer.ip2_dup(local25);
-				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
 			}
 		}
 		if (local21 == 30 && Static192.aClass161_8 == null) {
@@ -482,7 +482,7 @@ public final class Static259 {
 				Static91.method1960(Static7.aClass145_267);
 				Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Protocol.outboundBuffer.ip2add(local25);
-				Static322.method5482(true, -2, local275.anIntArray317[0], 0, local275.method4328(), local275.anIntArray316[0], local275.method4328(), 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
 			}
 		}
 		if (local21 == 3) {
@@ -495,7 +495,7 @@ public final class Static259 {
 				Static91.method1960(Static316.aClass145_214);
 				Protocol.outboundBuffer.p2(local25);
 				Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
-				Static322.method5482(true, -2, local485.anIntArray317[0], 0, local485.method4328(), local485.anIntArray316[0], local485.method4328(), 0);
+				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
 			}
 		}
 		if (Static330.aBoolean419) {

@@ -31,19 +31,6 @@ public final class Static298 {
 		}
 	}
 
-	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(ILclient!nh;)V")
-	public static void method2423(@OriginalArg(1) Class11_Sub5_Sub2_Sub1 arg0) {
-		@Pc(11) Class2_Sub19 local11 = (Class2_Sub19) Static232.aClass4_86.method90((long) arg0.anInt4619);
-		if (local11 == null) {
-			return;
-		}
-		if (local11.aClass2_Sub12_Sub4_3 != null) {
-			Static227.aClass2_Sub12_Sub2_2.method2081(local11.aClass2_Sub12_Sub4_3);
-			local11.aClass2_Sub12_Sub4_3 = null;
-		}
-		local11.method6468();
-	}
-
 	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(II)Z")
 	public static boolean method2425(@OriginalArg(0) int arg0) {
 		if (arg0 == 15 || arg0 == 46 || arg0 == 58 || arg0 == 6 || arg0 == 21) {

@@ -34,7 +34,7 @@ public final class Static241 {
 		@Pc(34) String local34 = local16.aString19;
 		if (local16.anInt2039 != 0) {
 			@Pc(50) String local50 = client.game == client.GAME_SD ? Static367.aClass79_142.method2267(client.language) : Static33.aClass79_96.method2267(client.language);
-			local34 = local34 + Static178.method2343(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4179, local16.anInt2039) + " (" + local50 + local16.anInt2039 + ")";
+			local34 = local34 + Static178.method2343(Static17.aClass11_Sub5_Sub2_Sub1_3.combatLevel, local16.anInt2039) + " (" + local50 + local16.anInt2039 + ")";
 		}
 		if (!Static330.aBoolean419) {
 			if (!arg1) {
@@ -77,7 +77,7 @@ public final class Static241 {
 					for (local90 = 4; local90 >= 0; local90--) {
 						if (local80[local90] != null && local80[local90].equalsIgnoreCase(Static378.aClass79_146.method2267(client.language))) {
 							@Pc(211) short local211 = 0;
-							if (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4179 < local16.anInt2039) {
+							if (Static17.aClass11_Sub5_Sub2_Sub1_3.combatLevel < local16.anInt2039) {
 								local211 = 2000;
 							}
 							@Pc(224) short local224 = 0;

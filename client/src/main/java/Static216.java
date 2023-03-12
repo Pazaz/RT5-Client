@@ -100,12 +100,12 @@ public final class Static216 {
 						if (Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 == local133) {
 							@Pc(153) int local153 = (Static162.anIntArray188[local7] & 0xFF) * 128;
 							@Pc(161) int local161 = Static162.anIntArray188[local7] >> 16 & 0xFF;
-							@Pc(171) int local171 = local161 * 128 + 64 - Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781;
+							@Pc(171) int local171 = local161 * 128 + 64 - Static17.aClass11_Sub5_Sub2_Sub1_3.xFine;
 							if (local171 < 0) {
 								local171 = -local171;
 							}
 							@Pc(187) int local187 = Static162.anIntArray188[local7] >> 8 & 0xFF;
-							@Pc(197) int local197 = local187 * 128 + 64 - Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783;
+							@Pc(197) int local197 = local187 * 128 + 64 - Static17.aClass11_Sub5_Sub2_Sub1_3.zFine;
 							if (local197 < 0) {
 								local197 = -local197;
 							}

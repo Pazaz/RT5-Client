@@ -12,7 +12,7 @@ public final class Static112 {
 	public static int anInt2293 = 0;
 
 	@OriginalMember(owner = "client!gg", name = "P", descriptor = "Z")
-	public static boolean aBoolean173 = false;
+	public static boolean debugGpi = false;
 
 	@OriginalMember(owner = "client!gg", name = "Q", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray18 = new String[100];

@@ -228,7 +228,7 @@ public final class Static201 {
 									local248 = local19.anInt4290;
 									@Pc(970) String local970 = local19.aString47;
 									if (local19.anInt4300 != -1) {
-										@Pc(981) Class188 local981 = Static313.ObjTypeList.method2759(local19.anInt4300);
+										@Pc(981) Class188 local981 = Static313.ObjTypeList.get(local19.anInt4300);
 										local970 = local981.aString55;
 										if (local970 == null) {
 											local970 = "null";
@@ -259,7 +259,7 @@ public final class Static201 {
 										if (local19.anInt4300 == -1) {
 											local1139 = local19.method4113(Static190.aClass19_8);
 										} else {
-											@Pc(1121) Class117 local1121 = local19.aBoolean280 ? Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1 : null;
+											@Pc(1121) PlayerAppearance local1121 = local19.aBoolean280 ? Static17.aClass11_Sub5_Sub2_Sub1_3.appearance : null;
 											local1139 = Static313.ObjTypeList.method2758(local19.anInt4306, local19.anInt4300, local1121, Static190.aClass19_8, local19.anInt4252 | 0xFF000000, local19.anInt4279, local19.anInt4240);
 										}
 										if (local1139 != null) {
@@ -308,13 +308,13 @@ public final class Static201 {
 									@Pc(1477) Class31 local1477 = null;
 									local248 = 0;
 									@Pc(1511) Class157 local1511;
-									@Pc(1519) Class117 local1519;
+									@Pc(1519) PlayerAppearance local1519;
 									if (local19.anInt4300 != -1) {
-										@Pc(1490) Class188 local1490 = Static313.ObjTypeList.method2759(local19.anInt4300);
+										@Pc(1490) Class188 local1490 = Static313.ObjTypeList.get(local19.anInt4300);
 										if (local1490 != null) {
 											local1490 = local1490.method4782(local19.anInt4240);
 											local1511 = local19.anInt4299 == -1 ? null : Static39.aClass85_1.method2371(local19.anInt4299);
-											local1519 = local19.aBoolean280 ? Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1 : null;
+											local1519 = local19.aBoolean280 ? Static17.aClass11_Sub5_Sub2_Sub1_3.appearance : null;
 											local1477 = local1490.method4776(local19.anInt4283, 1024, local19.anInt4316, local1511, Static190.aClass19_8, 1, local1519, local19.anInt4247);
 											if (local1477 == null) {
 												Static200.method3645(local19);
@@ -325,27 +325,27 @@ public final class Static201 {
 									} else if (local19.anInt4288 == 5) {
 										local1161 = local19.anInt4313;
 										if (local1161 >= 0 && local1161 < 2048) {
-											@Pc(1566) Class11_Sub5_Sub2_Sub1 local1566 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local1161];
+											@Pc(1566) Player local1566 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local1161];
 											@Pc(1579) Class157 local1579 = local19.anInt4299 == -1 ? null : Static39.aClass85_1.method2371(local19.anInt4299);
 											if (local1566 != null && (local1161 == PlayerList.selfId || Static276.method4651(local1566.aString41) == local19.anInt4236)) {
-												local1477 = local1566.aClass117_1.method3191(local19.anInt4283, Static59.aClass7_1, Static39.aClass85_1, Static21.aClass55_1, local1579, local19.anInt4316, 0, 1024, -1, 0, null, Static214.aClass226_1, Static313.ObjTypeList, Static190.aClass19_8, Static6.NpcTypeList, null, local19.anInt4247);
+												local1477 = local1566.appearance.method3191(local19.anInt4283, Static59.aClass7_1, Static39.aClass85_1, Static21.aClass55_1, local1579, local19.anInt4316, 0, 1024, -1, 0, null, Static214.aClass226_1, Static313.ObjTypeList, Static190.aClass19_8, Static6.NpcTypeList, null, local19.anInt4247);
 											}
 										}
 									} else if (local19.anInt4288 == 8 || local19.anInt4288 == 9) {
 										@Pc(1701) Class2_Sub41 local1701 = Static374.method6275(false, local19.anInt4313);
 										local1511 = local19.anInt4299 == -1 ? null : Static39.aClass85_1.method2371(local19.anInt4299);
 										if (local1701 != null) {
-											local1519 = local19.aBoolean280 ? Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1 : null;
+											local1519 = local19.aBoolean280 ? Static17.aClass11_Sub5_Sub2_Sub1_3.appearance : null;
 											local1477 = local1701.method6360(local19.anInt4247, local19.anInt4283, local19.anInt4236, local19.anInt4288 == 9, local1511, local19.anInt4316, local1519, Static190.aClass19_8);
 										}
 									} else if (local19.anInt4299 == -1) {
-										local1477 = local19.method4105(0, -1, Static313.ObjTypeList, Static214.aClass226_1, null, Static59.aClass7_1, Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1, Static6.NpcTypeList, -1, Static39.aClass85_1, 1024, Static21.aClass55_1, Static190.aClass19_8);
+										local1477 = local19.method4105(0, -1, Static313.ObjTypeList, Static214.aClass226_1, null, Static59.aClass7_1, Static17.aClass11_Sub5_Sub2_Sub1_3.appearance, Static6.NpcTypeList, -1, Static39.aClass85_1, 1024, Static21.aClass55_1, Static190.aClass19_8);
 										if (local1477 == null && Static86.aBoolean133) {
 											Static200.method3645(local19);
 										}
 									} else {
 										@Pc(1640) Class157 local1640 = Static39.aClass85_1.method2371(local19.anInt4299);
-										local1477 = local19.method4105(local19.anInt4283, local19.anInt4316, Static313.ObjTypeList, Static214.aClass226_1, local1640, Static59.aClass7_1, Static17.aClass11_Sub5_Sub2_Sub1_3.aClass117_1, Static6.NpcTypeList, local19.anInt4247, Static39.aClass85_1, 1024, Static21.aClass55_1, Static190.aClass19_8);
+										local1477 = local19.method4105(local19.anInt4283, local19.anInt4316, Static313.ObjTypeList, Static214.aClass226_1, local1640, Static59.aClass7_1, Static17.aClass11_Sub5_Sub2_Sub1_3.appearance, Static6.NpcTypeList, local19.anInt4247, Static39.aClass85_1, 1024, Static21.aClass55_1, Static190.aClass19_8);
 										if (local1477 == null && Static86.aBoolean133) {
 											Static200.method3645(local19);
 										}

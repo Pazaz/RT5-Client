@@ -8,7 +8,7 @@ public final class Static173 {
 	public static int anInt3338 = 0;
 
 	@OriginalMember(owner = "client!k", name = "a", descriptor = "(BLclient!mr;)V")
-	public static void method3315(@OriginalArg(1) Class11_Sub5_Sub2 arg0) {
+	public static void method3315(@OriginalArg(1) PathingEntity arg0) {
 		arg0.aBoolean318 = false;
 		@Pc(20) Class157 local20;
 		if (arg0.anInt4585 != -1) {
@@ -23,7 +23,7 @@ public final class Static173 {
 						arg0.anInt4626++;
 						arg0.anInt4593++;
 						arg0.anInt4629 = 1;
-						Static1.method4(local20, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg0, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, arg0.anInt4626);
+						Static1.method4(local20, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg0, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4626);
 					}
 					if (local20.anIntArray262.length <= arg0.anInt4626) {
 						arg0.anInt4626 = 0;
@@ -36,7 +36,7 @@ public final class Static173 {
 							}
 							local20 = Static39.aClass85_1.method2371(arg0.anInt4585);
 						}
-						Static1.method4(local20, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, arg0.anInt4626);
+						Static1.method4(local20, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4626);
 					}
 					arg0.anInt4593 = arg0.anInt4626 + 1;
 					if (local20.anIntArray262.length <= arg0.anInt4593) {
@@ -70,13 +70,13 @@ public final class Static173 {
 					} else {
 						if (arg0.anInt4582 < 0) {
 							arg0.anInt4582 = 0;
-							Static1.method4(local196, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, 0);
+							Static1.method4(local196, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, 0);
 						}
 						arg0.anInt4620++;
 						if (arg0.anInt4582 < local196.anIntArray262.length && local196.anIntArray261[arg0.anInt4582] < arg0.anInt4620) {
 							arg0.anInt4620 = 1;
 							arg0.anInt4582++;
-							Static1.method4(local196, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, arg0.anInt4582);
+							Static1.method4(local196, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4582);
 						}
 						if (local196.anIntArray262.length <= arg0.anInt4582) {
 							if (local184.aBoolean177) {
@@ -85,7 +85,7 @@ public final class Static173 {
 								if (arg0.anInt4602 >= local196.anInt4024) {
 									arg0.anInt4594 = -1;
 								} else if (arg0.anInt4582 >= 0 && local196.anIntArray262.length > arg0.anInt4582) {
-									Static1.method4(local196, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg0, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, arg0.anInt4582);
+									Static1.method4(local196, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg0, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4582);
 								} else {
 									arg0.anInt4594 = -1;
 								}
@@ -129,7 +129,7 @@ public final class Static173 {
 				if (local20.anIntArray262.length > arg0.anInt4607 && local20.anIntArray261[arg0.anInt4607] < arg0.anInt4624) {
 					arg0.anInt4624 = 1;
 					arg0.anInt4607++;
-					Static1.method4(local20, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, arg0.anInt4607);
+					Static1.method4(local20, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4607);
 				}
 				if (arg0.anInt4607 >= local20.anIntArray262.length) {
 					arg0.anInt4598++;
@@ -137,7 +137,7 @@ public final class Static173 {
 					if (arg0.anInt4598 >= local20.anInt4024) {
 						arg0.anInt4597 = -1;
 					} else if (arg0.anInt4607 >= 0 && local20.anIntArray262.length > arg0.anInt4607) {
-						Static1.method4(local20, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, arg0.anInt4607);
+						Static1.method4(local20, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4607);
 					} else {
 						arg0.anInt4597 = -1;
 					}
@@ -171,7 +171,7 @@ public final class Static173 {
 						if (local777.anInt628 < local196.anIntArray262.length && local196.anIntArray261[local777.anInt628] < local777.anInt625) {
 							local777.anInt625 = 1;
 							local777.anInt628++;
-							Static1.method4(local196, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg0, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, local777.anInt628);
+							Static1.method4(local196, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg0, arg0.aByte78, arg0.xFine, arg0.zFine, local777.anInt628);
 						}
 						if (local777.anInt628 >= local196.anIntArray262.length) {
 							local777.anInt626++;
@@ -179,7 +179,7 @@ public final class Static173 {
 							if (local777.anInt626 >= local196.anInt4024) {
 								arg0.aClass20Array3[local765] = null;
 							} else if (local777.anInt628 >= 0 && local777.anInt628 < local196.anIntArray262.length) {
-								Static1.method4(local196, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, local777.anInt628);
+								Static1.method4(local196, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, local777.anInt628);
 							} else {
 								arg0.aClass20Array3[local765] = null;
 							}

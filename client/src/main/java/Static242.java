@@ -20,7 +20,7 @@ public final class Static242 {
 	public static final Class145 aClass145_159 = new Class145(44, 1);
 
 	@OriginalMember(owner = "client!nr", name = "a", descriptor = "(Lclient!mr;IILclient!mr;BIIIII)V")
-	public static void method4195(@OriginalArg(0) Class11_Sub5_Sub2 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class11_Sub5_Sub2 arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) int arg6) {
+	public static void method4195(@OriginalArg(0) PathingEntity arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) PathingEntity arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) int arg6) {
 		@Pc(7) int local7 = arg0.method4324();
 		if (local7 == -1) {
 			return;
@@ -34,7 +34,7 @@ public final class Static242 {
 			local21 = Static190.aClass19_8.method2891(local28[0]);
 			Static61.aClass98_5.method2624((long) local7, local21);
 		}
-		Static324.method5541(0, arg3.anInt6783, arg3.aByte78, arg3.method4328() * 64, arg4 >> 1, arg3.anInt6781, arg5 >> 1);
+		Static324.method5541(0, arg3.zFine, arg3.aByte78, arg3.getSize() * 64, arg4 >> 1, arg3.xFine, arg5 >> 1);
 		@Pc(75) int local75 = arg2 + Static216.anIntArray231[0] - 18;
 		@Pc(90) int local90 = arg1 + Static216.anIntArray231[1] - 54 - 16;
 		@Pc(98) int local98 = local75 + arg6 / 4 * 18;

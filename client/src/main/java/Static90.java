@@ -463,10 +463,10 @@ public final class Static90 {
 								local408 = local706;
 								local1074 = local1078;
 							} else if (local706 == local408) {
-								local711 = local1384.anInt6781 - Static353.anInt6532;
-								local714 = local1384.anInt6783 - Static359.anInt6697;
-								local723 = arg0.aClass11_Sub5Array3[local1074].anInt6781 - Static353.anInt6532;
-								local735 = arg0.aClass11_Sub5Array3[local1074].anInt6783 - Static359.anInt6697;
+								local711 = local1384.xFine - Static353.anInt6532;
+								local714 = local1384.zFine - Static359.anInt6697;
+								local723 = arg0.aClass11_Sub5Array3[local1074].xFine - Static353.anInt6532;
+								local735 = arg0.aClass11_Sub5Array3[local1074].zFine - Static359.anInt6697;
 								if (local711 * local711 + local714 * local714 > local723 * local723 + local735 * local735) {
 									local1074 = local1078;
 								}

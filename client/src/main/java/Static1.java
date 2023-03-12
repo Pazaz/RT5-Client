@@ -54,7 +54,7 @@ public final class Static1 {
 						} else {
 							local187.method4330(local187.type.aByte17 + 4 << 11 & 0x3863);
 						}
-						local187.teleport(local187.method4328(), local96, local119, true, local132);
+						local187.teleport(local187.getSize(), local96, local119, true, local132);
 					}
 				}
 			}

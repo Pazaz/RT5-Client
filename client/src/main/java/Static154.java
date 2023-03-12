@@ -63,7 +63,7 @@ public final class Static154 {
 	}
 
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "([I[I[IILclient!nh;)V")
-	public static void method2785(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int[] arg2, @OriginalArg(4) Class11_Sub5_Sub2_Sub1 arg3) {
+	public static void method2785(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int[] arg2, @OriginalArg(4) Player arg3) {
 		for (@Pc(3) int local3 = 0; local3 < arg0.length; local3++) {
 			@Pc(11) int local11 = arg0[local3];
 			@Pc(15) int local15 = arg1[local3];
@@ -86,7 +86,7 @@ public final class Static154 {
 									local54.anInt625 = 0;
 									local54.anInt627 = 1;
 									local54.anInt626 = 0;
-									Static1.method4(local46, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg3, arg3.aByte78, arg3.anInt6781, arg3.anInt6783, 0);
+									Static1.method4(local46, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg3, arg3.aByte78, arg3.xFine, arg3.zFine, 0);
 								} else if (local49 == 2) {
 									local54.anInt626 = 0;
 								}
@@ -102,7 +102,7 @@ public final class Static154 {
 							local54.anInt626 = 0;
 							local54.anInt625 = 0;
 							local54.anInt629 = local19;
-							Static1.method4(local46, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg3, arg3.aByte78, arg3.anInt6781, arg3.anInt6783, 0);
+							Static1.method4(local46, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg3, arg3.aByte78, arg3.xFine, arg3.zFine, 0);
 						}
 					}
 				}

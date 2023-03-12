@@ -13,13 +13,13 @@ public final class Static376 {
 	public static int anInt7054 = 0;
 
 	@OriginalMember(owner = "client!vt", name = "a", descriptor = "(Lclient!nh;IIIB)V")
-	public static void method6284(@OriginalArg(0) Class11_Sub5_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(10) int local10 = arg0.anIntArray316[0];
-		@Pc(15) int local15 = arg0.anIntArray317[0];
+	public static void method6284(@OriginalArg(0) Player arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+		@Pc(10) int local10 = arg0.movementQueueX[0];
+		@Pc(15) int local15 = arg0.movementQueueZ[0];
 		if (local10 < 0 || Static373.anInt7033 <= local10 || local15 < 0 || Static242.anInt4449 <= local15 || (arg1 < 0 || Static373.anInt7033 <= arg1 || arg2 < 0 || Static242.anInt4449 <= arg2)) {
 			return;
 		}
-		@Pc(85) int local85 = Static141.method2654(true, Static52.anIntArray99, 0, -4, 0, 0, Static171.aClass46Array1[arg0.aByte78], local10, 0, arg1, Static59.anIntArray105, arg0.method4328(), arg2, local15);
+		@Pc(85) int local85 = Static141.method2654(true, Static52.anIntArray99, 0, -4, 0, 0, Static171.aClass46Array1[arg0.aByte78], local10, 0, arg1, Static59.anIntArray105, arg0.getSize(), arg2, local15);
 		if (local85 >= 1 && local85 <= 3) {
 			for (@Pc(97) int local97 = 0; local97 < local85 - 1; local97++) {
 				arg0.method4071(Static59.anIntArray105[local97], (byte) 2, Static52.anIntArray99[local97]);

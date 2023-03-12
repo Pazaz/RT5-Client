@@ -27,7 +27,7 @@ public abstract class Class11_Sub5 extends Class11 {
 	public short aShort101;
 
 	@OriginalMember(owner = "client!hb", name = "p", descriptor = "I")
-	public int anInt6781;
+	public int xFine;
 
 	@OriginalMember(owner = "client!hb", name = "n", descriptor = "B")
 	public final byte aByte77;
@@ -36,7 +36,7 @@ public abstract class Class11_Sub5 extends Class11 {
 	public int anInt6782;
 
 	@OriginalMember(owner = "client!hb", name = "v", descriptor = "I")
-	public int anInt6783;
+	public int zFine;
 
 	@OriginalMember(owner = "client!hb", name = "<init>", descriptor = "(IIIIIIIIZB)V")
 	protected Class11_Sub5(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) boolean arg8, @OriginalArg(9) byte arg9) {
@@ -46,10 +46,10 @@ public abstract class Class11_Sub5 extends Class11 {
 		this.aBoolean463 = arg8;
 		this.aShort102 = (short) arg7;
 		this.aShort101 = (short) arg6;
-		this.anInt6781 = (short) arg1;
+		this.xFine = (short) arg1;
 		this.aByte77 = arg9;
 		this.anInt6782 = (short) arg2;
-		this.anInt6783 = (short) arg3;
+		this.zFine = (short) arg3;
 	}
 
 	@OriginalMember(owner = "client!hb", name = "a", descriptor = "(B)V")

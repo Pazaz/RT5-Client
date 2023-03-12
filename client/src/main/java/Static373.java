@@ -56,14 +56,14 @@ public final class Static373 {
 			for (local113 = 0; local113 < 32768; local113++) {
 				@Pc(183) Npc local183 = NpcList.npcs[local113];
 				if (local183 != null) {
-					local183.anInt6781 -= local94 * 128;
-					local183.anInt6783 -= local99 * 128;
-					if (local183.anInt6781 >= 0 && local183.anInt6781 <= local103 && local183.anInt6783 >= 0 && local183.anInt6783 <= local175) {
+					local183.xFine -= local94 * 128;
+					local183.zFine -= local99 * 128;
+					if (local183.xFine >= 0 && local183.xFine <= local103 && local183.zFine >= 0 && local183.zFine <= local175) {
 						@Pc(232) boolean local232 = true;
 						for (@Pc(234) int local234 = 0; local234 < 10; local234++) {
-							local183.anIntArray316[local234] -= local94;
-							local183.anIntArray317[local234] -= local99;
-							if (local183.anIntArray316[local234] < 0 || anInt7033 <= local183.anIntArray316[local234] || local183.anIntArray317[local234] < 0 || local183.anIntArray317[local234] >= Static242.anInt4449) {
+							local183.movementQueueX[local234] -= local94;
+							local183.movementQueueZ[local234] -= local99;
+							if (local183.movementQueueX[local234] < 0 || anInt7033 <= local183.movementQueueX[local234] || local183.movementQueueZ[local234] < 0 || local183.movementQueueZ[local234] >= Static242.anInt4449) {
 								local232 = false;
 							}
 						}
@@ -84,23 +84,23 @@ public final class Static373 {
 				@Pc(109) Npc local109 = NpcList.npcs[local103];
 				if (local109 != null) {
 					for (local113 = 0; local113 < 10; local113++) {
-						local109.anIntArray316[local113] -= local94;
-						local109.anIntArray317[local113] -= local99;
+						local109.movementQueueX[local113] -= local94;
+						local109.movementQueueZ[local113] -= local99;
 					}
-					local109.anInt6783 -= local99 * 128;
-					local109.anInt6781 -= local94 * 128;
+					local109.zFine -= local99 * 128;
+					local109.xFine -= local94 * 128;
 				}
 			}
 		}
 		for (local103 = 0; local103 < 2048; local103++) {
-			@Pc(314) Class11_Sub5_Sub2_Sub1 local314 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local103];
+			@Pc(314) Player local314 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local103];
 			if (local314 != null) {
 				for (local113 = 0; local113 < 10; local113++) {
-					local314.anIntArray316[local113] -= local94;
-					local314.anIntArray317[local113] -= local99;
+					local314.movementQueueX[local113] -= local94;
+					local314.movementQueueZ[local113] -= local99;
 				}
-				local314.anInt6783 -= local99 * 128;
-				local314.anInt6781 -= local94 * 128;
+				local314.zFine -= local99 * 128;
+				local314.xFine -= local94 * 128;
 			}
 		}
 		Static372.method6262(local99, local94);

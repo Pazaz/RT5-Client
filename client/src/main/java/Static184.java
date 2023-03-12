@@ -22,19 +22,19 @@ public final class Static184 {
 	}
 
 	@OriginalMember(owner = "client!km", name = "a", descriptor = "(ZLclient!nh;I)V")
-	public static void method3397(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class11_Sub5_Sub2_Sub1 arg1) {
+	public static void method3397(@OriginalArg(0) boolean arg0, @OriginalArg(1) Player arg1) {
 		if (Static268.anInt4959 >= 400 || Static17.aClass11_Sub5_Sub2_Sub1_3 == arg1) {
 			return;
 		}
 		@Pc(146) String local146;
 		@Pc(72) int local72;
-		if (arg1.anInt4173 == 0) {
+		if (arg1.totalLevel == 0) {
 			@Pc(23) boolean local23 = true;
 			if (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4191 != -1 && arg1.anInt4191 != -1) {
-				@Pc(47) int local47 = arg1.anInt4179 >= Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4179 ? arg1.anInt4179 : Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4179;
+				@Pc(47) int local47 = arg1.combatLevel >= Static17.aClass11_Sub5_Sub2_Sub1_3.combatLevel ? arg1.combatLevel : Static17.aClass11_Sub5_Sub2_Sub1_3.combatLevel;
 				@Pc(62) int local62 = arg1.anInt4191 > Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4191 ? Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4191 : arg1.anInt4191;
 				local72 = local62 + local47 * 10 / 100 + 5;
-				@Pc(79) int local79 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4179 - arg1.anInt4179;
+				@Pc(79) int local79 = Static17.aClass11_Sub5_Sub2_Sub1_3.combatLevel - arg1.combatLevel;
 				if (local79 < 0) {
 					local79 = -local79;
 				}
@@ -43,13 +43,13 @@ public final class Static184 {
 				}
 			}
 			@Pc(109) String local109 = client.GAME_SD == client.game ? Static367.aClass79_142.method2267(client.language) : Static33.aClass79_96.method2267(client.language);
-			if (arg1.anInt4171 <= arg1.anInt4179) {
-				local146 = arg1.method4072() + (local23 ? Static178.method2343(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4179, arg1.anInt4179) : "<col=ffffff>") + " (" + local109 + arg1.anInt4179 + ")";
+			if (arg1.anInt4171 <= arg1.combatLevel) {
+				local146 = arg1.method4072() + (local23 ? Static178.method2343(Static17.aClass11_Sub5_Sub2_Sub1_3.combatLevel, arg1.combatLevel) : "<col=ffffff>") + " (" + local109 + arg1.combatLevel + ")";
 			} else {
-				local146 = arg1.method4072() + (local23 ? Static178.method2343(Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4179, arg1.anInt4179) : "<col=ffffff>") + " (" + local109 + arg1.anInt4179 + "+" + (arg1.anInt4171 - arg1.anInt4179) + ")";
+				local146 = arg1.method4072() + (local23 ? Static178.method2343(Static17.aClass11_Sub5_Sub2_Sub1_3.combatLevel, arg1.combatLevel) : "<col=ffffff>") + " (" + local109 + arg1.combatLevel + "+" + (arg1.anInt4171 - arg1.combatLevel) + ")";
 			}
 		} else {
-			local146 = arg1.method4072() + " (" + Static5.aClass79_2.method2267(client.language) + arg1.anInt4173 + ")";
+			local146 = arg1.method4072() + " (" + Static5.aClass79_2.method2267(client.language) + arg1.totalLevel + ")";
 		}
 		if (Static330.aBoolean419) {
 			if (!arg0 && (Static115.anInt3837 & 0x8) != 0) {
@@ -62,11 +62,11 @@ public final class Static184 {
 				if (Static243.aStringArray44[local272] != null) {
 					@Pc(280) short local280 = 0;
 					if (client.game == client.GAME_RS && Static243.aStringArray44[local272].equalsIgnoreCase(Static378.aClass79_146.method2267(client.language))) {
-						if (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4179 < arg1.anInt4179) {
+						if (Static17.aClass11_Sub5_Sub2_Sub1_3.combatLevel < arg1.combatLevel) {
 							local280 = 2000;
 						}
-						if (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4193 != 0 && arg1.anInt4193 != 0) {
-							if (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4193 == arg1.anInt4193) {
+						if (Static17.aClass11_Sub5_Sub2_Sub1_3.team != 0 && arg1.team != 0) {
+							if (Static17.aClass11_Sub5_Sub2_Sub1_3.team == arg1.team) {
 								local280 = 2000;
 							} else {
 								local280 = 0;

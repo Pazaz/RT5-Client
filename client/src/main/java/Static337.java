@@ -83,7 +83,7 @@ public final class Static337 {
 	}
 
 	@OriginalMember(owner = "client!tk", name = "a", descriptor = "(ILclient!nh;II)V")
-	public static void method5707(@OriginalArg(1) Class11_Sub5_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+	public static void method5707(@OriginalArg(1) Player arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (arg0.anInt4597 == arg2 && arg2 != -1) {
 			@Pc(18) Class157 local18 = Static39.aClass85_1.method2371(arg2);
 			@Pc(21) int local21 = local18.anInt4022;
@@ -93,7 +93,7 @@ public final class Static337 {
 				arg0.anInt4592 = 1;
 				arg0.anInt4598 = 0;
 				arg0.anInt4624 = 0;
-				Static1.method4(local18, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, arg0.anInt4607);
+				Static1.method4(local18, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4607);
 			}
 			if (local21 == 2) {
 				arg0.anInt4598 = 0;
@@ -107,7 +107,7 @@ public final class Static337 {
 			arg0.anInt4592 = 1;
 			arg0.anInt4607 = 0;
 			if (arg0.anInt4597 != -1) {
-				Static1.method4(Static39.aClass85_1.method2371(arg0.anInt4597), arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.anInt6781, arg0.anInt6783, arg0.anInt4607);
+				Static1.method4(Static39.aClass85_1.method2371(arg0.anInt4597), arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4607);
 			}
 		}
 	}

@@ -25,8 +25,8 @@ public final class Static290 {
 	@OriginalMember(owner = "client!qp", name = "a", descriptor = "(I)V")
 	public static void method5025() {
 		Static212.anInt3785 = 0;
-		@Pc(17) int local17 = (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 >> 7) + Static164.anInt3140;
-		@Pc(24) int local24 = Static148.anInt2719 + (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 >> 7);
+		@Pc(17) int local17 = (Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7) + Static164.anInt3140;
+		@Pc(24) int local24 = Static148.anInt2719 + (Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7);
 		if (local17 >= 3053 && local17 <= 3156 && local24 >= 3056 && local24 <= 3136) {
 			Static212.anInt3785 = 1;
 		}

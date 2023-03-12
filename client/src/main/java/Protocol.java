@@ -503,7 +503,7 @@ public class Protocol {
 											if (local536 != -1) {
 												local635 = Static39.aClass85_1.method2371(local536);
 												if (local635 != null && local635.anIntArray262 != null) {
-													Static1.method4(local635, false, local790.aByte78, local790.anInt6781, local790.anInt6783, 0);
+													Static1.method4(local635, false, local790.aByte78, local790.xFine, local790.zFine, 0);
 												}
 											}
 										}
@@ -511,7 +511,7 @@ public class Protocol {
 								}
 							} else if (local228 >> 28 != 0) {
 								local497 = local228 & 0xFFFF;
-								@Pc(589) Class11_Sub5_Sub2_Sub1 local589;
+								@Pc(589) Player local589;
 								if (PlayerList.selfId == local497) {
 									local589 = Static17.aClass11_Sub5_Sub2_Sub1_3;
 								} else {
@@ -564,7 +564,7 @@ public class Protocol {
 											if (local536 != -1) {
 												local635 = Static39.aClass85_1.method2371(local536);
 												if (local635 != null && local635.anIntArray262 != null) {
-													Static1.method4(local635, Static17.aClass11_Sub5_Sub2_Sub1_3 == local589, local589.aByte78, local589.anInt6781, local589.anInt6783, 0);
+													Static1.method4(local635, Static17.aClass11_Sub5_Sub2_Sub1_3 == local589, local589.aByte78, local589.xFine, local589.zFine, 0);
 												}
 											}
 										}
@@ -602,7 +602,7 @@ public class Protocol {
 						packet = null;
 						return true;
 					} else if (packet == PACKET_72) {
-						method6054(inboundBuffer, packetSize);
+						readPlayerInfo(inboundBuffer, packetSize);
 						packet = null;
 						return true;
 					} else {
@@ -1242,7 +1242,7 @@ public class Protocol {
 										local249 = inboundBuffer.img4();
 										if (Static378.method6314(local220)) {
 											Static216.method3774(local74, local249, local228);
-											@Pc(3499) Class188 local3499 = Static313.ObjTypeList.method2759(local74);
+											@Pc(3499) Class188 local3499 = Static313.ObjTypeList.get(local74);
 											Static277.method4680(local3499.anInt5215, local3499.anInt5245, local249, local3499.anInt5241);
 											Static376.method6287(local249, local3499.anInt5249, local3499.anInt5252, local3499.anInt5232);
 										}
@@ -1916,12 +1916,13 @@ public class Protocol {
 		} catch (@Pc(16) IOException local16) {
 			Static211.method3725();
 			return true;
-		} catch (@Pc(21) Exception local21) {
-			@Pc(81) String local81 = "T2 - " + (packet == null ? -1 : packet.getOpcode()) + "," + (packet2 == null ? -1 : packet2.getOpcode()) + "," + (packet3 == null ? -1 : packet3.getOpcode()) + " - " + packetSize + "," + (Static164.anInt3140 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0]) + "," + (Static148.anInt2719 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0]) + " - ";
+		} catch (@Pc(21) Exception ex) {
+			@Pc(81) String local81 = "T2 - " + (packet == null ? -1 : packet.getOpcode()) + "," + (packet2 == null ? -1 : packet2.getOpcode()) + "," + (packet3 == null ? -1 : packet3.getOpcode()) + " - " + packetSize + "," + (Static164.anInt3140 + Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueX[0]) + "," + (Static148.anInt2719 + Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueZ[0]) + " - ";
 			for (@Pc(83) int local83 = 0; local83 < packetSize && local83 < 50; local83++) {
 				local81 = local81 + inboundBuffer.data[local83] + ",";
 			}
-			Static262.report(local21, local81);
+			ex.printStackTrace();
+			Static262.report(ex, local81);
 			Static99.logout();
 			return true;
 		}
@@ -2075,9 +2076,9 @@ public class Protocol {
 					} else if (local21) {
 						local42.method4330(local151);
 					}
-					local42.teleport(local42.method4328(), local156, Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0] + local97, local161 == 1, Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0] + local71);
+					local42.teleport(local42.getSize(), local156, Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueX[0] + local97, local161 == 1, Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueZ[0] + local71);
 					if (local42.type.hasAreaSound()) {
-						AreaSoundManager.add(null, local42.anIntArray317[0], 0, null, local42, local42.anIntArray316[0], local42.aByte78);
+						AreaSoundManager.add(null, local42.movementQueueZ[0], 0, null, local42, local42.movementQueueX[0], local42.aByte78);
 					}
 					continue;
 				}
@@ -2177,7 +2178,7 @@ public class Protocol {
 						if (local340 != -1) {
 							local221 = Static39.aClass85_1.method2371(local340);
 							if (local221 != null && local221.anIntArray262 != null) {
-								Static1.method4(local221, false, local25.aByte78, local25.anInt6781, local25.anInt6783, 0);
+								Static1.method4(local221, false, local25.aByte78, local25.xFine, local25.zFine, 0);
 							}
 						}
 					}
@@ -2222,144 +2223,685 @@ public class Protocol {
 				local25.setSize(local25.type.size);
 				local25.anInt4604 = local25.type.anInt2044 << 3;
 				if (local25.type.hasAreaSound()) {
-					AreaSoundManager.add(null, local25.anIntArray317[0], 0, null, local25, local25.anIntArray316[0], local25.aByte78);
+					AreaSoundManager.add(null, local25.movementQueueZ[0], 0, null, local25, local25.movementQueueX[0], local25.aByte78);
 				}
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(Lclient!qg;BI)V")
-	public static void method6054(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
-		Static112.aBoolean173 = false;
+	public static void readPlayerInfo(@OriginalArg(0) Packet packet, @OriginalArg(2) int size) {
+		Static112.debugGpi = false;
 		Static325.anInt6079 = 0;
-		method5(arg0);
-		method6252(arg0);
-		if (Static112.aBoolean173) {
+		readPlayerGpi(packet);
+		readPlayerUpdateMasks(packet);
+		if (Static112.debugGpi) {
 			System.out.println("---endgpp---");
 		}
-		if (arg0.pos != arg1) {
-			throw new RuntimeException("gpi1 pos:" + arg0.pos + " psize:" + arg1);
+		if (packet.pos != size) {
+			throw new RuntimeException("gpi1 pos:" + packet.pos + " psize:" + size);
 		}
 	}
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!qg;I)V")
-	public static void method5(@OriginalArg(0) Packet arg0) {
+	public static void readPlayerGpi(@OriginalArg(0) Packet buffer) {
+		// active players:
+
 		@Pc(7) int local7 = 0;
-		arg0.accessBits();
+		buffer.accessBits();
 		@Pc(20) int local20;
 		@Pc(48) int local48;
-		for (@Pc(14) int local14 = 0; local14 < Static31.anInt751; local14++) {
-			local20 = Static85.anIntArray121[local14];
-			if ((Static36.aByteArray7[local20] & 0x1) == 0) {
+		for (@Pc(14) int local14 = 0; local14 < PlayerList.anInt751; local14++) {
+			local20 = PlayerList.anIntArray121[local14];
+			if ((PlayerList.aByteArray7[local20] & 0x1) == 0) {
 				if (local7 > 0) {
-					Static36.aByteArray7[local20] = (byte) (Static36.aByteArray7[local20] | 0x2);
+					PlayerList.aByteArray7[local20] = (byte) (PlayerList.aByteArray7[local20] | 0x2);
 					local7--;
 				} else {
-					local48 = arg0.gBit(1);
+					local48 = buffer.gBit(1);
 					if (local48 == 0) {
-						local7 = Static100.method2161(arg0);
-						Static36.aByteArray7[local20] = (byte) (Static36.aByteArray7[local20] | 0x2);
+						local7 = method2161(buffer);
+						PlayerList.aByteArray7[local20] = (byte) (PlayerList.aByteArray7[local20] | 0x2);
 					} else {
-						Static7.method6464(arg0, local20);
+						method6464(buffer, local20);
 					}
 				}
 			}
 		}
-		arg0.accessBytes();
+		buffer.accessBytes();
 		if (local7 != 0) {
 			throw new RuntimeException("nsn0");
 		}
-		arg0.accessBits();
+
+		//
+
+		buffer.accessBits();
 		@Pc(126) int local126;
-		for (local20 = 0; local20 < Static31.anInt751; local20++) {
-			local48 = Static85.anIntArray121[local20];
-			if ((Static36.aByteArray7[local48] & 0x1) != 0) {
+		for (local20 = 0; local20 < PlayerList.anInt751; local20++) {
+			local48 = PlayerList.anIntArray121[local20];
+			if ((PlayerList.aByteArray7[local48] & 0x1) != 0) {
 				if (local7 > 0) {
 					local7--;
-					Static36.aByteArray7[local48] = (byte) (Static36.aByteArray7[local48] | 0x2);
+					PlayerList.aByteArray7[local48] = (byte) (PlayerList.aByteArray7[local48] | 0x2);
 				} else {
-					local126 = arg0.gBit(1);
+					local126 = buffer.gBit(1);
 					if (local126 == 0) {
-						local7 = Static100.method2161(arg0);
-						Static36.aByteArray7[local48] = (byte) (Static36.aByteArray7[local48] | 0x2);
+						local7 = method2161(buffer);
+						PlayerList.aByteArray7[local48] = (byte) (PlayerList.aByteArray7[local48] | 0x2);
 					} else {
-						Static7.method6464(arg0, local48);
+						method6464(buffer, local48);
 					}
 				}
 			}
 		}
-		arg0.accessBytes();
+		buffer.accessBytes();
 		if (local7 != 0) {
 			throw new RuntimeException("nsn1");
 		}
-		arg0.accessBits();
+
+		// inactive players:
+
+		buffer.accessBits();
 		@Pc(210) int local210;
-		for (local48 = 0; local48 < Static192.anInt3547; local48++) {
-			local126 = Static239.anIntArray284[local48];
-			if ((Static36.aByteArray7[local126] & 0x1) != 0) {
+		for (local48 = 0; local48 < PlayerList.anInt3547; local48++) {
+			local126 = PlayerList.anIntArray284[local48];
+			if ((PlayerList.aByteArray7[local126] & 0x1) != 0) {
 				if (local7 > 0) {
 					local7--;
-					Static36.aByteArray7[local126] = (byte) (Static36.aByteArray7[local126] | 0x2);
+					PlayerList.aByteArray7[local126] = (byte) (PlayerList.aByteArray7[local126] | 0x2);
 				} else {
-					local210 = arg0.gBit(1);
+					local210 = buffer.gBit(1);
 					if (local210 == 0) {
-						local7 = Static100.method2161(arg0);
-						Static36.aByteArray7[local126] = (byte) (Static36.aByteArray7[local126] | 0x2);
-					} else if (Static386.method6033(arg0, local126)) {
-						Static36.aByteArray7[local126] = (byte) (Static36.aByteArray7[local126] | 0x2);
+						local7 = method2161(buffer);
+						PlayerList.aByteArray7[local126] = (byte) (PlayerList.aByteArray7[local126] | 0x2);
+					} else if (method6033(buffer, local126)) {
+						PlayerList.aByteArray7[local126] = (byte) (PlayerList.aByteArray7[local126] | 0x2);
 					}
 				}
 			}
 		}
-		arg0.accessBytes();
+		buffer.accessBytes();
 		if (local7 != 0) {
 			throw new RuntimeException("nsn2");
 		}
-		arg0.accessBits();
-		for (local126 = 0; local126 < Static192.anInt3547; local126++) {
-			local210 = Static239.anIntArray284[local126];
-			if ((Static36.aByteArray7[local210] & 0x1) == 0) {
+
+		//
+
+		buffer.accessBits();
+		for (local126 = 0; local126 < PlayerList.anInt3547; local126++) {
+			local210 = PlayerList.anIntArray284[local126];
+			if ((PlayerList.aByteArray7[local210] & 0x1) == 0) {
 				if (local7 > 0) {
-					Static36.aByteArray7[local210] = (byte) (Static36.aByteArray7[local210] | 0x2);
+					PlayerList.aByteArray7[local210] = (byte) (PlayerList.aByteArray7[local210] | 0x2);
 					local7--;
 				} else {
-					@Pc(301) int local301 = arg0.gBit(1);
+					@Pc(301) int local301 = buffer.gBit(1);
 					if (local301 == 0) {
-						local7 = Static100.method2161(arg0);
-						Static36.aByteArray7[local210] = (byte) (Static36.aByteArray7[local210] | 0x2);
-					} else if (Static386.method6033(arg0, local210)) {
-						Static36.aByteArray7[local210] = (byte) (Static36.aByteArray7[local210] | 0x2);
+						local7 = method2161(buffer);
+						PlayerList.aByteArray7[local210] = (byte) (PlayerList.aByteArray7[local210] | 0x2);
+					} else if (method6033(buffer, local210)) {
+						PlayerList.aByteArray7[local210] = (byte) (PlayerList.aByteArray7[local210] | 0x2);
 					}
 				}
 			}
 		}
-		arg0.accessBytes();
+		buffer.accessBytes();
 		if (local7 != 0) {
 			throw new RuntimeException("nsn3");
 		}
-		Static31.anInt751 = 0;
-		Static192.anInt3547 = 0;
+
+		//
+
+		PlayerList.anInt751 = 0;
+		PlayerList.anInt3547 = 0;
 		for (local210 = 1; local210 < 2048; local210++) {
-			Static36.aByteArray7[local210] = (byte) (Static36.aByteArray7[local210] >> 1);
-			@Pc(366) Class11_Sub5_Sub2_Sub1 local366 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local210];
+			PlayerList.aByteArray7[local210] = (byte) (PlayerList.aByteArray7[local210] >> 1);
+			@Pc(366) Player local366 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local210];
 			if (local366 == null) {
-				Static239.anIntArray284[Static192.anInt3547++] = local210;
+				PlayerList.anIntArray284[PlayerList.anInt3547++] = local210;
 			} else {
-				Static85.anIntArray121[Static31.anInt751++] = local210;
+				PlayerList.anIntArray121[PlayerList.anInt751++] = local210;
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(ILclient!qg;)V")
-	public static void method6252(@OriginalArg(1) Packet arg0) {
+	public static void readPlayerUpdateMasks(@OriginalArg(1) Packet buffer) {
 		for (@Pc(15) int local15 = 0; local15 < Static325.anInt6079; local15++) {
 			@Pc(21) int local21 = Static52.anIntArray100[local15];
-			@Pc(25) Class11_Sub5_Sub2_Sub1 local25 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local21];
-			@Pc(29) int local29 = arg0.g1();
-			if ((local29 & 0x2) != 0) {
-				local29 += arg0.g1() << 8;
+			@Pc(25) Player local25 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local21];
+			@Pc(29) int opcode = buffer.g1();
+			if ((opcode & 0x2) != 0) {
+				opcode += buffer.g1() << 8;
 			}
-			Static303.method5212(arg0, local21, local25, local29);
+			readPlayerUpdateMask(buffer, local21, local25, opcode);
+		}
+	}
+
+	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(Lclient!qg;BILclient!nh;I)V")
+	public static void readPlayerUpdateMask(@OriginalArg(0) Packet buffer, @OriginalArg(2) int arg1, @OriginalArg(3) Player arg2, @OriginalArg(4) int arg3) {
+		@Pc(11) byte local11 = -1;
+		if ((arg3 & 0x20) != 0) {
+			Static335.aByteArray92[arg1] = buffer.g1badd();
+		}
+		@Pc(32) int local32;
+		@Pc(36) int local36;
+		@Pc(40) int local40;
+		@Pc(43) int local43;
+		if ((arg3 & 0x8) != 0) {
+			local32 = buffer.g2add();
+			local36 = buffer.g1bneg();
+			local40 = buffer.g1();
+			local43 = buffer.pos;
+			@Pc(51) boolean local51 = (local32 & 0x8000) != 0;
+			if (arg2.aString41 != null && arg2.appearance != null) {
+				@Pc(59) boolean local59 = false;
+				if (local36 <= 1) {
+					if (!local51 && (LoginManager.playerUnderage && !LoginManager.parentalChatConsent || LoginManager.mapQuickChat)) {
+						local59 = true;
+					} else if (Static105.method2208(arg2.aString41)) {
+						local59 = true;
+					}
+				}
+				if (!local59 && Static212.anInt3785 == 0) {
+					Static89.aClass2_Sub4_2.pos = 0;
+					buffer.ipadata(Static89.aClass2_Sub4_2.data, local40);
+					Static89.aClass2_Sub4_2.pos = 0;
+					@Pc(107) int local107 = -1;
+					@Pc(117) String local117;
+					if (local51) {
+						local32 &= 0x7FFF;
+						@Pc(127) Class86 local127 = Static290.method5027(Static89.aClass2_Sub4_2);
+						local107 = local127.anInt2377;
+						local117 = local127.aClass2_Sub2_Sub16_1.method5602(Static89.aClass2_Sub4_2);
+					} else {
+						local117 = Static153.method2772(Static308.method5276(Static89.aClass2_Sub4_2));
+					}
+					arg2.aString50 = local117.trim();
+					arg2.anInt4600 = local32 & 0xFF;
+					arg2.anInt4618 = local32 >> 8;
+					arg2.anInt4636 = 150;
+					@Pc(167) int local167;
+					if (local36 == 1 || local36 == 2) {
+						local167 = local51 ? 17 : 1;
+					} else {
+						local167 = local51 ? 17 : 2;
+					}
+					if (local36 == 2) {
+						Static220.method3874(0, null, local117, local107, local167, "<img=1>" + arg2.method4070(), "<img=1>" + arg2.method4072());
+					} else if (local36 == 1) {
+						Static220.method3874(0, null, local117, local107, local167, "<img=0>" + arg2.method4070(), "<img=0>" + arg2.method4072());
+					} else {
+						Static220.method3874(0, null, local117, local107, local167, arg2.method4070(), arg2.method4072());
+					}
+				}
+			}
+			buffer.pos = local43 + local40;
+		}
+		@Pc(283) int local283;
+		@Pc(289) int local289;
+		if ((arg3 & 0x400) != 0) {
+			local32 = buffer.g1sub();
+			@Pc(275) int[] local275 = new int[local32];
+			@Pc(278) int[] local278 = new int[local32];
+			@Pc(281) int[] local281 = new int[local32];
+			for (local283 = 0; local283 < local32; local283++) {
+				local289 = buffer.ig2();
+				if (local289 == 65535) {
+					local289 = -1;
+				}
+				local275[local283] = local289;
+				local278[local283] = buffer.g1bneg();
+				local281[local283] = buffer.ig2();
+			}
+			Static154.method2785(local275, local281, local278, arg2);
+		}
+		if ((arg3 & 0x1) != 0) {
+			local32 = buffer.g1sub();
+			@Pc(337) byte[] local337 = new byte[local32];
+			@Pc(342) Buffer local342 = new Buffer(local337);
+			buffer.igdata(local337, local32);
+			Static231.aClass2_Sub4Array1[arg1] = local342;
+			arg2.decodeAppearance(local342);
+		}
+		if ((arg3 & 0x10) != 0) {
+			local32 = buffer.g2add();
+			if (local32 == 65535) {
+				local32 = -1;
+			}
+			arg2.anInt4611 = local32;
+		}
+		if ((arg3 & 0x4) != 0) {
+			local32 = buffer.ig2add();
+			if (local32 == 65535) {
+				local32 = -1;
+			}
+			local36 = buffer.g1add();
+			Static337.method5707(arg2, local36, local32);
+		}
+		if ((arg3 & 0x100) != 0) {
+			arg2.anInt4615 = buffer.g1badd();
+			arg2.anInt4588 = buffer.g1badd();
+			arg2.anInt4577 = buffer.g1bsub();
+			arg2.anInt4599 = buffer.g1b();
+			arg2.anInt4622 = buffer.g2add() + client.cycle;
+			arg2.anInt4584 = buffer.g2add() + client.cycle;
+			arg2.anInt4614 = buffer.g1bneg();
+			arg2.anInt4642 = 0;
+			if (arg2.aBoolean276) {
+				arg2.anInt4577 += arg2.anInt4169;
+				arg2.anInt4615 += arg2.anInt4169;
+				arg2.anInt4588 += arg2.anInt4181;
+				arg2.anInt4643 = 0;
+				arg2.anInt4599 += arg2.anInt4181;
+			} else {
+				arg2.anInt4588 += arg2.movementQueueZ[0];
+				arg2.anInt4599 += arg2.movementQueueZ[0];
+				arg2.anInt4643 = 1;
+				arg2.anInt4577 += arg2.movementQueueX[0];
+				arg2.anInt4615 += arg2.movementQueueX[0];
+			}
+		}
+		if ((arg3 & 0x1000) != 0) {
+			local32 = buffer.g2();
+			arg2.anInt4578 = buffer.g1add();
+			arg2.anInt4591 = buffer.g1sub();
+			arg2.anInt4623 = local32 & 0x7FFF;
+			arg2.aBoolean319 = (local32 & 0x8000) != 0;
+			arg2.anInt4621 = arg2.anInt4623 + client.cycle + arg2.anInt4578;
+		}
+		if ((arg3 & 0x80) != 0) {
+			arg2.anInt4174 = buffer.g2();
+			if (arg2.anInt4643 == 0) {
+				arg2.method4325(arg2.anInt4174);
+				arg2.anInt4174 = -1;
+			}
+		}
+		if ((arg3 & 0x200) != 0) {
+			arg2.aString50 = buffer.gjstr();
+			if (arg2.aString50.charAt(0) == '~') {
+				arg2.aString50 = arg2.aString50.substring(1);
+				Static33.method4200(arg2.method4072(), 0, arg2.aString50, 2, arg2.method4070());
+			} else if (Static17.aClass11_Sub5_Sub2_Sub1_3 == arg2) {
+				Static33.method4200(arg2.method4072(), 0, arg2.aString50, 2, arg2.method4070());
+			}
+			arg2.anInt4600 = 0;
+			arg2.anInt4618 = 0;
+			arg2.anInt4636 = 150;
+		}
+		if ((arg3 & 0x2000) != 0) {
+			local32 = buffer.ig2add();
+			local36 = buffer.g4();
+			if (local32 == 65535) {
+				local32 = -1;
+			}
+			@Pc(690) boolean local690 = true;
+			@Pc(780) Class157 local780;
+			if (local32 != -1 && arg2.anInt4594 != -1) {
+				@Pc(707) Class91 local707;
+				if (local32 == arg2.anInt4594) {
+					local707 = Static322.aClass211_2.method5407(local32);
+					if (local707.aBoolean177 && local707.anInt2448 != -1) {
+						@Pc(723) Class157 local723 = Static39.aClass85_1.method2371(local707.anInt2448);
+						local289 = local723.anInt4022;
+						if (local289 == 0) {
+							local690 = false;
+						} else if (local289 == 1) {
+							local690 = true;
+						} else if (local289 == 2) {
+							arg2.anInt4598 = 0;
+							local690 = false;
+						}
+					}
+				} else {
+					local707 = Static322.aClass211_2.method5407(local32);
+					@Pc(763) Class91 local763 = Static322.aClass211_2.method5407(arg2.anInt4594);
+					if (local707.anInt2448 != -1 && local763.anInt2448 != -1) {
+						local780 = Static39.aClass85_1.method2371(local707.anInt2448);
+						@Pc(786) Class157 local786 = Static39.aClass85_1.method2371(local763.anInt2448);
+						if (local780.anInt4023 < local786.anInt4023) {
+							local690 = false;
+						}
+					}
+				}
+			}
+			if (local690) {
+				arg2.anInt4639 = local36 >> 16;
+				local43 = client.cycle;
+				arg2.anInt4594 = local32;
+				arg2.anInt4595 = (local36 & 0xFFFF) + local43;
+				arg2.anInt4582 = 0;
+				arg2.anInt4620 = 0;
+				arg2.anInt4612 = 1;
+				if (arg2.anInt4595 > local43) {
+					arg2.anInt4582 = -1;
+				}
+				if (arg2.anInt4594 != -1 && local43 == arg2.anInt4595) {
+					local283 = Static322.aClass211_2.method5407(arg2.anInt4594).anInt2448;
+					if (local283 != -1) {
+						local780 = Static39.aClass85_1.method2371(local283);
+						if (local780 != null && local780.anIntArray262 != null) {
+							Static1.method4(local780, arg2 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg2.aByte78, arg2.xFine, arg2.zFine, 0);
+						}
+					}
+				}
+			}
+		}
+		if ((arg3 & 0x40) != 0) {
+			local32 = buffer.gsmart();
+			local36 = buffer.g1sub();
+			arg2.method4334(local36, local32, client.cycle);
+			arg2.anInt4606 = client.cycle + 300;
+			arg2.anInt4631 = buffer.g1bneg();
+		}
+		if ((arg3 & 0x800) != 0) {
+			local32 = client.cycle;
+			local36 = buffer.gsmart();
+			local40 = buffer.g1sub();
+			arg2.method4334(local40, local36, local32);
+		}
+		if ((arg3 & 0x4000) != 0) {
+			local11 = buffer.g1bsub();
+		}
+		if (!arg2.aBoolean276) {
+			return;
+		}
+		if (local11 == 127) {
+			arg2.method4064(arg2.anInt4169, arg2.anInt4181);
+			return;
+		}
+		@Pc(964) byte local964;
+		if (local11 == -1) {
+			local964 = Static335.aByteArray92[arg1];
+		} else {
+			local964 = local11;
+		}
+		arg2.method4068(arg2.anInt4181, arg2.anInt4169, local964);
+	}
+
+	@OriginalMember(owner = "client!fn", name = "a", descriptor = "(Lclient!qg;B)I")
+	public static int method2161(@OriginalArg(0) Packet arg0) {
+		@Pc(10) int local10 = arg0.gBit(2);
+		@Pc(22) int local22;
+		if (local10 == 0) {
+			local22 = 0;
+		} else if (local10 == 1) {
+			local22 = arg0.gBit(5);
+		} else if (local10 == 2) {
+			local22 = arg0.gBit(8);
+		} else {
+			local22 = arg0.gBit(11);
+		}
+		return local22;
+	}
+
+	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!qg;II)V")
+	public static void method6464(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
+		@Pc(15) boolean local15 = arg0.gBit(1) == 1;
+		if (local15) {
+			Static52.anIntArray100[Static325.anInt6079++] = arg1;
+		}
+		@Pc(30) int local30 = arg0.gBit(2);
+		@Pc(34) Player local34 = Static12.aClass11_Sub5_Sub2_Sub1Array1[arg1];
+		if (local30 != 0) {
+			@Pc(136) int local136;
+			@Pc(141) int local141;
+			@Pc(146) int local146;
+			if (local30 == 1) {
+				local136 = arg0.gBit(3);
+				local141 = local34.movementQueueX[0];
+				local146 = local34.movementQueueZ[0];
+				if (local136 == 0) {
+					local146--;
+					local141--;
+				} else if (local136 == 1) {
+					local146--;
+				} else if (local136 == 2) {
+					local146--;
+					local141++;
+				} else if (local136 == 3) {
+					local141--;
+				} else if (local136 == 4) {
+					local141++;
+				} else if (local136 == 5) {
+					local146++;
+					local141--;
+				} else if (local136 == 6) {
+					local146++;
+				} else if (local136 == 7) {
+					local141++;
+					local146++;
+				}
+				if (local15) {
+					local34.anInt4169 = local141;
+					local34.anInt4181 = local146;
+					local34.aBoolean276 = true;
+				} else {
+					local34.method4068(local146, local141, Static335.aByteArray92[arg1]);
+				}
+			} else if (local30 == 2) {
+				local136 = arg0.gBit(4);
+				local141 = local34.movementQueueX[0];
+				local146 = local34.movementQueueZ[0];
+				if (local136 == 0) {
+					local141 -= 2;
+					local146 -= 2;
+				} else if (local136 == 1) {
+					local141--;
+					local146 -= 2;
+				} else if (local136 == 2) {
+					local146 -= 2;
+				} else if (local136 == 3) {
+					local141++;
+					local146 -= 2;
+				} else if (local136 == 4) {
+					local141 += 2;
+					local146 -= 2;
+				} else if (local136 == 5) {
+					local146--;
+					local141 -= 2;
+				} else if (local136 == 6) {
+					local146--;
+					local141 += 2;
+				} else if (local136 == 7) {
+					local141 -= 2;
+				} else if (local136 == 8) {
+					local141 += 2;
+				} else if (local136 == 9) {
+					local146++;
+					local141 -= 2;
+				} else if (local136 == 10) {
+					local146++;
+					local141 += 2;
+				} else if (local136 == 11) {
+					local141 -= 2;
+					local146 += 2;
+				} else if (local136 == 12) {
+					local141--;
+					local146 += 2;
+				} else if (local136 == 13) {
+					local146 += 2;
+				} else if (local136 == 14) {
+					local146 += 2;
+					local141++;
+				} else if (local136 == 15) {
+					local146 += 2;
+					local141 += 2;
+				}
+				if (local15) {
+					local34.anInt4181 = local146;
+					local34.aBoolean276 = true;
+					local34.anInt4169 = local141;
+				} else {
+					local34.method4068(local146, local141, Static335.aByteArray92[arg1]);
+				}
+			} else {
+				local136 = arg0.gBit(1);
+				@Pc(411) int local411;
+				@Pc(419) int local419;
+				@Pc(432) int local432;
+				@Pc(439) int local439;
+				if (local136 == 0) {
+					local141 = arg0.gBit(12);
+					local146 = local141 >> 10;
+					local411 = local141 >> 5 & 0x1F;
+					if (local411 > 15) {
+						local411 -= 32;
+					}
+					local419 = local141 & 0x1F;
+					if (local419 > 15) {
+						local419 -= 32;
+					}
+					local432 = local411 + local34.movementQueueX[0];
+					local439 = local419 + local34.movementQueueZ[0];
+					if (local15) {
+						local34.anInt4181 = local439;
+						local34.aBoolean276 = true;
+						local34.anInt4169 = local432;
+					} else {
+						local34.method4068(local439, local432, Static335.aByteArray92[arg1]);
+					}
+					local34.aByte78 = (byte) (local146 + local34.aByte78 & 0x3);
+					if (arg1 == PlayerList.selfId) {
+						Static355.anInt6585 = local34.aByte78;
+					}
+				} else {
+					local141 = arg0.gBit(30);
+					local146 = local141 >> 28;
+					local411 = local141 >> 14 & 0x3FFF;
+					local419 = local141 & 0x3FFF;
+					local432 = (local411 + Static164.anInt3140 + local34.movementQueueX[0] & 0x3FFF) - Static164.anInt3140;
+					local439 = (local34.movementQueueZ[0] + Static148.anInt2719 + local419 & 0x3FFF) - Static148.anInt2719;
+					if (local15) {
+						local34.aBoolean276 = true;
+						local34.anInt4181 = local439;
+						local34.anInt4169 = local432;
+					} else {
+						local34.method4068(local439, local432, Static335.aByteArray92[arg1]);
+					}
+					local34.aByte78 = (byte) (local34.aByte78 + local146 & 0x3);
+					if (PlayerList.selfId == arg1) {
+						Static355.anInt6585 = local34.aByte78;
+					}
+				}
+			}
+		} else if (local15) {
+			local34.aBoolean276 = false;
+		} else if (arg1 == PlayerList.selfId) {
+			throw new RuntimeException("s:lr");
+		} else {
+			Static360.anIntArray422[arg1] = (Static164.anInt3140 + local34.movementQueueX[0] >> 6 << 14) + (local34.aByte78 << 28) + (Static148.anInt2719 + local34.movementQueueZ[0] >> 6);
+			if (local34.anInt4174 == -1) {
+				Static324.anIntArray410[arg1] = local34.aClass248_7.method6441();
+			} else {
+				Static324.anIntArray410[arg1] = local34.anInt4174;
+			}
+			Static225.anIntArray260[arg1] = local34.anInt4611;
+			if (local34.soundRadius > 0) {
+				AreaSoundManager.remove(local34);
+			}
+			Static12.aClass11_Sub5_Sub2_Sub1Array1[arg1] = null;
+			if (arg0.gBit(1) != 0) {
+				method6033(arg0, arg1);
+			}
+		}
+	}
+
+	@OriginalMember(owner = "client!wj", name = "a", descriptor = "(Lclient!qg;ZI)Z")
+	public static boolean method6033(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
+		@Pc(8) int local8 = arg0.gBit(2);
+		@Pc(31) int local31;
+		@Pc(36) int local36;
+		@Pc(103) int local103;
+		@Pc(107) int local107;
+		@Pc(113) int local113;
+		@Pc(117) int local117;
+		if (local8 == 0) {
+			if (arg0.gBit(1) != 0) {
+				method6033(arg0, arg1);
+			}
+			local31 = arg0.gBit(6);
+			local36 = arg0.gBit(6);
+			@Pc(48) boolean local48 = arg0.gBit(1) == 1;
+			if (local48) {
+				Static52.anIntArray100[Static325.anInt6079++] = arg1;
+			}
+			if (Static12.aClass11_Sub5_Sub2_Sub1Array1[arg1] != null) {
+				throw new RuntimeException("hr:lr");
+			}
+			@Pc(75) Player local75 = Static12.aClass11_Sub5_Sub2_Sub1Array1[arg1] = new Player();
+			local75.anInt4619 = arg1;
+			if (Static231.aClass2_Sub4Array1[arg1] != null) {
+				local75.decodeAppearance(Static231.aClass2_Sub4Array1[arg1]);
+			}
+			local75.method4330(Static324.anIntArray410[arg1]);
+			local75.anInt4611 = Static225.anIntArray260[arg1];
+			local103 = Static360.anIntArray422[arg1];
+			local107 = local103 >> 28;
+			local113 = local103 >> 14 & 0xFF;
+			local117 = local103 & 0xFF;
+			local75.aByteArray51[0] = Static335.aByteArray92[arg1];
+			local75.aByte78 = (byte) local107;
+			local75.method4064(local31 + (local113 << 6) - Static164.anInt3140, -Static148.anInt2719 + local36 + (local117 << 6));
+			local75.aBoolean276 = false;
+			return true;
+		} else if (local8 == 1) {
+			local31 = arg0.gBit(2);
+			local36 = Static360.anIntArray422[arg1];
+			Static360.anIntArray422[arg1] = ((local31 + (local36 >> 28) & 0x3) << 28) + (local36 & 0xFFFFFFF);
+			return false;
+		} else {
+			@Pc(201) int local201;
+			@Pc(205) int local205;
+			if (local8 != 2) {
+				local31 = arg0.gBit(18);
+				local36 = local31 >> 16;
+				local201 = local31 >> 8 & 0xFF;
+				local205 = local31 & 0xFF;
+				local103 = Static360.anIntArray422[arg1];
+				local107 = local36 + (local103 >> 28) & 0x3;
+				local113 = local201 + (local103 >> 14) & 0xFF;
+				local117 = local205 + local103 & 0xFF;
+				Static360.anIntArray422[arg1] = (local113 << 14) + (local107 << 28) + local117;
+				return false;
+			}
+			local31 = arg0.gBit(5);
+			local36 = local31 >> 3;
+			local201 = local31 & 0x7;
+			local205 = Static360.anIntArray422[arg1];
+			local103 = (local205 >> 28) + local36 & 0x3;
+			local107 = local205 >> 14 & 0xFF;
+			local113 = local205 & 0xFF;
+			if (local201 == 0) {
+				local107--;
+				local113--;
+			}
+			if (local201 == 1) {
+				local113--;
+			}
+			if (local201 == 2) {
+				local113--;
+				local107++;
+			}
+			if (local201 == 3) {
+				local107--;
+			}
+			if (local201 == 4) {
+				local107++;
+			}
+			if (local201 == 5) {
+				local107--;
+				local113++;
+			}
+			if (local201 == 6) {
+				local113++;
+			}
+			if (local201 == 7) {
+				local107++;
+				local113++;
+			}
+			Static360.anIntArray422[arg1] = (local107 << 14) + (local103 << 28) + local113;
+			return false;
 		}
 	}
 

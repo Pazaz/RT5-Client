@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class2_Sub19 extends Class2 {
 
 	@OriginalMember(owner = "client!jc", name = "s", descriptor = "Lclient!nh;")
-	public Class11_Sub5_Sub2_Sub1 aClass11_Sub5_Sub2_Sub1_2;
+	public Player aClass11_Sub5_Sub2_Sub1_2;
 
 	@OriginalMember(owner = "client!jc", name = "t", descriptor = "I")
 	public int anInt2894;
@@ -104,8 +104,8 @@ public final class Class2_Sub19 extends Class2 {
 			}
 		} else if (this.aClass11_Sub5_Sub2_Sub1_2 != null) {
 			this.anInt2894 = Static384.method6415(this.aClass11_Sub5_Sub2_Sub1_2);
-			this.anInt2901 = this.aClass11_Sub5_Sub2_Sub1_2.anInt4182 * 128;
-			this.anInt2906 = this.aClass11_Sub5_Sub2_Sub1_2.anInt4201;
+			this.anInt2901 = this.aClass11_Sub5_Sub2_Sub1_2.soundRadius * 128;
+			this.anInt2906 = this.aClass11_Sub5_Sub2_Sub1_2.soundVolume;
 		}
 		if (this.anInt2894 != local8 && this.aClass2_Sub12_Sub4_3 != null) {
 			Static227.aClass2_Sub12_Sub2_2.method2081(this.aClass2_Sub12_Sub4_3);

@@ -14,7 +14,7 @@ public final class Static93 {
 	public static int anInt1951 = 0;
 
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(Lclient!mr;II)V")
-	public static void method1999(@OriginalArg(0) Class11_Sub5_Sub2 arg0, @OriginalArg(2) int arg1) {
+	public static void method1999(@OriginalArg(0) PathingEntity arg0, @OriginalArg(2) int arg1) {
 		@Pc(7) int local7 = -1;
 		@Pc(9) int local9 = 0;
 		if (arg0.anInt4622 > client.cycle) {
@@ -26,26 +26,26 @@ public final class Static93 {
 		} else {
 			Static277.method4682(arg0);
 		}
-		if (arg0.anInt6781 < 128 || arg0.anInt6783 < 128 || Static373.anInt7033 * 128 - 128 <= arg0.anInt6781 || arg0.anInt6783 >= (Static242.anInt4449 - 1) * 128) {
+		if (arg0.xFine < 128 || arg0.zFine < 128 || Static373.anInt7033 * 128 - 128 <= arg0.xFine || arg0.zFine >= (Static242.anInt4449 - 1) * 128) {
 			arg0.anInt4597 = -1;
 			arg0.anInt4622 = 0;
 			local7 = -1;
 			arg0.anInt4584 = 0;
 			local9 = 0;
 			arg0.anInt4594 = -1;
-			arg0.anInt6781 = arg0.anIntArray316[0] * 128 + arg0.method4328() * 64;
-			arg0.anInt6783 = arg0.anIntArray317[0] * 128 + arg0.method4328() * 64;
+			arg0.xFine = arg0.movementQueueX[0] * 128 + arg0.getSize() * 64;
+			arg0.zFine = arg0.movementQueueZ[0] * 128 + arg0.getSize() * 64;
 			arg0.method4331();
 		}
-		if (Static17.aClass11_Sub5_Sub2_Sub1_3 == arg0 && (arg0.anInt6781 < 1536 || arg0.anInt6783 < 1536 || Static373.anInt7033 * 128 - 1536 <= arg0.anInt6781 || arg0.anInt6783 >= (Static242.anInt4449 - 12) * 128)) {
+		if (Static17.aClass11_Sub5_Sub2_Sub1_3 == arg0 && (arg0.xFine < 1536 || arg0.zFine < 1536 || Static373.anInt7033 * 128 - 1536 <= arg0.xFine || arg0.zFine >= (Static242.anInt4449 - 12) * 128)) {
 			arg0.anInt4594 = -1;
 			arg0.anInt4597 = -1;
 			local9 = 0;
 			local7 = -1;
 			arg0.anInt4584 = 0;
 			arg0.anInt4622 = 0;
-			arg0.anInt6781 = arg0.anIntArray316[0] * 128 + arg0.method4328() * 64;
-			arg0.anInt6783 = arg0.anIntArray317[0] * 128 + arg0.method4328() * 64;
+			arg0.xFine = arg0.movementQueueX[0] * 128 + arg0.getSize() * 64;
+			arg0.zFine = arg0.movementQueueZ[0] * 128 + arg0.getSize() * 64;
 			arg0.method4331();
 		}
 		@Pc(209) int local209 = Static71.method6019(arg0);

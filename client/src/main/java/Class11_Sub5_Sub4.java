@@ -46,7 +46,7 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 			this.aClass157_3 = Static39.aClass85_1.method2371(local41);
 		}
 		if (arg2 == this.anInt6504) {
-			Static1.method4(this.aClass157_3, false, super.aByte78, super.anInt6781, super.anInt6783, this.anInt6509);
+			Static1.method4(this.aClass157_3, false, super.aByte78, super.xFine, super.zFine, this.anInt6509);
 		}
 	}
 
@@ -92,7 +92,7 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 			return null;
 		}
 		@Pc(16) Class14 local16 = arg0.method2808();
-		local16.method3922(super.anInt6781, super.anInt6782, super.anInt6783);
+		local16.method3922(super.xFine, super.anInt6782, super.zFine);
 		if (this.aClass12_Sub5_7 == null) {
 			local9.method3835(local16, null, 0);
 		} else {
@@ -144,7 +144,7 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 			}
 		}
 		if (!this.aBoolean445) {
-			Static1.method4(this.aClass157_3, false, super.aByte78, super.anInt6781, super.anInt6783, this.anInt6509);
+			Static1.method4(this.aClass157_3, false, super.aByte78, super.xFine, super.zFine, this.anInt6509);
 		}
 	}
 

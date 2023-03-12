@@ -11,7 +11,7 @@ public final class Static100 {
 	public static boolean aBoolean156 = true;
 
 	@OriginalMember(owner = "client!fn", name = "a", descriptor = "(IIILclient!mr;I)V")
-	public static void method2160(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class11_Sub5_Sub2 arg3) {
+	public static void method2160(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) PathingEntity arg3) {
 		@Pc(16) Class222 local16 = arg3.method4332();
 		@Pc(26) int local26 = arg3.anInt4616 - arg3.aClass248_7.anInt7197 & 0x3FFF;
 		if (arg2 == -1) {
@@ -97,19 +97,4 @@ public final class Static100 {
 		}
 	}
 
-	@OriginalMember(owner = "client!fn", name = "a", descriptor = "(Lclient!qg;B)I")
-	public static int method2161(@OriginalArg(0) Packet arg0) {
-		@Pc(10) int local10 = arg0.gBit(2);
-		@Pc(22) int local22;
-		if (local10 == 0) {
-			local22 = 0;
-		} else if (local10 == 1) {
-			local22 = arg0.gBit(5);
-		} else if (local10 == 2) {
-			local22 = arg0.gBit(8);
-		} else {
-			local22 = arg0.gBit(11);
-		}
-		return local22;
-	}
 }

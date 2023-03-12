@@ -17,7 +17,7 @@ public final class Class2_Sub41 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IIIIZLclient!nb;IILclient!jo;Lclient!wm;)Lclient!gn;")
-	public Class31 method6360(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(8) Class117 arg6, @OriginalArg(9) Class19 arg7) {
+	public Class31 method6360(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(8) PlayerAppearance arg6, @OriginalArg(9) Class19 arg7) {
 		@Pc(7) Class31 local7 = null;
 		@Pc(9) int local9 = 1024;
 		@Pc(11) Class222 local11 = null;
@@ -91,7 +91,7 @@ public final class Class2_Sub41 extends Class2 {
 			@Pc(259) int local259 = local9;
 			@Pc(261) boolean local261 = false;
 			for (@Pc(263) int local263 = 0; local263 < local23.length; local263++) {
-				if (local23[local263] != -1 && !Static313.ObjTypeList.method2759(local23[local263]).method4770(arg3)) {
+				if (local23[local263] != -1 && !Static313.ObjTypeList.get(local23[local263]).method4770(arg3)) {
 					local261 = true;
 				}
 			}
@@ -101,7 +101,7 @@ public final class Class2_Sub41 extends Class2 {
 			@Pc(300) Class185[] local300 = new Class185[local23.length];
 			for (@Pc(302) int local302 = 0; local302 < local23.length; local302++) {
 				if (local23[local302] != -1) {
-					local300[local302] = Static313.ObjTypeList.method2759(local23[local302]).method4779(arg3);
+					local300[local302] = Static313.ObjTypeList.get(local23[local302]).method4779(arg3);
 				}
 			}
 			@Pc(354) int local354;
@@ -130,8 +130,8 @@ public final class Class2_Sub41 extends Class2 {
 			local7 = arg7.method2864(local442, local259, Static25.anInt648, 64, 850);
 			if (arg6 != null) {
 				for (local354 = 0; local354 < 5; local354++) {
-					if (arg6.anIntArray194[local354] < Static353.aShortArrayArray7[local354].length) {
-						local7.method3838(Static10.aShortArray1[local354], Static353.aShortArrayArray7[local354][arg6.anIntArray194[local354]]);
+					if (arg6.anIntArray194[local354] < PlayerAppearance.destinationBodyColors[local354].length) {
+						local7.method3838(Static10.aShortArray1[local354], PlayerAppearance.destinationBodyColors[local354][arg6.anIntArray194[local354]]);
 					}
 					if (arg6.anIntArray194[local354] < Static186.aShortArrayArray6[local354].length) {
 						local7.method3838(Static43.aShortArray20[local354], Static186.aShortArrayArray6[local354][arg6.anIntArray194[local354]]);

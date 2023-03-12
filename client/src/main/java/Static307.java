@@ -49,7 +49,7 @@ public final class Static307 {
 				arg1.anInt4607 = 0;
 				arg1.anInt4590 = arg2;
 				arg1.anInt4598 = 0;
-				Static1.method4(local78, false, arg1.aByte78, arg1.anInt6781, arg1.anInt6783, arg1.anInt4607);
+				Static1.method4(local78, false, arg1.aByte78, arg1.xFine, arg1.zFine, arg1.anInt4607);
 			}
 			if (local81 == 2) {
 				arg1.anInt4598 = 0;
@@ -63,7 +63,7 @@ public final class Static307 {
 			arg1.anInt4590 = arg2;
 			arg1.anInt4642 = arg1.anInt4643;
 			if (arg1.anInt4597 != -1) {
-				Static1.method4(Static39.aClass85_1.method2371(arg1.anInt4597), false, arg1.aByte78, arg1.anInt6781, arg1.anInt6783, arg1.anInt4607);
+				Static1.method4(Static39.aClass85_1.method2371(arg1.anInt4597), false, arg1.aByte78, arg1.xFine, arg1.zFine, arg1.anInt4607);
 			}
 		}
 	}

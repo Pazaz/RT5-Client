@@ -742,32 +742,32 @@ public final class client extends GameShell {
 			if (local33 != null) {
 				@Pc(39) byte local39 = local33.type.aByte16;
 				if ((local39 & 0x1) != 0) {
-					@Pc(50) int local50 = local33.method4328();
+					@Pc(50) int local50 = local33.getSize();
 					@Pc(74) int local74;
 					if ((local39 & 0x2) != 0 && local33.anInt4643 == 0 && Math.random() * 1000.0D < 10.0D) {
 						local74 = (int) Math.round(Math.random() * 10.0D - 5.0D);
 						@Pc(82) int local82 = (int) Math.round(Math.random() * 10.0D - 5.0D);
 						if (local74 != 0 || local82 != 0) {
-							@Pc(96) int local96 = local74 + local33.anIntArray316[0];
+							@Pc(96) int local96 = local74 + local33.movementQueueX[0];
 							if (local96 < 0) {
 								local96 = 0;
 							} else if (Static373.anInt7033 - local50 - 1 < local96) {
 								local96 = Static373.anInt7033 - local50 - 1;
 							}
-							@Pc(128) int local128 = local33.anIntArray317[0] + local82;
+							@Pc(128) int local128 = local33.movementQueueZ[0] + local82;
 							if (local128 < 0) {
 								local128 = 0;
 							} else if (Static242.anInt4449 - local50 - 1 < local128) {
 								local128 = Static242.anInt4449 - local50 - 1;
 							}
-							@Pc(179) int local179 = Static141.method2654(true, Static52.anIntArray99, local50, -1, 0, 0, Static171.aClass46Array1[local33.aByte78], local33.anIntArray316[0], local50, local96, Static59.anIntArray105, local50, local128, local33.anIntArray317[0]);
+							@Pc(179) int local179 = Static141.method2654(true, Static52.anIntArray99, local50, -1, 0, 0, Static171.aClass46Array1[local33.aByte78], local33.movementQueueX[0], local50, local96, Static59.anIntArray105, local50, local128, local33.movementQueueZ[0]);
 							if (local179 > 0) {
 								if (local179 > 9) {
 									local179 = 9;
 								}
 								for (@Pc(190) int local190 = 0; local190 < local179; local190++) {
-									local33.anIntArray316[local190] = Static52.anIntArray99[local179 - local190 - 1];
-									local33.anIntArray317[local190] = Static59.anIntArray105[local179 - local190 - 1];
+									local33.movementQueueX[local190] = Static52.anIntArray99[local179 - local190 - 1];
+									local33.movementQueueZ[local190] = Static59.anIntArray105[local179 - local190 - 1];
 									local33.aByteArray51[local190] = 1;
 								}
 								local33.anInt4643 = local179;
@@ -935,11 +935,11 @@ public final class client extends GameShell {
 			Static43.aShortArray20 = Static113.aShortArray46;
 			Static279.anInt5161 = 0;
 			Static10.aShortArray1 = Static25.aShortArray4;
-			Static353.aShortArrayArray7 = Static201.aShortArrayArray5;
+			PlayerAppearance.destinationBodyColors = Static201.aShortArrayArray5;
 		} else {
 			Static43.aShortArray20 = Static131.aShortArray65;
 			Static10.aShortArray1 = Static78.aShortArray123;
-			Static353.aShortArrayArray7 = Static25.aShortArrayArray2;
+			PlayerAppearance.destinationBodyColors = Static25.aShortArrayArray2;
 			Static186.aShortArrayArray6 = Static386.aShortArrayArray9;
 		}
 		Static174.aClass123_2 = Static18.method556(Static21.aCanvas1);

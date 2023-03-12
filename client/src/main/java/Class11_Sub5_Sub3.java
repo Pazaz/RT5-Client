@@ -248,11 +248,11 @@ public final class Class11_Sub5_Sub3 extends Class11_Sub5 {
 	public void method4397(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(9) double local9;
 		if (!this.aBoolean326) {
-			local9 = arg1 - super.anInt6781;
-			@Pc(16) double local16 = (double) (arg3 - super.anInt6783);
+			local9 = arg1 - super.xFine;
+			@Pc(16) double local16 = (double) (arg3 - super.zFine);
 			@Pc(25) double local25 = Math.sqrt(local9 * local9 + local16 * local16);
-			this.aDouble8 = (double) super.anInt6783 + local16 * (double) this.anInt4735 / local25;
-			this.aDouble3 = (double) super.anInt6781 + (double) this.anInt4735 * local9 / local25;
+			this.aDouble8 = (double) super.zFine + local16 * (double) this.anInt4735 / local25;
+			this.aDouble3 = (double) super.xFine + (double) this.anInt4735 * local9 / local25;
 			this.aDouble9 = super.anInt6782;
 		}
 		local9 = this.anInt4722 + 1 - arg2;

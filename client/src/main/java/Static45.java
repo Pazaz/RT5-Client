@@ -25,12 +25,12 @@ public final class Static45 {
 
 	@OriginalMember(owner = "client!client", name = "b", descriptor = "()V")
 	public static void method1398() {
-		@Pc(1) int local1 = Static31.anInt751;
-		@Pc(3) int[] local3 = Static85.anIntArray121;
+		@Pc(1) int local1 = PlayerList.anInt751;
+		@Pc(3) int[] local3 = PlayerList.anIntArray121;
 		@Pc(20) boolean local20 = client.preferences.anInt4895 == 1 && local1 > 200 || client.preferences.anInt4895 == 0 && local1 > 50;
 		@Pc(75) int local75;
 		for (@Pc(22) int local22 = 0; local22 < local1; local22++) {
-			@Pc(29) Class11_Sub5_Sub2_Sub1 local29 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local22]];
+			@Pc(29) Player local29 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local22]];
 			if (local29.method4065()) {
 				local29.method6078();
 				if (local29.aShort103 >= 0 && local29.aShort101 >= 0 && local29.aShort104 < Static373.anInt7033 && local29.aShort102 < Static242.anInt4449) {
@@ -45,7 +45,7 @@ public final class Static45 {
 						if (local29.anInt4606 > client.cycle) {
 							local75 += 2;
 						}
-						local75 += 5 - local29.method4328() << 2;
+						local75 += 5 - local29.getSize() << 2;
 						if (Static114.anInt2344 == 0) {
 							local75 += 32;
 						} else {
@@ -73,7 +73,7 @@ public final class Static45 {
 					if (local118.anInt4606 > client.cycle) {
 						local155 += 2;
 					}
-					local155 += 5 - local118.method4328() << 2;
+					local155 += 5 - local118.getSize() << 2;
 					if (Static114.anInt2344 == 0) {
 						if (local118.type.aBoolean148) {
 							local155 += 64;
@@ -109,7 +109,7 @@ public final class Static45 {
 						local232.anInt4638 += 2048;
 					}
 				} else if (local221.anInt2355 == 10) {
-					@Pc(253) Class11_Sub5_Sub2_Sub1 local253 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local221.anInt2354];
+					@Pc(253) Player local253 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local221.anInt2354];
 					if (local253 != null && local253 != Static17.aClass11_Sub5_Sub2_Sub1_3 && local253.anInt4638 >= 0) {
 						local253.anInt4638 += 2048;
 					}
@@ -293,9 +293,9 @@ public final class Static45 {
 											local719 = (Static394.anInt7264 >> 7) + (local698 >> 2);
 											local727 = (Static348.anInt6448 >> 7) - (local708 >> 2);
 										} else {
-											@Pc(736) int local736 = (Static17.aClass11_Sub5_Sub2_Sub1_3.method4328() - 1) * 64;
-											local719 = (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 - local736 >> 7) + (local698 >> 2);
-											local727 = (Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 - local736 >> 7) - (local708 >> 2);
+											@Pc(736) int local736 = (Static17.aClass11_Sub5_Sub2_Sub1_3.getSize() - 1) * 64;
+											local719 = (Static17.aClass11_Sub5_Sub2_Sub1_3.xFine - local736 >> 7) + (local698 >> 2);
+											local727 = (Static17.aClass11_Sub5_Sub2_Sub1_3.zFine - local736 >> 7) - (local708 >> 2);
 										}
 										if (Static330.aBoolean419 && (Static115.anInt3837 & 0x40) != 0) {
 											@Pc(769) Class161 local769 = Static207.method3705(Static337.anInt6317, Static214.anInt3792);
@@ -783,10 +783,10 @@ public final class Static45 {
 		for (@Pc(3) int local3 = 0; local3 < NpcList.size; local3++) {
 			@Pc(10) Npc local10 = NpcList.npcs[NpcList.ids[local3]];
 			if (local10.aBoolean320 && local10.method4324() != -1) {
-				@Pc(28) int local28 = (local10.method4328() - 1) * 64 + 60;
-				@Pc(35) int local35 = local10.anInt6781 - local28 >> 7;
-				@Pc(42) int local42 = local10.anInt6783 - local28 >> 7;
-				@Pc(49) Class11_Sub5_Sub2 local49 = Static228.method3997(local10.aByte78, local35, local42);
+				@Pc(28) int local28 = (local10.getSize() - 1) * 64 + 60;
+				@Pc(35) int local35 = local10.xFine - local28 >> 7;
+				@Pc(42) int local42 = local10.zFine - local28 >> 7;
+				@Pc(49) PathingEntity local49 = Static228.method3997(local10.aByte78, local35, local42);
 				if (local49 != null) {
 					@Pc(54) int local54 = local49.anInt4619;
 					if (local49 instanceof Npc) {
@@ -810,30 +810,30 @@ public final class Static45 {
 
 	@OriginalMember(owner = "client!client", name = "k", descriptor = "(I)V")
 	public static void method1408(@OriginalArg(0) int arg0) {
-		@Pc(1) int local1 = Static31.anInt751;
-		@Pc(3) int[] local3 = Static85.anIntArray121;
+		@Pc(1) int local1 = PlayerList.anInt751;
+		@Pc(3) int[] local3 = PlayerList.anIntArray121;
 		for (@Pc(5) int local5 = 0; local5 < local1 + NpcList.size; local5++) {
-			@Pc(15) Class11_Sub5_Sub2 local15;
+			@Pc(15) PathingEntity local15;
 			if (local5 < local1) {
 				local15 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local5]];
 			} else {
 				local15 = NpcList.npcs[NpcList.ids[local5 - local1]];
 			}
 			if (local15.aByte78 == arg0 && local15.anInt4638 >= 0) {
-				@Pc(35) int local35 = local15.method4328();
+				@Pc(35) int local35 = local15.getSize();
 				if ((local35 & 0x1) == 0) {
-					if ((local15.anInt6781 & 0x7F) != 0 || (local15.anInt6783 & 0x7F) != 0) {
+					if ((local15.xFine & 0x7F) != 0 || (local15.zFine & 0x7F) != 0) {
 						continue;
 					}
-				} else if ((local15.anInt6781 & 0x7F) != 64 || (local15.anInt6783 & 0x7F) != 64) {
+				} else if ((local15.xFine & 0x7F) != 64 || (local15.zFine & 0x7F) != 64) {
 					continue;
 				}
 				@Pc(71) int local71;
 				@Pc(76) int local76;
 				@Pc(112) int local112;
 				if (local35 == 1) {
-					local71 = local15.anInt6781 >> 7;
-					local76 = local15.anInt6783 >> 7;
+					local71 = local15.xFine >> 7;
+					local76 = local15.zFine >> 7;
 					if (local15.anInt4638 > Static319.anIntArrayArray51[local71][local76]) {
 						Static319.anIntArrayArray51[local71][local76] = local15.anInt4638;
 						Static301.anIntArrayArray50[local71][local76] = 1;
@@ -842,10 +842,10 @@ public final class Static45 {
 					}
 				} else {
 					local71 = (local35 - 1) * 64 + 60;
-					local76 = local15.anInt6781 - local71 >> 7;
-					@Pc(138) int local138 = local15.anInt6783 - local71 >> 7;
-					@Pc(145) int local145 = local15.anInt6781 + local71 >> 7;
-					@Pc(152) int local152 = local15.anInt6783 + local71 >> 7;
+					local76 = local15.xFine - local71 >> 7;
+					@Pc(138) int local138 = local15.zFine - local71 >> 7;
+					@Pc(145) int local145 = local15.xFine + local71 >> 7;
+					@Pc(152) int local152 = local15.zFine + local71 >> 7;
 					for (@Pc(154) int local154 = local76; local154 <= local145; local154++) {
 						for (@Pc(157) int local157 = local138; local157 <= local152; local157++) {
 							if (local15.anInt4638 > Static319.anIntArrayArray51[local154][local157]) {
@@ -863,11 +863,11 @@ public final class Static45 {
 
 	@OriginalMember(owner = "client!client", name = "l", descriptor = "(I)V")
 	public static void method1409(@OriginalArg(0) int arg0) {
-		@Pc(1) int local1 = Static31.anInt751;
-		@Pc(3) int[] local3 = Static85.anIntArray121;
+		@Pc(1) int local1 = PlayerList.anInt751;
+		@Pc(3) int[] local3 = PlayerList.anIntArray121;
 		@Pc(11) int local11 = Static47.aBoolean102 ? local1 : local1 + NpcList.size;
 		for (@Pc(13) int local13 = 0; local13 < local11; local13++) {
-			@Pc(23) Class11_Sub5_Sub2 local23;
+			@Pc(23) PathingEntity local23;
 			if (local13 < local1) {
 				local23 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local13]];
 			} else {
@@ -878,13 +878,13 @@ public final class Static45 {
 				if (local23.anInt4638 < 0) {
 					local23.aBoolean320 = false;
 				} else {
-					@Pc(50) int local50 = local23.method4328();
+					@Pc(50) int local50 = local23.getSize();
 					if ((local50 & 0x1) == 0) {
-						if ((local23.anInt6781 & 0x7F) != 0 || (local23.anInt6783 & 0x7F) != 0) {
+						if ((local23.xFine & 0x7F) != 0 || (local23.zFine & 0x7F) != 0) {
 							local23.aBoolean320 = false;
 							continue;
 						}
-					} else if ((local23.anInt6781 & 0x7F) != 64 || (local23.anInt6783 & 0x7F) != 64) {
+					} else if ((local23.xFine & 0x7F) != 64 || (local23.zFine & 0x7F) != 64) {
 						local23.aBoolean320 = false;
 						continue;
 					}
@@ -892,8 +892,8 @@ public final class Static45 {
 					@Pc(97) int local97;
 					@Pc(122) int local122;
 					if (local50 == 1) {
-						local92 = local23.anInt6781 >> 7;
-						local97 = local23.anInt6783 >> 7;
+						local92 = local23.xFine >> 7;
+						local97 = local23.zFine >> 7;
 						if (local23.anInt4638 != Static319.anIntArrayArray51[local92][local97]) {
 							local23.aBoolean320 = true;
 							continue;
@@ -905,10 +905,10 @@ public final class Static45 {
 						}
 					} else {
 						local92 = (local50 - 1) * 64 + 60;
-						local97 = local23.anInt6781 - local92 >> 7;
-						@Pc(151) int local151 = local23.anInt6783 - local92 >> 7;
-						@Pc(158) int local158 = local23.anInt6781 + local92 >> 7;
-						@Pc(165) int local165 = local23.anInt6783 + local92 >> 7;
+						local97 = local23.xFine - local92 >> 7;
+						@Pc(151) int local151 = local23.zFine - local92 >> 7;
+						@Pc(158) int local158 = local23.xFine + local92 >> 7;
+						@Pc(165) int local165 = local23.zFine + local92 >> 7;
 						if (!Static360.method5650(local23.anInt4638, local151, local165, local158, local97)) {
 							for (@Pc(176) int local176 = local97; local176 <= local158; local176++) {
 								for (@Pc(179) int local179 = local151; local179 <= local165; local179++) {
@@ -921,11 +921,11 @@ public final class Static45 {
 							continue;
 						}
 					}
-					if (local23 instanceof Class11_Sub5_Sub2_Sub1 && local23.aClass2_Sub6_3 != null && client.cycle >= local23.aClass2_Sub6_3.anInt1100 && client.cycle < local23.aClass2_Sub6_3.anInt1118) {
-						((Class11_Sub5_Sub2_Sub1) local23).aBoolean275 = false;
+					if (local23 instanceof Player && local23.aClass2_Sub6_3 != null && client.cycle >= local23.aClass2_Sub6_3.anInt1100 && client.cycle < local23.aClass2_Sub6_3.anInt1118) {
+						((Player) local23).aBoolean275 = false;
 					}
 					local23.aBoolean320 = false;
-					local23.anInt6782 = Static386.method6032(local23.anInt6781, local23.anInt6783, local23.aByte78);
+					local23.anInt6782 = Static386.method6032(local23.xFine, local23.zFine, local23.aByte78);
 					Static329.method5630(local23, true);
 				}
 			}
@@ -934,29 +934,29 @@ public final class Static45 {
 
 	@OriginalMember(owner = "client!client", name = "d", descriptor = "()V")
 	public static void method1410() {
-		@Pc(1) int local1 = Static31.anInt751;
-		@Pc(3) int[] local3 = Static85.anIntArray121;
+		@Pc(1) int local1 = PlayerList.anInt751;
+		@Pc(3) int[] local3 = PlayerList.anIntArray121;
 		@Pc(11) int local11 = Static47.aBoolean102 ? local1 : local1 + NpcList.size;
 		for (@Pc(13) int local13 = 0; local13 < local11; local13++) {
-			@Pc(23) Class11_Sub5_Sub2 local23;
+			@Pc(23) PathingEntity local23;
 			if (local13 < local1) {
 				local23 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local13]];
 			} else {
 				local23 = NpcList.npcs[NpcList.ids[local13 - local1]];
 			}
 			if (local23.anInt4638 >= 0) {
-				@Pc(39) int local39 = local23.method4328();
+				@Pc(39) int local39 = local23.getSize();
 				if ((local39 & 0x1) == 0) {
-					if ((local23.anInt6781 & 0x7F) == 0 && (local23.anInt6783 & 0x7F) == 0) {
+					if ((local23.xFine & 0x7F) == 0 && (local23.zFine & 0x7F) == 0) {
 						continue;
 					}
-				} else if ((local23.anInt6781 & 0x7F) == 64 && (local23.anInt6783 & 0x7F) == 64) {
+				} else if ((local23.xFine & 0x7F) == 64 && (local23.zFine & 0x7F) == 64) {
 					continue;
 				}
-				if (local23 instanceof Class11_Sub5_Sub2_Sub1 && local23.aClass2_Sub6_3 != null && client.cycle >= local23.aClass2_Sub6_3.anInt1100 && client.cycle < local23.aClass2_Sub6_3.anInt1118) {
-					((Class11_Sub5_Sub2_Sub1) local23).aBoolean275 = false;
+				if (local23 instanceof Player && local23.aClass2_Sub6_3 != null && client.cycle >= local23.aClass2_Sub6_3.anInt1100 && client.cycle < local23.aClass2_Sub6_3.anInt1118) {
+					((Player) local23).aBoolean275 = false;
 				}
-				local23.anInt6782 = Static386.method6032(local23.anInt6781, local23.anInt6783, local23.aByte78);
+				local23.anInt6782 = Static386.method6032(local23.xFine, local23.zFine, local23.aByte78);
 				Static329.method5630(local23, true);
 			}
 		}
