@@ -10,9 +10,6 @@ public final class Static165 {
 	@OriginalMember(owner = "client!jm", name = "p", descriptor = "[[[I")
 	public static int[][][] anIntArrayArrayArray9;
 
-	@OriginalMember(owner = "client!jm", name = "c", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_131 = new InboundPacket(44, 8);
-
 	@OriginalMember(owner = "client!jm", name = "k", descriptor = "I")
 	public static int anInt3148 = 0;
 
@@ -120,9 +117,9 @@ public final class Static165 {
 			} else if (local68.anInt1008 != -1) {
 				local74 = Static313.ObjTypeList.method2759(local68.anInt1008).anIntArray364;
 			} else if (Static297.method5111(local68.anInt1005)) {
-				@Pc(140) Class11_Sub5_Sub2_Sub2 local140 = Static365.aClass11_Sub5_Sub2_Sub2Array1[(int) local68.aLong30];
+				@Pc(140) Npc local140 = NpcList.npcs[(int) local68.aLong30];
 				if (local140 != null) {
-					@Pc(145) Class71 local145 = local140.aClass71_1;
+					@Pc(145) Class71 local145 = local140.type;
 					if (local145.anIntArray129 != null) {
 						local145 = local145.method2093(Static214.aClass226_1);
 					}

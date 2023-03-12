@@ -114,7 +114,7 @@ public final class Static337 {
 
 	@OriginalMember(owner = "client!tk", name = "b", descriptor = "(I)V")
 	public static void method5709() {
-		Static371.method6257((long) Static114.anInt2348, Static190.aClass19_8);
+		Static371.method6257((long) client.cycle, Static190.aClass19_8);
 		if (Static139.anInt2595 != -1) {
 			Static232.method4028(Static139.anInt2595);
 		}
@@ -125,7 +125,7 @@ public final class Static337 {
 			Static20.aBooleanArray6[local19] = Static357.aBooleanArray59[local19];
 			Static357.aBooleanArray59[local19] = false;
 		}
-		Static132.anInt2468 = Static114.anInt2348;
+		Static132.anInt2468 = client.cycle;
 		if (Static190.aClass19_8.method2871()) {
 			Static106.aBoolean164 = true;
 		}

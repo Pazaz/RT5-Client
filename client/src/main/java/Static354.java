@@ -21,9 +21,6 @@ public final class Static354 {
 	@OriginalMember(owner = "client!un", name = "O", descriptor = "Z")
 	private static boolean aBoolean98;
 
-	@OriginalMember(owner = "client!un", name = "p", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_42 = new InboundPacket(57, 12);
-
 	@OriginalMember(owner = "client!un", name = "a", descriptor = "(IIIIIZZ)V")
 	public static void method1381(@OriginalArg(2) int arg0, @OriginalArg(3) int arg1, @OriginalArg(4) int arg2, @OriginalArg(5) boolean arg3, @OriginalArg(6) boolean arg4) {
 		Static322.anInt6029 = 7;

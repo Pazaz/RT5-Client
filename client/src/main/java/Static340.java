@@ -7,9 +7,6 @@ public final class Static340 {
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_133 = new Class79("Loaded world list data", "Liste der Welten geladen", "Liste des serveurs chargée", "Dados da lista de mundos carregados");
 
-	@OriginalMember(owner = "client!tp", name = "k", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_227 = new InboundPacket(101, 14);
-
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(CB)C")
 	public static char method5762(@OriginalArg(0) char arg0) {
 		if (arg0 == ' ' || arg0 == ' ' || arg0 == '_' || arg0 == '-') {
@@ -40,8 +37,8 @@ public final class Static340 {
 	}
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(BLclient!oe;)I")
-	public static int method5764(@OriginalArg(1) Class11_Sub5_Sub2_Sub2 arg0) {
-		@Pc(8) Class71 local8 = arg0.aClass71_1;
+	public static int method5764(@OriginalArg(1) Npc arg0) {
+		@Pc(8) Class71 local8 = arg0.type;
 		if (local8.anIntArray129 != null) {
 			local8 = local8.method2093(Static214.aClass226_1);
 			if (local8 == null) {

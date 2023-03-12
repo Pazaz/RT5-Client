@@ -8,9 +8,6 @@ public final class Static31 {
 	@OriginalMember(owner = "client!bp", name = "s", descriptor = "[I")
 	public static int[] anIntArray38;
 
-	@OriginalMember(owner = "client!bp", name = "r", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_27 = new InboundPacket(76, -1);
-
 	@OriginalMember(owner = "client!bp", name = "t", descriptor = "F")
 	public static float aFloat28 = 1024.0F;
 

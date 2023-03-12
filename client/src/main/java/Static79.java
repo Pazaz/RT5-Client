@@ -10,9 +10,6 @@ public final class Static79 {
 	@OriginalMember(owner = "client!ej", name = "H", descriptor = "Lclient!r;")
 	public static Class197 aClass197_19;
 
-	@OriginalMember(owner = "client!ej", name = "C", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_63 = new InboundPacket(43, -1);
-
 	@OriginalMember(owner = "client!ej", name = "N", descriptor = "Z")
 	public static boolean aBoolean131 = true;
 

@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static271 {
 
-	@OriginalMember(owner = "client!pj", name = "u", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_182 = new InboundPacket(50, -1);
-
 	@OriginalMember(owner = "client!pj", name = "v", descriptor = "J")
 	public static long aLong146 = -1L;
 

@@ -10,9 +10,6 @@ public final class Static7 {
 	@OriginalMember(owner = "client!ag", name = "r", descriptor = "Lclient!bu;")
 	public static Class29_Sub1 aClass29_Sub1_120;
 
-	@OriginalMember(owner = "client!ag", name = "f", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_257 = new InboundPacket(90, 12);
-
 	@OriginalMember(owner = "client!ag", name = "l", descriptor = "Lclient!ad;")
 	public static final Class4 aClass4_151 = new Class4(16);
 

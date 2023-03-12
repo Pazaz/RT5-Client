@@ -18,9 +18,6 @@ public final class Static227 {
 	@OriginalMember(owner = "client!nb", name = "B", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_90 = new Class79("Loading interfaces - ", "Lade Benutzeroberfläche - ", "Chargement des interfaces - ", "Carregando interfaces - ");
 
-	@OriginalMember(owner = "client!nb", name = "D", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_161 = new InboundPacket(91, 2);
-
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Z)V")
 	public static void method3989() {
 		for (@Pc(6) Class2_Sub5 local6 = (Class2_Sub5) Static129.aClass135_19.method3551(); local6 != null; local6 = (Class2_Sub5) Static129.aClass135_19.method3552()) {

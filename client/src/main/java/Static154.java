@@ -38,20 +38,6 @@ public final class Static154 {
 		}
 	}
 
-	@OriginalMember(owner = "client!is", name = "a", descriptor = "(Lclient!oe;B)V")
-	public static void method2781(@OriginalArg(0) Class11_Sub5_Sub2_Sub2 arg0) {
-		for (@Pc(16) Class2_Sub19 local16 = (Class2_Sub19) Static363.aClass135_39.method3551(); local16 != null; local16 = (Class2_Sub19) Static363.aClass135_39.method3552()) {
-			if (local16.aClass11_Sub5_Sub2_Sub2_1 == arg0) {
-				if (local16.aClass2_Sub12_Sub4_3 != null) {
-					Static227.aClass2_Sub12_Sub2_2.method2081(local16.aClass2_Sub12_Sub4_3);
-					local16.aClass2_Sub12_Sub4_3 = null;
-				}
-				local16.method6468();
-				return;
-			}
-		}
-	}
-
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "(II)V")
 	public static void method2783(@OriginalArg(0) int arg0) {
 		Static199.anInt5756 = arg0;

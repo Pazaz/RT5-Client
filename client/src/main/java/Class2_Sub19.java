@@ -27,7 +27,7 @@ public final class Class2_Sub19 extends Class2 {
 	public int anInt2899;
 
 	@OriginalMember(owner = "client!jc", name = "B", descriptor = "Lclient!oe;")
-	public Class11_Sub5_Sub2_Sub2 aClass11_Sub5_Sub2_Sub2_1;
+	public Npc aClass11_Sub5_Sub2_Sub2_1;
 
 	@OriginalMember(owner = "client!jc", name = "E", descriptor = "I")
 	public int anInt2901;
@@ -91,7 +91,7 @@ public final class Class2_Sub19 extends Class2 {
 			@Pc(42) int local42 = Static340.method5764(this.aClass11_Sub5_Sub2_Sub2_1);
 			if (local42 != local8) {
 				this.anInt2894 = local42;
-				@Pc(52) Class71 local52 = this.aClass11_Sub5_Sub2_Sub2_1.aClass71_1;
+				@Pc(52) Class71 local52 = this.aClass11_Sub5_Sub2_Sub2_1.type;
 				if (local52.anIntArray129 != null) {
 					local52 = local52.method2093(Static214.aClass226_1);
 				}

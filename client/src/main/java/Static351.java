@@ -51,7 +51,7 @@ public final class Static351 {
 		for (@Pc(7) int local7 = 0; local7 < 5; local7++) {
 			Static189.aBooleanArray33[local7] = false;
 		}
-		Static241.anInt4445 = Static114.anInt2348;
+		Static241.anInt4445 = client.cycle;
 		Static5.anInt105 = Static102.anInt3592;
 		Static349.anInt6455 = -1;
 		Static147.anInt2717 = -1;

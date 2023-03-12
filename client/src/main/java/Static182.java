@@ -72,7 +72,7 @@ public final class Static182 {
 			if (local20.aBoolean445) {
 				local15.method6468();
 				local20.method5878();
-			} else if (local20.anInt6504 <= Static114.anInt2348) {
+			} else if (local20.anInt6504 <= client.cycle) {
 				local20.method5879(Static165.anInt3148);
 				if (local20.aBoolean445) {
 					local15.method6468();
@@ -86,22 +86,22 @@ public final class Static182 {
 	@OriginalMember(owner = "client!kk", name = "b", descriptor = "(B)V")
 	public static void method3388() {
 		Protocol.outboundBuffer.pos = 0;
-		Static82.packetSize = 0;
-		Static39.aClass89_35 = null;
+		Protocol.packetSize = 0;
+		Protocol.packet3 = null;
 		Static151.anInt2773 = 0;
-		Static334.aClass89_222 = null;
-		Static231.packet = null;
-		Static268.anInt4955 = 0;
+		Protocol.packet1 = null;
+		Protocol.packet = null;
+		Protocol.anInt4955 = 0;
 		Protocol.inboundBuffer.pos = 0;
-		Static66.aClass89_57 = null;
+		Protocol.packet2 = null;
 		Static160.method2956();
 		Static309.method5280();
 		for (@Pc(35) int local35 = 0; local35 < 2048; local35++) {
 			Static12.aClass11_Sub5_Sub2_Sub1Array1[local35] = null;
 		}
 		Static17.aClass11_Sub5_Sub2_Sub1_3 = null;
-		for (@Pc(51) int local51 = 0; local51 < Static365.aClass11_Sub5_Sub2_Sub2Array1.length; local51++) {
-			@Pc(57) Class11_Sub5_Sub2_Sub2 local57 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local51];
+		for (@Pc(51) int local51 = 0; local51 < NpcList.npcs.length; local51++) {
+			@Pc(57) Npc local57 = NpcList.npcs[local51];
 			if (local57 != null) {
 				local57.anInt4611 = -1;
 			}

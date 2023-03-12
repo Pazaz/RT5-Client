@@ -27,9 +27,9 @@ public final class Static218 {
 		} else if (arg0.anInt1008 != -1) {
 			local14 = Static313.ObjTypeList.method2759(arg0.anInt1008).anIntArray364;
 		} else if (Static297.method5111(arg0.anInt1005)) {
-			@Pc(46) Class11_Sub5_Sub2_Sub2 local46 = Static365.aClass11_Sub5_Sub2_Sub2Array1[(int) arg0.aLong30];
+			@Pc(46) Npc local46 = NpcList.npcs[(int) arg0.aLong30];
 			if (local46 != null) {
-				@Pc(51) Class71 local51 = local46.aClass71_1;
+				@Pc(51) Class71 local51 = local46.type;
 				if (local51.anIntArray129 != null) {
 					local51 = local51.method2093(Static214.aClass226_1);
 				}

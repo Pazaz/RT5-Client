@@ -7,17 +7,8 @@ public final class Static153 {
 	@OriginalMember(owner = "client!ip", name = "c", descriptor = "I")
 	public static int anInt2792;
 
-	@OriginalMember(owner = "client!ip", name = "a", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_117 = new InboundPacket(99, -1);
-
 	@OriginalMember(owner = "client!ip", name = "d", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_109 = new Class145(4, 8);
-
-	@OriginalMember(owner = "client!ip", name = "e", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_118 = new InboundPacket(25, 8);
-
-	@OriginalMember(owner = "client!ip", name = "g", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_119 = new InboundPacket(72, -2);
 
 	@OriginalMember(owner = "client!ip", name = "h", descriptor = "I")
 	public static int anInt2794 = 2;

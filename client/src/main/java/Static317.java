@@ -34,7 +34,7 @@ public final class Static317 {
 				return;
 			}
 		}
-		if (arg0.anInt4594 != -1 && arg0.anInt4595 <= Static114.anInt2348) {
+		if (arg0.anInt4594 != -1 && arg0.anInt4595 <= client.cycle) {
 			@Pc(97) Class91 local97 = Static322.aClass211_2.method5407(arg0.anInt4594);
 			if (local97.aBoolean177 && local97.anInt2448 != -1) {
 				@Pc(111) Class157 local111 = Static39.aClass85_1.method2371(local97.anInt2448);
@@ -92,8 +92,8 @@ public final class Static317 {
 		}
 		@Pc(354) int local354 = 4;
 		@Pc(356) boolean local356 = true;
-		if (arg0 instanceof Class11_Sub5_Sub2_Sub2) {
-			local356 = ((Class11_Sub5_Sub2_Sub2) arg0).aClass71_1.aBoolean143;
+		if (arg0 instanceof Npc) {
+			local356 = ((Npc) arg0).type.aBoolean143;
 		}
 		@Pc(396) int local396;
 		if (local356) {
@@ -218,7 +218,7 @@ public final class Static317 {
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!r;Ljava/lang/String;ZI)Lclient!ih;")
 	public static Class103 method5552(@OriginalArg(0) Class197 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) boolean arg2) {
-		@Pc(10) int local10 = arg0.method5075(arg1);
+		@Pc(10) int local10 = arg0.getGroupId(arg1);
 		if (local10 == -1) {
 			return new Class103(0);
 		}

@@ -7,9 +7,6 @@ public final class Static80 {
 	@OriginalMember(owner = "client!ek", name = "Z", descriptor = "I")
 	public static int anInt6679;
 
-	@OriginalMember(owner = "client!ek", name = "X", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_234 = new InboundPacket(65, 5);
-
 	@OriginalMember(owner = "client!ek", name = "ab", descriptor = "[I")
 	public static final int[] anIntArray464 = new int[25];
 

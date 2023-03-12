@@ -13,9 +13,6 @@ public final class Static277 {
 	@OriginalMember(owner = "client!q", name = "h", descriptor = "Lclient!ld;")
 	public static final Class135 aClass135_31 = new Class135();
 
-	@OriginalMember(owner = "client!q", name = "o", descriptor = "[I")
-	public static final int[] anIntArray361 = new int[250];
-
 	@OriginalMember(owner = "client!q", name = "q", descriptor = "F")
 	public static float aFloat67 = 0.0F;
 
@@ -94,7 +91,7 @@ public final class Static277 {
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(Lclient!mr;B)V")
 	public static void method4682(@OriginalArg(0) Class11_Sub5_Sub2 arg0) {
 		@Pc(5) boolean local5 = false;
-		if (arg0.anInt4584 == Static114.anInt2348 || arg0.anInt4597 == -1 || arg0.anInt4590 != 0) {
+		if (arg0.anInt4584 == client.cycle || arg0.anInt4597 == -1 || arg0.anInt4590 != 0) {
 			local5 = true;
 		} else {
 			@Pc(25) Class157 local25 = Static39.aClass85_1.method2371(arg0.anInt4597);
@@ -104,7 +101,7 @@ public final class Static277 {
 		}
 		if (local5) {
 			@Pc(57) int local57 = arg0.anInt4584 - arg0.anInt4622;
-			@Pc(63) int local63 = Static114.anInt2348 - arg0.anInt4622;
+			@Pc(63) int local63 = client.cycle - arg0.anInt4622;
 			@Pc(75) int local75 = arg0.anInt4615 * 128 + arg0.method4328() * 64;
 			@Pc(86) int local86 = arg0.anInt4588 * 128 + arg0.method4328() * 64;
 			@Pc(97) int local97 = arg0.anInt4577 * 128 + arg0.method4328() * 64;

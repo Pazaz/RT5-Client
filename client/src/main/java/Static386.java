@@ -10,9 +10,6 @@ public final class Static386 {
 	@OriginalMember(owner = "client!wj", name = "c", descriptor = "I")
 	public static int anInt6737 = 0;
 
-	@OriginalMember(owner = "client!wj", name = "e", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_236 = new InboundPacket(67, -1);
-
 	@OriginalMember(owner = "client!wj", name = "a", descriptor = "(I)V")
 	public static void method6029() {
 		@Pc(7) int local7 = Static31.anInt751;

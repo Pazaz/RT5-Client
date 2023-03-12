@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static374 {
 
 	@OriginalMember(owner = "client!vr", name = "i", descriptor = "[I")
-	public static int[] anIntArray480;
+	public static int[] locGroupIds;
 
 	@OriginalMember(owner = "client!vr", name = "d", descriptor = "Lclient!s;")
 	public static final Class210 aClass210_16 = new Class210(9, 17);

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static51 {
 
 	@OriginalMember(owner = "client!cu", name = "s", descriptor = "[I")
-	public static int[] anIntArray98;
+	public static int[] underwaterMapGroupIds;
 
 	@OriginalMember(owner = "client!cu", name = "v", descriptor = "Lclient!on;")
 	public static Class14 aClass14_2;

@@ -18,9 +18,6 @@ public final class Static320 {
 	@OriginalMember(owner = "client!sm", name = "z", descriptor = "I")
 	public static int anInt6006 = 0;
 
-	@OriginalMember(owner = "client!sm", name = "B", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_214 = new InboundPacket(93, 5);
-
 	@OriginalMember(owner = "client!sm", name = "b", descriptor = "(B)V")
 	public static void method5461() {
 		Static133.aClass98_17.method2621();

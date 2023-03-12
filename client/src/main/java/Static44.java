@@ -92,7 +92,7 @@ public final class Static44 {
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(Lclient!r;I)V")
 	public static void method1359(@OriginalArg(0) Class197 arg0) {
-		Static75.anInt1736 = arg0.method5075("titlebg");
-		Static265.anInt4856 = arg0.method5075("logo");
+		Static75.anInt1736 = arg0.getGroupId("titlebg");
+		Static265.anInt4856 = arg0.getGroupId("logo");
 	}
 }

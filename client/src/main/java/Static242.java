@@ -19,9 +19,6 @@ public final class Static242 {
 	@OriginalMember(owner = "client!nr", name = "f", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_159 = new Class145(44, 1);
 
-	@OriginalMember(owner = "client!nr", name = "h", descriptor = "I")
-	public static int anInt4450 = 0;
-
 	@OriginalMember(owner = "client!nr", name = "a", descriptor = "(Lclient!mr;IILclient!mr;BIIIII)V")
 	public static void method4195(@OriginalArg(0) Class11_Sub5_Sub2 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class11_Sub5_Sub2 arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) int arg6) {
 		@Pc(7) int local7 = arg0.method4324();

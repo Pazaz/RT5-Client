@@ -7,9 +7,6 @@ public final class Static201 {
 	@OriginalMember(owner = "client!lp", name = "a", descriptor = "I")
 	public static int anInt3699 = 1;
 
-	@OriginalMember(owner = "client!lp", name = "b", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_151 = new InboundPacket(13, 5);
-
 	@OriginalMember(owner = "client!lp", name = "d", descriptor = "I")
 	public static int anInt3701 = 0;
 
@@ -36,7 +33,7 @@ public final class Static201 {
 					local66 = arg7;
 				}
 				local19.anInt4257 = local66;
-				local19.anInt4268 = Static114.anInt2348;
+				local19.anInt4268 = client.cycle;
 				if (!Static45.method1403(local19)) {
 					if (local19.anInt4273 != 0) {
 						Static285.method4886(local19);

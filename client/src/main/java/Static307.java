@@ -39,7 +39,7 @@ public final class Static307 {
 	}
 
 	@OriginalMember(owner = "client!rq", name = "a", descriptor = "(ILclient!oe;BI)V")
-	public static void method5256(@OriginalArg(0) int arg0, @OriginalArg(1) Class11_Sub5_Sub2_Sub2 arg1, @OriginalArg(3) int arg2) {
+	public static void method5256(@OriginalArg(0) int arg0, @OriginalArg(1) Npc arg1, @OriginalArg(3) int arg2) {
 		if (arg0 == arg1.anInt4597 && arg0 != -1) {
 			@Pc(78) Class157 local78 = Static39.aClass85_1.method2371(arg0);
 			@Pc(81) int local81 = local78.anInt4022;

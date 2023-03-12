@@ -10,9 +10,6 @@ public final class Static385 {
 	@OriginalMember(owner = "client!wi", name = "y", descriptor = "Lclient!ha;")
 	public static Class2_Sub16 aClass2_Sub16_2;
 
-	@OriginalMember(owner = "client!wi", name = "x", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_255 = new InboundPacket(71, 20);
-
 	@OriginalMember(owner = "client!wi", name = "A", descriptor = "[Lclient!nt;")
 	public static final Class2_Sub2_Sub13[] aClass2_Sub2_Sub13Array4 = new Class2_Sub2_Sub13[14];
 
@@ -32,7 +29,7 @@ public final class Static385 {
 
 	@OriginalMember(owner = "client!wi", name = "a", descriptor = "(BI)V")
 	public static void method6432(@OriginalArg(1) int arg0) {
-		@Pc(8) int local8 = Static114.anInt2348 - Static241.anInt4445;
+		@Pc(8) int local8 = client.cycle - Static241.anInt4445;
 		if (local8 >= 100) {
 			Static314.anInt5911 = 1;
 			return;

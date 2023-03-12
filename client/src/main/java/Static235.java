@@ -1,4 +1,3 @@
-import java.io.IOException;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -10,9 +9,6 @@ public final class Static235 {
 
 	@OriginalMember(owner = "client!nj", name = "e", descriptor = "I")
 	public static int anInt3365 = 0;
-
-	@OriginalMember(owner = "client!nj", name = "h", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_140 = new InboundPacket(42, 3);
 
 	@OriginalMember(owner = "client!nj", name = "j", descriptor = "I")
 	public static int anInt3368 = 0;
@@ -103,24 +99,6 @@ public final class Static235 {
 			local19 &= Static306.method5252(local9);
 		}
 		return local19;
-	}
-
-	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(B)Z")
-	public static boolean method3341() {
-		try {
-			return Static73.method1821();
-		} catch (@Pc(16) IOException local16) {
-			Static211.method3725();
-			return true;
-		} catch (@Pc(21) Exception local21) {
-			@Pc(81) String local81 = "T2 - " + (Static231.packet == null ? -1 : Static231.packet.getOpcode()) + "," + (Static66.aClass89_57 == null ? -1 : Static66.aClass89_57.getOpcode()) + "," + (Static39.aClass89_35 == null ? -1 : Static39.aClass89_35.getOpcode()) + " - " + Static82.packetSize + "," + (Static164.anInt3140 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0]) + "," + (Static148.anInt2719 + Static17.aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0]) + " - ";
-			for (@Pc(83) int local83 = 0; local83 < Static82.packetSize && local83 < 50; local83++) {
-				local81 = local81 + Protocol.inboundBuffer.data[local83] + ",";
-			}
-			Static262.report(local21, local81);
-			Static99.method2144();
-			return true;
-		}
 	}
 
 	@OriginalMember(owner = "client!nj", name = "b", descriptor = "(IIII)I")

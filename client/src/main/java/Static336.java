@@ -10,9 +10,6 @@ public final class Static336 {
 	@OriginalMember(owner = "client!tj", name = "t", descriptor = "Lclient!vq;")
 	public static Class241 aClass241_5;
 
-	@OriginalMember(owner = "client!tj", name = "q", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_225 = new InboundPacket(45, 1);
-
 	@OriginalMember(owner = "client!tj", name = "u", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_130 = new Class79("Loaded config", "Konfig geladen.", "Fichiers config chargés", "Config carregada");
 

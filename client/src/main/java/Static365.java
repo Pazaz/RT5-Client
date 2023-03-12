@@ -6,9 +6,6 @@ public final class Static365 {
 	@OriginalMember(owner = "client!vh", name = "w", descriptor = "[Lclient!tf;")
 	public static Class6[] aClass6Array4;
 
-	@OriginalMember(owner = "client!vh", name = "s", descriptor = "[Lclient!oe;")
-	public static final Class11_Sub5_Sub2_Sub2[] aClass11_Sub5_Sub2_Sub2Array1 = new Class11_Sub5_Sub2_Sub2[32768];
-
 	@OriginalMember(owner = "client!vh", name = "t", descriptor = "I")
 	public static int anInt6832 = 0;
 

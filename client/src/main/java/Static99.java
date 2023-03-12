@@ -14,7 +14,7 @@ public final class Static99 {
 	}
 
 	@OriginalMember(owner = "client!fm", name = "i", descriptor = "(I)V")
-	public static void method2144() {
+	public static void logout() {
 		if (Protocol.socket != null) {
 			Protocol.socket.close();
 			Protocol.socket = null;
@@ -42,9 +42,9 @@ public final class Static99 {
 		for (@Pc(75) int local75 = 0; local75 < 2048; local75++) {
 			Static12.aClass11_Sub5_Sub2_Sub1Array1[local75] = null;
 		}
-		Static166.anInt3187 = 0;
+		NpcList.size = 0;
 		for (@Pc(91) int local91 = 0; local91 < 32768; local91++) {
-			Static365.aClass11_Sub5_Sub2_Sub2Array1[local91] = null;
+			NpcList.npcs[local91] = null;
 		}
 		Static120.aClass4_49.method81();
 		Static117.method2369();

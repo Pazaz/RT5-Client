@@ -325,7 +325,7 @@ public final class Static344 {
 		aClass104_4 = arg5;
 		anInterface11_2 = arg6;
 		aClass4_124.method81();
-		@Pc(21) int local21 = aClass197_85.method5075("details");
+		@Pc(21) int local21 = aClass197_85.getGroupId("details");
 		@Pc(26) int[] local26 = aClass197_85.method5077(local21);
 		for (@Pc(28) int local28 = 0; local28 < local26.length; local28++) {
 			@Pc(37) Class2_Sub2_Sub17 local37 = Static61.method1672(local26[local28], local21, aClass197_85);

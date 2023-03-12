@@ -1343,7 +1343,7 @@ public final class Static198 {
 								}
 							} else if (arg0 < 3400) {
 								if (arg0 == 3300) {
-									anIntArray213[anInt3650++] = Static114.anInt2348;
+									anIntArray213[anInt3650++] = client.cycle;
 									return;
 								}
 								if (arg0 == 3301) {

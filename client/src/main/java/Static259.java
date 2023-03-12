@@ -128,15 +128,15 @@ public final class Static259 {
 				Protocol.outboundBuffer.p2add(local18 + Static148.anInt2719);
 			}
 		}
-		@Pc(485) Class11_Sub5_Sub2_Sub2 local485;
+		@Pc(485) Npc local485;
 		if (local21 == 1006) {
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
-			local485 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local25];
+			local485 = NpcList.npcs[local25];
 			if (local485 != null) {
-				@Pc(490) Class71 local490 = local485.aClass71_1;
+				@Pc(490) Class71 local490 = local485.type;
 				if (local490.anIntArray129 != null) {
 					local490 = local490.method2093(Static214.aClass226_1);
 				}
@@ -147,7 +147,7 @@ public final class Static259 {
 			}
 		}
 		if (local21 == 4) {
-			local485 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local25];
+			local485 = NpcList.npcs[local25];
 			if (local485 != null) {
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
@@ -172,7 +172,7 @@ public final class Static259 {
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 10) {
-			local485 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local25];
+			local485 = NpcList.npcs[local25];
 			if (local485 != null) {
 				Static291.anInt5504 = arg2;
 				Static320.anInt6005 = arg1;
@@ -317,7 +317,7 @@ public final class Static259 {
 			Static172.method3285(local18, local28, local15);
 		}
 		if (local21 == 8) {
-			local485 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local25];
+			local485 = NpcList.npcs[local25];
 			if (local485 != null) {
 				Static291.anInt5504 = arg2;
 				Static93.anInt1951 = 2;
@@ -343,7 +343,7 @@ public final class Static259 {
 			}
 		}
 		if (local21 == 25) {
-			local485 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local25];
+			local485 = NpcList.npcs[local25];
 			if (local485 != null) {
 				Static93.anInt1951 = 2;
 				Static313.anInt5878 = 0;
@@ -371,7 +371,7 @@ public final class Static259 {
 			Static172.method3285(local18, local28, local15);
 		}
 		if (local21 == 5) {
-			local485 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local25];
+			local485 = NpcList.npcs[local25];
 			if (local485 != null) {
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
@@ -486,7 +486,7 @@ public final class Static259 {
 			}
 		}
 		if (local21 == 3) {
-			local485 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local25];
+			local485 = NpcList.npcs[local25];
 			if (local485 != null) {
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;

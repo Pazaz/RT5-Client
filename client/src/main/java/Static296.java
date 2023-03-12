@@ -5,9 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static296 {
 
-	@OriginalMember(owner = "client!ra", name = "j", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_199 = new InboundPacket(98, -2);
-
 	@OriginalMember(owner = "client!ra", name = "r", descriptor = "F")
 	public static float aFloat68 = 0.0F;
 

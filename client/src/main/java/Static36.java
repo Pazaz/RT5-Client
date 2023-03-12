@@ -9,9 +9,6 @@ public final class Static36 {
 	@OriginalMember(owner = "client!c", name = "b", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_34 = new Class145(2, 8);
 
-	@OriginalMember(owner = "client!c", name = "d", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_31 = new InboundPacket(3, 3);
-
 	@OriginalMember(owner = "client!c", name = "f", descriptor = "[B")
 	public static final byte[] aByteArray7 = new byte[2048];
 

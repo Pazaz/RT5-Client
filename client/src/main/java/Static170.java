@@ -7,9 +7,6 @@ public final class Static170 {
 	@OriginalMember(owner = "client!js", name = "O", descriptor = "I")
 	public static int anInt3229;
 
-	@OriginalMember(owner = "client!js", name = "J", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_136 = new InboundPacket(73, 6);
-
 	@OriginalMember(owner = "client!js", name = "Q", descriptor = "[B")
 	public static final byte[] aByteArray33 = new byte[] { 2, 0, 0, 2, 0, 0, 0, 4, 4 };
 
@@ -48,8 +45,8 @@ public final class Static170 {
 		for (@Pc(18) int local18 = 0; local18 < local8; local18++) {
 			@Pc(24) byte[] local24 = arg1[local18];
 			if (local24 != null) {
-				@Pc(37) int local37 = (Static291.anIntArray372[local18] >> 8) * 64 - Static164.anInt3140;
-				@Pc(48) int local48 = (Static291.anIntArray372[local18] & 0xFF) * 64 - Static148.anInt2719;
+				@Pc(37) int local37 = (Static291.mapSquares[local18] >> 8) * 64 - Static164.anInt3140;
+				@Pc(48) int local48 = (Static291.mapSquares[local18] & 0xFF) * 64 - Static148.anInt2719;
 				Static37.method1135();
 				arg0.method1109(Static171.aClass46Array1, local48, local24, local37, Static190.aClass19_8);
 			}

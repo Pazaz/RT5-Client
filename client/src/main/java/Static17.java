@@ -14,9 +14,6 @@ public final class Static17 {
 	@OriginalMember(owner = "client!at", name = "A", descriptor = "Lclient!jm;")
 	public static final Class116 aClass116_6 = new Class116(16);
 
-	@OriginalMember(owner = "client!at", name = "J", descriptor = "[I")
-	public static final int[] anIntArray291 = new int[1000];
-
 	@OriginalMember(owner = "client!at", name = "O", descriptor = "Z")
 	public static boolean aBoolean308 = true;
 
@@ -28,75 +25,6 @@ public final class Static17 {
 		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5413(7, arg0);
 		local8.method2311();
 		local8.anInt2289 = arg1;
-	}
-
-	@OriginalMember(owner = "client!at", name = "a", descriptor = "(ZZ)V")
-	public static void method4210(@OriginalArg(1) boolean arg0) {
-		while (true) {
-			if (Protocol.inboundBuffer.availableBits(Static82.packetSize) >= 15) {
-				@Pc(16) int local16 = Protocol.inboundBuffer.gBit(15);
-				if (local16 != 32767) {
-					@Pc(21) boolean local21 = false;
-					if (Static365.aClass11_Sub5_Sub2_Sub2Array1[local16] == null) {
-						Static365.aClass11_Sub5_Sub2_Sub2Array1[local16] = new Class11_Sub5_Sub2_Sub2();
-						Static365.aClass11_Sub5_Sub2_Sub2Array1[local16].anInt4619 = local16;
-						local21 = true;
-					}
-					@Pc(42) Class11_Sub5_Sub2_Sub2 local42 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local16];
-					Static211.anIntArray230[Static166.anInt3187++] = local16;
-					local42.anInt4610 = Static114.anInt2348;
-					if (local42.aClass71_1 != null && local42.aClass71_1.method2099()) {
-						Static154.method2781(local42);
-					}
-					@Pc(71) int local71;
-					if (arg0) {
-						local71 = Protocol.inboundBuffer.gBit(8);
-						if (local71 > 127) {
-							local71 -= 256;
-						}
-					} else {
-						local71 = Protocol.inboundBuffer.gBit(5);
-						if (local71 > 15) {
-							local71 -= 32;
-						}
-					}
-					@Pc(97) int local97;
-					if (arg0) {
-						local97 = Protocol.inboundBuffer.gBit(8);
-						if (local97 > 127) {
-							local97 -= 256;
-						}
-					} else {
-						local97 = Protocol.inboundBuffer.gBit(5);
-						if (local97 > 15) {
-							local97 -= 32;
-						}
-					}
-					@Pc(119) int local119 = Protocol.inboundBuffer.gBit(1);
-					if (local119 == 1) {
-						Static277.anIntArray361[Static343.anInt6390++] = local16;
-					}
-					local42.method4342(Static6.NpcTypeList.method5570(Protocol.inboundBuffer.gBit(14)));
-					@Pc(151) int local151 = Protocol.inboundBuffer.gBit(3) + 4 << 11 & 0x3929;
-					@Pc(156) int local156 = Protocol.inboundBuffer.gBit(2);
-					@Pc(161) int local161 = Protocol.inboundBuffer.gBit(1);
-					local42.method4322(local42.aClass71_1.anInt2041);
-					local42.anInt4604 = local42.aClass71_1.anInt2044 << 3;
-					if (local42.anInt4604 == 0) {
-						local42.method4330(0);
-					} else if (local21) {
-						local42.method4330(local151);
-					}
-					local42.method4339(local42.method4328(), local156, aClass11_Sub5_Sub2_Sub1_3.anIntArray316[0] + local97, local161 == 1, aClass11_Sub5_Sub2_Sub1_3.anIntArray317[0] + local71);
-					if (local42.aClass71_1.method2099()) {
-						Static211.method3724(null, local42.anIntArray317[0], 0, null, local42, local42.anIntArray316[0], local42.aByte78);
-					}
-					continue;
-				}
-			}
-			Protocol.inboundBuffer.accessBytes();
-			return;
-		}
 	}
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "([Ljava/lang/Object;B[III)V")

@@ -10,9 +10,6 @@ public final class Static78 {
 	@OriginalMember(owner = "client!ei", name = "j", descriptor = "Lclient!r;")
 	public static Class197 aClass197_89;
 
-	@OriginalMember(owner = "client!ei", name = "e", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_223 = new InboundPacket(15, 10);
-
 	@OriginalMember(owner = "client!ei", name = "g", descriptor = "[S")
 	public static final short[] aShortArray123 = new short[] { 6798, 8741, 25238, 4626, 4550 };
 
@@ -24,9 +21,6 @@ public final class Static78 {
 
 	@OriginalMember(owner = "client!ei", name = "k", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_129 = new Class79("Your friend list is full. Max of 100 for free users, and 200 for members.", "Deine Freunde-Liste ist voll! Maximale Einträge: Mitglieder 200/freie Spieler 100", "Votre liste d'amis est pleine (100 noms maximum pour la version gratuite et 200 pour les abonnés).", "Sua lista de amigos está cheia. O limite é 100 para os usuários não pagantes e 200 para os membros.");
-
-	@OriginalMember(owner = "client!ei", name = "l", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_224 = new InboundPacket(31, 8);
 
 	@OriginalMember(owner = "client!ei", name = "a", descriptor = "(BI)V")
 	public static void method5697(@OriginalArg(1) int arg0) {

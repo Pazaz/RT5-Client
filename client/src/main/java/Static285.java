@@ -36,7 +36,7 @@ public final class Static285 {
 			return;
 		}
 		arg0.anInt4320 = 150;
-		arg0.anInt4274 = (int) (Math.sin((double) Static114.anInt2348 / 40.0D) * 256.0D) & 0x7FF;
+		arg0.anInt4274 = (int) (Math.sin((double) client.cycle / 40.0D) * 256.0D) & 0x7FF;
 		arg0.anInt4313 = PlayerList.selfId;
 		arg0.anInt4288 = 5;
 		arg0.anInt4236 = Static276.method4651(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41);

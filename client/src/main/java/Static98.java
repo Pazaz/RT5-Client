@@ -16,12 +16,6 @@ public final class Static98 {
 	@OriginalMember(owner = "client!fl", name = "i", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_73 = new Class145(46, 2);
 
-	@OriginalMember(owner = "client!fl", name = "n", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_83 = new InboundPacket(49, -1);
-
-	@OriginalMember(owner = "client!fl", name = "o", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_84 = new InboundPacket(52, 9);
-
 	@OriginalMember(owner = "client!fl", name = "a", descriptor = "(II)I")
 	public static int method2104(@OriginalArg(1) int arg0) {
 		return arg0 >>> 7;

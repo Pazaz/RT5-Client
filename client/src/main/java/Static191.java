@@ -12,9 +12,9 @@ public final class Static191 {
 
 	@OriginalMember(owner = "client!ku", name = "a", descriptor = "(Lclient!mr;I)V")
 	public static void method1581(@OriginalArg(0) Class11_Sub5_Sub2 arg0) {
-		if (arg0 instanceof Class11_Sub5_Sub2_Sub2) {
-			@Pc(5) Class11_Sub5_Sub2_Sub2 local5 = (Class11_Sub5_Sub2_Sub2) arg0;
-			if (local5.aClass71_1 != null) {
+		if (arg0 instanceof Npc) {
+			@Pc(5) Npc local5 = (Npc) arg0;
+			if (local5.type != null) {
 				Static241.method4191(local5, local5.aByte78 != Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78);
 			}
 		} else if (arg0 instanceof Class11_Sub5_Sub2_Sub1) {

@@ -7,9 +7,6 @@ public final class Static94 {
 	@OriginalMember(owner = "client!ff", name = "A", descriptor = "I")
 	public static int anInt1979 = 0;
 
-	@OriginalMember(owner = "client!ff", name = "G", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_79 = new InboundPacket(53, -1);
-
 	@OriginalMember(owner = "client!ff", name = "a", descriptor = "(IBIZILclient!r;)V")
 	public static void method2042(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(5) Class197 arg2) {
 		Static341.anInt6376 = 0;

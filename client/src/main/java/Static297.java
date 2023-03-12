@@ -7,9 +7,6 @@ public final class Static297 {
 	@OriginalMember(owner = "client!rb", name = "k", descriptor = "Lclient!hu;")
 	public static final Class98 aClass98_44 = new Class98(8);
 
-	@OriginalMember(owner = "client!rb", name = "n", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_200 = new InboundPacket(66, 10);
-
 	@OriginalMember(owner = "client!rb", name = "o", descriptor = "[I")
 	public static final int[] anIntArray383 = new int[] { 2, 1, 1, 1, 2, 2, 2, 1, 3, 3, 3, 2, 0, 4, 0 };
 
@@ -37,7 +34,7 @@ public final class Static297 {
 
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "(BLclient!mr;)V")
 	public static void method5113(@OriginalArg(1) Class11_Sub5_Sub2 arg0) {
-		@Pc(16) int local16 = arg0.anInt4622 - Static114.anInt2348;
+		@Pc(16) int local16 = arg0.anInt4622 - client.cycle;
 		@Pc(27) int local27 = arg0.anInt4615 * 128 + arg0.method4328() * 64;
 		@Pc(39) int local39 = arg0.anInt4588 * 128 + arg0.method4328() * 64;
 		arg0.anInt6781 += (local27 - arg0.anInt6781) / local16;

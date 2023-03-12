@@ -107,9 +107,9 @@ public final class Static117 {
 			} else if (local436.anInt1008 != -1) {
 				local499 = Static313.ObjTypeList.method2759(local436.anInt1008).anIntArray364;
 			} else if (Static297.method5111(local436.anInt1005)) {
-				@Pc(572) Class11_Sub5_Sub2_Sub2 local572 = Static365.aClass11_Sub5_Sub2_Sub2Array1[(int) local436.aLong30];
+				@Pc(572) Npc local572 = NpcList.npcs[(int) local436.aLong30];
 				if (local572 != null) {
-					@Pc(577) Class71 local577 = local572.aClass71_1;
+					@Pc(577) Class71 local577 = local572.type;
 					if (local577.anIntArray129 != null) {
 						local577 = local577.method2093(Static214.aClass226_1);
 					}

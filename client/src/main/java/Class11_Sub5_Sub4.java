@@ -76,10 +76,10 @@ public final class Class11_Sub5_Sub4 extends Class11_Sub5 {
 		@Pc(6) Class114[] local6 = arg0.method3808();
 		@Pc(9) Class163[] local9 = arg0.method3840();
 		if ((this.aClass12_Sub5_7 == null || this.aClass12_Sub5_7.aBoolean322) && (local6 != null || local9 != null)) {
-			this.aClass12_Sub5_7 = new Class12_Sub5(Static114.anInt2348);
+			this.aClass12_Sub5_7 = new Class12_Sub5(client.cycle);
 		}
 		if (this.aClass12_Sub5_7 != null) {
-			this.aClass12_Sub5_7.method4357(arg1, (long) Static114.anInt2348, local6, local9);
+			this.aClass12_Sub5_7.method4357(arg1, (long) client.cycle, local6, local9);
 			this.aClass12_Sub5_7.method4361(super.aByte78, super.aShort103, super.aShort104, super.aShort101, super.aShort102);
 		}
 	}

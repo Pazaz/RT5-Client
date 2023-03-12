@@ -10,9 +10,6 @@ public final class Static305 {
 	@OriginalMember(owner = "client!ro", name = "n", descriptor = "I")
 	public static int anInt5743;
 
-	@OriginalMember(owner = "client!ro", name = "d", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_204 = new InboundPacket(36, 8);
-
 	@OriginalMember(owner = "client!ro", name = "m", descriptor = "I")
 	public static int anInt5742 = 0;
 

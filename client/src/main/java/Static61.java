@@ -107,11 +107,11 @@ public final class Static61 {
 
 	@OriginalMember(owner = "client!dj", name = "c", descriptor = "(B)V")
 	public static void method1673() {
-		for (@Pc(5) int local5 = 0; local5 < Static166.anInt3187; local5++) {
-			@Pc(13) int local13 = Static211.anIntArray230[local5];
-			@Pc(17) Class11_Sub5_Sub2_Sub2 local17 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local13];
+		for (@Pc(5) int local5 = 0; local5 < NpcList.size; local5++) {
+			@Pc(13) int local13 = NpcList.ids[local5];
+			@Pc(17) Npc local17 = NpcList.npcs[local13];
 			if (local17 != null) {
-				Static93.method1999(local17, local17.aClass71_1.anInt2041);
+				Static93.method1999(local17, local17.type.size);
 			}
 		}
 	}

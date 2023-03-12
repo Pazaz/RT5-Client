@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static118 {
 
-	@OriginalMember(owner = "client!gq", name = "j", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_144 = new InboundPacket(103, 0);
-
 	@OriginalMember(owner = "client!gq", name = "l", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_76 = new Class79("Connected to update server", "Verbindung zum Update-Server hergestellt.", "Connecté au serveur de mise à jour", "Conectado ao servidor de atualização");
 

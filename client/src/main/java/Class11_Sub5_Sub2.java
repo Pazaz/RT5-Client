@@ -94,7 +94,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	public int anInt4585 = -1;
 
 	@OriginalMember(owner = "client!mr", name = "mb", descriptor = "I")
-	public int anInt4610 = 0;
+	public int lastCycle = 0;
 
 	@OriginalMember(owner = "client!mr", name = "P", descriptor = "I")
 	public int anInt4590 = 0;
@@ -323,7 +323,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 	}
 
 	@OriginalMember(owner = "client!mr", name = "b", descriptor = "(ZI)V")
-	public final void method4322(@OriginalArg(1) int arg0) {
+	public final void setSize(@OriginalArg(1) int arg0) {
 		this.anInt4628 = arg0;
 	}
 
@@ -443,7 +443,7 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 					local31 = local19.method3840();
 				}
 				if ((this.aClass12_Sub5_3 == null || this.aClass12_Sub5_3.aBoolean322) && (local24 != null || local27 != null || local19 != null && (local29 != null || local31 != null))) {
-					this.aClass12_Sub5_3 = new Class12_Sub5(Static114.anInt2348);
+					this.aClass12_Sub5_3 = new Class12_Sub5(client.cycle);
 				}
 				if (this.aClass12_Sub5_3 != null) {
 					@Pc(78) Class114[] local78;
@@ -466,12 +466,12 @@ public abstract class Class11_Sub5_Sub2 extends Class11_Sub5 {
 						Static404.method4609(local27, 0, local105, 0, local27.length);
 						Static404.method4609(local31, 0, local105, local27.length, local31.length);
 					}
-					this.aClass12_Sub5_3.method4357(arg0, (long) Static114.anInt2348, local78, local105);
+					this.aClass12_Sub5_3.method4357(arg0, (long) client.cycle, local78, local105);
 				}
 				this.aBoolean321 = true;
 			}
 		} else if (this.aClass12_Sub5_3 != null) {
-			this.aClass12_Sub5_3.method4355((long) Static114.anInt2348);
+			this.aClass12_Sub5_3.method4355((long) client.cycle);
 		}
 		if (this.aClass12_Sub5_3 != null) {
 			this.aClass12_Sub5_3.method4361(super.aByte78, super.aShort103, super.aShort104, super.aShort101, super.aShort102);

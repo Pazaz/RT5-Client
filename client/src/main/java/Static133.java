@@ -7,9 +7,6 @@ public final class Static133 {
 	@OriginalMember(owner = "client!hl", name = "H", descriptor = "Lclient!hu;")
 	public static final Class98 aClass98_17 = new Class98(4);
 
-	@OriginalMember(owner = "client!hl", name = "I", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_103 = new InboundPacket(61, 4);
-
 	@OriginalMember(owner = "client!hl", name = "J", descriptor = "Lclient!se;")
 	public static final Class2_Sub33 aClass2_Sub33_1 = new Class2_Sub33(0, 0);
 
@@ -25,7 +22,7 @@ public final class Static133 {
 				Static256.method4395(arg0);
 			}
 		}
-		Static371.method6257((long) Static114.anInt2348, Static190.aClass19_8);
+		Static371.method6257((long) client.cycle, Static190.aClass19_8);
 		if (Static139.anInt2595 != -1) {
 			Static232.method4028(Static139.anInt2595);
 		}
@@ -36,7 +33,7 @@ public final class Static133 {
 			Static20.aBooleanArray6[local42] = Static357.aBooleanArray59[local42];
 			Static357.aBooleanArray59[local42] = false;
 		}
-		Static132.anInt2468 = Static114.anInt2348;
+		Static132.anInt2468 = client.cycle;
 		if (Static190.aClass19_8.method2871()) {
 			Static106.aBoolean164 = true;
 		}

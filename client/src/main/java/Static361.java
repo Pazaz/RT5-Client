@@ -13,20 +13,6 @@ public final class Static361 {
 	@OriginalMember(owner = "client!vc", name = "g", descriptor = "[[I")
 	public static final int[][] anIntArrayArray59 = new int[][] { { 0, 2, 4, 6 }, { 6, 0, 2, 3, 5, 3 }, { 6, 0, 2, 4 }, { 2, 5, 6, 1 }, { 0, 2, 6 }, { 6, 0, 2 }, { 5, 6, 0, 1, 2, 4 }, { 7, 7, 1, 2, 4, 6 }, { 2, 4, 4, 7 }, { 6, 6, 4, 0, 1, 1, 3, 3 }, { 0, 2, 2, 6, 6, 4 }, { 0, 2, 2, 3, 7, 0, 4, 3 }, { 0, 2, 4, 6 } };
 
-	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(Lclient!qg;BI)V")
-	public static void method6054(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
-		Static112.aBoolean173 = false;
-		Static325.anInt6079 = 0;
-		Static1.method5(arg0);
-		Static262.method6252(arg0);
-		if (Static112.aBoolean173) {
-			System.out.println("---endgpp---");
-		}
-		if (arg0.pos != arg1) {
-			throw new RuntimeException("gpi1 pos:" + arg0.pos + " psize:" + arg1);
-		}
-	}
-
 	@OriginalMember(owner = "client!vc", name = "a", descriptor = "(Lclient!wm;I)V")
 	public static void method6055(@OriginalArg(0) Class19 arg0) {
 		@Pc(7) int local7 = Static305.anInt5743;
@@ -52,9 +38,9 @@ public final class Static361 {
 			} else if (local88.anInt1008 != -1) {
 				local138 = Static313.ObjTypeList.method2759(local88.anInt1008).anIntArray364;
 			} else if (Static297.method5111(local88.anInt1005)) {
-				@Pc(166) Class11_Sub5_Sub2_Sub2 local166 = Static365.aClass11_Sub5_Sub2_Sub2Array1[(int) local88.aLong30];
+				@Pc(166) Npc local166 = NpcList.npcs[(int) local88.aLong30];
 				if (local166 != null) {
-					@Pc(171) Class71 local171 = local166.aClass71_1;
+					@Pc(171) Class71 local171 = local166.type;
 					if (local171.anIntArray129 != null) {
 						local171 = local171.method2093(Static214.aClass226_1);
 					}

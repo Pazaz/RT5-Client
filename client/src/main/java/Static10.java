@@ -10,9 +10,6 @@ public final class Static10 {
 	@OriginalMember(owner = "client!aj", name = "U", descriptor = "[S")
 	public static short[] aShortArray1;
 
-	@OriginalMember(owner = "client!aj", name = "R", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_12 = new InboundPacket(58, 0);
-
 	@OriginalMember(owner = "client!aj", name = "a", descriptor = "(IBI)I")
 	public static int method236(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(15) int local15 = 1;

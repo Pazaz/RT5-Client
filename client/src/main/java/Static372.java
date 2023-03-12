@@ -14,9 +14,6 @@ public final class Static372 {
 	@OriginalMember(owner = "client!vp", name = "k", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_253 = new Class145(6, 15);
 
-	@OriginalMember(owner = "client!vp", name = "m", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_245 = new InboundPacket(5, 8);
-
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(I)V")
 	public static void method6260() {
 		if (Static363.frame != null) {

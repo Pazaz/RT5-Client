@@ -11,9 +11,6 @@ public final class Static137 {
 	@OriginalMember(owner = "client!hq", name = "C", descriptor = "Lclient!r;")
 	public static Class197 aClass197_33;
 
-	@OriginalMember(owner = "client!hq", name = "x", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_106 = new InboundPacket(14, 6);
-
 	@OriginalMember(owner = "client!hq", name = "b", descriptor = "(I)V")
 	public static void method2549() {
 		if (Static86.anInt1870 > 0) {
@@ -31,7 +28,7 @@ public final class Static137 {
 		if (!Static375.aBoolean477) {
 			Static147.method2703();
 		}
-		for (@Pc(36) int local36 = 0; local36 < 100 && Static235.method3341(); local36++) {
+		for (@Pc(36) int local36 = 0; local36 < 100 && Protocol.readPacket(); local36++) {
 		}
 		if (LoginManager.reconnecting != 30) {
 			return;
@@ -231,8 +228,8 @@ public final class Static137 {
 		Static308.method5274();
 		Static111.method2274();
 		Static216.method3777();
-		Static268.anInt4955++;
-		if (Static268.anInt4955 > 750) {
+		Protocol.anInt4955++;
+		if (Protocol.anInt4955 > 750) {
 			Static211.method3725();
 			return;
 		}

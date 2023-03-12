@@ -11,9 +11,6 @@ public final class Static114 {
 	@OriginalMember(owner = "client!gm", name = "d", descriptor = "I")
 	public static int anInt2346 = -60;
 
-	@OriginalMember(owner = "client!gm", name = "f", descriptor = "I")
-	public static int anInt2348 = 0;
-
 	@OriginalMember(owner = "client!gm", name = "g", descriptor = "[Lclient!nb;")
 	public static final Class157[] aClass157Array14 = new Class157[14];
 

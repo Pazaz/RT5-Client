@@ -10,9 +10,6 @@ public final class Static231 {
 	@OriginalMember(owner = "client!nf", name = "j", descriptor = "[I")
 	public static final int[] anIntArray265 = new int[1000];
 
-	@OriginalMember(owner = "client!nf", name = "t", descriptor = "Lclient!h;")
-	public static InboundPacket packet = null;
-
 	@OriginalMember(owner = "client!nf", name = "w", descriptor = "[Lclient!bt;")
 	public static final Buffer[] aClass2_Sub4Array1 = new Buffer[2048];
 

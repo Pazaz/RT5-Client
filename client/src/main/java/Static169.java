@@ -64,7 +64,7 @@ public final class Static169 {
 			@Pc(17) Class84 local17 = local7[local9];
 			if (local17 != null && local17.anInt2355 == 2) {
 				Static121.method2394(local17.anInt2359, arg2 >> 1, local17.anInt2356 + (local17.anInt2364 - Static148.anInt2719 << 7), local17.anInt2362 * 2, arg0 >> 1, (local17.anInt2352 - Static164.anInt3140 << 7) + local17.anInt2350);
-				if (Static216.anIntArray231[0] > -1 && Static114.anInt2348 % 20 < 10) {
+				if (Static216.anIntArray231[0] > -1 && client.cycle % 20 < 10) {
 					Static230.aClass13Array16[local17.anInt2363].method6385(arg1 + Static216.anIntArray231[0] - 12, Static216.anIntArray231[1] + arg3 - 28);
 				}
 			}

@@ -14,7 +14,7 @@ public final class Static92 {
 	public static final Class92 aClass92_1 = new Class92();
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "([I[ILclient!oe;I[I)V")
-	public static void method1966(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) Class11_Sub5_Sub2_Sub2 arg2, @OriginalArg(4) int[] arg3) {
+	public static void method1966(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) Npc arg2, @OriginalArg(4) int[] arg3) {
 		for (@Pc(3) int local3 = 0; local3 < arg0.length; local3++) {
 			@Pc(9) int local9 = arg0[local3];
 			@Pc(13) int local13 = arg1[local3];
@@ -126,10 +126,10 @@ public final class Static92 {
 			}
 		}
 		@Pc(410) int local410;
-		for (local185 = 0; local185 < Static166.anInt3187; local185++) {
-			@Pc(365) Class11_Sub5_Sub2_Sub2 local365 = Static365.aClass11_Sub5_Sub2_Sub2Array1[Static211.anIntArray230[local185]];
+		for (local185 = 0; local185 < NpcList.size; local185++) {
+			@Pc(365) Npc local365 = NpcList.npcs[NpcList.ids[local185]];
 			if (local365 != null && local365.method4336() && local365.aByte78 == Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) {
-				@Pc(383) Class71 local383 = local365.aClass71_1;
+				@Pc(383) Class71 local383 = local365.type;
 				if (local383 != null && local383.anIntArray129 != null) {
 					local383 = local383.method2093(Static214.aClass226_1);
 				}
@@ -187,10 +187,10 @@ public final class Static92 {
 		@Pc(728) int local728;
 		for (local489 = 0; local489 < local636.length; local489++) {
 			@Pc(644) Class84 local644 = local636[local489];
-			if (local644 != null && local644.anInt2355 != 0 && Static114.anInt2348 % 20 < 10) {
+			if (local644 != null && local644.anInt2355 != 0 && client.cycle % 20 < 10) {
 				@Pc(699) int local699;
-				if (local644.anInt2355 == 1 && local644.anInt2354 >= 0 && local644.anInt2354 < Static365.aClass11_Sub5_Sub2_Sub2Array1.length) {
-					@Pc(677) Class11_Sub5_Sub2_Sub2 local677 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local644.anInt2354];
+				if (local644.anInt2355 == 1 && local644.anInt2354 >= 0 && local644.anInt2354 < NpcList.npcs.length) {
+					@Pc(677) Npc local677 = NpcList.npcs[local644.anInt2354];
 					if (local677 != null) {
 						local502 = local677.anInt6781 / 32 - local61 / 32;
 						local699 = local677.anInt6783 / 32 - local58 / 32;

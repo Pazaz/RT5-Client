@@ -22,9 +22,6 @@ public final class Static322 {
 	@OriginalMember(owner = "client!so", name = "m", descriptor = "[I")
 	public static int[] anIntArray404;
 
-	@OriginalMember(owner = "client!so", name = "d", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_217 = new InboundPacket(60, -2);
-
 	@OriginalMember(owner = "client!so", name = "h", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_218 = new Class145(14, 8);
 
@@ -65,29 +62,29 @@ public final class Static322 {
 		Static144.anInt2694 = 0;
 		@Pc(12) boolean local12 = true;
 		for (@Pc(14) int local14 = 0; local14 < Static106.aByteArrayArray6.length; local14++) {
-			if (Static221.anIntArray314[local14] != -1 && Static106.aByteArrayArray6[local14] == null) {
-				Static106.aByteArrayArray6[local14] = client.jsArchive5.method5089(0, Static221.anIntArray314[local14]);
+			if (Static221.mapGroupIds[local14] != -1 && Static106.aByteArrayArray6[local14] == null) {
+				Static106.aByteArrayArray6[local14] = client.jsArchive5.method5089(0, Static221.mapGroupIds[local14]);
 				if (Static106.aByteArrayArray6[local14] == null) {
 					local12 = false;
 					Static144.anInt2694++;
 				}
 			}
-			if (Static374.anIntArray480[local14] != -1 && Static82.aByteArrayArray5[local14] == null) {
-				Static82.aByteArrayArray5[local14] = client.jsArchive5.method5080(Static277.anIntArrayArray43[local14], 0, Static374.anIntArray480[local14]);
+			if (Static374.locGroupIds[local14] != -1 && Static82.aByteArrayArray5[local14] == null) {
+				Static82.aByteArrayArray5[local14] = client.jsArchive5.method5080(Static277.anIntArrayArray43[local14], 0, Static374.locGroupIds[local14]);
 				if (Static82.aByteArrayArray5[local14] == null) {
 					local12 = false;
 					Static144.anInt2694++;
 				}
 			}
-			if (Static51.anIntArray98[local14] != -1 && Static232.aByteArrayArray9[local14] == null) {
-				Static232.aByteArrayArray9[local14] = client.jsArchive5.method5089(0, Static51.anIntArray98[local14]);
+			if (Static51.underwaterMapGroupIds[local14] != -1 && Static232.aByteArrayArray9[local14] == null) {
+				Static232.aByteArrayArray9[local14] = client.jsArchive5.method5089(0, Static51.underwaterMapGroupIds[local14]);
 				if (Static232.aByteArrayArray9[local14] == null) {
 					local12 = false;
 					Static144.anInt2694++;
 				}
 			}
-			if (Static62.anIntArray155[local14] != -1 && Static270.aByteArrayArray15[local14] == null) {
-				Static270.aByteArrayArray15[local14] = client.jsArchive5.method5089(0, Static62.anIntArray155[local14]);
+			if (Static62.underwaterLocGroupIds[local14] != -1 && Static270.aByteArrayArray15[local14] == null) {
+				Static270.aByteArrayArray15[local14] = client.jsArchive5.method5089(0, Static62.underwaterLocGroupIds[local14]);
 				if (Static270.aByteArrayArray15[local14] == null) {
 					Static144.anInt2694++;
 					local12 = false;
@@ -122,8 +119,8 @@ public final class Static322 {
 		for (@Pc(249) int local249 = 0; local249 < Static106.aByteArrayArray6.length; local249++) {
 			@Pc(255) byte[] local255 = Static82.aByteArrayArray5[local249];
 			if (local255 != null) {
-				local268 = (Static291.anIntArray372[local249] >> 8) * 64 - Static164.anInt3140;
-				local279 = (Static291.anIntArray372[local249] & 0xFF) * 64 - Static148.anInt2719;
+				local268 = (Static291.mapSquares[local249] >> 8) * 64 - Static164.anInt3140;
+				local279 = (Static291.mapSquares[local249] & 0xFF) * 64 - Static148.anInt2719;
 				if (Static220.aBoolean252) {
 					local268 = 10;
 					local279 = 10;
@@ -132,8 +129,8 @@ public final class Static322 {
 			}
 			local255 = Static270.aByteArrayArray15[local249];
 			if (local255 != null) {
-				local268 = (Static291.anIntArray372[local249] >> 8) * 64 - Static164.anInt3140;
-				local279 = (Static291.anIntArray372[local249] & 0xFF) * 64 - Static148.anInt2719;
+				local268 = (Static291.mapSquares[local249] >> 8) * 64 - Static164.anInt3140;
+				local279 = (Static291.mapSquares[local249] & 0xFF) * 64 - Static148.anInt2719;
 				if (Static220.aBoolean252) {
 					local279 = 10;
 					local268 = 10;

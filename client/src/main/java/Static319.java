@@ -37,9 +37,6 @@ public final class Static319 {
 	@OriginalMember(owner = "client!sk", name = "u", descriptor = "[I")
 	public static final int[] anIntArray403 = new int[13];
 
-	@OriginalMember(owner = "client!sk", name = "v", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_211 = new InboundPacket(32, -2);
-
 	@OriginalMember(owner = "client!sk", name = "a", descriptor = "(II)I")
 	public static int method5431(@OriginalArg(1) int arg0) {
 		return arg0 >>> 10;

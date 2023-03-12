@@ -19,9 +19,6 @@ public final class Static97 {
 	@OriginalMember(owner = "client!fk", name = "v", descriptor = "Z")
 	public static final boolean aBoolean144 = false;
 
-	@OriginalMember(owner = "client!fk", name = "P", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_82 = new InboundPacket(9, 8);
-
 	@OriginalMember(owner = "client!fk", name = "lb", descriptor = "I")
 	public static int anInt2040 = -50;
 

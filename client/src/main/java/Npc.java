@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!oe")
-public final class Class11_Sub5_Sub2_Sub2 extends Class11_Sub5_Sub2 {
+public final class Npc extends Class11_Sub5_Sub2 {
 
 	@OriginalMember(owner = "client!oe", name = "tc", descriptor = "Lclient!fk;")
-	public Class71 aClass71_1;
+	public Class71 type;
 
 	@OriginalMember(owner = "client!oe", name = "Ac", descriptor = "I")
 	public int anInt4657 = -1;
@@ -26,7 +26,7 @@ public final class Class11_Sub5_Sub2_Sub2 extends Class11_Sub5_Sub2 {
 		if (local48 != 0 || local51 != 0 || local11.anInt6281 != 0 || local11.anInt6283 != 0) {
 			arg0 |= 0x7;
 		}
-		@Pc(102) Class31 local102 = super.aClass31Array3[0] = this.aClass71_1.method2086(Static59.aClass7_1, super.anInt4607, local27, arg1, Static39.aClass85_1, super.anInt4629, super.anInt4626, super.anInt4593, local45, arg0, super.aClass20Array3, super.anInt4624, Static214.aClass226_1, super.anInt4592);
+		@Pc(102) Class31 local102 = super.aClass31Array3[0] = this.type.method2086(Static59.aClass7_1, super.anInt4607, local27, arg1, Static39.aClass85_1, super.anInt4629, super.anInt4626, super.anInt4593, local45, arg0, super.aClass20Array3, super.anInt4624, Static214.aClass226_1, super.anInt4592);
 		if (local102 == null) {
 			return false;
 		}
@@ -72,9 +72,9 @@ public final class Class11_Sub5_Sub2_Sub2 extends Class11_Sub5_Sub2 {
 		}
 		super.aClass31Array3[2] = null;
 		if (super.aClass2_Sub6_3 != null) {
-			if (super.aClass2_Sub6_3.anInt1118 <= Static114.anInt2348) {
+			if (super.aClass2_Sub6_3.anInt1118 <= client.cycle) {
 				super.aClass2_Sub6_3 = null;
-			} else if (Static114.anInt2348 >= super.aClass2_Sub6_3.anInt1100) {
+			} else if (client.cycle >= super.aClass2_Sub6_3.anInt1100) {
 				@Pc(331) Class31 local331 = super.aClass2_Sub6_3.method1360(arg1, local7 | 0x7);
 				if (local331 != null) {
 					local331.method3813(-super.anInt6781 + super.aClass2_Sub6_3.anInt1104, super.aClass2_Sub6_3.anInt1114 + -super.anInt6782, -super.anInt6783 + super.aClass2_Sub6_3.anInt1101);
@@ -96,7 +96,7 @@ public final class Class11_Sub5_Sub2_Sub2 extends Class11_Sub5_Sub2 {
 
 	@OriginalMember(owner = "client!oe", name = "d", descriptor = "(I)Z")
 	public boolean method4336() {
-		return this.aClass71_1 != null;
+		return this.type != null;
 	}
 
 	@OriginalMember(owner = "client!oe", name = "g", descriptor = "(I)Z")
@@ -114,17 +114,17 @@ public final class Class11_Sub5_Sub2_Sub2 extends Class11_Sub5_Sub2 {
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(Z)I")
 	@Override
 	public int method4324() {
-		if (this.aClass71_1.anIntArray129 != null) {
-			@Pc(18) Class71 local18 = this.aClass71_1.method2093(Static214.aClass226_1);
+		if (this.type.anIntArray129 != null) {
+			@Pc(18) Class71 local18 = this.type.method2093(Static214.aClass226_1);
 			if (local18 != null && local18.anInt2031 != -1) {
 				return local18.anInt2031;
 			}
 		}
-		return this.aClass71_1.anInt2031;
+		return this.type.anInt2031;
 	}
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IZI)V")
-	public void method4338(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+	public void move(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(10) int local10 = super.anIntArray316[0];
 		@Pc(15) int local15 = super.anIntArray317[0];
 		if (arg1 == 0) {
@@ -180,7 +180,7 @@ public final class Class11_Sub5_Sub2_Sub2 extends Class11_Sub5_Sub2 {
 	@OriginalMember(owner = "client!oe", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
 	public Class12_Sub4 method6073(@OriginalArg(0) Class19 arg0) {
-		if (this.aClass71_1 == null || !this.method4335(1024, arg0)) {
+		if (this.type == null || !this.method4335(1024, arg0)) {
 			return null;
 		}
 		@Pc(17) Class14 local17 = arg0.method2808();
@@ -188,11 +188,11 @@ public final class Class11_Sub5_Sub2_Sub2 extends Class11_Sub5_Sub2 {
 		local17.method3925(local22);
 		local17.method3936(super.anInt6781, super.anInt6782, super.anInt6783);
 		@Pc(37) Class222 local37 = this.method4332();
-		@Pc(50) Class71 local50 = this.aClass71_1.anIntArray129 == null ? this.aClass71_1 : this.aClass71_1.method2093(Static214.aClass226_1);
+		@Pc(50) Class71 local50 = this.type.anIntArray129 == null ? this.type : this.type.method2093(Static214.aClass226_1);
 		if (client.preferences.aBoolean358 && local50.aBoolean142 && local37.aBoolean424) {
 			@Pc(75) Class157 local75 = super.anInt4597 != -1 && super.anInt4590 == 0 ? Static39.aClass85_1.method2371(super.anInt4597) : null;
 			@Pc(92) Class157 local92 = super.anInt4585 == -1 || super.aBoolean317 && local75 != null ? null : Static39.aClass85_1.method2371(super.anInt4585);
-			@Pc(144) Class31 local144 = Static178.method2340(local92 == null ? super.anInt4607 : super.anInt4626, this.aClass71_1.aByte15 & 0xFF, this.aClass71_1.aByte14 & 0xFF, super.anInt4596, local92 == null ? local75 : local92, this.aClass71_1.anInt2041, this.aClass71_1.aShort25 & 0xFFFF, super.aClass31Array3[0], local22, arg0, this.aClass71_1.aShort24 & 0xFFFF, super.aBoolean318, super.anInt4608, super.anInt4589);
+			@Pc(144) Class31 local144 = Static178.method2340(local92 == null ? super.anInt4607 : super.anInt4626, this.type.aByte15 & 0xFF, this.type.aByte14 & 0xFF, super.anInt4596, local92 == null ? local75 : local92, this.type.size, this.type.aShort25 & 0xFFFF, super.aClass31Array3[0], local22, arg0, this.type.aShort24 & 0xFFFF, super.aBoolean318, super.anInt4608, super.anInt4589);
 			if (local144 != null) {
 				@Pc(149) float local149 = arg0.method2802();
 				@Pc(152) float local152 = arg0.method2860();
@@ -225,7 +225,7 @@ public final class Class11_Sub5_Sub2_Sub2 extends Class11_Sub5_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IIIIZI)V")
-	public void method4339(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4) {
+	public void teleport(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4) {
 		super.aByte78 = (byte) arg1;
 		if (super.anInt4597 != -1 && Static39.aClass85_1.method2371(super.anInt4597).anInt4029 == 1) {
 			super.anInt4597 = -1;
@@ -275,7 +275,7 @@ public final class Class11_Sub5_Sub2_Sub2 extends Class11_Sub5_Sub2 {
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
 	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class19 arg2) {
-		if (this.aClass71_1 == null || !this.method4335(65536, arg2)) {
+		if (this.type == null || !this.method4335(65536, arg2)) {
 			return false;
 		}
 		@Pc(19) Class14 local19 = arg2.method2808();
@@ -283,7 +283,7 @@ public final class Class11_Sub5_Sub2_Sub2 extends Class11_Sub5_Sub2 {
 		local19.method3925(local24);
 		local19.method3936(super.anInt6781, super.anInt6782, super.anInt6783);
 		for (@Pc(43) int local43 = 0; super.aClass31Array3.length > local43; local43++) {
-			if (super.aClass31Array3[local43] != null && super.aClass31Array3[local43].method3820(arg0, arg1, local19, this.aClass71_1.anInt2041 == 1)) {
+			if (super.aClass31Array3[local43] != null && super.aClass31Array3[local43].method3820(arg0, arg1, local19, this.type.size == 1)) {
 				return true;
 			}
 		}
@@ -293,43 +293,43 @@ public final class Class11_Sub5_Sub2_Sub2 extends Class11_Sub5_Sub2 {
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(I)I")
 	@Override
 	public int method4323() {
-		if (this.aClass71_1.anIntArray129 != null) {
-			@Pc(21) Class71 local21 = this.aClass71_1.method2093(Static214.aClass226_1);
+		if (this.type.anIntArray129 != null) {
+			@Pc(21) Class71 local21 = this.type.method2093(Static214.aClass226_1);
 			if (local21 != null && local21.anInt2010 != -1) {
 				return local21.anInt2010;
 			}
 		}
-		return this.aClass71_1.anInt2010 == -1 ? super.method4323() : this.aClass71_1.anInt2010;
+		return this.type.anInt2010 == -1 ? super.method4323() : this.type.anInt2010;
 	}
 
 	@OriginalMember(owner = "client!oe", name = "j", descriptor = "(I)Z")
 	private boolean method4340() {
-		return this.aClass71_1.aBoolean145;
+		return this.type.aBoolean145;
 	}
 
 	@OriginalMember(owner = "client!oe", name = "e", descriptor = "(B)I")
 	@Override
 	protected int method4329() {
-		if (this.aClass71_1.anIntArray129 != null) {
-			@Pc(19) Class71 local19 = this.aClass71_1.method2093(Static214.aClass226_1);
+		if (this.type.anIntArray129 != null) {
+			@Pc(19) Class71 local19 = this.type.method2093(Static214.aClass226_1);
 			if (local19 != null && local19.anInt2032 != -1) {
 				return local19.anInt2032;
 			}
 		}
-		return this.aClass71_1.anInt2032;
+		return this.type.anInt2032;
 	}
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
 	public void method6070(@OriginalArg(0) Class19 arg0) {
-		if (this.aClass71_1 != null && (super.aBoolean321 || this.method4335(0, arg0))) {
+		if (this.type != null && (super.aBoolean321 || this.method4335(0, arg0))) {
 			this.method4333(arg0, super.aClass31Array3, super.aBoolean321);
 		}
 	}
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(Lclient!fk;I)V")
-	public void method4342(@OriginalArg(0) Class71 arg0) {
-		this.aClass71_1 = arg0;
+	public void setType(@OriginalArg(0) Class71 arg0) {
+		this.type = arg0;
 		if (super.aClass12_Sub5_3 != null) {
 			super.aClass12_Sub5_3.method4359();
 		}

@@ -150,7 +150,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		@Pc(29) boolean local29 = (local12 & 0x2) != 0;
 		@Pc(37) boolean local37 = (local12 & 0x4) != 0;
 		@Pc(41) int local41 = super.method4328();
-		this.method4322((local12 >> 3 & 0x7) + 1);
+		this.setSize((local12 >> 3 & 0x7) + 1);
 		this.aByte40 = (byte) (local12 >> 6 & 0x3);
 		super.anInt6781 += (this.method4328() - local41) * 64;
 		super.anInt6783 += (this.method4328() - local41) * 64;
@@ -343,9 +343,9 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 		}
 		super.aClass31Array3[2] = null;
 		if (!this.aBoolean275 && super.aClass2_Sub6_3 != null) {
-			if (Static114.anInt2348 >= super.aClass2_Sub6_3.anInt1118) {
+			if (client.cycle >= super.aClass2_Sub6_3.anInt1118) {
 				super.aClass2_Sub6_3 = null;
-			} else if (Static114.anInt2348 >= super.aClass2_Sub6_3.anInt1100) {
+			} else if (client.cycle >= super.aClass2_Sub6_3.anInt1100) {
 				@Pc(410) Class31 local410 = super.aClass2_Sub6_3.method1360(arg0, local7 | 0x7);
 				if (local410 != null) {
 					local410.method3813(super.aClass2_Sub6_3.anInt1104 - super.anInt6781, super.aClass2_Sub6_3.anInt1114 + -super.anInt6782, super.aClass2_Sub6_3.anInt1101 - super.anInt6783);
@@ -423,8 +423,8 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 				if (local189 != null && local189.anInt2361 != -1) {
 					@Pc(239) int local239;
 					@Pc(228) int local228;
-					if (local189.anInt2355 == 1 && local189.anInt2354 >= 0 && local189.anInt2354 < Static365.aClass11_Sub5_Sub2_Sub2Array1.length) {
-						@Pc(215) Class11_Sub5_Sub2_Sub2 local215 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local189.anInt2354];
+					if (local189.anInt2355 == 1 && local189.anInt2354 >= 0 && local189.anInt2354 < NpcList.npcs.length) {
+						@Pc(215) Npc local215 = NpcList.npcs[local189.anInt2354];
 						if (local215 != null) {
 							local228 = local215.anInt6781 / 32 - Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6781 / 32;
 							local239 = local215.anInt6783 / 32 - Static17.aClass11_Sub5_Sub2_Sub1_3.anInt6783 / 32;
@@ -491,7 +491,7 @@ public final class Class11_Sub5_Sub2_Sub1 extends Class11_Sub5_Sub2 {
 	@OriginalMember(owner = "client!nh", name = "b", descriptor = "(Z)I")
 	@Override
 	public int method4328() {
-		return this.aClass117_1 == null || this.aClass117_1.anInt3185 == -1 ? super.method4328() : Static6.NpcTypeList.method5570(this.aClass117_1.anInt3185).anInt2041;
+		return this.aClass117_1 == null || this.aClass117_1.anInt3185 == -1 ? super.method4328() : Static6.NpcTypeList.method5570(this.aClass117_1.anInt3185).size;
 	}
 
 	@OriginalMember(owner = "client!nh", name = "d", descriptor = "(ZI)Ljava/lang/String;")

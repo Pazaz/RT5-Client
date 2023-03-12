@@ -10,20 +10,11 @@ public final class Static82 {
 	@OriginalMember(owner = "client!em", name = "c", descriptor = "[[I")
 	public static int[][] anIntArrayArray16;
 
-	@OriginalMember(owner = "client!em", name = "a", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_66 = new InboundPacket(56, -1);
-
-	@OriginalMember(owner = "client!em", name = "f", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_67 = new InboundPacket(35, -2);
-
 	@OriginalMember(owner = "client!em", name = "g", descriptor = "I")
 	public static int anInt1835 = 0;
 
 	@OriginalMember(owner = "client!em", name = "h", descriptor = "Lclient!mc;")
 	public static final Class145 aClass145_64 = new Class145(25, 2);
-
-	@OriginalMember(owner = "client!em", name = "i", descriptor = "I")
-	public static int packetSize = 0;
 
 	@OriginalMember(owner = "client!em", name = "j", descriptor = "[I")
 	public static final int[] anIntArray120 = new int[13];

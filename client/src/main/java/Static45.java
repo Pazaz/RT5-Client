@@ -42,7 +42,7 @@ public final class Static45 {
 						if (!local29.aBoolean320) {
 							local75++;
 						}
-						if (local29.anInt4606 > Static114.anInt2348) {
+						if (local29.anInt4606 > client.cycle) {
 							local75 += 2;
 						}
 						local75 += 5 - local29.method4328() << 2;
@@ -61,35 +61,35 @@ public final class Static45 {
 				local29.anInt4638 = -1;
 			}
 		}
-		for (@Pc(111) int local111 = 0; local111 < Static166.anInt3187; local111++) {
-			@Pc(118) Class11_Sub5_Sub2_Sub2 local118 = Static365.aClass11_Sub5_Sub2_Sub2Array1[Static211.anIntArray230[local111]];
-			if (local118.method4336() && local118.aClass71_1.method2091(Static214.aClass226_1)) {
+		for (@Pc(111) int local111 = 0; local111 < NpcList.size; local111++) {
+			@Pc(118) Npc local118 = NpcList.npcs[NpcList.ids[local111]];
+			if (local118.method4336() && local118.type.method2091(Static214.aClass226_1)) {
 				local118.method6078();
 				if (local118.aShort103 >= 0 && local118.aShort101 >= 0 && local118.aShort104 < Static373.anInt7033 && local118.aShort102 < Static242.anInt4449) {
 					@Pc(155) int local155 = 0;
 					if (!local118.aBoolean320) {
 						local155++;
 					}
-					if (local118.anInt4606 > Static114.anInt2348) {
+					if (local118.anInt4606 > client.cycle) {
 						local155 += 2;
 					}
 					local155 += 5 - local118.method4328() << 2;
 					if (Static114.anInt2344 == 0) {
-						if (local118.aClass71_1.aBoolean148) {
+						if (local118.type.aBoolean148) {
 							local155 += 64;
 						} else {
 							local155 += 128;
 						}
 					} else if (Static114.anInt2344 == 1) {
-						if (local118.aClass71_1.aBoolean148) {
+						if (local118.type.aBoolean148) {
 							local155 += 32;
 						} else {
 							local155 += 64;
 						}
 					}
-					if (local118.aClass71_1.aBoolean149) {
+					if (local118.type.aBoolean149) {
 						local155 += 1024;
-					} else if (!local118.aClass71_1.aBoolean146) {
+					} else if (!local118.type.aBoolean146) {
 						local155 += 256;
 					}
 					local118.anInt4638 = local155 + 1;
@@ -104,7 +104,7 @@ public final class Static45 {
 			@Pc(221) Class84 local221 = Static50.aClass84Array1[local75];
 			if (local221 != null) {
 				if (local221.anInt2355 == 1) {
-					@Pc(232) Class11_Sub5_Sub2_Sub2 local232 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local221.anInt2354];
+					@Pc(232) Npc local232 = NpcList.npcs[local221.anInt2354];
 					if (local232 != null && local232.anInt4638 >= 0) {
 						local232.anInt4638 += 2048;
 					}
@@ -194,7 +194,7 @@ public final class Static45 {
 							if (local6.aByteArray49 != null) {
 								for (local278 = 0; local278 < local6.aByteArray49.length; local278++) {
 									if (Static174.aClass123_2.method3343(local6.aByteArray49[local278])) {
-										if (local6.anIntArray275 == null || Static114.anInt2348 >= local6.anIntArray275[local278]) {
+										if (local6.anIntArray275 == null || client.cycle >= local6.anIntArray275[local278]) {
 											@Pc(310) byte local310 = local6.aByteArray50[local278];
 											if (local310 == 0 || ((local310 & 0x8) == 0 || !Static174.aClass123_2.method3343(86) && !Static174.aClass123_2.method3343(82) && !Static174.aClass123_2.method3343(81)) && ((local310 & 0x2) == 0 || Static174.aClass123_2.method3343(86)) && ((local310 & 0x1) == 0 || Static174.aClass123_2.method3343(82)) && ((local310 & 0x4) == 0 || Static174.aClass123_2.method3343(81))) {
 												Static277.method4681(local6.anInt4317, local278 + 1, "", -1);
@@ -205,7 +205,7 @@ public final class Static45 {
 												if (local374 == 0) {
 													local6.anIntArray275[local278] = Integer.MAX_VALUE;
 												} else {
-													local6.anIntArray275[local278] = Static114.anInt2348 + local374;
+													local6.anIntArray275[local278] = client.cycle + local374;
 												}
 											}
 										}
@@ -780,8 +780,8 @@ public final class Static45 {
 	@OriginalMember(owner = "client!client", name = "c", descriptor = "()V")
 	public static void method1407() {
 		Static51.anInt1369 = 0;
-		for (@Pc(3) int local3 = 0; local3 < Static166.anInt3187; local3++) {
-			@Pc(10) Class11_Sub5_Sub2_Sub2 local10 = Static365.aClass11_Sub5_Sub2_Sub2Array1[Static211.anIntArray230[local3]];
+		for (@Pc(3) int local3 = 0; local3 < NpcList.size; local3++) {
+			@Pc(10) Npc local10 = NpcList.npcs[NpcList.ids[local3]];
 			if (local10.aBoolean320 && local10.method4324() != -1) {
 				@Pc(28) int local28 = (local10.method4328() - 1) * 64 + 60;
 				@Pc(35) int local35 = local10.anInt6781 - local28 >> 7;
@@ -789,7 +789,7 @@ public final class Static45 {
 				@Pc(49) Class11_Sub5_Sub2 local49 = Static228.method3997(local10.aByte78, local35, local42);
 				if (local49 != null) {
 					@Pc(54) int local54 = local49.anInt4619;
-					if (local49 instanceof Class11_Sub5_Sub2_Sub2) {
+					if (local49 instanceof Npc) {
 						local54 += 2048;
 					}
 					if (local49.anInt4625 == 0 && local49.method4324() != -1) {
@@ -812,12 +812,12 @@ public final class Static45 {
 	public static void method1408(@OriginalArg(0) int arg0) {
 		@Pc(1) int local1 = Static31.anInt751;
 		@Pc(3) int[] local3 = Static85.anIntArray121;
-		for (@Pc(5) int local5 = 0; local5 < local1 + Static166.anInt3187; local5++) {
+		for (@Pc(5) int local5 = 0; local5 < local1 + NpcList.size; local5++) {
 			@Pc(15) Class11_Sub5_Sub2 local15;
 			if (local5 < local1) {
 				local15 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local5]];
 			} else {
-				local15 = Static365.aClass11_Sub5_Sub2_Sub2Array1[Static211.anIntArray230[local5 - local1]];
+				local15 = NpcList.npcs[NpcList.ids[local5 - local1]];
 			}
 			if (local15.aByte78 == arg0 && local15.anInt4638 >= 0) {
 				@Pc(35) int local35 = local15.method4328();
@@ -865,13 +865,13 @@ public final class Static45 {
 	public static void method1409(@OriginalArg(0) int arg0) {
 		@Pc(1) int local1 = Static31.anInt751;
 		@Pc(3) int[] local3 = Static85.anIntArray121;
-		@Pc(11) int local11 = Static47.aBoolean102 ? local1 : local1 + Static166.anInt3187;
+		@Pc(11) int local11 = Static47.aBoolean102 ? local1 : local1 + NpcList.size;
 		for (@Pc(13) int local13 = 0; local13 < local11; local13++) {
 			@Pc(23) Class11_Sub5_Sub2 local23;
 			if (local13 < local1) {
 				local23 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local13]];
 			} else {
-				local23 = Static365.aClass11_Sub5_Sub2_Sub2Array1[Static211.anIntArray230[local13 - local1]];
+				local23 = NpcList.npcs[NpcList.ids[local13 - local1]];
 			}
 			if (local23.aByte78 == arg0) {
 				local23.anInt4625 = 0;
@@ -921,7 +921,7 @@ public final class Static45 {
 							continue;
 						}
 					}
-					if (local23 instanceof Class11_Sub5_Sub2_Sub1 && local23.aClass2_Sub6_3 != null && Static114.anInt2348 >= local23.aClass2_Sub6_3.anInt1100 && Static114.anInt2348 < local23.aClass2_Sub6_3.anInt1118) {
+					if (local23 instanceof Class11_Sub5_Sub2_Sub1 && local23.aClass2_Sub6_3 != null && client.cycle >= local23.aClass2_Sub6_3.anInt1100 && client.cycle < local23.aClass2_Sub6_3.anInt1118) {
 						((Class11_Sub5_Sub2_Sub1) local23).aBoolean275 = false;
 					}
 					local23.aBoolean320 = false;
@@ -936,13 +936,13 @@ public final class Static45 {
 	public static void method1410() {
 		@Pc(1) int local1 = Static31.anInt751;
 		@Pc(3) int[] local3 = Static85.anIntArray121;
-		@Pc(11) int local11 = Static47.aBoolean102 ? local1 : local1 + Static166.anInt3187;
+		@Pc(11) int local11 = Static47.aBoolean102 ? local1 : local1 + NpcList.size;
 		for (@Pc(13) int local13 = 0; local13 < local11; local13++) {
 			@Pc(23) Class11_Sub5_Sub2 local23;
 			if (local13 < local1) {
 				local23 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local13]];
 			} else {
-				local23 = Static365.aClass11_Sub5_Sub2_Sub2Array1[Static211.anIntArray230[local13 - local1]];
+				local23 = NpcList.npcs[NpcList.ids[local13 - local1]];
 			}
 			if (local23.anInt4638 >= 0) {
 				@Pc(39) int local39 = local23.method4328();
@@ -953,7 +953,7 @@ public final class Static45 {
 				} else if ((local23.anInt6781 & 0x7F) == 64 && (local23.anInt6783 & 0x7F) == 64) {
 					continue;
 				}
-				if (local23 instanceof Class11_Sub5_Sub2_Sub1 && local23.aClass2_Sub6_3 != null && Static114.anInt2348 >= local23.aClass2_Sub6_3.anInt1100 && Static114.anInt2348 < local23.aClass2_Sub6_3.anInt1118) {
+				if (local23 instanceof Class11_Sub5_Sub2_Sub1 && local23.aClass2_Sub6_3 != null && client.cycle >= local23.aClass2_Sub6_3.anInt1100 && client.cycle < local23.aClass2_Sub6_3.anInt1118) {
 					((Class11_Sub5_Sub2_Sub1) local23).aBoolean275 = false;
 				}
 				local23.anInt6782 = Static386.method6032(local23.anInt6781, local23.anInt6783, local23.aByte78);

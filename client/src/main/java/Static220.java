@@ -7,9 +7,6 @@ public final class Static220 {
 	@OriginalMember(owner = "client!mq", name = "n", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_83 = new Class79("Take", "Nehmen", "Prendre", "Pegar");
 
-	@OriginalMember(owner = "client!mq", name = "o", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_158 = new InboundPacket(55, -1);
-
 	@OriginalMember(owner = "client!mq", name = "p", descriptor = "Lclient!ad;")
 	public static final Class4 aClass4_83 = new Class4(8);
 

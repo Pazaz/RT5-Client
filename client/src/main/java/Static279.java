@@ -45,7 +45,7 @@ public final class Static279 {
 		arg0.method2890(0, GameShell.canvasWidth, 350 - Static284.anInt5359, -1);
 		Static52.aClass130_1.method5897(10, -16777216, 350 - Static113.aClass239_2.anInt6846 - 1, -1, "--> " + Static25.aString9);
 		local43 = -1;
-		if (Static114.anInt2348 % 30 > 15) {
+		if (client.cycle % 30 > 15) {
 			local43 = 16777215;
 		}
 		arg0.method2810(local43, Static113.aClass239_2.method6126("--> " + Static25.aString9.substring(0, Static357.anInt6683)) + 10, -Static113.aClass239_2.anInt6846 + -11 + 350, 12);

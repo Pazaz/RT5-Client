@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static301 {
 
-	@OriginalMember(owner = "client!ri", name = "R", descriptor = "I")
-	public static int anInt5697;
-
 	@OriginalMember(owner = "client!ri", name = "X", descriptor = "[[I")
 	public static int[][] anIntArrayArray50;
 
@@ -25,14 +22,14 @@ public final class Static301 {
 	public static void method5188() {
 		for (@Pc(14) Class2_Sub2_Sub9 local14 = (Class2_Sub2_Sub9) Static332.aClass135_38.method3551(); local14 != null; local14 = (Class2_Sub2_Sub9) Static332.aClass135_38.method3552()) {
 			@Pc(19) Class11_Sub5_Sub3 local19 = local14.aClass11_Sub5_Sub3_1;
-			if (local19.aByte78 != Static355.anInt6585 || local19.anInt4722 < Static114.anInt2348) {
+			if (local19.aByte78 != Static355.anInt6585 || local19.anInt4722 < client.cycle) {
 				local14.method6468();
 				local19.method4391();
-			} else if (Static114.anInt2348 >= local19.anInt4725) {
+			} else if (client.cycle >= local19.anInt4725) {
 				if (local19.anInt4714 > 0) {
-					@Pc(56) Class11_Sub5_Sub2_Sub2 local56 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local19.anInt4714 - 1];
+					@Pc(56) Npc local56 = NpcList.npcs[local19.anInt4714 - 1];
 					if (local56 != null && local56.anInt6781 >= 0 && local56.anInt6781 < Static373.anInt7033 * 128 && local56.anInt6783 >= 0 && Static242.anInt4449 * 128 > local56.anInt6783) {
-						local19.method4397(Static386.method6032(local56.anInt6781, local56.anInt6783, local19.aByte78) - local19.anInt4736, local56.anInt6781, Static114.anInt2348, local56.anInt6783);
+						local19.method4397(Static386.method6032(local56.anInt6781, local56.anInt6783, local19.aByte78) - local19.anInt4736, local56.anInt6781, client.cycle, local56.anInt6783);
 					}
 				}
 				if (local19.anInt4714 < 0) {
@@ -44,7 +41,7 @@ public final class Static301 {
 						local120 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local111];
 					}
 					if (local120 != null && local120.anInt6781 >= 0 && local120.anInt6781 < Static373.anInt7033 * 128 && local120.anInt6783 >= 0 && local120.anInt6783 < Static242.anInt4449 * 128) {
-						local19.method4397(Static386.method6032(local120.anInt6781, local120.anInt6783, local19.aByte78) - local19.anInt4736, local120.anInt6781, Static114.anInt2348, local120.anInt6783);
+						local19.method4397(Static386.method6032(local120.anInt6781, local120.anInt6783, local19.aByte78) - local19.anInt4736, local120.anInt6781, client.cycle, local120.anInt6783);
 					}
 				}
 				local19.method4392(Static165.anInt3148);

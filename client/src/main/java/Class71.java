@@ -157,7 +157,7 @@ public final class Class71 {
 	public int anInt2035 = -1;
 
 	@OriginalMember(owner = "client!fk", name = "mb", descriptor = "I")
-	public int anInt2041 = 1;
+	public int size = 1;
 
 	@OriginalMember(owner = "client!fk", name = "vb", descriptor = "Z")
 	public boolean aBoolean149 = false;
@@ -628,7 +628,7 @@ public final class Class71 {
 		} else if (arg1 == 2) {
 			this.aString19 = arg0.gjstr();
 		} else if (arg1 == 12) {
-			this.anInt2041 = arg0.g1();
+			this.size = arg0.g1();
 		} else if (arg1 >= 30 && arg1 < 35) {
 			this.aStringArray14[arg1 - 30] = arg0.gjstr();
 		} else if (arg1 == 40) {
@@ -833,7 +833,7 @@ public final class Class71 {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(I)Z")
-	public boolean method2099() {
+	public boolean hasAreaSound() {
 		if (this.anIntArray129 == null) {
 			return this.anInt2038 != -1 || this.anInt2015 != -1 || this.anInt2025 != -1;
 		}

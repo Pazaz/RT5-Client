@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static291 {
 
 	@OriginalMember(owner = "client!qq", name = "a", descriptor = "[I")
-	public static int[] anIntArray372;
+	public static int[] mapSquares;
 
 	@OriginalMember(owner = "client!qq", name = "c", descriptor = "[Ljava/awt/Color;")
 	public static final Color[] aColorArray4 = new Color[] { new Color(9179409), new Color(16777215) };

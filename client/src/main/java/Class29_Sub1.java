@@ -545,7 +545,7 @@ public final class Class29_Sub1 extends Class29 {
 		@Pc(174) int local174 = (local51 << 6) + (arg2 << 7);
 		@Pc(186) boolean local186 = Static263.aBoolean330 && !super.aBoolean73 && local30.aBoolean116;
 		if (local30.method1522()) {
-			Static211.method3724(local30, arg2, arg0, null, null, arg1, arg5);
+			AreaSoundManager.add(local30, arg2, arg0, null, null, arg1, arg5);
 		}
 		@Pc(220) boolean local220 = arg9 == -1 && local30.anInt1326 == -1 && local30.anIntArray95 == null && local30.anIntArray94 == null && !local30.aBoolean107;
 		if (Static160.aBoolean206 && local30.anInt1321 != 1) {

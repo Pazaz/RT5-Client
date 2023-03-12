@@ -10,9 +10,6 @@ public final class Static177 {
 	@OriginalMember(owner = "client!ke", name = "F", descriptor = "[S")
 	public static short[] aShortArray56;
 
-	@OriginalMember(owner = "client!ke", name = "y", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_141 = new InboundPacket(68, 4);
-
 	@OriginalMember(owner = "client!ke", name = "E", descriptor = "I")
 	public static int anInt3381 = 0;
 
@@ -28,8 +25,8 @@ public final class Static177 {
 			@Pc(27) byte[] local27 = arg1[local21];
 			if (local27 != null) {
 				@Pc(34) Buffer local34 = new Buffer(local27);
-				local40 = Static291.anIntArray372[local21] >> 8;
-				@Pc(46) int local46 = Static291.anIntArray372[local21] & 0xFF;
+				local40 = Static291.mapSquares[local21] >> 8;
+				@Pc(46) int local46 = Static291.mapSquares[local21] & 0xFF;
 				@Pc(53) int local53 = local40 * 64 - Static164.anInt3140;
 				@Pc(59) int local59 = local46 * 64 - Static148.anInt2719;
 				Static37.method1135();
@@ -46,8 +43,8 @@ public final class Static177 {
 			}
 		}
 		for (@Pc(136) int local136 = 0; local136 < local19; local136++) {
-			@Pc(148) int local148 = (Static291.anIntArray372[local136] >> 8) * 64 - Static164.anInt3140;
-			local40 = (Static291.anIntArray372[local136] & 0xFF) * 64 - Static148.anInt2719;
+			@Pc(148) int local148 = (Static291.mapSquares[local136] >> 8) * 64 - Static164.anInt3140;
+			local40 = (Static291.mapSquares[local136] & 0xFF) * 64 - Static148.anInt2719;
 			@Pc(163) byte[] local163 = arg1[local136];
 			if (local163 == null && Static9.anInt212 < 800) {
 				Static37.method1135();

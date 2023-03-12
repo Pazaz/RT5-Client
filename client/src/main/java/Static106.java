@@ -16,9 +16,6 @@ public final class Static106 {
 	@OriginalMember(owner = "client!fu", name = "W", descriptor = "[I")
 	public static final int[] anIntArray135 = new int[32];
 
-	@OriginalMember(owner = "client!fu", name = "X", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_88 = new InboundPacket(17, 2);
-
 	@OriginalMember(owner = "client!fu", name = "a", descriptor = "(IIII)I")
 	public static int method2235(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) int local7 = arg1 / arg0;

@@ -16,12 +16,6 @@ public final class Static210 {
 	@OriginalMember(owner = "client!mg", name = "v", descriptor = "Lclient!hu;")
 	public static final Class98 aClass98_31 = new Class98(8);
 
-	@OriginalMember(owner = "client!mg", name = "w", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_155 = new InboundPacket(46, -1);
-
-	@OriginalMember(owner = "client!mg", name = "z", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_156 = new InboundPacket(7, 2);
-
 	@OriginalMember(owner = "client!mg", name = "C", descriptor = "[I")
 	public static final int[] anIntArray229 = new int[4];
 

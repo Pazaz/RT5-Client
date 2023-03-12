@@ -48,9 +48,9 @@ public final class Static303 {
 				}
 			}
 		}
-		for (@Pc(49) int local49 = 0; local49 < Static166.anInt3187; local49++) {
-			@Pc(55) int local55 = Static211.anIntArray230[local49];
-			@Pc(59) Class11_Sub5_Sub2_Sub2 local59 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local55];
+		for (@Pc(49) int local49 = 0; local49 < NpcList.size; local49++) {
+			@Pc(55) int local55 = NpcList.ids[local49];
+			@Pc(59) Npc local59 = NpcList.npcs[local55];
 			if (local59 != null && local59.anInt4636 > 0) {
 				local59.anInt4636--;
 				if (local59.anInt4636 == 0) {
@@ -175,8 +175,8 @@ public final class Static303 {
 			arg2.anInt4588 = arg0.g1badd();
 			arg2.anInt4577 = arg0.g1bsub();
 			arg2.anInt4599 = arg0.g1b();
-			arg2.anInt4622 = arg0.g2add() + Static114.anInt2348;
-			arg2.anInt4584 = arg0.g2add() + Static114.anInt2348;
+			arg2.anInt4622 = arg0.g2add() + client.cycle;
+			arg2.anInt4584 = arg0.g2add() + client.cycle;
 			arg2.anInt4614 = arg0.g1bneg();
 			arg2.anInt4642 = 0;
 			if (arg2.aBoolean276) {
@@ -199,7 +199,7 @@ public final class Static303 {
 			arg2.anInt4591 = arg0.g1sub();
 			arg2.anInt4623 = local32 & 0x7FFF;
 			arg2.aBoolean319 = (local32 & 0x8000) != 0;
-			arg2.anInt4621 = arg2.anInt4623 + Static114.anInt2348 + arg2.anInt4578;
+			arg2.anInt4621 = arg2.anInt4623 + client.cycle + arg2.anInt4578;
 		}
 		if ((arg3 & 0x80) != 0) {
 			arg2.anInt4174 = arg0.g2();
@@ -258,7 +258,7 @@ public final class Static303 {
 			}
 			if (local690) {
 				arg2.anInt4639 = local36 >> 16;
-				local43 = Static114.anInt2348;
+				local43 = client.cycle;
 				arg2.anInt4594 = local32;
 				arg2.anInt4595 = (local36 & 0xFFFF) + local43;
 				arg2.anInt4582 = 0;
@@ -281,12 +281,12 @@ public final class Static303 {
 		if ((arg3 & 0x40) != 0) {
 			local32 = arg0.gsmart();
 			local36 = arg0.g1sub();
-			arg2.method4334(local36, local32, Static114.anInt2348);
-			arg2.anInt4606 = Static114.anInt2348 + 300;
+			arg2.method4334(local36, local32, client.cycle);
+			arg2.anInt4606 = client.cycle + 300;
 			arg2.anInt4631 = arg0.g1bneg();
 		}
 		if ((arg3 & 0x800) != 0) {
-			local32 = Static114.anInt2348;
+			local32 = client.cycle;
 			local36 = arg0.gsmart();
 			local40 = arg0.g1sub();
 			arg2.method4334(local40, local36, local32);

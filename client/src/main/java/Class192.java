@@ -161,7 +161,7 @@ public final class Class192 {
 		if (this.anInt5423 < 0 || this.anInt5423 >= this.aClass157_2.anIntArray262.length) {
 			this.anInt5423 = -1;
 		}
-		this.anInt5441 = Static114.anInt2348 - this.anInt5431;
+		this.anInt5441 = client.cycle - this.anInt5431;
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(IIB)V")
@@ -176,7 +176,7 @@ public final class Class192 {
 					return;
 				}
 			}
-			@Pc(31) int local31 = Static114.anInt2348 - this.anInt5441;
+			@Pc(31) int local31 = client.cycle - this.anInt5441;
 			if (local31 > 100 && this.aClass157_2.anInt4032 > 0) {
 				@Pc(53) int local53 = this.aClass157_2.anIntArray262.length - this.aClass157_2.anInt4032;
 				while (this.anInt5426 < local53 && this.aClass157_2.anIntArray261[this.anInt5426] < local31) {
@@ -218,7 +218,7 @@ public final class Class192 {
 				}
 			}
 			this.anInt5431 = local31;
-			this.anInt5441 = Static114.anInt2348 - local31;
+			this.anInt5441 = client.cycle - local31;
 			return;
 		}
 	}
@@ -239,16 +239,16 @@ public final class Class192 {
 				local26 = local26.method1533(Static214.aClass226_1);
 			}
 			if (local26 != null) {
-				this.aClass12_Sub5_5 = new Class12_Sub5(Static114.anInt2348);
+				this.aClass12_Sub5_5 = new Class12_Sub5(client.cycle);
 			}
 		}
 		if (this.aClass12_Sub5_5 == null) {
 			return;
 		}
 		if (arg5) {
-			this.aClass12_Sub5_5.method4357(arg0, (long) Static114.anInt2348, local6, local9);
+			this.aClass12_Sub5_5.method4357(arg0, (long) client.cycle, local6, local9);
 		} else {
-			this.aClass12_Sub5_5.method4355((long) Static114.anInt2348);
+			this.aClass12_Sub5_5.method4355((long) client.cycle);
 		}
 		this.aClass12_Sub5_5.method4361(this.aByte59, arg3, arg6, arg1, arg4);
 	}

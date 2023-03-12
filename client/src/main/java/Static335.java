@@ -38,8 +38,8 @@ public final class Static335 {
 				}
 			}
 		}
-		for (@Pc(73) int local73 = 0; local73 < Static365.aClass11_Sub5_Sub2_Sub2Array1.length; local73++) {
-			@Pc(79) Class11_Sub5_Sub2_Sub2 local79 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local73];
+		for (@Pc(73) int local73 = 0; local73 < NpcList.npcs.length; local73++) {
+			@Pc(79) Npc local79 = NpcList.npcs[local73];
 			if (local79 != null) {
 				for (@Pc(83) int local83 = 0; local83 < local79.aClass31Array3.length; local83++) {
 					local79.aClass31Array3[local83] = null;

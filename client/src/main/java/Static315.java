@@ -87,69 +87,6 @@ public final class Static315 {
 		Static369.method6221(Static107.anInt2220, Static305.anInt5743, Static352.anInt6519, Static363.anInt6801);
 	}
 
-	@OriginalMember(owner = "client!se", name = "b", descriptor = "(I)V")
-	public static void method5382() {
-		Protocol.inboundBuffer.accessBits();
-		@Pc(13) int local13 = Protocol.inboundBuffer.gBit(8);
-		@Pc(18) int local18;
-		if (local13 < Static166.anInt3187) {
-			for (local18 = local13; local18 < Static166.anInt3187; local18++) {
-				Static17.anIntArray291[Static242.anInt4450++] = Static211.anIntArray230[local18];
-			}
-		}
-		if (Static166.anInt3187 < local13) {
-			throw new RuntimeException("gnpov1");
-		}
-		Static166.anInt3187 = 0;
-		for (local18 = 0; local18 < local13; local18++) {
-			@Pc(64) int local64 = Static211.anIntArray230[local18];
-			@Pc(68) Class11_Sub5_Sub2_Sub2 local68 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local64];
-			@Pc(73) int local73 = Protocol.inboundBuffer.gBit(1);
-			if (local73 == 0) {
-				Static211.anIntArray230[Static166.anInt3187++] = local64;
-				local68.anInt4610 = Static114.anInt2348;
-			} else {
-				@Pc(96) int local96 = Protocol.inboundBuffer.gBit(2);
-				if (local96 == 0) {
-					Static211.anIntArray230[Static166.anInt3187++] = local64;
-					local68.anInt4610 = Static114.anInt2348;
-					Static277.anIntArray361[Static343.anInt6390++] = local64;
-				} else {
-					@Pc(140) int local140;
-					@Pc(150) int local150;
-					if (local96 == 1) {
-						Static211.anIntArray230[Static166.anInt3187++] = local64;
-						local68.anInt4610 = Static114.anInt2348;
-						local140 = Protocol.inboundBuffer.gBit(3);
-						local68.method4338(1, local140);
-						local150 = Protocol.inboundBuffer.gBit(1);
-						if (local150 == 1) {
-							Static277.anIntArray361[Static343.anInt6390++] = local64;
-						}
-					} else if (local96 == 2) {
-						Static211.anIntArray230[Static166.anInt3187++] = local64;
-						local68.anInt4610 = Static114.anInt2348;
-						if (Protocol.inboundBuffer.gBit(1) == 1) {
-							local140 = Protocol.inboundBuffer.gBit(3);
-							local68.method4338(2, local140);
-							local150 = Protocol.inboundBuffer.gBit(3);
-							local68.method4338(2, local150);
-						} else {
-							local140 = Protocol.inboundBuffer.gBit(3);
-							local68.method4338(0, local140);
-						}
-						local140 = Protocol.inboundBuffer.gBit(1);
-						if (local140 == 1) {
-							Static277.anIntArray361[Static343.anInt6390++] = local64;
-						}
-					} else if (local96 == 3) {
-						Static17.anIntArray291[Static242.anInt4450++] = local64;
-					}
-				}
-			}
-		}
-	}
-
 	@OriginalMember(owner = "client!se", name = "c", descriptor = "(B)Lclient!oo;")
 	public static Class12_Sub6 method5383() {
 		@Pc(8) Class12_Sub6 local8 = (Class12_Sub6) Static352.aClass36_9.method1424();

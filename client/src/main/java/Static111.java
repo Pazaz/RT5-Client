@@ -30,7 +30,7 @@ public final class Static111 {
 				@Pc(162) Class11_Sub5 local162;
 				@Pc(90) Class11_Sub3_Sub1 local90;
 				@Pc(136) Class11_Sub2_Sub2 local136;
-				if (Static114.anInt2348 >= local15.anInt1118) {
+				if (client.cycle >= local15.anInt1118) {
 					local41 = Static150.anIntArray174[local15.anInt1116];
 					if (local41 == 0) {
 						local262 = Static12.method283(local15.anInt1110, local15.anInt1117, local15.anInt1109);
@@ -70,7 +70,7 @@ public final class Static111 {
 						}
 					}
 					local15.method6468();
-				} else if (Static114.anInt2348 == local15.anInt1100) {
+				} else if (client.cycle == local15.anInt1100) {
 					local41 = Static150.anIntArray174[local15.anInt1116];
 					if (local41 == 0) {
 						local262 = Static12.method283(local15.anInt1110, local15.anInt1117, local15.anInt1109);
@@ -197,7 +197,7 @@ public final class Static111 {
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(IIILjava/lang/String;IIII)V")
 	public static void method2277(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) String arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		@Pc(7) Class12_Sub3 local7 = new Class12_Sub3();
-		local7.anInt3201 = arg0 + Static114.anInt2348;
+		local7.anInt3201 = arg0 + client.cycle;
 		local7.anInt3204 = arg1;
 		local7.aString26 = arg3;
 		local7.anInt3206 = arg2;

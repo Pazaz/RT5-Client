@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static241 {
 
-	@OriginalMember(owner = "client!nq", name = "f", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_170 = new InboundPacket(19, 0);
-
 	@OriginalMember(owner = "client!nq", name = "h", descriptor = "I")
 	public static int anInt4445 = 0;
 
@@ -20,11 +17,11 @@ public final class Static241 {
 	}
 
 	@OriginalMember(owner = "client!nq", name = "a", descriptor = "(Lclient!oe;ZZ)V")
-	public static void method4191(@OriginalArg(0) Class11_Sub5_Sub2_Sub2 arg0, @OriginalArg(1) boolean arg1) {
+	public static void method4191(@OriginalArg(0) Npc arg0, @OriginalArg(1) boolean arg1) {
 		if (Static268.anInt4959 >= 400) {
 			return;
 		}
-		@Pc(16) Class71 local16 = arg0.aClass71_1;
+		@Pc(16) Class71 local16 = arg0.type;
 		if (local16.anIntArray129 != null) {
 			local16 = local16.method2093(Static214.aClass226_1);
 			if (local16 == null) {

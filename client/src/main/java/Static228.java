@@ -19,12 +19,12 @@ public final class Static228 {
 		@Pc(546) int local546;
 		@Pc(663) int local663;
 		@Pc(322) int local322;
-		for (@Pc(13) int local13 = 0; local13 < Static166.anInt3187 + local7; local13++) {
+		for (@Pc(13) int local13 = 0; local13 < NpcList.size + local7; local13++) {
 			@Pc(17) Class71 local17 = null;
 			@Pc(33) Class11_Sub5_Sub2 local33;
 			if (local7 <= local13) {
-				local33 = Static365.aClass11_Sub5_Sub2_Sub2Array1[Static211.anIntArray230[local13 - local7]];
-				local17 = ((Class11_Sub5_Sub2_Sub2) local33).aClass71_1;
+				local33 = NpcList.npcs[NpcList.ids[local13 - local7]];
+				local17 = ((Npc) local33).type;
 				if (local17.anIntArray129 != null) {
 					local17 = local17.method2093(Static214.aClass226_1);
 					if (local17 == null) {
@@ -51,9 +51,9 @@ public final class Static228 {
 					local194 = arg3 + Static216.anIntArray231[1] - Math.max(Static113.aClass239_2.anInt6836, local180.method6382());
 					@Pc(209) Class13 local209;
 					@Pc(310) int local310;
-					if (!local33.aBoolean320 && Static114.anInt2348 < local33.anInt4606) {
+					if (!local33.aBoolean320 && client.cycle < local33.anInt4606) {
 						local209 = Static62.aClass13Array9[1];
-						if (local33 instanceof Class11_Sub5_Sub2_Sub2) {
+						if (local33 instanceof Npc) {
 							local217 = local17.anInt2028;
 							if (local217 == -1) {
 								local217 = local33.method4332().anInt6304;
@@ -90,10 +90,10 @@ public final class Static228 {
 					}
 					local194 -= 2;
 					if (!local33.aBoolean320) {
-						if (Static114.anInt2348 < local33.anInt4621) {
+						if (client.cycle < local33.anInt4621) {
 							local209 = Static332.aClass13Array23[local33.aBoolean319 ? 2 : 0];
 							@Pc(386) Class13 local386 = Static332.aClass13Array23[local33.aBoolean319 ? 3 : 1];
-							if (local33 instanceof Class11_Sub5_Sub2_Sub2) {
+							if (local33 instanceof Npc) {
 								local310 = local17.anInt2042;
 								if (local310 == -1) {
 									local310 = local33.method4332().anInt6288;
@@ -118,7 +118,7 @@ public final class Static228 {
 									local209 = local420[local33.aBoolean319 ? 2 : 0];
 								}
 							}
-							local322 = local33.anInt4621 - Static114.anInt2348;
+							local322 = local33.anInt4621 - client.cycle;
 							if (local322 > local33.anInt4578) {
 								local322 -= local33.anInt4578;
 								local435 = local33.anInt4591 == 0 ? 0 : (local33.anInt4623 - local322) / local33.anInt4591 * local33.anInt4591;
@@ -162,12 +162,12 @@ public final class Static228 {
 						local665 = Static50.aClass84Array1;
 						for (local310 = 0; local310 < local665.length; local310++) {
 							local673 = local665[local310];
-							if (local673 != null && local673.anInt2355 == 1 && Static211.anIntArray230[local13 - local7] == local673.anInt2354) {
+							if (local673 != null && local673.anInt2355 == 1 && NpcList.ids[local13 - local7] == local673.anInt2354) {
 								local695 = Static230.aClass13Array16[local673.anInt2363];
 								if (local695.method6382() > local663) {
 									local663 = local695.method6382();
 								}
-								if (Static114.anInt2348 % 20 < 10) {
+								if (client.cycle % 20 < 10) {
 									local695.method6385(Static216.anIntArray231[0] + arg0 - 12, local194 - local695.method6382());
 								}
 							}
@@ -191,7 +191,7 @@ public final class Static228 {
 						}
 					}
 					for (local663 = 0; local663 < 4; local663++) {
-						if (local33.anIntArray315[local663] > Static114.anInt2348) {
+						if (local33.anIntArray315[local663] > client.cycle) {
 							local217 = local33.method4323() / 2;
 							Static250.method4344(local217, local33, arg1 >> 1, arg2 >> 1);
 							if (Static216.anIntArray231[0] > -1) {
@@ -219,7 +219,7 @@ public final class Static228 {
 			local965 = Static150.anIntArray175[local959];
 			@Pc(974) Class11_Sub5_Sub2 local974;
 			if (local965 >= 2048) {
-				local974 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local965 - 2048];
+				local974 = NpcList.npcs[local965 - 2048];
 			} else {
 				local974 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local965];
 			}
@@ -228,7 +228,7 @@ public final class Static228 {
 			if (local194 < 2048) {
 				local991 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local194];
 			} else {
-				local991 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local194 - 2048];
+				local991 = NpcList.npcs[local194 - 2048];
 			}
 			Static242.method4195(local991, arg3, arg0, local974, arg1, arg2, --local974.anInt4625);
 		}

@@ -283,7 +283,7 @@ public final class Class197 {
 	}
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(BLjava/lang/String;)I")
-	public int method5075(@OriginalArg(1) String arg0) {
+	public int getGroupId(@OriginalArg(1) String arg0) {
 		if (this.method5086()) {
 			@Pc(18) String local18 = arg0.toLowerCase();
 			@Pc(29) int local29 = this.aClass198_2.aClass167_1.method4249(Static278.method4722(local18));

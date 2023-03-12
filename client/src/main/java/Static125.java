@@ -7,9 +7,6 @@ public final class Static125 {
 	@OriginalMember(owner = "client!hc", name = "c", descriptor = "Lclient!kk;")
 	public static final Class127 aClass127_8 = new Class127("WTRC", 1);
 
-	@OriginalMember(owner = "client!hc", name = "g", descriptor = "Lclient!h;")
-	public static final InboundPacket aClass89_249 = new InboundPacket(84, -1);
-
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "([III[II)V")
 	public static void method6343(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[] arg3) {
 		if (arg1 <= arg2) {

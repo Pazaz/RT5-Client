@@ -50,7 +50,7 @@ public final class Static243 {
 			}
 		} else {
 			local18 = arg8 - 1;
-			local27 = Static365.aClass11_Sub5_Sub2_Sub2Array1[local18];
+			local27 = NpcList.npcs[local18];
 		}
 		if (local27 == null) {
 			return;
@@ -73,8 +73,8 @@ public final class Static243 {
 		@Pc(138) int local138 = local114.method5719(local79, local102) + local114.method5719(local96, local102) + local114.method5719(local79, local110) + local114.method5719(local96, local110) >> 2;
 		@Pc(142) Class2_Sub6 local142 = new Class2_Sub6();
 		local142.anInt1110 = local27.aByte78;
-		local142.anInt1118 = arg3 + Static114.anInt2348;
-		local142.anInt1100 = Static114.anInt2348 + arg7;
+		local142.anInt1118 = arg3 + client.cycle;
+		local142.anInt1100 = client.cycle + arg7;
 		local142.anInt1117 = arg0;
 		local142.anInt1109 = arg11;
 		local142.anInt1112 = arg1;
