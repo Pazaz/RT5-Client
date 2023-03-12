@@ -70,7 +70,12 @@ public class WorldList {
 			}
 			@Pc(109) String local109 = "http://" + world.hostname + port + "/l=" + client.language + "/a=" + client.affiliate + settings + "/j" + (Static276.javaScript ? "1" : "0") + ",o" + (Static237.objectTag ? "1" : "0") + ",a2";
 			try {
-				client.instance.getAppletContext().showDocument(new URL(local109), "_self");
+				if (client.instance.getAppletContext() != null) {
+					client.instance.getAppletContext().showDocument(new URL(local109), "_self");
+				} else {
+					client.worldListWorldId = world.id;
+					client.worldId = world.id;
+				}
 				return true;
 			} catch (@Pc(119) Exception ex) {
 				return false;
