@@ -21,7 +21,7 @@ public final class Packet extends Buffer {
 	}
 
 	@OriginalMember(owner = "client!qg", name = "n", descriptor = "(I)I")
-	public int gsmart_isaac() {
+	public int g1isaac() {
 		@Pc(22) int value = super.data[super.pos++] - this.random.getNext() & 0xFF;
 		return value < 128 ? value : (super.data[super.pos++] - this.random.getNext() & 0xFF) + (value - 128 << 8);
 	}

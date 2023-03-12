@@ -15,5 +15,5 @@ public final class Static186 {
 	public static Class6[] aClass6Array2;
 
 	@OriginalMember(owner = "client!kp", name = "a", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_145 = new Class145(51, 0);
+	public static final ClientProt aClass145_145 = new ClientProt(51, 0);
 }

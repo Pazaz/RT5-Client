@@ -8,7 +8,7 @@ public final class Static166 {
 	public static int anInt3193;
 
 	@OriginalMember(owner = "client!jo", name = "u", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_122 = new Class145(40, 7);
+	public static final ClientProt aClass145_122 = new ClientProt(40, 7);
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ZBI)V")
 	public static void method3186(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1) {

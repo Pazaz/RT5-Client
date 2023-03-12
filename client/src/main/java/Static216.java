@@ -149,7 +149,7 @@ public final class Static216 {
 			}
 			Static393.aBoolean486 = false;
 		} else if (client.preferences.anInt4889 != 0 && Static171.anInt3268 != -1 && !Static64.method1704()) {
-			Static91.method1960(Static67.aClass145_56);
+			Protocol.method1960(Static67.aClass145_56);
 			Protocol.outboundBuffer.p4(Static171.anInt3268);
 			Static171.anInt3268 = -1;
 		}

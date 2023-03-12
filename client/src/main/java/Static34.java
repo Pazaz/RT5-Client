@@ -67,8 +67,8 @@ public final class Static34 {
 					Static114.anIntArray148[local61] = Static114.anIntArray148[local61 + 1];
 					Static302.aBooleanArray13[local61] = Static302.aBooleanArray13[local61 + 1];
 				}
-				Static53.anInt3971 = Static88.anInt1876;
-				Static91.method1960(Static2.aClass145_3);
+				Static53.anInt3971 = Static88.transmitTimer;
+				Protocol.method1960(Static2.aClass145_3);
 				Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
 				Protocol.outboundBuffer.pjstr(arg0);
 				return;

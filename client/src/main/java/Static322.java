@@ -23,7 +23,7 @@ public final class Static322 {
 	public static int[] anIntArray404;
 
 	@OriginalMember(owner = "client!so", name = "h", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_218 = new Class145(14, 8);
+	public static final ClientProt aClass145_218 = new ClientProt(14, 8);
 
 	@OriginalMember(owner = "client!so", name = "k", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_125 = new Class79("Your ignore list is full, max of 100.", "Deine Ignorieren-Liste ist voll, du kannst nur 100 Spieler darauf eintragen.", "Votre liste noire est pleine (100 noms maximum).", "Sua lista de ignorados está cheia. O máx. é 100.");
@@ -268,7 +268,7 @@ public final class Static322 {
 		Static3.aBoolean5 = false;
 		Static50.method1530();
 		if (GameShell.frame != null && Protocol.socket != null && LoginManager.reconnecting == 25) {
-			Static91.method1960(Static30.aClass145_28);
+			Protocol.method1960(Static30.aClass145_28);
 			Protocol.outboundBuffer.p4(1057001181);
 		}
 		if (!Static220.aBoolean252) {
@@ -290,7 +290,7 @@ public final class Static322 {
 		} else {
 			Static336.method5705(30);
 			if (Protocol.socket != null) {
-				Static91.method1960(Static42.aClass145_230);
+				Protocol.method1960(Static42.aClass145_230);
 			}
 		}
 		Static253.method4369();

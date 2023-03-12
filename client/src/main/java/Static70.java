@@ -9,7 +9,7 @@ public final class Static70 {
 	public static final Class79 aClass79_37 = new Class79("M", "M", "M", "M");
 
 	@OriginalMember(owner = "client!e", name = "n", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_57 = new Class145(15, -1);
+	public static final ClientProt aClass145_57 = new ClientProt(15, -1);
 
 	@OriginalMember(owner = "client!e", name = "o", descriptor = "[I")
 	public static final int[] anIntArray112 = new int[] { 1, 2, 4, 8 };

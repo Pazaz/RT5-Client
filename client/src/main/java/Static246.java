@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static246 {
 
 	@OriginalMember(owner = "client!oc", name = "a", descriptor = "Lclient!iu;")
-	public static Class111 aClass111_2;
+	public static BufferedSocket aClass111_2;
 
 	@OriginalMember(owner = "client!oc", name = "b", descriptor = "[Lclient!ec;")
 	public static Class58[] aClass58Array3;

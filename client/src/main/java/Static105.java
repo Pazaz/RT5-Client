@@ -17,7 +17,7 @@ public final class Static105 {
 	public static final Class79 aClass79_45 = new Class79("flash1:", "blinken1:", "clignotant1:", "flash1:");
 
 	@OriginalMember(owner = "client!ft", name = "U", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_79 = new Class145(11, 16);
+	public static final ClientProt aClass145_79 = new ClientProt(11, 16);
 
 	@OriginalMember(owner = "client!ft", name = "X", descriptor = "Z")
 	public static boolean aBoolean162 = false;

@@ -8,7 +8,7 @@ public final class Static93 {
 	public static int anInt1946;
 
 	@OriginalMember(owner = "client!fe", name = "f", descriptor = "I")
-	public static int anInt1950 = 0;
+	public static int miscTransmitAt = 0;
 
 	@OriginalMember(owner = "client!fe", name = "g", descriptor = "I")
 	public static int anInt1951 = 0;
@@ -73,7 +73,7 @@ public final class Static93 {
 
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(B)V")
 	public static void method2002() {
-		Static91.method1960(Static101.aClass145_75);
+		Protocol.method1960(Static101.aClass145_75);
 		Protocol.outboundBuffer.p1(Static144.getWindowMode());
 		Protocol.outboundBuffer.p2(GameShell.canvasWidth);
 		Protocol.outboundBuffer.p2(GameShell.canvasHeight);

@@ -47,6 +47,7 @@ public final class IsaacRandom {
 			this.isaac();
 			this.count = 256;
 		}
+//		this.count--;
 		return this.rsl[--this.count];
 	}
 

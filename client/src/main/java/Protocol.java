@@ -239,7 +239,7 @@ public class Protocol {
 	public static PrivilegedRequest socketRequest2;
 
 	@OriginalMember(owner = "client!ti", name = "A", descriptor = "Lclient!iu;")
-	public static Class111 socket;
+	public static BufferedSocket socket;
 
 	@OriginalMember(owner = "client!qr", name = "n", descriptor = "I")
 	public static int verifyId = 0;
@@ -299,7 +299,7 @@ public class Protocol {
 			}
 			aBoolean129 = true;
 			@Pc(70) InboundPacket[] incoming = INCOMING_WORLD();
-			local74 = inboundBuffer.gsmart_isaac();
+			local74 = inboundBuffer.g1isaac();
 			if (local74 < 0 || incoming.length <= local74) {
 				throw new IOException("invo:" + local74);
 			}
@@ -744,7 +744,7 @@ public class Protocol {
 									}
 								}
 								Static235.anInt3363 = 2;
-								Static53.anInt3971 = Static88.anInt1876;
+								Static53.anInt3971 = Static88.transmitTimer;
 								local74 = Static384.anInt7178;
 								while (local74 > 0) {
 									local1371 = true;
@@ -780,7 +780,7 @@ public class Protocol {
 								return true;
 							} else if (packet == PACKET_7) {
 								Static41.anInt1048 = inboundBuffer.g2b();
-								Static93.anInt1950 = Static88.anInt1876;
+								Static93.miscTransmitAt = Static88.transmitTimer;
 								packet = null;
 								return true;
 							} else {
@@ -896,9 +896,9 @@ public class Protocol {
 									packet = null;
 									return true;
 								} else if (PACKET_8 == packet) {
-									Static151.anInt2773 = inboundBuffer.g2() * 30;
+									Static151.rebootTimer = inboundBuffer.g2() * 30;
 									packet = null;
-									Static93.anInt1950 = Static88.anInt1876;
+									Static93.miscTransmitAt = Static88.transmitTimer;
 									return true;
 								} else if (packet == PACKET_92) {
 									local220 = inboundBuffer.g2();
@@ -951,7 +951,7 @@ public class Protocol {
 								} else {
 									@Pc(2522) Class214 local2522;
 									if (packet == PACKET_35) {
-										Static285.anInt5370 = Static88.anInt1876;
+										Static285.anInt5370 = Static88.transmitTimer;
 										if (packetSize == 0) {
 											Static389.aString53 = null;
 											Static186.anInt3730 = 0;
@@ -1027,7 +1027,7 @@ public class Protocol {
 											Static290.aClass187Array1[local220] = new Class187(inboundBuffer);
 										}
 										packet = null;
-										Static177.anInt3381 = Static88.anInt1876;
+										Static177.anInt3381 = Static88.transmitTimer;
 										return true;
 									} else if (packet == PACKET_10) {
 										local220 = inboundBuffer.g2();
@@ -1155,7 +1155,7 @@ public class Protocol {
 										return true;
 									} else if (PACKET_19 == packet) {
 										Static235.anInt3363 = 1;
-										Static53.anInt3971 = Static88.anInt1876;
+										Static53.anInt3971 = Static88.transmitTimer;
 										packet = null;
 										return true;
 									} else if (PACKET_38 == packet) {
@@ -1203,7 +1203,7 @@ public class Protocol {
 											Static196.aBooleanArray31[local220] = false;
 										}
 										packet = null;
-										Static53.anInt3971 = Static88.anInt1876;
+										Static53.anInt3971 = Static88.transmitTimer;
 										return true;
 									} else if (packet == PACKET_46) {
 										local444 = inboundBuffer.gjstr();
@@ -1301,7 +1301,7 @@ public class Protocol {
 														if (local452.equals(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41)) {
 															Static119.aByte25 = local3569;
 														}
-														Static285.anInt5370 = Static88.anInt1876;
+														Static285.anInt5370 = Static88.transmitTimer;
 														packet = null;
 														return true;
 													}
@@ -1326,7 +1326,7 @@ public class Protocol {
 												}
 											}
 											packet = null;
-											Static285.anInt5370 = Static88.anInt1876;
+											Static285.anInt5370 = Static88.transmitTimer;
 											return true;
 										}
 										@Pc(3809) String local3809;
@@ -1393,7 +1393,7 @@ public class Protocol {
 											return true;
 										} else if (PACKET_4 == packet) {
 											Static96.anInt2002 = inboundBuffer.g1();
-											Static93.anInt1950 = Static88.anInt1876;
+											Static93.miscTransmitAt = Static88.transmitTimer;
 											packet = null;
 											return true;
 										} else if (PACKET_44 == packet) {
@@ -1443,7 +1443,7 @@ public class Protocol {
 												Static301.anInt5700++;
 											}
 											packet = null;
-											Static53.anInt3971 = Static88.anInt1876;
+											Static53.anInt3971 = Static88.transmitTimer;
 											return true;
 										} else if (PACKET_85 == packet) {
 											local444 = inboundBuffer.gjstr();
@@ -2770,6 +2770,7 @@ public class Protocol {
 					local146 = local141 >> 28;
 					local411 = local141 >> 14 & 0x3FFF;
 					local419 = local141 & 0x3FFF;
+					System.out.println(local146 + " " + local411 + " " + local419);
 					local432 = (local411 + Static164.anInt3140 + local34.movementQueueX[0] & 0x3FFF) - Static164.anInt3140;
 					local439 = (local34.movementQueueZ[0] + Static148.anInt2719 + local419 & 0x3FFF) - Static148.anInt2719;
 					if (local15) {
@@ -2903,6 +2904,11 @@ public class Protocol {
 			Static360.anIntArray422[arg1] = (local107 << 14) + (local103 << 28) + local113;
 			return false;
 		}
+	}
+
+	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!mc;I)V")
+	public static void method1960(@OriginalArg(0) ClientProt arg0) {
+		outboundBuffer.p1isaac(arg0.getOpcode());
 	}
 
 }

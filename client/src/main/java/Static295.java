@@ -25,7 +25,7 @@ public final class Static295 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Lclient!nk;ZLclient!nk;)V")
 	public static void method5096(@OriginalArg(0) Class161 arg0, @OriginalArg(2) Class161 arg1) {
-		Static91.method1960(Static387.aClass145_110);
+		Protocol.method1960(Static387.aClass145_110);
 		Protocol.outboundBuffer.p4(arg1.anInt4317);
 		Protocol.outboundBuffer.ip2add(arg1.anInt4300);
 		Protocol.outboundBuffer.p2add(arg1.anInt4297);

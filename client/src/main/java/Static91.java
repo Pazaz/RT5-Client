@@ -10,7 +10,7 @@ public final class Static91 {
 	public static Class2_Sub12_Sub3 aClass2_Sub12_Sub3_1;
 
 	@OriginalMember(owner = "client!f", name = "b", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_69 = new Class145(61, -1);
+	public static final ClientProt aClass145_69 = new ClientProt(61, -1);
 
 	@OriginalMember(owner = "client!f", name = "E", descriptor = "I")
 	public static final int anInt1909 = 1400;
@@ -20,11 +20,6 @@ public final class Static91 {
 
 	@OriginalMember(owner = "client!f", name = "H", descriptor = "I")
 	public static int anInt1910 = -1;
-
-	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!mc;I)V")
-	public static void method1960(@OriginalArg(0) Class145 arg0) {
-		Protocol.outboundBuffer.p1isaac(arg0.method3702());
-	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(I)V")
 	public static void method1962() {

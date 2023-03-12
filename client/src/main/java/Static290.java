@@ -40,7 +40,7 @@ public final class Static290 {
 
 	@OriginalMember(owner = "client!qp", name = "b", descriptor = "(I)V")
 	public static void method5026() {
-		Static91.method1960(Static13.aClass145_18);
+		Protocol.method1960(Static13.aClass145_18);
 		Protocol.outboundBuffer.p1(0);
 	}
 

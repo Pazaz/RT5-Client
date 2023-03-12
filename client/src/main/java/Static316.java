@@ -11,7 +11,7 @@ public final class Static316 {
 	public static final int[] anIntArray396 = new int[14];
 
 	@OriginalMember(owner = "client!sg", name = "l", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_214 = new Class145(31, 3);
+	public static final ClientProt aClass145_214 = new ClientProt(31, 3);
 
 	@OriginalMember(owner = "client!sg", name = "a", descriptor = "(III)Lclient!gg;")
 	public static Class2_Sub2_Sub7 method5413(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {

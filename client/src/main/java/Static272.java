@@ -11,7 +11,7 @@ public final class Static272 {
 	public static int anInt5022 = -1;
 
 	@OriginalMember(owner = "client!pk", name = "kb", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_180 = new Class145(0, 2);
+	public static final ClientProt aClass145_180 = new ClientProt(0, 2);
 
 	@OriginalMember(owner = "client!pk", name = "lb", descriptor = "Lclient!s;")
 	public static final Class210 aClass210_11 = new Class210(1, 15);

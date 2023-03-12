@@ -15,7 +15,7 @@ public final class Static369 {
 	public static final Class79 aClass79_144 = new Class79("Prepared sound engine", "Musik-Engine vorbereitet.", "Moteur son préparé", "Mecanismo de som preparado");
 
 	@OriginalMember(owner = "client!vm", name = "W", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_248 = new Class145(19, -1);
+	public static final ClientProt aClass145_248 = new ClientProt(19, -1);
 
 	@OriginalMember(owner = "client!vm", name = "Z", descriptor = "Z")
 	public static boolean aBoolean471 = false;

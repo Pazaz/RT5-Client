@@ -56,7 +56,7 @@ public final class Static61 {
 		if (Static135.method2537(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41).equals(local33)) {
 			Static207.method3700(Static122.aClass79_54.method2267(client.language));
 		} else {
-			Static91.method1960(Static148.aClass145_104);
+			Protocol.method1960(Static148.aClass145_104);
 			Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
 			Protocol.outboundBuffer.pjstr(arg0);
 		}

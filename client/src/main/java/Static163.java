@@ -13,7 +13,7 @@ public final class Static163 {
 	public static final Class79 aClass79_68 = new Class79("Loading world map - ", "Lade Weltkarte - ", "Chargement de la mappemonde - ", "Carregando mapa-múndi - ");
 
 	@OriginalMember(owner = "client!jj", name = "U", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_116 = new Class145(34, -1);
+	public static final ClientProt aClass145_116 = new ClientProt(34, -1);
 
 	@OriginalMember(owner = "client!jj", name = "W", descriptor = "I")
 	public static int anInt3086 = 0;
@@ -130,7 +130,7 @@ public final class Static163 {
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILjava/lang/String;)V")
 	public static void method3102(@OriginalArg(1) String arg0) {
 		if (Static47.aClass214Array1 != null) {
-			Static91.method1960(Static70.aClass145_57);
+			Protocol.method1960(Static70.aClass145_57);
 			Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
 			Protocol.outboundBuffer.pjstr(arg0);
 		}

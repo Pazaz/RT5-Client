@@ -34,7 +34,7 @@ public final class Static259 {
 			Static291.anInt5504 = arg2;
 			Static93.anInt1951 = 2;
 			Static313.anInt5878 = 0;
-			Static91.method1960(Static109.aClass145_83);
+			Protocol.method1960(Static109.aClass145_83);
 			Protocol.outboundBuffer.ip2add(Static148.anInt2719 + local18);
 			Protocol.outboundBuffer.p2(local15 + Static164.anInt3140);
 			Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
@@ -49,7 +49,7 @@ public final class Static259 {
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
 			Static313.anInt5878 = 0;
-			Static91.method1960(Static196.aClass145_131);
+			Protocol.method1960(Static196.aClass145_131);
 			Protocol.outboundBuffer.ip2_dup(Static196.anInt3317);
 			Protocol.outboundBuffer.p4(Static337.anInt6317);
 			Protocol.outboundBuffer.ip2add(local18 + Static148.anInt2719);
@@ -62,7 +62,7 @@ public final class Static259 {
 			Static313.anInt5878 = 0;
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
-			Static91.method1960(Static166.aClass145_122);
+			Protocol.method1960(Static166.aClass145_122);
 			Protocol.outboundBuffer.ip2add((int) (local28 >>> 32) & Integer.MAX_VALUE);
 			Protocol.outboundBuffer.ip2add(Static148.anInt2719 + local18);
 			Protocol.outboundBuffer.p2(local15 + Static164.anInt3140);
@@ -74,7 +74,7 @@ public final class Static259 {
 			Static291.anInt5504 = arg2;
 			Static93.anInt1951 = 2;
 			Static320.anInt6005 = arg1;
-			Static91.method1960(Static382.aClass145_260);
+			Protocol.method1960(Static382.aClass145_260);
 			Protocol.outboundBuffer.p2add(local18 + Static148.anInt2719);
 			Protocol.outboundBuffer.ip2_dup((int) (local28 >>> 32) & Integer.MAX_VALUE);
 			Protocol.outboundBuffer.p2add(Static164.anInt3140 + local15);
@@ -89,7 +89,7 @@ public final class Static259 {
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
 				Static320.anInt6005 = arg1;
-				Static91.method1960(Static21.aClass145_25);
+				Protocol.method1960(Static21.aClass145_25);
 				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Protocol.outboundBuffer.ip2add(local25);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -100,7 +100,7 @@ public final class Static259 {
 			Static291.anInt5504 = arg2;
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
-			Static91.method1960(Static272.aClass145_180);
+			Protocol.method1960(Static272.aClass145_180);
 			Protocol.outboundBuffer.p2(local25);
 		}
 		if (local21 == 46) {
@@ -108,7 +108,7 @@ public final class Static259 {
 			Static93.anInt1951 = 2;
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
-			Static91.method1960(Static313.aClass145_209);
+			Protocol.method1960(Static313.aClass145_209);
 			Protocol.outboundBuffer.ip2_dup(Static148.anInt2719 + local18);
 			Protocol.outboundBuffer.p2(local25);
 			Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
@@ -123,7 +123,7 @@ public final class Static259 {
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
 				Static93.anInt1951 = 1;
-				Static91.method1960(Static171.aClass145_127);
+				Protocol.method1960(Static171.aClass145_127);
 				Protocol.outboundBuffer.p2(local15 + Static164.anInt3140);
 				Protocol.outboundBuffer.p2add(local18 + Static148.anInt2719);
 			}
@@ -141,7 +141,7 @@ public final class Static259 {
 					local490 = local490.method2093(Static214.aClass226_1);
 				}
 				if (local490 != null) {
-					Static91.method1960(Static98.aClass145_73);
+					Protocol.method1960(Static98.aClass145_73);
 					Protocol.outboundBuffer.p2(local490.anInt2048);
 				}
 			}
@@ -153,7 +153,7 @@ public final class Static259 {
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
-				Static91.method1960(Static4.aClass145_8);
+				Protocol.method1960(Static4.aClass145_8);
 				Protocol.outboundBuffer.ip2add(local25);
 				Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
@@ -164,7 +164,7 @@ public final class Static259 {
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
 			Static93.anInt1951 = 2;
-			Static91.method1960(Static311.aClass145_204);
+			Protocol.method1960(Static311.aClass145_204);
 			Protocol.outboundBuffer.ip2add(local25);
 			Protocol.outboundBuffer.p2add(Static148.anInt2719 + local18);
 			Protocol.outboundBuffer.ip2add(Static164.anInt3140 + local15);
@@ -178,7 +178,7 @@ public final class Static259 {
 				Static320.anInt6005 = arg1;
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
-				Static91.method1960(Static47.aClass145_43);
+				Protocol.method1960(Static47.aClass145_43);
 				Protocol.outboundBuffer.p4(Static337.anInt6317);
 				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Protocol.outboundBuffer.ip2add(Static196.anInt3317);
@@ -192,7 +192,7 @@ public final class Static259 {
 			Static320.anInt6005 = arg1;
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
-			Static91.method1960(Static262.aClass145_251);
+			Protocol.method1960(Static262.aClass145_251);
 			Protocol.outboundBuffer.ip2add(Integer.MAX_VALUE & (int) (local28 >>> 32));
 			Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Protocol.outboundBuffer.p2(local15 + Static164.anInt3140);
@@ -206,7 +206,7 @@ public final class Static259 {
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
-				Static91.method1960(Static299.aClass145_196);
+				Protocol.method1960(Static299.aClass145_196);
 				Protocol.outboundBuffer.ip4_dup(Static337.anInt6317);
 				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Protocol.outboundBuffer.ip2_dup(Static214.anInt3792);
@@ -220,7 +220,7 @@ public final class Static259 {
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
 			Static291.anInt5504 = arg2;
-			Static91.method1960(Static110.aClass145_84);
+			Protocol.method1960(Static110.aClass145_84);
 			Protocol.outboundBuffer.ip2add(Static148.anInt2719 + local18);
 			Protocol.outboundBuffer.p2add(Integer.MAX_VALUE & (int) (local28 >>> 32));
 			Protocol.outboundBuffer.p2(Static164.anInt3140 + local15);
@@ -232,7 +232,7 @@ public final class Static259 {
 			Static291.anInt5504 = arg2;
 			Static320.anInt6005 = arg1;
 			Static313.anInt5878 = 0;
-			Static91.method1960(Static89.aClass145_67);
+			Protocol.method1960(Static89.aClass145_67);
 			Protocol.outboundBuffer.ip2add(local25);
 			Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Protocol.outboundBuffer.p2(Static148.anInt2719 + local18);
@@ -244,7 +244,7 @@ public final class Static259 {
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
 			Static93.anInt1951 = 2;
-			Static91.method1960(Static372.aClass145_253);
+			Protocol.method1960(Static372.aClass145_253);
 			Protocol.outboundBuffer.p2(Static196.anInt3317);
 			Protocol.outboundBuffer.ip2add(local25);
 			Protocol.outboundBuffer.ip2_dup(Static164.anInt3140 + local15);
@@ -261,7 +261,7 @@ public final class Static259 {
 				Static320.anInt6005 = arg1;
 				Static313.anInt5878 = 0;
 				Static291.anInt5504 = arg2;
-				Static91.method1960(Static143.aClass145_102);
+				Protocol.method1960(Static143.aClass145_102);
 				Protocol.outboundBuffer.ip2_dup(local25);
 				Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -272,7 +272,7 @@ public final class Static259 {
 			Static320.anInt6005 = arg1;
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
-			Static91.method1960(Static382.aClass145_262);
+			Protocol.method1960(Static382.aClass145_262);
 			Protocol.outboundBuffer.p2(local25);
 			Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Protocol.outboundBuffer.p2add(local15 + Static164.anInt3140);
@@ -309,7 +309,7 @@ public final class Static259 {
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
 			Static320.anInt6005 = arg1;
-			Static91.method1960(Static147.aClass145_103);
+			Protocol.method1960(Static147.aClass145_103);
 			Protocol.outboundBuffer.ip2_dup((int) (local28 >>> 32) & Integer.MAX_VALUE);
 			Protocol.outboundBuffer.ip2_dup(local15 + Static164.anInt3140);
 			Protocol.outboundBuffer.ip2_dup(Static148.anInt2719 + local18);
@@ -323,7 +323,7 @@ public final class Static259 {
 				Static93.anInt1951 = 2;
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
-				Static91.method1960(Static227.aClass145_151);
+				Protocol.method1960(Static227.aClass145_151);
 				Protocol.outboundBuffer.p2(local25);
 				Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
@@ -336,7 +336,7 @@ public final class Static259 {
 				Static93.anInt1951 = 2;
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
-				Static91.method1960(Static5.aClass145_9);
+				Protocol.method1960(Static5.aClass145_9);
 				Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Protocol.outboundBuffer.ip2_dup(local25);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -349,7 +349,7 @@ public final class Static259 {
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
-				Static91.method1960(Static382.aClass145_259);
+				Protocol.method1960(Static382.aClass145_259);
 				Protocol.outboundBuffer.ip2add(local25);
 				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
@@ -360,7 +360,7 @@ public final class Static259 {
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
 			Static291.anInt5504 = arg2;
-			Static91.method1960(Static175.aClass145_132);
+			Protocol.method1960(Static175.aClass145_132);
 			Protocol.outboundBuffer.ip2_dup(Integer.MAX_VALUE & (int) (local28 >>> 32));
 			Protocol.outboundBuffer.imp4(Static337.anInt6317);
 			Protocol.outboundBuffer.p2(Static196.anInt3317);
@@ -377,7 +377,7 @@ public final class Static259 {
 				Static93.anInt1951 = 2;
 				Static291.anInt5504 = arg2;
 				Static320.anInt6005 = arg1;
-				Static91.method1960(Static331.aClass145_227);
+				Protocol.method1960(Static331.aClass145_227);
 				Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Protocol.outboundBuffer.ip2_dup(local25);
 				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
@@ -390,7 +390,7 @@ public final class Static259 {
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
-				Static91.method1960(Static49.aClass145_45);
+				Protocol.method1960(Static49.aClass145_45);
 				Protocol.outboundBuffer.ip2add(local25);
 				Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -403,7 +403,7 @@ public final class Static259 {
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
 				Static93.anInt1951 = 2;
-				Static91.method1960(Static132.aClass145_92);
+				Protocol.method1960(Static132.aClass145_92);
 				Protocol.outboundBuffer.ip2_dup(local25);
 				Protocol.outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -429,7 +429,7 @@ public final class Static259 {
 			Static93.anInt1951 = 2;
 			Static291.anInt5504 = arg2;
 			Static313.anInt5878 = 0;
-			Static91.method1960(Static374.aClass145_255);
+			Protocol.method1960(Static374.aClass145_255);
 			Protocol.outboundBuffer.p2(local25);
 		}
 		if (local21 == 19) {
@@ -439,7 +439,7 @@ public final class Static259 {
 				Static291.anInt5504 = arg2;
 				Static93.anInt1951 = 2;
 				Static313.anInt5878 = 0;
-				Static91.method1960(Static265.aClass145_173);
+				Protocol.method1960(Static265.aClass145_173);
 				Protocol.outboundBuffer.ip2add(local25);
 				Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -461,7 +461,7 @@ public final class Static259 {
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
-				Static91.method1960(Static183.aClass145_7);
+				Protocol.method1960(Static183.aClass145_7);
 				Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Protocol.outboundBuffer.ip2_dup(local25);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -479,7 +479,7 @@ public final class Static259 {
 				Static291.anInt5504 = arg2;
 				Static93.anInt1951 = 2;
 				Static320.anInt6005 = arg1;
-				Static91.method1960(Static7.aClass145_267);
+				Protocol.method1960(Static7.aClass145_267);
 				Protocol.outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Protocol.outboundBuffer.ip2add(local25);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -492,7 +492,7 @@ public final class Static259 {
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
-				Static91.method1960(Static316.aClass145_214);
+				Protocol.method1960(Static316.aClass145_214);
 				Protocol.outboundBuffer.p2(local25);
 				Protocol.outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);

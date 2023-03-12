@@ -17,7 +17,7 @@ public final class Static32 {
 	public static final Class79 aClass79_21 = new Class79("Loading...", "Lade...", "Chargement en cours...", "Carregando...");
 
 	@OriginalMember(owner = "client!br", name = "X", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_32 = new Class145(62, 3);
+	public static final ClientProt aClass145_32 = new ClientProt(62, 3);
 
 	@OriginalMember(owner = "client!br", name = "a", descriptor = "(Lclient!wm;Lclient!hp;III)V")
 	public static void method990(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class11 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {

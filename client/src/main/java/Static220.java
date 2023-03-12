@@ -59,7 +59,7 @@ public final class Static220 {
 		Static18.anIntArray27[0] = arg0;
 		Static169.aStringArray26[0] = arg5;
 		Static88.aStringArray13[0] = arg2;
-		Static21.anInt551 = Static88.anInt1876;
+		Static21.anInt551 = Static88.transmitTimer;
 		Static226.anInt4016++;
 		Static135.aStringArray20[0] = arg1;
 		Static132.anIntArray162[0] = arg3;

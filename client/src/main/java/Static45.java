@@ -594,13 +594,13 @@ public final class Static45 {
 									local459.anObjectArray4 = local6.anObjectArray33;
 									Static274.aClass135_30.method3540(local459);
 								}
-								if (Static93.anInt1950 > local6.anInt4314 && local6.anObjectArray24 != null) {
+								if (Static93.miscTransmitAt > local6.anInt4314 && local6.anObjectArray24 != null) {
 									local459 = new Class2_Sub13();
 									local459.aClass161_3 = local6;
 									local459.anObjectArray4 = local6.anObjectArray24;
 									Static274.aClass135_30.method3540(local459);
 								}
-								local6.anInt4314 = Static88.anInt1876;
+								local6.anInt4314 = Static88.transmitTimer;
 								if (local6.anObjectArray17 != null) {
 									for (local278 = 0; local278 < Static6.anInt159; local278++) {
 										@Pc(1895) Class2_Sub13 local1895 = new Class2_Sub13();

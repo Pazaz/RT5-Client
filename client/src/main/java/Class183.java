@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class183 {
 
 	@OriginalMember(owner = "client!pp", name = "x", descriptor = "Lclient!iu;")
-	private Class111 aClass111_3;
+	private BufferedSocket aClass111_3;
 
 	@OriginalMember(owner = "client!pp", name = "y", descriptor = "I")
 	private int anInt5061;
@@ -110,7 +110,7 @@ public final class Class183 {
 	}
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(Lclient!iu;ZI)V")
-	public void method4639(@OriginalArg(0) Class111 arg0, @OriginalArg(1) boolean arg1) {
+	public void method4639(@OriginalArg(0) BufferedSocket arg0, @OriginalArg(1) boolean arg1) {
 		if (this.aClass111_3 != null) {
 			try {
 				this.aClass111_3.close();

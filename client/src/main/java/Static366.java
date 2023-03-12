@@ -11,7 +11,7 @@ public final class Static366 {
 		if (!Static330.aBoolean419) {
 			return;
 		}
-		Static91.method1960(Static105.aClass145_79);
+		Protocol.method1960(Static105.aClass145_79);
 		Protocol.outboundBuffer.p4(arg0.anInt4317);
 		Protocol.outboundBuffer.p2add(arg0.anInt4297);
 		Protocol.outboundBuffer.p2add(Static214.anInt3792);

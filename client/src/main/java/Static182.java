@@ -88,7 +88,7 @@ public final class Static182 {
 		Protocol.outboundBuffer.pos = 0;
 		Protocol.packetSize = 0;
 		Protocol.packet3 = null;
-		Static151.anInt2773 = 0;
+		Static151.rebootTimer = 0;
 		Protocol.packet1 = null;
 		Protocol.packet = null;
 		Protocol.anInt4955 = 0;

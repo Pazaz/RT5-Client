@@ -9,7 +9,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!iu")
-public final class Class111 implements Runnable {
+public final class BufferedSocket implements Runnable {
 
 	@OriginalMember(owner = "client!iu", name = "q", descriptor = "Lclient!cc;")
 	private PrivilegedRequest aClass32_6;
@@ -36,18 +36,18 @@ public final class Class111 implements Runnable {
 	private final Signlink aClass152_2;
 
 	@OriginalMember(owner = "client!iu", name = "s", descriptor = "Ljava/io/InputStream;")
-	private InputStream anInputStream1;
+	private InputStream in;
 
 	@OriginalMember(owner = "client!iu", name = "b", descriptor = "Ljava/io/OutputStream;")
 	private OutputStream anOutputStream1;
 
 	@OriginalMember(owner = "client!iu", name = "<init>", descriptor = "(Ljava/net/Socket;Lclient!ml;)V")
-	public Class111(@OriginalArg(0) Socket arg0, @OriginalArg(1) Signlink arg1) throws IOException {
+	public BufferedSocket(@OriginalArg(0) Socket arg0, @OriginalArg(1) Signlink arg1) throws IOException {
 		this.aSocket1 = arg0;
 		this.aClass152_2 = arg1;
 		this.aSocket1.setSoTimeout(30000);
 		this.aSocket1.setTcpNoDelay(true);
-		this.anInputStream1 = this.aSocket1.getInputStream();
+		this.in = this.aSocket1.getInputStream();
 		this.anOutputStream1 = this.aSocket1.getOutputStream();
 	}
 
@@ -71,7 +71,7 @@ public final class Class111 implements Runnable {
 			return;
 		}
 		while (arg1 > 0) {
-			@Pc(14) int local14 = this.anInputStream1.read(arg0, arg2, arg1);
+			@Pc(14) int local14 = this.in.read(arg0, arg2, arg1);
 			if (local14 <= 0) {
 				throw new EOFException();
 			}
@@ -82,7 +82,7 @@ public final class Class111 implements Runnable {
 
 	@OriginalMember(owner = "client!iu", name = "b", descriptor = "(I)I")
 	public int available() throws IOException {
-		return this.aBoolean197 ? 0 : this.anInputStream1.available();
+		return this.aBoolean197 ? 0 : this.in.available();
 	}
 
 	@OriginalMember(owner = "client!iu", name = "a", descriptor = "(ZII[B)V")
@@ -137,7 +137,7 @@ public final class Class111 implements Runnable {
 
 	@OriginalMember(owner = "client!iu", name = "d", descriptor = "(I)I")
 	public int read() throws IOException {
-		return this.aBoolean197 ? 0 : this.anInputStream1.read();
+		return this.aBoolean197 ? 0 : this.in.read();
 	}
 
 	@OriginalMember(owner = "client!iu", name = "run", descriptor = "()V")
@@ -184,8 +184,8 @@ public final class Class111 implements Runnable {
 					continue;
 				}
 				try {
-					if (this.anInputStream1 != null) {
-						this.anInputStream1.close();
+					if (this.in != null) {
+						this.in.close();
 					}
 					if (this.anOutputStream1 != null) {
 						this.anOutputStream1.close();
@@ -206,7 +206,7 @@ public final class Class111 implements Runnable {
 	@OriginalMember(owner = "client!iu", name = "e", descriptor = "(I)V")
 	public void method2801() {
 		if (!this.aBoolean197) {
-			this.anInputStream1 = new InputStream_Sub1();
+			this.in = new InputStream_Sub1();
 			this.anOutputStream1 = new OutputStream_Sub1();
 		}
 	}

@@ -8,7 +8,7 @@ public final class Static115 {
 	public static int anInt3837;
 
 	@OriginalMember(owner = "client!gn", name = "j", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_147 = new Class145(54, 8);
+	public static final ClientProt aClass145_147 = new ClientProt(54, 8);
 
 	@OriginalMember(owner = "client!gn", name = "n", descriptor = "[I")
 	public static final int[] anIntArray234 = new int[] { 2, 2, 4, 0, 1, 8, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0 };
@@ -45,7 +45,7 @@ public final class Static115 {
 	@OriginalMember(owner = "client!gn", name = "a", descriptor = "(Ljava/lang/String;I)V")
 	public static void method3841(@OriginalArg(0) String arg0) {
 		if (!arg0.equals("")) {
-			Static91.method1960(Static13.aClass145_18);
+			Protocol.method1960(Static13.aClass145_18);
 			Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
 			Protocol.outboundBuffer.pjstr(arg0);
 		}

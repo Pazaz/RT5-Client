@@ -36,23 +36,23 @@ public final class Static341 {
 			@Pc(21) Player local21 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local9[local13]];
 			if (local21 != null && Static17.aClass11_Sub5_Sub2_Sub1_3 != local21 && local21.aString41 != null && local21.aString41.equalsIgnoreCase(arg1)) {
 				if (arg0 == 1) {
-					Static91.method1960(Static7.aClass145_267);
+					Protocol.method1960(Static7.aClass145_267);
 					Protocol.outboundBuffer.p1(0);
 					Protocol.outboundBuffer.ip2add(local9[local13]);
 				} else if (arg0 == 4) {
-					Static91.method1960(Static183.aClass145_7);
+					Protocol.method1960(Static183.aClass145_7);
 					Protocol.outboundBuffer.p1neg(0);
 					Protocol.outboundBuffer.ip2_dup(local9[local13]);
 				} else if (arg0 == 5) {
-					Static91.method1960(Static132.aClass145_92);
+					Protocol.method1960(Static132.aClass145_92);
 					Protocol.outboundBuffer.ip2_dup(local9[local13]);
 					Protocol.outboundBuffer.p1sub(0);
 				} else if (arg0 == 6) {
-					Static91.method1960(Static143.aClass145_102);
+					Protocol.method1960(Static143.aClass145_102);
 					Protocol.outboundBuffer.ip2_dup(local9[local13]);
 					Protocol.outboundBuffer.p1add(0);
 				} else if (arg0 == 7) {
-					Static91.method1960(Static21.aClass145_25);
+					Protocol.method1960(Static21.aClass145_25);
 					Protocol.outboundBuffer.p1sub(0);
 					Protocol.outboundBuffer.ip2add(local9[local13]);
 				}

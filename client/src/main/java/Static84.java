@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static84 {
 
 	@OriginalMember(owner = "client!eo", name = "b", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_65 = new Class145(10, 8);
+	public static final ClientProt aClass145_65 = new ClientProt(10, 8);
 
 	@OriginalMember(owner = "client!eo", name = "d", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_40 = new Class79("Please wait - attempting to reestablish.", "Bitte warte - es wird versucht, die Verbindung wiederherzustellen.", "Veuillez patienter - tentative de rétablissement.", "Tentando reestabelecer conexão. Aguarde.");

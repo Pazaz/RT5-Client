@@ -9,5 +9,5 @@ public final class Static88 {
 	public static final String[] aStringArray13 = new String[100];
 
 	@OriginalMember(owner = "client!es", name = "d", descriptor = "I")
-	public static int anInt1876 = 1;
+	public static int transmitTimer = 1;
 }

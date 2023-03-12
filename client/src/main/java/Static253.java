@@ -11,7 +11,7 @@ public final class Static253 {
 	public static int anInt4693;
 
 	@OriginalMember(owner = "client!oj", name = "a", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_166 = new Class145(42, -1);
+	public static final ClientProt aClass145_166 = new ClientProt(42, -1);
 
 	@OriginalMember(owner = "client!oj", name = "f", descriptor = "Lclient!un;")
 	public static GameShell anApplet_Sub1_1 = null;

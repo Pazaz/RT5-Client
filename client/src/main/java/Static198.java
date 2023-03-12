@@ -203,7 +203,7 @@ public final class Static198 {
 				arg0 = arg0.substring(Static223.aClass79_87.method2267(client.language).length());
 			}
 		}
-		Static91.method1960(Static102.aClass145_141);
+		Protocol.method1960(Static102.aClass145_141);
 		Protocol.outboundBuffer.p1(0);
 		@Pc(646) int local646 = Protocol.outboundBuffer.pos;
 		if (arg1 == 5021) {
@@ -1244,20 +1244,20 @@ public final class Static198 {
 									if (Static132.method2485(local3493)) {
 										local19 = Static146.method2698(local3493);
 									}
-									Static91.method1960(Static363.aClass145_239);
+									Protocol.method1960(Static363.aClass145_239);
 									Protocol.outboundBuffer.p4(local19);
 									return;
 								}
 								if (arg0 == 3105) {
 									local3493 = aStringArray29[--anInt3652];
-									Static91.method1960(Static49.aClass145_44);
+									Protocol.method1960(Static49.aClass145_44);
 									Protocol.outboundBuffer.p1(local3493.length() + 1);
 									Protocol.outboundBuffer.pjstr(local3493);
 									return;
 								}
 								if (arg0 == 3106) {
 									local3493 = aStringArray29[--anInt3652];
-									Static91.method1960(Static221.aClass145_164);
+									Protocol.method1960(Static221.aClass145_164);
 									Protocol.outboundBuffer.p1(local3493.length() + 1);
 									Protocol.outboundBuffer.pjstr(local3493);
 									return;
@@ -1287,7 +1287,7 @@ public final class Static198 {
 								}
 								if (arg0 == 3110) {
 									local13 = anIntArray213[--anInt3650];
-									Static91.method1960(Static190.aClass145_138);
+									Protocol.method1960(Static190.aClass145_138);
 									Protocol.outboundBuffer.p2(local13);
 									return;
 								}
@@ -1443,7 +1443,7 @@ public final class Static198 {
 									return;
 								}
 								if (arg0 == 3317) {
-									anIntArray213[anInt3650++] = Static151.anInt2773;
+									anIntArray213[anInt3650++] = Static151.rebootTimer;
 									return;
 								}
 								if (arg0 == 3318) {
@@ -2603,7 +2603,7 @@ public final class Static198 {
 					Static154.aClass170_2 = Static329.aClass170_4;
 				}
 				Static331.anInt6206 = anIntArray213[anInt3650 + 2];
-				Static91.method1960(Static32.aClass145_32);
+				Protocol.method1960(Static32.aClass145_32);
 				Protocol.outboundBuffer.p1(Static20.anInt545);
 				Protocol.outboundBuffer.p1(Static154.aClass170_2.anInt4690);
 				Protocol.outboundBuffer.p1(Static331.anInt6206);
@@ -2622,7 +2622,7 @@ public final class Static198 {
 				if (local81.length() > 80) {
 					local81 = local81.substring(0, 80);
 				}
-				Static91.method1960(Static327.aClass145_222);
+				Protocol.method1960(Static327.aClass145_222);
 				Protocol.outboundBuffer.p1(Buffer.getStringLength(local75) + Buffer.getStringLength(local81) + 2);
 				Protocol.outboundBuffer.pjstr(local75);
 				Protocol.outboundBuffer.p1(local89 - 1);
@@ -2669,7 +2669,7 @@ public final class Static198 {
 				local75 = aStringArray29[anInt3652];
 				local81 = aStringArray29[anInt3652 + 1];
 				if (LoginManager.staffModLevel != 0 || (!LoginManager.playerUnderage || LoginManager.parentalChatConsent) && !LoginManager.mapQuickChat) {
-					Static91.method1960(Static382.aClass145_261);
+					Protocol.method1960(Static382.aClass145_261);
 					Protocol.outboundBuffer.p1(0);
 					local89 = Protocol.outboundBuffer.pos;
 					Protocol.outboundBuffer.pjstr(local75);
@@ -2831,7 +2831,7 @@ public final class Static198 {
 				return;
 			}
 			if (arg0 == 5059) {
-				Static91.method1960(Static369.aClass145_248);
+				Protocol.method1960(Static369.aClass145_248);
 				Protocol.outboundBuffer.p1(0);
 				local157 = Protocol.outboundBuffer.pos;
 				Protocol.outboundBuffer.p1(0);
@@ -2842,7 +2842,7 @@ public final class Static198 {
 			}
 			if (arg0 == 5060) {
 				local75 = aStringArray29[--anInt3652];
-				Static91.method1960(Static325.aClass145_220);
+				Protocol.method1960(Static325.aClass145_220);
 				Protocol.outboundBuffer.p1(0);
 				local192 = Protocol.outboundBuffer.pos;
 				Protocol.outboundBuffer.pjstr(local75);
@@ -2852,7 +2852,7 @@ public final class Static198 {
 				return;
 			}
 			if (arg0 == 5061) {
-				Static91.method1960(Static369.aClass145_248);
+				Protocol.method1960(Static369.aClass145_248);
 				Protocol.outboundBuffer.p1(0);
 				local157 = Protocol.outboundBuffer.pos;
 				Protocol.outboundBuffer.p1(1);
@@ -3346,7 +3346,7 @@ public final class Static198 {
 							local75 = aStringArray29[anInt3652];
 							local81 = aStringArray29[anInt3652 + 1];
 							local89 = anIntArray213[--anInt3650];
-							Static91.method1960(Static323.aClass145_219);
+							Protocol.method1960(Static323.aClass145_219);
 							Protocol.outboundBuffer.p1(Buffer.getStringLength(local75) + Buffer.getStringLength(local81) + 1);
 							Protocol.outboundBuffer.pjstr(local75);
 							Protocol.outboundBuffer.pjstr(local81);

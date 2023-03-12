@@ -10,7 +10,7 @@ public final class Static151 {
 	public static final Class79 aClass79_65 = new Class79(" from your ignore list first.", " zuerst von deiner Ignorieren-Liste!", " de votre liste noire.", " da sua lista de ignorados primeiro.");
 
 	@OriginalMember(owner = "client!im", name = "G", descriptor = "I")
-	public static int anInt2773 = 0;
+	public static int rebootTimer = 0;
 
 	@OriginalMember(owner = "client!im", name = "b", descriptor = "(III)V")
 	public static void method2756(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {

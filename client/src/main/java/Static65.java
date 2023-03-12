@@ -45,10 +45,10 @@ public final class Static65 {
 	@OriginalMember(owner = "client!dq", name = "b", descriptor = "(IIII)V")
 	public static void method1736(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (arg2 == 0) {
-			Static91.method1960(Static239.aClass145_158);
+			Protocol.method1960(Static239.aClass145_158);
 		}
 		if (arg2 == 1) {
-			Static91.method1960(Static310.aClass145_203);
+			Protocol.method1960(Static310.aClass145_203);
 		}
 		Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
 		Protocol.outboundBuffer.p2(arg0 + Static164.anInt3140);

@@ -18,19 +18,19 @@ public final class Static382 {
 	public static final Class79 aClass79_147 = new Class79("Face here", "Hierhin drehen", "Regarder dans cette direction", "Virar para cá");
 
 	@OriginalMember(owner = "client!we", name = "D", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_258 = new Class145(49, -1);
+	public static final ClientProt aClass145_258 = new ClientProt(49, -1);
 
 	@OriginalMember(owner = "client!we", name = "F", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_259 = new Class145(50, 3);
+	public static final ClientProt aClass145_259 = new ClientProt(50, 3);
 
 	@OriginalMember(owner = "client!we", name = "G", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_260 = new Class145(47, 7);
+	public static final ClientProt aClass145_260 = new ClientProt(47, 7);
 
 	@OriginalMember(owner = "client!we", name = "H", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_261 = new Class145(1, -1);
+	public static final ClientProt aClass145_261 = new ClientProt(1, -1);
 
 	@OriginalMember(owner = "client!we", name = "J", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_262 = new Class145(79, 7);
+	public static final ClientProt aClass145_262 = new ClientProt(79, 7);
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IILjava/util/Random;)I")
 	public static int method6361(@OriginalArg(1) int arg0, @OriginalArg(2) Random arg1) {

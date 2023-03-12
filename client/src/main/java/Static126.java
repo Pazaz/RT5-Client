@@ -7,7 +7,7 @@ public final class Static126 {
 	public static Class13[] aClass13Array22;
 
 	@OriginalMember(owner = "client!hd", name = "m", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_229 = new Class145(21, 6);
+	public static final ClientProt aClass145_229 = new ClientProt(21, 6);
 
 	@OriginalMember(owner = "client!hd", name = "p", descriptor = "I")
 	public static int anInt6311 = 0;

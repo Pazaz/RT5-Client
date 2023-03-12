@@ -96,7 +96,7 @@ public final class Static164 {
 				if (Protocol.socketRequest2.status != 1) {
 					return;
 				}
-				Protocol.socket = new Class111((Socket) Protocol.socketRequest2.result, GameShell.signlink);
+				Protocol.socket = new BufferedSocket((Socket) Protocol.socketRequest2.result, GameShell.signlink);
 				Protocol.socketRequest2 = null;
 				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
 				if (client.musicChannel != null) {

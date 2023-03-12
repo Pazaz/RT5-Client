@@ -47,43 +47,43 @@ public final class Static277 {
 			return;
 		}
 		if (arg1 == 1) {
-			Static91.method1960(Static122.aClass145_89);
+			Protocol.method1960(Static122.aClass145_89);
 			Static185.method3398(arg3, local8.anInt4300, arg0);
 		}
 		if (arg1 == 2) {
-			Static91.method1960(Static153.aClass145_109);
+			Protocol.method1960(Static153.aClass145_109);
 			Static185.method3398(arg3, local8.anInt4300, arg0);
 		}
 		if (arg1 == 3) {
-			Static91.method1960(Static36.aClass145_34);
+			Protocol.method1960(Static36.aClass145_34);
 			Static185.method3398(arg3, local8.anInt4300, arg0);
 		}
 		if (arg1 == 4) {
-			Static91.method1960(Static373.aClass145_254);
+			Protocol.method1960(Static373.aClass145_254);
 			Static185.method3398(arg3, local8.anInt4300, arg0);
 		}
 		if (arg1 == 5) {
-			Static91.method1960(Static112.aClass145_86);
+			Protocol.method1960(Static112.aClass145_86);
 			Static185.method3398(arg3, local8.anInt4300, arg0);
 		}
 		if (arg1 == 6) {
-			Static91.method1960(Static181.aClass145_134);
+			Protocol.method1960(Static181.aClass145_134);
 			Static185.method3398(arg3, local8.anInt4300, arg0);
 		}
 		if (arg1 == 7) {
-			Static91.method1960(Static84.aClass145_65);
+			Protocol.method1960(Static84.aClass145_65);
 			Static185.method3398(arg3, local8.anInt4300, arg0);
 		}
 		if (arg1 == 8) {
-			Static91.method1960(Static150.aClass145_107);
+			Protocol.method1960(Static150.aClass145_107);
 			Static185.method3398(arg3, local8.anInt4300, arg0);
 		}
 		if (arg1 == 9) {
-			Static91.method1960(Static115.aClass145_147);
+			Protocol.method1960(Static115.aClass145_147);
 			Static185.method3398(arg3, local8.anInt4300, arg0);
 		}
 		if (arg1 == 10) {
-			Static91.method1960(Static322.aClass145_218);
+			Protocol.method1960(Static322.aClass145_218);
 			Static185.method3398(arg3, local8.anInt4300, arg0);
 		}
 	}

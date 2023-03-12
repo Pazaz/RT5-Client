@@ -14,7 +14,7 @@ public final class Static82 {
 	public static int anInt1835 = 0;
 
 	@OriginalMember(owner = "client!em", name = "h", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_64 = new Class145(25, 2);
+	public static final ClientProt aClass145_64 = new ClientProt(25, 2);
 
 	@OriginalMember(owner = "client!em", name = "j", descriptor = "[I")
 	public static final int[] anIntArray120 = new int[13];
@@ -40,7 +40,7 @@ public final class Static82 {
 
 	@OriginalMember(owner = "client!em", name = "a", descriptor = "(IZ)V")
 	public static void method1904() {
-		Static91.method1960(Static186.aClass145_145);
+		Protocol.method1960(Static186.aClass145_145);
 		for (@Pc(21) Class2_Sub7 local21 = (Class2_Sub7) Static329.aClass4_130.method80(); local21 != null; local21 = (Class2_Sub7) Static329.aClass4_130.method79()) {
 			if (!local21.method6462()) {
 				local21 = (Class2_Sub7) Static329.aClass4_130.method80();

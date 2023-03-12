@@ -83,7 +83,7 @@ public class LoginManager {
 				if (Protocol.socketRequest2.status != 1) {
 					return;
 				}
-				Protocol.socket = new Class111((Socket) Protocol.socketRequest2.result, GameShell.signlink);
+				Protocol.socket = new BufferedSocket((Socket) Protocol.socketRequest2.result, GameShell.signlink);
 				Protocol.socketRequest2 = null;
 				@Pc(105) long encodedUsername = LoginManager.encodedUsername = StringUtils.toBase37(username);
 				int usernameHash = (int) (encodedUsername >> 16 & 0x1FL);
@@ -289,7 +289,7 @@ public class LoginManager {
 						}
 						Protocol.socket.read(Protocol.inboundBuffer.data, 1, Protocol.inboundBuffer.pos + 2);
 					}
-					Protocol.packet = Protocol.INCOMING_WORLD()[Protocol.inboundBuffer.gsmart_isaac()];
+					Protocol.packet = Protocol.INCOMING_WORLD()[Protocol.inboundBuffer.g1isaac()];
 					Protocol.packetSize = Protocol.inboundBuffer.g2();
 					step = 9;
 				}

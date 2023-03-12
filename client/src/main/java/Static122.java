@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static122 {
 
 	@OriginalMember(owner = "client!h", name = "b", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_89 = new Class145(12, 8);
+	public static final ClientProt aClass145_89 = new ClientProt(12, 8);
 
 	@OriginalMember(owner = "client!h", name = "g", descriptor = "Z")
 	public static volatile boolean aBoolean176 = false;

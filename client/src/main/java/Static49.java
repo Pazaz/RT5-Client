@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static49 {
 
 	@OriginalMember(owner = "client!cr", name = "a", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_44 = new Class145(29, -1);
+	public static final ClientProt aClass145_44 = new ClientProt(29, -1);
 
 	@OriginalMember(owner = "client!cr", name = "g", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_45 = new Class145(35, 3);
+	public static final ClientProt aClass145_45 = new ClientProt(35, 3);
 
 	@OriginalMember(owner = "client!cr", name = "b", descriptor = "(I)V")
 	public static void method1471() {

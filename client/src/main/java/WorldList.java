@@ -72,7 +72,7 @@ public class WorldList {
 			try {
 				client.instance.getAppletContext().showDocument(new URL(local109), "_self");
 				return true;
-			} catch (@Pc(119) Exception local119) {
+			} catch (@Pc(119) Exception ex) {
 				return false;
 			}
 		}
@@ -164,7 +164,7 @@ public class WorldList {
 				if (Protocol.socketRequest.status != 1) {
 					return -1;
 				}
-				Protocol.socket = new Class111((Socket) Protocol.socketRequest.result, GameShell.signlink);
+				Protocol.socket = new BufferedSocket((Socket) Protocol.socketRequest.result, GameShell.signlink);
 				Protocol.socketRequest = null;
 				@Pc(76) int checksum = 0;
 				if (loaded) {

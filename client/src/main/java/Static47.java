@@ -14,7 +14,7 @@ public final class Static47 {
 	public static boolean aBoolean102 = false;
 
 	@OriginalMember(owner = "client!co", name = "t", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_43 = new Class145(75, 11);
+	public static final ClientProt aClass145_43 = new ClientProt(75, 11);
 
 	@OriginalMember(owner = "client!co", name = "u", descriptor = "[I")
 	public static final int[] anIntArray90 = new int[4096];

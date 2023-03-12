@@ -12,7 +12,7 @@ public final class Static143 {
 	public static final Class210 aClass210_7 = new Class210(0, 4);
 
 	@OriginalMember(owner = "client!ib", name = "D", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_102 = new Class145(45, 3);
+	public static final ClientProt aClass145_102 = new ClientProt(45, 3);
 
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(IIBZI)V")
 	public static void method2677(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {

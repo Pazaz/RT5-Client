@@ -13,7 +13,7 @@ public final class Static227 {
 	public static int anInt4036;
 
 	@OriginalMember(owner = "client!nb", name = "i", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_151 = new Class145(68, 3);
+	public static final ClientProt aClass145_151 = new ClientProt(68, 3);
 
 	@OriginalMember(owner = "client!nb", name = "B", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_90 = new Class79("Loading interfaces - ", "Lade Benutzeroberfläche - ", "Chargement des interfaces - ", "Carregando interfaces - ");

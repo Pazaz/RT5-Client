@@ -17,7 +17,7 @@ public final class Static243 {
 	public static final int anInt4496 = 1339;
 
 	@OriginalMember(owner = "client!nt", name = "P", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_162 = new Class145(76, -1);
+	public static final ClientProt aClass145_162 = new ClientProt(76, -1);
 
 	@OriginalMember(owner = "client!nt", name = "Q", descriptor = "I")
 	public static int anInt4503 = 0;

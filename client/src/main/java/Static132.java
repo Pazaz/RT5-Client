@@ -8,7 +8,7 @@ public final class Static132 {
 	public static final int[] anIntArray161 = new int[14];
 
 	@OriginalMember(owner = "client!hk", name = "f", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_92 = new Class145(36, 3);
+	public static final ClientProt aClass145_92 = new ClientProt(36, 3);
 
 	@OriginalMember(owner = "client!hk", name = "g", descriptor = "Z")
 	public static boolean aBoolean179 = false;

@@ -7,7 +7,7 @@ public final class Static36 {
 	public static int anInt925;
 
 	@OriginalMember(owner = "client!c", name = "b", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_34 = new Class145(2, 8);
+	public static final ClientProt aClass145_34 = new ClientProt(2, 8);
 
 	@OriginalMember(owner = "client!c", name = "g", descriptor = "Lclient!gd;")
 	public static final Class79 aClass79_22 = new Class79("Loading config - ", "Lade Konfiguration - ", "Chargement des fichiers config - ", "Carregando config - ");

@@ -466,7 +466,7 @@ public final class Static161 {
 				return;
 			}
 			if (LoginManager.reconnecting == 30) {
-				Static91.method1960(Static243.aClass145_162);
+				Protocol.method1960(Static243.aClass145_162);
 				Protocol.outboundBuffer.p1(arg0.length() + 2);
 				Protocol.outboundBuffer.p1(arg1 ? 1 : 0);
 				Protocol.outboundBuffer.pjstr(arg0);
@@ -497,7 +497,7 @@ public final class Static161 {
 		}
 		Static367.anInt6876 = 0;
 		if (!Static101.aBoolean158 && Protocol.socket != null) {
-			Static91.method1960(Static326.aClass145_228);
+			Protocol.method1960(Static326.aClass145_228);
 			try {
 				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
 				Protocol.outboundBuffer.pos = 0;

@@ -15,7 +15,7 @@ public final class Static374 {
 	public static final Class25_Sub1[] aClass25_Sub1Array2 = new Class25_Sub1[29];
 
 	@OriginalMember(owner = "client!vr", name = "k", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_255 = new Class145(66, 2);
+	public static final ClientProt aClass145_255 = new ClientProt(66, 2);
 
 	@OriginalMember(owner = "client!vr", name = "a", descriptor = "(B)I")
 	public static int method6273() {

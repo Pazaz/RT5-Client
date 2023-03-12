@@ -13,7 +13,7 @@ public final class Static313 {
 	public static int[] anIntArray388;
 
 	@OriginalMember(owner = "client!sb", name = "S", descriptor = "Lclient!mc;")
-	public static final Class145 aClass145_209 = new Class145(5, 7);
+	public static final ClientProt aClass145_209 = new ClientProt(5, 7);
 
 	@OriginalMember(owner = "client!sb", name = "X", descriptor = "I")
 	public static int anInt5878 = 0;
