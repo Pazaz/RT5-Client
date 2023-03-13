@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ko")
-public final class Class130_Sub1 extends Class130 {
+public final class GlFont extends BitmapFont {
 
 	@OriginalMember(owner = "client!ko", name = "w", descriptor = "Lclient!bf;")
 	private final Class19_Sub1 aClass19_Sub1_19;
@@ -21,7 +21,7 @@ public final class Class130_Sub1 extends Class130 {
 	private final Class203 aClass203_3;
 
 	@OriginalMember(owner = "client!ko", name = "<init>", descriptor = "(Lclient!bf;Lclient!vi;[Lclient!dk;Z)V")
-	public Class130_Sub1(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) Class239 arg1, @OriginalArg(2) Class48[] arg2, @OriginalArg(3) boolean arg3) {
+	public GlFont(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) Class239 arg1, @OriginalArg(2) Class48[] arg2, @OriginalArg(3) boolean arg3) {
 		super(arg0, arg1);
 		this.aClass19_Sub1_19 = arg0;
 		@Pc(9) opengl local9 = arg0.gl;

@@ -32,7 +32,7 @@ public final class Static388 {
 					Static91.aClass2_Sub12_Sub3_1.method4278(local16);
 				} else {
 					Static91.aClass2_Sub12_Sub3_1.method4274();
-					Static91.aClass2_Sub12_Sub3_1.method4276();
+					Static91.aClass2_Sub12_Sub3_1.clearInstruments();
 					Static155.aClass2_Sub34_1 = null;
 					Static164.aClass24_1 = null;
 					if (Static116.aClass197_26 == null) {

@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!u")
-public final class Class227 {
+public final class Shadow {
 
 	@OriginalMember(owner = "client!u", name = "b", descriptor = "Z")
-	public boolean aBoolean432 = true;
+	public boolean outputToSprite = true;
 
 	@OriginalMember(owner = "client!u", name = "a", descriptor = "I")
 	private int anInt6399 = -1;
@@ -16,7 +16,7 @@ public final class Class227 {
 	private final int anInt6400;
 
 	@OriginalMember(owner = "client!u", name = "h", descriptor = "Lclient!ic;")
-	private final Class100 aClass100_2;
+	private final ShadowManager aClass100_2;
 
 	@OriginalMember(owner = "client!u", name = "g", descriptor = "Lclient!bf;")
 	private final Class19_Sub1 aClass19_Sub1_36;
@@ -37,7 +37,7 @@ public final class Class227 {
 	private Class180_Sub2 aClass180_Sub2_2;
 
 	@OriginalMember(owner = "client!u", name = "<init>", descriptor = "(Lclient!bf;Lclient!ic;Lclient!ah;IIIII)V")
-	public Class227(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) Class100 arg1, @OriginalArg(2) Class6_Sub1 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
+	public Shadow(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) ShadowManager arg1, @OriginalArg(2) Class6_Sub1 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
 		this.anInt6400 = arg6;
 		this.aClass100_2 = arg1;
 		this.aClass19_Sub1_36 = arg0;
@@ -117,10 +117,10 @@ public final class Class227 {
 
 	@OriginalMember(owner = "client!u", name = "a", descriptor = "(I)V")
 	private void method5790() {
-		if (!this.aBoolean432) {
+		if (!this.outputToSprite) {
 			return;
 		}
-		this.aBoolean432 = false;
+		this.outputToSprite = false;
 		@Pc(11) byte[] local11 = this.aClass100_2.aByteArray28;
 		@Pc(13) byte[] local13 = Static345.aByteArray93;
 		@Pc(15) int local15 = 0;
@@ -138,7 +138,7 @@ public final class Class227 {
 			local30 += local19 - 128;
 		}
 		if (this.aClass8_Sub1_5 != null && this.anInt6399 == local15) {
-			this.aBoolean432 = false;
+			this.outputToSprite = false;
 			return;
 		}
 		this.anInt6399 = local15;

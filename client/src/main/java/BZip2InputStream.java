@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class BZip2InputStream {
 
 	@OriginalMember(owner = "client!mj", name = "a", descriptor = "Lclient!ot;")
-	private static final Class174 aClass174_1 = new Class174();
+	private static final BZip2InputState aClass174_1 = new BZip2InputState();
 
 	@OriginalMember(owner = "client!mj", name = "a", descriptor = "(Lclient!ot;)V")
-	private static void method3735(@OriginalArg(0) Class174 arg0) {
+	private static void method3735(@OriginalArg(0) BZip2InputState arg0) {
 		arg0.anInt4794 = 0;
 		for (@Pc(4) int local4 = 0; local4 < 256; local4++) {
 			if (arg0.aBooleanArray41[local4]) {
@@ -54,7 +54,7 @@ public final class BZip2InputStream {
 	}
 
 	@OriginalMember(owner = "client!mj", name = "b", descriptor = "(Lclient!ot;)V")
-	private static void method3737(@OriginalArg(0) Class174 arg0) {
+	private static void method3737(@OriginalArg(0) BZip2InputState arg0) {
 		@Pc(2) byte local2 = arg0.aByte53;
 		@Pc(5) int local5 = arg0.anInt4798;
 		@Pc(8) int local8 = arg0.anInt4801;
@@ -168,17 +168,17 @@ public final class BZip2InputStream {
 	}
 
 	@OriginalMember(owner = "client!mj", name = "c", descriptor = "(Lclient!ot;)B")
-	private static byte method3738(@OriginalArg(0) Class174 arg0) {
+	private static byte method3738(@OriginalArg(0) BZip2InputState arg0) {
 		return (byte) method3740(1, arg0);
 	}
 
 	@OriginalMember(owner = "client!mj", name = "d", descriptor = "(Lclient!ot;)B")
-	private static byte method3739(@OriginalArg(0) Class174 arg0) {
+	private static byte method3739(@OriginalArg(0) BZip2InputState arg0) {
 		return (byte) method3740(8, arg0);
 	}
 
 	@OriginalMember(owner = "client!mj", name = "a", descriptor = "(ILclient!ot;)I")
-	private static int method3740(@OriginalArg(0) int arg0, @OriginalArg(1) Class174 arg1) {
+	private static int method3740(@OriginalArg(0) int arg0, @OriginalArg(1) BZip2InputState arg1) {
 		while (arg1.anInt4802 < arg0) {
 			arg1.anInt4791 = arg1.anInt4791 << 8 | arg1.aByteArray57[arg1.anInt4793] & 0xFF;
 			arg1.anInt4802 += 8;
@@ -192,7 +192,7 @@ public final class BZip2InputStream {
 
 	@OriginalMember(owner = "client!mj", name = "a", descriptor = "([BI[BII)I")
 	public static int bunzip2(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3) {
-		@Pc(1) Class174 local1 = aClass174_1;
+		@Pc(1) BZip2InputState local1 = aClass174_1;
 		synchronized (aClass174_1) {
 			aClass174_1.aByteArray57 = arg2;
 			aClass174_1.anInt4793 = 9;
@@ -212,7 +212,7 @@ public final class BZip2InputStream {
 	}
 
 	@OriginalMember(owner = "client!mj", name = "e", descriptor = "(Lclient!ot;)V")
-	private static void method3743(@OriginalArg(0) Class174 arg0) {
+	private static void method3743(@OriginalArg(0) BZip2InputState arg0) {
 		arg0.anInt4788 = 1;
 		if (Static31.anIntArray38 == null) {
 			Static31.anIntArray38 = new int[arg0.anInt4788 * 100000];

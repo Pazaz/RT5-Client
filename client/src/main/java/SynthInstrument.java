@@ -14,34 +14,34 @@ public final class SynthInstrument {
 	private static final int[] anIntArray342;
 
 	@OriginalMember(owner = "client!ph", name = "a", descriptor = "Lclient!uf;")
-	private Class232 aClass232_1;
+	private SynthEnvelope aClass232_1;
 
 	@OriginalMember(owner = "client!ph", name = "c", descriptor = "Lclient!uf;")
-	private Class232 aClass232_2;
+	private SynthEnvelope aClass232_2;
 
 	@OriginalMember(owner = "client!ph", name = "d", descriptor = "Lclient!uf;")
-	private Class232 aClass232_3;
+	private SynthEnvelope aClass232_3;
 
 	@OriginalMember(owner = "client!ph", name = "i", descriptor = "Lclient!uf;")
-	private Class232 aClass232_4;
+	private SynthEnvelope aClass232_4;
 
 	@OriginalMember(owner = "client!ph", name = "k", descriptor = "Lclient!uf;")
-	private Class232 aClass232_5;
+	private SynthEnvelope aClass232_5;
 
 	@OriginalMember(owner = "client!ph", name = "l", descriptor = "Lclient!uf;")
-	private Class232 aClass232_6;
+	private SynthEnvelope aClass232_6;
 
 	@OriginalMember(owner = "client!ph", name = "n", descriptor = "Lclient!uf;")
-	private Class232 aClass232_7;
+	private SynthEnvelope aClass232_7;
 
 	@OriginalMember(owner = "client!ph", name = "o", descriptor = "Lclient!pc;")
-	private Class176 aClass176_1;
+	private SynthFilter aClass176_1;
 
 	@OriginalMember(owner = "client!ph", name = "q", descriptor = "Lclient!uf;")
-	private Class232 aClass232_8;
+	private SynthEnvelope aClass232_8;
 
 	@OriginalMember(owner = "client!ph", name = "s", descriptor = "Lclient!uf;")
-	private Class232 aClass232_9;
+	private SynthEnvelope aClass232_9;
 
 	@OriginalMember(owner = "client!ph", name = "b", descriptor = "I")
 	public int anInt4960 = 500;
@@ -262,32 +262,32 @@ public final class SynthInstrument {
 
 	@OriginalMember(owner = "client!ph", name = "a", descriptor = "(Lclient!bt;)V")
 	public void method4552(@OriginalArg(0) Buffer arg0) {
-		this.aClass232_9 = new Class232();
+		this.aClass232_9 = new SynthEnvelope();
 		this.aClass232_9.method5841(arg0);
-		this.aClass232_8 = new Class232();
+		this.aClass232_8 = new SynthEnvelope();
 		this.aClass232_8.method5841(arg0);
 		@Pc(21) int local21 = arg0.g1();
 		if (local21 != 0) {
 			arg0.pos--;
-			this.aClass232_1 = new Class232();
+			this.aClass232_1 = new SynthEnvelope();
 			this.aClass232_1.method5841(arg0);
-			this.aClass232_6 = new Class232();
+			this.aClass232_6 = new SynthEnvelope();
 			this.aClass232_6.method5841(arg0);
 		}
 		local21 = arg0.g1();
 		if (local21 != 0) {
 			arg0.pos--;
-			this.aClass232_7 = new Class232();
+			this.aClass232_7 = new SynthEnvelope();
 			this.aClass232_7.method5841(arg0);
-			this.aClass232_3 = new Class232();
+			this.aClass232_3 = new SynthEnvelope();
 			this.aClass232_3.method5841(arg0);
 		}
 		local21 = arg0.g1();
 		if (local21 != 0) {
 			arg0.pos--;
-			this.aClass232_4 = new Class232();
+			this.aClass232_4 = new SynthEnvelope();
 			this.aClass232_4.method5841(arg0);
-			this.aClass232_5 = new Class232();
+			this.aClass232_5 = new SynthEnvelope();
 			this.aClass232_5.method5841(arg0);
 		}
 		for (@Pc(109) int local109 = 0; local109 < 10; local109++) {
@@ -303,8 +303,8 @@ public final class SynthInstrument {
 		this.anInt4962 = arg0.gsmart();
 		this.anInt4960 = arg0.g2();
 		this.anInt4963 = arg0.g2();
-		this.aClass176_1 = new Class176();
-		this.aClass232_2 = new Class232();
+		this.aClass176_1 = new SynthFilter();
+		this.aClass232_2 = new SynthEnvelope();
 		this.aClass176_1.method4468(arg0, this.aClass232_2);
 	}
 }

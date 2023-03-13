@@ -411,7 +411,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	public final Class56 aClass56_1;
 
 	@OriginalMember(owner = "client!bf", name = "u", descriptor = "Lclient!hm;")
-	private final Class95 aClass95_1;
+	private final MaterialManager aClass95_1;
 
 	@OriginalMember(owner = "client!bf", name = "r", descriptor = "Lclient!rd;")
 	private final Class200 aClass200_1;
@@ -524,7 +524,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 				this.aClass56_1 = new Class56(this, this.anInterface2_5);
 				Static280.method4766(true);
 				this.aBoolean32 = true;
-				this.aClass95_1 = new Class95(this);
+				this.aClass95_1 = new MaterialManager(this);
 				this.aClass200_1 = new Class200(this);
 				this.aClass2_Sub38_Sub1_1 = new Class2_Sub38_Sub1(this);
 				this.method795();
@@ -2264,8 +2264,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lclient!vi;[Lclient!dk;Z)Lclient!ur;")
 	@Override
-	public Class130 method2857(@OriginalArg(0) Class239 arg0, @OriginalArg(1) Class48[] arg1) {
-		return new Class130_Sub1(this, arg0, arg1, true);
+	public BitmapFont method2857(@OriginalArg(0) Class239 arg0, @OriginalArg(1) Class48[] arg1) {
+		return new GlFont(this, arg0, arg1, true);
 	}
 
 	@OriginalMember(owner = "client!bf", name = "q", descriptor = "()Z")

@@ -15,7 +15,7 @@ public final class Static179 {
 
 	@OriginalMember(owner = "client!kg", name = "a", descriptor = "(BI)V")
 	public static void method3364(@OriginalArg(1) int arg0) {
-		@Pc(16) Class2_Sub2_Sub7 local16 = Static316.method5413(3, arg0);
+		@Pc(16) DelayedStateChange local16 = Static316.method5413(3, arg0);
 		local16.method2312();
 	}
 }

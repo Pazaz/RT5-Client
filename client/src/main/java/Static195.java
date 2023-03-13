@@ -9,7 +9,7 @@ public final class Static195 {
 
 	@OriginalMember(owner = "client!lg", name = "a", descriptor = "(IIB)V")
 	public static void method3559(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(13) Class21 local13 = Static332.aClass21ArrayArray3[arg0][arg1];
+		@Pc(13) Environment local13 = Static332.aClass21ArrayArray3[arg0][arg1];
 		if (local13 != null) {
 			Static97.anInt2040 = local13.anInt632;
 			Static139.anInt2593 = local13.anInt640;

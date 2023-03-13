@@ -223,7 +223,7 @@ public final class Static201 {
 									Static190.aClass19_8.method2836(local90, local95, local19.anInt4248, local19.anInt4261, 255 - (local98 & 0xFF) << 24 | local19.anInt4290 & 0xFFFFFF, 1);
 								}
 							} else if (local19.anInt4272 == 4) {
-								@Pc(955) Class130 local955 = local19.method4101(Static190.aClass19_8);
+								@Pc(955) BitmapFont local955 = local19.method4101(Static190.aClass19_8);
 								if (local955 != null) {
 									local248 = local19.anInt4290;
 									@Pc(970) String local970 = local19.aString47;

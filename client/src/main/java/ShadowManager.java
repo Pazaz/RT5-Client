@@ -6,10 +6,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ic")
-public final class Class100 {
+public final class ShadowManager {
 
 	@OriginalMember(owner = "client!ic", name = "h", descriptor = "[[Lclient!u;")
-	private Class227[][] aClass227ArrayArray1;
+	private Shadow[][] shadows;
 
 	@OriginalMember(owner = "client!ic", name = "d", descriptor = "Lclient!ah;")
 	private final Class6_Sub1 aClass6_Sub1_1;
@@ -36,7 +36,7 @@ public final class Class100 {
 	private final int anInt2682;
 
 	@OriginalMember(owner = "client!ic", name = "<init>", descriptor = "(Lclient!bf;Lclient!ah;)V")
-	public Class100(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) Class6_Sub1 arg1) {
+	public ShadowManager(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) Class6_Sub1 arg1) {
 		this.aClass6_Sub1_1 = arg1;
 		this.aClass19_Sub1_16 = arg0;
 		this.anInt2684 = (this.aClass6_Sub1_1.anInt6320 * this.aClass6_Sub1_1.anInt182 >> this.aClass19_Sub1_16.anInt583) + 2;
@@ -49,10 +49,10 @@ public final class Class100 {
 
 	@OriginalMember(owner = "client!ic", name = "a", descriptor = "(B)V")
 	public void method2681() {
-		this.aClass227ArrayArray1 = new Class227[this.anInt2680][this.anInt2682];
+		this.shadows = new Shadow[this.anInt2680][this.anInt2682];
 		for (@Pc(8) int local8 = 0; local8 < this.anInt2682; local8++) {
 			for (@Pc(18) int local18 = 0; local18 < this.anInt2680; local18++) {
-				this.aClass227ArrayArray1[local18][local8] = new Class227(this.aClass19_Sub1_16, this, this.aClass6_Sub1_1, local18, local8, this.anInt2681, local18 * 128 + 1, local8 * 128 - -1);
+				this.shadows[local18][local8] = new Shadow(this.aClass19_Sub1_16, this, this.aClass6_Sub1_1, local18, local8, this.anInt2681, local18 * 128 + 1, local8 * 128 - -1);
 			}
 		}
 	}
@@ -103,7 +103,7 @@ public final class Class100 {
 
 	@OriginalMember(owner = "client!ic", name = "a", descriptor = "(BIIII)V")
 	private void method2684(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		if (this.aClass227ArrayArray1 == null) {
+		if (this.shadows == null) {
 			return;
 		}
 		@Pc(18) int local18 = arg3 - 1 >> 7;
@@ -111,9 +111,9 @@ public final class Class100 {
 		@Pc(34) int local34 = arg1 - 1 >> 7;
 		@Pc(44) int local44 = arg0 + arg1 - 1 - 1 >> 7;
 		for (@Pc(46) int local46 = local18; local46 <= local28; local46++) {
-			@Pc(58) Class227[] local58 = this.aClass227ArrayArray1[local46];
+			@Pc(58) Shadow[] local58 = this.shadows[local46];
 			for (@Pc(60) int local60 = local34; local60 <= local44; local60++) {
-				local58[local60].aBoolean432 = true;
+				local58[local60].outputToSprite = true;
 			}
 		}
 	}
@@ -235,7 +235,7 @@ public final class Class100 {
 									local3.glScalef(local35, local35, 1.0F);
 									local3.glTranslatef((float) -local61 / local35, (float) -local43 / local35, 1.0F);
 									local3.glMatrixMode(GL.GL_MODELVIEW);
-									this.aClass227ArrayArray1[local61][local43].method5787();
+									this.shadows[local61][local43].method5787();
 									continue label130;
 								}
 							}
@@ -284,7 +284,7 @@ public final class Class100 {
 						local3.glScalef(local35, local35, 1.0F);
 						local3.glTranslatef((float) -local61 / local35, (float) -local43 / local35, 1.0F);
 						local3.glMatrixMode(GL.GL_MODELVIEW);
-						this.aClass227ArrayArray1[local61][local43].method5789(local233.data, local70);
+						this.shadows[local61][local43].method5789(local233.data, local70);
 					}
 				}
 			}

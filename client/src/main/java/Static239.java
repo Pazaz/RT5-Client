@@ -36,7 +36,7 @@ public final class Static239 {
 			}
 			local55.unlink();
 		}
-		for (@Pc(82) Class2_Sub19 local82 = (Class2_Sub19) Static232.aClass4_86.method80(); local82 != null; local82 = (Class2_Sub19) Static232.aClass4_86.method79()) {
+		for (@Pc(82) Class2_Sub19 local82 = (Class2_Sub19) Static232.aClass4_86.head(); local82 != null; local82 = (Class2_Sub19) Static232.aClass4_86.next()) {
 			if (local82.aClass2_Sub12_Sub4_3 != null) {
 				client.soundStream.method2081(local82.aClass2_Sub12_Sub4_3);
 				local82.aClass2_Sub12_Sub4_3 = null;

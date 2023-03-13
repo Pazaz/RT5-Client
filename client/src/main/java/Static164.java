@@ -11,7 +11,7 @@ public final class Static164 {
 	public static float aFloat38;
 
 	@OriginalMember(owner = "client!jl", name = "eb", descriptor = "Lclient!bk;")
-	public static Class24 aClass24_1;
+	public static SoundBank aClass24_1;
 
 	@OriginalMember(owner = "client!jl", name = "W", descriptor = "I")
 	public static final int anInt3138 = 0;
@@ -26,7 +26,7 @@ public final class Static164 {
 	public static final Class210 aClass210_8 = new Class210(8, 6);
 
 	@OriginalMember(owner = "client!jl", name = "a", descriptor = "(IIIIIIILclient!ur;Lclient!vi;Lclient!kf;Ljava/lang/String;Lclient!nk;)V")
-	public static void method3147(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) Class130 arg6, @OriginalArg(8) Class239 arg7, @OriginalArg(9) Class78 arg8, @OriginalArg(10) String arg9, @OriginalArg(11) Class161 arg10) {
+	public static void method3147(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) BitmapFont arg6, @OriginalArg(8) Class239 arg7, @OriginalArg(9) Class78 arg8, @OriginalArg(10) String arg9, @OriginalArg(11) Class161 arg10) {
 		@Pc(15) int local15;
 		if (Static314.anInt5911 == 4) {
 			local15 = (int) Static277.aFloat67 & 0x3FFF;

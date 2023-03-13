@@ -1090,7 +1090,7 @@ public class Protocol {
 										Static67.anInt1637 = inboundBuffer.g1();
 										Static7.anInt7240 = inboundBuffer.g1bneg();
 										Static243.anInt4502 = inboundBuffer.g1add();
-										for (@Pc(2839) Class2_Sub32 local2839 = (Class2_Sub32) Static120.aClass4_49.method80(); local2839 != null; local2839 = (Class2_Sub32) Static120.aClass4_49.method79()) {
+										for (@Pc(2839) Class2_Sub32 local2839 = (Class2_Sub32) Static120.aClass4_49.head(); local2839 != null; local2839 = (Class2_Sub32) Static120.aClass4_49.next()) {
 											local74 = (int) (local2839.key & 0x3FFFL);
 											local228 = (int) (local2839.key >> 14 & 0x3FFFL);
 											local249 = (int) (local2839.key >> 28 & 0x3L);

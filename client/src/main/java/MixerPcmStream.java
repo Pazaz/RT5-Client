@@ -20,7 +20,7 @@ public final class MixerPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!fi", name = "a", descriptor = "([III)V")
 	@Override
-	public synchronized void method4973(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public synchronized void read(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		do {
 			if (this.anInt1999 < 0) {
 				this.method2082(arg0, arg1, arg2);
@@ -83,7 +83,7 @@ public final class MixerPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!fi", name = "b", descriptor = "(I)V")
 	@Override
-	public synchronized void method4974(@OriginalArg(0) int arg0) {
+	public synchronized void skip(@OriginalArg(0) int arg0) {
 		do {
 			if (this.anInt1999 < 0) {
 				this.method2079(arg0);
@@ -116,7 +116,7 @@ public final class MixerPcmStream extends PcmStream {
 	@OriginalMember(owner = "client!fi", name = "c", descriptor = "(I)V")
 	private void method2079(@OriginalArg(0) int arg0) {
 		for (@Pc(5) PcmStream local5 = (PcmStream) this.aClass135_16.head(); local5 != null; local5 = (PcmStream) this.aClass135_16.next()) {
-			local5.method4974(arg0);
+			local5.skip(arg0);
 		}
 	}
 
@@ -149,12 +149,12 @@ public final class MixerPcmStream extends PcmStream {
 
 	@OriginalMember(owner = "client!fi", name = "a", descriptor = "()Lclient!ll;")
 	@Override
-	public PcmStream method4972() {
+	public PcmStream nextSubStream() {
 		return (PcmStream) this.aClass135_16.next();
 	}
 
 	@OriginalMember(owner = "client!fi", name = "b", descriptor = "(Lclient!ll;)V")
-	public synchronized void method2083(@OriginalArg(0) PcmStream arg0) {
+	public synchronized void addSubStream(@OriginalArg(0) PcmStream arg0) {
 		this.aClass135_16.addHead(arg0);
 	}
 }

@@ -17,7 +17,7 @@ public final class Static314 {
 		local10 = new Class28();
 		local10.anInt749 = arg0;
 		if (local20 != null) {
-			local10.method949(new Buffer(local20));
+			local10.decode(new Buffer(local20));
 		}
 		local10.method945();
 		if (local10.anInt737 == 2 && Static7.aClass4_151.get((long) arg0) == null) {

@@ -10,5 +10,5 @@ public abstract class Class93 {
 	}
 
 	@OriginalMember(owner = "client!hi", name = "a", descriptor = "(ILclient!eu;)Lclient!eu;")
-	public abstract Class2_Sub2_Sub6 method3695(@OriginalArg(1) Class2_Sub2_Sub6 arg0);
+	public abstract ReferenceNode method3695(@OriginalArg(1) ReferenceNode arg0);
 }

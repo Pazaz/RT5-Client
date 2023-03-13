@@ -3,9 +3,10 @@ import java.awt.Graphics;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
+import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!tr")
-public abstract class Class155 {
+public abstract class FrameBuffer {
 
 	@OriginalMember(owner = "client!tr", name = "a", descriptor = "I")
 	public int anInt5654;
@@ -15,6 +16,20 @@ public abstract class Class155 {
 
 	@OriginalMember(owner = "client!tr", name = "i", descriptor = "I")
 	public int anInt5658;
+
+	@OriginalMember(owner = "client!ug", name = "a", descriptor = "(Ljava/awt/Canvas;I)Lclient!tr;")
+	public static FrameBuffer create(@OriginalArg(0) Canvas arg0) {
+		try {
+			@Pc(11) Class local11 = Class.forName("BufferedImageFrameBuffer");
+			@Pc(15) FrameBuffer local15 = (FrameBuffer) local11.getDeclaredConstructor().newInstance();
+			local15.method5150(arg0);
+			return local15;
+		} catch (@Pc(22) Throwable local22) {
+			@Pc(26) ImageProducerFrameBuffer local26 = new ImageProducerFrameBuffer();
+			local26.method5150(arg0);
+			return local26;
+		}
+	}
 
 	@OriginalMember(owner = "client!tr", name = "a", descriptor = "(Ljava/awt/Canvas;B)V")
 	public abstract void method5150(@OriginalArg(0) Canvas arg0);

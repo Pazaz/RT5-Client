@@ -63,7 +63,7 @@ public final class Static372 {
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(BII)V")
 	public static void method6262(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(10) HashTable local10 = new HashTable(16);
-		for (@Pc(15) Class2_Sub32 local15 = (Class2_Sub32) Static120.aClass4_49.method80(); local15 != null; local15 = (Class2_Sub32) Static120.aClass4_49.method79()) {
+		for (@Pc(15) Class2_Sub32 local15 = (Class2_Sub32) Static120.aClass4_49.head(); local15 != null; local15 = (Class2_Sub32) Static120.aClass4_49.next()) {
 			local15.unlink();
 			@Pc(26) int local26 = (int) (local15.key >> 28);
 			@Pc(36) int local36 = (int) (local15.key >> 14 & 0x3FFFL) - arg0;

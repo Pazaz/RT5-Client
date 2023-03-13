@@ -40,7 +40,7 @@ public final class Static10 {
 
 	@OriginalMember(owner = "client!aj", name = "a", descriptor = "(IILjava/lang/String;)V")
 	public static void method239(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1) {
-		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5413(2, arg0);
+		@Pc(8) DelayedStateChange local8 = Static316.method5413(2, arg0);
 		local8.method2311();
 		local8.aString21 = arg1;
 	}

@@ -3,27 +3,27 @@ import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
-@OriginalClass("client!jk")
+@OriginalClass("client!gi")
 public final class SoftReferenceNode extends ReferenceNode {
 
-	@OriginalMember(owner = "client!jk", name = "B", descriptor = "Ljava/lang/ref/SoftReference;")
+	@OriginalMember(owner = "client!gi", name = "C", descriptor = "Ljava/lang/ref/SoftReference;")
 	private final SoftReference reference;
 
-	@OriginalMember(owner = "client!jk", name = "<init>", descriptor = "(Lclient!iq;Ljava/lang/Object;I)V")
-	public SoftReferenceNode(@OriginalArg(0) Interface7 arg0, @OriginalArg(1) Object arg1, @OriginalArg(2) int arg2) {
-		super(arg0, arg2);
-		this.reference = new SoftReference(arg1);
+	@OriginalMember(owner = "client!gi", name = "<init>", descriptor = "(Ljava/lang/Object;I)V")
+	public SoftReferenceNode(@OriginalArg(0) Object arg0, @OriginalArg(1) int arg1) {
+		super(arg1);
+		this.reference = new SoftReference(arg0);
 	}
 
-	@OriginalMember(owner = "client!jk", name = "b", descriptor = "(I)Z")
+	@OriginalMember(owner = "client!gi", name = "e", descriptor = "(B)Z")
 	@Override
-	public boolean isSoft() {
+	public boolean method5954() {
 		return true;
 	}
 
-	@OriginalMember(owner = "client!jk", name = "d", descriptor = "(B)Ljava/lang/Object;")
+	@OriginalMember(owner = "client!gi", name = "d", descriptor = "(B)Ljava/lang/Object;")
 	@Override
-	public Object get() {
+	public Object method5951() {
 		return this.reference.get();
 	}
 }

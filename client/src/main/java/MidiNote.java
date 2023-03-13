@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ej")
-public final class Class2_Sub11 extends Node {
+public final class MidiNote extends Node {
 
 	@OriginalMember(owner = "client!ej", name = "s", descriptor = "I")
 	public int anInt1775;
@@ -38,13 +38,13 @@ public final class Class2_Sub11 extends Node {
 	public Class17 aClass17_1;
 
 	@OriginalMember(owner = "client!ej", name = "J", descriptor = "Lclient!qn;")
-	public Class2_Sub12_Sub4 aClass2_Sub12_Sub4_1;
+	public Class2_Sub12_Sub4 stream;
 
 	@OriginalMember(owner = "client!ej", name = "K", descriptor = "I")
 	public int anInt1788;
 
 	@OriginalMember(owner = "client!ej", name = "M", descriptor = "Lclient!jn;")
-	public PcmSound aClass2_Sub21_Sub1_1;
+	public PcmSound sound;
 
 	@OriginalMember(owner = "client!ej", name = "O", descriptor = "I")
 	public int anInt1790;
@@ -56,10 +56,10 @@ public final class Class2_Sub11 extends Node {
 	public int anInt1792;
 
 	@OriginalMember(owner = "client!ej", name = "R", descriptor = "I")
-	public int anInt1793;
+	public int channel;
 
 	@OriginalMember(owner = "client!ej", name = "S", descriptor = "Lclient!ne;")
-	public Class2_Sub25 aClass2_Sub25_1;
+	public MidiInstrument aClass2_Sub25_1;
 
 	@OriginalMember(owner = "client!ej", name = "T", descriptor = "I")
 	public int anInt1794;
@@ -68,10 +68,10 @@ public final class Class2_Sub11 extends Node {
 	public int anInt1795;
 
 	@OriginalMember(owner = "client!ej", name = "b", descriptor = "(I)V")
-	public void method1868() {
+	public void release() {
 		this.aClass17_1 = null;
 		this.aClass2_Sub25_1 = null;
-		this.aClass2_Sub21_Sub1_1 = null;
-		this.aClass2_Sub12_Sub4_1 = null;
+		this.sound = null;
+		this.stream = null;
 	}
 }

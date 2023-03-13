@@ -101,7 +101,7 @@ public final class Class6_Sub1 extends Class6 {
 	private HashTable aClass4_7;
 
 	@OriginalMember(owner = "client!ah", name = "q", descriptor = "Lclient!ic;")
-	private Class100 aClass100_1;
+	private ShadowManager aClass100_1;
 
 	@OriginalMember(owner = "client!ah", name = "<init>", descriptor = "(Lclient!bf;IIII[[I[[II)V")
 	public Class6_Sub1(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int[][] arg5, @OriginalArg(6) int[][] arg6, @OriginalArg(7) int arg7) {
@@ -138,7 +138,7 @@ public final class Class6_Sub1 extends Class6 {
 		}
 		this.aClass4_7 = new HashTable(128);
 		if ((this.anInt181 & 0x10) != 0) {
-			this.aClass100_1 = new Class100(this.aClass19_Sub1_1, this);
+			this.aClass100_1 = new ShadowManager(this.aClass19_Sub1_1, this);
 		}
 	}
 

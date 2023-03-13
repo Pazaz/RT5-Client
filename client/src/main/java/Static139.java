@@ -24,7 +24,7 @@ public final class Static139 {
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(II)V")
 	public static void method2585(@OriginalArg(0) int arg0) {
-		@Pc(13) Class2_Sub2_Sub7 local13 = Static316.method5413(11, arg0);
+		@Pc(13) DelayedStateChange local13 = Static316.method5413(11, arg0);
 		local13.method2312();
 	}
 
@@ -54,7 +54,7 @@ public final class Static139 {
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(BII)V")
 	public static void method2595(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(14) Class2_Sub2_Sub7 local14 = Static316.method5413(16, arg0);
+		@Pc(14) DelayedStateChange local14 = Static316.method5413(16, arg0);
 		local14.method2311();
 		local14.anInt2289 = arg1;
 	}

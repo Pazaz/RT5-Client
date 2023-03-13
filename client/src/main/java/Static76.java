@@ -6,7 +6,7 @@ public final class Static76 {
 	public static Class14 aClass14_3;
 
 	@OriginalMember(owner = "client!eg", name = "d", descriptor = "Lclient!ur;")
-	public static Class130 aClass130_2;
+	public static BitmapFont aClass130_2;
 
 	@OriginalMember(owner = "client!eg", name = "e", descriptor = "[Lclient!jd;")
 	public static Sprite[] aClass13Array5;

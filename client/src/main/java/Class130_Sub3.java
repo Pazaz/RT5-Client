@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!sf")
-public final class Class130_Sub3 extends Class130 {
+public final class Class130_Sub3 extends BitmapFont {
 
 	@OriginalMember(owner = "client!sf", name = "A", descriptor = "Lclient!j;")
 	private Class19_Sub2 aClass19_Sub2_8;

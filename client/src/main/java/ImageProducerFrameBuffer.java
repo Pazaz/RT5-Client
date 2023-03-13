@@ -6,14 +6,14 @@ import java.awt.image.ColorModel;
 import java.awt.image.DirectColorModel;
 import java.awt.image.ImageConsumer;
 import java.awt.image.ImageProducer;
-import java.util.Hashtable;
+
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ms")
-public final class Class155_Sub1 extends Class155 implements ImageProducer {
+public final class ImageProducerFrameBuffer extends FrameBuffer implements ImageProducer {
 
 	@OriginalMember(owner = "client!ms", name = "p", descriptor = "Ljava/awt/Image;")
 	private Image anImage2;

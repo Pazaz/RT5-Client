@@ -146,7 +146,7 @@ public final class Static165 {
 			local41 = local41 + "<col=ffffff> / " + (Static268.anInt4959 - 2) + Static328.aClass79_127.method2267(client.language);
 		}
 		if (Static164.aClass161_5 != null) {
-			@Pc(218) Class130 local218 = Static164.aClass161_5.method4101(arg0);
+			@Pc(218) BitmapFont local218 = Static164.aClass161_5.method4101(arg0);
 			if (local218 == null) {
 				local218 = Static52.aClass130_1;
 			}

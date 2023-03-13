@@ -2764,7 +2764,7 @@ public final class Static198 {
 				aStringArray29[anInt3652++] = Static138.method2581(local157).aString37;
 				return;
 			}
-			@Pc(584) Class2_Sub2_Sub12 local584;
+			@Pc(584) QuickChatCatType local584;
 			if (arg0 == 5051) {
 				local157 = anIntArray213[--anInt3650];
 				local584 = Static138.method2581(local157);
@@ -2779,7 +2779,7 @@ public final class Static198 {
 				anInt3650 -= 2;
 				local157 = anIntArray213[anInt3650];
 				local192 = anIntArray213[anInt3650 + 1];
-				@Pc(628) Class2_Sub2_Sub12 local628 = Static138.method2581(local157);
+				@Pc(628) QuickChatCatType local628 = Static138.method2581(local157);
 				local95 = local628.anIntArray233[local192];
 				anIntArray213[anInt3650++] = local95;
 				return;
@@ -4360,9 +4360,9 @@ public final class Static198 {
 								}
 								local157--;
 							}
-							@Pc(6577) Class2_Sub7 local6577 = (Class2_Sub7) Static329.aClass4_130.method80();
+							@Pc(6577) Class2_Sub7 local6577 = (Class2_Sub7) Static329.aClass4_130.head();
 							while (local157-- > 0) {
-								local6577 = (Class2_Sub7) Static329.aClass4_130.method79();
+								local6577 = (Class2_Sub7) Static329.aClass4_130.next();
 							}
 							anIntArray213[anInt3650++] = local6577.anInt1370;
 							return;

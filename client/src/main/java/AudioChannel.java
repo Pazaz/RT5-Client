@@ -286,7 +286,7 @@ public class AudioChannel {
 										@Pc(145) int local145 = local93.anInt5476;
 										while (local140 != null) {
 											this.method6320(local140, local145 * local140.method4976() >> 8);
-											local140 = local93.method4972();
+											local140 = local93.nextSubStream();
 										}
 									}
 									@Pc(164) PcmStream local164 = local93.aClass2_Sub12_5;
@@ -327,7 +327,7 @@ public class AudioChannel {
 			this.anInt7101 = 0;
 		}
 		if (this.aClass2_Sub12_8 != null) {
-			this.aClass2_Sub12_8.method4973(arg0, 0, 256);
+			this.aClass2_Sub12_8.read(arg0, 0, 256);
 		}
 		this.aLong224 = MonotonicClock.currentTimeMillis();
 	}
@@ -377,7 +377,7 @@ public class AudioChannel {
 			this.anInt7101 = 0;
 		}
 		if (this.aClass2_Sub12_8 != null) {
-			this.aClass2_Sub12_8.method4974(256);
+			this.aClass2_Sub12_8.skip(256);
 		}
 	}
 

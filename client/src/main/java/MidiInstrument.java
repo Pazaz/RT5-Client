@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ne")
-public final class Class2_Sub25 extends Node {
+public final class MidiInstrument extends Node {
 
 	@OriginalMember(owner = "client!ne", name = "s", descriptor = "[B")
 	public final byte[] aByteArray45 = new byte[128];
@@ -35,7 +35,7 @@ public final class Class2_Sub25 extends Node {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "<init>", descriptor = "([B)V")
-	public Class2_Sub25(@OriginalArg(0) byte[] arg0) {
+	public MidiInstrument(@OriginalArg(0) byte[] arg0) {
 		@Pc(36) Buffer local36 = new Buffer(arg0);
 		@Pc(38) int local38;
 		for (local38 = 0; local36.data[local36.pos + local38] != 0; local38++) {
@@ -383,12 +383,12 @@ public final class Class2_Sub25 extends Node {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "b", descriptor = "(I)V")
-	public void method4013() {
+	public void release() {
 		this.anIntArray264 = null;
 	}
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "([BLclient!bk;I[I)Z")
-	public boolean method4018(@OriginalArg(0) byte[] arg0, @OriginalArg(1) Class24 arg1, @OriginalArg(3) int[] arg2) {
+	public boolean method4018(@OriginalArg(0) byte[] arg0, @OriginalArg(1) SoundBank arg1, @OriginalArg(3) int[] arg2) {
 		@Pc(7) boolean local7 = true;
 		@Pc(15) int local15 = 0;
 		@Pc(17) PcmSound local17 = null;

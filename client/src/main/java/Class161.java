@@ -439,12 +439,12 @@ public final class Class161 {
 	public int anInt4320 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(Lclient!wm;B)Lclient!ur;")
-	public Class130 method4101(@OriginalArg(0) Class19 arg0) {
+	public BitmapFont method4101(@OriginalArg(0) Class19 arg0) {
 		Static86.aBoolean133 = false;
 		if (this.anInt4318 == -1) {
 			return null;
 		}
-		@Pc(26) Class130 local26 = (Class130) Static333.aClass98_65.get((long) this.anInt4318);
+		@Pc(26) BitmapFont local26 = (BitmapFont) Static333.aClass98_65.get((long) this.anInt4318);
 		if (local26 != null) {
 			return local26;
 		}

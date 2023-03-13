@@ -12,7 +12,7 @@ public final class Static216 {
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(IIII)V")
 	public static void method3774(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5413(9, arg1);
+		@Pc(8) DelayedStateChange local8 = Static316.method5413(9, arg1);
 		local8.method2311();
 		local8.anInt2289 = arg0;
 		local8.anInt2290 = arg2;
@@ -63,7 +63,7 @@ public final class Static216 {
 		if (local267 != null) {
 			local34 = local267.method6382();
 		}
-		@Pc(301) Class130 local301 = Static200.aClass130_3;
+		@Pc(301) BitmapFont local301 = Static200.aClass130_3;
 		@Pc(303) Class239 local303 = Static52.aClass239_1;
 		if (local14.anInt4418 == 1) {
 			local303 = Static165.aClass239_3;
@@ -126,7 +126,7 @@ public final class Static216 {
 						@Pc(264) PcmSound local264 = local90.toPcmSound().method3179(client.resampler);
 						@Pc(269) Class2_Sub12_Sub4 local269 = Static406.method5006(local264, local143);
 						local269.method4984(Static329.anIntArray419[local7] - 1);
-						client.soundStream.method2083(local269);
+						client.soundStream.addSubStream(local269);
 					}
 					Static237.anIntArray283[local7] = -100;
 				}
@@ -157,7 +157,7 @@ public final class Static216 {
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(II)V")
 	public static void method3778(@OriginalArg(1) int arg0) {
-		@Pc(12) Class2_Sub2_Sub7 local12 = Static316.method5413(7, arg0);
+		@Pc(12) DelayedStateChange local12 = Static316.method5413(7, arg0);
 		local12.method2312();
 	}
 }

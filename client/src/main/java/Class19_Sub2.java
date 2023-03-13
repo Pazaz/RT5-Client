@@ -139,7 +139,7 @@ public final class Class19_Sub2 extends Class19 {
 	private Canvas aCanvas3;
 
 	@OriginalMember(owner = "client!j", name = "M", descriptor = "Lclient!tr;")
-	private Class155 aClass155_1;
+	private FrameBuffer aClass155_1;
 
 	@OriginalMember(owner = "client!j", name = "S", descriptor = "[I")
 	public int[] anIntArray179;
@@ -154,7 +154,7 @@ public final class Class19_Sub2 extends Class19 {
 	public Class19_Sub2(@OriginalArg(0) Canvas arg0, @OriginalArg(1) TextureProvider arg1, @OriginalArg(2) int arg2) {
 		super(arg2, arg1);
 		this.aCanvas3 = arg0;
-		this.aClass155_1 = Static351.method5856(this.aCanvas3);
+		this.aClass155_1 = FrameBuffer.create(this.aCanvas3);
 		this.anIntArray179 = this.aClass155_1.anIntArray385;
 		this.anInt2863 = this.aClass155_1.anInt5654;
 		this.anInt2861 = this.aClass155_1.anInt5658;
@@ -1147,7 +1147,7 @@ public final class Class19_Sub2 extends Class19 {
 
 	@OriginalMember(owner = "client!j", name = "a", descriptor = "(Lclient!vi;[Lclient!dk;Z)Lclient!ur;")
 	@Override
-	public Class130 method2857(@OriginalArg(0) Class239 arg0, @OriginalArg(1) Class48[] arg1) {
+	public BitmapFont method2857(@OriginalArg(0) Class239 arg0, @OriginalArg(1) Class48[] arg1) {
 		@Pc(3) int[] local3 = new int[arg1.length];
 		@Pc(7) int[] local7 = new int[arg1.length];
 		for (@Pc(11) int local11 = 0; local11 < arg1.length; local11++) {
@@ -1444,7 +1444,7 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!j", name = "e", descriptor = "()V")
 	@Override
 	public void method2803() {
-		this.aClass155_1 = Static351.method5856(this.aCanvas3);
+		this.aClass155_1 = FrameBuffer.create(this.aCanvas3);
 		this.anIntArray179 = this.aClass155_1.anIntArray385;
 		this.anInt2863 = this.aClass155_1.anInt5654;
 		this.anInt2861 = this.aClass155_1.anInt5658;

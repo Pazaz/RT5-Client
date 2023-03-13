@@ -37,7 +37,7 @@ public final class Static387 {
 
 	@OriginalMember(owner = "client!wm", name = "c", descriptor = "(IIII)V")
 	public static void method2835(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(9) Class21 local9 = Static332.aClass21ArrayArray3[arg1][arg2];
+		@Pc(9) Environment local9 = Static332.aClass21ArrayArray3[arg1][arg2];
 		Static7.method6470(local9 == null ? Static119.aClass21_1 : local9, arg0);
 	}
 }

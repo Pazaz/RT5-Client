@@ -36,7 +36,7 @@ public final class HashTable {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "b", descriptor = "(I)Lclient!ag;")
-	public Node method79() {
+	public Node next() {
 		@Pc(24) Node local24;
 		if (this.anInt104 > 0 && this.aClass2Array1[this.anInt104 - 1] != this.aClass2_10) {
 			local24 = this.aClass2_10;
@@ -54,9 +54,9 @@ public final class HashTable {
 	}
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(B)Lclient!ag;")
-	public Node method80() {
+	public Node head() {
 		this.anInt104 = 0;
-		return this.method79();
+		return this.next();
 	}
 
 	@OriginalMember(owner = "client!ad", name = "c", descriptor = "(I)V")

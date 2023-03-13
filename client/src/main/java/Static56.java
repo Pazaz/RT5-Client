@@ -35,7 +35,7 @@ public final class Static56 {
 		if (arg0.aClass2_Sub21_5 != null) {
 			arg0.aClass2_Sub21_5.anInt3175 = 0;
 		}
-		for (@Pc(23) PcmStream local23 = arg0.method4978(); local23 != null; local23 = arg0.method4972()) {
+		for (@Pc(23) PcmStream local23 = arg0.method4978(); local23 != null; local23 = arg0.nextSubStream()) {
 			method1613(local23);
 		}
 	}
@@ -88,7 +88,7 @@ public final class Static56 {
 			local33.anInt2904 = local33.aClass11_Sub5_Sub2_Sub2_1.zFine + local33.aClass11_Sub5_Sub2_Sub2_1.getSize() * 64;
 			Static337.method5706(arg2, arg3, local33, arg1, arg0);
 		}
-		for (@Pc(208) Class2_Sub19 local208 = (Class2_Sub19) Static232.aClass4_86.method80(); local208 != null; local208 = (Class2_Sub19) Static232.aClass4_86.method79()) {
+		for (@Pc(208) Class2_Sub19 local208 = (Class2_Sub19) Static232.aClass4_86.head(); local208 != null; local208 = (Class2_Sub19) Static232.aClass4_86.next()) {
 			@Pc(212) byte local212 = 1;
 			@Pc(217) BasType local217 = local208.aClass11_Sub5_Sub2_Sub1_2.method4332();
 			if (local208.aClass11_Sub5_Sub2_Sub1_2.aBoolean317) {

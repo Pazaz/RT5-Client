@@ -351,9 +351,9 @@ public final class client extends GameShell {
 		if (Static139.anInt2595 != -1) {
 			Static162.method2979(Static139.anInt2595);
 		}
-		for (@Pc(4552) Class2_Sub7 local4552 = (Class2_Sub7) Static329.aClass4_130.method80(); local4552 != null; local4552 = (Class2_Sub7) Static329.aClass4_130.method79()) {
+		for (@Pc(4552) Class2_Sub7 local4552 = (Class2_Sub7) Static329.aClass4_130.head(); local4552 != null; local4552 = (Class2_Sub7) Static329.aClass4_130.next()) {
 			if (!local4552.isLinked()) {
-				local4552 = (Class2_Sub7) Static329.aClass4_130.method80();
+				local4552 = (Class2_Sub7) Static329.aClass4_130.head();
 				if (local4552 == null) {
 					break;
 				}
@@ -629,7 +629,7 @@ public final class client extends GameShell {
 			Static41.anIntArray85[Static12.anInt269++ & 0x1F] = local483;
 		}
 		@Pc(830) Class161 local830;
-		for (@Pc(790) Class2_Sub2_Sub7 local790 = Static129.method2437(); local790 != null; local790 = Static129.method2437()) {
+		for (@Pc(790) DelayedStateChange local790 = Static129.method2437(); local790 != null; local790 = Static129.method2437()) {
 			local410 = local790.method2307();
 			local135 = local790.method2309();
 			if (local410 == 1) {

@@ -44,7 +44,7 @@ public final class Static319 {
 
 	@OriginalMember(owner = "client!sk", name = "a", descriptor = "(ILjava/lang/String;I)V")
 	public static void method5432(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1) {
-		@Pc(10) Class2_Sub2_Sub7 local10 = Static316.method5413(3, arg0);
+		@Pc(10) DelayedStateChange local10 = Static316.method5413(3, arg0);
 		local10.method2311();
 		local10.aString21 = arg1;
 	}

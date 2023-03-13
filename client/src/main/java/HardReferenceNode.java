@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!pn")
-public final class HardReferenceNode extends ReferenceNode {
+public final class HardReferenceNode extends ReferenceNodeWithInterface {
 
 	@OriginalMember(owner = "client!pn", name = "F", descriptor = "Ljava/lang/Object;")
 	private final Object reference;

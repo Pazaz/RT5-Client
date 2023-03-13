@@ -1,7 +1,6 @@
 import java.awt.Canvas;
 import java.awt.Graphics;
 import java.awt.Image;
-import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Shape;
 import java.awt.image.BufferedImage;
@@ -16,7 +15,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!rg")
-public final class Class155_Sub2 extends Class155 {
+public final class BufferedImageFrameBuffer extends FrameBuffer {
 
 	@OriginalMember(owner = "client!rg", name = "j", descriptor = "Ljava/awt/Canvas;")
 	private Canvas aCanvas5;

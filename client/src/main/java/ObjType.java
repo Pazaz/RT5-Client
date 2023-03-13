@@ -633,7 +633,7 @@ public final class ObjType {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(Lclient!ur;Lclient!jo;BLclient!wm;ILclient!wm;IIIZ)[I")
-	public int[] method4781(@OriginalArg(0) Class130 arg0, @OriginalArg(1) PlayerAppearance arg1, @OriginalArg(3) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) boolean arg8) {
+	public int[] method4781(@OriginalArg(0) BitmapFont arg0, @OriginalArg(1) PlayerAppearance arg1, @OriginalArg(3) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) boolean arg8) {
 		@Pc(14) Class185 local14 = Static298.method2426(this.aClass107_1.aClass197_41, this.anInt5237);
 		if (local14 == null) {
 			return null;

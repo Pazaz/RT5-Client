@@ -18,20 +18,20 @@ public abstract class PcmStream extends Node {
 	public volatile boolean aBoolean389 = true;
 
 	@OriginalMember(owner = "client!ll", name = "a", descriptor = "()Lclient!ll;")
-	public abstract PcmStream method4972();
+	public abstract PcmStream nextSubStream();
 
 	@OriginalMember(owner = "client!ll", name = "a", descriptor = "([III)V")
-	public abstract void method4973(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
+	public abstract void read(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!ll", name = "b", descriptor = "(I)V")
-	public abstract void method4974(@OriginalArg(0) int arg0);
+	public abstract void skip(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!ll", name = "b", descriptor = "([III)V")
 	protected final void method4975(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (this.aBoolean389) {
-			this.method4973(arg0, arg1, arg2);
+			this.read(arg0, arg1, arg2);
 		} else {
-			this.method4974(arg2);
+			this.skip(arg2);
 		}
 	}
 

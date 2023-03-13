@@ -57,7 +57,7 @@ public final class Static337 {
 				@Pc(162) PcmSound local162 = local155.toPcmSound().method3179(client.resampler);
 				@Pc(167) Class2_Sub12_Sub4 local167 = Static406.method5006(local162, local140);
 				local167.method4984(-1);
-				client.soundStream.method2083(local167);
+				client.soundStream.addSubStream(local167);
 				arg2.aClass2_Sub12_Sub4_3 = local167;
 			}
 		}
@@ -74,7 +74,7 @@ public final class Static337 {
 				@Pc(219) PcmSound local219 = local212.toPcmSound().method3179(client.resampler);
 				@Pc(224) Class2_Sub12_Sub4 local224 = Static406.method5006(local219, local140);
 				local224.method4984(0);
-				client.soundStream.method2083(local224);
+				client.soundStream.addSubStream(local224);
 				arg2.anInt2907 = (int) ((double) (arg2.anInt2897 - arg2.anInt2903) * Math.random()) + arg2.anInt2903;
 				arg2.aClass2_Sub12_Sub4_2 = local224;
 				return;

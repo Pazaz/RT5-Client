@@ -1,4 +1,3 @@
-import java.awt.Canvas;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -16,22 +15,8 @@ public final class Static351 {
 		return ~local42 & arg0;
 	}
 
-	@OriginalMember(owner = "client!ug", name = "a", descriptor = "(Ljava/awt/Canvas;I)Lclient!tr;")
-	public static Class155 method5856(@OriginalArg(0) Canvas arg0) {
-		try {
-			@Pc(11) Class local11 = Class.forName("Class155_Sub2");
-			@Pc(15) Class155 local15 = (Class155) local11.getDeclaredConstructor().newInstance();
-			local15.method5150(arg0);
-			return local15;
-		} catch (@Pc(22) Throwable local22) {
-			@Pc(26) Class155_Sub1 local26 = new Class155_Sub1();
-			local26.method5150(arg0);
-			return local26;
-		}
-	}
-
 	@OriginalMember(owner = "client!ug", name = "a", descriptor = "(Lclient!ur;ZLjava/lang/String;B)V")
-	public static void method5857(@OriginalArg(0) Class130 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) String arg2) {
+	public static void method5857(@OriginalArg(0) BitmapFont arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) String arg2) {
 		@Pc(20) int local20 = Static165.aClass239_3.method6124(null, arg2, 250);
 		@Pc(29) int local29 = Static165.aClass239_3.method6123(arg2, 250, null) * 13;
 		Static190.aClass19_8.method2901(6, 6, local20 + 8, local29 + 4 + 4, -16777216, 0);

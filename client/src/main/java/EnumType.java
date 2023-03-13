@@ -68,7 +68,7 @@ public final class EnumType {
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(B)V")
 	private void method1768() {
 		this.aClass4_30 = new HashTable(this.aClass4_31.method89());
-		for (@Pc(20) Class2_Sub39 local20 = (Class2_Sub39) this.aClass4_31.method80(); local20 != null; local20 = (Class2_Sub39) this.aClass4_31.method79()) {
+		for (@Pc(20) Class2_Sub39 local20 = (Class2_Sub39) this.aClass4_31.head(); local20 != null; local20 = (Class2_Sub39) this.aClass4_31.next()) {
 			@Pc(29) Class2_Sub39 local29 = new Class2_Sub39((int) local20.key);
 			this.aClass4_30.put(local29, (long) local20.anInt6818);
 		}
@@ -105,7 +105,7 @@ public final class EnumType {
 	@OriginalMember(owner = "client!ds", name = "d", descriptor = "(B)V")
 	private void method1773() {
 		this.aClass4_30 = new HashTable(this.aClass4_31.method89());
-		for (@Pc(28) Class2_Sub40 local28 = (Class2_Sub40) this.aClass4_31.method80(); local28 != null; local28 = (Class2_Sub40) this.aClass4_31.method79()) {
+		for (@Pc(28) Class2_Sub40 local28 = (Class2_Sub40) this.aClass4_31.head(); local28 != null; local28 = (Class2_Sub40) this.aClass4_31.next()) {
 			@Pc(39) Class2_Sub28 local39 = new Class2_Sub28(local28.aString65, (int) local28.key);
 			this.aClass4_30.put(local39, Static80.method5982(local28.aString65));
 		}

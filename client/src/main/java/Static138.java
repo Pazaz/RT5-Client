@@ -31,7 +31,7 @@ public final class Static138 {
 
 	@OriginalMember(owner = "client!hr", name = "b", descriptor = "(II)V")
 	public static void method2580(@OriginalArg(0) int arg0) {
-		for (@Pc(16) Node local16 = Static327.aClass4_127.method80(); local16 != null; local16 = Static327.aClass4_127.method79()) {
+		for (@Pc(16) Node local16 = Static327.aClass4_127.head(); local16 != null; local16 = Static327.aClass4_127.next()) {
 			if ((long) arg0 == (local16.key >> 48 & 0xFFFFL)) {
 				local16.unlink();
 			}
@@ -39,8 +39,8 @@ public final class Static138 {
 	}
 
 	@OriginalMember(owner = "client!hr", name = "c", descriptor = "(II)Lclient!mn;")
-	public static Class2_Sub2_Sub12 method2581(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub12 local10 = (Class2_Sub2_Sub12) Static257.aClass116_5.method3152((long) arg0);
+	public static QuickChatCatType method2581(@OriginalArg(1) int arg0) {
+		@Pc(10) QuickChatCatType local10 = (QuickChatCatType) Static257.aClass116_5.method3152((long) arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -50,7 +50,7 @@ public final class Static138 {
 		} else {
 			local25 = Static367.aClass197_92.fetchFile(arg0, 0);
 		}
-		local10 = new Class2_Sub2_Sub12();
+		local10 = new QuickChatCatType();
 		if (local25 != null) {
 			local10.method3797(new Buffer(local25));
 		}

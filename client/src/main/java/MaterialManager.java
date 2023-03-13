@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!hm")
-public final class Class95 {
+public final class MaterialManager {
 
 	@OriginalMember(owner = "client!hm", name = "c", descriptor = "I")
 	private int anInt2490 = 0;
@@ -25,7 +25,7 @@ public final class Class95 {
 	private final MaterialRenderer[] renderers;
 
 	@OriginalMember(owner = "client!hm", name = "<init>", descriptor = "(Lclient!bf;)V")
-	public Class95(@OriginalArg(0) Class19_Sub1 arg0) {
+	public MaterialManager(@OriginalArg(0) Class19_Sub1 arg0) {
 		this.aClass19_Sub1_14 = arg0;
 		this.aClass76_3 = new Class76(arg0);
 		this.renderers = new MaterialRenderer[9];

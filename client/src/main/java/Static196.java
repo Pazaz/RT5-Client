@@ -32,10 +32,10 @@ public final class Static196 {
 					}
 				}
 				if (Static164.aClass24_1 == null) {
-					Static164.aClass24_1 = new Class24(Static123.aClass197_30, Static177.aClass197_48);
+					Static164.aClass24_1 = new SoundBank(Static123.aClass197_30, Static177.aClass197_48);
 				}
 				if (Static91.aClass2_Sub12_Sub3_1.method4281(Static164.aClass24_1, Static155.aClass2_Sub34_1, Static111.aClass197_25)) {
-					Static91.aClass2_Sub12_Sub3_1.method4271();
+					Static91.aClass2_Sub12_Sub3_1.releaseInstruments();
 					Static91.aClass2_Sub12_Sub3_1.method4278(Static356.anInt6641);
 					Static91.aClass2_Sub12_Sub3_1.method4273(Static155.aClass2_Sub34_1, Static384.aBoolean485);
 					Static155.aClass2_Sub34_1 = null;

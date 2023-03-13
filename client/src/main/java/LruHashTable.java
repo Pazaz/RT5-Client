@@ -30,7 +30,7 @@ public final class LruHashTable {
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(BJ)Ljava/lang/Object;")
 	public Object get(@OriginalArg(1) long arg0) {
-		@Pc(10) Class2_Sub2_Sub6 local10 = (Class2_Sub2_Sub6) this.aClass4_56.get(arg0);
+		@Pc(10) ReferenceNode local10 = (ReferenceNode) this.aClass4_56.get(arg0);
 		if (local10 == null) {
 			return null;
 		}
@@ -58,7 +58,7 @@ public final class LruHashTable {
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(I)I")
 	public int method2613() {
 		@Pc(7) int local7 = 0;
-		for (@Pc(18) Class2_Sub2_Sub6 local18 = (Class2_Sub2_Sub6) this.aClass246_2.head(); local18 != null; local18 = (Class2_Sub2_Sub6) this.aClass246_2.next()) {
+		for (@Pc(18) ReferenceNode local18 = (ReferenceNode) this.aClass246_2.head(); local18 != null; local18 = (ReferenceNode) this.aClass246_2.next()) {
 			if (!local18.method5954()) {
 				local7++;
 			}
@@ -78,7 +78,7 @@ public final class LruHashTable {
 		if (Static308.aClass93_1 == null) {
 			return;
 		}
-		for (@Pc(9) Class2_Sub2_Sub6 local9 = (Class2_Sub2_Sub6) this.aClass246_2.head(); local9 != null; local9 = (Class2_Sub2_Sub6) this.aClass246_2.next()) {
+		for (@Pc(9) ReferenceNode local9 = (ReferenceNode) this.aClass246_2.head(); local9 != null; local9 = (ReferenceNode) this.aClass246_2.next()) {
 			if (local9.method5954()) {
 				if (local9.method5951() == null) {
 					local9.unlink();
@@ -86,7 +86,7 @@ public final class LruHashTable {
 					this.anInt2608++;
 				}
 			} else if (++local9.secondaryKey > (long) arg0) {
-				@Pc(35) Class2_Sub2_Sub6 local35 = Static308.aClass93_1.method3695(local9);
+				@Pc(35) ReferenceNode local35 = Static308.aClass93_1.method3695(local9);
 				this.aClass4_56.put(local35, local9.key);
 				Static145.method2696(local9, local35);
 				local9.unlink();
@@ -108,7 +108,7 @@ public final class LruHashTable {
 		this.method2626(arg1);
 		this.anInt2608--;
 		while (this.anInt2608 < 0) {
-			@Pc(36) Class2_Sub2_Sub6 local36 = (Class2_Sub2_Sub6) this.aClass246_2.method6339();
+			@Pc(36) ReferenceNode local36 = (ReferenceNode) this.aClass246_2.method6339();
 			this.method2625(local36);
 		}
 		@Pc(49) Class2_Sub2_Sub6_Sub2 local49 = new Class2_Sub2_Sub6_Sub2(arg0, 1);
@@ -119,14 +119,14 @@ public final class LruHashTable {
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(Z)Ljava/lang/Object;")
 	public Object method2618() {
-		@Pc(17) Class2_Sub2_Sub6 local17 = (Class2_Sub2_Sub6) this.aClass4_56.method79();
+		@Pc(17) ReferenceNode local17 = (ReferenceNode) this.aClass4_56.next();
 		while (local17 != null) {
 			@Pc(23) Object local23 = local17.method5951();
 			if (local23 != null) {
 				return local23;
 			}
-			@Pc(27) Class2_Sub2_Sub6 local27 = local17;
-			local17 = (Class2_Sub2_Sub6) this.aClass4_56.method79();
+			@Pc(27) ReferenceNode local27 = local17;
+			local17 = (ReferenceNode) this.aClass4_56.next();
 			local27.unlink();
 			local27.unlinkSecondary();
 			this.anInt2608 += local17.anInt6636;
@@ -136,14 +136,14 @@ public final class LruHashTable {
 
 	@OriginalMember(owner = "client!hu", name = "d", descriptor = "(I)Ljava/lang/Object;")
 	public Object method2619() {
-		@Pc(11) Class2_Sub2_Sub6 local11 = (Class2_Sub2_Sub6) this.aClass4_56.method80();
+		@Pc(11) ReferenceNode local11 = (ReferenceNode) this.aClass4_56.head();
 		while (local11 != null) {
 			@Pc(17) Object local17 = local11.method5951();
 			if (local17 != null) {
 				return local17;
 			}
-			@Pc(23) Class2_Sub2_Sub6 local23 = local11;
-			local11 = (Class2_Sub2_Sub6) this.aClass4_56.method79();
+			@Pc(23) ReferenceNode local23 = local11;
+			local11 = (ReferenceNode) this.aClass4_56.next();
 			local23.unlink();
 			local23.unlinkSecondary();
 			this.anInt2608 += local11.anInt6636;
@@ -158,7 +158,7 @@ public final class LruHashTable {
 
 	@OriginalMember(owner = "client!hu", name = "e", descriptor = "(I)V")
 	public void method2621() {
-		for (@Pc(14) Class2_Sub2_Sub6 local14 = (Class2_Sub2_Sub6) this.aClass246_2.head(); local14 != null; local14 = (Class2_Sub2_Sub6) this.aClass246_2.next()) {
+		for (@Pc(14) ReferenceNode local14 = (ReferenceNode) this.aClass246_2.head(); local14 != null; local14 = (ReferenceNode) this.aClass246_2.next()) {
 			if (local14.method5954()) {
 				local14.unlink();
 				local14.unlinkSecondary();
@@ -173,7 +173,7 @@ public final class LruHashTable {
 	}
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(ZLclient!eu;)V")
-	private void method2625(@OriginalArg(1) Class2_Sub2_Sub6 arg0) {
+	private void method2625(@OriginalArg(1) ReferenceNode arg0) {
 		if (arg0 != null) {
 			arg0.unlink();
 			arg0.unlinkSecondary();
@@ -183,7 +183,7 @@ public final class LruHashTable {
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(JI)V")
 	private void method2626(@OriginalArg(0) long arg0) {
-		@Pc(14) Class2_Sub2_Sub6 local14 = (Class2_Sub2_Sub6) this.aClass4_56.get(arg0);
+		@Pc(14) ReferenceNode local14 = (ReferenceNode) this.aClass4_56.get(arg0);
 		this.method2625(local14);
 	}
 }

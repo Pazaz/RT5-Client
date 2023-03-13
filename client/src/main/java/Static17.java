@@ -22,7 +22,7 @@ public final class Static17 {
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(BII)V")
 	public static void method4208(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5413(7, arg0);
+		@Pc(8) DelayedStateChange local8 = Static316.method5413(7, arg0);
 		local8.method2311();
 		local8.anInt2289 = arg1;
 	}
@@ -83,7 +83,7 @@ public final class Static17 {
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(II)V")
 	public static void method4213(@OriginalArg(1) int arg0) {
-		@Pc(8) Class2_Sub2_Sub7 local8 = Static316.method5413(4, arg0);
+		@Pc(8) DelayedStateChange local8 = Static316.method5413(4, arg0);
 		local8.method2312();
 	}
 

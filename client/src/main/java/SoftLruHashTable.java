@@ -41,7 +41,7 @@ public final class SoftLruHashTable {
 	}
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(Lclient!bq;B)V")
-	private void method2586(@OriginalArg(0) ReferenceNode arg0) {
+	private void method2586(@OriginalArg(0) ReferenceNodeWithInterface arg0) {
 		if (arg0 != null) {
 			arg0.unlink();
 			arg0.unlinkSecondary();
@@ -62,7 +62,7 @@ public final class SoftLruHashTable {
 		this.method2593(arg0);
 		this.available--;
 		while (this.available < 0) {
-			@Pc(36) ReferenceNode local36 = (ReferenceNode) this.queue.method6339();
+			@Pc(36) ReferenceNodeWithInterface local36 = (ReferenceNodeWithInterface) this.queue.method6339();
 			this.method2586(local36);
 		}
 		@Pc(61) HardReferenceNode local61 = new HardReferenceNode(arg0, arg1, 1);
@@ -76,7 +76,7 @@ public final class SoftLruHashTable {
 		if (ReferenceNodeFactory.SOFT_REFERENCE_NODE_FACTORY == null) {
 			return;
 		}
-		for (@Pc(19) ReferenceNode local19 = (ReferenceNode) this.queue.head(); local19 != null; local19 = (ReferenceNode) this.queue.next()) {
+		for (@Pc(19) ReferenceNodeWithInterface local19 = (ReferenceNodeWithInterface) this.queue.head(); local19 != null; local19 = (ReferenceNodeWithInterface) this.queue.next()) {
 			if (local19.isSoft()) {
 				if (local19.get() == null) {
 					local19.unlink();
@@ -84,7 +84,7 @@ public final class SoftLruHashTable {
 					this.available += local19.anInt5040;
 				}
 			} else if ((long) 5 < ++local19.secondaryKey) {
-				@Pc(66) ReferenceNode local66 = ReferenceNodeFactory.SOFT_REFERENCE_NODE_FACTORY.create(local19);
+				@Pc(66) ReferenceNodeWithInterface local66 = ReferenceNodeFactory.SOFT_REFERENCE_NODE_FACTORY.create(local19);
 				this.table.put(local66, local19.key);
 				Static145.method2696(local19, local66);
 				local19.unlink();
@@ -95,7 +95,7 @@ public final class SoftLruHashTable {
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(B)V")
 	public void method2590() {
-		for (@Pc(7) ReferenceNode local7 = (ReferenceNode) this.queue.head(); local7 != null; local7 = (ReferenceNode) this.queue.next()) {
+		for (@Pc(7) ReferenceNodeWithInterface local7 = (ReferenceNodeWithInterface) this.queue.head(); local7 != null; local7 = (ReferenceNodeWithInterface) this.queue.next()) {
 			if (local7.isSoft()) {
 				local7.unlink();
 				local7.unlinkSecondary();
@@ -112,7 +112,7 @@ public final class SoftLruHashTable {
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(ILclient!iq;)V")
 	private void method2593(@OriginalArg(1) Interface7 arg0) {
 		@Pc(11) long local11 = arg0.method1779();
-		for (@Pc(25) ReferenceNode local25 = (ReferenceNode) this.table.get(local11); local25 != null; local25 = (ReferenceNode) this.table.method82()) {
+		for (@Pc(25) ReferenceNodeWithInterface local25 = (ReferenceNodeWithInterface) this.table.get(local11); local25 != null; local25 = (ReferenceNodeWithInterface) this.table.method82()) {
 			if (local25.anInterface7_3.method1778(arg0)) {
 				this.method2586(local25);
 				return;
@@ -123,7 +123,7 @@ public final class SoftLruHashTable {
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(Lclient!iq;I)Ljava/lang/Object;")
 	public Object method2596(@OriginalArg(0) Interface7 arg0) {
 		@Pc(11) long local11 = arg0.method1779();
-		for (@Pc(18) ReferenceNode local18 = (ReferenceNode) this.table.get(local11); local18 != null; local18 = (ReferenceNode) this.table.method82()) {
+		for (@Pc(18) ReferenceNodeWithInterface local18 = (ReferenceNodeWithInterface) this.table.get(local11); local18 != null; local18 = (ReferenceNodeWithInterface) this.table.method82()) {
 			if (local18.anInterface7_3.method1778(arg0)) {
 				@Pc(30) Object local30 = local18.get();
 				if (local30 != null) {

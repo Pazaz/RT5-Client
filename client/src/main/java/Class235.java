@@ -251,7 +251,7 @@ public final class Class235 {
 	}
 
 	@OriginalMember(owner = "client!uo", name = "a", descriptor = "(IILclient!bt;)V")
-	private void method5932(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
+	private void decode(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
 		if (arg0 == 1) {
 			this.aShort93 = (short) arg1.g2();
 			this.aShort95 = (short) arg1.g2();
@@ -353,13 +353,13 @@ public final class Class235 {
 	}
 
 	@OriginalMember(owner = "client!uo", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method5933(@OriginalArg(0) Buffer arg0) {
+	public void decode(@OriginalArg(0) Buffer arg0) {
 		while (true) {
 			@Pc(10) int local10 = arg0.g1();
 			if (local10 == 0) {
 				return;
 			}
-			this.method5932(local10, arg0);
+			this.decode(local10, arg0);
 		}
 	}
 }

@@ -6,7 +6,7 @@ public final class Static52 {
 	public static Class239 aClass239_1;
 
 	@OriginalMember(owner = "client!d", name = "L", descriptor = "Lclient!ur;")
-	public static Class130 aClass130_1;
+	public static BitmapFont aClass130_1;
 
 	@OriginalMember(owner = "client!d", name = "F", descriptor = "[I")
 	public static final int[] anIntArray99 = new int[50];

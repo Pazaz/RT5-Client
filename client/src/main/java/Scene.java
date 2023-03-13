@@ -94,7 +94,7 @@ public class Scene {
 		scale = 7;
 		anInt4716 = 0x1 << scale;
 		anInt4693 = anInt4716 >> 1;
-		anInt5876 = (int) Math.sqrt((double) (anInt4693 * anInt4693 + anInt4693 * anInt4693));
+		anInt5876 = (int) Math.sqrt(anInt4693 * anInt4693 + anInt4693 * anInt4693);
 		anInt1684 = arg0;
 		anInt3773 = arg1;
 		anInt3788 = arg2;

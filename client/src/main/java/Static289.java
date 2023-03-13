@@ -37,7 +37,7 @@ public final class Static289 {
 	}
 
 	@OriginalMember(owner = "client!qo", name = "a", descriptor = "(ILclient!bh;IB)V")
-	public static void method5021(@OriginalArg(0) int arg0, @OriginalArg(1) Class21 arg1, @OriginalArg(2) int arg2) {
+	public static void method5021(@OriginalArg(0) int arg0, @OriginalArg(1) Environment arg1, @OriginalArg(2) int arg2) {
 		Static332.aClass21ArrayArray3[arg2][arg0] = arg1;
 	}
 }

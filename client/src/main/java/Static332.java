@@ -9,7 +9,7 @@ public final class Static332 {
 	public static Sprite[] aClass13Array23;
 
 	@OriginalMember(owner = "client!tf", name = "g", descriptor = "[[Lclient!bh;")
-	public static Class21[][] aClass21ArrayArray3;
+	public static Environment[][] aClass21ArrayArray3;
 
 	@OriginalMember(owner = "client!tf", name = "b", descriptor = "Lclient!ld;")
 	public static final LinkedList aClass135_38 = new LinkedList();

@@ -6,7 +6,7 @@ public final class Static311 {
 	public static int anInt5809;
 
 	@OriginalMember(owner = "client!s", name = "d", descriptor = "Lclient!bh;")
-	public static Class21 aClass21_2;
+	public static Environment aClass21_2;
 
 	@OriginalMember(owner = "client!s", name = "f", descriptor = "I")
 	public static int anInt5810;

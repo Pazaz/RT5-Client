@@ -209,7 +209,7 @@ public abstract class Class19 {
 	}
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(Lclient!vi;[Lclient!dk;Z)Lclient!ur;")
-	public abstract Class130 method2857(@OriginalArg(0) Class239 arg0, @OriginalArg(1) Class48[] arg1);
+	public abstract BitmapFont method2857(@OriginalArg(0) Class239 arg0, @OriginalArg(1) Class48[] arg1);
 
 	@OriginalMember(owner = "client!wm", name = "u", descriptor = "()Z")
 	public abstract boolean method2858();

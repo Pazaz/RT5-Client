@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!bh")
-public final class Class21 {
+public final class Environment {
 
 	@OriginalMember(owner = "client!bh", name = "a", descriptor = "F")
 	public float aFloat22 = 1.0F;
@@ -50,7 +50,7 @@ public final class Class21 {
 	}
 
 	@OriginalMember(owner = "client!bh", name = "<init>", descriptor = "()V")
-	public Class21() {
+	public Environment() {
 		this.anInt636 = -60;
 		this.anInt632 = -50;
 		this.anInt641 = Static279.anInt5161;
@@ -64,7 +64,7 @@ public final class Class21 {
 	}
 
 	@OriginalMember(owner = "client!bh", name = "<init>", descriptor = "(Lclient!bt;)V")
-	public Class21(@OriginalArg(0) Buffer arg0) {
+	public Environment(@OriginalArg(0) Buffer arg0) {
 		@Pc(16) int local16 = arg0.g1();
 		if (client.preferences.aBoolean364 && Static65.aClass19_3.method2886() > 0) {
 			if ((local16 & 0x1) == 0) {
@@ -139,7 +139,7 @@ public final class Class21 {
 	}
 
 	@OriginalMember(owner = "client!bh", name = "a", descriptor = "(BLclient!bh;)Z")
-	public boolean method854(@OriginalArg(1) Class21 arg0) {
+	public boolean method854(@OriginalArg(1) Environment arg0) {
 		return arg0.anInt637 == this.anInt637 && this.aFloat25 == arg0.aFloat25 && arg0.aFloat23 == this.aFloat23 && this.aFloat24 == arg0.aFloat24 && this.aFloat26 == arg0.aFloat26 && this.aFloat27 == arg0.aFloat27 && this.aFloat22 == arg0.aFloat22 && this.anInt641 == arg0.anInt641 && this.anInt634 == arg0.anInt634 && this.aClass42_1 == arg0.aClass42_1;
 	}
 }

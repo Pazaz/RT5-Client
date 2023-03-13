@@ -38,9 +38,9 @@ public final class Static82 {
 	@OriginalMember(owner = "client!em", name = "a", descriptor = "(IZ)V")
 	public static void method1904() {
 		Protocol.method1960(Static186.aClass145_145);
-		for (@Pc(21) Class2_Sub7 local21 = (Class2_Sub7) Static329.aClass4_130.method80(); local21 != null; local21 = (Class2_Sub7) Static329.aClass4_130.method79()) {
+		for (@Pc(21) Class2_Sub7 local21 = (Class2_Sub7) Static329.aClass4_130.head(); local21 != null; local21 = (Class2_Sub7) Static329.aClass4_130.next()) {
 			if (!local21.isLinked()) {
-				local21 = (Class2_Sub7) Static329.aClass4_130.method80();
+				local21 = (Class2_Sub7) Static329.aClass4_130.head();
 				if (local21 == null) {
 					break;
 				}

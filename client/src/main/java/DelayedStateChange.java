@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!gg")
-public final class Class2_Sub2_Sub7 extends SecondaryNode {
+public final class DelayedStateChange extends SecondaryNode {
 
 	@OriginalMember(owner = "client!gg", name = "D", descriptor = "Ljava/lang/String;")
 	public String aString21;
@@ -22,7 +22,7 @@ public final class Class2_Sub2_Sub7 extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!gg", name = "<init>", descriptor = "(II)V")
-	public Class2_Sub2_Sub7(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public DelayedStateChange(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		super.key = (long) arg1 | (long) arg0 << 32;
 	}
 

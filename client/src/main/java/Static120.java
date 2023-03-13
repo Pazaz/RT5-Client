@@ -80,7 +80,7 @@ public final class Static120 {
 
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(IBI)V")
 	public static void method2383(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(13) Class2_Sub2_Sub7 local13 = Static316.method5413(12, arg1);
+		@Pc(13) DelayedStateChange local13 = Static316.method5413(12, arg1);
 		local13.method2311();
 		local13.anInt2289 = arg0;
 	}

@@ -398,7 +398,7 @@ public final class Static344 {
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(II)Lclient!wc;")
 	public static SecondaryLinkedList method5516(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(3) SecondaryLinkedList local3 = new SecondaryLinkedList();
-		for (@Pc(8) Class2_Sub2_Sub17 local8 = (Class2_Sub2_Sub17) aClass4_124.method80(); local8 != null; local8 = (Class2_Sub2_Sub17) aClass4_124.method79()) {
+		for (@Pc(8) Class2_Sub2_Sub17 local8 = (Class2_Sub2_Sub17) aClass4_124.head(); local8 != null; local8 = (Class2_Sub2_Sub17) aClass4_124.next()) {
 			if (local8.aBoolean466 && local8.method6147(arg1, arg0)) {
 				local3.addTail(local8);
 			}
@@ -845,7 +845,7 @@ public final class Static344 {
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(II)Lclient!vj;")
 	public static Class2_Sub2_Sub17 method5527(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		for (@Pc(4) Class2_Sub2_Sub17 local4 = (Class2_Sub2_Sub17) aClass4_124.method80(); local4 != null; local4 = (Class2_Sub2_Sub17) aClass4_124.method79()) {
+		for (@Pc(4) Class2_Sub2_Sub17 local4 = (Class2_Sub2_Sub17) aClass4_124.head(); local4 != null; local4 = (Class2_Sub2_Sub17) aClass4_124.next()) {
 			if (local4.aBoolean466 && local4.method6147(arg1, arg0)) {
 				return local4;
 			}

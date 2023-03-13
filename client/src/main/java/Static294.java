@@ -11,9 +11,9 @@ public final class Static294 {
 	public static boolean renderprofile = false;
 
 	@OriginalMember(owner = "client!qt", name = "a", descriptor = "(IILclient!r;)Lclient!ne;")
-	public static Class2_Sub25 method5062(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1) {
+	public static MidiInstrument method5062(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1) {
 		@Pc(15) byte[] local15 = arg1.method5082(arg0);
-		return local15 == null ? null : new Class2_Sub25(local15);
+		return local15 == null ? null : new MidiInstrument(local15);
 	}
 
 	@OriginalMember(owner = "client!qt", name = "a", descriptor = "(Lclient!bt;II)V")

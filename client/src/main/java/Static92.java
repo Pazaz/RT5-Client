@@ -111,7 +111,7 @@ public final class Static92 {
 			}
 			Static216.method3776(arg3, arg0, local253.anInt1306, arg1, local185, local14, local174, arg2);
 		}
-		for (@Pc(293) Class2_Sub32 local293 = (Class2_Sub32) Static120.aClass4_49.method80(); local293 != null; local293 = (Class2_Sub32) Static120.aClass4_49.method79()) {
+		for (@Pc(293) Class2_Sub32 local293 = (Class2_Sub32) Static120.aClass4_49.head(); local293 != null; local293 = (Class2_Sub32) Static120.aClass4_49.next()) {
 			local185 = (int) (local293.key >> 28 & 0x3L);
 			if (local185 == Static343.anInt6389) {
 				local196 = (int) (local293.key & 0x3FFFL) * 4 + 2 - local61 / 32;

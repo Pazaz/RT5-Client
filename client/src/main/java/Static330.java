@@ -33,7 +33,7 @@ public final class Static330 {
 		@Pc(28) byte[] local28 = Static289.aClass197_73.fetchFile(arg0, 0);
 		local10 = new Class235();
 		if (local28 != null) {
-			local10.method5933(new Buffer(local28));
+			local10.decode(new Buffer(local28));
 		}
 		local10.method5931();
 		Static233.aClass98_37.put((long) arg0, local10);

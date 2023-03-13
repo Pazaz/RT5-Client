@@ -10,7 +10,7 @@ public final class Static119 {
 	public static Sprite aClass13_7;
 
 	@OriginalMember(owner = "client!gr", name = "f", descriptor = "Lclient!bh;")
-	public static Class21 aClass21_1;
+	public static Environment aClass21_1;
 
 	@OriginalMember(owner = "client!gr", name = "h", descriptor = "Lclient!hu;")
 	public static final LruHashTable aClass98_16 = new LruHashTable(64);

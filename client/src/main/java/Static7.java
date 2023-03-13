@@ -165,13 +165,13 @@ public final class Static7 {
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(III)V")
 	public static void method6469(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(12) Class2_Sub2_Sub7 local12 = Static316.method5413(14, arg1);
+		@Pc(12) DelayedStateChange local12 = Static316.method5413(14, arg1);
 		local12.method2311();
 		local12.anInt2289 = arg0;
 	}
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!bh;IZ)V")
-	public static void method6470(@OriginalArg(0) Class21 arg0, @OriginalArg(1) int arg1) {
+	public static void method6470(@OriginalArg(0) Environment arg0, @OriginalArg(1) int arg1) {
 		if (Static237.aBoolean297) {
 			Static237.aBoolean297 = false;
 			arg1 = 0;

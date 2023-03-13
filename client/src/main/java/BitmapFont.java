@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ur")
-public abstract class Class130 {
+public abstract class BitmapFont {
 
 	@OriginalMember(owner = "client!ur", name = "f", descriptor = "Lclient!wm;")
 	private final Class19 aClass19_12;
@@ -14,7 +14,7 @@ public abstract class Class130 {
 	private final Class239 aClass239_8;
 
 	@OriginalMember(owner = "client!ur", name = "<init>", descriptor = "(Lclient!wm;Lclient!vi;)V")
-	protected Class130(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class239 arg1) {
+	protected BitmapFont(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class239 arg1) {
 		this.aClass19_12 = arg0;
 		this.aClass239_8 = arg1;
 	}

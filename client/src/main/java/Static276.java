@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static276 {
 
 	@OriginalMember(owner = "client!pr", name = "s", descriptor = "Lclient!ur;")
-	public static Class130 aClass130_4;
+	public static BitmapFont aClass130_4;
 
 	@OriginalMember(owner = "client!pr", name = "o", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_109 = new LocalizedString("Loading core fonts - ", "Lade Schriftarten - ", "Chargement des polices - ", "Carregando fontes principais - ");

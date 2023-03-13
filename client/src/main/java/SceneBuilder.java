@@ -20,7 +20,7 @@ public final class SceneBuilder extends Class29 {
 			return;
 		}
 		@Pc(11) boolean local11 = false;
-		@Pc(13) Class21 local13 = null;
+		@Pc(13) Environment local13 = null;
 		if (arg0 != null) {
 			arg0[0] = -1;
 		}
@@ -33,7 +33,7 @@ public final class SceneBuilder extends Class29 {
 			while (arg4.pos < arg4.data.length) {
 				local24 = arg4.g1();
 				if (local24 == 0) {
-					local13 = new Class21(arg4);
+					local13 = new Environment(arg4);
 				} else {
 					@Pc(142) int local142;
 					if (local24 == 1) {
@@ -59,7 +59,7 @@ public final class SceneBuilder extends Class29 {
 						}
 					} else if (local24 == 2) {
 						if (local13 == null) {
-							local13 = new Class21();
+							local13 = new Environment();
 						}
 						local13.method851(arg4);
 					} else if (local24 != 128) {
@@ -210,7 +210,7 @@ public final class SceneBuilder extends Class29 {
 		if (arg7 != null) {
 			arg7[0] = -1;
 		}
-		@Pc(19) Class21 local19 = null;
+		@Pc(19) Environment local19 = null;
 		@Pc(25) int local25 = (arg5 & 0x7) * 8;
 		@Pc(31) int local31 = (arg4 & 0x7) * 8;
 		while (true) {
@@ -223,7 +223,7 @@ public final class SceneBuilder extends Class29 {
 					while (arg0.data.length > arg0.pos) {
 						local36 = arg0.g1();
 						if (local36 == 0) {
-							local19 = new Class21(arg0);
+							local19 = new Environment(arg0);
 						} else {
 							@Pc(289) int local289;
 							@Pc(168) int local168;
@@ -258,7 +258,7 @@ public final class SceneBuilder extends Class29 {
 								}
 							} else if (local36 == 2) {
 								if (local19 == null) {
-									local19 = new Class21();
+									local19 = new Environment();
 								}
 								local19.method851(arg0);
 							} else if (local36 != 128) {
