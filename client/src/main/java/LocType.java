@@ -514,11 +514,11 @@ public final class LocType {
 		} else if (arg1 == 69) {
 			this.anInt1342 = arg0.g1();
 		} else if (arg1 == 70) {
-			this.anInt1308 = arg0.g2b();
+			this.anInt1308 = arg0.g2s();
 		} else if (arg1 == 71) {
-			this.anInt1330 = arg0.g2b();
+			this.anInt1330 = arg0.g2s();
 		} else if (arg1 == 72) {
-			this.anInt1333 = arg0.g2b();
+			this.anInt1333 = arg0.g2s();
 		} else if (arg1 == 73) {
 			this.aBoolean117 = true;
 		} else if (arg1 == 74) {

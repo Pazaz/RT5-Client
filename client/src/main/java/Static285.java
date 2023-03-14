@@ -13,9 +13,6 @@ public final class Static285 {
 	@OriginalMember(owner = "client!qj", name = "i", descriptor = "I")
 	public static int anInt5370 = 0;
 
-	@OriginalMember(owner = "client!qj", name = "m", descriptor = "Lclient!s;")
-	public static final Class210 aClass210_12 = new Class210(12, 7);
-
 	@OriginalMember(owner = "client!qj", name = "o", descriptor = "I")
 	public static int anInt5374 = 0;
 

@@ -6,9 +6,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static262 {
 
-	@OriginalMember(owner = "client!pa", name = "a", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_251 = new ClientProt(72, 7);
-
 	@OriginalMember(owner = "client!pa", name = "f", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_145 = new LocalizedString("Continue", "Weiter", "Continuer", "Continuar");
 

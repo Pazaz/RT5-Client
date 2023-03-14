@@ -10,9 +10,6 @@ public final class Static192 {
 	@OriginalMember(owner = "client!l", name = "c", descriptor = "Lclient!bc;")
 	public static final Class16 aClass16_5 = new Class16("", 11);
 
-	@OriginalMember(owner = "client!l", name = "d", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_139 = new ClientProt(16, -1);
-
 	@OriginalMember(owner = "client!l", name = "i", descriptor = "Lclient!nk;")
 	public static Class161 aClass161_8 = null;
 

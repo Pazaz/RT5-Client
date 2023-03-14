@@ -7,9 +7,6 @@ public final class Static147 {
 	@OriginalMember(owner = "client!ii", name = "a", descriptor = "I")
 	public static final int anInt2708 = 1403;
 
-	@OriginalMember(owner = "client!ii", name = "i", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_103 = new ClientProt(73, 7);
-
 	@OriginalMember(owner = "client!ii", name = "k", descriptor = "[S")
 	public static short[] aShortArray54 = new short[256];
 

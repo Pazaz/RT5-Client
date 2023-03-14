@@ -17,14 +17,8 @@ public final class Static363 {
 	@OriginalMember(owner = "client!vf", name = "N", descriptor = "Z")
 	public static boolean aBoolean464 = true;
 
-	@OriginalMember(owner = "client!vf", name = "T", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_239 = new ClientProt(67, 4);
-
 	@OriginalMember(owner = "client!vf", name = "U", descriptor = "Lclient!ld;")
 	public static final LinkedList aClass135_39 = new LinkedList();
-
-	@OriginalMember(owner = "client!vf", name = "W", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_240 = new ClientProt(37, 6);
 
 	@OriginalMember(owner = "client!vf", name = "a", descriptor = "(IIIII)V")
 	public static void method6090(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {

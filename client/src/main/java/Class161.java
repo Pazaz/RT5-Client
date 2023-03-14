@@ -575,8 +575,8 @@ public final class Class161 {
 			this.aString43 = arg0.gjstr();
 		}
 		this.anInt4273 = arg0.g2();
-		this.anInt4241 = arg0.g2b();
-		this.anInt4249 = arg0.g2b();
+		this.anInt4241 = arg0.g2s();
+		this.anInt4249 = arg0.g2s();
 		this.anInt4294 = arg0.g2();
 		this.anInt4289 = arg0.g2();
 		this.aByte47 = arg0.g1b();
@@ -615,8 +615,8 @@ public final class Class161 {
 			if (this.anInt4313 == 65535) {
 				this.anInt4313 = -1;
 			}
-			this.anInt4307 = arg0.g2b();
-			this.anInt4253 = arg0.g2b();
+			this.anInt4307 = arg0.g2s();
+			this.anInt4253 = arg0.g2s();
 			this.anInt4320 = arg0.g2();
 			this.anInt4274 = arg0.g2();
 			this.anInt4319 = arg0.g2();

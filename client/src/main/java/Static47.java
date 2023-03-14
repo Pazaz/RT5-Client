@@ -13,9 +13,6 @@ public final class Static47 {
 	@OriginalMember(owner = "client!co", name = "s", descriptor = "Z")
 	public static boolean nonpcs = false;
 
-	@OriginalMember(owner = "client!co", name = "t", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_43 = new ClientProt(75, 11);
-
 	@OriginalMember(owner = "client!co", name = "u", descriptor = "[I")
 	public static final int[] anIntArray90 = new int[4096];
 

@@ -422,7 +422,7 @@ public class Cheat {
 				return;
 			}
 			if (client.gameState == 30) {
-				Protocol.method1960(Static243.aClass145_162);
+				Protocol.writeOpcode(ClientProt.aClass145_162);
 				Protocol.outboundBuffer.p1(cmd.length() + 2);
 				Protocol.outboundBuffer.p1(arg1 ? 1 : 0);
 				Protocol.outboundBuffer.pjstr(cmd);

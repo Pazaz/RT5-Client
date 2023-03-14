@@ -16,9 +16,6 @@ public final class Static105 {
 	@OriginalMember(owner = "client!ft", name = "S", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_45 = new LocalizedString("flash1:", "blinken1:", "clignotant1:", "flash1:");
 
-	@OriginalMember(owner = "client!ft", name = "U", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_79 = new ClientProt(11, 16);
-
 	@OriginalMember(owner = "client!ft", name = "X", descriptor = "Z")
 	public static boolean aBoolean162 = false;
 

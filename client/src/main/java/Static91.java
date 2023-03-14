@@ -9,9 +9,6 @@ public final class Static91 {
 	@OriginalMember(owner = "client!f", name = "F", descriptor = "Lclient!od;")
 	public static MidiPcmStream aClass2_Sub12_Sub3_1;
 
-	@OriginalMember(owner = "client!f", name = "b", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_69 = new ClientProt(61, -1);
-
 	@OriginalMember(owner = "client!f", name = "E", descriptor = "I")
 	public static final int anInt1909 = 1400;
 

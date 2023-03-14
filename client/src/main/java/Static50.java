@@ -31,7 +31,7 @@ public final class Static50 {
 			Static139.anInt2595 = Static391.anInt7216;
 			Static60.method891(false);
 			Static98.method2107();
-			Static198.method3598(Static139.anInt2595);
+			ScriptRunner.method3598(Static139.anInt2595);
 		}
 		Static310.method5283();
 		Static107.anInt2219 = -1;

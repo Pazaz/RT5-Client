@@ -123,7 +123,7 @@ public class Buffer extends Node {
 
 	// get, 2 bytes, signed, subtract from
 	@OriginalMember(owner = "client!bt", name = "c", descriptor = "(I)I")
-	public final int g2bsub() {
+	public final int g2ssub() {
 		this.pos += 2;
 		@Pc(38) int value = ((this.data[this.pos - 2] & 0xFF) << 8) | (this.data[this.pos - 1] - 128 & 0xFF);
 		if (value > 32767) {
@@ -250,7 +250,7 @@ public class Buffer extends Node {
 
 	// inverse, get, 2 bytes, signed, add to
 	@OriginalMember(owner = "client!bt", name = "f", descriptor = "(B)I")
-	public final int ig2badd() {
+	public final int ig2sadd() {
 		this.pos += 2;
 		@Pc(33) int value = ((this.data[this.pos - 1] & 0xFF) << 8) | (this.data[this.pos - 2] - 128 & 0xFF);
 		if (value > 32767) {
@@ -320,7 +320,7 @@ public class Buffer extends Node {
 
 	// get, 2 bytes, signed
 	@OriginalMember(owner = "client!bt", name = "i", descriptor = "(B)I")
-	public final int g2b() {
+	public final int g2s() {
 		this.pos += 2;
 		@Pc(37) int value = ((this.data[this.pos - 2] & 0xFF) << 8) | (this.data[this.pos - 1] & 0xFF);
 		if (value > 32767) {
@@ -422,6 +422,7 @@ public class Buffer extends Node {
 		this.pdata(ciphertextBytes, ciphertextBytes.length);
 	}
 
+	// either called g4_alt1 or g4_alt3
 	// middle, get, 4 bytes
 	@OriginalMember(owner = "client!bt", name = "d", descriptor = "(Z)I")
 	public final int mg4() {
@@ -543,7 +544,7 @@ public class Buffer extends Node {
 
 	// inverse, get, 2 bytes, signed
 	@OriginalMember(owner = "client!bt", name = "m", descriptor = "(B)I")
-	public final int ig2b() {
+	public final int ig2s() {
 		this.pos += 2;
 		@Pc(31) int value = ((this.data[this.pos - 1] & 0xFF) << 8) | (this.data[this.pos - 2] & 0xFF);
 		if (value > 32767) {
@@ -559,6 +560,7 @@ public class Buffer extends Node {
 		this.data[this.pos - length - 1] = (byte) length;
 	}
 
+	// either called g4_alt1 or g4_alt3
 	// inverse, middle, get, 4 bytes
 	@OriginalMember(owner = "client!bt", name = "l", descriptor = "(I)I")
 	public final int img4() {

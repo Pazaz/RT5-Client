@@ -10,9 +10,6 @@ public final class Static322 {
 	@OriginalMember(owner = "client!so", name = "m", descriptor = "[I")
 	public static int[] anIntArray404;
 
-	@OriginalMember(owner = "client!so", name = "h", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_218 = new ClientProt(14, 8);
-
 	@OriginalMember(owner = "client!so", name = "k", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_125 = new LocalizedString("Your ignore list is full, max of 100.", "Deine Ignorieren-Liste ist voll, du kannst nur 100 Spieler darauf eintragen.", "Votre liste noire est pleine (100 noms maximum).", "Sua lista de ignorados está cheia. O máx. é 100.");
 

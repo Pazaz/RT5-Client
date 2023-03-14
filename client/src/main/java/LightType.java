@@ -38,7 +38,7 @@ public final class LightType {
 		} else if (arg1 == 3) {
 			this.anInt1879 = arg0.g2();
 		} else if (arg1 == 4) {
-			this.anInt1880 = arg0.g2b();
+			this.anInt1880 = arg0.g2s();
 		}
 	}
 }

@@ -7,16 +7,8 @@ public final class Static153 {
 	@OriginalMember(owner = "client!ip", name = "c", descriptor = "I")
 	public static int anInt2792;
 
-	@OriginalMember(owner = "client!ip", name = "d", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_109 = new ClientProt(4, 8);
-
 	@OriginalMember(owner = "client!ip", name = "h", descriptor = "I")
 	public static int anInt2794 = 2;
-
-	@OriginalMember(owner = "client!ip", name = "a", descriptor = "(I)[Lclient!rt;")
-	public static Class209[] method2770() {
-		return new Class209[] { client.MODE_ENV_LIVE, client.MODE_ENV_RC, client.MODE_ENV_WIP };
-	}
 
 	@OriginalMember(owner = "client!ip", name = "a", descriptor = "(ILjava/lang/String;)Ljava/lang/String;")
 	public static String method2772(@OriginalArg(1) String arg0) {

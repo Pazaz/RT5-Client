@@ -6,9 +6,6 @@ public final class Static196 {
 	@OriginalMember(owner = "client!lh", name = "h", descriptor = "I")
 	public static int anInt3318;
 
-	@OriginalMember(owner = "client!lh", name = "a", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_131 = new ClientProt(52, 12);
-
 	@OriginalMember(owner = "client!lh", name = "d", descriptor = "[Lclient!wk;")
 	public static final SynthSound[] aClass247Array2 = new SynthSound[50];
 

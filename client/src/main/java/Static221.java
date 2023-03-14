@@ -11,9 +11,6 @@ public final class Static221 {
 	@OriginalMember(owner = "client!mr", name = "O", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_98 = new LocalizedString("Stellar Dawn is loading - please wait...", "Mechscape wird geladen - bitte warten...", "Chargement de Mechscape en cours - veuillez patienter...", "Mechscape carregando. Aguarde...");
 
-	@OriginalMember(owner = "client!mr", name = "Gb", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_164 = new ClientProt(74, -1);
-
 	@OriginalMember(owner = "client!mr", name = "Mb", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_99 = new LocalizedString("RuneScape is loading - please wait...", "RuneScape wird geladen - bitte warten...", "Chargement de RuneScape en cours - veuillez patienter...", "RuneScape carregando. Aguarde...");
 

@@ -13,9 +13,6 @@ public final class Static333 {
 	@OriginalMember(owner = "client!tg", name = "m", descriptor = "Lclient!hu;")
 	public static final LruHashTable aClass98_65 = new LruHashTable(20);
 
-	@OriginalMember(owner = "client!tg", name = "I", descriptor = "Lclient!s;")
-	public static final Class210 aClass210_17 = new Class210(10, 6);
-
 	@OriginalMember(owner = "client!tg", name = "a", descriptor = "(B)Z")
 	public static boolean method6318() {
 		return Static14.aBoolean24;

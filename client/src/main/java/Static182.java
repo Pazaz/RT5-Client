@@ -112,7 +112,7 @@ public final class Static182 {
 		for (@Pc(76) int local76 = 0; local76 < 100; local76++) {
 			Static357.aBooleanArray59[local76] = true;
 		}
-		Static93.method2002();
+		Protocol.method2002();
 		Static375.aLong222 = 0L;
 		Static385.aClass2_Sub16_2 = null;
 	}

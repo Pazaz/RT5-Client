@@ -10,9 +10,6 @@ public final class Static32 {
 	@OriginalMember(owner = "client!br", name = "T", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_21 = new LocalizedString("Loading...", "Lade...", "Chargement en cours...", "Carregando...");
 
-	@OriginalMember(owner = "client!br", name = "X", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_32 = new ClientProt(62, 3);
-
 	@OriginalMember(owner = "client!br", name = "a", descriptor = "(Lclient!wm;Lclient!hp;III)V")
 	public static void method990(@OriginalArg(0) Class19 arg0, @OriginalArg(1) BaseEntity arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		@Pc(12) Class67 local12;

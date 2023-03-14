@@ -10,12 +10,6 @@ public final class Static110 {
 	@OriginalMember(owner = "client!gd", name = "i", descriptor = "Lclient!rn;")
 	public static Class205 aClass205_1;
 
-	@OriginalMember(owner = "client!gd", name = "e", descriptor = "Lclient!s;")
-	public static final Class210 aClass210_5 = new Class210(3, -1);
-
-	@OriginalMember(owner = "client!gd", name = "h", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_84 = new ClientProt(3, 7);
-
 	@OriginalMember(owner = "client!gd", name = "a", descriptor = "(Lclient!ml;I)[Lclient!oi;")
 	public static Class169[] method2265(@OriginalArg(0) Signlink arg0) {
 		if (!arg0.method3765()) {

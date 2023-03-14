@@ -7,9 +7,6 @@ public final class Static132 {
 	@OriginalMember(owner = "client!hk", name = "e", descriptor = "[I")
 	public static final int[] anIntArray161 = new int[14];
 
-	@OriginalMember(owner = "client!hk", name = "f", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_92 = new ClientProt(36, 3);
-
 	@OriginalMember(owner = "client!hk", name = "g", descriptor = "Z")
 	public static boolean aBoolean179 = false;
 
@@ -23,10 +20,10 @@ public final class Static132 {
 	public static int anInt2468 = -2;
 
 	@OriginalMember(owner = "client!hk", name = "a", descriptor = "(IB)Lclient!rt;")
-	public static Class209 method2484(@OriginalArg(0) int arg0) {
-		@Pc(8) Class209[] local8 = Static153.method2770();
+	public static ModeEnvironment method2484(@OriginalArg(0) int arg0) {
+		@Pc(8) ModeEnvironment[] local8 = ModeEnvironment.getMoveEnvironments();
 		for (@Pc(15) int local15 = 0; local15 < local8.length; local15++) {
-			@Pc(21) Class209 local21 = local8[local15];
+			@Pc(21) ModeEnvironment local21 = local8[local15];
 			if (local21.anInt5803 == arg0) {
 				return local21;
 			}

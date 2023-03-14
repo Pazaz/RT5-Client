@@ -52,7 +52,7 @@ public final class Static211 {
 		Static369.method6217();
 		Static192.method3508();
 		Static161.method2969();
-		Static198.aClass98_30.method2614();
+		ScriptRunner.aClass98_30.method2614();
 		Static190.aClass19_8.method2903();
 		Static261.aClass116_7.method3153();
 		Static194.method3541();

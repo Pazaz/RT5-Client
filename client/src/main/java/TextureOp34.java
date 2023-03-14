@@ -118,11 +118,11 @@ public final class TextureOp34 extends TextureOp {
 		} else if (arg0 == 1) {
 			this.anInt1043 = arg1.g1();
 		} else if (arg0 == 2) {
-			this.anInt1049 = arg1.g2b();
+			this.anInt1049 = arg1.g2s();
 			if (this.anInt1049 < 0) {
 				this.aShortArray18 = new short[this.anInt1043];
 				for (@Pc(80) int local80 = 0; local80 < this.anInt1043; local80++) {
-					this.aShortArray18[local80] = (short) arg1.g2b();
+					this.aShortArray18[local80] = (short) arg1.g2s();
 				}
 				return;
 			}

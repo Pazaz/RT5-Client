@@ -14,21 +14,6 @@ public final class Static382 {
 	@OriginalMember(owner = "client!we", name = "C", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_147 = new LocalizedString("Face here", "Hierhin drehen", "Regarder dans cette direction", "Virar para cá");
 
-	@OriginalMember(owner = "client!we", name = "D", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_258 = new ClientProt(49, -1);
-
-	@OriginalMember(owner = "client!we", name = "F", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_259 = new ClientProt(50, 3);
-
-	@OriginalMember(owner = "client!we", name = "G", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_260 = new ClientProt(47, 7);
-
-	@OriginalMember(owner = "client!we", name = "H", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_261 = new ClientProt(1, -1);
-
-	@OriginalMember(owner = "client!we", name = "J", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_262 = new ClientProt(79, 7);
-
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IILjava/util/Random;)I")
 	public static int method6361(@OriginalArg(1) int arg0, @OriginalArg(2) Random arg1) {
 		if (arg0 <= 0) {
@@ -87,7 +72,7 @@ public final class Static382 {
 			Static85.method1911(!arg2, local26);
 		}
 		if (!arg2) {
-			Static198.method3598(arg3);
+			ScriptRunner.method3598(arg3);
 		}
 		if (!arg2 && Static139.anInt2595 != -1) {
 			Static392.method6460(Static139.anInt2595, 1);

@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static122 {
 
-	@OriginalMember(owner = "client!h", name = "b", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_89 = new ClientProt(12, 8);
-
 	@OriginalMember(owner = "client!h", name = "g", descriptor = "Z")
 	public static volatile boolean aBoolean176 = false;
 
@@ -50,7 +47,7 @@ public final class Static122 {
 					local128.aClass161_3 = Static375.aClass161_14;
 					local128.anObjectArray4 = Static375.aClass161_14.anObjectArray31;
 					local128.anInt2116 = local105;
-					Static198.method3591(local128);
+					ScriptRunner.method3591(local128);
 				}
 			} else {
 				if (Static57.aBoolean124) {
@@ -62,10 +59,10 @@ public final class Static122 {
 						local128.aClass161_3 = Static375.aClass161_14;
 						local128.anObjectArray4 = Static375.aClass161_14.anObjectArray8;
 						local128.anInt2117 = local113;
-						Static198.method3591(local128);
+						ScriptRunner.method3591(local128);
 					}
 					if (Static182.aClass161_7 != null && Static45.method1413(Static375.aClass161_14) != null) {
-						Static295.method5096(Static182.aClass161_7, Static375.aClass161_14);
+						Protocol.method5096(Static182.aClass161_7, Static375.aClass161_14);
 					}
 				} else if ((Static232.anInt4087 == 1 || Static208.method3710()) && Static268.anInt4959 > 2) {
 					Static143.method2679(Static392.anInt7228 + Static3.anInt61, Static168.anInt7248 + Static18.anInt530);

@@ -31,6 +31,6 @@ public final class Static217 {
 
 	@OriginalMember(owner = "client!mn", name = "b", descriptor = "(Lclient!bt;B)Lclient!pd;")
 	public static Class173_Sub2 method3799(@OriginalArg(0) Buffer arg0) {
-		return new Class173_Sub2(arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.ig3(), arg0.ig3(), arg0.g1());
+		return new Class173_Sub2(arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.ig3(), arg0.ig3(), arg0.g1());
 	}
 }

@@ -215,7 +215,7 @@ public final class MelType {
 					local57 = arg1.g1();
 					this.anIntArray290 = new int[local57 * 2];
 					for (local196 = 0; local196 < local57 * 2; local196++) {
-						this.anIntArray290[local196] = arg1.g2b();
+						this.anIntArray290[local196] = arg1.g2s();
 					}
 					this.anInt4422 = arg1.g4();
 					this.anInt4414 = arg1.g4();

@@ -9,9 +9,6 @@ public final class Static163 {
 	@OriginalMember(owner = "client!jj", name = "R", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_68 = new LocalizedString("Loading world map - ", "Lade Weltkarte - ", "Chargement de la mappemonde - ", "Carregando mapa-múndi - ");
 
-	@OriginalMember(owner = "client!jj", name = "U", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_116 = new ClientProt(34, -1);
-
 	@OriginalMember(owner = "client!jj", name = "W", descriptor = "I")
 	public static int anInt3086 = 0;
 
@@ -103,21 +100,12 @@ public final class Static163 {
 			Static60.method891(true);
 		}
 		if (Protocol.socket != null && (client.gameState == 30 || client.gameState == 25)) {
-			Static93.method2002();
+			Protocol.method2002();
 		}
 		for (local159 = 0; local159 < 100; local159++) {
 			Static357.aBooleanArray59[local159] = true;
 		}
 		Static328.aBoolean412 = true;
-	}
-
-	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILjava/lang/String;)V")
-	public static void method3102(@OriginalArg(1) String arg0) {
-		if (Static47.aClass214Array1 != null) {
-			Protocol.method1960(Static70.aClass145_57);
-			Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
-			Protocol.outboundBuffer.pjstr(arg0);
-		}
 	}
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILclient!nk;)Ljava/lang/String;")

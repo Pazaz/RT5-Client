@@ -10,12 +10,6 @@ public final class Static272 {
 	@OriginalMember(owner = "client!pk", name = "ib", descriptor = "I")
 	public static int anInt5022 = -1;
 
-	@OriginalMember(owner = "client!pk", name = "kb", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_180 = new ClientProt(0, 2);
-
-	@OriginalMember(owner = "client!pk", name = "lb", descriptor = "Lclient!s;")
-	public static final Class210 aClass210_11 = new Class210(1, 15);
-
 	@OriginalMember(owner = "client!pk", name = "mb", descriptor = "[I")
 	public static final int[] anIntArray351 = new int[] { 32, 39, 44, 47 };
 

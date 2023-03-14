@@ -71,15 +71,6 @@ public final class Static93 {
 		return local7 == null ? null : local7.aClass11_Sub3_3;
 	}
 
-	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(B)V")
-	public static void method2002() {
-		Protocol.method1960(Static101.aClass145_75);
-		Protocol.outboundBuffer.p1(Static144.getWindowMode());
-		Protocol.outboundBuffer.p2(GameShell.canvasWidth);
-		Protocol.outboundBuffer.p2(GameShell.canvasHeight);
-		Protocol.outboundBuffer.p1(client.preferences.anInt4885);
-	}
-
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "()V")
 	public static void method2003() {
 		Static285.method4893(Scene.anInt1914);

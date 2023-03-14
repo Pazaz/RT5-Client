@@ -164,9 +164,9 @@ public final class SceneBuilder extends Class29 {
 						arg4.pos += 10;
 					} else {
 						arg0[0] = arg4.g2();
-						arg0[1] = arg4.g2b();
-						arg0[2] = arg4.g2b();
-						arg0[3] = arg4.g2b();
+						arg0[1] = arg4.g2s();
+						arg0[2] = arg4.g2s();
+						arg0[3] = arg4.g2s();
 						arg0[4] = arg4.g2();
 					}
 				}
@@ -332,9 +332,9 @@ public final class SceneBuilder extends Class29 {
 								arg0.pos += 10;
 							} else {
 								arg7[0] = arg0.g2();
-								arg7[1] = arg0.g2b();
-								arg7[2] = arg0.g2b();
-								arg7[3] = arg0.g2b();
+								arg7[1] = arg0.g2s();
+								arg7[2] = arg0.g2s();
+								arg7[3] = arg0.g2s();
 								arg7[4] = arg0.g2();
 							}
 						}

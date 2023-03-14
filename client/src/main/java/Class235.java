@@ -337,7 +337,7 @@ public final class Class235 {
 			} else if (arg0 == 28) {
 				this.anInt6600 = arg1.g1();
 			} else if (arg0 == 29) {
-				arg1.g2b();
+				arg1.g2s();
 			} else if (arg0 == 30) {
 				this.aBoolean453 = true;
 				return;

@@ -11,9 +11,6 @@ public final class Static148 {
 	@OriginalMember(owner = "client!ij", name = "a", descriptor = "[I")
 	public static final int[] anIntArray172 = new int[] { 0, -1, 0, 1 };
 
-	@OriginalMember(owner = "client!ij", name = "c", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_104 = new ClientProt(18, -1);
-
 	@OriginalMember(owner = "client!ij", name = "j", descriptor = "Z")
 	public static boolean aBoolean192 = false;
 

@@ -7,26 +7,8 @@ public final class Static115 {
 	@OriginalMember(owner = "client!gn", name = "l", descriptor = "I")
 	public static int anInt3837;
 
-	@OriginalMember(owner = "client!gn", name = "j", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_147 = new ClientProt(54, 8);
-
 	@OriginalMember(owner = "client!gn", name = "n", descriptor = "[I")
 	public static final int[] anIntArray234 = new int[] { 2, 2, 4, 0, 1, 8, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0 };
-
-	@OriginalMember(owner = "client!gn", name = "a", descriptor = "(IIII)V")
-	public static void method3809(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		if (arg1 == 1008) {
-			Static198.method3596(Static138.aClass16_3, arg0, arg2);
-		} else if (arg1 == 1002) {
-			Static198.method3596(Static192.aClass16_5, arg0, arg2);
-		} else if (arg1 == 1012) {
-			Static198.method3596(Static250.aClass16_6, arg0, arg2);
-		} else if (arg1 == 1003) {
-			Static198.method3596(Static320.aClass16_8, arg0, arg2);
-		} else if (arg1 == 1007) {
-			Static198.method3596(Static135.aClass16_2, arg0, arg2);
-		}
-	}
 
 	@OriginalMember(owner = "client!gn", name = "e", descriptor = "(I)Lclient!jg;")
 	public static Class2_Sub20 method3829() {
@@ -40,15 +22,6 @@ public final class Static115 {
 			}
 		}
 		return null;
-	}
-
-	@OriginalMember(owner = "client!gn", name = "a", descriptor = "(Ljava/lang/String;I)V")
-	public static void method3841(@OriginalArg(0) String arg0) {
-		if (!arg0.equals("")) {
-			Protocol.method1960(Static13.aClass145_18);
-			Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
-			Protocol.outboundBuffer.pjstr(arg0);
-		}
 	}
 
 	@OriginalMember(owner = "client!gn", name = "a", descriptor = "(I[Lclient!nk;I)V")
@@ -70,7 +43,7 @@ public final class Static115 {
 					local49 = new Class2_Sub13();
 					local49.aClass161_3 = local9;
 					local49.anObjectArray4 = local9.anObjectArray34;
-					Static198.method3591(local49);
+					ScriptRunner.method3591(local49);
 				}
 				if (arg0 == 1 && local9.anObjectArray11 != null) {
 					if (local9.anInt4297 >= 0) {
@@ -82,7 +55,7 @@ public final class Static115 {
 					local49 = new Class2_Sub13();
 					local49.anObjectArray4 = local9.anObjectArray11;
 					local49.aClass161_3 = local9;
-					Static198.method3591(local49);
+					ScriptRunner.method3591(local49);
 				}
 			}
 		}

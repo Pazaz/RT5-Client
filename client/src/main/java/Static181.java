@@ -10,9 +10,6 @@ public final class Static181 {
 	@OriginalMember(owner = "client!ki", name = "p", descriptor = "[I")
 	public static int[] anIntArray204;
 
-	@OriginalMember(owner = "client!ki", name = "d", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_134 = new ClientProt(57, 8);
-
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "(IIIIIIIB)V")
 	public static void method3372(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		if (arg4 >= Static28.anInt675 && Static82.anInt1837 >= arg5 && Static365.anInt6832 <= arg2 && Static161.anInt2954 >= arg1) {

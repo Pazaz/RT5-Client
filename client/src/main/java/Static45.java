@@ -194,7 +194,7 @@ public final class Static45 {
 										if (local6.anIntArray275 == null || client.cycle >= local6.anIntArray275[local278]) {
 											@Pc(310) byte local310 = local6.aByteArray50[local278];
 											if (local310 == 0 || ((local310 & 0x8) == 0 || !Static174.aClass123_2.method3343(86) && !Static174.aClass123_2.method3343(82) && !Static174.aClass123_2.method3343(81)) && ((local310 & 0x2) == 0 || Static174.aClass123_2.method3343(86)) && ((local310 & 0x1) == 0 || Static174.aClass123_2.method3343(82)) && ((local310 & 0x4) == 0 || Static174.aClass123_2.method3343(81))) {
-												Static277.method4681(local6.anInt4317, local278 + 1, "", -1);
+												Protocol.method4681(local6.anInt4317, local278 + 1, "", -1);
 												local374 = local6.anIntArray276[local278];
 												if (local6.anIntArray275 == null) {
 													local6.anIntArray275 = new int[local6.aByteArray49.length];

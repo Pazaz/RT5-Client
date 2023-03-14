@@ -7,9 +7,6 @@ public final class Static253 {
 	@OriginalMember(owner = "client!oj", name = "c", descriptor = "I")
 	public static int anInt4689;
 
-	@OriginalMember(owner = "client!oj", name = "a", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_166 = new ClientProt(42, -1);
-
 	@OriginalMember(owner = "client!oj", name = "f", descriptor = "Lclient!un;")
 	public static GameShell anApplet_Sub1_1 = null;
 

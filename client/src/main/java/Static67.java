@@ -24,9 +24,6 @@ public final class Static67 {
 	@OriginalMember(owner = "client!ds", name = "v", descriptor = "[[I")
 	public static final int[][] anIntArrayArray15 = new int[][] { { 12, 12, 12, 12 }, { 12, 12, 12, 12, 12, 5 }, { 5, 5, 1, 1 }, { 5, 1, 1, 5 }, { 5, 5, 5 }, { 5, 5, 5 }, { 12, 12, 12, 12, 12, 12 }, { 1, 12, 12, 12, 12, 12 }, { 1, 1, 7, 1 }, { 8, 9, 9, 8, 8, 3, 1, 9 }, { 8, 8, 9, 8, 9, 9 }, { 10, 10, 11, 11, 11, 7, 3, 7 }, { 12, 12, 12, 12 } };
 
-	@OriginalMember(owner = "client!ds", name = "w", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_56 = new ClientProt(20, 4);
-
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "()V")
 	public static void method1765() {
 		for (@Pc(1) int local1 = 0; local1 < Scene.anInt3139; local1++) {

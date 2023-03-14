@@ -42,23 +42,6 @@ public final class Static65 {
 		Static288.anInt5464 = arg2;
 	}
 
-	@OriginalMember(owner = "client!dq", name = "b", descriptor = "(IIII)V")
-	public static void method1736(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		if (arg2 == 0) {
-			Protocol.method1960(Static239.aClass145_158);
-		}
-		if (arg2 == 1) {
-			Protocol.method1960(Static310.aClass145_203);
-		}
-		Protocol.outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
-		Protocol.outboundBuffer.p2(arg0 + Static164.anInt3140);
-		Protocol.outboundBuffer.ip2_dup(arg1 + Static148.anInt2719);
-		Static370.aBoolean474 = false;
-		Static358.anInt6550 = arg0;
-		Static312.anInt5844 = arg1;
-		Static359.method6009();
-	}
-
 	@OriginalMember(owner = "client!dq", name = "a", descriptor = "(Lclient!bu;I[[B)V")
 	public static void method1737(@OriginalArg(0) SceneBuilder arg0, @OriginalArg(2) byte[][] arg1) {
 		for (@Pc(3) int local3 = 0; local3 < arg0.anInt912; local3++) {

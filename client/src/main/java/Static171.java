@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static171 {
 
-	@OriginalMember(owner = "client!jt", name = "V", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_127 = new ClientProt(38, 4);
-
 	@OriginalMember(owner = "client!jt", name = "X", descriptor = "[Lclient!dg;")
 	public static final Class46[] aClass46Array1 = new Class46[4];
 
@@ -15,14 +12,6 @@ public final class Static171 {
 
 	@OriginalMember(owner = "client!jt", name = "eb", descriptor = "Lclient!oj;")
 	public static final Class170 aClass170_3 = new Class170(0);
-
-	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(IILjava/lang/String;)V")
-	public static void method3256(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
-		Protocol.method1960(Static382.aClass145_258);
-		Protocol.outboundBuffer.p1(Buffer.getStringLength(arg1) + 1);
-		Protocol.outboundBuffer.p1add(arg0);
-		Protocol.outboundBuffer.pjstr(arg1);
-	}
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(BIIZII)V")
 	public static void method3258(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {

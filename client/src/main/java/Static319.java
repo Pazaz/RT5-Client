@@ -97,8 +97,8 @@ public final class Static319 {
 
 	@OriginalMember(owner = "client!sk", name = "c", descriptor = "(B)V")
 	public static void method5435() {
-		if (LoginManager.step == 5) {
-			LoginManager.step = 6;
+		if (LoginManager.loginStep == 5) {
+			LoginManager.loginStep = 6;
 		}
 	}
 }

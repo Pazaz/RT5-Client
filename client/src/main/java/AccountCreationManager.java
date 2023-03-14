@@ -5,14 +5,8 @@ import org.openrs2.deob.annotation.Pc;
 import java.io.IOException;
 import java.net.Socket;
 
-public class CreateManager {
+public class AccountCreationManager {
 
-	@OriginalMember(owner = "client!ck", name = "O", descriptor = "Lclient!vr;")
-	public static final OutboundPacket REGISTER_STEP1 = new OutboundPacket(20, 6);
-	@OriginalMember(owner = "client!ck", name = "P", descriptor = "Lclient!vr;")
-	public static final OutboundPacket VALIDATE_USERNAME = new OutboundPacket(21, 8);
-	@OriginalMember(owner = "client!ck", name = "Q", descriptor = "Lclient!vr;")
-	public static final OutboundPacket REGISTER_STEP2 = new OutboundPacket(22, -2);
 	@OriginalMember(owner = "client!i", name = "W", descriptor = "I")
 	public static int step = 0;
 	@OriginalMember(owner = "client!dr", name = "V", descriptor = "I")
@@ -25,7 +19,7 @@ public class CreateManager {
 	public static String[] suggestedNames;
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(I)V")
-	public static void loop() {
+	public static void mainLogic() {
 		if (step == 0) {
 			return;
 		}
@@ -77,7 +71,7 @@ public class CreateManager {
 					client.soundChannel.method6325();
 				}
 				if (reply != 21) {
-					CreateManager.reply = reply;
+					AccountCreationManager.reply = reply;
 					step = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
@@ -99,7 +93,7 @@ public class CreateManager {
 					suggestedNames[reply] = StringUtils.fromBase37(Protocol.inboundBuffer.g8());
 				}
 				step = 0;
-				CreateManager.reply = 21;
+				AccountCreationManager.reply = 21;
 				Protocol.socket.close();
 				Protocol.socket = null;
 			}
@@ -153,7 +147,7 @@ public class CreateManager {
 		}
 		xteaBuffer.tinyenc(key);
 		Protocol.outboundBuffer.pos = 0;
-		Protocol.outboundBuffer.p1(REGISTER_STEP2.opcode);
+		Protocol.outboundBuffer.p1(LoginProt.REGISTER_STEP2.opcode);
 		Protocol.outboundBuffer.p2(rsaBuffer.pos + xteaBuffer.pos + 2);
 		Protocol.outboundBuffer.p2(578);
 		Protocol.outboundBuffer.pdata(rsaBuffer.data, rsaBuffer.pos);
@@ -167,7 +161,7 @@ public class CreateManager {
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(IIIII)V")
 	public static void checkInfo(@OriginalArg(0) int country, @OriginalArg(1) int year, @OriginalArg(3) int day, @OriginalArg(4) int month) {
 		Protocol.outboundBuffer.pos = 0;
-		Protocol.outboundBuffer.p1(REGISTER_STEP1.opcode);
+		Protocol.outboundBuffer.p1(LoginProt.REGISTER_STEP1.opcode);
 		Protocol.outboundBuffer.p1(day);
 		Protocol.outboundBuffer.p1(month);
 		Protocol.outboundBuffer.p2(year);
@@ -181,7 +175,7 @@ public class CreateManager {
 	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(JB)V")
 	public static void checkName(@OriginalArg(0) long username) {
 		Protocol.outboundBuffer.pos = 0;
-		Protocol.outboundBuffer.p1(VALIDATE_USERNAME.opcode);
+		Protocol.outboundBuffer.p1(LoginProt.VALIDATE_USERNAME.opcode);
 		Protocol.outboundBuffer.p8(username);
 		step = 1;
 		loops = 0;

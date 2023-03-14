@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static166 {
 
-	@OriginalMember(owner = "client!jo", name = "u", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_122 = new ClientProt(40, 7);
-
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ZBI)V")
 	public static void method3186(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1) {
 		@Pc(8) Class2_Sub41 local8 = Static374.method6275(arg0, arg1);

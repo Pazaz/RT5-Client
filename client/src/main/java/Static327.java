@@ -7,9 +7,6 @@ public final class Static327 {
 	@OriginalMember(owner = "client!ta", name = "b", descriptor = "Lclient!ad;")
 	public static final HashTable aClass4_127 = new HashTable(512);
 
-	@OriginalMember(owner = "client!ta", name = "p", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_222 = new ClientProt(77, -1);
-
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Lclient!wm;III)V")
 	public static void method5574(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		if (arg2 < 0 || arg1 < 0 || Static75.anInt1737 == 0 || Static153.anInt2792 == 0) {

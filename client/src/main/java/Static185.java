@@ -74,7 +74,7 @@ public final class Static185 {
 			@Pc(18) Class2_Sub13 local18 = new Class2_Sub13();
 			local18.aClass161_3 = local8;
 			local18.anObjectArray4 = local8.anObjectArray15;
-			Static198.method3591(local18);
+			ScriptRunner.method3591(local18);
 		}
 		Static196.anInt3317 = local8.anInt4300;
 		Static107.anInt2219 = arg4;

@@ -14,12 +14,12 @@ public final class Static145 {
 			if (local18) {
 				Static32.aClass2_Sub5_2 = (Class2_Sub5) Static129.aClass135_19.aClass2_130.prev.prev;
 			} else {
-				Static259.method4427((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev.prev, Static370.aClass2_Sub24_1.method5243(), Static370.aClass2_Sub24_1.method5242());
+				Protocol.method4427((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev.prev, Static370.aClass2_Sub24_1.method5243(), Static370.aClass2_Sub24_1.method5242());
 			}
 		} else if (local18) {
 			Static32.aClass2_Sub5_2 = (Class2_Sub5) Static129.aClass135_19.aClass2_130.prev;
 		} else {
-			Static259.method4427((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev, Static370.aClass2_Sub24_1.method5243(), Static370.aClass2_Sub24_1.method5242());
+			Protocol.method4427((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev, Static370.aClass2_Sub24_1.method5243(), Static370.aClass2_Sub24_1.method5242());
 		}
 	}
 

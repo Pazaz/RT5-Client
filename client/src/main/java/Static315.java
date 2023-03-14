@@ -78,7 +78,7 @@ public final class Static315 {
 			@Pc(232) Class75 local232 = new Class75(Static129.aClass135_19);
 			for (@Pc(237) Class2_Sub5 local237 = (Class2_Sub5) local232.method2181(); local237 != null; local237 = (Class2_Sub5) local232.method2178()) {
 				if (local145 == local127) {
-					Static259.method4427(local237, local121, local125);
+					Protocol.method4427(local237, local121, local125);
 				}
 				local145++;
 			}

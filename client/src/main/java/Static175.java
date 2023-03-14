@@ -19,9 +19,6 @@ public final class Static175 {
 	@OriginalMember(owner = "client!kc", name = "c", descriptor = "[B")
 	public static final byte[] aByteArray35 = new byte[520];
 
-	@OriginalMember(owner = "client!kc", name = "e", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_132 = new ClientProt(9, 15);
-
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(IIII)V")
 	public static void method3324(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(15) int local15 = arg2 * client.preferences.anInt4889 >> 8;

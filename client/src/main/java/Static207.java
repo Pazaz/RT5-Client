@@ -29,7 +29,7 @@ public final class Static207 {
 			@Pc(20) Class2_Sub13 local20 = new Class2_Sub13();
 			local20.aClass161_3 = local11;
 			local20.anObjectArray4 = local11.anObjectArray32;
-			Static198.method3591(local20);
+			ScriptRunner.method3591(local20);
 		}
 		Static330.aBoolean419 = false;
 		Static107.anInt2219 = -1;

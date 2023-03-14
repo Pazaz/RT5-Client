@@ -5,9 +5,6 @@ public final class Static183 {
 	@OriginalMember(owner = "client!kl", name = "k", descriptor = "[I")
 	public static final int[] anIntArray2 = new int[1000];
 
-	@OriginalMember(owner = "client!kl", name = "l", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_7 = new ClientProt(69, 3);
-
 	@OriginalMember(owner = "client!kl", name = "o", descriptor = "Z")
 	public static boolean aBoolean8 = false;
 

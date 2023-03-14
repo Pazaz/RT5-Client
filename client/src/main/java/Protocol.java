@@ -15,222 +15,12 @@ public class Protocol {
 	public static final BigInteger EXPONENT = new BigInteger("7162900525229798032761816791230527296329313291232324290237849263501208207972894053929065636522363163621000728841182238772712427862772219676577293600221789");
 	@OriginalMember(owner = "client!mi", name = "m", descriptor = "Lclient!qg;")
 	public static final Packet inboundBuffer = new Packet(5000);
-	@OriginalMember(owner = "client!rf", name = "cb", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_18 = new InboundPacket(18, -2);
-	@OriginalMember(owner = "client!vs", name = "x", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_75 = new InboundPacket(75, 0);
-	@OriginalMember(owner = "client!sm", name = "B", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_93 = new InboundPacket(93, 5);
-	@OriginalMember(owner = "client!e", name = "j", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_48 = new InboundPacket(48, 5);
-	@OriginalMember(owner = "client!nb", name = "D", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_91 = new InboundPacket(91, 2);
-	@OriginalMember(owner = "client!rb", name = "n", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_66 = new InboundPacket(66, 10);
-	@OriginalMember(owner = "client!dg", name = "g", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_82 = new InboundPacket(82, 0);
-	@OriginalMember(owner = "client!bg", name = "g", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_30 = new InboundPacket(30, 2);
-	@OriginalMember(owner = "client!bp", name = "r", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_76 = new InboundPacket(76, -1);
-	@OriginalMember(owner = "client!pk", name = "jb", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_0 = new InboundPacket(0, 10);
-	@OriginalMember(owner = "client!ro", name = "d", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_36 = new InboundPacket(36, 8);
-	@OriginalMember(owner = "client!gs", name = "g", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_12 = new InboundPacket(12, 3);
-	@OriginalMember(owner = "client!ip", name = "g", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_72 = new InboundPacket(72, -2);
-	@OriginalMember(owner = "client!wh", name = "v", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_77 = new InboundPacket(77, 12);
-	@OriginalMember(owner = "client!vo", name = "p", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_89 = new InboundPacket(89, 6);
-	@OriginalMember(owner = "client!fl", name = "o", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_52 = new InboundPacket(52, 9);
-	@OriginalMember(owner = "client!wm", name = "q", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_20 = new InboundPacket(20, 6);
-	@OriginalMember(owner = "client!ip", name = "e", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_25 = new InboundPacket(25, 8);
-	@OriginalMember(owner = "client!en", name = "b", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_70 = new InboundPacket(70, -2);
-	@OriginalMember(owner = "client!mg", name = "z", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_7 = new InboundPacket(7, 2);
-	@OriginalMember(owner = "client!mq", name = "o", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_55 = new InboundPacket(55, -1);
-	@OriginalMember(owner = "client!ej", name = "C", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_43 = new InboundPacket(43, -1);
-	@OriginalMember(owner = "client!aj", name = "R", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_58 = new InboundPacket(58, 0);
-	@OriginalMember(owner = "client!js", name = "J", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_73 = new InboundPacket(73, 6);
-	@OriginalMember(owner = "client!vp", name = "m", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_5 = new InboundPacket(5, 8);
-	@OriginalMember(owner = "client!fu", name = "X", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_17 = new InboundPacket(17, 2);
-	@OriginalMember(owner = "client!kl", name = "a", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_1 = new InboundPacket(1, 6);
-	@OriginalMember(owner = "client!ae", name = "P", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_97 = new InboundPacket(97, 7);
-	@OriginalMember(owner = "client!gq", name = "j", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_103 = new InboundPacket(103, 0);
-	@OriginalMember(owner = "client!ia", name = "p", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_8 = new InboundPacket(8, 2);
-	@OriginalMember(owner = "client!pg", name = "T", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_92 = new InboundPacket(92, 6);
-	@OriginalMember(owner = "client!ei", name = "l", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_31 = new InboundPacket(31, 8);
-	@OriginalMember(owner = "client!ct", name = "j", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_39 = new InboundPacket(39, 17);
-	@OriginalMember(owner = "client!tp", name = "k", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_101 = new InboundPacket(101, 14);
-	@OriginalMember(owner = "client!ei", name = "e", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_15 = new InboundPacket(15, 10);
-	@OriginalMember(owner = "client!cq", name = "f", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_24 = new InboundPacket(24, 12);
-	@OriginalMember(owner = "client!em", name = "f", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_35 = new InboundPacket(35, -2);
-	@OriginalMember(owner = "client!wt", name = "X", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_26 = new InboundPacket(26, 28);
-	@OriginalMember(owner = "client!wi", name = "x", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_71 = new InboundPacket(71, 20);
-	@OriginalMember(owner = "client!jg", name = "t", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_10 = new InboundPacket(10, -1);
-	@OriginalMember(owner = "client!ui", name = "l", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_104 = new InboundPacket(104, 4);
-	@OriginalMember(owner = "client!lo", name = "i", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_83 = new InboundPacket(83, 7);
-	@OriginalMember(owner = "client!et", name = "i", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_40 = new InboundPacket(40, 1);
-	@OriginalMember(owner = "client!jo", name = "p", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_23 = new InboundPacket(23, 8);
-	@OriginalMember(owner = "client!em", name = "a", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_56 = new InboundPacket(56, -1);
-	@OriginalMember(owner = "client!wc", name = "i", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_94 = new InboundPacket(94, 3);
-	@OriginalMember(owner = "client!nj", name = "h", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_42 = new InboundPacket(42, 3);
-	@OriginalMember(owner = "client!cf", name = "v", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_105 = new InboundPacket(105, -1);
-	@OriginalMember(owner = "client!gg", name = "O", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_41 = new InboundPacket(41, 3);
-	@OriginalMember(owner = "client!nq", name = "f", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_19 = new InboundPacket(19, 0);
-	@OriginalMember(owner = "client!ie", name = "n", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_38 = new InboundPacket(38, 14);
-	@OriginalMember(owner = "client!wt", name = "bb", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_6 = new InboundPacket(6, -2);
-	@OriginalMember(owner = "client!mg", name = "w", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_46 = new InboundPacket(46, -1);
-	@OriginalMember(owner = "client!hq", name = "x", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_14 = new InboundPacket(14, 6);
-	@OriginalMember(owner = "client!es", name = "c", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_54 = new InboundPacket(54, 12);
-	@OriginalMember(owner = "client!eq", name = "u", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_37 = new InboundPacket(37, -2);
-	@OriginalMember(owner = "client!wj", name = "e", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_67 = new InboundPacket(67, -1);
-	@OriginalMember(owner = "client!ip", name = "a", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_99 = new InboundPacket(99, -1);
-	@OriginalMember(owner = "client!ck", name = "B", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_34 = new InboundPacket(34, 15);
-	@OriginalMember(owner = "client!ke", name = "y", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_68 = new InboundPacket(68, 4);
-	@OriginalMember(owner = "client!pk", name = "Q", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_2 = new InboundPacket(2, 2);
-	@OriginalMember(owner = "client!mr", name = "Ub", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_64 = new InboundPacket(64, 3);
-	@OriginalMember(owner = "client!fj", name = "a", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_27 = new InboundPacket(27, 8);
-	@OriginalMember(owner = "client!el", name = "o", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_80 = new InboundPacket(80, 2);
-	@OriginalMember(owner = "client!nm", name = "k", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_4 = new InboundPacket(4, 1);
-	@OriginalMember(owner = "client!jm", name = "c", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_44 = new InboundPacket(44, 8);
-	@OriginalMember(owner = "client!ot", name = "I", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_47 = new InboundPacket(47, 6);
-	@OriginalMember(owner = "client!pj", name = "u", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_50 = new InboundPacket(50, -1);
-	@OriginalMember(owner = "client!ih", name = "g", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_85 = new InboundPacket(85, -2);
-	@OriginalMember(owner = "client!hl", name = "I", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_61 = new InboundPacket(61, 4);
-	@OriginalMember(owner = "client!cj", name = "n", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_62 = new InboundPacket(62, 6);
-	@OriginalMember(owner = "client!hc", name = "g", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_84 = new InboundPacket(84, -1);
-	@OriginalMember(owner = "client!sn", name = "E", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_100 = new InboundPacket(100, -2);
-	@OriginalMember(owner = "client!mc", name = "j", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_81 = new InboundPacket(81, 8);
-	@OriginalMember(owner = "client!bs", name = "s", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_74 = new InboundPacket(74, 4);
-	@OriginalMember(owner = "client!so", name = "d", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_60 = new InboundPacket(60, -2);
-	@OriginalMember(owner = "client!la", name = "i", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_63 = new InboundPacket(63, -1);
-	@OriginalMember(owner = "client!jl", name = "db", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_86 = new InboundPacket(86, 10);
-	@OriginalMember(owner = "client!sk", name = "v", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_32 = new InboundPacket(32, -2);
-	@OriginalMember(owner = "client!ra", name = "j", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_98 = new InboundPacket(98, -2);
-	@OriginalMember(owner = "client!tj", name = "q", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_45 = new InboundPacket(45, 1);
-	@OriginalMember(owner = "client!eo", name = "e", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_21 = new InboundPacket(21, 3);
-	@OriginalMember(owner = "client!ak", name = "d", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_95 = new InboundPacket(95, 8);
-	@OriginalMember(owner = "client!fe", name = "e", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_29 = new InboundPacket(29, 3);
-	@OriginalMember(owner = "client!fl", name = "n", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_49 = new InboundPacket(49, -1);
-	@OriginalMember(owner = "client!ag", name = "f", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_90 = new InboundPacket(90, 12);
-	@OriginalMember(owner = "client!gl", name = "s", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_51 = new InboundPacket(51, -1);
-	@OriginalMember(owner = "client!c", name = "d", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_3 = new InboundPacket(3, 3);
-	@OriginalMember(owner = "client!pk", name = "hb", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_78 = new InboundPacket(78, 6);
-	@OriginalMember(owner = "client!wq", name = "o", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_69 = new InboundPacket(69, -2);
-	@OriginalMember(owner = "client!ek", name = "X", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_65 = new InboundPacket(65, 5);
-	@OriginalMember(owner = "client!en", name = "a", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_22 = new InboundPacket(22, 8);
-	@OriginalMember(owner = "client!kg", name = "t", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_11 = new InboundPacket(11, -1);
-	@OriginalMember(owner = "client!bo", name = "a", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_88 = new InboundPacket(88, -2);
-	@OriginalMember(owner = "client!vo", name = "z", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_33 = new InboundPacket(33, 15);
-	@OriginalMember(owner = "client!ff", name = "G", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_53 = new InboundPacket(53, -1);
-	@OriginalMember(owner = "client!un", name = "p", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_57 = new InboundPacket(57, 12);
-	@OriginalMember(owner = "client!lp", name = "b", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_13 = new InboundPacket(13, 5);
-	@OriginalMember(owner = "client!bo", name = "g", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_16 = new InboundPacket(16, 7);
-	@OriginalMember(owner = "client!hs", name = "r", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_59 = new InboundPacket(59, -2);
-	@OriginalMember(owner = "client!ne", name = "H", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_102 = new InboundPacket(102, 12);
-	@OriginalMember(owner = "client!jl", name = "V", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_79 = new InboundPacket(79, 7);
-	@OriginalMember(owner = "client!io", name = "p", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_87 = new InboundPacket(87, -2);
-	@OriginalMember(owner = "client!lq", name = "t", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_28 = new InboundPacket(28, 6);
-	@OriginalMember(owner = "client!od", name = "Bb", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_96 = new InboundPacket(96, 6);
-	@OriginalMember(owner = "client!fk", name = "P", descriptor = "Lclient!h;")
-	public static final InboundPacket PACKET_9 = new InboundPacket(9, 8);
 	@OriginalMember(owner = "client!at", name = "J", descriptor = "[I")
 	public static final int[] removedIds = new int[1000];
 	@OriginalMember(owner = "client!q", name = "o", descriptor = "[I")
 	public static final int[] extendedIds = new int[250];
+	@OriginalMember(owner = "client!et", name = "d", descriptor = "Lclient!bt;")
+	public static final Buffer playerAppearanceBuffer = new Buffer(new byte[5000]);
 
 	@OriginalMember(owner = "client!jc", name = "S", descriptor = "Lclient!cc;")
 	public static PrivilegedRequest socketRequest = null;
@@ -245,7 +35,7 @@ public class Protocol {
 	public static int verifyId = 0;
 
 	@OriginalMember(owner = "client!nf", name = "t", descriptor = "Lclient!h;")
-	public static InboundPacket packet = null;
+	public static ServerProt packet = null;
 
 	@OriginalMember(owner = "client!em", name = "i", descriptor = "I")
 	public static int packetSize = 0;
@@ -254,22 +44,17 @@ public class Protocol {
 	@OriginalMember(owner = "client!du", name = "b", descriptor = "Z")
 	public static boolean aBoolean129 = true;
 	@OriginalMember(owner = "client!dr", name = "O", descriptor = "Lclient!h;")
-	public static InboundPacket packet2;
+	public static ServerProt packet2;
 	@OriginalMember(owner = "client!th", name = "F", descriptor = "Lclient!h;")
-	public static InboundPacket packet1;
+	public static ServerProt packet1;
 	@OriginalMember(owner = "client!pg", name = "N", descriptor = "I")
 	public static int anInt4955 = 0;
 	@OriginalMember(owner = "client!cf", name = "x", descriptor = "Lclient!h;")
-	public static InboundPacket packet3;
+	public static ServerProt packet3;
 	@OriginalMember(owner = "client!nr", name = "h", descriptor = "I")
 	public static int removedCount = 0;
 	@OriginalMember(owner = "client!ts", name = "f", descriptor = "I")
 	public static int extendedCount = 0;
-
-	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(Z)[Lclient!h;")
-	public static InboundPacket[] INCOMING_WORLD() {
-		return new InboundPacket[] { PACKET_0, PACKET_1, PACKET_2, PACKET_3, PACKET_4, PACKET_5, PACKET_6, PACKET_7, PACKET_8, PACKET_9, PACKET_10, PACKET_11, PACKET_12, PACKET_13, PACKET_14, PACKET_15, PACKET_16, PACKET_17, PACKET_18, PACKET_19, PACKET_20, PACKET_21, PACKET_22, PACKET_23, PACKET_24, PACKET_25, PACKET_26, PACKET_27, PACKET_28, PACKET_29, PACKET_30, PACKET_31, PACKET_32, PACKET_33, PACKET_34, PACKET_35, PACKET_36, PACKET_37, PACKET_38, PACKET_39, PACKET_40, PACKET_41, PACKET_42, PACKET_43, PACKET_44, PACKET_45, PACKET_46, PACKET_47, PACKET_48, PACKET_49, PACKET_50, PACKET_51, PACKET_52, PACKET_53, PACKET_54, PACKET_55, PACKET_56, PACKET_57, PACKET_58, PACKET_59, PACKET_60, PACKET_61, PACKET_62, PACKET_63, PACKET_64, PACKET_65, PACKET_66, PACKET_67, PACKET_68, PACKET_69, PACKET_70, PACKET_71, PACKET_72, PACKET_73, PACKET_74, PACKET_75, PACKET_76, PACKET_77, PACKET_78, PACKET_79, PACKET_80, PACKET_81, PACKET_82, PACKET_83, PACKET_84, PACKET_85, PACKET_86, PACKET_87, PACKET_88, PACKET_89, PACKET_90, PACKET_91, PACKET_92, PACKET_93, PACKET_94, PACKET_95, PACKET_96, PACKET_97, PACKET_98, PACKET_99, PACKET_100, PACKET_101, PACKET_102, PACKET_103, PACKET_104, PACKET_105 };
-	}
 
 	@OriginalMember(owner = "client!ed", name = "b", descriptor = "(I)Z")
 	public static boolean readPacketInternal() throws IOException {
@@ -298,7 +83,7 @@ public class Protocol {
 				totalRead++;
 			}
 			aBoolean129 = true;
-			@Pc(70) InboundPacket[] incoming = INCOMING_WORLD();
+			@Pc(70) ServerProt[] incoming = ServerProt.getAll();
 			local74 = inboundBuffer.g1isaac();
 			if (local74 < 0 || incoming.length <= local74) {
 				throw new IOException("invo:" + local74);
@@ -335,11 +120,11 @@ public class Protocol {
 		totalRead += packetSize;
 		packet2 = packet1;
 		packet1 = packet;
-		if (PACKET_18 == packet) {
+		if (ServerProt.PACKET_18 == packet) {
 			Static235.method3339(GameShell.signlink, packetSize, inboundBuffer);
 			packet = null;
 			return true;
-		} else if (packet == PACKET_75) {
+		} else if (packet == ServerProt.PACKET_75) {
 			Static214.aClass226_1.method5781();
 			packet = null;
 			Static12.anInt269 += 32;
@@ -348,7 +133,7 @@ public class Protocol {
 			@Pc(228) int local228;
 			@Pc(249) int local249;
 			@Pc(220) int local220;
-			if (packet == PACKET_93) {
+			if (packet == ServerProt.PACKET_93) {
 				local220 = inboundBuffer.g1();
 				local74 = inboundBuffer.ig2();
 				local228 = inboundBuffer.ig2();
@@ -359,7 +144,7 @@ public class Protocol {
 					Static139.anInt2595 = local74;
 					Static160.method2957(local74);
 					Static60.method891(false);
-					Static198.method3598(Static139.anInt2595);
+					ScriptRunner.method3598(Static139.anInt2595);
 					for (local249 = 0; local249 < 100; local249++) {
 						Static357.aBooleanArray59[local249] = true;
 					}
@@ -368,7 +153,7 @@ public class Protocol {
 				return true;
 			}
 			@Pc(272) byte local272;
-			if (packet == PACKET_48) {
+			if (packet == ServerProt.PACKET_48) {
 				local272 = inboundBuffer.g1badd();
 				local74 = inboundBuffer.g2add();
 				local228 = inboundBuffer.ig2add();
@@ -377,7 +162,7 @@ public class Protocol {
 				}
 				packet = null;
 				return true;
-			} else if (PACKET_91 == packet) {
+			} else if (ServerProt.PACKET_91 == packet) {
 				local220 = inboundBuffer.g2();
 				if (Static378.method6314(local220)) {
 					Static117.method2369();
@@ -386,7 +171,7 @@ public class Protocol {
 				return true;
 			} else {
 				@Pc(344) Class2_Sub7 local344;
-				if (packet == PACKET_66) {
+				if (packet == ServerProt.PACKET_66) {
 					local220 = inboundBuffer.mg4();
 					local74 = inboundBuffer.mg4();
 					local228 = inboundBuffer.ig2();
@@ -415,13 +200,13 @@ public class Protocol {
 					}
 					packet = null;
 					return true;
-				} else if (PACKET_82 == packet) {
+				} else if (ServerProt.PACKET_82 == packet) {
 					if (Static139.anInt2595 != -1) {
 						Static392.method6460(Static139.anInt2595, 0);
 					}
 					packet = null;
 					return true;
-				} else if (packet == PACKET_30) {
+				} else if (packet == ServerProt.PACKET_30) {
 					local220 = inboundBuffer.g2();
 					if (Static378.method6314(local220)) {
 						Static351.method5859();
@@ -431,7 +216,7 @@ public class Protocol {
 				} else {
 					@Pc(452) String local452;
 					@Pc(444) String local444;
-					if (PACKET_76 == packet) {
+					if (ServerProt.PACKET_76 == packet) {
 						local444 = inboundBuffer.gjstr();
 						local452 = Static153.method2772(Static308.method5276(inboundBuffer));
 						Static33.method4200(local444, 0, local452, 6, local444);
@@ -445,7 +230,7 @@ public class Protocol {
 					@Pc(638) int local638;
 					@Pc(497) int local497;
 					@Pc(604) boolean local604;
-					if (PACKET_0 == packet) {
+					if (ServerProt.PACKET_0 == packet) {
 						local220 = inboundBuffer.g2add();
 						local74 = inboundBuffer.g2add();
 						local228 = inboundBuffer.g4();
@@ -584,7 +369,7 @@ public class Protocol {
 						}
 						packet = null;
 						return true;
-					} else if (PACKET_36 == packet) {
+					} else if (ServerProt.PACKET_36 == packet) {
 						local220 = inboundBuffer.ig2add();
 						local74 = inboundBuffer.img4();
 						local228 = inboundBuffer.g2add();
@@ -593,7 +378,7 @@ public class Protocol {
 						}
 						packet = null;
 						return true;
-					} else if (PACKET_12 == packet) {
+					} else if (ServerProt.PACKET_12 == packet) {
 						local220 = inboundBuffer.g2add();
 						local74 = inboundBuffer.g1bneg();
 						if (Static378.method6314(local220)) {
@@ -601,7 +386,7 @@ public class Protocol {
 						}
 						packet = null;
 						return true;
-					} else if (packet == PACKET_72) {
+					} else if (packet == ServerProt.PACKET_72) {
 						readPlayerInfo(inboundBuffer, packetSize);
 						packet = null;
 						return true;
@@ -609,7 +394,7 @@ public class Protocol {
 						@Pc(1101) long local1101;
 						@Pc(1118) ServerActiveProperties local1118;
 						@Pc(1109) ServerActiveProperties local1109;
-						if (packet == PACKET_77) {
+						if (packet == ServerProt.PACKET_77) {
 							local220 = inboundBuffer.g2();
 							if (local220 == 65535) {
 								local220 = -1;
@@ -638,7 +423,7 @@ public class Protocol {
 							}
 							packet = null;
 							return true;
-						} else if (packet == PACKET_89) {
+						} else if (packet == ServerProt.PACKET_89) {
 							local220 = inboundBuffer.ig4();
 							local74 = inboundBuffer.ig2add();
 							if (Static378.method6314(local74)) {
@@ -646,7 +431,7 @@ public class Protocol {
 							}
 							packet = null;
 							return true;
-						} else if (PACKET_52 == packet) {
+						} else if (ServerProt.PACKET_52 == packet) {
 							local220 = inboundBuffer.g2add();
 							local74 = inboundBuffer.g1sub();
 							local228 = inboundBuffer.ig4();
@@ -660,7 +445,7 @@ public class Protocol {
 							}
 							packet = null;
 							return true;
-						} else if (PACKET_20 == packet) {
+						} else if (ServerProt.PACKET_20 == packet) {
 							local220 = inboundBuffer.g4();
 							local74 = inboundBuffer.g1bneg();
 							local228 = inboundBuffer.g1sub();
@@ -676,7 +461,7 @@ public class Protocol {
 							Static208.anIntArray226[Static381.anInt7117++ & 0x1F] = local74;
 							packet = null;
 							return true;
-						} else if (packet == PACKET_25) {
+						} else if (packet == ServerProt.PACKET_25) {
 							local220 = inboundBuffer.g2();
 							local74 = inboundBuffer.g1();
 							local228 = inboundBuffer.g1();
@@ -694,7 +479,7 @@ public class Protocol {
 							@Pc(1627) String local1627;
 							@Pc(1391) String local1391;
 							@Pc(1663) String local1663;
-							if (PACKET_70 == packet) {
+							if (ServerProt.PACKET_70 == packet) {
 								while (inboundBuffer.pos < packetSize) {
 									local1371 = inboundBuffer.g1() == 1;
 									local452 = inboundBuffer.gjstr();
@@ -778,15 +563,15 @@ public class Protocol {
 								}
 								packet = null;
 								return true;
-							} else if (packet == PACKET_7) {
-								Static41.anInt1048 = inboundBuffer.g2b();
+							} else if (packet == ServerProt.PACKET_7) {
+								Static41.anInt1048 = inboundBuffer.g2s();
 								Static93.miscTransmitAt = Static88.transmitTimer;
 								packet = null;
 								return true;
 							} else {
 								@Pc(1780) long local1780;
 								@Pc(1785) long local1785;
-								if (packet == PACKET_55) {
+								if (packet == ServerProt.PACKET_55) {
 									local1371 = inboundBuffer.g1() == 1;
 									local452 = inboundBuffer.gjstr();
 									local1381 = local452;
@@ -830,24 +615,24 @@ public class Protocol {
 									}
 									packet = null;
 									return true;
-								} else if (packet == PACKET_43) {
+								} else if (packet == ServerProt.PACKET_43) {
 									local444 = inboundBuffer.gjstr();
 									local74 = inboundBuffer.g2();
 									local1381 = Static146.method2699(local74).method5602(inboundBuffer);
 									Static220.method3874(0, null, local1381, local74, 19, local444, local444);
 									packet = null;
 									return true;
-								} else if (packet == PACKET_58) {
+								} else if (packet == ServerProt.PACKET_58) {
 									LoginManager.logout();
 									packet = null;
 									return false;
-								} else if (packet == PACKET_73) {
+								} else if (packet == ServerProt.PACKET_73) {
 									local220 = inboundBuffer.ig2add();
 									local74 = inboundBuffer.ig4();
 									Static214.aClass226_1.method5785(local74, local220);
 									packet = null;
 									return true;
-								} else if (packet == PACKET_5) {
+								} else if (packet == ServerProt.PACKET_5) {
 									local220 = inboundBuffer.g2();
 									local74 = inboundBuffer.g1();
 									local228 = inboundBuffer.g1();
@@ -859,7 +644,7 @@ public class Protocol {
 									}
 									packet = null;
 									return true;
-								} else if (PACKET_17 == packet) {
+								} else if (ServerProt.PACKET_17 == packet) {
 									local220 = inboundBuffer.g1bneg();
 									local74 = inboundBuffer.g1sub();
 									if (local220 == 255) {
@@ -869,11 +654,11 @@ public class Protocol {
 									Static283.method4875(local220, local74);
 									packet = null;
 									return true;
-								} else if (packet == PACKET_1) {
-									Static330.method5656(Static333.aClass210_17);
+								} else if (packet == ServerProt.PACKET_1) {
+									Static330.method5656(ZoneProt.PACKET_10);
 									packet = null;
 									return true;
-								} else if (PACKET_97 == packet) {
+								} else if (ServerProt.PACKET_97 == packet) {
 									local220 = inboundBuffer.ig2add();
 									local74 = inboundBuffer.ig4();
 									local228 = inboundBuffer.g1sub();
@@ -882,7 +667,7 @@ public class Protocol {
 									}
 									packet = null;
 									return true;
-								} else if (PACKET_103 == packet) {
+								} else if (ServerProt.PACKET_103 == packet) {
 									for (local220 = 0; local220 < Static12.aClass11_Sub5_Sub2_Sub1Array1.length; local220++) {
 										if (Static12.aClass11_Sub5_Sub2_Sub1Array1[local220] != null) {
 											Static12.aClass11_Sub5_Sub2_Sub1Array1[local220].anInt4597 = -1;
@@ -895,12 +680,12 @@ public class Protocol {
 									}
 									packet = null;
 									return true;
-								} else if (PACKET_8 == packet) {
+								} else if (ServerProt.PACKET_8 == packet) {
 									Static151.rebootTimer = inboundBuffer.g2() * 30;
 									packet = null;
 									Static93.miscTransmitAt = Static88.transmitTimer;
 									return true;
-								} else if (packet == PACKET_92) {
+								} else if (packet == ServerProt.PACKET_92) {
 									local220 = inboundBuffer.g2();
 									if (local220 == 65535) {
 										local220 = -1;
@@ -911,7 +696,7 @@ public class Protocol {
 									Static29.method939(local74, local249, local228, local220);
 									packet = null;
 									return true;
-								} else if (PACKET_31 == packet) {
+								} else if (ServerProt.PACKET_31 == packet) {
 									local220 = inboundBuffer.g4();
 									local74 = inboundBuffer.ig2();
 									local228 = inboundBuffer.g2add();
@@ -920,15 +705,15 @@ public class Protocol {
 									}
 									packet = null;
 									return true;
-								} else if (packet == PACKET_39) {
-									Static330.method5656(Static374.aClass210_16);
+								} else if (packet == ServerProt.PACKET_39) {
+									Static330.method5656(ZoneProt.PACKET_9);
 									packet = null;
 									return true;
-								} else if (PACKET_101 == packet) {
-									Static330.method5656(Static359.aClass210_14);
+								} else if (ServerProt.PACKET_101 == packet) {
+									Static330.method5656(ZoneProt.PACKET_14);
 									packet = null;
 									return true;
-								} else if (packet == PACKET_15) {
+								} else if (packet == ServerProt.PACKET_15) {
 									local220 = inboundBuffer.ig2add();
 									local74 = inboundBuffer.img4();
 									local228 = inboundBuffer.g2();
@@ -938,7 +723,7 @@ public class Protocol {
 									}
 									packet = null;
 									return true;
-								} else if (PACKET_24 == packet) {
+								} else if (ServerProt.PACKET_24 == packet) {
 									local220 = inboundBuffer.g4();
 									local74 = inboundBuffer.img4();
 									local228 = inboundBuffer.g2add();
@@ -950,7 +735,7 @@ public class Protocol {
 									return true;
 								} else {
 									@Pc(2522) Class214 local2522;
-									if (packet == PACKET_35) {
+									if (packet == ServerProt.PACKET_35) {
 										Static285.anInt5370 = Static88.transmitTimer;
 										if (packetSize == 0) {
 											Static389.aString53 = null;
@@ -1011,14 +796,14 @@ public class Protocol {
 										Static47.aClass214Array1 = local2392;
 										packet = null;
 										return true;
-									} else if (packet == PACKET_26) {
+									} else if (packet == ServerProt.PACKET_26) {
 										inboundBuffer.pos += 28;
 										if (inboundBuffer.checkcrc()) {
 											Static294.method5065(inboundBuffer, inboundBuffer.pos - 28);
 										}
 										packet = null;
 										return true;
-									} else if (PACKET_71 == packet) {
+									} else if (ServerProt.PACKET_71 == packet) {
 										local220 = inboundBuffer.g1();
 										if (inboundBuffer.g1() == 0) {
 											Static290.aClass187Array1[local220] = new StockMarketOffer();
@@ -1029,7 +814,7 @@ public class Protocol {
 										packet = null;
 										Static177.anInt3381 = Static88.transmitTimer;
 										return true;
-									} else if (packet == PACKET_10) {
+									} else if (packet == ServerProt.PACKET_10) {
 										local220 = inboundBuffer.g2();
 										local74 = inboundBuffer.g2();
 										local228 = inboundBuffer.g2();
@@ -1044,19 +829,19 @@ public class Protocol {
 										}
 										packet = null;
 										return true;
-									} else if (PACKET_104 == packet) {
-										Static330.method5656(Static143.aClass210_7);
+									} else if (ServerProt.PACKET_104 == packet) {
+										Static330.method5656(ZoneProt.PACKET_0);
 										packet = null;
 										return true;
-									} else if (packet == PACKET_83) {
-										Static330.method5656(Static285.aClass210_12);
+									} else if (packet == ServerProt.PACKET_83) {
+										Static330.method5656(ZoneProt.PACKET_12);
 										packet = null;
 										return true;
-									} else if (PACKET_40 == packet) {
+									} else if (ServerProt.PACKET_40 == packet) {
 										Static146.anInt2703 = inboundBuffer.g1();
 										packet = null;
 										return true;
-									} else if (PACKET_23 == packet) {
+									} else if (ServerProt.PACKET_23 == packet) {
 										local220 = inboundBuffer.g2();
 										local74 = inboundBuffer.g1();
 										local228 = inboundBuffer.g1();
@@ -1072,7 +857,7 @@ public class Protocol {
 										}
 										packet = null;
 										return true;
-									} else if (packet == PACKET_56) {
+									} else if (packet == ServerProt.PACKET_56) {
 										if (Static363.frame != null) {
 											Static143.method2677(-1, client.preferences.anInt4894, false, -1);
 										}
@@ -1082,11 +867,11 @@ public class Protocol {
 										Static280.method4765(local452, GameShell.signlink, Static77.anInt1762 == 1, true);
 										packet = null;
 										return true;
-									} else if (PACKET_94 == packet) {
-										Static330.method5656(Static72.aClass210_3);
+									} else if (ServerProt.PACKET_94 == packet) {
+										Static330.method5656(ZoneProt.PACKET_4);
 										packet = null;
 										return true;
-									} else if (PACKET_42 == packet) {
+									} else if (ServerProt.PACKET_42 == packet) {
 										Static67.anInt1637 = inboundBuffer.g1();
 										Static7.anInt7240 = inboundBuffer.g1bneg();
 										Static243.anInt4502 = inboundBuffer.g1add();
@@ -1106,7 +891,7 @@ public class Protocol {
 										}
 										packet = null;
 										return true;
-									} else if (packet == PACKET_105) {
+									} else if (packet == ServerProt.PACKET_105) {
 										local1371 = inboundBuffer.g1() == 1;
 										local452 = inboundBuffer.gjstr();
 										local1381 = local452;
@@ -1147,18 +932,18 @@ public class Protocol {
 										}
 										packet = null;
 										return true;
-									} else if (packet == PACKET_41) {
+									} else if (packet == ServerProt.PACKET_41) {
 										Static243.anInt4502 = inboundBuffer.g1add();
 										Static7.anInt7240 = inboundBuffer.g1bneg();
 										Static67.anInt1637 = inboundBuffer.g1sub();
 										packet = null;
 										return true;
-									} else if (PACKET_19 == packet) {
+									} else if (ServerProt.PACKET_19 == packet) {
 										Static235.anInt3363 = 1;
 										Static53.anInt3971 = Static88.transmitTimer;
 										packet = null;
 										return true;
-									} else if (PACKET_38 == packet) {
+									} else if (ServerProt.PACKET_38 == packet) {
 										local220 = inboundBuffer.img4();
 										local74 = inboundBuffer.ig2();
 										if (local74 == 65535) {
@@ -1187,7 +972,7 @@ public class Protocol {
 										}
 										packet = null;
 										return true;
-									} else if (PACKET_6 == packet) {
+									} else if (ServerProt.PACKET_6 == packet) {
 										Static301.anInt5700 = inboundBuffer.g1();
 										for (local220 = 0; local220 < Static301.anInt5700; local220++) {
 											Static226.aStringArray35[local220] = inboundBuffer.gjstr();
@@ -1205,7 +990,7 @@ public class Protocol {
 										packet = null;
 										Static53.anInt3971 = Static88.transmitTimer;
 										return true;
-									} else if (packet == PACKET_46) {
+									} else if (packet == ServerProt.PACKET_46) {
 										local444 = inboundBuffer.gjstr();
 										local74 = inboundBuffer.g2add();
 										if (local74 == 65535) {
@@ -1223,7 +1008,7 @@ public class Protocol {
 										}
 										packet = null;
 										return true;
-									} else if (PACKET_14 == packet) {
+									} else if (ServerProt.PACKET_14 == packet) {
 										local220 = inboundBuffer.g2();
 										local74 = inboundBuffer.g2add();
 										local228 = inboundBuffer.g2add();
@@ -1232,7 +1017,7 @@ public class Protocol {
 										}
 										packet = null;
 										return true;
-									} else if (PACKET_54 == packet) {
+									} else if (ServerProt.PACKET_54 == packet) {
 										local220 = inboundBuffer.ig2add();
 										local74 = inboundBuffer.ig2();
 										if (local74 == 65535) {
@@ -1248,13 +1033,13 @@ public class Protocol {
 										}
 										packet = null;
 										return true;
-									} else if (packet == PACKET_37) {
+									} else if (packet == ServerProt.PACKET_37) {
 										readNpcInfoPacket(true);
 										packet = null;
 										return true;
 									} else {
 										@Pc(3551) boolean local3551;
-										if (packet == PACKET_67) {
+										if (packet == ServerProt.PACKET_67) {
 											local444 = inboundBuffer.gjstr();
 											local3551 = inboundBuffer.g1() == 1;
 											if (local3551) {
@@ -1330,7 +1115,7 @@ public class Protocol {
 											return true;
 										}
 										@Pc(3809) String local3809;
-										if (PACKET_99 == packet) {
+										if (ServerProt.PACKET_99 == packet) {
 											local220 = inboundBuffer.gsmart();
 											local74 = inboundBuffer.g4();
 											local228 = inboundBuffer.g1();
@@ -1355,27 +1140,27 @@ public class Protocol {
 											}
 											packet = null;
 											return true;
-										} else if (packet == PACKET_34) {
-											Static330.method5656(Static272.aClass210_11);
+										} else if (packet == ServerProt.PACKET_34) {
+											Static330.method5656(ZoneProt.PACKET_1);
 											packet = null;
 											return true;
-										} else if (packet == PACKET_68) {
+										} else if (packet == ServerProt.PACKET_68) {
 											local220 = inboundBuffer.g4();
 											Static354.aClass32_5 = GameShell.signlink.getReverseDns(local220);
 											packet = null;
 											return true;
-										} else if (PACKET_2 == packet) {
+										} else if (ServerProt.PACKET_2 == packet) {
 											Static20.anInt545 = inboundBuffer.g1add();
 											Static331.anInt6206 = inboundBuffer.g1sub();
 											packet = null;
 											return true;
-										} else if (PACKET_64 == packet) {
+										} else if (ServerProt.PACKET_64 == packet) {
 											local220 = inboundBuffer.g1();
 											local74 = inboundBuffer.ig2();
 											Static214.aClass226_1.method5786(local74, local220);
 											packet = null;
 											return true;
-										} else if (PACKET_27 == packet) {
+										} else if (ServerProt.PACKET_27 == packet) {
 											local220 = inboundBuffer.ig2();
 											local74 = inboundBuffer.mg4();
 											local228 = inboundBuffer.ig2();
@@ -1387,16 +1172,16 @@ public class Protocol {
 											}
 											packet = null;
 											return true;
-										} else if (packet == PACKET_80) {
-											Static330.method5656(Static242.aClass210_10);
+										} else if (packet == ServerProt.PACKET_80) {
+											Static330.method5656(ZoneProt.PACKET_5);
 											packet = null;
 											return true;
-										} else if (PACKET_4 == packet) {
+										} else if (ServerProt.PACKET_4 == packet) {
 											Static96.anInt2002 = inboundBuffer.g1();
 											Static93.miscTransmitAt = Static88.transmitTimer;
 											packet = null;
 											return true;
-										} else if (PACKET_44 == packet) {
+										} else if (ServerProt.PACKET_44 == packet) {
 											local220 = inboundBuffer.g4();
 											local74 = inboundBuffer.ig2add();
 											local228 = inboundBuffer.g2();
@@ -1405,13 +1190,13 @@ public class Protocol {
 											}
 											packet = null;
 											return true;
-										} else if (packet == PACKET_47) {
+										} else if (packet == ServerProt.PACKET_47) {
 											local220 = inboundBuffer.ig4();
 											local74 = inboundBuffer.ig2();
 											Static214.aClass226_1.method5786(local74, local220);
 											packet = null;
 											return true;
-										} else if (packet == PACKET_50) {
+										} else if (packet == ServerProt.PACKET_50) {
 											local220 = inboundBuffer.g1();
 											@Pc(4068) boolean local4068 = (local220 & 0x1) == 1;
 											local1381 = inboundBuffer.gjstr();
@@ -1445,7 +1230,7 @@ public class Protocol {
 											packet = null;
 											Static53.anInt3971 = Static88.transmitTimer;
 											return true;
-										} else if (PACKET_85 == packet) {
+										} else if (ServerProt.PACKET_85 == packet) {
 											local444 = inboundBuffer.gjstr();
 											local74 = inboundBuffer.ig2add();
 											local228 = inboundBuffer.ig2();
@@ -1454,7 +1239,7 @@ public class Protocol {
 											}
 											packet = null;
 											return true;
-										} else if (packet == PACKET_61) {
+										} else if (packet == ServerProt.PACKET_61) {
 											local220 = inboundBuffer.g1sub();
 											local74 = inboundBuffer.ig2();
 											if (local74 == 65535) {
@@ -1464,7 +1249,7 @@ public class Protocol {
 											Static138.method2578(local220, local228, local74);
 											packet = null;
 											return true;
-										} else if (packet == PACKET_62) {
+										} else if (packet == ServerProt.PACKET_62) {
 											local220 = inboundBuffer.g1add();
 											local74 = inboundBuffer.ig3();
 											local228 = inboundBuffer.g2();
@@ -1476,7 +1261,7 @@ public class Protocol {
 											return true;
 										} else {
 											@Pc(4300) long local4300;
-											if (PACKET_84 == packet) {
+											if (ServerProt.PACKET_84 == packet) {
 												local1371 = inboundBuffer.g1() == 1;
 												local452 = inboundBuffer.gjstr();
 												local1381 = local452;
@@ -1521,7 +1306,7 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == PACKET_100) {
+											} else if (packet == ServerProt.PACKET_100) {
 												local220 = inboundBuffer.g2();
 												local74 = inboundBuffer.g1();
 												local3551 = (local74 & 0x1) == 1;
@@ -1540,7 +1325,7 @@ public class Protocol {
 												Static106.anIntArray135[Static54.anInt1417++ & 0x1F] = local220;
 												packet = null;
 												return true;
-											} else if (PACKET_81 == packet) {
+											} else if (ServerProt.PACKET_81 == packet) {
 												local220 = inboundBuffer.img4();
 												local74 = inboundBuffer.ig2add();
 												local228 = inboundBuffer.g2();
@@ -1552,11 +1337,11 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == PACKET_74) {
-												Static330.method5656(Static200.aClass210_9);
+											} else if (packet == ServerProt.PACKET_74) {
+												Static330.method5656(ZoneProt.PACKET_7);
 												packet = null;
 												return true;
-											} else if (PACKET_60 == packet) {
+											} else if (ServerProt.PACKET_60 == packet) {
 												local444 = inboundBuffer.gjstr();
 												local74 = inboundBuffer.ig2();
 												local228 = inboundBuffer.img4();
@@ -1565,33 +1350,33 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (PACKET_63 == packet) {
-												Static330.method5656(Static110.aClass210_5);
+											} else if (ServerProt.PACKET_63 == packet) {
+												Static330.method5656(ZoneProt.PACKET_3);
 												packet = null;
 												return true;
-											} else if (packet == PACKET_32) {
+											} else if (packet == ServerProt.PACKET_32) {
 												readNpcInfoPacket(false);
 												packet = null;
 												return true;
-											} else if (PACKET_86 == packet) {
+											} else if (ServerProt.PACKET_86 == packet) {
 												local220 = inboundBuffer.ig4();
 												local74 = inboundBuffer.ig2();
-												local228 = inboundBuffer.ig2b();
-												local249 = inboundBuffer.g2bsub();
+												local228 = inboundBuffer.ig2s();
+												local249 = inboundBuffer.g2ssub();
 												if (Static378.method6314(local74)) {
 													Static129.method2438(local249, local228, local220);
 												}
 												packet = null;
 												return true;
-											} else if (PACKET_98 == packet) {
+											} else if (ServerProt.PACKET_98 == packet) {
 												Static181.mapLoadDecoder(false);
 												packet = null;
 												return false;
-											} else if (packet == PACKET_45) {
+											} else if (packet == ServerProt.PACKET_45) {
 												Static154.aClass170_2 = Static335.method5695(inboundBuffer.g1());
 												packet = null;
 												return true;
-											} else if (PACKET_21 == packet) {
+											} else if (ServerProt.PACKET_21 == packet) {
 												local220 = inboundBuffer.g1bneg();
 												local74 = inboundBuffer.ig2add();
 												local3551 = (local220 & 0x1) == 1;
@@ -1599,7 +1384,7 @@ public class Protocol {
 												Static106.anIntArray135[Static54.anInt1417++ & 0x1F] = local74;
 												packet = null;
 												return true;
-											} else if (PACKET_95 == packet) {
+											} else if (ServerProt.PACKET_95 == packet) {
 												local220 = inboundBuffer.img4();
 												local74 = inboundBuffer.g2add();
 												if (local74 == 65535) {
@@ -1611,17 +1396,17 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == PACKET_29) {
+											} else if (packet == ServerProt.PACKET_29) {
 												local272 = inboundBuffer.g1neg();
 												local74 = inboundBuffer.g2();
 												Static214.aClass226_1.method5785(local272, local74);
 												packet = null;
 												return true;
-											} else if (packet == PACKET_49) {
+											} else if (packet == ServerProt.PACKET_49) {
 												Static383.method6379(inboundBuffer.gjstr());
 												packet = null;
 												return true;
-											} else if (packet == PACKET_90) {
+											} else if (packet == ServerProt.PACKET_90) {
 												local220 = inboundBuffer.g2();
 												local74 = inboundBuffer.g2();
 												local228 = inboundBuffer.g2();
@@ -1632,7 +1417,7 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (PACKET_51 == packet) {
+											} else if (ServerProt.PACKET_51 == packet) {
 												local1371 = inboundBuffer.g1() == 1;
 												local452 = inboundBuffer.gjstr();
 												local1381 = local452;
@@ -1674,11 +1459,11 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == PACKET_3) {
-												Static330.method5656(Static27.aClass210_2);
+											} else if (packet == ServerProt.PACKET_3) {
+												Static330.method5656(ZoneProt.PACKET_11);
 												packet = null;
 												return true;
-											} else if (packet == PACKET_78) {
+											} else if (packet == ServerProt.PACKET_78) {
 												local220 = inboundBuffer.g2add();
 												local74 = inboundBuffer.img4();
 												if (Static378.method6314(local220)) {
@@ -1686,7 +1471,7 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (PACKET_69 == packet) {
+											} else if (ServerProt.PACKET_69 == packet) {
 												local220 = inboundBuffer.g2();
 												local74 = inboundBuffer.g1();
 												local3551 = (local74 & 0x1) == 1;
@@ -1703,7 +1488,7 @@ public class Protocol {
 												Static106.anIntArray135[Static54.anInt1417++ & 0x1F] = local220;
 												packet = null;
 												return true;
-											} else if (PACKET_65 == packet) {
+											} else if (ServerProt.PACKET_65 == packet) {
 												local220 = inboundBuffer.ig2();
 												local74 = inboundBuffer.g1();
 												local228 = inboundBuffer.g2add();
@@ -1713,7 +1498,7 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (PACKET_22 == packet) {
+											} else if (ServerProt.PACKET_22 == packet) {
 												local220 = inboundBuffer.g2();
 												local74 = inboundBuffer.g4();
 												local228 = inboundBuffer.ig2();
@@ -1722,7 +1507,7 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (PACKET_11 == packet) {
+											} else if (ServerProt.PACKET_11 == packet) {
 												if (packetSize == 0) {
 													Static330.aString62 = Static66.aClass79_34.method2267(client.language);
 												} else {
@@ -1730,15 +1515,15 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == PACKET_88) {
+											} else if (packet == ServerProt.PACKET_88) {
 												Static181.mapLoadDecoder(true);
 												packet = null;
 												return false;
-											} else if (packet == PACKET_33) {
-												Static330.method5656(Static19.aClass210_1);
+											} else if (packet == ServerProt.PACKET_33) {
+												Static330.method5656(ZoneProt.PACKET_6);
 												packet = null;
 												return true;
-											} else if (PACKET_53 == packet) {
+											} else if (ServerProt.PACKET_53 == packet) {
 												local220 = inboundBuffer.g2();
 												local452 = inboundBuffer.gjstr();
 												local228 = inboundBuffer.ig2();
@@ -1747,7 +1532,7 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == PACKET_57) {
+											} else if (packet == ServerProt.PACKET_57) {
 												local220 = inboundBuffer.mg4();
 												local74 = inboundBuffer.ig2add();
 												local228 = inboundBuffer.g2add();
@@ -1758,11 +1543,11 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (PACKET_13 == packet) {
-												Static330.method5656(Static109.aClass210_4);
+											} else if (ServerProt.PACKET_13 == packet) {
+												Static330.method5656(ZoneProt.PACKET_2);
 												packet = null;
 												return true;
-											} else if (packet == PACKET_16) {
+											} else if (packet == ServerProt.PACKET_16) {
 												local220 = inboundBuffer.g1add();
 												local74 = local220 >> 2;
 												local228 = local220 & 0x3;
@@ -1780,17 +1565,17 @@ public class Protocol {
 												Static391.method6452(local74, local542, local5371, local249, local228, local512, local506);
 												packet = null;
 												return true;
-											} else if (PACKET_59 == packet) {
+											} else if (ServerProt.PACKET_59 == packet) {
 												Static67.anInt1637 = inboundBuffer.g1sub();
 												Static243.anInt4502 = inboundBuffer.g1();
 												Static7.anInt7240 = inboundBuffer.g1bneg();
 												while (inboundBuffer.pos < packetSize) {
-													@Pc(5421) Class210 local5421 = Static324.method5539()[inboundBuffer.g1()];
+													@Pc(5421) ZoneProt local5421 = ZoneProt.getAll()[inboundBuffer.g1()];
 													Static330.method5656(local5421);
 												}
 												packet = null;
 												return true;
-											} else if (PACKET_102 == packet) {
+											} else if (ServerProt.PACKET_102 == packet) {
 												local220 = inboundBuffer.g1();
 												local74 = local220 >> 5;
 												local228 = local220 & 0x1F;
@@ -1842,11 +1627,11 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == PACKET_79) {
-												Static330.method5656(Static140.aClass210_6);
+											} else if (packet == ServerProt.PACKET_79) {
+												Static330.method5656(ZoneProt.PACKET_13);
 												packet = null;
 												return true;
-											} else if (packet == PACKET_87) {
+											} else if (packet == ServerProt.PACKET_87) {
 												local220 = inboundBuffer.g2();
 												local452 = inboundBuffer.gjstr();
 												@Pc(5648) Object[] local5648 = new Object[local452.length() + 1];
@@ -1861,11 +1646,11 @@ public class Protocol {
 												if (Static378.method6314(local220)) {
 													@Pc(5704) Class2_Sub13 local5704 = new Class2_Sub13();
 													local5704.anObjectArray4 = local5648;
-													Static198.method3591(local5704);
+													ScriptRunner.method3591(local5704);
 												}
 												packet = null;
 												return true;
-											} else if (PACKET_28 == packet) {
+											} else if (ServerProt.PACKET_28 == packet) {
 												local220 = inboundBuffer.g2();
 												local74 = inboundBuffer.g4();
 												if (Static378.method6314(local220)) {
@@ -1880,14 +1665,14 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == PACKET_96) {
-												Static330.method5656(Static164.aClass210_8);
+											} else if (packet == ServerProt.PACKET_96) {
+												Static330.method5656(ZoneProt.PACKET_8);
 												packet = null;
 												return true;
-											} else if (packet == PACKET_9) {
+											} else if (packet == ServerProt.PACKET_9) {
 												local220 = inboundBuffer.g4();
 												local74 = inboundBuffer.ig2();
-												local228 = inboundBuffer.ig2badd();
+												local228 = inboundBuffer.ig2sadd();
 												if (Static378.method6314(local74)) {
 													Static53.method3952(local228, local220);
 												}
@@ -2404,18 +2189,18 @@ public class Protocol {
 					}
 				}
 				if (!local59 && Static212.anInt3785 == 0) {
-					Static89.aClass2_Sub4_2.pos = 0;
-					buffer.ipadata(Static89.aClass2_Sub4_2.data, local40);
-					Static89.aClass2_Sub4_2.pos = 0;
+					playerAppearanceBuffer.pos = 0;
+					buffer.ipadata(playerAppearanceBuffer.data, local40);
+					playerAppearanceBuffer.pos = 0;
 					@Pc(107) int local107 = -1;
 					@Pc(117) String local117;
 					if (local51) {
 						local32 &= 0x7FFF;
-						@Pc(127) Class86 local127 = Static290.method5027(Static89.aClass2_Sub4_2);
+						@Pc(127) Class86 local127 = Static290.method5027(playerAppearanceBuffer);
 						local107 = local127.anInt2377;
-						local117 = local127.aClass2_Sub2_Sub16_1.method5602(Static89.aClass2_Sub4_2);
+						local117 = local127.aClass2_Sub2_Sub16_1.method5602(playerAppearanceBuffer);
 					} else {
-						local117 = Static153.method2772(Static308.method5276(Static89.aClass2_Sub4_2));
+						local117 = Static153.method2772(Static308.method5276(playerAppearanceBuffer));
 					}
 					arg2.aString50 = local117.trim();
 					arg2.anInt4600 = local32 & 0xFF;
@@ -2907,8 +2692,992 @@ public class Protocol {
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!mc;I)V")
-	public static void method1960(@OriginalArg(0) ClientProt arg0) {
-		outboundBuffer.p1isaac(arg0.getOpcode());
+	public static void writeOpcode(@OriginalArg(0) ClientProt packet) {
+		outboundBuffer.p1isaac(packet.getOpcode());
+	}
+
+	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(B)V")
+	public static void method2002() {
+		writeOpcode(ClientProt.aClass145_75);
+		outboundBuffer.p1(Static144.getWindowMode());
+		outboundBuffer.p2(GameShell.canvasWidth);
+		outboundBuffer.p2(GameShell.canvasHeight);
+		outboundBuffer.p1(client.preferences.anInt4885);
+	}
+
+	@OriginalMember(owner = "client!gn", name = "a", descriptor = "(Ljava/lang/String;I)V")
+	public static void method3841(@OriginalArg(0) String arg0) {
+		if (!arg0.equals("")) {
+			writeOpcode(ClientProt.aClass145_18);
+			outboundBuffer.p1(Buffer.getStringLength(arg0));
+			outboundBuffer.pjstr(arg0);
+		}
+	}
+
+	@OriginalMember(owner = "client!ff", name = "b", descriptor = "(III)V")
+	public static void method2045(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+		writeOpcode(ClientProt.aClass145_229);
+		outboundBuffer.p4(arg0);
+		outboundBuffer.ip2add(arg1);
+	}
+
+	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(ILjava/lang/String;)V")
+	public static void method4828(@OriginalArg(1) String arg0) {
+		if (arg0 == null) {
+			return;
+		}
+		if (arg0.startsWith("*")) {
+			arg0 = arg0.substring(1);
+		}
+		@Pc(26) String local26 = Static135.method2537(arg0);
+		if (local26 == null) {
+			return;
+		}
+		for (@Pc(31) int local31 = 0; local31 < Static384.anInt7178; local31++) {
+			@Pc(37) String local37 = Static17.aStringArray43[local31];
+			if (local37.startsWith("*")) {
+				local37 = local37.substring(1);
+			}
+			local37 = Static135.method2537(local37);
+			if (local37 != null && local37.equals(local26)) {
+				Static384.anInt7178--;
+				for (@Pc(61) int local61 = local31; local61 < Static384.anInt7178; local61++) {
+					Static17.aStringArray43[local61] = Static17.aStringArray43[local61 + 1];
+					Static319.aStringArray54[local61] = Static319.aStringArray54[local61 + 1];
+					Static265.anIntArray333[local61] = Static265.anIntArray333[local61 + 1];
+					Static209.aStringArray32[local61] = Static209.aStringArray32[local61 + 1];
+					Static114.anIntArray148[local61] = Static114.anIntArray148[local61 + 1];
+					Static302.aBooleanArray13[local61] = Static302.aBooleanArray13[local61 + 1];
+				}
+				Static53.anInt3971 = Static88.transmitTimer;
+				writeOpcode(ClientProt.aClass145_3);
+				outboundBuffer.p1(Buffer.getStringLength(arg0));
+				outboundBuffer.pjstr(arg0);
+				return;
+			}
+		}
+	}
+
+	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(IBLjava/lang/String;)V")
+	public static void method5769(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
+		@Pc(7) int local7 = PlayerList.anInt751;
+		@Pc(9) int[] local9 = PlayerList.anIntArray121;
+		@Pc(11) boolean local11 = false;
+		for (@Pc(13) int local13 = 0; local13 < local7; local13++) {
+			@Pc(21) Player local21 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local9[local13]];
+			if (local21 != null && Static17.aClass11_Sub5_Sub2_Sub1_3 != local21 && local21.aString41 != null && local21.aString41.equalsIgnoreCase(arg1)) {
+				if (arg0 == 1) {
+					writeOpcode(ClientProt.aClass145_267);
+					outboundBuffer.p1(0);
+					outboundBuffer.ip2add(local9[local13]);
+				} else if (arg0 == 4) {
+					writeOpcode(ClientProt.aClass145_7);
+					outboundBuffer.p1neg(0);
+					outboundBuffer.ip2_dup(local9[local13]);
+				} else if (arg0 == 5) {
+					writeOpcode(ClientProt.aClass145_92);
+					outboundBuffer.ip2_dup(local9[local13]);
+					outboundBuffer.p1sub(0);
+				} else if (arg0 == 6) {
+					writeOpcode(ClientProt.aClass145_102);
+					outboundBuffer.ip2_dup(local9[local13]);
+					outboundBuffer.p1add(0);
+				} else if (arg0 == 7) {
+					writeOpcode(ClientProt.aClass145_25);
+					outboundBuffer.p1sub(0);
+					outboundBuffer.ip2add(local9[local13]);
+				}
+				local11 = true;
+				break;
+			}
+		}
+		if (!local11) {
+			Static207.method3700(Static139.aClass79_60.method2267(client.language) + arg1);
+		}
+	}
+
+	@OriginalMember(owner = "client!q", name = "a", descriptor = "(IIILjava/lang/String;I)V")
+	public static void method4681(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
+		@Pc(8) Class161 local8 = Static207.method3705(arg0, arg3);
+		if (local8 == null) {
+			return;
+		}
+		if (local8.anObjectArray27 != null) {
+			@Pc(18) Class2_Sub13 local18 = new Class2_Sub13();
+			local18.anObjectArray4 = local8.anObjectArray27;
+			local18.anInt2118 = arg1;
+			local18.aClass161_3 = local8;
+			local18.aString20 = arg2;
+			ScriptRunner.method3591(local18);
+		}
+		@Pc(35) boolean local35 = true;
+		if (local8.anInt4273 != 0) {
+			local35 = Static7.method6472(local8);
+		}
+		if (!local35 || !Static45.method1404(local8).method1854(arg1 - 1)) {
+			return;
+		}
+		if (arg1 == 1) {
+			writeOpcode(ClientProt.aClass145_89);
+			Static185.method3398(arg3, local8.anInt4300, arg0);
+		}
+		if (arg1 == 2) {
+			writeOpcode(ClientProt.aClass145_109);
+			Static185.method3398(arg3, local8.anInt4300, arg0);
+		}
+		if (arg1 == 3) {
+			writeOpcode(ClientProt.aClass145_34);
+			Static185.method3398(arg3, local8.anInt4300, arg0);
+		}
+		if (arg1 == 4) {
+			writeOpcode(ClientProt.aClass145_254);
+			Static185.method3398(arg3, local8.anInt4300, arg0);
+		}
+		if (arg1 == 5) {
+			writeOpcode(ClientProt.aClass145_86);
+			Static185.method3398(arg3, local8.anInt4300, arg0);
+		}
+		if (arg1 == 6) {
+			writeOpcode(ClientProt.aClass145_134);
+			Static185.method3398(arg3, local8.anInt4300, arg0);
+		}
+		if (arg1 == 7) {
+			writeOpcode(ClientProt.aClass145_65);
+			Static185.method3398(arg3, local8.anInt4300, arg0);
+		}
+		if (arg1 == 8) {
+			writeOpcode(ClientProt.aClass145_107);
+			Static185.method3398(arg3, local8.anInt4300, arg0);
+		}
+		if (arg1 == 9) {
+			writeOpcode(ClientProt.aClass145_147);
+			Static185.method3398(arg3, local8.anInt4300, arg0);
+		}
+		if (arg1 == 10) {
+			writeOpcode(ClientProt.aClass145_218);
+			Static185.method3398(arg3, local8.anInt4300, arg0);
+		}
+	}
+
+	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(IILjava/lang/String;)V")
+	public static void method3256(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
+		writeOpcode(ClientProt.aClass145_258);
+		outboundBuffer.p1(Buffer.getStringLength(arg1) + 1);
+		outboundBuffer.p1add(arg0);
+		outboundBuffer.pjstr(arg1);
+	}
+
+	@OriginalMember(owner = "client!oq", name = "a", descriptor = "(Lclient!cf;IZI)V")
+	public static void method4427(@OriginalArg(0) Class2_Sub5 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+		if (arg0 == null || Static129.aClass135_19.aClass2_130 == arg0) {
+			return;
+		}
+		@Pc(15) int local15 = arg0.anInt1006;
+		@Pc(18) int local18 = arg0.anInt1009;
+		@Pc(21) int local21 = arg0.anInt1005;
+		@Pc(25) int local25 = (int) arg0.aLong30;
+		@Pc(28) long local28 = arg0.aLong30;
+		if (local21 >= 2000) {
+			local21 -= 2000;
+		}
+		if (local21 == 21) {
+			Static320.anInt6005 = arg1;
+			Static291.anInt5504 = arg2;
+			Static93.anInt1951 = 2;
+			Static313.anInt5878 = 0;
+			writeOpcode(ClientProt.aClass145_83);
+			outboundBuffer.ip2add(Static148.anInt2719 + local18);
+			outboundBuffer.p2(local15 + Static164.anInt3140);
+			outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			outboundBuffer.ip2_dup(local25);
+			Static151.method2756(local18, local15);
+		}
+		if (local21 == 45 || local21 == 1011) {
+			method4681(local18, local25, arg0.aString11, local15);
+		}
+		if (local21 == 51) {
+			Static93.anInt1951 = 1;
+			Static320.anInt6005 = arg1;
+			Static291.anInt5504 = arg2;
+			Static313.anInt5878 = 0;
+			writeOpcode(ClientProt.aClass145_131);
+			outboundBuffer.ip2_dup(Static196.anInt3317);
+			outboundBuffer.p4(Static337.anInt6317);
+			outboundBuffer.ip2add(local18 + Static148.anInt2719);
+			outboundBuffer.ip2_dup(Static214.anInt3792);
+			outboundBuffer.ip2add(Static164.anInt3140 + local15);
+			Static322.method5482(true, -4, local18, 0, 1, local15, 1, 0);
+		}
+		if (local21 == 12) {
+			Static93.anInt1951 = 2;
+			Static313.anInt5878 = 0;
+			Static320.anInt6005 = arg1;
+			Static291.anInt5504 = arg2;
+			writeOpcode(ClientProt.aClass145_122);
+			outboundBuffer.ip2add((int) (local28 >>> 32) & Integer.MAX_VALUE);
+			outboundBuffer.ip2add(Static148.anInt2719 + local18);
+			outboundBuffer.p2(local15 + Static164.anInt3140);
+			outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Static172.method3285(local18, local28, local15);
+		}
+		if (local21 == 1004) {
+			Static313.anInt5878 = 0;
+			Static291.anInt5504 = arg2;
+			Static93.anInt1951 = 2;
+			Static320.anInt6005 = arg1;
+			writeOpcode(ClientProt.aClass145_260);
+			outboundBuffer.p2add(local18 + Static148.anInt2719);
+			outboundBuffer.ip2_dup((int) (local28 >>> 32) & Integer.MAX_VALUE);
+			outboundBuffer.p2add(Static164.anInt3140 + local15);
+			outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Static172.method3285(local18, local28, local15);
+		}
+		@Pc(275) Player local275;
+		if (local21 == 2) {
+			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			if (local275 != null) {
+				Static291.anInt5504 = arg2;
+				Static313.anInt5878 = 0;
+				Static93.anInt1951 = 2;
+				Static320.anInt6005 = arg1;
+				writeOpcode(ClientProt.aClass145_25);
+				outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				outboundBuffer.ip2add(local25);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
+			}
+		}
+		if (local21 == 1009) {
+			Static320.anInt6005 = arg1;
+			Static291.anInt5504 = arg2;
+			Static313.anInt5878 = 0;
+			Static93.anInt1951 = 2;
+			writeOpcode(ClientProt.aClass145_180);
+			outboundBuffer.p2(local25);
+		}
+		if (local21 == 46) {
+			Static313.anInt5878 = 0;
+			Static93.anInt1951 = 2;
+			Static320.anInt6005 = arg1;
+			Static291.anInt5504 = arg2;
+			writeOpcode(ClientProt.aClass145_209);
+			outboundBuffer.ip2_dup(Static148.anInt2719 + local18);
+			outboundBuffer.p2(local25);
+			outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			outboundBuffer.p2add(Static164.anInt3140 + local15);
+			Static151.method2756(local18, local15);
+		}
+		if (local21 == 59) {
+			if (LoginManager.staffModLevel > 0 && Static174.aClass123_2.method3343(82) && Static174.aClass123_2.method3343(81)) {
+				Static6.method141(Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78, local18 + Static148.anInt2719, local15 + Static164.anInt3140);
+			} else {
+				Static291.anInt5504 = arg2;
+				Static313.anInt5878 = 0;
+				Static320.anInt6005 = arg1;
+				Static93.anInt1951 = 1;
+				writeOpcode(ClientProt.aClass145_127);
+				outboundBuffer.p2(local15 + Static164.anInt3140);
+				outboundBuffer.p2add(local18 + Static148.anInt2719);
+			}
+		}
+		@Pc(485) Npc local485;
+		if (local21 == 1006) {
+			Static313.anInt5878 = 0;
+			Static93.anInt1951 = 2;
+			Static320.anInt6005 = arg1;
+			Static291.anInt5504 = arg2;
+			local485 = NpcList.npcs[local25];
+			if (local485 != null) {
+				@Pc(490) NpcType local490 = local485.type;
+				if (local490.multiNpcs != null) {
+					local490 = local490.getMultiNpc(Static214.aClass226_1);
+				}
+				if (local490 != null) {
+					writeOpcode(ClientProt.aClass145_73);
+					outboundBuffer.p2(local490.anInt2048);
+				}
+			}
+		}
+		if (local21 == 4) {
+			local485 = NpcList.npcs[local25];
+			if (local485 != null) {
+				Static320.anInt6005 = arg1;
+				Static291.anInt5504 = arg2;
+				Static313.anInt5878 = 0;
+				Static93.anInt1951 = 2;
+				writeOpcode(ClientProt.aClass145_8);
+				outboundBuffer.ip2add(local25);
+				outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
+			}
+		}
+		if (local21 == 15) {
+			Static313.anInt5878 = 0;
+			Static320.anInt6005 = arg1;
+			Static291.anInt5504 = arg2;
+			Static93.anInt1951 = 2;
+			writeOpcode(ClientProt.aClass145_204);
+			outboundBuffer.ip2add(local25);
+			outboundBuffer.p2add(Static148.anInt2719 + local18);
+			outboundBuffer.ip2add(Static164.anInt3140 + local15);
+			outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Static151.method2756(local18, local15);
+		}
+		if (local21 == 10) {
+			local485 = NpcList.npcs[local25];
+			if (local485 != null) {
+				Static291.anInt5504 = arg2;
+				Static320.anInt6005 = arg1;
+				Static313.anInt5878 = 0;
+				Static93.anInt1951 = 2;
+				writeOpcode(ClientProt.aClass145_43);
+				outboundBuffer.p4(Static337.anInt6317);
+				outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				outboundBuffer.ip2add(Static196.anInt3317);
+				outboundBuffer.ip2_dup(Static214.anInt3792);
+				outboundBuffer.p2(local25);
+				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
+			}
+		}
+		if (local21 == 17) {
+			Static291.anInt5504 = arg2;
+			Static320.anInt6005 = arg1;
+			Static313.anInt5878 = 0;
+			Static93.anInt1951 = 2;
+			writeOpcode(ClientProt.aClass145_251);
+			outboundBuffer.ip2add(Integer.MAX_VALUE & (int) (local28 >>> 32));
+			outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			outboundBuffer.p2(local15 + Static164.anInt3140);
+			outboundBuffer.ip2_dup(Static148.anInt2719 + local18);
+			Static172.method3285(local18, local28, local15);
+		}
+		if (local21 == 60) {
+			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			if (local275 != null) {
+				Static93.anInt1951 = 2;
+				Static291.anInt5504 = arg2;
+				Static313.anInt5878 = 0;
+				Static320.anInt6005 = arg1;
+				writeOpcode(ClientProt.aClass145_196);
+				outboundBuffer.ip4_dup(Static337.anInt6317);
+				outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				outboundBuffer.ip2_dup(Static214.anInt3792);
+				outboundBuffer.ip2add(Static196.anInt3317);
+				outboundBuffer.ip2_dup(local25);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
+			}
+		}
+		if (local21 == 20) {
+			Static320.anInt6005 = arg1;
+			Static313.anInt5878 = 0;
+			Static93.anInt1951 = 2;
+			Static291.anInt5504 = arg2;
+			writeOpcode(ClientProt.aClass145_84);
+			outboundBuffer.ip2add(Static148.anInt2719 + local18);
+			outboundBuffer.p2add(Integer.MAX_VALUE & (int) (local28 >>> 32));
+			outboundBuffer.p2(Static164.anInt3140 + local15);
+			outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Static172.method3285(local18, local28, local15);
+		}
+		if (local21 == 58) {
+			Static93.anInt1951 = 2;
+			Static291.anInt5504 = arg2;
+			Static320.anInt6005 = arg1;
+			Static313.anInt5878 = 0;
+			writeOpcode(ClientProt.aClass145_67);
+			outboundBuffer.ip2add(local25);
+			outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			outboundBuffer.p2(Static148.anInt2719 + local18);
+			outboundBuffer.ip2_dup(Static164.anInt3140 + local15);
+			Static151.method2756(local18, local15);
+		}
+		if (local21 == 13) {
+			Static313.anInt5878 = 0;
+			Static320.anInt6005 = arg1;
+			Static291.anInt5504 = arg2;
+			Static93.anInt1951 = 2;
+			writeOpcode(ClientProt.aClass145_253);
+			outboundBuffer.p2(Static196.anInt3317);
+			outboundBuffer.ip2add(local25);
+			outboundBuffer.ip2_dup(Static164.anInt3140 + local15);
+			outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			outboundBuffer.ip2add(Static214.anInt3792);
+			outboundBuffer.mp4(Static337.anInt6317);
+			outboundBuffer.ip2add(Static148.anInt2719 + local18);
+			Static151.method2756(local18, local15);
+		}
+		if (local21 == 23) {
+			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			if (local275 != null) {
+				Static93.anInt1951 = 2;
+				Static320.anInt6005 = arg1;
+				Static313.anInt5878 = 0;
+				Static291.anInt5504 = arg2;
+				writeOpcode(ClientProt.aClass145_102);
+				outboundBuffer.ip2_dup(local25);
+				outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
+			}
+		}
+		if (local21 == 6) {
+			Static291.anInt5504 = arg2;
+			Static320.anInt6005 = arg1;
+			Static313.anInt5878 = 0;
+			Static93.anInt1951 = 2;
+			writeOpcode(ClientProt.aClass145_262);
+			outboundBuffer.p2(local25);
+			outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			outboundBuffer.p2add(local15 + Static164.anInt3140);
+			outboundBuffer.p2(Static148.anInt2719 + local18);
+			Static151.method2756(local18, local15);
+		}
+		if (local21 == 22) {
+			if (LoginManager.staffModLevel > 0 && Static174.aClass123_2.method3343(82) && Static174.aClass123_2.method3343(81)) {
+				Static6.method141(Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78, Static148.anInt2719 + local18, local15 + Static164.anInt3140);
+			} else {
+				method1736(local15, local18, local25);
+				if (local25 == 1) {
+					outboundBuffer.p1(-1);
+					outboundBuffer.p1(-1);
+					outboundBuffer.p2((int) Static277.aFloat67);
+					outboundBuffer.p1(57);
+					outboundBuffer.p1(Static6.anInt158);
+					outboundBuffer.p1(Static97.anInt2005);
+					outboundBuffer.p1(89);
+					outboundBuffer.p2(Static17.aClass11_Sub5_Sub2_Sub1_3.xFine);
+					outboundBuffer.p2(Static17.aClass11_Sub5_Sub2_Sub1_3.zFine);
+					outboundBuffer.p1(63);
+				} else {
+					Static320.anInt6005 = arg1;
+					Static313.anInt5878 = 0;
+					Static93.anInt1951 = 1;
+					Static291.anInt5504 = arg2;
+				}
+				Static322.method5482(true, -4, local18, 0, 1, local15, 1, 0);
+			}
+		}
+		if (local21 == 50) {
+			Static291.anInt5504 = arg2;
+			Static313.anInt5878 = 0;
+			Static93.anInt1951 = 2;
+			Static320.anInt6005 = arg1;
+			writeOpcode(ClientProt.aClass145_103);
+			outboundBuffer.ip2_dup((int) (local28 >>> 32) & Integer.MAX_VALUE);
+			outboundBuffer.ip2_dup(local15 + Static164.anInt3140);
+			outboundBuffer.ip2_dup(Static148.anInt2719 + local18);
+			outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			Static172.method3285(local18, local28, local15);
+		}
+		if (local21 == 8) {
+			local485 = NpcList.npcs[local25];
+			if (local485 != null) {
+				Static291.anInt5504 = arg2;
+				Static93.anInt1951 = 2;
+				Static313.anInt5878 = 0;
+				Static320.anInt6005 = arg1;
+				writeOpcode(ClientProt.aClass145_151);
+				outboundBuffer.p2(local25);
+				outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
+			}
+		}
+		if (local21 == 48) {
+			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			if (local275 != null) {
+				Static320.anInt6005 = arg1;
+				Static93.anInt1951 = 2;
+				Static291.anInt5504 = arg2;
+				Static313.anInt5878 = 0;
+				writeOpcode(ClientProt.aClass145_9);
+				outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				outboundBuffer.ip2_dup(local25);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
+			}
+		}
+		if (local21 == 25) {
+			local485 = NpcList.npcs[local25];
+			if (local485 != null) {
+				Static93.anInt1951 = 2;
+				Static313.anInt5878 = 0;
+				Static320.anInt6005 = arg1;
+				Static291.anInt5504 = arg2;
+				writeOpcode(ClientProt.aClass145_259);
+				outboundBuffer.ip2add(local25);
+				outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
+			}
+		}
+		if (local21 == 57) {
+			Static320.anInt6005 = arg1;
+			Static313.anInt5878 = 0;
+			Static93.anInt1951 = 2;
+			Static291.anInt5504 = arg2;
+			writeOpcode(ClientProt.aClass145_132);
+			outboundBuffer.ip2_dup(Integer.MAX_VALUE & (int) (local28 >>> 32));
+			outboundBuffer.imp4(Static337.anInt6317);
+			outboundBuffer.p2(Static196.anInt3317);
+			outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
+			outboundBuffer.ip2add(Static214.anInt3792);
+			outboundBuffer.p2(Static164.anInt3140 + local15);
+			outboundBuffer.p2(Static148.anInt2719 + local18);
+			Static172.method3285(local18, local28, local15);
+		}
+		if (local21 == 5) {
+			local485 = NpcList.npcs[local25];
+			if (local485 != null) {
+				Static313.anInt5878 = 0;
+				Static93.anInt1951 = 2;
+				Static291.anInt5504 = arg2;
+				Static320.anInt6005 = arg1;
+				writeOpcode(ClientProt.aClass145_227);
+				outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				outboundBuffer.ip2_dup(local25);
+				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
+			}
+		}
+		if (local21 == 18) {
+			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			if (local275 != null) {
+				Static93.anInt1951 = 2;
+				Static291.anInt5504 = arg2;
+				Static313.anInt5878 = 0;
+				Static320.anInt6005 = arg1;
+				writeOpcode(ClientProt.aClass145_45);
+				outboundBuffer.ip2add(local25);
+				outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
+			}
+		}
+		if (local21 == 9) {
+			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			if (local275 != null) {
+				Static313.anInt5878 = 0;
+				Static320.anInt6005 = arg1;
+				Static291.anInt5504 = arg2;
+				Static93.anInt1951 = 2;
+				writeOpcode(ClientProt.aClass145_92);
+				outboundBuffer.ip2_dup(local25);
+				outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
+			}
+		}
+		@Pc(1723) Class161 local1723;
+		if (local21 == 49) {
+			local1723 = Static207.method3705(local18, local15);
+			if (local1723 != null) {
+				Static207.method3699();
+				@Pc(1730) ServerActiveProperties local1730 = Static45.method1404(local1723);
+				Static185.method3400(local1723.anInt4238, local1730.getTargetMask(), local18, local15, local1723.anInt4286, local1730.anInt1759);
+				Static91.aString18 = Static163.method3104(local1723);
+				if (Static91.aString18 == null) {
+					Static91.aString18 = "Null";
+				}
+				Static371.aString68 = local1723.aString45 + "<col=ffffff>";
+			}
+			return;
+		}
+		if (local21 == 1010) {
+			Static320.anInt6005 = arg1;
+			Static93.anInt1951 = 2;
+			Static291.anInt5504 = arg2;
+			Static313.anInt5878 = 0;
+			writeOpcode(ClientProt.aClass145_255);
+			outboundBuffer.p2(local25);
+		}
+		if (local21 == 19) {
+			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			if (local275 != null) {
+				Static320.anInt6005 = arg1;
+				Static291.anInt5504 = arg2;
+				Static93.anInt1951 = 2;
+				Static313.anInt5878 = 0;
+				writeOpcode(ClientProt.aClass145_173);
+				outboundBuffer.ip2add(local25);
+				outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
+			}
+		}
+		if (local21 == 1008 || local21 == 1002 || local21 == 1012 || local21 == 1003 || local21 == 1007) {
+			ScriptRunner.method3809(local25, local21, local15);
+		}
+		if (local21 == 11) {
+			local1723 = Static207.method3705(local18, local15);
+			if (local1723 != null) {
+				method6129(local1723);
+			}
+		}
+		if (local21 == 47) {
+			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			if (local275 != null) {
+				Static320.anInt6005 = arg1;
+				Static291.anInt5504 = arg2;
+				Static313.anInt5878 = 0;
+				Static93.anInt1951 = 2;
+				writeOpcode(ClientProt.aClass145_7);
+				outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				outboundBuffer.ip2_dup(local25);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
+			}
+		}
+		if (local21 == 30 && Static192.aClass161_8 == null) {
+			method2045(local18, local15);
+			Static192.aClass161_8 = Static207.method3705(local18, local15);
+			Static200.method3645(Static192.aClass161_8);
+		}
+		if (local21 == 44) {
+			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			if (local275 != null) {
+				Static313.anInt5878 = 0;
+				Static291.anInt5504 = arg2;
+				Static93.anInt1951 = 2;
+				Static320.anInt6005 = arg1;
+				writeOpcode(ClientProt.aClass145_267);
+				outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				outboundBuffer.ip2add(local25);
+				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
+			}
+		}
+		if (local21 == 3) {
+			local485 = NpcList.npcs[local25];
+			if (local485 != null) {
+				Static320.anInt6005 = arg1;
+				Static291.anInt5504 = arg2;
+				Static313.anInt5878 = 0;
+				Static93.anInt1951 = 2;
+				writeOpcode(ClientProt.aClass145_214);
+				outboundBuffer.p2(local25);
+				outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
+				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
+			}
+		}
+		if (Static330.aBoolean419) {
+			Static207.method3699();
+		}
+		if (Static64.aClass161_2 != null && Static112.anInt2293 == 0) {
+			Static200.method3645(Static64.aClass161_2);
+		}
+	}
+
+	@OriginalMember(owner = "client!qp", name = "b", descriptor = "(I)V")
+	public static void method5026() {
+		writeOpcode(ClientProt.aClass145_18);
+		outboundBuffer.p1(0);
+	}
+
+	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(BZ)V")
+	public static void method2973(@OriginalArg(1) boolean arg0) {
+		Static37.method1135();
+		if (client.gameState != 30 && client.gameState != 25) {
+			return;
+		}
+		Static367.anInt6876++;
+		if (Static367.anInt6876 < 50 && !arg0) {
+			return;
+		}
+		Static367.anInt6876 = 0;
+		if (!Static101.aBoolean158 && socket != null) {
+			writeOpcode(ClientProt.aClass145_228);
+			try {
+				socket.write(outboundBuffer.pos, outboundBuffer.data);
+				outboundBuffer.pos = 0;
+			} catch (@Pc(57) IOException local57) {
+				Static101.aBoolean158 = true;
+			}
+		}
+		Static37.method1135();
+	}
+
+	@OriginalMember(owner = "client!oo", name = "a", descriptor = "(Ljava/lang/String;Z)V")
+	public static void method4404(@OriginalArg(0) String arg0) {
+		if (arg0 == null) {
+			return;
+		}
+		if (arg0.startsWith("*")) {
+			arg0 = arg0.substring(1);
+		}
+		@Pc(20) String local20 = Static135.method2537(arg0);
+		if (local20 == null) {
+			return;
+		}
+		for (@Pc(25) int local25 = 0; local25 < Static301.anInt5700; local25++) {
+			@Pc(31) String local31 = Static226.aStringArray35[local25];
+			if (local31.startsWith("*")) {
+				local31 = local31.substring(1);
+			}
+			local31 = Static135.method2537(local31);
+			if (local31 != null && local31.equals(local20)) {
+				Static301.anInt5700--;
+				for (@Pc(55) int local55 = local25; local55 < Static301.anInt5700; local55++) {
+					Static226.aStringArray35[local55] = Static226.aStringArray35[local55 + 1];
+					Static234.aStringArray39[local55] = Static234.aStringArray39[local55 + 1];
+					Static371.aStringArray66[local55] = Static371.aStringArray66[local55 + 1];
+					Static190.aStringArray28[local55] = Static190.aStringArray28[local55 + 1];
+					Static196.aBooleanArray31[local55] = Static196.aBooleanArray31[local55 + 1];
+				}
+				Static53.anInt3971 = Static88.transmitTimer;
+				writeOpcode(ClientProt.aClass145_231);
+				outboundBuffer.p1(Buffer.getStringLength(arg0));
+				outboundBuffer.pjstr(arg0);
+				break;
+			}
+		}
+	}
+
+	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(Ljava/lang/String;I)V")
+	public static void method1669(@OriginalArg(0) String arg0) {
+		if (arg0 == null) {
+			return;
+		}
+		if (Static384.anInt7178 >= 100 && !MouseRecorder.enabled || Static384.anInt7178 >= 200) {
+			Static207.method3700(Static78.aClass79_129.method2267(client.language));
+			return;
+		}
+		@Pc(33) String local33 = Static135.method2537(arg0);
+		if (local33 == null) {
+			return;
+		}
+		@Pc(78) String local78;
+		for (@Pc(38) int local38 = 0; local38 < Static384.anInt7178; local38++) {
+			@Pc(46) String local46 = Static135.method2537(Static17.aStringArray43[local38]);
+			if (local46 != null && local46.equals(local33)) {
+				Static207.method3700(arg0 + Static332.aClass79_131.method2267(client.language));
+				return;
+			}
+			if (Static319.aStringArray54[local38] != null) {
+				local78 = Static135.method2537(Static319.aStringArray54[local38]);
+				if (local78 != null && local78.equals(local33)) {
+					Static207.method3700(arg0 + Static332.aClass79_131.method2267(client.language));
+					return;
+				}
+			}
+		}
+		for (@Pc(108) int local108 = 0; local108 < Static301.anInt5700; local108++) {
+			local78 = Static135.method2537(Static226.aStringArray35[local108]);
+			if (local78 != null && local78.equals(local33)) {
+				Static207.method3700(Static150.aClass79_64.method2267(client.language) + arg0 + Static151.aClass79_65.method2267(client.language));
+				return;
+			}
+			if (Static371.aStringArray66[local108] != null) {
+				@Pc(151) String local151 = Static135.method2537(Static371.aStringArray66[local108]);
+				if (local151 != null && local151.equals(local33)) {
+					Static207.method3700(Static150.aClass79_64.method2267(client.language) + arg0 + Static151.aClass79_65.method2267(client.language));
+					return;
+				}
+			}
+		}
+		if (Static135.method2537(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41).equals(local33)) {
+			Static207.method3700(Static122.aClass79_54.method2267(client.language));
+		} else {
+			writeOpcode(ClientProt.aClass145_104);
+			outboundBuffer.p1(Buffer.getStringLength(arg0));
+			outboundBuffer.pjstr(arg0);
+		}
+	}
+
+	@OriginalMember(owner = "client!hf", name = "b", descriptor = "(I)V")
+	public static void method2432() {
+		writeOpcode(ClientProt.aClass145_64);
+		outboundBuffer.p2(verifyId);
+	}
+
+	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(I)V")
+	public static void method3777() {
+		for (@Pc(7) int local7 = 0; local7 < Static243.anInt4503; local7++) {
+			@Pc(15) int local15 = Static237.anIntArray283[local7]--;
+			if (Static237.anIntArray283[local7] >= -10) {
+				@Pc(90) SynthSound local90 = Static196.aClass247Array2[local7];
+				if (local90 == null) {
+					local90 = Static409.method6435(client.jsArchive4, Static256.anIntArray321[local7], 0);
+					if (local90 == null) {
+						continue;
+					}
+					Static237.anIntArray283[local7] += local90.getStart();
+					Static196.aClass247Array2[local7] = local90;
+				}
+				if (Static237.anIntArray283[local7] < 0) {
+					@Pc(143) int local143;
+					if (Static162.anIntArray188[local7] == 0) {
+						local143 = client.preferences.anInt4888 * Static223.anIntArray256[local7] >> 8;
+					} else {
+						@Pc(133) int local133 = Static162.anIntArray188[local7] >> 24 & 0x3;
+						if (Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 == local133) {
+							@Pc(153) int local153 = (Static162.anIntArray188[local7] & 0xFF) * 128;
+							@Pc(161) int local161 = Static162.anIntArray188[local7] >> 16 & 0xFF;
+							@Pc(171) int local171 = local161 * 128 + 64 - Static17.aClass11_Sub5_Sub2_Sub1_3.xFine;
+							if (local171 < 0) {
+								local171 = -local171;
+							}
+							@Pc(187) int local187 = Static162.anIntArray188[local7] >> 8 & 0xFF;
+							@Pc(197) int local197 = local187 * 128 + 64 - Static17.aClass11_Sub5_Sub2_Sub1_3.zFine;
+							if (local197 < 0) {
+								local197 = -local197;
+							}
+							@Pc(211) int local211 = local197 + local171 - 128;
+							if (local153 < local211) {
+								Static237.anIntArray283[local7] = -100;
+								continue;
+							}
+							if (local211 < 0) {
+								local211 = 0;
+							}
+							local143 = Static223.anIntArray256[local7] * (local153 - local211) * client.preferences.anInt4882 / local153 >> 8;
+						} else {
+							local143 = 0;
+						}
+					}
+					if (local143 > 0) {
+						@Pc(264) PcmSound local264 = local90.toPcmSound().method3179(client.resampler);
+						@Pc(269) Class2_Sub12_Sub4 local269 = Static406.method5006(local264, local143);
+						local269.method4984(Static329.anIntArray419[local7] - 1);
+						client.soundStream.addSubStream(local269);
+					}
+					Static237.anIntArray283[local7] = -100;
+				}
+			} else {
+				Static243.anInt4503--;
+				for (@Pc(29) int local29 = local7; local29 < Static243.anInt4503; local29++) {
+					Static256.anIntArray321[local29] = Static256.anIntArray321[local29 + 1];
+					Static196.aClass247Array2[local29] = Static196.aClass247Array2[local29 + 1];
+					Static329.anIntArray419[local29] = Static329.anIntArray419[local29 + 1];
+					Static237.anIntArray283[local29] = Static237.anIntArray283[local29 + 1];
+					Static162.anIntArray188[local29] = Static162.anIntArray188[local29 + 1];
+					Static223.anIntArray256[local29] = Static223.anIntArray256[local29 + 1];
+				}
+				local7--;
+			}
+		}
+		if (Static393.aBoolean486 && !Static64.method1704()) {
+			if (client.preferences.anInt4889 != 0 && Static171.anInt3268 != -1) {
+				Static94.method2042(client.preferences.anInt4889, Static171.anInt3268, client.jsArchive6);
+			}
+			Static393.aBoolean486 = false;
+		} else if (client.preferences.anInt4889 != 0 && Static171.anInt3268 != -1 && !Static64.method1704()) {
+			writeOpcode(ClientProt.aClass145_56);
+			outboundBuffer.p4(Static171.anInt3268);
+			Static171.anInt3268 = -1;
+		}
+	}
+
+	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Lclient!nk;ZLclient!nk;)V")
+	public static void method5096(@OriginalArg(0) Class161 arg0, @OriginalArg(2) Class161 arg1) {
+		writeOpcode(ClientProt.aClass145_110);
+		outboundBuffer.p4(arg1.anInt4317);
+		outboundBuffer.ip2add(arg1.anInt4300);
+		outboundBuffer.p2add(arg1.anInt4297);
+		outboundBuffer.mp4(arg0.anInt4317);
+		outboundBuffer.ip2add(arg0.anInt4300);
+		outboundBuffer.ip2_dup(arg0.anInt4297);
+	}
+
+	@OriginalMember(owner = "client!rs", name = "a", descriptor = "(Ljava/lang/String;ZB)V")
+	public static void method5279(@OriginalArg(0) String arg0, @OriginalArg(1) boolean arg1) {
+		if (arg0 == null) {
+			return;
+		}
+		if (Static301.anInt5700 >= 100) {
+			Static207.method3700(Static322.aClass79_125.method2267(client.language));
+			return;
+		}
+		@Pc(22) String local22 = Static135.method2537(arg0);
+		if (local22 == null) {
+			return;
+		}
+		@Pc(65) String local65;
+		for (@Pc(27) int local27 = 0; local27 < Static301.anInt5700; local27++) {
+			@Pc(35) String local35 = Static135.method2537(Static226.aStringArray35[local27]);
+			if (local35 != null && local35.equals(local22)) {
+				Static207.method3700(arg0 + Static44.aClass79_26.method2267(client.language));
+				return;
+			}
+			if (Static371.aStringArray66[local27] != null) {
+				local65 = Static135.method2537(Static371.aStringArray66[local27]);
+				if (local65 != null && local65.equals(local22)) {
+					Static207.method3700(arg0 + Static44.aClass79_26.method2267(client.language));
+					return;
+				}
+			}
+		}
+		for (@Pc(95) int local95 = 0; local95 < Static384.anInt7178; local95++) {
+			local65 = Static135.method2537(Static17.aStringArray43[local95]);
+			if (local65 != null && local65.equals(local22)) {
+				Static207.method3700(Static261.aClass79_107.method2267(client.language) + arg0 + Static120.aClass79_50.method2267(client.language));
+				return;
+			}
+			if (Static319.aStringArray54[local95] != null) {
+				@Pc(138) String local138 = Static135.method2537(Static319.aStringArray54[local95]);
+				if (local138 != null && local138.equals(local22)) {
+					Static207.method3700(Static261.aClass79_107.method2267(client.language) + arg0 + Static120.aClass79_50.method2267(client.language));
+					return;
+				}
+			}
+		}
+		if (Static135.method2537(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41).equals(local22)) {
+			Static207.method3700(Static47.aClass79_27.method2267(client.language));
+		} else {
+			writeOpcode(ClientProt.aClass145_139);
+			outboundBuffer.p1(Buffer.getStringLength(arg0) + 1);
+			outboundBuffer.pjstr(arg0);
+			outboundBuffer.p1(arg1 ? 1 : 0);
+		}
+	}
+
+	@OriginalMember(owner = "client!vi", name = "a", descriptor = "(Lclient!nk;I)V")
+	public static void method6129(@OriginalArg(0) Class161 arg0) {
+		if (!Static330.aBoolean419) {
+			return;
+		}
+		writeOpcode(ClientProt.aClass145_79);
+		outboundBuffer.p4(arg0.anInt4317);
+		outboundBuffer.p2add(arg0.anInt4297);
+		outboundBuffer.p2add(Static214.anInt3792);
+		outboundBuffer.p2(Static196.anInt3317);
+		outboundBuffer.mp4(Static337.anInt6317);
+		outboundBuffer.p2(arg0.anInt4300);
+	}
+
+	@OriginalMember(owner = "client!dq", name = "b", descriptor = "(IIII)V")
+	public static void method1736(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+		if (arg2 == 0) {
+			writeOpcode(ClientProt.aClass145_158);
+		}
+		if (arg2 == 1) {
+			writeOpcode(ClientProt.aClass145_203);
+		}
+		outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
+		outboundBuffer.p2(arg0 + Static164.anInt3140);
+		outboundBuffer.ip2_dup(arg1 + Static148.anInt2719);
+		Static370.aBoolean474 = false;
+		Static358.anInt6550 = arg0;
+		Static312.anInt5844 = arg1;
+		Static359.method6009();
+	}
+
+	@OriginalMember(owner = "client!em", name = "a", descriptor = "(IZ)V")
+	public static void method1904() {
+		writeOpcode(ClientProt.aClass145_145);
+		for (@Pc(21) Class2_Sub7 local21 = (Class2_Sub7) Static329.aClass4_130.head(); local21 != null; local21 = (Class2_Sub7) Static329.aClass4_130.next()) {
+			if (!local21.isLinked()) {
+				local21 = (Class2_Sub7) Static329.aClass4_130.head();
+				if (local21 == null) {
+					break;
+				}
+			}
+			if (local21.anInt1373 == 0) {
+				Static276.method4655(true, local21, true);
+			}
+		}
+		if (Static192.aClass161_8 != null) {
+			Static200.method3645(Static192.aClass161_8);
+			Static192.aClass161_8 = null;
+		}
+	}
+
+	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILjava/lang/String;)V")
+	public static void method3102(@OriginalArg(1) String arg0) {
+		if (Static47.aClass214Array1 != null) {
+			writeOpcode(ClientProt.aClass145_57);
+			outboundBuffer.p1(Buffer.getStringLength(arg0));
+			outboundBuffer.pjstr(arg0);
+		}
 	}
 
 }

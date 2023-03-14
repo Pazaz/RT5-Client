@@ -10,12 +10,6 @@ public final class Static109 {
 	@OriginalMember(owner = "client!gb", name = "l", descriptor = "D")
 	public static double aDouble1 = -1.0D;
 
-	@OriginalMember(owner = "client!gb", name = "m", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_83 = new ClientProt(26, 7);
-
-	@OriginalMember(owner = "client!gb", name = "o", descriptor = "Lclient!s;")
-	public static final Class210 aClass210_4 = new Class210(2, 5);
-
 	@OriginalMember(owner = "client!gb", name = "a", descriptor = "(IIIILclient!ct;)V")
 	public static void method2264(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) LocType arg3) {
 		for (@Pc(10) Class2_Sub19 local10 = (Class2_Sub19) Static83.aClass135_14.head(); local10 != null; local10 = (Class2_Sub19) Static83.aClass135_14.next()) {

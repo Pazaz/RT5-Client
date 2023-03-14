@@ -11,14 +11,8 @@ public final class Static89 {
 	@OriginalMember(owner = "client!et", name = "m", descriptor = "Ljava/awt/Image;")
 	public static Image anImage1;
 
-	@OriginalMember(owner = "client!et", name = "d", descriptor = "Lclient!bt;")
-	public static final Buffer aClass2_Sub4_2 = new Buffer(new byte[5000]);
-
 	@OriginalMember(owner = "client!et", name = "k", descriptor = "I")
 	public static int anInt1885 = 0;
-
-	@OriginalMember(owner = "client!et", name = "n", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_67 = new ClientProt(80, 7);
 
 	@OriginalMember(owner = "client!et", name = "a", descriptor = "(IC)Z")
 	public static boolean method1939(@OriginalArg(1) char arg0) {

@@ -1,7 +1,4 @@
-import java.io.IOException;
-import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
-import org.openrs2.deob.annotation.Pc;
 
 public final class Static161 {
 
@@ -22,26 +19,4 @@ public final class Static161 {
 		Static119.aClass98_16.method2614();
 	}
 
-	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(BZ)V")
-	public static void method2973(@OriginalArg(1) boolean arg0) {
-		Static37.method1135();
-		if (client.gameState != 30 && client.gameState != 25) {
-			return;
-		}
-		Static367.anInt6876++;
-		if (Static367.anInt6876 < 50 && !arg0) {
-			return;
-		}
-		Static367.anInt6876 = 0;
-		if (!Static101.aBoolean158 && Protocol.socket != null) {
-			Protocol.method1960(Static326.aClass145_228);
-			try {
-				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
-				Protocol.outboundBuffer.pos = 0;
-			} catch (@Pc(57) IOException local57) {
-				Static101.aBoolean158 = true;
-			}
-		}
-		Static37.method1135();
-	}
 }

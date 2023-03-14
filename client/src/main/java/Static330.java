@@ -41,7 +41,7 @@ public final class Static330 {
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(Lclient!s;I)V")
-	public static void method5656(@OriginalArg(0) Class210 arg0) {
+	public static void method5656(@OriginalArg(0) ZoneProt arg0) {
 		@Pc(12) int local12;
 		@Pc(23) int local23;
 		@Pc(32) int local32;
@@ -56,13 +56,13 @@ public final class Static330 {
 		@Pc(181) Class11_Sub5_Sub3 local181;
 		@Pc(49) int local49;
 		@Pc(53) int local53;
-		if (Static19.aClass210_1 == arg0) {
+		if (ZoneProt.PACKET_6 == arg0) {
 			local12 = Protocol.inboundBuffer.g1();
 			local23 = Static67.anInt1637 * 2 + (local12 >> 4 & 0xF);
 			local32 = Static7.anInt7240 * 2 + (local12 & 0xF);
 			local40 = local23 + Protocol.inboundBuffer.g1b();
 			local49 = local32 + Protocol.inboundBuffer.g1b();
-			local53 = Protocol.inboundBuffer.g2b();
+			local53 = Protocol.inboundBuffer.g2s();
 			local57 = Protocol.inboundBuffer.g2();
 			local63 = Protocol.inboundBuffer.g1() * 4;
 			local69 = Protocol.inboundBuffer.g1() * 4;
@@ -82,7 +82,7 @@ public final class Static330 {
 				local181.method4397(Static386.method6032(local40, local49, Static243.anInt4502) - local69, local40, client.cycle + local73, local49);
 				Static332.aClass135_38.addTail(new Class2_Sub2_Sub9(local181));
 			}
-		} else if (arg0 == Static285.aClass210_12) {
+		} else if (arg0 == ZoneProt.PACKET_12) {
 			local12 = Protocol.inboundBuffer.g1();
 			local23 = (local12 >> 4 & 0x7) + Static67.anInt1637;
 			local32 = (local12 & 0x7) + Static7.anInt7240;
@@ -105,14 +105,14 @@ public final class Static330 {
 			}
 		} else {
 			@Pc(403) int local403;
-			if (Static374.aClass210_16 == arg0) {
+			if (ZoneProt.PACKET_9 == arg0) {
 				local12 = Protocol.inboundBuffer.g1();
 				local23 = Static67.anInt1637 * 2 + (local12 >> 4 & 0xF);
 				local32 = (local12 & 0xF) + Static7.anInt7240 * 2;
 				local40 = Protocol.inboundBuffer.g1b() + local23;
 				local49 = local32 + Protocol.inboundBuffer.g1b();
-				local53 = Protocol.inboundBuffer.g2b();
-				local57 = Protocol.inboundBuffer.g2b();
+				local53 = Protocol.inboundBuffer.g2s();
+				local57 = Protocol.inboundBuffer.g2s();
 				local63 = Protocol.inboundBuffer.g2();
 				local69 = Protocol.inboundBuffer.g1b();
 				local73 = Protocol.inboundBuffer.g1() * 4;
@@ -168,7 +168,7 @@ public final class Static330 {
 					local628.method4397(Static386.method6032(local40, local49, Static243.anInt4502) - local73, local40, client.cycle + local77, local49);
 					Static332.aClass135_38.addTail(new Class2_Sub2_Sub9(local628));
 				}
-			} else if (Static27.aClass210_2 == arg0) {
+			} else if (ZoneProt.PACKET_11 == arg0) {
 				local12 = Protocol.inboundBuffer.g1bneg();
 				local23 = (local12 >> 4 & 0x7) + Static67.anInt1637;
 				local32 = Static7.anInt7240 + (local12 & 0x7);
@@ -188,7 +188,7 @@ public final class Static330 {
 						Static165.method3154(local23, Static243.anInt4502, local32);
 					}
 				}
-			} else if (Static140.aClass210_6 == arg0) {
+			} else if (ZoneProt.PACKET_13 == arg0) {
 				local12 = Protocol.inboundBuffer.ig2();
 				local23 = Protocol.inboundBuffer.ig2add();
 				local32 = Protocol.inboundBuffer.g1sub();
@@ -199,7 +199,7 @@ public final class Static330 {
 					Static137.method2550(local49, local40, new Class2_Sub8(local53, local12), Static243.anInt4502);
 					Static165.method3154(local40, Static243.anInt4502, local49);
 				}
-			} else if (arg0 == Static143.aClass210_7) {
+			} else if (arg0 == ZoneProt.PACKET_0) {
 				local12 = Protocol.inboundBuffer.g1bneg();
 				local23 = local12 >> 2;
 				local32 = local12 & 0x3;
@@ -211,12 +211,12 @@ public final class Static330 {
 				if (local57 >= 0 && local63 >= 0 && local57 < Static373.anInt7033 && Static242.anInt4449 > local63) {
 					Static28.method900(local49, local40, local23, local57, local32, local63, Static243.anInt4502);
 				}
-			} else if (arg0 == Static359.aClass210_14) {
+			} else if (arg0 == ZoneProt.PACKET_14) {
 				@Pc(916) byte local916 = Protocol.inboundBuffer.g1neg();
 				local23 = Protocol.inboundBuffer.g1();
 				local32 = (local23 >> 4 & 0x7) + Static67.anInt1637;
 				local40 = (local23 & 0x7) + Static7.anInt7240;
-				local49 = Protocol.inboundBuffer.ig2b();
+				local49 = Protocol.inboundBuffer.ig2s();
 				@Pc(942) byte local942 = Protocol.inboundBuffer.g1bsub();
 				local57 = Protocol.inboundBuffer.ig2add();
 				local63 = Protocol.inboundBuffer.ig2add();
@@ -229,11 +229,11 @@ public final class Static330 {
 				if (!Static190.aClass19_8.method2871()) {
 					Static243.method4239(local32, local403, local954, local57, local958, local942, local916, local63, local49, local81, local85, local40, Static243.anInt4502);
 				}
-			} else if (arg0 == Static72.aClass210_3) {
+			} else if (arg0 == ZoneProt.PACKET_4) {
 				local12 = Protocol.inboundBuffer.g2();
 				local23 = Protocol.inboundBuffer.g1();
 				client.LocTypes.method5163(local12).method1521(local23);
-			} else if (Static110.aClass210_5 == arg0) {
+			} else if (ZoneProt.PACKET_3 == arg0) {
 				Protocol.inboundBuffer.g1();
 				local12 = Protocol.inboundBuffer.g1();
 				local23 = (local12 >> 4 & 0x7) + Static67.anInt1637;
@@ -243,7 +243,7 @@ public final class Static330 {
 				local53 = Protocol.inboundBuffer.ig3();
 				@Pc(1055) String local1055 = Protocol.inboundBuffer.gjstr();
 				Static111.method2277(local40, local49, local53, local1055, Static243.anInt4502, local23, local32);
-			} else if (arg0 == Static200.aClass210_9) {
+			} else if (arg0 == ZoneProt.PACKET_7) {
 				local12 = Protocol.inboundBuffer.g2add();
 				if (local12 == 65535) {
 					local12 = -1;
@@ -256,7 +256,7 @@ public final class Static330 {
 				local57 = local49 & 0x3;
 				local63 = Static150.anIntArray174[local53];
 				Static391.method6452(local53, local12, local40, local63, local57, local32, Static243.anInt4502);
-			} else if (arg0 == Static164.aClass210_8) {
+			} else if (arg0 == ZoneProt.PACKET_8) {
 				local12 = Protocol.inboundBuffer.g1();
 				local23 = Static67.anInt1637 + (local12 >> 4 & 0x7);
 				local32 = Static7.anInt7240 + (local12 & 0x7);
@@ -269,7 +269,7 @@ public final class Static330 {
 					@Pc(1208) Class11_Sub5_Sub4 local1208 = new Class11_Sub5_Sub4(local40, local53, client.cycle, Static243.anInt4502, local57, Static386.method6032(local57, local63, Static243.anInt4502) - local49, local63, local23, local23, local32, local32);
 					Static129.aClass135_20.addTail(new Class2_Sub2_Sub1(local1208));
 				}
-			} else if (Static333.aClass210_17 == arg0) {
+			} else if (ZoneProt.PACKET_10 == arg0) {
 				local12 = Protocol.inboundBuffer.g1();
 				local23 = (local12 >> 4 & 0x7) + Static67.anInt1637;
 				local32 = (local12 & 0x7) + Static7.anInt7240;
@@ -294,7 +294,7 @@ public final class Static330 {
 						Static243.anInt4503++;
 					}
 				}
-			} else if (arg0 == Static242.aClass210_10) {
+			} else if (arg0 == ZoneProt.PACKET_5) {
 				local12 = Protocol.inboundBuffer.g1add();
 				local23 = Static67.anInt1637 + (local12 >> 4 & 0x7);
 				local32 = (local12 & 0x7) + Static7.anInt7240;
@@ -305,13 +305,13 @@ public final class Static330 {
 				if (local23 >= 0 && local32 >= 0 && local23 < Static373.anInt7033 && Static242.anInt4449 > local32) {
 					Static28.method900(-1, local57, local49, local23, local53, local32, Static243.anInt4502);
 				}
-			} else if (arg0 == Static272.aClass210_11) {
+			} else if (arg0 == ZoneProt.PACKET_1) {
 				local12 = Protocol.inboundBuffer.g1();
 				local23 = Static67.anInt1637 + (local12 >> 4 & 0x7);
 				local32 = (local12 & 0x7) + Static7.anInt7240;
 				local40 = local23 + Protocol.inboundBuffer.g1b();
 				local49 = local32 + Protocol.inboundBuffer.g1b();
-				local53 = Protocol.inboundBuffer.g2b();
+				local53 = Protocol.inboundBuffer.g2s();
 				local57 = Protocol.inboundBuffer.g2();
 				local63 = Protocol.inboundBuffer.g1() * 4;
 				local69 = Protocol.inboundBuffer.g1() * 4;
@@ -331,7 +331,7 @@ public final class Static330 {
 					local181.method4397(Static386.method6032(local40, local49, Static243.anInt4502) - local69, local40, client.cycle + local73, local49);
 					Static332.aClass135_38.addTail(new Class2_Sub2_Sub9(local181));
 				}
-			} else if (Static109.aClass210_4 == arg0) {
+			} else if (ZoneProt.PACKET_2 == arg0) {
 				local12 = Protocol.inboundBuffer.g2();
 				local23 = Protocol.inboundBuffer.g2add();
 				local32 = Protocol.inboundBuffer.g1();

@@ -10,9 +10,6 @@ public final class Static98 {
 	@OriginalMember(owner = "client!fl", name = "f", descriptor = "Lclient!hu;")
 	public static final LruHashTable aClass98_10 = new LruHashTable(32);
 
-	@OriginalMember(owner = "client!fl", name = "i", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_73 = new ClientProt(46, 2);
-
 	@OriginalMember(owner = "client!fl", name = "a", descriptor = "(II)I")
 	public static int method2104(@OriginalArg(1) int arg0) {
 		return arg0 >>> 7;

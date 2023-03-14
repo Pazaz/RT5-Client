@@ -37,9 +37,9 @@ public final class SkyboxSphereType {
 		} else if (arg1 == 2) {
 			this.aBoolean191 = true;
 		} else if (arg1 == 3) {
-			this.anInt2695 = arg0.g2b();
-			this.anInt2698 = arg0.g2b();
-			this.anInt2693 = arg0.g2b();
+			this.anInt2695 = arg0.g2s();
+			this.anInt2698 = arg0.g2s();
+			this.anInt2693 = arg0.g2s();
 		} else if (arg1 == 4) {
 			this.anInt2692 = arg0.g1();
 		} else if (arg1 == 5) {

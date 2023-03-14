@@ -38,12 +38,6 @@ public final class Static290 {
 		}
 	}
 
-	@OriginalMember(owner = "client!qp", name = "b", descriptor = "(I)V")
-	public static void method5026() {
-		Protocol.method1960(Static13.aClass145_18);
-		Protocol.outboundBuffer.p1(0);
-	}
-
 	@OriginalMember(owner = "client!qp", name = "a", descriptor = "(ILclient!bt;)Lclient!gr;")
 	public static Class86 method5027(@OriginalArg(1) Buffer arg0) {
 		@Pc(15) Class86 local15 = new Class86();

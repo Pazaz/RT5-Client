@@ -84,7 +84,7 @@ public final class TextureOp17 extends TextureOp {
 	@Override
 	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 0) {
-			this.anInt5647 = arg1.g2b();
+			this.anInt5647 = arg1.g2s();
 		} else if (arg0 == 1) {
 			this.anInt5641 = (arg1.g1b() << 12) / 100;
 		} else if (arg0 == 2) {

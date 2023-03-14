@@ -8,14 +8,8 @@ public final class Static374 {
 	@OriginalMember(owner = "client!vr", name = "i", descriptor = "[I")
 	public static int[] locGroupIds;
 
-	@OriginalMember(owner = "client!vr", name = "d", descriptor = "Lclient!s;")
-	public static final Class210 aClass210_16 = new Class210(9, 17);
-
 	@OriginalMember(owner = "client!vr", name = "e", descriptor = "[Lclient!bl;")
 	public static final Js5CachedResourceProvider[] aClass25_Sub1Array2 = new Js5CachedResourceProvider[29];
-
-	@OriginalMember(owner = "client!vr", name = "k", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_255 = new ClientProt(66, 2);
 
 	@OriginalMember(owner = "client!vr", name = "a", descriptor = "(B)I")
 	public static int method6273() {

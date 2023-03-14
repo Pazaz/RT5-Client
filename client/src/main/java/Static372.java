@@ -8,12 +8,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static372 {
 
-	@OriginalMember(owner = "client!vp", name = "a", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_252 = new ClientProt(65, 4);
-
-	@OriginalMember(owner = "client!vp", name = "k", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_253 = new ClientProt(6, 15);
-
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(I)V")
 	public static void method6260() {
 		if (Static363.frame != null) {
@@ -77,6 +71,6 @@ public final class Static372 {
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(BLclient!bt;)Lclient!rm;")
 	public static Class173_Sub3 method6266(@OriginalArg(1) Buffer arg0) {
-		return new Class173_Sub3(arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.ig3(), arg0.ig3(), arg0.g1());
+		return new Class173_Sub3(arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.ig3(), arg0.ig3(), arg0.g1());
 	}
 }

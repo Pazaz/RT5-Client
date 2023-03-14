@@ -114,10 +114,10 @@ public final class Static209 {
 			client.VarbitTypes.method3392(256);
 			Static355.anInt6581 = 20;
 		} else if (Static355.anInt6581 == 20) {
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			Static344.method5521(arg0, Static344.anInt6048, Static344.anInt6049);
 			Static355.anInt6581 = 60;
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 60) {
 			if (Static344.aClass197_85.isGroupNameValid(Static344.aClass2_Sub2_Sub17_3.aString67 + "_staticelements")) {
@@ -130,47 +130,47 @@ public final class Static209 {
 			}
 			Static344.method5511();
 			Static355.anInt6581 = 70;
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 70) {
 			Static74.aClass113_4 = new Class113(arg0, 11, true, GameShell.canvas);
 			Static355.anInt6581 = 73;
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 73) {
 			Static107.aClass113_5 = new Class113(arg0, 12, true, GameShell.canvas);
 			Static355.anInt6581 = 76;
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 76) {
 			Static2.aClass113_1 = new Class113(arg0, 14, true, GameShell.canvas);
 			Static355.anInt6581 = 79;
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 79) {
 			Static175.aClass113_6 = new Class113(arg0, 17, true, GameShell.canvas);
 			Static355.anInt6581 = 82;
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 82) {
 			Static249.aClass113_8 = new Class113(arg0, 19, true, GameShell.canvas);
 			Static355.anInt6581 = 85;
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 85) {
 			Static30.aClass113_3 = new Class113(arg0, 22, true, GameShell.canvas);
 			Static355.anInt6581 = 88;
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			GameShell.resetTimer();
 		} else if (Static355.anInt6581 == 88) {
 			Static27.aClass113_2 = new Class113(arg0, 26, true, GameShell.canvas);
 			Static355.anInt6581 = 91;
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			GameShell.resetTimer();
 		} else {
 			Static369.aClass113_9 = new Class113(arg0, 30, true, GameShell.canvas);
 			Static355.anInt6581 = 100;
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			GameShell.resetTimer();
 			System.gc();
 		}

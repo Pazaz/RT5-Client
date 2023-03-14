@@ -67,39 +67,4 @@ public final class Static258 {
 		}
 	}
 
-	@OriginalMember(owner = "client!oo", name = "a", descriptor = "(Ljava/lang/String;Z)V")
-	public static void method4404(@OriginalArg(0) String arg0) {
-		if (arg0 == null) {
-			return;
-		}
-		if (arg0.startsWith("*")) {
-			arg0 = arg0.substring(1);
-		}
-		@Pc(20) String local20 = Static135.method2537(arg0);
-		if (local20 == null) {
-			return;
-		}
-		for (@Pc(25) int local25 = 0; local25 < Static301.anInt5700; local25++) {
-			@Pc(31) String local31 = Static226.aStringArray35[local25];
-			if (local31.startsWith("*")) {
-				local31 = local31.substring(1);
-			}
-			local31 = Static135.method2537(local31);
-			if (local31 != null && local31.equals(local20)) {
-				Static301.anInt5700--;
-				for (@Pc(55) int local55 = local25; local55 < Static301.anInt5700; local55++) {
-					Static226.aStringArray35[local55] = Static226.aStringArray35[local55 + 1];
-					Static234.aStringArray39[local55] = Static234.aStringArray39[local55 + 1];
-					Static371.aStringArray66[local55] = Static371.aStringArray66[local55 + 1];
-					Static190.aStringArray28[local55] = Static190.aStringArray28[local55 + 1];
-					Static196.aBooleanArray31[local55] = Static196.aBooleanArray31[local55 + 1];
-				}
-				Static53.anInt3971 = Static88.transmitTimer;
-				Protocol.method1960(Static343.aClass145_231);
-				Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
-				Protocol.outboundBuffer.pjstr(arg0);
-				break;
-			}
-		}
-	}
 }

@@ -8,9 +8,6 @@ public final class Static21 {
 	@OriginalMember(owner = "client!be", name = "e", descriptor = "I")
 	public static int anInt551 = 0;
 
-	@OriginalMember(owner = "client!be", name = "g", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_25 = new ClientProt(27, 3);
-
 	@OriginalMember(owner = "client!be", name = "k", descriptor = "I")
 	public static int anInt554 = 0;
 

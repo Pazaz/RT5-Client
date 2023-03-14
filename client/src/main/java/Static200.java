@@ -13,9 +13,6 @@ public final class Static200 {
 	@OriginalMember(owner = "client!lo", name = "p", descriptor = "I")
 	public static int anInt3698;
 
-	@OriginalMember(owner = "client!lo", name = "l", descriptor = "Lclient!s;")
-	public static final Class210 aClass210_9 = new Class210(7, 4);
-
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(ICLjava/lang/String;)[Ljava/lang/String;")
 	public static String[] method3643(@OriginalArg(1) char arg0, @OriginalArg(2) String arg1) {
 		@Pc(10) int local10 = Static93.method2000(arg0, arg1);

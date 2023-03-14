@@ -10,9 +10,6 @@ public final class Static150 {
 	@OriginalMember(owner = "client!il", name = "Z", descriptor = "Lclient!rn;")
 	public static Class205 aClass205_2;
 
-	@OriginalMember(owner = "client!il", name = "P", descriptor = "Lclient!mc;")
-	public static final ClientProt aClass145_107 = new ClientProt(17, 8);
-
 	@OriginalMember(owner = "client!il", name = "W", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_64 = new LocalizedString("Please remove ", "Bitte entferne ", "Veuillez commencer par supprimer ", "Remova ");
 

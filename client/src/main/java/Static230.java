@@ -64,9 +64,9 @@ public final class Static230 {
 		Static101.aBoolean158 = false;
 		LoginManager.disallowResult = -1;
 		LoginManager.errors = 0;
-		LoginManager.step = 1;
+		LoginManager.loginStep = 1;
 		LoginManager.hopTime = 0;
-		LoginManager.reply = -3;
+		LoginManager.loginResult = -3;
 	}
 
 	@OriginalMember(owner = "client!ne", name = "b", descriptor = "(IIIII)V")

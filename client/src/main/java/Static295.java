@@ -23,17 +23,6 @@ public final class Static295 {
 		Static332.anIntArray428 = null;
 	}
 
-	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Lclient!nk;ZLclient!nk;)V")
-	public static void method5096(@OriginalArg(0) Class161 arg0, @OriginalArg(2) Class161 arg1) {
-		Protocol.method1960(Static387.aClass145_110);
-		Protocol.outboundBuffer.p4(arg1.anInt4317);
-		Protocol.outboundBuffer.ip2add(arg1.anInt4300);
-		Protocol.outboundBuffer.p2add(arg1.anInt4297);
-		Protocol.outboundBuffer.mp4(arg0.anInt4317);
-		Protocol.outboundBuffer.ip2add(arg0.anInt4300);
-		Protocol.outboundBuffer.ip2_dup(arg0.anInt4297);
-	}
-
 	@OriginalMember(owner = "client!r", name = "c", descriptor = "(III)I")
 	public static int method5099(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		if (arg0 > 22050) {

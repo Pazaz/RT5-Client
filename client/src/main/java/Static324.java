@@ -51,11 +51,6 @@ public final class Static324 {
 		}
 	}
 
-	@OriginalMember(owner = "client!sq", name = "d", descriptor = "(I)[Lclient!s;")
-	public static Class210[] method5539() {
-		return new Class210[] { Static143.aClass210_7, Static272.aClass210_11, Static109.aClass210_4, Static110.aClass210_5, Static72.aClass210_3, Static242.aClass210_10, Static19.aClass210_1, Static200.aClass210_9, Static164.aClass210_8, Static374.aClass210_16, Static333.aClass210_17, Static27.aClass210_2, Static285.aClass210_12, Static140.aClass210_6, Static359.aClass210_14 };
-	}
-
 	@OriginalMember(owner = "client!sq", name = "a", descriptor = "(II)I")
 	public static int method5540(@OriginalArg(1) int arg0) {
 		return arg0 >>> 8;

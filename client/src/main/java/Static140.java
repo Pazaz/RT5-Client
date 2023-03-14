@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static140 {
 
-	@OriginalMember(owner = "client!hu", name = "i", descriptor = "Lclient!s;")
-	public static final Class210 aClass210_6 = new Class210(13, 7);
-
 	@OriginalMember(owner = "client!hu", name = "v", descriptor = "Z")
 	public static boolean aBoolean187 = false;
 

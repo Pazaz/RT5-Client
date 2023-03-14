@@ -147,7 +147,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	}
 
 	@OriginalMember(owner = "client!un", name = "a", descriptor = "(Z)V")
-	protected abstract void method1384();
+	protected abstract void mainLogic();
 
 	@OriginalMember(owner = "client!un", name = "c", descriptor = "(I)V")
 	protected abstract void mainLoop();
@@ -209,7 +209,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		synchronized (this) {
 			Static242.aBoolean306 = Static371.aBoolean475;
 		}
-		this.method1384();
+		this.mainLogic();
 	}
 
 	@OriginalMember(owner = "client!un", name = "g", descriptor = "(I)V")

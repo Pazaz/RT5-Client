@@ -11,57 +11,6 @@ public final class Static61 {
 	@OriginalMember(owner = "client!dj", name = "bb", descriptor = "Ljava/util/Random;")
 	public static final Random aRandom1 = new Random();
 
-	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(Ljava/lang/String;I)V")
-	public static void method1669(@OriginalArg(0) String arg0) {
-		if (arg0 == null) {
-			return;
-		}
-		if (Static384.anInt7178 >= 100 && !MouseRecorder.enabled || Static384.anInt7178 >= 200) {
-			Static207.method3700(Static78.aClass79_129.method2267(client.language));
-			return;
-		}
-		@Pc(33) String local33 = Static135.method2537(arg0);
-		if (local33 == null) {
-			return;
-		}
-		@Pc(78) String local78;
-		for (@Pc(38) int local38 = 0; local38 < Static384.anInt7178; local38++) {
-			@Pc(46) String local46 = Static135.method2537(Static17.aStringArray43[local38]);
-			if (local46 != null && local46.equals(local33)) {
-				Static207.method3700(arg0 + Static332.aClass79_131.method2267(client.language));
-				return;
-			}
-			if (Static319.aStringArray54[local38] != null) {
-				local78 = Static135.method2537(Static319.aStringArray54[local38]);
-				if (local78 != null && local78.equals(local33)) {
-					Static207.method3700(arg0 + Static332.aClass79_131.method2267(client.language));
-					return;
-				}
-			}
-		}
-		for (@Pc(108) int local108 = 0; local108 < Static301.anInt5700; local108++) {
-			local78 = Static135.method2537(Static226.aStringArray35[local108]);
-			if (local78 != null && local78.equals(local33)) {
-				Static207.method3700(Static150.aClass79_64.method2267(client.language) + arg0 + Static151.aClass79_65.method2267(client.language));
-				return;
-			}
-			if (Static371.aStringArray66[local108] != null) {
-				@Pc(151) String local151 = Static135.method2537(Static371.aStringArray66[local108]);
-				if (local151 != null && local151.equals(local33)) {
-					Static207.method3700(Static150.aClass79_64.method2267(client.language) + arg0 + Static151.aClass79_65.method2267(client.language));
-					return;
-				}
-			}
-		}
-		if (Static135.method2537(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41).equals(local33)) {
-			Static207.method3700(Static122.aClass79_54.method2267(client.language));
-		} else {
-			Protocol.method1960(Static148.aClass145_104);
-			Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
-			Protocol.outboundBuffer.pjstr(arg0);
-		}
-	}
-
 	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(B[JI[II)V")
 	public static void method1671(@OriginalArg(1) long[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) int arg3) {
 		if (arg3 >= arg1) {

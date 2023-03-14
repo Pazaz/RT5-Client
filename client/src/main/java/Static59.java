@@ -53,6 +53,6 @@ public final class Static59 {
 		Static139.aClass98_18.method2621();
 		Static61.aClass98_5.method2621();
 		Static210.aClass98_31.method2621();
-		Static198.aClass98_30.method2621();
+		ScriptRunner.aClass98_30.method2621();
 	}
 }

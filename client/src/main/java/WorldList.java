@@ -176,7 +176,7 @@ public class WorldList {
 					checksum = WorldList.checksum;
 				}
 				Protocol.outboundBuffer.pos = 0;
-				Protocol.outboundBuffer.p1(Static43.GET_WORLDLIST.opcode);
+				Protocol.outboundBuffer.p1(LoginProt.GET_WORLDLIST.opcode);
 				Protocol.outboundBuffer.p4(checksum);
 				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
 				if (client.musicChannel != null) {

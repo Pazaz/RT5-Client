@@ -8,16 +8,14 @@ import java.net.URL;
 
 public class LoginManager {
 
-	@OriginalMember(owner = "client!ck", name = "I", descriptor = "Lclient!vr;")
-	public static final OutboundPacket LOGIN = new OutboundPacket(14, 1);
 	@OriginalMember(owner = "client!ub", name = "Z", descriptor = "I")
-	public static int step = 0;
+	public static int loginStep = 0;
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "I")
 	public static int loops = 0;
 	@OriginalMember(owner = "client!mm", name = "h", descriptor = "I")
 	public static int errors = 0;
 	@OriginalMember(owner = "client!ch", name = "ab", descriptor = "I")
-	public static int reply = -2;
+	public static int loginResult = -2;
 	@OriginalMember(owner = "client!vr", name = "j", descriptor = "Ljava/lang/String;")
 	public static String username = "";
 	@OriginalMember(owner = "client!nq", name = "g", descriptor = "J")
@@ -46,8 +44,8 @@ public class LoginManager {
 	public static int staffModLevel = 0;
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(B)V")
-	public static void loop() {
-		if (step == 0 || step == 5) {
+	public static void mainLogic() {
+		if (loginStep == 0 || loginStep == 5) {
 			return;
 		}
 		try {
@@ -57,24 +55,24 @@ public class LoginManager {
 					Protocol.socket = null;
 				}
 				if (errors >= 1) {
-					reply = -5;
-					step = 0;
+					loginResult = -5;
+					loginStep = 0;
 					return;
 				}
 				loops = 0;
 				errors++;
-				step = 1;
+				loginStep = 1;
 				if (client.alternatePort == client.port) {
 					client.port = client.defaultPort;
 				} else {
 					client.port = client.alternatePort;
 				}
 			}
-			if (step == 1) {
+			if (loginStep == 1) {
 				Protocol.socketRequest2 = GameShell.signlink.openSocket(client.hostname, client.port);
-				step = 2;
+				loginStep = 2;
 			}
-			if (step == 2) {
+			if (loginStep == 2) {
 				if (Protocol.socketRequest2.status == 2) {
 					throw new IOException();
 				}
@@ -86,7 +84,7 @@ public class LoginManager {
 				@Pc(105) long encodedUsername = LoginManager.encodedUsername = StringUtils.toBase37(username);
 				int usernameHash = (int) (encodedUsername >> 16 & 0x1FL);
 				Protocol.outboundBuffer.pos = 0;
-				Protocol.outboundBuffer.p1(LOGIN.opcode);
+				Protocol.outboundBuffer.p1(LoginProt.LOGIN.opcode);
 				Protocol.outboundBuffer.p1(usernameHash);
 				Protocol.socket.write(2, Protocol.outboundBuffer.data);
 				if (client.musicChannel != null) {
@@ -103,15 +101,15 @@ public class LoginManager {
 					client.soundChannel.method6325();
 				}
 				if (reply != 0) {
-					step = 0;
-					LoginManager.reply = reply;
+					loginStep = 0;
+					loginResult = reply;
 					Protocol.socket.close();
 					Protocol.socket = null;
 					return;
 				}
-				step = 3;
+				loginStep = 3;
 			}
-			if (step == 3) {
+			if (loginStep == 3) {
 				if (Protocol.socket.available() < 8) {
 					return;
 				}
@@ -130,9 +128,9 @@ public class LoginManager {
 				rsaBuffer.rsaenc(Protocol.EXPONENT, Protocol.MODULUS);
 				Protocol.outboundBuffer.pos = 0;
 				if (client.gameState == 40) {
-					Protocol.outboundBuffer.p1(Static43.WORLD_RECONNECT.opcode);
+					Protocol.outboundBuffer.p1(LoginProt.WORLD_RECONNECT.opcode);
 				} else {
-					Protocol.outboundBuffer.p1(Static43.WORLD_CONNECT.opcode);
+					Protocol.outboundBuffer.p1(LoginProt.WORLD_CONNECT.opcode);
 				}
 				Protocol.outboundBuffer.p2(0);
 				int start = Protocol.outboundBuffer.pos;
@@ -187,57 +185,57 @@ public class LoginManager {
 					key[i] += 50;
 				}
 				Protocol.inboundBuffer.setKey(key);
-				step = 4;
+				loginStep = 4;
 			}
 			@Pc(619) int reply;
-			if (step == 4) {
+			if (loginStep == 4) {
 				if (Protocol.socket.available() < 1) {
 					return;
 				}
 				reply = Protocol.socket.read();
 				if (reply == 21) {
-					step = 7;
+					loginStep = 7;
 				} else if (reply == 29) {
-					step = 11;
+					loginStep = 11;
 				} else if (reply == 1) {
-					step = 5;
-					LoginManager.reply = reply;
+					loginStep = 5;
+					loginResult = reply;
 					return;
 				} else if (reply == 2) {
-					step = 8;
+					loginStep = 8;
 				} else if (reply == 15) {
-					step = 12;
+					loginStep = 12;
 					Protocol.packetSize = -2;
 				} else if (reply == 23 && errors < 1) {
 					loops = 0;
 					errors++;
-					step = 1;
+					loginStep = 1;
 					Protocol.socket.close();
 					Protocol.socket = null;
 					return;
 				} else {
-					LoginManager.reply = reply;
-					step = 0;
+					loginResult = reply;
+					loginStep = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
 					return;
 				}
 			}
-			if (step == 6) {
+			if (loginStep == 6) {
 				Protocol.outboundBuffer.pos = 0;
-				Protocol.outboundBuffer.p1isaac(Static43.aClass242_4.opcode);
+				Protocol.outboundBuffer.p1isaac(LoginProt.aClass242_4.opcode);
 				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
-				step = 4;
-			} else if (step == 7) {
+				loginStep = 4;
+			} else if (loginStep == 7) {
 				if (Protocol.socket.available() >= 1) {
 					hopTime = Protocol.socket.read() * 60 + 180;
-					LoginManager.reply = 21;
-					step = 0;
+					loginResult = 21;
+					loginStep = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
 				}
-			} else if (step != 11) {
-				if (step == 8) {
+			} else if (loginStep != 11) {
+				if (loginStep == 8) {
 					if (Protocol.socket.available() < 13) {
 						return;
 					}
@@ -278,26 +276,27 @@ public class LoginManager {
 						} catch (@Pc(934) Throwable ignored) {
 						}
 					}
-					step = 10;
+					loginStep = 10;
 				}
-				if (step == 10) { // making sure nothing is out of order? read for opcode 98 perhaps?
+				if (loginStep == 10) {
 					if (Protocol.inboundBuffer.peek1isaac()) {
 						if (Protocol.socket.available() < 1) {
 							return;
 						}
 						Protocol.socket.read(Protocol.inboundBuffer.data, 1, Protocol.inboundBuffer.pos + 2);
 					}
-					Protocol.packet = Protocol.INCOMING_WORLD()[Protocol.inboundBuffer.g1isaac()];
+					Protocol.packet = ServerProt.getAll()[Protocol.inboundBuffer.g1isaac()];
 					Protocol.packetSize = Protocol.inboundBuffer.g2();
-					step = 9;
+					loginStep = 9;
 				}
-				if (step == 9) { // connect
+				if (loginStep == 9) {
+					// Login Step Waiting Players (lswp)
 					if (Protocol.socket.available() >= Protocol.packetSize) {
 						Protocol.socket.read(Protocol.inboundBuffer.data, Protocol.packetSize, 0);
 						Protocol.inboundBuffer.pos = 0;
-						LoginManager.reply = 2;
+						loginResult = 2;
 						reply = Protocol.packetSize;
-						step = 0;
+						loginStep = 0;
 						client.reset();
 						lswpRenderLoginDecoder(Protocol.inboundBuffer);
 						Static105.anInt2187 = -1;
@@ -307,7 +306,8 @@ public class LoginManager {
 						}
 						Protocol.packet = null;
 					}
-				} else if (step == 12) { // reconnect
+				} else if (loginStep == 12) {
+					// Login Step Waiting Players Reconnect (lswpr)
 					if (Protocol.packetSize == -2) {
 						if (Protocol.socket.available() < 2) {
 							return;
@@ -319,8 +319,8 @@ public class LoginManager {
 					if (Protocol.socket.available() >= Protocol.packetSize) {
 						Protocol.socket.read(Protocol.inboundBuffer.data, Protocol.packetSize, 0);
 						Protocol.inboundBuffer.pos = 0;
-						LoginManager.reply = 15;
-						step = 0;
+						loginResult = 15;
+						loginStep = 0;
 						reply = Protocol.packetSize;
 						Static182.method3388();
 						lswpRenderLoginDecoder(Protocol.inboundBuffer);
@@ -332,8 +332,8 @@ public class LoginManager {
 				}
 			} else if (Protocol.socket.available() >= 1) {
 				disallowResult = Protocol.socket.read();
-				step = 0;
-				LoginManager.reply = 29;
+				loginStep = 0;
+				loginResult = 29;
 				Protocol.socket.close();
 				Protocol.socket = null;
 			}
@@ -345,15 +345,15 @@ public class LoginManager {
 			if (errors < 1) {
 				loops = 0;
 				errors++;
-				step = 1;
+				loginStep = 1;
 				if (client.alternatePort == client.port) {
 					client.port = client.defaultPort;
 				} else {
 					client.port = client.alternatePort;
 				}
 			} else {
-				reply = -4;
-				step = 0;
+				loginResult = -4;
+				loginStep = 0;
 			}
 		}
 	}
@@ -409,7 +409,7 @@ public class LoginManager {
 				}
 				if (Static60.anInt666 >= 1) {
 					Static154.anInt2803 = 0;
-					reply = -5;
+					loginResult = -5;
 					return;
 				}
 				Static154.anInt2803 = 1;
@@ -450,7 +450,7 @@ public class LoginManager {
 					client.soundChannel.method6325();
 				}
 				if (local125 != 101) {
-					reply = local125;
+					loginResult = local125;
 					Static154.anInt2803 = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
@@ -463,7 +463,7 @@ public class LoginManager {
 				WorldList.switchWorld(local125);
 				if (client.worldId == -1) {
 					Static154.anInt2803 = 0;
-					reply = 6;
+					loginResult = 6;
 					Protocol.socket.close();
 					Protocol.socket = null;
 				} else {
@@ -480,7 +480,7 @@ public class LoginManager {
 			}
 			if (Static60.anInt666 >= 1) {
 				Static154.anInt2803 = 0;
-				reply = -4;
+				loginResult = -4;
 			} else {
 				Static154.anInt2803 = 1;
 				Static193.anInt3557 = 0;
@@ -544,7 +544,7 @@ public class LoginManager {
 
 	@OriginalMember(owner = "client!so", name = "a", descriptor = "(I)V")
 	public static void rebuildMap() {
-		Static161.method2973(false);
+		Protocol.method2973(false);
 		Static144.anInt2694 = 0;
 		@Pc(12) boolean local12 = true;
 		for (@Pc(14) int local14 = 0; local14 < Static106.aByteArrayArray6.length; local14++) {
@@ -659,7 +659,7 @@ public class LoginManager {
 		Static20.method560();
 		Static37.method1135();
 		System.gc();
-		Static161.method2973(true);
+		Protocol.method2973(true);
 		Static375.method6281();
 		Static246.aBoolean312 = client.preferences.aBoolean364;
 		Static105.aBoolean162 = client.preferences.aBoolean361;
@@ -682,11 +682,11 @@ public class LoginManager {
 			Static7.aClass29_Sub1_120 = new SceneBuilder(1, Static373.anInt7033, Static242.anInt4449, true);
 			if (!Static220.aBoolean252) {
 				Static177.method3346(Static7.aClass29_Sub1_120, Static232.aByteArrayArray9);
-				Static161.method2973(true);
+				Protocol.method2973(true);
 			}
 			if (Static220.aBoolean252) {
 				Static120.method2381(Static232.aByteArrayArray9, Static7.aClass29_Sub1_120);
-				Static161.method2973(true);
+				Protocol.method2973(true);
 			}
 			Static7.aClass29_Sub1_120.method1097(Static190.aClass29_Sub1_63.levelHeightmap[0]);
 			Static7.aClass29_Sub1_120.method1085(null, null, Static190.aClass19_8);
@@ -694,24 +694,24 @@ public class LoginManager {
 		}
 		Static190.aClass29_Sub1_63.method1085(local375 ? Static7.aClass29_Sub1_120.levelHeightmap : null, Static171.aClass46Array1, Static190.aClass19_8);
 		if (!Static220.aBoolean252) {
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			Static170.method3231(Static190.aClass29_Sub1_63, Static82.aByteArrayArray5);
 			if (Static210.aByteArrayArray7 != null) {
 				Static1.method2();
 			}
 		}
 		if (Static220.aBoolean252) {
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			Static65.method1737(Static190.aClass29_Sub1_63, Static82.aByteArrayArray5);
 		}
 		Static211.method3721();
-		Static161.method2973(true);
+		Protocol.method2973(true);
 		Static190.aClass29_Sub1_63.method1093(local375 ? Scene.aClass6Array2[0] : null, Static190.aClass19_8, null);
 		Static190.aClass29_Sub1_63.method1104(Static190.aClass19_8);
-		Static161.method2973(true);
+		Protocol.method2973(true);
 		if (local375) {
 			Scene.method5767(true);
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			if (!Static220.aBoolean252) {
 				Static170.method3231(Static7.aClass29_Sub1_120, Static270.aByteArrayArray15);
 			}
@@ -719,10 +719,10 @@ public class LoginManager {
 				Static65.method1737(Static7.aClass29_Sub1_120, Static270.aByteArrayArray15);
 			}
 			Static211.method3721();
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			Static7.aClass29_Sub1_120.method1093(null, Static190.aClass19_8, Scene.aClass6Array3[0]);
 			Static7.aClass29_Sub1_120.method1104(Static190.aClass19_8);
-			Static161.method2973(true);
+			Protocol.method2973(true);
 			Scene.method5767(false);
 		}
 		Static295.method5094();
@@ -754,7 +754,7 @@ public class LoginManager {
 		Static3.aBoolean5 = false;
 		Static50.method1530();
 		if (GameShell.frame != null && Protocol.socket != null && client.gameState == 25) {
-			Protocol.method1960(Static30.aClass145_28);
+			Protocol.writeOpcode(ClientProt.aClass145_28);
 			Protocol.outboundBuffer.p4(1057001181);
 		}
 		if (!Static220.aBoolean252) {
@@ -776,12 +776,42 @@ public class LoginManager {
 		} else {
 			Static336.method5705(30);
 			if (Protocol.socket != null) {
-				Protocol.method1960(Static42.aClass145_230);
+				Protocol.writeOpcode(ClientProt.aClass145_230);
 			}
 		}
 		Static253.method4369();
 		Static37.method1135();
 		GameShell.resetTimer();
+	}
+
+	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Ljava/lang/String;Ljava/lang/String;IB)V")
+	public static void method2087(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
+		username = arg1;
+		Static202.anInt3714 = arg2;
+		password = arg0;
+		if (username.equals("") || password.equals("")) {
+			loginResult = 3;
+		} else if (client.worldId == -1) {
+			Static60.anInt666 = 0;
+			Static154.anInt2803 = 1;
+			loginResult = -3;
+			Static193.anInt3557 = 0;
+			@Pc(40) Buffer encrypted = new Buffer(128);
+			encrypted.p1(10);
+			encrypted.p4((int) (Math.random() * 9.9999999E7D));
+			encrypted.p8(StringUtils.toBase37(username));
+			encrypted.p4((int) (Math.random() * 9.9999999E7D));
+			encrypted.pjstr(password);
+			encrypted.p4((int) (Math.random() * 9.9999999E7D));
+			encrypted.rsaenc(Protocol.EXPONENT, Protocol.MODULUS);
+			Protocol.outboundBuffer.pos = 0;
+			Protocol.outboundBuffer.p1(LoginProt.aClass242_10.opcode);
+			Protocol.outboundBuffer.p1(encrypted.pos + 2);
+			Protocol.outboundBuffer.p2(578);
+			Protocol.outboundBuffer.pdata(encrypted.data, encrypted.pos);
+		} else {
+			Static230.method4014();
+		}
 	}
 
 }

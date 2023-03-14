@@ -110,9 +110,9 @@ public final class Environment {
 			this.anInt632 = -50;
 			this.anInt640 = -50;
 		} else {
-			this.anInt632 = arg0.g2b();
-			this.anInt636 = arg0.g2b();
-			this.anInt640 = arg0.g2b();
+			this.anInt632 = arg0.g2s();
+			this.anInt636 = arg0.g2s();
+			this.anInt640 = arg0.g2s();
 		}
 		if ((local16 & 0x20) == 0) {
 			this.anInt641 = Static279.anInt5161;
