@@ -19,7 +19,7 @@ public final class Static216 {
 	}
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(ILclient!nk;ILclient!wm;IILclient!kf;II)V")
-	public static void method3776(@OriginalArg(0) int arg0, @OriginalArg(1) Class161 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) int arg4, @OriginalArg(6) Class78 arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
+	public static void method3776(@OriginalArg(0) int arg0, @OriginalArg(1) Class161 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) int arg4, @OriginalArg(6) Class78 arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
 		@Pc(14) MelType local14 = client.MelTypes.method3379(arg2);
 		if (local14 == null || !local14.aBoolean304 || !local14.method4180(Static214.aClass226_1)) {
 			return;
@@ -29,14 +29,14 @@ public final class Static216 {
 			@Pc(32) int[] local32 = new int[local14.anIntArray290.length];
 			@Pc(44) int local44;
 			for (local34 = 0; local34 < local32.length / 2; local34++) {
-				if (Static314.anInt5911 == 4) {
-					local44 = (int) Static277.aFloat67 & 0x3FFF;
+				if (Camera.anInt5911 == 4) {
+					local44 = (int) Camera.yawTarget & 0x3FFF;
 				} else {
-					local44 = (int) Static277.aFloat67 + Static6.anInt158 & 0x3FFF;
+					local44 = (int) Camera.yawTarget + Static6.anInt158 & 0x3FFF;
 				}
-				@Pc(58) int local58 = Class19.anIntArray178[local44];
-				@Pc(62) int local62 = Class19.anIntArray177[local44];
-				if (Static314.anInt5911 != 4) {
+				@Pc(58) int local58 = TextureProvider.anIntArray178[local44];
+				@Pc(62) int local62 = TextureProvider.anIntArray177[local44];
+				if (Camera.anInt5911 != 4) {
 					local62 = local62 * 256 / (Static97.anInt2005 + 256);
 					local58 = local58 * 256 / (Static97.anInt2005 + 256);
 				}

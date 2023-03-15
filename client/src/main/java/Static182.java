@@ -43,8 +43,8 @@ public final class Static182 {
 			Static288.anInt5463 += local70;
 		}
 		if (!client.preferences.aBoolean351) {
-			Static31.aFloat28 += (float) arg0 * Static296.aFloat68 / 6.0F;
-			Static277.aFloat67 += Static184.aFloat39 * (float) arg0 / 6.0F;
+			Camera.pitchTarget += (float) arg0 * Static296.aFloat68 / 6.0F;
+			Camera.yawTarget += Static184.aFloat39 * (float) arg0 / 6.0F;
 		}
 		if (Static62.anInt2395 != local15) {
 			local62 = local15 - Static62.anInt2395;
@@ -107,7 +107,7 @@ public final class Static182 {
 			}
 		}
 		Static302.method1458();
-		Static314.anInt5911 = 1;
+		Camera.anInt5911 = 1;
 		Static336.method5705(30);
 		for (@Pc(76) int local76 = 0; local76 < 100; local76++) {
 			Static357.aBooleanArray59[local76] = true;

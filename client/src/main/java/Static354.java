@@ -6,9 +6,6 @@ public final class Static354 {
 	@OriginalMember(owner = "client!un", name = "h", descriptor = "Z")
 	public static boolean stereo;
 
-	@OriginalMember(owner = "client!un", name = "I", descriptor = "Lclient!cc;")
-	public static PrivilegedRequest aClass32_5;
-
 	@OriginalMember(owner = "client!un", name = "L", descriptor = "Z")
 	private static boolean aBoolean96;
 

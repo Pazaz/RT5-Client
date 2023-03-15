@@ -16,7 +16,7 @@ public final class Static307 {
 
 	@OriginalMember(owner = "client!rq", name = "a", descriptor = "(IZ)V")
 	public static void method5255(@OriginalArg(0) int arg0) {
-		if (!client.preferences.aBoolean363) {
+		if (!client.preferences.cursorsEnabled) {
 			arg0 = -1;
 		}
 		if (Static29.anInt721 == arg0) {

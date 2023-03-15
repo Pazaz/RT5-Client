@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!j")
-public final class Class19_Sub2 extends Class19 {
+public final class Class19_Sub2 extends TextureProvider {
 
 	@OriginalMember(owner = "client!j", name = "s", descriptor = "I")
 	public int anInt2840;
@@ -151,7 +151,7 @@ public final class Class19_Sub2 extends Class19 {
 	private int anInt2861;
 
 	@OriginalMember(owner = "client!j", name = "<init>", descriptor = "(Ljava/awt/Canvas;Lclient!ci;I)V")
-	public Class19_Sub2(@OriginalArg(0) Canvas arg0, @OriginalArg(1) TextureProvider arg1, @OriginalArg(2) int arg2) {
+	public Class19_Sub2(@OriginalArg(0) Canvas arg0, @OriginalArg(1) TextureProviderInterface arg1, @OriginalArg(2) int arg2) {
 		super(arg2, arg1);
 		this.aCanvas3 = arg0;
 		this.aClass155_1 = FrameBuffer.create(this.aCanvas3);

@@ -17,7 +17,7 @@ public final class Static107 {
 	public static int[] anIntArray136 = new int[2];
 
 	@OriginalMember(owner = "client!g", name = "a", descriptor = "(Lclient!wm;IIIIIIILclient!gn;IZ)Lclient!gn;")
-	public static Model method2237(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Model arg8, @OriginalArg(9) int arg9) {
+	public static Model method2237(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Model arg8, @OriginalArg(9) int arg9) {
 		@Pc(6) long local6 = (long) arg4;
 		@Pc(12) Model local12 = (Model) Static133.aClass98_17.get(local6);
 		if (local12 == null) {

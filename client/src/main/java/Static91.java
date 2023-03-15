@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static91 {
 
 	@OriginalMember(owner = "client!f", name = "x", descriptor = "Lclient!vj;")
-	public static Class2_Sub2_Sub17 aClass2_Sub2_Sub17_1;
+	public static Map aClass2_Sub2_Sub17_1;
 
 	@OriginalMember(owner = "client!f", name = "F", descriptor = "Lclient!od;")
 	public static MidiPcmStream aClass2_Sub12_Sub3_1;
@@ -14,9 +14,6 @@ public final class Static91 {
 
 	@OriginalMember(owner = "client!f", name = "G", descriptor = "Ljava/lang/String;")
 	public static String aString18 = null;
-
-	@OriginalMember(owner = "client!f", name = "H", descriptor = "I")
-	public static int anInt1910 = -1;
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(I)V")
 	public static void method1962() {

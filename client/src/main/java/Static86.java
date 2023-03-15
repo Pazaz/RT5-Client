@@ -2,9 +2,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static86 {
 
-	@OriginalMember(owner = "client!eq", name = "E", descriptor = "I")
-	public static int anInt1868;
-
 	@OriginalMember(owner = "client!eq", name = "t", descriptor = "Z")
 	public static boolean aBoolean133 = false;
 

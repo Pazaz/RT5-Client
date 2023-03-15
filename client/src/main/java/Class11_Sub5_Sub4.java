@@ -58,7 +58,7 @@ public final class Class11_Sub5_Sub4 extends Entity {
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
-	public void method6070(@OriginalArg(0) Class19 arg0) {
+	public void method6070(@OriginalArg(0) TextureProvider arg0) {
 		@Pc(9) Model local9 = this.method5874(0, arg0);
 		if (local9 != null) {
 			this.method5873(local9, arg0);
@@ -72,7 +72,7 @@ public final class Class11_Sub5_Sub4 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(Lclient!gn;Lclient!wm;Z)V")
-	private void method5873(@OriginalArg(0) Model arg0, @OriginalArg(1) Class19 arg1) {
+	private void method5873(@OriginalArg(0) Model arg0, @OriginalArg(1) TextureProvider arg1) {
 		@Pc(6) Class114[] local6 = arg0.method3808();
 		@Pc(9) Class163[] local9 = arg0.method3840();
 		if ((this.aClass12_Sub5_7 == null || this.aClass12_Sub5_7.aBoolean322) && (local6 != null || local9 != null)) {
@@ -86,7 +86,7 @@ public final class Class11_Sub5_Sub4 extends Entity {
 
 	@OriginalMember(owner = "client!uh", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
-	public Class12_Sub4 method6073(@OriginalArg(0) Class19 arg0) {
+	public Class12_Sub4 method6073(@OriginalArg(0) TextureProvider arg0) {
 		@Pc(9) Model local9 = this.method5874(1024, arg0);
 		if (local9 == null) {
 			return null;
@@ -111,14 +111,14 @@ public final class Class11_Sub5_Sub4 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(ILclient!wm;Z)Lclient!gn;")
-	private Model method5874(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
+	private Model method5874(@OriginalArg(0) int arg0, @OriginalArg(1) TextureProvider arg1) {
 		@Pc(9) SpotAnimType local9 = client.SpotAnimTypes.method5407(this.anInt6505);
 		return this.aBoolean445 ? local9.method2433(-1, 0, arg1, arg0, client.SeqTypes, -1) : local9.method2433(this.anInt6510, this.anInt6524, arg1, arg0, client.SeqTypes, this.anInt6509);
 	}
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		throw new IllegalStateException();
 	}
 
@@ -158,7 +158,7 @@ public final class Class11_Sub5_Sub4 extends Entity {
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
-	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class19 arg2) {
+	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) TextureProvider arg2) {
 		return false;
 	}
 }

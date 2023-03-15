@@ -28,7 +28,7 @@ public final class Static121 {
 			return;
 		}
 		if (client.preferences.aBoolean351) {
-			Static31.aFloat28 = (int) Static31.aFloat28 - 17 & 0xFFFFFFF0;
+			Camera.pitchTarget = (int) Camera.pitchTarget - 17 & 0xFFFFFFF0;
 		} else {
 			Static296.aFloat68 += (-Static296.aFloat68 - 12.0F) / 2.0F;
 		}

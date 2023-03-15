@@ -27,7 +27,7 @@ public final class Static158 {
 				if (local39 == null) {
 					@Pc(47) Class48 local47 = Static396.method1682(client.jsArchive8, local27.anInt6454, 0);
 					if (local47 != null) {
-						local39 = Static190.aClass19_8.method2891(local47);
+						local39 = Rasteriser.textureProvider.method2891(local47);
 						Static210.aClass98_31.put((long) local27.anInt6454, local39);
 					}
 				}

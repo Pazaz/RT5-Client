@@ -86,7 +86,7 @@ public final class Class2_Sub26_Sub1 extends Class2_Sub26 {
 			@Pc(23) int local23 = arg0 * this.anInt4375 / 50 + this.anInt4385 & 0x7FF;
 			@Pc(26) int local26 = this.anInt4377;
 			if (local26 == 1) {
-				local9 = (Class19.anIntArray178[local23 << 3] >> 5) + 1024;
+				local9 = (TextureProvider.anIntArray178[local23 << 3] >> 5) + 1024;
 			} else if (local26 == 3) {
 				local9 = Static202.anIntArray220[local23] >> 1;
 			} else if (local26 == 4) {

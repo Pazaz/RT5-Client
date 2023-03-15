@@ -13,7 +13,7 @@ public final class Static350 {
 		Static140.aBoolean187 = true;
 		Static100.aBoolean156 = true;
 		if (client.preferences.aBoolean351) {
-			Static31.aFloat28 = (int) Static31.aFloat28 + 47 & 0xFFFFFFF0;
+			Camera.pitchTarget = (int) Camera.pitchTarget + 47 & 0xFFFFFFF0;
 		} else {
 			Static296.aFloat68 += (12.0F - Static296.aFloat68) / 2.0F;
 		}

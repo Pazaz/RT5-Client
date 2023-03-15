@@ -30,6 +30,6 @@ public final class Static227 {
 			}
 		}
 		Static107.anInt2220 = local51 + 8;
-		Static352.anInt6519 = Static268.anInt4959 * 16 + (Static270.aBoolean371 ? 26 : 22);
+		Static352.anInt6519 = Static268.anInt4959 * 16 + (InterfaceList.aBoolean371 ? 26 : 22);
 	}
 }

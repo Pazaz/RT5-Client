@@ -95,10 +95,4 @@ public final class Static319 {
 		return local30;
 	}
 
-	@OriginalMember(owner = "client!sk", name = "c", descriptor = "(B)V")
-	public static void method5435() {
-		if (LoginManager.loginStep == 5) {
-			LoginManager.loginStep = 6;
-		}
-	}
 }

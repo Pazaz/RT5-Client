@@ -34,7 +34,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 	private Class2_Sub2_Sub4 aClass2_Sub2_Sub4_1;
 
 	@OriginalMember(owner = "client!bm", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIZIZ)V")
-	public Class11_Sub2_Sub1(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) int arg7, @OriginalArg(8) boolean arg8) {
+	public Class11_Sub2_Sub1(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) int arg7, @OriginalArg(8) boolean arg8) {
 		super(arg3, arg4, arg5, arg1.aBoolean109, arg1.aBoolean108);
 		this.aByte3 = (byte) arg7;
 		this.aByte2 = (byte) arg2;
@@ -44,7 +44,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 		this.aBoolean65 = arg6;
 		this.aBoolean64 = arg8;
 		this.aShort1 = (short) arg1.anInt1351;
-		this.aBoolean66 = arg0.method2878() && arg1.aBoolean110 && !this.aBoolean65 && client.preferences.anInt4886 != 0;
+		this.aBoolean66 = arg0.method2878() && arg1.aBoolean110 && !this.aBoolean65 && client.preferences.sceneryShadowsType != 0;
 		@Pc(70) int local70 = 1024;
 		if (this.aBoolean64) {
 			local70 |= 0x8000;
@@ -82,7 +82,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 	}
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IILclient!wm;)Lclient!gn;")
-	private Model method936(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1) {
+	private Model method936(@OriginalArg(0) int arg0, @OriginalArg(2) TextureProvider arg1) {
 		if (this.aClass31_1 != null && arg1.method2863(this.aClass31_1.method3827(), arg0) == 0) {
 			return this.aClass31_1;
 		} else {
@@ -93,7 +93,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 
 	@OriginalMember(owner = "client!bm", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
-	public Class12_Sub4 method6073(@OriginalArg(0) Class19 arg0) {
+	public Class12_Sub4 method6073(@OriginalArg(0) TextureProvider arg0) {
 		if (this.aClass31_1 == null) {
 			return null;
 		}
@@ -109,7 +109,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		if (arg5 instanceof Class11_Sub2_Sub1) {
 			@Pc(12) Class11_Sub2_Sub1 local12 = (Class11_Sub2_Sub1) arg5;
 			if (this.aClass31_1 != null && local12.aClass31_1 != null) {
@@ -120,7 +120,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(BLclient!wm;)V")
 	@Override
-	public void method6087(@OriginalArg(1) Class19 arg0) {
+	public void method6087(@OriginalArg(1) TextureProvider arg0) {
 		@Pc(32) Class2_Sub2_Sub4 local32;
 		if (this.aClass2_Sub2_Sub4_1 == null && this.aBoolean66) {
 			@Pc(25) Class105 local25 = this.method940(131072, true, arg0);
@@ -144,7 +144,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(ILclient!wm;I)Lclient!gn;")
 	@Override
-	public Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
+	public Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) TextureProvider arg1) {
 		return this.method936(arg0, arg1);
 	}
 
@@ -162,7 +162,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(Lclient!wm;I)V")
 	@Override
-	public void method6083(@OriginalArg(0) Class19 arg0) {
+	public void method6083(@OriginalArg(0) TextureProvider arg0) {
 		@Pc(29) Class2_Sub2_Sub4 local29;
 		if (this.aClass2_Sub2_Sub4_1 == null && this.aBoolean66) {
 			@Pc(22) Class105 local22 = this.method940(131072, true, arg0);
@@ -177,7 +177,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 	}
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IZLclient!wm;I)Lclient!ij;")
-	private Class105 method940(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2) {
+	private Class105 method940(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) TextureProvider arg2) {
 		@Pc(18) LocType local18 = client.LocTypes.get(this.aShort1 & 0xFFFF);
 		@Pc(26) Class6 local26;
 		@Pc(34) Class6 local34;
@@ -197,12 +197,12 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
-	public void method6070(@OriginalArg(0) Class19 arg0) {
+	public void method6070(@OriginalArg(0) TextureProvider arg0) {
 	}
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
-	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class19 arg2) {
+	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) TextureProvider arg2) {
 		@Pc(14) Model local14 = this.method936(65536, arg2);
 		if (local14 == null) {
 			return false;

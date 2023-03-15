@@ -61,7 +61,7 @@ public final class Class112 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(Lclient!wm;IIIIII)V")
-	public void method2916(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+	public void method2916(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		if (this.aClass13_11 == null) {
 			return;
 		}
@@ -81,7 +81,7 @@ public final class Class112 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(Lclient!wm;Lclient!ja;)V")
-	private void method2918(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class112 arg1) {
+	private void method2918(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Class112 arg1) {
 		Static157.method2923(arg0);
 		Static157.method2925(arg0);
 		arg0.method2851(Static157.anIntArray180);
@@ -106,15 +106,15 @@ public final class Class112 {
 		@Pc(84) int local84;
 		@Pc(94) int local94;
 		if (this.anInt2875 != 0) {
-			local79 = Class19.anIntArray178[this.anInt2875];
-			local84 = Class19.anIntArray177[this.anInt2875];
+			local79 = TextureProvider.anIntArray178[this.anInt2875];
+			local84 = TextureProvider.anIntArray177[this.anInt2875];
 			local94 = local33 * local84 - local35 * local79 >> 15;
 			local35 = local33 * local79 + local35 * local84 >> 15;
 			local33 = local94;
 		}
 		if (this.anInt2871 != 0) {
-			local79 = Class19.anIntArray178[this.anInt2871];
-			local84 = Class19.anIntArray177[this.anInt2871];
+			local79 = TextureProvider.anIntArray178[this.anInt2871];
+			local84 = TextureProvider.anIntArray177[this.anInt2871];
 			local94 = local35 * local79 + local31 * local84 >> 15;
 			local35 = local35 * local84 - local31 * local79 >> 15;
 			local31 = local94;
@@ -149,7 +149,7 @@ public final class Class112 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "b", descriptor = "(Lclient!wm;Lclient!ja;)V")
-	private void method2919(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class112 arg1) {
+	private void method2919(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Class112 arg1) {
 		@Pc(6) Class185 local6 = Static298.method2426(Static336.aClass197_90, this.anInt2876);
 		if (local6 == null) {
 			return;
@@ -177,16 +177,16 @@ public final class Class112 {
 		@Pc(99) int local99;
 		if (this.anInt2875 != 0) {
 			local81 = -this.anInt2875 & 0x3FFF;
-			local85 = Class19.anIntArray178[local81];
-			local89 = Class19.anIntArray177[local81];
+			local85 = TextureProvider.anIntArray178[local81];
+			local89 = TextureProvider.anIntArray177[local81];
 			local99 = local34 * local89 - local36 * local85 >> 15;
 			local36 = local34 * local85 + local36 * local89 >> 15;
 			local34 = local99;
 		}
 		if (this.anInt2871 != 0) {
 			local81 = -this.anInt2871 & 0x3FFF;
-			local85 = Class19.anIntArray178[local81];
-			local89 = Class19.anIntArray177[local81];
+			local85 = TextureProvider.anIntArray178[local81];
+			local89 = TextureProvider.anIntArray177[local81];
 			local99 = local36 * local85 + local32 * local89 >> 15;
 			local36 = local36 * local89 - local32 * local85 >> 15;
 			local32 = local99;
@@ -215,7 +215,7 @@ public final class Class112 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "c", descriptor = "(Lclient!wm;Lclient!ja;)Z")
-	private boolean method2922(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class112 arg1) {
+	private boolean method2922(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Class112 arg1) {
 		if (this.aClass13_11 == null) {
 			if (this.anInt2877 == 0) {
 				if (Static274.anInterface2_7.method2657(this.anInt2876)) {
@@ -232,7 +232,7 @@ public final class Class112 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "d", descriptor = "(Lclient!wm;Lclient!ja;)Z")
-	public boolean method2924(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class112 arg1) {
+	public boolean method2924(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Class112 arg1) {
 		return this.aClass13_11 != null || this.method2922(arg0, arg1);
 	}
 

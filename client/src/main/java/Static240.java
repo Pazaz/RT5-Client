@@ -19,7 +19,7 @@ public final class Static240 {
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(Lclient!jg;Lclient!np;Lclient!wm;I)V")
-	public static void method4184(@OriginalArg(0) Class2_Sub20 arg0, @OriginalArg(1) MelType arg1, @OriginalArg(2) Class19 arg2) {
+	public static void method4184(@OriginalArg(0) Class2_Sub20 arg0, @OriginalArg(1) MelType arg1, @OriginalArg(2) TextureProvider arg2) {
 		@Pc(10) Sprite local10 = arg1.method4183(arg2);
 		if (local10 == null) {
 			return;
@@ -51,19 +51,19 @@ public final class Static240 {
 		}
 		local51 = arg0.anInt2948 + local16 / 2;
 		@Pc(112) int local112 = arg0.anInt2944;
-		if (local28 < Static344.anInt6050 + local16) {
-			local51 = Static344.anInt6050 + local16 / 2 + local35 / 2 + 10 + 5;
-			local28 = Static344.anInt6050;
-		} else if (Static344.anInt6051 - local16 < local28) {
-			local51 = Static344.anInt6051 - local16 / 2 - local35 / 2 - 10 - 5;
-			local28 = Static344.anInt6051 - local16;
+		if (local28 < MapList.anInt6050 + local16) {
+			local51 = MapList.anInt6050 + local16 / 2 + local35 / 2 + 10 + 5;
+			local28 = MapList.anInt6050;
+		} else if (MapList.anInt6051 - local16 < local28) {
+			local51 = MapList.anInt6051 - local16 / 2 - local35 / 2 - 10 - 5;
+			local28 = MapList.anInt6051 - local16;
 		}
-		if (local16 + Static344.anInt6053 > local31) {
-			local112 = local16 / 2 + Static344.anInt6053 + 10;
-			local31 = Static344.anInt6053;
-		} else if (Static344.anInt6061 - local16 < local31) {
-			local112 = Static344.anInt6061 - local37 - local16 / 2 - 10;
-			local31 = Static344.anInt6061 - local16;
+		if (local16 + MapList.anInt6053 > local31) {
+			local112 = local16 / 2 + MapList.anInt6053 + 10;
+			local31 = MapList.anInt6053;
+		} else if (MapList.anInt6061 - local16 < local31) {
+			local112 = MapList.anInt6061 - local37 - local16 / 2 - 10;
+			local31 = MapList.anInt6061 - local16;
 		}
 		local78 = (int) (Math.atan2((double) (local28 - arg0.anInt2948), (double) (local31 - arg0.anInt2944)) / 3.141592653589793D * 32767.0D) & 0xFFFF;
 		local10.method6386((float) local16 / 2.0F + (float) local28, (float) local31 + (float) local16 / 2.0F, 4096, local78);

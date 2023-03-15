@@ -3,10 +3,10 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!nj")
-public abstract class Class123 {
+public abstract class KeyboardBase {
 
 	@OriginalMember(owner = "client!nj", name = "<init>", descriptor = "()V")
-	protected Class123() {
+	protected KeyboardBase() {
 	}
 
 	@OriginalMember(owner = "client!nj", name = "b", descriptor = "(I)V")
@@ -19,5 +19,5 @@ public abstract class Class123 {
 	public abstract Class37 method3342();
 
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(BI)Z")
-	public abstract boolean method3343(@OriginalArg(1) int arg0);
+	public abstract boolean isPressed(@OriginalArg(1) int arg0);
 }

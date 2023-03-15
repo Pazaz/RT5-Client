@@ -8,7 +8,7 @@ public final class Static333 {
 	public static Sprite aClass13_21;
 
 	@OriginalMember(owner = "client!tg", name = "K", descriptor = "[Ljava/lang/String;")
-	public static String[] aStringArray67;
+	public static String[] playerNames2;
 
 	@OriginalMember(owner = "client!tg", name = "m", descriptor = "Lclient!hu;")
 	public static final LruHashTable aClass98_65 = new LruHashTable(20);
@@ -16,21 +16,6 @@ public final class Static333 {
 	@OriginalMember(owner = "client!tg", name = "a", descriptor = "(B)Z")
 	public static boolean method6318() {
 		return Static14.aBoolean24;
-	}
-
-	@OriginalMember(owner = "client!tg", name = "f", descriptor = "(I)I")
-	public static int method6331() {
-		if ((double) Static344.aFloat73 == 3.0D) {
-			return 37;
-		} else if ((double) Static344.aFloat73 == 4.0D) {
-			return 50;
-		} else if ((double) Static344.aFloat73 == 6.0D) {
-			return 75;
-		} else if ((double) Static344.aFloat73 == 8.0D) {
-			return 100;
-		} else {
-			return 200;
-		}
 	}
 
 	@OriginalMember(owner = "client!tg", name = "a", descriptor = "(ILclient!r;)I")

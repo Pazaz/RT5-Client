@@ -43,7 +43,7 @@ public final class Static57 {
 	@OriginalMember(owner = "client!df", name = "a", descriptor = "(I)V")
 	public static void method1620() {
 		if (Static215.anInt3795 == 2) {
-			Static309.anInt5802 = 96;
+			GameShell.maxMemory = 96;
 			return;
 		}
 		try {
@@ -52,7 +52,7 @@ public final class Static57 {
 				try {
 					@Pc(33) Runtime local33 = Runtime.getRuntime();
 					@Pc(39) Long local39 = (Long) local29.invoke(local33, (Object[]) null);
-					Static309.anInt5802 = (int) (local39 / 1048576L) + 1;
+					GameShell.maxMemory = (int) (local39 / 1048576L) + 1;
 					return;
 				} catch (@Pc(49) Throwable local49) {
 					return;

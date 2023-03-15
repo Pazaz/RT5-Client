@@ -47,7 +47,7 @@ public final class Static241 {
 					for (local90 = 4; local90 >= 0; local90--) {
 						if (local80[local90] != null && (client.GAME_RS != client.game || !local80[local90].equalsIgnoreCase(Static378.aClass79_146.getLocalized(client.language)))) {
 							@Pc(110) byte local110 = 0;
-							@Pc(112) int local112 = Static91.anInt1910;
+							@Pc(112) int local112 = Minimap.anInt1910;
 							if (local90 == 0) {
 								local110 = 5;
 							}
@@ -118,33 +118,33 @@ public final class Static241 {
 
 	@OriginalMember(owner = "client!nq", name = "a", descriptor = "(ZI)V")
 	public static void method4192(@OriginalArg(0) boolean arg0) {
-		if (arg0 && Static344.aClass2_Sub2_Sub17_3 != null) {
-			Static97.anInt2034 = Static344.aClass2_Sub2_Sub17_3.anInt6869;
+		if (arg0 && MapList.aClass2_Sub2_Sub17_3 != null) {
+			Static97.anInt2034 = MapList.aClass2_Sub2_Sub17_3.anInt6869;
 		} else {
 			Static97.anInt2034 = -1;
 		}
 		Static227.aClass161_11 = null;
-		Static344.aClass2_Sub2_Sub17_3 = null;
-		Static355.anInt6581 = 0;
+		MapList.aClass2_Sub2_Sub17_3 = null;
+		WorldMap.loadPercentage = 0;
 		Static197.aClass135_24 = null;
-		Static344.method5513();
-		Static344.aClass135_36.clear();
+		MapList.method5513();
+		MapList.aClass135_36.clear();
 		Static27.aClass113_2 = null;
 		Static249.aClass113_8 = null;
 		Static30.aClass113_3 = null;
 		Static77.anInt1763 = -1;
 		Static74.aClass113_4 = null;
-		Static344.aClass103_5 = null;
+		MapList.aClass103_5 = null;
 		Static2.aClass113_1 = null;
 		Static238.anInt4328 = -1;
 		Static369.aClass113_9 = null;
 		Static175.aClass113_6 = null;
 		Static107.aClass113_5 = null;
 		Static371.aClass13_20 = null;
-		Static344.aClass125_4.method3380();
-		Static344.aClass104_4.method2702(64, 64);
-		Static344.aClass125_4.method3377(64, 128);
-		Static344.aClass202_3.method5161(64);
+		MapList.aClass125_4.method3380();
+		MapList.aClass104_4.method2702(64, 64);
+		MapList.aClass125_4.method3377(64, 128);
+		MapList.aClass202_3.method5161(64);
 		client.VarbitTypes.method3392(64);
 	}
 

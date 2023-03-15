@@ -79,7 +79,7 @@ public final class ObjTypeList {
 	}
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(IIILclient!jo;Lclient!wm;III)Lclient!jd;")
-	public Sprite method2758(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) PlayerAppearance arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
+	public Sprite method2758(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) PlayerAppearance arg2, @OriginalArg(4) TextureProvider arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		this.aClass53_1.aBoolean128 = arg2 != null;
 		this.aClass53_1.anInt1645 = arg6;
 		this.aClass53_1.anInt1644 = arg1;
@@ -146,7 +146,7 @@ public final class ObjTypeList {
 	}
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(I)V")
-	public void method2760() {
+	public void clearSprites() {
 		@Pc(6) SoftLruHashTable local6 = this.aClass97_1;
 		synchronized (this.aClass97_1) {
 			this.aClass97_1.clear();
@@ -203,7 +203,7 @@ public final class ObjTypeList {
 	}
 
 	@OriginalMember(owner = "client!io", name = "b", descriptor = "(B)V")
-	public void method2767() {
+	public void clearModels() {
 		@Pc(2) LruHashTable local2 = this.aClass98_22;
 		synchronized (this.aClass98_22) {
 			this.aClass98_22.method2614();
@@ -211,7 +211,7 @@ public final class ObjTypeList {
 	}
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(ILclient!ur;ILclient!wm;ZIZLclient!jo;ILclient!wm;IB)Lclient!jd;")
-	public Sprite method2769(@OriginalArg(0) int arg0, @OriginalArg(1) BitmapFont arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) PlayerAppearance arg7, @OriginalArg(8) int arg8, @OriginalArg(9) Class19 arg9, @OriginalArg(10) int arg10) {
+	public Sprite method2769(@OriginalArg(0) int arg0, @OriginalArg(1) BitmapFont arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) PlayerAppearance arg7, @OriginalArg(8) int arg8, @OriginalArg(9) TextureProvider arg9, @OriginalArg(10) int arg10) {
 		@Pc(22) Sprite local22 = this.method2758(arg8, arg0, arg7, arg3, arg5, arg10, arg2);
 		if (local22 != null) {
 			return local22;

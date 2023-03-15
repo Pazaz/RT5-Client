@@ -26,7 +26,7 @@ public final class Static18 {
 	public static int anInt530 = 0;
 
 	@OriginalMember(owner = "client!bb", name = "a", descriptor = "(ILjava/awt/Component;)Lclient!nj;")
-	public static Class123 method556(@OriginalArg(1) Component arg0) {
-		return new Class123_Sub1(arg0);
+	public static KeyboardBase method556(@OriginalArg(1) Component arg0) {
+		return new Keyboard(arg0);
 	}
 }

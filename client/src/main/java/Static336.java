@@ -56,7 +56,7 @@ public final class Static336 {
 			Static322.method5485();
 		}
 		if (arg0 == 5) {
-			Static348.method5830(client.jsArchive8, Static190.aClass19_8);
+			Static348.method5830(client.jsArchive8, Rasteriser.textureProvider);
 		} else {
 			Static67.method1772();
 		}
@@ -64,11 +64,11 @@ public final class Static336 {
 		@Pc(165) boolean local165 = client.gameState == 5 || client.gameState == 10 || client.gameState == 28;
 		if (local146 != local165) {
 			if (local146) {
-				Static171.anInt3268 = MusicPlayer.titleSong;
-				if (client.preferences.anInt4889 == 0) {
+				MusicPlayer.groupId = MusicPlayer.titleSong;
+				if (client.preferences.musicVolume == 0) {
 					Static174.method1507();
 				} else {
-					Static249.method4150(client.preferences.anInt4889, client.jsArchive6, MusicPlayer.titleSong);
+					Static249.method4150(client.preferences.musicVolume, client.jsArchive6, MusicPlayer.titleSong);
 				}
 				client.js5NetQueue.writeLoggedIn(false);
 			} else {
@@ -77,7 +77,7 @@ public final class Static336 {
 			}
 		}
 		if (arg0 == 25 || arg0 == 28 || arg0 == 40) {
-			Static190.aClass19_8.method2804();
+			Rasteriser.textureProvider.method2804();
 		}
 		client.gameState = arg0;
 	}

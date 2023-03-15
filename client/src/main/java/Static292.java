@@ -78,7 +78,7 @@ public final class Static292 {
 	}
 
 	@OriginalMember(owner = "client!qr", name = "a", descriptor = "(Lclient!ci;BLclient!r;)V")
-	public static void method5037(@OriginalArg(0) TextureProvider arg0, @OriginalArg(2) Js5 arg1) {
+	public static void method5037(@OriginalArg(0) TextureProviderInterface arg0, @OriginalArg(2) Js5 arg1) {
 		Static274.anInterface2_7 = arg0;
 		Static336.aClass197_90 = arg1;
 	}

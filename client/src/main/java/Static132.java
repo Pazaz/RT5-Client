@@ -13,9 +13,6 @@ public final class Static132 {
 	@OriginalMember(owner = "client!hk", name = "h", descriptor = "Z")
 	public static boolean aBoolean180 = false;
 
-	@OriginalMember(owner = "client!hk", name = "i", descriptor = "[I")
-	public static final int[] anIntArray162 = new int[100];
-
 	@OriginalMember(owner = "client!hk", name = "j", descriptor = "I")
 	public static int anInt2468 = -2;
 

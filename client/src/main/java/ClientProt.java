@@ -130,7 +130,7 @@ public final class ClientProt {
 	@OriginalMember(owner = "client!f", name = "b", descriptor = "Lclient!mc;")
 	public static final ClientProt EVENT_MOUSE_MOVE = new ClientProt(61, -1);
 	@OriginalMember(owner = "client!br", name = "X", descriptor = "Lclient!mc;")
-	public static final ClientProt PACKET_62 = new ClientProt(62, 3);
+	public static final ClientProt SET_CHATFILTERSETTINGS = new ClientProt(62, 3);
 	@OriginalMember(owner = "client!gg", name = "C", descriptor = "Lclient!mc;")
 	public static final ClientProt PACKET_63 = new ClientProt(63, 8);
 	@OriginalMember(owner = "client!ao", name = "B", descriptor = "Lclient!mc;")
@@ -160,7 +160,7 @@ public final class ClientProt {
 	@OriginalMember(owner = "client!nt", name = "P", descriptor = "Lclient!mc;")
 	public static final ClientProt CLIENT_CHEAT = new ClientProt(76, -1);
 	@OriginalMember(owner = "client!ta", name = "p", descriptor = "Lclient!mc;")
-	public static final ClientProt PACKET_77 = new ClientProt(77, -1);
+	public static final ClientProt BUG_REPORT = new ClientProt(77, -1);
 	@OriginalMember(owner = "client!nn", name = "V", descriptor = "Lclient!mc;")
 	public static final ClientProt MOVE_GAMECLICK = new ClientProt(78, 5);
 	@OriginalMember(owner = "client!we", name = "J", descriptor = "Lclient!mc;")

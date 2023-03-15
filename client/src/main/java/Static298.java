@@ -9,24 +9,24 @@ public final class Static298 {
 
 	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(I)V")
 	public static void method2422() {
-		if (Static151.anInt2772 < 0) {
+		if (WorldMap.anInt2772 < 0) {
 			Static77.anInt1763 = -1;
 			Static238.anInt4328 = -1;
-			Static151.anInt2772 = 0;
+			WorldMap.anInt2772 = 0;
 		}
-		if (Static344.anInt6056 < Static151.anInt2772) {
+		if (MapList.anInt6056 < WorldMap.anInt2772) {
 			Static77.anInt1763 = -1;
 			Static238.anInt4328 = -1;
-			Static151.anInt2772 = Static344.anInt6056;
+			WorldMap.anInt2772 = MapList.anInt6056;
 		}
-		if (Static96.anInt2003 < 0) {
+		if (WorldMap.anInt2003 < 0) {
 			Static77.anInt1763 = -1;
-			Static96.anInt2003 = 0;
+			WorldMap.anInt2003 = 0;
 			Static238.anInt4328 = -1;
 		}
-		if (Static96.anInt2003 > Static344.anInt6052) {
+		if (WorldMap.anInt2003 > MapList.anInt6052) {
 			Static77.anInt1763 = -1;
-			Static96.anInt2003 = Static344.anInt6052;
+			WorldMap.anInt2003 = MapList.anInt6052;
 			Static238.anInt4328 = -1;
 		}
 	}

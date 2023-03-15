@@ -46,23 +46,23 @@ public final class Static220 {
 	@OriginalMember(owner = "client!mq", name = "a", descriptor = "(ILjava/lang/String;ILjava/lang/String;IILjava/lang/String;Ljava/lang/String;)V")
 	public static void method3874(@OriginalArg(0) int flags, @OriginalArg(1) String unkStr, @OriginalArg(3) String message, @OriginalArg(4) int unkInt, @OriginalArg(5) int type, @OriginalArg(6) String msg2, @OriginalArg(7) String msg3) {
 		for (@Pc(3) int local3 = 99; local3 > 0; local3--) {
-			Static291.MSG_TYPE[local3] = Static291.MSG_TYPE[local3 - 1];
+			Chat.types[local3] = Chat.types[local3 - 1];
 			Static18.MSG_TIMESTAMPS[local3] = Static18.MSG_TIMESTAMPS[local3 - 1];
-			Static42.MSG_TERTIARY[local3] = Static42.MSG_TERTIARY[local3 - 1];
+			Chat.names[local3] = Chat.names[local3 - 1];
 			Static169.MSG_SECONDARY[local3] = Static169.MSG_SECONDARY[local3 - 1];
-			Static88.MSG_PRIMARY[local3] = Static88.MSG_PRIMARY[local3 - 1];
-			Static135.aStringArray20[local3] = Static135.aStringArray20[local3 - 1];
-			Static132.anIntArray162[local3] = Static132.anIntArray162[local3 - 1];
+			Chat.messages[local3] = Chat.messages[local3 - 1];
+			Chat.clans[local3] = Chat.clans[local3 - 1];
+			Chat.phraseIds[local3] = Chat.phraseIds[local3 - 1];
 		}
-		Static291.MSG_TYPE[0] = type;
-		Static42.MSG_TERTIARY[0] = msg3;
+		Chat.types[0] = type;
+		Chat.names[0] = msg3;
 		Static18.MSG_TIMESTAMPS[0] = flags;
 		Static169.MSG_SECONDARY[0] = msg2;
-		Static88.MSG_PRIMARY[0] = message;
+		Chat.messages[0] = message;
 		Static21.anInt551 = Static88.transmitTimer;
-		Static226.anInt4016++;
-		Static135.aStringArray20[0] = unkStr;
-		Static132.anIntArray162[0] = unkInt;
+		Chat.size++;
+		Chat.clans[0] = unkStr;
+		Chat.phraseIds[0] = unkInt;
 	}
 
 	@OriginalMember(owner = "client!mq", name = "a", descriptor = "(ZII)I")

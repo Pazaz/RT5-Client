@@ -75,14 +75,14 @@ public final class Static165 {
 	}
 
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(ILclient!wm;)V")
-	public static void method3156(@OriginalArg(1) Class19 arg0) {
+	public static void method3156(@OriginalArg(1) TextureProvider arg0) {
 		if (Static268.anInt4959 < 2 && !Static330.aBoolean419 || Static375.aClass161_14 != null) {
 			return;
 		}
 		@Pc(41) String local41;
 		if (Static330.aBoolean419 && Static268.anInt4959 < 2) {
 			local41 = Static91.aString18 + Static161.aClass79_67.getLocalized(client.language) + Static371.aString68 + " ->";
-		} else if (Static148.aBoolean192 && Static174.aClass123_2.method3343(81) && Static268.anInt4959 > 2) {
+		} else if (Static148.aBoolean192 && Keyboard.instance.isPressed(81) && Static268.anInt4959 > 2) {
 			local41 = Static318.method5421((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev.prev);
 		} else {
 			@Pc(68) Class2_Sub5 local68 = (Class2_Sub5) Static129.aClass135_19.aClass2_130.prev;

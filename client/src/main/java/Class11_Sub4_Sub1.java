@@ -26,7 +26,7 @@ public final class Class11_Sub4_Sub1 extends Class11_Sub4 {
 
 	@OriginalMember(owner = "client!n", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
-	public Class12_Sub4 method6073(@OriginalArg(0) Class19 arg0) {
+	public Class12_Sub4 method6073(@OriginalArg(0) TextureProvider arg0) {
 		@Pc(6) Class14 local6 = arg0.method2808();
 		local6.method3922(super.anInt3968, super.anInt3965, super.anInt3967);
 		@Pc(18) Class12_Sub4 local18 = Static147.method2706(3);
@@ -52,7 +52,7 @@ public final class Class11_Sub4_Sub1 extends Class11_Sub4 {
 
 	@OriginalMember(owner = "client!n", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
-	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class19 arg2) {
+	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) TextureProvider arg2) {
 		@Pc(11) Class14 local11 = arg2.method2808();
 		local11.method3922(super.anInt3968, super.anInt3965, super.anInt3967);
 		@Pc(36) Model local36 = client.ObjTypes.get(this.anInt3985).method4776(0, 65536, -1, null, arg2, this.anInt3984, null, 0);
@@ -76,6 +76,6 @@ public final class Class11_Sub4_Sub1 extends Class11_Sub4 {
 
 	@OriginalMember(owner = "client!n", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
-	public void method6070(@OriginalArg(0) Class19 arg0) {
+	public void method6070(@OriginalArg(0) TextureProvider arg0) {
 	}
 }

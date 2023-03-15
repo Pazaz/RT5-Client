@@ -59,7 +59,7 @@ public final class Class43 {
 	}
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(IILclient!wm;IIIIIII)V")
-	public void method1612(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {
+	public void method1612(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) TextureProvider arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {
 		@Pc(8) int local8 = arg0 + arg1 & 0x3FFF;
 		if (this.anInt1457 == -1) {
 			arg2.method2901(arg6, arg8, arg7, arg3, arg5, 0);
@@ -100,7 +100,7 @@ public final class Class43 {
 	}
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(BILclient!wm;)Z")
-	public boolean method1617(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1) {
+	public boolean method1617(@OriginalArg(1) int arg0, @OriginalArg(2) TextureProvider arg1) {
 		if (arg0 != this.anInt1459) {
 			this.anInt1459 = arg0;
 			@Pc(20) int local20 = Static162.method2977(arg0);

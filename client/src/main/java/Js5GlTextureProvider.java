@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ia")
-public final class Js5GlTextureProvider implements TextureProvider {
+public final class Js5GlTextureProvider implements TextureProviderInterface {
 
 	@OriginalMember(owner = "client!ia", name = "b", descriptor = "Lclient!jm;")
 	private final Class116 aClass116_4 = new Class116(256);

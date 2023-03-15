@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!tb")
-public final class Class2_Sub2_Sub16 extends SecondaryNode {
+public final class QuickChatPhraseType extends SecondaryNode {
 
 	@OriginalMember(owner = "client!tb", name = "F", descriptor = "[Ljava/lang/String;")
 	private String[] aStringArray56;
@@ -16,7 +16,7 @@ public final class Class2_Sub2_Sub16 extends SecondaryNode {
 	private int[][] anIntArrayArray52;
 
 	@OriginalMember(owner = "client!tb", name = "T", descriptor = "[I")
-	public int[] anIntArray418;
+	public int[] automaticResponses;
 
 	@OriginalMember(owner = "client!tb", name = "K", descriptor = "Z")
 	public boolean aBoolean413 = true;
@@ -31,9 +31,9 @@ public final class Class2_Sub2_Sub16 extends SecondaryNode {
 		@Pc(29) int local29;
 		if (arg1 == 2) {
 			local23 = arg0.g1();
-			this.anIntArray418 = new int[local23];
+			this.automaticResponses = new int[local23];
 			for (local29 = 0; local29 < local23; local29++) {
-				this.anIntArray418[local29] = arg0.g2();
+				this.automaticResponses[local29] = arg0.g2();
 			}
 		} else if (arg1 == 3) {
 			local23 = arg0.g1();
@@ -53,12 +53,12 @@ public final class Class2_Sub2_Sub16 extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(II)I")
-	public int method5596(@OriginalArg(1) int arg0) {
+	public int getDynamicCommand(@OriginalArg(1) int arg0) {
 		return this.anIntArray417 == null || arg0 < 0 || this.anIntArray417.length < arg0 ? -1 : this.anIntArray417[arg0];
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(Lclient!bt;I[I)V")
-	public void method5597(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int[] arg1) {
+	public void encodeMessage(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int[] arg1) {
 		if (this.anIntArray417 == null) {
 			return;
 		}
@@ -66,7 +66,7 @@ public final class Class2_Sub2_Sub16 extends SecondaryNode {
 			if (arg1.length <= local19) {
 				return;
 			}
-			@Pc(28) int local28 = Static115.anIntArray234[this.method5596(local19)];
+			@Pc(28) int local28 = Static115.anIntArray234[this.getDynamicCommand(local19)];
 			if (local28 > 0) {
 				arg0.pVarLong(local28, (long) arg1[local19]);
 			}
@@ -85,7 +85,7 @@ public final class Class2_Sub2_Sub16 extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(IIB)I")
-	public int method5600(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public int getDynamicCommandParam(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		if (this.anIntArray417 == null || arg0 < 0 || this.anIntArray417.length < arg0) {
 			return -1;
 		} else if (this.anIntArrayArray52[arg0] == null || arg1 < 0 || arg1 > this.anIntArrayArray52[arg0].length) {
@@ -96,7 +96,7 @@ public final class Class2_Sub2_Sub16 extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "e", descriptor = "(B)Ljava/lang/String;")
-	public String method5601() {
+	public String getText() {
 		@Pc(10) StringBuffer local10 = new StringBuffer(80);
 		if (this.aStringArray56 == null) {
 			return "";
@@ -123,15 +123,15 @@ public final class Class2_Sub2_Sub16 extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "f", descriptor = "(B)I")
-	public int method5603() {
+	public int getDynamicCommandCount() {
 		return this.anIntArray417 == null ? 0 : this.anIntArray417.length;
 	}
 
 	@OriginalMember(owner = "client!tb", name = "g", descriptor = "(B)V")
 	public void method5604() {
-		if (this.anIntArray418 != null) {
-			for (@Pc(11) int local11 = 0; local11 < this.anIntArray418.length; local11++) {
-				this.anIntArray418[local11] |= 0x8000;
+		if (this.automaticResponses != null) {
+			for (@Pc(11) int local11 = 0; local11 < this.automaticResponses.length; local11++) {
+				this.automaticResponses[local11] |= 0x8000;
 			}
 		}
 	}

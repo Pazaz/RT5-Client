@@ -68,7 +68,7 @@ public final class Static371 {
 	}
 
 	@OriginalMember(owner = "client!vo", name = "a", descriptor = "(JILclient!wm;)V")
-	public static void method6257(@OriginalArg(0) long arg0, @OriginalArg(2) Class19 arg1) {
+	public static void method6257(@OriginalArg(0) long arg0, @OriginalArg(2) TextureProvider arg1) {
 		Static116.anInt2360 = 0;
 		Static336.anInt6313 = Static311.anInt5809;
 		Static311.anInt5809 = 0;

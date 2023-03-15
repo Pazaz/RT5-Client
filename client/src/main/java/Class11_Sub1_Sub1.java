@@ -22,7 +22,7 @@ public final class Class11_Sub1_Sub1 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
-	public void method6070(@OriginalArg(0) Class19 arg0) {
+	public void method6070(@OriginalArg(0) TextureProvider arg0) {
 	}
 
 	@OriginalMember(owner = "client!ao", name = "e", descriptor = "(I)V")
@@ -32,7 +32,7 @@ public final class Class11_Sub1_Sub1 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(ILclient!wm;I)Lclient!gn;")
 	@Override
-	public Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1) {
+	public Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) TextureProvider arg1) {
 		return null;
 	}
 
@@ -43,7 +43,7 @@ public final class Class11_Sub1_Sub1 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 	}
 
 	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(I)I")
@@ -60,13 +60,13 @@ public final class Class11_Sub1_Sub1 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
-	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class19 arg2) {
+	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) TextureProvider arg2) {
 		return false;
 	}
 
 	@OriginalMember(owner = "client!ao", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
-	public Class12_Sub4 method6073(@OriginalArg(0) Class19 arg0) {
+	public Class12_Sub4 method6073(@OriginalArg(0) TextureProvider arg0) {
 		return null;
 	}
 
@@ -78,7 +78,7 @@ public final class Class11_Sub1_Sub1 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(BLclient!wm;)V")
 	@Override
-	public void method6087(@OriginalArg(1) Class19 arg0) {
+	public void method6087(@OriginalArg(1) TextureProvider arg0) {
 	}
 
 	@OriginalMember(owner = "client!ao", name = "d", descriptor = "(I)I")
@@ -89,6 +89,6 @@ public final class Class11_Sub1_Sub1 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!ao", name = "a", descriptor = "(Lclient!wm;I)V")
 	@Override
-	public void method6083(@OriginalArg(0) Class19 arg0) {
+	public void method6083(@OriginalArg(0) TextureProvider arg0) {
 	}
 }

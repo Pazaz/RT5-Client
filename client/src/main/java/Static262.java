@@ -25,14 +25,14 @@ public final class Static262 {
 		}
 		local37 -= 10;
 		@Pc(66) int local66;
-		if (Static314.anInt5911 == 4) {
-			local66 = (int) Static277.aFloat67 & 0x3FFF;
+		if (Camera.anInt5911 == 4) {
+			local66 = (int) Camera.yawTarget & 0x3FFF;
 		} else {
-			local66 = (int) Static277.aFloat67 + Static6.anInt158 & 0x3FFF;
+			local66 = (int) Camera.yawTarget + Static6.anInt158 & 0x3FFF;
 		}
-		@Pc(77) int local77 = Class19.anIntArray178[local66];
-		@Pc(81) int local81 = Class19.anIntArray177[local66];
-		if (Static314.anInt5911 != 4) {
+		@Pc(77) int local77 = TextureProvider.anIntArray178[local66];
+		@Pc(81) int local81 = TextureProvider.anIntArray177[local66];
+		if (Camera.anInt5911 != 4) {
 			local77 = local77 * 256 / (Static97.anInt2005 + 256);
 			local81 = local81 * 256 / (Static97.anInt2005 + 256);
 		}

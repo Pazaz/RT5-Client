@@ -146,7 +146,7 @@ public final class MelType {
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(BLclient!wm;)Lclient!jd;")
-	public Sprite method4183(@OriginalArg(1) Class19 arg0) {
+	public Sprite method4183(@OriginalArg(1) TextureProvider arg0) {
 		@Pc(28) Sprite local28 = (Sprite) this.aClass125_2.aClass98_27.get((long) (this.anInt4413 | 0x20000 | arg0.anInt2836 << 29));
 		if (local28 != null) {
 			return local28;
@@ -294,7 +294,7 @@ public final class MelType {
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(Lclient!wm;ZZ)Lclient!jd;")
-	public Sprite method4189(@OriginalArg(0) Class19 arg0, @OriginalArg(2) boolean arg1) {
+	public Sprite method4189(@OriginalArg(0) TextureProvider arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(17) int local17 = arg1 ? this.anInt4438 : this.anInt4420;
 		@Pc(24) int local24 = local17 | arg0.anInt2836 << 29;
 		@Pc(33) Sprite local33 = (Sprite) this.aClass125_2.aClass98_27.get((long) local24);

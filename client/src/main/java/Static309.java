@@ -10,9 +10,6 @@ public final class Static309 {
 	@OriginalMember(owner = "client!rs", name = "f", descriptor = "I")
 	public static int js5ConnectState = 0;
 
-	@OriginalMember(owner = "client!rs", name = "h", descriptor = "I")
-	public static int anInt5802 = 64;
-
 	@OriginalMember(owner = "client!rs", name = "a", descriptor = "(III)I")
 	public static int method5277(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(9) int local9 = arg0 * 57 + arg1;

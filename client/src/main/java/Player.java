@@ -14,6 +14,8 @@ public final class Player extends PathingEntity {
 	public static int worldId = -1;
 	@OriginalMember(owner = "client!im", name = "G", descriptor = "I")
 	public static int rebootTimer = 0;
+	@OriginalMember(owner = "client!un", name = "I", descriptor = "Lclient!cc;")
+	public static PrivilegedRequest lastLogAddress;
 	@OriginalMember(owner = "client!nh", name = "pc", descriptor = "Ljava/lang/String;")
 	public String username;
 
@@ -121,7 +123,7 @@ public final class Player extends PathingEntity {
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
-	public void method6070(@OriginalArg(0) Class19 arg0) {
+	public void method6070(@OriginalArg(0) TextureProvider arg0) {
 		if (this.appearance != null && (super.aBoolean321 || this.method4067(arg0, 0))) {
 			this.method4333(arg0, super.aClass31Array3, super.aBoolean321);
 		}
@@ -129,7 +131,7 @@ public final class Player extends PathingEntity {
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		throw new IllegalStateException();
 	}
 
@@ -287,7 +289,7 @@ public final class Player extends PathingEntity {
 		if (PlayerList.selfId == super.anInt4619 && local410 != null) {
 			for (local327 = 0; local327 < local207.length; local327++) {
 				if (local207[local327] != local410[local327]) {
-					client.ObjTypes.method2760();
+					client.ObjTypes.clearSprites();
 					break;
 				}
 			}
@@ -306,7 +308,7 @@ public final class Player extends PathingEntity {
 	}
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(ILclient!wm;I)Z")
-	private boolean method4067(@OriginalArg(1) Class19 arg0, @OriginalArg(2) int arg1) {
+	private boolean method4067(@OriginalArg(1) TextureProvider arg0, @OriginalArg(2) int arg1) {
 		@Pc(7) int local7 = arg1;
 		@Pc(13) BasType local13 = this.method4332();
 		@Pc(28) Class157 local28 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
@@ -318,7 +320,7 @@ public final class Player extends PathingEntity {
 		}
 		super.aClass31Array3[0] = this.appearance.method3191(super.anInt4624, client.BasTypes, client.SeqTypes, client.IdkTypes, local28, super.anInt4592, super.anInt4629, arg1, super.anInt4593, super.anInt4626, local48, Static214.aClass226_1, client.ObjTypes, arg0, client.NpcTypes, super.aClass20Array3, super.anInt4607);
 		@Pc(116) int local116 = Static365.method6117();
-		if (Static309.anInt5802 < 96 && local116 > 50) {
+		if (GameShell.maxMemory < 96 && local116 > 50) {
 			Static163.method3105();
 		}
 		@Pc(136) int local136;
@@ -429,7 +431,7 @@ public final class Player extends PathingEntity {
 
 	@OriginalMember(owner = "client!nh", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
-	public Class12_Sub4 method6073(@OriginalArg(0) Class19 arg0) {
+	public Class12_Sub4 method6073(@OriginalArg(0) TextureProvider arg0) {
 		if (this.appearance == null || !this.method4067(arg0, 1024)) {
 			return null;
 		}
@@ -439,7 +441,7 @@ public final class Player extends PathingEntity {
 		local19.method3936(super.xFine, super.anInt6782, super.zFine);
 		@Pc(45) float local45 = arg0.method2802();
 		@Pc(48) float local48 = arg0.method2860();
-		if (client.preferences.aBoolean358) {
+		if (client.preferences.characterShadowsOn) {
 			@Pc(55) BasType local55 = this.method4332();
 			if (local55.aBoolean424 && (this.appearance.npcId == -1 || client.NpcTypes.get(this.appearance.npcId).aBoolean142)) {
 				@Pc(87) Class157 local87 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
@@ -510,7 +512,7 @@ public final class Player extends PathingEntity {
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
-	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class19 arg2) {
+	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) TextureProvider arg2) {
 		if (this.appearance == null || !this.method4067(arg2, 65536)) {
 			return true;
 		}
@@ -553,10 +555,10 @@ public final class Player extends PathingEntity {
 	}
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(IZ)Ljava/lang/String;")
-	public String method4072() {
+	public String getName() {
 		@Pc(17) String local17 = "";
-		if (Static129.aStringArray19 != null) {
-			local17 = local17 + Static129.aStringArray19[this.title];
+		if (PlayerList.playerNames != null) {
+			local17 = local17 + PlayerList.playerNames[this.title];
 		}
 		@Pc(39) int[] local39;
 		if (this.gender == 1 && Static324.anIntArray412 != null) {
@@ -574,14 +576,14 @@ public final class Player extends PathingEntity {
 			}
 		}
 		local17 = local17 + this.username2;
-		if (Static333.aStringArray67 != null) {
-			local17 = local17 + Static333.aStringArray67[this.title];
+		if (Static333.playerNames2 != null) {
+			local17 = local17 + Static333.playerNames2[this.title];
 		}
 		return local17;
 	}
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(ZIIIILclient!on;Lclient!gn;Lclient!wm;)V")
-	private void method4073(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class14 arg4, @OriginalArg(6) Model arg5, @OriginalArg(7) Class19 arg6) {
+	private void method4073(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class14 arg4, @OriginalArg(6) Model arg5, @OriginalArg(7) TextureProvider arg6) {
 		@Pc(11) int local11 = arg3 * arg3 + arg2 * arg2;
 		if (local11 < 16 || local11 > arg1) {
 			return;

@@ -19,12 +19,12 @@ public final class Static351 {
 	public static void method5857(@OriginalArg(0) BitmapFont arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) String arg2) {
 		@Pc(20) int local20 = Static165.aClass239_3.method6124(null, arg2, 250);
 		@Pc(29) int local29 = Static165.aClass239_3.method6123(arg2, 250, null) * 13;
-		Static190.aClass19_8.method2901(6, 6, local20 + 8, local29 + 4 + 4, -16777216, 0);
-		Static190.aClass19_8.method2836(6, 6, local20 + 8, local29 + 4 - -4, -1, 0);
+		Rasteriser.textureProvider.method2901(6, 6, local20 + 8, local29 + 4 + 4, -16777216, 0);
+		Rasteriser.textureProvider.method2836(6, 6, local20 + 8, local29 + 4 - -4, -1, 0);
 		arg0.method5893(0, 0, 10, 1, -1, null, 0, null, local29, arg2, 1, 10, null, -1, local20);
 		Static369.method6221(local20 + 4 + 4, 6, local29 + 4 + 4, 6);
 		if (arg1) {
-			Static190.aClass19_8.method2883();
+			Rasteriser.textureProvider.method2883();
 		}
 	}
 
@@ -35,9 +35,9 @@ public final class Static351 {
 		}
 		Static241.anInt4445 = client.cycle;
 		Static5.anInt105 = Static102.anInt3592;
-		Static349.anInt6455 = -1;
-		Static147.anInt2717 = -1;
-		Static314.anInt5911 = 5;
+		Camera.anInt6455 = -1;
+		Camera.anInt2717 = -1;
+		Camera.anInt5911 = 5;
 		Static272.anInt5023 = Static4.anInt87;
 		Static231.anInt4071 = Static265.anInt4857;
 		Static196.anInt3318 = Static211.anInt3777;

@@ -62,7 +62,7 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(B[[[I[Lclient!dg;Lclient!wm;)V")
-	public final void method1085(@OriginalArg(1) int[][][] arg0, @OriginalArg(2) Class46[] arg1, @OriginalArg(3) Class19 arg2) {
+	public final void method1085(@OriginalArg(1) int[][][] arg0, @OriginalArg(2) Class46[] arg1, @OriginalArg(3) TextureProvider arg2) {
 		@Pc(6) int local6;
 		@Pc(10) int local10;
 		@Pc(14) int local14;
@@ -109,7 +109,7 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(Lclient!tf;[[ILclient!tf;Lclient!wm;IILclient!tf;)V")
-	private void method1086(@OriginalArg(0) Class6 arg0, @OriginalArg(1) int[][] arg1, @OriginalArg(2) Class6 arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) int arg4, @OriginalArg(6) Class6 arg5) {
+	private void method1086(@OriginalArg(0) Class6 arg0, @OriginalArg(1) int[][] arg1, @OriginalArg(2) Class6 arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) int arg4, @OriginalArg(6) Class6 arg5) {
 		for (@Pc(7) int local7 = 0; local7 < this.anInt900; local7++) {
 			for (@Pc(11) int local11 = 0; local11 < this.anInt911; local11++) {
 				if (Static158.anInt2911 == -1 || Static142.method2661(local11, Static158.anInt2911, arg4, local7)) {
@@ -517,7 +517,7 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(Lclient!tf;ILclient!wm;Lclient!tf;)V")
-	public final void method1093(@OriginalArg(0) Class6 arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) Class6 arg2) {
+	public final void method1093(@OriginalArg(0) Class6 arg0, @OriginalArg(2) TextureProvider arg1, @OriginalArg(3) Class6 arg2) {
 		@Pc(11) int[][] local11 = new int[this.anInt900][this.anInt911];
 		if (Static65.anIntArray110 == null || Static65.anIntArray110.length != this.anInt911) {
 			Static375.anIntArray481 = new int[this.anInt911];
@@ -619,7 +619,7 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(Lclient!tq;Lclient!mg;II[[B[ZILclient!wm;III[[BI[[B)V")
-	private void method1095(@OriginalArg(0) FluType arg0, @OriginalArg(1) FloType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte[][] arg4, @OriginalArg(5) boolean[] arg5, @OriginalArg(6) int arg6, @OriginalArg(7) Class19 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) byte[][] arg10, @OriginalArg(12) int arg11, @OriginalArg(13) byte[][] arg12) {
+	private void method1095(@OriginalArg(0) FluType arg0, @OriginalArg(1) FloType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte[][] arg4, @OriginalArg(5) boolean[] arg5, @OriginalArg(6) int arg6, @OriginalArg(7) TextureProvider arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) byte[][] arg10, @OriginalArg(12) int arg11, @OriginalArg(13) byte[][] arg12) {
 		@Pc(49) int local49;
 		if (arg1 != null && arg0 != null || arg0 != null && arg6 == 12 || arg1 != null && arg6 == 0) {
 			@Pc(30) boolean[] local30 = arg1 != null && arg1.blendTexture ? Static207.aBooleanArrayArray2[arg6] : Static283.aBooleanArrayArray3[arg6];
@@ -907,7 +907,7 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(IILclient!wm;Lclient!tf;Lclient!tf;Lclient!tf;[[I)V")
-	private void method1099(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) Class6 arg2, @OriginalArg(4) Class6 arg3, @OriginalArg(5) Class6 arg4, @OriginalArg(6) int[][] arg5) {
+	private void method1099(@OriginalArg(1) int arg0, @OriginalArg(2) TextureProvider arg1, @OriginalArg(3) Class6 arg2, @OriginalArg(4) Class6 arg3, @OriginalArg(5) Class6 arg4, @OriginalArg(6) int[][] arg5) {
 		@Pc(18) byte[][] local18 = this.aByteArrayArrayArray12[arg0];
 		@Pc(23) byte[][] local23 = this.aByteArrayArrayArray7[arg0];
 		@Pc(28) byte[][] local28 = this.aByteArrayArrayArray8[arg0];

@@ -12,7 +12,7 @@ public final class Static388 {
 	public static final int[] anIntArray494 = new int[1000];
 
 	@OriginalMember(owner = "client!wn", name = "a", descriptor = "(Lclient!ci;IBLjava/awt/Canvas;)Lclient!wm;")
-	public static Class19 method6437(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Canvas arg2) {
+	public static TextureProvider method6437(@OriginalArg(0) TextureProviderInterface arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Canvas arg2) {
 		return new Class19_Sub2(arg2, arg0, arg1);
 	}
 
@@ -77,7 +77,7 @@ public final class Static388 {
 		}
 		Static305.anInt5743 = local54;
 		Static107.anInt2220 = local13;
-		Static352.anInt6519 = Static268.anInt4959 * 16 + (Static270.aBoolean371 ? 26 : 22);
+		Static352.anInt6519 = Static268.anInt4959 * 16 + (InterfaceList.aBoolean371 ? 26 : 22);
 		Static363.anInt6801 = local77;
 		Static375.aBoolean477 = true;
 	}

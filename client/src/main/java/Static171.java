@@ -7,16 +7,10 @@ public final class Static171 {
 	@OriginalMember(owner = "client!jt", name = "X", descriptor = "[Lclient!dg;")
 	public static final Class46[] aClass46Array1 = new Class46[4];
 
-	@OriginalMember(owner = "client!jt", name = "db", descriptor = "I")
-	public static int anInt3268 = -1;
-
-	@OriginalMember(owner = "client!jt", name = "eb", descriptor = "Lclient!oj;")
-	public static final Class170 aClass170_3 = new Class170(0);
-
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(BIIZII)V")
 	public static void method3258(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if (Scene.aClass67ArrayArrayArray3 == null) {
-			Static190.aClass19_8.method2868(arg4, arg1, arg0, -16777216, arg3);
+			Rasteriser.textureProvider.method2868(arg4, arg1, arg0, -16777216, arg3);
 		} else if (PlayerList.self.xFine >= 0 && PlayerList.self.xFine < Static373.anInt7033 * 128 && PlayerList.self.zFine >= 0 && PlayerList.self.zFine < Static242.anInt4449 * 128) {
 			Static163.anInt3086++;
 			if (PlayerList.self != null && PlayerList.self.xFine + 64 - PlayerList.self.getSize() * 64 >> 7 == Static358.anInt6550 && PlayerList.self.zFine + 64 - PlayerList.self.getSize() * 64 >> 7 == Static312.anInt5844) {
@@ -29,34 +23,34 @@ public final class Static171 {
 				Static301.method5188();
 			}
 			Static182.method3387();
-			Static308.method5273(arg1, arg4, true, arg3, arg0);
+			ScriptRunner.method5273(arg1, arg4, true, arg3, arg0);
 			@Pc(104) int local104 = Static235.anInt3368;
 			@Pc(106) int local106 = Static155.anInt2808;
 			@Pc(108) int local108 = Static180.anInt3408;
 			@Pc(110) int local110 = Static375.anInt7051;
 			@Pc(118) int local118;
 			@Pc(151) int local151;
-			if (Static314.anInt5911 == 1) {
-				local118 = (int) Static31.aFloat28;
+			if (Camera.anInt5911 == 1) {
+				local118 = (int) Camera.pitchTarget;
 				if (local118 < Static89.anInt1885 >> 8) {
 					local118 = Static89.anInt1885 >> 8;
 				}
 				if (Static189.aBooleanArray33[4] && local118 < Static105.anIntArray134[4] + 128) {
 					local118 = Static105.anIntArray134[4] + 128;
 				}
-				local151 = Static53.anInt3966 + (int) Static277.aFloat67 & 0x3FFF;
+				local151 = Static53.anInt3966 + (int) Camera.yawTarget & 0x3FFF;
 				Static349.method5833((local118 >> 3) * 3 + 600, Static288.anInt5463, local108, Static386.method6032(PlayerList.self.xFine, PlayerList.self.zFine, Static355.anInt6585) - 50, Static62.anInt2395, local151, local118);
-			} else if (Static314.anInt5911 == 4) {
-				local118 = (int) Static31.aFloat28;
+			} else if (Camera.anInt5911 == 4) {
+				local118 = (int) Camera.pitchTarget;
 				if (local118 < Static89.anInt1885 >> 8) {
 					local118 = Static89.anInt1885 >> 8;
 				}
 				if (Static189.aBooleanArray33[4] && Static105.anIntArray134[4] + 128 > local118) {
 					local118 = Static105.anIntArray134[4] + 128;
 				}
-				local151 = (int) Static277.aFloat67 & 0x3FFF;
+				local151 = (int) Camera.yawTarget & 0x3FFF;
 				Static349.method5833((local118 >> 3) * 3 + 600, Static288.anInt5463, local108, Static386.method6032(Static394.anInt7264, Static348.anInt6448, Static355.anInt6585) - 50, Static62.anInt2395, local151, local118);
-			} else if (Static314.anInt5911 == 5) {
+			} else if (Camera.anInt5911 == 5) {
 				Static385.method6432(local108);
 			}
 			local118 = Static136.anInt6778;
@@ -104,22 +98,22 @@ public final class Static171 {
 			}
 			Static363.method6091();
 			Static56.method1611();
-			Static190.aClass19_8.method2895(local104, local110, local106 + local104, local110 + local108);
-			Static190.aClass19_8.method2819();
+			Rasteriser.textureProvider.method2895(local104, local110, local106 + local104, local110 + local108);
+			Rasteriser.textureProvider.method2819();
 			local301 = Static99.anInt2095;
 			if (Static368.aClass43_1 == null) {
-				Static190.aClass19_8.method2867(local301);
+				Rasteriser.textureProvider.method2867(local301);
 			} else {
-				Static368.aClass43_1.method1612(Static4.anInt87, Static72.anInt1683 << 3, Static190.aClass19_8, local108, Static265.anInt4857, local301, local104, local106, local110);
+				Static368.aClass43_1.method1612(Static4.anInt87, Static72.anInt1683 << 3, Rasteriser.textureProvider, local108, Static265.anInt4857, local301, local104, local106, local110);
 			}
 			Static37.method1135();
 			Static76.aClass14_3.method3930(Static136.anInt6778, Static102.anInt3592, Static211.anInt3777, -Static265.anInt4857 & 0x3FFF, -Static4.anInt87 & 0x3FFF, -Static342.anInt5657 & 0x3FFF);
-			Static190.aClass19_8.method2896(Static76.aClass14_3);
-			Static190.aClass19_8.method2821(local104 + local106 / 2, local110 + local108 / 2, Static320.anInt6006 << 1, Static320.anInt6006 << 1);
+			Rasteriser.textureProvider.method2896(Static76.aClass14_3);
+			Rasteriser.textureProvider.method2821(local104 + local106 / 2, local110 + local108 / 2, Static320.anInt6006 << 1, Static320.anInt6006 << 1);
 			Static306.method5254(Static320.anInt6006 << 1, local106 / 2 + local104, Static320.anInt6006 << 1, local110 + local108 / 2);
 			Static96.method2085(Static211.anInt3777, Static102.anInt3592, -Static342.anInt5657 & 0x3FFF, -Static4.anInt87 & 0x3FFF, -Static265.anInt4857 & 0x3FFF, Static136.anInt6778);
 			@Pc(541) byte local541 = client.preferences.method4492(Static77.anInt1762) == 2 ? (byte) Static163.anInt3086 : 1;
-			Static225.method3954(Static190.aClass19_8, client.cycle, Static102.anInt3591, Static76.aClass14_3, Static136.anInt6778, Static102.anInt3592, Static211.anInt3777, Static230.aByteArrayArrayArray13, Static353.anIntArray448, Static107.anIntArray136, Static248.anIntArray318, Static324.anIntArray409, Static86.anIntArray122, PlayerList.self.plane + 1, local541, PlayerList.self.xFine >> 7, PlayerList.self.zFine >> 7, !client.preferences.aBoolean353);
+			Static225.method3954(Rasteriser.textureProvider, client.cycle, Static102.anInt3591, Static76.aClass14_3, Static136.anInt6778, Static102.anInt3592, Static211.anInt3777, Static230.aByteArrayArrayArray13, Static353.anIntArray448, Static107.anIntArray136, Static248.anIntArray318, Static324.anIntArray409, Static86.anIntArray122, PlayerList.self.plane + 1, local541, PlayerList.self.xFine >> 7, PlayerList.self.zFine >> 7, !client.preferences.flickeringEffectsOn);
 			Static37.method1135();
 			if (client.gameState == 30) {
 				Static306.method5253(local110, local108, local106, local104);
@@ -137,11 +131,11 @@ public final class Static171 {
 				Static17.aBoolean308 = false;
 			}
 			if (Static17.aBoolean308) {
-				Static190.aClass19_8.method2868(local108, local104, local110, -16777216, local106);
+				Rasteriser.textureProvider.method2868(local108, local104, local110, -16777216, local106);
 				Static351.method5857(Static276.aClass130_4, false, Static256.aClass79_102.getLocalized(client.language));
 			}
 		} else {
-			Static190.aClass19_8.method2868(arg4, arg1, arg0, -16777216, arg3);
+			Rasteriser.textureProvider.method2868(arg4, arg1, arg0, -16777216, arg3);
 		}
 	}
 }

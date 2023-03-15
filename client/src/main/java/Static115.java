@@ -12,12 +12,12 @@ public final class Static115 {
 
 	@OriginalMember(owner = "client!gn", name = "e", descriptor = "(I)Lclient!jg;")
 	public static Class2_Sub20 method3829() {
-		if (Static344.aClass135_36 == null || Static116.aClass75_1 == null) {
+		if (MapList.aClass135_36 == null || Static116.aClass75_1 == null) {
 			return null;
 		}
 		for (@Pc(16) Class2_Sub20 local16 = (Class2_Sub20) Static116.aClass75_1.method2178(); local16 != null; local16 = (Class2_Sub20) Static116.aClass75_1.method2178()) {
-			@Pc(24) MelType local24 = Static344.aClass125_4.method3379(local16.anInt2947);
-			if (local24 != null && local24.aBoolean302 && local24.method4180(Static344.anInterface11_2)) {
+			@Pc(24) MelType local24 = MapList.aClass125_4.method3379(local16.anInt2947);
+			if (local24 != null && local24.aBoolean302 && local24.method4180(MapList.anInterface11_2)) {
 				return local16;
 			}
 		}

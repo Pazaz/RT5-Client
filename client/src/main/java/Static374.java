@@ -13,7 +13,7 @@ public final class Static374 {
 
 	@OriginalMember(owner = "client!vr", name = "a", descriptor = "(B)I")
 	public static int method6273() {
-		@Pc(15) Class19 local15 = Static190.aClass19_8;
+		@Pc(15) TextureProvider local15 = Rasteriser.textureProvider;
 		@Pc(17) boolean local17 = false;
 		if (Static77.anInt1762 != 0) {
 			@Pc(26) Canvas local26 = new Canvas();

@@ -1,6 +1,5 @@
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
-import org.openrs2.deob.annotation.Pc;
 
 public final class Static146 {
 
@@ -27,26 +26,4 @@ public final class Static146 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(BI)Lclient!tb;")
-	public static Class2_Sub2_Sub16 method2699(@OriginalArg(1) int arg0) {
-		@Pc(10) Class2_Sub2_Sub16 local10 = (Class2_Sub2_Sub16) Static388.aClass116_8.method3152((long) arg0);
-		if (local10 != null) {
-			return local10;
-		}
-		@Pc(28) byte[] local28;
-		if (arg0 < 32768) {
-			local28 = Static137.aClass197_33.fetchFile(arg0, 1);
-		} else {
-			local28 = Static308.aClass197_80.fetchFile(arg0 & 0x7FFF, 1);
-		}
-		local10 = new Class2_Sub2_Sub16();
-		if (local28 != null) {
-			local10.method5599(new Buffer(local28));
-		}
-		if (arg0 >= 32768) {
-			local10.method5604();
-		}
-		Static388.aClass116_8.method3155(local10, (long) arg0);
-		return local10;
-	}
 }

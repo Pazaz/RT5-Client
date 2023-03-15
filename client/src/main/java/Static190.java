@@ -7,9 +7,6 @@ public final class Static190 {
 	@OriginalMember(owner = "client!kt", name = "V", descriptor = "[I")
 	public static int[] anIntArray208;
 
-	@OriginalMember(owner = "client!kt", name = "X", descriptor = "Lclient!wm;")
-	public static Class19 aClass19_8;
-
 	@OriginalMember(owner = "client!kt", name = "db", descriptor = "Lclient!bu;")
 	public static SceneBuilder aClass29_Sub1_63;
 
@@ -20,7 +17,7 @@ public final class Static190 {
 	public static final String[] aStringArray28 = new String[100];
 
 	@OriginalMember(owner = "client!kt", name = "a", descriptor = "(IIILclient!wm;)V")
-	public static void method3500(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class19 arg2) {
+	public static void method3500(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) TextureProvider arg2) {
 		Static65.aClass19_3 = arg2;
 		Static332.aClass21ArrayArray3 = new Environment[arg1][arg0];
 		if (Static209.anIntArray228 != null) {
@@ -39,15 +36,4 @@ public final class Static190 {
 		local12.anInt2289 = arg2;
 	}
 
-	@OriginalMember(owner = "client!kt", name = "f", descriptor = "(I)V")
-	public static void method3502() {
-		Static211.aClass13_13 = null;
-		Static339.aClass13_18 = null;
-		Static75.aClass13_5 = null;
-		Static337.aClass13_17 = null;
-		Static35.aClass13_3 = null;
-		Static197.aClass13_12 = null;
-		Static110.aClass13_6 = null;
-		Static138.aClass13_8 = null;
-	}
 }

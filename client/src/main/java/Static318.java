@@ -45,7 +45,7 @@ public final class Static318 {
 	}
 
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(ILclient!wm;)V")
-	public static void method5429(@OriginalArg(1) Class19 arg0) {
+	public static void method5429(@OriginalArg(1) TextureProvider arg0) {
 		if (Static142.aClass135_21.method3543() == 0) {
 			return;
 		}

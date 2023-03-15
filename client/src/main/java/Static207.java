@@ -48,9 +48,4 @@ public final class Static207 {
 		return local11;
 	}
 
-	@OriginalMember(owner = "client!mc", name = "d", descriptor = "(I)[Lclient!oj;")
-	public static Class170[] method3704() {
-		return new Class170[] { Static171.aClass170_3, Static329.aClass170_4, Static12.aClass170_1 };
-	}
-
 }

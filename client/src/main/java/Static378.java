@@ -13,8 +13,8 @@ public final class Static378 {
 	public static final LocalizedString aClass79_146 = new LocalizedString("Attack", "Angreifen", "Attaquer", "Atacar");
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(I)Lclient!vj;")
-	public static Class2_Sub2_Sub17 method6312() {
-		return Static344.aClass2_Sub2_Sub17_3;
+	public static Map method6312() {
+		return MapList.aClass2_Sub2_Sub17_3;
 	}
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(BI)Z")

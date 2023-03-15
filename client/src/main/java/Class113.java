@@ -45,7 +45,7 @@ public final class Class113 {
 	}
 
 	@OriginalMember(owner = "client!je", name = "<init>", descriptor = "(Lclient!wm;IZLjava/awt/Component;)V")
-	public Class113(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Component arg3) {
+	public Class113(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Component arg3) {
 		this.aBoolean205 = false;
 		this.aClass13Array14 = new Sprite[256];
 		this.anIntArray183 = new int[256];
@@ -71,7 +71,7 @@ public final class Class113 {
 	}
 
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "(Lclient!wm;Ljava/lang/String;[IIIIZ)V")
-	private void method2946(@OriginalArg(0) Class19 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6) {
+	private void method2946(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6) {
 		if (arg5 == 0) {
 			arg6 = false;
 		}
@@ -97,7 +97,7 @@ public final class Class113 {
 	}
 
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "(Lclient!wm;Ljava/awt/Font;Ljava/awt/FontMetrics;CIZ)V")
-	private void method2949(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Font arg1, @OriginalArg(2) FontMetrics arg2, @OriginalArg(3) char arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
+	private void method2949(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Font arg1, @OriginalArg(2) FontMetrics arg2, @OriginalArg(3) char arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
 		@Pc(3) int local3 = arg2.charWidth(arg3);
 		@Pc(5) int local5 = local3;
 		if (arg5) {
@@ -164,7 +164,7 @@ public final class Class113 {
 	}
 
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "(Lclient!wm;Ljava/lang/String;IIIZ)V")
-	public void method2951(@OriginalArg(0) Class19 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public void method2951(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		@Pc(5) int local5 = this.method2950(arg1) / 2;
 		arg0.method2851(this.anIntArray182);
 		if (arg2 - local5 <= this.anIntArray182[2] && (arg2 + local5 >= this.anIntArray182[0] && (arg3 - this.anInt2914 <= this.anIntArray182[3] && arg3 + this.anInt2912 >= this.anIntArray182[1]))) {

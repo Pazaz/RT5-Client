@@ -15,7 +15,7 @@ public final class Static238 {
 
 	@OriginalMember(owner = "client!nm", name = "a", descriptor = "(II)Lclient!kk;")
 	public static Class127 method4120(@OriginalArg(0) int arg0) {
-		@Pc(13) Class127[] local13 = Static150.method2740();
+		@Pc(13) Class127[] local13 = Class127.method2740();
 		for (@Pc(15) int local15 = 0; local15 < local13.length; local15++) {
 			@Pc(21) Class127 local21 = local13[local15];
 			if (local21.anInt3427 == arg0) {

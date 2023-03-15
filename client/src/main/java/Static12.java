@@ -10,9 +10,6 @@ public final class Static12 {
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "[Lclient!nh;")
 	public static final Player[] aClass11_Sub5_Sub2_Sub1Array1 = new Player[2048];
 
-	@OriginalMember(owner = "client!am", name = "c", descriptor = "Lclient!oj;")
-	public static final Class170 aClass170_1 = new Class170(2);
-
 	@OriginalMember(owner = "client!am", name = "g", descriptor = "[C")
 	public static final char[] aCharArray1 = new char[] { '[', ']', '#' };
 
@@ -21,34 +18,34 @@ public final class Static12 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(BII)V")
 	public static void method280(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		if (Static344.aFloat72 < Static344.aFloat73) {
-			Static344.aFloat72 = (float) ((double) Static344.aFloat72 + (double) Static344.aFloat72 / 30.0D);
-			if (Static344.aFloat72 > Static344.aFloat73) {
-				Static344.aFloat72 = Static344.aFloat73;
+		if (MapList.aFloat72 < MapList.aFloat73) {
+			MapList.aFloat72 = (float) ((double) MapList.aFloat72 + (double) MapList.aFloat72 / 30.0D);
+			if (MapList.aFloat72 > MapList.aFloat73) {
+				MapList.aFloat72 = MapList.aFloat73;
 			}
 			Static298.method2422();
-			Static344.anInt6047 = (int) Static344.aFloat72 >> 1;
-			Static344.aByteArrayArrayArray15 = Static260.method6018(Static344.anInt6047);
-		} else if (Static344.aFloat73 < Static344.aFloat72) {
-			Static344.aFloat72 = (float) ((double) Static344.aFloat72 - (double) Static344.aFloat72 / 30.0D);
-			if (Static344.aFloat73 > Static344.aFloat72) {
-				Static344.aFloat72 = Static344.aFloat73;
+			MapList.anInt6047 = (int) MapList.aFloat72 >> 1;
+			MapList.aByteArrayArrayArray15 = Static260.method6018(MapList.anInt6047);
+		} else if (MapList.aFloat73 < MapList.aFloat72) {
+			MapList.aFloat72 = (float) ((double) MapList.aFloat72 - (double) MapList.aFloat72 / 30.0D);
+			if (MapList.aFloat73 > MapList.aFloat72) {
+				MapList.aFloat72 = MapList.aFloat73;
 			}
 			Static298.method2422();
-			Static344.anInt6047 = (int) Static344.aFloat72 >> 1;
-			Static344.aByteArrayArrayArray15 = Static260.method6018(Static344.anInt6047);
+			MapList.anInt6047 = (int) MapList.aFloat72 >> 1;
+			MapList.aByteArrayArrayArray15 = Static260.method6018(MapList.anInt6047);
 		}
 		if (Static238.anInt4328 != -1 && Static77.anInt1763 != -1) {
-			@Pc(86) int local86 = Static238.anInt4328 - Static151.anInt2772;
+			@Pc(86) int local86 = Static238.anInt4328 - WorldMap.anInt2772;
 			if (local86 < 2 || local86 > 2) {
 				local86 /= 8;
 			}
-			@Pc(103) int local103 = Static77.anInt1763 - Static96.anInt2003;
-			Static151.anInt2772 += local86;
+			@Pc(103) int local103 = Static77.anInt1763 - WorldMap.anInt2003;
+			WorldMap.anInt2772 += local86;
 			if (local103 < 2 || local103 > 2) {
 				local103 /= 8;
 			}
-			Static96.anInt2003 += local103;
+			WorldMap.anInt2003 += local103;
 			if (local86 == 0 && local103 == 0) {
 				Static238.anInt4328 = -1;
 				Static77.anInt1763 = -1;
@@ -69,7 +66,7 @@ public final class Static12 {
 			return;
 		}
 		for (@Pc(170) Class2_Sub15 local170 = (Class2_Sub15) Static197.aClass135_24.head(); local170 != null; local170 = (Class2_Sub15) Static197.aClass135_24.next()) {
-			@Pc(179) MelType local179 = Static344.aClass125_4.method3379(local170.aClass2_Sub20_1.anInt2947);
+			@Pc(179) MelType local179 = MapList.aClass125_4.method3379(local170.aClass2_Sub20_1.anInt2947);
 			if (local170.method2357(arg0, arg1)) {
 				if (local179.aStringArray41 != null) {
 					if (local179.aStringArray41[4] != null) {

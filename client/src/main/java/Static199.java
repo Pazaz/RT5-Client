@@ -73,16 +73,16 @@ public final class Static199 {
 
 	@OriginalMember(owner = "client!lm", name = "d", descriptor = "(B)V")
 	public static void method5249() {
-		if (Static147.anInt2717 == -1 || Static349.anInt6455 == -1) {
+		if (Camera.anInt2717 == -1 || Camera.anInt6455 == -1) {
 			return;
 		}
-		@Pc(29) int local29 = Static41.anInt1038 + (Static353.anInt6533 * (Static217.anInt3821 - Static41.anInt1038) >> 16);
-		Static353.anInt6533 += local29;
-		if (Static353.anInt6533 < 65535) {
+		@Pc(29) int local29 = Camera.anInt1038 + (Camera.anInt6533 * (Camera.anInt3821 - Camera.anInt1038) >> 16);
+		Camera.anInt6533 += local29;
+		if (Camera.anInt6533 < 65535) {
 			Static232.aBoolean268 = false;
 			Static183.aBoolean9 = false;
 		} else {
-			Static353.anInt6533 = 65535;
+			Camera.anInt6533 = 65535;
 			if (Static232.aBoolean268) {
 				Static183.aBoolean9 = false;
 			} else {
@@ -90,9 +90,9 @@ public final class Static199 {
 			}
 			Static232.aBoolean268 = true;
 		}
-		@Pc(59) float local59 = (float) Static353.anInt6533 / 65535.0F;
+		@Pc(59) float local59 = (float) Camera.anInt6533 / 65535.0F;
 		@Pc(62) float[] local62 = new float[3];
-		@Pc(66) int local66 = Static295.anInt5567 * 2;
+		@Pc(66) int local66 = Camera.anInt5567 * 2;
 		@Pc(92) int local92;
 		@Pc(124) int local124;
 		@Pc(132) int local132;
@@ -100,28 +100,28 @@ public final class Static199 {
 		@Pc(146) int local146;
 		@Pc(164) int local164;
 		for (@Pc(68) int local68 = 0; local68 < 3; local68++) {
-			@Pc(80) int local80 = Static364.anIntArrayArrayArray13[Static147.anInt2717][local66][local68] * 3;
-			local92 = Static364.anIntArrayArrayArray13[Static147.anInt2717][local66 + 1][local68] * 3;
-			local124 = (Static364.anIntArrayArrayArray13[Static147.anInt2717][local66 + 2][local68] + Static364.anIntArrayArrayArray13[Static147.anInt2717][local66 + 2][local68] - Static364.anIntArrayArrayArray13[Static147.anInt2717][local66 + 3][local68]) * 3;
-			local132 = Static364.anIntArrayArrayArray13[Static147.anInt2717][local66][local68];
+			@Pc(80) int local80 = Camera.anIntArrayArrayArray13[Camera.anInt2717][local66][local68] * 3;
+			local92 = Camera.anIntArrayArrayArray13[Camera.anInt2717][local66 + 1][local68] * 3;
+			local124 = (Camera.anIntArrayArrayArray13[Camera.anInt2717][local66 + 2][local68] + Camera.anIntArrayArrayArray13[Camera.anInt2717][local66 + 2][local68] - Camera.anIntArrayArrayArray13[Camera.anInt2717][local66 + 3][local68]) * 3;
+			local132 = Camera.anIntArrayArrayArray13[Camera.anInt2717][local66][local68];
 			local137 = local92 - local80;
 			local146 = local80 + local124 - local92 * 2;
-			local164 = local92 + Static364.anIntArrayArrayArray13[Static147.anInt2717][local66 + 2][local68] - local124 - local132;
+			local164 = local92 + Camera.anIntArrayArrayArray13[Camera.anInt2717][local66 + 2][local68] - local124 - local132;
 			local62[local68] = local59 * ((float) local137 + ((float) local146 + (float) local164 * local59) * local59) + (float) local132;
 		}
 		Static102.anInt3592 = (int) local62[1] * -1;
 		Static136.anInt6778 = (int) local62[0] - Camera.originX * 128;
 		Static211.anInt3777 = (int) local62[2] - Camera.originZ * 128;
 		@Pc(218) float[] local218 = new float[3];
-		local92 = Static343.anInt6398 * 2;
+		local92 = Camera.anInt6398 * 2;
 		for (local124 = 0; local124 < 3; local124++) {
-			local132 = Static364.anIntArrayArrayArray13[Static349.anInt6455][local92][local124] * 3;
-			local137 = Static364.anIntArrayArrayArray13[Static349.anInt6455][local92 + 1][local124] * 3;
-			local146 = (Static364.anIntArrayArrayArray13[Static349.anInt6455][local92 + 2][local124] + Static364.anIntArrayArrayArray13[Static349.anInt6455][local92 + 2][local124] - Static364.anIntArrayArrayArray13[Static349.anInt6455][local92 + 3][local124]) * 3;
-			local164 = Static364.anIntArrayArrayArray13[Static349.anInt6455][local92][local124];
+			local132 = Camera.anIntArrayArrayArray13[Camera.anInt6455][local92][local124] * 3;
+			local137 = Camera.anIntArrayArrayArray13[Camera.anInt6455][local92 + 1][local124] * 3;
+			local146 = (Camera.anIntArrayArrayArray13[Camera.anInt6455][local92 + 2][local124] + Camera.anIntArrayArrayArray13[Camera.anInt6455][local92 + 2][local124] - Camera.anIntArrayArrayArray13[Camera.anInt6455][local92 + 3][local124]) * 3;
+			local164 = Camera.anIntArrayArrayArray13[Camera.anInt6455][local92][local124];
 			@Pc(294) int local294 = local137 - local132;
 			@Pc(303) int local303 = local146 + local132 - local137 * 2;
-			@Pc(321) int local321 = local137 + Static364.anIntArrayArrayArray13[Static349.anInt6455][local92 + 2][local124] - local164 - local146;
+			@Pc(321) int local321 = local137 + Camera.anIntArrayArrayArray13[Camera.anInt6455][local92 + 2][local124] - local164 - local146;
 			local218[local124] = local59 * ((float) local294 + local59 * ((float) local303 + local59 * (float) local321)) + (float) local164;
 		}
 		@Pc(354) float local354 = local218[0] - local62[0];
@@ -130,6 +130,6 @@ public final class Static199 {
 		@Pc(384) double local384 = Math.sqrt((double) (local354 * local354 + local374 * local374));
 		Static265.anInt4857 = (int) (Math.atan2((double) local365, local384) * 2607.5945876176133D) & 0x3FFF;
 		Static4.anInt87 = (int) (-Math.atan2((double) local354, (double) local374) * 2607.5945876176133D) & 0x3FFF;
-		Static342.anInt5657 = ((Static364.anIntArrayArrayArray13[Static147.anInt2717][local66 + 2][3] - Static364.anIntArrayArrayArray13[Static147.anInt2717][local66][3]) * Static353.anInt6533 >> 16) + Static364.anIntArrayArrayArray13[Static147.anInt2717][local66][3];
+		Static342.anInt5657 = ((Camera.anIntArrayArrayArray13[Camera.anInt2717][local66 + 2][3] - Camera.anIntArrayArrayArray13[Camera.anInt2717][local66][3]) * Camera.anInt6533 >> 16) + Camera.anIntArrayArrayArray13[Camera.anInt2717][local66][3];
 	}
 }

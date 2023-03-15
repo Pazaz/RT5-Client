@@ -35,7 +35,7 @@ public final class Static162 {
 	}
 
 	@OriginalMember(owner = "client!jh", name = "a", descriptor = "(Lclient!wm;I)V")
-	public static void method2980(@OriginalArg(0) Class19 arg0) {
+	public static void method2980(@OriginalArg(0) TextureProvider arg0) {
 		if (Static375.aBoolean477) {
 			Static34.method4810(arg0);
 		} else {

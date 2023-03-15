@@ -45,7 +45,7 @@ public final class Static101 {
 			return false;
 		} else if (!arg0.aBoolean305) {
 			return false;
-		} else if (!arg0.method4180(Static344.anInterface11_2)) {
+		} else if (!arg0.method4180(MapList.anInterface11_2)) {
 			return false;
 		} else if (Static220.aClass4_83.get((long) arg0.anInt4430) == null) {
 			return Static141.aClass4_58.get((long) arg0.anInt4424) == null;

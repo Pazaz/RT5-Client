@@ -8,7 +8,7 @@ public final class Static327 {
 	public static final HashTable aClass4_127 = new HashTable(512);
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Lclient!wm;III)V")
-	public static void method5574(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public static void method5574(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		if (arg2 < 0 || arg1 < 0 || Static75.anInt1737 == 0 || Static153.anInt2792 == 0) {
 			return;
 		}
@@ -170,7 +170,7 @@ public final class Static327 {
 											if (local88 == 0) {
 												local1146 = 15;
 											}
-											local473 = Static91.anInt1910;
+											local473 = Minimap.anInt1910;
 											if (local88 == 1) {
 												local1146 = 46;
 											}
@@ -220,7 +220,7 @@ public final class Static327 {
 											if (local79 == 0) {
 												local1405 = 50;
 											}
-											local97 = Static91.anInt1910;
+											local97 = Minimap.anInt1910;
 											if (local79 == 1) {
 												local1405 = 20;
 											}

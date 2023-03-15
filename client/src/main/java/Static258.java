@@ -4,28 +4,11 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static258 {
 
-	@OriginalMember(owner = "client!oo", name = "i", descriptor = "S")
-	public static short aShort78 = 205;
-
 	@OriginalMember(owner = "client!oo", name = "n", descriptor = "[S")
 	public static short[] aShortArray95 = new short[256];
 
-	@OriginalMember(owner = "client!oo", name = "a", descriptor = "(ZIIII)V")
-	public static void method4402(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		if (Static77.anInt1762 == 0) {
-			Static241.method4192(false);
-		} else {
-			Static33.anInt4462 = Static77.anInt1762;
-			Static78.method5701(0);
-		}
-		Static184.anInt3436 = arg1;
-		Static18.anInt519 = arg3;
-		Static299.aBoolean399 = arg0;
-		Static344.method5518(arg2);
-	}
-
 	@OriginalMember(owner = "client!oo", name = "a", descriptor = "(Lclient!wm;Lclient!hp;IIIII)V")
-	public static void method4403(@OriginalArg(0) Class19 arg0, @OriginalArg(1) BaseEntity arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+	public static void method4403(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) BaseEntity arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		@Pc(1) boolean local1 = true;
 		@Pc(3) int local3 = arg3;
 		@Pc(7) int local7 = arg3 + arg5;

@@ -55,7 +55,7 @@ public final class Static105 {
 			@Pc(49) char local49 = Static156.aClass37Array1[local35].method1456();
 			if (local43 == 84) {
 				Static59.method1642();
-			} else if (Static174.aClass123_2.method3343(82) && local43 == 66) {
+			} else if (Keyboard.instance.isPressed(82) && local43 == 66) {
 				if (Static23.aClipboard1 != null) {
 					@Pc(340) String local340 = "";
 					for (@Pc(345) int local345 = Static124.aStringArray65.length - 1; local345 >= 0; local345--) {
@@ -65,7 +65,7 @@ public final class Static105 {
 					}
 					Static23.aClipboard1.setContents(new StringSelection(local340), null);
 				}
-			} else if (Static174.aClass123_2.method3343(82) && local43 == 67) {
+			} else if (Keyboard.instance.isPressed(82) && local43 == 67) {
 				if (Static23.aClipboard1 != null) {
 					@Pc(76) Transferable local76 = Static23.aClipboard1.getContents(null);
 					if (local76 != null) {

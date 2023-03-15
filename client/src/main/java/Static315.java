@@ -61,7 +61,7 @@ public final class Static315 {
 		@Pc(127) int local127 = -1;
 		@Pc(145) int local145;
 		for (@Pc(129) int local129 = 0; local129 < Static268.anInt4959; local129++) {
-			if (Static270.aBoolean371) {
+			if (InterfaceList.aBoolean371) {
 				local145 = local61 + (Static268.anInt4959 - (local129 + 1)) * 16 + 33;
 				if (local57 < local121 && local57 + local117 > local121 && local125 > local145 - 13 && local145 + 4 > local125) {
 					local127 = local129;

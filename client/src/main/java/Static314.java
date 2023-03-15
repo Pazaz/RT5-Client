@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static314 {
 
-	@OriginalMember(owner = "client!sd", name = "R", descriptor = "I")
-	public static int anInt5911;
-
 	@OriginalMember(owner = "client!sd", name = "b", descriptor = "(II)Lclient!bp;")
 	public static Class28 method5367(@OriginalArg(0) int arg0) {
 		@Pc(10) Class28 local10 = (Class28) Static119.aClass98_16.get((long) arg0);

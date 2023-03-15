@@ -11,24 +11,24 @@ public final class Static110 {
 	public static Class205 aClass205_1;
 
 	@OriginalMember(owner = "client!gd", name = "a", descriptor = "(Lclient!ml;I)[Lclient!oi;")
-	public static Class169[] method2265(@OriginalArg(0) Signlink arg0) {
+	public static DisplayMode[] method2265(@OriginalArg(0) Signlink arg0) {
 		if (!arg0.method3765()) {
-			return new Class169[0];
+			return new DisplayMode[0];
 		}
 		@Pc(21) PrivilegedRequest local21 = arg0.getDisplayModes();
 		while (local21.status == 0) {
 			ThreadUtils.sleep(10L);
 		}
 		if (local21.status == 2) {
-			return new Class169[0];
+			return new DisplayMode[0];
 		}
 		@Pc(45) int[] local45 = (int[]) local21.result;
-		@Pc(51) Class169[] local51 = new Class169[local45.length >> 2];
+		@Pc(51) DisplayMode[] local51 = new DisplayMode[local45.length >> 2];
 		for (@Pc(53) int local53 = 0; local53 < local51.length; local53++) {
-			@Pc(59) Class169 local59 = new Class169();
+			@Pc(59) DisplayMode local59 = new DisplayMode();
 			local51[local53] = local59;
-			local59.anInt4685 = local45[local53 << 2];
-			local59.anInt4684 = local45[(local53 << 2) + 1];
+			local59.width = local45[local53 << 2];
+			local59.height = local45[(local53 << 2) + 1];
 			local59.anInt4687 = local45[(local53 << 2) + 2];
 			local59.anInt4682 = local45[(local53 << 2) + 3];
 		}

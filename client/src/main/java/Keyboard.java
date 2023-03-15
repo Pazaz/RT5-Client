@@ -10,7 +10,12 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ke")
-public final class Class123_Sub1 extends Class123 implements KeyListener, FocusListener {
+public final class Keyboard extends KeyboardBase implements KeyListener, FocusListener {
+
+	@OriginalMember(owner = "client!nn", name = "W", descriptor = "[I")
+	public static final int[] CODE_MAP = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 85, 80, 84, 0, 91, 0, 0, 0, 81, 82, 86, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 83, 104, 105, 103, 102, 96, 98, 97, 99, 0, 0, 0, 0, 0, 0, 0, 25, 16, 17, 18, 19, 20, 21, 22, 23, 24, 0, 0, 0, 0, 0, 0, 0, 48, 68, 66, 50, 34, 51, 52, 53, 39, 54, 55, 56, 70, 69, 40, 41, 32, 35, 49, 36, 38, 67, 33, 65, 37, 64, 0, 0, 0, 0, 0, 228, 231, 227, 233, 224, 219, 225, 230, 226, 232, 89, 87, 0, 88, 229, 90, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0, 0, 0, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	@OriginalMember(owner = "client!kb", name = "I", descriptor = "Lclient!nj;")
+	public static KeyboardBase instance;
 
 	@OriginalMember(owner = "client!ke", name = "m", descriptor = "Lclient!co;")
 	private Class37_Sub1 aClass37_Sub1_2;
@@ -19,18 +24,54 @@ public final class Class123_Sub1 extends Class123 implements KeyListener, FocusL
 	private Class37_Sub1 aClass37_Sub1_3;
 
 	@OriginalMember(owner = "client!ke", name = "x", descriptor = "Ljava/awt/Component;")
-	private Component aComponent2;
+	private Component component;
 
 	@OriginalMember(owner = "client!ke", name = "G", descriptor = "Lclient!co;")
 	private Class37_Sub1 aClass37_Sub1_4;
 
 	@OriginalMember(owner = "client!ke", name = "o", descriptor = "[Z")
-	private final boolean[] aBooleanArray32 = new boolean[112];
+	private final boolean[] pressedKeys = new boolean[112];
 
 	@OriginalMember(owner = "client!ke", name = "<init>", descriptor = "(Ljava/awt/Component;)V")
-	public Class123_Sub1(@OriginalArg(0) Component arg0) {
-		Static119.method2378();
+	public Keyboard(@OriginalArg(0) Component arg0) {
+		method2378();
 		this.method3350(arg0);
+	}
+
+	@OriginalMember(owner = "client!gr", name = "a", descriptor = "(I)V")
+	public static void method2378() {
+		if (Signlink.javaVendor.toLowerCase().indexOf("microsoft") != -1) {
+			CODE_MAP[191] = 73;
+			CODE_MAP[221] = 43;
+			CODE_MAP[222] = 59;
+			CODE_MAP[188] = 71;
+			CODE_MAP[186] = 57;
+			CODE_MAP[219] = 42;
+			CODE_MAP[189] = 26;
+			CODE_MAP[223] = 28;
+			CODE_MAP[190] = 72;
+			CODE_MAP[187] = 27;
+			CODE_MAP[192] = 58;
+			CODE_MAP[220] = 74;
+			return;
+		}
+		CODE_MAP[59] = 57;
+		CODE_MAP[45] = 26;
+		CODE_MAP[47] = 73;
+		CODE_MAP[93] = 43;
+		CODE_MAP[46] = 72;
+		CODE_MAP[44] = 71;
+		CODE_MAP[91] = 42;
+		if (Signlink.setFocusTraversalKeysEnabled == null) {
+			CODE_MAP[192] = 58;
+			CODE_MAP[222] = 59;
+		} else {
+			CODE_MAP[520] = 59;
+			CODE_MAP[222] = 58;
+			CODE_MAP[192] = 28;
+		}
+		CODE_MAP[92] = 74;
+		CODE_MAP[61] = 27;
 	}
 
 	@OriginalMember(owner = "client!ke", name = "keyTyped", descriptor = "(Ljava/awt/event/KeyEvent;)V")
@@ -69,8 +110,8 @@ public final class Class123_Sub1 extends Class123 implements KeyListener, FocusL
 		@Pc(8) int local8 = arg0.getKeyCode();
 		if (local8 == 0) {
 			local8 = 0;
-		} else if (local8 >= 0 && Static239.anIntArray285.length > local8) {
-			local8 = Static239.anIntArray285[local8];
+		} else if (local8 >= 0 && CODE_MAP.length > local8) {
+			local8 = CODE_MAP[local8];
 			if (arg1 == 0 && (local8 & 0x80) != 0) {
 				local8 = 0;
 			} else {
@@ -99,16 +140,16 @@ public final class Class123_Sub1 extends Class123 implements KeyListener, FocusL
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(Ljava/awt/Component;B)V")
 	private void method3350(@OriginalArg(0) Component arg0) {
 		this.method3351();
-		this.aComponent2 = arg0;
+		this.component = arg0;
 		@Pc(11) Method local11 = Signlink.setFocusTraversalKeysEnabled;
 		if (local11 != null) {
 			try {
-				local11.invoke(this.aComponent2, Boolean.FALSE);
+				local11.invoke(this.component, Boolean.FALSE);
 			} catch (@Pc(26) Throwable local26) {
 			}
 		}
-		this.aComponent2.addKeyListener(this);
-		this.aComponent2.addFocusListener(this);
+		this.component.addKeyListener(this);
+		this.component.addFocusListener(this);
 	}
 
 	@OriginalMember(owner = "client!ke", name = "b", descriptor = "(I)V")
@@ -117,14 +158,14 @@ public final class Class123_Sub1 extends Class123 implements KeyListener, FocusL
 		for (@Pc(14) Class37_Sub1 local14 = this.aClass37_Sub1_3; local14 != null; local14 = local14.aClass37_Sub1_1) {
 			if (local14.anInt1250 == 0) {
 				if (local14.anInt1245 >= 0) {
-					local14.aBoolean101 = !this.aBooleanArray32[local14.anInt1245];
+					local14.aBoolean101 = !this.pressedKeys[local14.anInt1245];
 				}
-				this.aBooleanArray32[local14.anInt1245] = true;
+				this.pressedKeys[local14.anInt1245] = true;
 			} else if (local14.anInt1250 == 1) {
-				this.aBooleanArray32[local14.anInt1245] = false;
+				this.pressedKeys[local14.anInt1245] = false;
 			} else if (local14.anInt1250 == -1) {
 				for (@Pc(52) int local52 = 0; local52 < 112; local52++) {
-					this.aBooleanArray32[local52] = false;
+					this.pressedKeys[local52] = false;
 				}
 			}
 		}
@@ -141,14 +182,14 @@ public final class Class123_Sub1 extends Class123 implements KeyListener, FocusL
 
 	@OriginalMember(owner = "client!ke", name = "e", descriptor = "(I)V")
 	private void method3351() {
-		if (this.aComponent2 == null) {
+		if (this.component == null) {
 			return;
 		}
-		this.aComponent2.removeKeyListener(this);
-		this.aComponent2.removeFocusListener(this);
-		this.aComponent2 = null;
+		this.component.removeKeyListener(this);
+		this.component.removeFocusListener(this);
+		this.component = null;
 		for (@Pc(22) int local22 = 0; local22 < 112; local22++) {
-			this.aBooleanArray32[local22] = false;
+			this.pressedKeys[local22] = false;
 		}
 		this.aClass37_Sub1_3 = null;
 		this.aClass37_Sub1_2 = null;
@@ -163,8 +204,8 @@ public final class Class123_Sub1 extends Class123 implements KeyListener, FocusL
 
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(BI)Z")
 	@Override
-	public boolean method3343(@OriginalArg(1) int arg0) {
-		return arg0 >= 0 && arg0 < 112 ? this.aBooleanArray32[arg0] : false;
+	public boolean isPressed(@OriginalArg(1) int arg0) {
+		return arg0 >= 0 && arg0 < 112 ? this.pressedKeys[arg0] : false;
 	}
 
 	@OriginalMember(owner = "client!ke", name = "a", descriptor = "(Z)Lclient!rk;")

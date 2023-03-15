@@ -7,9 +7,6 @@ public final class Static135 {
 	@OriginalMember(owner = "client!ho", name = "Q", descriptor = "I")
 	public static final int anInt2521 = 1338;
 
-	@OriginalMember(owner = "client!ho", name = "R", descriptor = "[Ljava/lang/String;")
-	public static final String[] aStringArray20 = new String[100];
-
 	@OriginalMember(owner = "client!ho", name = "S", descriptor = "Lclient!bc;")
 	public static final Class16 aClass16_2 = new Class16("", 14);
 

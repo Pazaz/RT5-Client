@@ -22,7 +22,7 @@ public final class Class12_Sub4 extends ParticleNode {
 	public int anInt4076;
 
 	@OriginalMember(owner = "client!nf", name = "a", descriptor = "(IBILclient!wm;)Z")
-	public boolean method4025(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class19 arg2) {
+	public boolean method4025(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) TextureProvider arg2) {
 		if (this.aClass12_Sub2Array1 != null) {
 			for (@Pc(15) int local15 = 0; local15 < this.aClass12_Sub2Array1.length; local15++) {
 				if (this.aClass12_Sub2Array1[local15].method432(arg1, arg0) && this.aClass11_1.method6068(arg1, arg0, arg2)) {

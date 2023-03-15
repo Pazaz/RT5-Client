@@ -26,12 +26,12 @@ public final class Static15 {
 
 	@OriginalMember(owner = "client!ar", name = "b", descriptor = "(IIB)V")
 	public static void method394(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		Static77.anInt1763 = arg0 - Static344.anInt6055;
-		Static238.anInt4328 = arg1 - Static344.anInt6057;
+		Static77.anInt1763 = arg0 - MapList.anInt6055;
+		Static238.anInt4328 = arg1 - MapList.anInt6057;
 	}
 
 	@OriginalMember(owner = "client!ar", name = "a", descriptor = "(ILclient!ct;IILclient!wm;Z)V")
-	public static void method395(@OriginalArg(0) int arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class19 arg4) {
+	public static void method395(@OriginalArg(0) int arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) TextureProvider arg4) {
 		@Pc(9) MsiType local9 = client.MsiType.method2708(arg1.anInt1316);
 		if (local9.anInt3751 == -1) {
 			return;

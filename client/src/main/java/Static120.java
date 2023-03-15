@@ -10,12 +10,6 @@ public final class Static120 {
 	@OriginalMember(owner = "client!gs", name = "h", descriptor = "Lclient!ad;")
 	public static HashTable aClass4_49 = new HashTable(64);
 
-	@OriginalMember(owner = "client!gs", name = "j", descriptor = "S")
-	public static short aShort35 = 32767;
-
-	@OriginalMember(owner = "client!gs", name = "l", descriptor = "S")
-	public static short aShort36 = 320;
-
 	@OriginalMember(owner = "client!gs", name = "m", descriptor = "I")
 	public static int anInt2387 = 0;
 
@@ -48,7 +42,7 @@ public final class Static120 {
 								if (Static291.mapSquares[local85] == local83 && arg0[local85] != null) {
 									@Pc(107) Buffer local107 = new Buffer(arg0[local85]);
 									arg1.method1091(local24 * 8, local73, local107, Static171.aClass46Array1, local67, local28 * 8, local61, local50, local18);
-									arg1.method1101(local107, local28 * 8, local18, local50, local73, local67, Static190.aClass19_8, local16[0] == -1 ? local16 : null, local24 * 8, local61);
+									arg1.method1101(local107, local28 * 8, local18, local50, local73, local67, Rasteriser.textureProvider, local16[0] == -1 ? local16 : null, local24 * 8, local61);
 									local32 = true;
 									break;
 								}

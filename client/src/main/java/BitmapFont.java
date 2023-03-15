@@ -8,13 +8,13 @@ import org.openrs2.deob.annotation.Pc;
 public abstract class BitmapFont {
 
 	@OriginalMember(owner = "client!ur", name = "f", descriptor = "Lclient!wm;")
-	private final Class19 aClass19_12;
+	private final TextureProvider aClass19_12;
 
 	@OriginalMember(owner = "client!ur", name = "q", descriptor = "Lclient!vi;")
 	private final Class239 aClass239_8;
 
 	@OriginalMember(owner = "client!ur", name = "<init>", descriptor = "(Lclient!wm;Lclient!vi;)V")
-	protected BitmapFont(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class239 arg1) {
+	protected BitmapFont(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Class239 arg1) {
 		this.aClass19_12 = arg0;
 		this.aClass239_8 = arg1;
 	}

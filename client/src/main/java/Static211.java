@@ -1,4 +1,3 @@
-import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
@@ -53,7 +52,7 @@ public final class Static211 {
 		Static192.method3508();
 		Static161.method2969();
 		ScriptRunner.aClass98_30.method2614();
-		Static190.aClass19_8.method2903();
+		Rasteriser.textureProvider.method2903();
 		Static261.aClass116_7.method3153();
 		Static194.method3541();
 		client.jsArchive0.discardUnpacked();
@@ -89,23 +88,6 @@ public final class Static211 {
 		Static139.aClass98_18.method2614();
 		Static61.aClass98_5.method2614();
 		Static210.aClass98_31.method2614();
-	}
-
-	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(II)V")
-	public static void method3722(@OriginalArg(1) int arg0) {
-		Static77.anInt1763 = -1;
-		if (arg0 == 37) {
-			Static344.aFloat73 = 3.0F;
-		} else if (arg0 == 50) {
-			Static344.aFloat73 = 4.0F;
-		} else if (arg0 == 75) {
-			Static344.aFloat73 = 6.0F;
-		} else if (arg0 == 100) {
-			Static344.aFloat73 = 8.0F;
-		} else if (arg0 == 200) {
-			Static344.aFloat73 = 16.0F;
-		}
-		Static77.anInt1763 = -1;
 	}
 
 	@OriginalMember(owner = "client!mh", name = "b", descriptor = "(B)V")

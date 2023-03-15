@@ -22,7 +22,7 @@ public final class Static337 {
 			return;
 		}
 		@Pc(16) int local16 = 0;
-		@Pc(24) int local24 = client.preferences.anInt4882 * arg2.anInt2906 >> 8;
+		@Pc(24) int local24 = client.preferences.ambientSoundsVolume * arg2.anInt2906 >> 8;
 		if (arg2.anInt2896 < arg4) {
 			local16 = arg4 - arg2.anInt2896;
 		} else if (arg4 < arg2.anInt2899) {
@@ -33,7 +33,7 @@ public final class Static337 {
 		} else if (arg3 < arg2.anInt2910) {
 			local16 += arg2.anInt2910 - arg3;
 		}
-		if (arg2.anInt2901 == 0 || arg2.anInt2901 < local16 - 64 || client.preferences.anInt4882 == 0 || arg2.anInt2905 != arg1) {
+		if (arg2.anInt2901 == 0 || arg2.anInt2901 < local16 - 64 || client.preferences.ambientSoundsVolume == 0 || arg2.anInt2905 != arg1) {
 			if (arg2.aClass2_Sub12_Sub4_3 != null) {
 				client.soundStream.method2081(arg2.aClass2_Sub12_Sub4_3);
 				arg2.aClass2_Sub12_Sub4_3 = null;
@@ -84,7 +84,7 @@ public final class Static337 {
 
 	@OriginalMember(owner = "client!tk", name = "b", descriptor = "(I)V")
 	public static void method5709() {
-		Static371.method6257((long) client.cycle, Static190.aClass19_8);
+		Static371.method6257((long) client.cycle, Rasteriser.textureProvider);
 		if (Static139.anInt2595 != -1) {
 			Static232.method4028(Static139.anInt2595);
 		}
@@ -96,15 +96,15 @@ public final class Static337 {
 			Static357.aBooleanArray59[local19] = false;
 		}
 		Static132.anInt2468 = client.cycle;
-		if (Static190.aClass19_8.method2871()) {
+		if (Rasteriser.textureProvider.method2871()) {
 			Static106.aBoolean164 = true;
 		}
 		if (Static139.anInt2595 != -1) {
 			Static154.anInt2806 = 0;
 			Static46.method1421();
 		}
-		Static190.aClass19_8.method2898();
-		Static307.method5255(Static394.anInt7263);
+		Rasteriser.textureProvider.method2898();
+		Static307.method5255(Minimap.anInt7263);
 		Static165.anInt3148 = 0;
 	}
 }

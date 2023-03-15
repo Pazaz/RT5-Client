@@ -64,10 +64,10 @@ public final class Static324 {
 		}
 		@Pc(49) int local49 = Static386.method6032(arg5, arg1, arg2) - arg0;
 		Static76.aClass14_3.method3936(arg3, 0, 0);
-		Static190.aClass19_8.method2896(Static76.aClass14_3);
-		Static190.aClass19_8.method2902(arg5, local49, arg1, Static216.anIntArray231);
+		Rasteriser.textureProvider.method2896(Static76.aClass14_3);
+		Rasteriser.textureProvider.method2902(arg5, local49, arg1, Static216.anIntArray231);
 		Static76.aClass14_3.method3936(-arg3, 0, 0);
-		Static190.aClass19_8.method2896(Static76.aClass14_3);
+		Rasteriser.textureProvider.method2896(Static76.aClass14_3);
 	}
 
 }

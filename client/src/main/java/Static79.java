@@ -145,18 +145,6 @@ public final class Static79 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ej", name = "c", descriptor = "(I)Z")
-	public static boolean method1870() {
-		if (Static276.javaScript) {
-			try {
-				BrowserControl.call(GameShell.signlink.applet, "showVideoAd");
-				return true;
-			} catch (@Pc(14) Throwable local14) {
-			}
-		}
-		return false;
-	}
-
 	@OriginalMember(owner = "client!ej", name = "a", descriptor = "(IIIIIBIII)V")
 	public static void method1871(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
 		if (arg1 < 1 || arg7 < 1 || Static373.anInt7033 - 2 < arg1 || Static242.anInt4449 - 2 < arg7) {
@@ -172,14 +160,14 @@ public final class Static79 {
 		if (Scene.aClass67ArrayArrayArray3 == null) {
 			return;
 		}
-		Static190.aClass29_Sub1_63.method1108(arg0, arg1, Static171.aClass46Array1[arg0], arg4, arg7, Static190.aClass19_8);
+		Static190.aClass29_Sub1_63.method1108(arg0, arg1, Static171.aClass46Array1[arg0], arg4, arg7, Rasteriser.textureProvider);
 		if (arg2 < 0) {
 			return;
 		}
-		@Pc(76) boolean local76 = client.preferences.aBoolean359;
-		client.preferences.aBoolean359 = true;
-		Static190.aClass29_Sub1_63.method1105(arg3, arg1, arg7, arg2, local30, arg0, Static190.aClass19_8, Static171.aClass46Array1[arg0], arg6, arg5);
-		client.preferences.aBoolean359 = local76;
+		@Pc(76) boolean local76 = client.preferences.showGroundDecorations;
+		client.preferences.showGroundDecorations = true;
+		Static190.aClass29_Sub1_63.method1105(arg3, arg1, arg7, arg2, local30, arg0, Rasteriser.textureProvider, Static171.aClass46Array1[arg0], arg6, arg5);
+		client.preferences.showGroundDecorations = local76;
 		return;
 	}
 }

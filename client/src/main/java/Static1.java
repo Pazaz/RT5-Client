@@ -88,7 +88,7 @@ public final class Static1 {
 			if (arg1) {
 				SoundPlayer.play(local46, 255, 0, local40);
 			}
-		} else if (client.preferences.anInt4882 != 0) {
+		} else if (client.preferences.ambientSoundsVolume != 0) {
 			Static256.anIntArray321[Static243.anInt4503] = local40;
 			Static329.anIntArray419[Static243.anInt4503] = local46;
 			Static237.anIntArray283[Static243.anInt4503] = 0;

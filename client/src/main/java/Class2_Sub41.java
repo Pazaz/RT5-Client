@@ -13,7 +13,7 @@ public final class Class2_Sub41 extends Node {
 	public int[] anIntArray489 = new int[] { -1 };
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IIIIZLclient!nb;IILclient!jo;Lclient!wm;)Lclient!gn;")
-	public Model method6360(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(8) PlayerAppearance arg6, @OriginalArg(9) Class19 arg7) {
+	public Model method6360(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(8) PlayerAppearance arg6, @OriginalArg(9) TextureProvider arg7) {
 		@Pc(7) Model local7 = null;
 		@Pc(9) int local9 = 1024;
 		@Pc(11) BasType local11 = null;

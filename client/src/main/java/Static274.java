@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static274 {
 
 	@OriginalMember(owner = "client!pp", name = "h", descriptor = "Lclient!ci;")
-	public static TextureProvider anInterface2_7;
+	public static TextureProviderInterface anInterface2_7;
 
 	@OriginalMember(owner = "client!pp", name = "s", descriptor = "[I")
 	public static int[] anIntArray352;

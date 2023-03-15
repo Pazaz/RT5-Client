@@ -16,7 +16,7 @@ public final class Npc extends PathingEntity {
 	public int anInt4663 = -1;
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IILclient!wm;)Z")
-	private boolean method4335(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1) {
+	private boolean method4335(@OriginalArg(1) int arg0, @OriginalArg(2) TextureProvider arg1) {
 		@Pc(7) int local7 = arg0;
 		@Pc(11) BasType local11 = this.method4332();
 		@Pc(27) Class157 local27 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
@@ -90,7 +90,7 @@ public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		throw new IllegalStateException();
 	}
 
@@ -179,7 +179,7 @@ public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!oe", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
-	public Class12_Sub4 method6073(@OriginalArg(0) Class19 arg0) {
+	public Class12_Sub4 method6073(@OriginalArg(0) TextureProvider arg0) {
 		if (this.type == null || !this.method4335(1024, arg0)) {
 			return null;
 		}
@@ -189,7 +189,7 @@ public final class Npc extends PathingEntity {
 		local17.method3936(super.xFine, super.anInt6782, super.zFine);
 		@Pc(37) BasType local37 = this.method4332();
 		@Pc(50) NpcType local50 = this.type.multiNpcs == null ? this.type : this.type.getMultiNpc(Static214.aClass226_1);
-		if (client.preferences.aBoolean358 && local50.aBoolean142 && local37.aBoolean424) {
+		if (client.preferences.characterShadowsOn && local50.aBoolean142 && local37.aBoolean424) {
 			@Pc(75) Class157 local75 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
 			@Pc(92) Class157 local92 = super.anInt4585 == -1 || super.aBoolean317 && local75 != null ? null : client.SeqTypes.method2371(super.anInt4585);
 			@Pc(144) Model local144 = Static178.method2340(local92 == null ? super.anInt4607 : super.anInt4626, this.type.aByte15 & 0xFF, this.type.aByte14 & 0xFF, super.anInt4596, local92 == null ? local75 : local92, this.type.size, this.type.aShort25 & 0xFFFF, super.aClass31Array3[0], local22, arg0, this.type.aShort24 & 0xFFFF, super.aBoolean318, super.anInt4608, super.anInt4589);
@@ -274,7 +274,7 @@ public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
-	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class19 arg2) {
+	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) TextureProvider arg2) {
 		if (this.type == null || !this.method4335(65536, arg2)) {
 			return false;
 		}
@@ -321,7 +321,7 @@ public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
-	public void method6070(@OriginalArg(0) Class19 arg0) {
+	public void method6070(@OriginalArg(0) TextureProvider arg0) {
 		if (this.type != null && (super.aBoolean321 || this.method4335(0, arg0))) {
 			this.method4333(arg0, super.aClass31Array3, super.aBoolean321);
 		}

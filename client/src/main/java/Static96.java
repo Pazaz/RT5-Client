@@ -6,9 +6,6 @@ public final class Static96 {
 	@OriginalMember(owner = "client!fj", name = "b", descriptor = "[I")
 	public static int[] anIntArray126;
 
-	@OriginalMember(owner = "client!fj", name = "g", descriptor = "I")
-	public static int anInt2003;
-
 	@OriginalMember(owner = "client!fj", name = "d", descriptor = "[I")
 	public static final int[] anIntArray127 = new int[] { 4, 2, 1, 1, 2, 2, 3, 1, 3, 3, 3, 2, 0 };
 

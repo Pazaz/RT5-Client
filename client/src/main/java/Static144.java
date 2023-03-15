@@ -33,12 +33,4 @@ public final class Static144 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(B)I")
-	public static int getWindowMode() {
-		if (Static363.frame == null) {
-			return Static363.aBoolean464 ? 2 : 1;
-		} else {
-			return 3;
-		}
-	}
 }

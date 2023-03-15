@@ -91,7 +91,7 @@ public final class Class12_Sub8 extends ParticleNode {
 	public final Class36 aClass36_8;
 
 	@OriginalMember(owner = "client!th", name = "<init>", descriptor = "(Lclient!wm;Lclient!jf;Lclient!oh;J)V")
-	public Class12_Sub8(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class114 arg1, @OriginalArg(2) ParticleSystem arg2, @OriginalArg(3) long arg3) {
+	public Class12_Sub8(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Class114 arg1, @OriginalArg(2) ParticleSystem arg2, @OriginalArg(3) long arg3) {
 		this.aClass114_2 = arg1;
 		this.aLong198 = arg3;
 		this.aClass12_Sub5_6 = arg2;
@@ -105,7 +105,7 @@ public final class Class12_Sub8 extends ParticleNode {
 	}
 
 	@OriginalMember(owner = "client!th", name = "a", descriptor = "(JBLclient!wm;IZ)V")
-	public void method5686(@OriginalArg(0) long arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3) {
+	public void method5686(@OriginalArg(0) long arg0, @OriginalArg(2) TextureProvider arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3) {
 		@Pc(54) int local54;
 		if (this.aBoolean422) {
 			arg3 = false;
@@ -151,12 +151,12 @@ public final class Class12_Sub8 extends ParticleNode {
 					} else {
 						local167 = (int) (Math.random() * (double) this.anInt6250) + this.anInt6247;
 						@Pc(171) int local171 = local167 & 0x3FFF;
-						local175 = Class19.anIntArray178[local171];
-						local179 = Class19.anIntArray177[local171];
+						local175 = TextureProvider.anIntArray178[local171];
+						local179 = TextureProvider.anIntArray177[local171];
 						local189 = (int) ((double) this.anInt6237 * Math.random()) + this.anInt6260;
 						@Pc(193) int local193 = local189 & 0x1FFF;
-						local197 = Class19.anIntArray178[local193];
-						local201 = Class19.anIntArray177[local193];
+						local197 = TextureProvider.anIntArray178[local193];
+						local201 = TextureProvider.anIntArray177[local193];
 						local207 = local197 * local179 >> 15;
 						local213 = local197 * local175 >> 15;
 						local217 = local201 * -1;

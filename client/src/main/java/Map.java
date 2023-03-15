@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!vj")
-public final class Class2_Sub2_Sub17 extends SecondaryNode {
+public final class Map extends SecondaryNode {
 
 	@OriginalMember(owner = "client!vj", name = "C", descriptor = "I")
 	public int anInt6864 = -1;
@@ -16,7 +16,7 @@ public final class Class2_Sub2_Sub17 extends SecondaryNode {
 	public int anInt6874 = 0;
 
 	@OriginalMember(owner = "client!vj", name = "U", descriptor = "Z")
-	public boolean aBoolean466 = true;
+	public boolean valid = true;
 
 	@OriginalMember(owner = "client!vj", name = "K", descriptor = "I")
 	public int anInt6870 = 12800;
@@ -31,7 +31,7 @@ public final class Class2_Sub2_Sub17 extends SecondaryNode {
 	public final int anInt6869;
 
 	@OriginalMember(owner = "client!vj", name = "P", descriptor = "Ljava/lang/String;")
-	public final String aString66;
+	public final String name;
 
 	@OriginalMember(owner = "client!vj", name = "M", descriptor = "I")
 	public final int anInt6872;
@@ -43,11 +43,11 @@ public final class Class2_Sub2_Sub17 extends SecondaryNode {
 	public final LinkedList aClass135_41;
 
 	@OriginalMember(owner = "client!vj", name = "<init>", descriptor = "(ILjava/lang/String;Ljava/lang/String;IIZII)V")
-	public Class2_Sub2_Sub17(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1, @OriginalArg(2) String arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
+	public Map(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1, @OriginalArg(2) String arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
 		this.anInt6869 = arg0;
-		this.aBoolean466 = arg5;
+		this.valid = arg5;
 		this.anInt6875 = arg6;
-		this.aString66 = arg2;
+		this.name = arg2;
 		this.anInt6864 = arg4;
 		this.anInt6872 = arg3;
 		this.aString67 = arg1;

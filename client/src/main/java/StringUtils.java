@@ -142,4 +142,9 @@ public class StringUtils {
 		return Static319.method5433(10, arg0);
 	}
 
+	@OriginalMember(owner = "client!il", name = "a", descriptor = "(ZI)Ljava/lang/String;")
+	public static String formatIp(@OriginalArg(1) int arg0) {
+		return (arg0 >> 24 & 0xFF) + "." + (arg0 >> 16 & 0xFF) + "." + (arg0 >> 8 & 0xFF) + "." + (arg0 & 0xFF);
+	}
+
 }

@@ -9,7 +9,7 @@ public final class Texture extends SecondaryNode {
 	@OriginalMember(owner = "client!gg", name = "B", descriptor = "[I")
 	public static final int[] brightnessMap = new int[256];
 	@OriginalMember(owner = "client!oq", name = "w", descriptor = "Lclient!ci;")
-	public static TextureProvider provider;
+	public static TextureProviderInterface provider;
 	@OriginalMember(owner = "client!ge", name = "e", descriptor = "Lclient!r;")
 	public static Js5 spritesArchive;
 	@OriginalMember(owner = "client!nb", name = "F", descriptor = "I")
@@ -218,7 +218,7 @@ public final class Texture extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!qm", name = "a", descriptor = "(ZLclient!r;Lclient!ci;ZII)[F")
-	public float[] method4956(@OriginalArg(1) Js5 arg0, @OriginalArg(2) TextureProvider arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+	public float[] method4956(@OriginalArg(1) Js5 arg0, @OriginalArg(2) TextureProviderInterface arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		spritesArchive = arg0;
 		provider = arg1;
 		for (@Pc(11) int local11 = 0; local11 < this.textureOps.length; local11++) {
@@ -281,7 +281,7 @@ public final class Texture extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!qm", name = "a", descriptor = "(ILclient!ci;Lclient!r;)Z")
-	public boolean method4957(@OriginalArg(1) TextureProvider arg0, @OriginalArg(2) Js5 arg1) {
+	public boolean method4957(@OriginalArg(1) TextureProviderInterface arg0, @OriginalArg(2) Js5 arg1) {
 		@Pc(9) int local9;
 		if (Static123.anInt2421 >= 0) {
 			for (local9 = 0; local9 < this.anIntArray371.length; local9++) {
@@ -305,7 +305,7 @@ public final class Texture extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!qm", name = "a", descriptor = "(ZDIILclient!r;ZILclient!ci;)[I")
-	public int[] method4958(@OriginalArg(0) boolean arg0, @OriginalArg(1) double arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Js5 arg4, @OriginalArg(5) boolean arg5, @OriginalArg(7) TextureProvider arg6) {
+	public int[] method4958(@OriginalArg(0) boolean arg0, @OriginalArg(1) double arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Js5 arg4, @OriginalArg(5) boolean arg5, @OriginalArg(7) TextureProviderInterface arg6) {
 		spritesArchive = arg4;
 		provider = arg6;
 		for (@Pc(19) int local19 = 0; local19 < this.textureOps.length; local19++) {
@@ -387,7 +387,7 @@ public final class Texture extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!qm", name = "a", descriptor = "(Lclient!ci;Lclient!r;DIZII)[I")
-	public int[] method4960(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) double arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
+	public int[] method4960(@OriginalArg(0) TextureProviderInterface arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) double arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		spritesArchive = arg1;
 		provider = arg0;
 		for (@Pc(11) int local11 = 0; local11 < this.textureOps.length; local11++) {

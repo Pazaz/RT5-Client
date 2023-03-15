@@ -10,9 +10,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static174 {
 
-	@OriginalMember(owner = "client!kb", name = "I", descriptor = "Lclient!nj;")
-	public static Class123 aClass123_2;
-
 	@OriginalMember(owner = "client!kb", name = "D", descriptor = "[Ljava/awt/Color;")
 	public static final Color[] aColorArray2 = new Color[] { new Color(9179409), new Color(3289650) };
 
@@ -22,7 +19,7 @@ public final class Static174 {
 	@OriginalMember(owner = "client!kb", name = "b", descriptor = "(I)V")
 	public static void method1506() {
 		@Pc(5) byte local5 = 0;
-		if (client.preferences.aBoolean364) {
+		if (client.preferences.highDetailLighting) {
 			local5 = 55;
 		}
 		Static91.method1963(local5);

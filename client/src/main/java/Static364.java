@@ -10,9 +10,6 @@ public final class Static364 {
 	@OriginalMember(owner = "client!vg", name = "s", descriptor = "[I")
 	public static final int[] anIntArray477 = new int[4096];
 
-	@OriginalMember(owner = "client!vg", name = "v", descriptor = "[[[I")
-	public static final int[][][] anIntArrayArrayArray13 = new int[2][][];
-
 	@OriginalMember(owner = "client!vg", name = "a", descriptor = "(BIIII)V")
 	public static void method6103(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		if (Static28.anInt675 <= arg1 - arg3 && arg3 + arg1 <= Static82.anInt1837 && arg2 - arg3 >= Static365.anInt6832 && Static161.anInt2954 >= arg2 + arg3) {

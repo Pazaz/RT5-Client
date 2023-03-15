@@ -13,9 +13,6 @@ public final class Static277 {
 	@OriginalMember(owner = "client!q", name = "h", descriptor = "Lclient!ld;")
 	public static final LinkedList aClass135_31 = new LinkedList();
 
-	@OriginalMember(owner = "client!q", name = "q", descriptor = "F")
-	public static float aFloat67 = 0.0F;
-
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(IIIIB)V")
 	public static void method4680(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(12) DelayedStateChange local12 = Static316.method5413(8, arg2);

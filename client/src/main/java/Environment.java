@@ -62,7 +62,7 @@ public final class Environment {
 	@OriginalMember(owner = "client!bh", name = "<init>", descriptor = "(Lclient!bt;)V")
 	public Environment(@OriginalArg(0) Buffer arg0) {
 		@Pc(16) int local16 = arg0.g1();
-		if (client.preferences.aBoolean364 && Static65.aClass19_3.method2886() > 0) {
+		if (client.preferences.highDetailLighting && Static65.aClass19_3.method2886() > 0) {
 			if ((local16 & 0x1) == 0) {
 				this.anInt637 = Static28.anInt686;
 			} else {

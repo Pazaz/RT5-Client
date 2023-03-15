@@ -9,20 +9,20 @@ public final class Static212 {
 
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(Lclient!nk;III)V")
 	public static void method3726(@OriginalArg(0) Class161 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(8) Class78 local8 = arg0.method4109(Static190.aClass19_8);
+		@Pc(8) Class78 local8 = arg0.method4109(Rasteriser.textureProvider);
 		if (local8 == null) {
 			return;
 		}
-		Static190.aClass19_8.method2895(arg1, arg2, arg1 + arg0.width, arg2 + arg0.height);
+		Rasteriser.textureProvider.method2895(arg1, arg2, arg1 + arg0.width, arg2 + arg0.height);
 		if (Static146.anInt2703 >= 3) {
-			Static190.aClass19_8.method2811(local8, arg1, arg2);
+			Rasteriser.textureProvider.method2811(local8, arg1, arg2);
 		} else {
-			Static12.aClass13_2.method6398((float) arg1 + (float) arg0.width / 2.0F, (float) arg2 + (float) arg0.height / 2.0F, ((int) -Static277.aFloat67 & 0x3FFF) << 2, local8, arg1, arg2);
+			Static12.aClass13_2.method6398((float) arg1 + (float) arg0.width / 2.0F, (float) arg2 + (float) arg0.height / 2.0F, ((int) -Camera.yawTarget & 0x3FFF) << 2, local8, arg1, arg2);
 		}
 	}
 
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(IIILclient!je;Lclient!wm;Lclient!jg;Lclient!np;I)V")
-	public static void method3727(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class113 arg3, @OriginalArg(4) Class19 arg4, @OriginalArg(5) Class2_Sub20 arg5, @OriginalArg(6) MelType arg6) {
+	public static void method3727(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class113 arg3, @OriginalArg(4) TextureProvider arg4, @OriginalArg(5) Class2_Sub20 arg5, @OriginalArg(6) MelType arg6) {
 		@Pc(14) int local14 = arg5.anInt2948 - arg0 / 2 - 5;
 		@Pc(18) int local18 = arg2 + 2;
 		if (arg6.anInt4437 != 0) {
@@ -48,42 +48,42 @@ public final class Static212 {
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(BI)Lclient!je;")
 	public static Class113 method3729(@OriginalArg(1) int arg0) {
 		if (arg0 == 0) {
-			if ((double) Static344.aFloat72 == 3.0D) {
+			if ((double) MapList.aFloat72 == 3.0D) {
 				return Static74.aClass113_4;
 			}
-			if ((double) Static344.aFloat72 == 4.0D) {
+			if ((double) MapList.aFloat72 == 4.0D) {
 				return Static107.aClass113_5;
 			}
-			if ((double) Static344.aFloat72 == 6.0D) {
+			if ((double) MapList.aFloat72 == 6.0D) {
 				return Static2.aClass113_1;
 			}
-			if ((double) Static344.aFloat72 >= 8.0D) {
+			if ((double) MapList.aFloat72 >= 8.0D) {
 				return Static175.aClass113_6;
 			}
 		} else if (arg0 == 1) {
-			if ((double) Static344.aFloat72 == 3.0D) {
+			if ((double) MapList.aFloat72 == 3.0D) {
 				return Static2.aClass113_1;
 			}
-			if ((double) Static344.aFloat72 == 4.0D) {
+			if ((double) MapList.aFloat72 == 4.0D) {
 				return Static175.aClass113_6;
 			}
-			if ((double) Static344.aFloat72 == 6.0D) {
+			if ((double) MapList.aFloat72 == 6.0D) {
 				return Static249.aClass113_8;
 			}
-			if ((double) Static344.aFloat72 >= 8.0D) {
+			if ((double) MapList.aFloat72 >= 8.0D) {
 				return Static30.aClass113_3;
 			}
 		} else if (arg0 == 2) {
-			if ((double) Static344.aFloat72 == 3.0D) {
+			if ((double) MapList.aFloat72 == 3.0D) {
 				return Static249.aClass113_8;
 			}
-			if ((double) Static344.aFloat72 == 4.0D) {
+			if ((double) MapList.aFloat72 == 4.0D) {
 				return Static30.aClass113_3;
 			}
-			if ((double) Static344.aFloat72 == 6.0D) {
+			if ((double) MapList.aFloat72 == 6.0D) {
 				return Static27.aClass113_2;
 			}
-			if ((double) Static344.aFloat72 >= 8.0D) {
+			if ((double) MapList.aFloat72 >= 8.0D) {
 				return Static369.aClass113_9;
 			}
 		}

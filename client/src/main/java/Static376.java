@@ -42,19 +42,19 @@ public final class Static376 {
 			return;
 		}
 		@Pc(16) int local16;
-		if (Static314.anInt5911 == 4) {
-			local16 = (int) Static277.aFloat67 & 0x3FFF;
+		if (Camera.anInt5911 == 4) {
+			local16 = (int) Camera.yawTarget & 0x3FFF;
 		} else {
-			local16 = Static6.anInt158 + (int) Static277.aFloat67 & 0x3FFF;
+			local16 = Static6.anInt158 + (int) Camera.yawTarget & 0x3FFF;
 		}
 		@Pc(37) int local37 = Math.max(arg6.width / 2, arg6.height / 2) + 10;
 		@Pc(45) int local45 = arg3 * arg3 + arg1 * arg1;
 		if (local45 > local37 * local37) {
 			return;
 		}
-		@Pc(63) int local63 = Class19.anIntArray178[local16];
-		@Pc(67) int local67 = Class19.anIntArray177[local16];
-		if (Static314.anInt5911 != 4) {
+		@Pc(63) int local63 = TextureProvider.anIntArray178[local16];
+		@Pc(67) int local67 = TextureProvider.anIntArray177[local16];
+		if (Camera.anInt5911 != 4) {
 			local67 = local67 * 256 / (Static97.anInt2005 + 256);
 			local63 = local63 * 256 / (Static97.anInt2005 + 256);
 		}

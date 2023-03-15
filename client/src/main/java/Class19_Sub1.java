@@ -12,7 +12,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!bf")
-public final class Class19_Sub1 extends Class19 implements Interface8 {
+public final class Class19_Sub1 extends TextureProvider implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "F", descriptor = "Lclient!mf;")
 	private Interface8 anInterface8_1;
@@ -420,7 +420,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 	private final Class2_Sub38_Sub1 aClass2_Sub38_Sub1_1;
 
 	@OriginalMember(owner = "client!bf", name = "<init>", descriptor = "(Ljava/awt/Canvas;Lclient!ci;IILclient!ml;)V")
-	public Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) TextureProvider arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Signlink arg4) {
+	public Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) TextureProviderInterface arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Signlink arg4) {
 		super(arg2, arg1);
 		this.aCanvas2 = arg0;
 		@Pc(185) int local185 = 0;

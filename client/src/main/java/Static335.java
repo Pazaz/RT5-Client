@@ -1,4 +1,3 @@
-import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
@@ -12,13 +11,13 @@ public final class Static335 {
 
 	@OriginalMember(owner = "client!ti", name = "a", descriptor = "(B)V")
 	public static void method5694() {
-		if (Static190.aClass19_8 == null) {
+		if (Rasteriser.textureProvider == null) {
 			return;
 		}
 		Static34.aClass36_6.method1416();
 		Static253.method4366();
 		Static247.method4299();
-		Static190.method3502();
+		LoginManager.method3502();
 		Static339.method5759();
 		Static389.method4490();
 		if (Static368.aClass43_1 != null) {
@@ -46,19 +45,8 @@ public final class Static335 {
 				}
 			}
 		}
-		Static190.aClass19_8.method2825();
-		Static190.aClass19_8 = null;
+		Rasteriser.textureProvider.method2825();
+		Rasteriser.textureProvider = null;
 	}
 
-	@OriginalMember(owner = "client!ti", name = "b", descriptor = "(II)Lclient!oj;")
-	public static Class170 method5695(@OriginalArg(1) int arg0) {
-		@Pc(13) Class170[] local13 = Static207.method3704();
-		for (@Pc(15) int local15 = 0; local15 < local13.length; local15++) {
-			@Pc(21) Class170 local21 = local13[local15];
-			if (local21.anInt4690 == arg0) {
-				return local21;
-			}
-		}
-		return null;
-	}
 }

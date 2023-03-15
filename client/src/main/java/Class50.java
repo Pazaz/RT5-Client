@@ -9,12 +9,12 @@ public final class Class50 {
 	public final String aString15;
 
 	@OriginalMember(owner = "client!dn", name = "f", descriptor = "I")
-	public final int anInt1553;
+	public final int id;
 
 	@OriginalMember(owner = "client!dn", name = "<init>", descriptor = "(Ljava/lang/String;I)V")
 	public Class50(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
 		this.aString15 = arg0;
-		this.anInt1553 = arg1;
+		this.id = arg1;
 	}
 
 	@OriginalMember(owner = "client!dn", name = "toString", descriptor = "()Ljava/lang/String;")

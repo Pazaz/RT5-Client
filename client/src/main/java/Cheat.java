@@ -102,8 +102,8 @@ public class Cheat {
 				return;
 			}
 			if (cmd.equalsIgnoreCase("wm1")) {
-				Static143.method2677(-1, 1, false, -1);
-				if (Static144.getWindowMode() == 1) {
+				DisplayMode.setWindowMode(-1, 1, false, -1);
+				if (DisplayMode.getWindowMode() == 1) {
 					DevConsole.log("wm1 succeeded");
 					return;
 				}
@@ -111,8 +111,8 @@ public class Cheat {
 				return;
 			}
 			if (cmd.equalsIgnoreCase("wm2")) {
-				Static143.method2677(-1, 2, false, -1);
-				if (Static144.getWindowMode() == 2) {
+				DisplayMode.setWindowMode(-1, 2, false, -1);
+				if (DisplayMode.getWindowMode() == 2) {
 					DevConsole.log("wm2 succeeded");
 					return;
 				}
@@ -120,8 +120,8 @@ public class Cheat {
 				return;
 			}
 			if (cmd.equalsIgnoreCase("wm3")) {
-				Static143.method2677(768, 3, false, 1024);
-				if (Static144.getWindowMode() == 3) {
+				DisplayMode.setWindowMode(768, 3, false, 1024);
+				if (DisplayMode.getWindowMode() == 3) {
 					DevConsole.log("wm3 succeeded");
 					return;
 				}
@@ -133,7 +133,7 @@ public class Cheat {
 				if (Static77.anInt1762 == 0) {
 					DevConsole.log("Entered tk0");
 					client.preferences.anInt4878 = 0;
-					client.preferences.method4497(GameShell.signlink);
+					client.preferences.write(GameShell.signlink);
 					Preferences.sentToServer = false;
 					return;
 				}
@@ -148,7 +148,7 @@ public class Cheat {
 				}
 				DevConsole.log("Entered tk1");
 				client.preferences.anInt4878 = 1;
-				client.preferences.method4497(GameShell.signlink);
+				client.preferences.write(GameShell.signlink);
 				Preferences.sentToServer = false;
 				return;
 			}
@@ -160,7 +160,7 @@ public class Cheat {
 				}
 				DevConsole.log("Entered tk2");
 				client.preferences.anInt4878 = 2;
-				client.preferences.method4497(GameShell.signlink);
+				client.preferences.write(GameShell.signlink);
 				Preferences.sentToServer = false;
 				return;
 			}
@@ -174,16 +174,16 @@ public class Cheat {
 				return;
 			}
 			if (cmd.equalsIgnoreCase("ot")) {
-				client.preferences.ot = !client.preferences.ot;
-				client.preferences.method4497(GameShell.signlink);
+				client.preferences.manyGroundTextures = !client.preferences.manyGroundTextures;
+				client.preferences.write(GameShell.signlink);
 				Preferences.sentToServer = false;
 				Static347.method5827();
-				DevConsole.log("ot=" + client.preferences.ot);
+				DevConsole.log("ot=" + client.preferences.manyGroundTextures);
 				return;
 			}
 			if (cmd.equalsIgnoreCase("gb")) {
 				client.preferences.gb = !client.preferences.gb;
-				client.preferences.method4497(GameShell.signlink);
+				client.preferences.write(GameShell.signlink);
 				Preferences.sentToServer = false;
 				Static347.method5827();
 				DevConsole.log("gb=" + client.preferences.gb);
@@ -197,8 +197,8 @@ public class Cheat {
 				@Pc(521) String local521 = cmd.substring(8);
 				@Pc(531) int local531 = StringUtils.isInt(local521) ? StringUtils.parseInt(local521) : -1;
 				if (local531 >= 0 && local531 <= 2) {
-					client.preferences.anInt4886 = local531;
-					client.preferences.method4497(GameShell.signlink);
+					client.preferences.sceneryShadowsType = local531;
+					client.preferences.write(GameShell.signlink);
 					Preferences.sentToServer = false;
 					Static347.method5827();
 					DevConsole.log("shadows=" + local531);
@@ -213,9 +213,9 @@ public class Cheat {
 					return;
 				}
 				local76 = StringUtils.parseInt(cmd.substring(6));
-				if (local76 >= 0 && local76 <= Static289.method5019(Static309.anInt5802)) {
+				if (local76 >= 0 && local76 <= Static289.method5019(GameShell.maxMemory)) {
 					client.preferences.anInt4883 = local76;
-					client.preferences.method4497(GameShell.signlink);
+					client.preferences.write(GameShell.signlink);
 					Preferences.sentToServer = false;
 					DevConsole.log("maxbuildarea=" + client.preferences.anInt4883);
 					return;
@@ -228,8 +228,8 @@ public class Cheat {
 					DevConsole.log("Invalid particles value");
 					return;
 				}
-				Static26.method864(StringUtils.parseInt(cmd.substring(13)));
-				client.preferences.method4497(GameShell.signlink);
+				Preferences.setParticles(StringUtils.parseInt(cmd.substring(13)));
+				client.preferences.write(GameShell.signlink);
 				Preferences.sentToServer = false;
 				DevConsole.log("particles=" + Static184.method3391());
 				return;
@@ -254,7 +254,7 @@ public class Cheat {
 				return;
 			}
 			if (cmd.startsWith("bloom")) {
-				@Pc(736) boolean local736 = Static190.aClass19_8.method2892();
+				@Pc(736) boolean local736 = Rasteriser.textureProvider.method2892();
 				if (Static284.method4882(!local736)) {
 					if (!local736) {
 						DevConsole.log("Bloom enabled");
@@ -304,7 +304,7 @@ public class Cheat {
 				return;
 			}
 			if (cmd.startsWith("mc")) {
-				if (Static190.aClass19_8.method2869()) {
+				if (Rasteriser.textureProvider.method2869()) {
 					local76 = Integer.parseInt(cmd.substring(3));
 					if (local76 < 1) {
 						local76 = 1;
@@ -312,8 +312,8 @@ public class Cheat {
 						local76 = 4;
 					}
 					Static102.anInt3591 = local76;
-					Static190.aClass19_8.method2854(Static102.anInt3591);
-					Static190.aClass19_8.method2893(0);
+					Rasteriser.textureProvider.method2854(Static102.anInt3591);
+					Rasteriser.textureProvider.method2893(0);
 					DevConsole.log("Render cores now: " + Static102.anInt3591);
 					return;
 				}
@@ -345,7 +345,7 @@ public class Cheat {
 			}
 			if (cmd.equals("renderprofile") || cmd.equals("rp")) {
 				Static294.renderprofile = !Static294.renderprofile;
-				Static190.aClass19_8.method2855(Static294.renderprofile);
+				Rasteriser.textureProvider.method2855(Static294.renderprofile);
 				Static49.method1471();
 				DevConsole.log("showprofiling=" + Static294.renderprofile);
 				return;
@@ -361,7 +361,7 @@ public class Cheat {
 				return;
 			}
 			if (cmd.equals("heap")) {
-				DevConsole.log("Heap: " + Static309.anInt5802 + "MB");
+				DevConsole.log("Heap: " + GameShell.maxMemory + "MB");
 				return;
 			}
 			if (cmd.equals("savevarcs")) {

@@ -2,10 +2,10 @@ import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
-public final class Static344 {
+public final class MapList {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "Lclient!vj;")
-	public static Class2_Sub2_Sub17 aClass2_Sub2_Sub17_3;
+	public static Map aClass2_Sub2_Sub17_3;
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "Lclient!wl;")
 	public static Interface11 anInterface11_2;
@@ -128,7 +128,7 @@ public final class Static344 {
 	private static final byte[] aByteArray85 = new byte[1];
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;IIIIIII[S[BZ)V")
-	private static void method5509(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) short[] arg8, @OriginalArg(9) byte[] arg9, @OriginalArg(10) boolean arg10) {
+	private static void method5509(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) short[] arg8, @OriginalArg(9) byte[] arg9, @OriginalArg(10) boolean arg10) {
 		@Pc(20) int local20;
 		@Pc(32) int local32;
 		if (arg10 || arg5 != 0 || arg6 > 0) {
@@ -222,7 +222,7 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;Lclient!bt;IIII[I[I)V")
-	private static void method5510(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6, @OriginalArg(7) int[] arg7) {
+	private static void method5510(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6, @OriginalArg(7) int[] arg7) {
 		@Pc(3) int local3 = arg1.g1();
 		if ((local3 & 0x1) == 0) {
 			@Pc(15) boolean local15 = (local3 & 0x2) == 0;
@@ -328,7 +328,7 @@ public final class Static344 {
 		@Pc(21) int local21 = aClass197_85.getGroupId("details");
 		@Pc(26) int[] local26 = aClass197_85.getFileIds(local21);
 		for (@Pc(28) int local28 = 0; local28 < local26.length; local28++) {
-			@Pc(37) Class2_Sub2_Sub17 local37 = Static61.method1672(local26[local28], local21, aClass197_85);
+			@Pc(37) Map local37 = Static61.method1672(local26[local28], local21, aClass197_85);
 			aClass4_124.put(local37, (long) local37.anInt6869);
 		}
 		Static280.method4766(false);
@@ -349,12 +349,12 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(I)Lclient!vj;")
-	public static Class2_Sub2_Sub17 method5514(@OriginalArg(0) int arg0) {
-		return (Class2_Sub2_Sub17) aClass4_124.get((long) arg0);
+	public static Map get(@OriginalArg(0) int arg0) {
+		return (Map) aClass4_124.get((long) arg0);
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!ci;III)I")
-	private static int method5515(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	private static int method5515(@OriginalArg(0) TextureProviderInterface arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(4) FloType local4 = aClass72_6.get(arg1);
 		if (local4 == null) {
 			return 0;
@@ -398,8 +398,8 @@ public final class Static344 {
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(II)Lclient!wc;")
 	public static SecondaryLinkedList method5516(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(3) SecondaryLinkedList local3 = new SecondaryLinkedList();
-		for (@Pc(8) Class2_Sub2_Sub17 local8 = (Class2_Sub2_Sub17) aClass4_124.head(); local8 != null; local8 = (Class2_Sub2_Sub17) aClass4_124.next()) {
-			if (local8.aBoolean466 && local8.method6147(arg1, arg0)) {
+		for (@Pc(8) Map local8 = (Map) aClass4_124.head(); local8 != null; local8 = (Map) aClass4_124.next()) {
+			if (local8.valid && local8.method6147(arg1, arg0)) {
 				local3.addTail(local8);
 			}
 		}
@@ -407,7 +407,7 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;IIII)Lclient!ld;")
-	private static LinkedList method5517(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	private static LinkedList method5517(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		for (@Pc(4) Class2_Sub20 local4 = (Class2_Sub20) aClass135_36.head(); local4 != null; local4 = (Class2_Sub20) aClass135_36.next()) {
 			method5529(arg0, local4, arg1, arg2);
 		}
@@ -416,7 +416,7 @@ public final class Static344 {
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(I)V")
 	public static void method5518(@OriginalArg(0) int arg0) {
-		aClass2_Sub2_Sub17_3 = (Class2_Sub2_Sub17) aClass4_124.get((long) arg0);
+		aClass2_Sub2_Sub17_3 = (Map) aClass4_124.get((long) arg0);
 	}
 
 	@OriginalMember(owner = "client!tt", name = "c", descriptor = "()V")
@@ -518,7 +518,7 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;II)V")
-	public static void method5521(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static void method5521(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(9) Buffer local9 = new Buffer(aClass197_85.fetchFile(aClass2_Sub2_Sub17_3.aString67, "area"));
 		@Pc(13) int local13 = local9.g1();
 		@Pc(16) int[] local16 = new int[local13];
@@ -601,7 +601,7 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;)V")
-	public static void method5522(@OriginalArg(0) Class19 arg0) {
+	public static void method5522(@OriginalArg(0) TextureProvider arg0) {
 		@Pc(3) int local3 = anInt6054 - anInt6058;
 		@Pc(7) int local7 = anInt6060 - anInt6059;
 		@Pc(15) int local15 = (anInt6051 - anInt6050 << 16) / local3;
@@ -610,7 +610,7 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(Lclient!wm;)Lclient!ld;")
-	public static LinkedList method5524(@OriginalArg(0) Class19 arg0) {
+	public static LinkedList method5524(@OriginalArg(0) TextureProvider arg0) {
 		@Pc(3) int local3 = anInt6054 - anInt6058;
 		@Pc(7) int local7 = anInt6060 - anInt6059;
 		@Pc(15) int local15 = (anInt6051 - anInt6050 << 16) / local3;
@@ -619,7 +619,7 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(Lclient!wm;IIII)V")
-	private static void method5525(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	private static void method5525(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(3) int local3 = anInt6054 - anInt6058;
 		@Pc(7) int local7 = anInt6060 - anInt6059;
 		if (anInt6054 < anInt6056) {
@@ -807,7 +807,7 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;IIII[S[B)V")
-	private static void method5526(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) short[] arg5, @OriginalArg(6) byte[] arg6) {
+	private static void method5526(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) short[] arg5, @OriginalArg(6) byte[] arg6) {
 		if (arg5 == null) {
 			return;
 		}
@@ -844,9 +844,9 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(II)Lclient!vj;")
-	public static Class2_Sub2_Sub17 method5527(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		for (@Pc(4) Class2_Sub2_Sub17 local4 = (Class2_Sub2_Sub17) aClass4_124.head(); local4 != null; local4 = (Class2_Sub2_Sub17) aClass4_124.next()) {
-			if (local4.aBoolean466 && local4.method6147(arg1, arg0)) {
+	public static Map getContainingSource(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+		for (@Pc(4) Map local4 = (Map) aClass4_124.head(); local4 != null; local4 = (Map) aClass4_124.next()) {
+			if (local4.valid && local4.method6147(arg1, arg0)) {
 				return local4;
 			}
 		}
@@ -854,14 +854,14 @@ public final class Static344 {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!ci;II)V")
-	public static void method5528(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static void method5528(@OriginalArg(0) TextureProviderInterface arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		for (@Pc(1) int local1 = 0; local1 < aClass72_6.capacity; local1++) {
 			anIntArray406[local1 + 1] = method5515(arg0, local1, arg1, arg2);
 		}
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;Lclient!jg;IIII)V")
-	private static void method5529(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class2_Sub20 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	private static void method5529(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Class2_Sub20 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		arg1.anInt2948 = anInt6050 + (arg2 * (arg1.anInt2949 - anInt6058) >> 16);
 		arg1.anInt2944 = anInt6061 - (arg3 * (arg1.anInt2952 - anInt6059) >> 16);
 	}

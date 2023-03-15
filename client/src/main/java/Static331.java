@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static331 {
 
-	@OriginalMember(owner = "client!te", name = "i", descriptor = "I")
-	public static int anInt6206 = 0;
-
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(Lclient!hb;)V")
 	public static void method5659(@OriginalArg(0) Entity arg0) {
 		for (@Pc(2) int local2 = arg0.aShort103; local2 <= arg0.aShort104; local2++) {
@@ -37,17 +34,4 @@ public final class Static331 {
 		}
 	}
 
-	@OriginalMember(owner = "client!te", name = "a", descriptor = "(Z)Z")
-	public static boolean method5660() {
-		if (Static276.javaScript) {
-			try {
-				if ((Boolean) BrowserControl.call(GameShell.signlink.applet, "showingVideoAd")) {
-					return false;
-				}
-				return true;
-			} catch (@Pc(23) Throwable local23) {
-			}
-		}
-		return true;
-	}
 }

@@ -10,7 +10,7 @@ public final class Static372 {
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(I)V")
 	public static void method6260() {
-		if (Static363.frame != null) {
+		if (GameShell.fullScreenFrame != null) {
 			return;
 		}
 		@Pc(8) int local8 = Static84.anInt1842;

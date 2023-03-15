@@ -49,7 +49,7 @@ public final class Static296 {
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "(I)V")
 	public static void method5104() {
-		Static174.aClass123_2.method3338();
+		Keyboard.instance.method3338();
 		Static226.aClass119_1.method3312();
 		if (Static337.aClass131_1 != null) {
 			Static337.aClass131_1.stop(GameShell.canvas);
@@ -57,7 +57,7 @@ public final class Static296 {
 		client.instance.method1379();
 		GameShell.canvas.setBackground(Color.black);
 		Static29.anInt721 = -1;
-		Static174.aClass123_2 = Static18.method556(GameShell.canvas);
+		Keyboard.instance = Static18.method556(GameShell.canvas);
 		Static226.aClass119_1 = Static31.method948(GameShell.canvas);
 		if (Static337.aClass131_1 != null) {
 			Static337.aClass131_1.start(GameShell.canvas);

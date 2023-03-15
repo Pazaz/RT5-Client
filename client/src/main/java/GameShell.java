@@ -26,6 +26,10 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	public static int canvasHeight;
 	@OriginalMember(owner = "client!be", name = "m", descriptor = "Ljava/awt/Canvas;")
 	public static Canvas canvas;
+	@OriginalMember(owner = "client!vf", name = "X", descriptor = "Ljava/awt/Frame;")
+	public static Frame fullScreenFrame;
+	@OriginalMember(owner = "client!rs", name = "h", descriptor = "I")
+	public static int maxMemory = 64;
 	private static double canvasScale;
 
 	@OriginalMember(owner = "client!un", name = "w", descriptor = "Z")
@@ -70,8 +74,8 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			canvas.getParent().remove(canvas);
 		}
 		@Pc(18) Container local18;
-		if (Static363.frame != null) {
-			local18 = Static363.frame;
+		if (fullScreenFrame != null) {
+			local18 = fullScreenFrame;
 		} else if (frame == null) {
 			local18 = signlink.applet;
 		} else {
@@ -227,7 +231,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			Static210.anInt3761 -= 50;
 			canvas.setSize(canvasWidth, canvasHeight);
 			canvas.setVisible(true);
-			if (frame != null && Static363.frame == null) {
+			if (frame != null && fullScreenFrame == null) {
 				@Pc(76) Insets local76 = frame.getInsets();
 				canvas.setLocation(local76.left + Static84.anInt1842, Static68.anInt1646 + local76.top);
 			} else {

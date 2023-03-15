@@ -28,17 +28,17 @@ public final class Static385 {
 	public static void method6432(@OriginalArg(1) int arg0) {
 		@Pc(8) int local8 = client.cycle - Static241.anInt4445;
 		if (local8 >= 100) {
-			Static314.anInt5911 = 1;
+			Camera.anInt5911 = 1;
 			return;
 		}
-		@Pc(19) int local19 = (int) Static31.aFloat28;
+		@Pc(19) int local19 = (int) Camera.pitchTarget;
 		if (Static89.anInt1885 >> 8 > local19) {
 			local19 = Static89.anInt1885 >> 8;
 		}
 		if (Static189.aBooleanArray33[4] && local19 < Static105.anIntArray134[4] + 128) {
 			local19 = Static105.anIntArray134[4] + 128;
 		}
-		@Pc(53) int local53 = (int) Static277.aFloat67 + Static53.anInt3966 & 0x3FFF;
+		@Pc(53) int local53 = (int) Camera.yawTarget + Static53.anInt3966 & 0x3FFF;
 		Static349.method5833((local19 >> 3) * 3 + 600, Static288.anInt5463, arg0, Static386.method6032(PlayerList.self.xFine, PlayerList.self.zFine, Static355.anInt6585) - 50, Static62.anInt2395, local53, local19);
 		@Pc(96) float local96 = 1.0F - (float) ((100 - local8) * (-local8 + 100) * (100 - local8)) / 1000000.0F;
 		Static211.anInt3777 = (int) (local96 * (float) (Static211.anInt3777 - Static196.anInt3318) + (float) Static196.anInt3318);

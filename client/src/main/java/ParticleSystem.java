@@ -79,7 +79,7 @@ public final class ParticleSystem extends ParticleNode {
 	}
 
 	@OriginalMember(owner = "client!oh", name = "a", descriptor = "(Lclient!wm;J)Z")
-	public boolean method4352(@OriginalArg(0) Class19 arg0, @OriginalArg(1) long arg1) {
+	public boolean method4352(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) long arg1) {
 		if (this.aLong138 == this.aLong137) {
 			this.method4351();
 		} else {
@@ -107,7 +107,7 @@ public final class ParticleSystem extends ParticleNode {
 	}
 
 	@OriginalMember(owner = "client!oh", name = "a", descriptor = "(Lclient!wm;[Lclient!jf;Z)V")
-	private void method4353(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class114[] arg1) {
+	private void method4353(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Class114[] arg1) {
 		for (@Pc(1) int local1 = 0; local1 < 8; local1++) {
 			Static251.aBooleanArray39[local1] = false;
 		}
@@ -171,7 +171,7 @@ public final class ParticleSystem extends ParticleNode {
 	}
 
 	@OriginalMember(owner = "client!oh", name = "a", descriptor = "(Lclient!wm;J[Lclient!jf;[Lclient!nm;Z)V")
-	public void method4357(@OriginalArg(0) Class19 arg0, @OriginalArg(1) long arg1, @OriginalArg(2) Class114[] arg2, @OriginalArg(3) Class163[] arg3) {
+	public void method4357(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) long arg1, @OriginalArg(2) Class114[] arg2, @OriginalArg(3) Class163[] arg3) {
 		if (!this.aBoolean322) {
 			this.method4353(arg0, arg2);
 			this.method4362(arg3);

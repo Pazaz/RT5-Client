@@ -59,7 +59,7 @@ public final class Static92 {
 	}
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(Lclient!nk;Lclient!wm;IIB)V")
-	public static void method1967(@OriginalArg(0) Class161 arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public static void method1967(@OriginalArg(0) Class161 arg0, @OriginalArg(1) TextureProvider arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(14) Class78 local14 = arg0.method4109(arg1);
 		if (local14 == null) {
 			return;
@@ -73,16 +73,16 @@ public final class Static92 {
 		@Pc(58) int local58;
 		@Pc(69) int local69;
 		@Pc(55) int local55;
-		if (Static314.anInt5911 == 4) {
+		if (Camera.anInt5911 == 4) {
 			local58 = Static348.anInt6448;
 			local55 = 4096;
-			local69 = (int) -Static277.aFloat67 & 0x3FFF;
+			local69 = (int) -Camera.yawTarget & 0x3FFF;
 			local61 = Static394.anInt7264;
 		} else {
 			local55 = 4096 - Static97.anInt2005 * 16;
 			local58 = PlayerList.self.zFine;
 			local61 = PlayerList.self.xFine;
-			local69 = Static6.anInt158 + (int) -Static277.aFloat67 & 0x3FFF;
+			local69 = Static6.anInt158 + (int) -Camera.yawTarget & 0x3FFF;
 		}
 		@Pc(96) int local96 = local61 / 32 + 48 - (Static373.anInt7033 + -104) * 2;
 		@Pc(115) int local115 = Static242.anInt4449 * 4 + 48 - (Static242.anInt4449 - 104) * 2 - local58 / 32;
@@ -208,7 +208,7 @@ public final class Static92 {
 				}
 			}
 		}
-		if (Static314.anInt5911 == 4) {
+		if (Camera.anInt5911 == 4) {
 			return;
 		}
 		if (Static358.anInt6550 != 0) {

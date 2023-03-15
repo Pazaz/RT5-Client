@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static232 {
 
 	@OriginalMember(owner = "client!ng", name = "k", descriptor = "[Lclient!oi;")
-	public static Class169[] aClass169Array1;
+	public static DisplayMode[] aClass169Array1;
 
 	@OriginalMember(owner = "client!ng", name = "n", descriptor = "[[B")
 	public static byte[][] aByteArrayArray9;

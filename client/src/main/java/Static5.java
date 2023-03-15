@@ -28,13 +28,13 @@ public final class Static5 {
 		if (!arg1.method3765()) {
 			return null;
 		}
-		@Pc(24) Class169[] local24 = Static110.method2265(arg1);
+		@Pc(24) DisplayMode[] local24 = Static110.method2265(arg1);
 		if (local24 == null) {
 			return null;
 		}
 		@Pc(30) boolean local30 = false;
 		for (@Pc(32) int local32 = 0; local32 < local24.length; local32++) {
-			if (local24[local32].anInt4685 == arg2 && local24[local32].anInt4684 == arg0 && (!local30 || arg3 < local24[local32].anInt4687)) {
+			if (local24[local32].width == arg2 && local24[local32].height == arg0 && (!local30 || arg3 < local24[local32].anInt4687)) {
 				arg3 = local24[local32].anInt4687;
 				local30 = true;
 			}

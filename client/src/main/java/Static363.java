@@ -1,4 +1,3 @@
-import java.awt.Frame;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -7,12 +6,6 @@ public final class Static363 {
 
 	@OriginalMember(owner = "client!vf", name = "P", descriptor = "I")
 	public static int anInt6801;
-
-	@OriginalMember(owner = "client!vf", name = "V", descriptor = "I")
-	public static int anInt6804;
-
-	@OriginalMember(owner = "client!vf", name = "X", descriptor = "Ljava/awt/Frame;")
-	public static Frame frame;
 
 	@OriginalMember(owner = "client!vf", name = "N", descriptor = "Z")
 	public static boolean aBoolean464 = true;
@@ -58,7 +51,7 @@ public final class Static363 {
 			Static324.anIntArray409[local31] = 0;
 		}
 		@Pc(94) int local94;
-		if (Static314.anInt5911 != 1) {
+		if (Camera.anInt5911 != 1) {
 			local94 = Static386.method6032(Static136.anInt6778, Static211.anInt3777, Static355.anInt6585);
 			if (local94 - Static102.anInt3592 < 800 && (Static359.aByteArrayArrayArray16[Static355.anInt6585][Static136.anInt6778 >> 7][Static211.anInt3777 >> 7] & 0x4) != 0) {
 				Static81.method3667(Scene.aClass67ArrayArrayArray3, false, Static136.anInt6778 >> 7, Static211.anInt3777 >> 7, 1);

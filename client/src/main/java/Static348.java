@@ -21,7 +21,7 @@ public final class Static348 {
 	}
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(ILclient!r;Lclient!wm;)V")
-	public static void method5830(@OriginalArg(1) Js5 arg0, @OriginalArg(2) Class19 arg1) {
+	public static void method5830(@OriginalArg(1) Js5 arg0, @OriginalArg(2) TextureProvider arg1) {
 		if (Static283.aBoolean383) {
 			return;
 		}

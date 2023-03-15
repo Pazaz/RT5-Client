@@ -35,7 +35,7 @@ public final class Static50 {
 		}
 		Static310.method5283();
 		Static107.anInt2219 = -1;
-		Static307.method5255(Static394.anInt7263);
+		Static307.method5255(Minimap.anInt7263);
 		PlayerList.self = new Player();
 		PlayerList.self.xFine = 6656;
 		PlayerList.self.movementQueueX[0] = 52;
@@ -43,7 +43,7 @@ public final class Static50 {
 		PlayerList.self.movementQueueZ[0] = 52;
 		Static211.anInt3777 = 0;
 		Static136.anInt6778 = 0;
-		if (Static314.anInt5911 == 2) {
+		if (Camera.anInt5911 == 2) {
 			Static211.anInt3777 = Static19.anInt535 << 7;
 			Static136.anInt6778 = Static311.anInt5810 << 7;
 		} else {
@@ -79,6 +79,6 @@ public final class Static50 {
 
 	@OriginalMember(owner = "client!ct", name = "e", descriptor = "(B)V")
 	public static void method1530() {
-		Static65.aClass19_3.method2879(Static99.anInt2095, client.preferences.aBoolean348 ? Static364.anInt6817 + 256 : -1);
+		Static65.aClass19_3.method2879(Static99.anInt2095, client.preferences.fogEnabled ? Static364.anInt6817 + 256 : -1);
 	}
 }

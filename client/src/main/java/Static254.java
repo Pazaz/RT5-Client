@@ -7,9 +7,6 @@ public final class Static254 {
 	@OriginalMember(owner = "client!ok", name = "e", descriptor = "I")
 	public static int anInt4698;
 
-	@OriginalMember(owner = "client!ok", name = "g", descriptor = "S")
-	public static short aShort73 = 256;
-
 	@OriginalMember(owner = "client!ok", name = "i", descriptor = "Lclient!hu;")
 	public static final LruHashTable aClass98_39 = new LruHashTable(8);
 

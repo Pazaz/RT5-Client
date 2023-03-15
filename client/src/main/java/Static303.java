@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static303 {
 
 	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(Lclient!ld;BLclient!wm;II)V")
-	public static void method5208(@OriginalArg(0) LinkedList arg0, @OriginalArg(2) Class19 arg1) {
+	public static void method5208(@OriginalArg(0) LinkedList arg0, @OriginalArg(2) TextureProvider arg1) {
 		Static197.aClass135_24.clear();
 		if (Static175.aBoolean225) {
 			return;
 		}
 		for (@Pc(20) Class2_Sub20 local20 = (Class2_Sub20) arg0.head(); local20 != null; local20 = (Class2_Sub20) arg0.next()) {
-			@Pc(28) MelType local28 = Static344.aClass125_4.method3379(local20.anInt2947);
+			@Pc(28) MelType local28 = MapList.aClass125_4.method3379(local20.anInt2947);
 			if (Static101.method2164(local28)) {
 				@Pc(40) boolean local40 = Static286.method4923(local20, arg1, local28);
 				if (local40) {
@@ -57,15 +57,6 @@ public final class Static303 {
 					local59.aString50 = null;
 				}
 			}
-		}
-	}
-
-	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(IZ)V")
-	public static void method5211(@OriginalArg(0) int arg0) {
-		if (Static235.anInt3365 == 0) {
-			Static91.aClass2_Sub12_Sub3_1.method4278(arg0);
-		} else {
-			Static356.anInt6641 = arg0;
 		}
 	}
 

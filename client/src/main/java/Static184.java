@@ -41,12 +41,12 @@ public final class Static184 {
 			}
 			@Pc(109) String local109 = client.GAME_SD == client.game ? Static367.aClass79_142.getLocalized(client.language) : Static33.aClass79_96.getLocalized(client.language);
 			if (arg1.anInt4171 <= arg1.combatLevel) {
-				local146 = arg1.method4072() + (local23 ? Static178.method2343(PlayerList.self.combatLevel, arg1.combatLevel) : "<col=ffffff>") + " (" + local109 + arg1.combatLevel + ")";
+				local146 = arg1.getName() + (local23 ? Static178.method2343(PlayerList.self.combatLevel, arg1.combatLevel) : "<col=ffffff>") + " (" + local109 + arg1.combatLevel + ")";
 			} else {
-				local146 = arg1.method4072() + (local23 ? Static178.method2343(PlayerList.self.combatLevel, arg1.combatLevel) : "<col=ffffff>") + " (" + local109 + arg1.combatLevel + "+" + (arg1.anInt4171 - arg1.combatLevel) + ")";
+				local146 = arg1.getName() + (local23 ? Static178.method2343(PlayerList.self.combatLevel, arg1.combatLevel) : "<col=ffffff>") + " (" + local109 + arg1.combatLevel + "+" + (arg1.anInt4171 - arg1.combatLevel) + ")";
 			}
 		} else {
-			local146 = arg1.method4072() + " (" + Static5.aClass79_2.getLocalized(client.language) + arg1.totalLevel + ")";
+			local146 = arg1.getName() + " (" + Static5.aClass79_2.getLocalized(client.language) + arg1.totalLevel + ")";
 		}
 		if (Static330.aBoolean419) {
 			if (!arg0 && (Static115.anInt3837 & 0x8) != 0) {
@@ -73,7 +73,7 @@ public final class Static184 {
 						local280 = 2000;
 					}
 					@Pc(334) short local334 = (short) (Static292.aShortArray115[local272] + local280);
-					local72 = Static207.anIntArray225[local272] == -1 ? Static91.anInt1910 : Static207.anIntArray225[local272];
+					local72 = Static207.anIntArray225[local272] == -1 ? Minimap.anInt1910 : Static207.anIntArray225[local272];
 					Static1.method3(-1, true, 0, false, Static243.aStringArray44[local272], 0, local334, "<col=ffffff>" + local146, local72, (long) arg1.anInt4619);
 				}
 			}

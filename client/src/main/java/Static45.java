@@ -24,7 +24,7 @@ public final class Static45 {
 	public static void method1398() {
 		@Pc(1) int local1 = PlayerList.anInt751;
 		@Pc(3) int[] local3 = PlayerList.anIntArray121;
-		@Pc(20) boolean local20 = client.preferences.anInt4895 == 1 && local1 > 200 || client.preferences.anInt4895 == 0 && local1 > 50;
+		@Pc(20) boolean local20 = client.preferences.manyIdleAnimations == 1 && local1 > 200 || client.preferences.manyIdleAnimations == 0 && local1 > 50;
 		@Pc(75) int local75;
 		for (@Pc(22) int local22 = 0; local22 < local1; local22++) {
 			@Pc(29) Player local29 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local22]];
@@ -190,10 +190,10 @@ public final class Static45 {
 							@Pc(374) int local374;
 							if (local6.aByteArray49 != null) {
 								for (local278 = 0; local278 < local6.aByteArray49.length; local278++) {
-									if (Static174.aClass123_2.method3343(local6.aByteArray49[local278])) {
+									if (Keyboard.instance.isPressed(local6.aByteArray49[local278])) {
 										if (local6.anIntArray275 == null || client.cycle >= local6.anIntArray275[local278]) {
 											@Pc(310) byte local310 = local6.aByteArray50[local278];
-											if (local310 == 0 || ((local310 & 0x8) == 0 || !Static174.aClass123_2.method3343(86) && !Static174.aClass123_2.method3343(82) && !Static174.aClass123_2.method3343(81)) && ((local310 & 0x2) == 0 || Static174.aClass123_2.method3343(86)) && ((local310 & 0x1) == 0 || Static174.aClass123_2.method3343(82)) && ((local310 & 0x4) == 0 || Static174.aClass123_2.method3343(81))) {
+											if (local310 == 0 || ((local310 & 0x8) == 0 || !Keyboard.instance.isPressed(86) && !Keyboard.instance.isPressed(82) && !Keyboard.instance.isPressed(81)) && ((local310 & 0x2) == 0 || Keyboard.instance.isPressed(86)) && ((local310 & 0x1) == 0 || Keyboard.instance.isPressed(82)) && ((local310 & 0x4) == 0 || Keyboard.instance.isPressed(81))) {
 												Protocol.method4681(local6.id, local278 + 1, "", -1);
 												local374 = local6.anIntArray276[local278];
 												if (local6.anIntArray275 == null) {
@@ -242,11 +242,11 @@ public final class Static45 {
 									if (local6.anInt4273 == Static199.anInt5755 || local6.anInt4273 == Static147.anInt2708) {
 										Static20.aClass161_1 = local6;
 										if (Static368.aClass43_1 != null) {
-											Static368.aClass43_1.method1617(local6.height, Static190.aClass19_8);
+											Static368.aClass43_1.method1617(local6.height, Rasteriser.textureProvider);
 										}
 										if (local6.anInt4273 == Static199.anInt5755) {
 											if (!Static375.aBoolean477 && arg8 >= local28 && arg9 >= local30 && arg8 < local32 && arg9 < local34) {
-												Static327.method5574(Static190.aClass19_8, arg9, arg8);
+												Static327.method5574(Rasteriser.textureProvider, arg9, arg8);
 												for (@Pc(542) Class12_Sub6 local542 = (Class12_Sub6) Static356.aClass36_10.method1415(); local542 != null; local542 = (Class12_Sub6) Static356.aClass36_10.method1420()) {
 													if (arg8 >= local542.anInt4753 && arg8 < local542.anInt4755 && arg9 >= local542.anInt4752 && arg9 < local542.anInt4751) {
 														Static147.method2703();
@@ -260,7 +260,7 @@ public final class Static45 {
 									}
 									@Pc(653) int local653;
 									if (local6.anInt4273 == Static135.anInt2521) {
-										if (local6.method4109(Static190.aClass19_8) == null || Static146.anInt2703 != 0 && Static146.anInt2703 != 3 || Static375.aBoolean477 || arg8 < local28 || arg9 < local30 || arg8 >= local32 || arg9 >= local34) {
+										if (local6.method4109(Rasteriser.textureProvider) == null || Static146.anInt2703 != 0 && Static146.anInt2703 != 3 || Static375.aBoolean477 || arg8 < local28 || arg9 < local30 || arg8 >= local32 || arg9 >= local34) {
 											continue;
 										}
 										local278 = arg8 - local17;
@@ -271,14 +271,14 @@ public final class Static45 {
 										}
 										local278 -= local6.width / 2;
 										local614 -= local6.height / 2;
-										if (Static314.anInt5911 == 4) {
-											local653 = (int) Static277.aFloat67 & 0x3FFF;
+										if (Camera.anInt5911 == 4) {
+											local653 = (int) Camera.yawTarget & 0x3FFF;
 										} else {
-											local653 = (int) Static277.aFloat67 + Static6.anInt158 & 0x3FFF;
+											local653 = (int) Camera.yawTarget + Static6.anInt158 & 0x3FFF;
 										}
-										@Pc(665) int local665 = Class19.anIntArray178[local653];
-										@Pc(669) int local669 = Class19.anIntArray177[local653];
-										if (Static314.anInt5911 != 4) {
+										@Pc(665) int local665 = TextureProvider.anIntArray178[local653];
+										@Pc(669) int local669 = TextureProvider.anIntArray177[local653];
+										if (Camera.anInt5911 != 4) {
 											local665 = local665 * (Static97.anInt2005 + 256) >> 8;
 											local669 = local669 * (Static97.anInt2005 + 256) >> 8;
 										}
@@ -286,7 +286,7 @@ public final class Static45 {
 										@Pc(708) int local708 = local614 * local669 - local278 * local665 >> 15;
 										@Pc(719) int local719;
 										@Pc(727) int local727;
-										if (Static314.anInt5911 == 4) {
+										if (Camera.anInt5911 == 4) {
 											local719 = (Static394.anInt7264 >> 7) + (local698 >> 2);
 											local727 = (Static348.anInt6448 >> 7) - (local708 >> 2);
 										} else {
@@ -315,18 +315,18 @@ public final class Static45 {
 											Static206.aBoolean242 = true;
 										}
 										if (local245) {
-											local278 = (int) ((double) (Static370.aClass2_Sub24_1.method5243() - local17 - local6.width / 2) * 2.0D / (double) Static344.aFloat72);
-											local614 = (int) -((double) (Static370.aClass2_Sub24_1.method5242() - local22 - local6.height / 2) * 2.0D / (double) Static344.aFloat72);
-											local374 = Static151.anInt2772 + local278 + Static344.anInt6057;
-											local653 = Static96.anInt2003 + local614 + Static344.anInt6055;
-											@Pc(883) Class2_Sub2_Sub17 local883 = Static378.method6312();
+											local278 = (int) ((double) (Static370.aClass2_Sub24_1.method5243() - local17 - local6.width / 2) * 2.0D / (double) MapList.aFloat72);
+											local614 = (int) -((double) (Static370.aClass2_Sub24_1.method5242() - local22 - local6.height / 2) * 2.0D / (double) MapList.aFloat72);
+											local374 = WorldMap.anInt2772 + local278 + MapList.anInt6057;
+											local653 = WorldMap.anInt2003 + local614 + MapList.anInt6055;
+											@Pc(883) Map local883 = Static378.method6312();
 											if (local883 == null) {
 												continue;
 											}
 											@Pc(888) int[] local888 = new int[3];
 											local883.method6149(local888, local653, local374);
 											if (local888 != null) {
-												if (Static174.aClass123_2.method3343(82) && LoginManager.staffModLevel > 0) {
+												if (Keyboard.instance.isPressed(82) && LoginManager.staffModLevel > 0) {
 													Static6.method141(local888[0], local888[2], local888[1]);
 													continue;
 												}
@@ -343,14 +343,14 @@ public final class Static45 {
 										}
 										if (local235 && Static348.anInt6449 > 0) {
 											if (Static348.anInt6449 == 1 && (Static18.anInt530 != Static226.aClass119_1.method3304() || Static392.anInt7228 != Static226.aClass119_1.method3313())) {
-												Static334.anInt6242 = Static151.anInt2772;
-												Static65.anInt1593 = Static96.anInt2003;
+												Static334.anInt6242 = WorldMap.anInt2772;
+												Static65.anInt1593 = WorldMap.anInt2003;
 												Static348.anInt6449 = 2;
 											}
 											if (Static348.anInt6449 == 2) {
 												Static238.aBoolean299 = true;
-												Static313.method5337(Static334.anInt6242 + (int) ((double) (Static18.anInt530 - Static226.aClass119_1.method3304()) * 2.0D / (double) Static344.aFloat73));
-												Static78.method5697(Static65.anInt1593 - (int) ((double) (Static392.anInt7228 - Static226.aClass119_1.method3313()) * 2.0D / (double) Static344.aFloat73));
+												Static313.method5337(Static334.anInt6242 + (int) ((double) (Static18.anInt530 - Static226.aClass119_1.method3304()) * 2.0D / (double) MapList.aFloat73));
+												Static78.method5697(Static65.anInt1593 - (int) ((double) (Static392.anInt7228 - Static226.aClass119_1.method3313()) * 2.0D / (double) MapList.aFloat73));
 											}
 											continue;
 										}
@@ -616,7 +616,7 @@ public final class Static45 {
 								}
 							}
 							if (local6.type == 5 && local6.anInt4280 != -1) {
-								local6.method4111(client.SkyboxTypes, client.SkyboxSphereTypes).method1617(local6.height, Static190.aClass19_8);
+								local6.method4111(client.SkyboxTypes, client.SkyboxSphereTypes).method1617(local6.height, Rasteriser.textureProvider);
 							}
 							Static24.method852(local6);
 							if (local6.type == 0) {

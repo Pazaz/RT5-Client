@@ -49,7 +49,7 @@ public final class Class42_Sub1_Sub2 extends Class42_Sub1 {
 			Static127.anIntArray160[4] = this.anInt2440;
 			Static127.anIntArray160[2] = this.anInt2443;
 			Static127.anIntArray160[1] = this.anInt2438;
-			@Pc(27) TextureProvider local27 = this.aClass19_Sub1_12.anInterface2_5;
+			@Pc(27) TextureProviderInterface local27 = this.aClass19_Sub1_12.anInterface2_5;
 			Static127.anIntArray160[3] = this.anInt2441;
 			Static127.anIntArray160[5] = this.anInt2442;
 			@Pc(39) boolean local39 = false;

@@ -224,7 +224,7 @@ public final class LocType {
 	}
 
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(IILclient!tf;IILclient!nb;ILclient!wm;ILclient!tf;IIII)Lclient!gn;")
-	public Model method1518(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class6 arg2, @OriginalArg(3) int arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) int arg7, @OriginalArg(9) Class6 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10, @OriginalArg(12) int arg11, @OriginalArg(13) int arg12) {
+	public Model method1518(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class6 arg2, @OriginalArg(3) int arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) TextureProvider arg6, @OriginalArg(8) int arg7, @OriginalArg(9) Class6 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10, @OriginalArg(12) int arg11, @OriginalArg(13) int arg12) {
 		if (arg3 == 5 || arg3 == 6 || arg3 == 7 || arg3 == 8) {
 			arg3 = 4;
 		}
@@ -291,7 +291,7 @@ public final class LocType {
 	}
 
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(ILclient!tf;IIIZIZLclient!wm;Lclient!tf;I)Lclient!ij;")
-	public Class105 method1519(@OriginalArg(0) int arg0, @OriginalArg(1) Class6 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) boolean arg6, @OriginalArg(8) Class19 arg7, @OriginalArg(9) Class6 arg8, @OriginalArg(10) int arg9) {
+	public Class105 method1519(@OriginalArg(0) int arg0, @OriginalArg(1) Class6 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) boolean arg6, @OriginalArg(8) TextureProvider arg7, @OriginalArg(9) Class6 arg8, @OriginalArg(10) int arg9) {
 		if (arg9 == 5 || arg9 == 6 || arg9 == 7 || arg9 == 8) {
 			arg9 = 4;
 		}
@@ -651,7 +651,7 @@ public final class LocType {
 	}
 
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(IIIILclient!wm;)Lclient!gn;")
-	private Model method1524(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) Class19 arg3) {
+	private Model method1524(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) TextureProvider arg3) {
 		@Pc(10) int local10 = this.anInt1348 + 64;
 		@Pc(15) int local15 = this.anInt1343 + 850;
 		@Pc(17) int local17 = arg2;

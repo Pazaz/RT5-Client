@@ -39,8 +39,8 @@ public final class Static256 {
 		}
 		@Pc(66) int local66 = Static348.anInt6448;
 		if (!client.preferences.aBoolean351) {
-			Static277.aFloat67 += Static184.aFloat39 * (float) arg0 / 40.0F * 8.0F;
-			Static31.aFloat28 += (float) arg0 * Static296.aFloat68 / 40.0F * 8.0F;
+			Camera.yawTarget += Static184.aFloat39 * (float) arg0 / 40.0F * 8.0F;
+			Camera.pitchTarget += (float) arg0 * Static296.aFloat68 / 40.0F * 8.0F;
 		}
 		if (local66 != Static62.anInt2395) {
 			local20 = local66 - Static62.anInt2395;

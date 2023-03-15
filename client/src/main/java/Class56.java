@@ -13,10 +13,10 @@ public final class Class56 {
 	private final Class19_Sub1 aClass19_Sub1_9;
 
 	@OriginalMember(owner = "client!ea", name = "b", descriptor = "Lclient!ci;")
-	private final TextureProvider anInterface2_3;
+	private final TextureProviderInterface anInterface2_3;
 
 	@OriginalMember(owner = "client!ea", name = "<init>", descriptor = "(Lclient!bf;Lclient!ci;)V")
-	public Class56(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) TextureProvider arg1) {
+	public Class56(@OriginalArg(0) Class19_Sub1 arg0, @OriginalArg(1) TextureProviderInterface arg1) {
 		this.aClass19_Sub1_9 = arg0;
 		this.anInterface2_3 = arg1;
 	}

@@ -80,7 +80,7 @@ public final class NpcTypeList {
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(B)V")
-	public void method5572() {
+	public void clearModels() {
 		@Pc(6) LruHashTable local6 = this.aClass98_54;
 		synchronized (this.aClass98_54) {
 			this.aClass98_54.method2614();

@@ -73,7 +73,7 @@ public final class Class192 {
 	private final boolean aBoolean386;
 
 	@OriginalMember(owner = "client!ql", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIIIZI)V")
-	public Class192(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) boolean arg8, @OriginalArg(9) int arg9) {
+	public Class192(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) boolean arg8, @OriginalArg(9) int arg9) {
 		this.anInt5433 = arg2;
 		this.anInt5438 = arg7;
 		this.aBoolean387 = arg8;
@@ -90,7 +90,7 @@ public final class Class192 {
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(Lclient!wm;I)V")
-	public void method4930(@OriginalArg(0) Class19 arg0) {
+	public void method4930(@OriginalArg(0) TextureProvider arg0) {
 		this.method4941(true, true, arg0, 131072, this.anInt5438, this.anInt5422);
 	}
 
@@ -230,7 +230,7 @@ public final class Class192 {
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(Lclient!wm;ILclient!gn;IIZBI)V")
-	public void method4935(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Model arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5, @OriginalArg(7) int arg6) {
+	public void method4935(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Model arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5, @OriginalArg(7) int arg6) {
 		@Pc(6) Class114[] local6 = arg2.method3808();
 		@Pc(9) Class163[] local9 = arg2.method3840();
 		if ((this.aClass12_Sub5_5 == null || this.aClass12_Sub5_5.aBoolean322) && (local6 != null || local9 != null)) {
@@ -272,7 +272,7 @@ public final class Class192 {
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(ILclient!wm;)V")
-	public void method4940(@OriginalArg(1) Class19 arg0) {
+	public void method4940(@OriginalArg(1) TextureProvider arg0) {
 		if (this.aClass2_Sub2_Sub4_6 != null) {
 			Static154.method2780(this.aClass2_Sub2_Sub4_6, this.aByte58, this.anInt5422, this.anInt5438, this.aBooleanArray49);
 			this.aClass2_Sub2_Sub4_6 = null;
@@ -281,7 +281,7 @@ public final class Class192 {
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(ZZLclient!wm;IIIB)Lclient!gn;")
-	public Model method4941(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	public Model method4941(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) TextureProvider arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		@Pc(11) LocType local11 = client.LocTypes.get(this.anInt5432);
 		if (local11.anIntArray94 != null) {
 			local11 = local11.method1533(Static214.aClass226_1);
@@ -297,8 +297,8 @@ public final class Class192 {
 			this.method4932(-1);
 		}
 		this.method4933(arg5, arg4);
-		@Pc(79) boolean local79 = arg0 & this.aBoolean386 & client.preferences.anInt4886 != 0;
-		@Pc(117) boolean local117 = local79 & (local11.anInt1351 != this.anInt5428 || (this.anInt5424 != this.anInt5426 || this.aClass157_2 != null && (this.aClass157_2.aBoolean262 || Static318.aBoolean408) && this.anInt5423 != this.anInt5426) && client.preferences.anInt4886 >= 2);
+		@Pc(79) boolean local79 = arg0 & this.aBoolean386 & client.preferences.sceneryShadowsType != 0;
+		@Pc(117) boolean local117 = local79 & (local11.anInt1351 != this.anInt5428 || (this.anInt5424 != this.anInt5426 || this.aClass157_2 != null && (this.aClass157_2.aBoolean262 || Static318.aBoolean408) && this.anInt5423 != this.anInt5426) && client.preferences.sceneryShadowsType >= 2);
 		if (arg1 && !local117) {
 			this.anInt5428 = local11.anInt1351;
 			this.anInt5424 = this.anInt5426;

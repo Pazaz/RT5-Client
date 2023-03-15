@@ -30,39 +30,4 @@ public final class Static119 {
 		}
 	}
 
-	@OriginalMember(owner = "client!gr", name = "a", descriptor = "(I)V")
-	public static void method2378() {
-		if (Signlink.javaVendor.toLowerCase().indexOf("microsoft") != -1) {
-			Static239.anIntArray285[191] = 73;
-			Static239.anIntArray285[221] = 43;
-			Static239.anIntArray285[222] = 59;
-			Static239.anIntArray285[188] = 71;
-			Static239.anIntArray285[186] = 57;
-			Static239.anIntArray285[219] = 42;
-			Static239.anIntArray285[189] = 26;
-			Static239.anIntArray285[223] = 28;
-			Static239.anIntArray285[190] = 72;
-			Static239.anIntArray285[187] = 27;
-			Static239.anIntArray285[192] = 58;
-			Static239.anIntArray285[220] = 74;
-			return;
-		}
-		Static239.anIntArray285[59] = 57;
-		Static239.anIntArray285[45] = 26;
-		Static239.anIntArray285[47] = 73;
-		Static239.anIntArray285[93] = 43;
-		Static239.anIntArray285[46] = 72;
-		Static239.anIntArray285[44] = 71;
-		Static239.anIntArray285[91] = 42;
-		if (Signlink.setFocusTraversalKeysEnabled == null) {
-			Static239.anIntArray285[192] = 58;
-			Static239.anIntArray285[222] = 59;
-		} else {
-			Static239.anIntArray285[520] = 59;
-			Static239.anIntArray285[222] = 58;
-			Static239.anIntArray285[192] = 28;
-		}
-		Static239.anIntArray285[92] = 74;
-		Static239.anIntArray285[61] = 27;
-	}
 }

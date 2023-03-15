@@ -22,7 +22,7 @@ public final class Static33 {
 	public static int method4201() {
 		if (Static375.aClass161_14 == null) {
 			if (!Static375.aBoolean477 && Static268.anInt4959 > 0) {
-				if (Static148.aBoolean192 && Static174.aClass123_2.method3343(81) && Static268.anInt4959 > 2) {
+				if (Static148.aBoolean192 && Keyboard.instance.isPressed(81) && Static268.anInt4959 > 2) {
 					return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev.prev).anInt1007;
 				}
 				return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev).anInt1007;
@@ -36,7 +36,7 @@ public final class Static33 {
 				@Pc(47) int local47 = -1;
 				@Pc(66) int local66;
 				for (@Pc(49) int local49 = 0; local49 < Static268.anInt4959; local49++) {
-					if (Static270.aBoolean371) {
+					if (InterfaceList.aBoolean371) {
 						local66 = local31 + (-local49 + Static268.anInt4959 + -1) * 16 + 33;
 						if (local66 - 13 < local27 && local66 + 3 >= local27) {
 							local47 = local49;
@@ -68,34 +68,6 @@ public final class Static33 {
 		synchronized (Static98.aClass98_10) {
 			Static98.aClass98_10.clean(5);
 		}
-	}
-
-	@OriginalMember(owner = "client!bs", name = "b", descriptor = "(IIIIII)V")
-	public static void method4203(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		Static123.anInt2420 = arg2;
-		Static236.anInt4309 = arg0;
-		Static254.anInt4698 = arg4;
-		Static57.anInt1464 = arg1;
-		anInt4463 = arg3;
-		if (anInt4463 >= 100) {
-			@Pc(30) int local30 = Static254.anInt4698 * 128 + 64;
-			@Pc(36) int local36 = Static123.anInt2420 * 128 + 64;
-			@Pc(44) int local44 = Static386.method6032(local30, local36, Static355.anInt6585) - Static57.anInt1464;
-			@Pc(49) int local49 = local30 - Static136.anInt6778;
-			@Pc(54) int local54 = local44 - Static102.anInt3592;
-			@Pc(59) int local59 = local36 - Static211.anInt3777;
-			@Pc(70) int local70 = (int) Math.sqrt((double) (local59 * local59 + local49 * local49));
-			Static265.anInt4857 = (int) (Math.atan2((double) local54, (double) local70) * 2607.5945876176133D) & 0x3FFF;
-			Static4.anInt87 = (int) (-2607.5945876176133D * Math.atan2((double) local49, (double) local59)) & 0x3FFF;
-			Static342.anInt5657 = 0;
-			if (Static265.anInt4857 < 1024) {
-				Static265.anInt4857 = 1024;
-			}
-			if (Static265.anInt4857 > 3072) {
-				Static265.anInt4857 = 3072;
-			}
-		}
-		Static314.anInt5911 = 2;
 	}
 
 	@OriginalMember(owner = "client!bs", name = "a", descriptor = "(IIIIIII)I")

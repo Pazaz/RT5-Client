@@ -7,9 +7,6 @@ public final class Static226 {
 	@OriginalMember(owner = "client!na", name = "Y", descriptor = "Lclient!lh;")
 	public static Class119 aClass119_1;
 
-	@OriginalMember(owner = "client!na", name = "S", descriptor = "I")
-	public static int anInt4016 = 0;
-
 	@OriginalMember(owner = "client!na", name = "X", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_89 = new LocalizedString("Loaded update list", "Update-Liste geladen.", "Liste des mises à jour chargée", "Lista de atualizações carregada");
 

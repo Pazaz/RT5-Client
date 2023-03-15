@@ -34,7 +34,7 @@ public final class Static373 {
 		Camera.originX = (Static105.anInt2187 - (anInt7033 >> 4)) * 8;
 		@Pc(70) int local70 = Camera.originZ;
 		Camera.originZ = (Static9.anInt212 - (Static242.anInt4449 >> 4)) * 8;
-		Static91.aClass2_Sub2_Sub17_1 = Static344.method5527(Static105.anInt2187 * 8, Static9.anInt212 * 8);
+		Static91.aClass2_Sub2_Sub17_1 = MapList.getContainingSource(Static105.anInt2187 * 8, Static9.anInt212 * 8);
 		Static34.aClass103_3 = null;
 		@Pc(94) int local94 = Camera.originX - local59;
 		@Pc(99) int local99 = Camera.originZ - local70;
@@ -117,13 +117,13 @@ public final class Static373 {
 			if (Math.abs(local94) > anInt7033 || Math.abs(local99) > Static242.anInt4449) {
 				Static348.method5828();
 			}
-		} else if (Static314.anInt5911 == 4) {
+		} else if (Camera.anInt5911 == 4) {
 			Static288.anInt5463 -= local94 * 128;
 			Static348.anInt6448 -= local99 * 128;
 			Static394.anInt7264 -= local94 * 128;
 			Static62.anInt2395 -= local99 * 128;
 		} else {
-			Static314.anInt5911 = 1;
+			Camera.anInt5911 = 1;
 		}
 		Static160.method2956();
 		Static247.method4299();

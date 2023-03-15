@@ -17,17 +17,11 @@ public final class Static353 {
 	@OriginalMember(owner = "client!ui", name = "n", descriptor = "[I")
 	public static final int[] anIntArray449 = new int[] { 104, 120, 136, 168 };
 
-	@OriginalMember(owner = "client!ui", name = "o", descriptor = "I")
-	public static int anInt6533 = 0;
-
-	@OriginalMember(owner = "client!ui", name = "p", descriptor = "S")
-	public static short aShort92 = 1;
-
 	@OriginalMember(owner = "client!ui", name = "b", descriptor = "(I)V")
 	public static void method5883() {
-		if (Static190.aClass19_8.method2859()) {
+		if (Rasteriser.textureProvider.method2859()) {
 			Static296.method5104();
-			Static190.aClass19_8.method2828(GameShell.canvas);
+			Rasteriser.textureProvider.method2828(GameShell.canvas);
 			Static98.method2107();
 		} else {
 			Static78.method5701(Static77.anInt1762);

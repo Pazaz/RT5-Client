@@ -13,21 +13,6 @@ public final class Static51 {
 	@OriginalMember(owner = "client!cu", name = "w", descriptor = "I")
 	public static int anInt1369 = 0;
 
-	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(IIIIZII)V")
-	public static void method1545(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
-		Static19.anInt535 = arg0;
-		Static348.anInt6446 = arg1;
-		Static180.anInt3404 = arg4;
-		Static359.anInt6702 = arg2;
-		Static311.anInt5810 = arg5;
-		if (arg3 && Static359.anInt6702 >= 100) {
-			Static136.anInt6778 = Static311.anInt5810 * 128 + 64;
-			Static211.anInt3777 = Static19.anInt535 * 128 + 64;
-			Static102.anInt3592 = Static386.method6032(Static136.anInt6778, Static211.anInt3777, Static355.anInt6585) - Static180.anInt3404;
-		}
-		Static314.anInt5911 = 2;
-	}
-
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(Ljava/lang/String;B)[B")
 	public static byte[] method1546(@OriginalArg(0) String arg0) {
 		@Pc(13) int local13 = arg0.length();

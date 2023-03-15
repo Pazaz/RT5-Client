@@ -23,20 +23,20 @@ public final class Static117 {
 	public static final LocalizedString aClass79_49 = new LocalizedString("Loading sprites - ", "Lade Sprites - ", "Chargement des sprites - ", "Carregando sprites - ");
 
 	@OriginalMember(owner = "client!gp", name = "a", descriptor = "(ILclient!wm;)V")
-	public static void method2367(@OriginalArg(1) Class19 arg0) {
+	public static void method2367(@OriginalArg(1) TextureProvider arg0) {
 		@Pc(7) int local7 = Static305.anInt5743;
 		@Pc(9) int local9 = Static363.anInt6801;
 		@Pc(11) int local11 = Static107.anInt2220;
 		@Pc(15) int local15 = Static352.anInt6519 - 3;
 		if (Static197.aClass13_12 == null || Static138.aClass13_8 == null) {
-			if (client.jsArchive8.isFileReady(Static186.anInt3731) && client.jsArchive8.isFileReady(Static67.anInt1636)) {
-				Static197.aClass13_12 = arg0.method2891(Static396.method1682(client.jsArchive8, Static186.anInt3731, 0));
-				@Pc(44) Class48 local44 = Static396.method1682(client.jsArchive8, Static67.anInt1636, 0);
+			if (client.jsArchive8.isFileReady(LoginManager.anInt3731) && client.jsArchive8.isFileReady(LoginManager.anInt1636)) {
+				Static197.aClass13_12 = arg0.method2891(Static396.method1682(client.jsArchive8, LoginManager.anInt3731, 0));
+				@Pc(44) Class48 local44 = Static396.method1682(client.jsArchive8, LoginManager.anInt1636, 0);
 				Static138.aClass13_8 = arg0.method2891(local44);
 				local44.method1684();
 				Static75.aClass13_5 = arg0.method2891(local44);
 			} else {
-				arg0.method2901(local7, local9, local11, 20, 255 - Static260.anInt6717 << 24 | Static242.anInt4446, 1);
+				arg0.method2901(local7, local9, local11, 20, 255 - LoginManager.anInt6717 << 24 | LoginManager.anInt4446, 1);
 			}
 		}
 		@Pc(89) int local89;
@@ -49,8 +49,8 @@ public final class Static117 {
 			Static138.aClass13_8.method6385(local7, local9);
 			Static75.aClass13_5.method6385(local7 + local11 - Static75.aClass13_5.method6389(), local9);
 		}
-		Static52.aClass130_1.method5897(local7 + 3, -1, local9 + 14, Static322.anInt6030 | 0xFF000000, Static180.aClass79_74.getLocalized(client.language));
-		arg0.method2901(local7, local9 + 20, local11, local15 - 20, -Static260.anInt6717 + 255 << 24 | Static242.anInt4446, 1);
+		Static52.aClass130_1.method5897(local7 + 3, -1, local9 + 14, LoginManager.anInt6030 | 0xFF000000, Static180.aClass79_74.getLocalized(client.language));
+		arg0.method2901(local7, local9 + 20, local11, local15 - 20, -LoginManager.anInt6717 + 255 << 24 | LoginManager.anInt4446, 1);
 		local87 = Static226.aClass119_1.method3304();
 		local89 = Static226.aClass119_1.method3313();
 		@Pc(169) int local169 = 0;
@@ -59,16 +59,16 @@ public final class Static117 {
 			local192 = local9 + (-local169 + -1 + Static268.anInt4959) * 16 + 33;
 			local169++;
 			if (local7 < local87 && local87 < local7 + local11 && local89 > local192 - 13 && local192 + 4 > local89 && local174.aBoolean83) {
-				arg0.method2901(local7, local192 - 12, local11, 16, Static200.anInt3697 | 255 - Static86.anInt1868 << 24, 1);
+				arg0.method2901(local7, local192 - 12, local11, 16, LoginManager.anInt3697 | 255 - LoginManager.anInt1868 << 24, 1);
 			}
 		}
-		if ((Static337.aClass13_17 == null || Static211.aClass13_13 == null || Static35.aClass13_3 == null) && client.jsArchive8.isFileReady(Static74.anInt1722) && client.jsArchive8.isFileReady(Static363.anInt6804) && client.jsArchive8.isFileReady(Static390.anInt7211)) {
-			@Pc(275) Class48 local275 = Static396.method1682(client.jsArchive8, Static363.anInt6804, 0);
+		if ((Static337.aClass13_17 == null || Static211.aClass13_13 == null || Static35.aClass13_3 == null) && client.jsArchive8.isFileReady(LoginManager.anInt1722) && client.jsArchive8.isFileReady(LoginManager.anInt6804) && client.jsArchive8.isFileReady(LoginManager.anInt7211)) {
+			@Pc(275) Class48 local275 = Static396.method1682(client.jsArchive8, LoginManager.anInt6804, 0);
 			Static211.aClass13_13 = arg0.method2891(local275);
 			local275.method1684();
 			Static339.aClass13_18 = arg0.method2891(local275);
-			Static337.aClass13_17 = arg0.method2891(Static396.method1682(client.jsArchive8, Static74.anInt1722, 0));
-			@Pc(300) Class48 local300 = Static396.method1682(client.jsArchive8, Static390.anInt7211, 0);
+			Static337.aClass13_17 = arg0.method2891(Static396.method1682(client.jsArchive8, LoginManager.anInt1722, 0));
+			@Pc(300) Class48 local300 = Static396.method1682(client.jsArchive8, LoginManager.anInt7211, 0);
 			Static35.aClass13_3 = arg0.method2891(local300);
 			local300.method1684();
 			Static110.aClass13_6 = arg0.method2891(local300);
@@ -91,9 +91,9 @@ public final class Static117 {
 		}
 		for (@Pc(436) Class2_Sub5 local436 = (Class2_Sub5) Static129.aClass135_19.head(); local436 != null; local436 = (Class2_Sub5) Static129.aClass135_19.next()) {
 			local333 = (Static268.anInt4959 - local169 - 1) * 16 + local9 + 13 + 20;
-			local368 = Static322.anInt6030 | 0xFF000000;
+			local368 = LoginManager.anInt6030 | 0xFF000000;
 			if (local7 < local87 && local87 < local7 + local11 && local89 > local333 - 13 && local89 < local333 + 4 && local436.aBoolean83) {
-				local368 = Static381.anInt7118 | 0xFF000000;
+				local368 = LoginManager.anInt7118 | 0xFF000000;
 			}
 			@Pc(499) int[] local499 = null;
 			if (Static298.method2425(local436.anInt1005)) {
@@ -136,18 +136,6 @@ public final class Static117 {
 			}
 		}
 		Static148.method2710(Static363.anInt6801, Static305.anInt5743, Static352.anInt6519, Static107.anInt2220);
-	}
-
-	@OriginalMember(owner = "client!gp", name = "b", descriptor = "(B)V")
-	public static void method2369() {
-		for (@Pc(3) int local3 = 0; local3 < 5; local3++) {
-			Static189.aBooleanArray33[local3] = false;
-		}
-		Static147.anInt2717 = -1;
-		Static349.anInt6455 = -1;
-		Static236.anInt4309 = 0;
-		Static314.anInt5911 = 1;
-		Static33.anInt4463 = 0;
 	}
 
 	@OriginalMember(owner = "client!gp", name = "b", descriptor = "(II)I")

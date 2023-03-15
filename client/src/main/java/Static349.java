@@ -7,9 +7,6 @@ public final class Static349 {
 	@OriginalMember(owner = "client!ud", name = "g", descriptor = "Lclient!hu;")
 	public static final LruHashTable aClass98_58 = new LruHashTable(5);
 
-	@OriginalMember(owner = "client!ud", name = "r", descriptor = "I")
-	public static int anInt6455 = -1;
-
 	@OriginalMember(owner = "client!ud", name = "t", descriptor = "[C")
 	public static final char[] aCharArray6 = new char[] { '_', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
@@ -29,7 +26,7 @@ public final class Static349 {
 		} else if (local7 > 100) {
 			local7 = 100;
 		}
-		@Pc(33) int local33 = Static271.aShort79 + local7 * (Static120.aShort36 - Static271.aShort79) / 100;
+		@Pc(33) int local33 = ScriptRunner.aShort79 + local7 * (ScriptRunner.aShort36 - ScriptRunner.aShort79) / 100;
 		@Pc(39) int local39 = local33 * arg0 >> 8;
 		@Pc(46) int local46 = 16384 - arg6 & 0x3FFF;
 		@Pc(53) int local53 = 16384 - arg5 & 0x3FFF;
@@ -37,12 +34,12 @@ public final class Static349 {
 		@Pc(57) int local57 = 0;
 		@Pc(59) int local59 = local39;
 		if (local46 != 0) {
-			local57 = Class19.anIntArray178[local46] * -local39 >> 15;
-			local59 = local39 * Class19.anIntArray177[local46] >> 15;
+			local57 = TextureProvider.anIntArray178[local46] * -local39 >> 15;
+			local59 = local39 * TextureProvider.anIntArray177[local46] >> 15;
 		}
 		if (local53 != 0) {
-			local55 = local59 * Class19.anIntArray178[local53] >> 15;
-			local59 = Class19.anIntArray177[local53] * local59 >> 15;
+			local55 = local59 * TextureProvider.anIntArray178[local53] >> 15;
+			local59 = TextureProvider.anIntArray177[local53] * local59 >> 15;
 		}
 		Static4.anInt87 = arg5;
 		Static102.anInt3592 = arg3 - local57;

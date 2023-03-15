@@ -15,7 +15,7 @@ public final class Static99 {
 
 	@OriginalMember(owner = "client!fm", name = "j", descriptor = "(I)V")
 	public static void method2146() {
-		Static65.aClass19_3.method2838(((float) client.preferences.anInt4879 * 0.1F + 0.7F) * 1.1523438F);
+		Static65.aClass19_3.method2838(((float) client.preferences.brightness * 0.1F + 0.7F) * 1.1523438F);
 		Static65.aClass19_3.method2832(Static28.anInt686, 0.69921875F, 1.2F, -50.0F, (float) -60, -50.0F);
 		Static65.aClass19_3.method2879(Static279.anInt5161, -1);
 		Static65.aClass19_3.method2870(Static62.aClass42_5);

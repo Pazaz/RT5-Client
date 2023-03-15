@@ -154,8 +154,8 @@ public final class Static330 {
 								local487 = local525.anIntArrayArray53[local483][0];
 								@Pc(547) int local547 = local525.anIntArrayArray53[local483][2];
 								@Pc(552) int local552 = local491.aClass248_7.method6441();
-								@Pc(556) int local556 = Class19.anIntArray178[local552];
-								@Pc(560) int local560 = Class19.anIntArray177[local552];
+								@Pc(556) int local556 = TextureProvider.anIntArray178[local552];
+								@Pc(560) int local560 = TextureProvider.anIntArray177[local552];
 								@Pc(571) int local571 = local556 * local547 + local487 * local560 >> 15;
 								@Pc(582) int local582 = local547 * local560 - local556 * local487 >> 15;
 								local69 -= local525.anIntArrayArray53[local483][1];
@@ -226,7 +226,7 @@ public final class Static330 {
 				local81 = local77 >> 2;
 				local85 = local77 & 0x3;
 				local403 = Protocol.inboundBuffer.g2();
-				if (!Static190.aClass19_8.method2871()) {
+				if (!Rasteriser.textureProvider.method2871()) {
 					Static243.method4239(local32, local403, local954, local57, local958, local942, local916, local63, local49, local81, local85, local40, Static243.anInt4502);
 				}
 			} else if (arg0 == ZoneProt.PACKET_4) {
@@ -284,7 +284,7 @@ public final class Static330 {
 				local69 = Protocol.inboundBuffer.g1();
 				if (local23 >= 0 && local32 >= 0 && local23 < Static373.anInt7033 && Static242.anInt4449 > local32) {
 					local73 = local53 + 1;
-					if (local23 - local73 <= PlayerList.self.movementQueueX[0] && PlayerList.self.movementQueueX[0] <= local23 + local73 && PlayerList.self.movementQueueZ[0] >= local32 - local73 && local32 + local73 >= PlayerList.self.movementQueueZ[0] && client.preferences.anInt4882 != 0 && local57 > 0 && Static243.anInt4503 < 50 && local40 != -1) {
+					if (local23 - local73 <= PlayerList.self.movementQueueX[0] && PlayerList.self.movementQueueX[0] <= local23 + local73 && PlayerList.self.movementQueueZ[0] >= local32 - local73 && local32 + local73 >= PlayerList.self.movementQueueZ[0] && client.preferences.ambientSoundsVolume != 0 && local57 > 0 && Static243.anInt4503 < 50 && local40 != -1) {
 						Static256.anIntArray321[Static243.anInt4503] = local40;
 						Static329.anIntArray419[Static243.anInt4503] = local57;
 						Static237.anIntArray283[Static243.anInt4503] = local63;

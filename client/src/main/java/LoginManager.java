@@ -17,7 +17,7 @@ public class LoginManager {
 	@OriginalMember(owner = "client!ch", name = "ab", descriptor = "I")
 	public static int loginResult = -2;
 	@OriginalMember(owner = "client!vr", name = "j", descriptor = "Ljava/lang/String;")
-	public static String username = "";
+	public static String usernameInput = "";
 	@OriginalMember(owner = "client!nq", name = "g", descriptor = "J")
 	public static long encodedUsername;
 	@OriginalMember(owner = "client!lp", name = "e", descriptor = "J")
@@ -46,6 +46,30 @@ public class LoginManager {
 	public static int anInt3714 = -1;
 	@OriginalMember(owner = "client!wd", name = "o", descriptor = "Z")
 	public static boolean playerMember = false;
+	@OriginalMember(owner = "client!nr", name = "a", descriptor = "I")
+	public static int anInt4446;
+	@OriginalMember(owner = "client!os", name = "f", descriptor = "I")
+	public static int anInt6717;
+	@OriginalMember(owner = "client!lo", name = "o", descriptor = "I")
+	public static int anInt3697;
+	@OriginalMember(owner = "client!eq", name = "E", descriptor = "I")
+	public static int anInt1868;
+	@OriginalMember(owner = "client!kp", name = "c", descriptor = "I")
+	public static int anInt3731;
+	@OriginalMember(owner = "client!ds", name = "p", descriptor = "I")
+	public static int anInt1636;
+	@OriginalMember(owner = "client!ee", name = "d", descriptor = "I")
+	public static int anInt1722;
+	@OriginalMember(owner = "client!vf", name = "V", descriptor = "I")
+	public static int anInt6804;
+	@OriginalMember(owner = "client!wp", name = "g", descriptor = "I")
+	public static int anInt7211;
+	@OriginalMember(owner = "client!so", name = "i", descriptor = "I")
+	public static int anInt6030;
+	@OriginalMember(owner = "client!wd", name = "n", descriptor = "I")
+	public static int anInt7118;
+	@OriginalMember(owner = "client!is", name = "d", descriptor = "I")
+	public static int anInt2803 = 0;
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(B)V")
 	public static void mainLogic() {
@@ -85,7 +109,7 @@ public class LoginManager {
 				}
 				Protocol.socket = new BufferedSocket((Socket) Protocol.socketRequest2.result, GameShell.signlink);
 				Protocol.socketRequest2 = null;
-				@Pc(105) long encodedUsername = LoginManager.encodedUsername = StringUtils.toBase37(username);
+				@Pc(105) long encodedUsername = LoginManager.encodedUsername = StringUtils.toBase37(usernameInput);
 				int usernameHash = (int) (encodedUsername >> 16 & 0x1FL);
 				Protocol.outboundBuffer.pos = 0;
 				Protocol.outboundBuffer.p1(LoginProt.LOGIN.opcode);
@@ -127,7 +151,7 @@ public class LoginManager {
 				rsaBuffer.p4(key[1]);
 				rsaBuffer.p4(key[2]);
 				rsaBuffer.p4(key[3]);
-				rsaBuffer.p8(StringUtils.toBase37(username));
+				rsaBuffer.p8(StringUtils.toBase37(usernameInput));
 				rsaBuffer.pjstr(password);
 				rsaBuffer.rsaenc(Protocol.EXPONENT, Protocol.MODULUS);
 				Protocol.outboundBuffer.pos = 0;
@@ -140,10 +164,10 @@ public class LoginManager {
 				int start = Protocol.outboundBuffer.pos;
 				Protocol.outboundBuffer.p4(578);
 				Protocol.outboundBuffer.p1(anInt3714);
-				Protocol.outboundBuffer.p1(Static144.getWindowMode());
+				Protocol.outboundBuffer.p1(DisplayMode.getWindowMode());
 				Protocol.outboundBuffer.p2(GameShell.canvasWidth);
 				Protocol.outboundBuffer.p2(GameShell.canvasHeight);
-				Protocol.outboundBuffer.p1(client.preferences.anInt4885);
+				Protocol.outboundBuffer.p1(client.preferences.antiAliasingMode);
 				client.writeUid(Protocol.outboundBuffer);
 				Protocol.outboundBuffer.pjstr(client.settings);
 				Protocol.outboundBuffer.p4(client.affiliate);
@@ -402,7 +426,7 @@ public class LoginManager {
 
 	@OriginalMember(owner = "client!jl", name = "f", descriptor = "(I)V")
 	public static void loopAuto() {
-		if (Static154.anInt2803 == 0) {
+		if (anInt2803 == 0) {
 			return;
 		}
 		try {
@@ -412,11 +436,11 @@ public class LoginManager {
 					Protocol.socket = null;
 				}
 				if (Static60.anInt666 >= 1) {
-					Static154.anInt2803 = 0;
+					anInt2803 = 0;
 					loginResult = -5;
 					return;
 				}
-				Static154.anInt2803 = 1;
+				anInt2803 = 1;
 				if (client.worldListDefaultPort == client.worldListPort) {
 					client.worldListPort = client.worldListAlternatePort;
 				} else {
@@ -425,12 +449,12 @@ public class LoginManager {
 				Static60.anInt666++;
 				Static193.anInt3557 = 0;
 			}
-			if (Static154.anInt2803 == 1) {
+			if (anInt2803 == 1) {
 				Protocol.socketRequest2 = GameShell.signlink.openSocket(client.worldListHostname, client.worldListPort);
-				Static154.anInt2803 = 2;
+				anInt2803 = 2;
 			}
 			@Pc(125) int local125;
-			if (Static154.anInt2803 == 2) {
+			if (anInt2803 == 2) {
 				if (Protocol.socketRequest2.status == 2) {
 					throw new IOException();
 				}
@@ -455,23 +479,23 @@ public class LoginManager {
 				}
 				if (local125 != 101) {
 					loginResult = local125;
-					Static154.anInt2803 = 0;
+					anInt2803 = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
 					return;
 				}
-				Static154.anInt2803 = 3;
+				anInt2803 = 3;
 			}
-			if (Static154.anInt2803 == 3 && Protocol.socket.available() >= 2) {
+			if (anInt2803 == 3 && Protocol.socket.available() >= 2) {
 				local125 = Protocol.socket.read() << 8 | Protocol.socket.read();
 				WorldList.switchWorld(local125);
 				if (Player.worldId == -1) {
-					Static154.anInt2803 = 0;
+					anInt2803 = 0;
 					loginResult = 6;
 					Protocol.socket.close();
 					Protocol.socket = null;
 				} else {
-					Static154.anInt2803 = 0;
+					anInt2803 = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
 					Static230.method4014();
@@ -483,10 +507,10 @@ public class LoginManager {
 				Protocol.socket = null;
 			}
 			if (Static60.anInt666 >= 1) {
-				Static154.anInt2803 = 0;
+				anInt2803 = 0;
 				loginResult = -4;
 			} else {
-				Static154.anInt2803 = 1;
+				anInt2803 = 1;
 				Static193.anInt3557 = 0;
 				if (client.worldListPort == client.worldListDefaultPort) {
 					client.worldListPort = client.worldListAlternatePort;
@@ -512,8 +536,8 @@ public class LoginManager {
 		Static241.method4192(false);
 		System.gc();
 		Static174.method1507();
-		Static393.aBoolean486 = false;
-		Static171.anInt3268 = -1;
+		MidiPlayer.jingle = false;
+		MusicPlayer.groupId = -1;
 		Static239.method4152(true);
 		Camera.originX = 0;
 		Static9.anInt212 = 0;
@@ -532,7 +556,7 @@ public class LoginManager {
 			NpcList.npcs[local91] = null;
 		}
 		Static120.aClass4_49.clear();
-		Static117.method2369();
+		Camera.resetCameraEffects();
 		Protocol.verifyId = 0;
 		Static214.aClass226_1.method5781();
 		Static114.method2362();
@@ -638,7 +662,7 @@ public class LoginManager {
 		Static37.method1135();
 		Static211.method3721();
 		@Pc(375) boolean local375 = false;
-		if (Static190.aClass19_8.method2805() && client.preferences.aBoolean361) {
+		if (Rasteriser.textureProvider.method2805() && client.preferences.highWaterDetail) {
 			for (local268 = 0; local268 < Static106.aByteArrayArray6.length; local268++) {
 				if (Static270.aByteArrayArray15[local268] != null || Static232.aByteArrayArray9[local268] != null) {
 					local375 = true;
@@ -646,15 +670,15 @@ public class LoginManager {
 				}
 			}
 		}
-		if (client.preferences.aBoolean348) {
+		if (client.preferences.fogEnabled) {
 			local268 = Static272.anIntArray351[Static31.anInt752];
 		} else {
 			local268 = Static59.anIntArray106[Static31.anInt752];
 		}
-		if (Static190.aClass19_8.method2888()) {
+		if (Rasteriser.textureProvider.method2888()) {
 			local268++;
 		}
-		Scene.method1381(Static373.anInt7033, Static242.anInt4449, local268, local375, Static190.aClass19_8.method2886() > 0);
+		Scene.method1381(Static373.anInt7033, Static242.anInt4449, local268, local375, Rasteriser.textureProvider.method2886() > 0);
 		for (local279 = 0; local279 < 4; local279++) {
 			Static171.aClass46Array1[local279].method1626();
 		}
@@ -665,11 +689,11 @@ public class LoginManager {
 		System.gc();
 		Protocol.method2973(true);
 		Static375.method6281();
-		Static246.aBoolean312 = client.preferences.aBoolean364;
-		Static105.aBoolean162 = client.preferences.aBoolean361;
-		Static183.aBoolean8 = Static309.anInt5802 >= 96;
-		Static174.anInt1300 = client.preferences.anInt4886;
-		Static141.aBoolean190 = !client.preferences.ot;
+		Static246.aBoolean312 = client.preferences.highDetailLighting;
+		Static105.aBoolean162 = client.preferences.highWaterDetail;
+		Static183.aBoolean8 = GameShell.maxMemory >= 96;
+		Static174.anInt1300 = client.preferences.sceneryShadowsType;
+		Static141.aBoolean190 = !client.preferences.manyGroundTextures;
 		Static158.anInt2911 = client.preferences.method4495(Static77.anInt1762) ? -1 : Static44.anInt1115;
 		Static132.aBoolean179 = Static77.anInt1762 == 1 || client.preferences.gb;
 		Static190.aClass29_Sub1_63 = new SceneBuilder(4, Static373.anInt7033, Static242.anInt4449, false);
@@ -693,10 +717,10 @@ public class LoginManager {
 				Protocol.method2973(true);
 			}
 			Static7.aClass29_Sub1_120.method1097(Static190.aClass29_Sub1_63.levelHeightmap[0]);
-			Static7.aClass29_Sub1_120.method1085(null, null, Static190.aClass19_8);
+			Static7.aClass29_Sub1_120.method1085(null, null, Rasteriser.textureProvider);
 			Scene.method5767(false);
 		}
-		Static190.aClass29_Sub1_63.method1085(local375 ? Static7.aClass29_Sub1_120.levelHeightmap : null, Static171.aClass46Array1, Static190.aClass19_8);
+		Static190.aClass29_Sub1_63.method1085(local375 ? Static7.aClass29_Sub1_120.levelHeightmap : null, Static171.aClass46Array1, Rasteriser.textureProvider);
 		if (!Static220.aBoolean252) {
 			Protocol.method2973(true);
 			Static170.method3231(Static190.aClass29_Sub1_63, Static82.aByteArrayArray5);
@@ -710,8 +734,8 @@ public class LoginManager {
 		}
 		Static211.method3721();
 		Protocol.method2973(true);
-		Static190.aClass29_Sub1_63.method1093(local375 ? Scene.aClass6Array2[0] : null, Static190.aClass19_8, null);
-		Static190.aClass29_Sub1_63.method1104(Static190.aClass19_8);
+		Static190.aClass29_Sub1_63.method1093(local375 ? Scene.aClass6Array2[0] : null, Rasteriser.textureProvider, null);
+		Static190.aClass29_Sub1_63.method1104(Rasteriser.textureProvider);
 		Protocol.method2973(true);
 		if (local375) {
 			Scene.method5767(true);
@@ -724,8 +748,8 @@ public class LoginManager {
 			}
 			Static211.method3721();
 			Protocol.method2973(true);
-			Static7.aClass29_Sub1_120.method1093(null, Static190.aClass19_8, Scene.aClass6Array3[0]);
-			Static7.aClass29_Sub1_120.method1104(Static190.aClass19_8);
+			Static7.aClass29_Sub1_120.method1093(null, Rasteriser.textureProvider, Scene.aClass6Array3[0]);
+			Static7.aClass29_Sub1_120.method1104(Rasteriser.textureProvider);
 			Protocol.method2973(true);
 			Scene.method5767(false);
 		}
@@ -790,20 +814,20 @@ public class LoginManager {
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Ljava/lang/String;Ljava/lang/String;IB)V")
 	public static void method2087(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
-		username = arg1;
+		usernameInput = arg1;
 		anInt3714 = arg2;
 		password = arg0;
-		if (username.equals("") || password.equals("")) {
+		if (usernameInput.equals("") || password.equals("")) {
 			loginResult = 3;
 		} else if (Player.worldId == -1) {
 			Static60.anInt666 = 0;
-			Static154.anInt2803 = 1;
+			anInt2803 = 1;
 			loginResult = -3;
 			Static193.anInt3557 = 0;
 			@Pc(40) Buffer encrypted = new Buffer(128);
 			encrypted.p1(10);
 			encrypted.p4((int) (Math.random() * 9.9999999E7D));
-			encrypted.p8(StringUtils.toBase37(username));
+			encrypted.p8(StringUtils.toBase37(usernameInput));
 			encrypted.p4((int) (Math.random() * 9.9999999E7D));
 			encrypted.pjstr(password);
 			encrypted.p4((int) (Math.random() * 9.9999999E7D));
@@ -815,6 +839,25 @@ public class LoginManager {
 			Protocol.outboundBuffer.pdata(encrypted.data, encrypted.pos);
 		} else {
 			Static230.method4014();
+		}
+	}
+
+	@OriginalMember(owner = "client!kt", name = "f", descriptor = "(I)V")
+	public static void method3502() {
+		Static211.aClass13_13 = null;
+		Static339.aClass13_18 = null;
+		Static75.aClass13_5 = null;
+		Static337.aClass13_17 = null;
+		Static35.aClass13_3 = null;
+		Static197.aClass13_12 = null;
+		Static110.aClass13_6 = null;
+		Static138.aClass13_8 = null;
+	}
+
+	@OriginalMember(owner = "client!sk", name = "c", descriptor = "(B)V")
+	public static void method5435() {
+		if (loginStep == 5) {
+			loginStep = 6;
 		}
 	}
 

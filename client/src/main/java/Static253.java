@@ -95,7 +95,7 @@ public final class Static253 {
 	@OriginalMember(owner = "client!oj", name = "b", descriptor = "(I)V")
 	public static void method4369() {
 		if (Static97.anInt2034 != -1) {
-			Static258.method4402(false, -1, Static97.anInt2034, -1);
+			WorldMap.method4402(false, -1, Static97.anInt2034, -1);
 			Static97.anInt2034 = -1;
 		}
 	}

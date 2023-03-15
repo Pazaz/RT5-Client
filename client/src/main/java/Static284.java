@@ -17,33 +17,33 @@ public final class Static284 {
 	public static int anInt5362 = 0;
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(ILclient!ci;IIIILclient!wm;)V")
-	public static void method4881(@OriginalArg(1) TextureProvider arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) Class19 arg5) {
-		if (Static355.anInt6581 < 100) {
+	public static void method4881(@OriginalArg(1) TextureProviderInterface arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) TextureProvider arg5) {
+		if (WorldMap.loadPercentage < 100) {
 			Static209.method3714(arg5, arg0);
 		}
 		arg5.method2895(arg4, arg2, arg4 + arg3, arg2 - -arg1);
 		@Pc(36) int local36;
 		@Pc(47) int local47;
-		if (Static355.anInt6581 < 100) {
+		if (WorldMap.loadPercentage < 100) {
 			local36 = arg3 / 2 + arg4;
 			local47 = arg1 / 2 + arg2 - 18 - 20;
 			arg5.method2901(arg4, arg2, arg3, arg1, -16777216, 0);
 			arg5.method2836(local36 - 152, local47, 304, 34, Static291.aColorArray4[Static64.anInt1555].getRGB(), 0);
-			arg5.method2901(local36 - 150, local47 - -2, Static355.anInt6581 * 3, 30, Static174.aColorArray2[Static64.anInt1555].getRGB(), 0);
+			arg5.method2901(local36 - 150, local47 - -2, WorldMap.loadPercentage * 3, 30, Static174.aColorArray2[Static64.anInt1555].getRGB(), 0);
 			Static52.aClass130_1.method5900(Static32.aClass79_21.getLocalized(client.language), -1, local47 + 20, Static286.aColorArray3[Static64.anInt1555].getRGB(), local36);
 			return;
 		}
-		@Pc(111) int local111 = Static151.anInt2772 - (int) ((float) arg3 / Static344.aFloat72);
-		local36 = (int) ((float) arg1 / Static344.aFloat72) + Static96.anInt2003;
-		local47 = (int) ((float) arg3 / Static344.aFloat72) + Static151.anInt2772;
-		Static368.anInt6930 = (int) ((float) (arg1 * 2) / Static344.aFloat72);
-		Static21.anInt548 = Static96.anInt2003 - (int) ((float) arg1 / Static344.aFloat72);
-		Static44.anInt1105 = (int) ((float) (arg3 * 2) / Static344.aFloat72);
-		@Pc(160) int local160 = Static96.anInt2003 - (int) ((float) arg1 / Static344.aFloat72);
-		Static178.anInt2317 = Static151.anInt2772 - (int) ((float) arg3 / Static344.aFloat72);
-		Static344.method5530(local111 + Static344.anInt6057, local36 - -Static344.anInt6055, Static344.anInt6057 + local47, Static344.anInt6055 + local160, arg4, arg2, arg3 + arg4, arg2 - (-arg1 - 1));
-		Static344.method5522(arg5);
-		@Pc(203) LinkedList local203 = Static344.method5524(arg5);
+		@Pc(111) int local111 = WorldMap.anInt2772 - (int) ((float) arg3 / MapList.aFloat72);
+		local36 = (int) ((float) arg1 / MapList.aFloat72) + WorldMap.anInt2003;
+		local47 = (int) ((float) arg3 / MapList.aFloat72) + WorldMap.anInt2772;
+		WorldMap.anInt6930 = (int) ((float) (arg1 * 2) / MapList.aFloat72);
+		Static21.anInt548 = WorldMap.anInt2003 - (int) ((float) arg1 / MapList.aFloat72);
+		WorldMap.anInt1105 = (int) ((float) (arg3 * 2) / MapList.aFloat72);
+		@Pc(160) int local160 = WorldMap.anInt2003 - (int) ((float) arg1 / MapList.aFloat72);
+		Static178.anInt2317 = WorldMap.anInt2772 - (int) ((float) arg3 / MapList.aFloat72);
+		MapList.method5530(local111 + MapList.anInt6057, local36 - -MapList.anInt6055, MapList.anInt6057 + local47, MapList.anInt6055 + local160, arg4, arg2, arg3 + arg4, arg2 - (-arg1 - 1));
+		MapList.method5522(arg5);
+		@Pc(203) LinkedList local203 = MapList.method5524(arg5);
 		Static303.method5208(local203, arg5);
 		if (Static243.anInt4495 > 0) {
 			Static90.anInt6637--;
@@ -71,20 +71,20 @@ public final class Static284 {
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(ZI)Z")
 	public static boolean method4882(@OriginalArg(0) boolean arg0) {
-		@Pc(11) boolean local11 = Static190.aClass19_8.method2892();
+		@Pc(11) boolean local11 = Rasteriser.textureProvider.method2892();
 		if (arg0 == local11) {
 			return true;
 		}
 		if (!arg0) {
-			Static190.aClass19_8.method2831();
-		} else if (!Static190.aClass19_8.method2847()) {
+			Rasteriser.textureProvider.method2831();
+		} else if (!Rasteriser.textureProvider.method2847()) {
 			arg0 = false;
 		}
 		if (arg0 == local11) {
 			return false;
 		} else {
 			client.preferences.aBoolean356 = arg0;
-			client.preferences.method4497(GameShell.signlink);
+			client.preferences.write(GameShell.signlink);
 			return true;
 		}
 	}

@@ -24,16 +24,16 @@ public final class Static286 {
 	}
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(Lclient!jg;ILclient!wm;Lclient!np;BI)Z")
-	public static boolean method4923(@OriginalArg(0) Class2_Sub20 arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) MelType arg2) {
+	public static boolean method4923(@OriginalArg(0) Class2_Sub20 arg0, @OriginalArg(2) TextureProvider arg1, @OriginalArg(3) MelType arg2) {
 		@Pc(24) int local24 = Integer.MAX_VALUE;
 		@Pc(26) int local26 = Integer.MIN_VALUE;
 		@Pc(28) int local28 = Integer.MAX_VALUE;
 		@Pc(30) int local30 = Integer.MIN_VALUE;
 		if (arg2.anIntArray290 != null) {
-			local24 = (Static344.anInt6051 - Static344.anInt6050) * (arg0.anInt2949 + arg2.anInt4434 - Static344.anInt6058) / (Static344.anInt6054 - Static344.anInt6058) + Static344.anInt6050;
-			local30 = Static344.anInt6061 - (arg0.anInt2952 + arg2.anInt4432 - Static344.anInt6059) * (-Static344.anInt6053 + Static344.anInt6061) / (Static344.anInt6060 - Static344.anInt6059);
-			local26 = Static344.anInt6050 + (arg2.anInt4419 + arg0.anInt2949 - Static344.anInt6058) * (-Static344.anInt6050 + Static344.anInt6051) / (Static344.anInt6054 - Static344.anInt6058);
-			local28 = Static344.anInt6061 - (Static344.anInt6061 - Static344.anInt6053) * (-Static344.anInt6059 + arg0.anInt2952 + arg2.anInt4428) / (Static344.anInt6060 - Static344.anInt6059);
+			local24 = (MapList.anInt6051 - MapList.anInt6050) * (arg0.anInt2949 + arg2.anInt4434 - MapList.anInt6058) / (MapList.anInt6054 - MapList.anInt6058) + MapList.anInt6050;
+			local30 = MapList.anInt6061 - (arg0.anInt2952 + arg2.anInt4432 - MapList.anInt6059) * (-MapList.anInt6053 + MapList.anInt6061) / (MapList.anInt6060 - MapList.anInt6059);
+			local26 = MapList.anInt6050 + (arg2.anInt4419 + arg0.anInt2949 - MapList.anInt6058) * (-MapList.anInt6050 + MapList.anInt6051) / (MapList.anInt6054 - MapList.anInt6058);
+			local28 = MapList.anInt6061 - (MapList.anInt6061 - MapList.anInt6053) * (-MapList.anInt6059 + arg0.anInt2952 + arg2.anInt4428) / (MapList.anInt6060 - MapList.anInt6059);
 		}
 		@Pc(123) Sprite local123 = null;
 		@Pc(125) int local125 = 0;
@@ -113,7 +113,7 @@ public final class Static286 {
 				}
 			}
 		}
-		if (Static344.anInt6050 > local26 || Static344.anInt6051 < local24 || local30 < Static344.anInt6053 || local28 > Static344.anInt6061) {
+		if (MapList.anInt6050 > local26 || MapList.anInt6051 < local24 || local30 < MapList.anInt6053 || local28 > MapList.anInt6061) {
 			return true;
 		}
 		@Pc(439) int local439;
@@ -122,8 +122,8 @@ public final class Static286 {
 			for (local439 = 0; local439 < local437.length / 2; local439++) {
 				local323 = arg2.anIntArray290[local439 * 2] + arg0.anInt2949;
 				@Pc(464) int local464 = arg2.anIntArray290[local439 * 2 + 1] + arg0.anInt2952;
-				local437[local439 * 2] = (local323 - Static344.anInt6058) * (Static344.anInt6051 + -Static344.anInt6050) / (Static344.anInt6054 - Static344.anInt6058) + Static344.anInt6050;
-				local437[local439 * 2 + 1] = Static344.anInt6061 - (local464 - Static344.anInt6059) * (Static344.anInt6061 + -Static344.anInt6053) / (Static344.anInt6060 - Static344.anInt6059);
+				local437[local439 * 2] = (local323 - MapList.anInt6058) * (MapList.anInt6051 + -MapList.anInt6050) / (MapList.anInt6054 - MapList.anInt6058) + MapList.anInt6050;
+				local437[local439 * 2 + 1] = MapList.anInt6061 - (local464 - MapList.anInt6059) * (MapList.anInt6061 + -MapList.anInt6053) / (MapList.anInt6060 - MapList.anInt6059);
 			}
 			Static293.method5046(arg1, local437, arg2.anInt4414);
 			for (local323 = 0; local323 < local437.length / 2 - 1; local323++) {
