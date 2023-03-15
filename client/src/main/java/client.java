@@ -305,7 +305,7 @@ public final class client extends GameShell {
 			Static50.aClass84Array1[local4365] = null;
 		}
 		for (@Pc(4383) int local4383 = 0; local4383 < 100; local4383++) {
-			Static88.aStringArray13[local4383] = null;
+			Static88.MSG_PRIMARY[local4383] = null;
 		}
 		Static14.anInt327 = (int) (Math.random() * 110.0D) - 55;
 		Static97.anInt2005 = (int) (Math.random() * 30.0D) - 20;

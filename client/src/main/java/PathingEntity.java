@@ -219,10 +219,6 @@ public abstract class PathingEntity extends Entity {
 	@OriginalMember(owner = "client!mr", name = "ec", descriptor = "[I")
 	public final int[] movementQueueZ = new int[10];
 
-	static {
-		new LocalizedString("Use", "Benutzen", "Utiliser", "Usar");
-	}
-
 	@OriginalMember(owner = "client!mr", name = "<init>", descriptor = "()V")
 	public PathingEntity() {
 		super(0, 0, 0, 0, 0, 0, 0, 0, false, (byte) 0);

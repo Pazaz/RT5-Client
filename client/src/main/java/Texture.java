@@ -44,10 +44,6 @@ public final class Texture extends SecondaryNode {
 	@OriginalMember(owner = "client!qm", name = "F", descriptor = "[Lclient!jq;")
 	private final TextureOp[] textureOps;
 
-	static {
-		new LocalizedString("You have been permanently muted due to breaking a rule.", "Du wurdest permanent stumm geschaltet, da du gegen eine Regel verstoßen hast.", "L'accès à la messagerie instantanée vous a définitivement été retiré suite à une infraction.", "Você foi permanentemente vetado por ter violado uma regra.");
-	}
-
 	@OriginalMember(owner = "client!qm", name = "<init>", descriptor = "(Lclient!bt;)V")
 	public Texture(@OriginalArg(0) Buffer buffer) {
 		@Pc(7) int local7 = buffer.g1();

@@ -12,10 +12,6 @@ public final class VarbitTypeList {
 	@OriginalMember(owner = "client!km", name = "c", descriptor = "Lclient!r;")
 	private final Js5 aClass197_51;
 
-	static {
-		new LocalizedString("Login to a members' server to use this object.", "Du musst auf einer Mitglieder-Welt sein, um diesen Gegenstand zu benutzen.", "Connectez-vous à un serveur d'abonnés pour utiliser cet objet.", "Acesse um servidor para membros para usar este objeto.");
-	}
-
 	@OriginalMember(owner = "client!km", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
 	public VarbitTypeList(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aClass197_51 = arg2;

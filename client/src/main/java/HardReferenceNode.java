@@ -8,10 +8,6 @@ public final class HardReferenceNode extends ReferenceNodeWithInterface {
 	@OriginalMember(owner = "client!pn", name = "F", descriptor = "Ljava/lang/Object;")
 	private final Object reference;
 
-	static {
-		new LocalizedString("From", "Von:", "De", "De");
-	}
-
 	@OriginalMember(owner = "client!pn", name = "<init>", descriptor = "(Lclient!iq;Ljava/lang/Object;I)V")
 	public HardReferenceNode(@OriginalArg(0) Interface7 arg0, @OriginalArg(1) Object arg1, @OriginalArg(2) int arg2) {
 		super(arg0, arg2);

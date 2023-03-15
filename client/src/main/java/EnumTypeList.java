@@ -12,10 +12,6 @@ public final class EnumTypeList {
 	@OriginalMember(owner = "client!is", name = "f", descriptor = "Lclient!r;")
 	private final Js5 aClass197_43;
 
-	static {
-		new LocalizedString("You do not have permission to kick this user.", "Du darfst diesen Benutzer nicht rauswerfen.", "Vous n'êtes pas autorisé à expulser cet utilisateur.", "Você não tem permissão para expulsar este usuário.");
-	}
-
 	@OriginalMember(owner = "client!is", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
 	public EnumTypeList(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aClass197_43 = arg2;

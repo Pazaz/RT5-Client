@@ -61,10 +61,6 @@ public class AudioChannel {
 	@OriginalMember(owner = "client!tg", name = "G", descriptor = "I")
 	private int anInt7101 = 0;
 
-	static {
-		new LocalizedString("You do not have permission to kick users in this channel.", "Du darfst keine Benutzer aus diesem Chatraum rauswerfen.", "Vous n'êtes pas autorisé à expulser des utilisateurs de ce canal.", "Você não tem permissão para expulsar usuários neste canal.");
-	}
-
 	@OriginalMember(owner = "client!wd", name = "a", descriptor = "(BILclient!ml;Ljava/awt/Component;I)Lclient!tg;")
 	public static AudioChannel create(@OriginalArg(1) int arg0, @OriginalArg(2) Signlink arg1, @OriginalArg(3) Component arg2, @OriginalArg(4) int arg3) {
 		if (sampleRate == 0) {

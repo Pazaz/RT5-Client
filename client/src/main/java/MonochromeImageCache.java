@@ -32,10 +32,6 @@ public final class MonochromeImageCache {
 	@OriginalMember(owner = "client!nc", name = "d", descriptor = "[Lclient!se;")
 	private MonochromeImageCacheEntry[] entries;
 
-	static {
-		new LocalizedString("Sending request to leave channel...", "Chatraum wird verlassen...", "Envoi de la demande de sortie du canal...", "Enviando solicitação para deixar o canal...");
-	}
-
 	@OriginalMember(owner = "client!nc", name = "<init>", descriptor = "(III)V")
 	public MonochromeImageCache(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		this.capacity = arg0;

@@ -21,10 +21,6 @@ public abstract class TextureOp extends Node {
 	@OriginalMember(owner = "client!jq", name = "M", descriptor = "Z")
 	public boolean monochrome;
 
-	static {
-		new LocalizedString("You are temporarily banned from this clan channel.", "Du wurdest temporär aus diesem Chatraum verbannt.", "Vous êtes temporairement exclu de ce canal de clan.", "Você está temporariamente vetado de entrar nesse canal de clã.");
-	}
-
 	@OriginalMember(owner = "client!jq", name = "<init>", descriptor = "(IZ)V")
 	protected TextureOp(@OriginalArg(0) int size, @OriginalArg(1) boolean monochrome) {
 		this.ops = new TextureOp[size];

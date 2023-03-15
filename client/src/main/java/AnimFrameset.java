@@ -15,10 +15,6 @@ public final class AnimFrameset extends SecondaryNode {
 	@OriginalMember(owner = "client!nt", name = "K", descriptor = "I")
 	private final int anInt4499;
 
-	static {
-		new LocalizedString("You have been kicked from the channel.", "Du wurdest aus dem Chatraum rausgeworfen.", "Vous avez été expulsé du canal.", "Você foi expulso do canal.");
-	}
-
 	@OriginalMember(owner = "client!nt", name = "<init>", descriptor = "(I)V")
 	public AnimFrameset(@OriginalArg(0) int arg0) {
 		this.anInt4499 = arg0;

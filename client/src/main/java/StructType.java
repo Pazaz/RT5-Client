@@ -9,10 +9,6 @@ public final class StructType extends SecondaryNode {
 	@OriginalMember(owner = "client!ck", name = "E", descriptor = "Lclient!ad;")
 	private HashTable aClass4_20;
 
-	static {
-		new LocalizedString("Select", "Auswählen", "Sélectionner", "Selecionar");
-	}
-
 	@OriginalMember(owner = "client!ck", name = "a", descriptor = "(ILclient!bt;I)V")
 	private void decode(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 != 249) {

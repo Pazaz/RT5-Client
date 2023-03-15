@@ -31,10 +31,6 @@ public final class TextureOp15 extends TextureOp {
 	@OriginalMember(owner = "client!jt", name = "Z", descriptor = "I")
 	private int anInt3264 = 2;
 
-	static {
-		new LocalizedString("To talk, start each line of chat with the / symbol.", "Leite eine Zeile mit / ein, um hier zu chatten.", "Pour parler, insérez le symbole / au début de chaque ligne.", "Para falar, comece cada linha de conversa com o símbolo /.");
-	}
-
 	@OriginalMember(owner = "client!jt", name = "<init>", descriptor = "()V")
 	public TextureOp15() {
 		super(0, true);

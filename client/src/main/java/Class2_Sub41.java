@@ -12,10 +12,6 @@ public final class Class2_Sub41 extends Node {
 	@OriginalMember(owner = "client!we", name = "x", descriptor = "[I")
 	public int[] anIntArray489 = new int[] { -1 };
 
-	static {
-		new LocalizedString("You cannot send a quick chat message to a player on this world at this time.", "Einem Spieler auf dieser Welt können derzeit keine Direktchat-Nachrichten", "Impossible d'envoyer un message rapide à un joueur de ce serveur à l'heure actuelle.", "Você não pode enviar uma mensagem de papo rápido para um jogador neste mundo neste momento.");
-	}
-
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IIIIZLclient!nb;IILclient!jo;Lclient!wm;)Lclient!gn;")
 	public Model method6360(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(8) PlayerAppearance arg6, @OriginalArg(9) Class19 arg7) {
 		@Pc(7) Model local7 = null;

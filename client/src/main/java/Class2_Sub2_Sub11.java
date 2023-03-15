@@ -33,8 +33,4 @@ public final class Class2_Sub2_Sub11 extends SecondaryNode {
 
 	@OriginalMember(owner = "client!js", name = "P", descriptor = "I")
 	public int anInt3230;
-
-	static {
-		new LocalizedString("You will be un-muted within 24 hours.", "Du wirst innerhalb der nächsten 24 Stunden wieder sprechen können.", "Vous aurez à nouveau accès à la messagerie instantanée dans 24 heures.", "O veto será retirado dentro de 24 horas.");
-	}
 }

@@ -9,10 +9,6 @@ public final class TextureOp19 extends TextureOp {
 	@OriginalMember(owner = "client!sa", name = "O", descriptor = "I")
 	private int anInt5838 = 32768;
 
-	static {
-		new LocalizedString(" left the channel.", " hat den Chatraum verlassen.", " a quitté le canal.", " deixou o canal.");
-	}
-
 	@OriginalMember(owner = "client!sa", name = "<init>", descriptor = "()V")
 	public TextureOp19() {
 		super(3, false);

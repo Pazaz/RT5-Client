@@ -100,10 +100,6 @@ public abstract class Class177 {
 	@OriginalMember(owner = "client!wo", name = "b", descriptor = "I")
 	public int anInt4879 = 3;
 
-	static {
-		new LocalizedString("Ok", "Okay", "OK", "Ok");
-	}
-
 	@OriginalMember(owner = "client!wo", name = "<init>", descriptor = "()V")
 	protected Class177() {
 	}

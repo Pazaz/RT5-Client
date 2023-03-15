@@ -15,10 +15,6 @@ public final class TextureOp16 extends TextureOp {
 	@OriginalMember(owner = "client!sb", name = "W", descriptor = "I")
 	private int anInt5877 = 1;
 
-	static {
-		new LocalizedString("You are not currently in a clan channel.", "Du befindest dich derzeit nicht in einem Chatraum.", "Vous n'êtes pas dans un canal de clan.", "No momento você não está em um canal de clã.");
-	}
-
 	@OriginalMember(owner = "client!sb", name = "<init>", descriptor = "()V")
 	public TextureOp16() {
 		super(0, true);

@@ -21,8 +21,4 @@ public final class Class214 {
 
 	@OriginalMember(owner = "client!sk", name = "t", descriptor = "Ljava/lang/String;")
 	public String aString61;
-
-	static {
-		new LocalizedString("Attempting to join channel...", "Chatraum wird betreten...", "Tentative de connexion au canal...", "Tentando acessar canal...");
-	}
 }

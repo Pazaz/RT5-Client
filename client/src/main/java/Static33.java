@@ -14,8 +14,8 @@ public final class Static33 {
 	public static int anInt4462 = -1;
 
 	@OriginalMember(owner = "client!bs", name = "a", descriptor = "(ILjava/lang/String;ILjava/lang/String;ILjava/lang/String;)V")
-	public static void method4200(@OriginalArg(1) String arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3, @OriginalArg(5) String arg4) {
-		Static220.method3874(arg1, null, arg2, -1, arg3, arg4, arg0);
+	public static void method4200(@OriginalArg(1) String msg2, @OriginalArg(2) int timestamp, @OriginalArg(3) String message, @OriginalArg(4) int type, @OriginalArg(5) String msg3) {
+		Static220.method3874(timestamp, null, message, -1, type, msg3, msg2);
 	}
 
 	@OriginalMember(owner = "client!bs", name = "b", descriptor = "(I)I")

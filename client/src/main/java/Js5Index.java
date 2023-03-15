@@ -48,10 +48,6 @@ public final class Js5Index {
 	@OriginalMember(owner = "client!ra", name = "i", descriptor = "I")
 	public final int checksum;
 
-	static {
-		new LocalizedString("Unable to add name - unknown player.", "Name konnte nicht hinzugefügt werden - Spieler unbekannt.", "Impossible d'ajouter le nom - joueur inconnu.", "Não foi possível adicionar um nome - jogador desconhecido.");
-	}
-
 	@OriginalMember(owner = "client!ra", name = "<init>", descriptor = "([BI)V")
 	public Js5Index(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1) {
 		this.checksum = Static36.method1111(arg0, arg0.length);

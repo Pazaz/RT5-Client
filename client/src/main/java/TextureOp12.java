@@ -15,10 +15,6 @@ public final class TextureOp12 extends TextureOp {
 	@OriginalMember(owner = "client!jl", name = "U", descriptor = "I")
 	private int anInt3137 = 1;
 
-	static {
-		new LocalizedString("Now talking in clan channel of player: ", "Clanchat dieses Spieler beigetreten: ", "Vous participez actuellement au canal de clan du joueur : ", "Falando no canal do clã do jogador: ");
-	}
-
 	@OriginalMember(owner = "client!jl", name = "<init>", descriptor = "()V")
 	public TextureOp12() {
 		super(0, true);

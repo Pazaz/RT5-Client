@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static42 {
 
 	@OriginalMember(owner = "client!cj", name = "k", descriptor = "[Ljava/lang/String;")
-	public static final String[] aStringArray59 = new String[100];
+	public static final String[] MSG_TERTIARY = new String[100];
 
 	@OriginalMember(owner = "client!cj", name = "a", descriptor = "(IIIIII)V")
 	public static void method5749(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {

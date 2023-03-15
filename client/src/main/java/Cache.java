@@ -20,11 +20,6 @@ public final class Cache {
 	@OriginalMember(owner = "client!rq", name = "b", descriptor = "I")
 	private final int anInt5772;
 
-	static {
-		new LocalizedString(null, "bevor du die Option 'Regelverstoß melden' benutzt.", null, null);
-		new LocalizedString(null, "geschickt werden.", null, null);
-	}
-
 	@OriginalMember(owner = "client!rq", name = "<init>", descriptor = "(ILclient!rn;Lclient!rn;I)V")
 	public Cache(@OriginalArg(0) int arg0, @OriginalArg(1) Class205 arg1, @OriginalArg(2) Class205 arg2, @OriginalArg(3) int arg3) {
 		this.aClass205_3 = arg2;

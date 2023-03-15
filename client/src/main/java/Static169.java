@@ -8,7 +8,7 @@ public final class Static169 {
 	public static String aString25 = null;
 
 	@OriginalMember(owner = "client!jr", name = "o", descriptor = "[Ljava/lang/String;")
-	public static final String[] aStringArray26 = new String[100];
+	public static final String[] MSG_SECONDARY = new String[100];
 
 	@OriginalMember(owner = "client!jr", name = "a", descriptor = "(IIIII)I")
 	public static int method3211(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {

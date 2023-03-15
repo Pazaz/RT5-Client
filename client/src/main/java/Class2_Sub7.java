@@ -9,8 +9,4 @@ public final class Class2_Sub7 extends Node {
 
 	@OriginalMember(owner = "client!cu", name = "A", descriptor = "I")
 	public int anInt1373;
-
-	static {
-		new LocalizedString("The channel you tried to join does not exist.", "Der von dir gewünschte Chatraum existiert nicht.", "Le canal que vous essayez de rejoindre n'existe pas.", "O canal que você tentou acessar não existe.");
-	}
 }

@@ -16,10 +16,6 @@ public final class World extends AbstractWorld {
 	@OriginalMember(owner = "client!ac", name = "t", descriptor = "I")
 	public int ping = -1;
 
-	static {
-		new LocalizedString("Leave request already in progress - please wait...", "Du versuchst bereits, einen Chatraum zu verlassen - bitte warte.", "Demande de sortie déjà effectuée - veuillez patienter...", "Solicitação de saída já em andamento. Aguarde...");
-	}
-
 	@OriginalMember(owner = "client!ac", name = "f", descriptor = "(I)Lclient!kh;")
 	public Country getCountry() {
 		return WorldList.countries[super.country];

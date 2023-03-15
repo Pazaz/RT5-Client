@@ -14,10 +14,6 @@ public abstract class Class173 {
 	@OriginalMember(owner = "client!pa", name = "e", descriptor = "I")
 	public final int anInt6996;
 
-	static {
-		new LocalizedString("You have been temporarily muted due to breaking a rule.", "Aufgrund eines Regelverstoßes wurdest du vorübergehend stumm geschaltet.", "La messagerie instantanée a été temporairement bloquée suite à une infraction.", "Você foi temporariamente vetado por ter violado uma regra.");
-	}
-
 	@OriginalMember(owner = "client!pa", name = "<init>", descriptor = "(III)V")
 	protected Class173(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		this.anInt6998 = arg2;

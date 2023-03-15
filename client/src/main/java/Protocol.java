@@ -133,7 +133,7 @@ public class Protocol {
 			@Pc(228) int local228;
 			@Pc(249) int local249;
 			@Pc(220) int local220;
-			if (packet == ServerProt.PACKET_93) {
+			if (packet == ServerProt.IF_OPENTOP) {
 				local220 = inboundBuffer.g1();
 				local74 = inboundBuffer.ig2();
 				local228 = inboundBuffer.ig2();
@@ -386,7 +386,7 @@ public class Protocol {
 						}
 						packet = null;
 						return true;
-					} else if (packet == ServerProt.PACKET_72) {
+					} else if (packet == ServerProt.PLAYER_INFO) {
 						readPlayerInfo(inboundBuffer, packetSize);
 						packet = null;
 						return true;
@@ -431,7 +431,7 @@ public class Protocol {
 							}
 							packet = null;
 							return true;
-						} else if (ServerProt.PACKET_52 == packet) {
+						} else if (ServerProt.IF_OPENSUB == packet) {
 							local220 = inboundBuffer.g2add();
 							local74 = inboundBuffer.g1sub();
 							local228 = inboundBuffer.ig4();
@@ -622,7 +622,7 @@ public class Protocol {
 									Static220.method3874(0, null, local1381, local74, 19, local444, local444);
 									packet = null;
 									return true;
-								} else if (packet == ServerProt.PACKET_58) {
+								} else if (packet == ServerProt.LOGOUT) {
 									LoginManager.logout();
 									packet = null;
 									return false;
@@ -1115,29 +1115,33 @@ public class Protocol {
 											return true;
 										}
 										@Pc(3809) String local3809;
-										if (ServerProt.PACKET_99 == packet) {
-											local220 = inboundBuffer.gsmart();
-											local74 = inboundBuffer.g4();
-											local228 = inboundBuffer.g1();
-											local3809 = "";
-											local1627 = local3809;
-											if ((local228 & 0x1) != 0) {
-												local3809 = inboundBuffer.gjstr();
-												if ((local228 & 0x2) == 0) {
-													local1627 = local3809;
+										if (ServerProt.MESSAGE_GAME == packet) {
+											int type = inboundBuffer.gsmart();
+											int timestamp = inboundBuffer.g4();
+											int moreStrings = inboundBuffer.g1();
+
+											String msg2 = "";
+											String msg3 = msg2;
+											if ((moreStrings & 0x1) != 0) {
+												msg2 = inboundBuffer.gjstr();
+
+												if ((moreStrings & 0x2) == 0) {
+													msg3 = msg2;
 												} else {
-													local1627 = inboundBuffer.gjstr();
+													msg3 = inboundBuffer.gjstr();
 												}
 											}
-											local1391 = inboundBuffer.gjstr();
-											if (local220 == 99) {
-												DevConsole.log(local1391);
-											} else if (local1627.equals("") || !Static105.method2208(local1627)) {
-												Static33.method4200(local3809, local74, local1391, local220, local1627);
+
+											String message = inboundBuffer.gjstr();
+											if (type == 99) {
+												DevConsole.log(message);
+											} else if (msg3.equals("") || !Static105.method2208(msg3)) {
+												Static33.method4200(msg2, timestamp, message, type, msg3);
 											} else {
 												packet = null;
 												return true;
 											}
+
 											packet = null;
 											return true;
 										} else if (packet == ServerProt.PACKET_34) {
@@ -1368,8 +1372,8 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (ServerProt.PACKET_98 == packet) {
-												Static181.mapLoadDecoder(false);
+											} else if (ServerProt.REBUILD_NORMAL == packet) {
+												Static181.rebuildMap(false);
 												packet = null;
 												return false;
 											} else if (packet == ServerProt.PACKET_45) {
@@ -1515,8 +1519,8 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == ServerProt.PACKET_88) {
-												Static181.mapLoadDecoder(true);
+											} else if (packet == ServerProt.REBUILD_REGION) {
+												Static181.rebuildMap(true);
 												packet = null;
 												return false;
 											} else if (packet == ServerProt.PACKET_33) {
@@ -1565,7 +1569,7 @@ public class Protocol {
 												Static391.method6452(local74, local542, local5371, local249, local228, local512, local506);
 												packet = null;
 												return true;
-											} else if (ServerProt.PACKET_59 == packet) {
+											} else if (ServerProt.UPDATE_ZONE_PARTIAL_ENCLOSED == packet) {
 												Static67.anInt1637 = inboundBuffer.g1sub();
 												Static243.anInt4502 = inboundBuffer.g1();
 												Static7.anInt7240 = inboundBuffer.g1bneg();

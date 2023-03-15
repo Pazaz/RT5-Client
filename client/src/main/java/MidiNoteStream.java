@@ -15,10 +15,6 @@ public final class MidiNoteStream extends PcmStream {
 	@OriginalMember(owner = "client!ff", name = "z", descriptor = "Lclient!od;")
 	private final MidiPcmStream aClass2_Sub12_Sub3_2;
 
-	static {
-		new LocalizedString("Please close the interface you have open before using 'Report Abuse'.", "Bitte schließ die momentan geöffnete Benutzeroberfläche,", "Fermez l'interface que vous avez ouverte avant d'utiliser le bouton « Signaler un abus ».", "Feche a interface aberta antes de usar o recurso \"Denunciar abuso\".");
-	}
-
 	@OriginalMember(owner = "client!ff", name = "<init>", descriptor = "(Lclient!od;)V")
 	public MidiNoteStream(@OriginalArg(0) MidiPcmStream arg0) {
 		this.aClass2_Sub12_Sub3_2 = arg0;

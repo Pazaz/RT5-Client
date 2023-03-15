@@ -36,10 +36,6 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 	@OriginalMember(owner = "client!kr", name = "s", descriptor = "Lclient!kb;")
 	private Class2_Sub2_Sub4 aClass2_Sub2_Sub4_4;
 
-	static {
-		new LocalizedString("Your friendlist is full, max of 100 for free users, and 200 for members.", "Ihre Freunde-Liste ist voll!", "Votre liste d'amis est pleine (100 noms maximum pour la version gratuite et 200 pour les abonnés).", "Sua lista de amigos está cheia. O limite é 100 para usuários não pagantes, e 200 para membros.");
-	}
-
 	@OriginalMember(owner = "client!kr", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIZIIZ)V")
 	public Class11_Sub1_Sub3(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) boolean arg9) {
 		super(arg3, arg4, arg5, Static178.method2344(arg7, arg8));

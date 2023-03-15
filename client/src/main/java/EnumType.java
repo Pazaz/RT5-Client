@@ -24,11 +24,6 @@ public final class EnumType {
 	@OriginalMember(owner = "client!ds", name = "h", descriptor = "Ljava/lang/String;")
 	private String aString16 = "null";
 
-	static {
-		new LocalizedString("Unable to add friend - unknown player.", "Spieler konnte nicht hinzugefügt werden - Spieler unbekannt.", "Impossible d'ajouter l'ami - joueur inconnu.", "Não foi possível adicionar um amigo - jogador desconhecido.");
-		new LocalizedString("Nothing interesting happens.", "Nichts Interessantes passiert.", "Il ne se passe rien d'intéressant.", "Nada de interessante acontece.");
-	}
-
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(II)I")
 	public int method1766(@OriginalArg(1) int arg0) {
 		if (this.aClass4_31 == null) {

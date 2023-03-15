@@ -22,7 +22,6 @@ public final class Class239 {
 	public final int anInt6846;
 
 	static {
-		new LocalizedString("This mute will remain for a further ", "Diese Stummschaltung gilt für weitere ", "Votre accès restera bloqué encore ", "Este veto permanecerá por mais ");
 		Math.sqrt(8192.0D);
 	}
 

@@ -21,11 +21,6 @@ public final class SpotAnimTypeList {
 	@OriginalMember(owner = "client!sg", name = "b", descriptor = "Lclient!r;")
 	public final Js5 aClass197_81;
 
-	static {
-		new LocalizedString(null, "Spieler nicht auf deiner Freunde-Liste.", null, null);
-		new LocalizedString("System update in: ", "System-Update in: ", "Mise à jour système dans : ", "Atualização do sistema em: ");
-	}
-
 	@OriginalMember(owner = "client!sg", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;Lclient!r;)V")
 	public SpotAnimTypeList(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3) {
 		this.aClass197_82 = arg2;

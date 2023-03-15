@@ -17,10 +17,6 @@ public final class DelayedStateChange extends SecondaryNode {
 	@OriginalMember(owner = "client!gg", name = "K", descriptor = "I")
 	public int anInt2290;
 
-	static {
-		new LocalizedString("Unable to send abuse report - system busy.", "Meldung konnte nicht gesendet werden - Systeme überlastet", "Impossible de signaler un abus - Erreur système", "Sistema ocupado. Não foi possível enviar sua denúncia de abuso.");
-	}
-
 	@OriginalMember(owner = "client!gg", name = "<init>", descriptor = "(II)V")
 	public DelayedStateChange(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		super.key = (long) arg1 | (long) arg0 << 32;

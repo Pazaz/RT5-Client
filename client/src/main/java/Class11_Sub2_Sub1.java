@@ -33,10 +33,6 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 	@OriginalMember(owner = "client!bm", name = "Q", descriptor = "Lclient!kb;")
 	private Class2_Sub2_Sub4 aClass2_Sub2_Sub4_1;
 
-	static {
-		new LocalizedString("You have been removed from this channel.", "Du wurdest aus dem Chatraum entfernt.", "Vous avez été supprimé de ce canal.", "Você foi retirado desse canal.");
-	}
-
 	@OriginalMember(owner = "client!bm", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIZIZ)V")
 	public Class11_Sub2_Sub1(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) int arg7, @OriginalArg(8) boolean arg8) {
 		super(arg3, arg4, arg5, arg1.aBoolean109, arg1.aBoolean108);

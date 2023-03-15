@@ -8,10 +8,6 @@ public final class Class11_Sub5_Sub6 extends Entity implements Interface6 {
 	@OriginalMember(owner = "client!vf", name = "S", descriptor = "Lclient!hb;")
 	public Entity aClass11_Sub5_2;
 
-	static {
-		new LocalizedString("Unable to delete friend - system busy.", "Der Freund konnte nicht entfernt werden, das System ist derzeit ausgelastet.", "Impossible de supprimer un ami - système occupé.", "Não foi possível excluir o amigo. O sistema está ocupado.");
-	}
-
 	@OriginalMember(owner = "client!vf", name = "<init>", descriptor = "(IIIIIIIIIILclient!hb;)V")
 	public Class11_Sub5_Sub6(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Entity arg10) {
 		super(arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, false, Static356.method5956(arg1, arg0));

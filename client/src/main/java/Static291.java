@@ -13,7 +13,7 @@ public final class Static291 {
 	public static int anInt5504 = 0;
 
 	@OriginalMember(owner = "client!qq", name = "e", descriptor = "[I")
-	public static final int[] anIntArray373 = new int[100];
+	public static final int[] MSG_TYPE = new int[100];
 
 	@OriginalMember(owner = "client!qq", name = "a", descriptor = "(Z)V")
 	public static void method5029() {

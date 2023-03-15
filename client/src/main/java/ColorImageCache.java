@@ -32,10 +32,6 @@ public final class ColorImageCache {
 	@OriginalMember(owner = "client!vs", name = "o", descriptor = "[Lclient!wh;")
 	private ColorImageCacheEntry[] entries;
 
-	static {
-		new LocalizedString("Already attempting to join a channel - please wait...", "Du versuchst bereits, einem Chatraum beizutreten - bitte warte.", "Tentative de connexion au canal déjà en cours - veuillez patienter...", "Já há uma tentativa de entrar em um canal. Aguarde...");
-	}
-
 	@OriginalMember(owner = "client!vs", name = "<init>", descriptor = "(III)V")
 	public ColorImageCache(@OriginalArg(0) int capacity, @OriginalArg(1) int height, @OriginalArg(2) int width) {
 		this.capacity = capacity;

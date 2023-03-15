@@ -30,10 +30,6 @@ public final class MidiInstrument extends Node {
 	@OriginalMember(owner = "client!ne", name = "I", descriptor = "[B")
 	public final byte[] aByteArray47 = new byte[128];
 
-	static {
-		new LocalizedString("Changes will take effect on your clan in the next 60 seconds.", "Die Änderungen am Chatraum werden innerhalb von 60 Sekunden gültig.", "Les modifications seront apportées à votre clan dans les prochaines 60 secondes.", "As alterações passarão a valer no seu clã nos próximos 60 segundos.");
-	}
-
 	@OriginalMember(owner = "client!ne", name = "<init>", descriptor = "([B)V")
 	public MidiInstrument(@OriginalArg(0) byte[] arg0) {
 		@Pc(36) Buffer local36 = new Buffer(arg0);

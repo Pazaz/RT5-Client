@@ -72,10 +72,6 @@ public final class Class67 {
 	@OriginalMember(owner = "client!f", name = "y", descriptor = "S")
 	public final short aShort23;
 
-	static {
-		new LocalizedString("Join your channel by clicking 'Join Chat' and typing: ", "Klick auf 'Betreten' und gib ein: ", "Pour rejoindre votre canal, cliquez sur « Participer » et entrez : ", "Para entrar no seu canal, clique em \"Acessar bate-papo\" e digite: ");
-	}
-
 	@OriginalMember(owner = "client!f", name = "<init>", descriptor = "(III)V")
 	public Class67(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		this.aByte7 = this.aByte10 = (byte) arg0;

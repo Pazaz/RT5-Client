@@ -15,10 +15,6 @@ public final class TextureOp11 extends TextureOp {
 	@OriginalMember(owner = "client!na", name = "W", descriptor = "I")
 	private int anInt4019 = 4096;
 
-	static {
-		new LocalizedString("Your clan channel has now been enabled!", "Dein Chatraum ist jetzt eingeschaltet.", "Votre canal de clan est activé !", "Seu canal de clã já está ativado!");
-	}
-
 	@OriginalMember(owner = "client!na", name = "<init>", descriptor = "()V")
 	public TextureOp11() {
 		super(1, false);

@@ -62,11 +62,6 @@ public final class Class2_Sub19 extends Node {
 	@OriginalMember(owner = "client!jc", name = "D", descriptor = "I")
 	public int anInt2900 = 0;
 
-	static {
-		new LocalizedString("Error joining clan channel - please try again later!", "Fehler beim Betreten des Chatraums - bitte versuch es später erneut.", "Erreur lors de la connexion au canal de clan - veuillez réessayer ultérieurement.", "Erro ao entrar no canal do clã. Tente de novo depois!");
-		new LocalizedString("Chat disabled", "Deaktiviert", "Messagerie désactivée", "Bate-papo desativado");
-	}
-
 	@OriginalMember(owner = "client!jc", name = "b", descriptor = "(Z)V")
 	public void method2941() {
 		@Pc(8) int local8 = this.anInt2894;

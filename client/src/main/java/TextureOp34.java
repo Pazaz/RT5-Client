@@ -33,10 +33,6 @@ public final class TextureOp34 extends TextureOp {
 	@OriginalMember(owner = "client!ch", name = "hb", descriptor = "I")
 	public int anInt1051 = 4;
 
-	static {
-		new LocalizedString("You do not have a high enough rank to join this clan channel.", "Dein Rang reicht nicht aus, um diesen Chatraum zu betreten.", "Votre rang n'est pas assez élevé pour rejoindre ce canal de clan.", "Sua posição não é alta o suficiente para você entrar nesse canal de clã.");
-	}
-
 	@OriginalMember(owner = "client!ch", name = "<init>", descriptor = "()V")
 	public TextureOp34() {
 		super(0, true);

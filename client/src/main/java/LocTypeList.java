@@ -33,10 +33,6 @@ public final class LocTypeList {
 	@OriginalMember(owner = "client!rh", name = "d", descriptor = "Lclient!r;")
 	public final Js5 aClass197_78;
 
-	static {
-		new LocalizedString("Unable to send message - system busy.", "Deine Nachricht konnte nicht verschickt werden, das System ist derzeit ausgelastet.", "Impossible d'envoyer un message - système occupé.", "Não foi possível enviar a mensagem. O sistema está ocupado.");
-	}
-
 	@OriginalMember(owner = "client!rh", name = "<init>", descriptor = "(Lclient!dn;IZLclient!r;Lclient!r;)V")
 	public LocTypeList(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) Js5 arg4) {
 		this.aClass197_79 = arg3;

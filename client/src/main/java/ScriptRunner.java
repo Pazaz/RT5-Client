@@ -2634,7 +2634,7 @@ public final class ScriptRunner {
 				local157 = anIntArray213[--anInt3650];
 				local81 = null;
 				if (local157 < 100) {
-					local81 = Static88.aStringArray13[local157];
+					local81 = Static88.MSG_PRIMARY[local157];
 				}
 				if (local81 == null) {
 					local81 = "";
@@ -2645,8 +2645,8 @@ public final class ScriptRunner {
 			if (arg0 == 5004) {
 				local157 = anIntArray213[--anInt3650];
 				local192 = -1;
-				if (local157 < 100 && Static88.aStringArray13[local157] != null) {
-					local192 = Static291.anIntArray373[local157];
+				if (local157 < 100 && Static88.MSG_PRIMARY[local157] != null) {
+					local192 = Static291.MSG_TYPE[local157];
 				}
 				anIntArray213[anInt3650++] = local192;
 				return;
@@ -2683,7 +2683,7 @@ public final class ScriptRunner {
 				local157 = anIntArray213[--anInt3650];
 				local81 = null;
 				if (local157 < 100) {
-					local81 = Static42.aStringArray59[local157];
+					local81 = Static42.MSG_TERTIARY[local157];
 				}
 				if (local81 == null) {
 					local81 = "";
@@ -2732,8 +2732,8 @@ public final class ScriptRunner {
 			if (arg0 == 5018) {
 				local157 = anIntArray213[--anInt3650];
 				local192 = 0;
-				if (local157 < 100 && Static88.aStringArray13[local157] != null) {
-					local192 = Static291.anIntArray373[local157];
+				if (local157 < 100 && Static88.MSG_PRIMARY[local157] != null) {
+					local192 = Static291.MSG_TYPE[local157];
 				}
 				anIntArray213[anInt3650++] = local192;
 				return;
@@ -2742,7 +2742,7 @@ public final class ScriptRunner {
 				local157 = anIntArray213[--anInt3650];
 				local81 = null;
 				if (local157 < 100) {
-					local81 = Static169.aStringArray26[local157];
+					local81 = Static169.MSG_SECONDARY[local157];
 				}
 				if (local81 == null) {
 					local81 = "";

@@ -18,10 +18,6 @@ public final class Js5GlTextureProvider implements TextureProvider {
 	@OriginalMember(owner = "client!ia", name = "m", descriptor = "[Lclient!uc;")
 	private final Class229[] aClass229Array1;
 
-	static {
-		new LocalizedString("To prevent further mutes please read the rules.", "Um eine erneute Stummschaltung zu verhindern, lies bitte die Regeln.", "Pour éviter un nouveau blocage, lisez le règlement.", "Para evitar outros vetos, leia as regras.");
-	}
-
 	@OriginalMember(owner = "client!ia", name = "<init>", descriptor = "(Lclient!r;Lclient!r;Lclient!r;)V")
 	public Js5GlTextureProvider(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2) {
 		this.aClass197_36 = arg2;

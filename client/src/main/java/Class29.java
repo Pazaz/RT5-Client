@@ -45,10 +45,6 @@ public class Class29 {
 	@OriginalMember(owner = "client!mo", name = "d", descriptor = "[[[B")
 	protected byte[][][] levelOccludemap;
 
-	static {
-		new LocalizedString(" joined the channel.", " hat den Chatraum betreten.", " a rejoint le canal.", " entrou no canal.");
-	}
-
 	@OriginalMember(owner = "client!mo", name = "<init>", descriptor = "(IIIZLclient!fl;Lclient!vq;)V")
 	protected Class29(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) FloTypeList arg4, @OriginalArg(5) FluTypeList arg5) {
 		this.aClass241_2 = arg5;

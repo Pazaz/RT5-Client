@@ -186,10 +186,6 @@ public final class ObjType {
 	@OriginalMember(owner = "client!qf", name = "ob", descriptor = "I")
 	public int anInt5250 = -1;
 
-	static {
-		new LocalizedString("To use this item please login to a members' server.", "Du musst auf einer Mitglieder-Welt sein, um diesen Gegenstand zu benutzen.", "Veuillez vous connecter à un serveur d'abonnés pour utiliser cet objet.", "Acesse um servidor para membros para usar este objeto.");
-	}
-
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(ILclient!bt;I)V")
 	private void method4768(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		if (arg0 == 1) {

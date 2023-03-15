@@ -90,10 +90,6 @@ public final class Class12_Sub8 extends ParticleNode {
 	@OriginalMember(owner = "client!th", name = "v", descriptor = "Lclient!cm;")
 	public final Class36 aClass36_8;
 
-	static {
-		new LocalizedString("Unable to send message - player unavailable.", "Deine Nachricht konnte nicht verschickt werden,", "Impossible d'envoyer un message - joueur indisponible.", "Não foi possível enviar a mensagem. O jogador não está disponível.");
-	}
-
 	@OriginalMember(owner = "client!th", name = "<init>", descriptor = "(Lclient!wm;Lclient!jf;Lclient!oh;J)V")
 	public Class12_Sub8(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class114 arg1, @OriginalArg(2) ParticleSystem arg2, @OriginalArg(3) long arg3) {
 		this.aClass114_2 = arg1;

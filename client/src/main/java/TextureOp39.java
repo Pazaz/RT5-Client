@@ -18,10 +18,6 @@ public class TextureOp39 extends TextureOp {
 	@OriginalMember(owner = "client!ek", name = "T", descriptor = "I")
 	private int anInt6675 = -1;
 
-	static {
-		new LocalizedString(null, "Mitglieder können 200 Freunde hinzufügen, freie Spieler nur 100.", null, null);
-	}
-
 	@OriginalMember(owner = "client!ek", name = "<init>", descriptor = "()V")
 	public TextureOp39() {
 		super(0, false);

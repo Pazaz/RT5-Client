@@ -12,10 +12,6 @@ public final class Class191 {
 	@OriginalMember(owner = "client!qj", name = "c", descriptor = "Lclient!bs;")
 	public final Class12_Sub1 aClass12_Sub1_7 = new Class12_Sub1();
 
-	static {
-		new LocalizedString("Loaded additional fonts", "Zusatzschriftarten geladen", "Polices secondaires chargées", "Fontes principais carregadas");
-	}
-
 	@OriginalMember(owner = "client!qj", name = "<init>", descriptor = "()V")
 	public Class191() {
 		this.aClass12_Sub1_7.aClass12_Sub1_5 = this.aClass12_Sub1_7;

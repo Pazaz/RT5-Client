@@ -46,10 +46,6 @@ public final class Js5NetQueue {
 	@OriginalMember(owner = "client!pp", name = "C", descriptor = "Lclient!bt;")
 	private final Buffer inBuffer = new Buffer(8);
 
-	static {
-		new LocalizedString("Unable to join clan chat at this time - please try again later!", "Chatraum kann nicht betreten werden - bitte versuch es später erneut.", "Impossible de participer à une discussion de clan pour le moment - veuillez réessayer ultérieurement.", "Não foi possível entrar no bate-papo do clã dessa vez. Tente de novo depois!");
-	}
-
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(B)V")
 	private void writeInitiating() {
 		if (this.socket == null) {

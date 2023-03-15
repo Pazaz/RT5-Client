@@ -18,10 +18,6 @@ public final class TextureOp31 extends TextureOp {
 	@OriginalMember(owner = "client!ft", name = "T", descriptor = "I")
 	private int anInt2182 = 0;
 
-	static {
-		new LocalizedString("Please wait until you are logged out of your previous channel.", "Bitte warte, bis du den vorherigen Chatraum verlassen hast.", "Veuillez attendre d'être déconnecté(e) de votre canal précédent.", "Aguarde até se desconectar do canal anterior.");
-	}
-
 	@OriginalMember(owner = "client!ft", name = "<init>", descriptor = "()V")
 	public TextureOp31() {
 		super(0, true);

@@ -20,7 +20,7 @@ public final class Static181 {
 	}
 
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "(ZI)V")
-	public static void mapLoadDecoder(@OriginalArg(0) boolean arg0) {
+	public static void rebuildMap(@OriginalArg(0) boolean arg0) {
 		Static220.aBoolean252 = arg0;
 		@Pc(13) int local13;
 		@Pc(17) int local17;

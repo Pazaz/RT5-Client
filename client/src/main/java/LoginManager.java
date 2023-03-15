@@ -300,7 +300,7 @@ public class LoginManager {
 						client.reset();
 						lswpRenderLoginDecoder(Protocol.inboundBuffer);
 						Static105.anInt2187 = -1;
-						Static181.mapLoadDecoder(false);
+						Static181.rebuildMap(false);
 						if (reply != Protocol.inboundBuffer.pos) {
 							throw new RuntimeException("lswp pos:" + Protocol.inboundBuffer.pos + " psize:" + reply);
 						}

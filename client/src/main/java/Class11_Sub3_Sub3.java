@@ -12,11 +12,6 @@ public final class Class11_Sub3_Sub3 extends Class11_Sub3 implements Interface6 
 	@OriginalMember(owner = "client!to", name = "A", descriptor = "Z")
 	private final boolean aBoolean428;
 
-	static {
-		new LocalizedString("I can't reach that!", "Da kommst du nicht hin.", "Je ne peux pas l'atteindre !", "Não consigo alcançar!");
-		new LocalizedString(null, "die kürzlich gesprochen oder gehandelt haben.", null, null);
-	}
-
 	@OriginalMember(owner = "client!to", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIIZIIIIII)V")
 	public Class11_Sub3_Sub3(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13) {
 		super(arg4, arg5, arg6, arg8, arg9, arg10, Static238.method4121(arg11, arg12));

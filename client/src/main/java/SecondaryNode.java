@@ -13,10 +13,6 @@ public class SecondaryNode extends Node {
 	@OriginalMember(owner = "client!tl", name = "z", descriptor = "Lclient!tl;")
 	public SecondaryNode secondaryPrev;
 
-	static {
-		new LocalizedString("To interact with this please login to a members' server.", "Logg dich auf einer Mitglieder-Welt ein, um damit zu interagieren.", "Veuillez vous connecter à un serveur d'abonnés pour cette interaction.", "Para interagir, acesse um servidor para membros.");
-	}
-
 	@OriginalMember(owner = "client!tl", name = "b", descriptor = "(Z)Z")
 	public final boolean islinkedSecondary() {
 		return this.secondaryPrev != null;

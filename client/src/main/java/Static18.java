@@ -20,7 +20,7 @@ public final class Static18 {
 	public static boolean qa_op_test = false;
 
 	@OriginalMember(owner = "client!bb", name = "y", descriptor = "[I")
-	public static final int[] anIntArray27 = new int[100];
+	public static final int[] MSG_TIMESTAMPS = new int[100]; // total guess... not used...
 
 	@OriginalMember(owner = "client!bb", name = "A", descriptor = "I")
 	public static int anInt530 = 0;

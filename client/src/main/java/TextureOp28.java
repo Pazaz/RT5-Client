@@ -37,10 +37,6 @@ public final class TextureOp28 extends TextureOp {
 	@OriginalMember(owner = "client!vl", name = "eb", descriptor = "I")
 	private int anInt6928 = 1024;
 
-	static {
-		new LocalizedString("You are temporarily blocked from joining channels - please try again later!", "Du darfst derzeit keine Chaträume betreten - bitte versuch es später.", "Vous êtes temporairement exclu des canaux - veuillez réessayer ultérieurement.", "Você está temporariamente impedido de entrar em canais. Tente de novo depois!");
-	}
-
 	@OriginalMember(owner = "client!vl", name = "<init>", descriptor = "()V")
 	public TextureOp28() {
 		super(0, true);

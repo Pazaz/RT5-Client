@@ -36,8 +36,4 @@ public final class Class84 {
 
 	@OriginalMember(owner = "client!go", name = "o", descriptor = "I")
 	public int anInt2361 = -1;
-
-	static {
-		new LocalizedString("clan_chat", "clanchat", "conversation_clan", "clan_chat");
-	}
 }
