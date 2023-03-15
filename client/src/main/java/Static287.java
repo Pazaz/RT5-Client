@@ -41,7 +41,7 @@ public final class Static287 {
 		if (arg1 == 11) {
 			arg1 = 10;
 		}
-		@Pc(15) LocType local15 = client.LocTypes.method5163(arg0);
+		@Pc(15) LocType local15 = client.LocTypes.get(arg0);
 		if (arg1 >= 5 && arg1 <= 8) {
 			arg1 = 4;
 		}
@@ -50,49 +50,49 @@ public final class Static287 {
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(Lclient!nk;IIB)V")
 	public static void method4939(@OriginalArg(0) Class161 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		if (arg0.aByte46 == 0) {
-			arg0.anInt4254 = arg0.anInt4249;
-		} else if (arg0.aByte46 == 1) {
-			arg0.anInt4254 = arg0.anInt4249 + (arg2 - arg0.anInt4261) / 2;
-		} else if (arg0.aByte46 == 2) {
-			arg0.anInt4254 = arg2 - arg0.anInt4261 - arg0.anInt4249;
-		} else if (arg0.aByte46 == 3) {
-			arg0.anInt4254 = arg2 * arg0.anInt4249 >> 14;
-		} else if (arg0.aByte46 == 4) {
-			arg0.anInt4254 = (arg0.anInt4249 * arg2 >> 14) + (arg2 - arg0.anInt4261) / 2;
+		if (arg0.yMode == 0) {
+			arg0.anInt4254 = arg0.baseY;
+		} else if (arg0.yMode == 1) {
+			arg0.anInt4254 = arg0.baseY + (arg2 - arg0.height) / 2;
+		} else if (arg0.yMode == 2) {
+			arg0.anInt4254 = arg2 - arg0.height - arg0.baseY;
+		} else if (arg0.yMode == 3) {
+			arg0.anInt4254 = arg2 * arg0.baseY >> 14;
+		} else if (arg0.yMode == 4) {
+			arg0.anInt4254 = (arg0.baseY * arg2 >> 14) + (arg2 - arg0.height) / 2;
 		} else {
-			arg0.anInt4254 = arg2 - (arg0.anInt4249 * arg2 >> 14) - arg0.anInt4261;
+			arg0.anInt4254 = arg2 - (arg0.baseY * arg2 >> 14) - arg0.height;
 		}
-		if (arg0.aByte45 == 0) {
-			arg0.anInt4305 = arg0.anInt4241;
-		} else if (arg0.aByte45 == 1) {
-			arg0.anInt4305 = (arg1 - arg0.anInt4248) / 2 + arg0.anInt4241;
-		} else if (arg0.aByte45 == 2) {
-			arg0.anInt4305 = arg1 - arg0.anInt4241 - arg0.anInt4248;
-		} else if (arg0.aByte45 == 3) {
-			arg0.anInt4305 = arg0.anInt4241 * arg1 >> 14;
-		} else if (arg0.aByte45 == 4) {
-			arg0.anInt4305 = (arg1 * arg0.anInt4241 >> 14) + (arg1 - arg0.anInt4248) / 2;
+		if (arg0.xMode == 0) {
+			arg0.anInt4305 = arg0.baseX;
+		} else if (arg0.xMode == 1) {
+			arg0.anInt4305 = (arg1 - arg0.width) / 2 + arg0.baseX;
+		} else if (arg0.xMode == 2) {
+			arg0.anInt4305 = arg1 - arg0.baseX - arg0.width;
+		} else if (arg0.xMode == 3) {
+			arg0.anInt4305 = arg0.baseX * arg1 >> 14;
+		} else if (arg0.xMode == 4) {
+			arg0.anInt4305 = (arg1 * arg0.baseX >> 14) + (arg1 - arg0.width) / 2;
 		} else {
-			arg0.anInt4305 = arg1 - arg0.anInt4248 - (arg1 * arg0.anInt4241 >> 14);
+			arg0.anInt4305 = arg1 - arg0.width - (arg1 * arg0.baseX >> 14);
 		}
 		if (!Static18.qa_op_test) {
 			return;
 		}
-		if (Static45.method1404(arg0).events == 0 && arg0.anInt4272 != 0) {
+		if (Static45.method1404(arg0).events == 0 && arg0.type != 0) {
 			return;
 		}
 		if (arg0.anInt4254 < 0) {
 			arg0.anInt4254 = 0;
-		} else if (arg0.anInt4261 + arg0.anInt4254 > arg2) {
-			arg0.anInt4254 = arg2 - arg0.anInt4261;
+		} else if (arg0.height + arg0.anInt4254 > arg2) {
+			arg0.anInt4254 = arg2 - arg0.height;
 		}
 		if (arg0.anInt4305 < 0) {
 			arg0.anInt4305 = 0;
 			return;
 		}
-		if (arg0.anInt4305 + arg0.anInt4248 > arg1) {
-			arg0.anInt4305 = arg1 - arg0.anInt4248;
+		if (arg0.anInt4305 + arg0.width > arg1) {
+			arg0.anInt4305 = arg1 - arg0.width;
 			return;
 		}
 	}

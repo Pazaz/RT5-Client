@@ -130,13 +130,13 @@ public final class Static49 {
 								local621 = (Interface6) Static28.method893(local220, local199, local216);
 							}
 							if (local621 != null) {
-								@Pc(662) LocType local662 = client.LocTypes.method5163(local621.method6085());
+								@Pc(662) LocType local662 = client.LocTypes.get(local621.method6085());
 								if (!local662.aBoolean111 || LoginManager.mapMembers) {
 									local284 = local662.anInt1306;
 									if (local662.anIntArray94 != null) {
 										for (local288 = 0; local288 < local662.anIntArray94.length; local288++) {
 											if (local662.anIntArray94[local288] != -1) {
-												@Pc(691) LocType local691 = client.LocTypes.method5163(local662.anIntArray94[local288]);
+												@Pc(691) LocType local691 = client.LocTypes.get(local662.anIntArray94[local288]);
 												if (local691.anInt1306 >= 0) {
 													local284 = local691.anInt1306;
 												}
@@ -189,9 +189,9 @@ public final class Static49 {
 				client.MelTypes.method3377(64, 1024);
 				for (local216 = 0; local216 < Static34.aClass103_3.anInt2702; local216++) {
 					local220 = Static34.aClass103_3.anIntArray170[local216];
-					if (Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 == local220 >> 28) {
-						local224 = (local220 >> 14 & 0x3FFF) - Static164.anInt3140;
-						local277 = (local220 & 0x3FFF) - Static148.anInt2719;
+					if (PlayerList.self.plane == local220 >> 28) {
+						local224 = (local220 >> 14 & 0x3FFF) - Camera.originX;
+						local277 = (local220 & 0x3FFF) - Camera.originZ;
 						if (local224 >= 0 && local224 < Static373.anInt7033 && local277 >= 0 && Static242.anInt4449 > local277) {
 							Static56.aClass135_13.addTail(new Class2_Sub39(local216));
 						} else {

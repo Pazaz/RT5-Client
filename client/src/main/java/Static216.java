@@ -40,8 +40,8 @@ public final class Static216 {
 					local62 = local62 * 256 / (Static97.anInt2005 + 256);
 					local58 = local58 * 256 / (Static97.anInt2005 + 256);
 				}
-				local32[local34 * 2] = ((local14.anIntArray290[local34 * 2] * 4 + arg6) * local62 + (local14.anIntArray290[local34 * 2 + 1] * 4 + arg4) * local58 >> 15) + arg1.anInt4248 / 2 + arg0;
-				local32[local34 * 2 + 1] = arg7 + arg1.anInt4261 / 2 - (local62 * (arg4 + local14.anIntArray290[local34 * 2 + 1] * 4) - (local14.anIntArray290[local34 * 2] * 4 + arg6) * local58 >> 15);
+				local32[local34 * 2] = ((local14.anIntArray290[local34 * 2] * 4 + arg6) * local62 + (local14.anIntArray290[local34 * 2 + 1] * 4 + arg4) * local58 >> 15) + arg1.width / 2 + arg0;
+				local32[local34 * 2 + 1] = arg7 + arg1.height / 2 - (local62 * (arg4 + local14.anIntArray290[local34 * 2 + 1] * 4) - (local14.anIntArray290[local34 * 2] * 4 + arg6) * local58 >> 15);
 			}
 			Static293.method5047(arg3, local32, local14.anInt4414, arg1.anIntArray282, arg1.anIntArray280);
 			for (local44 = 0; local44 < local32.length / 2 - 1; local44++) {
@@ -77,9 +77,4 @@ public final class Static216 {
 		return;
 	}
 
-	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(II)V")
-	public static void method3778(@OriginalArg(1) int arg0) {
-		@Pc(12) DelayedStateChange local12 = Static316.method5413(7, arg0);
-		local12.method2312();
-	}
 }

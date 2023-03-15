@@ -15,7 +15,7 @@ public abstract class Entity extends BaseEntity {
 	public short aShort103;
 
 	@OriginalMember(owner = "client!hb", name = "q", descriptor = "B")
-	public byte aByte78;
+	public byte plane;
 
 	@OriginalMember(owner = "client!hb", name = "s", descriptor = "Z")
 	public final boolean aBoolean463;
@@ -42,7 +42,7 @@ public abstract class Entity extends BaseEntity {
 	protected Entity(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) boolean arg8, @OriginalArg(9) byte arg9) {
 		this.aShort104 = (short) arg5;
 		this.aShort103 = (short) arg4;
-		this.aByte78 = (byte) arg0;
+		this.plane = (byte) arg0;
 		this.aBoolean463 = arg8;
 		this.aShort102 = (short) arg7;
 		this.aShort101 = (short) arg6;

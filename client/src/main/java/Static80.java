@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static80 {
 
-	@OriginalMember(owner = "client!ek", name = "ab", descriptor = "[I")
-	public static final int[] anIntArray464 = new int[25];
-
 	@OriginalMember(owner = "client!ek", name = "a", descriptor = "(ZLjava/lang/String;)J")
 	public static long method5982(@OriginalArg(1) String arg0) {
 		@Pc(8) int local8 = arg0.length();

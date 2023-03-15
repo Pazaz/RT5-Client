@@ -24,8 +24,8 @@ public final class Static272 {
 			@Pc(40) Class2_Sub2_Sub16 local40 = Static146.method2699(local34);
 			if (local40.aBoolean413 && local40.method5601().toLowerCase().indexOf(local4) != -1) {
 				if (local13 >= 50) {
-					Static177.aShortArray56 = null;
-					Static328.anInt6127 = -1;
+					Find.results = null;
+					Find.index = -1;
 					return;
 				}
 				if (local13 >= local11.length) {
@@ -38,13 +38,13 @@ public final class Static272 {
 				local11[local13++] = (short) local34;
 			}
 		}
-		Static328.anInt6127 = local13;
-		Static12.anInt266 = 0;
-		Static177.aShortArray56 = local11;
-		@Pc(112) String[] local112 = new String[Static328.anInt6127];
-		for (@Pc(114) int local114 = 0; local114 < Static328.anInt6127; local114++) {
+		Find.index = local13;
+		Find.size = 0;
+		Find.results = local11;
+		@Pc(112) String[] local112 = new String[Find.index];
+		for (@Pc(114) int local114 = 0; local114 < Find.index; local114++) {
 			local112[local114] = Static146.method2699(local11[local114]).method5601();
 		}
-		Static135.method2534(local112, Static177.aShortArray56);
+		Static135.method2534(local112, Find.results);
 	}
 }

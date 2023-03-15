@@ -74,7 +74,7 @@ public class WorldList {
 					client.instance.getAppletContext().showDocument(new URL(local109), "_self");
 				} else {
 					client.worldListWorldId = world.id;
-					client.worldId = world.id;
+					Player.worldId = world.id;
 				}
 				return true;
 			} catch (@Pc(119) Exception ex) {
@@ -82,11 +82,11 @@ public class WorldList {
 			}
 		}
 
-		client.worldId = world.id;
+		Player.worldId = world.id;
 		client.hostname = world.hostname;
 		if (client.modeWhere != client.MODE_WHERE_LIVE) {
-			client.alternatePort = client.worldId + 40000;
-			client.defaultPort = client.worldId + 50000;
+			client.alternatePort = Player.worldId + 40000;
+			client.defaultPort = Player.worldId + 50000;
 			client.port = client.alternatePort;
 		}
 

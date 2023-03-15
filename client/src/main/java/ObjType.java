@@ -16,7 +16,7 @@ public final class ObjType {
 	private short[] aShortArray111;
 
 	@OriginalMember(owner = "client!qf", name = "r", descriptor = "[Ljava/lang/String;")
-	public String[] aStringArray50;
+	public String[] ops;
 
 	@OriginalMember(owner = "client!qf", name = "t", descriptor = "[B")
 	private byte[] aByteArray72;
@@ -40,7 +40,7 @@ public final class ObjType {
 	private int anInt5237;
 
 	@OriginalMember(owner = "client!qf", name = "gb", descriptor = "[Ljava/lang/String;")
-	public String[] aStringArray51;
+	public String[] iops;
 
 	@OriginalMember(owner = "client!qf", name = "ub", descriptor = "I")
 	public int anInt5255;
@@ -55,7 +55,7 @@ public final class ObjType {
 	public int anInt5204 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "d", descriptor = "I")
-	public int anInt5202 = -1;
+	public int certlink = -1;
 
 	@OriginalMember(owner = "client!qf", name = "l", descriptor = "I")
 	private int anInt5207 = -1;
@@ -73,7 +73,7 @@ public final class ObjType {
 	private int anInt5206 = 0;
 
 	@OriginalMember(owner = "client!qf", name = "D", descriptor = "I")
-	public int anInt5220 = 1;
+	public int cost = 1;
 
 	@OriginalMember(owner = "client!qf", name = "q", descriptor = "I")
 	private int anInt5211 = -1;
@@ -109,7 +109,7 @@ public final class ObjType {
 	public int anInt5221 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "M", descriptor = "Z")
-	public boolean aBoolean382 = false;
+	public boolean members = false;
 
 	@OriginalMember(owner = "client!qf", name = "U", descriptor = "I")
 	private int anInt5231 = 0;
@@ -154,13 +154,13 @@ public final class ObjType {
 	private int anInt5248 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "R", descriptor = "Ljava/lang/String;")
-	public String aString55 = "null";
+	public String name = "null";
 
 	@OriginalMember(owner = "client!qf", name = "rb", descriptor = "I")
 	public int anInt5252 = 0;
 
 	@OriginalMember(owner = "client!qf", name = "yb", descriptor = "I")
-	public int anInt5258 = -1;
+	public int certtemplate = -1;
 
 	@OriginalMember(owner = "client!qf", name = "Ab", descriptor = "I")
 	private int anInt5260 = 0;
@@ -169,7 +169,7 @@ public final class ObjType {
 	public int team = 0;
 
 	@OriginalMember(owner = "client!qf", name = "lb", descriptor = "I")
-	public int anInt5247 = 0;
+	public int stackable = 0;
 
 	@OriginalMember(owner = "client!qf", name = "kb", descriptor = "I")
 	public int anInt5246 = -1;
@@ -191,7 +191,7 @@ public final class ObjType {
 		if (arg0 == 1) {
 			this.anInt5237 = arg1.g2();
 		} else if (arg0 == 2) {
-			this.aString55 = arg1.gjstr();
+			this.name = arg1.gjstr();
 		} else if (arg0 == 4) {
 			this.anInt5241 = arg1.g2();
 		} else if (arg0 == 5) {
@@ -209,11 +209,11 @@ public final class ObjType {
 				this.anInt5232 -= 65536;
 			}
 		} else if (arg0 == 11) {
-			this.anInt5247 = 1;
+			this.stackable = 1;
 		} else if (arg0 == 12) {
-			this.anInt5220 = arg1.g4();
+			this.cost = arg1.g4();
 		} else if (arg0 == 16) {
-			this.aBoolean382 = true;
+			this.members = true;
 		} else if (arg0 == 23) {
 			this.anInt5205 = arg1.g2();
 		} else if (arg0 == 24) {
@@ -223,9 +223,9 @@ public final class ObjType {
 		} else if (arg0 == 26) {
 			this.anInt5211 = arg1.g2();
 		} else if (arg0 >= 30 && arg0 < 35) {
-			this.aStringArray50[arg0 - 30] = arg1.gjstr();
+			this.ops[arg0 - 30] = arg1.gjstr();
 		} else if (arg0 >= 35 && arg0 < 40) {
-			this.aStringArray51[arg0 - 35] = arg1.gjstr();
+			this.iops[arg0 - 35] = arg1.gjstr();
 		} else {
 			@Pc(162) int local162;
 			@Pc(172) int local172;
@@ -270,9 +270,9 @@ public final class ObjType {
 			} else if (arg0 == 96) {
 				this.anInt5214 = arg1.g1();
 			} else if (arg0 == 97) {
-				this.anInt5202 = arg1.g2();
+				this.certlink = arg1.g2();
 			} else if (arg0 == 98) {
-				this.anInt5258 = arg1.g2();
+				this.certtemplate = arg1.g2();
 			} else if (arg0 >= 100 && arg0 < 110) {
 				if (this.anIntArray365 == null) {
 					this.anIntArray366 = new int[10];
@@ -381,7 +381,7 @@ public final class ObjType {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(III)I")
-	public int method4772(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
+	public int getParam(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		if (this.aClass4_103 == null) {
 			return arg0;
 		} else {
@@ -391,7 +391,7 @@ public final class ObjType {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(Ljava/lang/String;II)Ljava/lang/String;")
-	public String method4773(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
+	public String getParam(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
 		if (this.aClass4_103 == null) {
 			return arg0;
 		} else {
@@ -619,13 +619,13 @@ public final class ObjType {
 		this.aShortArray113 = arg1.aShortArray113;
 		this.anInt5232 = arg1.anInt5232;
 		this.aShortArray111 = arg1.aShortArray111;
-		this.anInt5220 = arg0.anInt5220;
+		this.cost = arg0.cost;
 		this.anInt5215 = arg1.anInt5215;
 		this.anInt5252 = arg1.anInt5252;
-		this.aString55 = arg0.aString55;
-		this.anInt5247 = 1;
+		this.name = arg0.name;
+		this.stackable = 1;
 		this.anInt5241 = arg1.anInt5241;
-		this.aBoolean382 = arg0.aBoolean382;
+		this.members = arg0.members;
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(Lclient!ur;Lclient!jo;BLclient!wm;ILclient!wm;IIIZ)[I")
@@ -673,8 +673,8 @@ public final class ObjType {
 			local210.method3842(this.anInt5233, this.anInt5226, this.anInt5261);
 		}
 		@Pc(227) Sprite local227 = null;
-		if (this.anInt5258 != -1) {
-			local227 = this.aClass107_1.method2769(this.anInt5202, arg0, 10, arg2, true, 0, true, arg1, 0, arg4, 1);
+		if (this.certtemplate != -1) {
+			local227 = this.aClass107_1.method2769(this.certlink, arg0, 10, arg2, true, 0, true, arg1, 0, arg4, 1);
 			if (local227 == null) {
 				return null;
 			}
@@ -722,12 +722,12 @@ public final class ObjType {
 			this.method4774(arg3, local427);
 		}
 		arg4.method2884(local427, 36, 36, 32).method6385(0, 0);
-		if (this.anInt5258 != -1) {
+		if (this.certtemplate != -1) {
 			local227.method6385(0, 0);
 		} else if (this.anInt5235 != -1) {
 			local227.method6385(0, 0);
 		}
-		if (arg5 == 1 || arg5 == 2 && (this.anInt5247 == 1 || arg7 != 1) && arg7 != -1) {
+		if (arg5 == 1 || arg5 == 2 && (this.stackable == 1 || arg7 != 1) && arg7 != -1) {
 			arg0.method5897(0, -16777215, 9, -256, this.method4786(arg7));
 		}
 		local427 = arg4.method2850();
@@ -786,12 +786,12 @@ public final class ObjType {
 		this.aShortArray110 = arg1.aShortArray110;
 		this.anInt5208 = arg1.anInt5208;
 		this.aShortArray113 = arg1.aShortArray113;
-		this.aString55 = arg1.aString55;
+		this.name = arg1.name;
 		this.anInt5231 = arg1.anInt5231;
 		this.anInt5243 = arg1.anInt5243;
-		this.aStringArray51 = new String[5];
+		this.iops = new String[5];
 		this.anInt5248 = arg1.anInt5248;
-		this.aStringArray50 = arg1.aStringArray50;
+		this.ops = arg1.ops;
 		this.anInt5251 = arg1.anInt5251;
 		this.anInt5211 = arg1.anInt5211;
 		this.anInt5241 = arg0.anInt5241;
@@ -801,13 +801,13 @@ public final class ObjType {
 		this.anInt5232 = arg0.anInt5232;
 		this.anInt5254 = arg1.anInt5254;
 		this.anInt5237 = arg0.anInt5237;
-		this.aBoolean382 = arg1.aBoolean382;
+		this.members = arg1.members;
 		this.anInt5249 = arg0.anInt5249;
 		this.anInt5201 = arg1.anInt5201;
 		this.anInt5206 = arg1.anInt5206;
 		this.aShortArray111 = arg1.aShortArray111;
 		this.anInt5222 = arg1.anInt5222;
-		this.anInt5220 = 0;
+		this.cost = 0;
 		this.anInt5250 = arg1.anInt5250;
 		this.aByteArray72 = arg1.aByteArray72;
 		this.aShortArray112 = arg1.aShortArray112;
@@ -815,12 +815,12 @@ public final class ObjType {
 		this.anInt5245 = arg0.anInt5245;
 		this.anInt5205 = arg1.anInt5205;
 		this.anInt5260 = arg1.anInt5260;
-		if (arg1.aStringArray51 != null) {
+		if (arg1.iops != null) {
 			for (@Pc(149) int local149 = 0; local149 < 4; local149++) {
-				this.aStringArray51[local149] = arg1.aStringArray51[local149];
+				this.iops[local149] = arg1.iops[local149];
 			}
 		}
-		this.aStringArray51[4] = Static139.aClass79_61.method2267(this.aClass107_1.anInt2781);
+		this.iops[4] = Static139.aClass79_61.getLocalized(this.aClass107_1.anInt2781);
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(IB)Ljava/lang/String;")
@@ -828,9 +828,9 @@ public final class ObjType {
 		if (arg0 < 100000) {
 			return "<col=ffff00>" + arg0 + "</col>";
 		} else if (arg0 < 10000000) {
-			return "<col=ffffff>" + arg0 / 1000 + Static350.aClass79_135.method2267(this.aClass107_1.anInt2781) + "</col>";
+			return "<col=ffffff>" + arg0 / 1000 + Static350.aClass79_135.getLocalized(this.aClass107_1.anInt2781) + "</col>";
 		} else {
-			return "<col=00ff80>" + arg0 / 1000000 + Static259.aClass79_106.method2267(this.aClass107_1.anInt2781) + "</col>";
+			return "<col=00ff80>" + arg0 / 1000000 + Static259.aClass79_106.getLocalized(this.aClass107_1.anInt2781) + "</col>";
 		}
 	}
 }

@@ -178,7 +178,7 @@ public final class Class11_Sub2_Sub1 extends Class11_Sub2 implements Interface6 
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IZLclient!wm;I)Lclient!ij;")
 	private Class105 method940(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2) {
-		@Pc(18) LocType local18 = client.LocTypes.method5163(this.aShort1 & 0xFFFF);
+		@Pc(18) LocType local18 = client.LocTypes.get(this.aShort1 & 0xFFFF);
 		@Pc(26) Class6 local26;
 		@Pc(34) Class6 local34;
 		if (this.aBoolean65) {

@@ -13,11 +13,11 @@ public final class Static212 {
 		if (local8 == null) {
 			return;
 		}
-		Static190.aClass19_8.method2895(arg1, arg2, arg1 + arg0.anInt4248, arg2 + arg0.anInt4261);
+		Static190.aClass19_8.method2895(arg1, arg2, arg1 + arg0.width, arg2 + arg0.height);
 		if (Static146.anInt2703 >= 3) {
 			Static190.aClass19_8.method2811(local8, arg1, arg2);
 		} else {
-			Static12.aClass13_2.method6398((float) arg1 + (float) arg0.anInt4248 / 2.0F, (float) arg2 + (float) arg0.anInt4261 / 2.0F, ((int) -Static277.aFloat67 & 0x3FFF) << 2, local8, arg1, arg2);
+			Static12.aClass13_2.method6398((float) arg1 + (float) arg0.width / 2.0F, (float) arg2 + (float) arg0.height / 2.0F, ((int) -Static277.aFloat67 & 0x3FFF) << 2, local8, arg1, arg2);
 		}
 	}
 

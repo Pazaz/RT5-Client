@@ -13,19 +13,6 @@ public final class Static391 {
 	@OriginalMember(owner = "client!wq", name = "h", descriptor = "[I")
 	public static final int[] anIntArray495 = new int[] { 16, 32, 64, 128 };
 
-	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(ILjava/lang/String;)Z")
-	public static boolean method6451(@OriginalArg(1) String arg0) {
-		if (arg0 == null) {
-			return false;
-		}
-		for (@Pc(11) int local11 = 0; local11 < Static384.anInt7178; local11++) {
-			if (arg0.equalsIgnoreCase(Static17.aStringArray43[local11])) {
-				return true;
-			}
-		}
-		return arg0.equalsIgnoreCase(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41);
-	}
-
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(IIBIIIII)V")
 	public static void method6452(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
 		if (arg5 < 0 || arg2 < 0 || Static373.anInt7033 - 1 <= arg5 || Static242.anInt4449 - 1 <= arg2) {

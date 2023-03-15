@@ -44,8 +44,8 @@ public final class Static239 {
 
 	@OriginalMember(owner = "client!nn", name = "a", descriptor = "(Lclient!wm;B)V")
 	public static void method4156(@OriginalArg(0) Class19 arg0) {
-		if (Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 != Static343.anInt6389 && (Scene.aClass67ArrayArrayArray3 != null && Static49.method1472(arg0, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78))) {
-			Static343.anInt6389 = Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78;
+		if (PlayerList.self.plane != Static343.anInt6389 && (Scene.aClass67ArrayArrayArray3 != null && Static49.method1472(arg0, PlayerList.self.plane))) {
+			Static343.anInt6389 = PlayerList.self.plane;
 		}
 	}
 }

@@ -17,4 +17,7 @@ public class PlayerList {
 	@OriginalMember(owner = "client!l", name = "h", descriptor = "I")
 	public static int anInt3547 = 0;
 
+	@OriginalMember(owner = "client!at", name = "N", descriptor = "Lclient!nh;")
+	public static Player self;
+
 }

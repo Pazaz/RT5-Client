@@ -59,17 +59,17 @@ public final class Static382 {
 		local7.anInt1373 = arg1;
 		Static329.aClass4_130.put(local7, (long) arg0);
 		Static160.method2957(arg3);
-		@Pc(26) Class161 local26 = Static6.method140(arg0);
+		@Pc(26) Class161 local26 = InterfaceList.getComponent(arg0);
 		if (local26 != null) {
-			Static200.method3645(local26);
+			InterfaceList.redraw(local26);
 		}
 		if (Static192.aClass161_8 != null) {
-			Static200.method3645(Static192.aClass161_8);
+			InterfaceList.redraw(Static192.aClass161_8);
 			Static192.aClass161_8 = null;
 		}
 		Static227.method3989();
 		if (local26 != null) {
-			Static85.method1911(!arg2, local26);
+			DelayedStateChange.method1911(!arg2, local26);
 		}
 		if (!arg2) {
 			ScriptRunner.method3598(arg3);

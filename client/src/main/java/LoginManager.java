@@ -37,11 +37,15 @@ public class LoginManager {
 	@OriginalMember(owner = "client!dd", name = "q", descriptor = "Z")
 	public static boolean playerUnderage = false;
 	@OriginalMember(owner = "client!mg", name = "B", descriptor = "I")
-	public static int playerModLevel = 0;
+	public static int blackmarks = 0;
 	@OriginalMember(owner = "client!ut", name = "B", descriptor = "I")
 	public static int disallowResult = -1;
 	@OriginalMember(owner = "client!ac", name = "D", descriptor = "I")
 	public static int staffModLevel = 0;
+	@OriginalMember(owner = "client!lq", name = "s", descriptor = "I")
+	public static int anInt3714 = -1;
+	@OriginalMember(owner = "client!wd", name = "o", descriptor = "Z")
+	public static boolean playerMember = false;
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(B)V")
 	public static void mainLogic() {
@@ -135,7 +139,7 @@ public class LoginManager {
 				Protocol.outboundBuffer.p2(0);
 				int start = Protocol.outboundBuffer.pos;
 				Protocol.outboundBuffer.p4(578);
-				Protocol.outboundBuffer.p1(Static202.anInt3714);
+				Protocol.outboundBuffer.p1(anInt3714);
 				Protocol.outboundBuffer.p1(Static144.getWindowMode());
 				Protocol.outboundBuffer.p2(GameShell.canvasWidth);
 				Protocol.outboundBuffer.p2(GameShell.canvasHeight);
@@ -242,18 +246,18 @@ public class LoginManager {
 					Protocol.socket.read(Protocol.inboundBuffer.data, 13, 0);
 					Protocol.inboundBuffer.pos = 0;
 					staffModLevel = Protocol.inboundBuffer.g1();
-					playerModLevel = Protocol.inboundBuffer.g1();
+					blackmarks = Protocol.inboundBuffer.g1();
 					playerUnderage = Protocol.inboundBuffer.g1() == 1;
 					parentalChatConsent = Protocol.inboundBuffer.g1() == 1;
 					parentalAdvertConsent = Protocol.inboundBuffer.g1() == 1;
 					mapQuickChat = Protocol.inboundBuffer.g1() == 1;
 					PlayerList.selfId = Protocol.inboundBuffer.g2();
-					MouseRecorder.enabled = Protocol.inboundBuffer.g1() == 1;
+					playerMember = Protocol.inboundBuffer.g1() == 1;
 					mapMembers = Protocol.inboundBuffer.g1() == 1;
 					client.LocTypes.setAllowMembers(mapMembers);
 					client.ObjTypes.setAllowMembers(mapMembers);
 					client.NpcTypes.setAllowMembers(mapMembers);
-					if (playerUnderage && !parentalAdvertConsent || MouseRecorder.enabled) {
+					if (playerUnderage && !parentalAdvertConsent || playerMember) {
 						try {
 							BrowserControl.call(GameShell.signlink.applet, "zap");
 						} catch (@Pc(896) Throwable ex) {
@@ -362,17 +366,17 @@ public class LoginManager {
 	public static void lswpRenderLoginDecoder(@OriginalArg(1) Packet buffer) {
 		buffer.accessBits();
 		@Pc(10) int local10 = PlayerList.selfId;
-		@Pc(20) Player local20 = Static17.aClass11_Sub5_Sub2_Sub1_3 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local10] = new Player();
+		@Pc(20) Player local20 = PlayerList.self = Static12.aClass11_Sub5_Sub2_Sub1Array1[local10] = new Player();
 		local20.anInt4619 = local10;
 		@Pc(28) int local28 = buffer.gBit(30);
 		@Pc(33) byte local33 = (byte) (local28 >> 28);
 		@Pc(39) int local39 = local28 >> 14 & 0x3FFF;
 		@Pc(43) int local43 = local28 & 0x3FFF;
-		local20.movementQueueX[0] = local39 - Static164.anInt3140;
+		local20.movementQueueX[0] = local39 - Camera.originX;
 		local20.xFine = (local20.movementQueueX[0] << 7) + (local20.getSize() << 6);
-		local20.movementQueueZ[0] = local43 - Static148.anInt2719;
+		local20.movementQueueZ[0] = local43 - Camera.originZ;
 		local20.zFine = (local20.movementQueueZ[0] << 7) + (local20.getSize() << 6);
-		Static355.anInt6585 = local20.aByte78 = local33;
+		Static355.anInt6585 = local20.plane = local33;
 		if (Static231.aClass2_Sub4Array1[local10] != null) {
 			local20.decodeAppearance(Static231.aClass2_Sub4Array1[local10]);
 		}
@@ -461,7 +465,7 @@ public class LoginManager {
 			if (Static154.anInt2803 == 3 && Protocol.socket.available() >= 2) {
 				local125 = Protocol.socket.read() << 8 | Protocol.socket.read();
 				WorldList.switchWorld(local125);
-				if (client.worldId == -1) {
+				if (Player.worldId == -1) {
 					Static154.anInt2803 = 0;
 					loginResult = 6;
 					Protocol.socket.close();
@@ -511,11 +515,11 @@ public class LoginManager {
 		Static393.aBoolean486 = false;
 		Static171.anInt3268 = -1;
 		Static239.method4152(true);
-		Static164.anInt3140 = 0;
+		Camera.originX = 0;
 		Static9.anInt212 = 0;
 		Static220.aBoolean252 = false;
 		Static105.anInt2187 = 0;
-		Static148.anInt2719 = 0;
+		Camera.originZ = 0;
 		for (@Pc(56) int local56 = 0; local56 < Static50.aClass84Array1.length; local56++) {
 			Static50.aClass84Array1[local56] = null;
 		}
@@ -605,8 +609,8 @@ public class LoginManager {
 		for (@Pc(249) int local249 = 0; local249 < Static106.aByteArrayArray6.length; local249++) {
 			@Pc(255) byte[] local255 = Static82.aByteArrayArray5[local249];
 			if (local255 != null) {
-				local268 = (Static291.mapSquares[local249] >> 8) * 64 - Static164.anInt3140;
-				local279 = (Static291.mapSquares[local249] & 0xFF) * 64 - Static148.anInt2719;
+				local268 = (Static291.mapSquares[local249] >> 8) * 64 - Camera.originX;
+				local279 = (Static291.mapSquares[local249] & 0xFF) * 64 - Camera.originZ;
 				if (Static220.aBoolean252) {
 					local268 = 10;
 					local279 = 10;
@@ -615,8 +619,8 @@ public class LoginManager {
 			}
 			local255 = Static270.aByteArrayArray15[local249];
 			if (local255 != null) {
-				local268 = (Static291.mapSquares[local249] >> 8) * 64 - Static164.anInt3140;
-				local279 = (Static291.mapSquares[local249] & 0xFF) * 64 - Static148.anInt2719;
+				local268 = (Static291.mapSquares[local249] >> 8) * 64 - Camera.originX;
+				local279 = (Static291.mapSquares[local249] & 0xFF) * 64 - Camera.originZ;
 				if (Static220.aBoolean252) {
 					local279 = 10;
 					local268 = 10;
@@ -629,7 +633,7 @@ public class LoginManager {
 			return;
 		}
 		if (Static246.anInt4505 != 0) {
-			Static351.method5857(Static276.aClass130_4, true, Static256.aClass79_102.method2267(client.language) + "<br>(100%)");
+			Static351.method5857(Static276.aClass130_4, true, Static256.aClass79_102.getLocalized(client.language) + "<br>(100%)");
 		}
 		Static37.method1135();
 		Static211.method3721();
@@ -754,7 +758,7 @@ public class LoginManager {
 		Static3.aBoolean5 = false;
 		Static50.method1530();
 		if (GameShell.frame != null && Protocol.socket != null && client.gameState == 25) {
-			Protocol.writeOpcode(ClientProt.aClass145_28);
+			Protocol.writeOpcode(ClientProt.EVENT_FRAME_MAP_LOADED);
 			Protocol.outboundBuffer.p4(1057001181);
 		}
 		if (!Static220.aBoolean252) {
@@ -776,7 +780,7 @@ public class LoginManager {
 		} else {
 			Static336.method5705(30);
 			if (Protocol.socket != null) {
-				Protocol.writeOpcode(ClientProt.aClass145_230);
+				Protocol.writeOpcode(ClientProt.MAP_BUILD_COMPLETE);
 			}
 		}
 		Static253.method4369();
@@ -787,11 +791,11 @@ public class LoginManager {
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Ljava/lang/String;Ljava/lang/String;IB)V")
 	public static void method2087(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
 		username = arg1;
-		Static202.anInt3714 = arg2;
+		anInt3714 = arg2;
 		password = arg0;
 		if (username.equals("") || password.equals("")) {
 			loginResult = 3;
-		} else if (client.worldId == -1) {
+		} else if (Player.worldId == -1) {
 			Static60.anInt666 = 0;
 			Static154.anInt2803 = 1;
 			loginResult = -3;

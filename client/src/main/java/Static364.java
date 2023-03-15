@@ -29,20 +29,20 @@ public final class Static364 {
 			if (local9 != null && arg2 == local9.anInt4275) {
 				Static371.method6256(arg1, arg4, arg0, local9);
 				Static287.method4939(local9, arg4, arg1);
-				if (local9.anInt4281 - local9.anInt4248 < local9.anInt4258) {
-					local9.anInt4258 = local9.anInt4281 - local9.anInt4248;
+				if (local9.scrollMaxH - local9.width < local9.scrollX) {
+					local9.scrollX = local9.scrollMaxH - local9.width;
 				}
-				if (local9.anInt4258 < 0) {
-					local9.anInt4258 = 0;
+				if (local9.scrollX < 0) {
+					local9.scrollX = 0;
 				}
-				if (local9.anInt4259 > local9.anInt4266 - local9.anInt4261) {
-					local9.anInt4259 = local9.anInt4266 - local9.anInt4261;
+				if (local9.scrollY > local9.scrollMaxV - local9.height) {
+					local9.scrollY = local9.scrollMaxV - local9.height;
 				}
-				if (local9.anInt4259 < 0) {
-					local9.anInt4259 = 0;
+				if (local9.scrollY < 0) {
+					local9.scrollY = 0;
 				}
-				if (local9.anInt4272 == 0) {
-					Static85.method1911(arg0, local9);
+				if (local9.type == 0) {
+					DelayedStateChange.method1911(arg0, local9);
 				}
 			}
 		}

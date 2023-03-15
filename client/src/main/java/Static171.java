@@ -17,9 +17,9 @@ public final class Static171 {
 	public static void method3258(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if (Scene.aClass67ArrayArrayArray3 == null) {
 			Static190.aClass19_8.method2868(arg4, arg1, arg0, -16777216, arg3);
-		} else if (Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >= 0 && Static17.aClass11_Sub5_Sub2_Sub1_3.xFine < Static373.anInt7033 * 128 && Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >= 0 && Static17.aClass11_Sub5_Sub2_Sub1_3.zFine < Static242.anInt4449 * 128) {
+		} else if (PlayerList.self.xFine >= 0 && PlayerList.self.xFine < Static373.anInt7033 * 128 && PlayerList.self.zFine >= 0 && PlayerList.self.zFine < Static242.anInt4449 * 128) {
 			Static163.anInt3086++;
-			if (Static17.aClass11_Sub5_Sub2_Sub1_3 != null && Static17.aClass11_Sub5_Sub2_Sub1_3.xFine + 64 - Static17.aClass11_Sub5_Sub2_Sub1_3.getSize() * 64 >> 7 == Static358.anInt6550 && Static17.aClass11_Sub5_Sub2_Sub1_3.zFine + 64 - Static17.aClass11_Sub5_Sub2_Sub1_3.getSize() * 64 >> 7 == Static312.anInt5844) {
+			if (PlayerList.self != null && PlayerList.self.xFine + 64 - PlayerList.self.getSize() * 64 >> 7 == Static358.anInt6550 && PlayerList.self.zFine + 64 - PlayerList.self.getSize() * 64 >> 7 == Static312.anInt5844) {
 				Static358.anInt6550 = -1;
 				Static312.anInt5844 = -1;
 				Static359.method6009();
@@ -45,7 +45,7 @@ public final class Static171 {
 					local118 = Static105.anIntArray134[4] + 128;
 				}
 				local151 = Static53.anInt3966 + (int) Static277.aFloat67 & 0x3FFF;
-				Static349.method5833((local118 >> 3) * 3 + 600, Static288.anInt5463, local108, Static386.method6032(Static17.aClass11_Sub5_Sub2_Sub1_3.xFine, Static17.aClass11_Sub5_Sub2_Sub1_3.zFine, Static355.anInt6585) - 50, Static62.anInt2395, local151, local118);
+				Static349.method5833((local118 >> 3) * 3 + 600, Static288.anInt5463, local108, Static386.method6032(PlayerList.self.xFine, PlayerList.self.zFine, Static355.anInt6585) - 50, Static62.anInt2395, local151, local118);
 			} else if (Static314.anInt5911 == 4) {
 				local118 = (int) Static31.aFloat28;
 				if (local118 < Static89.anInt1885 >> 8) {
@@ -119,7 +119,7 @@ public final class Static171 {
 			Static306.method5254(Static320.anInt6006 << 1, local106 / 2 + local104, Static320.anInt6006 << 1, local110 + local108 / 2);
 			Static96.method2085(Static211.anInt3777, Static102.anInt3592, -Static342.anInt5657 & 0x3FFF, -Static4.anInt87 & 0x3FFF, -Static265.anInt4857 & 0x3FFF, Static136.anInt6778);
 			@Pc(541) byte local541 = client.preferences.method4492(Static77.anInt1762) == 2 ? (byte) Static163.anInt3086 : 1;
-			Static225.method3954(Static190.aClass19_8, client.cycle, Static102.anInt3591, Static76.aClass14_3, Static136.anInt6778, Static102.anInt3592, Static211.anInt3777, Static230.aByteArrayArrayArray13, Static353.anIntArray448, Static107.anIntArray136, Static248.anIntArray318, Static324.anIntArray409, Static86.anIntArray122, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 + 1, local541, Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7, !client.preferences.aBoolean353);
+			Static225.method3954(Static190.aClass19_8, client.cycle, Static102.anInt3591, Static76.aClass14_3, Static136.anInt6778, Static102.anInt3592, Static211.anInt3777, Static230.aByteArrayArrayArray13, Static353.anIntArray448, Static107.anIntArray136, Static248.anIntArray318, Static324.anIntArray409, Static86.anIntArray122, PlayerList.self.plane + 1, local541, PlayerList.self.xFine >> 7, PlayerList.self.zFine >> 7, !client.preferences.aBoolean353);
 			Static37.method1135();
 			if (client.gameState == 30) {
 				Static306.method5253(local110, local108, local106, local104);
@@ -138,7 +138,7 @@ public final class Static171 {
 			}
 			if (Static17.aBoolean308) {
 				Static190.aClass19_8.method2868(local108, local104, local110, -16777216, local106);
-				Static351.method5857(Static276.aClass130_4, false, Static256.aClass79_102.method2267(client.language));
+				Static351.method5857(Static276.aClass130_4, false, Static256.aClass79_102.getLocalized(client.language));
 			}
 		} else {
 			Static190.aClass19_8.method2868(arg4, arg1, arg0, -16777216, arg3);

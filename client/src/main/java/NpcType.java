@@ -568,7 +568,7 @@ public final class NpcType {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Ljava/lang/String;IB)Ljava/lang/String;")
-	public String method2090(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
+	public String getParam(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
 		if (this.aClass4_41 == null) {
 			return arg0;
 		} else {
@@ -606,9 +606,9 @@ public final class NpcType {
 		}
 		if (local13 < 0 || local13 >= this.multiNpcs.length - 1 || this.multiNpcs[local13] == -1) {
 			@Pc(68) int local68 = this.multiNpcs[this.multiNpcs.length - 1];
-			return local68 == -1 ? null : this.aClass219_2.method5570(local68);
+			return local68 == -1 ? null : this.aClass219_2.get(local68);
 		} else {
-			return this.aClass219_2.method5570(this.multiNpcs[local13]);
+			return this.aClass219_2.get(this.multiNpcs[local13]);
 		}
 	}
 
@@ -823,7 +823,7 @@ public final class NpcType {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(III)I")
-	public int method2098(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+	public int getParam(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		if (this.aClass4_41 == null) {
 			return arg0;
 		} else {
@@ -839,7 +839,7 @@ public final class NpcType {
 		}
 		for (@Pc(28) int local28 = 0; local28 < this.multiNpcs.length; local28++) {
 			if (this.multiNpcs[local28] != -1) {
-				@Pc(45) NpcType local45 = this.aClass219_2.method5570(this.multiNpcs[local28]);
+				@Pc(45) NpcType local45 = this.aClass219_2.get(this.multiNpcs[local28]);
 				if (local45.anInt2038 != -1 || local45.anInt2015 != -1 || local45.anInt2025 != -1) {
 					return true;
 				}

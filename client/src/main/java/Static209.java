@@ -7,9 +7,6 @@ public final class Static209 {
 	@OriginalMember(owner = "client!me", name = "c", descriptor = "[I")
 	public static int[] anIntArray228;
 
-	@OriginalMember(owner = "client!me", name = "d", descriptor = "[Ljava/lang/String;")
-	public static final String[] aStringArray32 = new String[200];
-
 	@OriginalMember(owner = "client!me", name = "b", descriptor = "(I)Lclient!jg;")
 	public static Class2_Sub20 method3713() {
 		if (Static344.aClass135_36 == null || Static116.aClass75_1 == null) {
@@ -46,7 +43,7 @@ public final class Static209 {
 			@Pc(80) int[] local80 = new int[3];
 			@Pc(82) int local82 = -1;
 			@Pc(84) int local84 = -1;
-			if (Static344.aClass2_Sub2_Sub17_3.method6145(Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78, local80, Static164.anInt3140 + (Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7), Static148.anInt2719 + (Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7))) {
+			if (Static344.aClass2_Sub2_Sub17_3.method6145(PlayerList.self.plane, local80, Camera.originX + (PlayerList.self.xFine >> 7), Camera.originZ + (PlayerList.self.zFine >> 7))) {
 				local82 = local80[1] - Static344.anInt6057;
 				local84 = local80[2] - Static344.anInt6055;
 			}

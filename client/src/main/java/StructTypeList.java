@@ -19,7 +19,7 @@ public final class StructTypeList {
 	}
 
 	@OriginalMember(owner = "client!ks", name = "a", descriptor = "(BI)Lclient!ck;")
-	public StructType method3471(@OriginalArg(1) int arg0) {
+	public StructType get(@OriginalArg(1) int arg0) {
 		@Pc(6) LruHashTable local6 = this.aClass98_29;
 		@Pc(16) StructType local16;
 		synchronized (this.aClass98_29) {

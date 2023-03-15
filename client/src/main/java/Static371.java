@@ -21,45 +21,45 @@ public final class Static371 {
 
 	@OriginalMember(owner = "client!vo", name = "a", descriptor = "(IIIZLclient!nk;)V")
 	public static void method6256(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) Class161 arg3) {
-		@Pc(8) int local8 = arg3.anInt4248;
-		@Pc(11) int local11 = arg3.anInt4261;
-		if (arg3.aByte47 == 0) {
-			arg3.anInt4248 = arg3.anInt4294;
-		} else if (arg3.aByte47 == 1) {
-			arg3.anInt4248 = arg1 - arg3.anInt4294;
-		} else if (arg3.aByte47 == 2) {
-			arg3.anInt4248 = arg1 * arg3.anInt4294 >> 14;
+		@Pc(8) int local8 = arg3.width;
+		@Pc(11) int local11 = arg3.height;
+		if (arg3.dynamicWidthValue == 0) {
+			arg3.width = arg3.baseWidth;
+		} else if (arg3.dynamicWidthValue == 1) {
+			arg3.width = arg1 - arg3.baseWidth;
+		} else if (arg3.dynamicWidthValue == 2) {
+			arg3.width = arg1 * arg3.baseWidth >> 14;
 		}
-		if (arg3.aByte44 == 0) {
-			arg3.anInt4261 = arg3.anInt4289;
-		} else if (arg3.aByte44 == 1) {
-			arg3.anInt4261 = arg0 - arg3.anInt4289;
-		} else if (arg3.aByte44 == 2) {
-			arg3.anInt4261 = arg0 * arg3.anInt4289 >> 14;
+		if (arg3.dynamicHeightValue == 0) {
+			arg3.height = arg3.baseHeight;
+		} else if (arg3.dynamicHeightValue == 1) {
+			arg3.height = arg0 - arg3.baseHeight;
+		} else if (arg3.dynamicHeightValue == 2) {
+			arg3.height = arg0 * arg3.baseHeight >> 14;
 		}
-		if (arg3.aByte47 == 4) {
-			arg3.anInt4248 = arg3.anInt4261 * arg3.anInt4243 / arg3.anInt4291;
+		if (arg3.dynamicWidthValue == 4) {
+			arg3.width = arg3.height * arg3.aspectWidth / arg3.aspectHeight;
 		}
-		if (arg3.aByte44 == 4) {
-			arg3.anInt4261 = arg3.anInt4291 * arg3.anInt4248 / arg3.anInt4243;
+		if (arg3.dynamicHeightValue == 4) {
+			arg3.height = arg3.aspectHeight * arg3.width / arg3.aspectWidth;
 		}
-		if (Static18.qa_op_test && (Static45.method1404(arg3).events != 0 || arg3.anInt4272 == 0)) {
-			if (arg3.anInt4261 < 5 && arg3.anInt4248 < 5) {
-				arg3.anInt4261 = 5;
-				arg3.anInt4248 = 5;
+		if (Static18.qa_op_test && (Static45.method1404(arg3).events != 0 || arg3.type == 0)) {
+			if (arg3.height < 5 && arg3.width < 5) {
+				arg3.height = 5;
+				arg3.width = 5;
 			} else {
-				if (arg3.anInt4248 <= 0) {
-					arg3.anInt4248 = 5;
+				if (arg3.width <= 0) {
+					arg3.width = 5;
 				}
-				if (arg3.anInt4261 <= 0) {
-					arg3.anInt4261 = 5;
+				if (arg3.height <= 0) {
+					arg3.height = 5;
 				}
 			}
 		}
 		if (arg3.anInt4273 == Static199.anInt5755) {
 			Static20.aClass161_1 = arg3;
 		}
-		if (arg2 && arg3.anObjectArray6 != null && (arg3.anInt4248 != local8 || local11 != arg3.anInt4261)) {
+		if (arg2 && arg3.anObjectArray6 != null && (arg3.width != local8 || local11 != arg3.height)) {
 			@Pc(191) Class2_Sub13 local191 = new Class2_Sub13();
 			local191.aClass161_3 = arg3;
 			local191.anObjectArray4 = arg3.anObjectArray6;

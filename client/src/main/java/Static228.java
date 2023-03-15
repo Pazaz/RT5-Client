@@ -34,10 +34,10 @@ public final class Static228 {
 			} else {
 				local33 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local11[local13]];
 			}
-			if (local33.anInt4638 >= 0 && (Static163.anInt3086 == local33.anInt4603 || Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 == local33.aByte78)) {
+			if (local33.anInt4638 >= 0 && (Static163.anInt3086 == local33.anInt4603 || PlayerList.self.plane == local33.plane)) {
 				Static250.method4344(local33.method4323(), local33, arg1 >> 1, arg2 >> 1);
 				if (Static216.anIntArray231[0] >= 0) {
-					if (local33.aString50 != null && (local13 >= local7 || Static20.anInt545 == 0 || Static20.anInt545 == 3 || Static20.anInt545 == 1 && Static391.method6451(((Player) local33).aString41)) && Static319.anInt5977 > Static45.anInt1196) {
+					if (local33.aString50 != null && (local13 >= local7 || Static20.anInt545 == 0 || Static20.anInt545 == 3 || Static20.anInt545 == 1 && FriendsList.contains(((Player) local33).username)) && Static319.anInt5977 > Static45.anInt1196) {
 						Static319.anIntArray398[Static45.anInt1196] = Static113.aClass239_2.method6126(local33.aString50) / 2;
 						Static319.anIntArray397[Static45.anInt1196] = Static216.anIntArray231[0];
 						Static319.anIntArray402[Static45.anInt1196] = Static216.anIntArray231[1];

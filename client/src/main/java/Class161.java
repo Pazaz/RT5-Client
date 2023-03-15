@@ -34,7 +34,7 @@ public final class Class161 {
 	public int anInt4246;
 
 	@OriginalMember(owner = "client!nk", name = "u", descriptor = "Z")
-	public boolean aBoolean281;
+	public boolean vFlip;
 
 	@OriginalMember(owner = "client!nk", name = "z", descriptor = "[Ljava/lang/Object;")
 	public Object[] anObjectArray8;
@@ -94,13 +94,13 @@ public final class Class161 {
 	public Object[] anObjectArray20;
 
 	@OriginalMember(owner = "client!nk", name = "sb", descriptor = "Z")
-	public boolean aBoolean285;
+	public boolean hFlip;
 
 	@OriginalMember(owner = "client!nk", name = "ub", descriptor = "I")
-	public int anInt4272;
+	public int type;
 
 	@OriginalMember(owner = "client!nk", name = "wb", descriptor = "[Lclient!nk;")
-	public Class161[] aClass161Array2;
+	public Class161[] activeComponents;
 
 	@OriginalMember(owner = "client!nk", name = "Jb", descriptor = "[Ljava/lang/Object;")
 	public Object[] anObjectArray21;
@@ -163,7 +163,7 @@ public final class Class161 {
 	public Object[] anObjectArray33;
 
 	@OriginalMember(owner = "client!nk", name = "Pc", descriptor = "I")
-	public int anInt4313;
+	public int modelId;
 
 	@OriginalMember(owner = "client!nk", name = "Rc", descriptor = "[I")
 	public int[] anIntArray281;
@@ -178,22 +178,22 @@ public final class Class161 {
 	public boolean aBoolean282 = false;
 
 	@OriginalMember(owner = "client!nk", name = "m", descriptor = "I")
-	public int anInt4241 = 0;
+	public int baseX = 0;
 
 	@OriginalMember(owner = "client!nk", name = "o", descriptor = "I")
-	public int anInt4243 = 1;
+	public int aspectWidth = 1;
 
 	@OriginalMember(owner = "client!nk", name = "w", descriptor = "I")
-	public int anInt4248 = 0;
+	public int width = 0;
 
 	@OriginalMember(owner = "client!nk", name = "d", descriptor = "I")
 	public int anInt4236 = -1;
 
 	@OriginalMember(owner = "client!nk", name = "M", descriptor = "I")
-	public int anInt4255 = 100;
+	public int modelZoom = 100;
 
 	@OriginalMember(owner = "client!nk", name = "V", descriptor = "I")
-	public int anInt4259 = 0;
+	public int scrollY = 0;
 
 	@OriginalMember(owner = "client!nk", name = "L", descriptor = "I")
 	public int anInt4254 = 0;
@@ -217,31 +217,31 @@ public final class Class161 {
 	public int anInt4280 = -1;
 
 	@OriginalMember(owner = "client!nk", name = "I", descriptor = "I")
-	public int anInt4252 = 0;
+	public int shadowColor = 0;
 
 	@OriginalMember(owner = "client!nk", name = "xb", descriptor = "I")
-	public int anInt4274 = 0;
+	public int modelYAngle = 0;
 
 	@OriginalMember(owner = "client!nk", name = "db", descriptor = "B")
-	public byte aByte44 = 0;
+	public byte dynamicHeightValue = 0;
 
 	@OriginalMember(owner = "client!nk", name = "cb", descriptor = "I")
-	public int anInt4261 = 0;
+	public int height = 0;
 
 	@OriginalMember(owner = "client!nk", name = "mb", descriptor = "I")
 	public int anInt4269 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "J", descriptor = "Z")
-	public boolean aBoolean283 = false;
+	public boolean hasAlpha = false;
 
 	@OriginalMember(owner = "client!nk", name = "Fb", descriptor = "I")
 	public int anInt4282 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "A", descriptor = "I")
-	public int anInt4250 = 0;
+	public int modelZOffset = 0;
 
 	@OriginalMember(owner = "client!nk", name = "bc", descriptor = "I")
-	public int anInt4293 = 0;
+	public int valign = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Lb", descriptor = "I")
 	public int anInt4286 = -1;
@@ -250,37 +250,37 @@ public final class Class161 {
 	public int anInt4251 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Bb", descriptor = "I")
-	public int anInt4278 = 0;
+	public int modelXOffset = 0;
 
 	@OriginalMember(owner = "client!nk", name = "f", descriptor = "I")
 	public int anInt4238 = -1;
 
 	@OriginalMember(owner = "client!nk", name = "Rb", descriptor = "I")
-	public int anInt4289 = 0;
+	public int baseHeight = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Cb", descriptor = "I")
-	public int anInt4279 = 0;
+	public int outlineThickness = 0;
 
 	@OriginalMember(owner = "client!nk", name = "oc", descriptor = "S")
 	public short aShort62 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "cc", descriptor = "I")
-	public int anInt4294 = 0;
+	public int baseWidth = 0;
 
 	@OriginalMember(owner = "client!nk", name = "kc", descriptor = "Ljava/lang/String;")
 	public String aString45 = "";
 
 	@OriginalMember(owner = "client!nk", name = "mc", descriptor = "I")
-	public int anInt4300 = -1;
+	public int objId = -1;
 
 	@OriginalMember(owner = "client!nk", name = "Sb", descriptor = "I")
-	public int anInt4290 = 0;
+	public int color = 0;
 
 	@OriginalMember(owner = "client!nk", name = "q", descriptor = "I")
 	public int anInt4244 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "lc", descriptor = "I")
-	public int anInt4299 = -1;
+	public int modelSeqId = -1;
 
 	@OriginalMember(owner = "client!nk", name = "l", descriptor = "Z")
 	public boolean aBoolean280 = false;
@@ -289,7 +289,7 @@ public final class Class161 {
 	public ServerActiveProperties aClass2_Sub10_1 = Static367.aClass2_Sub10_2;
 
 	@OriginalMember(owner = "client!nk", name = "ic", descriptor = "I")
-	public int anInt4298 = 0;
+	public int halign = 0;
 
 	@OriginalMember(owner = "client!nk", name = "W", descriptor = "I")
 	public int anInt4260 = -1;
@@ -298,19 +298,19 @@ public final class Class161 {
 	public String aString44 = "";
 
 	@OriginalMember(owner = "client!nk", name = "Pb", descriptor = "Z")
-	public boolean aBoolean286 = false;
+	public boolean spriteTiling = false;
 
 	@OriginalMember(owner = "client!nk", name = "dc", descriptor = "I")
-	public int anInt4295 = -1;
+	public int spriteId = -1;
 
 	@OriginalMember(owner = "client!nk", name = "Wb", descriptor = "I")
-	public int anInt4291 = 1;
+	public int aspectHeight = 1;
 
 	@OriginalMember(owner = "client!nk", name = "vb", descriptor = "I")
 	public int anInt4273 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "kb", descriptor = "Z")
-	public boolean aBoolean284 = false;
+	public boolean hidden = false;
 
 	@OriginalMember(owner = "client!nk", name = "v", descriptor = "I")
 	public int anInt4247 = 0;
@@ -319,7 +319,7 @@ public final class Class161 {
 	public int anInt4283 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Eb", descriptor = "I")
-	public int anInt4281 = 0;
+	public int scrollMaxH = 0;
 
 	@OriginalMember(owner = "client!nk", name = "yc", descriptor = "I")
 	public int anInt4306 = 2;
@@ -328,10 +328,10 @@ public final class Class161 {
 	public int anInt4305 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "S", descriptor = "I")
-	public int anInt4258 = 0;
+	public int scrollX = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Jc", descriptor = "I")
-	public int anInt4311 = 0;
+	public int alpha = 0;
 
 	@OriginalMember(owner = "client!nk", name = "K", descriptor = "I")
 	public int anInt4253 = 0;
@@ -343,13 +343,13 @@ public final class Class161 {
 	public int anInt4304 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Qb", descriptor = "I")
-	public int anInt4288 = 1;
+	public int modelType = 1;
 
 	@OriginalMember(owner = "client!nk", name = "e", descriptor = "I")
-	public int anInt4237 = 1;
+	public int lineWidth = 1;
 
 	@OriginalMember(owner = "client!nk", name = "Dc", descriptor = "I")
-	public int anInt4308 = 0;
+	public int angle2d = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Nc", descriptor = "I")
 	public int anInt4312 = 0;
@@ -358,19 +358,19 @@ public final class Class161 {
 	public boolean aBoolean289 = false;
 
 	@OriginalMember(owner = "client!nk", name = "ib", descriptor = "I")
-	public int anInt4266 = 0;
+	public int scrollMaxV = 0;
 
 	@OriginalMember(owner = "client!nk", name = "rc", descriptor = "B")
-	public byte aByte45 = 0;
+	public byte xMode = 0;
 
 	@OriginalMember(owner = "client!nk", name = "y", descriptor = "I")
-	public int anInt4249 = 0;
+	public int baseY = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Kc", descriptor = "B")
-	public byte aByte46 = 0;
+	public byte yMode = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Lc", descriptor = "Z")
-	public boolean aBoolean291 = false;
+	public boolean shadowed = false;
 
 	@OriginalMember(owner = "client!nk", name = "h", descriptor = "I")
 	public int anInt4239 = 0;
@@ -379,7 +379,7 @@ public final class Class161 {
 	public boolean aBoolean292 = false;
 
 	@OriginalMember(owner = "client!nk", name = "Oc", descriptor = "Z")
-	public boolean aBoolean293 = false;
+	public boolean filled = false;
 
 	@OriginalMember(owner = "client!nk", name = "g", descriptor = "S")
 	public short aShort61 = 3000;
@@ -391,43 +391,43 @@ public final class Class161 {
 	public int anInt4307 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Yc", descriptor = "I")
-	public int anInt4317 = -1;
+	public int id = -1;
 
 	@OriginalMember(owner = "client!nk", name = "Wc", descriptor = "I")
 	public int anInt4316 = 1;
 
 	@OriginalMember(owner = "client!nk", name = "Xc", descriptor = "Ljava/lang/String;")
-	public String aString47 = "";
+	public String text = "";
 
 	@OriginalMember(owner = "client!nk", name = "Sc", descriptor = "B")
-	public byte aByte47 = 0;
+	public byte dynamicWidthValue = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Ib", descriptor = "I")
 	public int anInt4285 = Static164.anInt3138;
 
 	@OriginalMember(owner = "client!nk", name = "i", descriptor = "I")
-	public int anInt4240 = 0;
+	public int objCount = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Hc", descriptor = "Z")
-	public boolean aBoolean290 = false;
+	public boolean modelOrtho = false;
 
 	@OriginalMember(owner = "client!nk", name = "Qc", descriptor = "I")
 	public int anInt4314 = -1;
 
 	@OriginalMember(owner = "client!nk", name = "ad", descriptor = "Z")
-	public boolean aBoolean295 = false;
+	public boolean noClickThrough = false;
 
 	@OriginalMember(owner = "client!nk", name = "hc", descriptor = "I")
-	public int anInt4297 = -1;
+	public int activeComponentId = -1;
 
 	@OriginalMember(owner = "client!nk", name = "Zc", descriptor = "I")
-	public int anInt4318 = -1;
+	public int font = -1;
 
 	@OriginalMember(owner = "client!nk", name = "bd", descriptor = "I")
-	public int anInt4319 = 0;
+	public int modelYOffset = 0;
 
 	@OriginalMember(owner = "client!nk", name = "tc", descriptor = "I")
-	public int anInt4303 = 0;
+	public int vpadding = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Yb", descriptor = "Z")
 	public boolean aBoolean287 = false;
@@ -436,30 +436,30 @@ public final class Class161 {
 	public boolean aBoolean296 = false;
 
 	@OriginalMember(owner = "client!nk", name = "dd", descriptor = "I")
-	public int anInt4320 = 0;
+	public int modelXAngle = 0;
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(Lclient!wm;B)Lclient!ur;")
 	public BitmapFont method4101(@OriginalArg(0) Class19 arg0) {
 		Static86.aBoolean133 = false;
-		if (this.anInt4318 == -1) {
+		if (this.font == -1) {
 			return null;
 		}
-		@Pc(26) BitmapFont local26 = (BitmapFont) Static333.aClass98_65.get((long) this.anInt4318);
+		@Pc(26) BitmapFont local26 = (BitmapFont) Static333.aClass98_65.get((long) this.font);
 		if (local26 != null) {
 			return local26;
 		}
-		@Pc(35) Class48[] local35 = Static396.method1678(Static79.aClass197_19, this.anInt4318);
+		@Pc(35) Class48[] local35 = Static396.method1678(Static79.aClass197_19, this.font);
 		if (local35 == null) {
 			Static86.aBoolean133 = true;
 			return null;
 		}
-		@Pc(47) Class239 local47 = Static218.method1088(this.anInt4318, Static391.aClass197_95);
+		@Pc(47) Class239 local47 = Static218.method1088(this.font, Static391.aClass197_95);
 		if (local47 == null) {
 			Static86.aBoolean133 = true;
 			return null;
 		} else {
 			local26 = arg0.method2857(local47, local35);
-			Static333.aClass98_65.put((long) this.anInt4318, local26);
+			Static333.aClass98_65.put((long) this.font, local26);
 			return local26;
 		}
 	}
@@ -481,28 +481,28 @@ public final class Class161 {
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(IILclient!io;Lclient!wl;ILclient!nb;Lclient!ak;Lclient!jo;Lclient!ta;ILclient!gp;ILclient!e;Lclient!wm;)Lclient!gn;")
 	public Model method4105(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) ObjTypeList arg2, @OriginalArg(3) Interface11 arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) BasTypeList arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) NpcTypeList arg7, @OriginalArg(9) int arg8, @OriginalArg(10) SeqTypeList arg9, @OriginalArg(11) int arg10, @OriginalArg(12) IdkTypeList arg11, @OriginalArg(13) Class19 arg12) {
 		Static86.aBoolean133 = false;
-		if (this.anInt4288 == 0) {
+		if (this.modelType == 0) {
 			return null;
-		} else if (this.anInt4288 == 1 && this.anInt4313 == -1) {
+		} else if (this.modelType == 1 && this.modelId == -1) {
 			return null;
 		} else {
 			@Pc(61) Model local61;
-			if (this.anInt4288 == 1) {
+			if (this.modelType == 1) {
 				if (arg4 != null) {
 					arg10 = arg4.method3990(arg8, true, arg1) | 0x400;
 				}
-				local61 = (Model) Static124.aClass98_63.get((long) ((this.anInt4288 << 16) + (arg12.anInt2836 << 29) + this.anInt4313));
+				local61 = (Model) Static124.aClass98_63.get((long) ((this.modelType << 16) + (arg12.anInt2836 << 29) + this.modelId));
 				if (local61 == null || arg12.method2863(local61.method3827(), arg10) != 0) {
 					if (local61 != null) {
 						arg10 = arg12.method2806(arg10, local61.method3827());
 					}
-					@Pc(87) Class185 local87 = Static298.method2426(Static142.aClass197_37, this.anInt4313);
+					@Pc(87) Class185 local87 = Static298.method2426(Static142.aClass197_37, this.modelId);
 					if (local87 == null) {
 						Static86.aBoolean133 = true;
 						return null;
 					}
 					local61 = arg12.method2864(local87, arg10, Static323.anInt6062, 64, 768);
-					Static124.aClass98_63.put((long) (this.anInt4313 + (this.anInt4288 << 16)), local61);
+					Static124.aClass98_63.put((long) (this.modelId + (this.modelType << 16)), local61);
 				}
 				if (arg4 != null) {
 					local61 = arg4.method3986(local61, arg8, arg10, arg0, arg1);
@@ -511,15 +511,15 @@ public final class Class161 {
 				return local61;
 			}
 			@Pc(151) Model local151;
-			if (this.anInt4288 == 2) {
-				local151 = arg7.method5570(this.anInt4313).method2088(arg0, arg1, arg8, arg12, arg4, arg3, arg9);
+			if (this.modelType == 2) {
+				local151 = arg7.get(this.modelId).method2088(arg0, arg1, arg8, arg12, arg4, arg3, arg9);
 				if (local151 == null) {
 					Static86.aBoolean133 = true;
 					return null;
 				} else {
 					return local151;
 				}
-			} else if (this.anInt4288 == 3) {
+			} else if (this.modelType == 3) {
 				if (arg6 == null) {
 					return null;
 				}
@@ -530,8 +530,8 @@ public final class Class161 {
 				} else {
 					return local151;
 				}
-			} else if (this.anInt4288 == 4) {
-				@Pc(205) ObjType local205 = arg2.get(this.anInt4313);
+			} else if (this.modelType == 4) {
+				@Pc(205) ObjType local205 = arg2.get(this.modelId);
 				local61 = local205.method4776(arg0, 1024, arg1, arg4, arg12, 10, arg6, arg8);
 				if (local61 == null) {
 					Static86.aBoolean133 = true;
@@ -539,21 +539,21 @@ public final class Class161 {
 				} else {
 					return local61;
 				}
-			} else if (this.anInt4288 == 6) {
-				local151 = arg7.method5570(this.anInt4313).getBodyModel(arg5, arg8, arg4, arg12, arg9, 0, 0, 0, null, 1024, null, arg0, arg3, arg1);
+			} else if (this.modelType == 6) {
+				local151 = arg7.get(this.modelId).getBodyModel(arg5, arg8, arg4, arg12, arg9, 0, 0, 0, null, 1024, null, arg0, arg3, arg1);
 				if (local151 == null) {
 					Static86.aBoolean133 = true;
 					return null;
 				} else {
 					return local151;
 				}
-			} else if (this.anInt4288 != 7) {
+			} else if (this.modelType != 7) {
 				return null;
 			} else if (arg6 == null) {
 				return null;
 			} else {
-				@Pc(276) int local276 = this.anInt4313 >>> 16;
-				@Pc(281) int local281 = this.anInt4313 & 0xFFFF;
+				@Pc(276) int local276 = this.modelId >>> 16;
+				@Pc(281) int local281 = this.modelId & 0xFFFF;
 				@Pc(284) int local284 = this.anInt4236;
 				@Pc(301) Model local301 = arg6.method3185(local284, local281, arg11, arg4, arg1, local276, arg9, arg12, arg8, arg0);
 				if (local301 == null) {
@@ -569,93 +569,93 @@ public final class Class161 {
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(ILclient!bt;)V")
 	public void method4106(@OriginalArg(1) Buffer arg0) {
 		arg0.pos++;
-		this.anInt4272 = arg0.g1();
-		if ((this.anInt4272 & 0x80) != 0) {
-			this.anInt4272 &= 0x7F;
+		this.type = arg0.g1();
+		if ((this.type & 0x80) != 0) {
+			this.type &= 0x7F;
 			this.aString43 = arg0.gjstr();
 		}
 		this.anInt4273 = arg0.g2();
-		this.anInt4241 = arg0.g2s();
-		this.anInt4249 = arg0.g2s();
-		this.anInt4294 = arg0.g2();
-		this.anInt4289 = arg0.g2();
-		this.aByte47 = arg0.g1b();
-		this.aByte44 = arg0.g1b();
-		this.aByte45 = arg0.g1b();
-		this.aByte46 = arg0.g1b();
+		this.baseX = arg0.g2s();
+		this.baseY = arg0.g2s();
+		this.baseWidth = arg0.g2();
+		this.baseHeight = arg0.g2();
+		this.dynamicWidthValue = arg0.g1b();
+		this.dynamicHeightValue = arg0.g1b();
+		this.xMode = arg0.g1b();
+		this.yMode = arg0.g1b();
 		this.anInt4275 = arg0.g2();
 		if (this.anInt4275 == 65535) {
 			this.anInt4275 = -1;
 		} else {
-			this.anInt4275 += this.anInt4317 & 0xFFFF0000;
+			this.anInt4275 += this.id & 0xFFFF0000;
 		}
-		this.aBoolean284 = arg0.g1() == 1;
-		if (this.anInt4272 == 0) {
-			this.anInt4281 = arg0.g2();
-			this.anInt4266 = arg0.g2();
-			this.aBoolean295 = arg0.g1() == 1;
+		this.hidden = arg0.g1() == 1;
+		if (this.type == 0) {
+			this.scrollMaxH = arg0.g2();
+			this.scrollMaxV = arg0.g2();
+			this.noClickThrough = arg0.g1() == 1;
 		}
 		@Pc(155) int local155;
-		if (this.anInt4272 == 5) {
-			this.anInt4295 = arg0.g4();
-			this.anInt4308 = arg0.g2();
+		if (this.type == 5) {
+			this.spriteId = arg0.g4();
+			this.angle2d = arg0.g2();
 			local155 = arg0.g1();
-			this.aBoolean283 = (local155 & 0x2) != 0;
-			this.aBoolean286 = (local155 & 0x1) != 0;
-			this.anInt4311 = arg0.g1();
-			this.anInt4279 = arg0.g1();
-			this.anInt4252 = arg0.g4();
-			this.aBoolean281 = arg0.g1() == 1;
-			this.aBoolean285 = arg0.g1() == 1;
-			this.anInt4290 = arg0.g4();
+			this.hasAlpha = (local155 & 0x2) != 0;
+			this.spriteTiling = (local155 & 0x1) != 0;
+			this.alpha = arg0.g1();
+			this.outlineThickness = arg0.g1();
+			this.shadowColor = arg0.g4();
+			this.vFlip = arg0.g1() == 1;
+			this.hFlip = arg0.g1() == 1;
+			this.color = arg0.g4();
 		}
-		if (this.anInt4272 == 6) {
-			this.anInt4288 = 1;
-			this.anInt4313 = arg0.g2();
-			if (this.anInt4313 == 65535) {
-				this.anInt4313 = -1;
+		if (this.type == 6) {
+			this.modelType = 1;
+			this.modelId = arg0.g2();
+			if (this.modelId == 65535) {
+				this.modelId = -1;
 			}
 			this.anInt4307 = arg0.g2s();
 			this.anInt4253 = arg0.g2s();
-			this.anInt4320 = arg0.g2();
-			this.anInt4274 = arg0.g2();
-			this.anInt4319 = arg0.g2();
-			this.anInt4255 = arg0.g2();
-			this.anInt4299 = arg0.g2();
-			if (this.anInt4299 == 65535) {
-				this.anInt4299 = -1;
+			this.modelXAngle = arg0.g2();
+			this.modelYAngle = arg0.g2();
+			this.modelYOffset = arg0.g2();
+			this.modelZoom = arg0.g2();
+			this.modelSeqId = arg0.g2();
+			if (this.modelSeqId == 65535) {
+				this.modelSeqId = -1;
 			}
-			this.aBoolean290 = arg0.g1() == 1;
+			this.modelOrtho = arg0.g1() == 1;
 			this.aShort62 = (short) arg0.g2();
 			this.aShort61 = (short) arg0.g2();
 			this.aBoolean289 = arg0.g1() == 1;
-			if (this.aByte47 != 0) {
+			if (this.dynamicWidthValue != 0) {
 				this.anInt4251 = arg0.g2();
 			}
-			if (this.aByte44 != 0) {
+			if (this.dynamicHeightValue != 0) {
 				this.anInt4269 = arg0.g2();
 			}
 		}
-		if (this.anInt4272 == 4) {
-			this.anInt4318 = arg0.g2();
-			if (this.anInt4318 == 65535) {
-				this.anInt4318 = -1;
+		if (this.type == 4) {
+			this.font = arg0.g2();
+			if (this.font == 65535) {
+				this.font = -1;
 			}
-			this.aString47 = arg0.gjstr();
-			this.anInt4303 = arg0.g1();
-			this.anInt4298 = arg0.g1();
-			this.anInt4293 = arg0.g1();
-			this.aBoolean291 = arg0.g1() == 1;
-			this.anInt4290 = arg0.g4();
+			this.text = arg0.gjstr();
+			this.vpadding = arg0.g1();
+			this.halign = arg0.g1();
+			this.valign = arg0.g1();
+			this.shadowed = arg0.g1() == 1;
+			this.color = arg0.g4();
 		}
-		if (this.anInt4272 == 3) {
-			this.anInt4290 = arg0.g4();
-			this.aBoolean293 = arg0.g1() == 1;
-			this.anInt4311 = arg0.g1();
+		if (this.type == 3) {
+			this.color = arg0.g4();
+			this.filled = arg0.g1() == 1;
+			this.alpha = arg0.g1();
 		}
-		if (this.anInt4272 == 9) {
-			this.anInt4237 = arg0.g1();
-			this.anInt4290 = arg0.g4();
+		if (this.type == 9) {
+			this.lineWidth = arg0.g1();
+			this.color = arg0.g4();
 			this.aBoolean292 = arg0.g1() == 1;
 		}
 		local155 = arg0.ig3();
@@ -790,11 +790,11 @@ public final class Class161 {
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(BLclient!wm;)Lclient!kf;")
 	public Class78 method4109(@OriginalArg(1) Class19 arg0) {
-		@Pc(19) Class78 local19 = (Class78) Static297.aClass98_44.get((long) this.anInt4317);
+		@Pc(19) Class78 local19 = (Class78) Static297.aClass98_44.get((long) this.id);
 		if (local19 != null) {
 			return local19;
 		}
-		@Pc(29) Class48 local29 = Static396.method1682(Static79.aClass197_19, this.anInt4295, 0);
+		@Pc(29) Class48 local29 = Static396.method1682(Static79.aClass197_19, this.spriteId, 0);
 		if (local29 == null) {
 			return null;
 		}
@@ -821,7 +821,7 @@ public final class Class161 {
 			this.anIntArray280[local61 + local29.anInt1530] = local97 - local65;
 		}
 		local19 = arg0.method2826(local42, local51, this.anIntArray282, this.anIntArray280);
-		Static297.aClass98_44.put((long) this.anInt4317, local19);
+		Static297.aClass98_44.put((long) this.id, local19);
 		return local19;
 	}
 
@@ -859,35 +859,35 @@ public final class Class161 {
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(ZLclient!wm;)Lclient!jd;")
 	public Sprite method4113(@OriginalArg(1) Class19 arg0) {
 		Static86.aBoolean133 = false;
-		@Pc(48) long local48 = ((this.aBoolean281 ? 1L : 0L) << 38) + ((this.aBoolean283 ? 1L : 0L) << 35) + (long) this.anInt4295 + ((long) this.anInt4279 << 36) + ((this.aBoolean285 ? 1L : 0L) << 39) + ((long) this.anInt4252 << 40);
+		@Pc(48) long local48 = ((this.vFlip ? 1L : 0L) << 38) + ((this.hasAlpha ? 1L : 0L) << 35) + (long) this.spriteId + ((long) this.outlineThickness << 36) + ((this.hFlip ? 1L : 0L) << 39) + ((long) this.shadowColor << 40);
 		@Pc(54) Sprite local54 = (Sprite) Static335.aClass98_57.get(local48);
 		if (local54 != null) {
 			return local54;
 		}
-		@Pc(64) Class48 local64 = Static396.method1682(Static79.aClass197_19, this.anInt4295, 0);
+		@Pc(64) Class48 local64 = Static396.method1682(Static79.aClass197_19, this.spriteId, 0);
 		if (local64 == null) {
 			Static86.aBoolean133 = true;
 			return null;
 		}
-		if (this.aBoolean281) {
+		if (this.vFlip) {
 			local64.method1687();
 		}
-		if (this.aBoolean285) {
+		if (this.hFlip) {
 			local64.method1684();
 		}
-		if (this.anInt4279 > 0) {
-			local64.method1686(this.anInt4279);
-		} else if (this.anInt4252 != 0) {
+		if (this.outlineThickness > 0) {
+			local64.method1686(this.outlineThickness);
+		} else if (this.shadowColor != 0) {
 			local64.method1686(1);
 		}
-		if (this.anInt4279 >= 1) {
+		if (this.outlineThickness >= 1) {
 			local64.method1674(1);
 		}
-		if (this.anInt4279 >= 2) {
+		if (this.outlineThickness >= 2) {
 			local64.method1674(16777215);
 		}
-		if (this.anInt4252 != 0) {
-			local64.method1677(this.anInt4252 | 0xFF000000);
+		if (this.shadowColor != 0) {
+			local64.method1677(this.shadowColor | 0xFF000000);
 		}
 		local54 = arg0.method2891(local64);
 		Static335.aClass98_57.put(local48, local54);

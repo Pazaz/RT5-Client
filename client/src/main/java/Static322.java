@@ -22,12 +22,12 @@ public final class Static322 {
 
 	@OriginalMember(owner = "client!so", name = "a", descriptor = "(ZIIIIIIII)Z")
 	public static boolean method5482(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7) {
-		@Pc(13) int local13 = Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueX[0];
-		@Pc(18) int local18 = Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueZ[0];
+		@Pc(13) int local13 = PlayerList.self.movementQueueX[0];
+		@Pc(18) int local18 = PlayerList.self.movementQueueZ[0];
 		if (local13 < 0 || Static373.anInt7033 <= local13 || local18 < 0 || Static242.anInt4449 <= local18) {
 			return false;
 		} else if (arg5 >= 0 && arg5 < Static373.anInt7033 && arg2 >= 0 && arg2 < Static242.anInt4449) {
-			@Pc(88) int local88 = Static141.method2654(arg0, Static52.anIntArray99, arg6, arg1, arg7, arg3, Static171.aClass46Array1[Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78], local13, arg4, arg5, Static59.anIntArray105, Static17.aClass11_Sub5_Sub2_Sub1_3.getSize(), arg2, local18);
+			@Pc(88) int local88 = Static141.method2654(arg0, Static52.anIntArray99, arg6, arg1, arg7, arg3, Static171.aClass46Array1[PlayerList.self.plane], local13, arg4, arg5, Static59.anIntArray105, PlayerList.self.getSize(), arg2, local18);
 			if (local88 < 1) {
 				return false;
 			}

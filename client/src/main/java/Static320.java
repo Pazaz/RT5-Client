@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static320 {
 
-	@OriginalMember(owner = "client!sm", name = "D", descriptor = "I")
-	public static int anInt6007;
-
 	@OriginalMember(owner = "client!sm", name = "t", descriptor = "Lclient!bc;")
 	public static final Class16 aClass16_8 = new Class16("", 13);
 

@@ -15,11 +15,11 @@ public final class Static191 {
 		if (arg0 instanceof Npc) {
 			@Pc(5) Npc local5 = (Npc) arg0;
 			if (local5.type != null) {
-				Static241.method4191(local5, local5.aByte78 != Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78);
+				Static241.method4191(local5, local5.plane != PlayerList.self.plane);
 			}
 		} else if (arg0 instanceof Player) {
 			@Pc(27) Player local27 = (Player) arg0;
-			Static184.method3397(Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 != local27.aByte78, local27);
+			Static184.method3397(PlayerList.self.plane != local27.plane, local27);
 		}
 	}
 }

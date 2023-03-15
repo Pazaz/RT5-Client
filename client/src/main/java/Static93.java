@@ -37,7 +37,7 @@ public final class Static93 {
 			arg0.zFine = arg0.movementQueueZ[0] * 128 + arg0.getSize() * 64;
 			arg0.method4331();
 		}
-		if (Static17.aClass11_Sub5_Sub2_Sub1_3 == arg0 && (arg0.xFine < 1536 || arg0.zFine < 1536 || Static373.anInt7033 * 128 - 1536 <= arg0.xFine || arg0.zFine >= (Static242.anInt4449 - 12) * 128)) {
+		if (PlayerList.self == arg0 && (arg0.xFine < 1536 || arg0.zFine < 1536 || Static373.anInt7033 * 128 - 1536 <= arg0.xFine || arg0.zFine >= (Static242.anInt4449 - 12) * 128)) {
 			arg0.anInt4594 = -1;
 			arg0.anInt4597 = -1;
 			local9 = 0;

@@ -9,9 +9,6 @@ public final class Static196 {
 	@OriginalMember(owner = "client!lh", name = "d", descriptor = "[Lclient!wk;")
 	public static final SynthSound[] aClass247Array2 = new SynthSound[50];
 
-	@OriginalMember(owner = "client!lh", name = "e", descriptor = "Lclient!gd;")
-	public static final LocalizedString aClass79_70 = new LocalizedString("scroll:", "scrollen:", "déroulement:", "rolagem:");
-
 	@OriginalMember(owner = "client!lh", name = "f", descriptor = "I")
 	public static int anInt3317 = -1;
 

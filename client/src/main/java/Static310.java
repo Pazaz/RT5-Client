@@ -12,7 +12,7 @@ public final class Static310 {
 
 	@OriginalMember(owner = "client!rt", name = "a", descriptor = "(I)V")
 	public static void method5283() {
-		Static23.aClass2_Sub5_1 = new Class2_Sub5(Static259.aClass79_105.method2267(client.language), "", Static107.anInt2219, 1001, -1, 0L, 0, 0, true, false);
+		Static23.aClass2_Sub5_1 = new Class2_Sub5(Static259.aClass79_105.getLocalized(client.language), "", Static107.anInt2219, 1001, -1, 0L, 0, 0, true, false);
 	}
 
 	@OriginalMember(owner = "client!rt", name = "a", descriptor = "(IIILclient!id;)J")
@@ -20,7 +20,7 @@ public final class Static310 {
 		@Pc(13) long local13 = 4194304L;
 		@Pc(15) long local15 = 2147483648L;
 		@Pc(17) long local17 = Long.MIN_VALUE;
-		@Pc(24) LocType local24 = client.LocTypes.method5163(arg2.method6085());
+		@Pc(24) LocType local24 = client.LocTypes.get(arg2.method6085());
 		@Pc(45) long local45 = (long) ((arg2.method6081() | 0x10000) << 14 | arg1 | arg0 << 7 | arg2.method6084() << 20);
 		if (local24.anInt1335 == 0) {
 			local45 |= local17;

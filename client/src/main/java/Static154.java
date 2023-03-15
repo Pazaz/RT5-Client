@@ -16,9 +16,6 @@ public final class Static154 {
 	@OriginalMember(owner = "client!is", name = "k", descriptor = "I")
 	public static int rect_debug = 0;
 
-	@OriginalMember(owner = "client!is", name = "l", descriptor = "Lclient!gd;")
-	public static final LocalizedString aClass79_66 = new LocalizedString("cyan:", "blaugrün:", "cyan:", "cyan:");
-
 	@OriginalMember(owner = "client!is", name = "m", descriptor = "J")
 	public static long aLong89 = 0L;
 
@@ -47,21 +44,6 @@ public final class Static154 {
 		}
 	}
 
-	@OriginalMember(owner = "client!is", name = "a", descriptor = "(IZZ)I")
-	public static int method2784(@OriginalArg(0) int arg0) {
-		@Pc(14) Class2_Sub41 local14 = Static374.method6275(false, arg0);
-		if (local14 == null) {
-			return client.InvTypes.method1706(arg0).anInt2488;
-		}
-		@Pc(29) int local29 = 0;
-		for (@Pc(31) int local31 = 0; local31 < local14.anIntArray489.length; local31++) {
-			if (local14.anIntArray489[local31] == -1) {
-				local29++;
-			}
-		}
-		return local29 + client.InvTypes.method1706(arg0).anInt2488 - local14.anIntArray489.length;
-	}
-
 	@OriginalMember(owner = "client!is", name = "a", descriptor = "([I[I[IILclient!nh;)V")
 	public static void method2785(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int[] arg2, @OriginalArg(4) Player arg3) {
 		for (@Pc(3) int local3 = 0; local3 < arg0.length; local3++) {
@@ -86,7 +68,7 @@ public final class Static154 {
 									local54.anInt625 = 0;
 									local54.anInt627 = 1;
 									local54.anInt626 = 0;
-									Static1.method4(local46, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg3, arg3.aByte78, arg3.xFine, arg3.zFine, 0);
+									Static1.method4(local46, PlayerList.self == arg3, arg3.plane, arg3.xFine, arg3.zFine, 0);
 								} else if (local49 == 2) {
 									local54.anInt626 = 0;
 								}
@@ -102,7 +84,7 @@ public final class Static154 {
 							local54.anInt626 = 0;
 							local54.anInt625 = 0;
 							local54.anInt629 = local19;
-							Static1.method4(local46, Static17.aClass11_Sub5_Sub2_Sub1_3 == arg3, arg3.aByte78, arg3.xFine, arg3.zFine, 0);
+							Static1.method4(local46, PlayerList.self == arg3, arg3.plane, arg3.xFine, arg3.zFine, 0);
 						}
 					}
 				}

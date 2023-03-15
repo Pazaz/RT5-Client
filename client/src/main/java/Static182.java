@@ -18,8 +18,8 @@ public final class Static182 {
 
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "(IJ)V")
 	public static void method3386(@OriginalArg(1) long arg0) {
-		@Pc(10) int local10 = Static17.aClass11_Sub5_Sub2_Sub1_3.xFine + Static24.anInt642;
-		@Pc(15) int local15 = Static14.anInt327 + Static17.aClass11_Sub5_Sub2_Sub1_3.zFine;
+		@Pc(10) int local10 = PlayerList.self.xFine + Static24.anInt642;
+		@Pc(15) int local15 = Static14.anInt327 + PlayerList.self.zFine;
 		if (Static288.anInt5463 - local10 < -500 || Static288.anInt5463 - local10 > 500 || Static62.anInt2395 - local15 < -500 || Static62.anInt2395 - local15 > 500) {
 			Static288.anInt5463 = local10;
 			Static62.anInt2395 = local15;
@@ -88,7 +88,7 @@ public final class Static182 {
 		Protocol.outboundBuffer.pos = 0;
 		Protocol.packetSize = 0;
 		Protocol.packet3 = null;
-		Static151.rebootTimer = 0;
+		Player.rebootTimer = 0;
 		Protocol.packet1 = null;
 		Protocol.packet = null;
 		Protocol.anInt4955 = 0;
@@ -99,7 +99,7 @@ public final class Static182 {
 		for (@Pc(35) int local35 = 0; local35 < 2048; local35++) {
 			Static12.aClass11_Sub5_Sub2_Sub1Array1[local35] = null;
 		}
-		Static17.aClass11_Sub5_Sub2_Sub1_3 = null;
+		PlayerList.self = null;
 		for (@Pc(51) int local51 = 0; local51 < NpcList.npcs.length; local51++) {
 			@Pc(57) Npc local57 = NpcList.npcs[local51];
 			if (local57 != null) {

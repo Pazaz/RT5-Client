@@ -29,11 +29,11 @@ public final class Static115 {
 		for (@Pc(3) int local3 = 0; local3 < arg1.length; local3++) {
 			@Pc(9) Class161 local9 = arg1[local3];
 			if (local9 != null) {
-				if (local9.anInt4272 == 0) {
-					if (local9.aClass161Array2 != null) {
-						method3847(arg0, local9.aClass161Array2);
+				if (local9.type == 0) {
+					if (local9.activeComponents != null) {
+						method3847(arg0, local9.activeComponents);
 					}
-					@Pc(30) Class2_Sub7 local30 = (Class2_Sub7) Static329.aClass4_130.get((long) local9.anInt4317);
+					@Pc(30) Class2_Sub7 local30 = (Class2_Sub7) Static329.aClass4_130.get((long) local9.id);
 					if (local30 != null) {
 						Static392.method6460(local30.anInt1370, arg0);
 					}
@@ -46,9 +46,9 @@ public final class Static115 {
 					ScriptRunner.method3591(local49);
 				}
 				if (arg0 == 1 && local9.anObjectArray11 != null) {
-					if (local9.anInt4297 >= 0) {
-						@Pc(75) Class161 local75 = Static6.method140(local9.anInt4317);
-						if (local75 == null || local75.aClass161Array2 == null || local75.aClass161Array2.length <= local9.anInt4297 || local75.aClass161Array2[local9.anInt4297] != local9) {
+					if (local9.activeComponentId >= 0) {
+						@Pc(75) Class161 local75 = InterfaceList.getComponent(local9.id);
+						if (local75 == null || local75.activeComponents == null || local75.activeComponents.length <= local9.activeComponentId || local75.activeComponents[local9.activeComponentId] != local9) {
 							continue;
 						}
 					}

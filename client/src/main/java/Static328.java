@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static328 {
 
-	@OriginalMember(owner = "client!tb", name = "H", descriptor = "I")
-	public static int anInt6127;
-
 	@OriginalMember(owner = "client!tb", name = "B", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_127 = new LocalizedString(" more options", " weitere Optionen", " autres options", " mais opções");
 

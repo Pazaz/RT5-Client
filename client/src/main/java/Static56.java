@@ -15,8 +15,8 @@ public final class Static56 {
 		if (client.gameState == 10 || client.gameState == 28) {
 			Static387.method2835(5000, Static136.anInt6778 >> 10, Static211.anInt3777 >> 10);
 		} else {
-			@Pc(31) int local31 = Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueX[0] >> 3;
-			@Pc(38) int local38 = Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueZ[0] >> 3;
+			@Pc(31) int local31 = PlayerList.self.movementQueueX[0] >> 3;
+			@Pc(38) int local38 = PlayerList.self.movementQueueZ[0] >> 3;
 			if (local31 >= 0 && local31 < Static373.anInt7033 >> 3 && local38 >= 0 && Static242.anInt4449 >> 3 > local38) {
 				Static387.method2835(5000, local31, local38);
 			} else {

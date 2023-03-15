@@ -29,15 +29,15 @@ public final class Static373 {
 		} else {
 			Static336.method5705(25);
 		}
-		Static351.method5857(Static276.aClass130_4, true, Static256.aClass79_102.method2267(client.language));
-		@Pc(59) int local59 = Static164.anInt3140;
-		Static164.anInt3140 = (Static105.anInt2187 - (anInt7033 >> 4)) * 8;
-		@Pc(70) int local70 = Static148.anInt2719;
-		Static148.anInt2719 = (Static9.anInt212 - (Static242.anInt4449 >> 4)) * 8;
+		Static351.method5857(Static276.aClass130_4, true, Static256.aClass79_102.getLocalized(client.language));
+		@Pc(59) int local59 = Camera.originX;
+		Camera.originX = (Static105.anInt2187 - (anInt7033 >> 4)) * 8;
+		@Pc(70) int local70 = Camera.originZ;
+		Camera.originZ = (Static9.anInt212 - (Static242.anInt4449 >> 4)) * 8;
 		Static91.aClass2_Sub2_Sub17_1 = Static344.method5527(Static105.anInt2187 * 8, Static9.anInt212 * 8);
 		Static34.aClass103_3 = null;
-		@Pc(94) int local94 = Static164.anInt3140 - local59;
-		@Pc(99) int local99 = Static148.anInt2719 - local70;
+		@Pc(94) int local94 = Camera.originX - local59;
+		@Pc(99) int local99 = Camera.originZ - local70;
 		@Pc(103) int local103;
 		@Pc(113) int local113;
 		if (arg0) {

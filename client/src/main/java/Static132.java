@@ -31,8 +31,4 @@ public final class Static132 {
 		return null;
 	}
 
-	@OriginalMember(owner = "client!hk", name = "a", descriptor = "(ZLjava/lang/String;)Z")
-	public static boolean method2485(@OriginalArg(1) String arg0) {
-		return Static340.method5766(arg0);
-	}
 }

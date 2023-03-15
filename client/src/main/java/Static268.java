@@ -8,7 +8,4 @@ public final class Static268 {
 	@OriginalMember(owner = "client!pg", name = "S", descriptor = "I")
 	public static int anInt4959 = 0;
 
-	@OriginalMember(owner = "client!pg", name = "U", descriptor = "[I")
-	public static final int[] anIntArray338 = new int[25];
-
 }

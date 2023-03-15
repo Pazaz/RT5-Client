@@ -35,8 +35,8 @@ public final class Static71 {
 		} else if (arg0 instanceof Npc) {
 			@Pc(90) Npc local90 = (Npc) arg0;
 			if (local90.anInt4663 != -1 && (local90.anInt4643 == 0 || local90.anInt4641 > 0)) {
-				local54 = local90.xFine - (local90.anInt4663 - Static164.anInt3140 - Static164.anInt3140) * 64;
-				local61 = local90.zFine - (local90.anInt4657 - Static148.anInt2719 - Static148.anInt2719) * 64;
+				local54 = local90.xFine - (local90.anInt4663 - Camera.originX - Camera.originX) * 64;
+				local61 = local90.zFine - (local90.anInt4657 - Camera.originZ - Camera.originZ) * 64;
 				if (local54 != 0 || local61 != 0) {
 					local90.method4325((int) (Math.atan2((double) local54, (double) local61) * 2607.5945876176133D) & 0x3FFF);
 				}

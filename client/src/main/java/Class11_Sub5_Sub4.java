@@ -46,7 +46,7 @@ public final class Class11_Sub5_Sub4 extends Entity {
 			this.aClass157_3 = client.SeqTypes.method2371(local41);
 		}
 		if (arg2 == this.anInt6504) {
-			Static1.method4(this.aClass157_3, false, super.aByte78, super.xFine, super.zFine, this.anInt6509);
+			Static1.method4(this.aClass157_3, false, super.plane, super.xFine, super.zFine, this.anInt6509);
 		}
 	}
 
@@ -80,7 +80,7 @@ public final class Class11_Sub5_Sub4 extends Entity {
 		}
 		if (this.aClass12_Sub5_7 != null) {
 			this.aClass12_Sub5_7.method4357(arg1, (long) client.cycle, local6, local9);
-			this.aClass12_Sub5_7.method4361(super.aByte78, super.aShort103, super.aShort104, super.aShort101, super.aShort102);
+			this.aClass12_Sub5_7.method4361(super.plane, super.aShort103, super.aShort104, super.aShort101, super.aShort102);
 		}
 	}
 
@@ -144,7 +144,7 @@ public final class Class11_Sub5_Sub4 extends Entity {
 			}
 		}
 		if (!this.aBoolean445) {
-			Static1.method4(this.aClass157_3, false, super.aByte78, super.xFine, super.zFine, this.anInt6509);
+			Static1.method4(this.aClass157_3, false, super.plane, super.xFine, super.zFine, this.anInt6509);
 		}
 	}
 

@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static278 {
 
-	@OriginalMember(owner = "client!qb", name = "N", descriptor = "Lclient!gd;")
-	public static final LocalizedString aClass79_110 = new LocalizedString("purple:", "lila:", "violet:", "roxo:");
-
 	@OriginalMember(owner = "client!qb", name = "T", descriptor = "Z")
 	public static boolean aBoolean377 = false;
 
@@ -26,9 +23,4 @@ public final class Static278 {
 		return local10;
 	}
 
-	@OriginalMember(owner = "client!qb", name = "b", descriptor = "(II)V")
-	public static void method4723(@OriginalArg(1) int arg0) {
-		@Pc(12) DelayedStateChange local12 = Static316.method5413(6, arg0);
-		local12.method2312();
-	}
 }

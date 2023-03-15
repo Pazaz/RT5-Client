@@ -51,7 +51,7 @@ public final class Static158 {
 				for (@Pc(40) Class22 local40 = local28.aClass22_2; local40 != null; local40 = local40.aClass22_1) {
 					@Pc(44) Entity local44 = local40.aClass11_Sub5_1;
 					if (local44.aShort103 == arg0 && local44.aShort101 == arg1) {
-						local44.aByte78--;
+						local44.plane--;
 					}
 				}
 			}

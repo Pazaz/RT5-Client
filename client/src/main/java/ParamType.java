@@ -10,10 +10,10 @@ public final class ParamType {
 	private char aChar5;
 
 	@OriginalMember(owner = "client!vp", name = "d", descriptor = "Ljava/lang/String;")
-	public String aString69;
+	public String defaultString;
 
 	@OriginalMember(owner = "client!vp", name = "l", descriptor = "I")
-	public int anInt7023;
+	public int defaultInt;
 
 	@OriginalMember(owner = "client!vp", name = "j", descriptor = "Z")
 	public boolean aBoolean476 = true;
@@ -30,7 +30,7 @@ public final class ParamType {
 	}
 
 	@OriginalMember(owner = "client!vp", name = "b", descriptor = "(I)Z")
-	public boolean method6263() {
+	public boolean isString() {
 		return this.aChar5 == 's';
 	}
 
@@ -39,11 +39,11 @@ public final class ParamType {
 		if (arg0 == 1) {
 			this.aChar5 = Static78.method5698(arg1.g1b());
 		} else if (arg0 == 2) {
-			this.anInt7023 = arg1.g4();
+			this.defaultInt = arg1.g4();
 		} else if (arg0 == 4) {
 			this.aBoolean476 = false;
 		} else if (arg0 == 5) {
-			this.aString69 = arg1.gjstr();
+			this.defaultString = arg1.gjstr();
 		}
 	}
 }

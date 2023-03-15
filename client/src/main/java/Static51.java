@@ -10,9 +10,6 @@ public final class Static51 {
 	@OriginalMember(owner = "client!cu", name = "v", descriptor = "Lclient!on;")
 	public static Class14 aClass14_2;
 
-	@OriginalMember(owner = "client!cu", name = "u", descriptor = "Lclient!gd;")
-	public static final LocalizedString aClass79_28 = new LocalizedString("red:", "rot:", "rouge:", "vermelho:");
-
 	@OriginalMember(owner = "client!cu", name = "w", descriptor = "I")
 	public static int anInt1369 = 0;
 

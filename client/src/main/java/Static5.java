@@ -20,9 +20,6 @@ public final class Static5 {
 	@OriginalMember(owner = "client!ad", name = "p", descriptor = "J")
 	public static long aLong11 = 0L;
 
-	@OriginalMember(owner = "client!ad", name = "r", descriptor = "[I")
-	public static final int[] anIntArray3 = new int[] { 0, 1, 2, 3, 4, 5, 6, 14 };
-
 	@OriginalMember(owner = "client!ad", name = "w", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_2 = new LocalizedString("skill: ", "Fertigkeit: ", "compétence ", "habilidade: ");
 

@@ -13,20 +13,11 @@ public final class Static139 {
 	@OriginalMember(owner = "client!hs", name = "u", descriptor = "I")
 	public static int anInt2593 = -50;
 
-	@OriginalMember(owner = "client!hs", name = "x", descriptor = "Lclient!gd;")
-	public static final LocalizedString aClass79_62 = new LocalizedString("glow3:", "leuchten3:", "brillant3:", "brilho3:");
-
 	@OriginalMember(owner = "client!hs", name = "z", descriptor = "I")
 	public static int anInt2595 = -1;
 
 	@OriginalMember(owner = "client!hs", name = "A", descriptor = "Lclient!hu;")
 	public static final LruHashTable aClass98_18 = new LruHashTable(4);
-
-	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(II)V")
-	public static void method2585(@OriginalArg(0) int arg0) {
-		@Pc(13) DelayedStateChange local13 = Static316.method5413(11, arg0);
-		local13.method2312();
-	}
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(ZIII)Ljava/lang/String;")
 	public static String method2594(@OriginalArg(2) int arg0) {

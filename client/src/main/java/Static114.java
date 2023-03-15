@@ -5,9 +5,6 @@ public final class Static114 {
 	@OriginalMember(owner = "client!gm", name = "a", descriptor = "I")
 	public static int anInt2344 = 0;
 
-	@OriginalMember(owner = "client!gm", name = "b", descriptor = "[I")
-	public static final int[] anIntArray148 = new int[200];
-
 	@OriginalMember(owner = "client!gm", name = "d", descriptor = "I")
 	public static int anInt2346 = -60;
 

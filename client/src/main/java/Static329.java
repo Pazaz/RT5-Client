@@ -35,7 +35,7 @@ public final class Static329 {
 		@Pc(38) int local38;
 		for (@Pc(34) int local34 = arg0.aShort103; local34 <= arg0.aShort104; local34++) {
 			for (local38 = arg0.aShort101; local38 <= arg0.aShort102; local38++) {
-				@Pc(45) Class67 local45 = Static266.method4500(arg0.aByte78, local34, local38);
+				@Pc(45) Class67 local45 = Static266.method4500(arg0.plane, local34, local38);
 				if (local45 != null) {
 					@Pc(49) int local49 = 0;
 					if (local34 > arg0.aShort103) {

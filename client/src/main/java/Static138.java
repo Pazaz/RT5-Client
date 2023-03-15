@@ -10,17 +10,6 @@ public final class Static138 {
 	@OriginalMember(owner = "client!hr", name = "Y", descriptor = "Lclient!bc;")
 	public static final Class16 aClass16_3 = new Class16("", 10);
 
-	@OriginalMember(owner = "client!hr", name = "a", descriptor = "(BIII)V")
-	public static void method2578(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(6) int local6 = arg1 * client.preferences.anInt4889 >> 8;
-		if (arg2 == -1 && !Static393.aBoolean486) {
-			Static368.method6192();
-		} else if (arg2 != -1 && (Static171.anInt3268 != arg2 || !Static64.method1704()) && local6 != 0 && !Static393.aBoolean486) {
-			Static180.method3367(arg2, arg0, local6, client.jsArchive6);
-		}
-		Static171.anInt3268 = arg2;
-	}
-
 	@OriginalMember(owner = "client!hr", name = "b", descriptor = "(IIB)I")
 	public static int method2579(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(49) int local49 = Static309.method5277(arg0 - 1, arg1 + -1) + Static309.method5277(arg0 - 1, arg1 + 1) + Static309.method5277(arg0 + 1, arg1 + -1) + Static309.method5277(arg0 + 1, arg1 + 1);

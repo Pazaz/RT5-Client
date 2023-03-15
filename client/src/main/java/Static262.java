@@ -18,7 +18,7 @@ public final class Static262 {
 		if (local19 > arg1) {
 			return;
 		}
-		@Pc(37) int local37 = Math.min(arg5.anInt4248 / 2, arg5.anInt4261 / 2);
+		@Pc(37) int local37 = Math.min(arg5.width / 2, arg5.height / 2);
 		if (local37 * local37 >= local19) {
 			Static376.method6288(arg6, arg2, arg7, arg3, Static123.aClass13Array10[arg0], arg4, arg5);
 			return;
@@ -41,7 +41,7 @@ public final class Static262 {
 		@Pc(129) double local129 = Math.atan2((double) local112, (double) local123);
 		@Pc(136) int local136 = (int) (Math.sin(local129) * (double) local37);
 		@Pc(143) int local143 = (int) ((double) local37 * Math.cos(local129));
-		Static116.aClass13Array8[arg0].method6386((float) arg5.anInt4248 / 2.0F + (float) arg7 + (float) local136, (float) -local143 + (float) arg5.anInt4261 / 2.0F + (float) arg4, 4096, (int) (-local129 / 6.283185307179586D * 65535.0D));
+		Static116.aClass13Array8[arg0].method6386((float) arg5.width / 2.0F + (float) arg7 + (float) local136, (float) -local143 + (float) arg5.height / 2.0F + (float) arg4, 4096, (int) (-local129 / 6.283185307179586D * 65535.0D));
 	}
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;I)V")
@@ -80,10 +80,10 @@ public final class Static262 {
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(Z)V")
 	public static void method6254() {
 		Static217.method3795(client.preferences.anInt4883);
-		@Pc(18) int local18 = (Static136.anInt6778 >> 10) + (Static164.anInt3140 >> 3);
-		@Pc(27) int local27 = (Static211.anInt3777 >> 10) + (Static148.anInt2719 >> 3);
-		Static355.anInt6585 = Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 = 0;
-		Static17.aClass11_Sub5_Sub2_Sub1_3.method4064(8, 8);
+		@Pc(18) int local18 = (Static136.anInt6778 >> 10) + (Camera.originX >> 3);
+		@Pc(27) int local27 = (Static211.anInt3777 >> 10) + (Camera.originZ >> 3);
+		Static355.anInt6585 = PlayerList.self.plane = 0;
+		PlayerList.self.method4064(8, 8);
 		Static51.underwaterMapGroupIds = new int[18];
 		Static106.aByteArrayArray6 = new byte[18][];
 		Static232.aByteArrayArray9 = new byte[18][];

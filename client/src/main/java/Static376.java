@@ -19,7 +19,7 @@ public final class Static376 {
 		if (local10 < 0 || Static373.anInt7033 <= local10 || local15 < 0 || Static242.anInt4449 <= local15 || (arg1 < 0 || Static373.anInt7033 <= arg1 || arg2 < 0 || Static242.anInt4449 <= arg2)) {
 			return;
 		}
-		@Pc(85) int local85 = Static141.method2654(true, Static52.anIntArray99, 0, -4, 0, 0, Static171.aClass46Array1[arg0.aByte78], local10, 0, arg1, Static59.anIntArray105, arg0.getSize(), arg2, local15);
+		@Pc(85) int local85 = Static141.method2654(true, Static52.anIntArray99, 0, -4, 0, 0, Static171.aClass46Array1[arg0.plane], local10, 0, arg1, Static59.anIntArray105, arg0.getSize(), arg2, local15);
 		if (local85 >= 1 && local85 <= 3) {
 			for (@Pc(97) int local97 = 0; local97 < local85 - 1; local97++) {
 				arg0.method4071(Static59.anIntArray105[local97], (byte) 2, Static52.anIntArray99[local97]);
@@ -47,7 +47,7 @@ public final class Static376 {
 		} else {
 			local16 = Static6.anInt158 + (int) Static277.aFloat67 & 0x3FFF;
 		}
-		@Pc(37) int local37 = Math.max(arg6.anInt4248 / 2, arg6.anInt4261 / 2) + 10;
+		@Pc(37) int local37 = Math.max(arg6.width / 2, arg6.height / 2) + 10;
 		@Pc(45) int local45 = arg3 * arg3 + arg1 * arg1;
 		if (local45 > local37 * local37) {
 			return;
@@ -60,6 +60,6 @@ public final class Static376 {
 		}
 		@Pc(97) int local97 = local63 * arg3 + local67 * arg1 >> 15;
 		@Pc(107) int local107 = local67 * arg3 - local63 * arg1 >> 15;
-		arg4.method6383(local97 + arg2 + arg6.anInt4248 / 2 - arg4.method6399() / 2, -local107 + arg6.anInt4261 / 2 + arg5 + -(arg4.method6384() / 2), arg0, arg2, arg5);
+		arg4.method6383(local97 + arg2 + arg6.width / 2 - arg4.method6399() / 2, -local107 + arg6.height / 2 + arg5 + -(arg4.method6384() / 2), arg0, arg2, arg5);
 	}
 }

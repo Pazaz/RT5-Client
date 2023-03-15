@@ -195,7 +195,7 @@ public class Cheat {
 					return;
 				}
 				@Pc(521) String local521 = cmd.substring(8);
-				@Pc(531) int local531 = Static132.method2485(local521) ? Static146.method2698(local521) : -1;
+				@Pc(531) int local531 = StringUtils.isInt(local521) ? StringUtils.parseInt(local521) : -1;
 				if (local531 >= 0 && local531 <= 2) {
 					client.preferences.anInt4886 = local531;
 					client.preferences.method4497(GameShell.signlink);
@@ -212,7 +212,7 @@ public class Cheat {
 					DevConsole.log("Invalid buildarea value");
 					return;
 				}
-				local76 = Static146.method2698(cmd.substring(6));
+				local76 = StringUtils.parseInt(cmd.substring(6));
 				if (local76 >= 0 && local76 <= Static289.method5019(Static309.anInt5802)) {
 					client.preferences.anInt4883 = local76;
 					client.preferences.method4497(GameShell.signlink);
@@ -228,7 +228,7 @@ public class Cheat {
 					DevConsole.log("Invalid particles value");
 					return;
 				}
-				Static26.method864(Static146.method2698(cmd.substring(13)));
+				Static26.method864(StringUtils.parseInt(cmd.substring(13)));
 				client.preferences.method4497(GameShell.signlink);
 				Preferences.sentToServer = false;
 				DevConsole.log("particles=" + Static184.method3391());
@@ -239,7 +239,7 @@ public class Cheat {
 					DevConsole.log("Invalid rect_debug value");
 					return;
 				}
-				Static154.rect_debug = Static146.method2698(cmd.substring(10).trim());
+				Static154.rect_debug = StringUtils.parseInt(cmd.substring(10).trim());
 				DevConsole.log("rect_debug=" + Static154.rect_debug);
 				return;
 			}
@@ -287,11 +287,11 @@ public class Cheat {
 				return;
 			}
 			if (cmd.equalsIgnoreCase("getcgcoord")) {
-				DevConsole.log("x:" + (Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7) + " z:" + (Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7));
+				DevConsole.log("x:" + (PlayerList.self.xFine >> 7) + " z:" + (PlayerList.self.zFine >> 7));
 				return;
 			}
 			if (cmd.equalsIgnoreCase("getheight")) {
-				DevConsole.log("Height: " + Scene.aClass6Array4[Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78].method5719(Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7));
+				DevConsole.log("Height: " + Scene.aClass6Array4[PlayerList.self.plane].method5719(PlayerList.self.xFine >> 7, PlayerList.self.zFine >> 7));
 				return;
 			}
 			if (cmd.equalsIgnoreCase("resetminimap")) {
@@ -327,8 +327,8 @@ public class Cheat {
 				return;
 			}
 			if (cmd.equalsIgnoreCase("getcamerapos")) {
-				DevConsole.log("Pos: " + Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 + "," + (Static164.anInt3140 + (Static136.anInt6778 >> 7) >> 6) + "," + ((Static211.anInt3777 >> 7) + Static148.anInt2719 >> 6) + "," + (Static164.anInt3140 + (Static136.anInt6778 >> 7) & 0x3F) + "," + (Static148.anInt2719 + (Static211.anInt3777 >> 7) & 0x3F) + " Height: " + (Static386.method6032(Static136.anInt6778, Static211.anInt3777, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) - Static102.anInt3592));
-				DevConsole.log("Look: " + Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 + "," + (Static164.anInt3140 + Static254.anInt4698 >> 6) + "," + (Static123.anInt2420 + Static148.anInt2719 >> 6) + "," + (Static254.anInt4698 + Static164.anInt3140 & 0x3F) + "," + (Static148.anInt2719 + Static123.anInt2420 & 0x3F) + " Height: " + (Static386.method6032(Static254.anInt4698, Static123.anInt2420, Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78) - Static57.anInt1464));
+				DevConsole.log("Pos: " + PlayerList.self.plane + "," + (Camera.originX + (Static136.anInt6778 >> 7) >> 6) + "," + ((Static211.anInt3777 >> 7) + Camera.originZ >> 6) + "," + (Camera.originX + (Static136.anInt6778 >> 7) & 0x3F) + "," + (Camera.originZ + (Static211.anInt3777 >> 7) & 0x3F) + " Height: " + (Static386.method6032(Static136.anInt6778, Static211.anInt3777, PlayerList.self.plane) - Static102.anInt3592));
+				DevConsole.log("Look: " + PlayerList.self.plane + "," + (Camera.originX + Static254.anInt4698 >> 6) + "," + (Static123.anInt2420 + Camera.originZ >> 6) + "," + (Static254.anInt4698 + Camera.originX & 0x3F) + "," + (Camera.originZ + Static123.anInt2420 & 0x3F) + " Height: " + (Static386.method6032(Static254.anInt4698, Static123.anInt2420, PlayerList.self.plane) - Static57.anInt1464));
 				return;
 			}
 			if (cmd.equals("showocc")) {
@@ -422,13 +422,13 @@ public class Cheat {
 				return;
 			}
 			if (client.gameState == 30) {
-				Protocol.writeOpcode(ClientProt.aClass145_162);
+				Protocol.writeOpcode(ClientProt.CLIENT_CHEAT);
 				Protocol.outboundBuffer.p1(cmd.length() + 2);
 				Protocol.outboundBuffer.p1(arg1 ? 1 : 0);
 				Protocol.outboundBuffer.pjstr(cmd);
 			}
 			if (cmd.startsWith("fps ") && client.MODE_WHERE_LIVE != client.modeWhere) {
-				Static250.method4346(Static146.method2698(cmd.substring(4)));
+				Static250.method4346(StringUtils.parseInt(cmd.substring(4)));
 				return;
 			}
 			if (client.gameState != 30) {

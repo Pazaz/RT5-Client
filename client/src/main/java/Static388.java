@@ -51,7 +51,7 @@ public final class Static388 {
 
 	@OriginalMember(owner = "client!wn", name = "a", descriptor = "(IZI)V")
 	public static void method6439(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(13) int local13 = Static113.aClass239_2.method6126(Static180.aClass79_74.method2267(client.language));
+		@Pc(13) int local13 = Static113.aClass239_2.method6126(Static180.aClass79_74.getLocalized(client.language));
 		@Pc(24) int local24;
 		for (@Pc(18) Class2_Sub5 local18 = (Class2_Sub5) Static129.aClass135_19.head(); local18 != null; local18 = (Class2_Sub5) Static129.aClass135_19.next()) {
 			local24 = Static218.method1096(local18);

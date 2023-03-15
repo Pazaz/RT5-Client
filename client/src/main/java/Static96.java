@@ -15,9 +15,6 @@ public final class Static96 {
 	@OriginalMember(owner = "client!fj", name = "e", descriptor = "[[I")
 	public static final int[][] anIntArrayArray17 = new int[][] { { 6, 6 }, { 6, 6 }, { 6, 5, 5 }, { 5, 6, 5 }, { 5, 5, 6 }, { 6, 5, 5 }, { 5, 0, 4, 1 }, { 7, 7, 1, 2 }, { 7, 1, 2, 7 }, { 8, 9, 4, 0, 8, 9 }, { 0, 8, 9, 8, 9, 4 }, { 11, 0, 10, 11, 4, 2 }, { 6, 6 }, { 7, 7, 1, 2 }, { 7, 7, 1, 2 } };
 
-	@OriginalMember(owner = "client!fj", name = "f", descriptor = "I")
-	public static int anInt2002 = 0;
-
 	@OriginalMember(owner = "client!fj", name = "a", descriptor = "(IIIIIII)V")
 	public static void method2085(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		Static270.anInt4966 = arg5;

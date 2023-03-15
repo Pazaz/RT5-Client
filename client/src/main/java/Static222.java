@@ -28,7 +28,7 @@ public final class Static222 {
 					@Pc(59) byte[] local59 = Static283.aClass197_68.fetchFile(local45, arg0);
 					if (local59 != null) {
 						@Pc(71) Class161 local71 = Static26.aClass161ArrayArray1[arg0][local45] = new Class161();
-						local71.anInt4317 = local45 + (arg0 << 16);
+						local71.id = local45 + (arg0 << 16);
 						if (local59[0] != -1) {
 							throw new IllegalStateException("if1");
 						}

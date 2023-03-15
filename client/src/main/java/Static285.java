@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static285 {
 
-	@OriginalMember(owner = "client!qj", name = "d", descriptor = "Lclient!gd;")
-	public static final LocalizedString aClass79_113 = new LocalizedString("glow2:", "leuchten2:", "brillant2:", "brilho2:");
-
 	@OriginalMember(owner = "client!qj", name = "g", descriptor = "I")
 	public static final int anInt5368 = 52;
 
@@ -27,20 +24,20 @@ public final class Static285 {
 		if (arg0.anInt4273 != Static76.anInt1738) {
 			return;
 		}
-		if (Static17.aClass11_Sub5_Sub2_Sub1_3.aString41 == null) {
-			arg0.anInt4313 = 0;
+		if (PlayerList.self.username == null) {
+			arg0.modelId = 0;
 			arg0.anInt4236 = 0;
 			return;
 		}
-		arg0.anInt4320 = 150;
-		arg0.anInt4274 = (int) (Math.sin((double) client.cycle / 40.0D) * 256.0D) & 0x7FF;
-		arg0.anInt4313 = PlayerList.selfId;
-		arg0.anInt4288 = 5;
-		arg0.anInt4236 = Static276.method4651(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41);
-		arg0.anInt4316 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4593;
-		arg0.anInt4247 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4626;
+		arg0.modelXAngle = 150;
+		arg0.modelYAngle = (int) (Math.sin((double) client.cycle / 40.0D) * 256.0D) & 0x7FF;
+		arg0.modelId = PlayerList.selfId;
+		arg0.modelType = 5;
+		arg0.anInt4236 = Static276.method4651(PlayerList.self.username);
+		arg0.anInt4316 = PlayerList.self.anInt4593;
+		arg0.anInt4247 = PlayerList.self.anInt4626;
 		arg0.anInt4283 = 0;
-		arg0.anInt4299 = Static17.aClass11_Sub5_Sub2_Sub1_3.anInt4585;
+		arg0.modelSeqId = PlayerList.self.anInt4585;
 	}
 
 	@OriginalMember(owner = "client!qj", name = "a", descriptor = "(Z)V")

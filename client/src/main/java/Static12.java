@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static12 {
 
-	@OriginalMember(owner = "client!am", name = "b", descriptor = "I")
-	public static int anInt266;
-
 	@OriginalMember(owner = "client!am", name = "f", descriptor = "Lclient!jd;")
 	public static Sprite aClass13_2;
 

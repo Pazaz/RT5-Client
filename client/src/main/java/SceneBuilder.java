@@ -508,7 +508,7 @@ public final class SceneBuilder extends Class29 {
 		if (arg5 < this.anInt922) {
 			this.anInt922 = arg5;
 		}
-		@Pc(30) LocType local30 = client.LocTypes.method5163(arg3);
+		@Pc(30) LocType local30 = client.LocTypes.get(arg3);
 		if (Static77.anInt1762 == 1 && local30.aBoolean112) {
 			return;
 		}
@@ -828,7 +828,7 @@ public final class SceneBuilder extends Class29 {
 									local1893 = 16;
 									local1899 = (Interface6) Static12.method283(arg5, arg1, arg2);
 									if (local1899 != null) {
-										local1893 = client.LocTypes.method5163(local1899.method6085()).anInt1340;
+										local1893 = client.LocTypes.get(local1899.method6085()).anInt1340;
 									}
 									if (local220) {
 										local1965 = new Class11_Sub3_Sub2(arg6, local30, arg4, local166, local158, local174, super.aBoolean73, 0, Static325.anIntArray413[arg0] * local1893, local1893 * Static148.anIntArray172[arg0], arg8, arg0);
@@ -849,7 +849,7 @@ public final class SceneBuilder extends Class29 {
 									local1893 = 8;
 									local1899 = (Interface6) Static12.method283(arg5, arg1, arg2);
 									if (local1899 != null) {
-										local1893 = client.LocTypes.method5163(local1899.method6085()).anInt1340 / 2;
+										local1893 = client.LocTypes.get(local1899.method6085()).anInt1340 / 2;
 									}
 									if (local220) {
 										local1965 = new Class11_Sub3_Sub2(arg6, local30, arg4, local166, local158, local174, super.aBoolean73, arg0, Static325.anIntArray413[arg0] * local1893, local1893 * Static148.anIntArray172[arg0], arg8, arg0 + 4);
@@ -888,7 +888,7 @@ public final class SceneBuilder extends Class29 {
 									@Pc(2204) int local2204 = 8;
 									@Pc(2210) Interface6 local2210 = (Interface6) Static12.method283(arg5, arg1, arg2);
 									if (local2210 != null) {
-										local2204 = client.LocTypes.method5163(local2210.method6085()).anInt1340 / 2;
+										local2204 = client.LocTypes.get(local2210.method6085()).anInt1340 / 2;
 									}
 									@Pc(2251) Class11_Sub3 local2251;
 									@Pc(2270) Class11_Sub3 local2270;
@@ -959,7 +959,7 @@ public final class SceneBuilder extends Class29 {
 				@Pc(62) int local62 = local58 >> 2;
 				@Pc(66) int local66 = local58 & 0x3;
 				if (arg1 == local54 && local50 >= arg3 && arg3 + 8 > local50 && arg9 <= local44 && arg9 + 8 > local44) {
-					@Pc(98) LocType local98 = client.LocTypes.method5163(local16);
+					@Pc(98) LocType local98 = client.LocTypes.get(local16);
 					@Pc(115) int local115 = arg5 + Static50.method1528(local50 & 0x7, arg0, local66, local98.anInt1356, local98.anInt1327, local44 & 0x7);
 					@Pc(132) int local132 = arg8 + Static33.method4205(arg0, local66, local50 & 0x7, local98.anInt1356, local44 & 0x7, local98.anInt1327);
 					if (local115 > 0 && local132 > 0 && super.anInt900 - 1 > local115 && local132 < super.anInt911 - 1) {
@@ -998,7 +998,7 @@ public final class SceneBuilder extends Class29 {
 		if (local7 == null) {
 			return;
 		}
-		@Pc(70) LocType local70 = client.LocTypes.method5163(local7.method6085());
+		@Pc(70) LocType local70 = client.LocTypes.get(local7.method6085());
 		@Pc(74) int local74 = local7.method6081();
 		@Pc(78) int local78 = local7.method6084();
 		if (local70.method1522()) {

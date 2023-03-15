@@ -37,7 +37,7 @@ public final class ParamTypeList {
 	}
 
 	@OriginalMember(owner = "client!be", name = "a", descriptor = "(II)Lclient!vp;")
-	public ParamType method565(@OriginalArg(1) int arg0) {
+	public ParamType get(@OriginalArg(1) int arg0) {
 		@Pc(11) LruHashTable local11 = this.aClass98_2;
 		@Pc(21) ParamType local21;
 		synchronized (this.aClass98_2) {

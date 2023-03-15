@@ -7,9 +7,6 @@ public final class Static199 {
 	@OriginalMember(owner = "client!lm", name = "u", descriptor = "I")
 	public static int anInt5756;
 
-	@OriginalMember(owner = "client!lm", name = "s", descriptor = "Lclient!gd;")
-	public static final LocalizedString aClass79_120 = new LocalizedString("flash3:", "blinken3:", "clignotant3:", "brilho3:");
-
 	@OriginalMember(owner = "client!lm", name = "t", descriptor = "I")
 	public static final int anInt5755 = 1337;
 
@@ -113,8 +110,8 @@ public final class Static199 {
 			local62[local68] = local59 * ((float) local137 + ((float) local146 + (float) local164 * local59) * local59) + (float) local132;
 		}
 		Static102.anInt3592 = (int) local62[1] * -1;
-		Static136.anInt6778 = (int) local62[0] - Static164.anInt3140 * 128;
-		Static211.anInt3777 = (int) local62[2] - Static148.anInt2719 * 128;
+		Static136.anInt6778 = (int) local62[0] - Camera.originX * 128;
+		Static211.anInt3777 = (int) local62[2] - Camera.originZ * 128;
 		@Pc(218) float[] local218 = new float[3];
 		local92 = Static343.anInt6398 * 2;
 		for (local124 = 0; local124 < 3; local124++) {

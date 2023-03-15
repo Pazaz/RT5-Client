@@ -43,7 +43,7 @@ public final class Static193 {
 					@Pc(82) int local82 = arg1 + local72;
 					@Pc(86) int local86 = local66 + arg0;
 					if (local82 > 0 && local86 > 0 && local82 < arg4 - 1 && arg3 - 1 > local86) {
-						@Pc(112) LocType local112 = client.LocTypes.method5163(local19);
+						@Pc(112) LocType local112 = client.LocTypes.get(local19);
 						if (local78 != 22 || client.preferences.aBoolean359 || local112.anInt1335 != 0 || local112.anInt1324 == 1 || local112.aBoolean117) {
 							if (!local112.method1529()) {
 								Static305.anInt5742++;
@@ -68,7 +68,7 @@ public final class Static193 {
 			Static252.aClass13_14.method6385((GameShell.canvasWidth - Static252.aClass13_14.method6399()) / 2, (GameShell.canvasHeight - Static252.aClass13_14.method6384()) / 2);
 			Static333.aClass13_21.method6385((GameShell.canvasWidth - Static333.aClass13_21.method6399()) / 2, 18);
 		}
-		arg2.method5900((client.GAME_RS == client.game ? Static221.aClass79_99 : Static221.aClass79_98).method2267(client.language), -1, GameShell.canvasHeight / 2 - 26, arg0, GameShell.canvasWidth / 2);
+		arg2.method5900((client.GAME_RS == client.game ? Static221.aClass79_99 : Static221.aClass79_98).getLocalized(client.language), -1, GameShell.canvasHeight / 2 - 26, arg0, GameShell.canvasWidth / 2);
 		@Pc(58) int local58 = GameShell.canvasHeight / 2 - 18;
 		arg1.method2836(GameShell.canvasWidth / 2 - 152, local58, 304, 34, arg4, 0);
 		arg1.method2836(GameShell.canvasWidth / 2 - 151, local58 + 1, 302, 32, 0, 0);

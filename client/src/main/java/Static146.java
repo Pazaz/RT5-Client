@@ -27,11 +27,6 @@ public final class Static146 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(ILjava/lang/String;)I")
-	public static int method2698(@OriginalArg(1) String arg0) {
-		return Static319.method5433(10, arg0);
-	}
-
 	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(BI)Lclient!tb;")
 	public static Class2_Sub2_Sub16 method2699(@OriginalArg(1) int arg0) {
 		@Pc(10) Class2_Sub2_Sub16 local10 = (Class2_Sub2_Sub16) Static388.aClass116_8.method3152((long) arg0);

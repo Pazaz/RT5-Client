@@ -19,15 +19,6 @@ public final class Static175 {
 	@OriginalMember(owner = "client!kc", name = "c", descriptor = "[B")
 	public static final byte[] aByteArray35 = new byte[520];
 
-	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(IIII)V")
-	public static void method3324(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(15) int local15 = arg2 * client.preferences.anInt4889 >> 8;
-		if (local15 != 0 && arg0 != -1) {
-			Static94.method2042(local15, arg0, client.jsArchive11);
-			Static393.aBoolean486 = true;
-		}
-	}
-
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "([[[Lclient!f;B)V")
 	public static void method3325(@OriginalArg(0) Class67[][][] arg0) {
 		for (@Pc(9) int local9 = 0; local9 < arg0.length; local9++) {

@@ -34,7 +34,7 @@ public final class Static172 {
 			Static322.method5482(true, local10, arg0, 0, 0, arg2, 0, local22);
 			return;
 		}
-		@Pc(59) LocType local59 = client.LocTypes.method5163(local29);
+		@Pc(59) LocType local59 = client.LocTypes.get(local29);
 		@Pc(75) int local75;
 		@Pc(72) int local72;
 		if (local22 == 0 || local22 == 2) {

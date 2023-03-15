@@ -49,7 +49,7 @@ public final class Static117 {
 			Static138.aClass13_8.method6385(local7, local9);
 			Static75.aClass13_5.method6385(local7 + local11 - Static75.aClass13_5.method6389(), local9);
 		}
-		Static52.aClass130_1.method5897(local7 + 3, -1, local9 + 14, Static322.anInt6030 | 0xFF000000, Static180.aClass79_74.method2267(client.language));
+		Static52.aClass130_1.method5897(local7 + 3, -1, local9 + 14, Static322.anInt6030 | 0xFF000000, Static180.aClass79_74.getLocalized(client.language));
 		arg0.method2901(local7, local9 + 20, local11, local15 - 20, -Static260.anInt6717 + 255 << 24 | Static242.anInt4446, 1);
 		local87 = Static226.aClass119_1.method3304();
 		local89 = Static226.aClass119_1.method3313();
@@ -114,9 +114,9 @@ public final class Static117 {
 			} else if (Static241.method4190(local436.anInt1005)) {
 				@Pc(540) LocType local540;
 				if (local436.anInt1005 == 1010) {
-					local540 = client.LocTypes.method5163((int) local436.aLong30);
+					local540 = client.LocTypes.get((int) local436.aLong30);
 				} else {
-					local540 = client.LocTypes.method5163((int) (local436.aLong30 >>> 32 & 0x7FFFFFFFL));
+					local540 = client.LocTypes.get((int) (local436.aLong30 >>> 32 & 0x7FFFFFFFL));
 				}
 				if (local540.anIntArray94 != null) {
 					local540 = local540.method1533(Static214.aClass226_1);
@@ -155,16 +155,4 @@ public final class Static117 {
 		return arg0 >>> 8;
 	}
 
-	@OriginalMember(owner = "client!gp", name = "a", descriptor = "(Ljava/lang/String;B)I")
-	public static int method2372(@OriginalArg(0) String arg0) {
-		if (arg0 == null) {
-			return -1;
-		}
-		for (@Pc(19) int local19 = 0; local19 < Static384.anInt7178; local19++) {
-			if (arg0.equalsIgnoreCase(Static17.aStringArray43[local19])) {
-				return local19;
-			}
-		}
-		return -1;
-	}
 }

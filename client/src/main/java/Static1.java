@@ -34,9 +34,9 @@ public final class Static1 {
 					@Pc(96) int local96 = local92 >> 14;
 					@Pc(102) int local102 = local92 >> 7 & 0x3F;
 					@Pc(106) int local106 = local92 & 0x3F;
-					@Pc(119) int local119 = local102 + (Static291.mapSquares[local10] >> 8) * 64 - Static164.anInt3140;
-					@Pc(132) int local132 = local106 + (Static291.mapSquares[local10] & 0xFF) * 64 - Static148.anInt2719;
-					@Pc(139) NpcType local139 = client.NpcTypes.method5570(local65.g2());
+					@Pc(119) int local119 = local102 + (Static291.mapSquares[local10] >> 8) * 64 - Camera.originX;
+					@Pc(132) int local132 = local106 + (Static291.mapSquares[local10] & 0xFF) * 64 - Camera.originZ;
+					@Pc(139) NpcType local139 = client.NpcTypes.get(local65.g2());
 					if (NpcList.npcs[local88] == null && (local139.aByte16 & 0x1) > 0 && Static44.anInt1115 == local96 && local119 >= 0 && local119 + local139.size < Static373.anInt7033 && local132 >= 0 && local132 + local139.size < Static242.anInt4449) {
 						NpcList.npcs[local88] = new Npc();
 						NpcList.npcs[local88].anInt4619 = local88;
@@ -86,7 +86,7 @@ public final class Static1 {
 		@Pc(78) int local78 = local36 & 0x1F;
 		if (local78 == 0) {
 			if (arg1) {
-				Static29.method939(local46, 255, 0, local40);
+				SoundPlayer.play(local46, 255, 0, local40);
 			}
 		} else if (client.preferences.anInt4882 != 0) {
 			Static256.anIntArray321[Static243.anInt4503] = local40;

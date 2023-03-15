@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static169 {
 
-	@OriginalMember(owner = "client!jr", name = "l", descriptor = "Ljava/lang/String;")
-	public static String aString25 = null;
-
 	@OriginalMember(owner = "client!jr", name = "o", descriptor = "[Ljava/lang/String;")
 	public static final String[] MSG_SECONDARY = new String[100];
 
@@ -60,7 +57,7 @@ public final class Static169 {
 		for (@Pc(9) int local9 = 0; local9 < local7.length; local9++) {
 			@Pc(17) Class84 local17 = local7[local9];
 			if (local17 != null && local17.anInt2355 == 2) {
-				Static121.method2394(local17.anInt2359, arg2 >> 1, local17.anInt2356 + (local17.anInt2364 - Static148.anInt2719 << 7), local17.anInt2362 * 2, arg0 >> 1, (local17.anInt2352 - Static164.anInt3140 << 7) + local17.anInt2350);
+				Static121.method2394(local17.anInt2359, arg2 >> 1, local17.anInt2356 + (local17.anInt2364 - Camera.originZ << 7), local17.anInt2362 * 2, arg0 >> 1, (local17.anInt2352 - Camera.originX << 7) + local17.anInt2350);
 				if (Static216.anIntArray231[0] > -1 && client.cycle % 20 < 10) {
 					Static230.aClass13Array16[local17.anInt2363].method6385(arg1 + Static216.anIntArray231[0] - 12, Static216.anIntArray231[1] + arg3 - 28);
 				}

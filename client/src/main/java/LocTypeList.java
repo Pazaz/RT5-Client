@@ -143,7 +143,7 @@ public final class LocTypeList {
 	}
 
 	@OriginalMember(owner = "client!rh", name = "b", descriptor = "(IB)Lclient!ct;")
-	public LocType method5163(@OriginalArg(0) int arg0) {
+	public LocType get(@OriginalArg(0) int arg0) {
 		@Pc(6) LruHashTable local6 = this.aClass98_45;
 		@Pc(16) LocType local16;
 		synchronized (this.aClass98_45) {

@@ -6,10 +6,14 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!jo")
 public final class PlayerAppearance {
 
+	@OriginalMember(owner = "client!ad", name = "r", descriptor = "[I")
+	public static final int[] MALE_FEATURES = new int[] { 0, 1, 2, 3, 4, 5, 6, 14 };
+	@OriginalMember(owner = "client!uo", name = "J", descriptor = "[I")
+	public static final int[] FEMALE_FEATURES = new int[] { 7, 8, 9, 10, 11, 12, 13, 15 };
 	@OriginalMember(owner = "client!ui", name = "k", descriptor = "[[S")
 	public static short[][] destinationBodyColors;
 	@OriginalMember(owner = "client!jo", name = "d", descriptor = "Z")
-	public boolean aBoolean220;
+	public boolean gender;
 
 	@OriginalMember(owner = "client!jo", name = "e", descriptor = "[[I")
 	private int[][] anIntArrayArray24;
@@ -34,7 +38,7 @@ public final class PlayerAppearance {
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "([I[IZIIZ)V")
 	public void set(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		this.aBoolean220 = arg2;
+		this.gender = arg2;
 		if (this.anInt3190 != arg4) {
 			this.anInt3190 = arg4;
 			this.anIntArrayArray24 = null;
@@ -46,7 +50,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(Lclient!e;III)V")
-	public void method3181(@OriginalArg(0) IdkTypeList arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public void setIdentikit(@OriginalArg(0) IdkTypeList arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) int local7 = Static328.anIntArray416[arg1];
 		if (this.anIntArray193[local7] != 0 && arg0.method1784(arg2) != null) {
 			this.anIntArray193[local7] = Integer.MIN_VALUE | arg2;
@@ -55,15 +59,15 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ZI)V")
-	public void method3183(@OriginalArg(0) boolean arg0) {
-		this.aBoolean220 = arg0;
+	public void setGender(@OriginalArg(0) boolean arg0) {
+		this.gender = arg0;
 		this.method3189();
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ILclient!gp;Lclient!wl;ZIILclient!nb;Lclient!ta;Lclient!e;Lclient!wm;ILclient!io;)Lclient!gn;")
 	public Model method3184(@OriginalArg(0) int arg0, @OriginalArg(1) SeqTypeList arg1, @OriginalArg(2) Interface11 arg2, @OriginalArg(5) int arg3, @OriginalArg(6) Class157 arg4, @OriginalArg(7) NpcTypeList arg5, @OriginalArg(8) IdkTypeList arg6, @OriginalArg(9) Class19 arg7, @OriginalArg(10) int arg8, @OriginalArg(11) ObjTypeList arg9) {
 		if (this.npcId != -1) {
-			return arg5.method5570(this.npcId).method2088(arg3, arg8, arg0, arg7, arg4, arg2, arg1);
+			return arg5.get(this.npcId).method2088(arg3, arg8, arg0, arg7, arg4, arg2, arg1);
 		}
 		@Pc(27) int local27 = 1024;
 		@Pc(35) boolean local35;
@@ -121,7 +125,7 @@ public final class PlayerAppearance {
 					if ((Integer.MIN_VALUE & local109) != 0 && !arg6.method1784(local109 & 0x3FFFFFFF).method2268()) {
 						local35 = true;
 					}
-				} else if (!arg9.get(local109 & 0x3FFFFFFF).method4783(this.aBoolean220)) {
+				} else if (!arg9.get(local109 & 0x3FFFFFFF).method4783(this.gender)) {
 					local35 = true;
 				}
 			}
@@ -134,7 +138,7 @@ public final class PlayerAppearance {
 				local56 = this.anIntArray193[local264];
 				@Pc(286) Class185 local286;
 				if ((local56 & 0x40000000) != 0) {
-					local286 = arg9.get(local56 & 0x3FFFFFFF).method4778(this.aBoolean220);
+					local286 = arg9.get(local56 & 0x3FFFFFFF).method4778(this.gender);
 					if (local286 != null) {
 						local260[local262++] = local286;
 					}
@@ -268,7 +272,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(III)V")
-	public void method3187(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
+	public void setColor(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		this.anIntArray194[arg0] = arg1;
 		this.method3189();
 	}
@@ -288,13 +292,13 @@ public final class PlayerAppearance {
 		for (@Pc(150) int local150 = 0; local150 < 5; local150++) {
 			this.aLong107 = local7[(int) (((long) this.anIntArray194[local150] ^ this.aLong107) & 0xFFL)] ^ this.aLong107 >>> 8;
 		}
-		this.aLong107 = this.aLong107 >>> 8 ^ local7[(int) (((long) (this.aBoolean220 ? 1 : 0) ^ this.aLong107) & 0xFFL)];
+		this.aLong107 = this.aLong107 >>> 8 ^ local7[(int) (((long) (this.gender ? 1 : 0) ^ this.aLong107) & 0xFFL)];
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(IZLclient!ak;Lclient!gp;Lclient!e;Lclient!nb;IIIIZILclient!nb;Lclient!wl;Lclient!io;Lclient!wm;Lclient!ta;[Lclient!bg;I)Lclient!gn;")
 	public Model method3191(@OriginalArg(0) int arg0, @OriginalArg(2) BasTypeList arg1, @OriginalArg(3) SeqTypeList arg2, @OriginalArg(4) IdkTypeList arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(11) int arg9, @OriginalArg(12) Class157 arg10, @OriginalArg(13) Interface11 arg11, @OriginalArg(14) ObjTypeList arg12, @OriginalArg(15) Class19 arg13, @OriginalArg(16) NpcTypeList arg14, @OriginalArg(17) Class20[] arg15, @OriginalArg(18) int arg16) {
 		if (this.npcId != -1) {
-			return arg14.method5570(this.npcId).getBodyModel(arg1, arg16, arg4, arg13, arg2, arg6, arg9, arg8, arg10, arg7, arg15, arg0, arg11, arg5);
+			return arg14.get(this.npcId).getBodyModel(arg1, arg16, arg4, arg13, arg2, arg6, arg9, arg8, arg10, arg7, arg15, arg0, arg11, arg5);
 		}
 		@Pc(33) int local33 = arg7;
 		@Pc(36) long local36 = this.aLong107;
@@ -465,7 +469,7 @@ public final class PlayerAppearance {
 							local743 = local39[local737];
 							@Pc(763) Class185 local763;
 							if ((local743 & 0x40000000) != 0) {
-								local763 = arg12.get(local743 & 0x3FFFFFFF).method4779(this.aBoolean220);
+								local763 = arg12.get(local743 & 0x3FFFFFFF).method4779(this.gender);
 								if (local763 != null) {
 									local735[local737] = local763;
 								}
@@ -556,7 +560,7 @@ public final class PlayerAppearance {
 					if ((local646 & Integer.MIN_VALUE) != 0 && !arg3.method1784(local646 & 0x3FFFFFFF).method2270()) {
 						local638 = true;
 					}
-				} else if (!arg12.get(local646 & 0x3FFFFFFF).method4770(this.aBoolean220)) {
+				} else if (!arg12.get(local646 & 0x3FFFFFFF).method4770(this.gender)) {
 					local638 = true;
 				}
 				local640++;

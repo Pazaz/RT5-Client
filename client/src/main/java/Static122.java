@@ -11,7 +11,7 @@ public final class Static122 {
 
 	@OriginalMember(owner = "client!h", name = "a", descriptor = "(B)V")
 	public static void method2398() {
-		Static200.method3645(Static375.aClass161_14);
+		InterfaceList.redraw(Static375.aClass161_14);
 		Static129.anInt2458++;
 		if (Static301.aBoolean403 && Static278.aBoolean377) {
 			@Pc(26) int local26 = Static226.aClass119_1.method3304();
@@ -24,14 +24,14 @@ public final class Static122 {
 			if (local30 < Static100.anInt2111) {
 				local30 = Static100.anInt2111;
 			}
-			if (Static375.aClass161_14.anInt4248 + local26 > Static301.aClass161_13.anInt4248 + Static4.anInt88) {
-				local26 = Static301.aClass161_13.anInt4248 + Static4.anInt88 - Static375.aClass161_14.anInt4248;
+			if (Static375.aClass161_14.width + local26 > Static301.aClass161_13.width + Static4.anInt88) {
+				local26 = Static301.aClass161_13.width + Static4.anInt88 - Static375.aClass161_14.width;
 			}
-			if (local30 + Static375.aClass161_14.anInt4261 > Static100.anInt2111 + Static301.aClass161_13.anInt4261) {
-				local30 = Static301.aClass161_13.anInt4261 + Static100.anInt2111 - Static375.aClass161_14.anInt4261;
+			if (local30 + Static375.aClass161_14.height > Static100.anInt2111 + Static301.aClass161_13.height) {
+				local30 = Static301.aClass161_13.height + Static100.anInt2111 - Static375.aClass161_14.height;
 			}
-			@Pc(105) int local105 = local26 + Static301.aClass161_13.anInt4258 - Static4.anInt88;
-			@Pc(113) int local113 = local30 + Static301.aClass161_13.anInt4259 - Static100.anInt2111;
+			@Pc(105) int local105 = local26 + Static301.aClass161_13.scrollX - Static4.anInt88;
+			@Pc(113) int local113 = local30 + Static301.aClass161_13.scrollY - Static100.anInt2111;
 			@Pc(128) Class2_Sub13 local128;
 			if (Static226.aClass119_1.method3305()) {
 				if (Static375.aClass161_14.anInt4271 < Static129.anInt2458) {

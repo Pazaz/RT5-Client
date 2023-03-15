@@ -33,14 +33,7 @@ public final class Static200 {
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(I)V")
 	public static void method3644() {
 		if (Static215.anInt3795 != 3) {
-			client.worldId = -1;
-		}
-	}
-
-	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(Lclient!nk;B)V")
-	public static void method3645(@OriginalArg(0) Class161 arg0) {
-		if (Static132.anInt2468 == arg0.anInt4268) {
-			Static357.aBooleanArray59[arg0.anInt4257] = true;
+			Player.worldId = -1;
 		}
 	}
 

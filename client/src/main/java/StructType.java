@@ -34,7 +34,7 @@ public final class StructType extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!ck", name = "b", descriptor = "(III)I")
-	public int method1343(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public int getParam(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		if (this.aClass4_20 == null) {
 			return arg1;
 		} else {
@@ -55,7 +55,7 @@ public final class StructType extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!ck", name = "a", descriptor = "(IILjava/lang/String;)Ljava/lang/String;")
-	public String method1346(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1) {
+	public String getParam(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1) {
 		if (this.aClass4_20 == null) {
 			return arg1;
 		} else {

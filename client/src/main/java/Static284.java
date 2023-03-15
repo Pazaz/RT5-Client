@@ -30,7 +30,7 @@ public final class Static284 {
 			arg5.method2901(arg4, arg2, arg3, arg1, -16777216, 0);
 			arg5.method2836(local36 - 152, local47, 304, 34, Static291.aColorArray4[Static64.anInt1555].getRGB(), 0);
 			arg5.method2901(local36 - 150, local47 - -2, Static355.anInt6581 * 3, 30, Static174.aColorArray2[Static64.anInt1555].getRGB(), 0);
-			Static52.aClass130_1.method5900(Static32.aClass79_21.method2267(client.language), -1, local47 + 20, Static286.aColorArray3[Static64.anInt1555].getRGB(), local36);
+			Static52.aClass130_1.method5900(Static32.aClass79_21.getLocalized(client.language), -1, local47 + 20, Static286.aColorArray3[Static64.anInt1555].getRGB(), local36);
 			return;
 		}
 		@Pc(111) int local111 = Static151.anInt2772 - (int) ((float) arg3 / Static344.aFloat72);

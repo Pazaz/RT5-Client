@@ -19,18 +19,6 @@ public final class Static243 {
 	@OriginalMember(owner = "client!nt", name = "Q", descriptor = "I")
 	public static int anInt4503 = 0;
 
-	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(IZII)I")
-	public static int method4238(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(3) int arg2) {
-		@Pc(13) Class2_Sub41 local13 = Static374.method6275(arg1, arg2);
-		if (local13 == null) {
-			return 0;
-		} else if (arg0 >= 0 && arg0 < local13.anIntArray488.length) {
-			return local13.anIntArray488[arg0];
-		} else {
-			return 0;
-		}
-	}
-
 	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(IIIIIIIIIIIIII)V")
 	public static void method4239(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(12) int arg11, @OriginalArg(13) int arg12) {
 		if (Scene.aClass6Array4 == null) {
@@ -41,7 +29,7 @@ public final class Static243 {
 		if (arg8 < 0) {
 			local18 = -arg8 - 1;
 			if (PlayerList.selfId == local18) {
-				local27 = Static17.aClass11_Sub5_Sub2_Sub1_3;
+				local27 = PlayerList.self;
 			} else {
 				local27 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local18];
 			}
@@ -52,7 +40,7 @@ public final class Static243 {
 		if (local27 == null) {
 			return;
 		}
-		@Pc(51) LocType local51 = client.LocTypes.method5163(arg1);
+		@Pc(51) LocType local51 = client.LocTypes.get(arg1);
 		@Pc(62) int local62;
 		@Pc(65) int local65;
 		if (arg10 == 1 || arg10 == 3) {
@@ -69,7 +57,7 @@ public final class Static243 {
 		@Pc(114) Class6 local114 = Scene.aClass6Array4[arg12];
 		@Pc(138) int local138 = local114.method5719(local79, local102) + local114.method5719(local96, local102) + local114.method5719(local79, local110) + local114.method5719(local96, local110) >> 2;
 		@Pc(142) Class2_Sub6 local142 = new Class2_Sub6();
-		local142.anInt1110 = local27.aByte78;
+		local142.anInt1110 = local27.plane;
 		local142.anInt1118 = arg3 + client.cycle;
 		local142.anInt1100 = client.cycle + arg7;
 		local142.anInt1117 = arg0;

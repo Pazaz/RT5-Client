@@ -58,8 +58,8 @@ public final class ObjTypeList {
 			@Pc(54) int local54 = this.aClass197_42.capacity() - 1;
 			this.capacity = local54 * 256 + this.aClass197_42.getGroupCapacity(local54);
 		}
-		this.aStringArray21 = new String[] { null, null, Static220.aClass79_83.method2267(this.anInt2781), null, null };
-		this.aStringArray22 = new String[] { null, null, null, null, Static239.aClass79_95.method2267(this.anInt2781) };
+		this.aStringArray21 = new String[] { null, null, Static220.aClass79_83.getLocalized(this.anInt2781), null, null };
+		this.aStringArray22 = new String[] { null, null, null, null, Static239.aClass79_95.getLocalized(this.anInt2781) };
 	}
 
 	@OriginalMember(owner = "client!io", name = "a", descriptor = "(II)V")
@@ -104,29 +104,29 @@ public final class ObjTypeList {
 		local18 = new ObjType();
 		local18.anInt5255 = arg0;
 		local18.aClass107_1 = this;
-		local18.aStringArray50 = new String[] { null, null, Static220.aClass79_83.method2267(this.anInt2781), null, null };
-		local18.aStringArray51 = new String[] { null, null, null, null, Static239.aClass79_95.method2267(this.anInt2781) };
+		local18.ops = new String[] { null, null, Static220.aClass79_83.getLocalized(this.anInt2781), null, null };
+		local18.iops = new String[] { null, null, null, null, Static239.aClass79_95.getLocalized(this.anInt2781) };
 		if (local44 != null) {
 			local18.decode(new Buffer(local44));
 		}
 		local18.method4777();
-		if (local18.anInt5258 != -1) {
-			local18.method4780(this.get(local18.anInt5202), this.get(local18.anInt5258));
+		if (local18.certtemplate != -1) {
+			local18.method4780(this.get(local18.certlink), this.get(local18.certtemplate));
 		}
 		if (local18.anInt5235 != -1) {
 			local18.method4784(this.get(local18.anInt5235), this.get(local18.anInt5246));
 		}
-		if (!this.aBoolean195 && local18.aBoolean382) {
-			local18.aString55 = Static101.aClass79_44.method2267(this.anInt2781);
-			local18.aStringArray51 = this.aStringArray22;
+		if (!this.aBoolean195 && local18.members) {
+			local18.name = Static101.aClass79_44.getLocalized(this.anInt2781);
+			local18.iops = this.aStringArray22;
 			local18.anIntArray364 = null;
 			local18.team = 0;
 			local18.aBoolean381 = false;
-			local18.aStringArray50 = this.aStringArray21;
+			local18.ops = this.aStringArray21;
 			if (local18.aClass4_103 != null) {
 				@Pc(194) boolean local194 = false;
 				for (@Pc(199) Node local199 = local18.aClass4_103.head(); local199 != null; local199 = local18.aClass4_103.next()) {
-					@Pc(211) ParamType local211 = this.aClass18_1.method565((int) local199.key);
+					@Pc(211) ParamType local211 = this.aClass18_1.get((int) local199.key);
 					if (local211.aBoolean476) {
 						local199.unlink();
 					} else {

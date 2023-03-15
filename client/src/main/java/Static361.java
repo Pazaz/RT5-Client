@@ -22,7 +22,7 @@ public final class Static361 {
 		arg0.method2868(local13, local7, local9, -10660793, local11);
 		arg0.method2868(16, local7 + 1, local9 + 1, -16777216, local11 - 2);
 		arg0.method2837(local9 + 18, local7 - -1, local13 - 19, -16777216, -2 + local11);
-		Static52.aClass130_1.method5897(local7 + 3, -1, local9 + 14, -10660793, Static180.aClass79_74.method2267(client.language));
+		Static52.aClass130_1.method5897(local7 + 3, -1, local9 + 14, -10660793, Static180.aClass79_74.getLocalized(client.language));
 		@Pc(72) int local72 = Static226.aClass119_1.method3304();
 		@Pc(76) int local76 = Static226.aClass119_1.method3313();
 		@Pc(78) int local78 = 0;
@@ -51,9 +51,9 @@ public final class Static361 {
 			} else if (Static241.method4190(local88.anInt1005)) {
 				@Pc(207) LocType local207;
 				if (local88.anInt1005 == 1010) {
-					local207 = client.LocTypes.method5163((int) local88.aLong30);
+					local207 = client.LocTypes.get((int) local88.aLong30);
 				} else {
-					local207 = client.LocTypes.method5163((int) (local88.aLong30 >>> 32 & 0x7FFFFFFFL));
+					local207 = client.LocTypes.get((int) (local88.aLong30 >>> 32 & 0x7FFFFFFFL));
 				}
 				if (local207.anIntArray94 != null) {
 					local207 = local207.method1533(Static214.aClass226_1);

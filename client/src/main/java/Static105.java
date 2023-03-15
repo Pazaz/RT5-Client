@@ -13,9 +13,6 @@ public final class Static105 {
 	@OriginalMember(owner = "client!ft", name = "ab", descriptor = "I")
 	public static int anInt2187;
 
-	@OriginalMember(owner = "client!ft", name = "S", descriptor = "Lclient!gd;")
-	public static final LocalizedString aClass79_45 = new LocalizedString("flash1:", "blinken1:", "clignotant1:", "flash1:");
-
 	@OriginalMember(owner = "client!ft", name = "X", descriptor = "Z")
 	public static boolean aBoolean162 = false;
 
@@ -35,22 +32,6 @@ public final class Static105 {
 			}
 		}
 		return null;
-	}
-
-	@OriginalMember(owner = "client!ft", name = "a", descriptor = "(ILjava/lang/String;)Z")
-	public static boolean method2208(@OriginalArg(1) String arg0) {
-		if (arg0 == null) {
-			return false;
-		}
-		for (@Pc(11) int local11 = 0; local11 < Static301.anInt5700; local11++) {
-			if (arg0.equalsIgnoreCase(Static234.aStringArray39[local11])) {
-				return true;
-			}
-			if (arg0.equalsIgnoreCase(Static190.aStringArray28[local11])) {
-				return true;
-			}
-		}
-		return false;
 	}
 
 	@OriginalMember(owner = "client!ft", name = "b", descriptor = "(B)V")

@@ -28,7 +28,7 @@ public final class Static242 {
 			local21 = Static190.aClass19_8.method2891(local28[0]);
 			Static61.aClass98_5.put((long) local7, local21);
 		}
-		Static324.method5541(0, arg3.zFine, arg3.aByte78, arg3.getSize() * 64, arg4 >> 1, arg3.xFine, arg5 >> 1);
+		Static324.method5541(0, arg3.zFine, arg3.plane, arg3.getSize() * 64, arg4 >> 1, arg3.xFine, arg5 >> 1);
 		@Pc(75) int local75 = arg2 + Static216.anIntArray231[0] - 18;
 		@Pc(90) int local90 = arg1 + Static216.anIntArray231[1] - 54 - 16;
 		@Pc(98) int local98 = local75 + arg6 / 4 * 18;

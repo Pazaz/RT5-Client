@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static164 {
 
-	@OriginalMember(owner = "client!jl", name = "ab", descriptor = "I")
-	public static int anInt3140;
-
 	@OriginalMember(owner = "client!jl", name = "bb", descriptor = "F")
 	public static float aFloat38;
 
@@ -30,7 +27,7 @@ public final class Static164 {
 		} else {
 			local15 = Static6.anInt158 + (int) Static277.aFloat67 & 0x3FFF;
 		}
-		@Pc(34) int local34 = Math.max(arg10.anInt4248 / 2, arg10.anInt4261 / 2) + 10;
+		@Pc(34) int local34 = Math.max(arg10.width / 2, arg10.height / 2) + 10;
 		@Pc(43) int local43 = arg4 * arg4 + arg1 * arg1;
 		if (local43 > local34 * local34) {
 			return;
@@ -46,8 +43,8 @@ public final class Static164 {
 		@Pc(103) int local103 = arg7.method6124(null, arg9, 100);
 		@Pc(109) int local109 = local86 - local103 / 2;
 		@Pc(117) int local117 = arg7.method6121(arg9, null);
-		if (-arg10.anInt4248 <= local109 && arg10.anInt4248 >= local109 && -arg10.anInt4261 <= local96 && local96 <= arg10.anInt4261) {
-			arg6.method5893(arg0, 0, arg10.anInt4248 / 2 + local109 + arg0, 1, 0, null, arg2, arg8, 50, arg9, 0, arg10.anInt4261 / 2 + arg2 - local117 - local96 - arg5, null, arg3, local103);
+		if (-arg10.width <= local109 && arg10.width >= local109 && -arg10.height <= local96 && local96 <= arg10.height) {
+			arg6.method5893(arg0, 0, arg10.width / 2 + local109 + arg0, 1, 0, null, arg2, arg8, 50, arg9, 0, arg10.height / 2 + arg2 - local117 - local96 - arg5, null, arg3, local103);
 		}
 	}
 

@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static119 {
 
-	@OriginalMember(owner = "client!gr", name = "d", descriptor = "B")
-	public static byte aByte25;
-
 	@OriginalMember(owner = "client!gr", name = "e", descriptor = "Lclient!jd;")
 	public static Sprite aClass13_7;
 

@@ -66,7 +66,7 @@ public final class Static185 {
 
 	@OriginalMember(owner = "client!kn", name = "a", descriptor = "(IIIIBII)V")
 	public static void method3400(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
-		@Pc(8) Class161 local8 = Static207.method3705(arg2, arg3);
+		@Pc(8) Class161 local8 = InterfaceList.method3705(arg2, arg3);
 		if (local8 == null) {
 			return;
 		}
@@ -76,7 +76,7 @@ public final class Static185 {
 			local18.anObjectArray4 = local8.anObjectArray15;
 			ScriptRunner.method3591(local18);
 		}
-		Static196.anInt3317 = local8.anInt4300;
+		Static196.anInt3317 = local8.objId;
 		Static107.anInt2219 = arg4;
 		Static41.anInt1044 = arg0;
 		Static214.anInt3792 = arg3;
@@ -84,7 +84,7 @@ public final class Static185 {
 		Static337.anInt6317 = arg2;
 		Static115.anInt3837 = arg1;
 		Static172.anInt3298 = arg5;
-		Static200.method3645(local8);
+		InterfaceList.redraw(local8);
 	}
 
 	@OriginalMember(owner = "client!kn", name = "a", descriptor = "(IIIIIII)V")

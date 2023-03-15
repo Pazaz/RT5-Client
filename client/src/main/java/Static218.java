@@ -40,9 +40,9 @@ public final class Static218 {
 		} else if (Static241.method4190(arg0.anInt1005)) {
 			@Pc(83) LocType local83;
 			if (arg0.anInt1005 == 1010) {
-				local83 = client.LocTypes.method5163((int) arg0.aLong30);
+				local83 = client.LocTypes.get((int) arg0.aLong30);
 			} else {
-				local83 = client.LocTypes.method5163((int) (arg0.aLong30 >>> 32 & 0x7FFFFFFFL));
+				local83 = client.LocTypes.get((int) (arg0.aLong30 >>> 32 & 0x7FFFFFFFL));
 			}
 			if (local83.anIntArray94 != null) {
 				local83 = local83.method1533(Static214.aClass226_1);

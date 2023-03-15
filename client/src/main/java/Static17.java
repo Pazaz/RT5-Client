@@ -5,9 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static17 {
 
-	@OriginalMember(owner = "client!at", name = "N", descriptor = "Lclient!nh;")
-	public static Player aClass11_Sub5_Sub2_Sub1_3;
-
 	@OriginalMember(owner = "client!at", name = "P", descriptor = "Lclient!ml;")
 	public static Signlink aClass152_4;
 
@@ -16,9 +13,6 @@ public final class Static17 {
 
 	@OriginalMember(owner = "client!at", name = "O", descriptor = "Z")
 	public static boolean aBoolean308 = true;
-
-	@OriginalMember(owner = "client!at", name = "Q", descriptor = "[Ljava/lang/String;")
-	public static final String[] aStringArray43 = new String[200];
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(BII)V")
 	public static void method4208(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
@@ -79,12 +73,6 @@ public final class Static17 {
 		} else {
 			return Class.forName(arg0);
 		}
-	}
-
-	@OriginalMember(owner = "client!at", name = "a", descriptor = "(II)V")
-	public static void method4213(@OriginalArg(1) int arg0) {
-		@Pc(8) DelayedStateChange local8 = Static316.method5413(4, arg0);
-		local8.method2312();
 	}
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(Ljava/awt/Frame;ILclient!ml;)V")

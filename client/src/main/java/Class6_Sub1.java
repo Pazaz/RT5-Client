@@ -428,7 +428,7 @@ public final class Class6_Sub1 extends Class6 {
 					local12[local14][local20] = (byte) ((this.aByteArrayArray2[local14 - 1][local20] >> 2) + (this.aByteArrayArray2[local14 + 1][local20] >> 3) + (this.aByteArrayArray2[local14][local20 - 1] >> 2) + (this.aByteArrayArray2[local14][local20 + 1] >> 3) + (this.aByteArrayArray2[local14][local20] >> 1));
 				}
 			}
-			this.aClass2_Sub36Array1 = new Class2_Sub36[this.aClass4_7.method83()];
+			this.aClass2_Sub36Array1 = new Class2_Sub36[this.aClass4_7.size()];
 			this.aClass4_7.method84(this.aClass2_Sub36Array1);
 			for (local14 = 0; local14 < this.aClass2_Sub36Array1.length; local14++) {
 				this.aClass2_Sub36Array1[local14].method5565(this.anInt185);

@@ -143,7 +143,7 @@ public final class Static330 {
 							local483 = local477 >> 11 & 0xF;
 							local487 = local477 & 0x7FF;
 							if (PlayerList.selfId == local487) {
-								local491 = Static17.aClass11_Sub5_Sub2_Sub1_3;
+								local491 = PlayerList.self;
 							} else {
 								local491 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local487];
 							}
@@ -232,7 +232,7 @@ public final class Static330 {
 			} else if (arg0 == ZoneProt.PACKET_4) {
 				local12 = Protocol.inboundBuffer.g2();
 				local23 = Protocol.inboundBuffer.g1();
-				client.LocTypes.method5163(local12).method1521(local23);
+				client.LocTypes.get(local12).method1521(local23);
 			} else if (ZoneProt.PACKET_3 == arg0) {
 				Protocol.inboundBuffer.g1();
 				local12 = Protocol.inboundBuffer.g1();
@@ -284,7 +284,7 @@ public final class Static330 {
 				local69 = Protocol.inboundBuffer.g1();
 				if (local23 >= 0 && local32 >= 0 && local23 < Static373.anInt7033 && Static242.anInt4449 > local32) {
 					local73 = local53 + 1;
-					if (local23 - local73 <= Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueX[0] && Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueX[0] <= local23 + local73 && Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueZ[0] >= local32 - local73 && local32 + local73 >= Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueZ[0] && client.preferences.anInt4882 != 0 && local57 > 0 && Static243.anInt4503 < 50 && local40 != -1) {
+					if (local23 - local73 <= PlayerList.self.movementQueueX[0] && PlayerList.self.movementQueueX[0] <= local23 + local73 && PlayerList.self.movementQueueZ[0] >= local32 - local73 && local32 + local73 >= PlayerList.self.movementQueueZ[0] && client.preferences.anInt4882 != 0 && local57 > 0 && Static243.anInt4503 < 50 && local40 != -1) {
 						Static256.anIntArray321[Static243.anInt4503] = local40;
 						Static329.anIntArray419[Static243.anInt4503] = local57;
 						Static237.anIntArray283[Static243.anInt4503] = local63;
@@ -348,12 +348,4 @@ public final class Static330 {
 		}
 	}
 
-	@OriginalMember(owner = "client!td", name = "a", descriptor = "(BLjava/lang/String;)Ljava/lang/String;")
-	public static String method5657(@OriginalArg(1) String arg0) {
-		@Pc(16) String local16 = Static170.method3229(StringUtils.toBase37(arg0));
-		if (local16 == null) {
-			local16 = "";
-		}
-		return local16;
-	}
 }

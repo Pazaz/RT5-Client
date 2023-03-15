@@ -359,7 +359,7 @@ public final class LocType {
 	}
 
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(Ljava/lang/String;II)Ljava/lang/String;")
-	public String method1520(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
+	public String getParam(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
 		if (this.aClass4_24 == null) {
 			return arg0;
 		} else {
@@ -405,7 +405,7 @@ public final class LocType {
 		}
 		for (@Pc(22) int local22 = 0; local22 < this.anIntArray94.length; local22++) {
 			if (this.anIntArray94[local22] != -1) {
-				@Pc(46) LocType local46 = this.aClass202_1.method5163(this.anIntArray94[local22]);
+				@Pc(46) LocType local46 = this.aClass202_1.get(this.anIntArray94[local22]);
 				if (local46.anInt1325 != -1 || local46.anIntArray93 != null) {
 					return true;
 				}
@@ -888,7 +888,7 @@ public final class LocType {
 	}
 
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(III)I")
-	public int method1532(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+	public int getParam(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		if (this.aClass4_24 == null) {
 			return arg0;
 		} else {
@@ -907,9 +907,9 @@ public final class LocType {
 		}
 		if (local13 < 0 || this.anIntArray94.length - 1 <= local13 || this.anIntArray94[local13] == -1) {
 			@Pc(61) int local61 = this.anIntArray94[this.anIntArray94.length - 1];
-			return local61 == -1 ? null : this.aClass202_1.method5163(local61);
+			return local61 == -1 ? null : this.aClass202_1.get(local61);
 		} else {
-			return this.aClass202_1.method5163(this.anIntArray94[local13]);
+			return this.aClass202_1.get(this.anIntArray94[local13]);
 		}
 	}
 }

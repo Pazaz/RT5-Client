@@ -82,36 +82,6 @@ public final class Static337 {
 		}
 	}
 
-	@OriginalMember(owner = "client!tk", name = "a", descriptor = "(ILclient!nh;II)V")
-	public static void method5707(@OriginalArg(1) Player arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		if (arg0.anInt4597 == arg2 && arg2 != -1) {
-			@Pc(18) Class157 local18 = client.SeqTypes.method2371(arg2);
-			@Pc(21) int local21 = local18.anInt4022;
-			if (local21 == 1) {
-				arg0.anInt4590 = arg1;
-				arg0.anInt4607 = 0;
-				arg0.anInt4592 = 1;
-				arg0.anInt4598 = 0;
-				arg0.anInt4624 = 0;
-				Static1.method4(local18, arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4607);
-			}
-			if (local21 == 2) {
-				arg0.anInt4598 = 0;
-			}
-		} else if (arg2 == -1 || arg0.anInt4597 == -1 || client.SeqTypes.method2371(arg2).anInt4023 >= client.SeqTypes.method2371(arg0.anInt4597).anInt4023) {
-			arg0.anInt4597 = arg2;
-			arg0.anInt4598 = 0;
-			arg0.anInt4624 = 0;
-			arg0.anInt4642 = arg0.anInt4643;
-			arg0.anInt4590 = arg1;
-			arg0.anInt4592 = 1;
-			arg0.anInt4607 = 0;
-			if (arg0.anInt4597 != -1) {
-				Static1.method4(client.SeqTypes.method2371(arg0.anInt4597), arg0 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg0.aByte78, arg0.xFine, arg0.zFine, arg0.anInt4607);
-			}
-		}
-	}
-
 	@OriginalMember(owner = "client!tk", name = "b", descriptor = "(I)V")
 	public static void method5709() {
 		Static371.method6257((long) client.cycle, Static190.aClass19_8);

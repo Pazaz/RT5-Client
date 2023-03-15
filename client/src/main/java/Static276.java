@@ -32,9 +32,9 @@ public final class Static276 {
 			Static162.method2979(local8);
 		}
 		Static138.method2580(local8);
-		@Pc(27) Class161 local27 = Static6.method140(local12);
+		@Pc(27) Class161 local27 = InterfaceList.getComponent(local12);
 		if (local27 != null) {
-			Static200.method3645(local27);
+			InterfaceList.redraw(local27);
 		}
 		Static227.method3989();
 		if (!arg0 && Static139.anInt2595 != -1) {

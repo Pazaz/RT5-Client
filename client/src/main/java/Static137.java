@@ -21,14 +21,14 @@ public final class Static137 {
 			return;
 		}
 		@Pc(54) ObjType local54 = client.ObjTypes.get(arg2.anInt1717);
-		@Pc(57) int local57 = local54.anInt5220;
-		if (local54.anInt5247 == 1) {
+		@Pc(57) int local57 = local54.cost;
+		if (local54.stackable == 1) {
 			local57 *= arg2.anInt1719 + 1;
 		}
 		for (@Pc(76) Class2_Sub8 local76 = (Class2_Sub8) local31.aClass135_34.head(); local76 != null; local76 = (Class2_Sub8) local31.aClass135_34.next()) {
 			local54 = client.ObjTypes.get(local76.anInt1717);
-			@Pc(87) int local87 = local54.anInt5220;
-			if (local54.anInt5247 == 1) {
+			@Pc(87) int local87 = local54.cost;
+			if (local54.stackable == 1) {
 				local87 *= local76.anInt1719 + 1;
 			}
 			if (local57 > local87) {
@@ -39,9 +39,4 @@ public final class Static137 {
 		local31.aClass135_34.addTail(arg2);
 	}
 
-	@OriginalMember(owner = "client!hq", name = "a", descriptor = "(IZ)V")
-	public static void method2552(@OriginalArg(0) int arg0) {
-		@Pc(8) DelayedStateChange local8 = Static316.method5413(14, arg0);
-		local8.method2312();
-	}
 }

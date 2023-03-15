@@ -123,4 +123,23 @@ public class StringUtils {
 		return local5;
 	}
 
+	@OriginalMember(owner = "client!td", name = "a", descriptor = "(BLjava/lang/String;)Ljava/lang/String;")
+	public static String toTitleCase(@OriginalArg(1) String arg0) {
+		@Pc(16) String local16 = Static170.method3229(toBase37(arg0));
+		if (local16 == null) {
+			local16 = "";
+		}
+		return local16;
+	}
+
+	@OriginalMember(owner = "client!hk", name = "a", descriptor = "(ZLjava/lang/String;)Z")
+	public static boolean isInt(@OriginalArg(1) String arg0) {
+		return Static340.method5766(arg0);
+	}
+
+	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(ILjava/lang/String;)I")
+	public static int parseInt(@OriginalArg(1) String arg0) {
+		return Static319.method5433(10, arg0);
+	}
+
 }

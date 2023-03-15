@@ -66,16 +66,16 @@ public final class Static363 {
 			}
 			return;
 		}
-		if ((Static359.aByteArrayArrayArray16[Static355.anInt6585][Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7][Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7] & 0x4) != 0) {
-			Static81.method3667(Scene.aClass67ArrayArrayArray3, false, Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7, Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7, 0);
+		if ((Static359.aByteArrayArrayArray16[Static355.anInt6585][PlayerList.self.xFine >> 7][PlayerList.self.zFine >> 7] & 0x4) != 0) {
+			Static81.method3667(Scene.aClass67ArrayArrayArray3, false, PlayerList.self.xFine >> 7, PlayerList.self.zFine >> 7, 0);
 		}
 		if (Static265.anInt4857 >= 2560) {
 			return;
 		}
 		local94 = Static136.anInt6778 >> 7;
 		@Pc(175) int local175 = Static211.anInt3777 >> 7;
-		@Pc(180) int local180 = Static17.aClass11_Sub5_Sub2_Sub1_3.xFine >> 7;
-		@Pc(185) int local185 = Static17.aClass11_Sub5_Sub2_Sub1_3.zFine >> 7;
+		@Pc(180) int local180 = PlayerList.self.xFine >> 7;
+		@Pc(185) int local185 = PlayerList.self.zFine >> 7;
 		@Pc(196) int local196;
 		if (local180 <= local94) {
 			local196 = local94 - local180;
@@ -89,7 +89,7 @@ public final class Static363 {
 			local210 = local185 - local175;
 		}
 		if (local196 == 0 && local210 == 0 || local196 <= -Static373.anInt7033 || Static373.anInt7033 <= local196 || local210 <= -Static242.anInt4449 || local210 >= Static242.anInt4449) {
-			Static262.report(null, "RC: " + local94 + "," + local175 + " " + local180 + "," + local185 + " " + Static164.anInt3140 + "," + Static148.anInt2719);
+			Static262.report(null, "RC: " + local94 + "," + local175 + " " + local180 + "," + local185 + " " + Camera.originX + "," + Camera.originZ);
 			return;
 		}
 		@Pc(290) int local290;

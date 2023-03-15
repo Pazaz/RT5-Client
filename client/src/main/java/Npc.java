@@ -226,7 +226,7 @@ public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IIIIZI)V")
 	public void teleport(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4) {
-		super.aByte78 = (byte) arg1;
+		super.plane = (byte) arg1;
 		if (super.anInt4597 != -1 && client.SeqTypes.method2371(super.anInt4597).anInt4029 == 1) {
 			super.anInt4597 = -1;
 		}

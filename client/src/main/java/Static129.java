@@ -16,9 +16,6 @@ public final class Static129 {
 	@OriginalMember(owner = "client!hg", name = "j", descriptor = "Lclient!ld;")
 	public static final LinkedList aClass135_19 = new LinkedList();
 
-	@OriginalMember(owner = "client!hg", name = "l", descriptor = "Lclient!gd;")
-	public static final LocalizedString aClass79_57 = new LocalizedString("flash2:", "blinken2:", "clignotant2:", "flash2:");
-
 	@OriginalMember(owner = "client!hg", name = "m", descriptor = "Lclient!ld;")
 	public static final LinkedList aClass135_20 = new LinkedList();
 
@@ -66,12 +63,6 @@ public final class Static129 {
 		local13.method2311();
 		local13.anInt2290 = arg1;
 		local13.anInt2289 = arg0;
-	}
-
-	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(BI)V")
-	public static void method2439(@OriginalArg(1) int arg0) {
-		@Pc(17) DelayedStateChange local17 = Static316.method5413(16, arg0);
-		local17.method2312();
 	}
 
 	@OriginalMember(owner = "client!hg", name = "b", descriptor = "(I)V")

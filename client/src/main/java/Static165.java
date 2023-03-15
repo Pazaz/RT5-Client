@@ -26,27 +26,6 @@ public final class Static165 {
 		return local9;
 	}
 
-	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(IIZZI)I")
-	public static int method3150(@OriginalArg(0) int arg0, @OriginalArg(3) boolean arg1, @OriginalArg(4) int arg2) {
-		@Pc(10) Class2_Sub41 local10 = Static374.method6275(false, arg2);
-		if (local10 == null) {
-			return 0;
-		}
-		@Pc(16) int local16 = 0;
-		for (@Pc(18) int local18 = 0; local18 < local10.anIntArray489.length; local18++) {
-			if (local10.anIntArray489[local18] >= 0 && local10.anIntArray489[local18] < client.ObjTypes.capacity) {
-				@Pc(44) ObjType local44 = client.ObjTypes.get(local10.anIntArray489[local18]);
-				@Pc(54) int local54 = local44.method4772(client.ParamTypes.method565(arg0).anInt7023, arg0);
-				if (arg1) {
-					local16 += local10.anIntArray488[local18] * local54;
-				} else {
-					local16 += local54;
-				}
-			}
-		}
-		return local16;
-	}
-
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(IIII)V")
 	public static void method3154(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (Scene.aClass67ArrayArrayArray3 == null) {
@@ -102,7 +81,7 @@ public final class Static165 {
 		}
 		@Pc(41) String local41;
 		if (Static330.aBoolean419 && Static268.anInt4959 < 2) {
-			local41 = Static91.aString18 + Static161.aClass79_67.method2267(client.language) + Static371.aString68 + " ->";
+			local41 = Static91.aString18 + Static161.aClass79_67.getLocalized(client.language) + Static371.aString68 + " ->";
 		} else if (Static148.aBoolean192 && Static174.aClass123_2.method3343(81) && Static268.anInt4959 > 2) {
 			local41 = Static318.method5421((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev.prev);
 		} else {
@@ -127,9 +106,9 @@ public final class Static165 {
 			} else if (Static241.method4190(local68.anInt1005)) {
 				@Pc(108) LocType local108;
 				if (local68.anInt1005 == 1010) {
-					local108 = client.LocTypes.method5163((int) local68.aLong30);
+					local108 = client.LocTypes.get((int) local68.aLong30);
 				} else {
-					local108 = client.LocTypes.method5163((int) (local68.aLong30 >>> 32 & 0x7FFFFFFFL));
+					local108 = client.LocTypes.get((int) (local68.aLong30 >>> 32 & 0x7FFFFFFFL));
 				}
 				if (local108.anIntArray94 != null) {
 					local108 = local108.method1533(Static214.aClass226_1);
@@ -143,14 +122,14 @@ public final class Static165 {
 			}
 		}
 		if (Static268.anInt4959 > 2) {
-			local41 = local41 + "<col=ffffff> / " + (Static268.anInt4959 - 2) + Static328.aClass79_127.method2267(client.language);
+			local41 = local41 + "<col=ffffff> / " + (Static268.anInt4959 - 2) + Static328.aClass79_127.getLocalized(client.language);
 		}
 		if (Static164.aClass161_5 != null) {
 			@Pc(218) BitmapFont local218 = Static164.aClass161_5.method4101(arg0);
 			if (local218 == null) {
 				local218 = Static52.aClass130_1;
 			}
-			local218.method5903(Static129.anInt2460, local41, Static288.anInt5464, Static61.aRandom1, Static164.aClass161_5.anInt4293, Static210.anIntArray229, Static164.aClass161_5.anInt4252, Static164.aClass161_5.anInt4248, Static164.aClass161_5.anInt4290, Static283.gregorianDateSeed, Static134.aClass13Array12, Static164.aClass161_5.anInt4261, Static164.aClass161_5.anInt4298, Static72.anIntArray114);
+			local218.method5903(Static129.anInt2460, local41, Static288.anInt5464, Static61.aRandom1, Static164.aClass161_5.valign, Static210.anIntArray229, Static164.aClass161_5.shadowColor, Static164.aClass161_5.width, Static164.aClass161_5.color, Static283.gregorianDateSeed, Static134.aClass13Array12, Static164.aClass161_5.height, Static164.aClass161_5.halign, Static72.anIntArray114);
 			Static369.method6221(Static210.anIntArray229[2], Static210.anIntArray229[0], Static210.anIntArray229[3], Static210.anIntArray229[1]);
 		} else if (Static179.aClass161_6 != null && client.GAME_RS == client.game) {
 			@Pc(287) int local287 = Static52.aClass130_1.method5899(Static290.anInt5498 + 4, Static283.gregorianDateSeed, Static134.aClass13Array12, Static61.aRandom1, Static63.anInt1549 + 16, Static72.anIntArray114, local41);

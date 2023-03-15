@@ -25,12 +25,6 @@ public final class Static369 {
 		}
 	}
 
-	@OriginalMember(owner = "client!vm", name = "c", descriptor = "(IB)V")
-	public static void method6220(@OriginalArg(0) int arg0) {
-		@Pc(16) DelayedStateChange local16 = Static316.method5413(12, arg0);
-		local16.method2312();
-	}
-
 	@OriginalMember(owner = "client!vm", name = "a", descriptor = "(IIIII)V")
 	public static void method6221(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		for (@Pc(3) int local3 = 0; local3 < Static154.anInt2806; local3++) {

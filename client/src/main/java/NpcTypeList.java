@@ -39,7 +39,7 @@ public final class NpcTypeList {
 	}
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(II)Lclient!fk;")
-	public NpcType method5570(@OriginalArg(0) int arg0) {
+	public NpcType get(@OriginalArg(0) int arg0) {
 		@Pc(6) LruHashTable local6 = this.aClass98_53;
 		@Pc(16) NpcType local16;
 		synchronized (this.aClass98_53) {

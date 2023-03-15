@@ -136,13 +136,13 @@ public final class Static7 {
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!nk;B)Lclient!nk;")
 	public static Class161 method6465(@OriginalArg(0) Class161 arg0) {
 		if (arg0.anInt4275 != -1) {
-			return Static6.method140(arg0.anInt4275);
+			return InterfaceList.getComponent(arg0.anInt4275);
 		}
-		@Pc(25) int local25 = arg0.anInt4317 >>> 16;
+		@Pc(25) int local25 = arg0.id >>> 16;
 		@Pc(30) Class137 local30 = new Class137(Static329.aClass4_130);
 		for (@Pc(35) Class2_Sub7 local35 = (Class2_Sub7) local30.method3561(); local35 != null; local35 = (Class2_Sub7) local30.method3560()) {
 			if (local35.anInt1370 == local25) {
-				return Static6.method140((int) local35.key);
+				return InterfaceList.getComponent((int) local35.key);
 			}
 		}
 		return null;

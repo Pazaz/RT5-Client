@@ -7,9 +7,6 @@ public final class Static177 {
 	@OriginalMember(owner = "client!ke", name = "q", descriptor = "Lclient!r;")
 	public static Js5 aClass197_48;
 
-	@OriginalMember(owner = "client!ke", name = "F", descriptor = "[S")
-	public static short[] aShortArray56;
-
 	@OriginalMember(owner = "client!ke", name = "E", descriptor = "I")
 	public static int anInt3381 = 0;
 
@@ -27,10 +24,10 @@ public final class Static177 {
 				@Pc(34) Buffer local34 = new Buffer(local27);
 				local40 = Static291.mapSquares[local21] >> 8;
 				@Pc(46) int local46 = Static291.mapSquares[local21] & 0xFF;
-				@Pc(53) int local53 = local40 * 64 - Static164.anInt3140;
-				@Pc(59) int local59 = local46 * 64 - Static148.anInt2719;
+				@Pc(53) int local53 = local40 * 64 - Camera.originX;
+				@Pc(59) int local59 = local46 * 64 - Camera.originZ;
 				Static37.method1135();
-				arg0.method1087(local53, Static171.aClass46Array1, local34, local59, Static148.anInt2719, Static164.anInt3140);
+				arg0.method1087(local53, Static171.aClass46Array1, local34, local59, Camera.originZ, Camera.originX);
 				arg0.method1100(local16, local59, local53, Static190.aClass19_8, local34);
 				if (!arg0.aBoolean73 && Static105.anInt2187 / 8 == local40 && Static9.anInt212 / 8 == local46) {
 					if (local16[0] == -1) {
@@ -43,8 +40,8 @@ public final class Static177 {
 			}
 		}
 		for (@Pc(136) int local136 = 0; local136 < local19; local136++) {
-			@Pc(148) int local148 = (Static291.mapSquares[local136] >> 8) * 64 - Static164.anInt3140;
-			local40 = (Static291.mapSquares[local136] & 0xFF) * 64 - Static148.anInt2719;
+			@Pc(148) int local148 = (Static291.mapSquares[local136] >> 8) * 64 - Camera.originX;
+			local40 = (Static291.mapSquares[local136] & 0xFF) * 64 - Camera.originZ;
 			@Pc(163) byte[] local163 = arg1[local136];
 			if (local163 == null && Static9.anInt212 < 800) {
 				Static37.method1135();

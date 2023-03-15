@@ -99,7 +99,7 @@ public final class Class192 {
 		@Pc(11) int local11 = arg0;
 		@Pc(13) boolean local13 = false;
 		if (arg0 == -1) {
-			@Pc(22) LocType local22 = client.LocTypes.method5163(this.anInt5432);
+			@Pc(22) LocType local22 = client.LocTypes.get(this.anInt5432);
 			@Pc(24) LocType local24 = local22;
 			if (local22.anIntArray94 != null) {
 				local22 = local22.method1533(Static214.aClass226_1);
@@ -234,7 +234,7 @@ public final class Class192 {
 		@Pc(6) Class114[] local6 = arg2.method3808();
 		@Pc(9) Class163[] local9 = arg2.method3840();
 		if ((this.aClass12_Sub5_5 == null || this.aClass12_Sub5_5.aBoolean322) && (local6 != null || local9 != null)) {
-			@Pc(26) LocType local26 = client.LocTypes.method5163(this.anInt5432);
+			@Pc(26) LocType local26 = client.LocTypes.get(this.anInt5432);
 			if (local26.anIntArray94 != null) {
 				local26 = local26.method1533(Static214.aClass226_1);
 			}
@@ -282,7 +282,7 @@ public final class Class192 {
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(ZZLclient!wm;IIIB)Lclient!gn;")
 	public Model method4941(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
-		@Pc(11) LocType local11 = client.LocTypes.method5163(this.anInt5432);
+		@Pc(11) LocType local11 = client.LocTypes.get(this.anInt5432);
 		if (local11.anIntArray94 != null) {
 			local11 = local11.method1533(Static214.aClass226_1);
 		}

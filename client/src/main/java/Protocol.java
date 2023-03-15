@@ -185,14 +185,14 @@ public class Protocol {
 							local335.unlink();
 							Static329.aClass4_130.put(local335, (long) local74);
 						}
-						@Pc(375) Class161 local375 = Static6.method140(local220);
+						@Pc(375) Class161 local375 = InterfaceList.getComponent(local220);
 						if (local375 != null) {
-							Static200.method3645(local375);
+							InterfaceList.redraw(local375);
 						}
-						local375 = Static6.method140(local74);
+						local375 = InterfaceList.getComponent(local74);
 						if (local375 != null) {
-							Static200.method3645(local375);
-							Static85.method1911(true, local375);
+							InterfaceList.redraw(local375);
+							DelayedStateChange.method1911(true, local375);
 						}
 						if (Static139.anInt2595 != -1) {
 							Static392.method6460(Static139.anInt2595, 1);
@@ -288,7 +288,7 @@ public class Protocol {
 											if (local536 != -1) {
 												local635 = client.SeqTypes.method2371(local536);
 												if (local635 != null && local635.anIntArray262 != null) {
-													Static1.method4(local635, false, local790.aByte78, local790.xFine, local790.zFine, 0);
+													Static1.method4(local635, false, local790.plane, local790.xFine, local790.zFine, 0);
 												}
 											}
 										}
@@ -298,7 +298,7 @@ public class Protocol {
 								local497 = local228 & 0xFFFF;
 								@Pc(589) Player local589;
 								if (PlayerList.selfId == local497) {
-									local589 = Static17.aClass11_Sub5_Sub2_Sub1_3;
+									local589 = PlayerList.self;
 								} else {
 									local589 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local497];
 								}
@@ -349,7 +349,7 @@ public class Protocol {
 											if (local536 != -1) {
 												local635 = client.SeqTypes.method2371(local536);
 												if (local635 != null && local635.anIntArray262 != null) {
-													Static1.method4(local635, Static17.aClass11_Sub5_Sub2_Sub1_3 == local589, local589.aByte78, local589.xFine, local589.zFine, 0);
+													Static1.method4(local635, PlayerList.self == local589, local589.plane, local589.xFine, local589.zFine, 0);
 												}
 											}
 										}
@@ -358,8 +358,8 @@ public class Protocol {
 							}
 						} else {
 							local497 = local228 >> 28 & 0x3;
-							local506 = (local228 >> 14 & 0x3FFF) - Static164.anInt3140;
-							local512 = (local228 & 0x3FFF) - Static148.anInt2719;
+							local506 = (local228 >> 14 & 0x3FFF) - Camera.originX;
+							local512 = (local228 & 0x3FFF) - Camera.originZ;
 							if (local506 >= 0 && local512 >= 0 && Static373.anInt7033 > local506 && Static242.anInt4449 > local512) {
 								local536 = local506 * 128 + 64;
 								local542 = local512 * 128 + 64;
@@ -414,7 +414,7 @@ public class Protocol {
 										local1118 = new ServerActiveProperties(local1109.events, local74);
 										local1109.unlink();
 									} else if (local506 == -1) {
-										local1118 = new ServerActiveProperties(Static6.method140(local497).aClass2_Sub10_1.events, local74);
+										local1118 = new ServerActiveProperties(InterfaceList.getComponent(local497).aClass2_Sub10_1.events, local74);
 									} else {
 										local1118 = new ServerActiveProperties(0, local74);
 									}
@@ -449,13 +449,13 @@ public class Protocol {
 							local220 = inboundBuffer.g4();
 							local74 = inboundBuffer.g1bneg();
 							local228 = inboundBuffer.g1sub();
-							Static80.anIntArray464[local74] = local220;
-							Static268.anIntArray338[local74] = local228;
-							Static325.anIntArray414[local74] = 1;
+							PlayerSkillXpTable.experience[local74] = local220;
+							PlayerSkillXpTable.boostedLevels[local74] = local228;
+							PlayerSkillXpTable.baseLevels[local74] = 1;
 							local249 = Static287.anIntArray369[local74] - 1;
 							for (local497 = 0; local497 < local249; local497++) {
 								if (local220 >= Class12_Sub1_Sub1.xpLevelLookup[local497]) {
-									Static325.anIntArray414[local74] = local497 + 2;
+									PlayerSkillXpTable.baseLevels[local74] = local497 + 2;
 								}
 							}
 							Static208.anIntArray226[Static381.anInt7117++ & 0x1F] = local74;
@@ -492,69 +492,69 @@ public class Protocol {
 										local1391 = inboundBuffer.gjstr();
 										local604 = inboundBuffer.g1() == 1;
 									}
-									for (local536 = 0; local536 < Static384.anInt7178; local536++) {
+									for (local536 = 0; local536 < FriendsList.size; local536++) {
 										if (local1371) {
-											if (local1381.equals(Static17.aStringArray43[local536])) {
-												Static17.aStringArray43[local536] = local452;
+											if (local1381.equals(FriendsList.usernames[local536])) {
+												FriendsList.usernames[local536] = local452;
 												Static319.aStringArray54[local536] = local1381;
 												local452 = null;
 												break;
 											}
-										} else if (local452.equals(Static17.aStringArray43[local536])) {
-											if (Static265.anIntArray333[local536] != local249) {
-												Static265.anIntArray333[local536] = local249;
+										} else if (local452.equals(FriendsList.usernames[local536])) {
+											if (FriendsList.worlds[local536] != local249) {
+												FriendsList.worlds[local536] = local249;
 												if (local249 > 0) {
-													Static33.method4200("", 0, local452 + Static282.aClass79_112.method2267(client.language), 5, "");
+													Static33.method4200("", 0, local452 + Static282.aClass79_112.getLocalized(client.language), 5, "");
 												}
 												if (local249 == 0) {
-													Static33.method4200("", 0, local452 + Static359.aClass79_140.method2267(client.language), 5, "");
+													Static33.method4200("", 0, local452 + Static359.aClass79_140.getLocalized(client.language), 5, "");
 												}
 											}
 											Static319.aStringArray54[local536] = local1381;
-											Static209.aStringArray32[local536] = local1391;
-											Static114.anIntArray148[local536] = local497;
+											FriendsList.worldNames[local536] = local1391;
+											FriendsList.ranks[local536] = local497;
 											local452 = null;
-											Static302.aBooleanArray13[local536] = local604;
+											FriendsList.sameGame[local536] = local604;
 											break;
 										}
 									}
-									if (local452 != null && Static384.anInt7178 < 200) {
-										Static17.aStringArray43[Static384.anInt7178] = local452;
-										Static319.aStringArray54[Static384.anInt7178] = local1381;
-										Static265.anIntArray333[Static384.anInt7178] = local249;
-										Static209.aStringArray32[Static384.anInt7178] = local1391;
-										Static114.anIntArray148[Static384.anInt7178] = local497;
-										Static302.aBooleanArray13[Static384.anInt7178] = local604;
-										Static384.anInt7178++;
+									if (local452 != null && FriendsList.size < 200) {
+										FriendsList.usernames[FriendsList.size] = local452;
+										Static319.aStringArray54[FriendsList.size] = local1381;
+										FriendsList.worlds[FriendsList.size] = local249;
+										FriendsList.worldNames[FriendsList.size] = local1391;
+										FriendsList.ranks[FriendsList.size] = local497;
+										FriendsList.sameGame[FriendsList.size] = local604;
+										FriendsList.size++;
 									}
 								}
-								Static235.anInt3363 = 2;
+								FriendsList.status = 2;
 								Static53.anInt3971 = Static88.transmitTimer;
-								local74 = Static384.anInt7178;
+								local74 = FriendsList.size;
 								while (local74 > 0) {
 									local1371 = true;
 									local74--;
 									for (local228 = 0; local228 < local74; local228++) {
-										if (Static265.anIntArray333[local228] != client.worldId && client.worldId == Static265.anIntArray333[local228 + 1] || Static265.anIntArray333[local228] == 0 && Static265.anIntArray333[local228 + 1] != 0) {
-											local249 = Static265.anIntArray333[local228];
-											Static265.anIntArray333[local228] = Static265.anIntArray333[local228 + 1];
-											Static265.anIntArray333[local228 + 1] = local249;
-											local1627 = Static209.aStringArray32[local228];
-											Static209.aStringArray32[local228] = Static209.aStringArray32[local228 + 1];
-											Static209.aStringArray32[local228 + 1] = local1627;
-											local1391 = Static17.aStringArray43[local228];
-											Static17.aStringArray43[local228] = Static17.aStringArray43[local228 + 1];
-											Static17.aStringArray43[local228 + 1] = local1391;
+										if (FriendsList.worlds[local228] != Player.worldId && Player.worldId == FriendsList.worlds[local228 + 1] || FriendsList.worlds[local228] == 0 && FriendsList.worlds[local228 + 1] != 0) {
+											local249 = FriendsList.worlds[local228];
+											FriendsList.worlds[local228] = FriendsList.worlds[local228 + 1];
+											FriendsList.worlds[local228 + 1] = local249;
+											local1627 = FriendsList.worldNames[local228];
+											FriendsList.worldNames[local228] = FriendsList.worldNames[local228 + 1];
+											FriendsList.worldNames[local228 + 1] = local1627;
+											local1391 = FriendsList.usernames[local228];
+											FriendsList.usernames[local228] = FriendsList.usernames[local228 + 1];
+											FriendsList.usernames[local228 + 1] = local1391;
 											local1663 = Static319.aStringArray54[local228];
 											Static319.aStringArray54[local228] = Static319.aStringArray54[local228 + 1];
 											Static319.aStringArray54[local228 + 1] = local1663;
-											local536 = Static114.anIntArray148[local228];
-											Static114.anIntArray148[local228] = Static114.anIntArray148[local228 + 1];
-											Static114.anIntArray148[local228 + 1] = local536;
-											@Pc(1699) boolean local1699 = Static302.aBooleanArray13[local228];
-											Static302.aBooleanArray13[local228] = Static302.aBooleanArray13[local228 + 1];
+											local536 = FriendsList.ranks[local228];
+											FriendsList.ranks[local228] = FriendsList.ranks[local228 + 1];
+											FriendsList.ranks[local228 + 1] = local536;
+											@Pc(1699) boolean local1699 = FriendsList.sameGame[local228];
+											FriendsList.sameGame[local228] = FriendsList.sameGame[local228 + 1];
 											local1371 = false;
-											Static302.aBooleanArray13[local228 + 1] = local1699;
+											FriendsList.sameGame[local228 + 1] = local1699;
 										}
 									}
 									if (local1371) {
@@ -564,7 +564,7 @@ public class Protocol {
 								packet = null;
 								return true;
 							} else if (packet == ServerProt.PACKET_7) {
-								Static41.anInt1048 = inboundBuffer.g2s();
+								Player.weight = inboundBuffer.g2s();
 								Static93.miscTransmitAt = Static88.transmitTimer;
 								packet = null;
 								return true;
@@ -589,7 +589,7 @@ public class Protocol {
 											if (local536 <= 1) {
 												if (LoginManager.playerUnderage && !LoginManager.parentalChatConsent || LoginManager.mapQuickChat) {
 													local1798 = true;
-												} else if (Static105.method2208(local1381)) {
+												} else if (IgnoreList.contains(local1381)) {
 													local1798 = true;
 												}
 											}
@@ -681,7 +681,7 @@ public class Protocol {
 									packet = null;
 									return true;
 								} else if (ServerProt.PACKET_8 == packet) {
-									Static151.rebootTimer = inboundBuffer.g2() * 30;
+									Player.rebootTimer = inboundBuffer.g2() * 30;
 									packet = null;
 									Static93.miscTransmitAt = Static88.transmitTimer;
 									return true;
@@ -693,7 +693,7 @@ public class Protocol {
 									local74 = inboundBuffer.g1();
 									local228 = inboundBuffer.g2();
 									local249 = inboundBuffer.g1();
-									Static29.method939(local74, local249, local228, local220);
+									SoundPlayer.play(local74, local249, local228, local220);
 									packet = null;
 									return true;
 								} else if (ServerProt.PACKET_31 == packet) {
@@ -734,50 +734,50 @@ public class Protocol {
 									packet = null;
 									return true;
 								} else {
-									@Pc(2522) Class214 local2522;
+									@Pc(2522) ClanMember local2522;
 									if (packet == ServerProt.PACKET_35) {
 										Static285.anInt5370 = Static88.transmitTimer;
 										if (packetSize == 0) {
-											Static389.aString53 = null;
-											Static186.anInt3730 = 0;
-											Static169.aString25 = null;
+											ClanChat.name = null;
+											ClanChat.size = 0;
+											ClanChat.owner = null;
 											packet = null;
-											Static47.aClass214Array1 = null;
+											ClanChat.members = null;
 											return true;
 										}
-										Static169.aString25 = inboundBuffer.gjstr();
+										ClanChat.owner = inboundBuffer.gjstr();
 										local1371 = inboundBuffer.g1() == 1;
 										if (local1371) {
 											inboundBuffer.gjstr();
 										}
 										@Pc(2364) long local2364 = inboundBuffer.g8();
-										Static389.aString53 = StringUtils.fromBase37(local2364);
-										Static265.aByte54 = inboundBuffer.g1b();
+										ClanChat.name = StringUtils.fromBase37(local2364);
+										ClanChat.minKick = inboundBuffer.g1b();
 										local249 = inboundBuffer.g1();
 										if (local249 == 255) {
 											packet = null;
 											return true;
 										}
-										Static186.anInt3730 = local249;
-										@Pc(2392) Class214[] local2392 = new Class214[100];
-										for (local506 = 0; local506 < Static186.anInt3730; local506++) {
-											local2392[local506] = new Class214();
-											local2392[local506].aString58 = inboundBuffer.gjstr();
+										ClanChat.size = local249;
+										@Pc(2392) ClanMember[] local2392 = new ClanMember[100];
+										for (local506 = 0; local506 < ClanChat.size; local506++) {
+											local2392[local506] = new ClanMember();
+											local2392[local506].username2 = inboundBuffer.gjstr();
 											local1371 = inboundBuffer.g1() == 1;
 											if (local1371) {
-												local2392[local506].aString60 = inboundBuffer.gjstr();
+												local2392[local506].username = inboundBuffer.gjstr();
 											} else {
-												local2392[local506].aString60 = local2392[local506].aString58;
+												local2392[local506].username = local2392[local506].username2;
 											}
-											local2392[local506].aString59 = Static135.method2537(local2392[local506].aString60);
-											local2392[local506].anInt5978 = inboundBuffer.g2();
-											local2392[local506].aByte65 = inboundBuffer.g1b();
-											local2392[local506].aString61 = inboundBuffer.gjstr();
-											if (local2392[local506].aString60.equals(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41)) {
-												Static119.aByte25 = local2392[local506].aByte65;
+											local2392[local506].aString59 = Static135.method2537(local2392[local506].username);
+											local2392[local506].world = inboundBuffer.g2();
+											local2392[local506].rank = inboundBuffer.g1b();
+											local2392[local506].worldName = inboundBuffer.gjstr();
+											if (local2392[local506].username.equals(PlayerList.self.username)) {
+												ClanChat.rank = local2392[local506].rank;
 											}
 										}
-										local542 = Static186.anInt3730;
+										local542 = ClanChat.size;
 										while (local542 > 0) {
 											local542--;
 											local604 = true;
@@ -793,7 +793,7 @@ public class Protocol {
 												break;
 											}
 										}
-										Static47.aClass214Array1 = local2392;
+										ClanChat.members = local2392;
 										packet = null;
 										return true;
 									} else if (packet == ServerProt.PACKET_26) {
@@ -806,10 +806,10 @@ public class Protocol {
 									} else if (ServerProt.PACKET_71 == packet) {
 										local220 = inboundBuffer.g1();
 										if (inboundBuffer.g1() == 0) {
-											Static290.aClass187Array1[local220] = new StockMarketOffer();
+											StockMarketManager.offers[local220] = new StockMarketOffer();
 										} else {
 											inboundBuffer.pos--;
-											Static290.aClass187Array1[local220] = new StockMarketOffer(inboundBuffer);
+											StockMarketManager.offers[local220] = new StockMarketOffer(inboundBuffer);
 										}
 										packet = null;
 										Static177.anInt3381 = Static88.transmitTimer;
@@ -907,7 +907,7 @@ public class Protocol {
 										@Pc(3018) int local3018 = 0;
 										while (true) {
 											if (local3018 >= 100) {
-												if (local536 <= 1 && Static105.method2208(local1381)) {
+												if (local536 <= 1 && IgnoreList.contains(local1381)) {
 													local3016 = true;
 												}
 												break;
@@ -939,7 +939,7 @@ public class Protocol {
 										packet = null;
 										return true;
 									} else if (ServerProt.PACKET_19 == packet) {
-										Static235.anInt3363 = 1;
+										FriendsList.status = 1;
 										Static53.anInt3971 = Static88.transmitTimer;
 										packet = null;
 										return true;
@@ -963,7 +963,7 @@ public class Protocol {
 													local1118 = new ServerActiveProperties(local228, local1109.anInt1759);
 													local1109.unlink();
 												} else if (local506 == -1) {
-													local1118 = new ServerActiveProperties(local228, Static6.method140(local220).aClass2_Sub10_1.anInt1759);
+													local1118 = new ServerActiveProperties(local228, InterfaceList.getComponent(local220).aClass2_Sub10_1.anInt1759);
 												} else {
 													local1118 = new ServerActiveProperties(local228, -1);
 												}
@@ -973,8 +973,8 @@ public class Protocol {
 										packet = null;
 										return true;
 									} else if (ServerProt.PACKET_6 == packet) {
-										Static301.anInt5700 = inboundBuffer.g1();
-										for (local220 = 0; local220 < Static301.anInt5700; local220++) {
+										IgnoreList.size = inboundBuffer.g1();
+										for (local220 = 0; local220 < IgnoreList.size; local220++) {
 											Static226.aStringArray35[local220] = inboundBuffer.gjstr();
 											Static234.aStringArray39[local220] = inboundBuffer.gjstr();
 											if (Static234.aStringArray39[local220].equals("")) {
@@ -1054,37 +1054,37 @@ public class Protocol {
 												local3571 = true;
 											}
 											if (local3571) {
-												if (Static186.anInt3730 == 0) {
+												if (ClanChat.size == 0) {
 													packet = null;
 													return true;
 												}
-												for (local512 = 0; local512 < Static186.anInt3730 && (!Static47.aClass214Array1[local512].aString60.equals(local452) || Static47.aClass214Array1[local512].anInt5978 != local249); local512++) {
+												for (local512 = 0; local512 < ClanChat.size && (!ClanChat.members[local512].username.equals(local452) || ClanChat.members[local512].world != local249); local512++) {
 												}
-												if (local512 < Static186.anInt3730) {
-													while (local512 < Static186.anInt3730 - 1) {
-														Static47.aClass214Array1[local512] = Static47.aClass214Array1[local512 + 1];
+												if (local512 < ClanChat.size) {
+													while (local512 < ClanChat.size - 1) {
+														ClanChat.members[local512] = ClanChat.members[local512 + 1];
 														local512++;
 													}
-													Static186.anInt3730--;
-													Static47.aClass214Array1[Static186.anInt3730] = null;
+													ClanChat.size--;
+													ClanChat.members[ClanChat.size] = null;
 												}
 											} else {
 												local1663 = inboundBuffer.gjstr();
-												local2522 = new Class214();
-												local2522.aString58 = local444;
-												local2522.aString60 = local452;
-												local2522.aString59 = Static135.method2537(local2522.aString60);
-												local2522.aByte65 = local3569;
-												local2522.aString61 = local1663;
-												local2522.anInt5978 = local249;
-												for (local542 = Static186.anInt3730 - 1; local542 >= 0; local542--) {
-													local638 = Static47.aClass214Array1[local542].aString59.compareTo(local2522.aString59);
+												local2522 = new ClanMember();
+												local2522.username2 = local444;
+												local2522.username = local452;
+												local2522.aString59 = Static135.method2537(local2522.username);
+												local2522.rank = local3569;
+												local2522.worldName = local1663;
+												local2522.world = local249;
+												for (local542 = ClanChat.size - 1; local542 >= 0; local542--) {
+													local638 = ClanChat.members[local542].aString59.compareTo(local2522.aString59);
 													if (local638 == 0) {
-														Static47.aClass214Array1[local542].anInt5978 = local249;
-														Static47.aClass214Array1[local542].aByte65 = local3569;
-														Static47.aClass214Array1[local542].aString61 = local1663;
-														if (local452.equals(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41)) {
-															Static119.aByte25 = local3569;
+														ClanChat.members[local542].world = local249;
+														ClanChat.members[local542].rank = local3569;
+														ClanChat.members[local542].worldName = local1663;
+														if (local452.equals(PlayerList.self.username)) {
+															ClanChat.rank = local3569;
 														}
 														Static285.anInt5370 = Static88.transmitTimer;
 														packet = null;
@@ -1094,20 +1094,20 @@ public class Protocol {
 														break;
 													}
 												}
-												if (Static186.anInt3730 >= Static47.aClass214Array1.length) {
+												if (ClanChat.size >= ClanChat.members.length) {
 													packet = null;
 													return true;
 												}
-												for (local638 = Static186.anInt3730 - 1; local638 > local542; local638--) {
-													Static47.aClass214Array1[local638 + 1] = Static47.aClass214Array1[local638];
+												for (local638 = ClanChat.size - 1; local638 > local542; local638--) {
+													ClanChat.members[local638 + 1] = ClanChat.members[local638];
 												}
-												if (Static186.anInt3730 == 0) {
-													Static47.aClass214Array1 = new Class214[100];
+												if (ClanChat.size == 0) {
+													ClanChat.members = new ClanMember[100];
 												}
-												Static47.aClass214Array1[local542 + 1] = local2522;
-												Static186.anInt3730++;
-												if (local452.equals(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41)) {
-													Static119.aByte25 = local3569;
+												ClanChat.members[local542 + 1] = local2522;
+												ClanChat.size++;
+												if (local452.equals(PlayerList.self.username)) {
+													ClanChat.rank = local3569;
 												}
 											}
 											packet = null;
@@ -1135,7 +1135,7 @@ public class Protocol {
 											String message = inboundBuffer.gjstr();
 											if (type == 99) {
 												DevConsole.log(message);
-											} else if (msg3.equals("") || !Static105.method2208(msg3)) {
+											} else if (msg3.equals("") || !IgnoreList.contains(msg3)) {
 												Static33.method4200(msg2, timestamp, message, type, msg3);
 											} else {
 												packet = null;
@@ -1181,7 +1181,7 @@ public class Protocol {
 											packet = null;
 											return true;
 										} else if (ServerProt.PACKET_4 == packet) {
-											Static96.anInt2002 = inboundBuffer.g1();
+											Player.energy = inboundBuffer.g1();
 											Static93.miscTransmitAt = Static88.transmitTimer;
 											packet = null;
 											return true;
@@ -1214,7 +1214,7 @@ public class Protocol {
 												local1391 = local1627;
 											}
 											if (local4068) {
-												for (local512 = 0; local512 < Static301.anInt5700; local512++) {
+												for (local512 = 0; local512 < IgnoreList.size; local512++) {
 													if (Static234.aStringArray39[local512].equals(local1391)) {
 														Static226.aStringArray35[local512] = local1381;
 														Static234.aStringArray39[local512] = local3809;
@@ -1224,12 +1224,12 @@ public class Protocol {
 													}
 												}
 											} else {
-												Static226.aStringArray35[Static301.anInt5700] = local1381;
-												Static234.aStringArray39[Static301.anInt5700] = local3809;
-												Static371.aStringArray66[Static301.anInt5700] = local1627;
-												Static190.aStringArray28[Static301.anInt5700] = local1391;
-												Static196.aBooleanArray31[Static301.anInt5700] = (local220 & 0x2) == 2;
-												Static301.anInt5700++;
+												Static226.aStringArray35[IgnoreList.size] = local1381;
+												Static234.aStringArray39[IgnoreList.size] = local3809;
+												Static371.aStringArray66[IgnoreList.size] = local1627;
+												Static190.aStringArray28[IgnoreList.size] = local1391;
+												Static196.aBooleanArray31[IgnoreList.size] = (local220 & 0x2) == 2;
+												IgnoreList.size++;
 											}
 											packet = null;
 											Static53.anInt3971 = Static88.transmitTimer;
@@ -1250,7 +1250,7 @@ public class Protocol {
 												local74 = -1;
 											}
 											local228 = inboundBuffer.g1sub();
-											Static138.method2578(local220, local228, local74);
+											MusicPlayer.playSong(local220, local228, local74);
 											packet = null;
 											return true;
 										} else if (packet == ServerProt.PACKET_62) {
@@ -1260,7 +1260,7 @@ public class Protocol {
 											if (local228 == 65535) {
 												local228 = -1;
 											}
-											Static175.method3324(local228, local74, local220);
+											MusicPlayer.playJingle(local228, local74, local220);
 											packet = null;
 											return true;
 										} else {
@@ -1284,7 +1284,7 @@ public class Protocol {
 														if (local638 <= 1) {
 															if (LoginManager.playerUnderage && !LoginManager.parentalChatConsent || LoginManager.mapQuickChat) {
 																local4312 = true;
-															} else if (Static105.method2208(local1381)) {
+															} else if (IgnoreList.contains(local1381)) {
 																local4312 = true;
 															}
 														}
@@ -1438,7 +1438,7 @@ public class Protocol {
 												@Pc(4902) int local4902 = 0;
 												while (true) {
 													if (local4902 >= 100) {
-														if (local638 <= 1 && Static105.method2208(local1381)) {
+														if (local638 <= 1 && IgnoreList.contains(local1381)) {
 															local4900 = true;
 														}
 														break;
@@ -1513,7 +1513,7 @@ public class Protocol {
 												return true;
 											} else if (ServerProt.PACKET_11 == packet) {
 												if (packetSize == 0) {
-													Static330.aString62 = Static66.aClass79_34.method2267(client.language);
+													Static330.aString62 = Static66.aClass79_34.getLocalized(client.language);
 												} else {
 													Static330.aString62 = inboundBuffer.gjstr();
 												}
@@ -1561,11 +1561,11 @@ public class Protocol {
 												local512 = local497 >> 14 & 0x3FFF;
 												local536 = local497 & 0x3FFF;
 												local542 = inboundBuffer.ig2add();
-												@Pc(5371) int local5371 = local536 - Static148.anInt2719;
+												@Pc(5371) int local5371 = local536 - Camera.originZ;
 												if (local542 == 65535) {
 													local542 = -1;
 												}
-												local512 -= Static164.anInt3140;
+												local512 -= Camera.originX;
 												Static391.method6452(local74, local542, local5371, local249, local228, local512, local506);
 												packet = null;
 												return true;
@@ -1663,7 +1663,7 @@ public class Protocol {
 														Static276.method4655(false, local5735, true);
 													}
 													if (Static192.aClass161_8 != null) {
-														Static200.method3645(Static192.aClass161_8);
+														InterfaceList.redraw(Static192.aClass161_8);
 														Static192.aClass161_8 = null;
 													}
 												}
@@ -1706,7 +1706,7 @@ public class Protocol {
 			Static211.method3725();
 			return true;
 		} catch (@Pc(21) Exception ex) {
-			@Pc(81) String local81 = "T2 - " + (packet == null ? -1 : packet.getOpcode()) + "," + (packet2 == null ? -1 : packet2.getOpcode()) + "," + (packet3 == null ? -1 : packet3.getOpcode()) + " - " + packetSize + "," + (Static164.anInt3140 + Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueX[0]) + "," + (Static148.anInt2719 + Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueZ[0]) + " - ";
+			@Pc(81) String local81 = "T2 - " + (packet == null ? -1 : packet.getOpcode()) + "," + (packet2 == null ? -1 : packet2.getOpcode()) + "," + (packet3 == null ? -1 : packet3.getOpcode()) + " - " + packetSize + "," + (Camera.originX + PlayerList.self.movementQueueX[0]) + "," + (Camera.originZ + PlayerList.self.movementQueueZ[0]) + " - ";
 			for (@Pc(83) int local83 = 0; local83 < packetSize && local83 < 50; local83++) {
 				local81 = local81 + inboundBuffer.data[local83] + ",";
 			}
@@ -1854,7 +1854,7 @@ public class Protocol {
 					if (local119 == 1) {
 						extendedIds[extendedCount++] = id;
 					}
-					local42.setType(client.NpcTypes.method5570(inboundBuffer.gBit(14)));
+					local42.setType(client.NpcTypes.get(inboundBuffer.gBit(14)));
 					@Pc(151) int local151 = inboundBuffer.gBit(3) + 4 << 11 & 0x3929;
 					@Pc(156) int local156 = inboundBuffer.gBit(2);
 					@Pc(161) int local161 = inboundBuffer.gBit(1);
@@ -1865,9 +1865,9 @@ public class Protocol {
 					} else if (local21) {
 						local42.method4330(local151);
 					}
-					local42.teleport(local42.getSize(), local156, Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueX[0] + local97, local161 == 1, Static17.aClass11_Sub5_Sub2_Sub1_3.movementQueueZ[0] + local71);
+					local42.teleport(local42.getSize(), local156, PlayerList.self.movementQueueX[0] + local97, local161 == 1, PlayerList.self.movementQueueZ[0] + local71);
 					if (local42.type.hasAreaSound()) {
-						AreaSoundManager.add(null, local42.movementQueueZ[0], 0, null, local42, local42.movementQueueX[0], local42.aByte78);
+						AreaSoundManager.add(null, local42.movementQueueZ[0], 0, null, local42, local42.movementQueueX[0], local42.plane);
 					}
 					continue;
 				}
@@ -1967,7 +1967,7 @@ public class Protocol {
 						if (local340 != -1) {
 							local221 = client.SeqTypes.method2371(local340);
 							if (local221 != null && local221.anIntArray262 != null) {
-								Static1.method4(local221, false, local25.aByte78, local25.xFine, local25.zFine, 0);
+								Static1.method4(local221, false, local25.plane, local25.xFine, local25.zFine, 0);
 							}
 						}
 					}
@@ -2008,11 +2008,11 @@ public class Protocol {
 				if (local25.type.hasAreaSound()) {
 					AreaSoundManager.remove(local25);
 				}
-				local25.setType(client.NpcTypes.method5570(inboundBuffer.ig2()));
+				local25.setType(client.NpcTypes.get(inboundBuffer.ig2()));
 				local25.setSize(local25.type.size);
 				local25.anInt4604 = local25.type.anInt2044 << 3;
 				if (local25.type.hasAreaSound()) {
-					AreaSoundManager.add(null, local25.movementQueueZ[0], 0, null, local25, local25.movementQueueX[0], local25.aByte78);
+					AreaSoundManager.add(null, local25.movementQueueZ[0], 0, null, local25, local25.movementQueueX[0], local25.plane);
 				}
 			}
 		}
@@ -2183,12 +2183,12 @@ public class Protocol {
 			local40 = buffer.g1();
 			local43 = buffer.pos;
 			@Pc(51) boolean local51 = (local32 & 0x8000) != 0;
-			if (arg2.aString41 != null && arg2.appearance != null) {
+			if (arg2.username != null && arg2.appearance != null) {
 				@Pc(59) boolean local59 = false;
 				if (local36 <= 1) {
 					if (!local51 && (LoginManager.playerUnderage && !LoginManager.parentalChatConsent || LoginManager.mapQuickChat)) {
 						local59 = true;
-					} else if (Static105.method2208(arg2.aString41)) {
+					} else if (IgnoreList.contains(arg2.username)) {
 						local59 = true;
 					}
 				}
@@ -2266,7 +2266,7 @@ public class Protocol {
 				local32 = -1;
 			}
 			local36 = buffer.g1add();
-			Static337.method5707(arg2, local36, local32);
+			Player.animate(arg2, local36, local32);
 		}
 		if ((arg3 & 0x100) != 0) {
 			arg2.anInt4615 = buffer.g1badd();
@@ -2311,7 +2311,7 @@ public class Protocol {
 			if (arg2.aString50.charAt(0) == '~') {
 				arg2.aString50 = arg2.aString50.substring(1);
 				Static33.method4200(arg2.method4072(), 0, arg2.aString50, 2, arg2.method4070());
-			} else if (Static17.aClass11_Sub5_Sub2_Sub1_3 == arg2) {
+			} else if (PlayerList.self == arg2) {
 				Static33.method4200(arg2.method4072(), 0, arg2.aString50, 2, arg2.method4070());
 			}
 			arg2.anInt4600 = 0;
@@ -2370,7 +2370,7 @@ public class Protocol {
 					if (local283 != -1) {
 						local780 = client.SeqTypes.method2371(local283);
 						if (local780 != null && local780.anIntArray262 != null) {
-							Static1.method4(local780, arg2 == Static17.aClass11_Sub5_Sub2_Sub1_3, arg2.aByte78, arg2.xFine, arg2.zFine, 0);
+							Static1.method4(local780, arg2 == PlayerList.self, arg2.plane, arg2.xFine, arg2.zFine, 0);
 						}
 					}
 				}
@@ -2550,9 +2550,9 @@ public class Protocol {
 					} else {
 						local34.method4068(local439, local432, Static335.aByteArray92[arg1]);
 					}
-					local34.aByte78 = (byte) (local146 + local34.aByte78 & 0x3);
+					local34.plane = (byte) (local146 + local34.plane & 0x3);
 					if (arg1 == PlayerList.selfId) {
-						Static355.anInt6585 = local34.aByte78;
+						Static355.anInt6585 = local34.plane;
 					}
 				} else {
 					local141 = arg0.gBit(30);
@@ -2560,8 +2560,8 @@ public class Protocol {
 					local411 = local141 >> 14 & 0x3FFF;
 					local419 = local141 & 0x3FFF;
 					System.out.println(local146 + " " + local411 + " " + local419);
-					local432 = (local411 + Static164.anInt3140 + local34.movementQueueX[0] & 0x3FFF) - Static164.anInt3140;
-					local439 = (local34.movementQueueZ[0] + Static148.anInt2719 + local419 & 0x3FFF) - Static148.anInt2719;
+					local432 = (local411 + Camera.originX + local34.movementQueueX[0] & 0x3FFF) - Camera.originX;
+					local439 = (local34.movementQueueZ[0] + Camera.originZ + local419 & 0x3FFF) - Camera.originZ;
 					if (local15) {
 						local34.aBoolean276 = true;
 						local34.anInt4181 = local439;
@@ -2569,9 +2569,9 @@ public class Protocol {
 					} else {
 						local34.method4068(local439, local432, Static335.aByteArray92[arg1]);
 					}
-					local34.aByte78 = (byte) (local34.aByte78 + local146 & 0x3);
+					local34.plane = (byte) (local34.plane + local146 & 0x3);
 					if (PlayerList.selfId == arg1) {
-						Static355.anInt6585 = local34.aByte78;
+						Static355.anInt6585 = local34.plane;
 					}
 				}
 			}
@@ -2580,7 +2580,7 @@ public class Protocol {
 		} else if (arg1 == PlayerList.selfId) {
 			throw new RuntimeException("s:lr");
 		} else {
-			Static360.anIntArray422[arg1] = (Static164.anInt3140 + local34.movementQueueX[0] >> 6 << 14) + (local34.aByte78 << 28) + (Static148.anInt2719 + local34.movementQueueZ[0] >> 6);
+			Static360.anIntArray422[arg1] = (Camera.originX + local34.movementQueueX[0] >> 6 << 14) + (local34.plane << 28) + (Camera.originZ + local34.movementQueueZ[0] >> 6);
 			if (local34.anInt4174 == -1) {
 				Static324.anIntArray410[arg1] = local34.aClass248_7.method6441();
 			} else {
@@ -2631,8 +2631,8 @@ public class Protocol {
 			local113 = local103 >> 14 & 0xFF;
 			local117 = local103 & 0xFF;
 			local75.aByteArray51[0] = Static335.aByteArray92[arg1];
-			local75.aByte78 = (byte) local107;
-			local75.method4064(local31 + (local113 << 6) - Static164.anInt3140, -Static148.anInt2719 + local36 + (local117 << 6));
+			local75.plane = (byte) local107;
+			local75.method4064(local31 + (local113 << 6) - Camera.originX, -Camera.originZ + local36 + (local117 << 6));
 			local75.aBoolean276 = false;
 			return true;
 		} else if (local8 == 1) {
@@ -2702,92 +2702,46 @@ public class Protocol {
 
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(B)V")
 	public static void method2002() {
-		writeOpcode(ClientProt.aClass145_75);
+		writeOpcode(ClientProt.WINDOW_STATUS);
 		outboundBuffer.p1(Static144.getWindowMode());
 		outboundBuffer.p2(GameShell.canvasWidth);
 		outboundBuffer.p2(GameShell.canvasHeight);
 		outboundBuffer.p1(client.preferences.anInt4885);
 	}
 
-	@OriginalMember(owner = "client!gn", name = "a", descriptor = "(Ljava/lang/String;I)V")
-	public static void method3841(@OriginalArg(0) String arg0) {
-		if (!arg0.equals("")) {
-			writeOpcode(ClientProt.aClass145_18);
-			outboundBuffer.p1(Buffer.getStringLength(arg0));
-			outboundBuffer.pjstr(arg0);
-		}
-	}
-
 	@OriginalMember(owner = "client!ff", name = "b", descriptor = "(III)V")
 	public static void method2045(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		writeOpcode(ClientProt.aClass145_229);
+		writeOpcode(ClientProt.PACKET_21);
 		outboundBuffer.p4(arg0);
 		outboundBuffer.ip2add(arg1);
 	}
 
-	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(ILjava/lang/String;)V")
-	public static void method4828(@OriginalArg(1) String arg0) {
-		if (arg0 == null) {
-			return;
-		}
-		if (arg0.startsWith("*")) {
-			arg0 = arg0.substring(1);
-		}
-		@Pc(26) String local26 = Static135.method2537(arg0);
-		if (local26 == null) {
-			return;
-		}
-		for (@Pc(31) int local31 = 0; local31 < Static384.anInt7178; local31++) {
-			@Pc(37) String local37 = Static17.aStringArray43[local31];
-			if (local37.startsWith("*")) {
-				local37 = local37.substring(1);
-			}
-			local37 = Static135.method2537(local37);
-			if (local37 != null && local37.equals(local26)) {
-				Static384.anInt7178--;
-				for (@Pc(61) int local61 = local31; local61 < Static384.anInt7178; local61++) {
-					Static17.aStringArray43[local61] = Static17.aStringArray43[local61 + 1];
-					Static319.aStringArray54[local61] = Static319.aStringArray54[local61 + 1];
-					Static265.anIntArray333[local61] = Static265.anIntArray333[local61 + 1];
-					Static209.aStringArray32[local61] = Static209.aStringArray32[local61 + 1];
-					Static114.anIntArray148[local61] = Static114.anIntArray148[local61 + 1];
-					Static302.aBooleanArray13[local61] = Static302.aBooleanArray13[local61 + 1];
-				}
-				Static53.anInt3971 = Static88.transmitTimer;
-				writeOpcode(ClientProt.aClass145_3);
-				outboundBuffer.p1(Buffer.getStringLength(arg0));
-				outboundBuffer.pjstr(arg0);
-				return;
-			}
-		}
-	}
-
 	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(IBLjava/lang/String;)V")
-	public static void method5769(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
+	public static void clickPlayerOption(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
 		@Pc(7) int local7 = PlayerList.anInt751;
 		@Pc(9) int[] local9 = PlayerList.anIntArray121;
 		@Pc(11) boolean local11 = false;
 		for (@Pc(13) int local13 = 0; local13 < local7; local13++) {
 			@Pc(21) Player local21 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local9[local13]];
-			if (local21 != null && Static17.aClass11_Sub5_Sub2_Sub1_3 != local21 && local21.aString41 != null && local21.aString41.equalsIgnoreCase(arg1)) {
+			if (local21 != null && PlayerList.self != local21 && local21.username != null && local21.username.equalsIgnoreCase(arg1)) {
 				if (arg0 == 1) {
-					writeOpcode(ClientProt.aClass145_267);
+					writeOpcode(ClientProt.PACKET_39);
 					outboundBuffer.p1(0);
 					outboundBuffer.ip2add(local9[local13]);
 				} else if (arg0 == 4) {
-					writeOpcode(ClientProt.aClass145_7);
+					writeOpcode(ClientProt.PACKET_69);
 					outboundBuffer.p1neg(0);
 					outboundBuffer.ip2_dup(local9[local13]);
 				} else if (arg0 == 5) {
-					writeOpcode(ClientProt.aClass145_92);
+					writeOpcode(ClientProt.PACKET_36);
 					outboundBuffer.ip2_dup(local9[local13]);
 					outboundBuffer.p1sub(0);
 				} else if (arg0 == 6) {
-					writeOpcode(ClientProt.aClass145_102);
+					writeOpcode(ClientProt.PACKET_45);
 					outboundBuffer.ip2_dup(local9[local13]);
 					outboundBuffer.p1add(0);
 				} else if (arg0 == 7) {
-					writeOpcode(ClientProt.aClass145_25);
+					writeOpcode(ClientProt.PACKET_27);
 					outboundBuffer.p1sub(0);
 					outboundBuffer.ip2add(local9[local13]);
 				}
@@ -2796,13 +2750,13 @@ public class Protocol {
 			}
 		}
 		if (!local11) {
-			Static207.method3700(Static139.aClass79_60.method2267(client.language) + arg1);
+			Chat.add(Static139.aClass79_60.getLocalized(client.language) + arg1);
 		}
 	}
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(IIILjava/lang/String;I)V")
 	public static void method4681(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
-		@Pc(8) Class161 local8 = Static207.method3705(arg0, arg3);
+		@Pc(8) Class161 local8 = InterfaceList.method3705(arg0, arg3);
 		if (local8 == null) {
 			return;
 		}
@@ -2822,53 +2776,45 @@ public class Protocol {
 			return;
 		}
 		if (arg1 == 1) {
-			writeOpcode(ClientProt.aClass145_89);
-			Static185.method3398(arg3, local8.anInt4300, arg0);
+			writeOpcode(ClientProt.IF_BUTTON);
+			Static185.method3398(arg3, local8.objId, arg0);
 		}
 		if (arg1 == 2) {
-			writeOpcode(ClientProt.aClass145_109);
-			Static185.method3398(arg3, local8.anInt4300, arg0);
+			writeOpcode(ClientProt.PACKET_4);
+			Static185.method3398(arg3, local8.objId, arg0);
 		}
 		if (arg1 == 3) {
-			writeOpcode(ClientProt.aClass145_34);
-			Static185.method3398(arg3, local8.anInt4300, arg0);
+			writeOpcode(ClientProt.PACKET_2);
+			Static185.method3398(arg3, local8.objId, arg0);
 		}
 		if (arg1 == 4) {
-			writeOpcode(ClientProt.aClass145_254);
-			Static185.method3398(arg3, local8.anInt4300, arg0);
+			writeOpcode(ClientProt.PACKET_43);
+			Static185.method3398(arg3, local8.objId, arg0);
 		}
 		if (arg1 == 5) {
-			writeOpcode(ClientProt.aClass145_86);
-			Static185.method3398(arg3, local8.anInt4300, arg0);
+			writeOpcode(ClientProt.PACKET_63);
+			Static185.method3398(arg3, local8.objId, arg0);
 		}
 		if (arg1 == 6) {
-			writeOpcode(ClientProt.aClass145_134);
-			Static185.method3398(arg3, local8.anInt4300, arg0);
+			writeOpcode(ClientProt.PACKET_57);
+			Static185.method3398(arg3, local8.objId, arg0);
 		}
 		if (arg1 == 7) {
-			writeOpcode(ClientProt.aClass145_65);
-			Static185.method3398(arg3, local8.anInt4300, arg0);
+			writeOpcode(ClientProt.PACKET_10);
+			Static185.method3398(arg3, local8.objId, arg0);
 		}
 		if (arg1 == 8) {
-			writeOpcode(ClientProt.aClass145_107);
-			Static185.method3398(arg3, local8.anInt4300, arg0);
+			writeOpcode(ClientProt.PACKET_17);
+			Static185.method3398(arg3, local8.objId, arg0);
 		}
 		if (arg1 == 9) {
-			writeOpcode(ClientProt.aClass145_147);
-			Static185.method3398(arg3, local8.anInt4300, arg0);
+			writeOpcode(ClientProt.PACKET_54);
+			Static185.method3398(arg3, local8.objId, arg0);
 		}
 		if (arg1 == 10) {
-			writeOpcode(ClientProt.aClass145_218);
-			Static185.method3398(arg3, local8.anInt4300, arg0);
+			writeOpcode(ClientProt.PACKET_14);
+			Static185.method3398(arg3, local8.objId, arg0);
 		}
-	}
-
-	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(IILjava/lang/String;)V")
-	public static void method3256(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
-		writeOpcode(ClientProt.aClass145_258);
-		outboundBuffer.p1(Buffer.getStringLength(arg1) + 1);
-		outboundBuffer.p1add(arg0);
-		outboundBuffer.pjstr(arg1);
 	}
 
 	@OriginalMember(owner = "client!oq", name = "a", descriptor = "(Lclient!cf;IZI)V")
@@ -2889,9 +2835,9 @@ public class Protocol {
 			Static291.anInt5504 = arg2;
 			Static93.anInt1951 = 2;
 			Static313.anInt5878 = 0;
-			writeOpcode(ClientProt.aClass145_83);
-			outboundBuffer.ip2add(Static148.anInt2719 + local18);
-			outboundBuffer.p2(local15 + Static164.anInt3140);
+			writeOpcode(ClientProt.PACKET_26);
+			outboundBuffer.ip2add(Camera.originZ + local18);
+			outboundBuffer.p2(local15 + Camera.originX);
 			outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			outboundBuffer.ip2_dup(local25);
 			Static151.method2756(local18, local15);
@@ -2904,12 +2850,12 @@ public class Protocol {
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
 			Static313.anInt5878 = 0;
-			writeOpcode(ClientProt.aClass145_131);
+			writeOpcode(ClientProt.PACKET_52);
 			outboundBuffer.ip2_dup(Static196.anInt3317);
 			outboundBuffer.p4(Static337.anInt6317);
-			outboundBuffer.ip2add(local18 + Static148.anInt2719);
+			outboundBuffer.ip2add(local18 + Camera.originZ);
 			outboundBuffer.ip2_dup(Static214.anInt3792);
-			outboundBuffer.ip2add(Static164.anInt3140 + local15);
+			outboundBuffer.ip2add(Camera.originX + local15);
 			Static322.method5482(true, -4, local18, 0, 1, local15, 1, 0);
 		}
 		if (local21 == 12) {
@@ -2917,10 +2863,10 @@ public class Protocol {
 			Static313.anInt5878 = 0;
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
-			writeOpcode(ClientProt.aClass145_122);
+			writeOpcode(ClientProt.PACKET_40);
 			outboundBuffer.ip2add((int) (local28 >>> 32) & Integer.MAX_VALUE);
-			outboundBuffer.ip2add(Static148.anInt2719 + local18);
-			outboundBuffer.p2(local15 + Static164.anInt3140);
+			outboundBuffer.ip2add(Camera.originZ + local18);
+			outboundBuffer.p2(local15 + Camera.originX);
 			outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Static172.method3285(local18, local28, local15);
 		}
@@ -2929,10 +2875,10 @@ public class Protocol {
 			Static291.anInt5504 = arg2;
 			Static93.anInt1951 = 2;
 			Static320.anInt6005 = arg1;
-			writeOpcode(ClientProt.aClass145_260);
-			outboundBuffer.p2add(local18 + Static148.anInt2719);
+			writeOpcode(ClientProt.PACKET_47);
+			outboundBuffer.p2add(local18 + Camera.originZ);
 			outboundBuffer.ip2_dup((int) (local28 >>> 32) & Integer.MAX_VALUE);
-			outboundBuffer.p2add(Static164.anInt3140 + local15);
+			outboundBuffer.p2add(Camera.originX + local15);
 			outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Static172.method3285(local18, local28, local15);
 		}
@@ -2944,7 +2890,7 @@ public class Protocol {
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
 				Static320.anInt6005 = arg1;
-				writeOpcode(ClientProt.aClass145_25);
+				writeOpcode(ClientProt.PACKET_27);
 				outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				outboundBuffer.ip2add(local25);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -2955,7 +2901,7 @@ public class Protocol {
 			Static291.anInt5504 = arg2;
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
-			writeOpcode(ClientProt.aClass145_180);
+			writeOpcode(ClientProt.PACKET_0);
 			outboundBuffer.p2(local25);
 		}
 		if (local21 == 46) {
@@ -2963,24 +2909,24 @@ public class Protocol {
 			Static93.anInt1951 = 2;
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
-			writeOpcode(ClientProt.aClass145_209);
-			outboundBuffer.ip2_dup(Static148.anInt2719 + local18);
+			writeOpcode(ClientProt.PACKET_5);
+			outboundBuffer.ip2_dup(Camera.originZ + local18);
 			outboundBuffer.p2(local25);
 			outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
-			outboundBuffer.p2add(Static164.anInt3140 + local15);
+			outboundBuffer.p2add(Camera.originX + local15);
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 59) {
 			if (LoginManager.staffModLevel > 0 && Static174.aClass123_2.method3343(82) && Static174.aClass123_2.method3343(81)) {
-				Static6.method141(Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78, local18 + Static148.anInt2719, local15 + Static164.anInt3140);
+				Static6.method141(PlayerList.self.plane, local18 + Camera.originZ, local15 + Camera.originX);
 			} else {
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
 				Static93.anInt1951 = 1;
-				writeOpcode(ClientProt.aClass145_127);
-				outboundBuffer.p2(local15 + Static164.anInt3140);
-				outboundBuffer.p2add(local18 + Static148.anInt2719);
+				writeOpcode(ClientProt.PACKET_38);
+				outboundBuffer.p2(local15 + Camera.originX);
+				outboundBuffer.p2add(local18 + Camera.originZ);
 			}
 		}
 		@Pc(485) Npc local485;
@@ -2996,7 +2942,7 @@ public class Protocol {
 					local490 = local490.getMultiNpc(Static214.aClass226_1);
 				}
 				if (local490 != null) {
-					writeOpcode(ClientProt.aClass145_73);
+					writeOpcode(ClientProt.PACKET_46);
 					outboundBuffer.p2(local490.anInt2048);
 				}
 			}
@@ -3008,7 +2954,7 @@ public class Protocol {
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
-				writeOpcode(ClientProt.aClass145_8);
+				writeOpcode(ClientProt.PACKET_70);
 				outboundBuffer.ip2add(local25);
 				outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
@@ -3019,10 +2965,10 @@ public class Protocol {
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
 			Static93.anInt1951 = 2;
-			writeOpcode(ClientProt.aClass145_204);
+			writeOpcode(ClientProt.PACKET_22);
 			outboundBuffer.ip2add(local25);
-			outboundBuffer.p2add(Static148.anInt2719 + local18);
-			outboundBuffer.ip2add(Static164.anInt3140 + local15);
+			outboundBuffer.p2add(Camera.originZ + local18);
+			outboundBuffer.ip2add(Camera.originX + local15);
 			outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Static151.method2756(local18, local15);
 		}
@@ -3033,7 +2979,7 @@ public class Protocol {
 				Static320.anInt6005 = arg1;
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
-				writeOpcode(ClientProt.aClass145_43);
+				writeOpcode(ClientProt.PACKET_75);
 				outboundBuffer.p4(Static337.anInt6317);
 				outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				outboundBuffer.ip2add(Static196.anInt3317);
@@ -3047,11 +2993,11 @@ public class Protocol {
 			Static320.anInt6005 = arg1;
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
-			writeOpcode(ClientProt.aClass145_251);
+			writeOpcode(ClientProt.PACKET_72);
 			outboundBuffer.ip2add(Integer.MAX_VALUE & (int) (local28 >>> 32));
 			outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
-			outboundBuffer.p2(local15 + Static164.anInt3140);
-			outboundBuffer.ip2_dup(Static148.anInt2719 + local18);
+			outboundBuffer.p2(local15 + Camera.originX);
+			outboundBuffer.ip2_dup(Camera.originZ + local18);
 			Static172.method3285(local18, local28, local15);
 		}
 		if (local21 == 60) {
@@ -3061,7 +3007,7 @@ public class Protocol {
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
-				writeOpcode(ClientProt.aClass145_196);
+				writeOpcode(ClientProt.PACKET_48);
 				outboundBuffer.ip4_dup(Static337.anInt6317);
 				outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				outboundBuffer.ip2_dup(Static214.anInt3792);
@@ -3075,10 +3021,10 @@ public class Protocol {
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
 			Static291.anInt5504 = arg2;
-			writeOpcode(ClientProt.aClass145_84);
-			outboundBuffer.ip2add(Static148.anInt2719 + local18);
+			writeOpcode(ClientProt.PACKET_3);
+			outboundBuffer.ip2add(Camera.originZ + local18);
 			outboundBuffer.p2add(Integer.MAX_VALUE & (int) (local28 >>> 32));
-			outboundBuffer.p2(Static164.anInt3140 + local15);
+			outboundBuffer.p2(Camera.originX + local15);
 			outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Static172.method3285(local18, local28, local15);
 		}
@@ -3087,11 +3033,11 @@ public class Protocol {
 			Static291.anInt5504 = arg2;
 			Static320.anInt6005 = arg1;
 			Static313.anInt5878 = 0;
-			writeOpcode(ClientProt.aClass145_67);
+			writeOpcode(ClientProt.PACKET_80);
 			outboundBuffer.ip2add(local25);
 			outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
-			outboundBuffer.p2(Static148.anInt2719 + local18);
-			outboundBuffer.ip2_dup(Static164.anInt3140 + local15);
+			outboundBuffer.p2(Camera.originZ + local18);
+			outboundBuffer.ip2_dup(Camera.originX + local15);
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 13) {
@@ -3099,14 +3045,14 @@ public class Protocol {
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
 			Static93.anInt1951 = 2;
-			writeOpcode(ClientProt.aClass145_253);
+			writeOpcode(ClientProt.PACKET_6);
 			outboundBuffer.p2(Static196.anInt3317);
 			outboundBuffer.ip2add(local25);
-			outboundBuffer.ip2_dup(Static164.anInt3140 + local15);
+			outboundBuffer.ip2_dup(Camera.originX + local15);
 			outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			outboundBuffer.ip2add(Static214.anInt3792);
 			outboundBuffer.mp4(Static337.anInt6317);
-			outboundBuffer.ip2add(Static148.anInt2719 + local18);
+			outboundBuffer.ip2add(Camera.originZ + local18);
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 23) {
@@ -3116,7 +3062,7 @@ public class Protocol {
 				Static320.anInt6005 = arg1;
 				Static313.anInt5878 = 0;
 				Static291.anInt5504 = arg2;
-				writeOpcode(ClientProt.aClass145_102);
+				writeOpcode(ClientProt.PACKET_45);
 				outboundBuffer.ip2_dup(local25);
 				outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -3127,16 +3073,16 @@ public class Protocol {
 			Static320.anInt6005 = arg1;
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
-			writeOpcode(ClientProt.aClass145_262);
+			writeOpcode(ClientProt.PACKET_79);
 			outboundBuffer.p2(local25);
 			outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
-			outboundBuffer.p2add(local15 + Static164.anInt3140);
-			outboundBuffer.p2(Static148.anInt2719 + local18);
+			outboundBuffer.p2add(local15 + Camera.originX);
+			outboundBuffer.p2(Camera.originZ + local18);
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 22) {
 			if (LoginManager.staffModLevel > 0 && Static174.aClass123_2.method3343(82) && Static174.aClass123_2.method3343(81)) {
-				Static6.method141(Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78, Static148.anInt2719 + local18, local15 + Static164.anInt3140);
+				Static6.method141(PlayerList.self.plane, Camera.originZ + local18, local15 + Camera.originX);
 			} else {
 				method1736(local15, local18, local25);
 				if (local25 == 1) {
@@ -3147,8 +3093,8 @@ public class Protocol {
 					outboundBuffer.p1(Static6.anInt158);
 					outboundBuffer.p1(Static97.anInt2005);
 					outboundBuffer.p1(89);
-					outboundBuffer.p2(Static17.aClass11_Sub5_Sub2_Sub1_3.xFine);
-					outboundBuffer.p2(Static17.aClass11_Sub5_Sub2_Sub1_3.zFine);
+					outboundBuffer.p2(PlayerList.self.xFine);
+					outboundBuffer.p2(PlayerList.self.zFine);
 					outboundBuffer.p1(63);
 				} else {
 					Static320.anInt6005 = arg1;
@@ -3164,10 +3110,10 @@ public class Protocol {
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
 			Static320.anInt6005 = arg1;
-			writeOpcode(ClientProt.aClass145_103);
+			writeOpcode(ClientProt.OPLOC1);
 			outboundBuffer.ip2_dup((int) (local28 >>> 32) & Integer.MAX_VALUE);
-			outboundBuffer.ip2_dup(local15 + Static164.anInt3140);
-			outboundBuffer.ip2_dup(Static148.anInt2719 + local18);
+			outboundBuffer.ip2_dup(local15 + Camera.originX);
+			outboundBuffer.ip2_dup(Camera.originZ + local18);
 			outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			Static172.method3285(local18, local28, local15);
 		}
@@ -3178,7 +3124,7 @@ public class Protocol {
 				Static93.anInt1951 = 2;
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
-				writeOpcode(ClientProt.aClass145_151);
+				writeOpcode(ClientProt.PACKET_68);
 				outboundBuffer.p2(local25);
 				outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
@@ -3191,7 +3137,7 @@ public class Protocol {
 				Static93.anInt1951 = 2;
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
-				writeOpcode(ClientProt.aClass145_9);
+				writeOpcode(ClientProt.PACKET_41);
 				outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				outboundBuffer.ip2_dup(local25);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -3204,7 +3150,7 @@ public class Protocol {
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
-				writeOpcode(ClientProt.aClass145_259);
+				writeOpcode(ClientProt.PACKET_50);
 				outboundBuffer.ip2add(local25);
 				outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
@@ -3215,14 +3161,14 @@ public class Protocol {
 			Static313.anInt5878 = 0;
 			Static93.anInt1951 = 2;
 			Static291.anInt5504 = arg2;
-			writeOpcode(ClientProt.aClass145_132);
+			writeOpcode(ClientProt.PACKET_9);
 			outboundBuffer.ip2_dup(Integer.MAX_VALUE & (int) (local28 >>> 32));
 			outboundBuffer.imp4(Static337.anInt6317);
 			outboundBuffer.p2(Static196.anInt3317);
 			outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 			outboundBuffer.ip2add(Static214.anInt3792);
-			outboundBuffer.p2(Static164.anInt3140 + local15);
-			outboundBuffer.p2(Static148.anInt2719 + local18);
+			outboundBuffer.p2(Camera.originX + local15);
+			outboundBuffer.p2(Camera.originZ + local18);
 			Static172.method3285(local18, local28, local15);
 		}
 		if (local21 == 5) {
@@ -3232,7 +3178,7 @@ public class Protocol {
 				Static93.anInt1951 = 2;
 				Static291.anInt5504 = arg2;
 				Static320.anInt6005 = arg1;
-				writeOpcode(ClientProt.aClass145_227);
+				writeOpcode(ClientProt.PACKET_28);
 				outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				outboundBuffer.ip2_dup(local25);
 				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
@@ -3245,7 +3191,7 @@ public class Protocol {
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
 				Static320.anInt6005 = arg1;
-				writeOpcode(ClientProt.aClass145_45);
+				writeOpcode(ClientProt.PACKET_35);
 				outboundBuffer.ip2add(local25);
 				outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -3258,7 +3204,7 @@ public class Protocol {
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
 				Static93.anInt1951 = 2;
-				writeOpcode(ClientProt.aClass145_92);
+				writeOpcode(ClientProt.PACKET_36);
 				outboundBuffer.ip2_dup(local25);
 				outboundBuffer.p1sub(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -3266,7 +3212,7 @@ public class Protocol {
 		}
 		@Pc(1723) Class161 local1723;
 		if (local21 == 49) {
-			local1723 = Static207.method3705(local18, local15);
+			local1723 = InterfaceList.method3705(local18, local15);
 			if (local1723 != null) {
 				Static207.method3699();
 				@Pc(1730) ServerActiveProperties local1730 = Static45.method1404(local1723);
@@ -3284,7 +3230,7 @@ public class Protocol {
 			Static93.anInt1951 = 2;
 			Static291.anInt5504 = arg2;
 			Static313.anInt5878 = 0;
-			writeOpcode(ClientProt.aClass145_255);
+			writeOpcode(ClientProt.GET_EXAMINE);
 			outboundBuffer.p2(local25);
 		}
 		if (local21 == 19) {
@@ -3294,7 +3240,7 @@ public class Protocol {
 				Static291.anInt5504 = arg2;
 				Static93.anInt1951 = 2;
 				Static313.anInt5878 = 0;
-				writeOpcode(ClientProt.aClass145_173);
+				writeOpcode(ClientProt.PACKET_32);
 				outboundBuffer.ip2add(local25);
 				outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -3304,7 +3250,7 @@ public class Protocol {
 			ScriptRunner.method3809(local25, local21, local15);
 		}
 		if (local21 == 11) {
-			local1723 = Static207.method3705(local18, local15);
+			local1723 = InterfaceList.method3705(local18, local15);
 			if (local1723 != null) {
 				method6129(local1723);
 			}
@@ -3316,7 +3262,7 @@ public class Protocol {
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
-				writeOpcode(ClientProt.aClass145_7);
+				writeOpcode(ClientProt.PACKET_69);
 				outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				outboundBuffer.ip2_dup(local25);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -3324,8 +3270,8 @@ public class Protocol {
 		}
 		if (local21 == 30 && Static192.aClass161_8 == null) {
 			method2045(local18, local15);
-			Static192.aClass161_8 = Static207.method3705(local18, local15);
-			Static200.method3645(Static192.aClass161_8);
+			Static192.aClass161_8 = InterfaceList.method3705(local18, local15);
+			InterfaceList.redraw(Static192.aClass161_8);
 		}
 		if (local21 == 44) {
 			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
@@ -3334,7 +3280,7 @@ public class Protocol {
 				Static291.anInt5504 = arg2;
 				Static93.anInt1951 = 2;
 				Static320.anInt6005 = arg1;
-				writeOpcode(ClientProt.aClass145_267);
+				writeOpcode(ClientProt.PACKET_39);
 				outboundBuffer.p1(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				outboundBuffer.ip2add(local25);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
@@ -3347,7 +3293,7 @@ public class Protocol {
 				Static291.anInt5504 = arg2;
 				Static313.anInt5878 = 0;
 				Static93.anInt1951 = 2;
-				writeOpcode(ClientProt.aClass145_214);
+				writeOpcode(ClientProt.PACKET_31);
 				outboundBuffer.p2(local25);
 				outboundBuffer.p1neg(Static174.aClass123_2.method3343(82) ? 1 : 0);
 				Static322.method5482(true, -2, local485.movementQueueZ[0], 0, local485.getSize(), local485.movementQueueX[0], local485.getSize(), 0);
@@ -3357,14 +3303,8 @@ public class Protocol {
 			Static207.method3699();
 		}
 		if (Static64.aClass161_2 != null && Static112.anInt2293 == 0) {
-			Static200.method3645(Static64.aClass161_2);
+			InterfaceList.redraw(Static64.aClass161_2);
 		}
-	}
-
-	@OriginalMember(owner = "client!qp", name = "b", descriptor = "(I)V")
-	public static void method5026() {
-		writeOpcode(ClientProt.aClass145_18);
-		outboundBuffer.p1(0);
 	}
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(BZ)V")
@@ -3379,7 +3319,7 @@ public class Protocol {
 		}
 		Static367.anInt6876 = 0;
 		if (!Static101.aBoolean158 && socket != null) {
-			writeOpcode(ClientProt.aClass145_228);
+			writeOpcode(ClientProt.NO_TIMEOUT);
 			try {
 				socket.write(outboundBuffer.pos, outboundBuffer.data);
 				outboundBuffer.pos = 0;
@@ -3390,96 +3330,9 @@ public class Protocol {
 		Static37.method1135();
 	}
 
-	@OriginalMember(owner = "client!oo", name = "a", descriptor = "(Ljava/lang/String;Z)V")
-	public static void method4404(@OriginalArg(0) String arg0) {
-		if (arg0 == null) {
-			return;
-		}
-		if (arg0.startsWith("*")) {
-			arg0 = arg0.substring(1);
-		}
-		@Pc(20) String local20 = Static135.method2537(arg0);
-		if (local20 == null) {
-			return;
-		}
-		for (@Pc(25) int local25 = 0; local25 < Static301.anInt5700; local25++) {
-			@Pc(31) String local31 = Static226.aStringArray35[local25];
-			if (local31.startsWith("*")) {
-				local31 = local31.substring(1);
-			}
-			local31 = Static135.method2537(local31);
-			if (local31 != null && local31.equals(local20)) {
-				Static301.anInt5700--;
-				for (@Pc(55) int local55 = local25; local55 < Static301.anInt5700; local55++) {
-					Static226.aStringArray35[local55] = Static226.aStringArray35[local55 + 1];
-					Static234.aStringArray39[local55] = Static234.aStringArray39[local55 + 1];
-					Static371.aStringArray66[local55] = Static371.aStringArray66[local55 + 1];
-					Static190.aStringArray28[local55] = Static190.aStringArray28[local55 + 1];
-					Static196.aBooleanArray31[local55] = Static196.aBooleanArray31[local55 + 1];
-				}
-				Static53.anInt3971 = Static88.transmitTimer;
-				writeOpcode(ClientProt.aClass145_231);
-				outboundBuffer.p1(Buffer.getStringLength(arg0));
-				outboundBuffer.pjstr(arg0);
-				break;
-			}
-		}
-	}
-
-	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(Ljava/lang/String;I)V")
-	public static void method1669(@OriginalArg(0) String arg0) {
-		if (arg0 == null) {
-			return;
-		}
-		if (Static384.anInt7178 >= 100 && !MouseRecorder.enabled || Static384.anInt7178 >= 200) {
-			Static207.method3700(Static78.aClass79_129.method2267(client.language));
-			return;
-		}
-		@Pc(33) String local33 = Static135.method2537(arg0);
-		if (local33 == null) {
-			return;
-		}
-		@Pc(78) String local78;
-		for (@Pc(38) int local38 = 0; local38 < Static384.anInt7178; local38++) {
-			@Pc(46) String local46 = Static135.method2537(Static17.aStringArray43[local38]);
-			if (local46 != null && local46.equals(local33)) {
-				Static207.method3700(arg0 + Static332.aClass79_131.method2267(client.language));
-				return;
-			}
-			if (Static319.aStringArray54[local38] != null) {
-				local78 = Static135.method2537(Static319.aStringArray54[local38]);
-				if (local78 != null && local78.equals(local33)) {
-					Static207.method3700(arg0 + Static332.aClass79_131.method2267(client.language));
-					return;
-				}
-			}
-		}
-		for (@Pc(108) int local108 = 0; local108 < Static301.anInt5700; local108++) {
-			local78 = Static135.method2537(Static226.aStringArray35[local108]);
-			if (local78 != null && local78.equals(local33)) {
-				Static207.method3700(Static150.aClass79_64.method2267(client.language) + arg0 + Static151.aClass79_65.method2267(client.language));
-				return;
-			}
-			if (Static371.aStringArray66[local108] != null) {
-				@Pc(151) String local151 = Static135.method2537(Static371.aStringArray66[local108]);
-				if (local151 != null && local151.equals(local33)) {
-					Static207.method3700(Static150.aClass79_64.method2267(client.language) + arg0 + Static151.aClass79_65.method2267(client.language));
-					return;
-				}
-			}
-		}
-		if (Static135.method2537(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41).equals(local33)) {
-			Static207.method3700(Static122.aClass79_54.method2267(client.language));
-		} else {
-			writeOpcode(ClientProt.aClass145_104);
-			outboundBuffer.p1(Buffer.getStringLength(arg0));
-			outboundBuffer.pjstr(arg0);
-		}
-	}
-
 	@OriginalMember(owner = "client!hf", name = "b", descriptor = "(I)V")
 	public static void method2432() {
-		writeOpcode(ClientProt.aClass145_64);
+		writeOpcode(ClientProt.TRANSMITVAR_VERIFYID);
 		outboundBuffer.p2(verifyId);
 	}
 
@@ -3503,15 +3356,15 @@ public class Protocol {
 						local143 = client.preferences.anInt4888 * Static223.anIntArray256[local7] >> 8;
 					} else {
 						@Pc(133) int local133 = Static162.anIntArray188[local7] >> 24 & 0x3;
-						if (Static17.aClass11_Sub5_Sub2_Sub1_3.aByte78 == local133) {
+						if (PlayerList.self.plane == local133) {
 							@Pc(153) int local153 = (Static162.anIntArray188[local7] & 0xFF) * 128;
 							@Pc(161) int local161 = Static162.anIntArray188[local7] >> 16 & 0xFF;
-							@Pc(171) int local171 = local161 * 128 + 64 - Static17.aClass11_Sub5_Sub2_Sub1_3.xFine;
+							@Pc(171) int local171 = local161 * 128 + 64 - PlayerList.self.xFine;
 							if (local171 < 0) {
 								local171 = -local171;
 							}
 							@Pc(187) int local187 = Static162.anIntArray188[local7] >> 8 & 0xFF;
-							@Pc(197) int local197 = local187 * 128 + 64 - Static17.aClass11_Sub5_Sub2_Sub1_3.zFine;
+							@Pc(197) int local197 = local187 * 128 + 64 - PlayerList.self.zFine;
 							if (local197 < 0) {
 								local197 = -local197;
 							}
@@ -3555,7 +3408,7 @@ public class Protocol {
 			}
 			Static393.aBoolean486 = false;
 		} else if (client.preferences.anInt4889 != 0 && Static171.anInt3268 != -1 && !Static64.method1704()) {
-			writeOpcode(ClientProt.aClass145_56);
+			writeOpcode(ClientProt.SOUND_SONGEND);
 			outboundBuffer.p4(Static171.anInt3268);
 			Static171.anInt3268 = -1;
 		}
@@ -3563,65 +3416,13 @@ public class Protocol {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Lclient!nk;ZLclient!nk;)V")
 	public static void method5096(@OriginalArg(0) Class161 arg0, @OriginalArg(2) Class161 arg1) {
-		writeOpcode(ClientProt.aClass145_110);
-		outboundBuffer.p4(arg1.anInt4317);
-		outboundBuffer.ip2add(arg1.anInt4300);
-		outboundBuffer.p2add(arg1.anInt4297);
-		outboundBuffer.mp4(arg0.anInt4317);
-		outboundBuffer.ip2add(arg0.anInt4300);
-		outboundBuffer.ip2_dup(arg0.anInt4297);
-	}
-
-	@OriginalMember(owner = "client!rs", name = "a", descriptor = "(Ljava/lang/String;ZB)V")
-	public static void method5279(@OriginalArg(0) String arg0, @OriginalArg(1) boolean arg1) {
-		if (arg0 == null) {
-			return;
-		}
-		if (Static301.anInt5700 >= 100) {
-			Static207.method3700(Static322.aClass79_125.method2267(client.language));
-			return;
-		}
-		@Pc(22) String local22 = Static135.method2537(arg0);
-		if (local22 == null) {
-			return;
-		}
-		@Pc(65) String local65;
-		for (@Pc(27) int local27 = 0; local27 < Static301.anInt5700; local27++) {
-			@Pc(35) String local35 = Static135.method2537(Static226.aStringArray35[local27]);
-			if (local35 != null && local35.equals(local22)) {
-				Static207.method3700(arg0 + Static44.aClass79_26.method2267(client.language));
-				return;
-			}
-			if (Static371.aStringArray66[local27] != null) {
-				local65 = Static135.method2537(Static371.aStringArray66[local27]);
-				if (local65 != null && local65.equals(local22)) {
-					Static207.method3700(arg0 + Static44.aClass79_26.method2267(client.language));
-					return;
-				}
-			}
-		}
-		for (@Pc(95) int local95 = 0; local95 < Static384.anInt7178; local95++) {
-			local65 = Static135.method2537(Static17.aStringArray43[local95]);
-			if (local65 != null && local65.equals(local22)) {
-				Static207.method3700(Static261.aClass79_107.method2267(client.language) + arg0 + Static120.aClass79_50.method2267(client.language));
-				return;
-			}
-			if (Static319.aStringArray54[local95] != null) {
-				@Pc(138) String local138 = Static135.method2537(Static319.aStringArray54[local95]);
-				if (local138 != null && local138.equals(local22)) {
-					Static207.method3700(Static261.aClass79_107.method2267(client.language) + arg0 + Static120.aClass79_50.method2267(client.language));
-					return;
-				}
-			}
-		}
-		if (Static135.method2537(Static17.aClass11_Sub5_Sub2_Sub1_3.aString41).equals(local22)) {
-			Static207.method3700(Static47.aClass79_27.method2267(client.language));
-		} else {
-			writeOpcode(ClientProt.aClass145_139);
-			outboundBuffer.p1(Buffer.getStringLength(arg0) + 1);
-			outboundBuffer.pjstr(arg0);
-			outboundBuffer.p1(arg1 ? 1 : 0);
-		}
+		writeOpcode(ClientProt.PACKET_13);
+		outboundBuffer.p4(arg1.id);
+		outboundBuffer.ip2add(arg1.objId);
+		outboundBuffer.p2add(arg1.activeComponentId);
+		outboundBuffer.mp4(arg0.id);
+		outboundBuffer.ip2add(arg0.objId);
+		outboundBuffer.ip2_dup(arg0.activeComponentId);
 	}
 
 	@OriginalMember(owner = "client!vi", name = "a", descriptor = "(Lclient!nk;I)V")
@@ -3629,26 +3430,26 @@ public class Protocol {
 		if (!Static330.aBoolean419) {
 			return;
 		}
-		writeOpcode(ClientProt.aClass145_79);
-		outboundBuffer.p4(arg0.anInt4317);
-		outboundBuffer.p2add(arg0.anInt4297);
+		writeOpcode(ClientProt.PACKET_11);
+		outboundBuffer.p4(arg0.id);
+		outboundBuffer.p2add(arg0.activeComponentId);
 		outboundBuffer.p2add(Static214.anInt3792);
 		outboundBuffer.p2(Static196.anInt3317);
 		outboundBuffer.mp4(Static337.anInt6317);
-		outboundBuffer.p2(arg0.anInt4300);
+		outboundBuffer.p2(arg0.objId);
 	}
 
 	@OriginalMember(owner = "client!dq", name = "b", descriptor = "(IIII)V")
 	public static void method1736(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (arg2 == 0) {
-			writeOpcode(ClientProt.aClass145_158);
+			writeOpcode(ClientProt.MOVE_GAMECLICK);
 		}
 		if (arg2 == 1) {
-			writeOpcode(ClientProt.aClass145_203);
+			writeOpcode(ClientProt.MOVE_MINIMAPCLICK);
 		}
 		outboundBuffer.p1add(Static174.aClass123_2.method3343(82) ? 1 : 0);
-		outboundBuffer.p2(arg0 + Static164.anInt3140);
-		outboundBuffer.ip2_dup(arg1 + Static148.anInt2719);
+		outboundBuffer.p2(arg0 + Camera.originX);
+		outboundBuffer.ip2_dup(arg1 + Camera.originZ);
 		Static370.aBoolean474 = false;
 		Static358.anInt6550 = arg0;
 		Static312.anInt5844 = arg1;
@@ -3656,8 +3457,8 @@ public class Protocol {
 	}
 
 	@OriginalMember(owner = "client!em", name = "a", descriptor = "(IZ)V")
-	public static void method1904() {
-		writeOpcode(ClientProt.aClass145_145);
+	public static void closeWidget() {
+		writeOpcode(ClientProt.CLOSE_MODAL);
 		for (@Pc(21) Class2_Sub7 local21 = (Class2_Sub7) Static329.aClass4_130.head(); local21 != null; local21 = (Class2_Sub7) Static329.aClass4_130.next()) {
 			if (!local21.isLinked()) {
 				local21 = (Class2_Sub7) Static329.aClass4_130.head();
@@ -3670,17 +3471,8 @@ public class Protocol {
 			}
 		}
 		if (Static192.aClass161_8 != null) {
-			Static200.method3645(Static192.aClass161_8);
+			InterfaceList.redraw(Static192.aClass161_8);
 			Static192.aClass161_8 = null;
-		}
-	}
-
-	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILjava/lang/String;)V")
-	public static void method3102(@OriginalArg(1) String arg0) {
-		if (Static47.aClass214Array1 != null) {
-			writeOpcode(ClientProt.aClass145_57);
-			outboundBuffer.p1(Buffer.getStringLength(arg0));
-			outboundBuffer.pjstr(arg0);
 		}
 	}
 

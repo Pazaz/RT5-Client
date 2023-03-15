@@ -95,7 +95,7 @@ public final class Static111 {
 							local15.unlink();
 						} else {
 							Static188.method3466(local15.anInt1110, local15.anInt1117, local15.anInt1109, Interface6.class);
-							@Pc(191) LocType local191 = client.LocTypes.method5163(local15.anInt1112);
+							@Pc(191) LocType local191 = client.LocTypes.get(local15.anInt1112);
 							@Pc(207) int local207;
 							@Pc(204) int local204;
 							if (local15.anInt1111 == 1 || local15.anInt1111 == 3) {

@@ -10,9 +10,6 @@ public final class Static384 {
 	@OriginalMember(owner = "client!wh", name = "s", descriptor = "I")
 	public static int anInt7174 = 0;
 
-	@OriginalMember(owner = "client!wh", name = "y", descriptor = "I")
-	public static int anInt7178 = 0;
-
 	@OriginalMember(owner = "client!wh", name = "a", descriptor = "(ZLclient!nh;)I")
 	public static int method6415(@OriginalArg(1) Player arg0) {
 		@Pc(8) int local8 = arg0.walkSound;

@@ -472,7 +472,7 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 						@Pc(338) String local338 = local328[local330];
 						try {
 							if (local338.length() > 0) {
-								if (local338.charAt(0) == 'x' && local338.length() >= 3 && Static132.method2485(local338.substring(1, 3))) {
+								if (local338.charAt(0) == 'x' && local338.length() >= 3 && StringUtils.isInt(local338.substring(1, 3))) {
 									local338 = local338.substring(1);
 									local320 = true;
 								}
@@ -483,8 +483,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 										local338 = local338.substring(2);
 										local318 = true;
 									}
-									if (local338.length() >= 4 && Static132.method2485(local338.substring(0, 4))) {
-										local316 = Static146.method2698(local338.substring(0, 4));
+									if (local338.length() >= 4 && StringUtils.isInt(local338.substring(0, 4))) {
+										local316 = StringUtils.parseInt(local338.substring(0, 4));
 										break;
 									}
 								}
@@ -903,8 +903,8 @@ public final class Class19_Sub1 extends Class19 implements Interface8 {
 		@Pc(53) String[] local53 = Static200.method3643(' ', local45.replace('.', ' '));
 		if (local53.length >= 2) {
 			try {
-				@Pc(63) int local63 = Static146.method2698(local53[0]);
-				@Pc(69) int local69 = Static146.method2698(local53[1]);
+				@Pc(63) int local63 = StringUtils.parseInt(local53[0]);
+				@Pc(69) int local69 = StringUtils.parseInt(local53[1]);
 				this.anInt603 = local63 * 10 + local69;
 			} catch (@Pc(78) NumberFormatException local78) {
 				local1 |= 0x4;

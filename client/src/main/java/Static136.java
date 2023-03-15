@@ -7,9 +7,6 @@ public final class Static136 {
 	@OriginalMember(owner = "client!hp", name = "e", descriptor = "I")
 	public static int anInt6778;
 
-	@OriginalMember(owner = "client!hp", name = "d", descriptor = "Lclient!gd;")
-	public static final LocalizedString aClass79_141 = new LocalizedString("wave:", "welle:", "ondulation:", "onda:");
-
 	@OriginalMember(owner = "client!hp", name = "a", descriptor = "(III)I")
 	public static int method6071(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(7) int local7 = 0;

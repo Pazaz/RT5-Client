@@ -91,7 +91,7 @@ public class AreaSoundManager {
 	public static void update(@OriginalArg(0) Player arg0) {
 		@Pc(19) Class2_Sub19 local19 = (Class2_Sub19) Static232.aClass4_86.get((long) arg0.anInt4619);
 		if (local19 == null) {
-			add(null, arg0.movementQueueZ[0], 0, arg0, null, arg0.movementQueueX[0], arg0.aByte78);
+			add(null, arg0.movementQueueZ[0], 0, arg0, null, arg0.movementQueueX[0], arg0.plane);
 		} else {
 			local19.method2941();
 		}

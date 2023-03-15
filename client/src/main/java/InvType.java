@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class InvType extends SecondaryNode {
 
 	@OriginalMember(owner = "client!hl", name = "G", descriptor = "I")
-	public int anInt2488 = 0;
+	public int size = 0;
 
 	@OriginalMember(owner = "client!hl", name = "a", descriptor = "(Lclient!bt;I)V")
 	public void decode(@OriginalArg(0) Buffer arg0) {
@@ -23,7 +23,7 @@ public final class InvType extends SecondaryNode {
 	@OriginalMember(owner = "client!hl", name = "a", descriptor = "(ILclient!bt;I)V")
 	private void decode(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 2) {
-			this.anInt2488 = arg0.g2();
+			this.size = arg0.g2();
 		}
 	}
 }
