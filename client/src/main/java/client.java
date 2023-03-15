@@ -1285,7 +1285,7 @@ public final class client extends GameShell {
 				jsArchive3 = createJs5(true, 3, false);
 				jsArchive4 = createJs5(true, 4, false);
 				jsArchive5 = createJs5(true, 5, true);
-				jsArchive6 = createJs5(false, 6, true);
+				jsArchive6 = createJs5(GlobalSettings.PREFETCH_MUSIC, 6, true);
 				jsArchive7 = createJs5(true, 7, false);
 				jsArchive8 = createJs5(true, 8, false);
 				jsArchive9 = createJs5(true, 9, false);
@@ -1293,7 +1293,7 @@ public final class client extends GameShell {
 				jsArchive11 = createJs5(true, 11, false);
 				jsArchive12 = createJs5(true, 12, false);
 				jsArchive13 = createJs5(true, 13, false);
-				jsArchive14 = createJs5(false, 14, false);
+				jsArchive14 = createJs5(GlobalSettings.PREFETCH_MUSIC, 14, false);
 				jsArchive15 = createJs5(true, 15, false);
 				jsArchive16 = createJs5(true, 16, false);
 				jsArchive17 = createJs5(true, 17, false);
