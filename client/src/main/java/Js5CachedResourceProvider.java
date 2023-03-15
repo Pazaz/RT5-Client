@@ -262,7 +262,7 @@ public final class Js5CachedResourceProvider extends Js5ResourceProvider {
 	}
 
 	@OriginalMember(owner = "client!bl", name = "d", descriptor = "(I)V")
-	public void method899() {
+	public void prefetch() {
 		if (this.cache != null) {
 			this.prefetchAll = true;
 			if (this.groupQueue == null) {

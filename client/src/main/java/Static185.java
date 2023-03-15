@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static185 {
 
-	@OriginalMember(owner = "client!kn", name = "g", descriptor = "[Lclient!rn;")
-	public static final Class205[] aClass205Array1 = new Class205[29];
-
 	@OriginalMember(owner = "client!kn", name = "a", descriptor = "(IIII)V")
 	public static void method3398(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		Protocol.outboundBuffer.p4(arg2);

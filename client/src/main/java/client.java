@@ -27,6 +27,10 @@ public final class client extends GameShell {
 	public static final Class50 GAME_SD = new Class50("stellardawn", 1);
 	@OriginalMember(owner = "client!dj", name = "bb", descriptor = "Ljava/util/Random;")
 	public static final Random random = new Random();
+	@OriginalMember(owner = "client!vr", name = "e", descriptor = "[Lclient!bl;")
+	public static final Js5CachedResourceProvider[] aClass25_Sub1Array2 = new Js5CachedResourceProvider[29];
+	@OriginalMember(owner = "client!kn", name = "g", descriptor = "[Lclient!rn;")
+	public static final Class205[] aClass205Array1 = new Class205[29];
 	@OriginalMember(owner = "client!ke", name = "t", descriptor = "I")
 	public static int worldListWorldId = 1;
 	@OriginalMember(owner = "client!lq", name = "I", descriptor = "Lclient!rt;")
@@ -221,6 +225,8 @@ public final class client extends GameShell {
 	public static BufferedSocket js5Socket;
 	@OriginalMember(owner = "client!rs", name = "f", descriptor = "I")
 	public static int js5ConnectState = 0;
+	@OriginalMember(owner = "client!gd", name = "i", descriptor = "Lclient!rn;")
+	public static Class205 aClass205_1;
 
 	@OriginalMember(owner = "client!client", name = "main", descriptor = "([Ljava/lang/String;)V")
 	public static void main(@OriginalArg(0) String[] args) {
@@ -426,16 +432,16 @@ public final class client extends GameShell {
 	}
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(IZBIZ)Lclient!r;")
-	public static Js5 createJs5(@OriginalArg(1) boolean arg0, @OriginalArg(3) int arg1, @OriginalArg(4) boolean arg2) {
+	public static Js5 createJs5(@OriginalArg(1) boolean prefetch, @OriginalArg(3) int arg1, @OriginalArg(4) boolean arg2) {
 		@Pc(5) Cache local5 = null;
-		if (Static110.aClass205_1 != null) {
-			local5 = new Cache(arg1, Static110.aClass205_1, Static185.aClass205Array1[arg1], 1000000);
+		if (aClass205_1 != null) {
+			local5 = new Cache(arg1, aClass205_1, aClass205Array1[arg1], 1000000);
 		}
-		Static374.aClass25_Sub1Array2[arg1] = js5MasterIndex.getResourceProvider(arg1, Static18.aClass207_1, local5);
-		if (arg0) {
-			Static374.aClass25_Sub1Array2[arg1].method899();
+		aClass25_Sub1Array2[arg1] = js5MasterIndex.getResourceProvider(arg1, Static18.aClass207_1, local5);
+		if (prefetch) {
+			aClass25_Sub1Array2[arg1].prefetch();
 		}
-		return new Js5(Static374.aClass25_Sub1Array2[arg1], arg2, 1);
+		return new Js5(aClass25_Sub1Array2[arg1], arg2, 1);
 	}
 
 	@OriginalMember(owner = "client!aa", name = "c", descriptor = "(I)V")
@@ -1206,12 +1212,12 @@ public final class client extends GameShell {
 		Static367.anInt6878 = Static215.anInt3795;
 		try {
 			if (GameShell.signlink.cacheData != null) {
-				Static110.aClass205_1 = new Class205(GameShell.signlink.cacheData, 5200, 0);
+				aClass205_1 = new Class205(GameShell.signlink.cacheData, 5200, 0);
 				for (@Pc(171) int local171 = 0; local171 < 29; local171++) {
-					Static185.aClass205Array1[local171] = new Class205(GameShell.signlink.cacheIndexes[local171], 6000, 0);
+					aClass205Array1[local171] = new Class205(GameShell.signlink.cacheIndexes[local171], 6000, 0);
 				}
 				Static150.aClass205_2 = new Class205(GameShell.signlink.cacheMasterIndex, 6000, 0);
-				Static18.aClass207_1 = new Cache(255, Static110.aClass205_1, Static150.aClass205_2, 500000);
+				Static18.aClass207_1 = new Cache(255, aClass205_1, Static150.aClass205_2, 500000);
 				Static317.aClass205_6 = new Class205(GameShell.signlink.uid, 24, 0);
 				GameShell.signlink.uid = null;
 				GameShell.signlink.cacheMasterIndex = null;
@@ -1220,7 +1226,7 @@ public final class client extends GameShell {
 			}
 		} catch (@Pc(227) IOException local227) {
 			Static150.aClass205_2 = null;
-			Static110.aClass205_1 = null;
+			aClass205_1 = null;
 			Static317.aClass205_6 = null;
 			Static18.aClass207_1 = null;
 		}
@@ -1312,7 +1318,7 @@ public final class client extends GameShell {
 		} else if (mainLoadState == 30) {
 			local6 = 0;
 			for (local55 = 0; local55 < 29; local55++) {
-				local6 += Static374.aClass25_Sub1Array2[local55].method896() * Static278.anIntArray362[local55] / 100;
+				local6 += aClass25_Sub1Array2[local55].method896() * Static278.anIntArray362[local55] / 100;
 			}
 			if (local6 == 100) {
 				mainLoadSecondaryText = Static226.aClass79_89.getLocalized(language);

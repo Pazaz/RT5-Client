@@ -166,9 +166,9 @@ public final class Static201 {
 									local590 = 0;
 									@Pc(592) int local592 = 0;
 									for (@Pc(594) int local594 = 0; local594 < 29; local594++) {
-										local588 += Static374.aClass25_Sub1Array2[local594].method895();
-										local590 += Static374.aClass25_Sub1Array2[local594].method898();
-										local592 += Static374.aClass25_Sub1Array2[local594].method897();
+										local588 += client.aClass25_Sub1Array2[local594].method895();
+										local590 += client.aClass25_Sub1Array2[local594].method898();
+										local592 += client.aClass25_Sub1Array2[local594].method897();
 									}
 									@Pc(632) int local632 = local592 * 100 / local588;
 									@Pc(638) int local638 = local590 * 10000 / local588;

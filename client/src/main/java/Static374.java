@@ -8,9 +8,6 @@ public final class Static374 {
 	@OriginalMember(owner = "client!vr", name = "i", descriptor = "[I")
 	public static int[] locGroupIds;
 
-	@OriginalMember(owner = "client!vr", name = "e", descriptor = "[Lclient!bl;")
-	public static final Js5CachedResourceProvider[] aClass25_Sub1Array2 = new Js5CachedResourceProvider[29];
-
 	@OriginalMember(owner = "client!vr", name = "a", descriptor = "(B)I")
 	public static int method6273() {
 		@Pc(15) RasteriserBase local15 = Rasteriser.instance;
