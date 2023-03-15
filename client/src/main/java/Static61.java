@@ -1,4 +1,3 @@
-import java.util.Random;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -7,9 +6,6 @@ public final class Static61 {
 
 	@OriginalMember(owner = "client!dj", name = "Y", descriptor = "Lclient!hu;")
 	public static final LruHashTable aClass98_5 = new LruHashTable(8);
-
-	@OriginalMember(owner = "client!dj", name = "bb", descriptor = "Ljava/util/Random;")
-	public static final Random aRandom1 = new Random();
 
 	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(B[JI[II)V")
 	public static void method1671(@OriginalArg(1) long[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) int arg3) {

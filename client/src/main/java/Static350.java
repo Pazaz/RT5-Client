@@ -11,7 +11,7 @@ public final class Static350 {
 			return;
 		}
 		Static140.aBoolean187 = true;
-		Static100.aBoolean156 = true;
+		Camera.aBoolean156 = true;
 		if (client.preferences.aBoolean351) {
 			Camera.pitchTarget = (int) Camera.pitchTarget + 47 & 0xFFFFFFF0;
 		} else {

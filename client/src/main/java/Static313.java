@@ -6,9 +6,6 @@ public final class Static313 {
 	@OriginalMember(owner = "client!sb", name = "V", descriptor = "[I")
 	public static int[] anIntArray388;
 
-	@OriginalMember(owner = "client!sb", name = "X", descriptor = "I")
-	public static int anInt5878 = 0;
-
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(ZI)V")
 	public static void method5337(@OriginalArg(1) int arg0) {
 		Static77.anInt1763 = -1;

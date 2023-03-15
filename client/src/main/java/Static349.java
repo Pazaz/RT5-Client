@@ -10,9 +10,6 @@ public final class Static349 {
 	@OriginalMember(owner = "client!ud", name = "t", descriptor = "[C")
 	public static final char[] aCharArray6 = new char[] { '_', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
-	@OriginalMember(owner = "client!ud", name = "z", descriptor = "[I")
-	public static final int[] anIntArray444 = new int[32];
-
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(IB)I")
 	public static int method5831(@OriginalArg(0) int arg0) {
 		return arg0 & 0x7F;
@@ -34,12 +31,12 @@ public final class Static349 {
 		@Pc(57) int local57 = 0;
 		@Pc(59) int local59 = local39;
 		if (local46 != 0) {
-			local57 = TextureProvider.anIntArray178[local46] * -local39 >> 15;
-			local59 = local39 * TextureProvider.anIntArray177[local46] >> 15;
+			local57 = RasteriserBase.anIntArray178[local46] * -local39 >> 15;
+			local59 = local39 * RasteriserBase.anIntArray177[local46] >> 15;
 		}
 		if (local53 != 0) {
-			local55 = local59 * TextureProvider.anIntArray178[local53] >> 15;
-			local59 = TextureProvider.anIntArray177[local53] * local59 >> 15;
+			local55 = local59 * RasteriserBase.anIntArray178[local53] >> 15;
+			local59 = RasteriserBase.anIntArray177[local53] * local59 >> 15;
 		}
 		Static4.anInt87 = arg5;
 		Static102.anInt3592 = arg3 - local57;

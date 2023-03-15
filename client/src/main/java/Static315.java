@@ -17,16 +17,16 @@ public final class Static315 {
 		}
 		Static295.aClass135_32.method3542(Static129.aClass135_19);
 		@Pc(41) int local41 = -1;
-		if (Static370.aClass2_Sub24_1 != null) {
-			local41 = Static370.aClass2_Sub24_1.method5247();
+		if (Mouse.clickButton != null) {
+			local41 = Mouse.clickButton.method5247();
 		}
 		if (!Static375.aBoolean477) {
 			if (local41 == 0 && (Static232.anInt4087 == 1 && Static268.anInt4959 > 2 || Static208.method3710())) {
 				local41 = 2;
 			}
-			if (local41 == 2 && Static268.anInt4959 > 0 && Static370.aClass2_Sub24_1 != null) {
-				if (Static375.aClass161_14 == null && Static348.anInt6449 == 0) {
-					Static388.method6439(Static370.aClass2_Sub24_1.method5243(), Static370.aClass2_Sub24_1.method5242());
+			if (local41 == 2 && Static268.anInt4959 > 0 && Mouse.clickButton != null) {
+				if (Cs1ScriptRunner.aClass161_14 == null && InterfaceList.anInt6449 == 0) {
+					Static388.method6439(Mouse.clickButton.getY(), Mouse.clickButton.getX());
 				} else {
 					Static116.anInt2357 = 2;
 				}
@@ -34,7 +34,7 @@ public final class Static315 {
 			if (local41 == 0 && Static268.anInt4959 > 0) {
 				Static145.method2695();
 			}
-			if (Static375.aClass161_14 == null && Static348.anInt6449 == 0) {
+			if (Cs1ScriptRunner.aClass161_14 == null && InterfaceList.anInt6449 == 0) {
 				Static116.anInt2357 = 0;
 				Static32.aClass2_Sub5_2 = null;
 			}
@@ -43,8 +43,8 @@ public final class Static315 {
 		@Pc(57) int local57;
 		@Pc(61) int local61;
 		if (local41 == -1) {
-			local57 = Static226.aClass119_1.method3304();
-			local61 = Static226.aClass119_1.method3313();
+			local57 = Mouse.instance.method3304();
+			local61 = Mouse.instance.method3313();
 			if (local57 < Static305.anInt5743 - 10 || local57 > Static107.anInt2220 + Static305.anInt5743 + 10 || local61 < Static363.anInt6801 - 10 || local61 > Static363.anInt6801 + Static352.anInt6519 + 10) {
 				Static375.aBoolean477 = false;
 				Static369.method6221(Static107.anInt2220, Static305.anInt5743, Static352.anInt6519, Static363.anInt6801);
@@ -56,8 +56,8 @@ public final class Static315 {
 		local57 = Static305.anInt5743;
 		local61 = Static363.anInt6801;
 		@Pc(117) int local117 = Static107.anInt2220;
-		@Pc(121) int local121 = Static370.aClass2_Sub24_1.method5243();
-		@Pc(125) int local125 = Static370.aClass2_Sub24_1.method5242();
+		@Pc(121) int local121 = Mouse.clickButton.getY();
+		@Pc(125) int local125 = Mouse.clickButton.getX();
 		@Pc(127) int local127 = -1;
 		@Pc(145) int local145;
 		for (@Pc(129) int local129 = 0; local129 < Static268.anInt4959; local129++) {

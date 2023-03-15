@@ -1,12 +1,8 @@
-import java.awt.Font;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 public final class Static90 {
-
-	@OriginalMember(owner = "client!eu", name = "B", descriptor = "Ljava/awt/Font;")
-	public static Font aFont3;
 
 	@OriginalMember(owner = "client!eu", name = "F", descriptor = "I")
 	public static int anInt6637;
@@ -720,7 +716,7 @@ public final class Static90 {
 
 	@OriginalMember(owner = "client!eu", name = "d", descriptor = "(Z)V")
 	public static void method5953() {
-		Static336.method5705(25);
+		client.setGameState(25);
 		Static114.method2362();
 		System.gc();
 	}

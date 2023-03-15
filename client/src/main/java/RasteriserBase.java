@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!wm")
-public abstract class TextureProvider {
+public abstract class RasteriserBase {
 
 	@OriginalMember(owner = "client!wm", name = "h", descriptor = "[I")
 	public static final int[] anIntArray178 = new int[16384];
@@ -29,7 +29,7 @@ public abstract class TextureProvider {
 	}
 
 	@OriginalMember(owner = "client!wm", name = "<init>", descriptor = "(ILclient!ci;)V")
-	protected TextureProvider(@OriginalArg(0) int arg0, @OriginalArg(1) TextureProviderInterface arg1) {
+	protected RasteriserBase(@OriginalArg(0) int arg0, @OriginalArg(1) TextureProviderInterface arg1) {
 		this.anInt2836 = arg0;
 		this.anInterface2_5 = arg1;
 	}
@@ -41,7 +41,7 @@ public abstract class TextureProvider {
 	public abstract void method2803();
 
 	@OriginalMember(owner = "client!wm", name = "f", descriptor = "()V")
-	public abstract void method2804();
+	public abstract void draw();
 
 	@OriginalMember(owner = "client!wm", name = "g", descriptor = "()Z")
 	public abstract boolean method2805();

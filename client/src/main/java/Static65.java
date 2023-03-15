@@ -11,7 +11,7 @@ public final class Static65 {
 	public static int[] anIntArray110;
 
 	@OriginalMember(owner = "client!dq", name = "R", descriptor = "Lclient!wm;")
-	public static TextureProvider aClass19_3;
+	public static RasteriserBase aClass19_3;
 
 	@OriginalMember(owner = "client!dq", name = "Z", descriptor = "I")
 	public static int anInt1593;
@@ -36,7 +36,7 @@ public final class Static65 {
 	}
 
 	@OriginalMember(owner = "client!dq", name = "a", descriptor = "(IILclient!nk;I)V")
-	public static void method1735(@OriginalArg(0) int arg0, @OriginalArg(2) Class161 arg1, @OriginalArg(3) int arg2) {
+	public static void method1735(@OriginalArg(0) int arg0, @OriginalArg(2) Component arg1, @OriginalArg(3) int arg2) {
 		Static164.aClass161_5 = arg1;
 		Static129.anInt2460 = arg0;
 		Static288.anInt5464 = arg2;
@@ -45,7 +45,7 @@ public final class Static65 {
 	@OriginalMember(owner = "client!dq", name = "a", descriptor = "(Lclient!bu;I[[B)V")
 	public static void method1737(@OriginalArg(0) SceneBuilder arg0, @OriginalArg(2) byte[][] arg1) {
 		for (@Pc(3) int local3 = 0; local3 < arg0.anInt912; local3++) {
-			Static37.method1135();
+			client.audioLogic();
 			for (@Pc(9) int local9 = 0; local9 < Static373.anInt7033 >> 3; local9++) {
 				for (@Pc(13) int local13 = 0; local13 < Static242.anInt4449 >> 3; local13++) {
 					@Pc(23) int local23 = Static310.anIntArrayArrayArray12[local3][local9][local13];
@@ -58,7 +58,7 @@ public final class Static65 {
 							@Pc(65) int local65 = (local49 / 8 << 8) + local55 / 8;
 							for (@Pc(67) int local67 = 0; local67 < Static291.mapSquares.length; local67++) {
 								if (Static291.mapSquares[local67] == local65 && arg1[local67] != null) {
-									arg0.method1107(local43, local32, local3, (local49 & 0x7) * 8, arg1[local67], local9 * 8, Rasteriser.textureProvider, Static171.aClass46Array1, local13 * 8, (local55 & 0x7) * 8);
+									arg0.method1107(local43, local32, local3, (local49 & 0x7) * 8, arg1[local67], local9 * 8, Rasteriser.instance, Static171.aClass46Array1, local13 * 8, (local55 & 0x7) * 8);
 									break;
 								}
 							}

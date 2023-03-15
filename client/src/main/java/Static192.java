@@ -9,7 +9,7 @@ public final class Static192 {
 	public static final Class16 aClass16_5 = new Class16("", 11);
 
 	@OriginalMember(owner = "client!l", name = "i", descriptor = "Lclient!nk;")
-	public static Class161 aClass161_8 = null;
+	public static Component aClass161_8 = null;
 
 	@OriginalMember(owner = "client!l", name = "a", descriptor = "(I)V")
 	public static void method3508() {

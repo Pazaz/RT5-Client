@@ -53,7 +53,7 @@ public class AreaSoundManager {
 			@Pc(131) NpcType local131 = arg4.type;
 			if (local131.multiNpcs != null) {
 				local7.aBoolean204 = true;
-				local131 = local131.getMultiNpc(Static214.aClass226_1);
+				local131 = local131.getMultiNpc(VarpDomain.instance);
 			}
 			if (local131 != null) {
 				local7.anInt2904 = (arg1 + local131.size) * 128;

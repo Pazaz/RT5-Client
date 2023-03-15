@@ -19,9 +19,9 @@ public final class Static353 {
 
 	@OriginalMember(owner = "client!ui", name = "b", descriptor = "(I)V")
 	public static void method5883() {
-		if (Rasteriser.textureProvider.method2859()) {
+		if (Rasteriser.instance.method2859()) {
 			Static296.method5104();
-			Rasteriser.textureProvider.method2828(GameShell.canvas);
+			Rasteriser.instance.method2828(GameShell.canvas);
 			Static98.method2107();
 		} else {
 			Static78.method5701(Static77.anInt1762);

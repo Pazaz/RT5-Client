@@ -59,7 +59,7 @@ public final class Static92 {
 	}
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(Lclient!nk;Lclient!wm;IIB)V")
-	public static void method1967(@OriginalArg(0) Class161 arg0, @OriginalArg(1) TextureProvider arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public static void method1967(@OriginalArg(0) Component arg0, @OriginalArg(1) RasteriserBase arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(14) Class78 local14 = arg0.method4109(arg1);
 		if (local14 == null) {
 			return;
@@ -104,7 +104,7 @@ public final class Static92 {
 			local185 = Static183.anIntArray2[local165] * 4 + 2 - local58 / 32;
 			@Pc(253) LocType local253 = client.LocTypes.get(Static231.anIntArray265[local165]);
 			if (local253.anIntArray94 != null) {
-				local253 = local253.method1533(Static214.aClass226_1);
+				local253 = local253.method1533(VarpDomain.instance);
 				if (local253 == null || local253.anInt1306 == -1) {
 					continue;
 				}
@@ -125,7 +125,7 @@ public final class Static92 {
 			if (local365 != null && local365.method4336() && local365.plane == PlayerList.self.plane) {
 				@Pc(383) NpcType local383 = local365.type;
 				if (local383 != null && local383.multiNpcs != null) {
-					local383 = local383.getMultiNpc(Static214.aClass226_1);
+					local383 = local383.getMultiNpc(VarpDomain.instance);
 				}
 				if (local383 != null && local383.aBoolean147 && local383.aBoolean145) {
 					local410 = local365.xFine / 32 - local61 / 32;

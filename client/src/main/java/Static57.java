@@ -9,7 +9,7 @@ public final class Static57 {
 	public static int anInt1464;
 
 	@OriginalMember(owner = "client!df", name = "g", descriptor = "[Lclient!nk;")
-	public static Class161[] aClass161Array1;
+	public static Component[] aClass161Array1;
 
 	@OriginalMember(owner = "client!df", name = "e", descriptor = "[I")
 	public static final int[] anIntArray104 = new int[] { 1, -1, -1, 1 };

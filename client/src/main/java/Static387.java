@@ -9,7 +9,7 @@ public final class Static387 {
 	public static int anInt2831 = 0;
 
 	@OriginalMember(owner = "client!wm", name = "a", descriptor = "(IILclient!ml;Lclient!ci;Ljava/awt/Canvas;I)Lclient!wm;")
-	public static synchronized TextureProvider method2822(@OriginalArg(1) int arg0, @OriginalArg(2) Signlink arg1, @OriginalArg(3) TextureProviderInterface arg2, @OriginalArg(4) Canvas arg3, @OriginalArg(5) int arg4) {
+	public static synchronized RasteriserBase method2822(@OriginalArg(1) int arg0, @OriginalArg(2) Signlink arg1, @OriginalArg(3) TextureProviderInterface arg2, @OriginalArg(4) Canvas arg3, @OriginalArg(5) int arg4) {
 		@Pc(7) int local7 = -1;
 		for (@Pc(17) int local17 = 0; local17 < 8; local17++) {
 			if (!Static168.aBooleanArray67[local17]) {
@@ -20,7 +20,7 @@ public final class Static387 {
 		if (local7 == -1) {
 			throw new IllegalStateException("NFTI");
 		}
-		@Pc(56) TextureProvider local56;
+		@Pc(56) RasteriserBase local56;
 		if (arg4 == 0) {
 			local56 = Static388.method6437(arg2, local7, arg3);
 		} else if (arg4 == 1) {

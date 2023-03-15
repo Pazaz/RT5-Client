@@ -7,19 +7,13 @@ public final class Static277 {
 	@OriginalMember(owner = "client!q", name = "l", descriptor = "[[I")
 	public static int[][] anIntArrayArray43;
 
-	@OriginalMember(owner = "client!q", name = "p", descriptor = "I")
-	public static int anInt5115;
-
-	@OriginalMember(owner = "client!q", name = "h", descriptor = "Lclient!ld;")
-	public static final LinkedList aClass135_31 = new LinkedList();
-
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(IIIIB)V")
 	public static void method4680(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(12) DelayedStateChange local12 = Static316.method5413(8, arg2);
 		local12.method2311();
-		local12.anInt2289 = arg1;
-		local12.anInt2284 = arg3;
-		local12.anInt2290 = arg0;
+		local12.intArg1 = arg1;
+		local12.intArg2 = arg3;
+		local12.intArg3 = arg0;
 	}
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(Lclient!mr;B)V")

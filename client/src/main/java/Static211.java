@@ -9,9 +9,6 @@ public final class Static211 {
 	@OriginalMember(owner = "client!mh", name = "f", descriptor = "Lclient!jd;")
 	public static Sprite aClass13_13;
 
-	@OriginalMember(owner = "client!mh", name = "g", descriptor = "Lclient!cc;")
-	public static PrivilegedRequest js5SocketRequest;
-
 	@OriginalMember(owner = "client!mh", name = "j", descriptor = "I")
 	public static int anInt3780;
 
@@ -40,7 +37,7 @@ public final class Static211 {
 		Static140.method2627();
 		Static91.method1962();
 		Static71.method6021();
-		if (client.MODE_WHERE_LIVE != client.modeWhere) {
+		if (ModeWhere.MODE_WHERE_LIVE != client.modeWhere) {
 			for (@Pc(80) int local80 = 0; local80 < Static26.aByteArrayArray3.length; local80++) {
 				Static26.aByteArrayArray3[local80] = null;
 			}
@@ -52,7 +49,7 @@ public final class Static211 {
 		Static192.method3508();
 		Static161.method2969();
 		ScriptRunner.aClass98_30.method2614();
-		Rasteriser.textureProvider.method2903();
+		Rasteriser.instance.method2903();
 		Static261.aClass116_7.method3153();
 		Static194.method3541();
 		client.jsArchive0.discardUnpacked();
@@ -90,14 +87,4 @@ public final class Static211 {
 		Static210.aClass98_31.method2614();
 	}
 
-	@OriginalMember(owner = "client!mh", name = "b", descriptor = "(B)V")
-	public static void method3725() {
-		if (Static86.anInt1870 > 0) {
-			LoginManager.logout();
-		} else {
-			Static246.aClass111_2 = Protocol.socket;
-			Protocol.socket = null;
-			Static336.method5705(40);
-		}
-	}
 }

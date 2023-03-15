@@ -19,12 +19,12 @@ public final class Static351 {
 	public static void method5857(@OriginalArg(0) BitmapFont arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) String arg2) {
 		@Pc(20) int local20 = Static165.aClass239_3.method6124(null, arg2, 250);
 		@Pc(29) int local29 = Static165.aClass239_3.method6123(arg2, 250, null) * 13;
-		Rasteriser.textureProvider.method2901(6, 6, local20 + 8, local29 + 4 + 4, -16777216, 0);
-		Rasteriser.textureProvider.method2836(6, 6, local20 + 8, local29 + 4 - -4, -1, 0);
+		Rasteriser.instance.method2901(6, 6, local20 + 8, local29 + 4 + 4, -16777216, 0);
+		Rasteriser.instance.method2836(6, 6, local20 + 8, local29 + 4 - -4, -1, 0);
 		arg0.method5893(0, 0, 10, 1, -1, null, 0, null, local29, arg2, 1, 10, null, -1, local20);
 		Static369.method6221(local20 + 4 + 4, 6, local29 + 4 + 4, 6);
 		if (arg1) {
-			Rasteriser.textureProvider.method2883();
+			Rasteriser.instance.method2883();
 		}
 	}
 

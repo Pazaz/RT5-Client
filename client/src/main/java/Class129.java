@@ -26,14 +26,14 @@ public final class Class129 implements Runnable {
 				for (@Pc(12) int local12 = 0; local12 < 2; local12++) {
 					@Pc(19) AudioChannel local19 = this.aClass221Array1[local12];
 					if (local19 != null) {
-						local19.method6316();
+						local19.mainLogic();
 					}
 				}
 				ThreadUtils.sleep(10L);
 				Static283.method4876(this.aClass152_3, null);
 			}
 		} catch (@Pc(43) Exception local43) {
-			Static262.report(local43, null);
+			TracingException.report(local43, null);
 		} finally {
 			@Pc(53) Object local53 = null;
 			this.aBoolean226 = false;

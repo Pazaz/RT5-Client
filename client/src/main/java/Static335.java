@@ -11,7 +11,7 @@ public final class Static335 {
 
 	@OriginalMember(owner = "client!ti", name = "a", descriptor = "(B)V")
 	public static void method5694() {
-		if (Rasteriser.textureProvider == null) {
+		if (Rasteriser.instance == null) {
 			return;
 		}
 		Static34.aClass36_6.method1416();
@@ -27,7 +27,7 @@ public final class Static335 {
 		Static211.method3721();
 		Static155.method2790();
 		Static241.method4192(false);
-		Static67.method1772();
+		TitleScreen.clear();
 		for (@Pc(41) int local41 = 0; local41 < 2048; local41++) {
 			@Pc(47) Player local47 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local41];
 			if (local47 != null) {
@@ -45,8 +45,8 @@ public final class Static335 {
 				}
 			}
 		}
-		Rasteriser.textureProvider.method2825();
-		Rasteriser.textureProvider = null;
+		Rasteriser.instance.method2825();
+		Rasteriser.instance = null;
 	}
 
 }

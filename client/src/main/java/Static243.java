@@ -56,7 +56,7 @@ public final class Static243 {
 		@Pc(110) int local110 = (local65 + 1 >> 1) + arg11;
 		@Pc(114) Class6 local114 = Scene.aClass6Array4[arg12];
 		@Pc(138) int local138 = local114.method5719(local79, local102) + local114.method5719(local96, local102) + local114.method5719(local79, local110) + local114.method5719(local96, local110) >> 2;
-		@Pc(142) Class2_Sub6 local142 = new Class2_Sub6();
+		@Pc(142) AttachLocRequest local142 = new AttachLocRequest();
 		local142.anInt1110 = local27.plane;
 		local142.anInt1118 = arg3 + client.cycle;
 		local142.anInt1100 = client.cycle + arg7;

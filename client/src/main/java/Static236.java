@@ -10,7 +10,7 @@ public final class Static236 {
 	public static int anInt4301 = -1;
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(Lclient!r;Lclient!r;Lclient!wm;I)V")
-	public static void method4102(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) TextureProvider arg2) {
+	public static void method4102(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) RasteriserBase arg2) {
 		Static52.aClass239_1 = Static101.method2165(Sprites.p11FullId, arg1);
 		Static200.aClass130_3 = arg2.method2857(Static52.aClass239_1, Static396.method1688(arg0, Sprites.p11FullId));
 		Static165.aClass239_3 = Static101.method2165(Sprites.p12FullId, arg1);

@@ -8,9 +8,6 @@ public final class Static368 {
 	@OriginalMember(owner = "client!vl", name = "R", descriptor = "I")
 	public static int anInt6917 = 0;
 
-	@OriginalMember(owner = "client!vl", name = "X", descriptor = "J")
-	public static long aLong217 = -1L;
-
 	@OriginalMember(owner = "client!vl", name = "bb", descriptor = "Lclient!wc;")
 	public static final SecondaryLinkedList aClass246_10 = new SecondaryLinkedList();
 

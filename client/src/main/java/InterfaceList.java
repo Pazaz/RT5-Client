@@ -4,8 +4,20 @@ import org.openrs2.deob.annotation.Pc;
 
 public class InterfaceList {
 
+	@OriginalMember(owner = "client!wa", name = "c", descriptor = "Lclient!ld;")
+	public static final LinkedList highPriorityRequests = new LinkedList();
+	@OriginalMember(owner = "client!mc", name = "h", descriptor = "Lclient!ld;")
+	public static final LinkedList mediumPriorityRequests = new LinkedList();
+	@OriginalMember(owner = "client!pp", name = "w", descriptor = "Lclient!ld;")
+	public static final LinkedList lowPriorityRequests = new LinkedList();
 	@OriginalMember(owner = "client!pi", name = "e", descriptor = "Z")
 	public static boolean aBoolean371 = false;
+	@OriginalMember(owner = "client!fe", name = "f", descriptor = "I")
+	public static int miscTransmitAt = 0;
+	@OriginalMember(owner = "client!es", name = "d", descriptor = "I")
+	public static int transmitTimer = 1;
+	@OriginalMember(owner = "client!uc", name = "p", descriptor = "I")
+	public static int anInt6449 = 0;
 
 	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(Lclient!r;BLclient!r;Lclient!r;Lclient!r;)V")
 	public static void init(@OriginalArg(0) Js5 arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) Js5 arg2, @OriginalArg(4) Js5 arg3) {
@@ -13,12 +25,12 @@ public class InterfaceList {
 		Static283.aClass197_68 = arg2;
 		Static142.aClass197_37 = arg1;
 		Static391.aClass197_95 = arg0;
-		Static26.aClass161ArrayArray1 = new Class161[Static283.aClass197_68.capacity()][];
+		Static26.aClass161ArrayArray1 = new Component[Static283.aClass197_68.capacity()][];
 		Static128.aBooleanArray21 = new boolean[Static283.aClass197_68.capacity()];
 	}
 
 	@OriginalMember(owner = "client!ae", name = "b", descriptor = "(BI)Lclient!nk;")
-	public static Class161 getComponent(@OriginalArg(1) int arg0) {
+	public static Component getComponent(@OriginalArg(1) int arg0) {
 		@Pc(15) int local15 = arg0 >> 16;
 		@Pc(19) int local19 = arg0 & 0xFFFF;
 		if (Static26.aClass161ArrayArray1[local15] == null || Static26.aClass161ArrayArray1[local15][local19] == null) {
@@ -31,15 +43,15 @@ public class InterfaceList {
 	}
 
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(Lclient!nk;B)V")
-	public static void redraw(@OriginalArg(0) Class161 arg0) {
+	public static void redraw(@OriginalArg(0) Component arg0) {
 		if (Static132.anInt2468 == arg0.anInt4268) {
 			Static357.aBooleanArray59[arg0.anInt4257] = true;
 		}
 	}
 
 	@OriginalMember(owner = "client!dg", name = "a", descriptor = "(Lclient!nk;B)V")
-	public static void update(@OriginalArg(0) Class161 arg0) {
-		@Pc(7) Class161 local7 = Static7.method6465(arg0);
+	public static void update(@OriginalArg(0) Component arg0) {
+		@Pc(7) Component local7 = Static7.method6465(arg0);
 		@Pc(13) int local13;
 		@Pc(11) int local11;
 		if (local7 == null) {
@@ -54,8 +66,8 @@ public class InterfaceList {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(IIB)Lclient!nk;")
-	public static Class161 method3705(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(7) Class161 local7 = getComponent(arg0);
+	public static Component method3705(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+		@Pc(7) Component local7 = getComponent(arg0);
 		if (arg1 == -1) {
 			return local7;
 		} else if (local7 == null || local7.activeComponents == null || arg1 >= local7.activeComponents.length) {

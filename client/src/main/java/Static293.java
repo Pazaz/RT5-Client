@@ -29,7 +29,7 @@ public final class Static293 {
 	private static int anInt5520;
 
 	@OriginalMember(owner = "client!qs", name = "a", descriptor = "(Lclient!wm;[IIII[I[I)V")
-	private static void method5038(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int[] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int[] arg4, @OriginalArg(6) int[] arg5) {
+	private static void method5038(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int[] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int[] arg4, @OriginalArg(6) int[] arg5) {
 		@Pc(2) int[] local2 = new int[4];
 		arg0.method2851(local2);
 		if (arg4 != null && local2[3] - local2[1] != arg4.length) {
@@ -252,12 +252,12 @@ public final class Static293 {
 	}
 
 	@OriginalMember(owner = "client!qs", name = "a", descriptor = "(Lclient!wm;[II)V")
-	public static void method5046(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2) {
+	public static void method5046(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2) {
 		method5038(arg0, arg1, arg1.length, arg2, null, null);
 	}
 
 	@OriginalMember(owner = "client!qs", name = "a", descriptor = "(Lclient!wm;[II[I[I)V")
-	public static void method5047(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4) {
+	public static void method5047(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4) {
 		method5038(arg0, arg1, arg1.length, arg2, arg3, arg4);
 	}
 }

@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static246 {
 
-	@OriginalMember(owner = "client!oc", name = "a", descriptor = "Lclient!iu;")
-	public static BufferedSocket aClass111_2;
-
 	@OriginalMember(owner = "client!oc", name = "c", descriptor = "Z")
 	public static boolean aBoolean312 = false;
 

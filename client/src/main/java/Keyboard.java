@@ -154,7 +154,7 @@ public final class Keyboard extends KeyboardBase implements KeyListener, FocusLi
 
 	@OriginalMember(owner = "client!ke", name = "b", descriptor = "(I)V")
 	@Override
-	public synchronized void method3337() {
+	public synchronized void mainLogic() {
 		for (@Pc(14) Class37_Sub1 local14 = this.aClass37_Sub1_3; local14 != null; local14 = local14.aClass37_Sub1_1) {
 			if (local14.anInt1250 == 0) {
 				if (local14.anInt1245 >= 0) {

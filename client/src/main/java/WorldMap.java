@@ -14,6 +14,8 @@ public class WorldMap {
 	public static int anInt2003;
 	@OriginalMember(owner = "client!uo", name = "u", descriptor = "I")
 	public static int loadPercentage = 0;
+	@OriginalMember(owner = "client!nb", name = "C", descriptor = "Lclient!nk;")
+	public static Component aClass161_11;
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(II)V")
 	public static void setTargetZoom(@OriginalArg(1) int arg0) {

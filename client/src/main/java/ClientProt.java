@@ -74,7 +74,7 @@ public final class ClientProt {
 	@OriginalMember(owner = "client!bo", name = "f", descriptor = "Lclient!mc;")
 	public static final ClientProt EVENT_FRAME_MAP_LOADED = new ClientProt(33, 4);
 	@OriginalMember(owner = "client!jj", name = "U", descriptor = "Lclient!mc;")
-	public static final ClientProt PACKET_34 = new ClientProt(34, -1);
+	public static final ClientProt REFLECTION_CHECK = new ClientProt(34, -1);
 	@OriginalMember(owner = "client!cr", name = "g", descriptor = "Lclient!mc;")
 	public static final ClientProt PACKET_35 = new ClientProt(35, 3);
 	@OriginalMember(owner = "client!hk", name = "f", descriptor = "Lclient!mc;")

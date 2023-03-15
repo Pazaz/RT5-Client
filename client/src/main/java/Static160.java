@@ -102,11 +102,11 @@ public final class Static160 {
 	}
 
 	@OriginalMember(owner = "client!jf", name = "a", descriptor = "(Ljava/awt/Canvas;Lclient!ml;ILclient!ci;II)Lclient!wm;")
-	public static TextureProvider method2955(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Signlink arg1, @OriginalArg(3) TextureProviderInterface arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+	public static RasteriserBase method2955(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Signlink arg1, @OriginalArg(3) TextureProviderInterface arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		try {
 			@Pc(6) Class local6 = Class.forName("Class19_Sub1");
 			@Pc(58) Constructor local58 = local6.getConstructor(Canvas.class, TextureProviderInterface.class, Integer.TYPE, Integer.TYPE, Signlink.class);
-			return (TextureProvider) local58.newInstance(arg0, arg2, Integer.valueOf(arg4), new Integer(arg3), arg1);
+			return (RasteriserBase) local58.newInstance(arg0, arg2, Integer.valueOf(arg4), new Integer(arg3), arg1);
 		} catch (@Pc(91) Exception local91) {
 			throw new RuntimeException();
 		}
@@ -124,9 +124,9 @@ public final class Static160 {
 		if (!Static222.method3916(arg0)) {
 			return;
 		}
-		@Pc(14) Class161[] local14 = Static26.aClass161ArrayArray1[arg0];
+		@Pc(14) Component[] local14 = Static26.aClass161ArrayArray1[arg0];
 		for (@Pc(16) int local16 = 0; local16 < local14.length; local16++) {
-			@Pc(22) Class161 local22 = local14[local16];
+			@Pc(22) Component local22 = local14[local16];
 			if (local22 != null) {
 				local22.anInt4247 = 0;
 				local22.anInt4283 = 0;

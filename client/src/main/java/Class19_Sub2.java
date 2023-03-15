@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!j")
-public final class Class19_Sub2 extends TextureProvider {
+public final class Class19_Sub2 extends RasteriserBase {
 
 	@OriginalMember(owner = "client!j", name = "s", descriptor = "I")
 	public int anInt2840;
@@ -1210,7 +1210,7 @@ public final class Class19_Sub2 extends TextureProvider {
 
 	@OriginalMember(owner = "client!j", name = "f", descriptor = "()V")
 	@Override
-	public void method2804() {
+	public void draw() {
 	}
 
 	@OriginalMember(owner = "client!j", name = "h", descriptor = "()Lclient!on;")

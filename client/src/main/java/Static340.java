@@ -40,7 +40,7 @@ public final class Static340 {
 	public static int method5764(@OriginalArg(1) Npc arg0) {
 		@Pc(8) NpcType local8 = arg0.type;
 		if (local8.multiNpcs != null) {
-			local8 = local8.getMultiNpc(Static214.aClass226_1);
+			local8 = local8.getMultiNpc(VarpDomain.instance);
 			if (local8 == null) {
 				return -1;
 			}
@@ -70,10 +70,10 @@ public final class Static340 {
 				@Pc(41) Buffer local41 = new Buffer(Static112.anInt2294 * 6 + 3);
 				local41.p1(1);
 				local41.p2(Static112.anInt2294);
-				for (@Pc(51) int local51 = 0; local51 < Static75.anIntArray117.length; local51++) {
+				for (@Pc(51) int local51 = 0; local51 < VarcDomain.varcs.length; local51++) {
 					if (Static89.aBooleanArray18[local51]) {
 						local41.p2(local51);
-						local41.p4(Static75.anIntArray117[local51]);
+						local41.p4(VarcDomain.varcs[local51]);
 					}
 				}
 				local7.write(local41.data, local41.pos, 0);
@@ -87,7 +87,7 @@ public final class Static340 {
 		} catch (@Pc(89) Exception local89) {
 		}
 		Static375.aLong221 = MonotonicClock.currentTimeMillis();
-		Static273.aBoolean374 = false;
+		VarcDomain.aBoolean374 = false;
 	}
 
 	@OriginalMember(owner = "client!tp", name = "a", descriptor = "(BZLjava/lang/String;I)Z")

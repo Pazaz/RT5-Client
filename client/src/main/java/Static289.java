@@ -10,9 +10,6 @@ public final class Static289 {
 	@OriginalMember(owner = "client!qo", name = "f", descriptor = "Z")
 	public static final boolean aBoolean391 = false;
 
-	@OriginalMember(owner = "client!qo", name = "h", descriptor = "I")
-	public static int anInt5495 = -1;
-
 	@OriginalMember(owner = "client!qo", name = "a", descriptor = "(IZ)I")
 	public static int method5019(@OriginalArg(0) int arg0) {
 		if (arg0 < 96) {

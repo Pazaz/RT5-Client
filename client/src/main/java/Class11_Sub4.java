@@ -31,7 +31,7 @@ public abstract class Class11_Sub4 extends BaseEntity {
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public final void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
+	public final void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) RasteriserBase arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		throw new IllegalStateException();
 	}
 }

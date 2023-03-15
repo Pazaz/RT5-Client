@@ -2,9 +2,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static112 {
 
-	@OriginalMember(owner = "client!gg", name = "N", descriptor = "I")
-	public static int anInt2293 = 0;
-
 	@OriginalMember(owner = "client!gg", name = "P", descriptor = "Z")
 	public static boolean debugGpi = false;
 

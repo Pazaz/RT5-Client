@@ -62,8 +62,8 @@ public final class Class14_Sub1 extends Class14 {
 	@Override
 	public void method3931(@OriginalArg(0) int arg0) {
 		this.anInt503 = 32768;
-		this.anInt505 = this.anInt506 = TextureProvider.anIntArray177[arg0 & 0x3FFF];
-		this.anInt507 = TextureProvider.anIntArray178[arg0 & 0x3FFF];
+		this.anInt505 = this.anInt506 = RasteriserBase.anIntArray177[arg0 & 0x3FFF];
+		this.anInt507 = RasteriserBase.anIntArray178[arg0 & 0x3FFF];
 		this.anInt500 = -this.anInt507;
 		this.anInt497 = this.anInt498 = this.anInt499 = this.anInt496 = this.anInt504 = this.anInt502 = this.anInt501 = 0;
 	}
@@ -78,12 +78,12 @@ public final class Class14_Sub1 extends Class14 {
 	@OriginalMember(owner = "client!ba", name = "a", descriptor = "(IIIIII)V")
 	@Override
 	public void method3930(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
-		@Pc(5) int local5 = TextureProvider.anIntArray177[arg3 & 0x3FFF];
-		@Pc(11) int local11 = TextureProvider.anIntArray178[arg3 & 0x3FFF];
-		@Pc(17) int local17 = TextureProvider.anIntArray177[arg4 & 0x3FFF];
-		@Pc(23) int local23 = TextureProvider.anIntArray178[arg4 & 0x3FFF];
-		@Pc(29) int local29 = TextureProvider.anIntArray177[arg5 & 0x3FFF];
-		@Pc(35) int local35 = TextureProvider.anIntArray178[arg5 & 0x3FFF];
+		@Pc(5) int local5 = RasteriserBase.anIntArray177[arg3 & 0x3FFF];
+		@Pc(11) int local11 = RasteriserBase.anIntArray178[arg3 & 0x3FFF];
+		@Pc(17) int local17 = RasteriserBase.anIntArray177[arg4 & 0x3FFF];
+		@Pc(23) int local23 = RasteriserBase.anIntArray178[arg4 & 0x3FFF];
+		@Pc(29) int local29 = RasteriserBase.anIntArray177[arg5 & 0x3FFF];
+		@Pc(35) int local35 = RasteriserBase.anIntArray178[arg5 & 0x3FFF];
 		@Pc(41) int local41 = local11 * local29 >> 15;
 		@Pc(47) int local47 = local11 * local35 >> 15;
 		this.anInt505 = local17 * local29 + local23 * local47 >> 15;
@@ -114,8 +114,8 @@ public final class Class14_Sub1 extends Class14 {
 	@Override
 	public void method3925(@OriginalArg(0) int arg0) {
 		this.anInt506 = 32768;
-		this.anInt505 = this.anInt503 = TextureProvider.anIntArray177[arg0 & 0x3FFF];
-		this.anInt497 = TextureProvider.anIntArray178[arg0 & 0x3FFF];
+		this.anInt505 = this.anInt503 = RasteriserBase.anIntArray177[arg0 & 0x3FFF];
+		this.anInt497 = RasteriserBase.anIntArray178[arg0 & 0x3FFF];
 		this.anInt504 = -this.anInt497;
 		this.anInt500 = this.anInt498 = this.anInt507 = this.anInt499 = this.anInt496 = this.anInt502 = this.anInt501 = 0;
 	}
@@ -123,8 +123,8 @@ public final class Class14_Sub1 extends Class14 {
 	@OriginalMember(owner = "client!ba", name = "c", descriptor = "(I)V")
 	@Override
 	public void method3929(@OriginalArg(0) int arg0) {
-		@Pc(5) int local5 = TextureProvider.anIntArray177[arg0 & 0x3FFF];
-		@Pc(11) int local11 = TextureProvider.anIntArray178[arg0 & 0x3FFF];
+		@Pc(5) int local5 = RasteriserBase.anIntArray177[arg0 & 0x3FFF];
+		@Pc(11) int local11 = RasteriserBase.anIntArray178[arg0 & 0x3FFF];
 		@Pc(14) int local14 = this.anInt507;
 		@Pc(17) int local17 = this.anInt506;
 		@Pc(20) int local20 = this.anInt499;
@@ -161,8 +161,8 @@ public final class Class14_Sub1 extends Class14 {
 	@Override
 	public void method3933(@OriginalArg(0) int arg0) {
 		this.anInt505 = 32768;
-		this.anInt506 = this.anInt503 = TextureProvider.anIntArray177[arg0 & 0x3FFF];
-		this.anInt502 = TextureProvider.anIntArray178[arg0 & 0x3FFF];
+		this.anInt506 = this.anInt503 = RasteriserBase.anIntArray177[arg0 & 0x3FFF];
+		this.anInt502 = RasteriserBase.anIntArray178[arg0 & 0x3FFF];
 		this.anInt499 = -this.anInt502;
 		this.anInt500 = this.anInt497 = this.anInt498 = this.anInt507 = this.anInt496 = this.anInt504 = this.anInt501 = 0;
 	}
@@ -178,8 +178,8 @@ public final class Class14_Sub1 extends Class14 {
 	@OriginalMember(owner = "client!ba", name = "b", descriptor = "(I)V")
 	@Override
 	public void method3926(@OriginalArg(0) int arg0) {
-		@Pc(5) int local5 = TextureProvider.anIntArray177[arg0 & 0x3FFF];
-		@Pc(11) int local11 = TextureProvider.anIntArray178[arg0 & 0x3FFF];
+		@Pc(5) int local5 = RasteriserBase.anIntArray177[arg0 & 0x3FFF];
+		@Pc(11) int local11 = RasteriserBase.anIntArray178[arg0 & 0x3FFF];
 		@Pc(14) int local14 = this.anInt505;
 		@Pc(17) int local17 = this.anInt500;
 		@Pc(20) int local20 = this.anInt497;

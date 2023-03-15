@@ -14,12 +14,12 @@ public final class Static182 {
 	public static int anInt3423 = 0;
 
 	@OriginalMember(owner = "client!kk", name = "j", descriptor = "Lclient!nk;")
-	public static Class161 aClass161_7 = null;
+	public static Component aClass161_7 = null;
 
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "(IJ)V")
 	public static void method3386(@OriginalArg(1) long arg0) {
-		@Pc(10) int local10 = PlayerList.self.xFine + Static24.anInt642;
-		@Pc(15) int local15 = Static14.anInt327 + PlayerList.self.zFine;
+		@Pc(10) int local10 = PlayerList.self.xFine + Camera.anInt642;
+		@Pc(15) int local15 = Camera.anInt327 + PlayerList.self.zFine;
 		if (Static288.anInt5463 - local10 < -500 || Static288.anInt5463 - local10 > 500 || Static62.anInt2395 - local15 < -500 || Static62.anInt2395 - local15 > 500) {
 			Static288.anInt5463 = local10;
 			Static62.anInt2395 = local15;
@@ -73,7 +73,7 @@ public final class Static182 {
 				local15.unlink();
 				local20.method5878();
 			} else if (local20.anInt6504 <= client.cycle) {
-				local20.method5879(Static165.anInt3148);
+				local20.method5879(client.sceneDelta);
 				if (local20.aBoolean445) {
 					local15.unlink();
 				} else {
@@ -91,7 +91,7 @@ public final class Static182 {
 		Player.rebootTimer = 0;
 		Protocol.packet1 = null;
 		Protocol.packet = null;
-		Protocol.anInt4955 = 0;
+		LoginManager.anInt4955 = 0;
 		Protocol.inboundBuffer.pos = 0;
 		Protocol.packet2 = null;
 		Static160.method2956();
@@ -108,7 +108,7 @@ public final class Static182 {
 		}
 		Static302.method1458();
 		Camera.anInt5911 = 1;
-		Static336.method5705(30);
+		client.setGameState(30);
 		for (@Pc(76) int local76 = 0; local76 < 100; local76++) {
 			Static357.aBooleanArray59[local76] = true;
 		}

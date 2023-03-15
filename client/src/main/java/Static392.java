@@ -6,9 +6,6 @@ public final class Static392 {
 	@OriginalMember(owner = "client!wr", name = "b", descriptor = "I")
 	public static int anInt7226;
 
-	@OriginalMember(owner = "client!wr", name = "d", descriptor = "Lclient!ml;")
-	public static Signlink aClass152_6;
-
 	@OriginalMember(owner = "client!wr", name = "f", descriptor = "Lclient!r;")
 	public static Js5 aClass197_97;
 

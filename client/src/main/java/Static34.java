@@ -11,7 +11,7 @@ public final class Static34 {
 	public static final Class36 aClass36_6 = new Class36();
 
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(ILclient!wm;)V")
-	public static void method4810(@OriginalArg(1) TextureProvider arg0) {
+	public static void method4810(@OriginalArg(1) RasteriserBase arg0) {
 		if (InterfaceList.aBoolean371) {
 			Static117.method2367(arg0);
 		} else {

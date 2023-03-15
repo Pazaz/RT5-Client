@@ -59,7 +59,7 @@ public final class Static220 {
 		Static18.MSG_TIMESTAMPS[0] = flags;
 		Static169.MSG_SECONDARY[0] = msg2;
 		Chat.messages[0] = message;
-		Static21.anInt551 = Static88.transmitTimer;
+		Static21.anInt551 = InterfaceList.transmitTimer;
 		Chat.size++;
 		Chat.clans[0] = unkStr;
 		Chat.phraseIds[0] = unkInt;

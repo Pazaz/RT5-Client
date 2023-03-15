@@ -123,7 +123,7 @@ public final class Player extends PathingEntity {
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
-	public void method6070(@OriginalArg(0) TextureProvider arg0) {
+	public void method6070(@OriginalArg(0) RasteriserBase arg0) {
 		if (this.appearance != null && (super.aBoolean321 || this.method4067(arg0, 0))) {
 			this.method4333(arg0, super.aClass31Array3, super.aBoolean321);
 		}
@@ -131,7 +131,7 @@ public final class Player extends PathingEntity {
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) RasteriserBase arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		throw new IllegalStateException();
 	}
 
@@ -308,7 +308,7 @@ public final class Player extends PathingEntity {
 	}
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(ILclient!wm;I)Z")
-	private boolean method4067(@OriginalArg(1) TextureProvider arg0, @OriginalArg(2) int arg1) {
+	private boolean method4067(@OriginalArg(1) RasteriserBase arg0, @OriginalArg(2) int arg1) {
 		@Pc(7) int local7 = arg1;
 		@Pc(13) BasType local13 = this.method4332();
 		@Pc(28) Class157 local28 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
@@ -318,13 +318,13 @@ public final class Player extends PathingEntity {
 		if (local51 != 0 || local54 != 0 || local13.anInt6281 != 0 || local13.anInt6283 != 0) {
 			arg1 |= 0x7;
 		}
-		super.aClass31Array3[0] = this.appearance.method3191(super.anInt4624, client.BasTypes, client.SeqTypes, client.IdkTypes, local28, super.anInt4592, super.anInt4629, arg1, super.anInt4593, super.anInt4626, local48, Static214.aClass226_1, client.ObjTypes, arg0, client.NpcTypes, super.aClass20Array3, super.anInt4607);
+		super.aClass31Array3[0] = this.appearance.method3191(super.anInt4624, client.BasTypes, client.SeqTypes, client.IdkTypes, local28, super.anInt4592, super.anInt4629, arg1, super.anInt4593, super.anInt4626, local48, VarpDomain.instance, client.ObjTypes, arg0, client.NpcTypes, super.aClass20Array3, super.anInt4607);
 		@Pc(116) int local116 = Static365.method6117();
 		if (GameShell.maxMemory < 96 && local116 > 50) {
 			Static163.method3105();
 		}
 		@Pc(136) int local136;
-		if (client.MODE_WHERE_LIVE != client.modeWhere && local116 < 50) {
+		if (ModeWhere.MODE_WHERE_LIVE != client.modeWhere && local116 < 50) {
 			local136 = 50 - local116;
 			while (Static50.anInt1332 < local136) {
 				Static26.aByteArrayArray3[Static50.anInt1332] = new byte[102400];
@@ -334,7 +334,7 @@ public final class Player extends PathingEntity {
 				Static50.anInt1332--;
 				Static26.aByteArrayArray3[Static50.anInt1332] = null;
 			}
-		} else if (client.modeWhere != client.MODE_WHERE_LIVE) {
+		} else if (client.modeWhere != ModeWhere.MODE_WHERE_LIVE) {
 			Static50.anInt1332 = 0;
 			Static26.aByteArrayArray3 = new byte[50][];
 		}
@@ -431,7 +431,7 @@ public final class Player extends PathingEntity {
 
 	@OriginalMember(owner = "client!nh", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
-	public Class12_Sub4 method6073(@OriginalArg(0) TextureProvider arg0) {
+	public Class12_Sub4 method6073(@OriginalArg(0) RasteriserBase arg0) {
 		if (this.appearance == null || !this.method4067(arg0, 1024)) {
 			return null;
 		}
@@ -512,7 +512,7 @@ public final class Player extends PathingEntity {
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
-	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) TextureProvider arg2) {
+	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) RasteriserBase arg2) {
 		if (this.appearance == null || !this.method4067(arg2, 65536)) {
 			return true;
 		}
@@ -571,7 +571,7 @@ public final class Player extends PathingEntity {
 			if (local59.valueType == 's') {
 				local17 = local17 + local59.getString(this.aByte38 & 0xFF);
 			} else {
-				Static262.report(new Throwable(), "gdn1");
+				TracingException.report(new Throwable(), "gdn1");
 				local39[this.title] = -1;
 			}
 		}
@@ -583,7 +583,7 @@ public final class Player extends PathingEntity {
 	}
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(ZIIIILclient!on;Lclient!gn;Lclient!wm;)V")
-	private void method4073(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class14 arg4, @OriginalArg(6) Model arg5, @OriginalArg(7) TextureProvider arg6) {
+	private void method4073(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) Class14 arg4, @OriginalArg(6) Model arg5, @OriginalArg(7) RasteriserBase arg6) {
 		@Pc(11) int local11 = arg3 * arg3 + arg2 * arg2;
 		if (local11 < 16 || local11 > arg1) {
 			return;

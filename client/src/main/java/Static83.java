@@ -11,7 +11,7 @@ public final class Static83 {
 	public static final int anInt1838 = 2;
 
 	@OriginalMember(owner = "client!en", name = "a", descriptor = "(ILclient!ug;)V")
-	public static void method1906(@OriginalArg(1) Class2_Sub37 arg0) {
+	public static void method1906(@OriginalArg(1) ChangeLocRequest arg0) {
 		if (Scene.aClass67ArrayArrayArray3 == null) {
 			return;
 		}

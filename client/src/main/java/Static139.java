@@ -47,6 +47,6 @@ public final class Static139 {
 	public static void method2595(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(14) DelayedStateChange local14 = Static316.method5413(16, arg0);
 		local14.method2311();
-		local14.anInt2289 = arg1;
+		local14.intArg1 = arg1;
 	}
 }

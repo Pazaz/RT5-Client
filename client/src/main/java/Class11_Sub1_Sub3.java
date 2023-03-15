@@ -37,7 +37,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 	private Class2_Sub2_Sub4 aClass2_Sub2_Sub4_4;
 
 	@OriginalMember(owner = "client!kr", name = "<init>", descriptor = "(Lclient!wm;Lclient!ct;IIIIZIIZ)V")
-	public Class11_Sub1_Sub3(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) boolean arg9) {
+	public Class11_Sub1_Sub3(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) boolean arg9) {
 		super(arg3, arg4, arg5, Static178.method2344(arg7, arg8));
 		this.aBoolean229 = arg1.anInt1335 != 0 && !arg6;
 		this.aBoolean231 = arg9;
@@ -74,7 +74,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) RasteriserBase arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		if (arg5 instanceof Class11_Sub1_Sub3) {
 			@Pc(32) Class11_Sub1_Sub3 local32 = (Class11_Sub1_Sub3) arg5;
 			if (this.aClass31_5 != null && local32.aClass31_5 != null) {
@@ -90,7 +90,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(Lclient!wm;I)V")
 	@Override
-	public void method6083(@OriginalArg(0) TextureProvider arg0) {
+	public void method6083(@OriginalArg(0) RasteriserBase arg0) {
 		@Pc(14) Class2_Sub2_Sub4 local14;
 		if (this.aClass2_Sub2_Sub4_4 == null && this.aBoolean232) {
 			@Pc(25) Class105 local25 = this.method3470(131072, arg0, true);
@@ -112,7 +112,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(BLclient!wm;)V")
 	@Override
-	public void method6087(@OriginalArg(1) TextureProvider arg0) {
+	public void method6087(@OriginalArg(1) RasteriserBase arg0) {
 		@Pc(20) Class2_Sub2_Sub4 local20;
 		if (this.aClass2_Sub2_Sub4_4 == null && this.aBoolean232) {
 			@Pc(31) Class105 local31 = this.method3470(131072, arg0, true);
@@ -127,7 +127,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 	}
 
 	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(IILclient!wm;)Lclient!gn;")
-	private Model method3467(@OriginalArg(0) int arg0, @OriginalArg(2) TextureProvider arg1) {
+	private Model method3467(@OriginalArg(0) int arg0, @OriginalArg(2) RasteriserBase arg1) {
 		if (this.aClass31_5 != null && arg1.method2863(this.aClass31_5.method3827(), arg0) == 0) {
 			return this.aClass31_5;
 		} else {
@@ -138,7 +138,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
-	public void method6070(@OriginalArg(0) TextureProvider arg0) {
+	public void method6070(@OriginalArg(0) RasteriserBase arg0) {
 	}
 
 	@OriginalMember(owner = "client!kr", name = "g", descriptor = "(I)Z")
@@ -149,7 +149,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
-	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) TextureProvider arg2) {
+	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) RasteriserBase arg2) {
 		@Pc(15) Model local15 = this.method3467(65536, arg2);
 		if (local15 == null) {
 			return false;
@@ -183,7 +183,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!kr", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
-	public Class12_Sub4 method6073(@OriginalArg(0) TextureProvider arg0) {
+	public Class12_Sub4 method6073(@OriginalArg(0) RasteriserBase arg0) {
 		if (this.aClass31_5 == null) {
 			return null;
 		}
@@ -198,7 +198,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 	}
 
 	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(IZLclient!wm;Z)Lclient!ij;")
-	private Class105 method3470(@OriginalArg(0) int arg0, @OriginalArg(2) TextureProvider arg1, @OriginalArg(3) boolean arg2) {
+	private Class105 method3470(@OriginalArg(0) int arg0, @OriginalArg(2) RasteriserBase arg1, @OriginalArg(3) boolean arg2) {
 		@Pc(19) LocType local19 = client.LocTypes.get(this.aShort40 & 0xFFFF);
 		@Pc(27) Class6 local27;
 		@Pc(35) Class6 local35;
@@ -218,7 +218,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 
 	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(ILclient!wm;I)Lclient!gn;")
 	@Override
-	public Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) TextureProvider arg1) {
+	public Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) RasteriserBase arg1) {
 		return this.method3467(arg0, arg1);
 	}
 

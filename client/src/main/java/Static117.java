@@ -16,14 +16,11 @@ public final class Static117 {
 	@OriginalMember(owner = "client!gp", name = "o", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_48 = new LocalizedString("Loaded defaults", "Standardeinstellungen geladen", "Paramètres par défaut chargés", "Padrões carregados");
 
-	@OriginalMember(owner = "client!gp", name = "r", descriptor = "I")
-	public static int anInt2376 = -1;
-
 	@OriginalMember(owner = "client!gp", name = "s", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_49 = new LocalizedString("Loading sprites - ", "Lade Sprites - ", "Chargement des sprites - ", "Carregando sprites - ");
 
 	@OriginalMember(owner = "client!gp", name = "a", descriptor = "(ILclient!wm;)V")
-	public static void method2367(@OriginalArg(1) TextureProvider arg0) {
+	public static void method2367(@OriginalArg(1) RasteriserBase arg0) {
 		@Pc(7) int local7 = Static305.anInt5743;
 		@Pc(9) int local9 = Static363.anInt6801;
 		@Pc(11) int local11 = Static107.anInt2220;
@@ -51,8 +48,8 @@ public final class Static117 {
 		}
 		Static52.aClass130_1.method5897(local7 + 3, -1, local9 + 14, LoginManager.anInt6030 | 0xFF000000, Static180.aClass79_74.getLocalized(client.language));
 		arg0.method2901(local7, local9 + 20, local11, local15 - 20, -LoginManager.anInt6717 + 255 << 24 | LoginManager.anInt4446, 1);
-		local87 = Static226.aClass119_1.method3304();
-		local89 = Static226.aClass119_1.method3313();
+		local87 = Mouse.instance.method3304();
+		local89 = Mouse.instance.method3313();
 		@Pc(169) int local169 = 0;
 		@Pc(192) int local192;
 		for (@Pc(174) Class2_Sub5 local174 = (Class2_Sub5) Static129.aClass135_19.head(); local174 != null; local174 = (Class2_Sub5) Static129.aClass135_19.next()) {
@@ -105,7 +102,7 @@ public final class Static117 {
 				if (local572 != null) {
 					@Pc(577) NpcType local577 = local572.type;
 					if (local577.multiNpcs != null) {
-						local577 = local577.getMultiNpc(Static214.aClass226_1);
+						local577 = local577.getMultiNpc(VarpDomain.instance);
 					}
 					if (local577 != null) {
 						local499 = local577.anIntArray131;
@@ -119,7 +116,7 @@ public final class Static117 {
 					local540 = client.LocTypes.get((int) (local436.aLong30 >>> 32 & 0x7FFFFFFFL));
 				}
 				if (local540.anIntArray94 != null) {
-					local540 = local540.method1533(Static214.aClass226_1);
+					local540 = local540.method1533(VarpDomain.instance);
 				}
 				if (local540 != null) {
 					local499 = local540.anIntArray96;

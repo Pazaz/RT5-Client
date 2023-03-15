@@ -48,7 +48,7 @@ public final class MsiType {
 	}
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(ZZILclient!wm;)Lclient!jd;")
-	public Sprite method3711(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) TextureProvider arg2) {
+	public Sprite method3711(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) RasteriserBase arg2) {
 		@Pc(24) long local24 = (long) (this.anInt3751 | arg1 << 16 | (arg0 ? 262144 : 0) | arg2.anInt2836 << 19);
 		@Pc(32) Sprite local32 = (Sprite) this.aClass104_1.aClass98_20.get(local24);
 		if (local32 != null) {

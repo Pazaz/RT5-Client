@@ -8,7 +8,7 @@ public final class Static327 {
 	public static final HashTable aClass4_127 = new HashTable(512);
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Lclient!wm;III)V")
-	public static void method5574(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public static void method5574(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		if (arg2 < 0 || arg1 < 0 || Static75.anInt1737 == 0 || Static153.anInt2792 == 0) {
 			return;
 		}
@@ -62,7 +62,7 @@ public final class Static327 {
 			}
 			if (local54 != -1 && local56 != -1) {
 				if (Static330.aBoolean419 && (Static115.anInt3837 & 0x40) != 0) {
-					@Pc(293) Class161 local293 = InterfaceList.method3705(Static337.anInt6317, Static214.anInt3792);
+					@Pc(293) Component local293 = InterfaceList.method3705(Static337.anInt6317, Static214.anInt3792);
 					if (local293 == null) {
 						Static207.method3699();
 					} else {
@@ -207,7 +207,7 @@ public final class Static327 {
 					@Pc(1288) Interface6 local1288 = (Interface6) local354.aClass11_1;
 					@Pc(1297) LocType local1297 = client.LocTypes.get(local1288.method6085());
 					if (local1297.anIntArray94 != null) {
-						local1297 = local1297.method1533(Static214.aClass226_1);
+						local1297 = local1297.method1533(VarpDomain.instance);
 					}
 					if (local1297 != null) {
 						if (!Static330.aBoolean419) {

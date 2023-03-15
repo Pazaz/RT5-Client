@@ -12,7 +12,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!bf")
-public final class Class19_Sub1 extends TextureProvider implements Interface8 {
+public final class Class19_Sub1 extends RasteriserBase implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "F", descriptor = "Lclient!mf;")
 	private Interface8 anInterface8_1;
@@ -1284,7 +1284,7 @@ public final class Class19_Sub1 extends TextureProvider implements Interface8 {
 		@Pc(5) int local5 = arg0 & Integer.MAX_VALUE;
 		@Pc(16) Class2_Sub39 local16;
 		while (!this.aClass135_5.method3550()) {
-			local16 = (Class2_Sub39) this.aClass135_5.method3549();
+			local16 = (Class2_Sub39) this.aClass135_5.removeHead();
 			Static22.anIntArray32[local1++] = (int) local16.key;
 			this.anInt581 -= local16.anInt6818;
 			if (local1 == 1000) {
@@ -1297,7 +1297,7 @@ public final class Class19_Sub1 extends TextureProvider implements Interface8 {
 			local1 = 0;
 		}
 		while (!this.aClass135_6.method3550()) {
-			local16 = (Class2_Sub39) this.aClass135_6.method3549();
+			local16 = (Class2_Sub39) this.aClass135_6.removeHead();
 			Static22.anIntArray32[local1++] = (int) local16.key;
 			this.anInt585 -= local16.anInt6818;
 			if (local1 == 1000) {
@@ -1310,7 +1310,7 @@ public final class Class19_Sub1 extends TextureProvider implements Interface8 {
 			local1 = 0;
 		}
 		while (!this.aClass135_7.method3550()) {
-			local16 = (Class2_Sub39) this.aClass135_7.method3549();
+			local16 = (Class2_Sub39) this.aClass135_7.removeHead();
 			Static22.anIntArray32[local1++] = local16.anInt6818;
 			if (local1 == 1000) {
 				this.gl.glDeleteFramebuffersEXT(local1, Static22.anIntArray32, 0);
@@ -1322,7 +1322,7 @@ public final class Class19_Sub1 extends TextureProvider implements Interface8 {
 			local1 = 0;
 		}
 		while (!this.aClass135_8.method3550()) {
-			local16 = (Class2_Sub39) this.aClass135_8.method3549();
+			local16 = (Class2_Sub39) this.aClass135_8.removeHead();
 			Static22.anIntArray32[local1++] = (int) local16.key;
 			this.anInt586 -= local16.anInt6818;
 			if (local1 == 1000) {
@@ -1335,7 +1335,7 @@ public final class Class19_Sub1 extends TextureProvider implements Interface8 {
 			local1 = 0;
 		}
 		while (!this.aClass135_9.method3550()) {
-			local16 = (Class2_Sub39) this.aClass135_9.method3549();
+			local16 = (Class2_Sub39) this.aClass135_9.removeHead();
 			Static22.anIntArray32[local1++] = (int) local16.key;
 			if (local1 == 1000) {
 				this.gl.glDeleteProgramsARB(local1, Static22.anIntArray32, 0);
@@ -1346,15 +1346,15 @@ public final class Class19_Sub1 extends TextureProvider implements Interface8 {
 			this.gl.glDeleteProgramsARB(local1, Static22.anIntArray32, 0);
 		}
 		while (!this.aClass135_4.method3550()) {
-			local16 = (Class2_Sub39) this.aClass135_4.method3549();
+			local16 = (Class2_Sub39) this.aClass135_4.removeHead();
 			this.gl.glDeleteLists((int) local16.key, local16.anInt6818);
 		}
 		while (!this.aClass135_10.method3550()) {
-			local16 = (Class2_Sub39) this.aClass135_10.method3549();
+			local16 = (Class2_Sub39) this.aClass135_10.removeHead();
 			this.gl.glDeleteObjectARB(local16.anInt6818);
 		}
 		while (!this.aClass135_4.method3550()) {
-			local16 = (Class2_Sub39) this.aClass135_4.method3549();
+			local16 = (Class2_Sub39) this.aClass135_4.removeHead();
 			this.gl.glDeleteLists((int) local16.key, local16.anInt6818);
 		}
 		if (this.method2899() > 100663296 && MonotonicClock.currentTimeMillis() > this.aLong20 + 60000L) {
@@ -1509,7 +1509,7 @@ public final class Class19_Sub1 extends TextureProvider implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "f", descriptor = "()V")
 	@Override
-	public void method2804() {
+	public void draw() {
 		if (this.anInt582 <= 0 && this.anInt587 <= 0) {
 			return;
 		}

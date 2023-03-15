@@ -34,7 +34,7 @@ public class IgnoreList {
 					Static190.aStringArray28[local55] = Static190.aStringArray28[local55 + 1];
 					Static196.aBooleanArray31[local55] = Static196.aBooleanArray31[local55 + 1];
 				}
-				Static53.anInt3971 = Static88.transmitTimer;
+				Static53.anInt3971 = InterfaceList.transmitTimer;
 				Protocol.writeOpcode(ClientProt.PACKET_24);
 				Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
 				Protocol.outboundBuffer.pjstr(arg0);

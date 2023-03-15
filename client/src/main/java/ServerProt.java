@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class ServerProt {
 
 	@OriginalMember(owner = "client!rf", name = "cb", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_18 = new ServerProt(18, -2);
+	public static final ServerProt REFLECTION_CHEAT_CHECK = new ServerProt(18, -2);
 	@OriginalMember(owner = "client!vs", name = "x", descriptor = "Lclient!h;")
 	public static final ServerProt PACKET_75 = new ServerProt(75, 0);
 	@OriginalMember(owner = "client!sm", name = "B", descriptor = "Lclient!h;")
@@ -64,7 +64,7 @@ public final class ServerProt {
 	@OriginalMember(owner = "client!gq", name = "j", descriptor = "Lclient!h;")
 	public static final ServerProt PACKET_103 = new ServerProt(103, 0);
 	@OriginalMember(owner = "client!ia", name = "p", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_8 = new ServerProt(8, 2);
+	public static final ServerProt UPDATE_REBOOT_TIMER = new ServerProt(8, 2);
 	@OriginalMember(owner = "client!pg", name = "T", descriptor = "Lclient!h;")
 	public static final ServerProt PACKET_92 = new ServerProt(92, 6);
 	@OriginalMember(owner = "client!ei", name = "l", descriptor = "Lclient!h;")
@@ -232,7 +232,7 @@ public final class ServerProt {
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(Z)[Lclient!h;")
 	public static ServerProt[] getAll() {
-		return new ServerProt[] { PACKET_0, PACKET_1, PACKET_2, PACKET_3, PACKET_4, PACKET_5, PACKET_6, PACKET_7, PACKET_8, PACKET_9, PACKET_10, PACKET_11, PACKET_12, PACKET_13, PACKET_14, PACKET_15, PACKET_16, PACKET_17, PACKET_18, PACKET_19, PACKET_20, PACKET_21, PACKET_22, PACKET_23, PACKET_24, PACKET_25, PACKET_26, PACKET_27, PACKET_28, PACKET_29, PACKET_30, PACKET_31, PACKET_32, PACKET_33, PACKET_34, PACKET_35, PACKET_36, PACKET_37, PACKET_38, PACKET_39, PACKET_40, PACKET_41, PACKET_42, PACKET_43, PACKET_44, PACKET_45, PACKET_46, PACKET_47, PACKET_48, PACKET_49, PACKET_50, PACKET_51, IF_OPENSUB, PACKET_53, PACKET_54, PACKET_55, PACKET_56, PACKET_57, LOGOUT, UPDATE_ZONE_PARTIAL_ENCLOSED, PACKET_60, PACKET_61, PACKET_62, PACKET_63, PACKET_64, PACKET_65, PACKET_66, PACKET_67, PACKET_68, PACKET_69, PACKET_70, PACKET_71, PLAYER_INFO, PACKET_73, PACKET_74, PACKET_75, PACKET_76, PACKET_77, PACKET_78, PACKET_79, PACKET_80, PACKET_81, PACKET_82, PACKET_83, PACKET_84, PACKET_85, PACKET_86, PACKET_87, REBUILD_REGION, PACKET_89, PACKET_90, PACKET_91, PACKET_92, IF_OPENTOP, PACKET_94, PACKET_95, PACKET_96, PACKET_97, REBUILD_NORMAL, MESSAGE_GAME, PACKET_100, PACKET_101, PACKET_102, PACKET_103, PACKET_104, PACKET_105 };
+		return new ServerProt[] { PACKET_0, PACKET_1, PACKET_2, PACKET_3, PACKET_4, PACKET_5, PACKET_6, PACKET_7, UPDATE_REBOOT_TIMER, PACKET_9, PACKET_10, PACKET_11, PACKET_12, PACKET_13, PACKET_14, PACKET_15, PACKET_16, PACKET_17, REFLECTION_CHEAT_CHECK, PACKET_19, PACKET_20, PACKET_21, PACKET_22, PACKET_23, PACKET_24, PACKET_25, PACKET_26, PACKET_27, PACKET_28, PACKET_29, PACKET_30, PACKET_31, PACKET_32, PACKET_33, PACKET_34, PACKET_35, PACKET_36, PACKET_37, PACKET_38, PACKET_39, PACKET_40, PACKET_41, PACKET_42, PACKET_43, PACKET_44, PACKET_45, PACKET_46, PACKET_47, PACKET_48, PACKET_49, PACKET_50, PACKET_51, IF_OPENSUB, PACKET_53, PACKET_54, PACKET_55, PACKET_56, PACKET_57, LOGOUT, UPDATE_ZONE_PARTIAL_ENCLOSED, PACKET_60, PACKET_61, PACKET_62, PACKET_63, PACKET_64, PACKET_65, PACKET_66, PACKET_67, PACKET_68, PACKET_69, PACKET_70, PACKET_71, PLAYER_INFO, PACKET_73, PACKET_74, PACKET_75, PACKET_76, PACKET_77, PACKET_78, PACKET_79, PACKET_80, PACKET_81, PACKET_82, PACKET_83, PACKET_84, PACKET_85, PACKET_86, PACKET_87, REBUILD_REGION, PACKET_89, PACKET_90, PACKET_91, PACKET_92, IF_OPENTOP, PACKET_94, PACKET_95, PACKET_96, PACKET_97, REBUILD_NORMAL, MESSAGE_GAME, PACKET_100, PACKET_101, PACKET_102, PACKET_103, PACKET_104, PACKET_105 };
 	}
 
 	@OriginalMember(owner = "client!h", name = "toString", descriptor = "()Ljava/lang/String;")

@@ -115,8 +115,8 @@ public final class Static172 {
 	public static void method3290(@OriginalArg(0) Color arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2, @OriginalArg(4) String arg3, @OriginalArg(5) Color arg4, @OriginalArg(6) Color arg5) {
 		try {
 			@Pc(6) Graphics local6 = GameShell.canvas.getGraphics();
-			if (Static90.aFont3 == null) {
-				Static90.aFont3 = new Font("Helvetica", 1, 13);
+			if (LoadingBarAwt.aFont3 == null) {
+				LoadingBarAwt.aFont3 = new Font("Helvetica", 1, 13);
 			}
 			if (arg1) {
 				local6.setColor(Color.black);
@@ -132,10 +132,10 @@ public final class Static172 {
 				arg4 = new Color(255, 255, 255);
 			}
 			try {
-				if (Static89.anImage1 == null) {
-					Static89.anImage1 = GameShell.canvas.createImage(304, 34);
+				if (LoadingBarAwt.anImage1 == null) {
+					LoadingBarAwt.anImage1 = GameShell.canvas.createImage(304, 34);
 				}
-				@Pc(68) Graphics local68 = Static89.anImage1.getGraphics();
+				@Pc(68) Graphics local68 = LoadingBarAwt.anImage1.getGraphics();
 				local68.setColor(arg0);
 				local68.drawRect(0, 0, 303, 33);
 				local68.setColor(arg5);
@@ -143,10 +143,10 @@ public final class Static172 {
 				local68.setColor(Color.black);
 				local68.drawRect(1, 1, 301, 31);
 				local68.fillRect(arg2 * 3 + 2, 2, 300 - arg2 * 3, 30);
-				local68.setFont(Static90.aFont3);
+				local68.setFont(LoadingBarAwt.aFont3);
 				local68.setColor(arg4);
 				local68.drawString(arg3, (304 - arg3.length() * 6) / 2, 22);
-				local6.drawImage(Static89.anImage1, GameShell.canvasWidth / 2 - 152, GameShell.canvasHeight / 2 + -18, null);
+				local6.drawImage(LoadingBarAwt.anImage1, GameShell.canvasWidth / 2 - 152, GameShell.canvasHeight / 2 + -18, null);
 			} catch (@Pc(146) Exception local146) {
 				@Pc(152) int local152 = GameShell.canvasWidth / 2 - 152;
 				@Pc(158) int local158 = GameShell.canvasHeight / 2 - 18;
@@ -157,12 +157,12 @@ public final class Static172 {
 				local6.setColor(Color.black);
 				local6.drawRect(local152 + 1, local158 + 1, 301, 31);
 				local6.fillRect(arg2 * 3 + local152 + 2, local158 + 2, 300 - arg2 * 3, 30);
-				local6.setFont(Static90.aFont3);
+				local6.setFont(LoadingBarAwt.aFont3);
 				local6.setColor(arg4);
 				local6.drawString(arg3, local152 + (304 - arg3.length() * 6) / 2, local158 + 22);
 			}
 			if (Static290.aString56 != null) {
-				local6.setFont(Static90.aFont3);
+				local6.setFont(LoadingBarAwt.aFont3);
 				local6.setColor(arg4);
 				local6.drawString(Static290.aString56, GameShell.canvasWidth / 2 - Static290.aString56.length() * 6 / 2, GameShell.canvasHeight / 2 + -26);
 			}

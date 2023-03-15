@@ -58,7 +58,7 @@ public abstract class PathingEntity extends Entity {
 	protected ParticleSystem particleSystem;
 
 	@OriginalMember(owner = "client!mr", name = "ic", descriptor = "Lclient!cl;")
-	public Class2_Sub6 aClass2_Sub6_3;
+	public AttachLocRequest aClass2_Sub6_3;
 
 	@OriginalMember(owner = "client!mr", name = "N", descriptor = "I")
 	protected int anInt4589 = 0;
@@ -242,8 +242,8 @@ public abstract class PathingEntity extends Entity {
 	protected final void method4321(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(11) int local11 = super.aShort103 + super.aShort104 >> 1;
 		@Pc(19) int local19 = super.aShort102 + super.aShort101 >> 1;
-		@Pc(23) int local23 = TextureProvider.anIntArray178[arg2];
-		@Pc(27) int local27 = TextureProvider.anIntArray177[arg2];
+		@Pc(23) int local23 = RasteriserBase.anIntArray178[arg2];
+		@Pc(27) int local27 = RasteriserBase.anIntArray177[arg2];
 		@Pc(38) int local38 = -arg1 / 2;
 		@Pc(43) int local43 = -arg0 / 2;
 		@Pc(53) int local53 = local38 * local27 + local43 * local23 >> 15;
@@ -425,7 +425,7 @@ public abstract class PathingEntity extends Entity {
 	}
 
 	@OriginalMember(owner = "client!mr", name = "a", descriptor = "(ILclient!wm;[Lclient!gn;Z)V")
-	protected final void method4333(@OriginalArg(1) TextureProvider arg0, @OriginalArg(2) Model[] arg1, @OriginalArg(3) boolean arg2) {
+	protected final void method4333(@OriginalArg(1) RasteriserBase arg0, @OriginalArg(2) Model[] arg1, @OriginalArg(3) boolean arg2) {
 		if (!arg2) {
 			@Pc(15) Model local15 = arg1[0];
 			@Pc(19) Model local19 = arg1[1];

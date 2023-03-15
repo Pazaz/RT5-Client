@@ -25,9 +25,9 @@ public final class Static373 {
 			Static44.anInt1115 = 0;
 		}
 		if (arg0) {
-			Static336.method5705(28);
+			client.setGameState(28);
 		} else {
-			Static336.method5705(25);
+			client.setGameState(25);
 		}
 		Static351.method5857(Static276.aClass130_4, true, Static256.aClass79_102.getLocalized(client.language));
 		@Pc(59) int local59 = Camera.originX;
@@ -95,7 +95,7 @@ public final class Static373 {
 			}
 		}
 		Static372.method6262(local99, local94);
-		for (@Pc(371) Class2_Sub37 local371 = (Class2_Sub37) Static207.aClass135_26.head(); local371 != null; local371 = (Class2_Sub37) Static207.aClass135_26.next()) {
+		for (@Pc(371) ChangeLocRequest local371 = (ChangeLocRequest) Static207.aClass135_26.head(); local371 != null; local371 = (ChangeLocRequest) Static207.aClass135_26.next()) {
 			local371.anInt6484 -= local94;
 			local371.anInt6486 -= local99;
 			if (local371.anInt6484 < 0 || local371.anInt6486 < 0 || local371.anInt6484 >= anInt7033 || local371.anInt6486 >= Static242.anInt4449) {

@@ -6,7 +6,7 @@ public final class Static145 {
 
 	@OriginalMember(owner = "client!ig", name = "a", descriptor = "(I)V")
 	public static void method2695() {
-		@Pc(18) boolean local18 = Static375.aClass161_14 != null || Static348.anInt6449 > 0;
+		@Pc(18) boolean local18 = Cs1ScriptRunner.aClass161_14 != null || InterfaceList.anInt6449 > 0;
 		if (local18) {
 			Static116.anInt2357 = 1;
 		}
@@ -14,12 +14,12 @@ public final class Static145 {
 			if (local18) {
 				Static32.aClass2_Sub5_2 = (Class2_Sub5) Static129.aClass135_19.aClass2_130.prev.prev;
 			} else {
-				Protocol.method4427((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev.prev, Static370.aClass2_Sub24_1.method5243(), Static370.aClass2_Sub24_1.method5242());
+				Protocol.method4427((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev.prev, Mouse.clickButton.getY(), Mouse.clickButton.getX());
 			}
 		} else if (local18) {
 			Static32.aClass2_Sub5_2 = (Class2_Sub5) Static129.aClass135_19.aClass2_130.prev;
 		} else {
-			Protocol.method4427((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev, Static370.aClass2_Sub24_1.method5243(), Static370.aClass2_Sub24_1.method5242());
+			Protocol.method4427((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev, Mouse.clickButton.getY(), Mouse.clickButton.getX());
 		}
 	}
 

@@ -22,13 +22,13 @@ public final class Class11_Sub3_Sub1 extends Class11_Sub3 implements Interface6 
 
 	@OriginalMember(owner = "client!eq", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
-	public Class12_Sub4 method6073(@OriginalArg(0) TextureProvider arg0) {
+	public Class12_Sub4 method6073(@OriginalArg(0) RasteriserBase arg0) {
 		return null;
 	}
 
 	@OriginalMember(owner = "client!eq", name = "a", descriptor = "(Lclient!wm;I)V")
 	@Override
-	public void method6083(@OriginalArg(0) TextureProvider arg0) {
+	public void method6083(@OriginalArg(0) RasteriserBase arg0) {
 	}
 
 	@OriginalMember(owner = "client!eq", name = "a", descriptor = "(Z)Z")
@@ -45,7 +45,7 @@ public final class Class11_Sub3_Sub1 extends Class11_Sub3 implements Interface6 
 
 	@OriginalMember(owner = "client!eq", name = "a", descriptor = "(ILclient!wm;I)Lclient!gn;")
 	@Override
-	public Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) TextureProvider arg1) {
+	public Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) RasteriserBase arg1) {
 		return null;
 	}
 
@@ -56,7 +56,7 @@ public final class Class11_Sub3_Sub1 extends Class11_Sub3 implements Interface6 
 
 	@OriginalMember(owner = "client!eq", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
-	public void method6070(@OriginalArg(0) TextureProvider arg0) {
+	public void method6070(@OriginalArg(0) RasteriserBase arg0) {
 	}
 
 	@OriginalMember(owner = "client!eq", name = "d", descriptor = "(I)I")
@@ -73,12 +73,12 @@ public final class Class11_Sub3_Sub1 extends Class11_Sub3 implements Interface6 
 
 	@OriginalMember(owner = "client!eq", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
-	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) TextureProvider arg2) {
+	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) RasteriserBase arg2) {
 		return false;
 	}
 
 	@OriginalMember(owner = "client!eq", name = "a", descriptor = "(BLclient!wm;)V")
 	@Override
-	public void method6087(@OriginalArg(1) TextureProvider arg0) {
+	public void method6087(@OriginalArg(1) RasteriserBase arg0) {
 	}
 }

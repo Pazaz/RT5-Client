@@ -17,7 +17,7 @@ public final class Static284 {
 	public static int anInt5362 = 0;
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(ILclient!ci;IIIILclient!wm;)V")
-	public static void method4881(@OriginalArg(1) TextureProviderInterface arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) TextureProvider arg5) {
+	public static void method4881(@OriginalArg(1) TextureProviderInterface arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) RasteriserBase arg5) {
 		if (WorldMap.loadPercentage < 100) {
 			Static209.method3714(arg5, arg0);
 		}
@@ -28,9 +28,9 @@ public final class Static284 {
 			local36 = arg3 / 2 + arg4;
 			local47 = arg1 / 2 + arg2 - 18 - 20;
 			arg5.method2901(arg4, arg2, arg3, arg1, -16777216, 0);
-			arg5.method2836(local36 - 152, local47, 304, 34, Static291.aColorArray4[Static64.anInt1555].getRGB(), 0);
-			arg5.method2901(local36 - 150, local47 - -2, WorldMap.loadPercentage * 3, 30, Static174.aColorArray2[Static64.anInt1555].getRGB(), 0);
-			Static52.aClass130_1.method5900(Static32.aClass79_21.getLocalized(client.language), -1, local47 + 20, Static286.aColorArray3[Static64.anInt1555].getRGB(), local36);
+			arg5.method2836(local36 - 152, local47, 304, 34, Static291.aColorArray4[client.gameId].getRGB(), 0);
+			arg5.method2901(local36 - 150, local47 - -2, WorldMap.loadPercentage * 3, 30, Static174.aColorArray2[client.gameId].getRGB(), 0);
+			Static52.aClass130_1.method5900(Static32.aClass79_21.getLocalized(client.language), -1, local47 + 20, Static286.aColorArray3[client.gameId].getRGB(), local36);
 			return;
 		}
 		@Pc(111) int local111 = WorldMap.anInt2772 - (int) ((float) arg3 / MapList.aFloat72);
@@ -71,13 +71,13 @@ public final class Static284 {
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(ZI)Z")
 	public static boolean method4882(@OriginalArg(0) boolean arg0) {
-		@Pc(11) boolean local11 = Rasteriser.textureProvider.method2892();
+		@Pc(11) boolean local11 = Rasteriser.instance.method2892();
 		if (arg0 == local11) {
 			return true;
 		}
 		if (!arg0) {
-			Rasteriser.textureProvider.method2831();
-		} else if (!Rasteriser.textureProvider.method2847()) {
+			Rasteriser.instance.method2831();
+		} else if (!Rasteriser.instance.method2847()) {
 			arg0 = false;
 		}
 		if (arg0 == local11) {
@@ -90,7 +90,7 @@ public final class Static284 {
 	}
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(Lclient!nk;ZI)Ljava/lang/String;")
-	public static String method4883(@OriginalArg(0) Class161 arg0, @OriginalArg(2) int arg1) {
+	public static String method4883(@OriginalArg(0) Component arg0, @OriginalArg(2) int arg1) {
 		if (!Static45.method1404(arg0).method1854(arg1) && arg0.anObjectArray27 == null) {
 			return null;
 		} else if (arg0.aStringArray40 == null || arg1 >= arg0.aStringArray40.length || arg0.aStringArray40[arg1] == null || arg0.aStringArray40[arg1].trim().length() == 0) {

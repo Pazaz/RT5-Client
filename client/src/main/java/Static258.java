@@ -8,7 +8,7 @@ public final class Static258 {
 	public static short[] aShortArray95 = new short[256];
 
 	@OriginalMember(owner = "client!oo", name = "a", descriptor = "(Lclient!wm;Lclient!hp;IIIII)V")
-	public static void method4403(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) BaseEntity arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+	public static void method4403(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) BaseEntity arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		@Pc(1) boolean local1 = true;
 		@Pc(3) int local3 = arg3;
 		@Pc(7) int local7 = arg3 + arg5;

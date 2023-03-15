@@ -13,10 +13,10 @@ public final class Static372 {
 		if (GameShell.fullScreenFrame != null) {
 			return;
 		}
-		@Pc(8) int local8 = Static84.anInt1842;
-		@Pc(15) int local15 = Static68.anInt1646;
-		@Pc(22) int local22 = Static142.anInt2663 - local8 - GameShell.canvasWidth;
-		@Pc(29) int local29 = Static178.anInt2319 - local15 - GameShell.canvasHeight;
+		@Pc(8) int local8 = GameShell.leftMargin;
+		@Pc(15) int local15 = GameShell.topMargin;
+		@Pc(22) int local22 = GameShell.frameWidth - local8 - GameShell.canvasWidth;
+		@Pc(29) int local29 = GameShell.frameHeight - local15 - GameShell.canvasHeight;
 		if (local8 <= 0 && local22 <= 0 && local15 <= 0 && local29 <= 0) {
 			return;
 		}
@@ -37,16 +37,16 @@ public final class Static372 {
 			@Pc(74) Graphics local74 = local50.getGraphics();
 			local74.setColor(Color.black);
 			if (local8 > 0) {
-				local74.fillRect(local57, local59, local8, Static178.anInt2319);
+				local74.fillRect(local57, local59, local8, GameShell.frameHeight);
 			}
 			if (local15 > 0) {
-				local74.fillRect(local57, local59, Static142.anInt2663, local15);
+				local74.fillRect(local57, local59, GameShell.frameWidth, local15);
 			}
 			if (local22 > 0) {
-				local74.fillRect(local57 + Static142.anInt2663 - local22, local59, local22, Static178.anInt2319);
+				local74.fillRect(local57 + GameShell.frameWidth - local22, local59, local22, GameShell.frameHeight);
 			}
 			if (local29 > 0) {
-				local74.fillRect(local57, local59 + Static178.anInt2319 - local29, Static142.anInt2663, local29);
+				local74.fillRect(local57, local59 + GameShell.frameHeight - local29, GameShell.frameWidth, local29);
 				return;
 			}
 		} catch (@Pc(129) Exception local129) {

@@ -25,9 +25,9 @@ public final class Static115 {
 	}
 
 	@OriginalMember(owner = "client!gn", name = "a", descriptor = "(I[Lclient!nk;I)V")
-	public static void method3847(@OriginalArg(0) int arg0, @OriginalArg(1) Class161[] arg1) {
+	public static void method3847(@OriginalArg(0) int arg0, @OriginalArg(1) Component[] arg1) {
 		for (@Pc(3) int local3 = 0; local3 < arg1.length; local3++) {
-			@Pc(9) Class161 local9 = arg1[local3];
+			@Pc(9) Component local9 = arg1[local3];
 			if (local9 != null) {
 				if (local9.type == 0) {
 					if (local9.activeComponents != null) {
@@ -38,24 +38,24 @@ public final class Static115 {
 						Static392.method6460(local30.anInt1370, arg0);
 					}
 				}
-				@Pc(49) Class2_Sub13 local49;
+				@Pc(49) HookRequest local49;
 				if (arg0 == 0 && local9.anObjectArray34 != null) {
-					local49 = new Class2_Sub13();
-					local49.aClass161_3 = local9;
+					local49 = new HookRequest();
+					local49.source = local9;
 					local49.anObjectArray4 = local9.anObjectArray34;
-					ScriptRunner.method3591(local49);
+					ScriptRunner.execute(local49);
 				}
 				if (arg0 == 1 && local9.anObjectArray11 != null) {
 					if (local9.activeComponentId >= 0) {
-						@Pc(75) Class161 local75 = InterfaceList.getComponent(local9.id);
+						@Pc(75) Component local75 = InterfaceList.getComponent(local9.id);
 						if (local75 == null || local75.activeComponents == null || local75.activeComponents.length <= local9.activeComponentId || local75.activeComponents[local9.activeComponentId] != local9) {
 							continue;
 						}
 					}
-					local49 = new Class2_Sub13();
+					local49 = new HookRequest();
 					local49.anObjectArray4 = local9.anObjectArray11;
-					local49.aClass161_3 = local9;
-					ScriptRunner.method3591(local49);
+					local49.source = local9;
+					ScriptRunner.execute(local49);
 				}
 			}
 		}

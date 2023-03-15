@@ -58,8 +58,8 @@ public final class Static129 {
 	public static void method2438(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		@Pc(13) DelayedStateChange local13 = Static316.method5413(11, arg2);
 		local13.method2311();
-		local13.anInt2290 = arg1;
-		local13.anInt2289 = arg0;
+		local13.intArg3 = arg1;
+		local13.intArg1 = arg0;
 	}
 
 	@OriginalMember(owner = "client!hg", name = "b", descriptor = "(I)V")

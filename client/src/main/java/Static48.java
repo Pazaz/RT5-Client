@@ -13,9 +13,6 @@ public final class Static48 {
 	@OriginalMember(owner = "client!cq", name = "c", descriptor = "J")
 	public static volatile long aLong37 = 0L;
 
-	@OriginalMember(owner = "client!cq", name = "e", descriptor = "Lclient!kk;")
-	public static final Class127 aClass127_3 = new Class127("WTI", 5);
-
 	@OriginalMember(owner = "client!cq", name = "g", descriptor = "Lclient!hu;")
 	public static final LruHashTable aClass98_3 = new LruHashTable(10);
 

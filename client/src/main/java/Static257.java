@@ -29,7 +29,7 @@ public final class Static257 {
 	}
 
 	@OriginalMember(owner = "client!on", name = "a", descriptor = "(IIIIILclient!wm;)V")
-	public static void method3928(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) TextureProvider arg4) {
+	public static void method3928(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) RasteriserBase arg4) {
 		arg4.method2895(arg0, arg2, arg0 + arg3, arg1 + arg2);
 		arg4.method2868(arg1, arg0, arg2, -16777216, arg3);
 		if (WorldMap.loadPercentage < 100) {

@@ -13,9 +13,6 @@ public final class Static375 {
 	@OriginalMember(owner = "client!vs", name = "z", descriptor = "J")
 	public static long aLong222;
 
-	@OriginalMember(owner = "client!vs", name = "a", descriptor = "Lclient!nk;")
-	public static Class161 aClass161_14 = null;
-
 	@OriginalMember(owner = "client!vs", name = "c", descriptor = "[[Z")
 	public static final boolean[][] aBooleanArrayArray6 = new boolean[][] { { true, true, true, true, true, true, true, true, true, true, true, true, true }, { true, true, true, false, false, false, true, true, false, false, false, false, true }, { true, false, false, false, false, true, true, true, false, false, false, false, false }, { false, false, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, false, false, true, true, true, false, false, false, false, false }, { true, true, false, false, false, true, true, true, false, false, false, false, true }, { true, true, false, false, false, false, false, true, false, false, false, false, false }, { false, true, true, true, true, true, true, true, false, false, false, false, false }, { true, false, false, false, true, true, true, true, true, true, false, false, false }, { true, true, true, true, true, false, false, false, true, true, false, false, false }, { true, true, true, false, false, false, false, false, false, false, true, true, false }, new boolean[13], { true, true, true, true, true, true, true, true, true, true, true, true, true }, new boolean[13] };
 
@@ -43,6 +40,6 @@ public final class Static375 {
 	public static void method6282(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(8) DelayedStateChange local8 = Static316.method5413(13, arg1);
 		local8.method2311();
-		local8.anInt2289 = arg0;
+		local8.intArg1 = arg0;
 	}
 }

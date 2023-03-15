@@ -7,7 +7,7 @@ public final class Static301 {
 	public static int[][] anIntArrayArray50;
 
 	@OriginalMember(owner = "client!ri", name = "N", descriptor = "Lclient!nk;")
-	public static Class161 aClass161_13 = null;
+	public static Component aClass161_13 = null;
 
 	@OriginalMember(owner = "client!ri", name = "P", descriptor = "[[I")
 	public static final int[][] anIntArrayArray49 = new int[128][128];
@@ -41,7 +41,7 @@ public final class Static301 {
 						local19.method4397(Static386.method6032(local120.xFine, local120.zFine, local19.plane) - local19.anInt4736, local120.xFine, client.cycle, local120.zFine);
 					}
 				}
-				local19.method4392(Static165.anInt3148);
+				local19.method4392(client.sceneDelta);
 				Static329.method5630(local19, true);
 			}
 		}

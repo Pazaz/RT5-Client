@@ -31,7 +31,7 @@ public final class Static218 {
 			if (local46 != null) {
 				@Pc(51) NpcType local51 = local46.type;
 				if (local51.multiNpcs != null) {
-					local51 = local51.getMultiNpc(Static214.aClass226_1);
+					local51 = local51.getMultiNpc(VarpDomain.instance);
 				}
 				if (local51 != null) {
 					local14 = local51.anIntArray131;
@@ -45,7 +45,7 @@ public final class Static218 {
 				local83 = client.LocTypes.get((int) (arg0.aLong30 >>> 32 & 0x7FFFFFFFL));
 			}
 			if (local83.anIntArray94 != null) {
-				local83 = local83.method1533(Static214.aClass226_1);
+				local83 = local83.method1533(VarpDomain.instance);
 			}
 			if (local83 != null) {
 				local14 = local83.anIntArray96;

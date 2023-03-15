@@ -7,12 +7,6 @@ public final class Static93 {
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "I")
 	public static int anInt1946;
 
-	@OriginalMember(owner = "client!fe", name = "f", descriptor = "I")
-	public static int miscTransmitAt = 0;
-
-	@OriginalMember(owner = "client!fe", name = "g", descriptor = "I")
-	public static int anInt1951 = 0;
-
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(Lclient!mr;II)V")
 	public static void method1999(@OriginalArg(0) PathingEntity arg0, @OriginalArg(2) int arg1) {
 		@Pc(7) int local7 = -1;

@@ -4,15 +4,9 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static64 {
 
-	@OriginalMember(owner = "client!dp", name = "a", descriptor = "Lclient!nk;")
-	public static Class161 aClass161_2;
-
-	@OriginalMember(owner = "client!dp", name = "d", descriptor = "I")
-	public static int anInt1555 = 0;
-
 	@OriginalMember(owner = "client!dp", name = "a", descriptor = "(I)Z")
 	public static boolean method1704() {
-		return Static235.anInt3365 == 0 ? Static91.aClass2_Sub12_Sub3_1.method4270() : true;
+		return MusicPlayer.state == 0 ? MusicPlayer.stream.isValid() : true;
 	}
 
 	@OriginalMember(owner = "client!dp", name = "a", descriptor = "(ILclient!r;Lclient!r;)I")

@@ -26,9 +26,9 @@ public final class Static177 {
 				@Pc(46) int local46 = Static291.mapSquares[local21] & 0xFF;
 				@Pc(53) int local53 = local40 * 64 - Camera.originX;
 				@Pc(59) int local59 = local46 * 64 - Camera.originZ;
-				Static37.method1135();
+				client.audioLogic();
 				arg0.method1087(local53, Static171.aClass46Array1, local34, local59, Camera.originZ, Camera.originX);
-				arg0.method1100(local16, local59, local53, Rasteriser.textureProvider, local34);
+				arg0.method1100(local16, local59, local53, Rasteriser.instance, local34);
 				if (!arg0.aBoolean73 && Static105.anInt2187 / 8 == local40 && Static9.anInt212 / 8 == local46) {
 					if (local16[0] == -1) {
 						Static368.aClass43_1 = null;
@@ -44,7 +44,7 @@ public final class Static177 {
 			local40 = (Static291.mapSquares[local136] & 0xFF) * 64 - Camera.originZ;
 			@Pc(163) byte[] local163 = arg1[local136];
 			if (local163 == null && Static9.anInt212 < 800) {
-				Static37.method1135();
+				client.audioLogic();
 				arg0.method1098(local40, local148);
 			}
 		}

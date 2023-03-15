@@ -32,33 +32,33 @@ public final class Static352 {
 		} else {
 			local13 = GameShell.frame;
 		}
-		Static142.anInt2663 = local13.getSize().width;
-		Static178.anInt2319 = local13.getSize().height;
+		GameShell.frameWidth = local13.getSize().width;
+		GameShell.frameHeight = local13.getSize().height;
 		@Pc(31) Insets local31;
 		if (local13 == GameShell.frame) {
 			local31 = GameShell.frame.getInsets();
-			Static178.anInt2319 -= local31.bottom + local31.top;
-			Static142.anInt2663 -= local31.right + local31.left;
+			GameShell.frameHeight -= local31.bottom + local31.top;
+			GameShell.frameWidth -= local31.right + local31.left;
 		}
 		if (DisplayMode.getWindowMode() == 1) {
-			GameShell.canvasHeight = Static263.anInt4834;
-			GameShell.canvasWidth = Static254.anInt4701;
-			Static68.anInt1646 = 0;
-			Static84.anInt1842 = (Static142.anInt2663 - Static254.anInt4701) / 2;
+			GameShell.canvasHeight = client.gameHeight;
+			GameShell.canvasWidth = client.gameWidth;
+			GameShell.topMargin = 0;
+			GameShell.leftMargin = (GameShell.frameWidth - client.gameWidth) / 2;
 		} else if (GameShell.maxMemory < 96 && Static77.anInt1762 == 0) {
-			@Pc(70) int local70 = Static142.anInt2663 > 1024 ? 1024 : Static142.anInt2663;
-			@Pc(79) int local79 = Static178.anInt2319 > 768 ? 768 : Static178.anInt2319;
+			@Pc(70) int local70 = GameShell.frameWidth > 1024 ? 1024 : GameShell.frameWidth;
+			@Pc(79) int local79 = GameShell.frameHeight > 768 ? 768 : GameShell.frameHeight;
 			GameShell.canvasWidth = local70;
-			Static84.anInt1842 = (Static142.anInt2663 - local70) / 2;
-			Static68.anInt1646 = 0;
+			GameShell.leftMargin = (GameShell.frameWidth - local70) / 2;
+			GameShell.topMargin = 0;
 			GameShell.canvasHeight = local79;
 		} else {
-			GameShell.canvasHeight = Static178.anInt2319;
-			GameShell.canvasWidth = Static142.anInt2663;
-			Static68.anInt1646 = 0;
-			Static84.anInt1842 = 0;
+			GameShell.canvasHeight = GameShell.frameHeight;
+			GameShell.canvasWidth = GameShell.frameWidth;
+			GameShell.topMargin = 0;
+			GameShell.leftMargin = 0;
 		}
-		if (client.MODE_WHERE_LIVE != client.modeWhere) {
+		if (ModeWhere.MODE_WHERE_LIVE != client.modeWhere) {
 			@Pc(130) boolean local130;
 			if (GameShell.canvasWidth < 1024 && GameShell.canvasHeight < 768) {
 				local130 = true;
@@ -67,14 +67,14 @@ public final class Static352 {
 			}
 		}
 		GameShell.canvas.setSize(GameShell.canvasWidth, GameShell.canvasHeight);
-		if (Rasteriser.textureProvider != null) {
-			Rasteriser.textureProvider.method2803();
+		if (Rasteriser.instance != null) {
+			Rasteriser.instance.method2803();
 		}
 		if (local13 == GameShell.frame) {
 			local31 = GameShell.frame.getInsets();
-			GameShell.canvas.setLocation(Static84.anInt1842 + local31.left, local31.top - -Static68.anInt1646);
+			GameShell.canvas.setLocation(GameShell.leftMargin + local31.left, local31.top - -GameShell.topMargin);
 		} else {
-			GameShell.canvas.setLocation(Static84.anInt1842, Static68.anInt1646);
+			GameShell.canvas.setLocation(GameShell.leftMargin, GameShell.topMargin);
 		}
 		if (Static139.anInt2595 != -1) {
 			Static60.method891(true);
@@ -87,7 +87,7 @@ public final class Static352 {
 		if (Static369.aBoolean471) {
 			return;
 		}
-		Static100.aBoolean156 = true;
+		Camera.aBoolean156 = true;
 		if (client.preferences.aBoolean351) {
 			Camera.yawTarget = (int) Camera.yawTarget + 191 & 0xFFFFFF80;
 		} else {

@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static242 {
 
-	@OriginalMember(owner = "client!nr", name = "g", descriptor = "Z")
-	public static boolean aBoolean306;
-
 	@OriginalMember(owner = "client!nr", name = "e", descriptor = "I")
 	public static int anInt4449 = 104;
 
@@ -22,7 +19,7 @@ public final class Static242 {
 			if (local28 == null) {
 				return;
 			}
-			local21 = Rasteriser.textureProvider.method2891(local28[0]);
+			local21 = Rasteriser.instance.method2891(local28[0]);
 			Static61.aClass98_5.put((long) local7, local21);
 		}
 		Static324.method5541(0, arg3.zFine, arg3.plane, arg3.getSize() * 64, arg4 >> 1, arg3.xFine, arg5 >> 1);
@@ -32,7 +29,7 @@ public final class Static242 {
 		@Pc(106) int local106 = local90 + arg6 % 4 * 18;
 		local21.method6385(local98, local106);
 		if (arg0 == arg3) {
-			Rasteriser.textureProvider.method2837(local106 - 1, local98 - 1, 18, -256, 18);
+			Rasteriser.instance.method2837(local106 - 1, local98 - 1, 18, -256, 18);
 		}
 		@Pc(130) Class12_Sub6 local130 = Static315.method5383();
 		local130.anInt4752 = local106;

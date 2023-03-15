@@ -77,7 +77,7 @@ public final class Class119_Sub1 extends Class119 implements MouseListener, Mous
 
 	@OriginalMember(owner = "client!k", name = "a", descriptor = "(IIII)V")
 	private void method3317(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(7) Class2_Sub24_Sub1 local7 = new Class2_Sub24_Sub1();
+		@Pc(7) JavaMouseRecorder local7 = new JavaMouseRecorder();
 		local7.anInt5770 = arg1;
 		local7.anInt5764 = arg0;
 		local7.anInt5766 = arg2;
@@ -213,7 +213,7 @@ public final class Class119_Sub1 extends Class119 implements MouseListener, Mous
 
 	@OriginalMember(owner = "client!k", name = "c", descriptor = "(I)V")
 	@Override
-	public synchronized void method3307() {
+	public synchronized void mainLogic() {
 		this.anInt3323 = this.anInt3345;
 		this.anInt3343 = this.anInt3346;
 		this.anInt3333 = this.anInt3347;
@@ -231,7 +231,7 @@ public final class Class119_Sub1 extends Class119 implements MouseListener, Mous
 
 	@OriginalMember(owner = "client!k", name = "d", descriptor = "(I)Lclient!lm;")
 	@Override
-	public Class2_Sub24 method3308() {
-		return (Class2_Sub24) this.aClass135_22.method3549();
+	public MouseRecorder method3308() {
+		return (MouseRecorder) this.aClass135_22.removeHead();
 	}
 }

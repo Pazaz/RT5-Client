@@ -115,12 +115,4 @@ public final class Static67 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ds", name = "c", descriptor = "(B)V")
-	public static void method1772() {
-		if (Static283.aBoolean383) {
-			Static283.aBoolean383 = false;
-			Static252.aClass13_14 = null;
-			Static333.aClass13_21 = null;
-		}
-	}
 }

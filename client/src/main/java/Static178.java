@@ -7,11 +7,8 @@ public final class Static178 {
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "I")
 	public static int anInt2317;
 
-	@OriginalMember(owner = "client!kf", name = "c", descriptor = "I")
-	public static int anInt2319;
-
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(IIIILclient!nb;IILclient!gn;ILclient!wm;IZIII)Lclient!gn;")
-	public static Model method2340(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class157 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) Model arg7, @OriginalArg(8) int arg8, @OriginalArg(9) TextureProvider arg9, @OriginalArg(10) int arg10, @OriginalArg(11) boolean arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13) {
+	public static Model method2340(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class157 arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) Model arg7, @OriginalArg(8) int arg8, @OriginalArg(9) RasteriserBase arg9, @OriginalArg(10) int arg10, @OriginalArg(11) boolean arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13) {
 		if (arg7 == null) {
 			return null;
 		}
@@ -57,8 +54,8 @@ public final class Static178 {
 				local173 = local132[local163];
 				for (local175 = 0; local175 < local93; local175++) {
 					@Pc(183) int local183 = (local175 << 14) / local93;
-					@Pc(191) int local191 = TextureProvider.anIntArray178[local183] * local169 >> 15;
-					local199 = local173 * TextureProvider.anIntArray177[local183] >> 15;
+					@Pc(191) int local191 = RasteriserBase.anIntArray178[local183] * local169 >> 15;
+					local199 = local173 * RasteriserBase.anIntArray177[local183] >> 15;
 					local161[local163][local175] = local150.method4665(0, local191, local199);
 				}
 			}

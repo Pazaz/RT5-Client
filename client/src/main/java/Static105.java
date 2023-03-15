@@ -36,15 +36,15 @@ public final class Static105 {
 
 	@OriginalMember(owner = "client!ft", name = "b", descriptor = "(B)V")
 	public static void method2209() {
-		if (Static323.anInt6063 != 0) {
-			Static177.anInt3385 -= Static323.anInt6063 * 5;
+		if (MouseWheel.wheelRotation != 0) {
+			Static177.anInt3385 -= MouseWheel.wheelRotation * 5;
 			if (Static177.anInt3385 >= Static368.anInt6917) {
 				Static177.anInt3385 = Static368.anInt6917 - 1;
 			}
 			if (Static177.anInt3385 < 0) {
 				Static177.anInt3385 = 0;
 			}
-			Static323.anInt6063 = 0;
+			MouseWheel.wheelRotation = 0;
 		}
 		if (Static214.anInt3793 < 102) {
 			Static214.anInt3793 += 6;

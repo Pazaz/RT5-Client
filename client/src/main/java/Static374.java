@@ -13,7 +13,7 @@ public final class Static374 {
 
 	@OriginalMember(owner = "client!vr", name = "a", descriptor = "(B)I")
 	public static int method6273() {
-		@Pc(15) TextureProvider local15 = Rasteriser.textureProvider;
+		@Pc(15) RasteriserBase local15 = Rasteriser.instance;
 		@Pc(17) boolean local17 = false;
 		if (Static77.anInt1762 != 0) {
 			@Pc(26) Canvas local26 = new Canvas();
@@ -34,7 +34,7 @@ public final class Static374 {
 	}
 
 	@OriginalMember(owner = "client!vr", name = "a", descriptor = "(ILclient!nk;II)V")
-	public static void method6274(@OriginalArg(0) int arg0, @OriginalArg(1) Class161 arg1, @OriginalArg(2) int arg2) {
+	public static void method6274(@OriginalArg(0) int arg0, @OriginalArg(1) Component arg1, @OriginalArg(2) int arg2) {
 		Static63.anInt1549 = arg0;
 		Static290.anInt5498 = arg2;
 		Static179.aClass161_6 = arg1;

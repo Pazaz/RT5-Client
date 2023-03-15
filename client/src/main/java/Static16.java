@@ -7,7 +7,7 @@ public final class Static16 {
 	public static int anInt4756;
 
 	@OriginalMember(owner = "client!as", name = "e", descriptor = "Lclient!wm;")
-	public static TextureProvider aClass19_10;
+	public static RasteriserBase aClass19_10;
 
 	@OriginalMember(owner = "client!as", name = "a", descriptor = "([II[J)V")
 	public static void method4407(@OriginalArg(0) int[] arg0, @OriginalArg(2) long[] arg1) {

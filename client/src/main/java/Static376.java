@@ -31,13 +31,13 @@ public final class Static376 {
 	public static void method6287(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(8) DelayedStateChange local8 = Static316.method5413(10, arg0);
 		local8.method2311();
-		local8.anInt2290 = arg3;
-		local8.anInt2284 = arg1;
-		local8.anInt2289 = arg2;
+		local8.intArg3 = arg3;
+		local8.intArg2 = arg1;
+		local8.intArg1 = arg2;
 	}
 
 	@OriginalMember(owner = "client!vt", name = "a", descriptor = "(Lclient!kf;IIILclient!jd;ILclient!nk;B)V")
-	public static void method6288(@OriginalArg(0) Class78 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Sprite arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class161 arg6) {
+	public static void method6288(@OriginalArg(0) Class78 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Sprite arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Component arg6) {
 		if (arg4 == null) {
 			return;
 		}
@@ -52,8 +52,8 @@ public final class Static376 {
 		if (local45 > local37 * local37) {
 			return;
 		}
-		@Pc(63) int local63 = TextureProvider.anIntArray178[local16];
-		@Pc(67) int local67 = TextureProvider.anIntArray177[local16];
+		@Pc(63) int local63 = RasteriserBase.anIntArray178[local16];
+		@Pc(67) int local67 = RasteriserBase.anIntArray177[local16];
 		if (Camera.anInt5911 != 4) {
 			local67 = local67 * 256 / (Static97.anInt2005 + 256);
 			local63 = local63 * 256 / (Static97.anInt2005 + 256);

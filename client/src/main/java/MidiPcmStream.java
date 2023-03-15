@@ -22,7 +22,7 @@ public final class MidiPcmStream extends PcmStream {
 	private long aLong136;
 
 	@OriginalMember(owner = "client!od", name = "Qb", descriptor = "Lclient!sl;")
-	private Class2_Sub34 aClass2_Sub34_2;
+	private Song aClass2_Sub34_2;
 
 	@OriginalMember(owner = "client!od", name = "Rb", descriptor = "I")
 	private int anInt4567;
@@ -106,7 +106,7 @@ public final class MidiPcmStream extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!od", name = "b", descriptor = "(B)Z")
-	public synchronized boolean method4270() {
+	public synchronized boolean isValid() {
 		return this.aClass118_1.method3199();
 	}
 
@@ -142,7 +142,7 @@ public final class MidiPcmStream extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(Lclient!sl;ZI)V")
-	public synchronized void method4273(@OriginalArg(0) Class2_Sub34 arg0, @OriginalArg(1) boolean arg1) {
+	public synchronized void method4273(@OriginalArg(0) Song arg0, @OriginalArg(1) boolean arg1) {
 		this.method4283(true, arg1, arg0);
 	}
 
@@ -257,7 +257,7 @@ public final class MidiPcmStream extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(II)V")
-	public synchronized void method4278(@OriginalArg(0) int arg0) {
+	public synchronized void setVolume(@OriginalArg(0) int arg0) {
 		this.anInt4548 = arg0;
 	}
 
@@ -281,7 +281,7 @@ public final class MidiPcmStream extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(Lclient!bk;Lclient!sl;Lclient!r;II)Z")
-	public synchronized boolean method4281(@OriginalArg(0) SoundBank arg0, @OriginalArg(1) Class2_Sub34 arg1, @OriginalArg(2) Js5 arg2) {
+	public synchronized boolean method4281(@OriginalArg(0) SoundBank arg0, @OriginalArg(1) Song arg1, @OriginalArg(2) Js5 arg2) {
 		arg1.method5449();
 		@Pc(9) boolean local9 = true;
 		@Pc(23) int[] local23 = new int[] { 22050 };
@@ -355,7 +355,7 @@ public final class MidiPcmStream extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(BZZLclient!sl;)V")
-	private synchronized void method4283(@OriginalArg(1) boolean arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Class2_Sub34 arg2) {
+	private synchronized void method4283(@OriginalArg(1) boolean arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Song arg2) {
 		this.method4293(arg0);
 		this.aClass118_1.method3203(arg2.aByteArray77);
 		this.aBoolean314 = arg1;
@@ -835,7 +835,7 @@ public final class MidiPcmStream extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!od", name = "g", descriptor = "(I)I")
-	public int method4303() {
+	public int getVolume() {
 		return this.anInt4548;
 	}
 

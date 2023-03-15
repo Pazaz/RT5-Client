@@ -7,9 +7,6 @@ public final class Static165 {
 	@OriginalMember(owner = "client!jm", name = "j", descriptor = "Lclient!vi;")
 	public static Class239 aClass239_3;
 
-	@OriginalMember(owner = "client!jm", name = "k", descriptor = "I")
-	public static int anInt3148 = 0;
-
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(IBLclient!hb;)Lclient!bi;")
 	public static Class22 method3149(@OriginalArg(0) int arg0, @OriginalArg(2) Entity arg1) {
 		@Pc(9) Class22 local9;
@@ -75,8 +72,8 @@ public final class Static165 {
 	}
 
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(ILclient!wm;)V")
-	public static void method3156(@OriginalArg(1) TextureProvider arg0) {
-		if (Static268.anInt4959 < 2 && !Static330.aBoolean419 || Static375.aClass161_14 != null) {
+	public static void method3156(@OriginalArg(1) RasteriserBase arg0) {
+		if (Static268.anInt4959 < 2 && !Static330.aBoolean419 || Cs1ScriptRunner.aClass161_14 != null) {
 			return;
 		}
 		@Pc(41) String local41;
@@ -97,7 +94,7 @@ public final class Static165 {
 				if (local140 != null) {
 					@Pc(145) NpcType local145 = local140.type;
 					if (local145.multiNpcs != null) {
-						local145 = local145.getMultiNpc(Static214.aClass226_1);
+						local145 = local145.getMultiNpc(VarpDomain.instance);
 					}
 					if (local145 != null) {
 						local74 = local145.anIntArray131;
@@ -111,7 +108,7 @@ public final class Static165 {
 					local108 = client.LocTypes.get((int) (local68.aLong30 >>> 32 & 0x7FFFFFFFL));
 				}
 				if (local108.anIntArray94 != null) {
-					local108 = local108.method1533(Static214.aClass226_1);
+					local108 = local108.method1533(VarpDomain.instance);
 				}
 				if (local108 != null) {
 					local74 = local108.anIntArray96;
@@ -129,10 +126,10 @@ public final class Static165 {
 			if (local218 == null) {
 				local218 = Static52.aClass130_1;
 			}
-			local218.method5903(Static129.anInt2460, local41, Static288.anInt5464, Static61.aRandom1, Static164.aClass161_5.valign, Static210.anIntArray229, Static164.aClass161_5.shadowColor, Static164.aClass161_5.width, Static164.aClass161_5.color, Static283.gregorianDateSeed, Static134.aClass13Array12, Static164.aClass161_5.height, Static164.aClass161_5.halign, Static72.anIntArray114);
+			local218.method5903(Static129.anInt2460, local41, Static288.anInt5464, client.random, Static164.aClass161_5.valign, Static210.anIntArray229, Static164.aClass161_5.shadowColor, Static164.aClass161_5.width, Static164.aClass161_5.color, MiniMenu.gregorianDateSeed, Static134.aClass13Array12, Static164.aClass161_5.height, Static164.aClass161_5.halign, Static72.anIntArray114);
 			Static369.method6221(Static210.anIntArray229[2], Static210.anIntArray229[0], Static210.anIntArray229[3], Static210.anIntArray229[1]);
 		} else if (Static179.aClass161_6 != null && client.GAME_RS == client.game) {
-			@Pc(287) int local287 = Static52.aClass130_1.method5899(Static290.anInt5498 + 4, Static283.gregorianDateSeed, Static134.aClass13Array12, Static61.aRandom1, Static63.anInt1549 + 16, Static72.anIntArray114, local41);
+			@Pc(287) int local287 = Static52.aClass130_1.method5899(Static290.anInt5498 + 4, MiniMenu.gregorianDateSeed, Static134.aClass13Array12, client.random, Static63.anInt1549 + 16, Static72.anIntArray114, local41);
 			Static369.method6221(Static113.aClass239_2.method6126(local41) + local287, Static290.anInt5498 + 4, 16, Static63.anInt1549);
 		}
 	}

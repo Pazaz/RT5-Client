@@ -12,41 +12,8 @@ public final class Static388 {
 	public static final int[] anIntArray494 = new int[1000];
 
 	@OriginalMember(owner = "client!wn", name = "a", descriptor = "(Lclient!ci;IBLjava/awt/Canvas;)Lclient!wm;")
-	public static TextureProvider method6437(@OriginalArg(0) TextureProviderInterface arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Canvas arg2) {
+	public static RasteriserBase method6437(@OriginalArg(0) TextureProviderInterface arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Canvas arg2) {
 		return new Class19_Sub2(arg2, arg0, arg1);
-	}
-
-	@OriginalMember(owner = "client!wn", name = "a", descriptor = "(Z)V")
-	public static void method6438() {
-		try {
-			if (Static235.anInt3365 == 1) {
-				@Pc(16) int local16 = Static91.aClass2_Sub12_Sub3_1.method4303();
-				if (local16 > 0 && Static91.aClass2_Sub12_Sub3_1.method4270()) {
-					local16 -= Static28.anInt672;
-					if (local16 < 0) {
-						local16 = 0;
-					}
-					Static91.aClass2_Sub12_Sub3_1.method4278(local16);
-				} else {
-					Static91.aClass2_Sub12_Sub3_1.method4274();
-					Static91.aClass2_Sub12_Sub3_1.clearInstruments();
-					Static155.aClass2_Sub34_1 = null;
-					Static164.aClass24_1 = null;
-					if (Static116.aClass197_26 == null) {
-						Static235.anInt3365 = 0;
-					} else {
-						Static235.anInt3365 = 2;
-					}
-				}
-			}
-		} catch (@Pc(57) Exception local57) {
-			local57.printStackTrace();
-			Static91.aClass2_Sub12_Sub3_1.method4274();
-			Static164.aClass24_1 = null;
-			Static235.anInt3365 = 0;
-			Static116.aClass197_26 = null;
-			Static155.aClass2_Sub34_1 = null;
-		}
 	}
 
 	@OriginalMember(owner = "client!wn", name = "a", descriptor = "(IZI)V")

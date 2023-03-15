@@ -7,9 +7,6 @@ public final class Static389 {
 	@OriginalMember(owner = "client!wo", name = "J", descriptor = "I")
 	public static int anInt4896 = 0;
 
-	@OriginalMember(owner = "client!wo", name = "K", descriptor = "I")
-	public static int anInt4897 = 2;
-
 	@OriginalMember(owner = "client!wo", name = "a", descriptor = "(IIIIII)V")
 	public static void method4487(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		@Pc(9) int local9 = arg2 + 1;

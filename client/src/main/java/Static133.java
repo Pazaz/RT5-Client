@@ -19,7 +19,7 @@ public final class Static133 {
 				Static256.method4395(arg0);
 			}
 		}
-		Static371.method6257((long) client.cycle, Rasteriser.textureProvider);
+		Static371.method6257((long) client.cycle, Rasteriser.instance);
 		if (Static139.anInt2595 != -1) {
 			Static232.method4028(Static139.anInt2595);
 		}
@@ -31,21 +31,21 @@ public final class Static133 {
 			Static357.aBooleanArray59[local42] = false;
 		}
 		Static132.anInt2468 = client.cycle;
-		if (Rasteriser.textureProvider.method2871()) {
+		if (Rasteriser.instance.method2871()) {
 			Static106.aBoolean164 = true;
 		}
 		if (Static139.anInt2595 != -1) {
 			Static154.anInt2806 = 0;
 			Static46.method1421();
 		}
-		Rasteriser.textureProvider.method2898();
-		Static162.method2980(Rasteriser.textureProvider);
+		Rasteriser.instance.method2898();
+		Static162.method2980(Rasteriser.instance);
 		@Pc(97) int local97 = Static33.method4201();
 		if (local97 == -1) {
 			local97 = Minimap.anInt7263;
 		}
 		Static307.method5255(local97);
-		Static56.method1616(PlayerList.self.xFine, PlayerList.self.zFine, Static165.anInt3148, PlayerList.self.plane);
-		Static165.anInt3148 = 0;
+		Static56.method1616(PlayerList.self.xFine, PlayerList.self.zFine, client.sceneDelta, PlayerList.self.plane);
+		client.sceneDelta = 0;
 	}
 }

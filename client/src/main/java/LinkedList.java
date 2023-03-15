@@ -106,7 +106,7 @@ public final class LinkedList {
 	}
 
 	@OriginalMember(owner = "client!ld", name = "d", descriptor = "(B)Lclient!ag;")
-	public Node method3549() {
+	public Node removeHead() {
 		@Pc(7) Node local7 = this.aClass2_130.next;
 		if (this.aClass2_130 == local7) {
 			return null;

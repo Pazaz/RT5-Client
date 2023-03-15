@@ -10,7 +10,7 @@ public abstract class KeyboardBase {
 	}
 
 	@OriginalMember(owner = "client!nj", name = "b", descriptor = "(I)V")
-	public abstract void method3337();
+	public abstract void mainLogic();
 
 	@OriginalMember(owner = "client!nj", name = "c", descriptor = "(I)V")
 	public abstract void method3338();

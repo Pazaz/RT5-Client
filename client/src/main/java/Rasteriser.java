@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Rasteriser {
 
 	@OriginalMember(owner = "client!kt", name = "X", descriptor = "Lclient!wm;")
-	public static TextureProvider textureProvider;
+	public static RasteriserBase instance;
 	@OriginalMember(owner = "client!gf", name = "a", descriptor = "I")
 	public int anInt2263;
 

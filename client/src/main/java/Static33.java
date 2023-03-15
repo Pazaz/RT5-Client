@@ -20,15 +20,15 @@ public final class Static33 {
 
 	@OriginalMember(owner = "client!bs", name = "b", descriptor = "(I)I")
 	public static int method4201() {
-		if (Static375.aClass161_14 == null) {
+		if (Cs1ScriptRunner.aClass161_14 == null) {
 			if (!Static375.aBoolean477 && Static268.anInt4959 > 0) {
 				if (Static148.aBoolean192 && Keyboard.instance.isPressed(81) && Static268.anInt4959 > 2) {
 					return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev.prev).anInt1007;
 				}
 				return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev).anInt1007;
 			}
-			@Pc(23) int local23 = Static226.aClass119_1.method3304();
-			@Pc(27) int local27 = Static226.aClass119_1.method3313();
+			@Pc(23) int local23 = Mouse.instance.method3304();
+			@Pc(27) int local27 = Mouse.instance.method3313();
 			@Pc(29) int local29 = Static305.anInt5743;
 			@Pc(31) int local31 = Static363.anInt6801;
 			@Pc(33) int local33 = Static107.anInt2220;

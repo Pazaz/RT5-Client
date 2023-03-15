@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static303 {
 
 	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(Lclient!ld;BLclient!wm;II)V")
-	public static void method5208(@OriginalArg(0) LinkedList arg0, @OriginalArg(2) TextureProvider arg1) {
+	public static void method5208(@OriginalArg(0) LinkedList arg0, @OriginalArg(2) RasteriserBase arg1) {
 		Static197.aClass135_24.clear();
 		if (Static175.aBoolean225) {
 			return;

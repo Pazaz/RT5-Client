@@ -65,7 +65,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(ILclient!gp;Lclient!wl;ZIILclient!nb;Lclient!ta;Lclient!e;Lclient!wm;ILclient!io;)Lclient!gn;")
-	public Model method3184(@OriginalArg(0) int arg0, @OriginalArg(1) SeqTypeList arg1, @OriginalArg(2) Interface11 arg2, @OriginalArg(5) int arg3, @OriginalArg(6) Class157 arg4, @OriginalArg(7) NpcTypeList arg5, @OriginalArg(8) IdkTypeList arg6, @OriginalArg(9) TextureProvider arg7, @OriginalArg(10) int arg8, @OriginalArg(11) ObjTypeList arg9) {
+	public Model method3184(@OriginalArg(0) int arg0, @OriginalArg(1) SeqTypeList arg1, @OriginalArg(2) Interface11 arg2, @OriginalArg(5) int arg3, @OriginalArg(6) Class157 arg4, @OriginalArg(7) NpcTypeList arg5, @OriginalArg(8) IdkTypeList arg6, @OriginalArg(9) RasteriserBase arg7, @OriginalArg(10) int arg8, @OriginalArg(11) ObjTypeList arg9) {
 		if (this.npcId != -1) {
 			return arg5.get(this.npcId).method2088(arg3, arg8, arg0, arg7, arg4, arg2, arg1);
 		}
@@ -175,7 +175,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(IILclient!e;ILclient!nb;IIILclient!gp;Lclient!wm;II)Lclient!gn;")
-	public Model method3185(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) IdkTypeList arg2, @OriginalArg(4) Class157 arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) SeqTypeList arg6, @OriginalArg(9) TextureProvider arg7, @OriginalArg(10) int arg8, @OriginalArg(11) int arg9) {
+	public Model method3185(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) IdkTypeList arg2, @OriginalArg(4) Class157 arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) SeqTypeList arg6, @OriginalArg(9) RasteriserBase arg7, @OriginalArg(10) int arg8, @OriginalArg(11) int arg9) {
 		@Pc(7) int local7 = 1024;
 		@Pc(32) int local32;
 		@Pc(36) int local36;
@@ -296,7 +296,7 @@ public final class PlayerAppearance {
 	}
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(IZLclient!ak;Lclient!gp;Lclient!e;Lclient!nb;IIIIZILclient!nb;Lclient!wl;Lclient!io;Lclient!wm;Lclient!ta;[Lclient!bg;I)Lclient!gn;")
-	public Model method3191(@OriginalArg(0) int arg0, @OriginalArg(2) BasTypeList arg1, @OriginalArg(3) SeqTypeList arg2, @OriginalArg(4) IdkTypeList arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(11) int arg9, @OriginalArg(12) Class157 arg10, @OriginalArg(13) Interface11 arg11, @OriginalArg(14) ObjTypeList arg12, @OriginalArg(15) TextureProvider arg13, @OriginalArg(16) NpcTypeList arg14, @OriginalArg(17) Class20[] arg15, @OriginalArg(18) int arg16) {
+	public Model method3191(@OriginalArg(0) int arg0, @OriginalArg(2) BasTypeList arg1, @OriginalArg(3) SeqTypeList arg2, @OriginalArg(4) IdkTypeList arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(11) int arg9, @OriginalArg(12) Class157 arg10, @OriginalArg(13) Interface11 arg11, @OriginalArg(14) ObjTypeList arg12, @OriginalArg(15) RasteriserBase arg13, @OriginalArg(16) NpcTypeList arg14, @OriginalArg(17) Class20[] arg15, @OriginalArg(18) int arg16) {
 		if (this.npcId != -1) {
 			return arg14.get(this.npcId).getBodyModel(arg1, arg16, arg4, arg13, arg2, arg6, arg9, arg8, arg10, arg7, arg15, arg0, arg11, arg5);
 		}
@@ -501,12 +501,12 @@ public final class PlayerAppearance {
 											local884[0] = local884[4] = local884[8] = 32768;
 											local884[14] = -local835;
 										} else {
-											@Pc(894) int local894 = TextureProvider.anIntArray177[local844];
-											@Pc(898) int local898 = TextureProvider.anIntArray178[local844];
-											@Pc(902) int local902 = TextureProvider.anIntArray177[local853];
-											@Pc(906) int local906 = TextureProvider.anIntArray178[local853];
-											@Pc(910) int local910 = TextureProvider.anIntArray177[local862];
-											@Pc(914) int local914 = TextureProvider.anIntArray178[local862];
+											@Pc(894) int local894 = RasteriserBase.anIntArray177[local844];
+											@Pc(898) int local898 = RasteriserBase.anIntArray178[local844];
+											@Pc(902) int local902 = RasteriserBase.anIntArray177[local853];
+											@Pc(906) int local906 = RasteriserBase.anIntArray178[local853];
+											@Pc(910) int local910 = RasteriserBase.anIntArray177[local862];
+											@Pc(914) int local914 = RasteriserBase.anIntArray178[local862];
 											@Pc(922) int local922 = local910 * local898 + 16384 >> 15;
 											@Pc(930) int local930 = local898 * local914 + 16384 >> 15;
 											local884[1] = local922 * local906 + local902 * -local914 + 16384 >> 15;

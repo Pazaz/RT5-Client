@@ -14,7 +14,7 @@ public final class Static183 {
 	@OriginalMember(owner = "client!kl", name = "a", descriptor = "(Z)V")
 	public static void method68() {
 		if (client.preferences.method4495(Static77.anInt1762) || Static44.anInt1115 == Static355.anInt6585) {
-			Static239.method4156(Rasteriser.textureProvider);
+			Static239.method4156(Rasteriser.instance);
 			if (Static272.anInt5022 != Static355.anInt6585) {
 				Static226.method3982();
 			}

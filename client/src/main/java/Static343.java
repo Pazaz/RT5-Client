@@ -8,7 +8,4 @@ public final class Static343 {
 	@OriginalMember(owner = "client!ts", name = "p", descriptor = "[I")
 	public static final int[] anIntArray432 = new int[4096];
 
-	@OriginalMember(owner = "client!ts", name = "s", descriptor = "Z")
-	public static boolean aBoolean431 = true;
-
 }

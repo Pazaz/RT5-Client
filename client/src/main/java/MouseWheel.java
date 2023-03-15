@@ -6,6 +6,11 @@ import org.openrs2.deob.annotation.OriginalMember;
 @OriginalClass("client!kp")
 public abstract class MouseWheel {
 
+	@OriginalMember(owner = "client!tk", name = "f", descriptor = "Lclient!kp;")
+	public static MouseWheel instance;
+	@OriginalMember(owner = "client!sp", name = "S", descriptor = "I")
+	public static int wheelRotation = 0;
+
 	@OriginalMember(owner = "client!kp", name = "a", descriptor = "(ILjava/awt/Component;)V")
 	public abstract void stop(@OriginalArg(1) Component arg0);
 

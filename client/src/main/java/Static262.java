@@ -1,5 +1,3 @@
-import java.io.DataInputStream;
-import java.net.URL;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -13,7 +11,7 @@ public final class Static262 {
 	public static int anInt6999 = 2;
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(IIIIILclient!nk;Lclient!kf;IB)V")
-	public static void method6249(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) Class161 arg5, @OriginalArg(6) Class78 arg6, @OriginalArg(7) int arg7) {
+	public static void method6249(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) Component arg5, @OriginalArg(6) Class78 arg6, @OriginalArg(7) int arg7) {
 		@Pc(19) int local19 = arg2 * arg2 + arg3 * arg3;
 		if (local19 > arg1) {
 			return;
@@ -30,8 +28,8 @@ public final class Static262 {
 		} else {
 			local66 = (int) Camera.yawTarget + Static6.anInt158 & 0x3FFF;
 		}
-		@Pc(77) int local77 = TextureProvider.anIntArray178[local66];
-		@Pc(81) int local81 = TextureProvider.anIntArray177[local66];
+		@Pc(77) int local77 = RasteriserBase.anIntArray178[local66];
+		@Pc(81) int local81 = RasteriserBase.anIntArray177[local66];
 		if (Camera.anInt5911 != 4) {
 			local77 = local77 * 256 / (Static97.anInt2005 + 256);
 			local81 = local81 * 256 / (Static97.anInt2005 + 256);
@@ -42,39 +40,6 @@ public final class Static262 {
 		@Pc(136) int local136 = (int) (Math.sin(local129) * (double) local37);
 		@Pc(143) int local143 = (int) ((double) local37 * Math.cos(local129));
 		Static116.aClass13Array8[arg0].method6386((float) arg5.width / 2.0F + (float) arg7 + (float) local136, (float) -local143 + (float) arg5.height / 2.0F + (float) arg4, 4096, (int) (-local129 / 6.283185307179586D * 65535.0D));
-	}
-
-	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;I)V")
-	public static void report(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
-		try {
-			@Pc(7) String local7 = "";
-			if (arg0 != null) {
-				local7 = Static174.method1509(arg0);
-			}
-			if (arg1 != null) {
-				if (arg0 != null) {
-					local7 = local7 + " | ";
-				}
-				local7 = local7 + arg1;
-			}
-			Static342.method5153(local7);
-			local7 = Static200.method3647(local7, "%3a", ":");
-			local7 = Static200.method3647(local7, "%40", "@");
-			local7 = Static200.method3647(local7, "%26", "&");
-			local7 = Static200.method3647(local7, "%23", "#");
-			if (Static392.aClass152_6.applet != null) {
-				@Pc(103) PrivilegedRequest local103 = Static392.aClass152_6.openUrlStream(new URL(Static392.aClass152_6.applet.getCodeBase(), "clienterror.ws?c=" + Static277.anInt5115 + "&u=" + LoginManager.encodedUsername + "&v1=" + Signlink.javaVendor + "&v2=" + Signlink.javaVersion + "&e=" + local7));
-				while (local103.status == 0) {
-					ThreadUtils.sleep(1L);
-				}
-				if (local103.status == 1) {
-					@Pc(121) DataInputStream local121 = (DataInputStream) local103.result;
-					local121.read();
-					local121.close();
-				}
-			}
-		} catch (@Pc(133) Exception local133) {
-		}
 	}
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(Z)V")

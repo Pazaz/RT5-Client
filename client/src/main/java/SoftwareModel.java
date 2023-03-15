@@ -1752,8 +1752,8 @@ public final class SoftwareModel extends Model {
 		if ((this.anInt984 & 0x3) != 3) {
 			throw new IllegalStateException();
 		}
-		@Pc(13) int local13 = TextureProvider.anIntArray178[arg0];
-		@Pc(17) int local17 = TextureProvider.anIntArray177[arg0];
+		@Pc(13) int local13 = RasteriserBase.anIntArray178[arg0];
+		@Pc(17) int local17 = RasteriserBase.anIntArray177[arg0];
 		for (@Pc(19) int local19 = 0; local19 < this.anInt987; local19++) {
 			@Pc(36) int local36 = this.anIntArray56[local19] * local13 + this.anIntArray68[local19] * local17 >> 15;
 			this.anIntArray56[local19] = this.anIntArray56[local19] * local17 - this.anIntArray68[local19] * local13 >> 15;
@@ -1776,8 +1776,8 @@ public final class SoftwareModel extends Model {
 		} else if (arg0 == 12288) {
 			this.method1256();
 		} else {
-			@Pc(34) int local34 = TextureProvider.anIntArray178[arg0];
-			@Pc(38) int local38 = TextureProvider.anIntArray177[arg0];
+			@Pc(34) int local34 = RasteriserBase.anIntArray178[arg0];
+			@Pc(38) int local38 = RasteriserBase.anIntArray177[arg0];
 			@Pc(57) int local57;
 			for (@Pc(40) int local40 = 0; local40 < this.anInt981; local40++) {
 				local57 = this.anIntArray47[local40] * local34 + this.anIntArray68[local40] * local38 >> 15;
@@ -2116,22 +2116,22 @@ public final class SoftwareModel extends Model {
 							this.anIntArray56[local84] -= this.anInt985;
 							this.anIntArray47[local84] -= this.anInt990;
 							if (arg4 != 0) {
-								local89 = TextureProvider.anIntArray178[arg4];
-								local342 = TextureProvider.anIntArray177[arg4];
+								local89 = RasteriserBase.anIntArray178[arg4];
+								local342 = RasteriserBase.anIntArray177[arg4];
 								local360 = this.anIntArray56[local84] * local89 + this.anIntArray68[local84] * local342 + 32767 >> 15;
 								this.anIntArray56[local84] = this.anIntArray56[local84] * local342 + 32767 - this.anIntArray68[local84] * local89 >> 15;
 								this.anIntArray68[local84] = local360;
 							}
 							if (arg2 != 0) {
-								local89 = TextureProvider.anIntArray178[arg2];
-								local342 = TextureProvider.anIntArray177[arg2];
+								local89 = RasteriserBase.anIntArray178[arg2];
+								local342 = RasteriserBase.anIntArray177[arg2];
 								local360 = this.anIntArray56[local84] * local342 + 32767 - this.anIntArray47[local84] * local89 >> 15;
 								this.anIntArray47[local84] = this.anIntArray56[local84] * local89 + this.anIntArray47[local84] * local342 + 32767 >> 15;
 								this.anIntArray56[local84] = local360;
 							}
 							if (arg3 != 0) {
-								local89 = TextureProvider.anIntArray178[arg3];
-								local342 = TextureProvider.anIntArray177[arg3];
+								local89 = RasteriserBase.anIntArray178[arg3];
+								local342 = RasteriserBase.anIntArray177[arg3];
 								local360 = this.anIntArray47[local84] * local89 + this.anIntArray68[local84] * local342 + 32767 >> 15;
 								this.anIntArray47[local84] = this.anIntArray47[local84] * local342 + 32767 - this.anIntArray68[local84] * local89 >> 15;
 								this.anIntArray68[local84] = local360;
@@ -2147,22 +2147,22 @@ public final class SoftwareModel extends Model {
 							this.anIntArray56[local84] -= this.anInt985;
 							this.anIntArray47[local84] -= this.anInt990;
 							if (arg2 != 0) {
-								local89 = TextureProvider.anIntArray178[arg2];
-								local342 = TextureProvider.anIntArray177[arg2];
+								local89 = RasteriserBase.anIntArray178[arg2];
+								local342 = RasteriserBase.anIntArray177[arg2];
 								local360 = this.anIntArray56[local84] * local342 + 32767 - this.anIntArray47[local84] * local89 >> 15;
 								this.anIntArray47[local84] = this.anIntArray56[local84] * local89 + this.anIntArray47[local84] * local342 + 32767 >> 15;
 								this.anIntArray56[local84] = local360;
 							}
 							if (arg4 != 0) {
-								local89 = TextureProvider.anIntArray178[arg4];
-								local342 = TextureProvider.anIntArray177[arg4];
+								local89 = RasteriserBase.anIntArray178[arg4];
+								local342 = RasteriserBase.anIntArray177[arg4];
 								local360 = this.anIntArray56[local84] * local89 + this.anIntArray68[local84] * local342 + 32767 >> 15;
 								this.anIntArray56[local84] = this.anIntArray56[local84] * local342 + 32767 - this.anIntArray68[local84] * local89 >> 15;
 								this.anIntArray68[local84] = local360;
 							}
 							if (arg3 != 0) {
-								local89 = TextureProvider.anIntArray178[arg3];
-								local342 = TextureProvider.anIntArray177[arg3];
+								local89 = RasteriserBase.anIntArray178[arg3];
+								local342 = RasteriserBase.anIntArray177[arg3];
 								local360 = this.anIntArray47[local84] * local89 + this.anIntArray68[local84] * local342 + 32767 >> 15;
 								this.anIntArray47[local84] = this.anIntArray47[local84] * local342 + 32767 - this.anIntArray68[local84] * local89 >> 15;
 								this.anIntArray68[local84] = local360;
@@ -2440,22 +2440,22 @@ public final class SoftwareModel extends Model {
 								this.anIntArray56[local84] -= this.anInt985;
 								this.anIntArray47[local84] -= this.anInt990;
 								if (arg4 != 0) {
-									local89 = TextureProvider.anIntArray178[arg4];
-									local478 = TextureProvider.anIntArray177[arg4];
+									local89 = RasteriserBase.anIntArray178[arg4];
+									local478 = RasteriserBase.anIntArray177[arg4];
 									local503 = this.anIntArray56[local84] * local89 + this.anIntArray68[local84] * local478 + 32767 >> 15;
 									this.anIntArray56[local84] = this.anIntArray56[local84] * local478 + 32767 - this.anIntArray68[local84] * local89 >> 15;
 									this.anIntArray68[local84] = local503;
 								}
 								if (arg2 != 0) {
-									local89 = TextureProvider.anIntArray178[arg2];
-									local478 = TextureProvider.anIntArray177[arg2];
+									local89 = RasteriserBase.anIntArray178[arg2];
+									local478 = RasteriserBase.anIntArray177[arg2];
 									local503 = this.anIntArray56[local84] * local478 + 32767 - this.anIntArray47[local84] * local89 >> 15;
 									this.anIntArray47[local84] = this.anIntArray56[local84] * local89 + this.anIntArray47[local84] * local478 + 32767 >> 15;
 									this.anIntArray56[local84] = local503;
 								}
 								if (arg3 != 0) {
-									local89 = TextureProvider.anIntArray178[arg3];
-									local478 = TextureProvider.anIntArray177[arg3];
+									local89 = RasteriserBase.anIntArray178[arg3];
+									local478 = RasteriserBase.anIntArray177[arg3];
 									local503 = this.anIntArray47[local84] * local89 + this.anIntArray68[local84] * local478 + 32767 >> 15;
 									this.anIntArray47[local84] = this.anIntArray47[local84] * local478 + 32767 - this.anIntArray68[local84] * local89 >> 15;
 									this.anIntArray68[local84] = local503;
@@ -2495,12 +2495,12 @@ public final class SoftwareModel extends Model {
 					this.aBoolean81 = false;
 				}
 				@Pc(555) int[] local555 = new int[9];
-				local503 = TextureProvider.anIntArray177[arg2];
-				local528 = TextureProvider.anIntArray178[arg2];
-				local567 = TextureProvider.anIntArray177[arg3];
-				local571 = TextureProvider.anIntArray178[arg3];
-				local575 = TextureProvider.anIntArray177[arg4];
-				local579 = TextureProvider.anIntArray178[arg4];
+				local503 = RasteriserBase.anIntArray177[arg2];
+				local528 = RasteriserBase.anIntArray178[arg2];
+				local567 = RasteriserBase.anIntArray177[arg3];
+				local571 = RasteriserBase.anIntArray178[arg3];
+				local575 = RasteriserBase.anIntArray177[arg4];
+				local579 = RasteriserBase.anIntArray178[arg4];
 				local587 = local528 * local575 + 16384 >> 15;
 				local595 = local528 * local579 + 16384 >> 15;
 				local555[0] = local567 * local575 + local571 * local595 + 16384 >> 15;
@@ -2855,8 +2855,8 @@ public final class SoftwareModel extends Model {
 		} else if (arg0 == 12288) {
 			this.method1247();
 		} else {
-			@Pc(31) int local31 = TextureProvider.anIntArray178[arg0];
-			@Pc(35) int local35 = TextureProvider.anIntArray177[arg0];
+			@Pc(31) int local31 = RasteriserBase.anIntArray178[arg0];
+			@Pc(35) int local35 = RasteriserBase.anIntArray177[arg0];
 			for (@Pc(37) int local37 = 0; local37 < this.anInt987; local37++) {
 				@Pc(54) int local54 = this.anIntArray47[local37] * local31 + this.anIntArray68[local37] * local35 >> 15;
 				this.anIntArray47[local37] = this.anIntArray47[local37] * local35 - this.anIntArray68[local37] * local31 >> 15;
@@ -2924,22 +2924,22 @@ public final class SoftwareModel extends Model {
 					this.anIntArray56[local3] -= this.anInt985;
 					this.anIntArray47[local3] -= this.anInt990;
 					if (arg3 != 0) {
-						local14 = TextureProvider.anIntArray178[arg3];
-						local164 = TextureProvider.anIntArray177[arg3];
+						local14 = RasteriserBase.anIntArray178[arg3];
+						local164 = RasteriserBase.anIntArray177[arg3];
 						local182 = this.anIntArray56[local3] * local14 + this.anIntArray68[local3] * local164 + 32767 >> 15;
 						this.anIntArray56[local3] = this.anIntArray56[local3] * local164 + 32767 - this.anIntArray68[local3] * local14 >> 15;
 						this.anIntArray68[local3] = local182;
 					}
 					if (arg1 != 0) {
-						local14 = TextureProvider.anIntArray178[arg1];
-						local164 = TextureProvider.anIntArray177[arg1];
+						local14 = RasteriserBase.anIntArray178[arg1];
+						local164 = RasteriserBase.anIntArray177[arg1];
 						local182 = this.anIntArray56[local3] * local164 + 32767 - this.anIntArray47[local3] * local14 >> 15;
 						this.anIntArray47[local3] = this.anIntArray56[local3] * local14 + this.anIntArray47[local3] * local164 + 32767 >> 15;
 						this.anIntArray56[local3] = local182;
 					}
 					if (arg2 != 0) {
-						local14 = TextureProvider.anIntArray178[arg2];
-						local164 = TextureProvider.anIntArray177[arg2];
+						local14 = RasteriserBase.anIntArray178[arg2];
+						local164 = RasteriserBase.anIntArray177[arg2];
 						local182 = this.anIntArray47[local3] * local14 + this.anIntArray68[local3] * local164 + 32767 >> 15;
 						this.anIntArray47[local3] = this.anIntArray47[local3] * local164 + 32767 - this.anIntArray68[local3] * local14 >> 15;
 						this.anIntArray68[local3] = local182;
@@ -3780,8 +3780,8 @@ public final class SoftwareModel extends Model {
 		if ((this.anInt984 & 0x6) != 6) {
 			throw new IllegalStateException();
 		}
-		@Pc(13) int local13 = TextureProvider.anIntArray178[arg0];
-		@Pc(17) int local17 = TextureProvider.anIntArray177[arg0];
+		@Pc(13) int local13 = RasteriserBase.anIntArray178[arg0];
+		@Pc(17) int local17 = RasteriserBase.anIntArray177[arg0];
 		for (@Pc(19) int local19 = 0; local19 < this.anInt987; local19++) {
 			@Pc(36) int local36 = this.anIntArray56[local19] * local17 - this.anIntArray47[local19] * local13 >> 15;
 			this.anIntArray47[local19] = this.anIntArray56[local19] * local13 + this.anIntArray47[local19] * local17 >> 15;

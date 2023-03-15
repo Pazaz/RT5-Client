@@ -61,14 +61,14 @@ public class WorldList {
 
 		if (Static215.anInt3795 == 3) {
 			@Pc(39) String port = "";
-			if (client.modeWhere != client.MODE_WHERE_LIVE) {
+			if (client.modeWhere != ModeWhere.MODE_WHERE_LIVE) {
 				port = ":" + (world.id + 7000);
 			}
 			@Pc(55) String settings = "";
 			if (client.settings != null) {
 				settings = "/p=" + client.settings;
 			}
-			@Pc(109) String local109 = "http://" + world.hostname + port + "/l=" + client.language + "/a=" + client.affiliate + settings + "/j" + (Static276.javaScript ? "1" : "0") + ",o" + (Static237.objectTag ? "1" : "0") + ",a2";
+			@Pc(109) String local109 = "http://" + world.hostname + port + "/l=" + client.language + "/a=" + client.affiliate + settings + "/j" + (client.javaScript ? "1" : "0") + ",o" + (client.objectTag ? "1" : "0") + ",a2";
 			try {
 				if (client.instance.getAppletContext() != null) {
 					client.instance.getAppletContext().showDocument(new URL(local109), "_self");
@@ -84,7 +84,7 @@ public class WorldList {
 
 		Player.worldId = world.id;
 		client.hostname = world.hostname;
-		if (client.modeWhere != client.MODE_WHERE_LIVE) {
+		if (client.modeWhere != ModeWhere.MODE_WHERE_LIVE) {
 			client.alternatePort = Player.worldId + 40000;
 			client.defaultPort = Player.worldId + 50000;
 			client.port = client.alternatePort;

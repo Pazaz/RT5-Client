@@ -7,9 +7,6 @@ public final class Static253 {
 	@OriginalMember(owner = "client!oj", name = "c", descriptor = "I")
 	public static int anInt4689;
 
-	@OriginalMember(owner = "client!oj", name = "f", descriptor = "Lclient!un;")
-	public static GameShell anApplet_Sub1_1 = null;
-
 	@OriginalMember(owner = "client!oj", name = "a", descriptor = "()V")
 	public static void method4366() {
 		@Pc(3) int local3;

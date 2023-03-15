@@ -437,7 +437,7 @@ public final class ObjType {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(IIIILclient!nb;Lclient!wm;ILclient!jo;I)Lclient!gn;")
-	public Model method4776(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class157 arg3, @OriginalArg(5) TextureProvider arg4, @OriginalArg(6) int arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) int arg7) {
+	public Model method4776(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class157 arg3, @OriginalArg(5) RasteriserBase arg4, @OriginalArg(6) int arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) int arg7) {
 		@Pc(15) int local15;
 		if (this.anIntArray365 != null && arg5 > 1) {
 			local15 = -1;
@@ -629,7 +629,7 @@ public final class ObjType {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(Lclient!ur;Lclient!jo;BLclient!wm;ILclient!wm;IIIZ)[I")
-	public int[] method4781(@OriginalArg(0) BitmapFont arg0, @OriginalArg(1) PlayerAppearance arg1, @OriginalArg(3) TextureProvider arg2, @OriginalArg(4) int arg3, @OriginalArg(5) TextureProvider arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) boolean arg8) {
+	public int[] method4781(@OriginalArg(0) BitmapFont arg0, @OriginalArg(1) PlayerAppearance arg1, @OriginalArg(3) RasteriserBase arg2, @OriginalArg(4) int arg3, @OriginalArg(5) RasteriserBase arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) boolean arg8) {
 		@Pc(14) Class185 local14 = Static298.method2426(this.aClass107_1.aClass197_41, this.anInt5237);
 		if (local14 == null) {
 			return null;
@@ -701,7 +701,7 @@ public final class ObjType {
 		@Pc(333) Class14 local333 = arg4.method2808();
 		local333.method3931(-this.anInt5249 << 3);
 		local333.method3926(this.anInt5215 << 3);
-		local333.method3936(this.anInt5252, (TextureProvider.anIntArray178[this.anInt5245 << 3] * local287 >> 15) + (this.anInt5232 - (local210.method3802() / 2)), this.anInt5232 + (local287 * TextureProvider.anIntArray177[this.anInt5245 << 3] >> 15));
+		local333.method3936(this.anInt5252, (RasteriserBase.anIntArray178[this.anInt5245 << 3] * local287 >> 15) + (this.anInt5232 - (local210.method3802() / 2)), this.anInt5232 + (local287 * RasteriserBase.anIntArray177[this.anInt5245 << 3] >> 15));
 		local333.method3929(this.anInt5245 << 3);
 		@Pc(392) int local392 = arg4.method2814();
 		@Pc(395) int local395 = arg4.method2875();

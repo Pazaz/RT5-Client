@@ -19,14 +19,14 @@ public final class Static180 {
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(IIIZIILclient!r;)V")
 	public static void method3367(@OriginalArg(2) int arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) Js5 arg3) {
 		Static384.aBoolean485 = false;
-		Static116.aClass197_26 = arg3;
+		MusicPlayer.songArchive = arg3;
 		Static105.anInt2183 = arg0;
 		Static341.anInt6376 = 0;
 		Static356.anInt6641 = arg2;
-		Static235.anInt3365 = 1;
-		Static28.anInt672 = Static91.aClass2_Sub12_Sub3_1.method4303() / arg1;
-		if (Static28.anInt672 < 1) {
-			Static28.anInt672 = 1;
+		MusicPlayer.state = 1;
+		MusicPlayer.volumeFadeRate = MusicPlayer.stream.getVolume() / arg1;
+		if (MusicPlayer.volumeFadeRate < 1) {
+			MusicPlayer.volumeFadeRate = 1;
 		}
 	}
 
@@ -54,10 +54,10 @@ public final class Static180 {
 						}
 						local59 = arg0.g2();
 						local63 = arg0.g4();
-					} while (Static75.anIntArray117.length <= local59);
+					} while (VarcDomain.varcs.length <= local59);
 				} while (!Static89.aBooleanArray18[local59]);
 			} while (client.aClass45_1.method1623(local59).aChar2 == '1' && (local63 < -1 || local63 > 1));
-			Static75.anIntArray117[local59] = local63;
+			VarcDomain.varcs[local59] = local63;
 		}
 	}
 

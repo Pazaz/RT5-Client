@@ -7,9 +7,6 @@ public final class Static370 {
 	@OriginalMember(owner = "client!vn", name = "N", descriptor = "Lclient!lo;")
 	public static HuffmanCodec aClass140_1;
 
-	@OriginalMember(owner = "client!vn", name = "V", descriptor = "Lclient!lm;")
-	public static Class2_Sub24 aClass2_Sub24_1;
-
 	@OriginalMember(owner = "client!vn", name = "O", descriptor = "Z")
 	public static boolean aBoolean473 = false;
 

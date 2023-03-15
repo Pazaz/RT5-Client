@@ -31,6 +31,24 @@ public class Camera {
 	public static float pitchTarget = 1024.0F;
 	@OriginalMember(owner = "client!q", name = "q", descriptor = "F")
 	public static float yawTarget = 0.0F;
+	@OriginalMember(owner = "client!fn", name = "D", descriptor = "Z")
+	public static boolean aBoolean156 = true;
+	@OriginalMember(owner = "client!wf", name = "s", descriptor = "I")
+	public static int anInt7153 = 0;
+	@OriginalMember(owner = "client!da", name = "i", descriptor = "I")
+	public static int anInt3966 = 0;
+	@OriginalMember(owner = "client!aa", name = "x", descriptor = "I")
+	public static int anInt28 = 0;
+	@OriginalMember(owner = "client!bh", name = "u", descriptor = "I")
+	public static int anInt642 = 0;
+	@OriginalMember(owner = "client!ap", name = "r", descriptor = "I")
+	public static int anInt327 = 0;
+	@OriginalMember(owner = "client!ai", name = "O", descriptor = "I")
+	public static int anInt213 = 1;
+	@OriginalMember(owner = "client!ih", name = "i", descriptor = "I")
+	public static int anInt2705 = 2;
+	@OriginalMember(owner = "client!wo", name = "K", descriptor = "I")
+	public static int anInt4897 = 2;
 
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(IIIIZII)V")
 	public static void method1545(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
@@ -99,7 +117,7 @@ public class Camera {
 			Static4.anInt87 = local11;
 		}
 		Static338.method6141();
-		Static100.aBoolean156 = true;
+		aBoolean156 = true;
 	}
 
 }

@@ -5,9 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static307 {
 
-	@OriginalMember(owner = "client!rq", name = "m", descriptor = "Ljava/lang/String;")
-	public static String aString57;
-
 	@OriginalMember(owner = "client!rq", name = "l", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_121 = new LocalizedString("Loading wordpack - ", "Lade Wordpack - ", "Chargement du module texte - ", "Carregando pacote de palavras - ");
 

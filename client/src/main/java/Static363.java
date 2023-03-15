@@ -82,7 +82,7 @@ public final class Static363 {
 			local210 = local185 - local175;
 		}
 		if (local196 == 0 && local210 == 0 || local196 <= -Static373.anInt7033 || Static373.anInt7033 <= local196 || local210 <= -Static242.anInt4449 || local210 >= Static242.anInt4449) {
-			Static262.report(null, "RC: " + local94 + "," + local175 + " " + local180 + "," + local185 + " " + Camera.originX + "," + Camera.originZ);
+			TracingException.report(null, "RC: " + local94 + "," + local175 + " " + local180 + "," + local185 + " " + Camera.originX + "," + Camera.originZ);
 			return;
 		}
 		@Pc(290) int local290;

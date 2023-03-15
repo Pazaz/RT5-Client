@@ -6,9 +6,6 @@ public final class Static142 {
 	@OriginalMember(owner = "client!ia", name = "k", descriptor = "Lclient!r;")
 	public static Js5 aClass197_37;
 
-	@OriginalMember(owner = "client!ia", name = "n", descriptor = "I")
-	public static int anInt2663;
-
 	@OriginalMember(owner = "client!ia", name = "o", descriptor = "Lclient!ld;")
 	public static final LinkedList aClass135_21 = new LinkedList();
 

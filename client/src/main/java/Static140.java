@@ -6,9 +6,6 @@ public final class Static140 {
 	@OriginalMember(owner = "client!hu", name = "v", descriptor = "Z")
 	public static boolean aBoolean187 = false;
 
-	@OriginalMember(owner = "client!hu", name = "x", descriptor = "[I")
-	public static final int[] anIntArray167 = new int[32];
-
 	@OriginalMember(owner = "client!hu", name = "f", descriptor = "(I)V")
 	public static void method2622() {
 		if (Static181.anIntArray204 != null) {

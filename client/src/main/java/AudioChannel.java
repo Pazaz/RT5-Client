@@ -122,7 +122,7 @@ public class AudioChannel {
 	}
 
 	@OriginalMember(owner = "client!tg", name = "a", descriptor = "(I)V")
-	public final synchronized void method6316() {
+	public final synchronized void mainLogic() {
 		if (this.aBoolean480) {
 			return;
 		}

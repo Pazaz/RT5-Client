@@ -12,16 +12,6 @@ public final class Static37 {
 		Static357.anIntArrayArray58 = arg0;
 	}
 
-	@OriginalMember(owner = "client!ca", name = "i", descriptor = "(I)V")
-	public static void method1135() {
-		if (client.soundChannel != null) {
-			client.soundChannel.method6316();
-		}
-		if (client.musicChannel != null) {
-			client.musicChannel.method6316();
-		}
-	}
-
 	@OriginalMember(owner = "client!ca", name = "a", descriptor = "(IIIIIII)V")
 	public static void method1136(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		Static249.method4149(arg4);

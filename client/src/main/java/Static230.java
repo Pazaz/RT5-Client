@@ -58,24 +58,13 @@ public final class Static230 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ne", name = "c", descriptor = "(I)V")
-	public static void method4014() {
-		LoginManager.loops = 0;
-		Static101.aBoolean158 = false;
-		LoginManager.disallowResult = -1;
-		LoginManager.errors = 0;
-		LoginManager.loginStep = 1;
-		LoginManager.hopTime = 0;
-		LoginManager.loginResult = -3;
-	}
-
 	@OriginalMember(owner = "client!ne", name = "b", descriptor = "(IIIII)V")
 	public static void method4016(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		if (Static93.anInt1951 == 1) {
-			Static288.aClass13Array21[Static313.anInt5878 / 100].method6385(Static320.anInt6005 - 8, Static291.anInt5504 + -8);
+		if (Cross.type == 1) {
+			Static288.aClass13Array21[Cross.ms / 100].method6385(Static320.anInt6005 - 8, Static291.anInt5504 + -8);
 		}
-		if (Static93.anInt1951 == 2) {
-			Static288.aClass13Array21[Static313.anInt5878 / 100 + 4].method6385(Static320.anInt6005 - 8, Static291.anInt5504 - 8);
+		if (Cross.type == 2) {
+			Static288.aClass13Array21[Cross.ms / 100 + 4].method6385(Static320.anInt6005 - 8, Static291.anInt5504 - 8);
 		}
 		Static290.method5025();
 	}

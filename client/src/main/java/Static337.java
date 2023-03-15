@@ -7,14 +7,8 @@ public final class Static337 {
 	@OriginalMember(owner = "client!tk", name = "e", descriptor = "Lclient!jd;")
 	public static Sprite aClass13_17;
 
-	@OriginalMember(owner = "client!tk", name = "f", descriptor = "Lclient!kp;")
-	public static MouseWheel aClass131_1;
-
 	@OriginalMember(owner = "client!tk", name = "g", descriptor = "I")
 	public static int anInt6317;
-
-	@OriginalMember(owner = "client!tk", name = "b", descriptor = "Lclient!ld;")
-	public static LinkedList aClass135_37 = new LinkedList();
 
 	@OriginalMember(owner = "client!tk", name = "a", descriptor = "(IILclient!jc;III)V")
 	public static void method5706(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class2_Sub19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
@@ -84,7 +78,7 @@ public final class Static337 {
 
 	@OriginalMember(owner = "client!tk", name = "b", descriptor = "(I)V")
 	public static void method5709() {
-		Static371.method6257((long) client.cycle, Rasteriser.textureProvider);
+		Static371.method6257((long) client.cycle, Rasteriser.instance);
 		if (Static139.anInt2595 != -1) {
 			Static232.method4028(Static139.anInt2595);
 		}
@@ -96,15 +90,15 @@ public final class Static337 {
 			Static357.aBooleanArray59[local19] = false;
 		}
 		Static132.anInt2468 = client.cycle;
-		if (Rasteriser.textureProvider.method2871()) {
+		if (Rasteriser.instance.method2871()) {
 			Static106.aBoolean164 = true;
 		}
 		if (Static139.anInt2595 != -1) {
 			Static154.anInt2806 = 0;
 			Static46.method1421();
 		}
-		Rasteriser.textureProvider.method2898();
+		Rasteriser.instance.method2898();
 		Static307.method5255(Minimap.anInt7263);
-		Static165.anInt3148 = 0;
+		client.sceneDelta = 0;
 	}
 }

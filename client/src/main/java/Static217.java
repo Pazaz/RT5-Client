@@ -4,16 +4,13 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static217 {
 
-	@OriginalMember(owner = "client!mn", name = "B", descriptor = "I")
-	public static int anInt3818 = 0;
-
 	@OriginalMember(owner = "client!mn", name = "a", descriptor = "(II)V")
 	public static void method3795(@OriginalArg(1) int arg0) {
 		if (arg0 == Static31.anInt752) {
 			return;
 		}
 		Static373.anInt7033 = Static242.anInt4449 = Static353.anIntArray449[arg0];
-		Rasteriser.textureProvider.method2872(50, (int) ((double) Static373.anInt7033 * 34.46D));
+		Rasteriser.instance.method2872(50, (int) ((double) Static373.anInt7033 * 34.46D));
 		Static301.anIntArrayArray50 = new int[Static373.anInt7033][Static242.anInt4449];
 		Static319.anIntArrayArray51 = new int[Static373.anInt7033][Static242.anInt4449];
 		Static310.anIntArrayArrayArray12 = new int[4][Static373.anInt7033 >> 3][Static242.anInt4449 >> 3];
@@ -22,7 +19,7 @@ public final class Static217 {
 		}
 		Static230.aByteArrayArrayArray13 = new byte[4][Static373.anInt7033][Static242.anInt4449];
 		Static236.method4104(Static373.anInt7033, Static242.anInt4449);
-		Static190.method3500(Static242.anInt4449 >> 3, Static373.anInt7033 >> 3, Rasteriser.textureProvider);
+		Static190.method3500(Static242.anInt4449 >> 3, Static373.anInt7033 >> 3, Rasteriser.instance);
 		Static31.anInt752 = arg0;
 	}
 

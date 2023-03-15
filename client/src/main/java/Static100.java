@@ -7,9 +7,6 @@ public final class Static100 {
 	@OriginalMember(owner = "client!fn", name = "s", descriptor = "I")
 	public static int anInt2111 = -1;
 
-	@OriginalMember(owner = "client!fn", name = "D", descriptor = "Z")
-	public static boolean aBoolean156 = true;
-
 	@OriginalMember(owner = "client!fn", name = "a", descriptor = "(IIILclient!mr;I)V")
 	public static void method2160(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) PathingEntity arg3) {
 		@Pc(16) BasType local16 = arg3.method4332();

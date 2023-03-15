@@ -50,7 +50,7 @@ public final class Class28 {
 
 	@OriginalMember(owner = "client!bp", name = "a", descriptor = "(I)V")
 	public void method945() {
-		this.anInt738 = TextureProvider.anIntArray177[this.anInt736 << 3];
+		this.anInt738 = RasteriserBase.anIntArray177[this.anInt736 << 3];
 		this.anInt740 = (int) Math.sqrt((double) (this.anInt748 * this.anInt748 + this.anInt754 * this.anInt754 + this.anInt741 * this.anInt741));
 		if (this.anInt750 == 0) {
 			this.anInt750 = 1;

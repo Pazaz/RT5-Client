@@ -11,7 +11,7 @@ public final class Static282 {
 	public static final LocalizedString aClass79_112 = new LocalizedString(" has logged in.", " loggt sich ein.", " s'est connecté.", " entrou no jogo.");
 
 	@OriginalMember(owner = "client!qg", name = "a", descriptor = "(IIILclient!wm;IIBII)V")
-	public static void method4874(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
+	public static void method4874(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) RasteriserBase arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {
 		@Pc(11) Interface6 local11 = (Interface6) Static12.method283(arg6, arg4, arg7);
 		@Pc(25) LocType local25;
 		@Pc(33) int local33;

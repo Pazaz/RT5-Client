@@ -65,7 +65,7 @@ public final class Class226 implements Interface11 {
 	}
 
 	@OriginalMember(owner = "client!ts", name = "a", descriptor = "(IZ)I")
-	public int method5783(@OriginalArg(1) boolean arg0) {
+	public int poll(@OriginalArg(1) boolean arg0) {
 		@Pc(13) long local13 = MonotonicClock.currentTimeMillis();
 		for (@Pc(27) Class2_Sub35 local27 = arg0 ? (Class2_Sub35) this.aClass4_132.head() : (Class2_Sub35) this.aClass4_132.next(); local27 != null; local27 = (Class2_Sub35) this.aClass4_132.next()) {
 			if (local13 > (local27.aLong183 & 0x3FFFFFFFFFFFFFFFL)) {

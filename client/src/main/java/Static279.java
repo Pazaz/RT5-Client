@@ -11,7 +11,7 @@ public final class Static279 {
 	public static int anInt5161 = 13156520;
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(ILclient!wm;)V")
-	public static void method4725(@OriginalArg(1) TextureProvider arg0) {
+	public static void method4725(@OriginalArg(1) RasteriserBase arg0) {
 		arg0.method2895(0, 0, GameShell.canvasWidth, 350);
 		arg0.method2901(0, 0, GameShell.canvasWidth, 350, Static214.anInt3793 << 24 | 0x332277, 1);
 		@Pc(37) int local37;
@@ -19,7 +19,7 @@ public final class Static279 {
 		for (@Pc(29) int local29 = 0; local29 < 100; local29++) {
 			local37 = Static121.anIntArray157[local29] >> 4;
 			local43 = Static121.anIntArray156[local29] >> 4;
-			@Pc(60) int local60 = local37 + (TextureProvider.anIntArray178[(local43 + (local37 & 0x40)) * 64 & 0x3FFF] >> 10);
+			@Pc(60) int local60 = local37 + (RasteriserBase.anIntArray178[(local43 + (local37 & 0x40)) * 64 & 0x3FFF] >> 10);
 			arg0.method2901(local60, local43, 2, 2, Static353.anIntArray450[local29] << 24 | 0xFFFFFF, 1);
 		}
 		local37 = 350 / Static78.anInt6309;

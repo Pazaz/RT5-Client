@@ -18,7 +18,7 @@ public final class Static17 {
 	public static void method4208(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(8) DelayedStateChange local8 = Static316.method5413(7, arg0);
 		local8.method2311();
-		local8.anInt2289 = arg1;
+		local8.intArg1 = arg1;
 	}
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "([Ljava/lang/Object;B[III)V")

@@ -138,10 +138,10 @@ public final class Static181 {
 	}
 
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "([Lclient!nk;II)V")
-	public static void method3378(@OriginalArg(0) Class161[] arg0, @OriginalArg(1) int arg1) {
+	public static void method3378(@OriginalArg(0) Component[] arg0, @OriginalArg(1) int arg1) {
 		for (@Pc(7) int local7 = 0; local7 < arg0.length; local7++) {
-			@Pc(13) Class161 local13 = arg0[local7];
-			if (local13 != null && arg1 == local13.anInt4275 && !Static45.method1403(local13)) {
+			@Pc(13) Component local13 = arg0[local7];
+			if (local13 != null && arg1 == local13.overlayer && !Static45.method1403(local13)) {
 				if (local13.type == 0) {
 					method3378(arg0, local13.id);
 					if (local13.activeComponents != null) {
@@ -155,7 +155,7 @@ public final class Static181 {
 				if (local13.type == 6 && local13.modelSeqId != -1) {
 					@Pc(71) Class157 local71 = client.SeqTypes.method2371(local13.modelSeqId);
 					if (local71 != null) {
-						local13.anInt4283 += Static165.anInt3148;
+						local13.anInt4283 += client.sceneDelta;
 						while (local71.anIntArray261[local13.anInt4247] < local13.anInt4283) {
 							local13.anInt4283 -= local71.anIntArray261[local13.anInt4247];
 							local13.anInt4247++;

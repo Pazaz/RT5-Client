@@ -175,7 +175,7 @@ public final class NpcType {
 	public int anInt2050 = -1;
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Lclient!ak;ILclient!nb;Lclient!wm;Lclient!gp;IIILclient!nb;I[Lclient!bg;IBLclient!wl;I)Lclient!gn;")
-	public Model getBodyModel(@OriginalArg(0) BasTypeList arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class157 arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) SeqTypeList arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Class157 arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Class20[] arg10, @OriginalArg(11) int arg11, @OriginalArg(13) Interface11 arg12, @OriginalArg(14) int arg13) {
+	public Model getBodyModel(@OriginalArg(0) BasTypeList arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class157 arg2, @OriginalArg(3) RasteriserBase arg3, @OriginalArg(4) SeqTypeList arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Class157 arg8, @OriginalArg(9) int arg9, @OriginalArg(10) Class20[] arg10, @OriginalArg(11) int arg11, @OriginalArg(13) Interface11 arg12, @OriginalArg(14) int arg13) {
 		if (this.multiNpcs != null) {
 			@Pc(13) NpcType local13 = this.getMultiNpc(arg12);
 			return local13 == null ? null : local13.getBodyModel(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
@@ -373,12 +373,12 @@ public final class NpcType {
 								local805[14] = -local756;
 								local805[13] = -local749;
 							} else {
-								@Pc(821) int local821 = TextureProvider.anIntArray177[local765];
-								@Pc(825) int local825 = TextureProvider.anIntArray178[local765];
-								@Pc(829) int local829 = TextureProvider.anIntArray177[local774];
-								@Pc(833) int local833 = TextureProvider.anIntArray178[local774];
-								@Pc(837) int local837 = TextureProvider.anIntArray177[local783];
-								@Pc(841) int local841 = TextureProvider.anIntArray178[local783];
+								@Pc(821) int local821 = RasteriserBase.anIntArray177[local765];
+								@Pc(825) int local825 = RasteriserBase.anIntArray178[local765];
+								@Pc(829) int local829 = RasteriserBase.anIntArray177[local774];
+								@Pc(833) int local833 = RasteriserBase.anIntArray178[local774];
+								@Pc(837) int local837 = RasteriserBase.anIntArray177[local783];
+								@Pc(841) int local841 = RasteriserBase.anIntArray178[local783];
 								@Pc(849) int local849 = local825 * local837 + 16384 >> 15;
 								@Pc(857) int local857 = local841 * local825 + 16384 >> 15;
 								local805[5] = -local825;
@@ -473,7 +473,7 @@ public final class NpcType {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(IIIILclient!wm;Lclient!nb;ZLclient!wl;Lclient!gp;)Lclient!gn;")
-	public Model method2088(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) TextureProvider arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(7) Interface11 arg5, @OriginalArg(8) SeqTypeList arg6) {
+	public Model method2088(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) RasteriserBase arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(7) Interface11 arg5, @OriginalArg(8) SeqTypeList arg6) {
 		if (this.multiNpcs != null) {
 			@Pc(13) NpcType local13 = this.getMultiNpc(arg5);
 			return local13 == null ? null : local13.method2088(arg0, arg1, arg2, arg3, arg4, arg5, arg6);

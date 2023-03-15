@@ -128,7 +128,7 @@ public final class MapList {
 	private static final byte[] aByteArray85 = new byte[1];
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;IIIIIII[S[BZ)V")
-	private static void method5509(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) short[] arg8, @OriginalArg(9) byte[] arg9, @OriginalArg(10) boolean arg10) {
+	private static void method5509(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) short[] arg8, @OriginalArg(9) byte[] arg9, @OriginalArg(10) boolean arg10) {
 		@Pc(20) int local20;
 		@Pc(32) int local32;
 		if (arg10 || arg5 != 0 || arg6 > 0) {
@@ -222,7 +222,7 @@ public final class MapList {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;Lclient!bt;IIII[I[I)V")
-	private static void method5510(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6, @OriginalArg(7) int[] arg7) {
+	private static void method5510(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6, @OriginalArg(7) int[] arg7) {
 		@Pc(3) int local3 = arg1.g1();
 		if ((local3 & 0x1) == 0) {
 			@Pc(15) boolean local15 = (local3 & 0x2) == 0;
@@ -407,7 +407,7 @@ public final class MapList {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;IIII)Lclient!ld;")
-	private static LinkedList method5517(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	private static LinkedList method5517(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		for (@Pc(4) Class2_Sub20 local4 = (Class2_Sub20) aClass135_36.head(); local4 != null; local4 = (Class2_Sub20) aClass135_36.next()) {
 			method5529(arg0, local4, arg1, arg2);
 		}
@@ -518,7 +518,7 @@ public final class MapList {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;II)V")
-	public static void method5521(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static void method5521(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(9) Buffer local9 = new Buffer(aClass197_85.fetchFile(aClass2_Sub2_Sub17_3.aString67, "area"));
 		@Pc(13) int local13 = local9.g1();
 		@Pc(16) int[] local16 = new int[local13];
@@ -601,7 +601,7 @@ public final class MapList {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;)V")
-	public static void method5522(@OriginalArg(0) TextureProvider arg0) {
+	public static void method5522(@OriginalArg(0) RasteriserBase arg0) {
 		@Pc(3) int local3 = anInt6054 - anInt6058;
 		@Pc(7) int local7 = anInt6060 - anInt6059;
 		@Pc(15) int local15 = (anInt6051 - anInt6050 << 16) / local3;
@@ -610,7 +610,7 @@ public final class MapList {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(Lclient!wm;)Lclient!ld;")
-	public static LinkedList method5524(@OriginalArg(0) TextureProvider arg0) {
+	public static LinkedList method5524(@OriginalArg(0) RasteriserBase arg0) {
 		@Pc(3) int local3 = anInt6054 - anInt6058;
 		@Pc(7) int local7 = anInt6060 - anInt6059;
 		@Pc(15) int local15 = (anInt6051 - anInt6050 << 16) / local3;
@@ -619,7 +619,7 @@ public final class MapList {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(Lclient!wm;IIII)V")
-	private static void method5525(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	private static void method5525(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(3) int local3 = anInt6054 - anInt6058;
 		@Pc(7) int local7 = anInt6060 - anInt6059;
 		if (anInt6054 < anInt6056) {
@@ -807,7 +807,7 @@ public final class MapList {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;IIII[S[B)V")
-	private static void method5526(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) short[] arg5, @OriginalArg(6) byte[] arg6) {
+	private static void method5526(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) short[] arg5, @OriginalArg(6) byte[] arg6) {
 		if (arg5 == null) {
 			return;
 		}
@@ -861,7 +861,7 @@ public final class MapList {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;Lclient!jg;IIII)V")
-	private static void method5529(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Class2_Sub20 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	private static void method5529(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) Class2_Sub20 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		arg1.anInt2948 = anInt6050 + (arg2 * (arg1.anInt2949 - anInt6058) >> 16);
 		arg1.anInt2944 = anInt6061 - (arg3 * (arg1.anInt2952 - anInt6059) >> 16);
 	}

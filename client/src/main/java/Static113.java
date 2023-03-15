@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static113 {
 
 	@OriginalMember(owner = "client!gl", name = "v", descriptor = "[[Lclient!nk;")
-	public static Class161[][] aClass161ArrayArray2;
+	public static Component[][] aClass161ArrayArray2;
 
 	@OriginalMember(owner = "client!gl", name = "x", descriptor = "I")
 	public static int anInt2337;

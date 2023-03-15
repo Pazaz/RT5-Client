@@ -17,7 +17,7 @@ public final class Static190 {
 	public static final String[] aStringArray28 = new String[100];
 
 	@OriginalMember(owner = "client!kt", name = "a", descriptor = "(IIILclient!wm;)V")
-	public static void method3500(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) TextureProvider arg2) {
+	public static void method3500(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) RasteriserBase arg2) {
 		Static65.aClass19_3 = arg2;
 		Static332.aClass21ArrayArray3 = new Environment[arg1][arg0];
 		if (Static209.anIntArray228 != null) {
@@ -31,9 +31,9 @@ public final class Static190 {
 	public static void method3501(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(12) DelayedStateChange local12 = Static316.method5413(4, arg3);
 		local12.method2311();
-		local12.anInt2290 = arg0;
-		local12.anInt2284 = arg1;
-		local12.anInt2289 = arg2;
+		local12.intArg3 = arg0;
+		local12.intArg2 = arg1;
+		local12.intArg1 = arg2;
 	}
 
 }

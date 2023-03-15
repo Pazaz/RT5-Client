@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!rp")
-public final class Class2_Sub24_Sub1 extends Class2_Sub24 {
+public final class JavaMouseRecorder extends MouseRecorder {
 
 	@OriginalMember(owner = "client!rp", name = "D", descriptor = "J")
 	public long aLong175;
@@ -24,19 +24,19 @@ public final class Class2_Sub24_Sub1 extends Class2_Sub24 {
 
 	@OriginalMember(owner = "client!rp", name = "b", descriptor = "(B)I")
 	@Override
-	public int method5242() {
+	public int getX() {
 		return this.anInt5766;
 	}
 
 	@OriginalMember(owner = "client!rp", name = "b", descriptor = "(I)I")
 	@Override
-	public int method5243() {
+	public int getY() {
 		return this.anInt5770;
 	}
 
 	@OriginalMember(owner = "client!rp", name = "c", descriptor = "(B)J")
 	@Override
-	public long method5248() {
+	public long getTime() {
 		return this.aLong175;
 	}
 }

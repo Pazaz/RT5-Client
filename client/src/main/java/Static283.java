@@ -11,9 +11,6 @@ public final class Static283 {
 	@OriginalMember(owner = "client!qh", name = "b", descriptor = "Z")
 	public static boolean aBoolean383;
 
-	@OriginalMember(owner = "client!qh", name = "c", descriptor = "I")
-	public static int gregorianDateSeed;
-
 	@OriginalMember(owner = "client!qh", name = "f", descriptor = "Lclient!r;")
 	public static Js5 aClass197_68;
 
@@ -24,8 +21,8 @@ public final class Static283 {
 	public static void method4875(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(16) DelayedStateChange local16 = Static316.method5413(15, 0);
 		local16.method2311();
-		local16.anInt2290 = arg1;
-		local16.anInt2289 = arg0;
+		local16.intArg3 = arg1;
+		local16.intArg1 = arg0;
 	}
 
 	@OriginalMember(owner = "client!qh", name = "a", descriptor = "(Lclient!ml;Ljava/lang/Object;I)V")

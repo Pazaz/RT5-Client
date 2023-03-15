@@ -24,7 +24,7 @@ public final class Static286 {
 	}
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(Lclient!jg;ILclient!wm;Lclient!np;BI)Z")
-	public static boolean method4923(@OriginalArg(0) Class2_Sub20 arg0, @OriginalArg(2) TextureProvider arg1, @OriginalArg(3) MelType arg2) {
+	public static boolean method4923(@OriginalArg(0) Class2_Sub20 arg0, @OriginalArg(2) RasteriserBase arg1, @OriginalArg(3) MelType arg2) {
 		@Pc(24) int local24 = Integer.MAX_VALUE;
 		@Pc(26) int local26 = Integer.MIN_VALUE;
 		@Pc(28) int local28 = Integer.MAX_VALUE;

@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static227 {
 
-	@OriginalMember(owner = "client!nb", name = "C", descriptor = "Lclient!nk;")
-	public static Class161 aClass161_11;
-
 	@OriginalMember(owner = "client!nb", name = "B", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_90 = new LocalizedString("Loading interfaces - ", "Lade Benutzeroberfläche - ", "Chargement des interfaces - ", "Carregando interfaces - ");
 

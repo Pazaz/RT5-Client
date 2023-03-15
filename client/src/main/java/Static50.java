@@ -51,10 +51,10 @@ public final class Static50 {
 		}
 		Static348.method5828();
 		if (Static136.anInt6778 == 0 || Static211.anInt3777 == 0) {
-			Static336.method5705(10);
+			client.setGameState(10);
 		} else {
 			Static262.method6254();
-			Static336.method5705(28);
+			client.setGameState(28);
 		}
 	}
 

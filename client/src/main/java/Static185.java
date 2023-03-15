@@ -66,15 +66,15 @@ public final class Static185 {
 
 	@OriginalMember(owner = "client!kn", name = "a", descriptor = "(IIIIBII)V")
 	public static void method3400(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
-		@Pc(8) Class161 local8 = InterfaceList.method3705(arg2, arg3);
+		@Pc(8) Component local8 = InterfaceList.method3705(arg2, arg3);
 		if (local8 == null) {
 			return;
 		}
 		if (local8.anObjectArray15 != null) {
-			@Pc(18) Class2_Sub13 local18 = new Class2_Sub13();
-			local18.aClass161_3 = local8;
+			@Pc(18) HookRequest local18 = new HookRequest();
+			local18.source = local8;
 			local18.anObjectArray4 = local8.anObjectArray15;
-			ScriptRunner.method3591(local18);
+			ScriptRunner.execute(local18);
 		}
 		Static196.anInt3317 = local8.objId;
 		Static107.anInt2219 = arg4;

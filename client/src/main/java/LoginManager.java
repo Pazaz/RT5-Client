@@ -70,6 +70,10 @@ public class LoginManager {
 	public static int anInt7118;
 	@OriginalMember(owner = "client!is", name = "d", descriptor = "I")
 	public static int anInt2803 = 0;
+	@OriginalMember(owner = "client!fo", name = "g", descriptor = "Z")
+	public static boolean aBoolean158 = false;
+	@OriginalMember(owner = "client!pg", name = "N", descriptor = "I")
+	public static int anInt4955 = 0;
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(B)V")
 	public static void mainLogic() {
@@ -285,7 +289,7 @@ public class LoginManager {
 						try {
 							BrowserControl.call(GameShell.signlink.applet, "zap");
 						} catch (@Pc(896) Throwable ex) {
-							if (Static132.aBoolean180) {
+							if (client.showAdvert) {
 								try {
 									GameShell.signlink.applet.getAppletContext().showDocument(new URL(GameShell.signlink.applet.getCodeBase(), "blank.ws"), "tbi");
 								} catch (@Pc(912) Exception ignored) {
@@ -298,7 +302,7 @@ public class LoginManager {
 						} catch (@Pc(922) Throwable ignored) {
 						}
 					}
-					if (client.MODE_WHERE_LIVE == client.modeWhere) {
+					if (ModeWhere.MODE_WHERE_LIVE == client.modeWhere) {
 						try {
 							BrowserControl.call(GameShell.signlink.applet, "loggedin");
 						} catch (@Pc(934) Throwable ignored) {
@@ -498,7 +502,7 @@ public class LoginManager {
 					anInt2803 = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
-					Static230.method4014();
+					clear();
 				}
 			}
 		} catch (@Pc(208) IOException local208) {
@@ -535,7 +539,7 @@ public class LoginManager {
 		}
 		Static241.method4192(false);
 		System.gc();
-		Static174.method1507();
+		MidiPlayer.playFadeOut();
 		MidiPlayer.jingle = false;
 		MusicPlayer.groupId = -1;
 		Static239.method4152(true);
@@ -558,7 +562,7 @@ public class LoginManager {
 		Static120.aClass4_49.clear();
 		Camera.resetCameraEffects();
 		Protocol.verifyId = 0;
-		Static214.aClass226_1.method5781();
+		VarpDomain.instance.method5781();
 		Static114.method2362();
 		Static360.method5646();
 		Static50.method1525(true);
@@ -659,10 +663,10 @@ public class LoginManager {
 		if (Static246.anInt4505 != 0) {
 			Static351.method5857(Static276.aClass130_4, true, Static256.aClass79_102.getLocalized(client.language) + "<br>(100%)");
 		}
-		Static37.method1135();
+		client.audioLogic();
 		Static211.method3721();
 		@Pc(375) boolean local375 = false;
-		if (Rasteriser.textureProvider.method2805() && client.preferences.highWaterDetail) {
+		if (Rasteriser.instance.method2805() && client.preferences.highWaterDetail) {
 			for (local268 = 0; local268 < Static106.aByteArrayArray6.length; local268++) {
 				if (Static270.aByteArrayArray15[local268] != null || Static232.aByteArrayArray9[local268] != null) {
 					local375 = true;
@@ -675,17 +679,17 @@ public class LoginManager {
 		} else {
 			local268 = Static59.anIntArray106[Static31.anInt752];
 		}
-		if (Rasteriser.textureProvider.method2888()) {
+		if (Rasteriser.instance.method2888()) {
 			local268++;
 		}
-		Scene.method1381(Static373.anInt7033, Static242.anInt4449, local268, local375, Rasteriser.textureProvider.method2886() > 0);
+		Scene.method1381(Static373.anInt7033, Static242.anInt4449, local268, local375, Rasteriser.instance.method2886() > 0);
 		for (local279 = 0; local279 < 4; local279++) {
 			Static171.aClass46Array1[local279].method1626();
 		}
 		Static285.method4887();
 		Static239.method4152(false);
 		Static20.method560();
-		Static37.method1135();
+		client.audioLogic();
 		System.gc();
 		Protocol.method2973(true);
 		Static375.method6281();
@@ -717,10 +721,10 @@ public class LoginManager {
 				Protocol.method2973(true);
 			}
 			Static7.aClass29_Sub1_120.method1097(Static190.aClass29_Sub1_63.levelHeightmap[0]);
-			Static7.aClass29_Sub1_120.method1085(null, null, Rasteriser.textureProvider);
+			Static7.aClass29_Sub1_120.method1085(null, null, Rasteriser.instance);
 			Scene.method5767(false);
 		}
-		Static190.aClass29_Sub1_63.method1085(local375 ? Static7.aClass29_Sub1_120.levelHeightmap : null, Static171.aClass46Array1, Rasteriser.textureProvider);
+		Static190.aClass29_Sub1_63.method1085(local375 ? Static7.aClass29_Sub1_120.levelHeightmap : null, Static171.aClass46Array1, Rasteriser.instance);
 		if (!Static220.aBoolean252) {
 			Protocol.method2973(true);
 			Static170.method3231(Static190.aClass29_Sub1_63, Static82.aByteArrayArray5);
@@ -734,8 +738,8 @@ public class LoginManager {
 		}
 		Static211.method3721();
 		Protocol.method2973(true);
-		Static190.aClass29_Sub1_63.method1093(local375 ? Scene.aClass6Array2[0] : null, Rasteriser.textureProvider, null);
-		Static190.aClass29_Sub1_63.method1104(Rasteriser.textureProvider);
+		Static190.aClass29_Sub1_63.method1093(local375 ? Scene.aClass6Array2[0] : null, Rasteriser.instance, null);
+		Static190.aClass29_Sub1_63.method1104(Rasteriser.instance);
 		Protocol.method2973(true);
 		if (local375) {
 			Scene.method5767(true);
@@ -748,8 +752,8 @@ public class LoginManager {
 			}
 			Static211.method3721();
 			Protocol.method2973(true);
-			Static7.aClass29_Sub1_120.method1093(null, Rasteriser.textureProvider, Scene.aClass6Array3[0]);
-			Static7.aClass29_Sub1_120.method1104(Rasteriser.textureProvider);
+			Static7.aClass29_Sub1_120.method1093(null, Rasteriser.instance, Scene.aClass6Array3[0]);
+			Static7.aClass29_Sub1_120.method1104(Rasteriser.instance);
 			Protocol.method2973(true);
 			Scene.method5767(false);
 		}
@@ -776,7 +780,7 @@ public class LoginManager {
 			}
 		}
 		Static226.method3982();
-		Static37.method1135();
+		client.audioLogic();
 		Static144.method2690();
 		Static211.method3721();
 		Static3.aBoolean5 = false;
@@ -800,15 +804,15 @@ public class LoginManager {
 			}
 		}
 		if (client.gameState == 28) {
-			Static336.method5705(10);
+			client.setGameState(10);
 		} else {
-			Static336.method5705(30);
+			client.setGameState(30);
 			if (Protocol.socket != null) {
 				Protocol.writeOpcode(ClientProt.MAP_BUILD_COMPLETE);
 			}
 		}
 		Static253.method4369();
-		Static37.method1135();
+		client.audioLogic();
 		GameShell.resetTimer();
 	}
 
@@ -838,7 +842,7 @@ public class LoginManager {
 			Protocol.outboundBuffer.p2(578);
 			Protocol.outboundBuffer.pdata(encrypted.data, encrypted.pos);
 		} else {
-			Static230.method4014();
+			clear();
 		}
 	}
 
@@ -859,6 +863,17 @@ public class LoginManager {
 		if (loginStep == 5) {
 			loginStep = 6;
 		}
+	}
+
+	@OriginalMember(owner = "client!ne", name = "c", descriptor = "(I)V")
+	public static void clear() {
+		loops = 0;
+		aBoolean158 = false;
+		disallowResult = -1;
+		errors = 0;
+		loginStep = 1;
+		hopTime = 0;
+		loginResult = -3;
 	}
 
 }

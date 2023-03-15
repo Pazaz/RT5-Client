@@ -13,7 +13,7 @@ public final class Static49 {
 	}
 
 	@OriginalMember(owner = "client!cr", name = "a", descriptor = "(BLclient!wm;I)Z")
-	public static boolean method1472(@OriginalArg(1) TextureProvider arg0, @OriginalArg(2) int arg1) {
+	public static boolean method1472(@OriginalArg(1) RasteriserBase arg0, @OriginalArg(2) int arg1) {
 		@Pc(11) int local11 = (Static373.anInt7033 - 104) / 2;
 		@Pc(17) int local17 = (Static242.anInt4449 - 104) / 2;
 		@Pc(19) boolean local19 = true;

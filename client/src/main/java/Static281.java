@@ -18,12 +18,12 @@ public final class Static281 {
 		if (Static26.aClass161ArrayArray1[local13] == null || Static26.aClass161ArrayArray1[local13][local17] == null) {
 			return false;
 		}
-		@Pc(35) Class161 local35 = Static26.aClass161ArrayArray1[local13][local17];
+		@Pc(35) Component local35 = Static26.aClass161ArrayArray1[local13][local17];
 		@Pc(51) Class2_Sub5 local51;
 		if (arg0 == -1 && local35.type == 0) {
 			for (local51 = (Class2_Sub5) Static129.aClass135_19.head(); local51 != null; local51 = (Class2_Sub5) Static129.aClass135_19.next()) {
 				if (local51.anInt1005 == 11 || local51.anInt1005 == 1011 || local51.anInt1005 == 49 || local51.anInt1005 == 45 || local51.anInt1005 == 30) {
-					for (@Pc(133) Class161 local133 = InterfaceList.getComponent(local51.anInt1009); local133 != null; local133 = Static7.method6465(local133)) {
+					for (@Pc(133) Component local133 = InterfaceList.getComponent(local51.anInt1009); local133 != null; local133 = Static7.method6465(local133)) {
 						if (local35.id == local133.id) {
 							return true;
 						}

@@ -26,7 +26,7 @@ public final class Static120 {
 	public static void method2381(@OriginalArg(0) byte[][] arg0, @OriginalArg(2) SceneBuilder arg1) {
 		@Pc(16) int[] local16 = new int[] { -1, 0, 0, 0, 0 };
 		for (@Pc(18) int local18 = 0; local18 < arg1.anInt912; local18++) {
-			Static37.method1135();
+			client.audioLogic();
 			for (@Pc(24) int local24 = 0; local24 < Static373.anInt7033 >> 3; local24++) {
 				for (@Pc(28) int local28 = 0; local28 < Static242.anInt4449 >> 3; local28++) {
 					@Pc(32) boolean local32 = false;
@@ -42,7 +42,7 @@ public final class Static120 {
 								if (Static291.mapSquares[local85] == local83 && arg0[local85] != null) {
 									@Pc(107) Buffer local107 = new Buffer(arg0[local85]);
 									arg1.method1091(local24 * 8, local73, local107, Static171.aClass46Array1, local67, local28 * 8, local61, local50, local18);
-									arg1.method1101(local107, local28 * 8, local18, local50, local73, local67, Rasteriser.textureProvider, local16[0] == -1 ? local16 : null, local24 * 8, local61);
+									arg1.method1101(local107, local28 * 8, local18, local50, local73, local67, Rasteriser.instance, local16[0] == -1 ? local16 : null, local24 * 8, local61);
 									local32 = true;
 									break;
 								}
@@ -67,7 +67,7 @@ public final class Static120 {
 	public static void method2383(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(13) DelayedStateChange local13 = Static316.method5413(12, arg1);
 		local13.method2311();
-		local13.anInt2289 = arg0;
+		local13.intArg1 = arg0;
 	}
 
 	@OriginalMember(owner = "client!gs", name = "a", descriptor = "(ILclient!bt;B)Ljava/lang/String;")

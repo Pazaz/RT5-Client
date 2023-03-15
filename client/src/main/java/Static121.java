@@ -33,6 +33,6 @@ public final class Static121 {
 			Static296.aFloat68 += (-Static296.aFloat68 - 12.0F) / 2.0F;
 		}
 		Static140.aBoolean187 = true;
-		Static100.aBoolean156 = true;
+		Camera.aBoolean156 = true;
 	}
 }

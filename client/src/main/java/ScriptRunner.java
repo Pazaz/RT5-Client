@@ -66,10 +66,10 @@ public final class ScriptRunner {
 	private static QuickChatPhrase activePhrase;
 
 	@OriginalMember(owner = "client!lk", name = "v", descriptor = "Lclient!nk;")
-	private static Class161 staticActiveComponent2;
+	private static Component staticActiveComponent2;
 
 	@OriginalMember(owner = "client!lk", name = "w", descriptor = "Lclient!nk;")
-	private static Class161 staticActiveComponent1;
+	private static Component staticActiveComponent1;
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "I")
 	private static int isp = 0;
@@ -109,16 +109,16 @@ public final class ScriptRunner {
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(I)V")
 	private static void method3590(@OriginalArg(0) int arg0) {
-		@Pc(3) Class161 local3 = InterfaceList.getComponent(arg0);
+		@Pc(3) Component local3 = InterfaceList.getComponent(arg0);
 		if (local3 == null) {
 			return;
 		}
 		@Pc(9) int local9 = arg0 >>> 16;
-		@Pc(13) Class161[] local13 = Static113.aClass161ArrayArray2[local9];
+		@Pc(13) Component[] local13 = Static113.aClass161ArrayArray2[local9];
 		if (local13 == null) {
-			@Pc(19) Class161[] local19 = Static26.aClass161ArrayArray1[local9];
+			@Pc(19) Component[] local19 = Static26.aClass161ArrayArray1[local9];
 			@Pc(22) int local22 = local19.length;
-			local13 = Static113.aClass161ArrayArray2[local9] = new Class161[local22];
+			local13 = Static113.aClass161ArrayArray2[local9] = new Component[local22];
 			Static404.method4609(local19, 0, local13, 0, local19.length);
 		}
 		@Pc(38) int local38;
@@ -132,12 +132,12 @@ public final class ScriptRunner {
 	}
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(Lclient!fn;)V")
-	public static void method3591(@OriginalArg(0) Class2_Sub13 arg0) {
+	public static void execute(@OriginalArg(0) HookRequest arg0) {
 		method3593(arg0, 200000);
 	}
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(Lclient!fn;I)V")
-	private static void method3593(@OriginalArg(0) Class2_Sub13 arg0, @OriginalArg(1) int arg1) {
+	private static void method3593(@OriginalArg(0) HookRequest arg0, @OriginalArg(1) int arg1) {
 		@Pc(2) Object[] local2 = arg0.anObjectArray4;
 		@Pc(8) int local8 = (Integer) local2[0];
 		@Pc(12) Class2_Sub2_Sub11 local12 = Static295.method5100(local8);
@@ -158,13 +158,13 @@ public final class ScriptRunner {
 					local41 = arg0.anInt2117;
 				}
 				if (local41 == -2147483645) {
-					local41 = arg0.aClass161_3 == null ? -1 : arg0.aClass161_3.id;
+					local41 = arg0.source == null ? -1 : arg0.source.id;
 				}
 				if (local41 == -2147483644) {
 					local41 = arg0.anInt2118;
 				}
 				if (local41 == -2147483643) {
-					local41 = arg0.aClass161_3 == null ? -1 : arg0.aClass161_3.activeComponentId;
+					local41 = arg0.source == null ? -1 : arg0.source.activeComponentId;
 				}
 				if (local41 == -2147483642) {
 					local41 = arg0.aClass161_4 == null ? -1 : arg0.aClass161_4.id;
@@ -202,12 +202,12 @@ public final class ScriptRunner {
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(IZ)V")
 	private static void runScript5000(@OriginalArg(0) int opcode, @OriginalArg(1) boolean arg1) {
-		@Pc(137) Class161 local137;
+		@Pc(137) Component local137;
 		@Pc(25) int local25;
-		@Pc(35) Class161 local35;
+		@Pc(35) Component local35;
 		@Pc(56) int local56;
 		@Pc(19) int local19;
-		@Pc(210) Class161 local210;
+		@Pc(210) Component local210;
 		@Pc(13) int local13;
 		if (opcode < 300) {
 			if (opcode == 100) {
@@ -220,10 +220,10 @@ public final class ScriptRunner {
 				}
 				local35 = InterfaceList.getComponent(local13);
 				if (local35.activeComponents == null) {
-					local35.activeComponents = new Class161[local25 + 1];
+					local35.activeComponents = new Component[local25 + 1];
 				}
 				if (local35.activeComponents.length <= local25) {
-					@Pc(54) Class161[] local54 = new Class161[local25 + 1];
+					@Pc(54) Component[] local54 = new Component[local25 + 1];
 					for (local56 = 0; local56 < local35.activeComponents.length; local56++) {
 						local54[local56] = local35.activeComponents[local56];
 					}
@@ -232,9 +232,9 @@ public final class ScriptRunner {
 				if (local25 > 0 && local35.activeComponents[local25 - 1] == null) {
 					throw new RuntimeException("Gap at:" + (local25 - 1));
 				}
-				@Pc(99) Class161 local99 = new Class161();
+				@Pc(99) Component local99 = new Component();
 				local99.type = local19;
-				local99.anInt4275 = local99.id = local35.id;
+				local99.overlayer = local99.id = local35.id;
 				local99.activeComponentId = local25;
 				local35.activeComponents[local25] = local99;
 				if (arg1) {
@@ -245,7 +245,7 @@ public final class ScriptRunner {
 				InterfaceList.redraw(local35);
 				return;
 			}
-			@Pc(158) Class161 local158;
+			@Pc(158) Component local158;
 			if (opcode == 101) {
 				local137 = arg1 ? staticActiveComponent1 : staticActiveComponent2;
 				if (local137.activeComponentId == -1) {
@@ -860,11 +860,11 @@ public final class ScriptRunner {
 					if (opcode < 1600) {
 						local137 = arg1 ? staticActiveComponent1 : staticActiveComponent2;
 						if (opcode == 1500) {
-							intStack[isp++] = local137.anInt4305;
+							intStack[isp++] = local137.x;
 							return;
 						}
 						if (opcode == 1501) {
-							intStack[isp++] = local137.anInt4254;
+							intStack[isp++] = local137.y;
 							return;
 						}
 						if (opcode == 1502) {
@@ -880,7 +880,7 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 1505) {
-							intStack[isp++] = local137.anInt4275;
+							intStack[isp++] = local137.overlayer;
 							return;
 						}
 					} else if (opcode < 1700) {
@@ -982,11 +982,11 @@ public final class ScriptRunner {
 					} else if (opcode < 2600) {
 						local137 = InterfaceList.getComponent(intStack[--isp]);
 						if (opcode == 2500) {
-							intStack[isp++] = local137.anInt4305;
+							intStack[isp++] = local137.x;
 							return;
 						}
 						if (opcode == 2501) {
-							intStack[isp++] = local137.anInt4254;
+							intStack[isp++] = local137.y;
 							return;
 						}
 						if (opcode == 2502) {
@@ -1002,7 +1002,7 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 2505) {
-							intStack[isp++] = local137.anInt4275;
+							intStack[isp++] = local137.overlayer;
 							return;
 						}
 					} else if (opcode < 2700) {
@@ -2449,28 +2449,28 @@ public final class ScriptRunner {
 		if (local5.aClass16_4 == Static383.aClass16_9 || local5.aClass16_4 == Static309.aClass16_7 || local5.aClass16_4 == Static3.aClass16_1) {
 			@Pc(30) int local30 = 0;
 			@Pc(32) int local32 = 0;
-			if (Static227.aClass161_11 != null) {
-				local30 = Static227.aClass161_11.anInt4305;
-				local32 = Static227.aClass161_11.anInt4254;
+			if (WorldMap.aClass161_11 != null) {
+				local30 = WorldMap.aClass161_11.x;
+				local32 = WorldMap.aClass161_11.y;
 			}
-			anIntArray212[0] = Static226.aClass119_1.method3304() - local30;
-			anIntArray212[1] = Static226.aClass119_1.method3313() - local32;
+			anIntArray212[0] = Mouse.instance.method3304() - local30;
+			anIntArray212[1] = Mouse.instance.method3313() - local32;
 		}
 		method3600(local5, 200000);
 	}
 
 	@OriginalMember(owner = "client!lk", name = "c", descriptor = "(I)V")
 	private static void method3597(@OriginalArg(0) int arg0) {
-		@Pc(3) Class161 local3 = InterfaceList.getComponent(arg0);
+		@Pc(3) Component local3 = InterfaceList.getComponent(arg0);
 		if (local3 == null) {
 			return;
 		}
 		@Pc(9) int local9 = arg0 >>> 16;
-		@Pc(13) Class161[] local13 = Static113.aClass161ArrayArray2[local9];
+		@Pc(13) Component[] local13 = Static113.aClass161ArrayArray2[local9];
 		if (local13 == null) {
-			@Pc(19) Class161[] local19 = Static26.aClass161ArrayArray1[local9];
+			@Pc(19) Component[] local19 = Static26.aClass161ArrayArray1[local9];
 			@Pc(22) int local22 = local19.length;
-			local13 = Static113.aClass161ArrayArray2[local9] = new Class161[local22];
+			local13 = Static113.aClass161ArrayArray2[local9] = new Component[local22];
 			Static404.method4609(local19, 0, local13, 0, local19.length);
 		}
 		@Pc(38) int local38;
@@ -2488,12 +2488,12 @@ public final class ScriptRunner {
 		if (arg0 == -1 || !Static222.method3916(arg0)) {
 			return;
 		}
-		@Pc(12) Class161[] local12 = Static26.aClass161ArrayArray1[arg0];
+		@Pc(12) Component[] local12 = Static26.aClass161ArrayArray1[arg0];
 		for (@Pc(14) int local14 = 0; local14 < local12.length; local14++) {
-			@Pc(19) Class161 local19 = local12[local14];
+			@Pc(19) Component local19 = local12[local14];
 			if (local19.anObjectArray22 != null) {
-				@Pc(26) Class2_Sub13 local26 = new Class2_Sub13();
-				local26.aClass161_3 = local19;
+				@Pc(26) HookRequest local26 = new HookRequest();
+				local26.source = local19;
 				local26.anObjectArray4 = local19.anObjectArray22;
 				method3593(local26, 2000000);
 			}
@@ -3319,7 +3319,7 @@ public final class ScriptRunner {
 								System.exit(0);
 								return;
 							}
-							local75 = Static307.aString57 == null ? Static200.method3650() : Static307.aString57;
+							local75 = client.quitUrl == null ? Static200.method3650() : client.quitUrl;
 							Static280.method4765(local75, GameShell.signlink, Static77.anInt1762 == 1, false);
 							return;
 						}
@@ -3660,7 +3660,7 @@ public final class ScriptRunner {
 						}
 						if (arg0 == 6006) {
 							client.preferences.highDetailTextures = intStack[--isp] == 1;
-							Rasteriser.textureProvider.method2874(!client.preferences.highDetailTextures);
+							Rasteriser.instance.method2874(!client.preferences.highDetailTextures);
 							client.preferences.write(GameShell.signlink);
 							Preferences.sentToServer = false;
 							return;
@@ -3963,7 +3963,7 @@ public final class ScriptRunner {
 							return;
 						}
 						if (arg0 == 6121) {
-							intStack[isp++] = Rasteriser.textureProvider.method2894() ? 1 : 0;
+							intStack[isp++] = Rasteriser.instance.method2894() ? 1 : 0;
 							return;
 						}
 						if (arg0 == 6123) {
@@ -3979,7 +3979,7 @@ public final class ScriptRunner {
 							return;
 						}
 						if (arg0 == 6126) {
-							intStack[isp++] = Rasteriser.textureProvider.method2858() ? 1 : 0;
+							intStack[isp++] = Rasteriser.instance.method2858() ? 1 : 0;
 							return;
 						}
 						if (arg0 == 6127) {
@@ -4424,7 +4424,7 @@ public final class ScriptRunner {
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
 							local89 = intStack[isp + 2];
-							@Pc(7165) Class161 local7165 = InterfaceList.method3705(local157 << 16 | local192, local89);
+							@Pc(7165) Component local7165 = InterfaceList.method3705(local157 << 16 | local192, local89);
 							Static207.method3699();
 							@Pc(7170) ServerActiveProperties local7170 = Static45.method1404(local7165);
 							Static185.method3400(local7165.anInt4238, local7170.getTargetMask(), local157 << 16 | local192, local89, local7165.anInt4286, local7170.anInt1759);
@@ -4518,10 +4518,10 @@ public final class ScriptRunner {
 					@Pc(54) int local54;
 					if (local31 == 1) {
 						local54 = local11[local5];
-						intStack[isp++] = Static214.aClass226_1.anIntArray430[local54];
+						intStack[isp++] = VarpDomain.instance.anIntArray430[local54];
 					} else if (local31 == 2) {
 						local54 = local11[local5];
-						Static214.aClass226_1.method5780(local54, intStack[--isp]);
+						VarpDomain.instance.method5780(local54, intStack[--isp]);
 					} else if (local31 == 3) {
 						stringStack[ssp++] = arg0.aStringArray27[local5];
 					} else if (local31 == 6) {
@@ -4559,10 +4559,10 @@ public final class ScriptRunner {
 						aStringArray30 = local216.aStringArray47;
 					} else if (local31 == 25) {
 						local54 = local11[local5];
-						intStack[isp++] = Static214.aClass226_1.method5778(local54);
+						intStack[isp++] = VarpDomain.instance.method5778(local54);
 					} else if (local31 == 27) {
 						local54 = local11[local5];
-						Static214.aClass226_1.method5779(local54, intStack[--isp]);
+						VarpDomain.instance.method5779(local54, intStack[--isp]);
 					} else if (local31 == 31) {
 						isp -= 2;
 						if (intStack[isp] <= intStack[isp + 1]) {
@@ -4624,12 +4624,12 @@ public final class ScriptRunner {
 							anIntArray212 = local446;
 							aStringArray30 = local450;
 						} else if (local31 == 42) {
-							intStack[isp++] = Static75.anIntArray117[local11[local5]];
+							intStack[isp++] = VarcDomain.varcs[local11[local5]];
 						} else if (local31 == 43) {
 							local54 = local11[local5];
-							Static75.anIntArray117[local54] = intStack[--isp];
+							VarcDomain.varcs[local54] = intStack[--isp];
 							Static226.method3983(local54);
-							Static273.aBoolean374 |= Static89.aBooleanArray18[local54];
+							VarcDomain.aBoolean374 |= Static89.aBooleanArray18[local54];
 						} else if (local31 == 44) {
 							local54 = local11[local5] >> 16;
 							local603 = local11[local5] & 0xFFFF;
@@ -4666,14 +4666,14 @@ public final class ScriptRunner {
 							}
 							anIntArrayArray27[local54][local603] = intStack[isp + 1];
 						} else if (local31 == 47) {
-							@Pc(730) String local730 = Static75.aStringArray11[local11[local5]];
+							@Pc(730) String local730 = VarcDomain.varcstrs[local11[local5]];
 							if (local730 == null) {
 								local730 = "null";
 							}
 							stringStack[ssp++] = local730;
 						} else if (local31 == 48) {
 							local54 = local11[local5];
-							Static75.aStringArray11[local54] = stringStack[--ssp];
+							VarcDomain.varcstrs[local54] = stringStack[--ssp];
 							Static290.method5023(local54);
 						} else if (local31 == 51) {
 							@Pc(774) HashTable local774 = arg0.aClass4Array1[local11[local5]];
@@ -4694,7 +4694,7 @@ public final class ScriptRunner {
 					local855.append("v: ").append(aClass172Array1[local603].aClass2_Sub2_Sub11_1.key).append(" ");
 				}
 				local855.append("op: ").append(local13);
-				Static262.report(local837, local855.toString());
+				TracingException.report(local837, local855.toString());
 			} else {
 				Chat.add("Clientscript error in: " + arg0.aString27);
 				local855 = new StringBuffer(30);
@@ -4707,7 +4707,7 @@ public final class ScriptRunner {
 				if (local895 != null && local895.length() > 0) {
 					local855.append("Message: ").append(local895).append("\n");
 				}
-				Static262.report(local837, local855.toString());
+				TracingException.report(local837, local855.toString());
 				DevConsole.log(local855.toString());
 			}
 		}
@@ -4760,9 +4760,9 @@ public final class ScriptRunner {
 				local111 = arg1 * local44 * 512 / (local86 * 334);
 				local118 = (arg3 - local111) / 2;
 				if (arg2) {
-					Rasteriser.textureProvider.method2898();
-					Rasteriser.textureProvider.method2868(arg1, arg0, arg4, -16777216, local118);
-					Rasteriser.textureProvider.method2868(arg1, arg0 + arg3 - local118, arg4, -16777216, local118);
+					Rasteriser.instance.method2898();
+					Rasteriser.instance.method2868(arg1, arg0, arg4, -16777216, local118);
+					Rasteriser.instance.method2868(arg1, arg0 + arg3 - local118, arg4, -16777216, local118);
 				}
 				arg3 -= local118 * 2;
 				arg0 += local118;
@@ -4775,9 +4775,9 @@ public final class ScriptRunner {
 				local111 = arg3 * 334 * local86 / (local44 * 512);
 				local118 = (arg1 - local111) / 2;
 				if (arg2) {
-					Rasteriser.textureProvider.method2898();
-					Rasteriser.textureProvider.method2868(local118, arg0, arg4, -16777216, arg3);
-					Rasteriser.textureProvider.method2868(local118, arg0, arg4 + arg1 - local118, -16777216, arg3);
+					Rasteriser.instance.method2898();
+					Rasteriser.instance.method2868(local118, arg0, arg4, -16777216, arg3);
+					Rasteriser.instance.method2868(local118, arg0, arg4 + arg1 - local118, -16777216, arg3);
 				}
 				arg1 -= local118 * 2;
 				arg4 += local118;

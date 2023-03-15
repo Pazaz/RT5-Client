@@ -12,7 +12,7 @@ public interface Interface6 {
 	void method6082();
 
 	@OriginalMember(owner = "client!id", name = "a", descriptor = "(Lclient!wm;I)V")
-	void method6083(@OriginalArg(0) TextureProvider arg0);
+	void method6083(@OriginalArg(0) RasteriserBase arg0);
 
 	@OriginalMember(owner = "client!id", name = "c", descriptor = "(I)I")
 	int method6084();
@@ -24,8 +24,8 @@ public interface Interface6 {
 	boolean method6086();
 
 	@OriginalMember(owner = "client!id", name = "a", descriptor = "(BLclient!wm;)V")
-	void method6087(@OriginalArg(1) TextureProvider arg0);
+	void method6087(@OriginalArg(1) RasteriserBase arg0);
 
 	@OriginalMember(owner = "client!id", name = "a", descriptor = "(ILclient!wm;I)Lclient!gn;")
-	Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) TextureProvider arg1);
+	Model method6088(@OriginalArg(0) int arg0, @OriginalArg(1) RasteriserBase arg1);
 }

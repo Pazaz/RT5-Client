@@ -64,6 +64,6 @@ public final class Static4 {
 
 	@OriginalMember(owner = "client!ac", name = "b", descriptor = "(B)V")
 	public static void method77() {
-		Static337.aClass135_37 = new LinkedList();
+		ReflectionCheck.queue = new LinkedList();
 	}
 }

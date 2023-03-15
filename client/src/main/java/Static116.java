@@ -5,9 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static116 {
 
-	@OriginalMember(owner = "client!go", name = "p", descriptor = "Lclient!r;")
-	public static Js5 aClass197_26;
-
 	@OriginalMember(owner = "client!go", name = "s", descriptor = "[Lclient!jd;")
 	public static Sprite[] aClass13Array8;
 

@@ -20,10 +20,10 @@ public abstract class Class119 {
 	}
 
 	@OriginalMember(owner = "client!lh", name = "c", descriptor = "(I)V")
-	public abstract void method3307();
+	public abstract void mainLogic();
 
 	@OriginalMember(owner = "client!lh", name = "d", descriptor = "(I)Lclient!lm;")
-	public abstract Class2_Sub24 method3308();
+	public abstract MouseRecorder method3308();
 
 	@OriginalMember(owner = "client!lh", name = "c", descriptor = "(B)Z")
 	protected abstract boolean method3309();

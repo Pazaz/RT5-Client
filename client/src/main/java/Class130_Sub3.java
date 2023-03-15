@@ -27,7 +27,7 @@ public final class Class130_Sub3 extends BitmapFont {
 	@OriginalMember(owner = "client!sf", name = "y", descriptor = "[I")
 	private int[] anIntArray394;
 
-	protected Class130_Sub3(TextureProvider arg0, Class239 arg1) {
+	protected Class130_Sub3(RasteriserBase arg0, Class239 arg1) {
 		super(arg0, arg1);
 	}
 

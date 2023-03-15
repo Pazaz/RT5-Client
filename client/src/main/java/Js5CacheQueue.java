@@ -54,7 +54,7 @@ public final class Js5CacheQueue implements Runnable {
 					local14.aByteArray91 = local14.aClass207_4.method5261((int) local14.secondaryKey);
 				}
 			} catch (@Pc(74) Exception local74) {
-				Static262.report(local74, null);
+				TracingException.report(local74, null);
 			}
 			local14.incomplete = false;
 		}

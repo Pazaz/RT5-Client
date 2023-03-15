@@ -23,7 +23,7 @@ public final class Static157 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(Lclient!wm;)V")
-	public static void method2923(@OriginalArg(0) TextureProvider arg0) {
+	public static void method2923(@OriginalArg(0) RasteriserBase arg0) {
 		if (aClass31_4 != null) {
 			return;
 		}
@@ -33,17 +33,17 @@ public final class Static157 {
 		local8.method4665(-128, 0, 0);
 		for (@Pc(37) int local37 = 0; local37 <= 24; local37++) {
 			@Pc(44) int local44 = local37 * 8192 / 24;
-			@Pc(48) int local48 = TextureProvider.anIntArray178[local44];
-			@Pc(52) int local52 = TextureProvider.anIntArray177[local44];
+			@Pc(48) int local48 = RasteriserBase.anIntArray178[local44];
+			@Pc(52) int local52 = RasteriserBase.anIntArray177[local44];
 			@Pc(61) int local61;
 			@Pc(67) int local67;
 			@Pc(75) int local75;
 			@Pc(83) int local83;
 			for (@Pc(54) int local54 = 1; local54 < 24; local54++) {
 				local61 = local54 * 8192 / 24;
-				local67 = TextureProvider.anIntArray177[local61] >> 8;
-				local75 = TextureProvider.anIntArray178[local61] * local48 >> 23;
-				local83 = TextureProvider.anIntArray178[local61] * local52 >> 23;
+				local67 = RasteriserBase.anIntArray177[local61] >> 8;
+				local75 = RasteriserBase.anIntArray178[local61] * local48 >> 23;
+				local83 = RasteriserBase.anIntArray178[local61] * local52 >> 23;
 				local8.method4665(local67, local83, -local75);
 			}
 			if (local37 > 0) {
@@ -69,7 +69,7 @@ public final class Static157 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "b", descriptor = "(Lclient!wm;)V")
-	public static void method2925(@OriginalArg(0) TextureProvider arg0) {
+	public static void method2925(@OriginalArg(0) RasteriserBase arg0) {
 		if (aClass13_9 != null) {
 			return;
 		}

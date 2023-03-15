@@ -11,9 +11,6 @@ public final class Static31 {
 	@OriginalMember(owner = "client!bp", name = "v", descriptor = "I")
 	public static int anInt752 = -1;
 
-	@OriginalMember(owner = "client!bp", name = "y", descriptor = "Z")
-	public static boolean aBoolean68 = false;
-
 	@OriginalMember(owner = "client!bp", name = "a", descriptor = "(ZI)V")
 	public static void method944() {
 		@Pc(5) LruHashTable local5 = Static92.aClass98_9;

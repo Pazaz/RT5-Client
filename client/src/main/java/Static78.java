@@ -44,7 +44,7 @@ public final class Static78 {
 	}
 
 	@OriginalMember(owner = "client!ei", name = "a", descriptor = "(Lclient!wm;ILclient!mg;)I")
-	public static int method5699(@OriginalArg(0) TextureProvider arg0, @OriginalArg(2) FloType arg1) {
+	public static int method5699(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(2) FloType arg1) {
 		if (arg1.secondaryColor != -1) {
 			return arg1.secondaryColor;
 		}
@@ -62,18 +62,18 @@ public final class Static78 {
 		Static335.method5694();
 		Static296.method5104();
 		Static252.method4365(true, arg0);
-		Static236.method4102(client.jsArchive8, client.jsArchive13, Rasteriser.textureProvider);
-		Static44.method1358(Rasteriser.textureProvider, client.jsArchive8);
+		Static236.method4102(client.jsArchive8, client.jsArchive13, Rasteriser.instance);
+		Static44.method1358(Rasteriser.instance, client.jsArchive8);
 		Static144.method2691(Static124.aClass13Array27);
 		LoginManager.method3502();
 		Static98.method2107();
 		if (client.gameState == 10) {
 			Static50.method1525(false);
 		} else if (client.gameState == 30) {
-			Static336.method5705(25);
+			client.setGameState(25);
 			return;
 		} else if (client.gameState == 5) {
-			Static348.method5830(client.jsArchive8, Rasteriser.textureProvider);
+			TitleScreen.load(client.jsArchive8, Rasteriser.instance);
 			return;
 		}
 	}

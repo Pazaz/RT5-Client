@@ -13,15 +13,8 @@ public final class Static6 {
 	@OriginalMember(owner = "client!ae", name = "S", descriptor = "I")
 	public static int anInt159 = 0;
 
-	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(IBII)V")
-	public static void method141(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(43) String local43 = "tele " + arg0 + "," + (arg2 >> 6) + "," + (arg1 >> 6) + "," + (arg2 & 0x3F) + "," + (arg1 & 0x3F);
-		System.out.println(local43);
-		Cheat.execute(local43, true);
-	}
-
 	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(Lclient!nk;III)V")
-	public static void method142(@OriginalArg(0) Class161 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public static void method142(@OriginalArg(0) Component arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		if (!Static330.aBoolean419) {
 			@Pc(12) String local12;
 			for (@Pc(5) int local5 = 9; local5 >= 5; local5--) {

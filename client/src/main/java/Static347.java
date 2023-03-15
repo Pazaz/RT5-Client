@@ -14,10 +14,10 @@ public final class Static347 {
 	@OriginalMember(owner = "client!ub", name = "c", descriptor = "(Z)V")
 	public static void method5827() {
 		if (client.gameState == 10) {
-			Static336.method5705(28);
+			client.setGameState(28);
 		}
 		if (client.gameState == 30) {
-			Static336.method5705(25);
+			client.setGameState(25);
 		}
 	}
 }

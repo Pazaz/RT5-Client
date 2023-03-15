@@ -1,4 +1,3 @@
-import java.awt.Image;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -7,9 +6,6 @@ public final class Static89 {
 
 	@OriginalMember(owner = "client!et", name = "l", descriptor = "[Z")
 	public static boolean[] aBooleanArray18;
-
-	@OriginalMember(owner = "client!et", name = "m", descriptor = "Ljava/awt/Image;")
-	public static Image anImage1;
 
 	@OriginalMember(owner = "client!et", name = "k", descriptor = "I")
 	public static int anInt1885 = 0;

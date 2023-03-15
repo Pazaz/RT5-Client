@@ -17,7 +17,7 @@ public final class Static44 {
 	public static final boolean[] aBooleanArray11 = new boolean[8];
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(Lclient!wm;BLclient!r;)V")
-	public static void method1358(@OriginalArg(0) TextureProvider arg0, @OriginalArg(2) Js5 arg1) {
+	public static void method1358(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(2) Js5 arg1) {
 		@Pc(10) Class48[] local10 = Static396.method1688(arg1, Sprites.hitMarksId);
 		Static15.aClass13Array3 = new Sprite[local10.length];
 		for (@Pc(16) int local16 = 0; local16 < local10.length; local16++) {

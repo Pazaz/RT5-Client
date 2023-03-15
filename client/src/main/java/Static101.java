@@ -7,9 +7,6 @@ public final class Static101 {
 	@OriginalMember(owner = "client!fo", name = "e", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_44 = new LocalizedString("Members object", "Gegenstand für Mitglieder", "Objet d'abonnés", "Objeto para membros");
 
-	@OriginalMember(owner = "client!fo", name = "g", descriptor = "Z")
-	public static boolean aBoolean158 = false;
-
 	@OriginalMember(owner = "client!fo", name = "a", descriptor = "(I[IIII)V")
 	public static void method2163(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		arg3--;

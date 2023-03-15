@@ -16,7 +16,7 @@ public final class Static169 {
 	}
 
 	@OriginalMember(owner = "client!jr", name = "a", descriptor = "(Lclient!wm;)V")
-	public static void method3212(@OriginalArg(0) TextureProvider arg0) {
+	public static void method3212(@OriginalArg(0) RasteriserBase arg0) {
 		for (@Pc(1) int local1 = Static66.anInt1624; local1 < Scene.anInt1914; local1++) {
 			for (@Pc(4) int local4 = 0; local4 < Scene.anInt1684; local4++) {
 				for (@Pc(7) int local7 = 0; local7 < Scene.anInt3773; local7++) {

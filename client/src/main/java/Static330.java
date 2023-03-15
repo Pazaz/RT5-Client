@@ -154,8 +154,8 @@ public final class Static330 {
 								local487 = local525.anIntArrayArray53[local483][0];
 								@Pc(547) int local547 = local525.anIntArrayArray53[local483][2];
 								@Pc(552) int local552 = local491.aClass248_7.method6441();
-								@Pc(556) int local556 = TextureProvider.anIntArray178[local552];
-								@Pc(560) int local560 = TextureProvider.anIntArray177[local552];
+								@Pc(556) int local556 = RasteriserBase.anIntArray178[local552];
+								@Pc(560) int local560 = RasteriserBase.anIntArray177[local552];
 								@Pc(571) int local571 = local556 * local547 + local487 * local560 >> 15;
 								@Pc(582) int local582 = local547 * local560 - local556 * local487 >> 15;
 								local69 -= local525.anIntArrayArray53[local483][1];
@@ -226,7 +226,7 @@ public final class Static330 {
 				local81 = local77 >> 2;
 				local85 = local77 & 0x3;
 				local403 = Protocol.inboundBuffer.g2();
-				if (!Rasteriser.textureProvider.method2871()) {
+				if (!Rasteriser.instance.method2871()) {
 					Static243.method4239(local32, local403, local954, local57, local958, local942, local916, local63, local49, local81, local85, local40, Static243.anInt4502);
 				}
 			} else if (arg0 == ZoneProt.PACKET_4) {
@@ -342,7 +342,7 @@ public final class Static330 {
 					Static165.method3154(local40, Static243.anInt4502, local49);
 				}
 			} else {
-				Static262.report(null, "T3 - " + arg0);
+				TracingException.report(null, "T3 - " + arg0);
 				LoginManager.logout();
 			}
 		}

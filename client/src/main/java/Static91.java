@@ -6,9 +6,6 @@ public final class Static91 {
 	@OriginalMember(owner = "client!f", name = "x", descriptor = "Lclient!vj;")
 	public static Map aClass2_Sub2_Sub17_1;
 
-	@OriginalMember(owner = "client!f", name = "F", descriptor = "Lclient!od;")
-	public static MidiPcmStream aClass2_Sub12_Sub3_1;
-
 	@OriginalMember(owner = "client!f", name = "E", descriptor = "I")
 	public static final int anInt1909 = 1400;
 

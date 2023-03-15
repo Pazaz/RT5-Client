@@ -59,7 +59,7 @@ public final class Static382 {
 		local7.anInt1373 = arg1;
 		Static329.aClass4_130.put(local7, (long) arg0);
 		Static160.method2957(arg3);
-		@Pc(26) Class161 local26 = InterfaceList.getComponent(arg0);
+		@Pc(26) Component local26 = InterfaceList.getComponent(arg0);
 		if (local26 != null) {
 			InterfaceList.redraw(local26);
 		}

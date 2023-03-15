@@ -8,7 +8,7 @@ public final class Static26 {
 	public static byte[][] aByteArrayArray3;
 
 	@OriginalMember(owner = "client!bj", name = "g", descriptor = "[[Lclient!nk;")
-	public static Class161[][] aClass161ArrayArray1;
+	public static Component[][] aClass161ArrayArray1;
 
 	@OriginalMember(owner = "client!bj", name = "d", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_18 = new LocalizedString("Loading defaults - ", "Lade Standardeinstellungen - ", "Chargement des paramètres par défaut - ", "Carregando padrões - ");
@@ -18,7 +18,7 @@ public final class Static26 {
 		if (Static369.aBoolean471) {
 			return;
 		}
-		Static100.aBoolean156 = true;
+		Camera.aBoolean156 = true;
 		Static369.aBoolean471 = true;
 		if (client.preferences.aBoolean351) {
 			Camera.yawTarget = (int) Camera.yawTarget - 65 & 0xFFFFFF80;

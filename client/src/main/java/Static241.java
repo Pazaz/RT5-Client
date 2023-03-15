@@ -23,7 +23,7 @@ public final class Static241 {
 		}
 		@Pc(16) NpcType local16 = arg0.type;
 		if (local16.multiNpcs != null) {
-			local16 = local16.getMultiNpc(Static214.aClass226_1);
+			local16 = local16.getMultiNpc(VarpDomain.instance);
 			if (local16 == null) {
 				return;
 			}
@@ -123,7 +123,7 @@ public final class Static241 {
 		} else {
 			Static97.anInt2034 = -1;
 		}
-		Static227.aClass161_11 = null;
+		WorldMap.aClass161_11 = null;
 		MapList.aClass2_Sub2_Sub17_3 = null;
 		WorldMap.loadPercentage = 0;
 		Static197.aClass135_24 = null;

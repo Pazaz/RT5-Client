@@ -53,7 +53,7 @@ public final class Class162 implements Runnable {
 			@Pc(38) Class2_Sub16 local38;
 			synchronized (this.aClass135_28) {
 				@Pc(15) Node local15;
-				for (local15 = this.aClass135_28.method3549(); local15 == null; local15 = this.aClass135_28.method3549()) {
+				for (local15 = this.aClass135_28.removeHead(); local15 == null; local15 = this.aClass135_28.removeHead()) {
 					try {
 						this.aClass135_28.wait();
 					} catch (@Pc(22) InterruptedException local22) {

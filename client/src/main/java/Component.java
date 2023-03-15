@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!nk")
-public final class Class161 {
+public final class Component {
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "I")
 	public int anInt4235;
@@ -100,7 +100,7 @@ public final class Class161 {
 	public int type;
 
 	@OriginalMember(owner = "client!nk", name = "wb", descriptor = "[Lclient!nk;")
-	public Class161[] activeComponents;
+	public Component[] activeComponents;
 
 	@OriginalMember(owner = "client!nk", name = "Jb", descriptor = "[Ljava/lang/Object;")
 	public Object[] anObjectArray21;
@@ -196,10 +196,10 @@ public final class Class161 {
 	public int scrollY = 0;
 
 	@OriginalMember(owner = "client!nk", name = "L", descriptor = "I")
-	public int anInt4254 = 0;
+	public int y = 0;
 
 	@OriginalMember(owner = "client!nk", name = "yb", descriptor = "I")
-	public int anInt4275 = -1;
+	public int overlayer = -1;
 
 	@OriginalMember(owner = "client!nk", name = "hb", descriptor = "I")
 	public int anInt4265 = 0;
@@ -211,7 +211,7 @@ public final class Class161 {
 	public int anInt4271 = 0;
 
 	@OriginalMember(owner = "client!nk", name = "X", descriptor = "Lclient!nk;")
-	public Class161 aClass161_12 = null;
+	public Component aClass161_12 = null;
 
 	@OriginalMember(owner = "client!nk", name = "Db", descriptor = "I")
 	public int anInt4280 = -1;
@@ -325,7 +325,7 @@ public final class Class161 {
 	public int anInt4306 = 2;
 
 	@OriginalMember(owner = "client!nk", name = "wc", descriptor = "I")
-	public int anInt4305 = 0;
+	public int x = 0;
 
 	@OriginalMember(owner = "client!nk", name = "S", descriptor = "I")
 	public int scrollX = 0;
@@ -439,7 +439,7 @@ public final class Class161 {
 	public int modelXAngle = 0;
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(Lclient!wm;B)Lclient!ur;")
-	public BitmapFont method4101(@OriginalArg(0) TextureProvider arg0) {
+	public BitmapFont method4101(@OriginalArg(0) RasteriserBase arg0) {
 		Static86.aBoolean133 = false;
 		if (this.font == -1) {
 			return null;
@@ -479,7 +479,7 @@ public final class Class161 {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(IILclient!io;Lclient!wl;ILclient!nb;Lclient!ak;Lclient!jo;Lclient!ta;ILclient!gp;ILclient!e;Lclient!wm;)Lclient!gn;")
-	public Model method4105(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) ObjTypeList arg2, @OriginalArg(3) Interface11 arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) BasTypeList arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) NpcTypeList arg7, @OriginalArg(9) int arg8, @OriginalArg(10) SeqTypeList arg9, @OriginalArg(11) int arg10, @OriginalArg(12) IdkTypeList arg11, @OriginalArg(13) TextureProvider arg12) {
+	public Model method4105(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) ObjTypeList arg2, @OriginalArg(3) Interface11 arg3, @OriginalArg(5) Class157 arg4, @OriginalArg(6) BasTypeList arg5, @OriginalArg(7) PlayerAppearance arg6, @OriginalArg(8) NpcTypeList arg7, @OriginalArg(9) int arg8, @OriginalArg(10) SeqTypeList arg9, @OriginalArg(11) int arg10, @OriginalArg(12) IdkTypeList arg11, @OriginalArg(13) RasteriserBase arg12) {
 		Static86.aBoolean133 = false;
 		if (this.modelType == 0) {
 			return null;
@@ -583,11 +583,11 @@ public final class Class161 {
 		this.dynamicHeightValue = arg0.g1b();
 		this.xMode = arg0.g1b();
 		this.yMode = arg0.g1b();
-		this.anInt4275 = arg0.g2();
-		if (this.anInt4275 == 65535) {
-			this.anInt4275 = -1;
+		this.overlayer = arg0.g2();
+		if (this.overlayer == 65535) {
+			this.overlayer = -1;
 		} else {
-			this.anInt4275 += this.id & 0xFFFF0000;
+			this.overlayer += this.id & 0xFFFF0000;
 		}
 		this.hidden = arg0.g1() == 1;
 		if (this.type == 0) {
@@ -789,7 +789,7 @@ public final class Class161 {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(BLclient!wm;)Lclient!kf;")
-	public Class78 method4109(@OriginalArg(1) TextureProvider arg0) {
+	public Class78 method4109(@OriginalArg(1) RasteriserBase arg0) {
 		@Pc(19) Class78 local19 = (Class78) Static297.aClass98_44.get((long) this.id);
 		if (local19 != null) {
 			return local19;
@@ -857,7 +857,7 @@ public final class Class161 {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(ZLclient!wm;)Lclient!jd;")
-	public Sprite method4113(@OriginalArg(1) TextureProvider arg0) {
+	public Sprite method4113(@OriginalArg(1) RasteriserBase arg0) {
 		Static86.aBoolean133 = false;
 		@Pc(48) long local48 = ((this.vFlip ? 1L : 0L) << 38) + ((this.hasAlpha ? 1L : 0L) << 35) + (long) this.spriteId + ((long) this.outlineThickness << 36) + ((this.hFlip ? 1L : 0L) << 39) + ((long) this.shadowColor << 40);
 		@Pc(54) Sprite local54 = (Sprite) Static335.aClass98_57.get(local48);

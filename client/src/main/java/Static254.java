@@ -10,9 +10,6 @@ public final class Static254 {
 	@OriginalMember(owner = "client!ok", name = "i", descriptor = "Lclient!hu;")
 	public static final LruHashTable aClass98_39 = new LruHashTable(8);
 
-	@OriginalMember(owner = "client!ok", name = "j", descriptor = "I")
-	public static int anInt4701 = 765;
-
 	@OriginalMember(owner = "client!ok", name = "a", descriptor = "(I[S)[S")
 	public static short[] method4371(@OriginalArg(1) short[] arg0) {
 		if (arg0 == null) {

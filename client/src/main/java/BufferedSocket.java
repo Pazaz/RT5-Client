@@ -199,7 +199,7 @@ public final class BufferedSocket implements Runnable {
 				break;
 			}
 		} catch (@Pc(121) Exception local121) {
-			Static262.report(local121, null);
+			TracingException.report(local121, null);
 		}
 	}
 

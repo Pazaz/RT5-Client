@@ -25,7 +25,7 @@ public final class DisplayMode {
 		if (arg1 == 3 || local12 == 3) {
 			arg2 = true;
 		}
-		if (!Rasteriser.textureProvider.method2840()) {
+		if (!Rasteriser.instance.method2840()) {
 			arg2 = true;
 		}
 		Static163.method3100(arg3, arg0, local12, arg1, arg2);

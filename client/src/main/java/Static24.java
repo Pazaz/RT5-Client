@@ -7,13 +7,10 @@ public final class Static24 {
 	@OriginalMember(owner = "client!bh", name = "m", descriptor = "Lclient!rc;")
 	public static Class42 aClass42_2;
 
-	@OriginalMember(owner = "client!bh", name = "u", descriptor = "I")
-	public static int anInt642 = 0;
-
 	@OriginalMember(owner = "client!bh", name = "a", descriptor = "(ILclient!nk;)V")
-	public static void method852(@OriginalArg(1) Class161 arg0) {
+	public static void method852(@OriginalArg(1) Component arg0) {
 		if (arg0.type == 5 && arg0.objId != -1) {
-			Static46.method1422(Rasteriser.textureProvider, arg0);
+			Static46.method1422(Rasteriser.instance, arg0);
 		}
 	}
 

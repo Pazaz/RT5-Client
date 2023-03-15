@@ -99,7 +99,7 @@ public final class Class11_Sub5_Sub3 extends Entity {
 
 	@OriginalMember(owner = "client!om", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
-	public Class12_Sub4 method6073(@OriginalArg(0) TextureProvider arg0) {
+	public Class12_Sub4 method6073(@OriginalArg(0) RasteriserBase arg0) {
 		@Pc(21) Model local21 = this.method4396(1024, arg0);
 		if (local21 == null) {
 			return null;
@@ -172,7 +172,7 @@ public final class Class11_Sub5_Sub3 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(BLclient!wm;Lclient!gn;)V")
-	private void method4393(@OriginalArg(1) TextureProvider arg0, @OriginalArg(2) Model arg1) {
+	private void method4393(@OriginalArg(1) RasteriserBase arg0, @OriginalArg(2) Model arg1) {
 		@Pc(12) Class114[] local12 = arg1.method3808();
 		@Pc(15) Class163[] local15 = arg1.method3840();
 		if ((this.aClass12_Sub5_4 == null || this.aClass12_Sub5_4.aBoolean322) && (local12 != null || local15 != null)) {
@@ -186,13 +186,13 @@ public final class Class11_Sub5_Sub3 extends Entity {
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) RasteriserBase arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		throw new IllegalStateException();
 	}
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
-	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) TextureProvider arg2) {
+	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) RasteriserBase arg2) {
 		return false;
 	}
 
@@ -209,14 +209,14 @@ public final class Class11_Sub5_Sub3 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(IBLclient!wm;)Lclient!gn;")
-	private Model method4396(@OriginalArg(0) int arg0, @OriginalArg(2) TextureProvider arg1) {
+	private Model method4396(@OriginalArg(0) int arg0, @OriginalArg(2) RasteriserBase arg1) {
 		@Pc(17) SpotAnimType local17 = client.SpotAnimTypes.method5407(this.anInt4732);
 		return local17.method2433(this.anInt4718, this.anInt4742, arg1, arg0, client.SeqTypes, this.anInt4728);
 	}
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
-	public void method6070(@OriginalArg(0) TextureProvider arg0) {
+	public void method6070(@OriginalArg(0) RasteriserBase arg0) {
 		@Pc(9) Model local9 = this.method4396(0, arg0);
 		if (local9 == null) {
 			return;

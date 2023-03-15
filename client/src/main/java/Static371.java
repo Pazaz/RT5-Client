@@ -20,7 +20,7 @@ public final class Static371 {
 	public static final String[] aStringArray66 = new String[100];
 
 	@OriginalMember(owner = "client!vo", name = "a", descriptor = "(IIIZLclient!nk;)V")
-	public static void method6256(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) Class161 arg3) {
+	public static void method6256(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) Component arg3) {
 		@Pc(8) int local8 = arg3.width;
 		@Pc(11) int local11 = arg3.height;
 		if (arg3.dynamicWidthValue == 0) {
@@ -60,15 +60,15 @@ public final class Static371 {
 			Static20.aClass161_1 = arg3;
 		}
 		if (arg2 && arg3.anObjectArray6 != null && (arg3.width != local8 || local11 != arg3.height)) {
-			@Pc(191) Class2_Sub13 local191 = new Class2_Sub13();
-			local191.aClass161_3 = arg3;
+			@Pc(191) HookRequest local191 = new HookRequest();
+			local191.source = arg3;
 			local191.anObjectArray4 = arg3.anObjectArray6;
-			Static274.aClass135_30.addTail(local191);
+			InterfaceList.lowPriorityRequests.addTail(local191);
 		}
 	}
 
 	@OriginalMember(owner = "client!vo", name = "a", descriptor = "(JILclient!wm;)V")
-	public static void method6257(@OriginalArg(0) long arg0, @OriginalArg(2) TextureProvider arg1) {
+	public static void method6257(@OriginalArg(0) long arg0, @OriginalArg(2) RasteriserBase arg1) {
 		Static116.anInt2360 = 0;
 		Static336.anInt6313 = Static311.anInt5809;
 		Static311.anInt5809 = 0;

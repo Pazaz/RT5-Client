@@ -16,7 +16,7 @@ public final class Npc extends PathingEntity {
 	public int anInt4663 = -1;
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IILclient!wm;)Z")
-	private boolean method4335(@OriginalArg(1) int arg0, @OriginalArg(2) TextureProvider arg1) {
+	private boolean method4335(@OriginalArg(1) int arg0, @OriginalArg(2) RasteriserBase arg1) {
 		@Pc(7) int local7 = arg0;
 		@Pc(11) BasType local11 = this.method4332();
 		@Pc(27) Class157 local27 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
@@ -26,7 +26,7 @@ public final class Npc extends PathingEntity {
 		if (local48 != 0 || local51 != 0 || local11.anInt6281 != 0 || local11.anInt6283 != 0) {
 			arg0 |= 0x7;
 		}
-		@Pc(102) Model local102 = super.aClass31Array3[0] = this.type.getBodyModel(client.BasTypes, super.anInt4607, local27, arg1, client.SeqTypes, super.anInt4629, super.anInt4626, super.anInt4593, local45, arg0, super.aClass20Array3, super.anInt4624, Static214.aClass226_1, super.anInt4592);
+		@Pc(102) Model local102 = super.aClass31Array3[0] = this.type.getBodyModel(client.BasTypes, super.anInt4607, local27, arg1, client.SeqTypes, super.anInt4629, super.anInt4626, super.anInt4593, local45, arg0, super.aClass20Array3, super.anInt4624, VarpDomain.instance, super.anInt4592);
 		if (local102 == null) {
 			return false;
 		}
@@ -90,7 +90,7 @@ public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IIILclient!wm;ZLclient!hp;Z)V")
 	@Override
-	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
+	public void method6075(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) RasteriserBase arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) BaseEntity arg5) {
 		throw new IllegalStateException();
 	}
 
@@ -115,7 +115,7 @@ public final class Npc extends PathingEntity {
 	@Override
 	public int method4324() {
 		if (this.type.multiNpcs != null) {
-			@Pc(18) NpcType local18 = this.type.getMultiNpc(Static214.aClass226_1);
+			@Pc(18) NpcType local18 = this.type.getMultiNpc(VarpDomain.instance);
 			if (local18 != null && local18.anInt2031 != -1) {
 				return local18.anInt2031;
 			}
@@ -179,7 +179,7 @@ public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!oe", name = "b", descriptor = "(Lclient!wm;B)Lclient!nf;")
 	@Override
-	public Class12_Sub4 method6073(@OriginalArg(0) TextureProvider arg0) {
+	public Class12_Sub4 method6073(@OriginalArg(0) RasteriserBase arg0) {
 		if (this.type == null || !this.method4335(1024, arg0)) {
 			return null;
 		}
@@ -188,7 +188,7 @@ public final class Npc extends PathingEntity {
 		local17.method3925(local22);
 		local17.method3936(super.xFine, super.anInt6782, super.zFine);
 		@Pc(37) BasType local37 = this.method4332();
-		@Pc(50) NpcType local50 = this.type.multiNpcs == null ? this.type : this.type.getMultiNpc(Static214.aClass226_1);
+		@Pc(50) NpcType local50 = this.type.multiNpcs == null ? this.type : this.type.getMultiNpc(VarpDomain.instance);
 		if (client.preferences.characterShadowsOn && local50.aBoolean142 && local37.aBoolean424) {
 			@Pc(75) Class157 local75 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
 			@Pc(92) Class157 local92 = super.anInt4585 == -1 || super.aBoolean317 && local75 != null ? null : client.SeqTypes.method2371(super.anInt4585);
@@ -274,7 +274,7 @@ public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IIBLclient!wm;)Z")
 	@Override
-	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) TextureProvider arg2) {
+	public boolean method6068(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) RasteriserBase arg2) {
 		if (this.type == null || !this.method4335(65536, arg2)) {
 			return false;
 		}
@@ -294,7 +294,7 @@ public final class Npc extends PathingEntity {
 	@Override
 	public int method4323() {
 		if (this.type.multiNpcs != null) {
-			@Pc(21) NpcType local21 = this.type.getMultiNpc(Static214.aClass226_1);
+			@Pc(21) NpcType local21 = this.type.getMultiNpc(VarpDomain.instance);
 			if (local21 != null && local21.anInt2010 != -1) {
 				return local21.anInt2010;
 			}
@@ -311,7 +311,7 @@ public final class Npc extends PathingEntity {
 	@Override
 	protected int method4329() {
 		if (this.type.multiNpcs != null) {
-			@Pc(19) NpcType local19 = this.type.getMultiNpc(Static214.aClass226_1);
+			@Pc(19) NpcType local19 = this.type.getMultiNpc(VarpDomain.instance);
 			if (local19 != null && local19.anInt2032 != -1) {
 				return local19.anInt2032;
 			}
@@ -321,7 +321,7 @@ public final class Npc extends PathingEntity {
 
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
-	public void method6070(@OriginalArg(0) TextureProvider arg0) {
+	public void method6070(@OriginalArg(0) RasteriserBase arg0) {
 		if (this.type != null && (super.aBoolean321 || this.method4335(0, arg0))) {
 			this.method4333(arg0, super.aClass31Array3, super.aBoolean321);
 		}

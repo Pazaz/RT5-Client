@@ -134,9 +134,9 @@ public final class Static7 {
 	}
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!nk;B)Lclient!nk;")
-	public static Class161 method6465(@OriginalArg(0) Class161 arg0) {
-		if (arg0.anInt4275 != -1) {
-			return InterfaceList.getComponent(arg0.anInt4275);
+	public static Component method6465(@OriginalArg(0) Component arg0) {
+		if (arg0.overlayer != -1) {
+			return InterfaceList.getComponent(arg0.overlayer);
 		}
 		@Pc(25) int local25 = arg0.id >>> 16;
 		@Pc(30) Class137 local30 = new Class137(Static329.aClass4_130);
@@ -164,7 +164,7 @@ public final class Static7 {
 	public static void method6469(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(12) DelayedStateChange local12 = Static316.method5413(14, arg1);
 		local12.method2311();
-		local12.anInt2289 = arg0;
+		local12.intArg1 = arg0;
 	}
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!bh;IZ)V")
@@ -197,9 +197,9 @@ public final class Static7 {
 	}
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!nk;I)Z")
-	public static boolean method6472(@OriginalArg(0) Class161 arg0) {
+	public static boolean method6472(@OriginalArg(0) Component arg0) {
 		if (arg0.anInt4273 == Static180.anInt3410) {
-			Static86.anInt1870 = 250;
+			Protocol.anInt1870 = 250;
 			return true;
 		} else {
 			return false;

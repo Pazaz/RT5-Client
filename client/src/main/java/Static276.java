@@ -10,9 +10,6 @@ public final class Static276 {
 	@OriginalMember(owner = "client!pr", name = "o", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_109 = new LocalizedString("Loading core fonts - ", "Lade Schriftarten - ", "Chargement des polices - ", "Carregando fontes principais - ");
 
-	@OriginalMember(owner = "client!pr", name = "G", descriptor = "Z")
-	public static boolean javaScript = false;
-
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(ILjava/lang/String;)I")
 	public static int method4651(@OriginalArg(1) String arg0) {
 		@Pc(8) int local8 = arg0.length();
@@ -32,7 +29,7 @@ public final class Static276 {
 			Static162.method2979(local8);
 		}
 		Static138.method2580(local8);
-		@Pc(27) Class161 local27 = InterfaceList.getComponent(local12);
+		@Pc(27) Component local27 = InterfaceList.getComponent(local12);
 		if (local27 != null) {
 			InterfaceList.redraw(local27);
 		}

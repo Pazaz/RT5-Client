@@ -36,40 +36,40 @@ public final class Static163 {
 		@Pc(81) Container local81;
 		@Pc(88) Insets local88;
 		if (GameShell.fullScreenFrame != null) {
-			Static142.anInt2663 = arg0;
-			Static178.anInt2319 = arg1;
+			GameShell.frameWidth = arg0;
+			GameShell.frameHeight = arg1;
 			local81 = GameShell.fullScreenFrame;
 		} else if (GameShell.frame == null) {
 			local81 = GameShell.signlink.applet;
-			Static142.anInt2663 = local81.getSize().width;
-			Static178.anInt2319 = local81.getSize().height;
+			GameShell.frameWidth = local81.getSize().width;
+			GameShell.frameHeight = local81.getSize().height;
 		} else {
 			local88 = GameShell.frame.getInsets();
 			@Pc(96) int local96 = local88.left + local88.right;
-			Static142.anInt2663 = GameShell.frame.getSize().width - local96;
-			Static178.anInt2319 = GameShell.frame.getSize().height - local88.bottom - local88.top;
+			GameShell.frameWidth = GameShell.frame.getSize().width - local96;
+			GameShell.frameHeight = GameShell.frame.getSize().height - local88.bottom - local88.top;
 			local81 = GameShell.frame;
 		}
 		@Pc(159) int local159;
 		if (arg3 == 1) {
-			Static84.anInt1842 = (Static142.anInt2663 - Static254.anInt4701) / 2;
-			GameShell.canvasWidth = Static254.anInt4701;
-			GameShell.canvasHeight = Static263.anInt4834;
-			Static68.anInt1646 = 0;
+			GameShell.leftMargin = (GameShell.frameWidth - client.gameWidth) / 2;
+			GameShell.canvasWidth = client.gameWidth;
+			GameShell.canvasHeight = client.gameHeight;
+			GameShell.topMargin = 0;
 		} else if (GameShell.maxMemory < 96 && Static77.anInt1762 == 0) {
-			local159 = Static142.anInt2663 > 1024 ? 1024 : Static142.anInt2663;
+			local159 = GameShell.frameWidth > 1024 ? 1024 : GameShell.frameWidth;
 			GameShell.canvasWidth = local159;
-			@Pc(170) int local170 = Static178.anInt2319 <= 768 ? Static178.anInt2319 : 768;
-			Static84.anInt1842 = (Static142.anInt2663 - local159) / 2;
-			Static68.anInt1646 = 0;
+			@Pc(170) int local170 = GameShell.frameHeight <= 768 ? GameShell.frameHeight : 768;
+			GameShell.leftMargin = (GameShell.frameWidth - local159) / 2;
+			GameShell.topMargin = 0;
 			GameShell.canvasHeight = local170;
 		} else {
-			GameShell.canvasWidth = Static142.anInt2663;
-			Static84.anInt1842 = 0;
-			GameShell.canvasHeight = Static178.anInt2319;
-			Static68.anInt1646 = 0;
+			GameShell.canvasWidth = GameShell.frameWidth;
+			GameShell.leftMargin = 0;
+			GameShell.canvasHeight = GameShell.frameHeight;
+			GameShell.topMargin = 0;
 		}
-		if (client.MODE_WHERE_LIVE != client.modeWhere) {
+		if (ModeWhere.MODE_WHERE_LIVE != client.modeWhere) {
 			@Pc(206) boolean local206;
 			if (GameShell.canvasWidth < 1024 && GameShell.canvasHeight < 768) {
 				local206 = true;
@@ -81,14 +81,14 @@ public final class Static163 {
 			Static78.method5701(Static77.anInt1762);
 		} else {
 			GameShell.canvas.setSize(GameShell.canvasWidth, GameShell.canvasHeight);
-			if (Rasteriser.textureProvider != null) {
-				Rasteriser.textureProvider.method2803();
+			if (Rasteriser.instance != null) {
+				Rasteriser.instance.method2803();
 			}
 			if (GameShell.frame == local81) {
 				local88 = GameShell.frame.getInsets();
-				GameShell.canvas.setLocation(Static84.anInt1842 + local88.left, local88.top + Static68.anInt1646);
+				GameShell.canvas.setLocation(GameShell.leftMargin + local88.left, local88.top + GameShell.topMargin);
 			} else {
-				GameShell.canvas.setLocation(Static84.anInt1842, Static68.anInt1646);
+				GameShell.canvas.setLocation(GameShell.leftMargin, GameShell.topMargin);
 			}
 		}
 		if (arg3 >= 2) {
@@ -109,7 +109,7 @@ public final class Static163 {
 	}
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILclient!nk;)Ljava/lang/String;")
-	public static String method3104(@OriginalArg(1) Class161 arg0) {
+	public static String method3104(@OriginalArg(1) Component arg0) {
 		if (Static45.method1404(arg0).getTargetMask() == 0) {
 			return null;
 		} else if (arg0.aString44 == null || arg0.aString44.trim().length() == 0) {

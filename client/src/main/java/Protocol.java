@@ -47,14 +47,16 @@ public class Protocol {
 	public static ServerProt packet2;
 	@OriginalMember(owner = "client!th", name = "F", descriptor = "Lclient!h;")
 	public static ServerProt packet1;
-	@OriginalMember(owner = "client!pg", name = "N", descriptor = "I")
-	public static int anInt4955 = 0;
 	@OriginalMember(owner = "client!cf", name = "x", descriptor = "Lclient!h;")
 	public static ServerProt packet3;
 	@OriginalMember(owner = "client!nr", name = "h", descriptor = "I")
 	public static int removedCount = 0;
 	@OriginalMember(owner = "client!ts", name = "f", descriptor = "I")
 	public static int extendedCount = 0;
+	@OriginalMember(owner = "client!oc", name = "a", descriptor = "Lclient!iu;")
+	public static BufferedSocket aClass111_2;
+	@OriginalMember(owner = "client!eq", name = "G", descriptor = "I")
+	public static int anInt1870 = 0;
 
 	@OriginalMember(owner = "client!ed", name = "b", descriptor = "(I)Z")
 	public static boolean readPacketInternal() throws IOException {
@@ -115,19 +117,19 @@ public class Protocol {
 		}
 		inboundBuffer.pos = 0;
 		socket.read(inboundBuffer.data, packetSize, 0);
-		anInt4955 = 0;
+		LoginManager.anInt4955 = 0;
 		packet3 = packet2;
 		totalRead += packetSize;
 		packet2 = packet1;
 		packet1 = packet;
-		if (ServerProt.PACKET_18 == packet) {
-			Static235.method3339(GameShell.signlink, packetSize, inboundBuffer);
+		if (ServerProt.REFLECTION_CHEAT_CHECK == packet) {
+			ReflectionCheck.push(GameShell.signlink, packetSize, inboundBuffer);
 			packet = null;
 			return true;
 		} else if (packet == ServerProt.PACKET_75) {
-			Static214.aClass226_1.method5781();
+			VarpDomain.instance.method5781();
 			packet = null;
-			Static12.anInt269 += 32;
+			VarpDomain.updatedVarpsWriterIndex += 32;
 			return true;
 		} else {
 			@Pc(228) int local228;
@@ -185,7 +187,7 @@ public class Protocol {
 							local335.unlink();
 							Static329.aClass4_130.put(local335, (long) local74);
 						}
-						@Pc(375) Class161 local375 = InterfaceList.getComponent(local220);
+						@Pc(375) Component local375 = InterfaceList.getComponent(local220);
 						if (local375 != null) {
 							InterfaceList.redraw(local375);
 						}
@@ -454,7 +456,7 @@ public class Protocol {
 							PlayerSkillXpTable.baseLevels[local74] = 1;
 							local249 = Static287.anIntArray369[local74] - 1;
 							for (local497 = 0; local497 < local249; local497++) {
-								if (local220 >= Class12_Sub1_Sub1.xpLevelLookup[local497]) {
+								if (local220 >= PlayerSkillXpTable.xpLevelLookup[local497]) {
 									PlayerSkillXpTable.baseLevels[local74] = local497 + 2;
 								}
 							}
@@ -529,7 +531,7 @@ public class Protocol {
 									}
 								}
 								FriendsList.status = 2;
-								Static53.anInt3971 = Static88.transmitTimer;
+								Static53.anInt3971 = InterfaceList.transmitTimer;
 								local74 = FriendsList.size;
 								while (local74 > 0) {
 									local1371 = true;
@@ -565,7 +567,7 @@ public class Protocol {
 								return true;
 							} else if (packet == ServerProt.PACKET_7) {
 								Player.weight = inboundBuffer.g2s();
-								Static93.miscTransmitAt = Static88.transmitTimer;
+								InterfaceList.miscTransmitAt = InterfaceList.transmitTimer;
 								packet = null;
 								return true;
 							} else {
@@ -629,7 +631,7 @@ public class Protocol {
 								} else if (packet == ServerProt.PACKET_73) {
 									local220 = inboundBuffer.ig2add();
 									local74 = inboundBuffer.ig4();
-									Static214.aClass226_1.method5785(local74, local220);
+									VarpDomain.instance.method5785(local74, local220);
 									packet = null;
 									return true;
 								} else if (packet == ServerProt.PACKET_5) {
@@ -680,10 +682,10 @@ public class Protocol {
 									}
 									packet = null;
 									return true;
-								} else if (ServerProt.PACKET_8 == packet) {
+								} else if (ServerProt.UPDATE_REBOOT_TIMER == packet) {
 									Player.rebootTimer = inboundBuffer.g2() * 30;
 									packet = null;
-									Static93.miscTransmitAt = Static88.transmitTimer;
+									InterfaceList.miscTransmitAt = InterfaceList.transmitTimer;
 									return true;
 								} else if (packet == ServerProt.PACKET_92) {
 									local220 = inboundBuffer.g2();
@@ -736,7 +738,7 @@ public class Protocol {
 								} else {
 									@Pc(2522) ClanMember local2522;
 									if (packet == ServerProt.PACKET_35) {
-										Static285.anInt5370 = Static88.transmitTimer;
+										Static285.anInt5370 = InterfaceList.transmitTimer;
 										if (packetSize == 0) {
 											ClanChat.name = null;
 											ClanChat.size = 0;
@@ -812,7 +814,7 @@ public class Protocol {
 											StockMarketManager.offers[local220] = new StockMarketOffer(inboundBuffer);
 										}
 										packet = null;
-										Static177.anInt3381 = Static88.transmitTimer;
+										Static177.anInt3381 = InterfaceList.transmitTimer;
 										return true;
 									} else if (packet == ServerProt.PACKET_10) {
 										local220 = inboundBuffer.g2();
@@ -884,7 +886,7 @@ public class Protocol {
 												Static165.method3154(local74, Static243.anInt4502, local228);
 											}
 										}
-										for (@Pc(2914) Class2_Sub37 local2914 = (Class2_Sub37) Static207.aClass135_26.head(); local2914 != null; local2914 = (Class2_Sub37) Static207.aClass135_26.next()) {
+										for (@Pc(2914) ChangeLocRequest local2914 = (ChangeLocRequest) Static207.aClass135_26.head(); local2914 != null; local2914 = (ChangeLocRequest) Static207.aClass135_26.next()) {
 											if (local2914.anInt6484 >= Static67.anInt1637 && local2914.anInt6484 < Static67.anInt1637 + 8 && local2914.anInt6486 >= Static7.anInt7240 && local2914.anInt6486 < Static7.anInt7240 + 8 && Static243.anInt4502 == local2914.anInt6481) {
 												local2914.anInt6485 = 0;
 											}
@@ -940,7 +942,7 @@ public class Protocol {
 										return true;
 									} else if (ServerProt.PACKET_19 == packet) {
 										FriendsList.status = 1;
-										Static53.anInt3971 = Static88.transmitTimer;
+										Static53.anInt3971 = InterfaceList.transmitTimer;
 										packet = null;
 										return true;
 									} else if (ServerProt.PACKET_38 == packet) {
@@ -988,7 +990,7 @@ public class Protocol {
 											Static196.aBooleanArray31[local220] = false;
 										}
 										packet = null;
-										Static53.anInt3971 = Static88.transmitTimer;
+										Static53.anInt3971 = InterfaceList.transmitTimer;
 										return true;
 									} else if (packet == ServerProt.PACKET_46) {
 										local444 = inboundBuffer.gjstr();
@@ -1086,7 +1088,7 @@ public class Protocol {
 														if (local452.equals(PlayerList.self.username)) {
 															ClanChat.rank = local3569;
 														}
-														Static285.anInt5370 = Static88.transmitTimer;
+														Static285.anInt5370 = InterfaceList.transmitTimer;
 														packet = null;
 														return true;
 													}
@@ -1111,7 +1113,7 @@ public class Protocol {
 												}
 											}
 											packet = null;
-											Static285.anInt5370 = Static88.transmitTimer;
+											Static285.anInt5370 = InterfaceList.transmitTimer;
 											return true;
 										}
 										@Pc(3809) String local3809;
@@ -1161,7 +1163,7 @@ public class Protocol {
 										} else if (ServerProt.PACKET_64 == packet) {
 											local220 = inboundBuffer.g1();
 											local74 = inboundBuffer.ig2();
-											Static214.aClass226_1.method5786(local74, local220);
+											VarpDomain.instance.method5786(local74, local220);
 											packet = null;
 											return true;
 										} else if (ServerProt.PACKET_27 == packet) {
@@ -1182,7 +1184,7 @@ public class Protocol {
 											return true;
 										} else if (ServerProt.PACKET_4 == packet) {
 											Player.energy = inboundBuffer.g1();
-											Static93.miscTransmitAt = Static88.transmitTimer;
+											InterfaceList.miscTransmitAt = InterfaceList.transmitTimer;
 											packet = null;
 											return true;
 										} else if (ServerProt.PACKET_44 == packet) {
@@ -1197,7 +1199,7 @@ public class Protocol {
 										} else if (packet == ServerProt.PACKET_47) {
 											local220 = inboundBuffer.ig4();
 											local74 = inboundBuffer.ig2();
-											Static214.aClass226_1.method5786(local74, local220);
+											VarpDomain.instance.method5786(local74, local220);
 											packet = null;
 											return true;
 										} else if (packet == ServerProt.PACKET_50) {
@@ -1232,7 +1234,7 @@ public class Protocol {
 												IgnoreList.size++;
 											}
 											packet = null;
-											Static53.anInt3971 = Static88.transmitTimer;
+											Static53.anInt3971 = InterfaceList.transmitTimer;
 											return true;
 										} else if (ServerProt.PACKET_85 == packet) {
 											local444 = inboundBuffer.gjstr();
@@ -1403,7 +1405,7 @@ public class Protocol {
 											} else if (packet == ServerProt.PACKET_29) {
 												local272 = inboundBuffer.g1neg();
 												local74 = inboundBuffer.g2();
-												Static214.aClass226_1.method5785(local272, local74);
+												VarpDomain.instance.method5785(local272, local74);
 												packet = null;
 												return true;
 											} else if (packet == ServerProt.PACKET_49) {
@@ -1648,9 +1650,9 @@ public class Protocol {
 												}
 												local5648[0] = Integer.valueOf(inboundBuffer.g4());
 												if (Static378.method6314(local220)) {
-													@Pc(5704) Class2_Sub13 local5704 = new Class2_Sub13();
+													@Pc(5704) HookRequest local5704 = new HookRequest();
 													local5704.anObjectArray4 = local5648;
-													ScriptRunner.method3591(local5704);
+													ScriptRunner.execute(local5704);
 												}
 												packet = null;
 												return true;
@@ -1683,7 +1685,7 @@ public class Protocol {
 												packet = null;
 												return true;
 											} else {
-												Static262.report(null, "T1 - " + (packet == null ? -1 : packet.getOpcode()) + "," + (packet2 == null ? -1 : packet2.getOpcode()) + "," + (packet3 == null ? -1 : packet3.getOpcode()) + " - " + packetSize);
+												TracingException.report(null, "T1 - " + (packet == null ? -1 : packet.getOpcode()) + "," + (packet2 == null ? -1 : packet2.getOpcode()) + "," + (packet3 == null ? -1 : packet3.getOpcode()) + " - " + packetSize);
 												LoginManager.logout();
 												return true;
 											}
@@ -1703,7 +1705,7 @@ public class Protocol {
 		try {
 			return readPacketInternal();
 		} catch (@Pc(16) IOException local16) {
-			Static211.method3725();
+			method3725();
 			return true;
 		} catch (@Pc(21) Exception ex) {
 			@Pc(81) String local81 = "T2 - " + (packet == null ? -1 : packet.getOpcode()) + "," + (packet2 == null ? -1 : packet2.getOpcode()) + "," + (packet3 == null ? -1 : packet3.getOpcode()) + " - " + packetSize + "," + (Camera.originX + PlayerList.self.movementQueueX[0]) + "," + (Camera.originZ + PlayerList.self.movementQueueZ[0]) + " - ";
@@ -1711,7 +1713,7 @@ public class Protocol {
 				local81 = local81 + inboundBuffer.data[local83] + ",";
 			}
 			ex.printStackTrace();
-			Static262.report(ex, local81);
+			TracingException.report(ex, local81);
 			LoginManager.logout();
 			return true;
 		}
@@ -2756,17 +2758,17 @@ public class Protocol {
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(IIILjava/lang/String;I)V")
 	public static void method4681(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
-		@Pc(8) Class161 local8 = InterfaceList.method3705(arg0, arg3);
+		@Pc(8) Component local8 = InterfaceList.method3705(arg0, arg3);
 		if (local8 == null) {
 			return;
 		}
 		if (local8.anObjectArray27 != null) {
-			@Pc(18) Class2_Sub13 local18 = new Class2_Sub13();
+			@Pc(18) HookRequest local18 = new HookRequest();
 			local18.anObjectArray4 = local8.anObjectArray27;
 			local18.anInt2118 = arg1;
-			local18.aClass161_3 = local8;
+			local18.source = local8;
 			local18.aString20 = arg2;
-			ScriptRunner.method3591(local18);
+			ScriptRunner.execute(local18);
 		}
 		@Pc(35) boolean local35 = true;
 		if (local8.anInt4273 != 0) {
@@ -2833,8 +2835,8 @@ public class Protocol {
 		if (local21 == 21) {
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
-			Static93.anInt1951 = 2;
-			Static313.anInt5878 = 0;
+			Cross.type = 2;
+			Cross.ms = 0;
 			writeOpcode(ClientProt.PACKET_26);
 			outboundBuffer.ip2add(Camera.originZ + local18);
 			outboundBuffer.p2(local15 + Camera.originX);
@@ -2846,10 +2848,10 @@ public class Protocol {
 			method4681(local18, local25, arg0.aString11, local15);
 		}
 		if (local21 == 51) {
-			Static93.anInt1951 = 1;
+			Cross.type = 1;
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
-			Static313.anInt5878 = 0;
+			Cross.ms = 0;
 			writeOpcode(ClientProt.PACKET_52);
 			outboundBuffer.ip2_dup(Static196.anInt3317);
 			outboundBuffer.p4(Static337.anInt6317);
@@ -2859,8 +2861,8 @@ public class Protocol {
 			Static322.method5482(true, -4, local18, 0, 1, local15, 1, 0);
 		}
 		if (local21 == 12) {
-			Static93.anInt1951 = 2;
-			Static313.anInt5878 = 0;
+			Cross.type = 2;
+			Cross.ms = 0;
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
 			writeOpcode(ClientProt.PACKET_40);
@@ -2871,9 +2873,9 @@ public class Protocol {
 			Static172.method3285(local18, local28, local15);
 		}
 		if (local21 == 1004) {
-			Static313.anInt5878 = 0;
+			Cross.ms = 0;
 			Static291.anInt5504 = arg2;
-			Static93.anInt1951 = 2;
+			Cross.type = 2;
 			Static320.anInt6005 = arg1;
 			writeOpcode(ClientProt.PACKET_47);
 			outboundBuffer.p2add(local18 + Camera.originZ);
@@ -2887,8 +2889,8 @@ public class Protocol {
 			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
 			if (local275 != null) {
 				Static291.anInt5504 = arg2;
-				Static313.anInt5878 = 0;
-				Static93.anInt1951 = 2;
+				Cross.ms = 0;
+				Cross.type = 2;
 				Static320.anInt6005 = arg1;
 				writeOpcode(ClientProt.PACKET_27);
 				outboundBuffer.p1sub(Keyboard.instance.isPressed(82) ? 1 : 0);
@@ -2899,14 +2901,14 @@ public class Protocol {
 		if (local21 == 1009) {
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
-			Static313.anInt5878 = 0;
-			Static93.anInt1951 = 2;
+			Cross.ms = 0;
+			Cross.type = 2;
 			writeOpcode(ClientProt.PACKET_0);
 			outboundBuffer.p2(local25);
 		}
 		if (local21 == 46) {
-			Static313.anInt5878 = 0;
-			Static93.anInt1951 = 2;
+			Cross.ms = 0;
+			Cross.type = 2;
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
 			writeOpcode(ClientProt.PACKET_5);
@@ -2918,12 +2920,12 @@ public class Protocol {
 		}
 		if (local21 == 59) {
 			if (LoginManager.staffModLevel > 0 && Keyboard.instance.isPressed(82) && Keyboard.instance.isPressed(81)) {
-				Static6.method141(PlayerList.self.plane, local18 + Camera.originZ, local15 + Camera.originX);
+				Cheat.teleport(PlayerList.self.plane, local18 + Camera.originZ, local15 + Camera.originX);
 			} else {
 				Static291.anInt5504 = arg2;
-				Static313.anInt5878 = 0;
+				Cross.ms = 0;
 				Static320.anInt6005 = arg1;
-				Static93.anInt1951 = 1;
+				Cross.type = 1;
 				writeOpcode(ClientProt.PACKET_38);
 				outboundBuffer.p2(local15 + Camera.originX);
 				outboundBuffer.p2add(local18 + Camera.originZ);
@@ -2931,15 +2933,15 @@ public class Protocol {
 		}
 		@Pc(485) Npc local485;
 		if (local21 == 1006) {
-			Static313.anInt5878 = 0;
-			Static93.anInt1951 = 2;
+			Cross.ms = 0;
+			Cross.type = 2;
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
 			local485 = NpcList.npcs[local25];
 			if (local485 != null) {
 				@Pc(490) NpcType local490 = local485.type;
 				if (local490.multiNpcs != null) {
-					local490 = local490.getMultiNpc(Static214.aClass226_1);
+					local490 = local490.getMultiNpc(VarpDomain.instance);
 				}
 				if (local490 != null) {
 					writeOpcode(ClientProt.PACKET_46);
@@ -2952,8 +2954,8 @@ public class Protocol {
 			if (local485 != null) {
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
-				Static313.anInt5878 = 0;
-				Static93.anInt1951 = 2;
+				Cross.ms = 0;
+				Cross.type = 2;
 				writeOpcode(ClientProt.PACKET_70);
 				outboundBuffer.ip2add(local25);
 				outboundBuffer.p1(Keyboard.instance.isPressed(82) ? 1 : 0);
@@ -2961,10 +2963,10 @@ public class Protocol {
 			}
 		}
 		if (local21 == 15) {
-			Static313.anInt5878 = 0;
+			Cross.ms = 0;
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
-			Static93.anInt1951 = 2;
+			Cross.type = 2;
 			writeOpcode(ClientProt.PACKET_22);
 			outboundBuffer.ip2add(local25);
 			outboundBuffer.p2add(Camera.originZ + local18);
@@ -2977,8 +2979,8 @@ public class Protocol {
 			if (local485 != null) {
 				Static291.anInt5504 = arg2;
 				Static320.anInt6005 = arg1;
-				Static313.anInt5878 = 0;
-				Static93.anInt1951 = 2;
+				Cross.ms = 0;
+				Cross.type = 2;
 				writeOpcode(ClientProt.PACKET_75);
 				outboundBuffer.p4(Static337.anInt6317);
 				outboundBuffer.p1sub(Keyboard.instance.isPressed(82) ? 1 : 0);
@@ -2991,8 +2993,8 @@ public class Protocol {
 		if (local21 == 17) {
 			Static291.anInt5504 = arg2;
 			Static320.anInt6005 = arg1;
-			Static313.anInt5878 = 0;
-			Static93.anInt1951 = 2;
+			Cross.ms = 0;
+			Cross.type = 2;
 			writeOpcode(ClientProt.PACKET_72);
 			outboundBuffer.ip2add(Integer.MAX_VALUE & (int) (local28 >>> 32));
 			outboundBuffer.p1(Keyboard.instance.isPressed(82) ? 1 : 0);
@@ -3003,9 +3005,9 @@ public class Protocol {
 		if (local21 == 60) {
 			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
 			if (local275 != null) {
-				Static93.anInt1951 = 2;
+				Cross.type = 2;
 				Static291.anInt5504 = arg2;
-				Static313.anInt5878 = 0;
+				Cross.ms = 0;
 				Static320.anInt6005 = arg1;
 				writeOpcode(ClientProt.PACKET_48);
 				outboundBuffer.ip4_dup(Static337.anInt6317);
@@ -3018,8 +3020,8 @@ public class Protocol {
 		}
 		if (local21 == 20) {
 			Static320.anInt6005 = arg1;
-			Static313.anInt5878 = 0;
-			Static93.anInt1951 = 2;
+			Cross.ms = 0;
+			Cross.type = 2;
 			Static291.anInt5504 = arg2;
 			writeOpcode(ClientProt.PACKET_3);
 			outboundBuffer.ip2add(Camera.originZ + local18);
@@ -3029,10 +3031,10 @@ public class Protocol {
 			Static172.method3285(local18, local28, local15);
 		}
 		if (local21 == 58) {
-			Static93.anInt1951 = 2;
+			Cross.type = 2;
 			Static291.anInt5504 = arg2;
 			Static320.anInt6005 = arg1;
-			Static313.anInt5878 = 0;
+			Cross.ms = 0;
 			writeOpcode(ClientProt.PACKET_80);
 			outboundBuffer.ip2add(local25);
 			outboundBuffer.p1add(Keyboard.instance.isPressed(82) ? 1 : 0);
@@ -3041,10 +3043,10 @@ public class Protocol {
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 13) {
-			Static313.anInt5878 = 0;
+			Cross.ms = 0;
 			Static320.anInt6005 = arg1;
 			Static291.anInt5504 = arg2;
-			Static93.anInt1951 = 2;
+			Cross.type = 2;
 			writeOpcode(ClientProt.PACKET_6);
 			outboundBuffer.p2(Static196.anInt3317);
 			outboundBuffer.ip2add(local25);
@@ -3058,9 +3060,9 @@ public class Protocol {
 		if (local21 == 23) {
 			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
 			if (local275 != null) {
-				Static93.anInt1951 = 2;
+				Cross.type = 2;
 				Static320.anInt6005 = arg1;
-				Static313.anInt5878 = 0;
+				Cross.ms = 0;
 				Static291.anInt5504 = arg2;
 				writeOpcode(ClientProt.PACKET_45);
 				outboundBuffer.ip2_dup(local25);
@@ -3071,8 +3073,8 @@ public class Protocol {
 		if (local21 == 6) {
 			Static291.anInt5504 = arg2;
 			Static320.anInt6005 = arg1;
-			Static313.anInt5878 = 0;
-			Static93.anInt1951 = 2;
+			Cross.ms = 0;
+			Cross.type = 2;
 			writeOpcode(ClientProt.PACKET_79);
 			outboundBuffer.p2(local25);
 			outboundBuffer.p1add(Keyboard.instance.isPressed(82) ? 1 : 0);
@@ -3082,7 +3084,7 @@ public class Protocol {
 		}
 		if (local21 == 22) {
 			if (LoginManager.staffModLevel > 0 && Keyboard.instance.isPressed(82) && Keyboard.instance.isPressed(81)) {
-				Static6.method141(PlayerList.self.plane, Camera.originZ + local18, local15 + Camera.originX);
+				Cheat.teleport(PlayerList.self.plane, Camera.originZ + local18, local15 + Camera.originX);
 			} else {
 				method1736(local15, local18, local25);
 				if (local25 == 1) {
@@ -3098,8 +3100,8 @@ public class Protocol {
 					outboundBuffer.p1(63);
 				} else {
 					Static320.anInt6005 = arg1;
-					Static313.anInt5878 = 0;
-					Static93.anInt1951 = 1;
+					Cross.ms = 0;
+					Cross.type = 1;
 					Static291.anInt5504 = arg2;
 				}
 				Static322.method5482(true, -4, local18, 0, 1, local15, 1, 0);
@@ -3107,8 +3109,8 @@ public class Protocol {
 		}
 		if (local21 == 50) {
 			Static291.anInt5504 = arg2;
-			Static313.anInt5878 = 0;
-			Static93.anInt1951 = 2;
+			Cross.ms = 0;
+			Cross.type = 2;
 			Static320.anInt6005 = arg1;
 			writeOpcode(ClientProt.OPLOC1);
 			outboundBuffer.ip2_dup((int) (local28 >>> 32) & Integer.MAX_VALUE);
@@ -3121,8 +3123,8 @@ public class Protocol {
 			local485 = NpcList.npcs[local25];
 			if (local485 != null) {
 				Static291.anInt5504 = arg2;
-				Static93.anInt1951 = 2;
-				Static313.anInt5878 = 0;
+				Cross.type = 2;
+				Cross.ms = 0;
 				Static320.anInt6005 = arg1;
 				writeOpcode(ClientProt.PACKET_68);
 				outboundBuffer.p2(local25);
@@ -3134,9 +3136,9 @@ public class Protocol {
 			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
 			if (local275 != null) {
 				Static320.anInt6005 = arg1;
-				Static93.anInt1951 = 2;
+				Cross.type = 2;
 				Static291.anInt5504 = arg2;
-				Static313.anInt5878 = 0;
+				Cross.ms = 0;
 				writeOpcode(ClientProt.PACKET_41);
 				outboundBuffer.p1(Keyboard.instance.isPressed(82) ? 1 : 0);
 				outboundBuffer.ip2_dup(local25);
@@ -3146,8 +3148,8 @@ public class Protocol {
 		if (local21 == 25) {
 			local485 = NpcList.npcs[local25];
 			if (local485 != null) {
-				Static93.anInt1951 = 2;
-				Static313.anInt5878 = 0;
+				Cross.type = 2;
+				Cross.ms = 0;
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
 				writeOpcode(ClientProt.PACKET_50);
@@ -3158,8 +3160,8 @@ public class Protocol {
 		}
 		if (local21 == 57) {
 			Static320.anInt6005 = arg1;
-			Static313.anInt5878 = 0;
-			Static93.anInt1951 = 2;
+			Cross.ms = 0;
+			Cross.type = 2;
 			Static291.anInt5504 = arg2;
 			writeOpcode(ClientProt.PACKET_9);
 			outboundBuffer.ip2_dup(Integer.MAX_VALUE & (int) (local28 >>> 32));
@@ -3174,8 +3176,8 @@ public class Protocol {
 		if (local21 == 5) {
 			local485 = NpcList.npcs[local25];
 			if (local485 != null) {
-				Static313.anInt5878 = 0;
-				Static93.anInt1951 = 2;
+				Cross.ms = 0;
+				Cross.type = 2;
 				Static291.anInt5504 = arg2;
 				Static320.anInt6005 = arg1;
 				writeOpcode(ClientProt.PACKET_28);
@@ -3187,9 +3189,9 @@ public class Protocol {
 		if (local21 == 18) {
 			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
 			if (local275 != null) {
-				Static93.anInt1951 = 2;
+				Cross.type = 2;
 				Static291.anInt5504 = arg2;
-				Static313.anInt5878 = 0;
+				Cross.ms = 0;
 				Static320.anInt6005 = arg1;
 				writeOpcode(ClientProt.PACKET_35);
 				outboundBuffer.ip2add(local25);
@@ -3200,17 +3202,17 @@ public class Protocol {
 		if (local21 == 9) {
 			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
 			if (local275 != null) {
-				Static313.anInt5878 = 0;
+				Cross.ms = 0;
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
-				Static93.anInt1951 = 2;
+				Cross.type = 2;
 				writeOpcode(ClientProt.PACKET_36);
 				outboundBuffer.ip2_dup(local25);
 				outboundBuffer.p1sub(Keyboard.instance.isPressed(82) ? 1 : 0);
 				Static322.method5482(true, -2, local275.movementQueueZ[0], 0, local275.getSize(), local275.movementQueueX[0], local275.getSize(), 0);
 			}
 		}
-		@Pc(1723) Class161 local1723;
+		@Pc(1723) Component local1723;
 		if (local21 == 49) {
 			local1723 = InterfaceList.method3705(local18, local15);
 			if (local1723 != null) {
@@ -3227,9 +3229,9 @@ public class Protocol {
 		}
 		if (local21 == 1010) {
 			Static320.anInt6005 = arg1;
-			Static93.anInt1951 = 2;
+			Cross.type = 2;
 			Static291.anInt5504 = arg2;
-			Static313.anInt5878 = 0;
+			Cross.ms = 0;
 			writeOpcode(ClientProt.GET_EXAMINE);
 			outboundBuffer.p2(local25);
 		}
@@ -3238,8 +3240,8 @@ public class Protocol {
 			if (local275 != null) {
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
-				Static93.anInt1951 = 2;
-				Static313.anInt5878 = 0;
+				Cross.type = 2;
+				Cross.ms = 0;
 				writeOpcode(ClientProt.PACKET_32);
 				outboundBuffer.ip2add(local25);
 				outboundBuffer.p1neg(Keyboard.instance.isPressed(82) ? 1 : 0);
@@ -3260,8 +3262,8 @@ public class Protocol {
 			if (local275 != null) {
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
-				Static313.anInt5878 = 0;
-				Static93.anInt1951 = 2;
+				Cross.ms = 0;
+				Cross.type = 2;
 				writeOpcode(ClientProt.PACKET_69);
 				outboundBuffer.p1neg(Keyboard.instance.isPressed(82) ? 1 : 0);
 				outboundBuffer.ip2_dup(local25);
@@ -3276,9 +3278,9 @@ public class Protocol {
 		if (local21 == 44) {
 			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
 			if (local275 != null) {
-				Static313.anInt5878 = 0;
+				Cross.ms = 0;
 				Static291.anInt5504 = arg2;
-				Static93.anInt1951 = 2;
+				Cross.type = 2;
 				Static320.anInt6005 = arg1;
 				writeOpcode(ClientProt.PACKET_39);
 				outboundBuffer.p1(Keyboard.instance.isPressed(82) ? 1 : 0);
@@ -3291,8 +3293,8 @@ public class Protocol {
 			if (local485 != null) {
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
-				Static313.anInt5878 = 0;
-				Static93.anInt1951 = 2;
+				Cross.ms = 0;
+				Cross.type = 2;
 				writeOpcode(ClientProt.PACKET_31);
 				outboundBuffer.p2(local25);
 				outboundBuffer.p1neg(Keyboard.instance.isPressed(82) ? 1 : 0);
@@ -3302,14 +3304,14 @@ public class Protocol {
 		if (Static330.aBoolean419) {
 			Static207.method3699();
 		}
-		if (Static64.aClass161_2 != null && Static112.anInt2293 == 0) {
-			InterfaceList.redraw(Static64.aClass161_2);
+		if (MiniMenu.pressedInventoryComponent != null && MiniMenu.anInt2293 == 0) {
+			InterfaceList.redraw(MiniMenu.pressedInventoryComponent);
 		}
 	}
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(BZ)V")
 	public static void method2973(@OriginalArg(1) boolean arg0) {
-		Static37.method1135();
+		client.audioLogic();
 		if (client.gameState != 30 && client.gameState != 25) {
 			return;
 		}
@@ -3318,16 +3320,16 @@ public class Protocol {
 			return;
 		}
 		Static367.anInt6876 = 0;
-		if (!Static101.aBoolean158 && socket != null) {
+		if (!LoginManager.aBoolean158 && socket != null) {
 			writeOpcode(ClientProt.NO_TIMEOUT);
 			try {
 				socket.write(outboundBuffer.pos, outboundBuffer.data);
 				outboundBuffer.pos = 0;
 			} catch (@Pc(57) IOException local57) {
-				Static101.aBoolean158 = true;
+				LoginManager.aBoolean158 = true;
 			}
 		}
-		Static37.method1135();
+		client.audioLogic();
 	}
 
 	@OriginalMember(owner = "client!hf", name = "b", descriptor = "(I)V")
@@ -3336,86 +3338,8 @@ public class Protocol {
 		outboundBuffer.p2(verifyId);
 	}
 
-	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(I)V")
-	public static void method3777() {
-		for (@Pc(7) int local7 = 0; local7 < Static243.anInt4503; local7++) {
-			@Pc(15) int local15 = Static237.anIntArray283[local7]--;
-			if (Static237.anIntArray283[local7] >= -10) {
-				@Pc(90) SynthSound local90 = Static196.aClass247Array2[local7];
-				if (local90 == null) {
-					local90 = Static409.method6435(client.jsArchive4, Static256.anIntArray321[local7], 0);
-					if (local90 == null) {
-						continue;
-					}
-					Static237.anIntArray283[local7] += local90.getStart();
-					Static196.aClass247Array2[local7] = local90;
-				}
-				if (Static237.anIntArray283[local7] < 0) {
-					@Pc(143) int local143;
-					if (Static162.anIntArray188[local7] == 0) {
-						local143 = client.preferences.soundEffectVolume * Static223.anIntArray256[local7] >> 8;
-					} else {
-						@Pc(133) int local133 = Static162.anIntArray188[local7] >> 24 & 0x3;
-						if (PlayerList.self.plane == local133) {
-							@Pc(153) int local153 = (Static162.anIntArray188[local7] & 0xFF) * 128;
-							@Pc(161) int local161 = Static162.anIntArray188[local7] >> 16 & 0xFF;
-							@Pc(171) int local171 = local161 * 128 + 64 - PlayerList.self.xFine;
-							if (local171 < 0) {
-								local171 = -local171;
-							}
-							@Pc(187) int local187 = Static162.anIntArray188[local7] >> 8 & 0xFF;
-							@Pc(197) int local197 = local187 * 128 + 64 - PlayerList.self.zFine;
-							if (local197 < 0) {
-								local197 = -local197;
-							}
-							@Pc(211) int local211 = local197 + local171 - 128;
-							if (local153 < local211) {
-								Static237.anIntArray283[local7] = -100;
-								continue;
-							}
-							if (local211 < 0) {
-								local211 = 0;
-							}
-							local143 = Static223.anIntArray256[local7] * (local153 - local211) * client.preferences.ambientSoundsVolume / local153 >> 8;
-						} else {
-							local143 = 0;
-						}
-					}
-					if (local143 > 0) {
-						@Pc(264) PcmSound local264 = local90.toPcmSound().method3179(client.resampler);
-						@Pc(269) Class2_Sub12_Sub4 local269 = Static406.method5006(local264, local143);
-						local269.method4984(Static329.anIntArray419[local7] - 1);
-						client.soundStream.addSubStream(local269);
-					}
-					Static237.anIntArray283[local7] = -100;
-				}
-			} else {
-				Static243.anInt4503--;
-				for (@Pc(29) int local29 = local7; local29 < Static243.anInt4503; local29++) {
-					Static256.anIntArray321[local29] = Static256.anIntArray321[local29 + 1];
-					Static196.aClass247Array2[local29] = Static196.aClass247Array2[local29 + 1];
-					Static329.anIntArray419[local29] = Static329.anIntArray419[local29 + 1];
-					Static237.anIntArray283[local29] = Static237.anIntArray283[local29 + 1];
-					Static162.anIntArray188[local29] = Static162.anIntArray188[local29 + 1];
-					Static223.anIntArray256[local29] = Static223.anIntArray256[local29 + 1];
-				}
-				local7--;
-			}
-		}
-		if (MidiPlayer.jingle && !Static64.method1704()) {
-			if (client.preferences.musicVolume != 0 && MusicPlayer.groupId != -1) {
-				MidiPlayer.playImmediate(client.preferences.musicVolume, MusicPlayer.groupId, client.jsArchive6);
-			}
-			MidiPlayer.jingle = false;
-		} else if (client.preferences.musicVolume != 0 && MusicPlayer.groupId != -1 && !Static64.method1704()) {
-			writeOpcode(ClientProt.SOUND_SONGEND);
-			outboundBuffer.p4(MusicPlayer.groupId);
-			MusicPlayer.groupId = -1;
-		}
-	}
-
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(Lclient!nk;ZLclient!nk;)V")
-	public static void method5096(@OriginalArg(0) Class161 arg0, @OriginalArg(2) Class161 arg1) {
+	public static void method5096(@OriginalArg(0) Component arg0, @OriginalArg(2) Component arg1) {
 		writeOpcode(ClientProt.PACKET_13);
 		outboundBuffer.p4(arg1.id);
 		outboundBuffer.ip2add(arg1.objId);
@@ -3426,7 +3350,7 @@ public class Protocol {
 	}
 
 	@OriginalMember(owner = "client!vi", name = "a", descriptor = "(Lclient!nk;I)V")
-	public static void method6129(@OriginalArg(0) Class161 arg0) {
+	public static void method6129(@OriginalArg(0) Component arg0) {
 		if (!Static330.aBoolean419) {
 			return;
 		}
@@ -3473,6 +3397,533 @@ public class Protocol {
 		if (Static192.aClass161_8 != null) {
 			InterfaceList.redraw(Static192.aClass161_8);
 			Static192.aClass161_8 = null;
+		}
+	}
+
+	@OriginalMember(owner = "client!hq", name = "b", descriptor = "(I)V")
+	public static void mainLogic() {
+		if (anInt1870 > 0) {
+			anInt1870--;
+		}
+		if (Player.rebootTimer > 1) {
+			Player.rebootTimer--;
+			InterfaceList.miscTransmitAt = InterfaceList.transmitTimer;
+		}
+		if (LoginManager.aBoolean158) {
+			LoginManager.aBoolean158 = false;
+			method3725();
+			return;
+		}
+		if (!Static375.aBoolean477) {
+			Static147.method2703();
+		}
+		for (@Pc(36) int local36 = 0; local36 < 100 && readPacket(); local36++) {
+		}
+		if (client.gameState != 30) {
+			return;
+		}
+		ReflectionCheck.mainLogic(outboundBuffer, ClientProt.REFLECTION_CHECK.getOpcode());
+		if (Static385.aClass2_Sub16_2 == null) {
+			if (MonotonicClock.currentTimeMillis() >= Static375.aLong222) {
+				Static385.aClass2_Sub16_2 = Static4.aClass162_1.method4114(client.hostname);
+			}
+		} else if (Static385.aClass2_Sub16_2.anInt2419 != -1) {
+			writeOpcode(ClientProt.IDLE_TIMER);
+			outboundBuffer.p2(Static385.aClass2_Sub16_2.anInt2419);
+			Static385.aClass2_Sub16_2 = null;
+			Static375.aLong222 = MonotonicClock.currentTimeMillis() + 30000L;
+		}
+		@Pc(112) int local112;
+		@Pc(135) int local135;
+		@Pc(153) int local153;
+		@Pc(169) boolean local169;
+		@Pc(219) int local219;
+		@Pc(225) int local225;
+		@Pc(236) int local236;
+		if (Mouse.clickButton != null || MouseRecorder.mouseRecorderPrevTime < MonotonicClock.currentTimeMillis() - 2000L) {
+			@Pc(109) boolean local109 = false;
+			local112 = outboundBuffer.pos;
+			for (@Pc(117) MouseRecorder local117 = (MouseRecorder) MouseRecorder.samples.head(); local117 != null && outboundBuffer.pos - local112 < 240; local117 = (MouseRecorder) MouseRecorder.samples.next()) {
+				local117.unlink();
+				local135 = local117.getX();
+				if (local135 < 0) {
+					local135 = 0;
+				} else if (local135 > 65534) {
+					local135 = 65534;
+				}
+				local153 = local117.getY();
+				if (local153 < 0) {
+					local153 = 0;
+				} else if (local153 > 65534) {
+					local153 = 65534;
+				}
+				boolean outsideWindow = false;
+				if (local117.getX() == -1 && local117.getY() == -1) {
+					local153 = -1;
+					outsideWindow = true;
+					local135 = -1;
+				}
+				if (MouseRecorder.mouseRecorderPrevX != local153 || local135 != MouseRecorder.mouseRecorderPrevY) {
+					if (!local109) {
+						writeOpcode(ClientProt.EVENT_MOUSE_MOVE);
+						outboundBuffer.p1(0);
+						local112 = outboundBuffer.pos;
+						local109 = true;
+					}
+					local219 = local153 - MouseRecorder.mouseRecorderPrevX;
+					MouseRecorder.mouseRecorderPrevX = local153;
+					local225 = local135 - MouseRecorder.mouseRecorderPrevY;
+					MouseRecorder.mouseRecorderPrevY = local135;
+					local236 = (int) ((local117.getTime() - MouseRecorder.mouseRecorderPrevTime) / 20L);
+					if (local236 < 8 && local219 >= -32 && local219 <= 31 && local225 >= -32 && local225 <= 31) {
+						local219 += 32;
+						local225 += 32;
+						outboundBuffer.p2((local219 << 6) + (local236 << 12) + local225);
+					} else if (local236 < 32 && local219 >= -128 && local219 <= 127 && local225 >= -128 && local225 <= 127) {
+						local225 += 128;
+						local219 += 128;
+						outboundBuffer.p1(local236 + 128);
+						outboundBuffer.p2((local219 << 8) + local225);
+					} else if (local236 >= 32) {
+						outboundBuffer.p2(local236 + 57344);
+						if (outsideWindow) {
+							outboundBuffer.p4(Integer.MIN_VALUE);
+						} else {
+							outboundBuffer.p4(local153 | local135 << 16);
+						}
+					} else {
+						outboundBuffer.p1(local236 + 192);
+						if (outsideWindow) {
+							outboundBuffer.p4(Integer.MIN_VALUE);
+						} else {
+							outboundBuffer.p4(local135 << 16 | local153);
+						}
+					}
+					MouseRecorder.mouseRecorderPrevTime = local117.getTime();
+				}
+			}
+			if (local109) {
+				outboundBuffer.psize1(outboundBuffer.pos - local112);
+			}
+		}
+		@Pc(410) int local410;
+		@Pc(463) int local463;
+		if (Mouse.clickButton != null) {
+			@Pc(394) long local394 = (Mouse.clickButton.getTime() - Mouse.prevClickTime) / 50L;
+			if (local394 > 32767L) {
+				local394 = 32767L;
+			}
+			Mouse.prevClickTime = Mouse.clickButton.getTime();
+			local410 = Mouse.clickButton.getX();
+			if (local410 < 0) {
+				local410 = 0;
+			} else if (local410 > 65535) {
+				local410 = 65535;
+			}
+			local135 = Mouse.clickButton.getY();
+			if (local135 < 0) {
+				local135 = 0;
+			} else if (local135 > 65535) {
+				local135 = 65535;
+			}
+			@Pc(446) byte local446 = 0;
+			if (Mouse.clickButton.method5247() == 2) {
+				local446 = 1;
+			}
+			writeOpcode(ClientProt.EVENT_MOUSE_CLICK);
+			local463 = (int) local394;
+			outboundBuffer.p2(local446 << 15 | local463);
+			outboundBuffer.ip4_dup(local135 | local410 << 16);
+		}
+		@Pc(483) int local483;
+		if (Static6.anInt159 > 0) {
+			local483 = 0;
+			for (local112 = 0; local112 < Static6.anInt159; local112++) {
+				if (Static156.aClass37Array1[local112].method1459()) {
+					local483++;
+				}
+			}
+			if (local483 > 0) {
+				writeOpcode(ClientProt.EVENT_KEYBOARD);
+				if (local483 > 75) {
+					local483 = 75;
+				}
+				outboundBuffer.p1(local483 * 3);
+				for (local410 = 0; local410 < Static6.anInt159; local410++) {
+					@Pc(531) Class37 local531 = Static156.aClass37Array1[local410];
+					if (local531.method1459()) {
+						@Pc(544) long local544 = (local531.method1457() - Static352.aLong202) / 50L;
+						Static352.aLong202 = local531.method1457();
+						if (local544 > 65535L) {
+							local544 = 65535L;
+						}
+						outboundBuffer.p1(local531.method1461());
+						outboundBuffer.p2((int) local544);
+					}
+				}
+			}
+		}
+		if (Camera.anInt7153 > 0) {
+			Camera.anInt7153--;
+		}
+		if (Camera.aBoolean156 && Camera.anInt7153 <= 0) {
+			Camera.aBoolean156 = false;
+			Camera.anInt7153 = 20;
+			writeOpcode(ClientProt.EVENT_CAMERA_POSITION);
+			outboundBuffer.p2((int) Camera.yawTarget >> 3);
+			outboundBuffer.ip2_dup((int) Camera.pitchTarget >> 3);
+		}
+		if (GameShell.focus && !GameShell.prevFocus) {
+			GameShell.prevFocus = true;
+			writeOpcode(ClientProt.EVENT_APPLET_FOCUS);
+			outboundBuffer.p1(1);
+		}
+		if (!GameShell.focus && GameShell.prevFocus) {
+			GameShell.prevFocus = false;
+			writeOpcode(ClientProt.EVENT_APPLET_FOCUS);
+			outboundBuffer.p1(0);
+		}
+		if (!Preferences.sentToServer) {
+			writeOpcode(ClientProt.PACKET_42);
+			outboundBuffer.p1(0);
+			local483 = outboundBuffer.pos;
+			@Pc(672) Buffer local672 = client.preferences.encode();
+			outboundBuffer.pdata(local672.data, local672.pos);
+			outboundBuffer.psize1(outboundBuffer.pos - local483);
+			Preferences.sentToServer = true;
+		}
+		if (Scene.aClass67ArrayArrayArray3 != null) {
+			if (Camera.anInt5911 == 2) {
+				Static222.method3917();
+			} else if (Camera.anInt5911 == 3) {
+				Static199.method5249();
+			}
+		}
+		if (Static140.aBoolean187) {
+			Static140.aBoolean187 = false;
+		} else {
+			Static296.aFloat68 /= 2.0F;
+		}
+		if (Static369.aBoolean471) {
+			Static369.aBoolean471 = false;
+		} else {
+			Static184.aFloat39 /= 2.0F;
+		}
+		Static183.method68();
+		if (client.gameState != 30) {
+			return;
+		}
+		Static56.method1611();
+		ChangeLocRequest.mainLogic();
+		AttachLocRequest.mainLogic();
+		SoundPlayer.mainLogic();
+		LoginManager.anInt4955++;
+		if (LoginManager.anInt4955 > 750) {
+			method3725();
+			return;
+		}
+		Static386.method6029();
+		Static61.method1673();
+		Static303.method5210();
+		for (local483 = VarpDomain.instance.poll(true); local483 != -1; local483 = VarpDomain.instance.poll(false)) {
+			VarpDomain.refreshMagicVarp(local483);
+			VarpDomain.updatedVarps[VarpDomain.updatedVarpsWriterIndex++ & 0x1F] = local483;
+		}
+		@Pc(830) Component local830;
+		for (@Pc(790) DelayedStateChange local790 = Static129.method2437(); local790 != null; local790 = Static129.method2437()) {
+			local410 = local790.getType();
+			local135 = local790.getId();
+			if (local410 == 1) {
+				VarcDomain.varcs[local135] = local790.intArg1;
+				VarcDomain.aBoolean374 |= Static89.aBooleanArray18[local135];
+				VarcDomain.updatedVarcs[VarcDomain.updatedVarcsWriterIndex++ & 0x1F] = local135;
+			} else if (local410 == 2) {
+				VarcDomain.varcstrs[local135] = local790.stringArg;
+				VarcDomain.anIntArray444[VarcDomain.updatedVarcstrsWriterIndex++ & 0x1F] = local135;
+			} else if (local410 == 3) {
+				local830 = InterfaceList.getComponent(local135);
+				if (!local790.stringArg.equals(local830.text)) {
+					local830.text = local790.stringArg;
+					InterfaceList.redraw(local830);
+				}
+			} else if (local410 == 4) {
+				local830 = InterfaceList.getComponent(local135);
+				local463 = local790.intArg1;
+				local219 = local790.intArg3;
+				local225 = local790.intArg2;
+				if (local830.modelType != local463 || local219 != local830.modelId || local830.anInt4236 != local225) {
+					local830.modelId = local219;
+					local830.anInt4236 = local225;
+					local830.modelType = local463;
+					InterfaceList.redraw(local830);
+				}
+			} else if (local410 == 5) {
+				local830 = InterfaceList.getComponent(local135);
+				if (local790.intArg1 != local830.modelSeqId || local790.intArg1 == -1) {
+					local830.anInt4316 = 1;
+					local830.anInt4247 = 0;
+					local830.modelSeqId = local790.intArg1;
+					local830.anInt4283 = 0;
+					InterfaceList.redraw(local830);
+				}
+			} else if (local410 == 6) {
+				local153 = local790.intArg1;
+				local463 = local153 >> 10 & 0x1F;
+				local219 = local153 >> 5 & 0x1F;
+				local225 = local153 & 0x1F;
+				local236 = (local463 << 19) + ((local219 << 11) + (local225 << 3));
+				@Pc(1214) Component local1214 = InterfaceList.getComponent(local135);
+				if (local1214.color != local236) {
+					local1214.color = local236;
+					InterfaceList.redraw(local1214);
+				}
+			} else if (local410 == 7) {
+				local830 = InterfaceList.getComponent(local135);
+				local169 = local790.intArg1 == 1;
+				if (local830.hidden != local169) {
+					local830.hidden = local169;
+					InterfaceList.redraw(local830);
+				}
+			} else if (local410 == 8) {
+				local830 = InterfaceList.getComponent(local135);
+				if (local790.intArg1 != local830.modelXAngle || local830.modelYAngle != local790.intArg3 || local790.intArg2 != local830.modelZoom) {
+					local830.modelZoom = local790.intArg2;
+					local830.modelYAngle = local790.intArg3;
+					local830.modelXAngle = local790.intArg1;
+					if (local830.objId != -1) {
+						if (local830.anInt4251 > 0) {
+							local830.modelZoom = local830.modelZoom * 32 / local830.anInt4251;
+						} else if (local830.baseWidth > 0) {
+							local830.modelZoom = local830.modelZoom * 32 / local830.baseWidth;
+						}
+					}
+					InterfaceList.redraw(local830);
+				}
+			} else if (local410 == 9) {
+				local830 = InterfaceList.getComponent(local135);
+				if (local830.objId != local790.intArg1 || local830.objCount != local790.intArg3) {
+					local830.objCount = local790.intArg3;
+					local830.objId = local790.intArg1;
+					InterfaceList.redraw(local830);
+				}
+			} else if (local410 == 10) {
+				local830 = InterfaceList.getComponent(local135);
+				if (local790.intArg1 != local830.modelXOffset || local790.intArg3 != local830.modelZOffset || local830.modelYOffset != local790.intArg2) {
+					local830.modelYOffset = local790.intArg2;
+					local830.modelXOffset = local790.intArg1;
+					local830.modelZOffset = local790.intArg3;
+					InterfaceList.redraw(local830);
+				}
+			} else if (local410 == 11) {
+				local830 = InterfaceList.getComponent(local135);
+				local830.yMode = 0;
+				local830.xMode = 0;
+				local830.y = local830.baseY = local790.intArg3;
+				local830.x = local830.baseX = local790.intArg1;
+				InterfaceList.redraw(local830);
+			} else if (local410 == 12) {
+				local830 = InterfaceList.getComponent(local135);
+				local463 = local790.intArg1;
+				if (local830 != null && local830.type == 0) {
+					if (local463 > local830.scrollMaxV - local830.height) {
+						local463 = local830.scrollMaxV - local830.height;
+					}
+					if (local463 < 0) {
+						local463 = 0;
+					}
+					if (local463 != local830.scrollY) {
+						local830.scrollY = local463;
+						InterfaceList.redraw(local830);
+					}
+				}
+			} else if (local410 == 14) {
+				local830 = InterfaceList.getComponent(local135);
+				local830.spriteId = local790.intArg1;
+			} else if (local410 == 15) {
+				Static312.anInt5844 = local790.intArg3;
+				Static370.aBoolean474 = true;
+				Static358.anInt6550 = local790.intArg1;
+			} else if (local410 == 16) {
+				local830 = InterfaceList.getComponent(local135);
+				local830.font = local790.intArg1;
+			}
+		}
+		if (Cross.type != 0) {
+			Cross.ms += 20;
+			if (Cross.ms >= 400) {
+				Cross.type = 0;
+			}
+		}
+		client.sceneDelta++;
+		if (MiniMenu.pressedInventoryComponent != null) {
+			MiniMenu.anInt2293++;
+			if (MiniMenu.anInt2293 >= 15) {
+				InterfaceList.redraw(MiniMenu.pressedInventoryComponent);
+				MiniMenu.pressedInventoryComponent = null;
+			}
+		}
+		WorldMap.aClass161_11 = null;
+		Static182.aClass161_7 = null;
+		Static278.aBoolean377 = false;
+		Static301.aBoolean403 = false;
+		Static374.method6274(-1, null, -1);
+		Static65.method1735(-1, null, -1);
+		Static309.method5278();
+		InterfaceList.transmitTimer++;
+		if (Static332.aBoolean427) {
+			writeOpcode(ClientProt.PACKET_65);
+			outboundBuffer.ip4_dup(Static283.anInt5351 << 28 | Static282.anInt5347 << 14 | Static4.anInt89);
+			Static332.aBoolean427 = false;
+		}
+		while (true) {
+			@Pc(1416) HookRequest local1416;
+			@Pc(1421) Component local1421;
+			do {
+				local1416 = (HookRequest) InterfaceList.highPriorityRequests.removeHead();
+				if (local1416 == null) {
+					while (true) {
+						do {
+							local1416 = (HookRequest) InterfaceList.mediumPriorityRequests.removeHead();
+							if (local1416 == null) {
+								while (true) {
+									do {
+										local1416 = (HookRequest) InterfaceList.lowPriorityRequests.removeHead();
+										if (local1416 == null) {
+											if (WorldMap.aClass161_11 == null) {
+												InterfaceList.anInt6449 = 0;
+											}
+											if (Cs1ScriptRunner.aClass161_14 != null) {
+												Cs1ScriptRunner.method2398();
+											}
+											if (LoginManager.staffModLevel > 0 && Keyboard.instance.isPressed(82) && Keyboard.instance.isPressed(81) && MouseWheel.wheelRotation != 0) {
+												local410 = PlayerList.self.plane - MouseWheel.wheelRotation;
+												if (local410 < 0) {
+													local410 = 0;
+												} else if (local410 > 3) {
+													local410 = 3;
+												}
+												Cheat.teleport(local410, Camera.originZ + PlayerList.self.movementQueueZ[0], PlayerList.self.movementQueueX[0] + Camera.originX);
+											}
+											Static315.method5381();
+											for (local410 = 0; local410 < 5; local410++) {
+												@Pc(1612) int local1612 = Static116.anIntArray149[local410]++;
+											}
+											if (VarcDomain.aBoolean374 && Static375.aLong221 < MonotonicClock.currentTimeMillis() - 60000L) {
+												Static340.method5765();
+											}
+											Camera.anInt28++;
+											if (Camera.anInt28 > 500) {
+												Camera.anInt28 = 0;
+												local135 = (int) (Math.random() * 8.0D);
+												if ((local135 & 0x4) == 4) {
+													Camera.anInt3966 += Camera.anInt213;
+												}
+												if ((local135 & 0x1) == 1) {
+													Camera.anInt642 += Camera.anInt2705;
+												}
+												if ((local135 & 0x2) == 2) {
+													Camera.anInt327 += Camera.anInt4897;
+												}
+											}
+											if (Camera.anInt642 < -50) {
+												Camera.anInt2705 = 2;
+											}
+											if (Camera.anInt327 < -55) {
+												Camera.anInt4897 = 2;
+											}
+											if (Camera.anInt642 > 50) {
+												Camera.anInt2705 = -2;
+											}
+											if (Camera.anInt3966 < -40) {
+												Camera.anInt213 = 1;
+											}
+											if (Camera.anInt327 > 55) {
+												Camera.anInt4897 = -2;
+											}
+											Static285.anInt5375++;
+											if (Camera.anInt3966 > 40) {
+												Camera.anInt213 = -1;
+											}
+											if (Static285.anInt5375 > 500) {
+												Static285.anInt5375 = 0;
+												local135 = (int) (Math.random() * 8.0D);
+												if ((local135 & 0x1) == 1) {
+													Static6.anInt158 += Static262.anInt6999;
+												}
+												if ((local135 & 0x2) == 2) {
+													Static97.anInt2005 += Static37.anInt949;
+												}
+											}
+											if (Static6.anInt158 < -60) {
+												Static262.anInt6999 = 2;
+											}
+											if (Static6.anInt158 > 60) {
+												Static262.anInt6999 = -2;
+											}
+											if (Static97.anInt2005 < -20) {
+												Static37.anInt949 = 1;
+											}
+											Static367.anInt6876++;
+											if (Static97.anInt2005 > 10) {
+												Static37.anInt949 = -1;
+											}
+											if (Static367.anInt6876 > 50) {
+												writeOpcode(ClientProt.NO_TIMEOUT);
+											}
+											if (Static1.aBoolean1) {
+												method2432();
+												Static1.aBoolean1 = false;
+											}
+											try {
+												if (socket != null && outboundBuffer.pos > 0) {
+													Static175.anInt3348 += outboundBuffer.pos;
+													socket.write(outboundBuffer.pos, outboundBuffer.data);
+													Static367.anInt6876 = 0;
+													outboundBuffer.pos = 0;
+													return;
+												}
+												return;
+											} catch (@Pc(1823) IOException local1823) {
+												method3725();
+												return;
+											}
+										}
+										local1421 = local1416.source;
+										if (local1421.activeComponentId < 0) {
+											break;
+										}
+										local830 = InterfaceList.getComponent(local1421.overlayer);
+									} while (local830 == null || local830.activeComponents == null || local830.activeComponents.length <= local1421.activeComponentId || local1421 != local830.activeComponents[local1421.activeComponentId]);
+									ScriptRunner.execute(local1416);
+								}
+							}
+							local1421 = local1416.source;
+							if (local1421.activeComponentId < 0) {
+								break;
+							}
+							local830 = InterfaceList.getComponent(local1421.overlayer);
+						} while (local830 == null || local830.activeComponents == null || local830.activeComponents.length <= local1421.activeComponentId || local1421 != local830.activeComponents[local1421.activeComponentId]);
+						ScriptRunner.execute(local1416);
+					}
+				}
+				local1421 = local1416.source;
+				if (local1421.activeComponentId < 0) {
+					break;
+				}
+				local830 = InterfaceList.getComponent(local1421.overlayer);
+			} while (local830 == null || local830.activeComponents == null || local830.activeComponents.length <= local1421.activeComponentId || local1421 != local830.activeComponents[local1421.activeComponentId]);
+			ScriptRunner.execute(local1416);
+		}
+	}
+
+	@OriginalMember(owner = "client!mh", name = "b", descriptor = "(B)V")
+	public static void method3725() {
+		if (anInt1870 > 0) {
+			LoginManager.logout();
+		} else {
+			aClass111_2 = socket;
+			socket = null;
+			client.setGameState(40);
 		}
 	}
 

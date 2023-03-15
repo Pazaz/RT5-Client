@@ -7,16 +7,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class DelayedStateChange extends SecondaryNode {
 
 	@OriginalMember(owner = "client!gg", name = "D", descriptor = "Ljava/lang/String;")
-	public String aString21;
+	public String stringArg;
 
 	@OriginalMember(owner = "client!gg", name = "E", descriptor = "I")
-	public int anInt2284;
+	public int intArg2;
 
 	@OriginalMember(owner = "client!gg", name = "J", descriptor = "I")
-	public int anInt2289;
+	public int intArg1;
 
 	@OriginalMember(owner = "client!gg", name = "K", descriptor = "I")
-	public int anInt2290;
+	public int intArg3;
 
 	@OriginalMember(owner = "client!gg", name = "<init>", descriptor = "(II)V")
 	public DelayedStateChange(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
@@ -90,7 +90,7 @@ public final class DelayedStateChange extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!ep", name = "a", descriptor = "(ZLclient!nk;B)V")
-	public static void method1911(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class161 arg1) {
+	public static void method1911(@OriginalArg(0) boolean arg0, @OriginalArg(1) Component arg1) {
 		@Pc(12) int local12 = arg1.scrollMaxH == 0 ? arg1.width : arg1.scrollMaxH;
 		@Pc(24) int local24 = arg1.scrollMaxV == 0 ? arg1.height : arg1.scrollMaxV;
 		Static364.method6105(arg0, local24, arg1.id, Static26.aClass161ArrayArray1[arg1.id >> 16], local12);
@@ -113,11 +113,11 @@ public final class DelayedStateChange extends SecondaryNode {
 	public static void method2737(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(16) DelayedStateChange local16 = Static316.method5413(6, arg0);
 		local16.method2311();
-		local16.anInt2289 = arg1;
+		local16.intArg1 = arg1;
 	}
 
 	@OriginalMember(owner = "client!gg", name = "b", descriptor = "(I)I")
-	public int method2307() {
+	public int getType() {
 		return (int) (super.key >>> 32 & 0xFFL);
 	}
 
@@ -127,7 +127,7 @@ public final class DelayedStateChange extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!gg", name = "d", descriptor = "(B)I")
-	public int method2309() {
+	public int getId() {
 		return (int) super.key;
 	}
 

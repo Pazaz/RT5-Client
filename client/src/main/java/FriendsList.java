@@ -61,7 +61,7 @@ public class FriendsList {
 					ranks[local61] = ranks[local61 + 1];
 					sameGame[local61] = sameGame[local61 + 1];
 				}
-				Static53.anInt3971 = Static88.transmitTimer;
+				Static53.anInt3971 = InterfaceList.transmitTimer;
 				Protocol.writeOpcode(ClientProt.PACKET_53);
 				Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
 				Protocol.outboundBuffer.pjstr(arg0);

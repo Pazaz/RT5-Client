@@ -32,21 +32,10 @@ public final class Static174 {
 		Static317.method5549(local5);
 		Static202.method3678(local5);
 		if (client.gameState == 10) {
-			Static336.method5705(28);
+			client.setGameState(28);
 		} else if (client.gameState == 30) {
-			Static336.method5705(25);
+			client.setGameState(25);
 		}
-	}
-
-	@OriginalMember(owner = "client!kb", name = "a", descriptor = "(II)V")
-	public static void method1507() {
-		Static384.aBoolean485 = false;
-		Static235.anInt3365 = 1;
-		Static105.anInt2183 = -1;
-		Static116.aClass197_26 = null;
-		Static341.anInt6376 = -1;
-		Static356.anInt6641 = 0;
-		Static28.anInt672 = 2;
 	}
 
 	@OriginalMember(owner = "client!kb", name = "a", descriptor = "(BLclient!bt;)Lclient!vo;")

@@ -8,7 +8,7 @@ public final class Static209 {
 	public static int[] anIntArray228;
 
 	@OriginalMember(owner = "client!me", name = "a", descriptor = "(ILclient!wm;Lclient!ci;)V")
-	public static void method3714(@OriginalArg(1) TextureProvider arg0, @OriginalArg(2) TextureProviderInterface arg1) {
+	public static void method3714(@OriginalArg(1) RasteriserBase arg0, @OriginalArg(2) TextureProviderInterface arg1) {
 		if (MapList.aClass2_Sub2_Sub17_3 == null) {
 			return;
 		}

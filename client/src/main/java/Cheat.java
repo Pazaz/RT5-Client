@@ -6,7 +6,7 @@ public class Cheat {
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(Ljava/lang/String;ZZ)V")
 	public static void execute(@OriginalArg(0) String cmd, @OriginalArg(1) boolean arg1) {
-		if (client.MODE_WHERE_LIVE == client.modeWhere && LoginManager.staffModLevel < 2) {
+		if (ModeWhere.MODE_WHERE_LIVE == client.modeWhere && LoginManager.staffModLevel < 2) {
 			return;
 		}
 		if (cmd.equalsIgnoreCase("errortest")) {
@@ -70,11 +70,11 @@ public class Cheat {
 			if (cmd.equalsIgnoreCase("clientdrop")) {
 				DevConsole.log("Dropped client connection");
 				if (client.gameState == 30) {
-					Static211.method3725();
+					Protocol.method3725();
 					return;
 				}
 				if (client.gameState == 25) {
-					Static101.aBoolean158 = true;
+					LoginManager.aBoolean158 = true;
 				}
 				return;
 			}
@@ -254,7 +254,7 @@ public class Cheat {
 				return;
 			}
 			if (cmd.startsWith("bloom")) {
-				@Pc(736) boolean local736 = Rasteriser.textureProvider.method2892();
+				@Pc(736) boolean local736 = Rasteriser.instance.method2892();
 				if (Static284.method4882(!local736)) {
 					if (!local736) {
 						DevConsole.log("Bloom enabled");
@@ -304,7 +304,7 @@ public class Cheat {
 				return;
 			}
 			if (cmd.startsWith("mc")) {
-				if (Rasteriser.textureProvider.method2869()) {
+				if (Rasteriser.instance.method2869()) {
 					local76 = Integer.parseInt(cmd.substring(3));
 					if (local76 < 1) {
 						local76 = 1;
@@ -312,8 +312,8 @@ public class Cheat {
 						local76 = 4;
 					}
 					Static102.anInt3591 = local76;
-					Rasteriser.textureProvider.method2854(Static102.anInt3591);
-					Rasteriser.textureProvider.method2893(0);
+					Rasteriser.instance.method2854(Static102.anInt3591);
+					Rasteriser.instance.method2893(0);
 					DevConsole.log("Render cores now: " + Static102.anInt3591);
 					return;
 				}
@@ -345,7 +345,7 @@ public class Cheat {
 			}
 			if (cmd.equals("renderprofile") || cmd.equals("rp")) {
 				Static294.renderprofile = !Static294.renderprofile;
-				Rasteriser.textureProvider.method2855(Static294.renderprofile);
+				Rasteriser.instance.method2855(Static294.renderprofile);
 				Static49.method1471();
 				DevConsole.log("showprofiling=" + Static294.renderprofile);
 				return;
@@ -370,11 +370,11 @@ public class Cheat {
 				return;
 			}
 			if (cmd.equals("scramblevarcs")) {
-				for (local76 = 0; local76 < Static75.anIntArray117.length; local76++) {
+				for (local76 = 0; local76 < VarcDomain.varcs.length; local76++) {
 					if (Static89.aBooleanArray18[local76]) {
-						Static75.anIntArray117[local76] = (int) (Math.random() * 99999.0D);
+						VarcDomain.varcs[local76] = (int) (Math.random() * 99999.0D);
 						if (Math.random() > 0.5D) {
-							Static75.anIntArray117[local76] *= -1;
+							VarcDomain.varcs[local76] *= -1;
 						}
 					}
 				}
@@ -413,12 +413,12 @@ public class Cheat {
 			}
 			if (cmd.startsWith("getclientvarpbit")) {
 				local76 = Integer.parseInt(cmd.substring(17));
-				DevConsole.log("varpbit=" + Static214.aClass226_1.method5778(local76));
+				DevConsole.log("varpbit=" + VarpDomain.instance.method5778(local76));
 				return;
 			}
 			if (cmd.startsWith("getclientvarp")) {
 				local76 = Integer.parseInt(cmd.substring(14));
-				DevConsole.log("varp=" + Static214.aClass226_1.method5777(local76));
+				DevConsole.log("varp=" + VarpDomain.instance.method5777(local76));
 				return;
 			}
 			if (client.gameState == 30) {
@@ -427,7 +427,7 @@ public class Cheat {
 				Protocol.outboundBuffer.p1(arg1 ? 1 : 0);
 				Protocol.outboundBuffer.pjstr(cmd);
 			}
-			if (cmd.startsWith("fps ") && client.MODE_WHERE_LIVE != client.modeWhere) {
+			if (cmd.startsWith("fps ") && ModeWhere.MODE_WHERE_LIVE != client.modeWhere) {
 				Static250.method4346(StringUtils.parseInt(cmd.substring(4)));
 				return;
 			}
@@ -437,6 +437,13 @@ public class Cheat {
 		} catch (@Pc(1450) Exception local1450) {
 			DevConsole.log("Whoops, something went wrong.");
 		}
+	}
+
+	@OriginalMember(owner = "client!ae", name = "a", descriptor = "(IBII)V")
+	public static void teleport(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+		@Pc(43) String local43 = "tele " + arg0 + "," + (arg2 >> 6) + "," + (arg1 >> 6) + "," + (arg2 & 0x3F) + "," + (arg1 & 0x3F);
+		System.out.println(local43);
+		execute(local43, true);
 	}
 
 }

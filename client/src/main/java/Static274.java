@@ -9,11 +9,8 @@ public final class Static274 {
 	@OriginalMember(owner = "client!pp", name = "s", descriptor = "[I")
 	public static int[] anIntArray352;
 
-	@OriginalMember(owner = "client!pp", name = "w", descriptor = "Lclient!ld;")
-	public static final LinkedList aClass135_30 = new LinkedList();
-
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(ZLclient!nk;I)I")
-	public static int method4631(@OriginalArg(1) Class161 arg0, @OriginalArg(2) int arg1) {
+	public static int method4631(@OriginalArg(1) Component arg0, @OriginalArg(2) int arg1) {
 		if (!Static45.method1404(arg0).method1854(arg1) && arg0.anObjectArray27 == null) {
 			return -1;
 		} else if (arg0.anIntArray279 == null || arg0.anIntArray279.length <= arg1) {
@@ -21,11 +18,6 @@ public final class Static274 {
 		} else {
 			return arg0.anIntArray279[arg1];
 		}
-	}
-
-	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(ILclient!kk;)Z")
-	public static boolean method4638(@OriginalArg(1) Class127 arg0) {
-		return Static125.aClass127_8 == arg0 || Static27.aClass127_1 == arg0 || Static45.aClass127_2 == arg0 || Static48.aClass127_3 == arg0;
 	}
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(II)I")

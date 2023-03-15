@@ -7,7 +7,7 @@ public final class Static20 {
 	public static final boolean[] aBooleanArray6 = new boolean[100];
 
 	@OriginalMember(owner = "client!bd", name = "m", descriptor = "Lclient!nk;")
-	public static Class161 aClass161_1 = null;
+	public static Component aClass161_1 = null;
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "(I)V")
 	public static void method560() {

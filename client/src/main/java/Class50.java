@@ -6,14 +6,14 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class50 {
 
 	@OriginalMember(owner = "client!dn", name = "e", descriptor = "Ljava/lang/String;")
-	public final String aString15;
+	public final String name;
 
 	@OriginalMember(owner = "client!dn", name = "f", descriptor = "I")
 	public final int id;
 
 	@OriginalMember(owner = "client!dn", name = "<init>", descriptor = "(Ljava/lang/String;I)V")
 	public Class50(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
-		this.aString15 = arg0;
+		this.name = arg0;
 		this.id = arg1;
 	}
 
