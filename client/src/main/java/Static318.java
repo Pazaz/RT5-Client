@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static318 {
 
 	@OriginalMember(owner = "client!sj", name = "d", descriptor = "Z")
-	public static boolean aBoolean408 = false;
+	public static boolean forceTweening = false;
 
 	@OriginalMember(owner = "client!sj", name = "a", descriptor = "(BLclient!cf;)Ljava/lang/String;")
 	public static String method5421(@OriginalArg(1) Class2_Sub5 arg0) {

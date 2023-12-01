@@ -141,15 +141,15 @@ public final class Static181 {
 	public static void method3378(@OriginalArg(0) Component[] arg0, @OriginalArg(1) int arg1) {
 		for (@Pc(7) int local7 = 0; local7 < arg0.length; local7++) {
 			@Pc(13) Component local13 = arg0[local7];
-			if (local13 != null && arg1 == local13.overlayer && !Static45.method1403(local13)) {
+			if (local13 != null && arg1 == local13.layer && !Static45.method1403(local13)) {
 				if (local13.type == 0) {
 					method3378(arg0, local13.id);
 					if (local13.activeComponents != null) {
 						method3378(local13.activeComponents, local13.id);
 					}
-					@Pc(51) Class2_Sub7 local51 = (Class2_Sub7) Static329.aClass4_130.get((long) local13.id);
+					@Pc(51) SubInterface local51 = (SubInterface) InterfaceList.subInterfaces.get((long) local13.id);
 					if (local51 != null) {
-						Static232.method4028(local51.anInt1370);
+						Static232.method4028(local51.id);
 					}
 				}
 				if (local13.type == 6 && local13.modelSeqId != -1) {

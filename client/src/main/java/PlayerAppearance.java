@@ -89,7 +89,7 @@ public final class PlayerAppearance {
 				local31 = local65.method4235(local60) | false;
 				local35 = arg4.aBoolean263 | false;
 			}
-			if ((arg4.aBoolean264 || Static318.aBoolean408) && arg8 != -1 && arg8 < arg4.anIntArray262.length) {
+			if ((arg4.aBoolean264 || Static318.forceTweening) && arg8 != -1 && arg8 < arg4.anIntArray262.length) {
 				local109 = arg4.anIntArray262[arg8];
 				local113 = local109 >>> 16;
 				@Pc(117) int local117 = local109 & 0xFFFF;
@@ -193,7 +193,7 @@ public final class PlayerAppearance {
 				local11 = local45.method4235(local40) | false;
 				local15 = arg3.aBoolean263 | false;
 			}
-			if ((arg3.aBoolean264 || Static318.aBoolean408) && arg4 != -1 && arg3.anIntArray262.length > arg4) {
+			if ((arg3.aBoolean264 || Static318.forceTweening) && arg4 != -1 && arg3.anIntArray262.length > arg4) {
 				@Pc(84) int local84 = arg3.anIntArray262[arg4];
 				@Pc(88) int local88 = local84 >>> 16;
 				@Pc(92) int local92 = local84 & 0xFFFF;
@@ -350,7 +350,7 @@ public final class PlayerAppearance {
 						local141 |= Static41.aClass2_Sub2_Sub13Array2[local158].method4237(local213);
 						local139 |= Static41.aClass2_Sub2_Sub13Array2[local158].method4235(local213);
 					}
-					if ((local176.aBoolean264 || Static318.aBoolean408) && local195 != -1 && local176.anIntArray262.length > local195) {
+					if ((local176.aBoolean264 || Static318.forceTweening) && local195 != -1 && local176.anIntArray262.length > local195) {
 						Static296.anIntArray381[local158] = local176.anIntArray261[local190];
 						Static316.anIntArray396[local158] = arg15[local158].anInt625;
 						@Pc(290) int local290 = local176.anIntArray262[local195];
@@ -392,7 +392,7 @@ public final class PlayerAppearance {
 					local141 |= local345.method4237(local339);
 					local139 |= local345.method4235(local339);
 				}
-				if ((arg4.aBoolean264 || Static318.aBoolean408) && arg5 != -1 && arg5 < arg4.anIntArray262.length) {
+				if ((arg4.aBoolean264 || Static318.forceTweening) && arg5 != -1 && arg5 < arg4.anIntArray262.length) {
 					local195 = arg4.anIntArray261[arg16];
 					local190 = arg4.anIntArray262[arg5];
 					local427 = local190 >>> 16;
@@ -414,7 +414,7 @@ public final class PlayerAppearance {
 					local141 |= local355.method4237(local349);
 					local139 |= local355.method4235(local349);
 				}
-				if ((arg10.aBoolean264 || Static318.aBoolean408) && arg8 != -1 && arg10.anIntArray262.length > arg8) {
+				if ((arg10.aBoolean264 || Static318.forceTweening) && arg8 != -1 && arg10.anIntArray262.length > arg8) {
 					local353 = arg10.anIntArray261[arg9];
 					local351 = arg10.anIntArray262[arg8];
 					local427 = local351 >>> 16;

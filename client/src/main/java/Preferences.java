@@ -22,36 +22,36 @@ public final class Preferences extends Class177 {
 		super.soundEffectVolume = 127;
 		super.highDetailLighting = true;
 		super.antiAliasingMode = 0;
-		super.ambientSoundsVolume = 127;
-		super.highWaterDetail = true;
+		super.areaSoundsVolume = 127;
+		super.highDetailWater = true;
 		super.manyIdleAnimations = 1;
 		super.fullScreenWidth = 0;
-		super.manyGroundTextures = true;
-		super.flickeringEffectsOn = true;
-		super.sceneryShadowsType = 2;
-		super.windowMode = 0;
+		super.groundTextures = true;
+		super.flickeringEffects = true;
+		super.shadows = 2;
+		super.antiAliasingModeDefault = 0;
 		super.fullScreenHeight = 0;
-		super.characterShadowsOn = true;
+		super.characterShadows = true;
 		super.fogEnabled = true;
 		super.musicVolume = 255;
 		super.stereo = true;
 		super.highDetailTextures = true;
-		super.showGroundDecorations = true;
-		super.removeRoofsSelectively = true;
+		super.groundDecoration = true;
+		super.roofsVisible = true;
 		if (GameShell.maxMemory < 96) {
 			setParticles(0);
 		} else {
 			setParticles(2);
 		}
 		super.cursorsEnabled = true;
-		super.gb = true;
-		super.aBoolean362 = false;
-		super.favoriteWorlds = 2;
-		super.anInt4883 = 0;
-		super.anInt4881 = Static201.anInt3699 == 1 ? 2 : 4;
-		super.aBoolean356 = false;
+		super.groundBlending = true;
+		super.safeMode = false;
+		super.windowMode = 2;
+		super.buildArea = 0;
+		super.cpuUsage = Static201.anInt3699 == 1 ? 2 : 4;
+		super.bloomEnabled = false;
 		super.anInt4878 = 2;
-		super.lastWorldId = 0;
+		super.favouriteWorlds = 0;
 		super.aBoolean351 = false;
 		@Pc(125) FileOnDisk local125 = null;
 		try {
@@ -89,12 +89,17 @@ public final class Preferences extends Class177 {
 		Static153.anInt2794 = arg0;
 	}
 
+	@OriginalMember(owner = "client!km", name = "a", descriptor = "(I)I")
+	public static int getParticles() {
+		return Static153.anInt2794;
+	}
+
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(BI)I")
 	public int method4492(@OriginalArg(1) int arg0) {
 		if (this.neverRemoveRoofs) {
 			return 0;
 		} else if (this.method4495(arg0)) {
-			return super.removeRoofsSelectively ? 2 : 1;
+			return super.roofsVisible ? 2 : 1;
 		} else {
 			return 1;
 		}
@@ -102,7 +107,7 @@ public final class Preferences extends Class177 {
 
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(ZI)V")
 	public void setAllVisibleLevels(@OriginalArg(0) boolean arg0) {
-		super.aBoolean354 = arg0;
+		super.allLevelsVisible = arg0;
 		if (client.LocTypes != null) {
 			client.LocTypes.method5160(!this.method4495(Static77.anInt1762));
 		}
@@ -110,52 +115,52 @@ public final class Preferences extends Class177 {
 
 	@OriginalMember(owner = "client!pe", name = "d", descriptor = "(I)Lclient!bt;")
 	public Buffer encode() {
-		@Pc(8) Buffer local8 = new Buffer(39);
-		local8.p1(16);
-		local8.p1(super.brightness);
-		local8.p1(super.aBoolean354 ? 1 : 0);
-		local8.p1(super.removeRoofsSelectively ? 1 : 0);
-		local8.p1(super.showGroundDecorations ? 1 : 0);
-		local8.p1(super.highDetailTextures ? 1 : 0);
-		local8.p1(0);
-		local8.p1(super.flickeringEffectsOn ? 1 : 0);
-		local8.p1(super.manyGroundTextures ? 1 : 0);
-		local8.p1(super.characterShadowsOn ? 1 : 0);
-		local8.p1(super.sceneryShadowsType);
-		local8.p1(super.highDetailLighting ? 1 : 0);
-		local8.p1(super.highWaterDetail ? 1 : 0);
-		local8.p1(super.fogEnabled ? 1 : 0);
-		local8.p1(super.windowMode);
-		local8.p1(super.stereo ? 1 : 0);
-		local8.p1(super.soundEffectVolume);
-		local8.p1(super.musicVolume);
-		local8.p1(super.ambientSoundsVolume);
-		local8.p2(super.fullScreenWidth);
-		local8.p2(super.fullScreenHeight);
-		local8.p1(Static184.method3391());
-		local8.p4(super.lastWorldId);
-		local8.p1(super.favoriteWorlds);
-		local8.p1(super.aBoolean362 ? 1 : 0);
-		local8.p1(super.aBoolean351 ? 1 : 0);
-		local8.p1(super.anInt4883);
-		local8.p1(super.aBoolean356 ? 1 : 0);
-		local8.p1(super.cursorsEnabled ? 1 : 0);
-		local8.p1(super.manyIdleAnimations);
-		local8.p1(super.gb ? 1 : 0);
-		local8.p1(super.anInt4878);
-		local8.p1(super.anInt4881);
-		local8.p1(super.aBoolean360 ? 0 : 1);
-		return local8;
+		@Pc(8) Buffer buf = new Buffer(39);
+		buf.p1(16); // version
+		buf.p1(super.brightness);
+		buf.p1(super.allLevelsVisible ? 1 : 0);
+		buf.p1(super.roofsVisible ? 1 : 0);
+		buf.p1(super.groundDecoration ? 1 : 0);
+		buf.p1(super.highDetailTextures ? 1 : 0);
+		buf.p1(0);
+		buf.p1(super.flickeringEffects ? 1 : 0);
+		buf.p1(super.groundTextures ? 1 : 0);
+		buf.p1(super.characterShadows ? 1 : 0);
+		buf.p1(super.shadows);
+		buf.p1(super.highDetailLighting ? 1 : 0);
+		buf.p1(super.highDetailWater ? 1 : 0);
+		buf.p1(super.fogEnabled ? 1 : 0);
+		buf.p1(super.antiAliasingModeDefault);
+		buf.p1(super.stereo ? 1 : 0);
+		buf.p1(super.soundEffectVolume);
+		buf.p1(super.musicVolume);
+		buf.p1(super.areaSoundsVolume);
+		buf.p2(super.fullScreenWidth);
+		buf.p2(super.fullScreenHeight);
+		buf.p1(getParticles());
+		buf.p4(super.favouriteWorlds);
+		buf.p1(super.windowMode);
+		buf.p1(super.safeMode ? 1 : 0);
+		buf.p1(super.aBoolean351 ? 1 : 0);
+		buf.p1(super.buildArea);
+		buf.p1(super.bloomEnabled ? 1 : 0);
+		buf.p1(super.cursorsEnabled ? 1 : 0);
+		buf.p1(super.manyIdleAnimations);
+		buf.p1(super.groundBlending ? 1 : 0);
+		buf.p1(super.anInt4878);
+		buf.p1(super.cpuUsage);
+		buf.p1(super.aBoolean360 ? 0 : 1);
+		return buf;
 	}
 
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(II)Z")
 	public boolean method4495(@OriginalArg(1) int arg0) {
-		return arg0 == 0 && !this.aBoolean365 ? super.aBoolean354 : true;
+		return arg0 == 0 && !this.aBoolean365 ? super.allLevelsVisible : true;
 	}
 
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(IB)Z")
-	public boolean method4496(@OriginalArg(0) int arg0) {
-		return arg0 == 0 ? super.aBoolean354 : true;
+	public boolean isAllLevelsVisible(@OriginalArg(0) int arg0) {
+		return arg0 == 0 ? super.allLevelsVisible : true;
 	}
 
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(ILclient!ml;)V")
@@ -236,16 +241,16 @@ public final class Preferences extends Class177 {
 			super.brightness = 4;
 		}
 		this.setAllVisibleLevels(arg0.g1() == 1);
-		super.removeRoofsSelectively = arg0.g1() == 1;
-		super.showGroundDecorations = arg0.g1() == 1;
+		super.roofsVisible = arg0.g1() == 1;
+		super.groundDecoration = arg0.g1() == 1;
 		super.highDetailTextures = arg0.g1() == 1;
 		super.manyIdleAnimations = arg0.g1() == 1 ? 1 : 0;
-		super.flickeringEffectsOn = arg0.g1() == 1;
-		super.manyGroundTextures = arg0.g1() == 1;
-		super.characterShadowsOn = arg0.g1() == 1;
-		super.sceneryShadowsType = arg0.g1();
-		if (super.sceneryShadowsType > 2) {
-			super.sceneryShadowsType = 2;
+		super.flickeringEffects = arg0.g1() == 1;
+		super.groundTextures = arg0.g1() == 1;
+		super.characterShadows = arg0.g1() == 1;
+		super.shadows = arg0.g1();
+		if (super.shadows > 2) {
+			super.shadows = 2;
 		}
 		if (local21 < 2) {
 			super.highDetailLighting = arg0.g1() == 1;
@@ -253,22 +258,22 @@ public final class Preferences extends Class177 {
 		} else {
 			super.highDetailLighting = arg0.g1() == 1;
 		}
-		super.highWaterDetail = arg0.g1() == 1;
+		super.highDetailWater = arg0.g1() == 1;
 		super.fogEnabled = arg0.g1() == 1;
-		super.windowMode = arg0.g1();
-		if (super.windowMode > 2) {
-			super.windowMode = 2;
+		super.antiAliasingModeDefault = arg0.g1();
+		if (super.antiAliasingModeDefault > 2) {
+			super.antiAliasingModeDefault = 2;
 		}
-		super.antiAliasingMode = super.windowMode;
+		super.antiAliasingMode = super.antiAliasingModeDefault;
 		super.stereo = arg0.g1() == 1;
 		super.soundEffectVolume = arg0.g1();
 		if (super.soundEffectVolume > 127) {
 			super.soundEffectVolume = 127;
 		}
 		super.musicVolume = arg0.g1();
-		super.ambientSoundsVolume = arg0.g1();
-		if (super.ambientSoundsVolume > 127) {
-			super.ambientSoundsVolume = 127;
+		super.areaSoundsVolume = arg0.g1();
+		if (super.areaSoundsVolume > 127) {
+			super.areaSoundsVolume = 127;
 		}
 		if (local21 >= 1) {
 			super.fullScreenWidth = arg0.g2();
@@ -289,29 +294,29 @@ public final class Preferences extends Class177 {
 			setParticles(local437);
 		}
 		if (local21 >= 5) {
-			super.lastWorldId = arg0.g4();
+			super.favouriteWorlds = arg0.g4();
 		}
 		local437 = 0;
 		if (local21 >= 6) {
-			super.favoriteWorlds = local437 = arg0.g1();
+			super.windowMode = local437 = arg0.g1();
 		}
-		if (super.favoriteWorlds != 1 && super.favoriteWorlds != 2) {
-			super.favoriteWorlds = 2;
+		if (super.windowMode != 1 && super.windowMode != 2) {
+			super.windowMode = 2;
 		}
 		if (local21 >= 7) {
-			super.aBoolean362 = arg0.g1() == 1;
+			super.safeMode = arg0.g1() == 1;
 		}
 		if (local21 >= 8) {
 			super.aBoolean351 = arg0.g1() == 1;
 		}
 		if (local21 >= 9) {
-			super.anInt4883 = arg0.g1();
+			super.buildArea = arg0.g1();
 		}
-		if (super.anInt4883 < 0 || super.anInt4883 > Static289.method5019(GameShell.maxMemory)) {
-			super.anInt4883 = 0;
+		if (super.buildArea < 0 || super.buildArea > Static289.method5019(GameShell.maxMemory)) {
+			super.buildArea = 0;
 		}
 		if (local21 >= 10) {
-			super.aBoolean356 = arg0.g1() != 0;
+			super.bloomEnabled = arg0.g1() != 0;
 		}
 		if (local21 >= 11) {
 			super.cursorsEnabled = arg0.g1() != 0;
@@ -323,7 +328,7 @@ public final class Preferences extends Class177 {
 			super.manyIdleAnimations = 1;
 		}
 		if (local21 >= 13) {
-			super.gb = arg0.g1() == 1;
+			super.groundBlending = arg0.g1() == 1;
 		}
 		if (local21 >= 14) {
 			super.anInt4878 = arg0.g1();
@@ -336,9 +341,9 @@ public final class Preferences extends Class177 {
 			super.anInt4878 = 2;
 		}
 		if (local21 >= 15) {
-			super.anInt4881 = arg0.g1();
-			if (super.anInt4881 < 0 || super.anInt4881 > 4) {
-				super.anInt4881 = Static201.anInt3699 == 1 ? 2 : 4;
+			super.cpuUsage = arg0.g1();
+			if (super.cpuUsage < 0 || super.cpuUsage > 4) {
+				super.cpuUsage = Static201.anInt3699 == 1 ? 2 : 4;
 			}
 		}
 		if (local21 >= 16) {

@@ -14,16 +14,16 @@ public abstract class Class177 {
 	public boolean highDetailTextures = true;
 
 	@OriginalMember(owner = "client!wo", name = "g", descriptor = "I")
-	public int anInt4881 = 2;
+	public int cpuUsage = 2;
 
 	@OriginalMember(owner = "client!wo", name = "o", descriptor = "I")
 	public int fullScreenWidth = 0;
 
 	@OriginalMember(owner = "client!wo", name = "d", descriptor = "Z")
-	public boolean removeRoofsSelectively = true;
+	public boolean roofsVisible = true;
 
 	@OriginalMember(owner = "client!wo", name = "m", descriptor = "Z")
-	protected boolean aBoolean354 = true;
+	protected boolean allLevelsVisible = true;
 
 	@OriginalMember(owner = "client!wo", name = "v", descriptor = "Z")
 	protected boolean aBoolean360 = true;
@@ -32,28 +32,28 @@ public abstract class Class177 {
 	public boolean fogEnabled = true;
 
 	@OriginalMember(owner = "client!wo", name = "w", descriptor = "I")
-	public int lastWorldId = 0;
+	public int favouriteWorlds = 0;
 
 	@OriginalMember(owner = "client!wo", name = "y", descriptor = "I")
 	public int soundEffectVolume = 127;
 
 	@OriginalMember(owner = "client!wo", name = "u", descriptor = "Z")
-	public boolean showGroundDecorations = true;
+	public boolean groundDecoration = true;
 
 	@OriginalMember(owner = "client!wo", name = "z", descriptor = "I")
 	public int musicVolume = 255;
 
 	@OriginalMember(owner = "client!wo", name = "t", descriptor = "I")
-	public int sceneryShadowsType = 2;
+	public int shadows = 2;
 
 	@OriginalMember(owner = "client!wo", name = "k", descriptor = "Z")
-	public boolean flickeringEffectsOn = true;
+	public boolean flickeringEffects = true;
 
 	@OriginalMember(owner = "client!wo", name = "l", descriptor = "I")
-	public int anInt4883 = 0;
+	public int buildArea = 0;
 
 	@OriginalMember(owner = "client!wo", name = "i", descriptor = "I")
-	public int ambientSoundsVolume = 127;
+	public int areaSoundsVolume = 127;
 
 	@OriginalMember(owner = "client!wo", name = "j", descriptor = "Z")
 	public boolean stereo = true;
@@ -62,13 +62,13 @@ public abstract class Class177 {
 	public int anInt4878 = 2;
 
 	@OriginalMember(owner = "client!wo", name = "q", descriptor = "Z")
-	public boolean aBoolean356 = false;
+	public boolean bloomEnabled = false;
 
 	@OriginalMember(owner = "client!wo", name = "E", descriptor = "I")
 	public int fullScreenHeight = 0;
 
 	@OriginalMember(owner = "client!wo", name = "s", descriptor = "Z")
-	public boolean characterShadowsOn = true;
+	public boolean characterShadows = true;
 
 	@OriginalMember(owner = "client!wo", name = "p", descriptor = "I")
 	public int antiAliasingMode = 0;
@@ -77,25 +77,25 @@ public abstract class Class177 {
 	public boolean cursorsEnabled = true;
 
 	@OriginalMember(owner = "client!wo", name = "A", descriptor = "Z")
-	public boolean aBoolean362 = false;
+	public boolean safeMode = false;
 
 	@OriginalMember(owner = "client!wo", name = "C", descriptor = "I")
-	public int windowMode = 0;
+	public int antiAliasingModeDefault = 0;
 
 	@OriginalMember(owner = "client!wo", name = "n", descriptor = "Z")
-	public boolean manyGroundTextures = true;
+	public boolean groundTextures = true;
 
 	@OriginalMember(owner = "client!wo", name = "x", descriptor = "Z")
-	public boolean highWaterDetail = true;
+	public boolean highDetailWater = true;
 
 	@OriginalMember(owner = "client!wo", name = "G", descriptor = "I")
-	public int favoriteWorlds = 2;
+	public int windowMode = 2;
 
 	@OriginalMember(owner = "client!wo", name = "I", descriptor = "I")
 	public int manyIdleAnimations = 1;
 
 	@OriginalMember(owner = "client!wo", name = "r", descriptor = "Z")
-	public boolean gb = true;
+	public boolean groundBlending = true;
 
 	@OriginalMember(owner = "client!wo", name = "b", descriptor = "I")
 	public int brightness = 3;

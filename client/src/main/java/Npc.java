@@ -189,7 +189,7 @@ public final class Npc extends PathingEntity {
 		local17.method3936(super.xFine, super.anInt6782, super.zFine);
 		@Pc(37) BasType local37 = this.method4332();
 		@Pc(50) NpcType local50 = this.type.multiNpcs == null ? this.type : this.type.getMultiNpc(VarpDomain.instance);
-		if (client.preferences.characterShadowsOn && local50.aBoolean142 && local37.aBoolean424) {
+		if (client.preferences.characterShadows && local50.aBoolean142 && local37.aBoolean424) {
 			@Pc(75) Class157 local75 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
 			@Pc(92) Class157 local92 = super.anInt4585 == -1 || super.aBoolean317 && local75 != null ? null : client.SeqTypes.method2371(super.anInt4585);
 			@Pc(144) Model local144 = Static178.method2340(local92 == null ? super.anInt4607 : super.anInt4626, this.type.aByte15 & 0xFF, this.type.aByte14 & 0xFF, super.anInt4596, local92 == null ? local75 : local92, this.type.size, this.type.aShort25 & 0xFFFF, super.aClass31Array3[0], local22, arg0, this.type.aShort24 & 0xFFFF, super.aBoolean318, super.anInt4608, super.anInt4589);

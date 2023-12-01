@@ -43,7 +43,7 @@ public final class Static371 {
 		if (arg3.dynamicHeightValue == 4) {
 			arg3.height = arg3.aspectHeight * arg3.width / arg3.aspectWidth;
 		}
-		if (Static18.qa_op_test && (Static45.method1404(arg3).events != 0 || arg3.type == 0)) {
+		if (Static18.qa_op_test && (InterfaceList.getServerActiveProperties(arg3).events != 0 || arg3.type == 0)) {
 			if (arg3.height < 5 && arg3.width < 5) {
 				arg3.height = 5;
 				arg3.width = 5;
@@ -59,10 +59,10 @@ public final class Static371 {
 		if (arg3.anInt4273 == Static199.anInt5755) {
 			Static20.aClass161_1 = arg3;
 		}
-		if (arg2 && arg3.anObjectArray6 != null && (arg3.width != local8 || local11 != arg3.height)) {
+		if (arg2 && arg3.onResize != null && (arg3.width != local8 || local11 != arg3.height)) {
 			@Pc(191) HookRequest local191 = new HookRequest();
 			local191.source = arg3;
-			local191.anObjectArray4 = arg3.anObjectArray6;
+			local191.anObjectArray4 = arg3.onResize;
 			InterfaceList.lowPriorityRequests.addTail(local191);
 		}
 	}

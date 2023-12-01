@@ -58,7 +58,7 @@ public class SoundPlayer {
 							if (local211 < 0) {
 								local211 = 0;
 							}
-							local143 = Static223.anIntArray256[local7] * (local153 - local211) * client.preferences.ambientSoundsVolume / local153 >> 8;
+							local143 = Static223.anIntArray256[local7] * (local153 - local211) * client.preferences.areaSoundsVolume / local153 >> 8;
 						} else {
 							local143 = 0;
 						}

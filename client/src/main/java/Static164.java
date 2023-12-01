@@ -20,9 +20,9 @@ public final class Static164 {
 	public static void method3147(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) BitmapFont arg6, @OriginalArg(8) Class239 arg7, @OriginalArg(9) Class78 arg8, @OriginalArg(10) String arg9, @OriginalArg(11) Component arg10) {
 		@Pc(15) int local15;
 		if (Camera.anInt5911 == 4) {
-			local15 = (int) Camera.yawTarget & 0x3FFF;
+			local15 = (int) Camera.yaw & 0x3FFF;
 		} else {
-			local15 = Static6.anInt158 + (int) Camera.yawTarget & 0x3FFF;
+			local15 = Static6.anInt158 + (int) Camera.yaw & 0x3FFF;
 		}
 		@Pc(34) int local34 = Math.max(arg10.width / 2, arg10.height / 2) + 10;
 		@Pc(43) int local43 = arg4 * arg4 + arg1 * arg1;
@@ -37,7 +37,7 @@ public final class Static164 {
 		}
 		@Pc(86) int local86 = local57 * arg4 + local53 * arg1 >> 15;
 		@Pc(96) int local96 = arg1 * local57 - local53 * arg4 >> 15;
-		@Pc(103) int local103 = arg7.method6124(null, arg9, 100);
+		@Pc(103) int local103 = arg7.getParagraphWidth(null, arg9, 100);
 		@Pc(109) int local109 = local86 - local103 / 2;
 		@Pc(117) int local117 = arg7.method6121(arg9, null);
 		if (-arg10.width <= local109 && arg10.width >= local109 && -arg10.height <= local96 && local96 <= arg10.height) {

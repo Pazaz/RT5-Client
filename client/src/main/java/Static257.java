@@ -46,7 +46,7 @@ public final class Static257 {
 		@Pc(71) int local71 = arg0 + (arg3 - local42) / 2;
 		@Pc(80) int local80 = arg2 + (arg1 - local44) / 2;
 		if (Static371.aClass13_20 == null || Static371.aClass13_20.method6389() != arg3 || Static371.aClass13_20.method6382() != arg1) {
-			MapList.method5530(MapList.anInt6057, MapList.anInt6055 + MapList.anInt6052, MapList.anInt6056 + MapList.anInt6057, MapList.anInt6055, local71, local80, local71 + local42, local44 + local80);
+			MapList.method5530(WorldMap.originX, WorldMap.originZ + MapList.anInt6052, MapList.anInt6056 + WorldMap.originX, WorldMap.originZ, local71, local80, local71 + local42, local44 + local80);
 			MapList.method5522(arg4);
 			Static371.aClass13_20 = arg4.method2818(local71, local80, local42, local44, false);
 		}
@@ -70,18 +70,18 @@ public final class Static257 {
 		} else {
 			local194 = Static90.anInt6637 * 5;
 		}
-		for (@Pc(205) Class2_Sub20 local205 = (Class2_Sub20) MapList.aClass135_36.head(); local205 != null; local205 = (Class2_Sub20) MapList.aClass135_36.next()) {
-			@Pc(213) MelType local213 = MapList.aClass125_4.method3379(local205.anInt2947);
+		for (@Pc(205) MapElement local205 = (MapElement) MapList.aClass135_36.head(); local205 != null; local205 = (MapElement) MapList.aClass135_36.next()) {
+			@Pc(213) MelType local213 = MapList.aClass125_4.get(local205.id);
 			if (Static101.method2164(local213)) {
 				@Pc(242) int local242;
 				@Pc(255) int local255;
-				if (local205.anInt2947 == Static225.anInt3979) {
-					local242 = local42 * local205.anInt2949 / MapList.anInt6056 + local71;
-					local255 = (MapList.anInt6052 - local205.anInt2952) * local44 / MapList.anInt6052 + local80;
+				if (local205.id == Static225.anInt3979) {
+					local242 = local42 * local205.x / MapList.anInt6056 + local71;
+					local255 = (MapList.anInt6052 - local205.z) * local44 / MapList.anInt6052 + local80;
 					arg4.method2868(4, local242 - 2, local255 + -2, local194 << 24 | 0xFFFF00, 4);
-				} else if (Static236.anInt4301 != -1 && local213.anInt4424 == Static236.anInt4301) {
-					local242 = local71 + local205.anInt2949 * local42 / MapList.anInt6056;
-					local255 = local80 + (MapList.anInt6052 - local205.anInt2952) * local44 / MapList.anInt6052;
+				} else if (Static236.anInt4301 != -1 && local213.category == Static236.anInt4301) {
+					local242 = local71 + local205.x * local42 / MapList.anInt6056;
+					local255 = local80 + (MapList.anInt6052 - local205.z) * local44 / MapList.anInt6052;
 					arg4.method2868(4, local242 - 2, local255 + -2, local194 << 24 | 0xFFFF00, 4);
 				}
 			}

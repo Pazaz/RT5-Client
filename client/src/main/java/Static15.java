@@ -24,12 +24,6 @@ public final class Static15 {
 		return Static326.aStringArray58[local13 - 1] + ", " + local24 / 10 + local24 % 10 + "-" + Static3.aStringArray1[local28] + "-" + local32 + " " + local36 / 10 + local36 % 10 + ":" + local40 / 10 + local40 % 10 + ":" + local44 / 10 + local44 % 10 + " GMT";
 	}
 
-	@OriginalMember(owner = "client!ar", name = "b", descriptor = "(IIB)V")
-	public static void method394(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		Static77.anInt1763 = arg0 - MapList.anInt6055;
-		Static238.anInt4328 = arg1 - MapList.anInt6057;
-	}
-
 	@OriginalMember(owner = "client!ar", name = "a", descriptor = "(ILclient!ct;IILclient!wm;Z)V")
 	public static void method395(@OriginalArg(0) int arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) RasteriserBase arg4) {
 		@Pc(9) MsiType local9 = client.MsiType.method2708(arg1.anInt1316);

@@ -9,28 +9,28 @@ public final class Static209 {
 
 	@OriginalMember(owner = "client!me", name = "a", descriptor = "(ILclient!wm;Lclient!ci;)V")
 	public static void method3714(@OriginalArg(1) RasteriserBase arg0, @OriginalArg(2) TextureProviderInterface arg1) {
-		if (MapList.aClass2_Sub2_Sub17_3 == null) {
+		if (WorldMap.currentMap == null) {
 			return;
 		}
 		if (WorldMap.loadPercentage < 10) {
-			if (!MapList.aClass197_85.isGroupReady(MapList.aClass2_Sub2_Sub17_3.aString67)) {
-				WorldMap.loadPercentage = client.jsArchive23.getPercentageComplete(MapList.aClass2_Sub2_Sub17_3.aString67) / 10;
+			if (!MapList.aClass197_85.isGroupReady(WorldMap.currentMap.aString67)) {
+				WorldMap.loadPercentage = client.jsArchive23.getPercentageComplete(WorldMap.currentMap.aString67) / 10;
 				return;
 			}
 			Static386.method6031();
 			WorldMap.loadPercentage = 10;
 		}
 		if (WorldMap.loadPercentage == 10) {
-			MapList.anInt6057 = MapList.aClass2_Sub2_Sub17_3.anInt6870 >> 6 << 6;
-			MapList.anInt6055 = MapList.aClass2_Sub2_Sub17_3.anInt6863 >> 6 << 6;
-			MapList.anInt6056 = (MapList.aClass2_Sub2_Sub17_3.anInt6868 >> 6 << 6) + 64 - MapList.anInt6057;
-			MapList.anInt6052 = (MapList.aClass2_Sub2_Sub17_3.anInt6874 >> 6 << 6) + 64 - MapList.anInt6055;
+			WorldMap.originX = WorldMap.currentMap.displayMinX >> 6 << 6;
+			WorldMap.originZ = WorldMap.currentMap.displayMinY >> 6 << 6;
+			MapList.anInt6056 = (WorldMap.currentMap.displayMaxX >> 6 << 6) + 64 - WorldMap.originX;
+			MapList.anInt6052 = (WorldMap.currentMap.displayMaxY >> 6 << 6) + 64 - WorldMap.originZ;
 			@Pc(80) int[] local80 = new int[3];
 			@Pc(82) int local82 = -1;
 			@Pc(84) int local84 = -1;
-			if (MapList.aClass2_Sub2_Sub17_3.method6145(PlayerList.self.plane, local80, Camera.originX + (PlayerList.self.xFine >> 7), Camera.originZ + (PlayerList.self.zFine >> 7))) {
-				local82 = local80[1] - MapList.anInt6057;
-				local84 = local80[2] - MapList.anInt6055;
+			if (WorldMap.currentMap.convertSourceToDisplay(PlayerList.self.plane, local80, Camera.originX + (PlayerList.self.xFine >> 7), Camera.originZ + (PlayerList.self.zFine >> 7))) {
+				local82 = local80[1] - WorldMap.originX;
+				local84 = local80[2] - WorldMap.originZ;
 			}
 			if (!Static299.aBoolean399 && local82 >= 0 && MapList.anInt6056 > local82 && local84 >= 0 && MapList.anInt6052 > local84) {
 				local84 += (int) (Math.random() * 10.0D) - 5;
@@ -38,32 +38,32 @@ public final class Static209 {
 				WorldMap.anInt2003 = local84;
 				WorldMap.anInt2772 = local82;
 			} else if (Static184.anInt3436 == -1 || Static18.anInt519 == -1) {
-				MapList.aClass2_Sub2_Sub17_3.method6151(MapList.aClass2_Sub2_Sub17_3.anInt6872 >> 14 & 0x3FFF, MapList.aClass2_Sub2_Sub17_3.anInt6872 & 0x3FFF, local80);
-				WorldMap.anInt2003 = local80[2] - MapList.anInt6055;
-				WorldMap.anInt2772 = local80[1] - MapList.anInt6057;
+				WorldMap.currentMap.method6151(WorldMap.currentMap.origin >> 14 & 0x3FFF, WorldMap.currentMap.origin & 0x3FFF, local80);
+				WorldMap.anInt2003 = local80[2] - WorldMap.originZ;
+				WorldMap.anInt2772 = local80[1] - WorldMap.originX;
 			} else {
-				MapList.aClass2_Sub2_Sub17_3.method6151(Static184.anInt3436, Static18.anInt519, local80);
+				WorldMap.currentMap.method6151(Static184.anInt3436, Static18.anInt519, local80);
 				Static18.anInt519 = -1;
 				Static184.anInt3436 = -1;
 				Static299.aBoolean399 = false;
 				if (local80 != null) {
-					WorldMap.anInt2003 = local80[2] - MapList.anInt6055;
-					WorldMap.anInt2772 = local80[1] - MapList.anInt6057;
+					WorldMap.anInt2003 = local80[2] - WorldMap.originZ;
+					WorldMap.anInt2772 = local80[1] - WorldMap.originX;
 				}
 			}
-			if (MapList.aClass2_Sub2_Sub17_3.anInt6875 == 37) {
+			if (WorldMap.currentMap.defaultZoom == 37) {
 				MapList.aFloat72 = 3.0F;
 				MapList.aFloat73 = 3.0F;
-			} else if (MapList.aClass2_Sub2_Sub17_3.anInt6875 == 50) {
+			} else if (WorldMap.currentMap.defaultZoom == 50) {
 				MapList.aFloat72 = 4.0F;
 				MapList.aFloat73 = 4.0F;
-			} else if (MapList.aClass2_Sub2_Sub17_3.anInt6875 == 75) {
+			} else if (WorldMap.currentMap.defaultZoom == 75) {
 				MapList.aFloat72 = 6.0F;
 				MapList.aFloat73 = 6.0F;
-			} else if (MapList.aClass2_Sub2_Sub17_3.anInt6875 == 100) {
+			} else if (WorldMap.currentMap.defaultZoom == 100) {
 				MapList.aFloat72 = 8.0F;
 				MapList.aFloat73 = 8.0F;
-			} else if (MapList.aClass2_Sub2_Sub17_3.anInt6875 == 200) {
+			} else if (WorldMap.currentMap.defaultZoom == 200) {
 				MapList.aFloat72 = 16.0F;
 				MapList.aFloat73 = 16.0F;
 			} else {
@@ -102,11 +102,11 @@ public final class Static209 {
 			Protocol.method2973(true);
 			GameShell.resetTimer();
 		} else if (WorldMap.loadPercentage == 60) {
-			if (MapList.aClass197_85.isGroupNameValid(MapList.aClass2_Sub2_Sub17_3.aString67 + "_staticelements")) {
-				if (!MapList.aClass197_85.isGroupReady(MapList.aClass2_Sub2_Sub17_3.aString67 + "_staticelements")) {
+			if (MapList.aClass197_85.isGroupNameValid(WorldMap.currentMap.aString67 + "_staticelements")) {
+				if (!MapList.aClass197_85.isGroupReady(WorldMap.currentMap.aString67 + "_staticelements")) {
 					return;
 				}
-				MapList.aClass103_5 = Static317.method5552(MapList.aClass197_85, MapList.aClass2_Sub2_Sub17_3.aString67 + "_staticelements", LoginManager.mapMembers);
+				MapList.aClass103_5 = Static317.method5552(MapList.aClass197_85, WorldMap.currentMap.aString67 + "_staticelements", LoginManager.mapMembers);
 			} else {
 				MapList.aClass103_5 = new Class103(0);
 			}

@@ -32,7 +32,7 @@ public final class DisplayMode {
 	}
 
 	@OriginalMember(owner = "client!dn", name = "a", descriptor = "(B)[Lclient!oi;")
-	public static DisplayMode[] getDisplayModes() {
+	public static DisplayMode[] getModes() {
 		if (Static232.aClass169Array1 == null) {
 			@Pc(15) DisplayMode[] local15 = Static110.method2265(GameShell.signlink);
 			@Pc(19) DisplayMode[] local19 = new DisplayMode[local15.length];

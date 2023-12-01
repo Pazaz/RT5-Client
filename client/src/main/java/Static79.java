@@ -164,10 +164,10 @@ public final class Static79 {
 		if (arg2 < 0) {
 			return;
 		}
-		@Pc(76) boolean local76 = client.preferences.showGroundDecorations;
-		client.preferences.showGroundDecorations = true;
+		@Pc(76) boolean local76 = client.preferences.groundDecoration;
+		client.preferences.groundDecoration = true;
 		Static190.aClass29_Sub1_63.method1105(arg3, arg1, arg7, arg2, local30, arg0, Rasteriser.instance, Static171.aClass46Array1[arg0], arg6, arg5);
-		client.preferences.showGroundDecorations = local76;
+		client.preferences.groundDecoration = local76;
 		return;
 	}
 }

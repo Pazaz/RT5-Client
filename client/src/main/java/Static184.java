@@ -13,11 +13,6 @@ public final class Static184 {
 	@OriginalMember(owner = "client!km", name = "m", descriptor = "I")
 	public static int anInt3436 = -1;
 
-	@OriginalMember(owner = "client!km", name = "a", descriptor = "(I)I")
-	public static int method3391() {
-		return Static153.anInt2794;
-	}
-
 	@OriginalMember(owner = "client!km", name = "a", descriptor = "(ZLclient!nh;I)V")
 	public static void method3397(@OriginalArg(0) boolean arg0, @OriginalArg(1) Player arg1) {
 		if (Static268.anInt4959 >= 400 || PlayerList.self == arg1) {

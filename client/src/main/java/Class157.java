@@ -73,7 +73,7 @@ public final class Class157 {
 			return arg0.method3800((byte) 1, arg2, true);
 		}
 		@Pc(35) AnimFrameset local35 = null;
-		if ((this.aBoolean264 || Static318.aBoolean408) && arg4 != -1 && this.anIntArray262.length > arg4) {
+		if ((this.aBoolean264 || Static318.forceTweening) && arg4 != -1 && this.anIntArray262.length > arg4) {
 			@Pc(54) int local54 = this.anIntArray262[arg4];
 			local35 = this.aClass85_2.method2368(local54 >> 16);
 			arg4 = local54 & 0xFFFF;
@@ -90,7 +90,7 @@ public final class Class157 {
 					local72 &= 0xFFFF;
 				}
 			}
-			if ((this.aBoolean264 || Static318.aBoolean408) && arg4 != -1 && this.anIntArray263.length > arg4) {
+			if ((this.aBoolean264 || Static318.forceTweening) && arg4 != -1 && this.anIntArray263.length > arg4) {
 				local74 = this.anIntArray263[arg4];
 				if (local74 != 65535) {
 					local70 = this.aClass85_2.method2368(local74 >> 16);
@@ -150,7 +150,7 @@ public final class Class157 {
 			return arg6.method3800(arg1, arg5, true);
 		}
 		@Pc(35) AnimFrameset local35 = null;
-		if ((this.aBoolean264 || Static318.aBoolean408) && arg0 != -1 && arg0 < this.anIntArray262.length) {
+		if ((this.aBoolean264 || Static318.forceTweening) && arg0 != -1 && arg0 < this.anIntArray262.length) {
 			@Pc(53) int local53 = this.anIntArray262[arg0];
 			local35 = this.aClass85_2.method2368(local53 >> 16);
 			arg0 = local53 & 0xFFFF;
@@ -267,7 +267,7 @@ public final class Class157 {
 		if (local22 == null) {
 			return 0;
 		}
-		if ((this.aBoolean264 || Static318.aBoolean408) && arg2 != -1 && this.anIntArray262.length > arg2) {
+		if ((this.aBoolean264 || Static318.forceTweening) && arg2 != -1 && this.anIntArray262.length > arg2) {
 			local7 = this.anIntArray262[arg2];
 			local14 = this.aClass85_2.method2368(local7 >> 16);
 			local7 &= 0xFFFF;
@@ -307,7 +307,7 @@ public final class Class157 {
 					}
 				}
 			}
-			if ((this.aBoolean264 || Static318.aBoolean408) && arg2 != -1 && this.anIntArray263.length > arg2) {
+			if ((this.aBoolean264 || Static318.forceTweening) && arg2 != -1 && this.anIntArray263.length > arg2) {
 				local125 = this.anIntArray263[arg2];
 				if (local125 != 65535) {
 					local138 = this.aClass85_2.method2368(local125 >> 16);

@@ -10,11 +10,6 @@ public final class Static89 {
 	@OriginalMember(owner = "client!et", name = "k", descriptor = "I")
 	public static int anInt1885 = 0;
 
-	@OriginalMember(owner = "client!et", name = "a", descriptor = "(IC)Z")
-	public static boolean method1939(@OriginalArg(1) char arg0) {
-		return arg0 >= '0' && arg0 <= '9' || arg0 >= 'A' && arg0 <= 'Z' || arg0 >= 'a' && arg0 <= 'z';
-	}
-
 	@OriginalMember(owner = "client!et", name = "a", descriptor = "(II[Ljava/lang/String;I)Ljava/lang/String;")
 	public static String method1940(@OriginalArg(0) int arg0, @OriginalArg(2) String[] arg1, @OriginalArg(3) int arg2) {
 		if (arg2 == 0) {

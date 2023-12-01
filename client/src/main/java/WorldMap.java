@@ -4,6 +4,10 @@ import org.openrs2.deob.annotation.Pc;
 
 public class WorldMap {
 
+	@OriginalMember(owner = "client!i", name = "V", descriptor = "Lclient!ad;")
+	public static final HashTable visibleMapElementCategories = new HashTable(8);
+	@OriginalMember(owner = "client!mq", name = "p", descriptor = "Lclient!ad;")
+	public static final HashTable visibleMapElementIds = new HashTable(8);
 	@OriginalMember(owner = "client!cl", name = "A", descriptor = "I")
 	public static int anInt1105;
 	@OriginalMember(owner = "client!vl", name = "hb", descriptor = "I")
@@ -16,6 +20,14 @@ public class WorldMap {
 	public static int loadPercentage = 0;
 	@OriginalMember(owner = "client!nb", name = "C", descriptor = "Lclient!nk;")
 	public static Component aClass161_11;
+	@OriginalMember(owner = "client!kc", name = "a", descriptor = "Z")
+	public static boolean aBoolean225 = false;
+	@OriginalMember(owner = "client!tt", name = "a", descriptor = "Lclient!vj;")
+	public static Map currentMap;
+	@OriginalMember(owner = "client!tt", name = "E", descriptor = "I")
+	public static int originX;
+	@OriginalMember(owner = "client!tt", name = "B", descriptor = "I")
+	public static int originZ;
 
 	@OriginalMember(owner = "client!mh", name = "a", descriptor = "(II)V")
 	public static void setTargetZoom(@OriginalArg(1) int arg0) {
@@ -64,18 +76,58 @@ public class WorldMap {
 	}
 
 	@OriginalMember(owner = "client!me", name = "b", descriptor = "(I)Lclient!jg;")
-	public static Class2_Sub20 method3713() {
+	public static MapElement headMapElement() {
 		if (MapList.aClass135_36 == null || Static116.aClass75_1 == null) {
 			return null;
 		}
 		Static116.aClass75_1.method2180(MapList.aClass135_36);
-		@Pc(18) Class2_Sub20 local18 = (Class2_Sub20) Static116.aClass75_1.method2181();
+		@Pc(18) MapElement local18 = (MapElement) Static116.aClass75_1.method2181();
 		if (local18 == null) {
 			return null;
 		} else {
-			@Pc(33) MelType local33 = MapList.aClass125_4.method3379(local18.anInt2947);
-			return local33 != null && local33.aBoolean302 && local33.method4180(MapList.anInterface11_2) ? local18 : Static115.method3829();
+			@Pc(33) MelType local33 = MapList.aClass125_4.get(local18.id);
+			return local33 != null && local33.aBoolean302 && local33.method4180(MapList.anInterface11_2) ? local18 : nextMapElement();
 		}
 	}
 
+	@OriginalMember(owner = "client!gn", name = "e", descriptor = "(I)Lclient!jg;")
+	public static MapElement nextMapElement() {
+		if (MapList.aClass135_36 == null || Static116.aClass75_1 == null) {
+			return null;
+		}
+		for (@Pc(16) MapElement local16 = (MapElement) Static116.aClass75_1.method2178(); local16 != null; local16 = (MapElement) Static116.aClass75_1.method2178()) {
+			@Pc(24) MelType local24 = MapList.aClass125_4.get(local16.id);
+			if (local24 != null && local24.aBoolean302 && local24.method4180(MapList.anInterface11_2)) {
+				return local16;
+			}
+		}
+		return null;
+	}
+
+	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(I)Lclient!vj;")
+	public static Map getCurrentMap() {
+		return currentMap;
+	}
+
+	@OriginalMember(owner = "client!ar", name = "b", descriptor = "(IIB)V")
+	public static void method394(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+		Static77.anInt1763 = arg0 - originZ;
+		Static238.anInt4328 = arg1 - originX;
+	}
+
+	@OriginalMember(owner = "client!n", name = "a", descriptor = "(II)V")
+	public static void method3955(@OriginalArg(0) int arg0) {
+		Static225.anInt3979 = arg0;
+		Static236.anInt4301 = -1;
+		Static90.anInt6637 = 100;
+		Static243.anInt4495 = 3;
+	}
+
+	@OriginalMember(owner = "client!ng", name = "a", descriptor = "(BI)V")
+	public static void method4027(@OriginalArg(1) int arg0) {
+		Static90.anInt6637 = 100;
+		Static243.anInt4495 = 3;
+		Static236.anInt4301 = arg0;
+		Static225.anInt3979 = -1;
+	}
 }

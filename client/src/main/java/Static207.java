@@ -21,11 +21,11 @@ public final class Static207 {
 		if (!Static330.aBoolean419) {
 			return;
 		}
-		@Pc(11) Component local11 = InterfaceList.method3705(Static337.anInt6317, Static214.anInt3792);
-		if (local11 != null && local11.anObjectArray32 != null) {
+		@Pc(11) Component local11 = InterfaceList.getCreatedComponent(Static337.anInt6317, Static214.anInt3792);
+		if (local11 != null && local11.onTargetLeave != null) {
 			@Pc(20) HookRequest local20 = new HookRequest();
 			local20.source = local11;
-			local20.anObjectArray4 = local11.anObjectArray32;
+			local20.anObjectArray4 = local11.onTargetLeave;
 			ScriptRunner.execute(local20);
 		}
 		Static330.aBoolean419 = false;
@@ -40,7 +40,7 @@ public final class Static207 {
 	public static Component method3703(@OriginalArg(0) Component arg0) {
 		@Pc(11) Component local11 = Static45.method1413(arg0);
 		if (local11 == null) {
-			local11 = arg0.aClass161_12;
+			local11 = arg0.dragComponent;
 		}
 		return local11;
 	}

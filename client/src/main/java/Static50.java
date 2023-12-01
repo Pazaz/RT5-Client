@@ -16,9 +16,9 @@ public final class Static50 {
 			if (Static139.anInt2595 != -1) {
 				Static162.method2979(Static139.anInt2595);
 			}
-			for (@Pc(19) Class2_Sub7 local19 = (Class2_Sub7) Static329.aClass4_130.head(); local19 != null; local19 = (Class2_Sub7) Static329.aClass4_130.next()) {
+			for (@Pc(19) SubInterface local19 = (SubInterface) InterfaceList.subInterfaces.head(); local19 != null; local19 = (SubInterface) InterfaceList.subInterfaces.next()) {
 				if (!local19.isLinked()) {
-					local19 = (Class2_Sub7) Static329.aClass4_130.head();
+					local19 = (SubInterface) InterfaceList.subInterfaces.head();
 					if (local19 == null) {
 						break;
 					}
@@ -26,7 +26,7 @@ public final class Static50 {
 				Static276.method4655(false, local19, true);
 			}
 			Static139.anInt2595 = -1;
-			Static329.aClass4_130 = new HashTable(8);
+			InterfaceList.subInterfaces = new HashTable(8);
 			Static210.method3720();
 			Static139.anInt2595 = Static391.anInt7216;
 			Static60.method891(false);

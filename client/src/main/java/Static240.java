@@ -19,7 +19,7 @@ public final class Static240 {
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(Lclient!jg;Lclient!np;Lclient!wm;I)V")
-	public static void method4184(@OriginalArg(0) Class2_Sub20 arg0, @OriginalArg(1) MelType arg1, @OriginalArg(2) RasteriserBase arg2) {
+	public static void method4184(@OriginalArg(0) MapElement arg0, @OriginalArg(1) MelType arg1, @OriginalArg(2) RasteriserBase arg2) {
 		@Pc(10) Sprite local10 = arg1.method4183(arg2);
 		if (local10 == null) {
 			return;
@@ -35,8 +35,8 @@ public final class Static240 {
 		@Pc(37) int local37 = 0;
 		@Pc(51) int local51;
 		@Pc(78) int local78;
-		if (arg1.aString48 != null) {
-			local33 = Static52.aClass239_1.method6119(Static287.aStringArray52, arg1.aString48, null, null);
+		if (arg1.text != null) {
+			local33 = Static52.aClass239_1.method6119(Static287.aStringArray52, arg1.text, null, null);
 			for (local51 = 0; local51 < local33; local51++) {
 				@Pc(57) String local57 = Static287.aStringArray52[local51];
 				if (local51 < local33 - 1) {
@@ -71,7 +71,7 @@ public final class Static240 {
 		@Pc(263) int local263 = -2;
 		@Pc(265) int local265 = -2;
 		@Pc(267) int local267 = -2;
-		if (arg1.aString48 != null) {
+		if (arg1.text != null) {
 			local263 = local112;
 			local261 = local51 - local35 / 2 - 5;
 			local265 = local261 + local35 + 10;
@@ -91,7 +91,7 @@ public final class Static240 {
 				local112 += Static2.aClass113_1.method2948();
 			}
 		}
-		if (arg1.anInt4420 == -1 && arg1.aString48 == null) {
+		if (arg1.sprite == -1 && arg1.text == null) {
 			return;
 		}
 		@Pc(385) Class2_Sub15 local385 = new Class2_Sub15(arg0);

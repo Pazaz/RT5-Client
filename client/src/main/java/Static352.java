@@ -82,17 +82,4 @@ public final class Static352 {
 		Static372.method6260();
 	}
 
-	@OriginalMember(owner = "client!uh", name = "e", descriptor = "(B)V")
-	public static void method5880() {
-		if (Static369.aBoolean471) {
-			return;
-		}
-		Camera.aBoolean156 = true;
-		if (client.preferences.aBoolean351) {
-			Camera.yawTarget = (int) Camera.yawTarget + 191 & 0xFFFFFF80;
-		} else {
-			Static184.aFloat39 += (24.0F - Static184.aFloat39) / 2.0F;
-		}
-		Static369.aBoolean471 = true;
-	}
 }

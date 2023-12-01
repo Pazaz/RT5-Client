@@ -43,8 +43,8 @@ public final class Static182 {
 			Static288.anInt5463 += local70;
 		}
 		if (!client.preferences.aBoolean351) {
-			Camera.pitchTarget += (float) arg0 * Static296.aFloat68 / 6.0F;
-			Camera.yawTarget += Static184.aFloat39 * (float) arg0 / 6.0F;
+			Camera.pitch += (float) arg0 * Static296.aFloat68 / 6.0F;
+			Camera.yaw += Static184.aFloat39 * (float) arg0 / 6.0F;
 		}
 		if (Static62.anInt2395 != local15) {
 			local62 = local15 - Static62.anInt2395;

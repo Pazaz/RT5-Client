@@ -58,8 +58,8 @@ public final class Static252 {
 		}
 		Rasteriser.instance.method2872(50, local127);
 		Rasteriser.instance.method2874(!client.preferences.highDetailTextures);
-		if (Rasteriser.instance.method2858()) {
-			Static284.method4882(client.preferences.aBoolean356);
+		if (Rasteriser.instance.isBloomSupported()) {
+			Static284.setBloomEnabled(client.preferences.bloomEnabled);
 		}
 		Static190.method3500(Static242.anInt4449 >> 3, Static373.anInt7033 >> 3, Rasteriser.instance);
 		Static348.method5828();

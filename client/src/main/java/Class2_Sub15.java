@@ -30,10 +30,10 @@ public final class Class2_Sub15 extends Node {
 	public int anInt2340 = Integer.MIN_VALUE;
 
 	@OriginalMember(owner = "client!gl", name = "C", descriptor = "Lclient!jg;")
-	public final Class2_Sub20 aClass2_Sub20_1;
+	public final MapElement aClass2_Sub20_1;
 
 	@OriginalMember(owner = "client!gl", name = "<init>", descriptor = "(Lclient!jg;)V")
-	public Class2_Sub15(@OriginalArg(0) Class2_Sub20 arg0) {
+	public Class2_Sub15(@OriginalArg(0) MapElement arg0) {
 		this.aClass2_Sub20_1 = arg0;
 	}
 

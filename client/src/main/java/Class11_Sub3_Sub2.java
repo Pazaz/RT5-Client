@@ -44,7 +44,7 @@ public final class Class11_Sub3_Sub2 extends Class11_Sub3 implements Interface6 
 		this.aByte43 = (byte) arg10;
 		this.aBoolean277 = arg6;
 		this.aBoolean278 = arg1.anInt1335 != 0 && !arg6;
-		this.aBoolean279 = arg0.method2878() && arg1.aBoolean110 && !this.aBoolean277 && client.preferences.sceneryShadowsType != 0;
+		this.aBoolean279 = arg0.method2878() && arg1.aBoolean110 && !this.aBoolean277 && client.preferences.shadows != 0;
 		@Pc(74) Class105 local74 = this.method4097(1024, this.aBoolean279, arg0);
 		if (local74 != null) {
 			this.aClass2_Sub2_Sub4_5 = local74.aClass2_Sub2_Sub4_3;

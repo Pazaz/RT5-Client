@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class MapList {
 
-	@OriginalMember(owner = "client!tt", name = "a", descriptor = "Lclient!vj;")
-	public static Map aClass2_Sub2_Sub17_3;
-
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "Lclient!wl;")
 	public static Interface11 anInterface11_2;
 
@@ -67,17 +64,11 @@ public final class MapList {
 	@OriginalMember(owner = "client!tt", name = "A", descriptor = "[B")
 	private static byte[] aByteArray86;
 
-	@OriginalMember(owner = "client!tt", name = "B", descriptor = "I")
-	public static int anInt6055;
-
 	@OriginalMember(owner = "client!tt", name = "C", descriptor = "[I")
 	private static int[] anIntArray406;
 
 	@OriginalMember(owner = "client!tt", name = "D", descriptor = "I")
 	public static int anInt6056;
-
-	@OriginalMember(owner = "client!tt", name = "E", descriptor = "I")
-	public static int anInt6057;
 
 	@OriginalMember(owner = "client!tt", name = "F", descriptor = "Lclient!ad;")
 	private static HashTable aClass4_125;
@@ -292,11 +283,11 @@ public final class MapList {
 						local218[local220] = arg1.g1b();
 					}
 				}
-				if (aClass36ArrayArrayArray2[local118 - 1][arg2 - (anInt6057 >> 6)][arg3 - (anInt6055 >> 6)] == null) {
-					aClass36ArrayArrayArray2[local118 - 1][arg2 - (anInt6057 >> 6)][arg3 - (anInt6055 >> 6)] = new Class36();
+				if (aClass36ArrayArrayArray2[local118 - 1][arg2 - (WorldMap.originX >> 6)][arg3 - (WorldMap.originZ >> 6)] == null) {
+					aClass36ArrayArrayArray2[local118 - 1][arg2 - (WorldMap.originX >> 6)][arg3 - (WorldMap.originZ >> 6)] = new Class36();
 				}
 				@Pc(338) Class12_Sub7 local338 = new Class12_Sub7(arg4 & 0x3F, arg5 & 0x3F, local123, local125, local127, local215, local218);
-				aClass36ArrayArrayArray2[local118 - 1][arg2 - (anInt6057 >> 6)][arg3 - (anInt6055 >> 6)].method1418(local338);
+				aClass36ArrayArrayArray2[local118 - 1][arg2 - (WorldMap.originX >> 6)][arg3 - (WorldMap.originZ >> 6)].method1418(local338);
 			}
 		}
 	}
@@ -305,11 +296,11 @@ public final class MapList {
 	public static void method5511() {
 		@Pc(2) int[] local2 = new int[3];
 		for (@Pc(4) int local4 = 0; local4 < aClass103_5.anInt2702; local4++) {
-			@Pc(32) boolean local32 = aClass2_Sub2_Sub17_3.method6145(aClass103_5.anIntArray170[local4] >> 28 & 0x3, local2, aClass103_5.anIntArray170[local4] >> 14 & 0x3FFF, aClass103_5.anIntArray170[local4] & 0x3FFF);
+			@Pc(32) boolean local32 = WorldMap.currentMap.convertSourceToDisplay(aClass103_5.anIntArray170[local4] >> 28 & 0x3, local2, aClass103_5.anIntArray170[local4] >> 14 & 0x3FFF, aClass103_5.anIntArray170[local4] & 0x3FFF);
 			if (local32) {
-				@Pc(42) Class2_Sub20 local42 = new Class2_Sub20(aClass103_5.anIntArray171[local4]);
-				local42.anInt2949 = local2[1] - anInt6057;
-				local42.anInt2952 = local2[2] - anInt6055;
+				@Pc(42) MapElement local42 = new MapElement(aClass103_5.anIntArray171[local4]);
+				local42.x = local2[1] - WorldMap.originX;
+				local42.z = local2[2] - WorldMap.originZ;
 				aClass135_36.addTail(local42);
 			}
 		}
@@ -329,7 +320,7 @@ public final class MapList {
 		@Pc(26) int[] local26 = aClass197_85.getFileIds(local21);
 		for (@Pc(28) int local28 = 0; local28 < local26.length; local28++) {
 			@Pc(37) Map local37 = Static61.method1672(local26[local28], local21, aClass197_85);
-			aClass4_124.put(local37, (long) local37.anInt6869);
+			aClass4_124.put(local37, (long) local37.id);
 		}
 		Static280.method4766(false);
 	}
@@ -396,7 +387,7 @@ public final class MapList {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(II)Lclient!wc;")
-	public static SecondaryLinkedList method5516(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public static SecondaryLinkedList getAllContainingSource(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(3) SecondaryLinkedList local3 = new SecondaryLinkedList();
 		for (@Pc(8) Map local8 = (Map) aClass4_124.head(); local8 != null; local8 = (Map) aClass4_124.next()) {
 			if (local8.valid && local8.method6147(arg1, arg0)) {
@@ -408,7 +399,7 @@ public final class MapList {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;IIII)Lclient!ld;")
 	private static LinkedList method5517(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		for (@Pc(4) Class2_Sub20 local4 = (Class2_Sub20) aClass135_36.head(); local4 != null; local4 = (Class2_Sub20) aClass135_36.next()) {
+		for (@Pc(4) MapElement local4 = (MapElement) aClass135_36.head(); local4 != null; local4 = (MapElement) aClass135_36.next()) {
 			method5529(arg0, local4, arg1, arg2);
 		}
 		return aClass135_36;
@@ -416,7 +407,7 @@ public final class MapList {
 
 	@OriginalMember(owner = "client!tt", name = "b", descriptor = "(I)V")
 	public static void method5518(@OriginalArg(0) int arg0) {
-		aClass2_Sub2_Sub17_3 = (Map) aClass4_124.get((long) arg0);
+		WorldMap.currentMap = (Map) aClass4_124.get((long) arg0);
 	}
 
 	@OriginalMember(owner = "client!tt", name = "c", descriptor = "()V")
@@ -519,7 +510,7 @@ public final class MapList {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;II)V")
 	public static void method5521(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(9) Buffer local9 = new Buffer(aClass197_85.fetchFile(aClass2_Sub2_Sub17_3.aString67, "area"));
+		@Pc(9) Buffer local9 = new Buffer(aClass197_85.fetchFile(WorldMap.currentMap.aString67, "area"));
 		@Pc(13) int local13 = local9.g1();
 		@Pc(16) int[] local16 = new int[local13];
 		for (@Pc(18) int local18 = 0; local18 < local13; local18++) {
@@ -544,8 +535,8 @@ public final class MapList {
 					local62 = local9.g1();
 					for (local64 = 0; local64 < 64; local64++) {
 						for (local67 = 0; local67 < 64; local67++) {
-							local76 = local58 * 64 + local64 - anInt6057;
-							local84 = local62 * 64 + local67 - anInt6055;
+							local76 = local58 * 64 + local64 - WorldMap.originX;
+							local84 = local62 * 64 + local67 - WorldMap.originZ;
 							method5510(arg0, local9, local58, local62, local76, local84, local16, local36);
 						}
 					}
@@ -556,8 +547,8 @@ public final class MapList {
 					local67 = local9.g1();
 					for (local76 = 0; local76 < 8; local76++) {
 						for (local84 = 0; local84 < 8; local84++) {
-							@Pc(136) int local136 = local58 * 64 + local64 * 8 + local76 - anInt6057;
-							local148 = local62 * 64 + local67 * 8 + local84 - anInt6055;
+							@Pc(136) int local136 = local58 * 64 + local64 * 8 + local76 - WorldMap.originX;
+							local148 = local62 * 64 + local67 * 8 + local84 - WorldMap.originZ;
 							method5510(arg0, local9, local58, local62, local136, local148, local16, local36);
 						}
 					}
@@ -667,8 +658,8 @@ public final class MapList {
 								local179 = aShortArray122[local173] & 0xFFFF;
 							}
 							if (local175 == 0 && local177 == 0 && local179 == 0) {
-								if (aClass2_Sub2_Sub17_3.anInt6864 != -1) {
-									local175 = aClass2_Sub2_Sub17_3.anInt6864 | 0xFF000000;
+								if (WorldMap.currentMap.anInt6864 != -1) {
+									local175 = WorldMap.currentMap.anInt6864 | 0xFF000000;
 								} else if ((local17 + anInt6058 & 0x4) == (local57 + anInt6060 & 0x4)) {
 									local175 = anIntArray406[aClass72_6.anInt2060 + 1];
 								} else {
@@ -697,8 +688,8 @@ public final class MapList {
 						local70 = anInt6061 - (arg2 * (local57 + 1) >> 16);
 						local80 = anInt6061 - (arg2 * local57 >> 16);
 						local84 = local80 - local70;
-						if (aClass2_Sub2_Sub17_3.anInt6864 != -1) {
-							local93 = aClass2_Sub2_Sub17_3.anInt6864 | 0xFF000000;
+						if (WorldMap.currentMap.anInt6864 != -1) {
+							local93 = WorldMap.currentMap.anInt6864 | 0xFF000000;
 						} else if ((local17 + anInt6058 & 0x4) == (local57 + anInt6060 & 0x4)) {
 							local93 = anIntArray406[aClass72_6.anInt2060 + 1];
 						} else {
@@ -771,11 +762,11 @@ public final class MapList {
 				for (local84 = local44; local84 <= local57; local84++) {
 					@Pc(589) Class36 local589 = aClass36ArrayArrayArray2[local70][local80][local84];
 					if (local589 != null) {
-						local173 = (local80 + (anInt6057 >> 6)) * 64;
-						local175 = (local84 + (anInt6055 >> 6)) * 64;
+						local173 = (local80 + (WorldMap.originX >> 6)) * 64;
+						local175 = (local84 + (WorldMap.originZ >> 6)) * 64;
 						for (@Pc(612) Class12_Sub7 local612 = (Class12_Sub7) local589.method1415(); local612 != null; local612 = (Class12_Sub7) local589.method1420()) {
-							local179 = local173 + local612.aByte62 - anInt6057 - anInt6058;
-							local631 = local175 + local612.aByte61 - anInt6055 - anInt6059;
+							local179 = local173 + local612.aByte62 - WorldMap.originX - anInt6058;
+							local631 = local175 + local612.aByte61 - WorldMap.originZ - anInt6059;
 							local641 = (arg1 * local179 >> 16) + anInt6050;
 							local653 = (arg1 * (local179 + 1) >> 16) + anInt6050;
 							local665 = anInt6061 - (arg2 * (local631 + 1) >> 16);
@@ -789,11 +780,11 @@ public final class MapList {
 				for (local93 = local44; local93 <= local57; local93++) {
 					@Pc(727) Class36 local727 = aClass36ArrayArrayArray2[local70][local84][local93];
 					if (local727 != null) {
-						local175 = (local84 + (anInt6057 >> 6)) * 64;
-						local177 = (local93 + (anInt6055 >> 6)) * 64;
+						local175 = (local84 + (WorldMap.originX >> 6)) * 64;
+						local177 = (local93 + (WorldMap.originZ >> 6)) * 64;
 						for (@Pc(750) Class12_Sub7 local750 = (Class12_Sub7) local727.method1415(); local750 != null; local750 = (Class12_Sub7) local727.method1420()) {
-							local631 = local175 + local750.aByte62 - anInt6057 - anInt6058;
-							local641 = local177 + local750.aByte61 - anInt6055 - anInt6059;
+							local631 = local175 + local750.aByte62 - WorldMap.originX - anInt6058;
+							local641 = local177 + local750.aByte61 - WorldMap.originZ - anInt6059;
 							local653 = (arg1 * local631 >> 16) + anInt6050;
 							local665 = (arg1 * (local631 + 1) >> 16) + anInt6050;
 							local675 = anInt6061 - (arg2 * (local641 + 1) >> 16);
@@ -861,17 +852,17 @@ public final class MapList {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;Lclient!jg;IIII)V")
-	private static void method5529(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) Class2_Sub20 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		arg1.anInt2948 = anInt6050 + (arg2 * (arg1.anInt2949 - anInt6058) >> 16);
-		arg1.anInt2944 = anInt6061 - (arg3 * (arg1.anInt2952 - anInt6059) >> 16);
+	private static void method5529(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) MapElement arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+		arg1.anInt2948 = anInt6050 + (arg2 * (arg1.x - anInt6058) >> 16);
+		arg1.anInt2944 = anInt6061 - (arg3 * (arg1.z - anInt6059) >> 16);
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(IIIIIIII)V")
 	public static void method5530(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
-		anInt6058 = arg0 - anInt6057;
-		anInt6060 = arg1 - anInt6055;
-		anInt6054 = arg2 - anInt6057;
-		anInt6059 = arg3 - anInt6055;
+		anInt6058 = arg0 - WorldMap.originX;
+		anInt6060 = arg1 - WorldMap.originZ;
+		anInt6054 = arg2 - WorldMap.originX;
+		anInt6059 = arg3 - WorldMap.originZ;
 		anInt6050 = arg4;
 		anInt6053 = arg5;
 		anInt6051 = arg6;
@@ -901,9 +892,9 @@ public final class MapList {
 									}
 								}
 								if (local49 != -1) {
-									@Pc(70) Class2_Sub20 local70 = new Class2_Sub20(local49);
-									local70.anInt2949 = local1;
-									local70.anInt2952 = local4;
+									@Pc(70) MapElement local70 = new MapElement(local49);
+									local70.x = local1;
+									local70.z = local4;
 									aClass135_36.addTail(local70);
 								}
 							}
@@ -918,9 +909,9 @@ public final class MapList {
 							}
 						}
 						if (local35 != -1) {
-							@Pc(118) Class2_Sub20 local118 = new Class2_Sub20(local35);
-							local118.anInt2949 = local1;
-							local118.anInt2952 = local4;
+							@Pc(118) MapElement local118 = new MapElement(local35);
+							local118.x = local1;
+							local118.z = local4;
 							aClass135_36.addTail(local118);
 						}
 					}
@@ -944,9 +935,9 @@ public final class MapList {
 										}
 									}
 									if (local180 != -1) {
-										@Pc(201) Class2_Sub20 local201 = new Class2_Sub20(local180);
-										local201.anInt2949 = (local15 + (anInt6057 >> 6)) * 64 + local160.aByte62 - anInt6057;
-										local201.anInt2952 = (local144 + (anInt6055 >> 6)) * 64 + local160.aByte61 - anInt6055;
+										@Pc(201) MapElement local201 = new MapElement(local180);
+										local201.x = (local15 + (WorldMap.originX >> 6)) * 64 + local160.aByte62 - WorldMap.originX;
+										local201.z = (local144 + (WorldMap.originZ >> 6)) * 64 + local160.aByte61 - WorldMap.originZ;
 										aClass135_36.addTail(local201);
 									}
 								}

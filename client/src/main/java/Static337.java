@@ -16,7 +16,7 @@ public final class Static337 {
 			return;
 		}
 		@Pc(16) int local16 = 0;
-		@Pc(24) int local24 = client.preferences.ambientSoundsVolume * arg2.anInt2906 >> 8;
+		@Pc(24) int local24 = client.preferences.areaSoundsVolume * arg2.anInt2906 >> 8;
 		if (arg2.anInt2896 < arg4) {
 			local16 = arg4 - arg2.anInt2896;
 		} else if (arg4 < arg2.anInt2899) {
@@ -27,7 +27,7 @@ public final class Static337 {
 		} else if (arg3 < arg2.anInt2910) {
 			local16 += arg2.anInt2910 - arg3;
 		}
-		if (arg2.anInt2901 == 0 || arg2.anInt2901 < local16 - 64 || client.preferences.ambientSoundsVolume == 0 || arg2.anInt2905 != arg1) {
+		if (arg2.anInt2901 == 0 || arg2.anInt2901 < local16 - 64 || client.preferences.areaSoundsVolume == 0 || arg2.anInt2905 != arg1) {
 			if (arg2.aClass2_Sub12_Sub4_3 != null) {
 				client.soundStream.method2081(arg2.aClass2_Sub12_Sub4_3);
 				arg2.aClass2_Sub12_Sub4_3 = null;

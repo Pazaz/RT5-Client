@@ -13,19 +13,19 @@ public final class Component {
 	public String aString43;
 
 	@OriginalMember(owner = "client!nk", name = "c", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray5;
+	public Object[] onStatTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "j", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray6;
+	public Object[] onResize;
 
 	@OriginalMember(owner = "client!nk", name = "k", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray7;
+	public Object[] onVarcStrTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "n", descriptor = "I")
 	public int anInt4242;
 
 	@OriginalMember(owner = "client!nk", name = "p", descriptor = "[I")
-	public int[] anIntArray273;
+	public int[] varpTriggers;
 
 	@OriginalMember(owner = "client!nk", name = "s", descriptor = "[B")
 	public byte[] aByteArray49;
@@ -37,40 +37,40 @@ public final class Component {
 	public boolean vFlip;
 
 	@OriginalMember(owner = "client!nk", name = "z", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray8;
+	public Object[] onDragComplete;
 
 	@OriginalMember(owner = "client!nk", name = "B", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray9;
+	public Object[] onMouseLeave;
 
 	@OriginalMember(owner = "client!nk", name = "D", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray10;
+	public Object[] onVarTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "E", descriptor = "[I")
-	public int[] anIntArray274;
+	public int[] statTriggers;
 
 	@OriginalMember(owner = "client!nk", name = "G", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray11;
+	public Object[] onSubChange;
 
 	@OriginalMember(owner = "client!nk", name = "N", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray12;
+	public Object[] onMouseRepeat;
 
 	@OriginalMember(owner = "client!nk", name = "O", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray13;
+	public Object[] onMouseOver;
 
 	@OriginalMember(owner = "client!nk", name = "T", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray14;
+	public Object[] onClick;
 
 	@OriginalMember(owner = "client!nk", name = "U", descriptor = "[I")
 	public int[] anIntArray275;
 
 	@OriginalMember(owner = "client!nk", name = "Y", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray15;
+	public Object[] onTargetEnter;
 
 	@OriginalMember(owner = "client!nk", name = "Z", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray16;
+	public Object[] onHold;
 
 	@OriginalMember(owner = "client!nk", name = "ab", descriptor = "[Ljava/lang/String;")
-	public String[] aStringArray40;
+	public String[] ops;
 
 	@OriginalMember(owner = "client!nk", name = "bb", descriptor = "[I")
 	public int[] anIntArray276;
@@ -79,19 +79,19 @@ public final class Component {
 	public int anInt4267;
 
 	@OriginalMember(owner = "client!nk", name = "nb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray17;
+	public Object[] onKey;
 
 	@OriginalMember(owner = "client!nk", name = "ob", descriptor = "I")
 	public int anInt4270;
 
 	@OriginalMember(owner = "client!nk", name = "pb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray18;
+	public Object[] onClanTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "qb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray19;
+	public Object[] onVarcTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "rb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray20;
+	public Object[] onCamFinished;
 
 	@OriginalMember(owner = "client!nk", name = "sb", descriptor = "Z")
 	public boolean hFlip;
@@ -103,40 +103,40 @@ public final class Component {
 	public Component[] activeComponents;
 
 	@OriginalMember(owner = "client!nk", name = "Jb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray21;
+	public Object[] onScrollWheel;
 
 	@OriginalMember(owner = "client!nk", name = "Kb", descriptor = "[B")
 	public byte[] aByteArray50;
 
 	@OriginalMember(owner = "client!nk", name = "Mb", descriptor = "[I")
-	public int[] anIntArray277;
+	public int[] varcStrTriggers;
 
 	@OriginalMember(owner = "client!nk", name = "Ob", descriptor = "[Ljava/lang/Object;")
 	public Object[] anObjectArray22;
 
 	@OriginalMember(owner = "client!nk", name = "Tb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray23;
+	public Object[] onTimer;
 
 	@OriginalMember(owner = "client!nk", name = "Ub", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray24;
+	public Object[] onMiscTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "Vb", descriptor = "[I")
-	public int[] anIntArray278;
+	public int[] varcTriggers;
 
 	@OriginalMember(owner = "client!nk", name = "Zb", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray25;
+	public Object[] onFriendTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "ac", descriptor = "[I")
 	public int[] anIntArray279;
 
 	@OriginalMember(owner = "client!nk", name = "ec", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray26;
+	public Object[] onChatTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "fc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray27;
+	public Object[] onOp;
 
 	@OriginalMember(owner = "client!nk", name = "nc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray28;
+	public Object[] onClickRepeat;
 
 	@OriginalMember(owner = "client!nk", name = "qc", descriptor = "I")
 	public int anInt4302;
@@ -145,34 +145,34 @@ public final class Component {
 	public int[] anIntArray280;
 
 	@OriginalMember(owner = "client!nk", name = "uc", descriptor = "Ljava/lang/String;")
-	public String aString46;
+	public String pauseText;
 
 	@OriginalMember(owner = "client!nk", name = "xc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray29;
+	public Object[] onInvTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "zc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray30;
+	public Object[] onRelease;
 
 	@OriginalMember(owner = "client!nk", name = "Cc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray31;
+	public Object[] onDrag;
 
 	@OriginalMember(owner = "client!nk", name = "Fc", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray32;
+	public Object[] onTargetLeave;
 
 	@OriginalMember(owner = "client!nk", name = "Ic", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray33;
+	public Object[] onStockTransmit;
 
 	@OriginalMember(owner = "client!nk", name = "Pc", descriptor = "I")
 	public int modelId;
 
 	@OriginalMember(owner = "client!nk", name = "Rc", descriptor = "[I")
-	public int[] anIntArray281;
+	public int[] invTriggers;
 
 	@OriginalMember(owner = "client!nk", name = "Tc", descriptor = "[I")
 	public int[] anIntArray282;
 
 	@OriginalMember(owner = "client!nk", name = "cd", descriptor = "[Ljava/lang/Object;")
-	public Object[] anObjectArray34;
+	public Object[] onDialogAbort;
 
 	@OriginalMember(owner = "client!nk", name = "x", descriptor = "Z")
 	public boolean aBoolean282 = false;
@@ -199,7 +199,7 @@ public final class Component {
 	public int y = 0;
 
 	@OriginalMember(owner = "client!nk", name = "yb", descriptor = "I")
-	public int overlayer = -1;
+	public int layer = -1;
 
 	@OriginalMember(owner = "client!nk", name = "hb", descriptor = "I")
 	public int anInt4265 = 0;
@@ -208,10 +208,10 @@ public final class Component {
 	public int anInt4257 = -1;
 
 	@OriginalMember(owner = "client!nk", name = "tb", descriptor = "I")
-	public int anInt4271 = 0;
+	public int dragDeadTime = 0;
 
 	@OriginalMember(owner = "client!nk", name = "X", descriptor = "Lclient!nk;")
-	public Component aClass161_12 = null;
+	public Component dragComponent = null;
 
 	@OriginalMember(owner = "client!nk", name = "Db", descriptor = "I")
 	public int anInt4280 = -1;
@@ -268,7 +268,7 @@ public final class Component {
 	public int baseWidth = 0;
 
 	@OriginalMember(owner = "client!nk", name = "kc", descriptor = "Ljava/lang/String;")
-	public String aString45 = "";
+	public String opBase = "";
 
 	@OriginalMember(owner = "client!nk", name = "mc", descriptor = "I")
 	public int objId = -1;
@@ -283,7 +283,7 @@ public final class Component {
 	public int modelSeqId = -1;
 
 	@OriginalMember(owner = "client!nk", name = "l", descriptor = "Z")
-	public boolean aBoolean280 = false;
+	public boolean objWearColor = false;
 
 	@OriginalMember(owner = "client!nk", name = "F", descriptor = "Lclient!eh;")
 	public ServerActiveProperties aClass2_Sub10_1 = Static367.aClass2_Sub10_2;
@@ -292,10 +292,10 @@ public final class Component {
 	public int halign = 0;
 
 	@OriginalMember(owner = "client!nk", name = "W", descriptor = "I")
-	public int anInt4260 = -1;
+	public int targetOpCursor = -1;
 
 	@OriginalMember(owner = "client!nk", name = "P", descriptor = "Ljava/lang/String;")
-	public String aString44 = "";
+	public String targetVerb = "";
 
 	@OriginalMember(owner = "client!nk", name = "Pb", descriptor = "Z")
 	public boolean spriteTiling = false;
@@ -322,7 +322,7 @@ public final class Component {
 	public int scrollMaxH = 0;
 
 	@OriginalMember(owner = "client!nk", name = "yc", descriptor = "I")
-	public int anInt4306 = 2;
+	public int showObjCount = 2;
 
 	@OriginalMember(owner = "client!nk", name = "wc", descriptor = "I")
 	public int x = 0;
@@ -373,7 +373,7 @@ public final class Component {
 	public boolean shadowed = false;
 
 	@OriginalMember(owner = "client!nk", name = "h", descriptor = "I")
-	public int anInt4239 = 0;
+	public int dragDeadZone = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Mc", descriptor = "Z")
 	public boolean aBoolean292 = false;
@@ -403,7 +403,7 @@ public final class Component {
 	public byte dynamicWidthValue = 0;
 
 	@OriginalMember(owner = "client!nk", name = "Ib", descriptor = "I")
-	public int anInt4285 = Static164.anInt3138;
+	public int dragRender = Static164.anInt3138;
 
 	@OriginalMember(owner = "client!nk", name = "i", descriptor = "I")
 	public int objCount = 0;
@@ -465,17 +465,17 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(ILjava/lang/String;Z)V")
-	public void method4103(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1) {
-		if (this.aStringArray40 == null || this.aStringArray40.length <= arg0) {
+	public void setOp(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1) {
+		if (this.ops == null || this.ops.length <= arg0) {
 			@Pc(24) String[] local24 = new String[arg0 + 1];
-			if (this.aStringArray40 != null) {
-				for (@Pc(29) int local29 = 0; local29 < this.aStringArray40.length; local29++) {
-					local24[local29] = this.aStringArray40[local29];
+			if (this.ops != null) {
+				for (@Pc(29) int local29 = 0; local29 < this.ops.length; local29++) {
+					local24[local29] = this.ops[local29];
 				}
 			}
-			this.aStringArray40 = local24;
+			this.ops = local24;
 		}
-		this.aStringArray40[arg0] = arg1;
+		this.ops[arg0] = arg1;
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(IILclient!io;Lclient!wl;ILclient!nb;Lclient!ak;Lclient!jo;Lclient!ta;ILclient!gp;ILclient!e;Lclient!wm;)Lclient!gn;")
@@ -583,11 +583,11 @@ public final class Component {
 		this.dynamicHeightValue = arg0.g1b();
 		this.xMode = arg0.g1b();
 		this.yMode = arg0.g1b();
-		this.overlayer = arg0.g2();
-		if (this.overlayer == 65535) {
-			this.overlayer = -1;
+		this.layer = arg0.g2();
+		if (this.layer == 65535) {
+			this.layer = -1;
 		} else {
-			this.overlayer += this.id & 0xFFFF0000;
+			this.layer += this.id & 0xFFFF0000;
 		}
 		this.hidden = arg0.g1() == 1;
 		if (this.type == 0) {
@@ -682,14 +682,14 @@ public final class Component {
 				local449 = arg0.g1();
 			}
 		}
-		this.aString45 = arg0.gjstr();
+		this.opBase = arg0.gjstr();
 		local474 = arg0.g1();
 		@Pc(545) int local545 = local474 & 0xF;
 		@Pc(556) int local556;
 		if (local545 > 0) {
-			this.aStringArray40 = new String[local545];
+			this.ops = new String[local545];
 			for (local556 = 0; local556 < local545; local556++) {
-				this.aStringArray40[local556] = arg0.gjstr();
+				this.ops[local556] = arg0.gjstr();
 			}
 		}
 		@Pc(577) int local577 = local474 >> 4;
@@ -705,14 +705,14 @@ public final class Component {
 			local556 = arg0.g1();
 			this.anIntArray279[local556] = arg0.g2();
 		}
-		this.aString46 = arg0.gjstr();
-		if (this.aString46.equals("")) {
-			this.aString46 = null;
+		this.pauseText = arg0.gjstr();
+		if (this.pauseText.equals("")) {
+			this.pauseText = null;
 		}
-		this.anInt4239 = arg0.g1();
-		this.anInt4271 = arg0.g1();
-		this.anInt4285 = arg0.g1();
-		this.aString44 = arg0.gjstr();
+		this.dragDeadZone = arg0.g1();
+		this.dragDeadTime = arg0.g1();
+		this.dragRender = arg0.g1();
+		this.targetVerb = arg0.gjstr();
 		local556 = -1;
 		if (ServerActiveProperties.getTargetMask(local155) != 0) {
 			local556 = arg0.g2();
@@ -730,30 +730,30 @@ public final class Component {
 		}
 		this.aClass2_Sub10_1 = new ServerActiveProperties(local155, local556);
 		this.anObjectArray22 = this.method4107(arg0);
-		this.anObjectArray13 = this.method4107(arg0);
-		this.anObjectArray9 = this.method4107(arg0);
-		this.anObjectArray32 = this.method4107(arg0);
-		this.anObjectArray15 = this.method4107(arg0);
-		this.anObjectArray10 = this.method4107(arg0);
-		this.anObjectArray29 = this.method4107(arg0);
-		this.anObjectArray5 = this.method4107(arg0);
-		this.anObjectArray23 = this.method4107(arg0);
-		this.anObjectArray27 = this.method4107(arg0);
-		this.anObjectArray12 = this.method4107(arg0);
-		this.anObjectArray14 = this.method4107(arg0);
-		this.anObjectArray28 = this.method4107(arg0);
-		this.anObjectArray30 = this.method4107(arg0);
-		this.anObjectArray16 = this.method4107(arg0);
-		this.anObjectArray31 = this.method4107(arg0);
-		this.anObjectArray8 = this.method4107(arg0);
-		this.anObjectArray21 = this.method4107(arg0);
-		this.anObjectArray19 = this.method4107(arg0);
-		this.anObjectArray7 = this.method4107(arg0);
-		this.anIntArray273 = this.method4108(arg0);
-		this.anIntArray281 = this.method4108(arg0);
-		this.anIntArray274 = this.method4108(arg0);
-		this.anIntArray278 = this.method4108(arg0);
-		this.anIntArray277 = this.method4108(arg0);
+		this.onMouseOver = this.method4107(arg0);
+		this.onMouseLeave = this.method4107(arg0);
+		this.onTargetLeave = this.method4107(arg0);
+		this.onTargetEnter = this.method4107(arg0);
+		this.onVarTransmit = this.method4107(arg0);
+		this.onInvTransmit = this.method4107(arg0);
+		this.onStatTransmit = this.method4107(arg0);
+		this.onTimer = this.method4107(arg0);
+		this.onOp = this.method4107(arg0);
+		this.onMouseRepeat = this.method4107(arg0);
+		this.onClick = this.method4107(arg0);
+		this.onClickRepeat = this.method4107(arg0);
+		this.onRelease = this.method4107(arg0);
+		this.onHold = this.method4107(arg0);
+		this.onDrag = this.method4107(arg0);
+		this.onDragComplete = this.method4107(arg0);
+		this.onScrollWheel = this.method4107(arg0);
+		this.onVarcTransmit = this.method4107(arg0);
+		this.onVarcStrTransmit = this.method4107(arg0);
+		this.varpTriggers = this.method4108(arg0);
+		this.invTriggers = this.method4108(arg0);
+		this.statTriggers = this.method4108(arg0);
+		this.varcTriggers = this.method4108(arg0);
+		this.varcStrTriggers = this.method4108(arg0);
 	}
 
 	@OriginalMember(owner = "client!nk", name = "b", descriptor = "(ILclient!bt;)[Ljava/lang/Object;")
@@ -826,7 +826,7 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(III)V")
-	public void method4110(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+	public void setOpCursor(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		if (this.anIntArray279 == null || this.anIntArray279.length <= arg1) {
 			@Pc(18) int[] local18 = new int[arg1 + 1];
 			if (this.anIntArray279 != null) {

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 import java.io.IOException;
 import java.net.Socket;
 
-public class AccountCreationManager {
+public class CreateManager {
 
 	@OriginalMember(owner = "client!i", name = "W", descriptor = "I")
 	public static int step = 0;
@@ -71,7 +71,7 @@ public class AccountCreationManager {
 					client.soundChannel.method6325();
 				}
 				if (reply != 21) {
-					AccountCreationManager.reply = reply;
+					CreateManager.reply = reply;
 					step = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
@@ -93,7 +93,7 @@ public class AccountCreationManager {
 					suggestedNames[reply] = StringUtils.fromBase37(Protocol.inboundBuffer.g8());
 				}
 				step = 0;
-				AccountCreationManager.reply = 21;
+				CreateManager.reply = 21;
 				Protocol.socket.close();
 				Protocol.socket = null;
 			}

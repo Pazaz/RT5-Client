@@ -48,7 +48,7 @@ public final class Class11_Sub1_Sub3 extends Class11_Sub1 implements Interface6 
 		super.anInt3485 = (short) arg5;
 		this.aShort40 = (short) arg1.anInt1351;
 		this.aBoolean230 = arg6;
-		this.aBoolean232 = arg0.method2878() && arg1.aBoolean110 && !this.aBoolean230 && client.preferences.sceneryShadowsType != 0;
+		this.aBoolean232 = arg0.method2878() && arg1.aBoolean110 && !this.aBoolean230 && client.preferences.shadows != 0;
 		@Pc(68) int local68 = 1024;
 		if (this.aBoolean231) {
 			local68 |= 0x8000;

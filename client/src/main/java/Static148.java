@@ -9,7 +9,7 @@ public final class Static148 {
 	public static final int[] anIntArray172 = new int[] { 0, -1, 0, 1 };
 
 	@OriginalMember(owner = "client!ij", name = "j", descriptor = "Z")
-	public static boolean aBoolean192 = false;
+	public static boolean shiftClickMod = false;
 
 	@OriginalMember(owner = "client!ij", name = "a", descriptor = "(B)V")
 	public static void method2709() {

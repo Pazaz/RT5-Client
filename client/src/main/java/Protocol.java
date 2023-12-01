@@ -167,25 +167,25 @@ public class Protocol {
 			} else if (ServerProt.PACKET_91 == packet) {
 				local220 = inboundBuffer.g2();
 				if (Static378.method6314(local220)) {
-					Camera.resetCameraEffects();
+					Camera.reset();
 				}
 				packet = null;
 				return true;
 			} else {
-				@Pc(344) Class2_Sub7 local344;
+				@Pc(344) SubInterface local344;
 				if (packet == ServerProt.PACKET_66) {
 					local220 = inboundBuffer.mg4();
 					local74 = inboundBuffer.mg4();
 					local228 = inboundBuffer.ig2();
 					if (Static378.method6314(local228)) {
-						@Pc(335) Class2_Sub7 local335 = (Class2_Sub7) Static329.aClass4_130.get((long) local220);
-						local344 = (Class2_Sub7) Static329.aClass4_130.get((long) local74);
+						@Pc(335) SubInterface local335 = (SubInterface) InterfaceList.subInterfaces.get((long) local220);
+						local344 = (SubInterface) InterfaceList.subInterfaces.get((long) local74);
 						if (local344 != null) {
-							Static276.method4655(false, local344, local335 == null || local344.anInt1370 != local335.anInt1370);
+							Static276.method4655(false, local344, local335 == null || local344.id != local335.id);
 						}
 						if (local335 != null) {
 							local335.unlink();
-							Static329.aClass4_130.put(local335, (long) local74);
+							InterfaceList.subInterfaces.put(local335, (long) local74);
 						}
 						@Pc(375) Component local375 = InterfaceList.getComponent(local220);
 						if (local375 != null) {
@@ -194,7 +194,7 @@ public class Protocol {
 						local375 = InterfaceList.getComponent(local74);
 						if (local375 != null) {
 							InterfaceList.redraw(local375);
-							DelayedStateChange.method1911(true, local375);
+							DelayedStateChange.setComponentSizeClient(true, local375);
 						}
 						if (Static139.anInt2595 != -1) {
 							Static392.method6460(Static139.anInt2595, 1);
@@ -211,7 +211,7 @@ public class Protocol {
 				} else if (packet == ServerProt.PACKET_30) {
 					local220 = inboundBuffer.g2();
 					if (Static378.method6314(local220)) {
-						Static351.method5859();
+						Camera.smoothReset();
 					}
 					packet = null;
 					return true;
@@ -220,7 +220,7 @@ public class Protocol {
 					@Pc(444) String local444;
 					if (ServerProt.PACKET_76 == packet) {
 						local444 = inboundBuffer.gjstr();
-						local452 = Static153.method2772(Static308.method5276(inboundBuffer));
+						local452 = StringUtils.escape(Static308.method5276(inboundBuffer));
 						Static33.method4200(local444, 0, local452, 6, local444);
 						packet = null;
 						return true;
@@ -439,9 +439,9 @@ public class Protocol {
 							local228 = inboundBuffer.ig4();
 							local249 = inboundBuffer.g2();
 							if (Static378.method6314(local220)) {
-								local344 = (Class2_Sub7) Static329.aClass4_130.get((long) local228);
+								local344 = (SubInterface) InterfaceList.subInterfaces.get((long) local228);
 								if (local344 != null) {
-									Static276.method4655(false, local344, local249 != local344.anInt1370);
+									Static276.method4655(false, local344, local249 != local344.id);
 								}
 								Static382.method6365(local228, local74, false, local249);
 							}
@@ -471,7 +471,7 @@ public class Protocol {
 							local497 = inboundBuffer.g1();
 							local506 = inboundBuffer.g1();
 							if (Static378.method6314(local220)) {
-								Camera.method1545(local228, local497, local506, true, local249, local74);
+								Camera.moveto(local228, local497, local506, true, local249, local74);
 							}
 							packet = null;
 							return true;
@@ -606,7 +606,7 @@ public class Protocol {
 									if (!local1798 && Static212.anInt3785 == 0) {
 										Static358.aLongArray11[Static193.anInt3555] = local1796;
 										Static193.anInt3555 = (Static193.anInt3555 + 1) % 100;
-										@Pc(1866) String local1866 = Static153.method2772(Static308.method5276(inboundBuffer));
+										@Pc(1866) String local1866 = StringUtils.escape(Static308.method5276(inboundBuffer));
 										if (local536 == 2) {
 											Static220.method3874(0, null, local1866, -1, 7, "<img=1>" + local1381, "<img=1>" + local452);
 										} else if (local536 == 1) {
@@ -642,7 +642,7 @@ public class Protocol {
 									local497 = inboundBuffer.g1();
 									local506 = inboundBuffer.g1();
 									if (Static378.method6314(local220)) {
-										Camera.method4203(local497, local249, local228, local506, local74);
+										Camera.lookAt(local497, local249, local228, local506, local74);
 									}
 									packet = null;
 									return true;
@@ -861,12 +861,12 @@ public class Protocol {
 										return true;
 									} else if (packet == ServerProt.PACKET_56) {
 										if (GameShell.fullScreenFrame != null) {
-											DisplayMode.setWindowMode(-1, client.preferences.favoriteWorlds, false, -1);
+											DisplayMode.setWindowMode(-1, client.preferences.windowMode, false, -1);
 										}
 										@Pc(2782) byte[] local2782 = new byte[packetSize];
 										inboundBuffer.gisaac(local2782, packetSize);
 										local452 = Cp1252Charset.decodeString(0, local2782, packetSize);
-										Static280.method4765(local452, GameShell.signlink, Static77.anInt1762 == 1, true);
+										Static280.openUrl(local452, GameShell.signlink, Static77.anInt1762 == 1, true);
 										packet = null;
 										return true;
 									} else if (ServerProt.PACKET_94 == packet) {
@@ -987,7 +987,7 @@ public class Protocol {
 											if (Static190.aStringArray28[local220].equals("")) {
 												Static190.aStringArray28[local220] = Static371.aStringArray66[local220];
 											}
-											Static196.aBooleanArray31[local220] = false;
+											IgnoreList.temporary[local220] = false;
 										}
 										packet = null;
 										Static53.anInt3971 = InterfaceList.transmitTimer;
@@ -1015,7 +1015,7 @@ public class Protocol {
 										local74 = inboundBuffer.g2add();
 										local228 = inboundBuffer.g2add();
 										if (Static378.method6314(local74)) {
-											Camera.clampCameraAngle(local220, local228);
+											Camera.forceAngle(local220, local228);
 										}
 										packet = null;
 										return true;
@@ -1030,8 +1030,8 @@ public class Protocol {
 										if (Static378.method6314(local220)) {
 											Static216.method3774(local74, local249, local228);
 											@Pc(3499) ObjType local3499 = client.ObjTypes.get(local74);
-											Static277.method4680(local3499.anInt5215, local3499.anInt5245, local249, local3499.anInt5241);
-											Static376.method6287(local249, local3499.anInt5249, local3499.anInt5252, local3499.anInt5232);
+											Static277.method4680(local3499.yAngle2d, local3499.xAngle2d, local249, local3499.zoom2d);
+											Static376.method6287(local249, local3499.yOffset2d, local3499.xOffset2d, local3499.zOffset2d);
 										}
 										packet = null;
 										return true;
@@ -1230,7 +1230,7 @@ public class Protocol {
 												Static234.aStringArray39[IgnoreList.size] = local3809;
 												Static371.aStringArray66[IgnoreList.size] = local1627;
 												Static190.aStringArray28[IgnoreList.size] = local1391;
-												Static196.aBooleanArray31[IgnoreList.size] = (local220 & 0x2) == 2;
+												IgnoreList.temporary[IgnoreList.size] = (local220 & 0x2) == 2;
 												IgnoreList.size++;
 											}
 											packet = null;
@@ -1301,7 +1301,7 @@ public class Protocol {
 												if (!local4312 && Static212.anInt3785 == 0) {
 													Static358.aLongArray11[Static193.anInt3555] = local4310;
 													Static193.anInt3555 = (Static193.anInt3555 + 1) % 100;
-													@Pc(4372) String local4372 = Static153.method2772(Static308.method5276(inboundBuffer));
+													@Pc(4372) String local4372 = StringUtils.escape(Static308.method5276(inboundBuffer));
 													if (local638 == 2 || local638 == 3) {
 														Static220.method3874(0, Static170.method3229(local1780), local4372, -1, 9, "<img=1>" + local1381, "<img=1>" + local452);
 													} else if (local638 == 1) {
@@ -1660,7 +1660,7 @@ public class Protocol {
 												local220 = inboundBuffer.g2();
 												local74 = inboundBuffer.g4();
 												if (Static378.method6314(local220)) {
-													@Pc(5735) Class2_Sub7 local5735 = (Class2_Sub7) Static329.aClass4_130.get((long) local74);
+													@Pc(5735) SubInterface local5735 = (SubInterface) InterfaceList.subInterfaces.get((long) local74);
 													if (local5735 != null) {
 														Static276.method4655(false, local5735, true);
 													}
@@ -2206,7 +2206,7 @@ public class Protocol {
 						local107 = local127.id;
 						local117 = local127.type.method5602(playerAppearanceBuffer);
 					} else {
-						local117 = Static153.method2772(Static308.method5276(playerAppearanceBuffer));
+						local117 = StringUtils.escape(Static308.method5276(playerAppearanceBuffer));
 					}
 					arg2.aString50 = local117.trim();
 					arg2.anInt4600 = local32 & 0xFF;
@@ -2758,13 +2758,13 @@ public class Protocol {
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(IIILjava/lang/String;I)V")
 	public static void method4681(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
-		@Pc(8) Component local8 = InterfaceList.method3705(arg0, arg3);
+		@Pc(8) Component local8 = InterfaceList.getCreatedComponent(arg0, arg3);
 		if (local8 == null) {
 			return;
 		}
-		if (local8.anObjectArray27 != null) {
+		if (local8.onOp != null) {
 			@Pc(18) HookRequest local18 = new HookRequest();
-			local18.anObjectArray4 = local8.anObjectArray27;
+			local18.anObjectArray4 = local8.onOp;
 			local18.anInt2118 = arg1;
 			local18.source = local8;
 			local18.aString20 = arg2;
@@ -2774,7 +2774,7 @@ public class Protocol {
 		if (local8.anInt4273 != 0) {
 			local35 = Static7.method6472(local8);
 		}
-		if (!local35 || !Static45.method1404(local8).method1854(arg1 - 1)) {
+		if (!local35 || !InterfaceList.getServerActiveProperties(local8).method1854(arg1 - 1)) {
 			return;
 		}
 		if (arg1 == 1) {
@@ -3090,7 +3090,7 @@ public class Protocol {
 				if (local25 == 1) {
 					outboundBuffer.p1(-1);
 					outboundBuffer.p1(-1);
-					outboundBuffer.p2((int) Camera.yawTarget);
+					outboundBuffer.p2((int) Camera.yaw);
 					outboundBuffer.p1(57);
 					outboundBuffer.p1(Static6.anInt158);
 					outboundBuffer.p1(Static97.anInt2005);
@@ -3214,16 +3214,16 @@ public class Protocol {
 		}
 		@Pc(1723) Component local1723;
 		if (local21 == 49) {
-			local1723 = InterfaceList.method3705(local18, local15);
+			local1723 = InterfaceList.getCreatedComponent(local18, local15);
 			if (local1723 != null) {
 				Static207.method3699();
-				@Pc(1730) ServerActiveProperties local1730 = Static45.method1404(local1723);
+				@Pc(1730) ServerActiveProperties local1730 = InterfaceList.getServerActiveProperties(local1723);
 				Static185.method3400(local1723.anInt4238, local1730.getTargetMask(), local18, local15, local1723.anInt4286, local1730.anInt1759);
 				Static91.aString18 = Static163.method3104(local1723);
 				if (Static91.aString18 == null) {
 					Static91.aString18 = "Null";
 				}
-				Static371.aString68 = local1723.aString45 + "<col=ffffff>";
+				Static371.aString68 = local1723.opBase + "<col=ffffff>";
 			}
 			return;
 		}
@@ -3252,7 +3252,7 @@ public class Protocol {
 			ScriptRunner.method3809(local25, local21, local15);
 		}
 		if (local21 == 11) {
-			local1723 = InterfaceList.method3705(local18, local15);
+			local1723 = InterfaceList.getCreatedComponent(local18, local15);
 			if (local1723 != null) {
 				method6129(local1723);
 			}
@@ -3272,7 +3272,7 @@ public class Protocol {
 		}
 		if (local21 == 30 && Static192.aClass161_8 == null) {
 			method2045(local18, local15);
-			Static192.aClass161_8 = InterfaceList.method3705(local18, local15);
+			Static192.aClass161_8 = InterfaceList.getCreatedComponent(local18, local15);
 			InterfaceList.redraw(Static192.aClass161_8);
 		}
 		if (local21 == 44) {
@@ -3378,26 +3378,6 @@ public class Protocol {
 		Static358.anInt6550 = arg0;
 		Static312.anInt5844 = arg1;
 		Static359.method6009();
-	}
-
-	@OriginalMember(owner = "client!em", name = "a", descriptor = "(IZ)V")
-	public static void closeWidget() {
-		writeOpcode(ClientProt.CLOSE_MODAL);
-		for (@Pc(21) Class2_Sub7 local21 = (Class2_Sub7) Static329.aClass4_130.head(); local21 != null; local21 = (Class2_Sub7) Static329.aClass4_130.next()) {
-			if (!local21.isLinked()) {
-				local21 = (Class2_Sub7) Static329.aClass4_130.head();
-				if (local21 == null) {
-					break;
-				}
-			}
-			if (local21.anInt1373 == 0) {
-				Static276.method4655(true, local21, true);
-			}
-		}
-		if (Static192.aClass161_8 != null) {
-			InterfaceList.redraw(Static192.aClass161_8);
-			Static192.aClass161_8 = null;
-		}
 	}
 
 	@OriginalMember(owner = "client!hq", name = "b", descriptor = "(I)V")
@@ -3570,8 +3550,8 @@ public class Protocol {
 			Camera.aBoolean156 = false;
 			Camera.anInt7153 = 20;
 			writeOpcode(ClientProt.EVENT_CAMERA_POSITION);
-			outboundBuffer.p2((int) Camera.yawTarget >> 3);
-			outboundBuffer.ip2_dup((int) Camera.pitchTarget >> 3);
+			outboundBuffer.p2((int) Camera.yaw >> 3);
+			outboundBuffer.ip2_dup((int) Camera.pitch >> 3);
 		}
 		if (GameShell.focus && !GameShell.prevFocus) {
 			GameShell.prevFocus = true;
@@ -3892,7 +3872,7 @@ public class Protocol {
 										if (local1421.activeComponentId < 0) {
 											break;
 										}
-										local830 = InterfaceList.getComponent(local1421.overlayer);
+										local830 = InterfaceList.getComponent(local1421.layer);
 									} while (local830 == null || local830.activeComponents == null || local830.activeComponents.length <= local1421.activeComponentId || local1421 != local830.activeComponents[local1421.activeComponentId]);
 									ScriptRunner.execute(local1416);
 								}
@@ -3901,7 +3881,7 @@ public class Protocol {
 							if (local1421.activeComponentId < 0) {
 								break;
 							}
-							local830 = InterfaceList.getComponent(local1421.overlayer);
+							local830 = InterfaceList.getComponent(local1421.layer);
 						} while (local830 == null || local830.activeComponents == null || local830.activeComponents.length <= local1421.activeComponentId || local1421 != local830.activeComponents[local1421.activeComponentId]);
 						ScriptRunner.execute(local1416);
 					}
@@ -3910,7 +3890,7 @@ public class Protocol {
 				if (local1421.activeComponentId < 0) {
 					break;
 				}
-				local830 = InterfaceList.getComponent(local1421.overlayer);
+				local830 = InterfaceList.getComponent(local1421.layer);
 			} while (local830 == null || local830.activeComponents == null || local830.activeComponents.length <= local1421.activeComponentId || local1421 != local830.activeComponents[local1421.activeComponentId]);
 			ScriptRunner.execute(local1416);
 		}

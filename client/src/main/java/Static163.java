@@ -30,7 +30,7 @@ public final class Static163 {
 			}
 		}
 		if (arg3 == 3 && GameShell.fullScreenFrame == null) {
-			method3100(-1, -1, arg2, client.preferences.favoriteWorlds, true);
+			method3100(-1, -1, arg2, client.preferences.windowMode, true);
 			return;
 		}
 		@Pc(81) Container local81;
@@ -110,12 +110,12 @@ public final class Static163 {
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILclient!nk;)Ljava/lang/String;")
 	public static String method3104(@OriginalArg(1) Component arg0) {
-		if (Static45.method1404(arg0).getTargetMask() == 0) {
+		if (InterfaceList.getServerActiveProperties(arg0).getTargetMask() == 0) {
 			return null;
-		} else if (arg0.aString44 == null || arg0.aString44.trim().length() == 0) {
+		} else if (arg0.targetVerb == null || arg0.targetVerb.trim().length() == 0) {
 			return Static18.qa_op_test ? "Hidden-use" : null;
 		} else {
-			return arg0.aString44;
+			return arg0.targetVerb;
 		}
 	}
 

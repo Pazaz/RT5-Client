@@ -24,9 +24,9 @@ public final class Static262 {
 		local37 -= 10;
 		@Pc(66) int local66;
 		if (Camera.anInt5911 == 4) {
-			local66 = (int) Camera.yawTarget & 0x3FFF;
+			local66 = (int) Camera.yaw & 0x3FFF;
 		} else {
-			local66 = (int) Camera.yawTarget + Static6.anInt158 & 0x3FFF;
+			local66 = (int) Camera.yaw + Static6.anInt158 & 0x3FFF;
 		}
 		@Pc(77) int local77 = RasteriserBase.anIntArray178[local66];
 		@Pc(81) int local81 = RasteriserBase.anIntArray177[local66];
@@ -44,7 +44,7 @@ public final class Static262 {
 
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(Z)V")
 	public static void method6254() {
-		Static217.method3795(client.preferences.anInt4883);
+		Static217.method3795(client.preferences.buildArea);
 		@Pc(18) int local18 = (Static136.anInt6778 >> 10) + (Camera.originX >> 3);
 		@Pc(27) int local27 = (Static211.anInt3777 >> 10) + (Camera.originZ >> 3);
 		Static355.anInt6585 = PlayerList.self.plane = 0;

@@ -1182,7 +1182,7 @@ public final class Class19_Sub1 extends RasteriserBase implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "u", descriptor = "()Z")
 	@Override
-	public boolean method2858() {
+	public boolean isBloomSupported() {
 		return this.aClass2_Sub38_Sub1_1.method6310();
 	}
 
@@ -2379,7 +2379,7 @@ public final class Class19_Sub1 extends RasteriserBase implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "H", descriptor = "()Z")
 	@Override
-	public boolean method2894() {
+	public boolean arbMultisampleSupported() {
 		return this.aBoolean44;
 	}
 

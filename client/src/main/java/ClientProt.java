@@ -8,7 +8,7 @@ public final class ClientProt {
 	@OriginalMember(owner = "client!pk", name = "kb", descriptor = "Lclient!mc;")
 	public static final ClientProt PACKET_0 = new ClientProt(0, 2);
 	@OriginalMember(owner = "client!we", name = "H", descriptor = "Lclient!mc;")
-	public static final ClientProt PACKET_1 = new ClientProt(1, -1);
+	public static final ClientProt MESSAGE_PRIVATE = new ClientProt(1, -1);
 	@OriginalMember(owner = "client!c", name = "b", descriptor = "Lclient!mc;")
 	public static final ClientProt PACKET_2 = new ClientProt(2, 8);
 	@OriginalMember(owner = "client!gd", name = "h", descriptor = "Lclient!mc;")
@@ -44,7 +44,7 @@ public final class ClientProt {
 	@OriginalMember(owner = "client!ij", name = "c", descriptor = "Lclient!mc;")
 	public static final ClientProt PACKET_18 = new ClientProt(18, -1);
 	@OriginalMember(owner = "client!vm", name = "W", descriptor = "Lclient!mc;")
-	public static final ClientProt PACKET_19 = new ClientProt(19, -1);
+	public static final ClientProt MESSAGE_QUICKCHAT_PUBLIC = new ClientProt(19, -1);
 	@OriginalMember(owner = "client!ds", name = "w", descriptor = "Lclient!mc;")
 	public static final ClientProt SOUND_SONGEND = new ClientProt(20, 4);
 	@OriginalMember(owner = "client!hd", name = "m", descriptor = "Lclient!mc;")
@@ -66,7 +66,7 @@ public final class ClientProt {
 	@OriginalMember(owner = "client!cr", name = "a", descriptor = "Lclient!mc;")
 	public static final ClientProt RESUME_P_NAMEDIALOG = new ClientProt(29, -1);
 	@OriginalMember(owner = "client!sr", name = "g", descriptor = "Lclient!mc;")
-	public static final ClientProt PACKET_30 = new ClientProt(30, -1);
+	public static final ClientProt MESSAGE_QUICKCHAT_PRIVATE = new ClientProt(30, -1);
 	@OriginalMember(owner = "client!sg", name = "l", descriptor = "Lclient!mc;")
 	public static final ClientProt PACKET_31 = new ClientProt(31, 3);
 	@OriginalMember(owner = "client!pd", name = "m", descriptor = "Lclient!mc;")
@@ -118,11 +118,11 @@ public final class ClientProt {
 	@OriginalMember(owner = "client!cj", name = "h", descriptor = "Lclient!mc;")
 	public static final ClientProt MAP_BUILD_COMPLETE = new ClientProt(55, 0);
 	@OriginalMember(owner = "client!sp", name = "Q", descriptor = "Lclient!mc;")
-	public static final ClientProt PACKET_56 = new ClientProt(56, -1);
+	public static final ClientProt URL_REQUEST = new ClientProt(56, -1);
 	@OriginalMember(owner = "client!ki", name = "d", descriptor = "Lclient!mc;")
 	public static final ClientProt PACKET_57 = new ClientProt(57, 8);
 	@OriginalMember(owner = "client!kt", name = "O", descriptor = "Lclient!mc;")
-	public static final ClientProt PACKET_58 = new ClientProt(58, 2);
+	public static final ClientProt RESUME_P_OBJDIALOG = new ClientProt(58, 2);
 	@OriginalMember(owner = "client!rt", name = "d", descriptor = "Lclient!mc;")
 	public static final ClientProt MOVE_MINIMAPCLICK = new ClientProt(59, 18);
 	@OriginalMember(owner = "client!fp", name = "A", descriptor = "Lclient!mc;")

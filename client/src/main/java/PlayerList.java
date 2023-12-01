@@ -8,8 +8,6 @@ public class PlayerList {
 	public static final byte[] aByteArray7 = new byte[2048];
 	@OriginalMember(owner = "client!nn", name = "C", descriptor = "[I")
 	public static final int[] anIntArray284 = new int[2048];
-	@OriginalMember(owner = "client!tr", name = "d", descriptor = "[I")
-	public static final int[] anIntArray384 = new int[] { 1, 4 };
 	@OriginalMember(owner = "client!ni", name = "E", descriptor = "I")
 	public static int selfId = -1;
 
@@ -21,8 +19,5 @@ public class PlayerList {
 
 	@OriginalMember(owner = "client!at", name = "N", descriptor = "Lclient!nh;")
 	public static Player self;
-
-	@OriginalMember(owner = "client!hg", name = "n", descriptor = "[Ljava/lang/String;")
-	public static String[] playerNames;
 
 }

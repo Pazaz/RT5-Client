@@ -912,7 +912,7 @@ public final class SceneBuilder extends Class29 {
 					}
 				}
 			}
-		} else if (client.preferences.showGroundDecorations || local30.anInt1335 != 0 || local30.anInt1324 == 1 || local30.aBoolean117) {
+		} else if (client.preferences.groundDecoration || local30.anInt1335 != 0 || local30.anInt1324 == 1 || local30.aBoolean117) {
 			@Pc(266) Class11_Sub2 local266;
 			if (local220) {
 				@Pc(264) Class11_Sub2_Sub1 local264 = new Class11_Sub2_Sub1(arg6, local30, arg4, local166, local158, local174, super.aBoolean73, arg0, local186);

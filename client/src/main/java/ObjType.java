@@ -97,7 +97,7 @@ public final class ObjType {
 	public int anInt5214 = 0;
 
 	@OriginalMember(owner = "client!qf", name = "x", descriptor = "I")
-	public int anInt5215 = 0;
+	public int yAngle2d = 0;
 
 	@OriginalMember(owner = "client!qf", name = "s", descriptor = "Z")
 	public boolean aBoolean381 = false;
@@ -124,7 +124,7 @@ public final class ObjType {
 	public int anInt5240 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "jb", descriptor = "I")
-	public int anInt5245 = 0;
+	public int xAngle2d = 0;
 
 	@OriginalMember(owner = "client!qf", name = "Y", descriptor = "I")
 	public int anInt5235 = -1;
@@ -136,13 +136,13 @@ public final class ObjType {
 	private int anInt5251 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "nb", descriptor = "I")
-	public int anInt5249 = 0;
+	public int yOffset2d = 0;
 
 	@OriginalMember(owner = "client!qf", name = "W", descriptor = "I")
 	private int anInt5233 = 128;
 
 	@OriginalMember(owner = "client!qf", name = "eb", descriptor = "I")
-	public int anInt5241 = 2000;
+	public int zoom2d = 2000;
 
 	@OriginalMember(owner = "client!qf", name = "tb", descriptor = "I")
 	private int anInt5254 = 0;
@@ -157,7 +157,7 @@ public final class ObjType {
 	public String name = "null";
 
 	@OriginalMember(owner = "client!qf", name = "rb", descriptor = "I")
-	public int anInt5252 = 0;
+	public int xOffset2d = 0;
 
 	@OriginalMember(owner = "client!qf", name = "yb", descriptor = "I")
 	public int certtemplate = -1;
@@ -175,7 +175,7 @@ public final class ObjType {
 	public int anInt5246 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "V", descriptor = "I")
-	public int anInt5232 = 0;
+	public int zOffset2d = 0;
 
 	@OriginalMember(owner = "client!qf", name = "vb", descriptor = "I")
 	private int anInt5256 = 0;
@@ -193,20 +193,20 @@ public final class ObjType {
 		} else if (arg0 == 2) {
 			this.name = arg1.gjstr();
 		} else if (arg0 == 4) {
-			this.anInt5241 = arg1.g2();
+			this.zoom2d = arg1.g2();
 		} else if (arg0 == 5) {
-			this.anInt5245 = arg1.g2();
+			this.xAngle2d = arg1.g2();
 		} else if (arg0 == 6) {
-			this.anInt5215 = arg1.g2();
+			this.yAngle2d = arg1.g2();
 		} else if (arg0 == 7) {
-			this.anInt5252 = arg1.g2();
-			if (this.anInt5252 > 32767) {
-				this.anInt5252 -= 65536;
+			this.xOffset2d = arg1.g2();
+			if (this.xOffset2d > 32767) {
+				this.xOffset2d -= 65536;
 			}
 		} else if (arg0 == 8) {
-			this.anInt5232 = arg1.g2();
-			if (this.anInt5232 > 32767) {
-				this.anInt5232 -= 65536;
+			this.zOffset2d = arg1.g2();
+			if (this.zOffset2d > 32767) {
+				this.zOffset2d -= 65536;
 			}
 		} else if (arg0 == 11) {
 			this.stackable = 1;
@@ -266,7 +266,7 @@ public final class ObjType {
 			} else if (arg0 == 93) {
 				this.anInt5243 = arg1.g2();
 			} else if (arg0 == 95) {
-				this.anInt5249 = arg1.g2();
+				this.yOffset2d = arg1.g2();
 			} else if (arg0 == 96) {
 				this.anInt5214 = arg1.g1();
 			} else if (arg0 == 97) {
@@ -612,19 +612,19 @@ public final class ObjType {
 	public void method4780(@OriginalArg(1) ObjType arg0, @OriginalArg(2) ObjType arg1) {
 		this.aShortArray110 = arg1.aShortArray110;
 		this.aByteArray72 = arg1.aByteArray72;
-		this.anInt5245 = arg1.anInt5245;
+		this.xAngle2d = arg1.xAngle2d;
 		this.anInt5237 = arg1.anInt5237;
-		this.anInt5249 = arg1.anInt5249;
+		this.yOffset2d = arg1.yOffset2d;
 		this.aShortArray112 = arg1.aShortArray112;
 		this.aShortArray113 = arg1.aShortArray113;
-		this.anInt5232 = arg1.anInt5232;
+		this.zOffset2d = arg1.zOffset2d;
 		this.aShortArray111 = arg1.aShortArray111;
 		this.cost = arg0.cost;
-		this.anInt5215 = arg1.anInt5215;
-		this.anInt5252 = arg1.anInt5252;
+		this.yAngle2d = arg1.yAngle2d;
+		this.xOffset2d = arg1.xOffset2d;
 		this.name = arg0.name;
 		this.stackable = 1;
-		this.anInt5241 = arg1.anInt5241;
+		this.zoom2d = arg1.zoom2d;
 		this.members = arg0.members;
 	}
 
@@ -686,11 +686,11 @@ public final class ObjType {
 		}
 		@Pc(287) int local287;
 		if (arg8) {
-			local287 = (int) ((double) this.anInt5241 * 1.5D);
+			local287 = (int) ((double) this.zoom2d * 1.5D);
 		} else if (arg6 == 2) {
-			local287 = (int) ((double) this.anInt5241 * 1.04D);
+			local287 = (int) ((double) this.zoom2d * 1.04D);
 		} else {
-			local287 = this.anInt5241;
+			local287 = this.zoom2d;
 		}
 		arg4.method2821(16, 16, 512, 512);
 		@Pc(314) Class14 local314 = arg4.method2897();
@@ -699,10 +699,10 @@ public final class ObjType {
 		arg4.method2838(1.0F);
 		arg4.method2832(16777215, 1.0F, 1.0F, -50.0F, -10.0F, -50.0F);
 		@Pc(333) Class14 local333 = arg4.method2808();
-		local333.method3931(-this.anInt5249 << 3);
-		local333.method3926(this.anInt5215 << 3);
-		local333.method3936(this.anInt5252, (RasteriserBase.anIntArray178[this.anInt5245 << 3] * local287 >> 15) + (this.anInt5232 - (local210.method3802() / 2)), this.anInt5232 + (local287 * RasteriserBase.anIntArray177[this.anInt5245 << 3] >> 15));
-		local333.method3929(this.anInt5245 << 3);
+		local333.method3931(-this.yOffset2d << 3);
+		local333.method3926(this.yAngle2d << 3);
+		local333.method3936(this.xOffset2d, (RasteriserBase.anIntArray178[this.xAngle2d << 3] * local287 >> 15) + (this.zOffset2d - (local210.method3802() / 2)), this.zOffset2d + (local287 * RasteriserBase.anIntArray177[this.xAngle2d << 3] >> 15));
+		local333.method3929(this.xAngle2d << 3);
 		@Pc(392) int local392 = arg4.method2814();
 		@Pc(395) int local395 = arg4.method2875();
 		arg4.method2872(50, Integer.MAX_VALUE);
@@ -782,7 +782,7 @@ public final class ObjType {
 	public void method4784(@OriginalArg(0) ObjType arg0, @OriginalArg(1) ObjType arg1) {
 		this.anInt5213 = arg1.anInt5213;
 		this.anInt5200 = arg1.anInt5200;
-		this.anInt5215 = arg0.anInt5215;
+		this.yAngle2d = arg0.yAngle2d;
 		this.aShortArray110 = arg1.aShortArray110;
 		this.anInt5208 = arg1.anInt5208;
 		this.aShortArray113 = arg1.aShortArray113;
@@ -794,15 +794,15 @@ public final class ObjType {
 		this.ops = arg1.ops;
 		this.anInt5251 = arg1.anInt5251;
 		this.anInt5211 = arg1.anInt5211;
-		this.anInt5241 = arg0.anInt5241;
+		this.zoom2d = arg0.zoom2d;
 		this.anInt5207 = arg1.anInt5207;
 		this.aClass4_103 = arg1.aClass4_103;
-		this.anInt5252 = arg0.anInt5252;
-		this.anInt5232 = arg0.anInt5232;
+		this.xOffset2d = arg0.xOffset2d;
+		this.zOffset2d = arg0.zOffset2d;
 		this.anInt5254 = arg1.anInt5254;
 		this.anInt5237 = arg0.anInt5237;
 		this.members = arg1.members;
-		this.anInt5249 = arg0.anInt5249;
+		this.yOffset2d = arg0.yOffset2d;
 		this.anInt5201 = arg1.anInt5201;
 		this.anInt5206 = arg1.anInt5206;
 		this.aShortArray111 = arg1.aShortArray111;
@@ -812,7 +812,7 @@ public final class ObjType {
 		this.aByteArray72 = arg1.aByteArray72;
 		this.aShortArray112 = arg1.aShortArray112;
 		this.team = arg1.team;
-		this.anInt5245 = arg0.anInt5245;
+		this.xAngle2d = arg0.xAngle2d;
 		this.anInt5205 = arg1.anInt5205;
 		this.anInt5260 = arg1.anInt5260;
 		if (arg1.iops != null) {

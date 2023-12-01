@@ -23,7 +23,7 @@ public final class Static364 {
 	public static void method6105(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Component[] arg3, @OriginalArg(5) int arg4) {
 		for (@Pc(3) int local3 = 0; local3 < arg3.length; local3++) {
 			@Pc(9) Component local9 = arg3[local3];
-			if (local9 != null && arg2 == local9.overlayer) {
+			if (local9 != null && arg2 == local9.layer) {
 				Static371.method6256(arg1, arg4, arg0, local9);
 				Static287.method4939(local9, arg4, arg1);
 				if (local9.scrollMaxH - local9.width < local9.scrollX) {
@@ -39,7 +39,7 @@ public final class Static364 {
 					local9.scrollY = 0;
 				}
 				if (local9.type == 0) {
-					DelayedStateChange.method1911(arg0, local9);
+					DelayedStateChange.setComponentSizeClient(arg0, local9);
 				}
 			}
 		}

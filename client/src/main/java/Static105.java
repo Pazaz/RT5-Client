@@ -107,7 +107,7 @@ public final class Static105 {
 				Static141.anInt2653--;
 				Static141.method2655();
 				Static357.anInt6683 = Static25.aString9.length();
-			} else if (Static89.method1939(local49) || local49 == ':' || local49 == ',' || local49 == ' ' || local49 == '_' || local49 == '-' || local49 == '+' || local49 == '[' || local49 == ']') {
+			} else if (StringUtils.isAlphanumeric(local49) || local49 == ':' || local49 == ',' || local49 == ' ' || local49 == '_' || local49 == '-' || local49 == '+' || local49 == '[' || local49 == ']') {
 				Static25.aString9 = Static25.aString9.substring(0, Static357.anInt6683) + Static156.aClass37Array1[local35].method1456() + Static25.aString9.substring(Static357.anInt6683);
 				Static357.anInt6683++;
 			}

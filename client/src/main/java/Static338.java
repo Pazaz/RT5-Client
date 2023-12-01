@@ -11,17 +11,17 @@ public final class Static338 {
 
 	@OriginalMember(owner = "client!tl", name = "b", descriptor = "(B)V")
 	public static void method6141() {
-		if (Camera.pitchTarget < 1024.0F) {
-			Camera.pitchTarget = 1024.0F;
+		if (Camera.pitch < 1024.0F) {
+			Camera.pitch = 1024.0F;
 		}
-		while (Camera.yawTarget >= 16384.0F) {
-			Camera.yawTarget -= 16384.0F;
+		while (Camera.yaw >= 16384.0F) {
+			Camera.yaw -= 16384.0F;
 		}
-		if (Camera.pitchTarget > 3072.0F) {
-			Camera.pitchTarget = 3072.0F;
+		if (Camera.pitch > 3072.0F) {
+			Camera.pitch = 3072.0F;
 		}
-		while (Camera.yawTarget < 0.0F) {
-			Camera.yawTarget += 16384.0F;
+		while (Camera.yaw < 0.0F) {
+			Camera.yaw += 16384.0F;
 		}
 		@Pc(46) int local46 = Static288.anInt5463 >> 7;
 		@Pc(50) int local50 = Static62.anInt2395 >> 7;

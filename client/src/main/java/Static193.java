@@ -44,7 +44,7 @@ public final class Static193 {
 					@Pc(86) int local86 = local66 + arg0;
 					if (local82 > 0 && local86 > 0 && local82 < arg4 - 1 && arg3 - 1 > local86) {
 						@Pc(112) LocType local112 = client.LocTypes.get(local19);
-						if (local78 != 22 || client.preferences.showGroundDecorations || local112.anInt1335 != 0 || local112.anInt1324 == 1 || local112.aBoolean117) {
+						if (local78 != 22 || client.preferences.groundDecoration || local112.anInt1335 != 0 || local112.anInt1324 == 1 || local112.aBoolean117) {
 							if (!local112.method1529()) {
 								Static305.anInt5742++;
 								local7 = false;

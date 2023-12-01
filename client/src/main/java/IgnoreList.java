@@ -4,6 +4,8 @@ import org.openrs2.deob.annotation.Pc;
 
 public class IgnoreList {
 
+	@OriginalMember(owner = "client!lh", name = "g", descriptor = "[Z")
+	public static final boolean[] temporary = new boolean[100];
 	@OriginalMember(owner = "client!ri", name = "U", descriptor = "I")
 	public static int size = 0;
 
@@ -32,7 +34,7 @@ public class IgnoreList {
 					Static234.aStringArray39[local55] = Static234.aStringArray39[local55 + 1];
 					Static371.aStringArray66[local55] = Static371.aStringArray66[local55 + 1];
 					Static190.aStringArray28[local55] = Static190.aStringArray28[local55 + 1];
-					Static196.aBooleanArray31[local55] = Static196.aBooleanArray31[local55 + 1];
+					temporary[local55] = temporary[local55 + 1];
 				}
 				Static53.anInt3971 = InterfaceList.transmitTimer;
 				Protocol.writeOpcode(ClientProt.PACKET_24);

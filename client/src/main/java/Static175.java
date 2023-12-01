@@ -13,9 +13,6 @@ public final class Static175 {
 	@OriginalMember(owner = "client!kc", name = "h", descriptor = "Lclient!je;")
 	public static Class113 aClass113_6;
 
-	@OriginalMember(owner = "client!kc", name = "a", descriptor = "Z")
-	public static boolean aBoolean225 = false;
-
 	@OriginalMember(owner = "client!kc", name = "c", descriptor = "[B")
 	public static final byte[] aByteArray35 = new byte[520];
 

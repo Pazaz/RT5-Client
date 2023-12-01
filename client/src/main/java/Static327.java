@@ -62,7 +62,7 @@ public final class Static327 {
 			}
 			if (local54 != -1 && local56 != -1) {
 				if (Static330.aBoolean419 && (Static115.anInt3837 & 0x40) != 0) {
-					@Pc(293) Component local293 = InterfaceList.method3705(Static337.anInt6317, Static214.anInt3792);
+					@Pc(293) Component local293 = InterfaceList.getCreatedComponent(Static337.anInt6317, Static214.anInt3792);
 					if (local293 == null) {
 						Static207.method3699();
 					} else {

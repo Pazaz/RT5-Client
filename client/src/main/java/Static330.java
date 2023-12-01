@@ -284,7 +284,7 @@ public final class Static330 {
 				local69 = Protocol.inboundBuffer.g1();
 				if (local23 >= 0 && local32 >= 0 && local23 < Static373.anInt7033 && Static242.anInt4449 > local32) {
 					local73 = local53 + 1;
-					if (local23 - local73 <= PlayerList.self.movementQueueX[0] && PlayerList.self.movementQueueX[0] <= local23 + local73 && PlayerList.self.movementQueueZ[0] >= local32 - local73 && local32 + local73 >= PlayerList.self.movementQueueZ[0] && client.preferences.ambientSoundsVolume != 0 && local57 > 0 && Static243.anInt4503 < 50 && local40 != -1) {
+					if (local23 - local73 <= PlayerList.self.movementQueueX[0] && PlayerList.self.movementQueueX[0] <= local23 + local73 && PlayerList.self.movementQueueZ[0] >= local32 - local73 && local32 + local73 >= PlayerList.self.movementQueueZ[0] && client.preferences.areaSoundsVolume != 0 && local57 > 0 && Static243.anInt4503 < 50 && local40 != -1) {
 						Static256.anIntArray321[Static243.anInt4503] = local40;
 						Static329.anIntArray419[Static243.anInt4503] = local57;
 						Static237.anIntArray283[Static243.anInt4503] = local63;

@@ -8,7 +8,7 @@ public final class Static280 {
 	public static int anInt5197 = 0;
 
 	@OriginalMember(owner = "client!qe", name = "a", descriptor = "(Ljava/lang/String;Lclient!ml;BZZ)V")
-	public static void method4765(@OriginalArg(0) String arg0, @OriginalArg(1) Signlink arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
+	public static void openUrl(@OriginalArg(0) String arg0, @OriginalArg(1) Signlink arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) boolean arg3) {
 		if (!arg3) {
 			Static234.method4095(arg1, 3, arg0);
 			return;

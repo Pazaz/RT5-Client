@@ -1,4 +1,3 @@
-import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static146 {
@@ -11,16 +10,5 @@ public final class Static146 {
 
 	@OriginalMember(owner = "client!ih", name = "j", descriptor = "I")
 	public static int anInt2706 = 0;
-
-	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(CI)Z")
-	public static boolean method2697(@OriginalArg(0) char arg0) {
-		if (arg0 >= ' ' && arg0 <= '~') {
-			return true;
-		} else if (arg0 >= ' ' && arg0 <= 'ÿ') {
-			return true;
-		} else {
-			return arg0 == '€' || arg0 == 'Œ' || arg0 == '—' || arg0 == 'œ' || arg0 == 'Ÿ';
-		}
-	}
 
 }

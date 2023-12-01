@@ -118,13 +118,13 @@ public final class Static241 {
 
 	@OriginalMember(owner = "client!nq", name = "a", descriptor = "(ZI)V")
 	public static void method4192(@OriginalArg(0) boolean arg0) {
-		if (arg0 && MapList.aClass2_Sub2_Sub17_3 != null) {
-			Static97.anInt2034 = MapList.aClass2_Sub2_Sub17_3.anInt6869;
+		if (arg0 && WorldMap.currentMap != null) {
+			Static97.anInt2034 = WorldMap.currentMap.id;
 		} else {
 			Static97.anInt2034 = -1;
 		}
 		WorldMap.aClass161_11 = null;
-		MapList.aClass2_Sub2_Sub17_3 = null;
+		WorldMap.currentMap = null;
 		WorldMap.loadPercentage = 0;
 		Static197.aClass135_24 = null;
 		MapList.method5513();

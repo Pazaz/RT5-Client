@@ -18,6 +18,8 @@ public class InterfaceList {
 	public static int transmitTimer = 1;
 	@OriginalMember(owner = "client!uc", name = "p", descriptor = "I")
 	public static int anInt6449 = 0;
+	@OriginalMember(owner = "client!tc", name = "Y", descriptor = "Lclient!ad;")
+	public static HashTable subInterfaces = new HashTable(8);
 
 	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(Lclient!r;BLclient!r;Lclient!r;Lclient!r;)V")
 	public static void init(@OriginalArg(0) Js5 arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) Js5 arg2, @OriginalArg(4) Js5 arg3) {
@@ -66,7 +68,7 @@ public class InterfaceList {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(IIB)Lclient!nk;")
-	public static Component method3705(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public static Component getCreatedComponent(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(7) Component local7 = getComponent(arg0);
 		if (arg1 == -1) {
 			return local7;
@@ -77,4 +79,29 @@ public class InterfaceList {
 		}
 	}
 
+    @OriginalMember(owner = "client!client", name = "b", descriptor = "(Lclient!nk;)Lclient!eh;")
+    public static ServerActiveProperties getServerActiveProperties(@OriginalArg(0) Component arg0) {
+        @Pc(13) ServerActiveProperties local13 = (ServerActiveProperties) Static327.aClass4_127.get(((long) arg0.id << 32) + (long) arg0.activeComponentId);
+        return local13 == null ? arg0.aClass2_Sub10_1 : local13;
+    }
+
+	@OriginalMember(owner = "client!em", name = "a", descriptor = "(IZ)V")
+	public static void closeModal() {
+		Protocol.writeOpcode(ClientProt.CLOSE_MODAL);
+		for (@Pc(21) SubInterface local21 = (SubInterface) subInterfaces.head(); local21 != null; local21 = (SubInterface) subInterfaces.next()) {
+			if (!local21.isLinked()) {
+				local21 = (SubInterface) subInterfaces.head();
+				if (local21 == null) {
+					break;
+				}
+			}
+			if (local21.anInt1373 == 0) {
+				Static276.method4655(true, local21, true);
+			}
+		}
+		if (Static192.aClass161_8 != null) {
+			redraw(Static192.aClass161_8);
+			Static192.aClass161_8 = null;
+		}
+	}
 }

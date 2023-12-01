@@ -80,7 +80,7 @@ public final class Static160 {
 	public static boolean method2954(@OriginalArg(0) char arg0) {
 		if (Character.isISOControl(arg0)) {
 			return false;
-		} else if (Static89.method1939(arg0)) {
+		} else if (StringUtils.isAlphanumeric(arg0)) {
 			return true;
 		} else {
 			@Pc(26) char[] local26 = Static201.aCharArray3;

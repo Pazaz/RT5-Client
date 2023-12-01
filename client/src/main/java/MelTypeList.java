@@ -56,7 +56,7 @@ public final class MelTypeList {
 	}
 
 	@OriginalMember(owner = "client!ki", name = "b", descriptor = "(II)Lclient!np;")
-	public MelType method3379(@OriginalArg(1) int arg0) {
+	public MelType get(@OriginalArg(1) int arg0) {
 		@Pc(6) LruHashTable local6 = this.aClass98_26;
 		@Pc(16) MelType local16;
 		synchronized (this.aClass98_26) {

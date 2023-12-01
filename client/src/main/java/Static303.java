@@ -7,11 +7,11 @@ public final class Static303 {
 	@OriginalMember(owner = "client!rm", name = "a", descriptor = "(Lclient!ld;BLclient!wm;II)V")
 	public static void method5208(@OriginalArg(0) LinkedList arg0, @OriginalArg(2) RasteriserBase arg1) {
 		Static197.aClass135_24.clear();
-		if (Static175.aBoolean225) {
+		if (WorldMap.aBoolean225) {
 			return;
 		}
-		for (@Pc(20) Class2_Sub20 local20 = (Class2_Sub20) arg0.head(); local20 != null; local20 = (Class2_Sub20) arg0.next()) {
-			@Pc(28) MelType local28 = MapList.aClass125_4.method3379(local20.anInt2947);
+		for (@Pc(20) MapElement local20 = (MapElement) arg0.head(); local20 != null; local20 = (MapElement) arg0.next()) {
+			@Pc(28) MelType local28 = MapList.aClass125_4.get(local20.id);
 			if (Static101.method2164(local28)) {
 				@Pc(40) boolean local40 = Static286.method4923(local20, arg1, local28);
 				if (local40) {

@@ -4,6 +4,9 @@ import org.openrs2.deob.annotation.Pc;
 
 public class Cheat {
 
+	@OriginalMember(owner = "client!up", name = "P", descriptor = "Z")
+	public static boolean displayfps = false;
+
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(Ljava/lang/String;ZZ)V")
 	public static void execute(@OriginalArg(0) String cmd, @OriginalArg(1) boolean arg1) {
 		if (ModeWhere.MODE_WHERE_LIVE == client.modeWhere && LoginManager.staffModLevel < 2) {
@@ -14,12 +17,12 @@ public class Cheat {
 		}
 		try {
 			if (cmd.equalsIgnoreCase("fpson")) {
-				Static356.displayfps = true;
+				displayfps = true;
 				DevConsole.log("fps debug enabled");
 				return;
 			}
 			if (cmd.equalsIgnoreCase("fpsoff")) {
-				Static356.displayfps = false;
+				displayfps = false;
 				DevConsole.log("fps debug disabled");
 				return;
 			}
@@ -174,19 +177,19 @@ public class Cheat {
 				return;
 			}
 			if (cmd.equalsIgnoreCase("ot")) {
-				client.preferences.manyGroundTextures = !client.preferences.manyGroundTextures;
+				client.preferences.groundTextures = !client.preferences.groundTextures;
 				client.preferences.write(GameShell.signlink);
 				Preferences.sentToServer = false;
 				Static347.method5827();
-				DevConsole.log("ot=" + client.preferences.manyGroundTextures);
+				DevConsole.log("ot=" + client.preferences.groundTextures);
 				return;
 			}
 			if (cmd.equalsIgnoreCase("gb")) {
-				client.preferences.gb = !client.preferences.gb;
+				client.preferences.groundBlending = !client.preferences.groundBlending;
 				client.preferences.write(GameShell.signlink);
 				Preferences.sentToServer = false;
 				Static347.method5827();
-				DevConsole.log("gb=" + client.preferences.gb);
+				DevConsole.log("gb=" + client.preferences.groundBlending);
 				return;
 			}
 			if (cmd.startsWith("shadows")) {
@@ -197,7 +200,7 @@ public class Cheat {
 				@Pc(521) String local521 = cmd.substring(8);
 				@Pc(531) int local531 = StringUtils.isInt(local521) ? StringUtils.parseInt(local521) : -1;
 				if (local531 >= 0 && local531 <= 2) {
-					client.preferences.sceneryShadowsType = local531;
+					client.preferences.shadows = local531;
 					client.preferences.write(GameShell.signlink);
 					Preferences.sentToServer = false;
 					Static347.method5827();
@@ -214,10 +217,10 @@ public class Cheat {
 				}
 				local76 = StringUtils.parseInt(cmd.substring(6));
 				if (local76 >= 0 && local76 <= Static289.method5019(GameShell.maxMemory)) {
-					client.preferences.anInt4883 = local76;
+					client.preferences.buildArea = local76;
 					client.preferences.write(GameShell.signlink);
 					Preferences.sentToServer = false;
-					DevConsole.log("maxbuildarea=" + client.preferences.anInt4883);
+					DevConsole.log("maxbuildarea=" + client.preferences.buildArea);
 					return;
 				}
 				DevConsole.log("Invalid buildarea value");
@@ -231,7 +234,7 @@ public class Cheat {
 				Preferences.setParticles(StringUtils.parseInt(cmd.substring(13)));
 				client.preferences.write(GameShell.signlink);
 				Preferences.sentToServer = false;
-				DevConsole.log("particles=" + Static184.method3391());
+				DevConsole.log("particles=" + Preferences.getParticles());
 				return;
 			}
 			if (cmd.startsWith("rect_debug")) {
@@ -255,7 +258,7 @@ public class Cheat {
 			}
 			if (cmd.startsWith("bloom")) {
 				@Pc(736) boolean local736 = Rasteriser.instance.method2892();
-				if (Static284.method4882(!local736)) {
+				if (Static284.setBloomEnabled(!local736)) {
 					if (!local736) {
 						DevConsole.log("Bloom enabled");
 						return;
@@ -267,23 +270,23 @@ public class Cheat {
 				return;
 			}
 			if (cmd.equalsIgnoreCase("tween")) {
-				if (!Static318.aBoolean408) {
-					Static318.aBoolean408 = true;
+				if (!Static318.forceTweening) {
+					Static318.forceTweening = true;
 					DevConsole.log("Forced tweening ENABLED!");
 					return;
 				}
-				Static318.aBoolean408 = false;
+				Static318.forceTweening = false;
 				DevConsole.log("Forced tweening disabled.");
 				return;
 			}
 			if (cmd.equalsIgnoreCase("shiftclick")) {
-				if (Static148.aBoolean192) {
+				if (Static148.shiftClickMod) {
 					DevConsole.log("Shift-click disabled.");
-					Static148.aBoolean192 = false;
+					Static148.shiftClickMod = false;
 					return;
 				}
 				DevConsole.log("Shift-click ENABLED!");
-				Static148.aBoolean192 = true;
+				Static148.shiftClickMod = true;
 				return;
 			}
 			if (cmd.equalsIgnoreCase("getcgcoord")) {
@@ -406,9 +409,9 @@ public class Cheat {
 			if (cmd.startsWith("cpuusage")) {
 				local76 = Integer.parseInt(cmd.substring(9));
 				if (local76 >= 0 && local76 <= 4) {
-					client.preferences.anInt4881 = local76;
+					client.preferences.cpuUsage = local76;
 				}
-				DevConsole.log("cpuusage=" + client.preferences.anInt4881);
+				DevConsole.log("cpuusage=" + client.preferences.cpuUsage);
 				return;
 			}
 			if (cmd.startsWith("getclientvarpbit")) {

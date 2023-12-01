@@ -17,12 +17,12 @@ public final class Static212 {
 		if (Static146.anInt2703 >= 3) {
 			Rasteriser.instance.method2811(local8, arg1, arg2);
 		} else {
-			Static12.aClass13_2.method6398((float) arg1 + (float) arg0.width / 2.0F, (float) arg2 + (float) arg0.height / 2.0F, ((int) -Camera.yawTarget & 0x3FFF) << 2, local8, arg1, arg2);
+			Static12.aClass13_2.method6398((float) arg1 + (float) arg0.width / 2.0F, (float) arg2 + (float) arg0.height / 2.0F, ((int) -Camera.yaw & 0x3FFF) << 2, local8, arg1, arg2);
 		}
 	}
 
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(IIILclient!je;Lclient!wm;Lclient!jg;Lclient!np;I)V")
-	public static void method3727(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class113 arg3, @OriginalArg(4) RasteriserBase arg4, @OriginalArg(5) Class2_Sub20 arg5, @OriginalArg(6) MelType arg6) {
+	public static void method3727(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class113 arg3, @OriginalArg(4) RasteriserBase arg4, @OriginalArg(5) MapElement arg5, @OriginalArg(6) MelType arg6) {
 		@Pc(14) int local14 = arg5.anInt2948 - arg0 / 2 - 5;
 		@Pc(18) int local18 = arg2 + 2;
 		if (arg6.anInt4437 != 0) {

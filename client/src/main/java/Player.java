@@ -6,6 +6,8 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!nh")
 public final class Player extends PathingEntity {
 
+	@OriginalMember(owner = "client!tr", name = "d", descriptor = "[I")
+	public static final int[] TITLES_PER_GAME = new int[] { 1, 4 };
 	@OriginalMember(owner = "client!ch", name = "cb", descriptor = "I")
 	public static int weight = 0;
 	@OriginalMember(owner = "client!fj", name = "f", descriptor = "I")
@@ -16,6 +18,8 @@ public final class Player extends PathingEntity {
 	public static int rebootTimer = 0;
 	@OriginalMember(owner = "client!un", name = "I", descriptor = "Lclient!cc;")
 	public static PrivilegedRequest lastLogAddress;
+	@OriginalMember(owner = "client!hg", name = "n", descriptor = "[Ljava/lang/String;")
+	public static String[] playerNames;
 	@OriginalMember(owner = "client!nh", name = "pc", descriptor = "Ljava/lang/String;")
 	public String username;
 
@@ -441,7 +445,7 @@ public final class Player extends PathingEntity {
 		local19.method3936(super.xFine, super.anInt6782, super.zFine);
 		@Pc(45) float local45 = arg0.method2802();
 		@Pc(48) float local48 = arg0.method2860();
-		if (client.preferences.characterShadowsOn) {
+		if (client.preferences.characterShadows) {
 			@Pc(55) BasType local55 = this.method4332();
 			if (local55.aBoolean424 && (this.appearance.npcId == -1 || client.NpcTypes.get(this.appearance.npcId).aBoolean142)) {
 				@Pc(87) Class157 local87 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
@@ -557,8 +561,8 @@ public final class Player extends PathingEntity {
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(IZ)Ljava/lang/String;")
 	public String getName() {
 		@Pc(17) String local17 = "";
-		if (PlayerList.playerNames != null) {
-			local17 = local17 + PlayerList.playerNames[this.title];
+		if (playerNames != null) {
+			local17 = local17 + playerNames[this.title];
 		}
 		@Pc(39) int[] local39;
 		if (this.gender == 1 && Static324.anIntArray412 != null) {

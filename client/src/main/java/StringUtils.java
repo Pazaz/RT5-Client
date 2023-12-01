@@ -147,4 +147,53 @@ public class StringUtils {
 		return (arg0 >> 24 & 0xFF) + "." + (arg0 >> 16 & 0xFF) + "." + (arg0 >> 8 & 0xFF) + "." + (arg0 & 0xFF);
 	}
 
+    @OriginalMember(owner = "client!ip", name = "a", descriptor = "(ILjava/lang/String;)Ljava/lang/String;")
+    public static String escape(@OriginalArg(1) String arg0) {
+        @Pc(8) int local8 = arg0.length();
+        @Pc(10) int local10 = 0;
+        for (@Pc(12) int local12 = 0; local12 < local8; local12++) {
+            @Pc(18) char local18 = arg0.charAt(local12);
+            if (local18 == '<' || local18 == '>') {
+                local10 += 3;
+            }
+        }
+        @Pc(40) StringBuffer local40 = new StringBuffer(local8 + local10);
+        for (@Pc(50) int local50 = 0; local50 < local8; local50++) {
+            @Pc(56) char local56 = arg0.charAt(local50);
+            if (local56 == '<') {
+                local40.append("<lt>");
+            } else if (local56 == '>') {
+                local40.append("<gt>");
+            } else {
+                local40.append(local56);
+            }
+        }
+        return local40.toString();
+    }
+
+	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(CI)Z")
+	public static boolean isPrintable(@OriginalArg(0) char arg0) {
+		if (arg0 >= ' ' && arg0 <= '~') {
+			return true;
+		} else if (arg0 >= ' ' && arg0 <= 'ÿ') {
+			return true;
+		} else {
+			return arg0 == '€' || arg0 == 'Œ' || arg0 == '—' || arg0 == 'œ' || arg0 == 'Ÿ';
+		}
+	}
+
+	@OriginalMember(owner = "client!et", name = "a", descriptor = "(IC)Z")
+	public static boolean isAlphanumeric(@OriginalArg(1) char arg0) {
+		return arg0 >= '0' && arg0 <= '9' || arg0 >= 'A' && arg0 <= 'Z' || arg0 >= 'a' && arg0 <= 'z';
+	}
+
+	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(IC)Z")
+	public static boolean isAlpha(@OriginalArg(1) char arg0) {
+		return arg0 >= 'A' && arg0 <= 'Z' || arg0 >= 'a' && arg0 <= 'z';
+	}
+
+	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(BC)Z")
+	public static boolean isNumeric(@OriginalArg(1) char arg0) {
+		return arg0 >= '0' && arg0 <= '9';
+	}
 }

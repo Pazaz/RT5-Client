@@ -10,9 +10,6 @@ public final class Static141 {
 	@OriginalMember(owner = "client!i", name = "P", descriptor = "Lclient!jh;")
 	public static SecondaryHashTable aClass115_1 = new SecondaryHashTable(8);
 
-	@OriginalMember(owner = "client!i", name = "V", descriptor = "Lclient!ad;")
-	public static final HashTable aClass4_58 = new HashTable(8);
-
 	@OriginalMember(owner = "client!i", name = "X", descriptor = "Z")
 	public static boolean aBoolean189 = false;
 

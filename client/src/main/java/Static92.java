@@ -76,13 +76,13 @@ public final class Static92 {
 		if (Camera.anInt5911 == 4) {
 			local58 = Static348.anInt6448;
 			local55 = 4096;
-			local69 = (int) -Camera.yawTarget & 0x3FFF;
+			local69 = (int) -Camera.yaw & 0x3FFF;
 			local61 = Static394.anInt7264;
 		} else {
 			local55 = 4096 - Static97.anInt2005 * 16;
 			local58 = PlayerList.self.zFine;
 			local61 = PlayerList.self.xFine;
-			local69 = Static6.anInt158 + (int) -Camera.yawTarget & 0x3FFF;
+			local69 = Static6.anInt158 + (int) -Camera.yaw & 0x3FFF;
 		}
 		@Pc(96) int local96 = local61 / 32 + 48 - (Static373.anInt7033 + -104) * 2;
 		@Pc(115) int local115 = Static242.anInt4449 * 4 + 48 - (Static242.anInt4449 - 104) * 2 - local58 / 32;

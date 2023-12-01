@@ -113,14 +113,6 @@ public final class Static225 {
 		Static16.aClass19_10.method2834(0, null);
 	}
 
-	@OriginalMember(owner = "client!n", name = "a", descriptor = "(II)V")
-	public static void method3955(@OriginalArg(0) int arg0) {
-		anInt3979 = arg0;
-		Static236.anInt4301 = -1;
-		Static90.anInt6637 = 100;
-		Static243.anInt4495 = 3;
-	}
-
 	@OriginalMember(owner = "client!n", name = "a", descriptor = "(IIZIIIFII)[[I")
 	public static int[][] method3956(@OriginalArg(6) float arg0) {
 		@Pc(9) int[][] local9 = new int[256][64];

@@ -65,7 +65,7 @@ public final class Static172 {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(JIZZI)Ljava/lang/String;")
-	public static String method3289(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {
+	public static String fixedPointToString(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {
 		@Pc(7) char local7 = ',';
 		@Pc(9) char local9 = '.';
 		if (arg1 == 0) {

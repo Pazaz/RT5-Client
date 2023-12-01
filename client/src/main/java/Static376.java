@@ -43,9 +43,9 @@ public final class Static376 {
 		}
 		@Pc(16) int local16;
 		if (Camera.anInt5911 == 4) {
-			local16 = (int) Camera.yawTarget & 0x3FFF;
+			local16 = (int) Camera.yaw & 0x3FFF;
 		} else {
-			local16 = Static6.anInt158 + (int) Camera.yawTarget & 0x3FFF;
+			local16 = Static6.anInt158 + (int) Camera.yaw & 0x3FFF;
 		}
 		@Pc(37) int local37 = Math.max(arg6.width / 2, arg6.height / 2) + 10;
 		@Pc(45) int local45 = arg3 * arg3 + arg1 * arg1;

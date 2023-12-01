@@ -12,9 +12,6 @@ public final class Static196 {
 	@OriginalMember(owner = "client!lh", name = "f", descriptor = "I")
 	public static int anInt3317 = -1;
 
-	@OriginalMember(owner = "client!lh", name = "g", descriptor = "[Z")
-	public static final boolean[] aBooleanArray31 = new boolean[100];
-
 	@OriginalMember(owner = "client!lh", name = "e", descriptor = "(I)Z")
 	public static boolean method3310() {
 		try {

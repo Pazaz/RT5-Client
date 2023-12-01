@@ -1431,7 +1431,7 @@ public final class Class19_Sub2 extends RasteriserBase {
 
 	@OriginalMember(owner = "client!j", name = "H", descriptor = "()Z")
 	@Override
-	public boolean method2894() {
+	public boolean arbMultisampleSupported() {
 		return false;
 	}
 
@@ -1485,7 +1485,7 @@ public final class Class19_Sub2 extends RasteriserBase {
 
 	@OriginalMember(owner = "client!j", name = "u", descriptor = "()Z")
 	@Override
-	public boolean method2858() {
+	public boolean isBloomSupported() {
 		return false;
 	}
 

@@ -53,11 +53,11 @@ public final class Static382 {
 	}
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(IIIZI)Lclient!cu;")
-	public static Class2_Sub7 method6365(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {
-		@Pc(7) Class2_Sub7 local7 = new Class2_Sub7();
-		local7.anInt1370 = arg3;
+	public static SubInterface method6365(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {
+		@Pc(7) SubInterface local7 = new SubInterface();
+		local7.id = arg3;
 		local7.anInt1373 = arg1;
-		Static329.aClass4_130.put(local7, (long) arg0);
+		InterfaceList.subInterfaces.put(local7, (long) arg0);
 		Static160.method2957(arg3);
 		@Pc(26) Component local26 = InterfaceList.getComponent(arg0);
 		if (local26 != null) {
@@ -69,7 +69,7 @@ public final class Static382 {
 		}
 		Static227.method3989();
 		if (local26 != null) {
-			DelayedStateChange.method1911(!arg2, local26);
+			DelayedStateChange.setComponentSizeClient(!arg2, local26);
 		}
 		if (!arg2) {
 			ScriptRunner.method3598(arg3);

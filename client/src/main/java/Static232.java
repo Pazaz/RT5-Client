@@ -24,14 +24,6 @@ public final class Static232 {
 	@OriginalMember(owner = "client!ng", name = "p", descriptor = "Z")
 	public static boolean aBoolean268 = false;
 
-	@OriginalMember(owner = "client!ng", name = "a", descriptor = "(BI)V")
-	public static void method4027(@OriginalArg(1) int arg0) {
-		Static90.anInt6637 = 100;
-		Static243.anInt4495 = 3;
-		Static236.anInt4301 = arg0;
-		Static225.anInt3979 = -1;
-	}
-
 	@OriginalMember(owner = "client!ng", name = "a", descriptor = "(II)V")
 	public static void method4028(@OriginalArg(1) int arg0) {
 		if (Static222.method3916(arg0)) {

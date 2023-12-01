@@ -7,9 +7,6 @@ public final class Static220 {
 	@OriginalMember(owner = "client!mq", name = "n", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_83 = new LocalizedString("Take", "Nehmen", "Prendre", "Pegar");
 
-	@OriginalMember(owner = "client!mq", name = "p", descriptor = "Lclient!ad;")
-	public static final HashTable aClass4_83 = new HashTable(8);
-
 	@OriginalMember(owner = "client!mq", name = "q", descriptor = "Z")
 	public static boolean aBoolean252 = false;
 

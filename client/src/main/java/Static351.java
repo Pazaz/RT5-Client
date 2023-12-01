@@ -17,8 +17,8 @@ public final class Static351 {
 
 	@OriginalMember(owner = "client!ug", name = "a", descriptor = "(Lclient!ur;ZLjava/lang/String;B)V")
 	public static void method5857(@OriginalArg(0) BitmapFont arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) String arg2) {
-		@Pc(20) int local20 = Static165.aClass239_3.method6124(null, arg2, 250);
-		@Pc(29) int local29 = Static165.aClass239_3.method6123(arg2, 250, null) * 13;
+		@Pc(20) int local20 = Static165.aClass239_3.getParagraphWidth(null, arg2, 250);
+		@Pc(29) int local29 = Static165.aClass239_3.getParagraphLineCount(arg2, 250, null) * 13;
 		Rasteriser.instance.method2901(6, 6, local20 + 8, local29 + 4 + 4, -16777216, 0);
 		Rasteriser.instance.method2836(6, 6, local20 + 8, local29 + 4 - -4, -1, 0);
 		arg0.method5893(0, 0, 10, 1, -1, null, 0, null, local29, arg2, 1, 10, null, -1, local20);
@@ -28,21 +28,4 @@ public final class Static351 {
 		}
 	}
 
-	@OriginalMember(owner = "client!ug", name = "b", descriptor = "(I)V")
-	public static void method5859() {
-		for (@Pc(7) int local7 = 0; local7 < 5; local7++) {
-			Static189.aBooleanArray33[local7] = false;
-		}
-		Static241.anInt4445 = client.cycle;
-		Static5.anInt105 = Static102.anInt3592;
-		Camera.anInt6455 = -1;
-		Camera.anInt2717 = -1;
-		Camera.anInt5911 = 5;
-		Static272.anInt5023 = Static4.anInt87;
-		Static231.anInt4071 = Static265.anInt4857;
-		Static196.anInt3318 = Static211.anInt3777;
-		Static236.anInt4309 = 0;
-		Static33.anInt4463 = 0;
-		Static106.anInt2218 = Static136.anInt6778;
-	}
 }

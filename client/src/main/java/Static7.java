@@ -135,13 +135,13 @@ public final class Static7 {
 
 	@OriginalMember(owner = "client!ag", name = "a", descriptor = "(Lclient!nk;B)Lclient!nk;")
 	public static Component method6465(@OriginalArg(0) Component arg0) {
-		if (arg0.overlayer != -1) {
-			return InterfaceList.getComponent(arg0.overlayer);
+		if (arg0.layer != -1) {
+			return InterfaceList.getComponent(arg0.layer);
 		}
 		@Pc(25) int local25 = arg0.id >>> 16;
-		@Pc(30) Class137 local30 = new Class137(Static329.aClass4_130);
-		for (@Pc(35) Class2_Sub7 local35 = (Class2_Sub7) local30.method3561(); local35 != null; local35 = (Class2_Sub7) local30.method3560()) {
-			if (local35.anInt1370 == local25) {
+		@Pc(30) Class137 local30 = new Class137(InterfaceList.subInterfaces);
+		for (@Pc(35) SubInterface local35 = (SubInterface) local30.method3561(); local35 != null; local35 = (SubInterface) local30.method3560()) {
+			if (local35.id == local25) {
 				return InterfaceList.getComponent((int) local35.key);
 			}
 		}

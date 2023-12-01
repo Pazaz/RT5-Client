@@ -19,9 +19,9 @@ public final class Static46 {
 
 	@OriginalMember(owner = "client!cm", name = "a", descriptor = "(ILclient!wm;Lclient!nk;)V")
 	public static void method1422(@OriginalArg(1) RasteriserBase arg0, @OriginalArg(2) Component arg1) {
-		@Pc(31) boolean local31 = client.ObjTypes.method2758(arg1.anInt4306, arg1.objId, arg1.aBoolean280 ? PlayerList.self.appearance : null, arg0, arg1.shadowColor | 0xFF000000, arg1.outlineThickness, arg1.objCount) == null;
+		@Pc(31) boolean local31 = client.ObjTypes.method2758(arg1.showObjCount, arg1.objId, arg1.objWearColor ? PlayerList.self.appearance : null, arg0, arg1.shadowColor | 0xFF000000, arg1.outlineThickness, arg1.objCount) == null;
 		if (local31) {
-			Static142.aClass135_21.addTail(new Class2_Sub17(arg1.objId, arg1.objCount, arg1.outlineThickness, arg1.shadowColor | 0xFF000000, arg1.anInt4306, arg1.aBoolean280));
+			Static142.aClass135_21.addTail(new Class2_Sub17(arg1.objId, arg1.objCount, arg1.outlineThickness, arg1.shadowColor | 0xFF000000, arg1.showObjCount, arg1.objWearColor));
 		}
 	}
 

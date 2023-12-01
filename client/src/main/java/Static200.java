@@ -62,7 +62,7 @@ public final class Static200 {
 	}
 
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(B)Ljava/lang/String;")
-	public static String method3650() {
+	public static String getWebsiteUrl() {
 		@Pc(7) String local7 = "www";
 		if (client.modeWhere == ModeWhere.aClass127_8) {
 			local7 = "www-wtrc";

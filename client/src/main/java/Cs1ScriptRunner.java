@@ -45,30 +45,30 @@ public class Cs1ScriptRunner {
 			@Pc(113) int local113 = local30 + Static301.aClass161_13.scrollY - Static100.anInt2111;
 			@Pc(128) HookRequest local128;
 			if (Mouse.instance.method3305()) {
-				if (aClass161_14.anInt4271 < Static129.anInt2458) {
+				if (aClass161_14.dragDeadTime < Static129.anInt2458) {
 					@Pc(205) int local205 = local26 - Static168.anInt7248;
 					@Pc(210) int local210 = local30 - Static3.anInt61;
-					if (aClass161_14.anInt4239 < local205 || -aClass161_14.anInt4239 > local205 || local210 > aClass161_14.anInt4239 || local210 < -aClass161_14.anInt4239) {
+					if (aClass161_14.dragDeadZone < local205 || -aClass161_14.dragDeadZone > local205 || local210 > aClass161_14.dragDeadZone || local210 < -aClass161_14.dragDeadZone) {
 						Static57.aBoolean124 = true;
 					}
 				}
-				if (aClass161_14.anObjectArray31 != null && Static57.aBoolean124) {
+				if (aClass161_14.onDrag != null && Static57.aBoolean124) {
 					local128 = new HookRequest();
 					local128.anInt2117 = local113;
 					local128.source = aClass161_14;
-					local128.anObjectArray4 = aClass161_14.anObjectArray31;
+					local128.anObjectArray4 = aClass161_14.onDrag;
 					local128.anInt2116 = local105;
 					ScriptRunner.execute(local128);
 				}
 			} else {
 				if (Static57.aBoolean124) {
 					Static207.method3699();
-					if (aClass161_14.anObjectArray8 != null) {
+					if (aClass161_14.onDragComplete != null) {
 						local128 = new HookRequest();
 						local128.anInt2116 = local105;
 						local128.aClass161_4 = Static182.aClass161_7;
 						local128.source = aClass161_14;
-						local128.anObjectArray4 = aClass161_14.anObjectArray8;
+						local128.anObjectArray4 = aClass161_14.onDragComplete;
 						local128.anInt2117 = local113;
 						ScriptRunner.execute(local128);
 					}

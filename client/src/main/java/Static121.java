@@ -22,17 +22,4 @@ public final class Static121 {
 		Static324.method5541(arg3, arg2, arg0, 0, arg1, arg5, arg4);
 	}
 
-	@OriginalMember(owner = "client!gu", name = "b", descriptor = "(I)V")
-	public static void method2396() {
-		if (Static140.aBoolean187) {
-			return;
-		}
-		if (client.preferences.aBoolean351) {
-			Camera.pitchTarget = (int) Camera.pitchTarget - 17 & 0xFFFFFFF0;
-		} else {
-			Static296.aFloat68 += (-Static296.aFloat68 - 12.0F) / 2.0F;
-		}
-		Static140.aBoolean187 = true;
-		Camera.aBoolean156 = true;
-	}
 }

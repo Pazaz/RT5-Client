@@ -22,7 +22,7 @@ public final class Static33 {
 	public static int method4201() {
 		if (Cs1ScriptRunner.aClass161_14 == null) {
 			if (!Static375.aBoolean477 && Static268.anInt4959 > 0) {
-				if (Static148.aBoolean192 && Keyboard.instance.isPressed(81) && Static268.anInt4959 > 2) {
+				if (Static148.shiftClickMod && Keyboard.instance.isPressed(81) && Static268.anInt4959 > 2) {
 					return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev.prev).anInt1007;
 				}
 				return ((Class2_Sub5) Static129.aClass135_19.aClass2_130.prev).anInt1007;

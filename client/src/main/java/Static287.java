@@ -79,7 +79,7 @@ public final class Static287 {
 		if (!Static18.qa_op_test) {
 			return;
 		}
-		if (Static45.method1404(arg0).events == 0 && arg0.type != 0) {
+		if (InterfaceList.getServerActiveProperties(arg0).events == 0 && arg0.type != 0) {
 			return;
 		}
 		if (arg0.y < 0) {

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public class Camera {
 
 	@OriginalMember(owner = "client!vg", name = "v", descriptor = "[[[I")
-	public static final int[][][] anIntArrayArrayArray13 = new int[2][][];
+	public static final int[][][] splines = new int[2][][];
 	@OriginalMember(owner = "client!jl", name = "ab", descriptor = "I")
 	public static int originX;
 
@@ -28,9 +28,9 @@ public class Camera {
 	@OriginalMember(owner = "client!sd", name = "R", descriptor = "I")
 	public static int anInt5911;
 	@OriginalMember(owner = "client!bp", name = "t", descriptor = "F")
-	public static float pitchTarget = 1024.0F;
+	public static float pitch = 1024.0F;
 	@OriginalMember(owner = "client!q", name = "q", descriptor = "F")
-	public static float yawTarget = 0.0F;
+	public static float yaw = 0.0F;
 	@OriginalMember(owner = "client!fn", name = "D", descriptor = "Z")
 	public static boolean aBoolean156 = true;
 	@OriginalMember(owner = "client!wf", name = "s", descriptor = "I")
@@ -51,7 +51,7 @@ public class Camera {
 	public static int anInt4897 = 2;
 
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(IIIIZII)V")
-	public static void method1545(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
+	public static void moveto(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		Static19.anInt535 = arg0;
 		Static348.anInt6446 = arg1;
 		Static180.anInt3404 = arg4;
@@ -66,7 +66,7 @@ public class Camera {
 	}
 
 	@OriginalMember(owner = "client!bs", name = "b", descriptor = "(IIIIII)V")
-	public static void method4203(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+	public static void lookAt(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		Static123.anInt2420 = arg2;
 		Static236.anInt4309 = arg0;
 		Static254.anInt4698 = arg4;
@@ -94,7 +94,7 @@ public class Camera {
 	}
 
 	@OriginalMember(owner = "client!gp", name = "b", descriptor = "(B)V")
-	public static void resetCameraEffects() {
+	public static void reset() {
 		for (@Pc(3) int local3 = 0; local3 < 5; local3++) {
 			Static189.aBooleanArray33[local3] = false;
 		}
@@ -106,11 +106,11 @@ public class Camera {
 	}
 
 	@OriginalMember(owner = "client!nf", name = "a", descriptor = "(IIBI)V")
-	public static void clampCameraAngle(@OriginalArg(1) int arg0, @OriginalArg(3) int arg1) {
+	public static void forceAngle(@OriginalArg(1) int arg0, @OriginalArg(3) int arg1) {
 		@Pc(3) int local3 = arg0 << 3;
 		@Pc(11) int local11 = arg1 << 3;
-		pitchTarget = local3;
-		yawTarget = local11;
+		pitch = local3;
+		yaw = local11;
 		if (anInt5911 == 2) {
 			Static342.anInt5657 = 0;
 			Static265.anInt4857 = local3;
@@ -120,4 +120,77 @@ public class Camera {
 		aBoolean156 = true;
 	}
 
+    @OriginalMember(owner = "client!ug", name = "b", descriptor = "(I)V")
+    public static void smoothReset() {
+        for (@Pc(7) int local7 = 0; local7 < 5; local7++) {
+            Static189.aBooleanArray33[local7] = false;
+        }
+        Static241.anInt4445 = client.cycle;
+        Static5.anInt105 = Static102.anInt3592;
+        anInt6455 = -1;
+        anInt2717 = -1;
+        anInt5911 = 5;
+        Static272.anInt5023 = Static4.anInt87;
+        Static231.anInt4071 = Static265.anInt4857;
+        Static196.anInt3318 = Static211.anInt3777;
+        Static236.anInt4309 = 0;
+        Static33.anInt4463 = 0;
+        Static106.anInt2218 = Static136.anInt6778;
+    }
+
+	@OriginalMember(owner = "client!bj", name = "a", descriptor = "(I)V")
+	public static void decX() {
+		if (Static369.aBoolean471) {
+			return;
+		}
+		aBoolean156 = true;
+		Static369.aBoolean471 = true;
+		if (client.preferences.aBoolean351) {
+			yaw = (int) yaw - 65 & 0xFFFFFF80;
+		} else {
+			Static184.aFloat39 += (-Static184.aFloat39 - 24.0F) / 2.0F;
+		}
+	}
+
+	@OriginalMember(owner = "client!uh", name = "e", descriptor = "(B)V")
+	public static void incX() {
+		if (Static369.aBoolean471) {
+			return;
+		}
+		aBoolean156 = true;
+		if (client.preferences.aBoolean351) {
+			yaw = (int) yaw + 191 & 0xFFFFFF80;
+		} else {
+			Static184.aFloat39 += (24.0F - Static184.aFloat39) / 2.0F;
+		}
+		Static369.aBoolean471 = true;
+	}
+
+	@OriginalMember(owner = "client!gu", name = "b", descriptor = "(I)V")
+	public static void decY() {
+		if (Static140.aBoolean187) {
+			return;
+		}
+		if (client.preferences.aBoolean351) {
+			pitch = (int) pitch - 17 & 0xFFFFFFF0;
+		} else {
+			Static296.aFloat68 += (-Static296.aFloat68 - 12.0F) / 2.0F;
+		}
+		Static140.aBoolean187 = true;
+		aBoolean156 = true;
+	}
+
+	@OriginalMember(owner = "client!ue", name = "a", descriptor = "(I)V")
+	public static void incY() {
+		if (Static140.aBoolean187) {
+			return;
+		}
+		Static140.aBoolean187 = true;
+		aBoolean156 = true;
+		if (client.preferences.aBoolean351) {
+			pitch = (int) pitch + 47 & 0xFFFFFFF0;
+		} else {
+			Static296.aFloat68 += (12.0F - Static296.aFloat68) / 2.0F;
+		}
+	}
 }

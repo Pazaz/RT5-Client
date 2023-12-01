@@ -28,7 +28,7 @@ public final class MelType {
 	private HashTable aClass4_89;
 
 	@OriginalMember(owner = "client!np", name = "x", descriptor = "Ljava/lang/String;")
-	public String aString48;
+	public String text;
 
 	@OriginalMember(owner = "client!np", name = "y", descriptor = "I")
 	public int anInt4422;
@@ -55,7 +55,7 @@ public final class MelType {
 	public int anInt4406 = -1;
 
 	@OriginalMember(owner = "client!np", name = "s", descriptor = "I")
-	public int anInt4418 = 0;
+	public int textSize = 0;
 
 	@OriginalMember(owner = "client!np", name = "i", descriptor = "I")
 	private int anInt4410 = -1;
@@ -73,10 +73,10 @@ public final class MelType {
 	private int anInt4413 = -1;
 
 	@OriginalMember(owner = "client!np", name = "v", descriptor = "I")
-	public int anInt4420 = -1;
+	public int sprite = -1;
 
 	@OriginalMember(owner = "client!np", name = "A", descriptor = "I")
-	public int anInt4424 = -1;
+	public int category = -1;
 
 	@OriginalMember(owner = "client!np", name = "C", descriptor = "Z")
 	public boolean aBoolean304 = false;
@@ -173,17 +173,17 @@ public final class MelType {
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(IILclient!bt;)V")
 	private void decode(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
 		if (arg0 == 1) {
-			this.anInt4420 = arg1.g2();
+			this.sprite = arg1.g2();
 		} else if (arg0 == 2) {
 			this.anInt4438 = arg1.g2();
 		} else if (arg0 == 3) {
-			this.aString48 = arg1.gjstr();
+			this.text = arg1.gjstr();
 		} else if (arg0 == 4) {
 			this.anInt4431 = arg1.ig3();
 		} else if (arg0 == 5) {
 			this.anInt4406 = arg1.ig3();
 		} else if (arg0 == 6) {
-			this.anInt4418 = arg1.g1();
+			this.textSize = arg1.g1();
 		} else {
 			@Pc(57) int local57;
 			if (arg0 == 7) {
@@ -226,7 +226,7 @@ public final class MelType {
 				} else if (arg0 == 18) {
 					this.anInt4413 = arg1.g2();
 				} else if (arg0 == 19) {
-					this.anInt4424 = arg1.g2();
+					this.category = arg1.g2();
 				} else if (arg0 == 20) {
 					this.anInt4435 = arg1.g2();
 					if (this.anInt4435 == 65535) {
@@ -295,7 +295,7 @@ public final class MelType {
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(Lclient!wm;ZZ)Lclient!jd;")
 	public Sprite method4189(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(2) boolean arg1) {
-		@Pc(17) int local17 = arg1 ? this.anInt4438 : this.anInt4420;
+		@Pc(17) int local17 = arg1 ? this.anInt4438 : this.sprite;
 		@Pc(24) int local24 = local17 | arg0.anInt2836 << 29;
 		@Pc(33) Sprite local33 = (Sprite) this.aClass125_2.aClass98_27.get((long) local24);
 		if (local33 != null) {

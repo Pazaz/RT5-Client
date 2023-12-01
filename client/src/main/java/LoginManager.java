@@ -9,7 +9,7 @@ import java.net.URL;
 public class LoginManager {
 
 	@OriginalMember(owner = "client!ub", name = "Z", descriptor = "I")
-	public static int loginStep = 0;
+	public static int step = 0;
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "I")
 	public static int loops = 0;
 	@OriginalMember(owner = "client!mm", name = "h", descriptor = "I")
@@ -37,7 +37,7 @@ public class LoginManager {
 	@OriginalMember(owner = "client!dd", name = "q", descriptor = "Z")
 	public static boolean playerUnderage = false;
 	@OriginalMember(owner = "client!mg", name = "B", descriptor = "I")
-	public static int blackmarks = 0;
+	public static int playerModLevel = 0;
 	@OriginalMember(owner = "client!ut", name = "B", descriptor = "I")
 	public static int disallowResult = -1;
 	@OriginalMember(owner = "client!ac", name = "D", descriptor = "I")
@@ -69,7 +69,7 @@ public class LoginManager {
 	@OriginalMember(owner = "client!wd", name = "n", descriptor = "I")
 	public static int anInt7118;
 	@OriginalMember(owner = "client!is", name = "d", descriptor = "I")
-	public static int anInt2803 = 0;
+	public static int autoStep = 0;
 	@OriginalMember(owner = "client!fo", name = "g", descriptor = "Z")
 	public static boolean aBoolean158 = false;
 	@OriginalMember(owner = "client!pg", name = "N", descriptor = "I")
@@ -77,7 +77,7 @@ public class LoginManager {
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(B)V")
 	public static void mainLogic() {
-		if (loginStep == 0 || loginStep == 5) {
+		if (step == 0 || step == 5) {
 			return;
 		}
 		try {
@@ -88,23 +88,23 @@ public class LoginManager {
 				}
 				if (errors >= 1) {
 					loginResult = -5;
-					loginStep = 0;
+					step = 0;
 					return;
 				}
 				loops = 0;
 				errors++;
-				loginStep = 1;
+				step = 1;
 				if (client.alternatePort == client.port) {
 					client.port = client.defaultPort;
 				} else {
 					client.port = client.alternatePort;
 				}
 			}
-			if (loginStep == 1) {
+			if (step == 1) {
 				Protocol.socketRequest2 = GameShell.signlink.openSocket(client.hostname, client.port);
-				loginStep = 2;
+				step = 2;
 			}
-			if (loginStep == 2) {
+			if (step == 2) {
 				if (Protocol.socketRequest2.status == 2) {
 					throw new IOException();
 				}
@@ -133,15 +133,15 @@ public class LoginManager {
 					client.soundChannel.method6325();
 				}
 				if (reply != 0) {
-					loginStep = 0;
+					step = 0;
 					loginResult = reply;
 					Protocol.socket.close();
 					Protocol.socket = null;
 					return;
 				}
-				loginStep = 3;
+				step = 3;
 			}
-			if (loginStep == 3) {
+			if (step == 3) {
 				if (Protocol.socket.available() < 8) {
 					return;
 				}
@@ -217,64 +217,64 @@ public class LoginManager {
 					key[i] += 50;
 				}
 				Protocol.inboundBuffer.setKey(key);
-				loginStep = 4;
+				step = 4;
 			}
 			@Pc(619) int reply;
-			if (loginStep == 4) {
+			if (step == 4) {
 				if (Protocol.socket.available() < 1) {
 					return;
 				}
 				reply = Protocol.socket.read();
 				if (reply == 21) {
-					loginStep = 7;
+					step = 7;
 				} else if (reply == 29) {
-					loginStep = 11;
+					step = 11;
 				} else if (reply == 1) {
-					loginStep = 5;
+					step = 5;
 					loginResult = reply;
 					return;
 				} else if (reply == 2) {
-					loginStep = 8;
+					step = 8;
 				} else if (reply == 15) {
-					loginStep = 12;
+					step = 12;
 					Protocol.packetSize = -2;
 				} else if (reply == 23 && errors < 1) {
 					loops = 0;
 					errors++;
-					loginStep = 1;
+					step = 1;
 					Protocol.socket.close();
 					Protocol.socket = null;
 					return;
 				} else {
 					loginResult = reply;
-					loginStep = 0;
+					step = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
 					return;
 				}
 			}
-			if (loginStep == 6) {
+			if (step == 6) {
 				Protocol.outboundBuffer.pos = 0;
 				Protocol.outboundBuffer.p1isaac(LoginProt.aClass242_4.opcode);
 				Protocol.socket.write(Protocol.outboundBuffer.pos, Protocol.outboundBuffer.data);
-				loginStep = 4;
-			} else if (loginStep == 7) {
+				step = 4;
+			} else if (step == 7) {
 				if (Protocol.socket.available() >= 1) {
 					hopTime = Protocol.socket.read() * 60 + 180;
 					loginResult = 21;
-					loginStep = 0;
+					step = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
 				}
-			} else if (loginStep != 11) {
-				if (loginStep == 8) {
+			} else if (step != 11) {
+				if (step == 8) {
 					if (Protocol.socket.available() < 13) {
 						return;
 					}
 					Protocol.socket.read(Protocol.inboundBuffer.data, 13, 0);
 					Protocol.inboundBuffer.pos = 0;
 					staffModLevel = Protocol.inboundBuffer.g1();
-					blackmarks = Protocol.inboundBuffer.g1();
+					playerModLevel = Protocol.inboundBuffer.g1();
 					playerUnderage = Protocol.inboundBuffer.g1() == 1;
 					parentalChatConsent = Protocol.inboundBuffer.g1() == 1;
 					parentalAdvertConsent = Protocol.inboundBuffer.g1() == 1;
@@ -308,9 +308,9 @@ public class LoginManager {
 						} catch (@Pc(934) Throwable ignored) {
 						}
 					}
-					loginStep = 10;
+					step = 10;
 				}
-				if (loginStep == 10) {
+				if (step == 10) {
 					if (Protocol.inboundBuffer.peek1isaac()) {
 						if (Protocol.socket.available() < 1) {
 							return;
@@ -319,16 +319,16 @@ public class LoginManager {
 					}
 					Protocol.packet = ServerProt.getAll()[Protocol.inboundBuffer.g1isaac()];
 					Protocol.packetSize = Protocol.inboundBuffer.g2();
-					loginStep = 9;
+					step = 9;
 				}
-				if (loginStep == 9) {
+				if (step == 9) {
 					// Login Step Waiting Players (lswp)
 					if (Protocol.socket.available() >= Protocol.packetSize) {
 						Protocol.socket.read(Protocol.inboundBuffer.data, Protocol.packetSize, 0);
 						Protocol.inboundBuffer.pos = 0;
 						loginResult = 2;
 						reply = Protocol.packetSize;
-						loginStep = 0;
+						step = 0;
 						client.reset();
 						lswpRenderLoginDecoder(Protocol.inboundBuffer);
 						Static105.anInt2187 = -1;
@@ -338,7 +338,7 @@ public class LoginManager {
 						}
 						Protocol.packet = null;
 					}
-				} else if (loginStep == 12) {
+				} else if (step == 12) {
 					// Login Step Waiting Players Reconnect (lswpr)
 					if (Protocol.packetSize == -2) {
 						if (Protocol.socket.available() < 2) {
@@ -352,7 +352,7 @@ public class LoginManager {
 						Protocol.socket.read(Protocol.inboundBuffer.data, Protocol.packetSize, 0);
 						Protocol.inboundBuffer.pos = 0;
 						loginResult = 15;
-						loginStep = 0;
+						step = 0;
 						reply = Protocol.packetSize;
 						Static182.method3388();
 						lswpRenderLoginDecoder(Protocol.inboundBuffer);
@@ -364,7 +364,7 @@ public class LoginManager {
 				}
 			} else if (Protocol.socket.available() >= 1) {
 				disallowResult = Protocol.socket.read();
-				loginStep = 0;
+				step = 0;
 				loginResult = 29;
 				Protocol.socket.close();
 				Protocol.socket = null;
@@ -377,7 +377,7 @@ public class LoginManager {
 			if (errors < 1) {
 				loops = 0;
 				errors++;
-				loginStep = 1;
+				step = 1;
 				if (client.alternatePort == client.port) {
 					client.port = client.defaultPort;
 				} else {
@@ -385,7 +385,7 @@ public class LoginManager {
 				}
 			} else {
 				loginResult = -4;
-				loginStep = 0;
+				step = 0;
 			}
 		}
 	}
@@ -430,7 +430,7 @@ public class LoginManager {
 
 	@OriginalMember(owner = "client!jl", name = "f", descriptor = "(I)V")
 	public static void loopAuto() {
-		if (anInt2803 == 0) {
+		if (autoStep == 0) {
 			return;
 		}
 		try {
@@ -440,11 +440,11 @@ public class LoginManager {
 					Protocol.socket = null;
 				}
 				if (Static60.anInt666 >= 1) {
-					anInt2803 = 0;
+					autoStep = 0;
 					loginResult = -5;
 					return;
 				}
-				anInt2803 = 1;
+				autoStep = 1;
 				if (client.worldListDefaultPort == client.worldListPort) {
 					client.worldListPort = client.worldListAlternatePort;
 				} else {
@@ -453,12 +453,12 @@ public class LoginManager {
 				Static60.anInt666++;
 				Static193.anInt3557 = 0;
 			}
-			if (anInt2803 == 1) {
+			if (autoStep == 1) {
 				Protocol.socketRequest2 = GameShell.signlink.openSocket(client.worldListHostname, client.worldListPort);
-				anInt2803 = 2;
+				autoStep = 2;
 			}
 			@Pc(125) int local125;
-			if (anInt2803 == 2) {
+			if (autoStep == 2) {
 				if (Protocol.socketRequest2.status == 2) {
 					throw new IOException();
 				}
@@ -483,23 +483,23 @@ public class LoginManager {
 				}
 				if (local125 != 101) {
 					loginResult = local125;
-					anInt2803 = 0;
+					autoStep = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
 					return;
 				}
-				anInt2803 = 3;
+				autoStep = 3;
 			}
-			if (anInt2803 == 3 && Protocol.socket.available() >= 2) {
+			if (autoStep == 3 && Protocol.socket.available() >= 2) {
 				local125 = Protocol.socket.read() << 8 | Protocol.socket.read();
 				WorldList.switchWorld(local125);
 				if (Player.worldId == -1) {
-					anInt2803 = 0;
+					autoStep = 0;
 					loginResult = 6;
 					Protocol.socket.close();
 					Protocol.socket = null;
 				} else {
-					anInt2803 = 0;
+					autoStep = 0;
 					Protocol.socket.close();
 					Protocol.socket = null;
 					clear();
@@ -511,10 +511,10 @@ public class LoginManager {
 				Protocol.socket = null;
 			}
 			if (Static60.anInt666 >= 1) {
-				anInt2803 = 0;
+				autoStep = 0;
 				loginResult = -4;
 			} else {
-				anInt2803 = 1;
+				autoStep = 1;
 				Static193.anInt3557 = 0;
 				if (client.worldListPort == client.worldListDefaultPort) {
 					client.worldListPort = client.worldListAlternatePort;
@@ -560,7 +560,7 @@ public class LoginManager {
 			NpcList.npcs[local91] = null;
 		}
 		Static120.aClass4_49.clear();
-		Camera.resetCameraEffects();
+		Camera.reset();
 		Protocol.verifyId = 0;
 		VarpDomain.instance.method5781();
 		Static114.method2362();
@@ -666,7 +666,7 @@ public class LoginManager {
 		client.audioLogic();
 		Static211.method3721();
 		@Pc(375) boolean local375 = false;
-		if (Rasteriser.instance.method2805() && client.preferences.highWaterDetail) {
+		if (Rasteriser.instance.method2805() && client.preferences.highDetailWater) {
 			for (local268 = 0; local268 < Static106.aByteArrayArray6.length; local268++) {
 				if (Static270.aByteArrayArray15[local268] != null || Static232.aByteArrayArray9[local268] != null) {
 					local375 = true;
@@ -694,12 +694,12 @@ public class LoginManager {
 		Protocol.method2973(true);
 		Static375.method6281();
 		Static246.aBoolean312 = client.preferences.highDetailLighting;
-		Static105.aBoolean162 = client.preferences.highWaterDetail;
+		Static105.aBoolean162 = client.preferences.highDetailWater;
 		Static183.aBoolean8 = GameShell.maxMemory >= 96;
-		Static174.anInt1300 = client.preferences.sceneryShadowsType;
-		Static141.aBoolean190 = !client.preferences.manyGroundTextures;
+		Static174.anInt1300 = client.preferences.shadows;
+		Static141.aBoolean190 = !client.preferences.groundTextures;
 		Static158.anInt2911 = client.preferences.method4495(Static77.anInt1762) ? -1 : Static44.anInt1115;
-		Static132.aBoolean179 = Static77.anInt1762 == 1 || client.preferences.gb;
+		Static132.aBoolean179 = Static77.anInt1762 == 1 || client.preferences.groundBlending;
 		Static190.aClass29_Sub1_63 = new SceneBuilder(4, Static373.anInt7033, Static242.anInt4449, false);
 		if (!Static220.aBoolean252) {
 			Static177.method3346(Static190.aClass29_Sub1_63, Static106.aByteArrayArray6);
@@ -817,7 +817,7 @@ public class LoginManager {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Ljava/lang/String;Ljava/lang/String;IB)V")
-	public static void method2087(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
+	public static void login(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
 		usernameInput = arg1;
 		anInt3714 = arg2;
 		password = arg0;
@@ -825,7 +825,7 @@ public class LoginManager {
 			loginResult = 3;
 		} else if (Player.worldId == -1) {
 			Static60.anInt666 = 0;
-			anInt2803 = 1;
+			autoStep = 1;
 			loginResult = -3;
 			Static193.anInt3557 = 0;
 			@Pc(40) Buffer encrypted = new Buffer(128);
@@ -860,8 +860,8 @@ public class LoginManager {
 
 	@OriginalMember(owner = "client!sk", name = "c", descriptor = "(B)V")
 	public static void method5435() {
-		if (loginStep == 5) {
-			loginStep = 6;
+		if (step == 5) {
+			step = 6;
 		}
 	}
 
@@ -871,7 +871,7 @@ public class LoginManager {
 		aBoolean158 = false;
 		disallowResult = -1;
 		errors = 0;
-		loginStep = 1;
+		step = 1;
 		hopTime = 0;
 		loginResult = -3;
 	}

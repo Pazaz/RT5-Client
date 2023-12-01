@@ -24,7 +24,7 @@ public final class Static201 {
 		Rasteriser.instance.method2895(arg5, arg3, arg6, arg0);
 		for (@Pc(13) int local13 = 0; local13 < arg2.length; local13++) {
 			@Pc(19) Component local19 = arg2[local13];
-			if (local19 != null && (local19.overlayer == arg1 || arg1 == -1412584499 && local19 == Cs1ScriptRunner.aClass161_14)) {
+			if (local19 != null && (local19.layer == arg1 || arg1 == -1412584499 && local19 == Cs1ScriptRunner.aClass161_14)) {
 				@Pc(66) int local66;
 				if (arg7 == -1) {
 					IdkTypeList.aRectangleArray1[Static154.anInt2806].setBounds(local19.x + arg8, local19.y - -arg4, local19.width, local19.height);
@@ -41,13 +41,13 @@ public final class Static201 {
 					@Pc(90) int local90 = arg8 + local19.x;
 					@Pc(95) int local95 = arg4 + local19.y;
 					@Pc(98) int local98 = local19.alpha;
-					if (Static18.qa_op_test && (Static45.method1404(local19).events != 0 || local19.type == 0) && local98 > 127) {
+					if (Static18.qa_op_test && (InterfaceList.getServerActiveProperties(local19).events != 0 || local19.type == 0) && local98 > 127) {
 						local98 = 127;
 					}
 					@Pc(151) int local151;
 					@Pc(155) int local155;
 					if (Cs1ScriptRunner.aClass161_14 == local19) {
-						if (arg1 != -1412584499 && (Static83.anInt1838 == local19.anInt4285 || local19.anInt4285 == Static164.anInt3138)) {
+						if (arg1 != -1412584499 && (Static83.anInt1838 == local19.dragRender || local19.dragRender == Static164.anInt3138)) {
 							Static253.anInt4689 = arg4;
 							Static48.anInt1256 = arg8;
 							Static57.aClass161Array1 = arg2;
@@ -73,7 +73,7 @@ public final class Static201 {
 							}
 							local95 = local155;
 						}
-						if (Static164.anInt3138 == local19.anInt4285) {
+						if (Static164.anInt3138 == local19.dragRender) {
 							local98 = 128;
 						}
 					}
@@ -141,12 +141,12 @@ public final class Static201 {
 								continue;
 							}
 							if (local19.anInt4273 == Static60.anInt667) {
-								if (!Static356.displayfps && !Static294.renderprofile) {
+								if (!Cheat.displayfps && !Static294.renderprofile) {
 									continue;
 								}
 								local243 = local19.width + local90;
 								local248 = local95 + 15;
-								if (Static356.displayfps) {
+								if (Cheat.displayfps) {
 									Static276.aClass130_4.method5898(local243, local248, "Fps:" + Static3.anInt62, -256);
 									local248 += 15;
 									@Pc(504) Runtime local504 = Runtime.getRuntime();
@@ -172,7 +172,7 @@ public final class Static201 {
 									}
 									@Pc(632) int local632 = local592 * 100 / local588;
 									@Pc(638) int local638 = local590 * 10000 / local588;
-									@Pc(658) String local658 = "Cache:" + Static172.method3289((long) local638, 0, true, 2) + "% (" + local632 + "%)";
+									@Pc(658) String local658 = "Cache:" + Static172.fixedPointToString((long) local638, 0, true, 2) + "% (" + local632 + "%)";
 									Static200.aClass130_3.method5898(local243, local248, local658, -256);
 									local248 += 12;
 								}
@@ -199,9 +199,9 @@ public final class Static201 {
 							if (local19.activeComponents != null) {
 								method3653(local286, local19.id, local19.activeComponents, local155, local95 - local19.scrollY, local151, local275, local66, local90 - local19.scrollX);
 							}
-							@Pc(820) Class2_Sub7 local820 = (Class2_Sub7) Static329.aClass4_130.get((long) local19.id);
+							@Pc(820) SubInterface local820 = (SubInterface) InterfaceList.subInterfaces.get((long) local19.id);
 							if (local820 != null) {
-								Static199.method5246(local155, local286, local275, local820.anInt1370, local66, local95, local151, local90);
+								Static199.method5246(local155, local286, local275, local820.id, local66, local95, local151, local90);
 							}
 							if (local19.anInt4273 == Static270.anInt4964 && Rasteriser.instance.method2892()) {
 								Rasteriser.instance.method2887();
@@ -259,8 +259,8 @@ public final class Static201 {
 										if (local19.objId == -1) {
 											local1139 = local19.method4113(Rasteriser.instance);
 										} else {
-											@Pc(1121) PlayerAppearance local1121 = local19.aBoolean280 ? PlayerList.self.appearance : null;
-											local1139 = client.ObjTypes.method2758(local19.anInt4306, local19.objId, local1121, Rasteriser.instance, local19.shadowColor | 0xFF000000, local19.outlineThickness, local19.objCount);
+											@Pc(1121) PlayerAppearance local1121 = local19.objWearColor ? PlayerList.self.appearance : null;
+											local1139 = client.ObjTypes.method2758(local19.showObjCount, local19.objId, local1121, Rasteriser.instance, local19.shadowColor | 0xFF000000, local19.outlineThickness, local19.objCount);
 										}
 										if (local1139 != null) {
 											local248 = local1139.method6399();
@@ -314,7 +314,7 @@ public final class Static201 {
 										if (local1490 != null) {
 											local1490 = local1490.method4782(local19.objCount);
 											local1511 = local19.modelSeqId == -1 ? null : client.SeqTypes.method2371(local19.modelSeqId);
-											local1519 = local19.aBoolean280 ? PlayerList.self.appearance : null;
+											local1519 = local19.objWearColor ? PlayerList.self.appearance : null;
 											local1477 = local1490.method4776(local19.anInt4283, 1024, local19.anInt4316, local1511, Rasteriser.instance, 1, local1519, local19.anInt4247);
 											if (local1477 == null) {
 												InterfaceList.redraw(local19);
@@ -335,7 +335,7 @@ public final class Static201 {
 										@Pc(1701) Class2_Sub41 local1701 = Static374.method6275(false, local19.modelId);
 										local1511 = local19.modelSeqId == -1 ? null : client.SeqTypes.method2371(local19.modelSeqId);
 										if (local1701 != null) {
-											local1519 = local19.aBoolean280 ? PlayerList.self.appearance : null;
+											local1519 = local19.objWearColor ? PlayerList.self.appearance : null;
 											local1477 = local1701.method6360(local19.anInt4247, local19.anInt4283, local19.anInt4236, local19.modelType == 9, local1511, local19.anInt4316, local1519, Rasteriser.instance);
 										}
 									} else if (local19.modelSeqId == -1) {

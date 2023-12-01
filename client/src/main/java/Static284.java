@@ -41,7 +41,7 @@ public final class Static284 {
 		WorldMap.anInt1105 = (int) ((float) (arg3 * 2) / MapList.aFloat72);
 		@Pc(160) int local160 = WorldMap.anInt2003 - (int) ((float) arg1 / MapList.aFloat72);
 		Static178.anInt2317 = WorldMap.anInt2772 - (int) ((float) arg3 / MapList.aFloat72);
-		MapList.method5530(local111 + MapList.anInt6057, local36 - -MapList.anInt6055, MapList.anInt6057 + local47, MapList.anInt6055 + local160, arg4, arg2, arg3 + arg4, arg2 - (-arg1 - 1));
+		MapList.method5530(local111 + WorldMap.originX, local36 - -WorldMap.originZ, WorldMap.originX + local47, WorldMap.originZ + local160, arg4, arg2, arg3 + arg4, arg2 - (-arg1 - 1));
 		MapList.method5522(arg5);
 		@Pc(203) LinkedList local203 = MapList.method5524(arg5);
 		Static303.method5208(local203, arg5);
@@ -52,7 +52,7 @@ public final class Static284 {
 				Static243.anInt4495--;
 			}
 		}
-		if (!Static356.displayfps) {
+		if (!Cheat.displayfps) {
 			return;
 		}
 		@Pc(237) int local237 = arg3 + arg4 - 5;
@@ -70,7 +70,7 @@ public final class Static284 {
 	}
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(ZI)Z")
-	public static boolean method4882(@OriginalArg(0) boolean arg0) {
+	public static boolean setBloomEnabled(@OriginalArg(0) boolean arg0) {
 		@Pc(11) boolean local11 = Rasteriser.instance.method2892();
 		if (arg0 == local11) {
 			return true;
@@ -83,7 +83,7 @@ public final class Static284 {
 		if (arg0 == local11) {
 			return false;
 		} else {
-			client.preferences.aBoolean356 = arg0;
+			client.preferences.bloomEnabled = arg0;
 			client.preferences.write(GameShell.signlink);
 			return true;
 		}
@@ -91,12 +91,12 @@ public final class Static284 {
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(Lclient!nk;ZI)Ljava/lang/String;")
 	public static String method4883(@OriginalArg(0) Component arg0, @OriginalArg(2) int arg1) {
-		if (!Static45.method1404(arg0).method1854(arg1) && arg0.anObjectArray27 == null) {
+		if (!InterfaceList.getServerActiveProperties(arg0).method1854(arg1) && arg0.onOp == null) {
 			return null;
-		} else if (arg0.aStringArray40 == null || arg1 >= arg0.aStringArray40.length || arg0.aStringArray40[arg1] == null || arg0.aStringArray40[arg1].trim().length() == 0) {
+		} else if (arg0.ops == null || arg1 >= arg0.ops.length || arg0.ops[arg1] == null || arg0.ops[arg1].trim().length() == 0) {
 			return Static18.qa_op_test ? "Hidden-" + arg1 : null;
 		} else {
-			return arg0.aStringArray40[arg1];
+			return arg0.ops[arg1];
 		}
 	}
 }

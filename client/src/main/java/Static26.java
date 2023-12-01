@@ -13,20 +13,6 @@ public final class Static26 {
 	@OriginalMember(owner = "client!bj", name = "d", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_18 = new LocalizedString("Loading defaults - ", "Lade Standardeinstellungen - ", "Chargement des paramètres par défaut - ", "Carregando padrões - ");
 
-	@OriginalMember(owner = "client!bj", name = "a", descriptor = "(I)V")
-	public static void method862() {
-		if (Static369.aBoolean471) {
-			return;
-		}
-		Camera.aBoolean156 = true;
-		Static369.aBoolean471 = true;
-		if (client.preferences.aBoolean351) {
-			Camera.yawTarget = (int) Camera.yawTarget - 65 & 0xFFFFFF80;
-		} else {
-			Static184.aFloat39 += (-Static184.aFloat39 - 24.0F) / 2.0F;
-		}
-	}
-
 	@OriginalMember(owner = "client!bj", name = "a", descriptor = "(II)S")
 	public static short method863(@OriginalArg(0) int arg0) {
 		@Pc(9) int local9 = arg0 >> 10 & 0x3F;

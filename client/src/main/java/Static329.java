@@ -13,9 +13,6 @@ public final class Static329 {
 	@OriginalMember(owner = "client!tc", name = "W", descriptor = "[[Z")
 	public static final boolean[][] aBooleanArrayArray4 = new boolean[][] { new boolean[13], { false, false, true, true, true, true, true, false, false, false, false, false, true }, { true, true, true, true, true, true, false, false, false, false, false, false, false }, { true, true, true, false, false, true, true, true, false, false, false, false, false }, { true, false, false, false, false, true, true, true, false, false, false, false, false }, { false, false, true, true, true, true, false, false, false, false, false, false, false }, { false, true, true, true, true, true, false, false, false, false, false, false, true }, { false, true, true, true, true, true, true, true, false, false, false, false, true }, { true, true, false, false, false, false, false, true, false, false, false, false, false }, { true, true, true, true, true, false, false, false, true, true, false, false, false }, { true, false, false, false, true, true, true, true, true, true, false, false, false }, { true, false, true, true, true, true, true, true, false, false, true, true, false }, { true, true, true, true, true, true, true, true, true, true, true, true, true }, new boolean[13], { true, true, true, true, true, true, true, true, true, true, true, true, true } };
 
-	@OriginalMember(owner = "client!tc", name = "Y", descriptor = "Lclient!ad;")
-	public static HashTable aClass4_130 = new HashTable(8);
-
 	@OriginalMember(owner = "client!tc", name = "ab", descriptor = "[I")
 	public static final int[] anIntArray420 = new int[3];
 

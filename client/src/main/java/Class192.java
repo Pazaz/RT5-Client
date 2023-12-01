@@ -297,8 +297,8 @@ public final class Class192 {
 			this.method4932(-1);
 		}
 		this.method4933(arg5, arg4);
-		@Pc(79) boolean local79 = arg0 & this.aBoolean386 & client.preferences.sceneryShadowsType != 0;
-		@Pc(117) boolean local117 = local79 & (local11.anInt1351 != this.anInt5428 || (this.anInt5424 != this.anInt5426 || this.aClass157_2 != null && (this.aClass157_2.aBoolean262 || Static318.aBoolean408) && this.anInt5423 != this.anInt5426) && client.preferences.sceneryShadowsType >= 2);
+		@Pc(79) boolean local79 = arg0 & this.aBoolean386 & client.preferences.shadows != 0;
+		@Pc(117) boolean local117 = local79 & (local11.anInt1351 != this.anInt5428 || (this.anInt5424 != this.anInt5426 || this.aClass157_2 != null && (this.aClass157_2.aBoolean262 || Static318.forceTweening) && this.anInt5423 != this.anInt5426) && client.preferences.shadows >= 2);
 		if (arg1 && !local117) {
 			this.anInt5428 = local11.anInt1351;
 			this.anInt5424 = this.anInt5426;

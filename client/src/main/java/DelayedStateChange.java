@@ -24,25 +24,25 @@ public final class DelayedStateChange extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(II)V")
-	public static void method2585(@OriginalArg(0) int arg0) {
+	public static void setComponentPositionClient(@OriginalArg(0) int arg0) {
 		@Pc(13) DelayedStateChange local13 = Static316.method5413(11, arg0);
 		local13.method2312();
 	}
 
 	@OriginalMember(owner = "client!mm", name = "a", descriptor = "(II)V")
-	public static void method3778(@OriginalArg(1) int arg0) {
+	public static void setComponentHideClient(@OriginalArg(1) int arg0) {
 		@Pc(12) DelayedStateChange local12 = Static316.method5413(7, arg0);
 		local12.method2312();
 	}
 
 	@OriginalMember(owner = "client!vm", name = "c", descriptor = "(IB)V")
-	public static void method6220(@OriginalArg(0) int arg0) {
+	public static void setComponentScrollPositionClient(@OriginalArg(0) int arg0) {
 		@Pc(16) DelayedStateChange local16 = Static316.method5413(12, arg0);
 		local16.method2312();
 	}
 
 	@OriginalMember(owner = "client!qb", name = "b", descriptor = "(II)V")
-	public static void method4723(@OriginalArg(1) int arg0) {
+	public static void setComponentColorClient(@OriginalArg(1) int arg0) {
 		@Pc(12) DelayedStateChange local12 = Static316.method5413(6, arg0);
 		local12.method2312();
 	}
@@ -54,7 +54,7 @@ public final class DelayedStateChange extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(II)V")
-	public static void method4213(@OriginalArg(1) int arg0) {
+	public static void setComponentModelClient(@OriginalArg(1) int arg0) {
 		@Pc(8) DelayedStateChange local8 = Static316.method5413(4, arg0);
 		local8.method2312();
 	}
@@ -78,7 +78,7 @@ public final class DelayedStateChange extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!kg", name = "a", descriptor = "(BI)V")
-	public static void method3364(@OriginalArg(1) int arg0) {
+	public static void setComponentTextClient(@OriginalArg(1) int arg0) {
 		@Pc(16) DelayedStateChange local16 = Static316.method5413(3, arg0);
 		local16.method2312();
 	}
@@ -90,16 +90,16 @@ public final class DelayedStateChange extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!ep", name = "a", descriptor = "(ZLclient!nk;B)V")
-	public static void method1911(@OriginalArg(0) boolean arg0, @OriginalArg(1) Component arg1) {
+	public static void setComponentSizeClient(@OriginalArg(0) boolean arg0, @OriginalArg(1) Component arg1) {
 		@Pc(12) int local12 = arg1.scrollMaxH == 0 ? arg1.width : arg1.scrollMaxH;
 		@Pc(24) int local24 = arg1.scrollMaxV == 0 ? arg1.height : arg1.scrollMaxV;
 		Static364.method6105(arg0, local24, arg1.id, Static26.aClass161ArrayArray1[arg1.id >> 16], local12);
 		if (arg1.activeComponents != null) {
 			Static364.method6105(arg0, local24, arg1.id, arg1.activeComponents, local12);
 		}
-		@Pc(57) Class2_Sub7 local57 = (Class2_Sub7) Static329.aClass4_130.get((long) arg1.id);
+		@Pc(57) SubInterface local57 = (SubInterface) InterfaceList.subInterfaces.get((long) arg1.id);
 		if (local57 != null) {
-			Static129.method2435(local24, local57.anInt1370, arg0, local12);
+			Static129.method2435(local24, local57.id, arg0, local12);
 		}
 	}
 

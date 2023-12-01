@@ -12,9 +12,6 @@ public final class Static356 {
 	@OriginalMember(owner = "client!up", name = "C", descriptor = "Lclient!cm;")
 	public static final Class36 aClass36_10 = new Class36();
 
-	@OriginalMember(owner = "client!up", name = "P", descriptor = "Z")
-	public static boolean displayfps = false;
-
 	@OriginalMember(owner = "client!up", name = "R", descriptor = "[I")
 	public static final int[] anIntArray461 = new int[14];
 

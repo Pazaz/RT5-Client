@@ -212,7 +212,7 @@ public abstract class RasteriserBase {
 	public abstract BitmapFont method2857(@OriginalArg(0) Class239 arg0, @OriginalArg(1) Class48[] arg1);
 
 	@OriginalMember(owner = "client!wm", name = "u", descriptor = "()Z")
-	public abstract boolean method2858();
+	public abstract boolean isBloomSupported();
 
 	@OriginalMember(owner = "client!wm", name = "v", descriptor = "()Z")
 	public abstract boolean method2859();
@@ -323,7 +323,7 @@ public abstract class RasteriserBase {
 	public abstract void method2893(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!wm", name = "H", descriptor = "()Z")
-	public abstract boolean method2894();
+	public abstract boolean arbMultisampleSupported();
 
 	@OriginalMember(owner = "client!wm", name = "h", descriptor = "(IIII)V")
 	public abstract void method2895(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
