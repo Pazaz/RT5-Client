@@ -4620,7 +4620,7 @@ public final class ScriptRunner {
 							return;
 						}
 						if (arg0 == 6302) {
-							// date_runday_fromdate
+							// date_runeday_fromdate
 							isp -= 3;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
