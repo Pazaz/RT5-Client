@@ -14,8 +14,8 @@ public final class Static49 {
 
 	@OriginalMember(owner = "client!cr", name = "a", descriptor = "(BLclient!wm;I)Z")
 	public static boolean method1472(@OriginalArg(1) RasteriserBase arg0, @OriginalArg(2) int arg1) {
-		@Pc(11) int local11 = (Static373.anInt7033 - 104) / 2;
-		@Pc(17) int local17 = (Static242.anInt4449 - 104) / 2;
+		@Pc(11) int local11 = (Static373.buildAreaLimitX - 104) / 2;
+		@Pc(17) int local17 = (Static242.buildAreaLimitZ - 104) / 2;
 		@Pc(19) boolean local19 = true;
 		@Pc(29) int local29;
 		@Pc(40) int local40;
@@ -192,11 +192,11 @@ public final class Static49 {
 					if (PlayerList.self.plane == local220 >> 28) {
 						local224 = (local220 >> 14 & 0x3FFF) - Camera.originX;
 						local277 = (local220 & 0x3FFF) - Camera.originZ;
-						if (local224 >= 0 && local224 < Static373.anInt7033 && local277 >= 0 && Static242.anInt4449 > local277) {
+						if (local224 >= 0 && local224 < Static373.buildAreaLimitX && local277 >= 0 && Static242.buildAreaLimitZ > local277) {
 							Static56.aClass135_13.addTail(new Class2_Sub39(local216));
 						} else {
 							@Pc(1018) MelType local1018 = client.MelTypes.get(Static34.aClass103_3.anIntArray171[local216]);
-							if (local1018.anIntArray290 != null && local224 + local1018.anInt4419 >= 0 && local224 + local1018.anInt4434 < Static373.anInt7033 && local1018.anInt4428 + local277 >= 0 && Static242.anInt4449 > local277 + local1018.anInt4432) {
+							if (local1018.anIntArray290 != null && local224 + local1018.anInt4419 >= 0 && local224 + local1018.anInt4434 < Static373.buildAreaLimitX && local1018.anInt4428 + local277 >= 0 && Static242.buildAreaLimitZ > local277 + local1018.anInt4432) {
 								Static56.aClass135_13.addTail(new Class2_Sub39(local216));
 							}
 						}

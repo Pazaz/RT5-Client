@@ -33,10 +33,10 @@ public final class Static363 {
 			return;
 		}
 		@Pc(21) byte local21 = (byte) (Static163.anInt3086 - 4 & 0xFF);
-		@Pc(25) int local25 = Static163.anInt3086 % Static373.anInt7033;
+		@Pc(25) int local25 = Static163.anInt3086 % Static373.buildAreaLimitX;
 		@Pc(31) int local31;
 		for (@Pc(27) int local27 = 0; local27 < 4; local27++) {
-			for (local31 = 0; local31 < Static242.anInt4449; local31++) {
+			for (local31 = 0; local31 < Static242.buildAreaLimitZ; local31++) {
 				Static230.aByteArrayArrayArray13[local27][local25][local31] = local21;
 			}
 		}
@@ -81,7 +81,7 @@ public final class Static363 {
 		} else {
 			local210 = local185 - local175;
 		}
-		if (local196 == 0 && local210 == 0 || local196 <= -Static373.anInt7033 || Static373.anInt7033 <= local196 || local210 <= -Static242.anInt4449 || local210 >= Static242.anInt4449) {
+		if (local196 == 0 && local210 == 0 || local196 <= -Static373.buildAreaLimitX || Static373.buildAreaLimitX <= local196 || local210 <= -Static242.buildAreaLimitZ || local210 >= Static242.buildAreaLimitZ) {
 			TracingException.report(null, "RC: " + local94 + "," + local175 + " " + local180 + "," + local185 + " " + Camera.originX + "," + Camera.originZ);
 			return;
 		}

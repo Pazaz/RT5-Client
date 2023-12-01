@@ -49,7 +49,7 @@ public final class Static78 {
 			return arg1.secondaryColor;
 		}
 		if (arg1.texture != -1) {
-			@Pc(30) Class229 local30 = arg0.anInterface2_5.method2658(arg0.method2871() ? arg1.texture : arg1.anInt3759);
+			@Pc(30) Class229 local30 = arg0.anInterface2_5.method2658(arg0.hasHwAccel() ? arg1.texture : arg1.anInt3759);
 			if (!local30.aBoolean438) {
 				return local30.aShort87;
 			}

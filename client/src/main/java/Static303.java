@@ -40,7 +40,7 @@ public final class Static303 {
 		@Pc(11) int local11 = PlayerList.anInt751;
 		@Pc(13) int[] local13 = PlayerList.anIntArray121;
 		for (@Pc(15) int local15 = 0; local15 < local11; local15++) {
-			@Pc(23) Player local23 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local13[local15]];
+			@Pc(23) Player local23 = PlayerList.players[local13[local15]];
 			if (local23 != null && local23.anInt4636 > 0) {
 				local23.anInt4636--;
 				if (local23.anInt4636 == 0) {

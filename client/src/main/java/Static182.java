@@ -67,8 +67,8 @@ public final class Static182 {
 
 	@OriginalMember(owner = "client!kk", name = "a", descriptor = "(B)V")
 	public static void method3387() {
-		for (@Pc(15) Class2_Sub2_Sub1 local15 = (Class2_Sub2_Sub1) Static129.aClass135_20.head(); local15 != null; local15 = (Class2_Sub2_Sub1) Static129.aClass135_20.next()) {
-			@Pc(20) Class11_Sub5_Sub4 local20 = local15.aClass11_Sub5_Sub4_1;
+		for (@Pc(15) SpotAnimNode local15 = (SpotAnimNode) Static129.spotAnims.head(); local15 != null; local15 = (SpotAnimNode) Static129.spotAnims.next()) {
+			@Pc(20) SpotAnim local20 = local15.aClass11_Sub5_Sub4_1;
 			if (local20.aBoolean445) {
 				local15.unlink();
 				local20.method5878();
@@ -97,7 +97,7 @@ public final class Static182 {
 		Static160.method2956();
 		Static309.method5280();
 		for (@Pc(35) int local35 = 0; local35 < 2048; local35++) {
-			Static12.aClass11_Sub5_Sub2_Sub1Array1[local35] = null;
+			PlayerList.players[local35] = null;
 		}
 		PlayerList.self = null;
 		for (@Pc(51) int local51 = 0; local51 < NpcList.npcs.length; local51++) {

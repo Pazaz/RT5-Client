@@ -45,7 +45,7 @@ public final class Static287 {
 		if (arg1 >= 5 && arg1 <= 8) {
 			arg1 = 4;
 		}
-		return local15.method1521(arg1);
+		return local15.isReady(arg1);
 	}
 
 	@OriginalMember(owner = "client!ql", name = "a", descriptor = "(Lclient!nk;IIB)V")

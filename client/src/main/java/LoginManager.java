@@ -394,7 +394,7 @@ public class LoginManager {
 	public static void lswpRenderLoginDecoder(@OriginalArg(1) Packet buffer) {
 		buffer.accessBits();
 		@Pc(10) int local10 = PlayerList.selfId;
-		@Pc(20) Player local20 = PlayerList.self = Static12.aClass11_Sub5_Sub2_Sub1Array1[local10] = new Player();
+		@Pc(20) Player local20 = PlayerList.self = PlayerList.players[local10] = new Player();
 		local20.anInt4619 = local10;
 		@Pc(28) int local28 = buffer.gBit(30);
 		@Pc(33) byte local33 = (byte) (local28 >> 28);
@@ -553,13 +553,13 @@ public class LoginManager {
 		}
 		Static358.method5888();
 		for (@Pc(75) int local75 = 0; local75 < 2048; local75++) {
-			Static12.aClass11_Sub5_Sub2_Sub1Array1[local75] = null;
+			PlayerList.players[local75] = null;
 		}
 		NpcList.size = 0;
 		for (@Pc(91) int local91 = 0; local91 < 32768; local91++) {
 			NpcList.npcs[local91] = null;
 		}
-		Static120.aClass4_49.clear();
+		Static120.objStacks.clear();
 		Camera.reset();
 		Protocol.verifyId = 0;
 		VarpDomain.instance.method5781();
@@ -643,7 +643,7 @@ public class LoginManager {
 					local268 = 10;
 					local279 = 10;
 				}
-				local12 &= Static193.method3511(local279, local268, local255, Static242.anInt4449, Static373.anInt7033);
+				local12 &= Static193.method3511(local279, local268, local255, Static242.buildAreaLimitZ, Static373.buildAreaLimitX);
 			}
 			local255 = Static270.aByteArrayArray15[local249];
 			if (local255 != null) {
@@ -653,7 +653,7 @@ public class LoginManager {
 					local279 = 10;
 					local268 = 10;
 				}
-				local12 &= Static193.method3511(local279, local268, local255, Static242.anInt4449, Static373.anInt7033);
+				local12 &= Static193.method3511(local279, local268, local255, Static242.buildAreaLimitZ, Static373.buildAreaLimitX);
 			}
 		}
 		if (!local12) {
@@ -682,7 +682,7 @@ public class LoginManager {
 		if (Rasteriser.instance.method2888()) {
 			local268++;
 		}
-		Scene.method1381(Static373.anInt7033, Static242.anInt4449, local268, local375, Rasteriser.instance.method2886() > 0);
+		Scene.method1381(Static373.buildAreaLimitX, Static242.buildAreaLimitZ, local268, local375, Rasteriser.instance.method2886() > 0);
 		for (local279 = 0; local279 < 4; local279++) {
 			Static171.aClass46Array1[local279].method1626();
 		}
@@ -700,18 +700,18 @@ public class LoginManager {
 		Static141.aBoolean190 = !client.preferences.groundTextures;
 		Static158.anInt2911 = client.preferences.method4495(Static77.anInt1762) ? -1 : Static44.anInt1115;
 		Static132.aBoolean179 = Static77.anInt1762 == 1 || client.preferences.groundBlending;
-		Static190.aClass29_Sub1_63 = new SceneBuilder(4, Static373.anInt7033, Static242.anInt4449, false);
+		Static190.aClass29_Sub1_63 = new SceneBuilder(4, Static373.buildAreaLimitX, Static242.buildAreaLimitZ, false);
 		if (!Static220.aBoolean252) {
 			Static177.method3346(Static190.aClass29_Sub1_63, Static106.aByteArrayArray6);
 		}
 		if (Static220.aBoolean252) {
 			Static120.method2381(Static106.aByteArrayArray6, Static190.aClass29_Sub1_63);
 		}
-		Static195.method3559(Static373.anInt7033 >> 4, Static242.anInt4449 >> 4);
+		Static195.method3559(Static373.buildAreaLimitX >> 4, Static242.buildAreaLimitZ >> 4);
 		Static56.method1611();
 		if (local375) {
 			Scene.method5767(true);
-			Static7.aClass29_Sub1_120 = new SceneBuilder(1, Static373.anInt7033, Static242.anInt4449, true);
+			Static7.aClass29_Sub1_120 = new SceneBuilder(1, Static373.buildAreaLimitX, Static242.buildAreaLimitZ, true);
 			if (!Static220.aBoolean252) {
 				Static177.method3346(Static7.aClass29_Sub1_120, Static232.aByteArrayArray9);
 				Protocol.method2973(true);
@@ -773,9 +773,9 @@ public class LoginManager {
 		@Pc(731) int local731;
 		@Pc(735) int local735;
 		for (@Pc(727) int local727 = 0; local727 < 4; local727++) {
-			for (local731 = 0; local731 < Static373.anInt7033; local731++) {
-				for (local735 = 0; local735 < Static242.anInt4449; local735++) {
-					Static165.method3154(local731, local727, local735);
+			for (local731 = 0; local731 < Static373.buildAreaLimitX; local731++) {
+				for (local735 = 0; local735 < Static242.buildAreaLimitZ; local735++) {
+					Static165.sortObjStack(local731, local727, local735);
 				}
 			}
 		}
@@ -790,10 +790,10 @@ public class LoginManager {
 			Protocol.outboundBuffer.p4(1057001181);
 		}
 		if (!Static220.aBoolean252) {
-			local731 = (Static105.anInt2187 - (Static373.anInt7033 >> 4)) / 8;
-			local735 = ((Static373.anInt7033 >> 4) + Static105.anInt2187) / 8;
-			@Pc(811) int local811 = (Static9.anInt212 - (Static242.anInt4449 >> 4)) / 8;
-			@Pc(819) int local819 = ((Static242.anInt4449 >> 4) + Static9.anInt212) / 8;
+			local731 = (Static105.anInt2187 - (Static373.buildAreaLimitX >> 4)) / 8;
+			local735 = ((Static373.buildAreaLimitX >> 4) + Static105.anInt2187) / 8;
+			@Pc(811) int local811 = (Static9.anInt212 - (Static242.buildAreaLimitZ >> 4)) / 8;
+			@Pc(819) int local819 = ((Static242.buildAreaLimitZ >> 4) + Static9.anInt212) / 8;
 			for (@Pc(823) int local823 = local731 - 1; local823 <= local735 + 1; local823++) {
 				for (@Pc(829) int local829 = local811 - 1; local829 <= local819 + 1; local829++) {
 					if (local823 < local731 || local823 > local735 || local829 < local811 || local819 < local829) {

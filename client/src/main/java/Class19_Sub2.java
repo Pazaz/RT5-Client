@@ -1631,7 +1631,7 @@ public final class Class19_Sub2 extends RasteriserBase {
 
 	@OriginalMember(owner = "client!j", name = "y", descriptor = "()Z")
 	@Override
-	public boolean method2871() {
+	public boolean hasHwAccel() {
 		return false;
 	}
 

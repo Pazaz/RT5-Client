@@ -8,7 +8,7 @@ public final class Static120 {
 	public static final LocalizedString aClass79_50 = new LocalizedString(" from your friend list first.", " zuerst von deiner Freunde-Liste!", " de votre liste d'amis.", " da sua lista de amigos primeiro.");
 
 	@OriginalMember(owner = "client!gs", name = "h", descriptor = "Lclient!ad;")
-	public static HashTable aClass4_49 = new HashTable(64);
+	public static HashTable objStacks = new HashTable(64);
 
 	@OriginalMember(owner = "client!gs", name = "m", descriptor = "I")
 	public static int anInt2387 = 0;
@@ -27,8 +27,8 @@ public final class Static120 {
 		@Pc(16) int[] local16 = new int[] { -1, 0, 0, 0, 0 };
 		for (@Pc(18) int local18 = 0; local18 < arg1.anInt912; local18++) {
 			client.audioLogic();
-			for (@Pc(24) int local24 = 0; local24 < Static373.anInt7033 >> 3; local24++) {
-				for (@Pc(28) int local28 = 0; local28 < Static242.anInt4449 >> 3; local28++) {
+			for (@Pc(24) int local24 = 0; local24 < Static373.buildAreaLimitX >> 3; local24++) {
+				for (@Pc(28) int local28 = 0; local28 < Static242.buildAreaLimitZ >> 3; local28++) {
 					@Pc(32) boolean local32 = false;
 					@Pc(40) int local40 = Static310.anIntArrayArrayArray12[local18][local24][local28];
 					if (local40 != -1) {

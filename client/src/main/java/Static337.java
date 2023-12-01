@@ -90,7 +90,7 @@ public final class Static337 {
 			Static357.aBooleanArray59[local19] = false;
 		}
 		Static132.anInt2468 = client.cycle;
-		if (Rasteriser.instance.method2871()) {
+		if (Rasteriser.instance.hasHwAccel()) {
 			Static106.aBoolean164 = true;
 		}
 		if (Static139.anInt2595 != -1) {

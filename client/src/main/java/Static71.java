@@ -16,7 +16,7 @@ public final class Static71 {
 			if (arg0.anInt4611 < 32768) {
 				local22 = NpcList.npcs[arg0.anInt4611];
 			} else if (arg0.anInt4611 >= 32768) {
-				local22 = Static12.aClass11_Sub5_Sub2_Sub1Array1[arg0.anInt4611 - 32768];
+				local22 = PlayerList.players[arg0.anInt4611 - 32768];
 			}
 			if (local22 != null) {
 				local54 = arg0.xFine - local22.xFine;

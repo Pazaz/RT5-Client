@@ -7,9 +7,6 @@ public final class Static256 {
 	@OriginalMember(owner = "client!om", name = "F", descriptor = "I")
 	public static final int anInt4720 = Scene.anInt4716;
 
-	@OriginalMember(owner = "client!om", name = "K", descriptor = "[I")
-	public static final int[] anIntArray321 = new int[50];
-
 	@OriginalMember(owner = "client!om", name = "fb", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_102 = new LocalizedString("Loading - please wait.", "Ladevorgang - bitte warte.", "Chargement en cours. Veuillez patienter.", "Carregando. Aguarde.");
 

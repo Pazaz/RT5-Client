@@ -156,7 +156,7 @@ public class Scene {
         }
         @Pc(11) int local11 = arg0 >> 7;
         @Pc(15) int local15 = arg1 >> 7;
-        if (local11 < 0 || local15 < 0 || Static373.anInt7033 - 1 < local11 || local15 > Static242.anInt4449 - 1) {
+        if (local11 < 0 || local15 < 0 || Static373.buildAreaLimitX - 1 < local11 || local15 > Static242.buildAreaLimitZ - 1) {
             return 0;
         }
         @Pc(51) int local51 = arg2;

@@ -11,7 +11,7 @@ public final class Static171 {
 	public static void method3258(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if (Scene.aClass67ArrayArrayArray3 == null) {
 			Rasteriser.instance.method2868(arg4, arg1, arg0, -16777216, arg3);
-		} else if (PlayerList.self.xFine >= 0 && PlayerList.self.xFine < Static373.anInt7033 * 128 && PlayerList.self.zFine >= 0 && PlayerList.self.zFine < Static242.anInt4449 * 128) {
+		} else if (PlayerList.self.xFine >= 0 && PlayerList.self.xFine < Static373.buildAreaLimitX * 128 && PlayerList.self.zFine >= 0 && PlayerList.self.zFine < Static242.buildAreaLimitZ * 128) {
 			Static163.anInt3086++;
 			if (PlayerList.self != null && PlayerList.self.xFine + 64 - PlayerList.self.getSize() * 64 >> 7 == Static358.anInt6550 && PlayerList.self.zFine + 64 - PlayerList.self.getSize() * 64 >> 7 == Static312.anInt5844) {
 				Static358.anInt6550 = -1;

@@ -10,7 +10,7 @@ public final class BasType {
 	public int[] anIntArray425;
 
 	@OriginalMember(owner = "client!ti", name = "p", descriptor = "[[I")
-	public int[][] anIntArrayArray53;
+	public int[][] equipmentTransforms;
 
 	@OriginalMember(owner = "client!ti", name = "i", descriptor = "I")
 	public int anInt6270 = -1;
@@ -174,13 +174,13 @@ public final class BasType {
 			@Pc(137) int local137;
 			@Pc(335) int local335;
 			if (arg0 == 27) {
-				if (this.anIntArrayArray53 == null) {
-					this.anIntArrayArray53 = new int[12][];
+				if (this.equipmentTransforms == null) {
+					this.equipmentTransforms = new int[12][];
 				}
 				local137 = arg1.g1();
-				this.anIntArrayArray53[local137] = new int[6];
+				this.equipmentTransforms[local137] = new int[6];
 				for (local335 = 0; local335 < 6; local335++) {
-					this.anIntArrayArray53[local137][local335] = arg1.g2s();
+					this.equipmentTransforms[local137][local335] = arg1.g2s();
 				}
 			} else if (arg0 == 28) {
 				this.anIntArray425 = new int[12];

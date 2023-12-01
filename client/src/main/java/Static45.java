@@ -9,9 +9,9 @@ public final class Static45 {
 
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "()V")
 	public static void method1396() {
-		for (@Pc(1) int local1 = 0; local1 < Static373.anInt7033; local1++) {
+		for (@Pc(1) int local1 = 0; local1 < Static373.buildAreaLimitX; local1++) {
 			@Pc(6) int[] local6 = Static319.anIntArrayArray51[local1];
-			for (@Pc(8) int local8 = 0; local8 < Static242.anInt4449; local8++) {
+			for (@Pc(8) int local8 = 0; local8 < Static242.buildAreaLimitZ; local8++) {
 				local6[local8] = 0;
 			}
 		}
@@ -24,10 +24,10 @@ public final class Static45 {
 		@Pc(20) boolean local20 = client.preferences.manyIdleAnimations == 1 && local1 > 200 || client.preferences.manyIdleAnimations == 0 && local1 > 50;
 		@Pc(75) int local75;
 		for (@Pc(22) int local22 = 0; local22 < local1; local22++) {
-			@Pc(29) Player local29 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local22]];
+			@Pc(29) Player local29 = PlayerList.players[local3[local22]];
 			if (local29.method4065()) {
 				local29.method6078();
-				if (local29.aShort103 >= 0 && local29.aShort101 >= 0 && local29.aShort104 < Static373.anInt7033 && local29.aShort102 < Static242.anInt4449) {
+				if (local29.aShort103 >= 0 && local29.aShort101 >= 0 && local29.aShort104 < Static373.buildAreaLimitX && local29.aShort102 < Static242.buildAreaLimitZ) {
 					local29.aBoolean275 = local29.aBoolean317 ? local20 : false;
 					if (local29 == PlayerList.self) {
 						local29.anInt4638 = Integer.MAX_VALUE;
@@ -59,7 +59,7 @@ public final class Static45 {
 			@Pc(118) Npc local118 = NpcList.npcs[NpcList.ids[local111]];
 			if (local118.method4336() && local118.type.method2091(VarpDomain.instance)) {
 				local118.method6078();
-				if (local118.aShort103 >= 0 && local118.aShort101 >= 0 && local118.aShort104 < Static373.anInt7033 && local118.aShort102 < Static242.anInt4449) {
+				if (local118.aShort103 >= 0 && local118.aShort101 >= 0 && local118.aShort104 < Static373.buildAreaLimitX && local118.aShort102 < Static242.buildAreaLimitZ) {
 					@Pc(155) int local155 = 0;
 					if (!local118.aBoolean320) {
 						local155++;
@@ -103,7 +103,7 @@ public final class Static45 {
 						local232.anInt4638 += 2048;
 					}
 				} else if (local221.anInt2355 == 10) {
-					@Pc(253) Player local253 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local221.anInt2354];
+					@Pc(253) Player local253 = PlayerList.players[local221.anInt2354];
 					if (local253 != null && local253 != PlayerList.self && local253.anInt4638 >= 0) {
 						local253.anInt4638 += 2048;
 					}
@@ -803,7 +803,7 @@ public final class Static45 {
 		for (@Pc(5) int local5 = 0; local5 < local1 + NpcList.size; local5++) {
 			@Pc(15) PathingEntity local15;
 			if (local5 < local1) {
-				local15 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local5]];
+				local15 = PlayerList.players[local3[local5]];
 			} else {
 				local15 = NpcList.npcs[NpcList.ids[local5 - local1]];
 			}
@@ -857,7 +857,7 @@ public final class Static45 {
 		for (@Pc(13) int local13 = 0; local13 < local11; local13++) {
 			@Pc(23) PathingEntity local23;
 			if (local13 < local1) {
-				local23 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local13]];
+				local23 = PlayerList.players[local3[local13]];
 			} else {
 				local23 = NpcList.npcs[NpcList.ids[local13 - local1]];
 			}
@@ -928,7 +928,7 @@ public final class Static45 {
 		for (@Pc(13) int local13 = 0; local13 < local11; local13++) {
 			@Pc(23) PathingEntity local23;
 			if (local13 < local1) {
-				local23 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local3[local13]];
+				local23 = PlayerList.players[local3[local13]];
 			} else {
 				local23 = NpcList.npcs[NpcList.ids[local13 - local1]];
 			}

@@ -55,8 +55,8 @@ public final class Static181 {
 			Static210.aByteArrayArray7 = null;
 			Static190.anIntArray208 = null;
 			local44 = 0;
-			for (local52 = (local13 - (Static373.anInt7033 >> 4)) / 8; local52 <= (local13 + (Static373.anInt7033 >> 4)) / 8; local52++) {
-				for (local59 = (local17 - (Static242.anInt4449 >> 4)) / 8; local59 <= (local17 + (Static242.anInt4449 >> 4)) / 8; local59++) {
+			for (local52 = (local13 - (Static373.buildAreaLimitX >> 4)) / 8; local52 <= (local13 + (Static373.buildAreaLimitX >> 4)) / 8; local52++) {
+				for (local59 = (local17 - (Static242.buildAreaLimitZ >> 4)) / 8; local59 <= (local17 + (Static242.buildAreaLimitZ >> 4)) / 8; local59++) {
 					Static291.mapSquares[local44] = (local52 << 8) + local59;
 					Static221.mapGroupIds[local44] = client.jsArchive5.getGroupId("m" + local52 + "_" + local59);
 					Static374.locGroupIds[local44] = client.jsArchive5.getGroupId("l" + local52 + "_" + local59);
@@ -75,8 +75,8 @@ public final class Static181 {
 		Static217.method3795(local23);
 		Protocol.inboundBuffer.accessBits();
 		for (local44 = 0; local44 < 4; local44++) {
-			for (local48 = 0; local48 < Static373.anInt7033 >> 3; local48++) {
-				for (local52 = 0; local52 < Static242.anInt4449 >> 3; local52++) {
+			for (local48 = 0; local48 < Static373.buildAreaLimitX >> 3; local48++) {
+				for (local52 = 0; local52 < Static242.buildAreaLimitZ >> 3; local52++) {
 					local59 = Protocol.inboundBuffer.gBit(1);
 					if (local59 == 1) {
 						Static310.anIntArrayArrayArray12[local44][local48][local52] = Protocol.inboundBuffer.gBit(26);
@@ -107,8 +107,8 @@ public final class Static181 {
 		Static82.aByteArrayArray5 = new byte[local48][];
 		local48 = 0;
 		for (local59 = 0; local59 < 4; local59++) {
-			for (@Pc(195) int local195 = 0; local195 < Static373.anInt7033 >> 3; local195++) {
-				for (@Pc(199) int local199 = 0; local199 < Static242.anInt4449 >> 3; local199++) {
+			for (@Pc(195) int local195 = 0; local195 < Static373.buildAreaLimitX >> 3; local195++) {
+				for (@Pc(199) int local199 = 0; local199 < Static242.buildAreaLimitZ >> 3; local199++) {
 					@Pc(209) int local209 = Static310.anIntArrayArrayArray12[local59][local195][local199];
 					if (local209 != -1) {
 						@Pc(219) int local219 = local209 >> 14 & 0x3FF;

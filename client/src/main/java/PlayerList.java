@@ -8,6 +8,8 @@ public class PlayerList {
 	public static final byte[] aByteArray7 = new byte[2048];
 	@OriginalMember(owner = "client!nn", name = "C", descriptor = "[I")
 	public static final int[] anIntArray284 = new int[2048];
+	@OriginalMember(owner = "client!am", name = "a", descriptor = "[Lclient!nh;")
+	public static final Player[] players = new Player[2048];
 	@OriginalMember(owner = "client!ni", name = "E", descriptor = "I")
 	public static int selfId = -1;
 

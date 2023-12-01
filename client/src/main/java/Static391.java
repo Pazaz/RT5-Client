@@ -15,7 +15,7 @@ public final class Static391 {
 
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(IIBIIIII)V")
 	public static void method6452(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {
-		if (arg5 < 0 || arg2 < 0 || Static373.anInt7033 - 1 <= arg5 || Static242.anInt4449 - 1 <= arg2) {
+		if (arg5 < 0 || arg2 < 0 || Static373.buildAreaLimitX - 1 <= arg5 || Static242.buildAreaLimitZ - 1 <= arg2) {
 			return;
 		}
 		if (Scene.aClass67ArrayArrayArray3 == null) {
@@ -165,7 +165,7 @@ public final class Static391 {
 		@Pc(145) boolean local145 = Scene.aClass6Array2 == Scene.aClass6Array4;
 		for (local14 = Static66.anInt1624; local14 < Scene.anInt1914; local14++) {
 			@Pc(161) float local161 = local145 ? 251.5F : 201.5F - (float) local14 * 50.0F - 0.5F;
-			if (Static16.aClass19_10.method2871() && local14 >= arg2 && arg1 != null) {
+			if (Static16.aClass19_10.hasHwAccel() && local14 >= arg2 && arg1 != null) {
 				@Pc(172) int local172 = Scene.aBooleanArrayArray1.length;
 				if (Static162.anInt2960 + Scene.aBooleanArrayArray1.length > Scene.anInt1684) {
 					local172 -= Static162.anInt2960 + Scene.aBooleanArrayArray1.length - Scene.anInt1684;

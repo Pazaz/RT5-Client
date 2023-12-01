@@ -46,8 +46,8 @@ public final class Static65 {
 	public static void method1737(@OriginalArg(0) SceneBuilder arg0, @OriginalArg(2) byte[][] arg1) {
 		for (@Pc(3) int local3 = 0; local3 < arg0.anInt912; local3++) {
 			client.audioLogic();
-			for (@Pc(9) int local9 = 0; local9 < Static373.anInt7033 >> 3; local9++) {
-				for (@Pc(13) int local13 = 0; local13 < Static242.anInt4449 >> 3; local13++) {
+			for (@Pc(9) int local9 = 0; local9 < Static373.buildAreaLimitX >> 3; local9++) {
+				for (@Pc(13) int local13 = 0; local13 < Static242.buildAreaLimitZ >> 3; local13++) {
 					@Pc(23) int local23 = Static310.anIntArrayArrayArray12[local3][local9][local13];
 					if (local23 != -1) {
 						@Pc(32) int local32 = local23 >> 24 & 0x3;

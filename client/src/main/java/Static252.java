@@ -52,7 +52,7 @@ public final class Static252 {
 		Rasteriser.instance.method2893(0);
 		Static76.aClass14_3 = Rasteriser.instance.method2897();
 		Static232.aClass14_4 = Rasteriser.instance.method2897();
-		@Pc(127) int local127 = (int) ((double) Static373.anInt7033 * 34.46D);
+		@Pc(127) int local127 = (int) ((double) Static373.buildAreaLimitX * 34.46D);
 		if (Rasteriser.instance.method2888()) {
 			local127 += 128;
 		}
@@ -61,7 +61,7 @@ public final class Static252 {
 		if (Rasteriser.instance.isBloomSupported()) {
 			Static284.setBloomEnabled(client.preferences.bloomEnabled);
 		}
-		Static190.method3500(Static242.anInt4449 >> 3, Static373.anInt7033 >> 3, Rasteriser.instance);
+		Static190.method3500(Static242.buildAreaLimitZ >> 3, Static373.buildAreaLimitX >> 3, Rasteriser.instance);
 		Static348.method5828();
 		Preferences.sentToServer = false;
 	}

@@ -47,7 +47,7 @@ public final class Static327 {
 				@Pc(178) int local178 = local174 >> 7;
 				@Pc(189) int local189 = (int) ((float) local112[2] + (float) local161 * local135);
 				@Pc(193) int local193 = local189 >> 7;
-				if (local178 > 0 && local193 > 0 && Static373.anInt7033 > local178 && local193 < Static242.anInt4449) {
+				if (local178 > 0 && local193 > 0 && Static373.buildAreaLimitX > local178 && local193 < Static242.buildAreaLimitZ) {
 					@Pc(206) int local206 = PlayerList.self.plane;
 					if (local206 < 3 && (Static359.aByteArrayArrayArray16[1][local178][local193] & 0x2) != 0) {
 						local206++;
@@ -101,7 +101,7 @@ public final class Static327 {
 						local97 = PlayerList.anInt751;
 						local112 = PlayerList.anIntArray121;
 						for (local485 = 0; local485 < local97; local485++) {
-							@Pc(564) Player local564 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local112[local485]];
+							@Pc(564) Player local564 = PlayerList.players[local112[local485]];
 							if (local564 != null && client.cycle != local564.anInt4632 && local380 != local564 && local564.aBoolean320) {
 								local144 = local564.xFine + 64 - local564.getSize() * 64;
 								local152 = local564.zFine - (local564.getSize() - 1) * 64;
@@ -138,7 +138,7 @@ public final class Static327 {
 							local88 = PlayerList.anInt751;
 							@Pc(882) int[] local882 = PlayerList.anIntArray121;
 							for (local473 = 0; local473 < local88; local473++) {
-								@Pc(892) Player local892 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local882[local473]];
+								@Pc(892) Player local892 = PlayerList.players[local882[local473]];
 								if (local892 != null && local892.anInt4632 != client.cycle && local892.aBoolean320) {
 									@Pc(919) int local919 = local892.xFine - (local892.getSize() - 1) * 64;
 									local144 = local892.zFine - (local892.getSize() - 1) * 64;
@@ -157,10 +157,10 @@ public final class Static327 {
 					}
 				}
 				if (local354.aClass11_1 instanceof Class11_Sub4_Sub1) {
-					@Pc(1038) Class2_Sub32 local1038 = (Class2_Sub32) Static120.aClass4_49.get((long) (local354.anInt4076 | local354.anInt4073 << 28 | local354.anInt4075 << 14));
+					@Pc(1038) Class2_Sub32 local1038 = (Class2_Sub32) Static120.objStacks.get((long) (local354.anInt4076 | local354.anInt4073 << 28 | local354.anInt4075 << 14));
 					if (local1038 != null) {
-						for (@Pc(1046) Class2_Sub8 local1046 = (Class2_Sub8) local1038.aClass135_34.tail(); local1046 != null; local1046 = (Class2_Sub8) local1038.aClass135_34.method3547()) {
-							@Pc(1054) ObjType local1054 = client.ObjTypes.get(local1046.anInt1717);
+						for (@Pc(1046) ObjStack local1046 = (ObjStack) local1038.aClass135_34.tail(); local1046 != null; local1046 = (ObjStack) local1038.aClass135_34.method3547()) {
+							@Pc(1054) ObjType local1054 = client.ObjTypes.get(local1046.type);
 							if (!Static330.aBoolean419) {
 								if (local354.anInt4073 == PlayerList.self.plane) {
 									@Pc(1134) String[] local1134 = local1054.ops;
@@ -189,15 +189,15 @@ public final class Static327 {
 											if (local1054.anInt5218 == local88) {
 												local473 = local1054.anInt5225;
 											}
-											Static1.method3(-1, true, local354.anInt4075, false, local1134[local88], local354.anInt4076, local1146, "<col=ff9040>" + local1054.name, local473, (long) local1046.anInt1717);
+											Static1.method3(-1, true, local354.anInt4075, false, local1134[local88], local354.anInt4076, local1146, "<col=ff9040>" + local1054.name, local473, (long) local1046.type);
 										}
 									}
 								}
-								Static1.method3(-1, true, local354.anInt4075, local354.anInt4073 != PlayerList.self.plane, Static368.aClass79_143.getLocalized(client.language), local354.anInt4076, 1009, "<col=ff9040>" + local1054.name, Static135.anInt2523, (long) local1046.anInt1717);
+								Static1.method3(-1, true, local354.anInt4075, local354.anInt4073 != PlayerList.self.plane, Static368.aClass79_143.getLocalized(client.language), local354.anInt4076, 1009, "<col=ff9040>" + local1054.name, Static135.anInt2523, (long) local1046.type);
 							} else if (PlayerList.self.plane == local354.anInt4073) {
 								@Pc(1071) ParamType local1071 = Static172.anInt3298 == -1 ? null : client.ParamTypes.get(Static172.anInt3298);
 								if ((Static115.anInt3837 & 0x1) != 0 && (local1071 == null || local1054.getParam(local1071.defaultInt, Static172.anInt3298) != local1071.defaultInt)) {
-									Static1.method3(-1, true, local354.anInt4075, false, Static91.aString18, local354.anInt4076, 13, Static371.aString68 + " -> <col=ff9040>" + local1054.name, Static41.anInt1044, (long) local1046.anInt1717);
+									Static1.method3(-1, true, local354.anInt4075, false, Static91.aString18, local354.anInt4076, 13, Static371.aString68 + " -> <col=ff9040>" + local1054.name, Static41.anInt1044, (long) local1046.type);
 								}
 							}
 						}

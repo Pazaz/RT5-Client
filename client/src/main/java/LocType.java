@@ -369,7 +369,7 @@ public final class LocType {
 	}
 
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(II)Z")
-	public boolean method1521(@OriginalArg(1) int arg0) {
+	public boolean isReady(@OriginalArg(1) int arg0) {
 		@Pc(31) Js5 local31;
 		@Pc(35) int local35;
 		if (this.anIntArray97 != null) {

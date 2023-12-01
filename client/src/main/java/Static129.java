@@ -14,7 +14,7 @@ public final class Static129 {
 	public static final LinkedList aClass135_19 = new LinkedList();
 
 	@OriginalMember(owner = "client!hg", name = "m", descriptor = "Lclient!ld;")
-	public static final LinkedList aClass135_20 = new LinkedList();
+	public static final LinkedList spotAnims = new LinkedList();
 
 	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(IIZII)V")
 	public static void method2434(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {

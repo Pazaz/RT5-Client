@@ -84,8 +84,8 @@ public final class Static92 {
 			local61 = PlayerList.self.xFine;
 			local69 = Static6.anInt158 + (int) -Camera.yaw & 0x3FFF;
 		}
-		@Pc(96) int local96 = local61 / 32 + 48 - (Static373.anInt7033 + -104) * 2;
-		@Pc(115) int local115 = Static242.anInt4449 * 4 + 48 - (Static242.anInt4449 - 104) * 2 - local58 / 32;
+		@Pc(96) int local96 = local61 / 32 + 48 - (Static373.buildAreaLimitX + -104) * 2;
+		@Pc(115) int local115 = Static242.buildAreaLimitZ * 4 + 48 - (Static242.buildAreaLimitZ - 104) * 2 - local58 / 32;
 		Static292.aClass13_15.method6396((float) arg0.width / 2.0F + (float) arg3, (float) arg0.height / 2.0F + (float) arg2, (float) local96, (float) local115, local55, local69 << 2, local14, arg3, arg2);
 		@Pc(165) int local165;
 		@Pc(174) int local174;
@@ -111,7 +111,7 @@ public final class Static92 {
 			}
 			Static216.method3776(arg3, arg0, local253.anInt1306, arg1, local185, local14, local174, arg2);
 		}
-		for (@Pc(293) Class2_Sub32 local293 = (Class2_Sub32) Static120.aClass4_49.head(); local293 != null; local293 = (Class2_Sub32) Static120.aClass4_49.next()) {
+		for (@Pc(293) Class2_Sub32 local293 = (Class2_Sub32) Static120.objStacks.head(); local293 != null; local293 = (Class2_Sub32) Static120.objStacks.next()) {
 			local185 = (int) (local293.key >> 28 & 0x3L);
 			if (local185 == Static343.anInt6389) {
 				local196 = (int) (local293.key & 0x3FFFL) * 4 + 2 - local61 / 32;
@@ -144,7 +144,7 @@ public final class Static92 {
 		@Pc(498) int local498;
 		@Pc(502) int local502;
 		for (local410 = 0; local410 < local196; local410++) {
-			@Pc(465) Player local465 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local455[local410]];
+			@Pc(465) Player local465 = PlayerList.players[local455[local410]];
 			if (local465 != null && local465.method4065() && PlayerList.self != local465 && local465.plane == PlayerList.self.plane) {
 				local489 = local465.xFine / 32 - local61 / 32;
 				local498 = local465.zFine / 32 - local58 / 32;
@@ -198,8 +198,8 @@ public final class Static92 {
 					local699 *= local699;
 					Static262.method6249(local644.anInt2363, local699, local728, local502, arg2, arg0, local14, arg3);
 				}
-				if (local644.anInt2355 == 10 && local644.anInt2354 >= 0 && Static12.aClass11_Sub5_Sub2_Sub1Array1.length > local644.anInt2354) {
-					@Pc(786) Player local786 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local644.anInt2354];
+				if (local644.anInt2355 == 10 && local644.anInt2354 >= 0 && PlayerList.players.length > local644.anInt2354) {
+					@Pc(786) Player local786 = PlayerList.players[local644.anInt2354];
 					if (local786 != null) {
 						local502 = local786.xFine / 32 - local61 / 32;
 						local699 = local786.zFine / 32 - local58 / 32;

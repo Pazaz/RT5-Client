@@ -306,7 +306,7 @@ public class Protocol {
 								if (PlayerList.selfId == local497) {
 									local589 = PlayerList.self;
 								} else {
-									local589 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local497];
+									local589 = PlayerList.players[local497];
 								}
 								if (local589 != null) {
 									if (local220 == 65535) {
@@ -366,11 +366,11 @@ public class Protocol {
 							local497 = local228 >> 28 & 0x3;
 							local506 = (local228 >> 14 & 0x3FFF) - Camera.originX;
 							local512 = (local228 & 0x3FFF) - Camera.originZ;
-							if (local506 >= 0 && local512 >= 0 && Static373.anInt7033 > local506 && Static242.anInt4449 > local512) {
+							if (local506 >= 0 && local512 >= 0 && Static373.buildAreaLimitX > local506 && Static242.buildAreaLimitZ > local512) {
 								local536 = local506 * 128 + 64;
 								local542 = local512 * 128 + 64;
-								@Pc(563) Class11_Sub5_Sub4 local563 = new Class11_Sub5_Sub4(local220, 0, client.cycle, local497, local536, Scene.getTileHeight(local536, local542, local497) - local249, local542, local506, local506, local512, local512);
-								Static129.aClass135_20.addTail(new Class2_Sub2_Sub1(local563));
+								@Pc(563) SpotAnim local563 = new SpotAnim(local220, 0, client.cycle, local497, local536, Scene.getTileHeight(local536, local542, local497) - local249, local542, local506, local506, local512, local512);
+								Static129.spotAnims.addTail(new SpotAnimNode(local563));
 							}
 						}
 						packet = null;
@@ -660,8 +660,8 @@ public class Protocol {
 									Static283.method4875(local220, local74);
 									packet = null;
 									return true;
-								} else if (packet == ServerProt.PACKET_1) {
-									readZonePacket(ZoneProt.PACKET_10);
+								} else if (packet == ServerProt.SOUND_AREA) {
+									readZonePacket(ZoneProt.SOUND_AREA);
 									packet = null;
 									return true;
 								} else if (ServerProt.PACKET_97 == packet) {
@@ -674,9 +674,9 @@ public class Protocol {
 									packet = null;
 									return true;
 								} else if (ServerProt.PACKET_103 == packet) {
-									for (local220 = 0; local220 < Static12.aClass11_Sub5_Sub2_Sub1Array1.length; local220++) {
-										if (Static12.aClass11_Sub5_Sub2_Sub1Array1[local220] != null) {
-											Static12.aClass11_Sub5_Sub2_Sub1Array1[local220].anInt4597 = -1;
+									for (local220 = 0; local220 < PlayerList.players.length; local220++) {
+										if (PlayerList.players[local220] != null) {
+											PlayerList.players[local220].anInt4597 = -1;
 										}
 									}
 									for (local74 = 0; local74 < NpcList.npcs.length; local74++) {
@@ -711,12 +711,12 @@ public class Protocol {
 									}
 									packet = null;
 									return true;
-								} else if (packet == ServerProt.PACKET_39) {
-									readZonePacket(ZoneProt.PACKET_9);
+								} else if (packet == ServerProt.MAP_PROJANIM_SPECIFIC) {
+									readZonePacket(ZoneProt.MAP_PROJANIM_SPECIFIC);
 									packet = null;
 									return true;
-								} else if (ServerProt.PACKET_101 == packet) {
-									readZonePacket(ZoneProt.PACKET_14);
+								} else if (ServerProt.LOC_MERGE == packet) {
+									readZonePacket(ZoneProt.LOC_MERGE);
 									packet = null;
 									return true;
 								} else if (packet == ServerProt.PACKET_15) {
@@ -835,12 +835,12 @@ public class Protocol {
 										}
 										packet = null;
 										return true;
-									} else if (ServerProt.PACKET_104 == packet) {
-										readZonePacket(ZoneProt.PACKET_0);
+									} else if (ServerProt.LOC_ADD_CHANGE == packet) {
+										readZonePacket(ZoneProt.LOC_ADD_CHANGE);
 										packet = null;
 										return true;
-									} else if (packet == ServerProt.PACKET_83) {
-										readZonePacket(ZoneProt.PACKET_12);
+									} else if (packet == ServerProt.OBJ_COUNT) {
+										readZonePacket(ZoneProt.OBJ_COUNT);
 										packet = null;
 										return true;
 									} else if (ServerProt.PACKET_40 == packet) {
@@ -873,21 +873,21 @@ public class Protocol {
 										Static280.openUrl(local452, GameShell.signlink, Static77.anInt1762 == 1, true);
 										packet = null;
 										return true;
-									} else if (ServerProt.PACKET_94 == packet) {
-										readZonePacket(ZoneProt.PACKET_4);
+									} else if (ServerProt.LOC_PREFETCH == packet) {
+										readZonePacket(ZoneProt.LOC_PREFETCH);
 										packet = null;
 										return true;
 									} else if (ServerProt.PACKET_42 == packet) {
 										zoneX = inboundBuffer.g1();
 										zoneZ = inboundBuffer.g1bneg();
 										Player.level = inboundBuffer.g1add();
-										for (@Pc(2839) Class2_Sub32 local2839 = (Class2_Sub32) Static120.aClass4_49.head(); local2839 != null; local2839 = (Class2_Sub32) Static120.aClass4_49.next()) {
+										for (@Pc(2839) Class2_Sub32 local2839 = (Class2_Sub32) Static120.objStacks.head(); local2839 != null; local2839 = (Class2_Sub32) Static120.objStacks.next()) {
 											local74 = (int) (local2839.key & 0x3FFFL);
 											local228 = (int) (local2839.key >> 14 & 0x3FFFL);
 											local249 = (int) (local2839.key >> 28 & 0x3L);
 											if (Player.level == local249 && zoneX <= local74 && zoneX + 8 > local74 && local228 >= zoneZ && local228 < zoneZ + 8) {
 												local2839.unlink();
-												Static165.method3154(local74, Player.level, local228);
+												Static165.sortObjStack(local74, Player.level, local228);
 											}
 										}
 										for (@Pc(2914) ChangeLocRequest local2914 = (ChangeLocRequest) Static207.aClass135_26.head(); local2914 != null; local2914 = (ChangeLocRequest) Static207.aClass135_26.next()) {
@@ -1150,8 +1150,8 @@ public class Protocol {
 
 											packet = null;
 											return true;
-										} else if (packet == ServerProt.PACKET_34) {
-											readZonePacket(ZoneProt.PACKET_1);
+										} else if (packet == ServerProt.MAP_PROJANIM) {
+											readZonePacket(ZoneProt.MAP_PROJANIM);
 											packet = null;
 											return true;
 										} else if (packet == ServerProt.PACKET_68) {
@@ -1182,8 +1182,8 @@ public class Protocol {
 											}
 											packet = null;
 											return true;
-										} else if (packet == ServerProt.PACKET_80) {
-											readZonePacket(ZoneProt.PACKET_5);
+										} else if (packet == ServerProt.LOC_DEL) {
+											readZonePacket(ZoneProt.LOC_DEL);
 											packet = null;
 											return true;
 										} else if (ServerProt.PACKET_4 == packet) {
@@ -1347,8 +1347,8 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == ServerProt.PACKET_74) {
-												readZonePacket(ZoneProt.PACKET_7);
+											} else if (packet == ServerProt.LOC_ANIM) {
+												readZonePacket(ZoneProt.LOC_ANIM);
 												packet = null;
 												return true;
 											} else if (ServerProt.PACKET_60 == packet) {
@@ -1360,8 +1360,8 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (ServerProt.PACKET_63 == packet) {
-												readZonePacket(ZoneProt.PACKET_3);
+											} else if (ServerProt.TEXT_COORD == packet) {
+												readZonePacket(ZoneProt.TEXT_COORD);
 												packet = null;
 												return true;
 											} else if (packet == ServerProt.PACKET_32) {
@@ -1469,8 +1469,8 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == ServerProt.PACKET_3) {
-												readZonePacket(ZoneProt.PACKET_11);
+											} else if (packet == ServerProt.OBJ_DEL) {
+												readZonePacket(ZoneProt.OBJ_DEL);
 												packet = null;
 												return true;
 											} else if (packet == ServerProt.PACKET_78) {
@@ -1529,8 +1529,8 @@ public class Protocol {
 												Static181.rebuildMap(true);
 												packet = null;
 												return false;
-											} else if (packet == ServerProt.MAP_PROJANIM) {
-												readZonePacket(ZoneProt.MAP_PROJANIM);
+											} else if (packet == ServerProt.MAP_PROJANIM_HALFSQ) {
+												readZonePacket(ZoneProt.MAP_PROJANIM_HALFSQ);
 												packet = null;
 												return true;
 											} else if (ServerProt.PACKET_53 == packet) {
@@ -1553,15 +1553,15 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (ServerProt.PACKET_13 == packet) {
-												readZonePacket(ZoneProt.PACKET_2);
+											} else if (ServerProt.OBJ_ADD == packet) {
+												readZonePacket(ZoneProt.OBJ_ADD);
 												packet = null;
 												return true;
 											} else if (packet == ServerProt.PACKET_16) {
 												local220 = inboundBuffer.g1add();
 												local74 = local220 >> 2;
 												local228 = local220 & 0x3;
-												local249 = Static150.anIntArray174[local74];
+												local249 = Static150.LAYERS[local74];
 												local497 = inboundBuffer.mg4();
 												local506 = local497 >> 28 & 0x3;
 												local512 = local497 >> 14 & 0x3FFF;
@@ -1637,8 +1637,8 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == ServerProt.PACKET_79) {
-												readZonePacket(ZoneProt.PACKET_13);
+											} else if (packet == ServerProt.OBJ_REVEAL) {
+												readZonePacket(ZoneProt.OBJ_REVEAL);
 												packet = null;
 												return true;
 											} else if (packet == ServerProt.PACKET_87) {
@@ -1675,8 +1675,8 @@ public class Protocol {
 												}
 												packet = null;
 												return true;
-											} else if (packet == ServerProt.PACKET_96) {
-												readZonePacket(ZoneProt.PACKET_8);
+											} else if (packet == ServerProt.MAP_ANIM) {
+												readZonePacket(ZoneProt.MAP_ANIM);
 												packet = null;
 												return true;
 											} else if (packet == ServerProt.PACKET_9) {
@@ -2151,7 +2151,7 @@ public class Protocol {
 		PlayerList.anInt3547 = 0;
 		for (local210 = 1; local210 < 2048; local210++) {
 			PlayerList.aByteArray7[local210] = (byte) (PlayerList.aByteArray7[local210] >> 1);
-			@Pc(366) Player local366 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local210];
+			@Pc(366) Player local366 = PlayerList.players[local210];
 			if (local366 == null) {
 				PlayerList.anIntArray284[PlayerList.anInt3547++] = local210;
 			} else {
@@ -2164,7 +2164,7 @@ public class Protocol {
 	public static void readPlayerUpdateMasks(@OriginalArg(1) Packet buffer) {
 		for (@Pc(15) int local15 = 0; local15 < Static325.anInt6079; local15++) {
 			@Pc(21) int local21 = Static52.anIntArray100[local15];
-			@Pc(25) Player local25 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local21];
+			@Pc(25) Player local25 = PlayerList.players[local21];
 			@Pc(29) int opcode = buffer.g1();
 			if ((opcode & 0x2) != 0) {
 				opcode += buffer.g1() << 8;
@@ -2437,7 +2437,7 @@ public class Protocol {
 			Static52.anIntArray100[Static325.anInt6079++] = arg1;
 		}
 		@Pc(30) int local30 = arg0.gBit(2);
-		@Pc(34) Player local34 = Static12.aClass11_Sub5_Sub2_Sub1Array1[arg1];
+		@Pc(34) Player local34 = PlayerList.players[arg1];
 		if (local30 != 0) {
 			@Pc(136) int local136;
 			@Pc(141) int local141;
@@ -2596,7 +2596,7 @@ public class Protocol {
 			if (local34.soundRadius > 0) {
 				AreaSoundManager.remove(local34);
 			}
-			Static12.aClass11_Sub5_Sub2_Sub1Array1[arg1] = null;
+			PlayerList.players[arg1] = null;
 			if (arg0.gBit(1) != 0) {
 				method6033(arg0, arg1);
 			}
@@ -2622,10 +2622,10 @@ public class Protocol {
 			if (local48) {
 				Static52.anIntArray100[Static325.anInt6079++] = arg1;
 			}
-			if (Static12.aClass11_Sub5_Sub2_Sub1Array1[arg1] != null) {
+			if (PlayerList.players[arg1] != null) {
 				throw new RuntimeException("hr:lr");
 			}
-			@Pc(75) Player local75 = Static12.aClass11_Sub5_Sub2_Sub1Array1[arg1] = new Player();
+			@Pc(75) Player local75 = PlayerList.players[arg1] = new Player();
 			local75.anInt4619 = arg1;
 			if (Static231.aClass2_Sub4Array1[arg1] != null) {
 				local75.decodeAppearance(Static231.aClass2_Sub4Array1[arg1]);
@@ -2728,7 +2728,7 @@ public class Protocol {
 		@Pc(9) int[] local9 = PlayerList.anIntArray121;
 		@Pc(11) boolean local11 = false;
 		for (@Pc(13) int local13 = 0; local13 < local7; local13++) {
-			@Pc(21) Player local21 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local9[local13]];
+			@Pc(21) Player local21 = PlayerList.players[local9[local13]];
 			if (local21 != null && PlayerList.self != local21 && local21.username != null && local21.username.equalsIgnoreCase(arg1)) {
 				if (arg0 == 1) {
 					writeOpcode(ClientProt.PACKET_39);
@@ -2890,7 +2890,7 @@ public class Protocol {
 		}
 		@Pc(275) Player local275;
 		if (local21 == 2) {
-			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			local275 = PlayerList.players[local25];
 			if (local275 != null) {
 				Static291.anInt5504 = arg2;
 				Cross.ms = 0;
@@ -3007,7 +3007,7 @@ public class Protocol {
 			Static172.method3285(local18, local28, local15);
 		}
 		if (local21 == 60) {
-			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			local275 = PlayerList.players[local25];
 			if (local275 != null) {
 				Cross.type = 2;
 				Static291.anInt5504 = arg2;
@@ -3062,7 +3062,7 @@ public class Protocol {
 			Static151.method2756(local18, local15);
 		}
 		if (local21 == 23) {
-			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			local275 = PlayerList.players[local25];
 			if (local275 != null) {
 				Cross.type = 2;
 				Static320.anInt6005 = arg1;
@@ -3137,7 +3137,7 @@ public class Protocol {
 			}
 		}
 		if (local21 == 48) {
-			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			local275 = PlayerList.players[local25];
 			if (local275 != null) {
 				Static320.anInt6005 = arg1;
 				Cross.type = 2;
@@ -3191,7 +3191,7 @@ public class Protocol {
 			}
 		}
 		if (local21 == 18) {
-			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			local275 = PlayerList.players[local25];
 			if (local275 != null) {
 				Cross.type = 2;
 				Static291.anInt5504 = arg2;
@@ -3204,7 +3204,7 @@ public class Protocol {
 			}
 		}
 		if (local21 == 9) {
-			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			local275 = PlayerList.players[local25];
 			if (local275 != null) {
 				Cross.ms = 0;
 				Static320.anInt6005 = arg1;
@@ -3240,7 +3240,7 @@ public class Protocol {
 			outboundBuffer.p2(local25);
 		}
 		if (local21 == 19) {
-			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			local275 = PlayerList.players[local25];
 			if (local275 != null) {
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
@@ -3262,7 +3262,7 @@ public class Protocol {
 			}
 		}
 		if (local21 == 47) {
-			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			local275 = PlayerList.players[local25];
 			if (local275 != null) {
 				Static320.anInt6005 = arg1;
 				Static291.anInt5504 = arg2;
@@ -3280,7 +3280,7 @@ public class Protocol {
 			InterfaceList.redraw(Static192.aClass161_8);
 		}
 		if (local21 == 44) {
-			local275 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local25];
+			local275 = PlayerList.players[local25];
 			if (local275 != null) {
 				Cross.ms = 0;
 				Static291.anInt5504 = arg2;
@@ -3599,7 +3599,7 @@ public class Protocol {
 		}
 		Static56.method1611();
 		ChangeLocRequest.mainLogic();
-		AttachLocRequest.mainLogic();
+		AttachLocRequest.loop();
 		SoundPlayer.mainLogic();
 		LoginManager.anInt4955++;
 		if (LoginManager.anInt4955 > 750) {
@@ -3913,7 +3913,7 @@ public class Protocol {
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(Lclient!s;I)V")
 	public static void readZonePacket(@OriginalArg(0) ZoneProt packet) {
-		if (ZoneProt.MAP_PROJANIM == packet) {
+		if (packet == ZoneProt.MAP_PROJANIM_HALFSQ) {
 			int pos = inboundBuffer.g1();
 			int x = zoneX * 2 + (pos >> 4 & 0xF);
 			int z = zoneZ * 2 + (pos & 0xF);
@@ -3933,271 +3933,320 @@ public class Protocol {
 				peak = -1;
 			}
 
-			if (x >= 0 && z >= 0 && Static373.anInt7033 * 2 > x && Static373.anInt7033 * 2 > z && dstX >= 0 && dstZ >= 0 && Static242.anInt4449 * 2 > dstX && dstZ < Static242.anInt4449 * 2 && spotAnim != 65535) {
-				dstX *= 64;
-				dstZ *= 64;
-				x *= 64;
-				z *= 64;
+			if (x >= 0 && z >= 0 && Static373.buildAreaLimitX * 2 > x && Static373.buildAreaLimitX * 2 > z && dstX >= 0 && dstZ >= 0 && Static242.buildAreaLimitZ * 2 > dstX && dstZ < Static242.buildAreaLimitZ * 2 && spotAnim != 65535) {
+				x = x * 64;
+				z = z * 64;
+
+				dstX = dstX * 64;
+				dstZ = dstZ * 64;
+
 				ProjAnim proj = new ProjAnim(spotAnim, Player.level, x, z, Scene.getTileHeight(x, z, Player.level) - srcHeight, start + client.cycle, client.cycle + end, peak, arc, target, dstHeight);
 				proj.setTarget(Scene.getTileHeight(dstX, dstZ, Player.level) - dstHeight, dstX, client.cycle + start, dstZ);
 				Static332.projAnims.addTail(new ProjAnimNode(proj));
 			}
-		} else if (packet == ZoneProt.PACKET_12) {
+		} else if (packet == ZoneProt.OBJ_COUNT) {
 			int pos = inboundBuffer.g1();
 			int x = (pos >> 4 & 0x7) + zoneX;
 			int z = (pos & 0x7) + zoneZ;
-			int local40 = inboundBuffer.g2();
-			int local49 = inboundBuffer.g2();
-			int local53 = inboundBuffer.g2();
-			if (Static120.aClass4_49 != null && x >= 0 && z >= 0 && x < Static373.anInt7033 && Static242.anInt4449 > z) {
-				@Pc(269) Class2_Sub32 local269 = (Class2_Sub32) Static120.aClass4_49.get((long) (x | Player.level << 28 | z << 14));
+
+			int type = inboundBuffer.g2();
+			int oldCount = inboundBuffer.g2();
+			int newCount = inboundBuffer.g2();
+
+			if (Static120.objStacks != null && x >= 0 && z >= 0 && x < Static373.buildAreaLimitX && Static242.buildAreaLimitZ > z) {
+				@Pc(269) Class2_Sub32 local269 = (Class2_Sub32) Static120.objStacks.get((long) (x | Player.level << 28 | z << 14));
 				if (local269 != null) {
-					for (@Pc(277) Class2_Sub8 local277 = (Class2_Sub8) local269.aClass135_34.head(); local277 != null; local277 = (Class2_Sub8) local269.aClass135_34.next()) {
-						if (local277.anInt1717 == (local40 & 0x7FFF) && local49 == local277.anInt1719) {
-							local277.unlink();
-							local277.anInt1719 = local53;
-							Static137.method2550(z, x, local277, Player.level);
+					for (@Pc(277) ObjStack objStack = (ObjStack) local269.aClass135_34.head(); objStack != null; objStack = (ObjStack) local269.aClass135_34.next()) {
+						if (objStack.type == (type & 0x7FFF) && oldCount == objStack.count) {
+							objStack.unlink();
+							objStack.count = newCount;
+							Static137.addObjStack(z, x, objStack, Player.level);
 							break;
 						}
 					}
-					Static165.method3154(x, Player.level, z);
+
+					Static165.sortObjStack(x, Player.level, z);
 				}
 			}
-		} else if (ZoneProt.PACKET_9 == packet) {
+		} else if (packet == ZoneProt.MAP_PROJANIM_SPECIFIC) {
 			int pos = inboundBuffer.g1();
 			int x = zoneX * 2 + (pos >> 4 & 0xF);
 			int z = (pos & 0xF) + zoneZ * 2;
-			int local40 = inboundBuffer.g1b() + x;
-			int local49 = z + inboundBuffer.g1b();
-			int local53 = inboundBuffer.g2s();
-			int local57 = inboundBuffer.g2s();
-			int local63 = inboundBuffer.g2();
-			int local69 = inboundBuffer.g1b();
-			int local73 = inboundBuffer.g1() * 4;
-			int local77 = inboundBuffer.g2();
-			int local81 = inboundBuffer.g2();
-			int local85 = inboundBuffer.g1();
-			if (local85 == 255) {
-				local85 = -1;
+
+			int dstX = inboundBuffer.g1b() + x;
+			int dstZ = inboundBuffer.g1b() + z;
+			int sourceEntity = inboundBuffer.g2s();
+			int targetEntity = inboundBuffer.g2s();
+			int spotAnim = inboundBuffer.g2();
+			int srcHeight = inboundBuffer.g1b();
+			int dstHeight = inboundBuffer.g1() * 4;
+			int start = inboundBuffer.g2();
+			int end = inboundBuffer.g2();
+			int peak = inboundBuffer.g1();
+			int arc = inboundBuffer.g1();
+
+			if (peak == 255) {
+				peak = -1;
 			}
-			int local403 = inboundBuffer.g1();
-			if (x >= 0 && z >= 0 && x < Static373.anInt7033 * 2 && Static373.anInt7033 * 2 > z && local40 >= 0 && local49 >= 0 && local40 < Static242.anInt4449 * 2 && local49 < Static242.anInt4449 * 2 && local63 != 65535) {
-				z = z * 64;
-				local40 *= 64;
+
+			if (x >= 0 && z >= 0 && x < Static373.buildAreaLimitX * 2 && Static373.buildAreaLimitX * 2 > z && dstX >= 0 && dstZ >= 0 && dstX < Static242.buildAreaLimitZ * 2 && dstZ < Static242.buildAreaLimitZ * 2 && spotAnim != 65535) {
 				x = x * 64;
-				local49 *= 64;
-				if (local53 != 0) {
+				z = z * 64;
+
+				dstX = dstX * 64;
+				dstZ = dstZ * 64;
+
+				if (sourceEntity != 0) {
 					@Pc(483) int local483;
 					@Pc(491) PathingEntity local491;
 					@Pc(477) int local477;
 					@Pc(487) int local487;
-					if (local53 >= 0) {
-						local477 = local53 - 1;
+
+					if (sourceEntity >= 0) {
+						local477 = sourceEntity - 1;
 						local483 = local477 >> 11 & 0xF;
 						local487 = local477 & 0x7FF;
 						local491 = NpcList.npcs[local487];
 					} else {
-						local477 = -local53 - 1;
+						local477 = -sourceEntity - 1;
 						local483 = local477 >> 11 & 0xF;
 						local487 = local477 & 0x7FF;
 						if (PlayerList.selfId == local487) {
 							local491 = PlayerList.self;
 						} else {
-							local491 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local487];
+							local491 = PlayerList.players[local487];
 						}
 					}
+
 					if (local491 != null) {
-						@Pc(525) BasType local525 = local491.method4332();
-						if (local525.anIntArrayArray53 != null && local525.anIntArrayArray53[local483] != null) {
-							local487 = local525.anIntArrayArray53[local483][0];
-							@Pc(547) int local547 = local525.anIntArrayArray53[local483][2];
+						@Pc(525) BasType bas = local491.method4332();
+						if (bas.equipmentTransforms != null && bas.equipmentTransforms[local483] != null) {
+							local487 = bas.equipmentTransforms[local483][0];
+							@Pc(547) int local547 = bas.equipmentTransforms[local483][2];
 							@Pc(552) int local552 = local491.aClass248_7.method6441();
 							@Pc(556) int local556 = RasteriserBase.anIntArray178[local552];
 							@Pc(560) int local560 = RasteriserBase.anIntArray177[local552];
 							@Pc(571) int local571 = local556 * local547 + local487 * local560 >> 15;
 							@Pc(582) int local582 = local547 * local560 - local556 * local487 >> 15;
-							local69 -= local525.anIntArrayArray53[local483][1];
+							srcHeight -= bas.equipmentTransforms[local483][1];
 							x += local571;
 							z += local582;
 						}
 					}
 				}
-				@Pc(628) ProjAnim local628 = new ProjAnim(local63, Player.level, x, z, Scene.getTileHeight(x, z, Player.level) - local69, client.cycle + local77, local81 + client.cycle, local85, local403, local57, local73);
-				local628.setTarget(Scene.getTileHeight(local40, local49, Player.level) - local73, local40, client.cycle + local77, local49);
-				Static332.projAnims.addTail(new ProjAnimNode(local628));
+
+				@Pc(628) ProjAnim proj = new ProjAnim(spotAnim, Player.level, x, z, Scene.getTileHeight(x, z, Player.level) - srcHeight, client.cycle + start, end + client.cycle, peak, arc, targetEntity, dstHeight);
+				proj.setTarget(Scene.getTileHeight(dstX, dstZ, Player.level) - dstHeight, dstX, client.cycle + start, dstZ);
+				Static332.projAnims.addTail(new ProjAnimNode(proj));
 			}
-		} else if (ZoneProt.PACKET_11 == packet) {
+		} else if (packet == ZoneProt.OBJ_DEL) {
 			int pos = inboundBuffer.g1bneg();
 			int x = (pos >> 4 & 0x7) + zoneX;
 			int z = zoneZ + (pos & 0x7);
-			int local40 = inboundBuffer.ig2add();
-			if (x >= 0 && z >= 0 && x < Static373.anInt7033 && z < Static242.anInt4449) {
-				@Pc(713) Class2_Sub32 local713 = (Class2_Sub32) Static120.aClass4_49.get((long) (x | Player.level << 28 | z << 14));
+
+			int type = inboundBuffer.ig2add();
+
+			if (x >= 0 && z >= 0 && x < Static373.buildAreaLimitX && z < Static242.buildAreaLimitZ) {
+				@Pc(713) Class2_Sub32 local713 = (Class2_Sub32) Static120.objStacks.get((long) (x | Player.level << 28 | z << 14));
 				if (local713 != null) {
-					for (@Pc(721) Class2_Sub8 local721 = (Class2_Sub8) local713.aClass135_34.head(); local721 != null; local721 = (Class2_Sub8) local713.aClass135_34.next()) {
-						if ((local40 & 0x7FFF) == local721.anInt1717) {
-							local721.unlink();
+					for (@Pc(721) ObjStack objStack = (ObjStack) local713.aClass135_34.head(); objStack != null; objStack = (ObjStack) local713.aClass135_34.next()) {
+						if ((type & 0x7FFF) == objStack.type) {
+							objStack.unlink();
 							break;
 						}
 					}
+
 					if (local713.aClass135_34.method3550()) {
 						local713.unlink();
 					}
-					Static165.method3154(x, Player.level, z);
+
+					Static165.sortObjStack(x, Player.level, z);
 				}
 			}
-		} else if (ZoneProt.PACKET_13 == packet) {
-			int local12 = inboundBuffer.ig2();
-			int local23 = inboundBuffer.ig2add();
+		} else if (packet == ZoneProt.OBJ_REVEAL) {
+			int count = inboundBuffer.ig2();
+			int receiver = inboundBuffer.ig2add();
+
 			int pos = inboundBuffer.g1sub();
 			int x = (pos >> 4 & 0x7) + zoneX;
 			int z = zoneZ + (pos & 0x7);
-			int local53 = inboundBuffer.ig2add();
-			if (x >= 0 && z >= 0 && Static373.anInt7033 > x && z < Static242.anInt4449 && local23 != PlayerList.selfId) {
-				Static137.method2550(z, x, new Class2_Sub8(local53, local12), Player.level);
-				Static165.method3154(x, Player.level, z);
+
+			int type = inboundBuffer.ig2add();
+
+			if (x >= 0 && z >= 0 && Static373.buildAreaLimitX > x && z < Static242.buildAreaLimitZ && receiver != PlayerList.selfId) {
+				Static137.addObjStack(z, x, new ObjStack(type, count), Player.level);
+				Static165.sortObjStack(x, Player.level, z);
 			}
-		} else if (packet == ZoneProt.PACKET_0) {
-			int pos = inboundBuffer.g1bneg();
-			int x = pos >> 2;
-			int z = pos & 0x3;
-			int local40 = Static150.anIntArray174[x];
-			int local49 = inboundBuffer.g2add();
-			int local53 = inboundBuffer.g1();
-			int local57 = zoneX + (local53 >> 4 & 0x7);
-			int local63 = zoneZ + (local53 & 0x7);
-			if (local57 >= 0 && local63 >= 0 && local57 < Static373.anInt7033 && Static242.anInt4449 > local63) {
-				Static28.method900(local49, local40, x, local57, z, local63, Player.level);
+		} else if (packet == ZoneProt.LOC_ADD_CHANGE) {
+			int info = inboundBuffer.g1bneg();
+			int shape = info >> 2;
+			int rotation = info & 0x3;
+			int layer = Static150.LAYERS[shape];
+
+			int type = inboundBuffer.g2add();
+
+			int pos = inboundBuffer.g1();
+			int x = zoneX + (pos >> 4 & 0x7);
+			int z = zoneZ + (pos & 0x7);
+
+			if (x >= 0 && z >= 0 && x < Static373.buildAreaLimitX && Static242.buildAreaLimitZ > z) {
+				ChangeLocRequest.push(type, layer, shape, x, rotation, z, Player.level);
 			}
-		} else if (packet == ZoneProt.PACKET_14) {
+		} else if (packet == ZoneProt.LOC_MERGE) {
 			@Pc(916) byte local916 = inboundBuffer.g1neg();
+
 			int pos = inboundBuffer.g1();
 			int x = (pos >> 4 & 0x7) + zoneX;
 			int z = (pos & 0x7) + zoneZ;
+
 			int local49 = inboundBuffer.ig2s();
 			@Pc(942) byte local942 = inboundBuffer.g1bsub();
 			int local57 = inboundBuffer.ig2add();
 			int local63 = inboundBuffer.ig2add();
 			@Pc(954) byte local954 = inboundBuffer.g1neg();
 			@Pc(958) byte local958 = inboundBuffer.g1neg();
-			int local77 = inboundBuffer.g1add();
-			int local81 = local77 >> 2;
-			int local85 = local77 & 0x3;
+			int info = inboundBuffer.g1add();
+			int shape = info >> 2;
+			int rotation = info & 0x3;
 			int local403 = inboundBuffer.g2();
-			if (!Rasteriser.instance.method2871()) {
-				Static243.method4239(x, local403, local954, local57, local958, local942, local916, local63, local49, local81, local85, z, Player.level);
+
+			// this is a software-rendering fix due to draw priorities
+			if (!Rasteriser.instance.hasHwAccel()) {
+				AttachLocRequest.push(x, local403, local954, local57, local958, local942, local916, local63, local49, shape, rotation, z, Player.level);
 			}
-		} else if (packet == ZoneProt.PACKET_4) {
-			int local12 = inboundBuffer.g2();
-			int local23 = inboundBuffer.g1();
-			client.LocTypes.get(local12).method1521(local23);
-		} else if (ZoneProt.PACKET_3 == packet) {
+		} else if (packet == ZoneProt.LOC_PREFETCH) {
+			int id = inboundBuffer.g2();
+			int shape = inboundBuffer.g1();
+
+			client.LocTypes.get(id).isReady(shape);
+		} else if (packet == ZoneProt.TEXT_COORD) {
 			inboundBuffer.g1();
+
 			int pos = inboundBuffer.g1();
 			int x = (pos >> 4 & 0x7) + zoneX;
 			int z = zoneZ + (pos & 0x7);
+
 			int local40 = inboundBuffer.g2();
 			int local49 = inboundBuffer.g1();
 			int local53 = inboundBuffer.ig3();
-			@Pc(1055) String local1055 = inboundBuffer.gjstr();
-			Static111.method2277(local40, local49, local53, local1055, Player.level, x, z);
-		} else if (packet == ZoneProt.PACKET_7) {
-			int local12 = inboundBuffer.g2add();
-			if (local12 == 65535) {
-				local12 = -1;
+			@Pc(1055) String text = inboundBuffer.gjstr();
+
+			Static111.method2277(local40, local49, local53, text, Player.level, x, z);
+		} else if (packet == ZoneProt.LOC_ANIM) {
+			int type = inboundBuffer.g2add();
+			if (type == 65535) {
+				type = -1;
 			}
+
 			int pos = inboundBuffer.g1sub();
 			int x = zoneX + (pos >> 4 & 0x7);
 			int z = (pos & 0x7) + zoneZ;
-			int local49 = inboundBuffer.g1sub();
-			int local53 = local49 >> 2;
-			int local57 = local49 & 0x3;
-			int local63 = Static150.anIntArray174[local53];
-			Static391.method6452(local53, local12, z, local63, local57, x, Player.level);
-		} else if (packet == ZoneProt.PACKET_8) {
+
+			int info = inboundBuffer.g1sub();
+			int shape = info >> 2;
+			int rotation = info & 0x3;
+			int layer = Static150.LAYERS[shape];
+
+			Static391.method6452(shape, type, z, layer, rotation, x, Player.level);
+		} else if (packet == ZoneProt.MAP_ANIM) {
 			int pos = inboundBuffer.g1();
 			int x = zoneX + (pos >> 4 & 0x7);
 			int z = zoneZ + (pos & 0x7);
-			int local40 = inboundBuffer.g2();
-			int local49 = inboundBuffer.g1();
-			int local53 = inboundBuffer.g2();
-			if (x >= 0 && z >= 0 && Static373.anInt7033 > x && Static242.anInt4449 > z) {
-				int local57 = x * 128 + 64;
-				int local63 = z * 128 + 64;
-				@Pc(1208) Class11_Sub5_Sub4 local1208 = new Class11_Sub5_Sub4(local40, local53, client.cycle, Player.level, local57, Scene.getTileHeight(local57, local63, Player.level) - local49, local63, x, x, z, z);
-				Static129.aClass135_20.addTail(new Class2_Sub2_Sub1(local1208));
+
+			int spotAnim = inboundBuffer.g2();
+			int height = inboundBuffer.g1();
+			int delay = inboundBuffer.g2();
+
+			if (x >= 0 && z >= 0 && Static373.buildAreaLimitX > x && Static242.buildAreaLimitZ > z) {
+				int xFine = x * 128 + 64;
+				int zFine = z * 128 + 64;
+
+				@Pc(1208) SpotAnim spot = new SpotAnim(spotAnim, delay, client.cycle, Player.level, xFine, Scene.getTileHeight(xFine, zFine, Player.level) - height, zFine, x, x, z, z);
+				Static129.spotAnims.addTail(new SpotAnimNode(spot));
 			}
-		} else if (ZoneProt.PACKET_10 == packet) {
+		} else if (packet == ZoneProt.SOUND_AREA) {
 			int pos = inboundBuffer.g1();
 			int x = (pos >> 4 & 0x7) + zoneX;
 			int z = (pos & 0x7) + zoneZ;
-			int local40 = inboundBuffer.g2();
-			if (local40 == 65535) {
-				local40 = -1;
+
+			int id = inboundBuffer.g2();
+			if (id == 65535) {
+				id = -1;
 			}
-			int local49 = inboundBuffer.g1();
-			int local53 = local49 >> 4 & 0xF;
-			int local57 = local49 & 0x7;
-			int local63 = inboundBuffer.g1();
-			int local69 = inboundBuffer.g1();
-			if (x >= 0 && z >= 0 && x < Static373.anInt7033 && Static242.anInt4449 > z) {
-				int local73 = local53 + 1;
-				if (x - local73 <= PlayerList.self.movementQueueX[0] && PlayerList.self.movementQueueX[0] <= x + local73 && PlayerList.self.movementQueueZ[0] >= z - local73 && z + local73 >= PlayerList.self.movementQueueZ[0] && client.preferences.areaSoundsVolume != 0 && local57 > 0 && Static243.anInt4503 < 50 && local40 != -1) {
-					Static256.anIntArray321[Static243.anInt4503] = local40;
-					Static329.anIntArray419[Static243.anInt4503] = local57;
-					Static237.anIntArray283[Static243.anInt4503] = local63;
-					Static196.aClass247Array2[Static243.anInt4503] = null;
-					Static162.anIntArray188[Static243.anInt4503] = local53 + (z << 8) + (x << 16) + (Player.level << 24);
-					Static223.anIntArray256[Static243.anInt4503] = local69;
-					Static243.anInt4503++;
+
+			int info = inboundBuffer.g1();
+			int minDistance = info >> 4 & 0xF;
+			int loops = info & 0x7;
+			int delay = inboundBuffer.g1();
+			int volume = inboundBuffer.g1();
+
+			if (x >= 0 && z >= 0 && x < Static373.buildAreaLimitX && Static242.buildAreaLimitZ > z) {
+				int minDistanceP1 = minDistance + 1;
+				if (x - minDistanceP1 <= PlayerList.self.movementQueueX[0] && PlayerList.self.movementQueueX[0] <= x + minDistanceP1 && PlayerList.self.movementQueueZ[0] >= z - minDistanceP1 && z + minDistanceP1 >= PlayerList.self.movementQueueZ[0] && client.preferences.areaSoundsVolume != 0 && loops > 0 && SoundPlayer.size < 50 && id != -1) {
+					SoundPlayer.ids[SoundPlayer.size] = id;
+					SoundPlayer.loops[SoundPlayer.size] = loops;
+					SoundPlayer.delays[SoundPlayer.size] = delay;
+					SoundPlayer.sounds[SoundPlayer.size] = null;
+					SoundPlayer.positions[SoundPlayer.size] = minDistance + (z << 8) + (x << 16) + (Player.level << 24);
+					SoundPlayer.volumes[SoundPlayer.size] = volume;
+					SoundPlayer.size++;
 				}
 			}
-		} else if (packet == ZoneProt.PACKET_5) {
+		} else if (packet == ZoneProt.LOC_DEL) {
 			int pos = inboundBuffer.g1add();
 			int x = zoneX + (pos >> 4 & 0x7);
 			int z = (pos & 0x7) + zoneZ;
-			int local40 = inboundBuffer.g1bneg();
-			int local49 = local40 >> 2;
-			int local53 = local40 & 0x3;
-			int local57 = Static150.anIntArray174[local49];
-			if (x >= 0 && z >= 0 && x < Static373.anInt7033 && Static242.anInt4449 > z) {
-				Static28.method900(-1, local57, local49, x, local53, z, Player.level);
+
+			int info = inboundBuffer.g1bneg();
+			int shape = info >> 2;
+			int rotation = info & 0x3;
+			int layer = Static150.LAYERS[shape];
+
+			if (x >= 0 && z >= 0 && x < Static373.buildAreaLimitX && Static242.buildAreaLimitZ > z) {
+				ChangeLocRequest.push(-1, layer, shape, x, rotation, z, Player.level);
 			}
-		} else if (packet == ZoneProt.PACKET_1) {
+		} else if (packet == ZoneProt.MAP_PROJANIM) {
 			int pos = inboundBuffer.g1();
 			int x = zoneX + (pos >> 4 & 0x7);
 			int z = (pos & 0x7) + zoneZ;
-			int local40 = x + inboundBuffer.g1b();
-			int local49 = z + inboundBuffer.g1b();
-			int local53 = inboundBuffer.g2s();
-			int local57 = inboundBuffer.g2();
-			int local63 = inboundBuffer.g1() * 4;
-			int local69 = inboundBuffer.g1() * 4;
-			int local73 = inboundBuffer.g2();
-			int local77 = inboundBuffer.g2();
-			int local81 = inboundBuffer.g1();
-			int local85 = inboundBuffer.g1();
-			if (local81 == 255) {
-				local81 = -1;
+
+			int dstX = x + inboundBuffer.g1b();
+			int dstZ = z + inboundBuffer.g1b();
+			int target = inboundBuffer.g2s();
+			int spotanim = inboundBuffer.g2();
+			int srcHeight = inboundBuffer.g1() * 4;
+			int dstHeight = inboundBuffer.g1() * 4;
+			int start = inboundBuffer.g2();
+			int end = inboundBuffer.g2();
+			int peak = inboundBuffer.g1();
+			int arc = inboundBuffer.g1();
+
+			if (peak == 255) {
+				peak = -1;
 			}
-			if (x >= 0 && z >= 0 && Static373.anInt7033 > x && z < Static242.anInt4449 && local40 >= 0 && local49 >= 0 && local40 < Static373.anInt7033 && local49 < Static242.anInt4449 && local57 != 65535) {
+
+			if (x >= 0 && z >= 0 && Static373.buildAreaLimitX > x && z < Static242.buildAreaLimitZ && dstX >= 0 && dstZ >= 0 && dstX < Static373.buildAreaLimitX && dstZ < Static242.buildAreaLimitZ && spotanim != 65535) {
 				z = z * 128 + 64;
 				x = x * 128 + 64;
-				local49 = local49 * 128 + 64;
-				local40 = local40 * 128 + 64;
-				ProjAnim local181 = new ProjAnim(local57, Player.level, x, z, Scene.getTileHeight(x, z, Player.level) - local63, local73 + client.cycle, local77 + client.cycle, local81, local85, local53, local69);
-				local181.setTarget(Scene.getTileHeight(local40, local49, Player.level) - local69, local40, client.cycle + local73, local49);
-				Static332.projAnims.addTail(new ProjAnimNode(local181));
+
+				dstZ = dstZ * 128 + 64;
+				dstX = dstX * 128 + 64;
+
+				ProjAnim proj = new ProjAnim(spotanim, Player.level, x, z, Scene.getTileHeight(x, z, Player.level) - srcHeight, start + client.cycle, end + client.cycle, peak, arc, target, dstHeight);
+				proj.setTarget(Scene.getTileHeight(dstX, dstZ, Player.level) - dstHeight, dstX, client.cycle + start, dstZ);
+				Static332.projAnims.addTail(new ProjAnimNode(proj));
 			}
-		} else if (ZoneProt.PACKET_2 == packet) {
-			int local12 = inboundBuffer.g2();
-			int local23 = inboundBuffer.g2add();
+		} else if (packet == ZoneProt.OBJ_ADD) {
+			int type = inboundBuffer.g2();
+			int count = inboundBuffer.g2add();
+
 			int pos = inboundBuffer.g1();
 			int x = (pos >> 4 & 0x7) + zoneX;
 			int z = zoneZ + (pos & 0x7);
-			if (x >= 0 && z >= 0 && x < Static373.anInt7033 && Static242.anInt4449 > z) {
-				Static137.method2550(z, x, new Class2_Sub8(local12, local23), Player.level);
-				Static165.method3154(x, Player.level, z);
+
+			if (x >= 0 && z >= 0 && x < Static373.buildAreaLimitX && Static242.buildAreaLimitZ > z) {
+				Static137.addObjStack(z, x, new ObjStack(type, count), Player.level);
+				Static165.sortObjStack(x, Player.level, z);
 			}
 		} else {
 			TracingException.report(null, "T3 - " + packet);

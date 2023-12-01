@@ -17,10 +17,10 @@ public final class Static56 {
 		} else {
 			@Pc(31) int local31 = PlayerList.self.movementQueueX[0] >> 3;
 			@Pc(38) int local38 = PlayerList.self.movementQueueZ[0] >> 3;
-			if (local31 >= 0 && local31 < Static373.anInt7033 >> 3 && local38 >= 0 && Static242.anInt4449 >> 3 > local38) {
+			if (local31 >= 0 && local31 < Static373.buildAreaLimitX >> 3 && local38 >= 0 && Static242.buildAreaLimitZ >> 3 > local38) {
 				Static387.method2835(5000, local31, local38);
 			} else {
-				Static387.method2835(0, Static373.anInt7033 >> 4, Static242.anInt4449 >> 4);
+				Static387.method2835(0, Static373.buildAreaLimitX >> 4, Static242.buildAreaLimitZ >> 4);
 			}
 		}
 		Static140.method2623();

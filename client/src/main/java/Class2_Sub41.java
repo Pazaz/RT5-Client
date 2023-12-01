@@ -101,15 +101,15 @@ public final class Class2_Sub41 extends Node {
 				}
 			}
 			@Pc(354) int local354;
-			if (local11 != null && local11.anIntArrayArray53 != null) {
-				for (@Pc(334) int local334 = 0; local334 < local11.anIntArrayArray53.length; local334++) {
-					if (local11.anIntArrayArray53[local334] != null && local300[local334] != null) {
-						local354 = local11.anIntArrayArray53[local334][0];
-						@Pc(361) int local361 = local11.anIntArrayArray53[local334][1];
-						@Pc(368) int local368 = local11.anIntArrayArray53[local334][2];
-						@Pc(375) int local375 = local11.anIntArrayArray53[local334][3];
-						@Pc(382) int local382 = local11.anIntArrayArray53[local334][4];
-						@Pc(389) int local389 = local11.anIntArrayArray53[local334][5];
+			if (local11 != null && local11.equipmentTransforms != null) {
+				for (@Pc(334) int local334 = 0; local334 < local11.equipmentTransforms.length; local334++) {
+					if (local11.equipmentTransforms[local334] != null && local300[local334] != null) {
+						local354 = local11.equipmentTransforms[local334][0];
+						@Pc(361) int local361 = local11.equipmentTransforms[local334][1];
+						@Pc(368) int local368 = local11.equipmentTransforms[local334][2];
+						@Pc(375) int local375 = local11.equipmentTransforms[local334][3];
+						@Pc(382) int local382 = local11.equipmentTransforms[local334][4];
+						@Pc(389) int local389 = local11.equipmentTransforms[local334][5];
 						if (local375 != 0 || local382 != 0 || local389 != 0) {
 							local300[local334].method4664(local382, local389, local375);
 						}

@@ -11,7 +11,7 @@ public final class Static373 {
 	public static int anInt7032 = 0;
 
 	@OriginalMember(owner = "client!vq", name = "m", descriptor = "I")
-	public static int anInt7033 = 104;
+	public static int buildAreaLimitX = 104;
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(ZIZIZ)V")
 	public static void method6267(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) int arg3) {
@@ -31,9 +31,9 @@ public final class Static373 {
 		}
 		Static351.method5857(Static276.aClass130_4, true, Static256.aClass79_102.getLocalized(client.language));
 		@Pc(59) int local59 = Camera.originX;
-		Camera.originX = (Static105.anInt2187 - (anInt7033 >> 4)) * 8;
+		Camera.originX = (Static105.anInt2187 - (buildAreaLimitX >> 4)) * 8;
 		@Pc(70) int local70 = Camera.originZ;
-		Camera.originZ = (Static9.anInt212 - (Static242.anInt4449 >> 4)) * 8;
+		Camera.originZ = (Static9.anInt212 - (Static242.buildAreaLimitZ >> 4)) * 8;
 		Static91.aClass2_Sub2_Sub17_1 = MapList.getContainingSource(Static105.anInt2187 * 8, Static9.anInt212 * 8);
 		Static34.aClass103_3 = null;
 		@Pc(94) int local94 = Camera.originX - local59;
@@ -42,8 +42,8 @@ public final class Static373 {
 		@Pc(113) int local113;
 		if (arg0) {
 			NpcList.size = 0;
-			local103 = (anInt7033 - 1) * 128;
-			@Pc(175) int local175 = (Static242.anInt4449 - 1) * 128;
+			local103 = (buildAreaLimitX - 1) * 128;
+			@Pc(175) int local175 = (Static242.buildAreaLimitZ - 1) * 128;
 			for (local113 = 0; local113 < 32768; local113++) {
 				@Pc(183) Npc local183 = NpcList.npcs[local113];
 				if (local183 != null) {
@@ -54,7 +54,7 @@ public final class Static373 {
 						for (@Pc(234) int local234 = 0; local234 < 10; local234++) {
 							local183.movementQueueX[local234] -= local94;
 							local183.movementQueueZ[local234] -= local99;
-							if (local183.movementQueueX[local234] < 0 || anInt7033 <= local183.movementQueueX[local234] || local183.movementQueueZ[local234] < 0 || local183.movementQueueZ[local234] >= Static242.anInt4449) {
+							if (local183.movementQueueX[local234] < 0 || buildAreaLimitX <= local183.movementQueueX[local234] || local183.movementQueueZ[local234] < 0 || local183.movementQueueZ[local234] >= Static242.buildAreaLimitZ) {
 								local232 = false;
 							}
 						}
@@ -84,7 +84,7 @@ public final class Static373 {
 			}
 		}
 		for (local103 = 0; local103 < 2048; local103++) {
-			@Pc(314) Player local314 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local103];
+			@Pc(314) Player local314 = PlayerList.players[local103];
 			if (local314 != null) {
 				for (local113 = 0; local113 < 10; local113++) {
 					local314.movementQueueX[local113] -= local94;
@@ -98,11 +98,11 @@ public final class Static373 {
 		for (@Pc(371) ChangeLocRequest local371 = (ChangeLocRequest) Static207.aClass135_26.head(); local371 != null; local371 = (ChangeLocRequest) Static207.aClass135_26.next()) {
 			local371.anInt6484 -= local94;
 			local371.anInt6486 -= local99;
-			if (local371.anInt6484 < 0 || local371.anInt6486 < 0 || local371.anInt6484 >= anInt7033 || local371.anInt6486 >= Static242.anInt4449) {
+			if (local371.anInt6484 < 0 || local371.anInt6486 < 0 || local371.anInt6484 >= buildAreaLimitX || local371.anInt6486 >= Static242.buildAreaLimitZ) {
 				local371.unlink();
 			}
 		}
-		Static243.anInt4503 = 0;
+		SoundPlayer.size = 0;
 		if (Static358.anInt6550 != 0) {
 			Static358.anInt6550 -= local94;
 			Static312.anInt5844 -= local99;
@@ -114,7 +114,7 @@ public final class Static373 {
 			Static211.anInt3777 -= local99 * 128;
 			Static19.anInt535 -= local99;
 			Static254.anInt4698 -= local94;
-			if (Math.abs(local94) > anInt7033 || Math.abs(local99) > Static242.anInt4449) {
+			if (Math.abs(local94) > buildAreaLimitX || Math.abs(local99) > Static242.buildAreaLimitZ) {
 				Static348.method5828();
 			}
 		} else if (Camera.anInt5911 == 4) {
@@ -127,7 +127,7 @@ public final class Static373 {
 		}
 		Static160.method2956();
 		Static247.method4299();
-		Static129.aClass135_20.clear();
+		Static129.spotAnims.clear();
 		Static332.projAnims.clear();
 		Static284.aClass36_7.method1416();
 		Static120.method2380();

@@ -1216,7 +1216,7 @@ public final class Class19_Sub1 extends RasteriserBase implements Interface8 {
 
 	@OriginalMember(owner = "client!bf", name = "y", descriptor = "()Z")
 	@Override
-	public boolean method2871() {
+	public boolean hasHwAccel() {
 		return true;
 	}
 

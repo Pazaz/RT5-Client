@@ -341,7 +341,7 @@ public final class client extends GameShell {
 		}
 		Camera.anInt327 = (int) (Math.random() * 110.0D) - 55;
 		Static97.anInt2005 = (int) (Math.random() * 30.0D) - 20;
-		Static243.anInt4503 = 0;
+		SoundPlayer.size = 0;
 		Static330.aBoolean419 = false;
 		Camera.yaw = (int) (Math.random() * 160.0D) - 80 & 0x3FFF;
 		Camera.anInt642 = (int) (Math.random() * 100.0D) - 50;
@@ -350,16 +350,16 @@ public final class client extends GameShell {
 		Camera.anInt3966 = (int) (Math.random() * 80.0D) - 40;
 		Static254.method4372();
 		for (@Pc(4448) int local4448 = 0; local4448 < 2048; local4448++) {
-			Static12.aClass11_Sub5_Sub2_Sub1Array1[local4448] = null;
+			PlayerList.players[local4448] = null;
 		}
 		NpcList.size = 0;
 		for (@Pc(4464) int local4464 = 0; local4464 < 32768; local4464++) {
 			NpcList.npcs[local4464] = null;
 		}
 		Static332.projAnims.clear();
-		Static129.aClass135_20.clear();
+		Static129.spotAnims.clear();
 		Static284.aClass36_7.method1416();
-		Static120.aClass4_49.clear();
+		Static120.objStacks.clear();
 		Static207.aClass135_26 = new LinkedList();
 		FriendsList.status = 0;
 		FriendsList.size = 0;
@@ -1012,14 +1012,14 @@ public final class client extends GameShell {
 							@Pc(96) int local96 = local74 + local33.movementQueueX[0];
 							if (local96 < 0) {
 								local96 = 0;
-							} else if (Static373.anInt7033 - local50 - 1 < local96) {
-								local96 = Static373.anInt7033 - local50 - 1;
+							} else if (Static373.buildAreaLimitX - local50 - 1 < local96) {
+								local96 = Static373.buildAreaLimitX - local50 - 1;
 							}
 							@Pc(128) int local128 = local33.movementQueueZ[0] + local82;
 							if (local128 < 0) {
 								local128 = 0;
-							} else if (Static242.anInt4449 - local50 - 1 < local128) {
-								local128 = Static242.anInt4449 - local50 - 1;
+							} else if (Static242.buildAreaLimitZ - local50 - 1 < local128) {
+								local128 = Static242.buildAreaLimitZ - local50 - 1;
 							}
 							@Pc(179) int local179 = Static141.method2654(true, Static52.anIntArray99, local50, -1, 0, 0, Static171.aClass46Array1[local33.plane], local33.movementQueueX[0], local50, local96, Static59.anIntArray105, local50, local128, local33.movementQueueZ[0]);
 							if (local179 > 0) {
@@ -1048,7 +1048,7 @@ public final class client extends GameShell {
 			} else {
 				Static199.method5249();
 			}
-			if (Static136.anInt6778 >> 7 < 14 || Static136.anInt6778 >> 7 >= Static373.anInt7033 - 14 || Static211.anInt3777 >> 7 < 14 || Static211.anInt3777 >> 7 >= Static242.anInt4449 - 14) {
+			if (Static136.anInt6778 >> 7 < 14 || Static136.anInt6778 >> 7 >= Static373.buildAreaLimitX - 14 || Static211.anInt3777 >> 7 < 14 || Static211.anInt3777 >> 7 >= Static242.buildAreaLimitZ - 14) {
 				Static262.method6254();
 			}
 		}
@@ -1269,7 +1269,7 @@ public final class client extends GameShell {
 			}
 		} else if (mainLoadState == 10) {
 			for (local6 = 0; local6 < 4; local6++) {
-				Static171.aClass46Array1[local6] = Static24.method853(Static242.anInt4449, Static373.anInt7033);
+				Static171.aClass46Array1[local6] = Static24.method853(Static242.buildAreaLimitZ, Static373.buildAreaLimitX);
 			}
 			mainLoadSecondaryText = Static109.aClass79_46.getLocalized(language);
 			mainLoadState = 20;

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static242 {
 
 	@OriginalMember(owner = "client!nr", name = "e", descriptor = "I")
-	public static int anInt4449 = 104;
+	public static int buildAreaLimitZ = 104;
 
 	@OriginalMember(owner = "client!nr", name = "a", descriptor = "(Lclient!mr;IILclient!mr;BIIIII)V")
 	public static void method4195(@OriginalArg(0) PathingEntity arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) PathingEntity arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int arg5, @OriginalArg(8) int arg6) {

@@ -92,8 +92,8 @@ public final class Static33 {
 	@OriginalMember(owner = "client!bs", name = "d", descriptor = "(I)V")
 	public static void method4207() {
 		@Pc(11) int local11 = 0;
-		for (@Pc(13) int local13 = 0; local13 < Static373.anInt7033; local13++) {
-			for (@Pc(17) int local17 = 0; local17 < Static242.anInt4449; local17++) {
+		for (@Pc(13) int local13 = 0; local13 < Static373.buildAreaLimitX; local13++) {
+			for (@Pc(17) int local17 = 0; local17 < Static242.buildAreaLimitZ; local17++) {
 				if (Static81.method3667(Scene.aClass67ArrayArrayArray3, true, local13, local17, local11)) {
 					local11++;
 				}

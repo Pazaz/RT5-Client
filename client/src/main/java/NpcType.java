@@ -353,17 +353,17 @@ public final class NpcType {
 				local700 = arg0.method245(this.anInt2032);
 			}
 			@Pc(718) int local718;
-			if (local700 != null && local700.anIntArrayArray53 != null) {
-				for (local718 = 0; local718 < local700.anIntArrayArray53.length; local718++) {
-					if (local700.anIntArrayArray53[local718] != null && local718 < local621.length && local621[local718] != null) {
-						@Pc(742) int local742 = local700.anIntArrayArray53[local718][0];
-						@Pc(749) int local749 = local700.anIntArrayArray53[local718][1];
-						@Pc(756) int local756 = local700.anIntArrayArray53[local718][2];
-						@Pc(765) int local765 = local700.anIntArrayArray53[local718][3] << 3;
-						@Pc(774) int local774 = local700.anIntArrayArray53[local718][4] << 3;
-						@Pc(783) int local783 = local700.anIntArrayArray53[local718][5] << 3;
+			if (local700 != null && local700.equipmentTransforms != null) {
+				for (local718 = 0; local718 < local700.equipmentTransforms.length; local718++) {
+					if (local700.equipmentTransforms[local718] != null && local718 < local621.length && local621[local718] != null) {
+						@Pc(742) int local742 = local700.equipmentTransforms[local718][0];
+						@Pc(749) int local749 = local700.equipmentTransforms[local718][1];
+						@Pc(756) int local756 = local700.equipmentTransforms[local718][2];
+						@Pc(765) int local765 = local700.equipmentTransforms[local718][3] << 3;
+						@Pc(774) int local774 = local700.equipmentTransforms[local718][4] << 3;
+						@Pc(783) int local783 = local700.equipmentTransforms[local718][5] << 3;
 						if (this.anIntArrayArray19 == null) {
-							this.anIntArrayArray19 = new int[local700.anIntArrayArray53.length][];
+							this.anIntArrayArray19 = new int[local700.equipmentTransforms.length][];
 						}
 						if (this.anIntArrayArray19[local718] == null) {
 							@Pc(805) int[] local805 = this.anIntArrayArray19[local718] = new int[15];

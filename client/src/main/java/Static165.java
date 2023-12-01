@@ -24,17 +24,17 @@ public final class Static165 {
 	}
 
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(IIII)V")
-	public static void method3154(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+	public static void sortObjStack(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		if (Scene.aClass67ArrayArrayArray3 == null) {
 			return;
 		}
 		@Pc(19) long local19 = (long) (arg0 | arg1 << 28 | arg2 << 14);
-		@Pc(27) Class2_Sub32 local27 = (Class2_Sub32) Static120.aClass4_49.get(local19);
+		@Pc(27) Class2_Sub32 local27 = (Class2_Sub32) Static120.objStacks.get(local19);
 		if (local27 == null) {
 			Static166.method3190(arg1, arg0, arg2);
 			return;
 		}
-		@Pc(41) Class2_Sub8 local41 = (Class2_Sub8) local27.aClass135_34.head();
+		@Pc(41) ObjStack local41 = (ObjStack) local27.aClass135_34.head();
 		if (local41 == null) {
 			Static166.method3190(arg1, arg0, arg2);
 			return;
@@ -45,24 +45,24 @@ public final class Static165 {
 		} else {
 			local55.anInt3980 = local55.anInt3981 = -1;
 		}
-		local55.anInt3984 = local41.anInt1719;
-		local55.anInt3985 = local41.anInt1717;
+		local55.anInt3984 = local41.count;
+		local55.anInt3985 = local41.type;
 		label44: while (true) {
-			@Pc(85) Class2_Sub8 local85 = (Class2_Sub8) local27.aClass135_34.next();
+			@Pc(85) ObjStack local85 = (ObjStack) local27.aClass135_34.next();
 			if (local85 == null) {
 				break;
 			}
-			if (local55.anInt3985 != local85.anInt1717) {
-				local55.anInt3978 = local85.anInt1719;
-				local55.anInt3980 = local85.anInt1717;
+			if (local55.anInt3985 != local85.type) {
+				local55.anInt3978 = local85.count;
+				local55.anInt3980 = local85.type;
 				while (true) {
-					@Pc(110) Class2_Sub8 local110 = (Class2_Sub8) local27.aClass135_34.next();
+					@Pc(110) ObjStack local110 = (ObjStack) local27.aClass135_34.next();
 					if (local110 == null) {
 						break label44;
 					}
-					if (local110.anInt1717 != local55.anInt3985 && local55.anInt3980 != local110.anInt1717) {
-						local55.anInt3982 = local110.anInt1719;
-						local55.anInt3981 = local110.anInt1717;
+					if (local110.type != local55.anInt3985 && local55.anInt3980 != local110.type) {
+						local55.anInt3982 = local110.count;
+						local55.anInt3981 = local110.type;
 					}
 				}
 			}

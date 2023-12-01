@@ -32,7 +32,7 @@ public final class Static228 {
 					}
 				}
 			} else {
-				local33 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local11[local13]];
+				local33 = PlayerList.players[local11[local13]];
 			}
 			if (local33.anInt4638 >= 0 && (Static163.anInt3086 == local33.anInt4603 || PlayerList.self.plane == local33.plane)) {
 				Static250.method4344(local33.method4323(), local33, arg1 >> 1, arg2 >> 1);
@@ -221,12 +221,12 @@ public final class Static228 {
 			if (local965 >= 2048) {
 				local974 = NpcList.npcs[local965 - 2048];
 			} else {
-				local974 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local965];
+				local974 = PlayerList.players[local965];
 			}
 			local194 = Static160.anIntArray186[local959];
 			@Pc(991) PathingEntity local991;
 			if (local194 < 2048) {
-				local991 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local194];
+				local991 = PlayerList.players[local194];
 			} else {
 				local991 = NpcList.npcs[local194 - 2048];
 			}

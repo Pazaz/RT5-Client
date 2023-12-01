@@ -63,8 +63,8 @@ public final class Static262 {
 		Static277.anIntArrayArray43 = new int[18][4];
 		@Pc(78) int local78 = 0;
 		@Pc(97) int local97;
-		for (@Pc(87) int local87 = (local18 - (Static373.anInt7033 >> 4)) / 8; local87 <= ((Static373.anInt7033 >> 4) + local18) / 8; local87++) {
-			for (local97 = (local27 - (Static242.anInt4449 >> 4)) / 8; local97 <= (local27 + (Static242.anInt4449 >> 4)) / 8; local97++) {
+		for (@Pc(87) int local87 = (local18 - (Static373.buildAreaLimitX >> 4)) / 8; local87 <= ((Static373.buildAreaLimitX >> 4) + local18) / 8; local87++) {
+			for (local97 = (local27 - (Static242.buildAreaLimitZ >> 4)) / 8; local97 <= (local27 + (Static242.buildAreaLimitZ >> 4)) / 8; local97++) {
 				@Pc(105) int local105 = local97 + (local87 << 8);
 				Static291.mapSquares[local78] = local105;
 				Static221.mapGroupIds[local78] = client.jsArchive5.getGroupId("m" + local87 + "_" + local97);

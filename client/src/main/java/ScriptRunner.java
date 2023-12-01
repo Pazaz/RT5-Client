@@ -3957,14 +3957,14 @@ public final class ScriptRunner {
 							local192 -= Camera.originX;
 							if (local192 < 0) {
 								local192 = 0;
-							} else if (local192 >= Static373.anInt7033) {
-								local192 = Static373.anInt7033;
+							} else if (local192 >= Static373.buildAreaLimitX) {
+								local192 = Static373.buildAreaLimitX;
 							}
 							local89 -= Camera.originZ;
 							if (local89 < 0) {
 								local89 = 0;
-							} else if (local89 >= Static242.anInt4449) {
-								local89 = Static242.anInt4449;
+							} else if (local89 >= Static242.buildAreaLimitZ) {
+								local89 = Static242.buildAreaLimitZ;
 							}
 							Static394.anInt7264 = local192 * 128 + 64;
 							Static348.anInt6448 = local89 * 128 + 64;

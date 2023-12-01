@@ -57,16 +57,16 @@ public final class Static372 {
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(BII)V")
 	public static void method6262(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(10) HashTable local10 = new HashTable(16);
-		for (@Pc(15) Class2_Sub32 local15 = (Class2_Sub32) Static120.aClass4_49.head(); local15 != null; local15 = (Class2_Sub32) Static120.aClass4_49.next()) {
+		for (@Pc(15) Class2_Sub32 local15 = (Class2_Sub32) Static120.objStacks.head(); local15 != null; local15 = (Class2_Sub32) Static120.objStacks.next()) {
 			local15.unlink();
 			@Pc(26) int local26 = (int) (local15.key >> 28);
 			@Pc(36) int local36 = (int) (local15.key >> 14 & 0x3FFFL) - arg0;
 			@Pc(45) int local45 = (int) (local15.key & 0x3FFFL) - arg1;
-			if (local45 >= 0 && local36 >= 0 && local45 < Static373.anInt7033 && local36 < Static242.anInt4449) {
+			if (local45 >= 0 && local36 >= 0 && local45 < Static373.buildAreaLimitX && local36 < Static242.buildAreaLimitZ) {
 				local10.put(local15, (long) (local26 << 28 | local36 << 14 | local45));
 			}
 		}
-		Static120.aClass4_49 = local10;
+		Static120.objStacks = local10;
 	}
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(BLclient!bt;)Lclient!rm;")

@@ -12,7 +12,7 @@ public final class Static150 {
 	public static final LocalizedString aClass79_64 = new LocalizedString("Please remove ", "Bitte entferne ", "Veuillez commencer par supprimer ", "Remova ");
 
 	@OriginalMember(owner = "client!il", name = "X", descriptor = "[I")
-	public static final int[] anIntArray174 = new int[] { 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3 };
+	public static final int[] LAYERS = new int[] { 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3 };
 
 	@OriginalMember(owner = "client!il", name = "Y", descriptor = "[I")
 	public static final int[] anIntArray175 = new int[500];

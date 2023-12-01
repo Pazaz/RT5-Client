@@ -417,9 +417,9 @@ public final class Player extends PathingEntity {
 			}
 		}
 		this.anInt4174 = -1;
-		if (arg1 < 0 || Static373.anInt7033 <= arg1 || arg0 < 0 || Static242.anInt4449 <= arg0) {
+		if (arg1 < 0 || Static373.buildAreaLimitX <= arg1 || arg0 < 0 || Static242.buildAreaLimitZ <= arg0) {
 			this.method4064(arg1, arg0);
-		} else if (super.movementQueueX[0] >= 0 && super.movementQueueX[0] < Static373.anInt7033 && super.movementQueueZ[0] >= 0 && Static242.anInt4449 > super.movementQueueZ[0]) {
+		} else if (super.movementQueueX[0] >= 0 && super.movementQueueX[0] < Static373.buildAreaLimitX && super.movementQueueZ[0] >= 0 && Static242.buildAreaLimitZ > super.movementQueueZ[0]) {
 			if (arg2 == 2) {
 				Static376.method6284(this, arg1, arg0);
 			}
@@ -484,8 +484,8 @@ public final class Player extends PathingEntity {
 						local239 *= local239;
 						this.method4073(local189.anInt2361, local239, local273, local228, local19, super.aClass31Array3[0], arg0);
 					}
-					if (local189.anInt2355 == 10 && local189.anInt2354 >= 0 && Static12.aClass11_Sub5_Sub2_Sub1Array1.length > local189.anInt2354) {
-						@Pc(332) Player local332 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local189.anInt2354];
+					if (local189.anInt2355 == 10 && local189.anInt2354 >= 0 && PlayerList.players.length > local189.anInt2354) {
+						@Pc(332) Player local332 = PlayerList.players[local189.anInt2354];
 						if (local332 != null) {
 							local228 = local332.xFine / 32 - PlayerList.self.xFine / 32;
 							local239 = local332.zFine / 32 - PlayerList.self.zFine / 32;

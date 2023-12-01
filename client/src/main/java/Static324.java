@@ -58,7 +58,7 @@ public final class Static324 {
 
 	@OriginalMember(owner = "client!sq", name = "a", descriptor = "(IIIIIIIIBI)V")
 	public static void method5541(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(9) int arg6) {
-		if (arg5 < 128 || arg1 < 128 || (Static373.anInt7033 - 2) * 128 < arg5 || (Static242.anInt4449 - 2) * 128 < arg1) {
+		if (arg5 < 128 || arg1 < 128 || (Static373.buildAreaLimitX - 2) * 128 < arg5 || (Static242.buildAreaLimitZ - 2) * 128 < arg1) {
 			Static216.anIntArray231[0] = Static216.anIntArray231[1] = -1;
 			return;
 		}

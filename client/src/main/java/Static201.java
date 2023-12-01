@@ -325,7 +325,7 @@ public final class Static201 {
 									} else if (local19.modelType == 5) {
 										local1161 = local19.modelId;
 										if (local1161 >= 0 && local1161 < 2048) {
-											@Pc(1566) Player local1566 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local1161];
+											@Pc(1566) Player local1566 = PlayerList.players[local1161];
 											@Pc(1579) Class157 local1579 = local19.modelSeqId == -1 ? null : client.SeqTypes.method2371(local19.modelSeqId);
 											if (local1566 != null && (local1161 == PlayerList.selfId || Static276.method4651(local1566.username) == local19.anInt4236)) {
 												local1477 = local1566.appearance.method3191(local19.anInt4283, client.BasTypes, client.SeqTypes, client.IdkTypes, local1579, local19.anInt4316, 0, 1024, -1, 0, null, VarpDomain.instance, client.ObjTypes, Rasteriser.instance, client.NpcTypes, null, local19.anInt4247);

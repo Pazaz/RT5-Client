@@ -131,7 +131,7 @@ public final class Static81 {
 						local56 = local56 + 1 & 0xFFF;
 					}
 					local96++;
-					if (Static242.anInt4449 > local96) {
+					if (Static242.buildAreaLimitZ > local96) {
 						if (local74 - 1 >= 0 && Static230.aByteArrayArrayArray13[Static355.anInt6585][local74 - 1][local96] != local14 && (Static359.aByteArrayArrayArray16[Static355.anInt6585][local74][local96] & 0x4) == 0 && (Static359.aByteArrayArrayArray16[Static355.anInt6585][local74 - 1][local96 - 1] & 0x4) == 0) {
 							Static343.anIntArray432[local56] = local74 - 1 | 0x120000 | 0x52000000;
 							Static364.anIntArray477[local56] = local96 | 0x130000;
@@ -144,7 +144,7 @@ public final class Static81 {
 							Static230.aByteArrayArrayArray13[Static355.anInt6585][local74][local96] = local14;
 							local56 = local56 + 1 & 0xFFF;
 						}
-						if (Static373.anInt7033 > local74 + 1 && Static230.aByteArrayArrayArray13[Static355.anInt6585][local74 + 1][local96] != local14 && (Static359.aByteArrayArrayArray16[Static355.anInt6585][local74][local96] & 0x4) == 0 && (Static359.aByteArrayArrayArray16[Static355.anInt6585][local74 + 1][local96 - 1] & 0x4) == 0) {
+						if (Static373.buildAreaLimitX > local74 + 1 && Static230.aByteArrayArrayArray13[Static355.anInt6585][local74 + 1][local96] != local14 && (Static359.aByteArrayArrayArray16[Static355.anInt6585][local74][local96] & 0x4) == 0 && (Static359.aByteArrayArrayArray16[Static355.anInt6585][local74 + 1][local96 - 1] & 0x4) == 0) {
 							Static343.anIntArray432[local56] = local74 + 1 | 0x520000 | 0x92000000;
 							Static364.anIntArray477[local56] = local96 | 0x530000;
 							Static230.aByteArrayArrayArray13[Static355.anInt6585][local74 + 1][local96] = local14;
@@ -152,7 +152,7 @@ public final class Static81 {
 						}
 					}
 					local96--;
-					if (Static373.anInt7033 > local74 + 1 && local14 != Static230.aByteArrayArrayArray13[Static355.anInt6585][local74 + 1][local96]) {
+					if (Static373.buildAreaLimitX > local74 + 1 && local14 != Static230.aByteArrayArrayArray13[Static355.anInt6585][local74 + 1][local96]) {
 						Static343.anIntArray432[local56] = 0x53000000 | 0x920000 | local74 + 1;
 						Static364.anIntArray477[local56] = local96 | 0x930000;
 						Static230.aByteArrayArrayArray13[Static355.anInt6585][local74 + 1][local96] = local14;
@@ -172,7 +172,7 @@ public final class Static81 {
 							local56 = local56 + 1 & 0xFFF;
 							Static230.aByteArrayArrayArray13[Static355.anInt6585][local74][local96] = local14;
 						}
-						if (local74 + 1 < Static373.anInt7033 && local14 != Static230.aByteArrayArrayArray13[Static355.anInt6585][local74 + 1][local96] && (Static359.aByteArrayArrayArray16[Static355.anInt6585][local74][local96] & 0x4) == 0 && (Static359.aByteArrayArrayArray16[Static355.anInt6585][local74 + 1][local96 + 1] & 0x4) == 0) {
+						if (local74 + 1 < Static373.buildAreaLimitX && local14 != Static230.aByteArrayArrayArray13[Static355.anInt6585][local74 + 1][local96] && (Static359.aByteArrayArrayArray16[Static355.anInt6585][local74][local96] & 0x4) == 0 && (Static359.aByteArrayArrayArray16[Static355.anInt6585][local74 + 1][local96 + 1] & 0x4) == 0) {
 							Static343.anIntArray432[local56] = local74 + 1 | 0x920000 | 0xD2000000;
 							Static364.anIntArray477[local56] = local96 | 0x930000;
 							local56 = local56 + 1 & 0xFFF;

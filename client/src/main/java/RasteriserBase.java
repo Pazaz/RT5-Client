@@ -255,7 +255,7 @@ public abstract class RasteriserBase {
 	public abstract void method2870(@OriginalArg(0) Class42 arg0);
 
 	@OriginalMember(owner = "client!wm", name = "y", descriptor = "()Z")
-	public abstract boolean method2871();
+	public abstract boolean hasHwAccel();
 
 	@OriginalMember(owner = "client!wm", name = "c", descriptor = "(II)V")
 	public abstract void method2872(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);

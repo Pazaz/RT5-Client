@@ -24,10 +24,10 @@ public final class Static210 {
 		if (arg1 < 3) {
 			@Pc(21) int local21 = arg3 >> 7;
 			@Pc(25) int local25 = arg4 >> 7;
-			if (arg2 < 0 || arg0 < 0 || Static373.anInt7033 - 1 < arg2 || arg0 > Static242.anInt4449 - 1) {
+			if (arg2 < 0 || arg0 < 0 || Static373.buildAreaLimitX - 1 < arg2 || arg0 > Static242.buildAreaLimitZ - 1) {
 				return 0;
 			}
-			if (local21 < 1 || local25 < 1 || Static373.anInt7033 - 1 < local21 || local25 > Static242.anInt4449 - 1) {
+			if (local21 < 1 || local25 < 1 || Static373.buildAreaLimitX - 1 < local21 || local25 > Static242.buildAreaLimitZ - 1) {
 				return 0;
 			}
 			@Pc(91) boolean local91 = (Static359.aByteArrayArrayArray16[1][arg3 >> 7][arg4 >> 7] & 0x2) != 0;

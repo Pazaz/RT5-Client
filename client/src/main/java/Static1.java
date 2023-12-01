@@ -37,7 +37,7 @@ public final class Static1 {
 					@Pc(119) int local119 = local102 + (Static291.mapSquares[local10] >> 8) * 64 - Camera.originX;
 					@Pc(132) int local132 = local106 + (Static291.mapSquares[local10] & 0xFF) * 64 - Camera.originZ;
 					@Pc(139) NpcType local139 = client.NpcTypes.get(local65.g2());
-					if (NpcList.npcs[local88] == null && (local139.aByte16 & 0x1) > 0 && Static44.anInt1115 == local96 && local119 >= 0 && local119 + local139.size < Static373.anInt7033 && local132 >= 0 && local132 + local139.size < Static242.anInt4449) {
+					if (NpcList.npcs[local88] == null && (local139.aByte16 & 0x1) > 0 && Static44.anInt1115 == local96 && local119 >= 0 && local119 + local139.size < Static373.buildAreaLimitX && local132 >= 0 && local132 + local139.size < Static242.buildAreaLimitZ) {
 						NpcList.npcs[local88] = new Npc();
 						NpcList.npcs[local88].anInt4619 = local88;
 						@Pc(187) Npc local187 = NpcList.npcs[local88];
@@ -70,7 +70,7 @@ public final class Static1 {
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!nb;ZIIIII)V")
 	public static void method4(@OriginalArg(0) Class157 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
-		if (Static243.anInt4503 >= 50 || (arg0 == null || arg0.anIntArrayArray33 == null || arg0.anIntArrayArray33.length <= arg5 || arg0.anIntArrayArray33[arg5] == null)) {
+		if (SoundPlayer.size >= 50 || (arg0 == null || arg0.anIntArrayArray33 == null || arg0.anIntArrayArray33.length <= arg5 || arg0.anIntArrayArray33[arg5] == null)) {
 			return;
 		}
 		@Pc(36) int local36 = arg0.anIntArrayArray33[arg5][0];
@@ -89,15 +89,15 @@ public final class Static1 {
 				SoundPlayer.play(local46, 255, 0, local40);
 			}
 		} else if (client.preferences.areaSoundsVolume != 0) {
-			Static256.anIntArray321[Static243.anInt4503] = local40;
-			Static329.anIntArray419[Static243.anInt4503] = local46;
-			Static237.anIntArray283[Static243.anInt4503] = 0;
-			Static196.aClass247Array2[Static243.anInt4503] = null;
-			Static223.anIntArray256[Static243.anInt4503] = 255;
+			SoundPlayer.ids[SoundPlayer.size] = local40;
+			SoundPlayer.loops[SoundPlayer.size] = local46;
+			SoundPlayer.delays[SoundPlayer.size] = 0;
+			SoundPlayer.sounds[SoundPlayer.size] = null;
+			SoundPlayer.volumes[SoundPlayer.size] = 255;
 			local65 = (arg3 - 64) / 128;
 			@Pc(136) int local136 = (arg4 - 64) / 128;
-			Static162.anIntArray188[Static243.anInt4503] = local78 + (local136 << 8) + (arg2 << 24) + (local65 << 16);
-			Static243.anInt4503++;
+			SoundPlayer.positions[SoundPlayer.size] = local78 + (local136 << 8) + (arg2 << 24) + (local65 << 16);
+			SoundPlayer.size++;
 		}
 	}
 

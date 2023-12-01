@@ -14,7 +14,7 @@ public final class Static386 {
 		@Pc(7) int local7 = PlayerList.anInt751;
 		@Pc(9) int[] local9 = PlayerList.anIntArray121;
 		for (@Pc(11) int local11 = 0; local11 < local7; local11++) {
-			@Pc(19) Player local19 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local9[local11]];
+			@Pc(19) Player local19 = PlayerList.players[local9[local11]];
 			if (local19 != null) {
 				Static93.method1999(local19, local19.getSize());
 			}

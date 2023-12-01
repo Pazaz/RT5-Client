@@ -20,7 +20,7 @@ public final class Static93 {
 		} else {
 			Static277.method4682(arg0);
 		}
-		if (arg0.xFine < 128 || arg0.zFine < 128 || Static373.anInt7033 * 128 - 128 <= arg0.xFine || arg0.zFine >= (Static242.anInt4449 - 1) * 128) {
+		if (arg0.xFine < 128 || arg0.zFine < 128 || Static373.buildAreaLimitX * 128 - 128 <= arg0.xFine || arg0.zFine >= (Static242.buildAreaLimitZ - 1) * 128) {
 			arg0.anInt4597 = -1;
 			arg0.anInt4622 = 0;
 			local7 = -1;
@@ -31,7 +31,7 @@ public final class Static93 {
 			arg0.zFine = arg0.movementQueueZ[0] * 128 + arg0.getSize() * 64;
 			arg0.method4331();
 		}
-		if (PlayerList.self == arg0 && (arg0.xFine < 1536 || arg0.zFine < 1536 || Static373.anInt7033 * 128 - 1536 <= arg0.xFine || arg0.zFine >= (Static242.anInt4449 - 12) * 128)) {
+		if (PlayerList.self == arg0 && (arg0.xFine < 1536 || arg0.zFine < 1536 || Static373.buildAreaLimitX * 128 - 1536 <= arg0.xFine || arg0.zFine >= (Static242.buildAreaLimitZ - 12) * 128)) {
 			arg0.anInt4594 = -1;
 			arg0.anInt4597 = -1;
 			local9 = 0;

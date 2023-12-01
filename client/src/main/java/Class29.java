@@ -145,7 +145,7 @@ public class Class29 {
 								local141++;
 							}
 						} else {
-							local181 = arg3.method2871() ? local82.texture : local82.anInt3759;
+							local181 = arg3.hasHwAccel() ? local82.texture : local82.anInt3759;
 							if (Static141.aBoolean190) {
 								local181 = -1;
 							}
@@ -639,7 +639,7 @@ public class Class29 {
 							if (Static375.aBooleanArrayArray6[local76][local92]) {
 								Static382.anIntArray490[0] = local59.baseColor;
 								Static319.anIntArray403[0] = local99;
-								Static259.anIntArray323[0] = arg7.method2871() ? local59.texture : local59.anInt3759;
+								Static259.anIntArray323[0] = arg7.hasHwAccel() ? local59.texture : local59.anInt3759;
 								Static11.anIntArray12[0] = local59.anInt3763;
 								Static6.anIntArray4[0] = local59.textureBrightness;
 								Static82.anIntArray120[0] = 256;
@@ -658,7 +658,7 @@ public class Class29 {
 							if (Static375.aBooleanArrayArray6[local76][local92]) {
 								Static382.anIntArray490[2] = local59.baseColor;
 								Static319.anIntArray403[2] = local99;
-								Static259.anIntArray323[2] = arg7.method2871() ? local59.texture : local59.anInt3759;
+								Static259.anIntArray323[2] = arg7.hasHwAccel() ? local59.texture : local59.anInt3759;
 								Static11.anIntArray12[2] = local59.anInt3763;
 								Static6.anIntArray4[2] = local59.textureBrightness;
 								Static82.anIntArray120[2] = 512;
@@ -679,7 +679,7 @@ public class Class29 {
 							if (Static375.aBooleanArrayArray6[local76][local92]) {
 								Static382.anIntArray490[6] = local59.baseColor;
 								Static319.anIntArray403[6] = local99;
-								Static259.anIntArray323[6] = arg7.method2871() ? local59.texture : local59.anInt3759;
+								Static259.anIntArray323[6] = arg7.hasHwAccel() ? local59.texture : local59.anInt3759;
 								Static11.anIntArray12[6] = local59.anInt3763;
 								Static6.anIntArray4[6] = local59.textureBrightness;
 								Static82.anIntArray120[6] = 64;
@@ -698,7 +698,7 @@ public class Class29 {
 							if (Static375.aBooleanArrayArray6[local76][local92]) {
 								Static382.anIntArray490[4] = local59.baseColor;
 								Static319.anIntArray403[4] = local99;
-								Static259.anIntArray323[4] = arg7.method2871() ? local59.texture : local59.anInt3759;
+								Static259.anIntArray323[4] = arg7.hasHwAccel() ? local59.texture : local59.anInt3759;
 								Static11.anIntArray12[4] = local59.anInt3763;
 								Static6.anIntArray4[4] = local59.textureBrightness;
 								Static82.anIntArray120[4] = 128;
@@ -728,7 +728,7 @@ public class Class29 {
 								if (Static375.aBooleanArrayArray6[local76][local523] && local59.textureBrightness >= Static6.anIntArray4[local99]) {
 									Static382.anIntArray490[local99] = local59.baseColor;
 									Static319.anIntArray403[local99] = local528;
-									Static259.anIntArray323[local99] = arg7.method2871() ? local59.texture : local59.anInt3759;
+									Static259.anIntArray323[local99] = arg7.hasHwAccel() ? local59.texture : local59.anInt3759;
 									Static11.anIntArray12[local99] = local59.anInt3763;
 									if (Static6.anIntArray4[local99] == local59.textureBrightness) {
 										Static82.anIntArray120[local99] |= 0x20;
@@ -766,7 +766,7 @@ public class Class29 {
 								if (Static375.aBooleanArrayArray6[local76][local523] && local59.textureBrightness >= Static6.anIntArray4[local99]) {
 									Static382.anIntArray490[local99] = local59.baseColor;
 									Static319.anIntArray403[local99] = local528;
-									Static259.anIntArray323[local99] = arg7.method2871() ? local59.texture : local59.anInt3759;
+									Static259.anIntArray323[local99] = arg7.hasHwAccel() ? local59.texture : local59.anInt3759;
 									Static11.anIntArray12[local99] = local59.anInt3763;
 									if (local59.textureBrightness == Static6.anIntArray4[local99]) {
 										Static82.anIntArray120[local99] |= 0x10;
@@ -804,7 +804,7 @@ public class Class29 {
 								if (Static375.aBooleanArrayArray6[local76][local523] && Static6.anIntArray4[local99] <= local59.textureBrightness) {
 									Static382.anIntArray490[local99] = local59.baseColor;
 									Static319.anIntArray403[local99] = local528;
-									Static259.anIntArray323[local99] = arg7.method2871() ? local59.texture : local59.anInt3759;
+									Static259.anIntArray323[local99] = arg7.hasHwAccel() ? local59.texture : local59.anInt3759;
 									Static11.anIntArray12[local99] = local59.anInt3763;
 									if (Static6.anIntArray4[local99] == local59.textureBrightness) {
 										Static82.anIntArray120[local99] |= 0x8;
@@ -842,7 +842,7 @@ public class Class29 {
 								if (Static375.aBooleanArrayArray6[local76][local523] && local59.textureBrightness >= Static6.anIntArray4[local99]) {
 									Static382.anIntArray490[local99] = local59.baseColor;
 									Static319.anIntArray403[local99] = local528;
-									Static259.anIntArray323[local99] = arg7.method2871() ? local59.texture : local59.anInt3759;
+									Static259.anIntArray323[local99] = arg7.hasHwAccel() ? local59.texture : local59.anInt3759;
 									Static11.anIntArray12[local99] = local59.anInt3763;
 									if (Static6.anIntArray4[local99] == local59.textureBrightness) {
 										Static82.anIntArray120[local99] |= 0x4;
@@ -876,7 +876,7 @@ public class Class29 {
 			if (Static375.aBooleanArrayArray6[arg6][local49] && arg1.textureBrightness >= Static6.anIntArray4[local1257]) {
 				Static382.anIntArray490[local1257] = arg1.baseColor;
 				Static319.anIntArray403[local1257] = local1242;
-				Static259.anIntArray323[local1257] = arg7.method2871() ? arg1.texture : arg1.anInt3759;
+				Static259.anIntArray323[local1257] = arg7.hasHwAccel() ? arg1.texture : arg1.anInt3759;
 				Static11.anIntArray12[local1257] = arg1.anInt3763;
 				if (Static6.anIntArray4[local1257] == arg1.textureBrightness) {
 					Static82.anIntArray120[local1257] |= 0x2;
@@ -1115,7 +1115,7 @@ public class Class29 {
 							@Pc(1360) int local1360;
 							if (local158 != null) {
 								local979 = local158.baseColor;
-								local981 = arg1.method2871() ? local158.texture : local158.anInt3759;
+								local981 = arg1.hasHwAccel() ? local158.texture : local158.anInt3759;
 								local983 = local158.anInt3763;
 								local1033 = Static78.method5699(arg1, local158);
 								for (local1035 = 0; local1035 < local380; local1035++) {
@@ -1205,7 +1205,7 @@ public class Class29 {
 											if (local946 != null) {
 												local946[local935] = local1033;
 											}
-											local958[local935] = arg1.method2871() ? local158.texture : local158.anInt3759;
+											local958[local935] = arg1.hasHwAccel() ? local158.texture : local158.anInt3759;
 											local961[local935] = local158.anInt3763;
 											local955[local935] = local979;
 										}

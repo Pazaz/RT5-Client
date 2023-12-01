@@ -29,7 +29,7 @@ public final class Static335 {
 		Static241.method4192(false);
 		TitleScreen.clear();
 		for (@Pc(41) int local41 = 0; local41 < 2048; local41++) {
-			@Pc(47) Player local47 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local41];
+			@Pc(47) Player local47 = PlayerList.players[local41];
 			if (local47 != null) {
 				local47.aClass2_Sub6_3 = null;
 				for (@Pc(54) int local54 = 0; local54 < local47.aClass31Array3.length; local54++) {

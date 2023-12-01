@@ -7,9 +7,6 @@ public final class Static12 {
 	@OriginalMember(owner = "client!am", name = "f", descriptor = "Lclient!jd;")
 	public static Sprite aClass13_2;
 
-	@OriginalMember(owner = "client!am", name = "a", descriptor = "[Lclient!nh;")
-	public static final Player[] aClass11_Sub5_Sub2_Sub1Array1 = new Player[2048];
-
 	@OriginalMember(owner = "client!am", name = "g", descriptor = "[C")
 	public static final char[] aCharArray1 = new char[] { '[', ']', '#' };
 

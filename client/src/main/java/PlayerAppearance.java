@@ -444,7 +444,7 @@ public final class PlayerAppearance {
 		}
 		@Pc(640) int local640;
 		@Pc(646) int local646;
-		if (local589 == null || arg13.method2863(local589.method3827(), local33) != 0 || local597 != null && local597.anIntArrayArray53 != null && this.anIntArrayArray24 == null) {
+		if (local589 == null || arg13.method2863(local589.method3827(), local33) != 0 || local597 != null && local597.equipmentTransforms != null && this.anIntArrayArray24 == null) {
 			if (local589 != null) {
 				local33 = arg13.method2806(local33, local589.method3827());
 			}
@@ -459,7 +459,7 @@ public final class PlayerAppearance {
 								local589 = (Model) Static92.aClass98_9.get(this.aLong106);
 							}
 						}
-						if (local589 == null || arg13.method2863(local589.method3827(), local33) != 0 || local597 != null && local597.anIntArrayArray53 != null && this.anIntArrayArray24 == null) {
+						if (local589 == null || arg13.method2863(local589.method3827(), local33) != 0 || local597 != null && local597.equipmentTransforms != null && this.anIntArrayArray24 == null) {
 							return null;
 						}
 					} else {
@@ -481,17 +481,17 @@ public final class PlayerAppearance {
 							}
 						}
 						@Pc(821) int local821;
-						if (local597 != null && local597.anIntArrayArray53 != null) {
-							for (local743 = 0; local743 < local597.anIntArrayArray53.length; local743++) {
-								if (local597.anIntArrayArray53[local743] != null && local735[local743] != null) {
-									local821 = local597.anIntArrayArray53[local743][0];
-									@Pc(828) int local828 = local597.anIntArrayArray53[local743][1];
-									@Pc(835) int local835 = local597.anIntArrayArray53[local743][2];
-									@Pc(844) int local844 = local597.anIntArrayArray53[local743][3] << 3;
-									@Pc(853) int local853 = local597.anIntArrayArray53[local743][4] << 3;
-									@Pc(862) int local862 = local597.anIntArrayArray53[local743][5] << 3;
+						if (local597 != null && local597.equipmentTransforms != null) {
+							for (local743 = 0; local743 < local597.equipmentTransforms.length; local743++) {
+								if (local597.equipmentTransforms[local743] != null && local735[local743] != null) {
+									local821 = local597.equipmentTransforms[local743][0];
+									@Pc(828) int local828 = local597.equipmentTransforms[local743][1];
+									@Pc(835) int local835 = local597.equipmentTransforms[local743][2];
+									@Pc(844) int local844 = local597.equipmentTransforms[local743][3] << 3;
+									@Pc(853) int local853 = local597.equipmentTransforms[local743][4] << 3;
+									@Pc(862) int local862 = local597.equipmentTransforms[local743][5] << 3;
 									if (this.anIntArrayArray24 == null) {
-										this.anIntArrayArray24 = new int[local597.anIntArrayArray53.length][];
+										this.anIntArrayArray24 = new int[local597.equipmentTransforms.length][];
 									}
 									if (this.anIntArrayArray24[local743] == null) {
 										@Pc(884) int[] local884 = this.anIntArrayArray24[local743] = new int[15];
