@@ -67,7 +67,7 @@ public final class Static165 {
 				}
 			}
 		}
-		@Pc(155) int local155 = Static386.method6032((arg0 << 7) + 64, (arg2 << 7) + 64, arg1);
+		@Pc(155) int local155 = Scene.getTileHeight((arg0 << 7) + 64, (arg2 << 7) + 64, arg1);
 		Static26.method866(arg1, arg0, arg2, local155, local55);
 	}
 

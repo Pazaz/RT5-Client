@@ -64,11 +64,11 @@ public final class Static200 {
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(B)Ljava/lang/String;")
 	public static String getWebsiteUrl() {
 		@Pc(7) String local7 = "www";
-		if (client.modeWhere == ModeWhere.aClass127_8) {
+		if (client.modeWhere == ModeWhere.MODE_WHERE_WTRC) {
 			local7 = "www-wtrc";
-		} else if (client.modeWhere == ModeWhere.aClass127_1) {
+		} else if (client.modeWhere == ModeWhere.MODE_WHERE_WTQA) {
 			local7 = "www-wtqa";
-		} else if (ModeWhere.aClass127_2 == client.modeWhere) {
+		} else if (ModeWhere.MODE_WHERE_WTWIP == client.modeWhere) {
 			local7 = "www-wtwip";
 		}
 		@Pc(28) String local28 = "";

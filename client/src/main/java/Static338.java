@@ -25,7 +25,7 @@ public final class Static338 {
 		}
 		@Pc(46) int local46 = Static288.anInt5463 >> 7;
 		@Pc(50) int local50 = Static62.anInt2395 >> 7;
-		@Pc(56) int local56 = Static386.method6032(Static288.anInt5463, Static62.anInt2395, Static355.anInt6585);
+		@Pc(56) int local56 = Scene.getTileHeight(Static288.anInt5463, Static62.anInt2395, Static355.anInt6585);
 		@Pc(58) int local58 = 0;
 		@Pc(76) int local76;
 		if (local46 > 3 && local50 > 3 && local46 < 100 && local50 < 100) {

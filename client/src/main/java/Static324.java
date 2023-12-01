@@ -62,7 +62,7 @@ public final class Static324 {
 			Static216.anIntArray231[0] = Static216.anIntArray231[1] = -1;
 			return;
 		}
-		@Pc(49) int local49 = Static386.method6032(arg5, arg1, arg2) - arg0;
+		@Pc(49) int local49 = Scene.getTileHeight(arg5, arg1, arg2) - arg0;
 		Static76.aClass14_3.method3936(arg3, 0, 0);
 		Rasteriser.instance.method2896(Static76.aClass14_3);
 		Rasteriser.instance.method2902(arg5, local49, arg1, Static216.anIntArray231);

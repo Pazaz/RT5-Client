@@ -913,7 +913,7 @@ public final class Static45 {
 						((Player) local23).aBoolean275 = false;
 					}
 					local23.aBoolean320 = false;
-					local23.anInt6782 = Static386.method6032(local23.xFine, local23.zFine, local23.plane);
+					local23.anInt6782 = Scene.getTileHeight(local23.xFine, local23.zFine, local23.plane);
 					Static329.method5630(local23, true);
 				}
 			}
@@ -944,7 +944,7 @@ public final class Static45 {
 				if (local23 instanceof Player && local23.aClass2_Sub6_3 != null && client.cycle >= local23.aClass2_Sub6_3.anInt1100 && client.cycle < local23.aClass2_Sub6_3.anInt1118) {
 					((Player) local23).aBoolean275 = false;
 				}
-				local23.anInt6782 = Static386.method6032(local23.xFine, local23.zFine, local23.plane);
+				local23.anInt6782 = Scene.getTileHeight(local23.xFine, local23.zFine, local23.plane);
 				Static329.method5630(local23, true);
 			}
 		}

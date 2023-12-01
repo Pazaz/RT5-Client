@@ -9,9 +9,6 @@ public final class Static67 {
 	@OriginalMember(owner = "client!ds", name = "t", descriptor = "Lclient!kn;")
 	public static Class129 aClass129_1;
 
-	@OriginalMember(owner = "client!ds", name = "u", descriptor = "I")
-	public static int anInt1637;
-
 	@OriginalMember(owner = "client!ds", name = "q", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_35 = new LocalizedString("Loading interface scripts - ", "Lade Interface-Skripte - ", "Chargement des interfaces - ", "Carregando interfaces - ");
 

@@ -9,13 +9,13 @@ public final class ModeWhere {
 	@OriginalMember(owner = "client!ks", name = "b", descriptor = "Lclient!kk;")
 	public static final ModeWhere MODE_WHERE_LIVE = new ModeWhere("LIVE", 0);
 	@OriginalMember(owner = "client!hc", name = "c", descriptor = "Lclient!kk;")
-	public static final ModeWhere aClass127_8 = new ModeWhere("WTRC", 1);
+	public static final ModeWhere MODE_WHERE_WTRC = new ModeWhere("WTRC", 1);
 	@OriginalMember(owner = "client!bk", name = "m", descriptor = "Lclient!kk;")
-	public static final ModeWhere aClass127_1 = new ModeWhere("WTQA", 2);
+	public static final ModeWhere MODE_WHERE_WTQA = new ModeWhere("WTQA", 2);
 	@OriginalMember(owner = "client!client", name = "Y", descriptor = "Lclient!kk;")
-	public static final ModeWhere aClass127_2 = new ModeWhere("WTWIP", 3);
+	public static final ModeWhere MODE_WHERE_WTWIP = new ModeWhere("WTWIP", 3);
 	@OriginalMember(owner = "client!cq", name = "e", descriptor = "Lclient!kk;")
-	public static final ModeWhere aClass127_3 = new ModeWhere("WTI", 5);
+	public static final ModeWhere MODE_WHERE_WTI = new ModeWhere("WTI", 5);
 	@OriginalMember(owner = "client!nf", name = "q", descriptor = "Lclient!kk;")
 	public static final ModeWhere MODE_WHERE_LOCAL = new ModeWhere("LOCAL", 4);
 	@OriginalMember(owner = "client!kk", name = "h", descriptor = "I")
@@ -28,7 +28,7 @@ public final class ModeWhere {
 
 	@OriginalMember(owner = "client!il", name = "b", descriptor = "(B)[Lclient!kk;")
 	public static ModeWhere[] getAll() {
-		return new ModeWhere[] { MODE_WHERE_LIVE, aClass127_8, aClass127_1, aClass127_2, MODE_WHERE_LOCAL, aClass127_3 };
+		return new ModeWhere[] { MODE_WHERE_LIVE, MODE_WHERE_WTRC, MODE_WHERE_WTQA, MODE_WHERE_WTWIP, MODE_WHERE_LOCAL, MODE_WHERE_WTI};
 	}
 
 	@OriginalMember(owner = "client!nm", name = "a", descriptor = "(II)Lclient!kk;")
@@ -45,7 +45,7 @@ public final class ModeWhere {
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(ILclient!kk;)Z")
 	public static boolean isExternalMode(@OriginalArg(1) ModeWhere arg0) {
-		return aClass127_8 == arg0 || aClass127_1 == arg0 || aClass127_2 == arg0 || aClass127_3 == arg0;
+		return MODE_WHERE_WTRC == arg0 || MODE_WHERE_WTQA == arg0 || MODE_WHERE_WTWIP == arg0 || MODE_WHERE_WTI == arg0;
 	}
 
 	@OriginalMember(owner = "client!kk", name = "toString", descriptor = "()Ljava/lang/String;")

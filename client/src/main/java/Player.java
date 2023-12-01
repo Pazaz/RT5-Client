@@ -20,6 +20,8 @@ public final class Player extends PathingEntity {
 	public static PrivilegedRequest lastLogAddress;
 	@OriginalMember(owner = "client!hg", name = "n", descriptor = "[Ljava/lang/String;")
 	public static String[] playerNames;
+	@OriginalMember(owner = "client!nt", name = "O", descriptor = "I")
+	public static int level;
 	@OriginalMember(owner = "client!nh", name = "pc", descriptor = "Ljava/lang/String;")
 	public String username;
 

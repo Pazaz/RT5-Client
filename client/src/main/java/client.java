@@ -356,7 +356,7 @@ public final class client extends GameShell {
 		for (@Pc(4464) int local4464 = 0; local4464 < 32768; local4464++) {
 			NpcList.npcs[local4464] = null;
 		}
-		Static332.aClass135_38.clear();
+		Static332.projAnims.clear();
 		Static129.aClass135_20.clear();
 		Static284.aClass36_7.method1416();
 		Static120.aClass4_49.clear();

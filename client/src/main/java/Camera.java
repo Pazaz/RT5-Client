@@ -60,7 +60,7 @@ public class Camera {
 		if (arg3 && Static359.anInt6702 >= 100) {
 			Static136.anInt6778 = Static311.anInt5810 * 128 + 64;
 			Static211.anInt3777 = Static19.anInt535 * 128 + 64;
-			Static102.anInt3592 = Static386.method6032(Static136.anInt6778, Static211.anInt3777, Static355.anInt6585) - Static180.anInt3404;
+			Static102.anInt3592 = Scene.getTileHeight(Static136.anInt6778, Static211.anInt3777, Static355.anInt6585) - Static180.anInt3404;
 		}
 		anInt5911 = 2;
 	}
@@ -75,7 +75,7 @@ public class Camera {
 		if (Static33.anInt4463 >= 100) {
 			@Pc(30) int local30 = Static254.anInt4698 * 128 + 64;
 			@Pc(36) int local36 = Static123.anInt2420 * 128 + 64;
-			@Pc(44) int local44 = Static386.method6032(local30, local36, Static355.anInt6585) - Static57.anInt1464;
+			@Pc(44) int local44 = Scene.getTileHeight(local30, local36, Static355.anInt6585) - Static57.anInt1464;
 			@Pc(49) int local49 = local30 - Static136.anInt6778;
 			@Pc(54) int local54 = local44 - Static102.anInt3592;
 			@Pc(59) int local59 = local36 - Static211.anInt3777;

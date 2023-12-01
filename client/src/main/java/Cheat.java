@@ -330,8 +330,8 @@ public class Cheat {
 				return;
 			}
 			if (cmd.equalsIgnoreCase("getcamerapos")) {
-				DevConsole.log("Pos: " + PlayerList.self.plane + "," + (Camera.originX + (Static136.anInt6778 >> 7) >> 6) + "," + ((Static211.anInt3777 >> 7) + Camera.originZ >> 6) + "," + (Camera.originX + (Static136.anInt6778 >> 7) & 0x3F) + "," + (Camera.originZ + (Static211.anInt3777 >> 7) & 0x3F) + " Height: " + (Static386.method6032(Static136.anInt6778, Static211.anInt3777, PlayerList.self.plane) - Static102.anInt3592));
-				DevConsole.log("Look: " + PlayerList.self.plane + "," + (Camera.originX + Static254.anInt4698 >> 6) + "," + (Static123.anInt2420 + Camera.originZ >> 6) + "," + (Static254.anInt4698 + Camera.originX & 0x3F) + "," + (Camera.originZ + Static123.anInt2420 & 0x3F) + " Height: " + (Static386.method6032(Static254.anInt4698, Static123.anInt2420, PlayerList.self.plane) - Static57.anInt1464));
+				DevConsole.log("Pos: " + PlayerList.self.plane + "," + (Camera.originX + (Static136.anInt6778 >> 7) >> 6) + "," + ((Static211.anInt3777 >> 7) + Camera.originZ >> 6) + "," + (Camera.originX + (Static136.anInt6778 >> 7) & 0x3F) + "," + (Camera.originZ + (Static211.anInt3777 >> 7) & 0x3F) + " Height: " + (Scene.getTileHeight(Static136.anInt6778, Static211.anInt3777, PlayerList.self.plane) - Static102.anInt3592));
+				DevConsole.log("Look: " + PlayerList.self.plane + "," + (Camera.originX + Static254.anInt4698 >> 6) + "," + (Static123.anInt2420 + Camera.originZ >> 6) + "," + (Static254.anInt4698 + Camera.originX & 0x3F) + "," + (Camera.originZ + Static123.anInt2420 & 0x3F) + " Height: " + (Scene.getTileHeight(Static254.anInt4698, Static123.anInt2420, PlayerList.self.plane) - Static57.anInt1464));
 				return;
 			}
 			if (cmd.equals("showocc")) {

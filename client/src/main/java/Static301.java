@@ -17,8 +17,8 @@ public final class Static301 {
 
 	@OriginalMember(owner = "client!ri", name = "c", descriptor = "(Z)V")
 	public static void method5188() {
-		for (@Pc(14) Class2_Sub2_Sub9 local14 = (Class2_Sub2_Sub9) Static332.aClass135_38.head(); local14 != null; local14 = (Class2_Sub2_Sub9) Static332.aClass135_38.next()) {
-			@Pc(19) Class11_Sub5_Sub3 local19 = local14.aClass11_Sub5_Sub3_1;
+		for (@Pc(14) ProjAnimNode local14 = (ProjAnimNode) Static332.projAnims.head(); local14 != null; local14 = (ProjAnimNode) Static332.projAnims.next()) {
+			@Pc(19) ProjAnim local19 = local14.aClass11_Sub5_Sub3_1;
 			if (local19.plane != Static355.anInt6585 || local19.anInt4722 < client.cycle) {
 				local14.unlink();
 				local19.method4391();
@@ -26,7 +26,7 @@ public final class Static301 {
 				if (local19.anInt4714 > 0) {
 					@Pc(56) Npc local56 = NpcList.npcs[local19.anInt4714 - 1];
 					if (local56 != null && local56.xFine >= 0 && local56.xFine < Static373.anInt7033 * 128 && local56.zFine >= 0 && Static242.anInt4449 * 128 > local56.zFine) {
-						local19.method4397(Static386.method6032(local56.xFine, local56.zFine, local19.plane) - local19.anInt4736, local56.xFine, client.cycle, local56.zFine);
+						local19.setTarget(Scene.getTileHeight(local56.xFine, local56.zFine, local19.plane) - local19.anInt4736, local56.xFine, client.cycle, local56.zFine);
 					}
 				}
 				if (local19.anInt4714 < 0) {
@@ -38,7 +38,7 @@ public final class Static301 {
 						local120 = Static12.aClass11_Sub5_Sub2_Sub1Array1[local111];
 					}
 					if (local120 != null && local120.xFine >= 0 && local120.xFine < Static373.anInt7033 * 128 && local120.zFine >= 0 && local120.zFine < Static242.anInt4449 * 128) {
-						local19.method4397(Static386.method6032(local120.xFine, local120.zFine, local19.plane) - local19.anInt4736, local120.xFine, client.cycle, local120.zFine);
+						local19.setTarget(Scene.getTileHeight(local120.xFine, local120.zFine, local19.plane) - local19.anInt4736, local120.xFine, client.cycle, local120.zFine);
 					}
 				}
 				local19.method4392(client.sceneDelta);

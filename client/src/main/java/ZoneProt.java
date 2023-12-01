@@ -18,7 +18,7 @@ public final class ZoneProt {
 	@OriginalMember(owner = "client!nr", name = "d", descriptor = "Lclient!s;")
 	public static final ZoneProt PACKET_5 = new ZoneProt(5, 2);
 	@OriginalMember(owner = "client!bc", name = "f", descriptor = "Lclient!s;")
-	public static final ZoneProt PACKET_6 = new ZoneProt(6, 15);
+	public static final ZoneProt MAP_PROJANIM = new ZoneProt(6, 15);
 	@OriginalMember(owner = "client!lo", name = "l", descriptor = "Lclient!s;")
 	public static final ZoneProt PACKET_7 = new ZoneProt(7, 4);
 	@OriginalMember(owner = "client!jl", name = "cb", descriptor = "Lclient!s;")
@@ -42,7 +42,7 @@ public final class ZoneProt {
 
 	@OriginalMember(owner = "client!sq", name = "d", descriptor = "(I)[Lclient!s;")
 	public static ZoneProt[] getAll() {
-		return new ZoneProt[] { PACKET_0, PACKET_1, PACKET_2, PACKET_3, PACKET_4, PACKET_5, PACKET_6, PACKET_7, PACKET_8, PACKET_9, PACKET_10, PACKET_11, PACKET_12, PACKET_13, PACKET_14 };
+		return new ZoneProt[] { PACKET_0, PACKET_1, PACKET_2, PACKET_3, PACKET_4, PACKET_5, MAP_PROJANIM, PACKET_7, PACKET_8, PACKET_9, PACKET_10, PACKET_11, PACKET_12, PACKET_13, PACKET_14 };
 	}
 
 	@OriginalMember(owner = "client!s", name = "toString", descriptor = "()Ljava/lang/String;")

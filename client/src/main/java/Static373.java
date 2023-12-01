@@ -128,7 +128,7 @@ public final class Static373 {
 		Static160.method2956();
 		Static247.method4299();
 		Static129.aClass135_20.clear();
-		Static332.aClass135_38.clear();
+		Static332.projAnims.clear();
 		Static284.aClass36_7.method1416();
 		Static120.method2380();
 	}

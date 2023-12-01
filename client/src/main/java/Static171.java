@@ -39,7 +39,7 @@ public final class Static171 {
 					local118 = Static105.anIntArray134[4] + 128;
 				}
 				local151 = Camera.anInt3966 + (int) Camera.yaw & 0x3FFF;
-				Static349.method5833((local118 >> 3) * 3 + 600, Static288.anInt5463, local108, Static386.method6032(PlayerList.self.xFine, PlayerList.self.zFine, Static355.anInt6585) - 50, Static62.anInt2395, local151, local118);
+				Static349.method5833((local118 >> 3) * 3 + 600, Static288.anInt5463, local108, Scene.getTileHeight(PlayerList.self.xFine, PlayerList.self.zFine, Static355.anInt6585) - 50, Static62.anInt2395, local151, local118);
 			} else if (Camera.anInt5911 == 4) {
 				local118 = (int) Camera.pitch;
 				if (local118 < Static89.anInt1885 >> 8) {
@@ -49,7 +49,7 @@ public final class Static171 {
 					local118 = Static105.anIntArray134[4] + 128;
 				}
 				local151 = (int) Camera.yaw & 0x3FFF;
-				Static349.method5833((local118 >> 3) * 3 + 600, Static288.anInt5463, local108, Static386.method6032(Static394.anInt7264, Static348.anInt6448, Static355.anInt6585) - 50, Static62.anInt2395, local151, local118);
+				Static349.method5833((local118 >> 3) * 3 + 600, Static288.anInt5463, local108, Scene.getTileHeight(Static394.anInt7264, Static348.anInt6448, Static355.anInt6585) - 50, Static62.anInt2395, local151, local118);
 			} else if (Camera.anInt5911 == 5) {
 				Static385.method6432(local108);
 			}

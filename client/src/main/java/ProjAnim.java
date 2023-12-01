@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!om")
-public final class Class11_Sub5_Sub3 extends Entity {
+public final class ProjAnim extends Entity {
 
 	@OriginalMember(owner = "client!om", name = "w", descriptor = "Lclient!oh;")
 	private ParticleSystem aClass12_Sub5_4;
@@ -79,7 +79,7 @@ public final class Class11_Sub5_Sub3 extends Entity {
 	private final Class157 aClass157_1;
 
 	@OriginalMember(owner = "client!om", name = "<init>", descriptor = "(IIIIIIIIIII)V")
-	public Class11_Sub5_Sub3(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10) {
+	public ProjAnim(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10) {
 		super(arg1, arg2, arg4, arg3, arg2 >> 7, arg2 >> 7, arg3 >> 7, arg3 >> 7, false, (byte) 0);
 		this.anInt4714 = arg9;
 		this.anInt4722 = arg6;
@@ -245,7 +245,7 @@ public final class Class11_Sub5_Sub3 extends Entity {
 	}
 
 	@OriginalMember(owner = "client!om", name = "a", descriptor = "(IIIZI)V")
-	public void method4397(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
+	public void setTarget(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(9) double local9;
 		if (!this.aBoolean326) {
 			local9 = arg1 - super.xFine;

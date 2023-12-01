@@ -149,4 +149,20 @@ public class Scene {
 		anInt1914 = aClass67ArrayArrayArray3.length;
 	}
 
+    @OriginalMember(owner = "client!wj", name = "a", descriptor = "(IIII)I")
+    public static int getTileHeight(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+        if (aClass6Array4 == null) {
+            return 0;
+        }
+        @Pc(11) int local11 = arg0 >> 7;
+        @Pc(15) int local15 = arg1 >> 7;
+        if (local11 < 0 || local15 < 0 || Static373.anInt7033 - 1 < local11 || local15 > Static242.anInt4449 - 1) {
+            return 0;
+        }
+        @Pc(51) int local51 = arg2;
+        if (arg2 < 3 && (Static359.aByteArrayArrayArray16[1][local11][local15] & 0x2) != 0) {
+            local51 = arg2 + 1;
+        }
+        return aClass6Array4[local51].method5728(arg0, arg1);
+    }
 }

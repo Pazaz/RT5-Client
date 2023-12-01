@@ -47,11 +47,11 @@ public final class Static222 {
 	public static void method3917() {
 		@Pc(9) int local9 = Static311.anInt5810 * 128 + 64;
 		@Pc(15) int local15 = Static19.anInt535 * 128 + 64;
-		@Pc(23) int local23 = Static386.method6032(local9, local15, Static355.anInt6585) - Static180.anInt3404;
+		@Pc(23) int local23 = Scene.getTileHeight(local9, local15, Static355.anInt6585) - Static180.anInt3404;
 		if (Static359.anInt6702 >= 100) {
 			Static211.anInt3777 = Static19.anInt535 * 128 + 64;
 			Static136.anInt6778 = Static311.anInt5810 * 128 + 64;
-			Static102.anInt3592 = Static386.method6032(Static136.anInt6778, Static211.anInt3777, Static355.anInt6585) - Static180.anInt3404;
+			Static102.anInt3592 = Scene.getTileHeight(Static136.anInt6778, Static211.anInt3777, Static355.anInt6585) - Static180.anInt3404;
 		} else {
 			if (Static136.anInt6778 < local9) {
 				Static136.anInt6778 += Static348.anInt6446 + (local9 - Static136.anInt6778) * Static359.anInt6702 / 1000;
@@ -92,7 +92,7 @@ public final class Static222 {
 		}
 		local9 = Static254.anInt4698 * 128 + 64;
 		local15 = Static123.anInt2420 * 128 + 64;
-		local23 = Static386.method6032(local9, local15, Static355.anInt6585) - Static57.anInt1464;
+		local23 = Scene.getTileHeight(local9, local15, Static355.anInt6585) - Static57.anInt1464;
 		@Pc(231) int local231 = local9 - Static136.anInt6778;
 		@Pc(235) int local235 = local23 - Static102.anInt3592;
 		@Pc(239) int local239 = local15 - Static211.anInt3777;

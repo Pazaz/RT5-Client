@@ -7,9 +7,6 @@ public final class Static243 {
 	@OriginalMember(owner = "client!nt", name = "E", descriptor = "I")
 	public static int anInt4495;
 
-	@OriginalMember(owner = "client!nt", name = "O", descriptor = "I")
-	public static int anInt4502;
-
 	@OriginalMember(owner = "client!nt", name = "B", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray44 = new String[8];
 
