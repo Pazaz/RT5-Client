@@ -37,9 +37,9 @@ public final class EnumType {
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(Lclient!bt;BI)V")
 	private void decode(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.keyType = Static78.method5698(arg0.g1b());
+			this.keyType = Static78.forCharKey(arg0.g1b());
 		} else if (arg1 == 2) {
-			this.valueType = Static78.method5698(arg0.g1b());
+			this.valueType = Static78.forCharKey(arg0.g1b());
 		} else if (arg1 == 3) {
 			this.aString16 = arg0.gjstr();
 		} else if (arg1 == 4) {

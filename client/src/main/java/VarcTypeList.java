@@ -22,7 +22,7 @@ public final class VarcTypeList {
 	}
 
 	@OriginalMember(owner = "client!df", name = "a", descriptor = "(ZI)Lclient!cr;")
-	public VarcType method1623(@OriginalArg(1) int arg0) {
+	public VarcType get(@OriginalArg(1) int arg0) {
 		@Pc(6) LruHashTable local6 = this.aClass98_4;
 		@Pc(16) VarcType local16;
 		synchronized (this.aClass98_4) {

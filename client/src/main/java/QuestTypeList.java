@@ -45,7 +45,7 @@ public final class QuestTypeList {
 	}
 
 	@OriginalMember(owner = "client!ui", name = "a", descriptor = "(II)Lclient!ud;")
-	public QuestType method5885(@OriginalArg(1) int arg0) {
+	public QuestType get(@OriginalArg(1) int arg0) {
 		@Pc(6) LruHashTable local6 = this.aClass98_60;
 		@Pc(16) QuestType local16;
 		synchronized (this.aClass98_60) {

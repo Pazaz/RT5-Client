@@ -9,9 +9,6 @@ public final class Static367 {
 	@OriginalMember(owner = "client!vj", name = "Y", descriptor = "I")
 	public static int anInt6879;
 
-	@OriginalMember(owner = "client!vj", name = "ab", descriptor = "Lclient!r;")
-	public static Js5 aClass197_92;
-
 	@OriginalMember(owner = "client!vj", name = "J", descriptor = "Lclient!eh;")
 	public static final ServerActiveProperties aClass2_Sub10_2 = new ServerActiveProperties(0, -1);
 

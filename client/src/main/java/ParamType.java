@@ -37,7 +37,7 @@ public final class ParamType {
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(IILclient!bt;)V")
 	private void decode(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
 		if (arg0 == 1) {
-			this.aChar5 = Static78.method5698(arg1.g1b());
+			this.aChar5 = Static78.forCharKey(arg1.g1b());
 		} else if (arg0 == 2) {
 			this.defaultInt = arg1.g4();
 		} else if (arg0 == 4) {

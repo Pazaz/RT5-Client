@@ -3,9 +3,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static325 {
 
-	@OriginalMember(owner = "client!sr", name = "a", descriptor = "Lclient!o;")
-	public static Interface9 anInterface9_1 = null;
-
 	@OriginalMember(owner = "client!sr", name = "b", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_126 = new LocalizedString("Loading additional fonts - ", "Lade Zusatzschriftarten - ", "Chargement de polices secondaires - ", "Carregando fontes principais - ");
 

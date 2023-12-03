@@ -1559,7 +1559,7 @@ public final class client extends GameShell {
 			VarcDomain.varcstrs = new String[aClass193_2.anInt5494];
 			VarcDomain.varcs = new int[VarcTypes.anInt1466];
 			for (local6 = 0; local6 < VarcTypes.anInt1466; local6++) {
-				if (VarcTypes.method1623(local6).anInt1258 == 0) {
+				if (VarcTypes.get(local6).anInt1258 == 0) {
 					Static89.aBooleanArray18[local6] = true;
 					Static112.anInt2294++;
 				}

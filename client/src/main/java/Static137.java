@@ -7,9 +7,6 @@ public final class Static137 {
 	@OriginalMember(owner = "client!hq", name = "v", descriptor = "[Lclient!jd;")
 	public static Sprite[] aClass13Array13;
 
-	@OriginalMember(owner = "client!hq", name = "C", descriptor = "Lclient!r;")
-	public static Js5 aClass197_33;
-
 	@OriginalMember(owner = "client!hq", name = "a", descriptor = "(IIILclient!ed;I)V")
 	public static void addObjStack(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) ObjStack arg2, @OriginalArg(4) int arg3) {
 		@Pc(25) long local25 = (long) (arg1 | arg3 << 28 | arg0 << 14);

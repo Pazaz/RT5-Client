@@ -10,9 +10,6 @@ public final class Static257 {
 	@OriginalMember(owner = "client!on", name = "b", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray34 = new String[100];
 
-	@OriginalMember(owner = "client!on", name = "e", descriptor = "Lclient!jm;")
-	public static final Class116 aClass116_5 = new Class116(64);
-
 	@OriginalMember(owner = "client!on", name = "h", descriptor = "[I")
 	public static final int[] anIntArray257 = new int[4096];
 

@@ -8,9 +8,6 @@ public final class Static21 {
 	@OriginalMember(owner = "client!be", name = "e", descriptor = "I")
 	public static int anInt551 = 0;
 
-	@OriginalMember(owner = "client!be", name = "k", descriptor = "I")
-	public static int anInt554 = 0;
-
 	@OriginalMember(owner = "client!be", name = "l", descriptor = "[Lclient!nt;")
 	public static final AnimFrameset[] aClass2_Sub2_Sub13Array1 = new AnimFrameset[14];
 }
