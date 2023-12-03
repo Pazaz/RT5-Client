@@ -45,7 +45,7 @@ public final class Static133 {
 			local97 = Minimap.anInt7263;
 		}
 		Static307.method5255(local97);
-		Static56.method1616(PlayerList.self.xFine, PlayerList.self.zFine, client.sceneDelta, PlayerList.self.plane);
+		AreaSoundManager.redraw(PlayerList.self.xFine, PlayerList.self.zFine, client.sceneDelta, PlayerList.self.plane);
 		client.sceneDelta = 0;
 	}
 }

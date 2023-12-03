@@ -29,7 +29,7 @@ public final class Static173 {
 						arg0.anInt4626 = 0;
 						arg0.anInt4629 = 0;
 						if (arg0.aBoolean317) {
-							arg0.anInt4585 = arg0.method4332().method5696();
+							arg0.anInt4585 = arg0.getBasType().method5696();
 							if (arg0.anInt4585 == -1) {
 								arg0.aBoolean317 = false;
 								break label297;

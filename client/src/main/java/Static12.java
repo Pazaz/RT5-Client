@@ -93,20 +93,6 @@ public final class Static12 {
 		}
 	}
 
-	@OriginalMember(owner = "client!am", name = "a", descriptor = "(I)V")
-	public static void method282() {
-		for (@Pc(10) Class2_Sub19 local10 = (Class2_Sub19) Static83.aClass135_14.head(); local10 != null; local10 = (Class2_Sub19) Static83.aClass135_14.next()) {
-			if (local10.aBoolean204) {
-				local10.method2941();
-			}
-		}
-		for (@Pc(30) Class2_Sub19 local30 = (Class2_Sub19) Static363.aClass135_39.head(); local30 != null; local30 = (Class2_Sub19) Static363.aClass135_39.next()) {
-			if (local30.aBoolean204) {
-				local30.method2941();
-			}
-		}
-	}
-
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(III)Lclient!gq;")
 	public static Class11_Sub1 method283(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(7) Class67 local7 = Scene.aClass67ArrayArrayArray3[arg0][arg1][arg2];

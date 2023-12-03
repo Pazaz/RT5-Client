@@ -12,7 +12,7 @@ public final class Static317 {
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!mr;BZ)V")
 	public static void method5548(@OriginalArg(0) PathingEntity arg0, @OriginalArg(2) boolean arg1) {
-		@Pc(9) BasType local9 = arg0.method4332();
+		@Pc(9) BasType local9 = arg0.getBasType();
 		if (arg0.anInt4643 == 0) {
 			arg0.anInt4641 = 0;
 			Static16.anInt4756 = 0;

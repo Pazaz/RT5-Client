@@ -15,9 +15,6 @@ public final class Static232 {
 	@OriginalMember(owner = "client!ng", name = "q", descriptor = "[Lclient!jd;")
 	public static Sprite[] aClass13Array17;
 
-	@OriginalMember(owner = "client!ng", name = "g", descriptor = "Lclient!ad;")
-	public static final HashTable aClass4_86 = new HashTable(16);
-
 	@OriginalMember(owner = "client!ng", name = "l", descriptor = "I")
 	public static int anInt4087 = 0;
 

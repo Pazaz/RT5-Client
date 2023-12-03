@@ -4019,7 +4019,7 @@ public class Protocol {
 					}
 
 					if (local491 != null) {
-						@Pc(525) BasType bas = local491.method4332();
+						@Pc(525) BasType bas = local491.getBasType();
 						if (bas.equipmentTransforms != null && bas.equipmentTransforms[local483] != null) {
 							local487 = bas.equipmentTransforms[local483][0];
 							@Pc(547) int local547 = bas.equipmentTransforms[local483][2];

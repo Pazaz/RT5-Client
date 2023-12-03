@@ -136,7 +136,7 @@ public final class MixerPcmStream extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!fi", name = "a", descriptor = "(Lclient!ll;)V")
-	public synchronized void method2081(@OriginalArg(0) PcmStream arg0) {
+	public synchronized void removeSubStream(@OriginalArg(0) PcmStream arg0) {
 		arg0.unlink();
 	}
 

@@ -25,7 +25,7 @@ public final class LocType {
 	private int[] anIntArray92;
 
 	@OriginalMember(owner = "client!ct", name = "V", descriptor = "[I")
-	public int[] anIntArray93;
+	public int[] bgsounds;
 
 	@OriginalMember(owner = "client!ct", name = "X", descriptor = "[I")
 	public int[] anIntArray94;
@@ -76,7 +76,7 @@ public final class LocType {
 	private int[] anIntArray91 = null;
 
 	@OriginalMember(owner = "client!ct", name = "A", descriptor = "I")
-	public int anInt1325 = -1;
+	public int bgsound = -1;
 
 	@OriginalMember(owner = "client!ct", name = "M", descriptor = "Z")
 	public boolean aBoolean108 = false;
@@ -148,7 +148,7 @@ public final class LocType {
 	public boolean aBoolean110 = true;
 
 	@OriginalMember(owner = "client!ct", name = "Q", descriptor = "I")
-	public int anInt1334 = 0;
+	public int bgsoundmin = 0;
 
 	@OriginalMember(owner = "client!ct", name = "Db", descriptor = "Z")
 	public boolean aBoolean119 = true;
@@ -178,7 +178,7 @@ public final class LocType {
 	public int anInt1326 = -1;
 
 	@OriginalMember(owner = "client!ct", name = "b", descriptor = "I")
-	public int anInt1307 = 0;
+	public int bgsoundrange = 0;
 
 	@OriginalMember(owner = "client!ct", name = "ib", descriptor = "Z")
 	public boolean aBoolean114 = true;
@@ -187,7 +187,7 @@ public final class LocType {
 	public int anInt1342 = 0;
 
 	@OriginalMember(owner = "client!ct", name = "o", descriptor = "I")
-	public int anInt1315 = 0;
+	public int bgsoundmax = 0;
 
 	@OriginalMember(owner = "client!ct", name = "Gb", descriptor = "[Ljava/lang/String;")
 	public String[] aStringArray10 = new String[5];
@@ -401,12 +401,12 @@ public final class LocType {
 	@OriginalMember(owner = "client!ct", name = "b", descriptor = "(B)Z")
 	public boolean method1522() {
 		if (this.anIntArray94 == null) {
-			return this.anInt1325 != -1 || this.anIntArray93 != null;
+			return this.bgsound != -1 || this.bgsounds != null;
 		}
 		for (@Pc(22) int local22 = 0; local22 < this.anIntArray94.length; local22++) {
 			if (this.anIntArray94[local22] != -1) {
 				@Pc(46) LocType local46 = this.aClass202_1.get(this.anIntArray94[local22]);
-				if (local46.anInt1325 != -1 || local46.anIntArray93 != null) {
+				if (local46.bgsound != -1 || local46.bgsounds != null) {
 					return true;
 				}
 			}
@@ -553,16 +553,16 @@ public final class LocType {
 				}
 				this.anIntArray94[local31 + 1] = local12;
 			} else if (arg1 == 78) {
-				this.anInt1325 = arg0.g2();
-				this.anInt1307 = arg0.g1();
+				this.bgsound = arg0.g2();
+				this.bgsoundrange = arg0.g1();
 			} else if (arg1 == 79) {
-				this.anInt1334 = arg0.g2();
-				this.anInt1315 = arg0.g2();
-				this.anInt1307 = arg0.g1();
+				this.bgsoundmin = arg0.g2();
+				this.bgsoundmax = arg0.g2();
+				this.bgsoundrange = arg0.g1();
 				local12 = arg0.g1();
-				this.anIntArray93 = new int[local12];
+				this.bgsounds = new int[local12];
 				for (local31 = 0; local31 < local12; local31++) {
-					this.anIntArray93[local31] = arg0.g2();
+					this.bgsounds[local31] = arg0.g2();
 				}
 			} else if (arg1 == 81) {
 				this.aByte6 = 2;

@@ -40,7 +40,7 @@ public class SoundPlayer {
 			if (delays[local7] >= -10) {
 				@Pc(90) SynthSound local90 = sounds[local7];
 				if (local90 == null) {
-					local90 = Static409.method6435(client.jsArchive4, ids[local7], 0);
+					local90 = SynthSound.create(client.jsArchive4, ids[local7], 0);
 					if (local90 == null) {
 						continue;
 					}

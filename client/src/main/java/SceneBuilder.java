@@ -1002,7 +1002,7 @@ public final class SceneBuilder extends Class29 {
 		@Pc(74) int local74 = local7.method6081();
 		@Pc(78) int local78 = local7.method6084();
 		if (local70.method1522()) {
-			Static109.method2264(arg0, arg1, arg4, local70);
+			AreaSoundManager.remove(arg0, arg1, arg4, local70);
 		}
 		if (local7.method6086()) {
 			local7.method6083(arg5);

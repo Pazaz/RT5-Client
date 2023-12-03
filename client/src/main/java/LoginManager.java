@@ -542,7 +542,7 @@ public class LoginManager {
 		MidiPlayer.playFadeOut();
 		MidiPlayer.jingle = false;
 		MusicPlayer.groupId = -1;
-		Static239.method4152(true);
+		AreaSoundManager.clear(true);
 		Camera.originX = 0;
 		Static9.anInt212 = 0;
 		Static220.aBoolean252 = false;
@@ -687,7 +687,7 @@ public class LoginManager {
 			Static171.aClass46Array1[local279].method1626();
 		}
 		Static285.method4887();
-		Static239.method4152(false);
+		AreaSoundManager.clear(false);
 		Static20.method560();
 		client.audioLogic();
 		System.gc();
