@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ui")
-public final class Class233 {
+public final class QuestTypeList {
 
 	@OriginalMember(owner = "client!ui", name = "c", descriptor = "Lclient!hu;")
 	private final LruHashTable aClass98_60 = new LruHashTable(64);
@@ -13,7 +13,7 @@ public final class Class233 {
 	private final Js5 aClass197_91;
 
 	@OriginalMember(owner = "client!ui", name = "<init>", descriptor = "(Lclient!dn;ILclient!r;)V")
-	public Class233(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
+	public QuestTypeList(@OriginalArg(0) Class50 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aClass197_91 = arg2;
 		if (this.aClass197_91 != null) {
 			this.aClass197_91.getGroupCapacity(35);
@@ -45,17 +45,17 @@ public final class Class233 {
 	}
 
 	@OriginalMember(owner = "client!ui", name = "a", descriptor = "(II)Lclient!ud;")
-	public Class230 method5885(@OriginalArg(1) int arg0) {
+	public QuestType method5885(@OriginalArg(1) int arg0) {
 		@Pc(6) LruHashTable local6 = this.aClass98_60;
-		@Pc(16) Class230 local16;
+		@Pc(16) QuestType local16;
 		synchronized (this.aClass98_60) {
-			local16 = (Class230) this.aClass98_60.get((long) arg0);
+			local16 = (QuestType) this.aClass98_60.get((long) arg0);
 		}
 		if (local16 != null) {
 			return local16;
 		}
 		@Pc(33) byte[] local33 = this.aClass197_91.fetchFile(arg0, 35);
-		local16 = new Class230();
+		local16 = new QuestType();
 		if (local33 != null) {
 			local16.decode(new Buffer(local33));
 		}

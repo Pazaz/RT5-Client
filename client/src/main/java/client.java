@@ -178,7 +178,7 @@ public final class client extends GameShell {
 	@OriginalMember(owner = "client!sb", name = "Q", descriptor = "Lclient!io;")
 	public static ObjTypeList ObjTypes;
 	@OriginalMember(owner = "client!ql", name = "g", descriptor = "Lclient!ui;")
-	public static Class233 aClass233_1;
+	public static QuestTypeList aClass233_1;
 	@OriginalMember(owner = "client!cf", name = "B", descriptor = "Lclient!gp;")
 	public static SeqTypeList SeqTypes;
 	@OriginalMember(owner = "client!ai", name = "R", descriptor = "Lclient!sj;")
@@ -1454,7 +1454,7 @@ public final class client extends GameShell {
 				MsiType = new MsiTypeList(game, language, jsArchive2, jsArchive8);
 				NpcTypes = new NpcTypeList(game, language, true, jsArchive18, jsArchive7);
 				ObjTypes = new ObjTypeList(game, language, true, ParamTypes, jsArchive19, jsArchive7);
-				aClass233_1 = new Class233(game, language, jsArchive2);
+				aClass233_1 = new QuestTypeList(game, language, jsArchive2);
 				SeqTypes = new SeqTypeList(game, language, jsArchive20, jsArchive0, jsArchive1);
 				SkyboxTypes = new SkyboxTypeList(game, language, jsArchive2);
 				SkyboxSphereTypes = new SkyboxSphereTypeList(game, language, jsArchive2);
