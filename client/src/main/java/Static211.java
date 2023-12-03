@@ -27,7 +27,7 @@ public final class Static211 {
 		client.BasTypes.method241();
 		client.MsiType.method2707();
 		client.MelTypes.method3380();
-		client.aClass233_1.method5881();
+		client.QuestTypes.method5881();
 		client.ParamTypes.method563();
 		client.SkyboxTypes.method5426();
 		client.SkyboxSphereTypes.method4033();

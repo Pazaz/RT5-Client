@@ -56,7 +56,7 @@ public final class Static180 {
 						local63 = arg0.g4();
 					} while (VarcDomain.varcs.length <= local59);
 				} while (!Static89.aBooleanArray18[local59]);
-			} while (client.aClass45_1.method1623(local59).aChar2 == '1' && (local63 < -1 || local63 > 1));
+			} while (client.VarcTypes.method1623(local59).aChar2 == '1' && (local63 < -1 || local63 > 1));
 			VarcDomain.varcs[local59] = local63;
 		}
 	}

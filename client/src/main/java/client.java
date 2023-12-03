@@ -178,7 +178,7 @@ public final class client extends GameShell {
 	@OriginalMember(owner = "client!sb", name = "Q", descriptor = "Lclient!io;")
 	public static ObjTypeList ObjTypes;
 	@OriginalMember(owner = "client!ql", name = "g", descriptor = "Lclient!ui;")
-	public static QuestTypeList aClass233_1;
+	public static QuestTypeList QuestTypes;
 	@OriginalMember(owner = "client!cf", name = "B", descriptor = "Lclient!gp;")
 	public static SeqTypeList SeqTypes;
 	@OriginalMember(owner = "client!ai", name = "R", descriptor = "Lclient!sj;")
@@ -192,7 +192,7 @@ public final class client extends GameShell {
 	@OriginalMember(owner = "client!kl", name = "m", descriptor = "Lclient!qo;")
 	public static Class193 aClass193_2;
 	@OriginalMember(owner = "client!jh", name = "l", descriptor = "Lclient!df;")
-	public static Class45 aClass45_1;
+	public static VarcTypeList VarcTypes;
 	@OriginalMember(owner = "client!so", name = "c", descriptor = "Lclient!km;")
 	public static VarbitTypeList VarbitTypes;
 	@OriginalMember(owner = "client!dd", name = "x", descriptor = "Lclient!rb;")
@@ -460,7 +460,7 @@ public final class client extends GameShell {
 		MelTypes.method3376();
 		MsiType.method2704();
 		ParamTypes.method566();
-		aClass233_1.method5884();
+		QuestTypes.method5884();
 		SkyboxTypes.method5423();
 		SkyboxSphereTypes.method4029();
 		LightTypes.method4879();
@@ -1454,14 +1454,14 @@ public final class client extends GameShell {
 				MsiType = new MsiTypeList(game, language, jsArchive2, jsArchive8);
 				NpcTypes = new NpcTypeList(game, language, true, jsArchive18, jsArchive7);
 				ObjTypes = new ObjTypeList(game, language, true, ParamTypes, jsArchive19, jsArchive7);
-				aClass233_1 = new QuestTypeList(game, language, jsArchive2);
+				QuestTypes = new QuestTypeList(game, language, jsArchive2);
 				SeqTypes = new SeqTypeList(game, language, jsArchive20, jsArchive0, jsArchive1);
 				SkyboxTypes = new SkyboxTypeList(game, language, jsArchive2);
 				SkyboxSphereTypes = new SkyboxSphereTypeList(game, language, jsArchive2);
 				SpotAnimTypes = new SpotAnimTypeList(game, language, jsArchive21, jsArchive7);
 				StructTypes = new StructTypeList(game, language, jsArchive2);
 				aClass193_2 = new Class193(game, language, jsArchive2);
-				aClass45_1 = new Class45(game, language, jsArchive2);
+				VarcTypes = new VarcTypeList(game, language, jsArchive2);
 				VarbitTypes = new VarbitTypeList(game, language, jsArchive22);
 				VarpTypes = new VarpTypeList(game, language, jsArchive2);
 				InterfaceList.init(jsArchive13, jsArchive7, jsArchive3, jsArchive8);
@@ -1555,11 +1555,11 @@ public final class client extends GameShell {
 				setGameState(1000);
 			}
 		} else if (mainLoadState == 190) {
-			Static89.aBooleanArray18 = new boolean[aClass45_1.anInt1466];
+			Static89.aBooleanArray18 = new boolean[VarcTypes.anInt1466];
 			VarcDomain.varcstrs = new String[aClass193_2.anInt5494];
-			VarcDomain.varcs = new int[aClass45_1.anInt1466];
-			for (local6 = 0; local6 < aClass45_1.anInt1466; local6++) {
-				if (aClass45_1.method1623(local6).anInt1258 == 0) {
+			VarcDomain.varcs = new int[VarcTypes.anInt1466];
+			for (local6 = 0; local6 < VarcTypes.anInt1466; local6++) {
+				if (VarcTypes.method1623(local6).anInt1258 == 0) {
 					Static89.aBooleanArray18[local6] = true;
 					Static112.anInt2294++;
 				}
