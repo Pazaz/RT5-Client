@@ -41,7 +41,7 @@ public final class Static120 {
 							for (@Pc(85) int local85 = 0; local85 < Static291.mapSquares.length; local85++) {
 								if (Static291.mapSquares[local85] == local83 && arg0[local85] != null) {
 									@Pc(107) Buffer local107 = new Buffer(arg0[local85]);
-									arg1.method1091(local24 * 8, local73, local107, Static171.aClass46Array1, local67, local28 * 8, local61, local50, local18);
+									arg1.method1091(local24 * 8, local73, local107, Static171.collisionMaps, local67, local28 * 8, local61, local50, local18);
 									arg1.method1101(local107, local28 * 8, local18, local50, local73, local67, Rasteriser.instance, local16[0] == -1 ? local16 : null, local24 * 8, local61);
 									local32 = true;
 									break;

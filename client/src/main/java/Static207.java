@@ -14,7 +14,7 @@ public final class Static207 {
 	public static final boolean[][] aBooleanArrayArray2 = new boolean[][] { new boolean[4], { false, true, true, false }, { true, false, true, false }, { true, false, true, false }, { false, false, true, false }, { false, false, true, false }, { true, false, true, false }, { true, false, false, true }, { true, false, false, true }, { true, true, false, false }, new boolean[4], { false, true, false, true }, new boolean[4] };
 
 	@OriginalMember(owner = "client!mc", name = "n", descriptor = "[I")
-	public static final int[] anIntArray225 = new int[8];
+	public static final int[] cursors = new int[8];
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(I)V")
 	public static void method3699() {

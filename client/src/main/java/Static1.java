@@ -8,7 +8,7 @@ public final class Static1 {
 	public static long aLong1 = 0L;
 
 	@OriginalMember(owner = "client!a", name = "f", descriptor = "Z")
-	public static boolean aBoolean1 = false;
+	public static boolean verifyIdChanged = false;
 
 	@OriginalMember(owner = "client!a", name = "b", descriptor = "(I)V")
 	public static void method2() {

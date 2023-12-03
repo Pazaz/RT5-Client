@@ -19,7 +19,7 @@ public final class Static164 {
 	@OriginalMember(owner = "client!jl", name = "a", descriptor = "(IIIIIIILclient!ur;Lclient!vi;Lclient!kf;Ljava/lang/String;Lclient!nk;)V")
 	public static void method3147(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) BitmapFont arg6, @OriginalArg(8) Class239 arg7, @OriginalArg(9) Class78 arg8, @OriginalArg(10) String arg9, @OriginalArg(11) Component arg10) {
 		@Pc(15) int local15;
-		if (Camera.anInt5911 == 4) {
+		if (Camera.cameraType == 4) {
 			local15 = (int) Camera.yaw & 0x3FFF;
 		} else {
 			local15 = Static6.anInt158 + (int) Camera.yaw & 0x3FFF;
@@ -31,7 +31,7 @@ public final class Static164 {
 		}
 		@Pc(53) int local53 = RasteriserBase.anIntArray178[local15];
 		@Pc(57) int local57 = RasteriserBase.anIntArray177[local15];
-		if (Camera.anInt5911 != 4) {
+		if (Camera.cameraType != 4) {
 			local57 = local57 * 256 / (Static97.anInt2005 + 256);
 			local53 = local53 * 256 / (Static97.anInt2005 + 256);
 		}

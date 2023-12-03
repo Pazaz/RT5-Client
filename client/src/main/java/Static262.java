@@ -23,14 +23,14 @@ public final class Static262 {
 		}
 		local37 -= 10;
 		@Pc(66) int local66;
-		if (Camera.anInt5911 == 4) {
+		if (Camera.cameraType == 4) {
 			local66 = (int) Camera.yaw & 0x3FFF;
 		} else {
 			local66 = (int) Camera.yaw + Static6.anInt158 & 0x3FFF;
 		}
 		@Pc(77) int local77 = RasteriserBase.anIntArray178[local66];
 		@Pc(81) int local81 = RasteriserBase.anIntArray177[local66];
-		if (Camera.anInt5911 != 4) {
+		if (Camera.cameraType != 4) {
 			local77 = local77 * 256 / (Static97.anInt2005 + 256);
 			local81 = local81 * 256 / (Static97.anInt2005 + 256);
 		}

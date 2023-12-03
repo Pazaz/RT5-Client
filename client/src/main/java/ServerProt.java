@@ -32,19 +32,19 @@ public final class ServerProt {
 	@OriginalMember(owner = "client!ip", name = "g", descriptor = "Lclient!h;")
 	public static final ServerProt PLAYER_INFO = new ServerProt(72, -2);
 	@OriginalMember(owner = "client!wh", name = "v", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_77 = new ServerProt(77, 12);
+	public static final ServerProt WIDGETSTRUCT_SETTING = new ServerProt(77, 12);
 	@OriginalMember(owner = "client!vo", name = "p", descriptor = "Lclient!h;")
 	public static final ServerProt PACKET_89 = new ServerProt(89, 6);
 	@OriginalMember(owner = "client!fl", name = "o", descriptor = "Lclient!h;")
 	public static final ServerProt IF_OPENSUB = new ServerProt(52, 9); // TODO: confirm
 	@OriginalMember(owner = "client!wm", name = "q", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_20 = new ServerProt(20, 6);
+	public static final ServerProt UPDATE_STAT = new ServerProt(20, 6);
 	@OriginalMember(owner = "client!ip", name = "e", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_25 = new ServerProt(25, 8);
+	public static final ServerProt CAM_LOOKAT = new ServerProt(25, 8);
 	@OriginalMember(owner = "client!en", name = "b", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_70 = new ServerProt(70, -2);
+	public static final ServerProt UPDATE_FRIENDLIST = new ServerProt(70, -2);
 	@OriginalMember(owner = "client!mg", name = "z", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_7 = new ServerProt(7, 2);
+	public static final ServerProt UPDATE_RUNWEIGHT = new ServerProt(7, 2);
 	@OriginalMember(owner = "client!mq", name = "o", descriptor = "Lclient!h;")
 	public static final ServerProt PACKET_55 = new ServerProt(55, -1);
 	@OriginalMember(owner = "client!ej", name = "C", descriptor = "Lclient!h;")
@@ -106,11 +106,11 @@ public final class ServerProt {
 	@OriginalMember(owner = "client!nq", name = "f", descriptor = "Lclient!h;")
 	public static final ServerProt PACKET_19 = new ServerProt(19, 0);
 	@OriginalMember(owner = "client!ie", name = "n", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_38 = new ServerProt(38, 14);
+	public static final ServerProt SET_INTERFACE_SETTINGS = new ServerProt(38, 14);
 	@OriginalMember(owner = "client!wt", name = "bb", descriptor = "Lclient!h;")
 	public static final ServerProt PACKET_6 = new ServerProt(6, -2);
 	@OriginalMember(owner = "client!mg", name = "w", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_46 = new ServerProt(46, -1);
+	public static final ServerProt SET_INTERACTION = new ServerProt(46, -1);
 	@OriginalMember(owner = "client!hq", name = "x", descriptor = "Lclient!h;")
 	public static final ServerProt PACKET_14 = new ServerProt(14, 6);
 	@OriginalMember(owner = "client!es", name = "c", descriptor = "Lclient!h;")
@@ -124,9 +124,9 @@ public final class ServerProt {
 	@OriginalMember(owner = "client!ck", name = "B", descriptor = "Lclient!h;")
 	public static final ServerProt MAP_PROJANIM = new ServerProt(34, 15);
 	@OriginalMember(owner = "client!ke", name = "y", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_68 = new ServerProt(68, 4);
+	public static final ServerProt LAST_LOGIN_INFO = new ServerProt(68, 4);
 	@OriginalMember(owner = "client!pk", name = "Q", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_2 = new ServerProt(2, 2);
+	public static final ServerProt CHAT_FILTER_SETTINGS = new ServerProt(2, 2);
 	@OriginalMember(owner = "client!mr", name = "Ub", descriptor = "Lclient!h;")
 	public static final ServerProt PACKET_64 = new ServerProt(64, 3);
 	@OriginalMember(owner = "client!fj", name = "a", descriptor = "Lclient!h;")
@@ -134,7 +134,7 @@ public final class ServerProt {
 	@OriginalMember(owner = "client!el", name = "o", descriptor = "Lclient!h;")
 	public static final ServerProt LOC_DEL = new ServerProt(80, 2);
 	@OriginalMember(owner = "client!nm", name = "k", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_4 = new ServerProt(4, 1);
+	public static final ServerProt UPDATE_RUNENERGY = new ServerProt(4, 1);
 	@OriginalMember(owner = "client!jm", name = "c", descriptor = "Lclient!h;")
 	public static final ServerProt PACKET_44 = new ServerProt(44, 8);
 	@OriginalMember(owner = "client!ot", name = "I", descriptor = "Lclient!h;")
@@ -144,9 +144,9 @@ public final class ServerProt {
 	@OriginalMember(owner = "client!ih", name = "g", descriptor = "Lclient!h;")
 	public static final ServerProt PACKET_85 = new ServerProt(85, -2);
 	@OriginalMember(owner = "client!hl", name = "I", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_61 = new ServerProt(61, 4);
+	public static final ServerProt MIDI_SONG = new ServerProt(61, 4);
 	@OriginalMember(owner = "client!cj", name = "n", descriptor = "Lclient!h;")
-	public static final ServerProt PACKET_62 = new ServerProt(62, 6);
+	public static final ServerProt MIDI_JINGLE = new ServerProt(62, 6);
 	@OriginalMember(owner = "client!hc", name = "g", descriptor = "Lclient!h;")
 	public static final ServerProt PACKET_84 = new ServerProt(84, -1);
 	@OriginalMember(owner = "client!sn", name = "E", descriptor = "Lclient!h;")
@@ -232,7 +232,7 @@ public final class ServerProt {
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "(Z)[Lclient!h;")
 	public static ServerProt[] getAll() {
-		return new ServerProt[] { PACKET_0, SOUND_AREA, PACKET_2, OBJ_DEL, PACKET_4, PACKET_5, PACKET_6, PACKET_7, UPDATE_REBOOT_TIMER, PACKET_9, PACKET_10, PACKET_11, PACKET_12, OBJ_ADD, PACKET_14, PACKET_15, PACKET_16, PACKET_17, REFLECTION_CHEAT_CHECK, PACKET_19, PACKET_20, PACKET_21, PACKET_22, PACKET_23, PACKET_24, PACKET_25, PACKET_26, PACKET_27, PACKET_28, PACKET_29, PACKET_30, PACKET_31, PACKET_32, MAP_PROJANIM_HALFSQ, MAP_PROJANIM, PACKET_35, PACKET_36, PACKET_37, PACKET_38, MAP_PROJANIM_SPECIFIC, PACKET_40, PACKET_41, PACKET_42, PACKET_43, PACKET_44, PACKET_45, PACKET_46, PACKET_47, PACKET_48, PACKET_49, PACKET_50, PACKET_51, IF_OPENSUB, PACKET_53, PACKET_54, PACKET_55, PACKET_56, PACKET_57, LOGOUT, UPDATE_ZONE_PARTIAL_ENCLOSED, PACKET_60, PACKET_61, PACKET_62, TEXT_COORD, PACKET_64, PACKET_65, PACKET_66, PACKET_67, PACKET_68, PACKET_69, PACKET_70, PACKET_71, PLAYER_INFO, PACKET_73, LOC_ANIM, PACKET_75, PACKET_76, PACKET_77, PACKET_78, OBJ_REVEAL, LOC_DEL, PACKET_81, PACKET_82, OBJ_COUNT, PACKET_84, PACKET_85, PACKET_86, PACKET_87, REBUILD_REGION, PACKET_89, PACKET_90, PACKET_91, PACKET_92, IF_OPENTOP, LOC_PREFETCH, PACKET_95, MAP_ANIM, PACKET_97, REBUILD_NORMAL, MESSAGE_GAME, PACKET_100, LOC_MERGE, PACKET_102, PACKET_103, LOC_ADD_CHANGE, PACKET_105 };
+		return new ServerProt[] { PACKET_0, SOUND_AREA, CHAT_FILTER_SETTINGS, OBJ_DEL, UPDATE_RUNENERGY, PACKET_5, PACKET_6, UPDATE_RUNWEIGHT, UPDATE_REBOOT_TIMER, PACKET_9, PACKET_10, PACKET_11, PACKET_12, OBJ_ADD, PACKET_14, PACKET_15, PACKET_16, PACKET_17, REFLECTION_CHEAT_CHECK, PACKET_19, UPDATE_STAT, PACKET_21, PACKET_22, PACKET_23, PACKET_24, CAM_LOOKAT, PACKET_26, PACKET_27, PACKET_28, PACKET_29, PACKET_30, PACKET_31, PACKET_32, MAP_PROJANIM_HALFSQ, MAP_PROJANIM, PACKET_35, PACKET_36, PACKET_37, SET_INTERFACE_SETTINGS, MAP_PROJANIM_SPECIFIC, PACKET_40, PACKET_41, PACKET_42, PACKET_43, PACKET_44, PACKET_45, SET_INTERACTION, PACKET_47, PACKET_48, PACKET_49, PACKET_50, PACKET_51, IF_OPENSUB, PACKET_53, PACKET_54, PACKET_55, PACKET_56, PACKET_57, LOGOUT, UPDATE_ZONE_PARTIAL_ENCLOSED, PACKET_60, MIDI_SONG, MIDI_JINGLE, TEXT_COORD, PACKET_64, PACKET_65, PACKET_66, PACKET_67, LAST_LOGIN_INFO, PACKET_69, UPDATE_FRIENDLIST, PACKET_71, PLAYER_INFO, PACKET_73, LOC_ANIM, PACKET_75, PACKET_76, WIDGETSTRUCT_SETTING, PACKET_78, OBJ_REVEAL, LOC_DEL, PACKET_81, PACKET_82, OBJ_COUNT, PACKET_84, PACKET_85, PACKET_86, PACKET_87, REBUILD_REGION, PACKET_89, PACKET_90, PACKET_91, PACKET_92, IF_OPENTOP, LOC_PREFETCH, PACKET_95, MAP_ANIM, PACKET_97, REBUILD_NORMAL, MESSAGE_GAME, PACKET_100, LOC_MERGE, PACKET_102, PACKET_103, LOC_ADD_CHANGE, PACKET_105 };
 	}
 
 	@OriginalMember(owner = "client!h", name = "toString", descriptor = "()Ljava/lang/String;")

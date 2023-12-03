@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static171 {
 
 	@OriginalMember(owner = "client!jt", name = "X", descriptor = "[Lclient!dg;")
-	public static final Class46[] aClass46Array1 = new Class46[4];
+	public static final CollisionMap[] collisionMaps = new CollisionMap[4];
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(BIIZII)V")
 	public static void method3258(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
@@ -30,7 +30,7 @@ public final class Static171 {
 			@Pc(110) int local110 = Static375.anInt7051;
 			@Pc(118) int local118;
 			@Pc(151) int local151;
-			if (Camera.anInt5911 == 1) {
+			if (Camera.cameraType == 1) {
 				local118 = (int) Camera.pitch;
 				if (local118 < Static89.anInt1885 >> 8) {
 					local118 = Static89.anInt1885 >> 8;
@@ -40,7 +40,7 @@ public final class Static171 {
 				}
 				local151 = Camera.anInt3966 + (int) Camera.yaw & 0x3FFF;
 				Static349.method5833((local118 >> 3) * 3 + 600, Static288.anInt5463, local108, Scene.getTileHeight(PlayerList.self.xFine, PlayerList.self.zFine, Static355.anInt6585) - 50, Static62.anInt2395, local151, local118);
-			} else if (Camera.anInt5911 == 4) {
+			} else if (Camera.cameraType == 4) {
 				local118 = (int) Camera.pitch;
 				if (local118 < Static89.anInt1885 >> 8) {
 					local118 = Static89.anInt1885 >> 8;
@@ -50,7 +50,7 @@ public final class Static171 {
 				}
 				local151 = (int) Camera.yaw & 0x3FFF;
 				Static349.method5833((local118 >> 3) * 3 + 600, Static288.anInt5463, local108, Scene.getTileHeight(Static394.anInt7264, Static348.anInt6448, Static355.anInt6585) - 50, Static62.anInt2395, local151, local118);
-			} else if (Camera.anInt5911 == 5) {
+			} else if (Camera.cameraType == 5) {
 				Static385.method6432(local108);
 			}
 			local118 = Static136.anInt6778;

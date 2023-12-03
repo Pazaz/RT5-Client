@@ -14,7 +14,7 @@ public final class Static44 {
 	public static int anInt1115 = 0;
 
 	@OriginalMember(owner = "client!cl", name = "M", descriptor = "[Z")
-	public static final boolean[] aBooleanArray11 = new boolean[8];
+	public static final boolean[] secondaryOptions = new boolean[8];
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(Lclient!wm;BLclient!r;)V")
 	public static void method1358(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(2) Js5 arg1) {

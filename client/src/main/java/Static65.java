@@ -58,7 +58,7 @@ public final class Static65 {
 							@Pc(65) int local65 = (local49 / 8 << 8) + local55 / 8;
 							for (@Pc(67) int local67 = 0; local67 < Static291.mapSquares.length; local67++) {
 								if (Static291.mapSquares[local67] == local65 && arg1[local67] != null) {
-									arg0.method1107(local43, local32, local3, (local49 & 0x7) * 8, arg1[local67], local9 * 8, Rasteriser.instance, Static171.aClass46Array1, local13 * 8, (local55 & 0x7) * 8);
+									arg0.method1107(local43, local32, local3, (local49 & 0x7) * 8, arg1[local67], local9 * 8, Rasteriser.instance, Static171.collisionMaps, local13 * 8, (local55 & 0x7) * 8);
 									break;
 								}
 							}

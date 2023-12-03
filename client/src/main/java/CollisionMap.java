@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!dg")
-public final class Class46 {
+public final class CollisionMap {
 
 	@OriginalMember(owner = "client!dg", name = "a", descriptor = "I")
 	public int anInt1468;

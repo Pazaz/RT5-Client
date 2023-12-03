@@ -81,8 +81,8 @@ public class InterfaceList {
 
     @OriginalMember(owner = "client!client", name = "b", descriptor = "(Lclient!nk;)Lclient!eh;")
     public static ServerActiveProperties getServerActiveProperties(@OriginalArg(0) Component arg0) {
-        @Pc(13) ServerActiveProperties local13 = (ServerActiveProperties) Static327.aClass4_127.get(((long) arg0.id << 32) + (long) arg0.activeComponentId);
-        return local13 == null ? arg0.aClass2_Sub10_1 : local13;
+        @Pc(13) ServerActiveProperties local13 = (ServerActiveProperties) Static327.properties.get(((long) arg0.id << 32) + (long) arg0.activeComponentId);
+        return local13 == null ? arg0.properties : local13;
     }
 
 	@OriginalMember(owner = "client!em", name = "a", descriptor = "(IZ)V")

@@ -3905,7 +3905,7 @@ public final class ScriptRunner {
 								throw new RuntimeException();
 							}
 							Camera.anInt6398 = local95;
-							Camera.anInt5911 = 3;
+							Camera.cameraType = 3;
 							return;
 						}
 						if (opcode == 5503) {
@@ -3968,7 +3968,7 @@ public final class ScriptRunner {
 							}
 							Static394.anInt7264 = local192 * 128 + 64;
 							Static348.anInt6448 = local89 * 128 + 64;
-							Camera.anInt5911 = 4;
+							Camera.cameraType = 4;
 							return;
 						}
 						if (opcode == 5512) {
@@ -4987,7 +4987,7 @@ public final class ScriptRunner {
 							@Pc(7165) Component local7165 = InterfaceList.getCreatedComponent(local157 << 16 | local192, local89);
 							Static207.method3699();
 							@Pc(7170) ServerActiveProperties local7170 = InterfaceList.getServerActiveProperties(local7165);
-							Static185.method3400(local7165.anInt4238, local7170.getTargetMask(), local157 << 16 | local192, local89, local7165.anInt4286, local7170.anInt1759);
+							Static185.method3400(local7165.anInt4238, local7170.getTargetMask(), local157 << 16 | local192, local89, local7165.anInt4286, local7170.targetParam);
 							return;
 						}
 					} else if (opcode < 6900) {

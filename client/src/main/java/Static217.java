@@ -15,7 +15,7 @@ public final class Static217 {
 		Static319.anIntArrayArray51 = new int[Static373.buildAreaLimitX][Static242.buildAreaLimitZ];
 		Static310.anIntArrayArrayArray12 = new int[4][Static373.buildAreaLimitX >> 3][Static242.buildAreaLimitZ >> 3];
 		for (@Pc(42) int local42 = 0; local42 < 4; local42++) {
-			Static171.aClass46Array1[local42] = Static24.method853(Static242.buildAreaLimitZ, Static373.buildAreaLimitX);
+			Static171.collisionMaps[local42] = Static24.method853(Static242.buildAreaLimitZ, Static373.buildAreaLimitX);
 		}
 		Static230.aByteArrayArrayArray13 = new byte[4][Static373.buildAreaLimitX][Static242.buildAreaLimitZ];
 		Static236.method4104(Static373.buildAreaLimitX, Static242.buildAreaLimitZ);

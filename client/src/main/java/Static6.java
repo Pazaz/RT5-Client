@@ -33,7 +33,7 @@ public final class Static6 {
 					Static1.method3(arg0.objId, true, arg0.id, false, local82, arg0.activeComponentId, 45, arg0.opBase, Static274.method4631(arg0, local75), (long) (local75 + 1));
 				}
 			}
-			if (InterfaceList.getServerActiveProperties(arg0).method1855()) {
+			if (InterfaceList.getServerActiveProperties(arg0).isResumePauseButtonEnabled()) {
 				if (arg0.pauseText == null) {
 					Static1.method3(arg0.objId, true, arg0.id, false, Static262.aClass79_145.getLocalized(client.language), arg0.activeComponentId, 30, "", -1, 0L);
 				} else {

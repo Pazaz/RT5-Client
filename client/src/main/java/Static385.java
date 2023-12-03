@@ -28,7 +28,7 @@ public final class Static385 {
 	public static void method6432(@OriginalArg(1) int arg0) {
 		@Pc(8) int local8 = client.cycle - Static241.anInt4445;
 		if (local8 >= 100) {
-			Camera.anInt5911 = 1;
+			Camera.cameraType = 1;
 			return;
 		}
 		@Pc(19) int local19 = (int) Camera.pitch;

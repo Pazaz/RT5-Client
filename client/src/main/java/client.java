@@ -397,9 +397,9 @@ public final class client extends GameShell {
 		Static210.method3720();
 		Static192.aClass161_8 = null;
 		for (@Pc(4594) int local4594 = 0; local4594 < 8; local4594++) {
-			Static243.aStringArray44[local4594] = null;
-			Static44.aBooleanArray11[local4594] = false;
-			Static207.anIntArray225[local4594] = -1;
+			Static243.options[local4594] = null;
+			Static44.secondaryOptions[local4594] = false;
+			Static207.cursors[local4594] = -1;
 		}
 		Static302.method1458();
 		Static17.aBoolean308 = true;
@@ -1021,7 +1021,7 @@ public final class client extends GameShell {
 							} else if (Static242.buildAreaLimitZ - local50 - 1 < local128) {
 								local128 = Static242.buildAreaLimitZ - local50 - 1;
 							}
-							@Pc(179) int local179 = Static141.method2654(true, Static52.anIntArray99, local50, -1, 0, 0, Static171.aClass46Array1[local33.plane], local33.movementQueueX[0], local50, local96, Static59.anIntArray105, local50, local128, local33.movementQueueZ[0]);
+							@Pc(179) int local179 = Static141.method2654(true, Static52.anIntArray99, local50, -1, 0, 0, Static171.collisionMaps[local33.plane], local33.movementQueueX[0], local50, local96, Static59.anIntArray105, local50, local128, local33.movementQueueZ[0]);
 							if (local179 > 0) {
 								if (local179 > 9) {
 									local179 = 9;
@@ -1043,7 +1043,7 @@ public final class client extends GameShell {
 			}
 		}
 		if (LoginManager.step == 0 && CreateManager.step == 0) {
-			if (Camera.anInt5911 == 2) {
+			if (Camera.cameraType == 2) {
 				Static222.method3917();
 			} else {
 				Static199.method5249();
@@ -1201,7 +1201,7 @@ public final class client extends GameShell {
 			Static43.aShortArray20 = Static131.aShortArray65;
 			Static10.aShortArray1 = Static78.aShortArray123;
 			PlayerAppearance.destinationBodyColors = Static25.aShortArrayArray2;
-			Static186.aShortArrayArray6 = Static386.aShortArrayArray9;
+			Static186.aShortArrayArray6 = Static386.GAME0_DESTINATION_SKIN_COLORS;
 		}
 		Keyboard.instance = Static18.method556(GameShell.canvas);
 		Mouse.instance = Static31.method948(GameShell.canvas);
@@ -1269,7 +1269,7 @@ public final class client extends GameShell {
 			}
 		} else if (mainLoadState == 10) {
 			for (local6 = 0; local6 < 4; local6++) {
-				Static171.aClass46Array1[local6] = Static24.method853(Static242.buildAreaLimitZ, Static373.buildAreaLimitX);
+				Static171.collisionMaps[local6] = Static24.method853(Static242.buildAreaLimitZ, Static373.buildAreaLimitX);
 			}
 			mainLoadSecondaryText = Static109.aClass79_46.getLocalized(language);
 			mainLoadState = 20;

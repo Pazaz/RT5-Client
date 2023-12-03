@@ -51,9 +51,9 @@ public final class Static184 {
 			Static1.method3(0, false, 0, true, "<col=cccccc>" + local146, 0, -1, "", -1, 0L);
 		} else {
 			for (@Pc(272) int local272 = 7; local272 >= 0; local272--) {
-				if (Static243.aStringArray44[local272] != null) {
+				if (Static243.options[local272] != null) {
 					@Pc(280) short local280 = 0;
-					if (client.game == client.GAME_RS && Static243.aStringArray44[local272].equalsIgnoreCase(Static378.aClass79_146.getLocalized(client.language))) {
+					if (client.game == client.GAME_RS && Static243.options[local272].equalsIgnoreCase(Static378.ATTACK.getLocalized(client.language))) {
 						if (PlayerList.self.combatLevel < arg1.combatLevel) {
 							local280 = 2000;
 						}
@@ -64,12 +64,12 @@ public final class Static184 {
 								local280 = 0;
 							}
 						}
-					} else if (Static44.aBooleanArray11[local272]) {
+					} else if (Static44.secondaryOptions[local272]) {
 						local280 = 2000;
 					}
 					@Pc(334) short local334 = (short) (Static292.aShortArray115[local272] + local280);
-					local72 = Static207.anIntArray225[local272] == -1 ? Minimap.anInt1910 : Static207.anIntArray225[local272];
-					Static1.method3(-1, true, 0, false, Static243.aStringArray44[local272], 0, local334, "<col=ffffff>" + local146, local72, (long) arg1.anInt4619);
+					local72 = Static207.cursors[local272] == -1 ? Minimap.anInt1910 : Static207.cursors[local272];
+					Static1.method3(-1, true, 0, false, Static243.options[local272], 0, local334, "<col=ffffff>" + local146, local72, (long) arg1.anInt4619);
 				}
 			}
 		}

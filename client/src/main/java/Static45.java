@@ -268,14 +268,14 @@ public final class Static45 {
 										}
 										local278 -= local6.width / 2;
 										local614 -= local6.height / 2;
-										if (Camera.anInt5911 == 4) {
+										if (Camera.cameraType == 4) {
 											local653 = (int) Camera.yaw & 0x3FFF;
 										} else {
 											local653 = (int) Camera.yaw + Static6.anInt158 & 0x3FFF;
 										}
 										@Pc(665) int local665 = RasteriserBase.anIntArray178[local653];
 										@Pc(669) int local669 = RasteriserBase.anIntArray177[local653];
-										if (Camera.anInt5911 != 4) {
+										if (Camera.cameraType != 4) {
 											local665 = local665 * (Static97.anInt2005 + 256) >> 8;
 											local669 = local669 * (Static97.anInt2005 + 256) >> 8;
 										}
@@ -283,7 +283,7 @@ public final class Static45 {
 										@Pc(708) int local708 = local614 * local669 - local278 * local665 >> 15;
 										@Pc(719) int local719;
 										@Pc(727) int local727;
-										if (Camera.anInt5911 == 4) {
+										if (Camera.cameraType == 4) {
 											local719 = (Static394.anInt7264 >> 7) + (local698 >> 2);
 											local727 = (Static348.anInt6448 >> 7) - (local708 >> 2);
 										} else {

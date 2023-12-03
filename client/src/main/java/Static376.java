@@ -19,7 +19,7 @@ public final class Static376 {
 		if (local10 < 0 || Static373.buildAreaLimitX <= local10 || local15 < 0 || Static242.buildAreaLimitZ <= local15 || (arg1 < 0 || Static373.buildAreaLimitX <= arg1 || arg2 < 0 || Static242.buildAreaLimitZ <= arg2)) {
 			return;
 		}
-		@Pc(85) int local85 = Static141.method2654(true, Static52.anIntArray99, 0, -4, 0, 0, Static171.aClass46Array1[arg0.plane], local10, 0, arg1, Static59.anIntArray105, arg0.getSize(), arg2, local15);
+		@Pc(85) int local85 = Static141.method2654(true, Static52.anIntArray99, 0, -4, 0, 0, Static171.collisionMaps[arg0.plane], local10, 0, arg1, Static59.anIntArray105, arg0.getSize(), arg2, local15);
 		if (local85 >= 1 && local85 <= 3) {
 			for (@Pc(97) int local97 = 0; local97 < local85 - 1; local97++) {
 				arg0.method4071(Static59.anIntArray105[local97], (byte) 2, Static52.anIntArray99[local97]);
@@ -42,7 +42,7 @@ public final class Static376 {
 			return;
 		}
 		@Pc(16) int local16;
-		if (Camera.anInt5911 == 4) {
+		if (Camera.cameraType == 4) {
 			local16 = (int) Camera.yaw & 0x3FFF;
 		} else {
 			local16 = Static6.anInt158 + (int) Camera.yaw & 0x3FFF;
@@ -54,7 +54,7 @@ public final class Static376 {
 		}
 		@Pc(63) int local63 = RasteriserBase.anIntArray178[local16];
 		@Pc(67) int local67 = RasteriserBase.anIntArray177[local16];
-		if (Camera.anInt5911 != 4) {
+		if (Camera.cameraType != 4) {
 			local67 = local67 * 256 / (Static97.anInt2005 + 256);
 			local63 = local63 * 256 / (Static97.anInt2005 + 256);
 		}

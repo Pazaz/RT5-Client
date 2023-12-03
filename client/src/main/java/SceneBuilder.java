@@ -501,7 +501,7 @@ public final class SceneBuilder extends Class29 {
 	}
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(IIIIIIILclient!wm;Lclient!dg;II)V")
-	public void method1105(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) RasteriserBase arg6, @OriginalArg(8) Class46 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
+	public void method1105(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) RasteriserBase arg6, @OriginalArg(8) CollisionMap arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
 		if (!client.preferences.method4495(Static77.anInt1762) && !Static142.method2661(arg2, Static44.anInt1115, arg4, arg1)) {
 			return;
 		}
@@ -936,7 +936,7 @@ public final class SceneBuilder extends Class29 {
 	}
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(IIII[BBILclient!wm;[Lclient!dg;II)V")
-	public void method1107(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte[] arg4, @OriginalArg(6) int arg5, @OriginalArg(7) RasteriserBase arg6, @OriginalArg(8) Class46[] arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
+	public void method1107(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte[] arg4, @OriginalArg(6) int arg5, @OriginalArg(7) RasteriserBase arg6, @OriginalArg(8) CollisionMap[] arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
 		@Pc(14) Buffer local14 = new Buffer(arg4);
 		@Pc(16) int local16 = -1;
 		while (true) {
@@ -963,7 +963,7 @@ public final class SceneBuilder extends Class29 {
 					@Pc(115) int local115 = arg5 + Static50.method1528(local50 & 0x7, arg0, local66, local98.anInt1356, local98.anInt1327, local44 & 0x7);
 					@Pc(132) int local132 = arg8 + Static33.method4205(arg0, local66, local50 & 0x7, local98.anInt1356, local44 & 0x7, local98.anInt1327);
 					if (local115 > 0 && local132 > 0 && super.anInt900 - 1 > local115 && local132 < super.anInt911 - 1) {
-						@Pc(160) Class46 local160 = null;
+						@Pc(160) CollisionMap local160 = null;
 						if (!super.aBoolean73) {
 							@Pc(165) int local165 = arg2;
 							if ((Static359.aByteArrayArrayArray16[1][local115][local132] & 0x2) == 2) {
@@ -981,7 +981,7 @@ public final class SceneBuilder extends Class29 {
 	}
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(IILclient!dg;IIILclient!wm;)V")
-	public void method1108(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class46 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) RasteriserBase arg5) {
+	public void method1108(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) CollisionMap arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) RasteriserBase arg5) {
 		@Pc(7) Interface6 local7 = null;
 		if (arg3 == 0) {
 			local7 = (Interface6) Static12.method283(arg0, arg1, arg4);
@@ -1055,7 +1055,7 @@ public final class SceneBuilder extends Class29 {
 	}
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "([Lclient!dg;II[BILclient!wm;)V")
-	public void method1109(@OriginalArg(0) Class46[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) byte[] arg2, @OriginalArg(4) int arg3, @OriginalArg(5) RasteriserBase arg4) {
+	public void method1109(@OriginalArg(0) CollisionMap[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) byte[] arg2, @OriginalArg(4) int arg3, @OriginalArg(5) RasteriserBase arg4) {
 		@Pc(10) Buffer local10 = new Buffer(arg2);
 		@Pc(16) int local16 = -1;
 		while (true) {
@@ -1080,7 +1080,7 @@ public final class SceneBuilder extends Class29 {
 				@Pc(73) int local73 = local53 + arg3;
 				@Pc(78) int local78 = local47 + arg1;
 				if (local73 > 0 && local78 > 0 && local73 < super.anInt900 - 1 && super.anInt911 - 1 > local78) {
-					@Pc(102) Class46 local102 = null;
+					@Pc(102) CollisionMap local102 = null;
 					if (!super.aBoolean73) {
 						@Pc(107) int local107 = local57;
 						if ((Static359.aByteArrayArrayArray16[1][local73][local78] & 0x2) == 2) {

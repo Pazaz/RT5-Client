@@ -117,13 +117,13 @@ public final class Static373 {
 			if (Math.abs(local94) > buildAreaLimitX || Math.abs(local99) > Static242.buildAreaLimitZ) {
 				Static348.method5828();
 			}
-		} else if (Camera.anInt5911 == 4) {
+		} else if (Camera.cameraType == 4) {
 			Static288.anInt5463 -= local94 * 128;
 			Static348.anInt6448 -= local99 * 128;
 			Static394.anInt7264 -= local94 * 128;
 			Static62.anInt2395 -= local99 * 128;
 		} else {
-			Camera.anInt5911 = 1;
+			Camera.cameraType = 1;
 		}
 		Static160.method2956();
 		Static247.method4299();

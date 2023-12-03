@@ -43,7 +43,7 @@ public final class Static50 {
 		PlayerList.self.movementQueueZ[0] = 52;
 		Static211.anInt3777 = 0;
 		Static136.anInt6778 = 0;
-		if (Camera.anInt5911 == 2) {
+		if (Camera.cameraType == 2) {
 			Static211.anInt3777 = Static19.anInt535 << 7;
 			Static136.anInt6778 = Static311.anInt5810 << 7;
 		} else {

@@ -45,7 +45,7 @@ public final class Static241 {
 				@Pc(90) int local90;
 				if (local80 != null) {
 					for (local90 = 4; local90 >= 0; local90--) {
-						if (local80[local90] != null && (client.GAME_RS != client.game || !local80[local90].equalsIgnoreCase(Static378.aClass79_146.getLocalized(client.language)))) {
+						if (local80[local90] != null && (client.GAME_RS != client.game || !local80[local90].equalsIgnoreCase(Static378.ATTACK.getLocalized(client.language)))) {
 							@Pc(110) byte local110 = 0;
 							@Pc(112) int local112 = Minimap.anInt1910;
 							if (local90 == 0) {
@@ -75,7 +75,7 @@ public final class Static241 {
 				}
 				if (client.game == client.GAME_RS && local80 != null) {
 					for (local90 = 4; local90 >= 0; local90--) {
-						if (local80[local90] != null && local80[local90].equalsIgnoreCase(Static378.aClass79_146.getLocalized(client.language))) {
+						if (local80[local90] != null && local80[local90].equalsIgnoreCase(Static378.ATTACK.getLocalized(client.language))) {
 							@Pc(211) short local211 = 0;
 							if (PlayerList.self.combatLevel < local16.anInt2039) {
 								local211 = 2000;

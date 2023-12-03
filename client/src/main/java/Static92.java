@@ -73,7 +73,7 @@ public final class Static92 {
 		@Pc(58) int local58;
 		@Pc(69) int local69;
 		@Pc(55) int local55;
-		if (Camera.anInt5911 == 4) {
+		if (Camera.cameraType == 4) {
 			local58 = Static348.anInt6448;
 			local55 = 4096;
 			local69 = (int) -Camera.yaw & 0x3FFF;
@@ -208,7 +208,7 @@ public final class Static92 {
 				}
 			}
 		}
-		if (Camera.anInt5911 == 4) {
+		if (Camera.cameraType == 4) {
 			return;
 		}
 		if (Static358.anInt6550 != 0) {

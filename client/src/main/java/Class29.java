@@ -62,7 +62,7 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(B[[[I[Lclient!dg;Lclient!wm;)V")
-	public final void method1085(@OriginalArg(1) int[][][] arg0, @OriginalArg(2) Class46[] arg1, @OriginalArg(3) RasteriserBase arg2) {
+	public final void method1085(@OriginalArg(1) int[][][] arg0, @OriginalArg(2) CollisionMap[] arg1, @OriginalArg(3) RasteriserBase arg2) {
 		@Pc(6) int local6;
 		@Pc(10) int local10;
 		@Pc(14) int local14;
@@ -267,14 +267,14 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(I[Lclient!dg;ILclient!bt;III)V")
-	public final void method1087(@OriginalArg(0) int arg0, @OriginalArg(1) Class46[] arg1, @OriginalArg(3) Buffer arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
+	public final void method1087(@OriginalArg(0) int arg0, @OriginalArg(1) CollisionMap[] arg1, @OriginalArg(3) Buffer arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		@Pc(10) int local10;
 		@Pc(18) int local18;
 		@Pc(22) int local22;
 		@Pc(28) int local28;
 		if (!this.aBoolean73) {
 			for (local10 = 0; local10 < 4; local10++) {
-				@Pc(16) Class46 local16 = arg1[local10];
+				@Pc(16) CollisionMap local16 = arg1[local10];
 				for (local18 = 0; local18 < 64; local18++) {
 					for (local22 = 0; local22 < 64; local22++) {
 						local28 = arg0 + local18;
@@ -375,12 +375,12 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(IILclient!bt;[Lclient!dg;IIIIII)V")
-	public final void method1091(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Buffer arg2, @OriginalArg(3) Class46[] arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8) {
+	public final void method1091(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Buffer arg2, @OriginalArg(3) CollisionMap[] arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8) {
 		@Pc(11) int local11 = (arg4 & 0x7) * 8;
 		@Pc(20) int local20;
 		@Pc(50) int local50;
 		if (!this.aBoolean73) {
-			@Pc(18) Class46 local18 = arg3[arg8];
+			@Pc(18) CollisionMap local18 = arg3[arg8];
 			for (local20 = 0; local20 < 8; local20++) {
 				for (@Pc(24) int local24 = 0; local24 < 8; local24++) {
 					@Pc(38) int local38 = Static148.method2711(local20 & 0x7, arg6, local24 & 0x7) + arg0;

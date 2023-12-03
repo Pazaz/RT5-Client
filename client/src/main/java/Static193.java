@@ -11,7 +11,7 @@ public final class Static193 {
 	public static final LocalizedString aClass79_78 = new LocalizedString("Connecting to update server", "Verbindung mit Update-Server...", "Connexion au serveur de mise à jour en cours", "Conectando ao servidor de atualização");
 
 	@OriginalMember(owner = "client!la", name = "j", descriptor = "I")
-	public static int anInt3555 = 0;
+	public static int messageCounter = 0;
 
 	@OriginalMember(owner = "client!la", name = "l", descriptor = "I")
 	public static int anInt3557 = 0;

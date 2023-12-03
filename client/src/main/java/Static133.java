@@ -13,9 +13,9 @@ public final class Static133 {
 	@OriginalMember(owner = "client!hl", name = "a", descriptor = "(BJ)V")
 	public static void method2503(@OriginalArg(1) long arg0) {
 		if (Scene.aClass67ArrayArrayArray3 != null) {
-			if (Camera.anInt5911 == 1 || Camera.anInt5911 == 5) {
+			if (Camera.cameraType == 1 || Camera.cameraType == 5) {
 				Static182.method3386(arg0);
-			} else if (Camera.anInt5911 == 4) {
+			} else if (Camera.cameraType == 4) {
 				Static256.method4395(arg0);
 			}
 		}

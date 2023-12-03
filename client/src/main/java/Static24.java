@@ -15,8 +15,8 @@ public final class Static24 {
 	}
 
 	@OriginalMember(owner = "client!bh", name = "a", descriptor = "(IBI)Lclient!dg;")
-	public static Class46 method853(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(12) Class46 local12 = new Class46();
+	public static CollisionMap method853(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+		@Pc(12) CollisionMap local12 = new CollisionMap();
 		local12.anInt1484 = -1;
 		local12.anInt1487 = arg0 + 1 + 5;
 		local12.anInt1472 = arg1 + 5 + 1;

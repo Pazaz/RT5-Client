@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static358 {
 
 	@OriginalMember(owner = "client!ur", name = "d", descriptor = "[J")
-	public static final long[] aLongArray11 = new long[100];
+	public static final long[] recentMessages = new long[100];
 
 	@OriginalMember(owner = "client!ur", name = "t", descriptor = "I")
 	public static int anInt6550 = -1;
