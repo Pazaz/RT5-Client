@@ -42,6 +42,6 @@ public final class Static60 {
 
 	@OriginalMember(owner = "client!di", name = "a", descriptor = "(ZZ)V")
 	public static void method891(@OriginalArg(1) boolean arg0) {
-		Static129.method2435(GameShell.canvasHeight, Static139.anInt2595, arg0, GameShell.canvasWidth);
+		Static129.method2435(GameShell.canvasHeight, Static139.topLevelInterface, arg0, GameShell.canvasWidth);
 	}
 }

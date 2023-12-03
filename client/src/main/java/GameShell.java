@@ -134,7 +134,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			}
 			jagmisc.init();
 			this.aBoolean94 = true;
-			Static316.aClass5_1 = Static65.method1738();
+			Static316.aClass5_1 = Timer.create();
 		} catch (@Pc(46) Throwable local46) {
 		}
 	}
@@ -468,10 +468,10 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 				Static60.method886();
 				this.method1379();
 				this.method1387();
-				Static316.aClass5_1 = Static65.method1738();
+				Static316.aClass5_1 = Timer.create();
 				this.method1382();
 				while (Static393.aLong231 == 0L || MonotonicClock.currentTimeMillis() < Static393.aLong231) {
-					Static10.anInt247 = Static316.aClass5_1.method4409(Static44.anInt1106);
+					Static10.anInt247 = Static316.aClass5_1.sleep(Static44.anInt1106);
 					for (local70 = 0; local70 < Static10.anInt247; local70++) {
 						this.method1390();
 					}

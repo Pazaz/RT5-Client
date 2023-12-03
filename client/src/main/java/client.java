@@ -380,8 +380,8 @@ public final class client extends GameShell {
 				VarcDomain.varcs[local4521] = -1;
 			}
 		}
-		if (Static139.anInt2595 != -1) {
-			Static162.method2979(Static139.anInt2595);
+		if (Static139.topLevelInterface != -1) {
+			Static162.method2979(Static139.topLevelInterface);
 		}
 		for (@Pc(4552) SubInterface local4552 = (SubInterface) InterfaceList.subInterfaces.head(); local4552 != null; local4552 = (SubInterface) InterfaceList.subInterfaces.next()) {
 			if (!local4552.isLinked()) {
@@ -392,7 +392,7 @@ public final class client extends GameShell {
 			}
 			Static276.method4655(false, local4552, true);
 		}
-		Static139.anInt2595 = -1;
+		Static139.topLevelInterface = -1;
 		InterfaceList.subInterfaces = new HashTable(8);
 		Static210.method3720();
 		Static192.aClass161_8 = null;
@@ -727,7 +727,7 @@ public final class client extends GameShell {
 		if (Static352.aBoolean446) {
 			method29();
 		}
-		if (preferences.safeMode && gameState == 10 && Static139.anInt2595 != -1) {
+		if (preferences.safeMode && gameState == 10 && Static139.topLevelInterface != -1) {
 			preferences.safeMode = false;
 			preferences.write(GameShell.signlink);
 		}

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!af")
-public final class Class5_Sub1 extends Class5 {
+public final class JagmiscTimer extends Timer {
 
 	@OriginalMember(owner = "client!af", name = "g", descriptor = "J")
 	private long aLong14 = 0L;
@@ -26,7 +26,7 @@ public final class Class5_Sub1 extends Class5 {
 	private long aLong16 = 0L;
 
 	@OriginalMember(owner = "client!af", name = "<init>", descriptor = "()V")
-	public Class5_Sub1() {
+	public JagmiscTimer() {
 		this.aLong14 = this.aLong15 = jagmisc.nanoTime();
 		if (this.aLong15 == 0L) {
 			throw new RuntimeException();
@@ -63,7 +63,7 @@ public final class Class5_Sub1 extends Class5 {
 
 	@OriginalMember(owner = "client!af", name = "a", descriptor = "(ZI)I")
 	@Override
-	public int method4409(@OriginalArg(1) int arg0) {
+	public int sleep(@OriginalArg(1) int arg0) {
 		this.aLong15 += this.method154();
 		@Pc(17) long local17 = (long) arg0 * 1000000L;
 		if (this.aLong14 > this.aLong15) {

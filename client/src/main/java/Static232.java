@@ -23,8 +23,8 @@ public final class Static232 {
 
 	@OriginalMember(owner = "client!ng", name = "a", descriptor = "(II)V")
 	public static void method4028(@OriginalArg(1) int arg0) {
-		if (Static222.method3916(arg0)) {
-			Static181.method3378(Static26.aClass161ArrayArray1[arg0], -1);
+		if (Static222.load(arg0)) {
+			Static181.method3378(Static26.components[arg0], -1);
 		}
 	}
 }

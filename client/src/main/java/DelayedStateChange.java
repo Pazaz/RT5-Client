@@ -93,7 +93,7 @@ public final class DelayedStateChange extends SecondaryNode {
 	public static void setComponentSizeClient(@OriginalArg(0) boolean arg0, @OriginalArg(1) Component arg1) {
 		@Pc(12) int local12 = arg1.scrollMaxH == 0 ? arg1.width : arg1.scrollMaxH;
 		@Pc(24) int local24 = arg1.scrollMaxV == 0 ? arg1.height : arg1.scrollMaxV;
-		Static364.method6105(arg0, local24, arg1.id, Static26.aClass161ArrayArray1[arg1.id >> 16], local12);
+		Static364.method6105(arg0, local24, arg1.id, Static26.components[arg1.id >> 16], local12);
 		if (arg1.activeComponents != null) {
 			Static364.method6105(arg0, local24, arg1.id, arg1.activeComponents, local12);
 		}

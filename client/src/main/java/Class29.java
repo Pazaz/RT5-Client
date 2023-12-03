@@ -61,6 +61,11 @@ public class Class29 {
 		this.levelOccludemap = new byte[this.anInt912][this.anInt900 + 1][this.anInt911 + 1];
 	}
 
+	@OriginalMember(owner = "client!io", name = "a", descriptor = "(ZZ)Z")
+	public static boolean or(@OriginalArg(0) boolean a, @OriginalArg(1) boolean b) {
+		return a | b;
+	}
+
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(B[[[I[Lclient!dg;Lclient!wm;)V")
 	public final void method1085(@OriginalArg(1) int[][][] arg0, @OriginalArg(2) CollisionMap[] arg1, @OriginalArg(3) RasteriserBase arg2) {
 		@Pc(6) int local6;
@@ -1015,16 +1020,16 @@ public class Class29 {
 							}
 						}
 						if (!local462[local96 + 1 & 0x3]) {
-							local84[1] = Static152.method2764(local84[1], (Static82.anIntArray120[2] & Static82.anIntArray120[4]) == 0);
+							local84[1] = or(local84[1], (Static82.anIntArray120[2] & Static82.anIntArray120[4]) == 0);
 						}
 						if (!local462[local96 + 3 & 0x3]) {
-							local84[3] = Static152.method2764(local84[3], (Static82.anIntArray120[6] & Static82.anIntArray120[0]) == 0);
+							local84[3] = or(local84[3], (Static82.anIntArray120[6] & Static82.anIntArray120[0]) == 0);
 						}
 						if (!local462[local96 & 0x3]) {
-							local84[0] = Static152.method2764(local84[0], (Static82.anIntArray120[2] & Static82.anIntArray120[0]) == 0);
+							local84[0] = or(local84[0], (Static82.anIntArray120[2] & Static82.anIntArray120[0]) == 0);
 						}
 						if (!local462[local96 + 2 & 0x3]) {
-							local84[2] = Static152.method2764(local84[2], (Static82.anIntArray120[4] & Static82.anIntArray120[6]) == 0);
+							local84[2] = or(local84[2], (Static82.anIntArray120[4] & Static82.anIntArray120[6]) == 0);
 						}
 						if (!local81 && (local90 == 0 || local90 == 12)) {
 							if (local84[0] && !local84[1] && !local84[2] && local84[3]) {

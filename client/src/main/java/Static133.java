@@ -20,8 +20,8 @@ public final class Static133 {
 			}
 		}
 		Static371.method6257((long) client.cycle, Rasteriser.instance);
-		if (Static139.anInt2595 != -1) {
-			Static232.method4028(Static139.anInt2595);
+		if (Static139.topLevelInterface != -1) {
+			Static232.method4028(Static139.topLevelInterface);
 		}
 		for (@Pc(42) int local42 = 0; local42 < Static154.anInt2806; local42++) {
 			if (Static357.aBooleanArray59[local42]) {
@@ -34,7 +34,7 @@ public final class Static133 {
 		if (Rasteriser.instance.hasHwAccel()) {
 			Static106.aBoolean164 = true;
 		}
-		if (Static139.anInt2595 != -1) {
+		if (Static139.topLevelInterface != -1) {
 			Static154.anInt2806 = 0;
 			Static46.method1421();
 		}

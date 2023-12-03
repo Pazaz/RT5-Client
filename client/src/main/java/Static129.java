@@ -27,8 +27,8 @@ public final class Static129 {
 
 	@OriginalMember(owner = "client!hg", name = "a", descriptor = "(IIZBI)V")
 	public static void method2435(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(4) int arg3) {
-		if (Static222.method3916(arg1)) {
-			Static364.method6105(arg2, arg0, -1, Static26.aClass161ArrayArray1[arg1], arg3);
+		if (Static222.load(arg1)) {
+			Static364.method6105(arg2, arg0, -1, Static26.components[arg1], arg3);
 		}
 	}
 

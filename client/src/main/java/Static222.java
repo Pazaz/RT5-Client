@@ -11,7 +11,7 @@ public final class Static222 {
 	public static int anInt3944 = 0;
 
 	@OriginalMember(owner = "client!ms", name = "a", descriptor = "(IB)Z")
-	public static boolean method3916(@OriginalArg(0) int arg0) {
+	public static boolean load(@OriginalArg(0) int arg0) {
 		if (Static128.aBooleanArray21[arg0]) {
 			return true;
 		} else if (Static283.aClass197_68.isGroupReady(arg0)) {
@@ -20,14 +20,14 @@ public final class Static222 {
 				Static128.aBooleanArray21[arg0] = true;
 				return true;
 			}
-			if (Static26.aClass161ArrayArray1[arg0] == null) {
-				Static26.aClass161ArrayArray1[arg0] = new Component[local23];
+			if (Static26.components[arg0] == null) {
+				Static26.components[arg0] = new Component[local23];
 			}
 			for (@Pc(45) int local45 = 0; local45 < local23; local45++) {
-				if (Static26.aClass161ArrayArray1[arg0][local45] == null) {
+				if (Static26.components[arg0][local45] == null) {
 					@Pc(59) byte[] local59 = Static283.aClass197_68.fetchFile(local45, arg0);
 					if (local59 != null) {
-						@Pc(71) Component local71 = Static26.aClass161ArrayArray1[arg0][local45] = new Component();
+						@Pc(71) Component local71 = Static26.components[arg0][local45] = new Component();
 						local71.id = local45 + (arg0 << 16);
 						if (local59[0] != -1) {
 							throw new IllegalStateException("if1");

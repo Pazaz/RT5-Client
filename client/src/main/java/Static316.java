@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static316 {
 
 	@OriginalMember(owner = "client!sg", name = "k", descriptor = "Lclient!as;")
-	public static Class5 aClass5_1;
+	public static Timer aClass5_1;
 
 	@OriginalMember(owner = "client!sg", name = "j", descriptor = "[I")
 	public static final int[] anIntArray396 = new int[14];

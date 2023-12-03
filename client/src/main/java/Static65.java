@@ -69,16 +69,4 @@ public final class Static65 {
 		}
 	}
 
-	@OriginalMember(owner = "client!dq", name = "b", descriptor = "(B)Lclient!as;")
-	public static Class5 method1738() {
-		try {
-			return new Class5_Sub1();
-		} catch (@Pc(8) Throwable local8) {
-			try {
-				return (Class5) Class.forName("Class5_Sub3").getDeclaredConstructor().newInstance();
-			} catch (@Pc(19) Throwable local19) {
-				return new Class5_Sub2();
-			}
-		}
-	}
 }

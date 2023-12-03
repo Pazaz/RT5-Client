@@ -61,8 +61,10 @@ public class Protocol {
 	public static int zoneX;
 	@OriginalMember(owner = "client!ag", name = "q", descriptor = "I")
 	public static int zoneZ;
+    @OriginalMember(owner = "client!a", name = "f", descriptor = "Z")
+    public static boolean verifyIdChanged = false;
 
-	@OriginalMember(owner = "client!ed", name = "b", descriptor = "(I)Z")
+    @OriginalMember(owner = "client!ed", name = "b", descriptor = "(I)Z")
 	public static boolean readPacketInternal() throws IOException {
 		if (socket == null) {
 			return false;
@@ -143,14 +145,14 @@ public class Protocol {
 				local220 = inboundBuffer.g1();
 				local74 = inboundBuffer.ig2();
 				local228 = inboundBuffer.ig2();
-				if (Static378.setVerifyId(local228)) {
+				if (setVerifyId(local228)) {
 					if (local220 == 2) {
 						Static90.method5953();
 					}
-					Static139.anInt2595 = local74;
+					Static139.topLevelInterface = local74;
 					Static160.method2957(local74);
 					Static60.method891(false);
-					ScriptRunner.method3598(Static139.anInt2595);
+					ScriptRunner.method3598(Static139.topLevelInterface);
 					for (worldId = 0; worldId < 100; worldId++) {
 						Static357.aBooleanArray59[worldId] = true;
 					}
@@ -163,14 +165,14 @@ public class Protocol {
 				local272 = inboundBuffer.g1badd();
 				local74 = inboundBuffer.g2add();
 				local228 = inboundBuffer.ig2add();
-				if (Static378.setVerifyId(local74)) {
+				if (setVerifyId(local74)) {
 					Static322.method5481(local228, local272);
 				}
 				packet = null;
 				return true;
 			} else if (ServerProt.PACKET_91 == packet) {
 				local220 = inboundBuffer.g2();
-				if (Static378.setVerifyId(local220)) {
+				if (setVerifyId(local220)) {
 					Camera.reset();
 				}
 				packet = null;
@@ -181,7 +183,7 @@ public class Protocol {
 					local220 = inboundBuffer.mg4();
 					local74 = inboundBuffer.mg4();
 					local228 = inboundBuffer.ig2();
-					if (Static378.setVerifyId(local228)) {
+					if (setVerifyId(local228)) {
 						@Pc(335) SubInterface local335 = (SubInterface) InterfaceList.subInterfaces.get((long) local220);
 						local344 = (SubInterface) InterfaceList.subInterfaces.get((long) local74);
 						if (local344 != null) {
@@ -200,21 +202,21 @@ public class Protocol {
 							InterfaceList.redraw(local375);
 							DelayedStateChange.setComponentSizeClient(true, local375);
 						}
-						if (Static139.anInt2595 != -1) {
-							Static392.method6460(Static139.anInt2595, 1);
+						if (Static139.topLevelInterface != -1) {
+							Static392.method6460(Static139.topLevelInterface, 1);
 						}
 					}
 					packet = null;
 					return true;
 				} else if (ServerProt.PACKET_82 == packet) {
-					if (Static139.anInt2595 != -1) {
-						Static392.method6460(Static139.anInt2595, 0);
+					if (Static139.topLevelInterface != -1) {
+						Static392.method6460(Static139.topLevelInterface, 0);
 					}
 					packet = null;
 					return true;
 				} else if (packet == ServerProt.PACKET_30) {
 					local220 = inboundBuffer.g2();
-					if (Static378.setVerifyId(local220)) {
+					if (setVerifyId(local220)) {
 						Camera.smoothReset();
 					}
 					packet = null;
@@ -379,7 +381,7 @@ public class Protocol {
 						local220 = inboundBuffer.ig2add();
 						local74 = inboundBuffer.img4();
 						local228 = inboundBuffer.g2add();
-						if (Static378.setVerifyId(local228)) {
+						if (setVerifyId(local228)) {
 							Static7.method6469(local220, local74);
 						}
 						packet = null;
@@ -387,7 +389,7 @@ public class Protocol {
 					} else if (ServerProt.PACKET_12 == packet) {
 						local220 = inboundBuffer.g2add();
 						local74 = inboundBuffer.g1bneg();
-						if (Static378.setVerifyId(local220)) {
+						if (setVerifyId(local220)) {
 							Static114.anInt2344 = local74;
 						}
 						packet = null;
@@ -412,7 +414,7 @@ public class Protocol {
 							}
 							worldId = inboundBuffer.g2();
 							local497 = inboundBuffer.img4();
-							if (Static378.setVerifyId(worldId)) {
+							if (setVerifyId(worldId)) {
 								for (local506 = local220; local506 <= local228; local506++) {
 									local1101 = (long) local506 + ((long) local497 << 32);
 									local1109 = (ServerActiveProperties) Static327.properties.get(local1101);
@@ -432,7 +434,7 @@ public class Protocol {
 						} else if (packet == ServerProt.PACKET_89) {
 							local220 = inboundBuffer.ig4();
 							local74 = inboundBuffer.ig2add();
-							if (Static378.setVerifyId(local74)) {
+							if (setVerifyId(local74)) {
 								Static190.method3501(-1, -1, 3, local220);
 							}
 							packet = null;
@@ -442,7 +444,7 @@ public class Protocol {
 							local74 = inboundBuffer.g1sub();
 							local228 = inboundBuffer.ig4();
 							worldId = inboundBuffer.g2();
-							if (Static378.setVerifyId(local220)) {
+							if (setVerifyId(local220)) {
 								local344 = (SubInterface) InterfaceList.subInterfaces.get((long) local228);
 								if (local344 != null) {
 									Static276.method4655(false, local344, worldId != local344.id);
@@ -474,7 +476,7 @@ public class Protocol {
 							worldId = inboundBuffer.g2();
 							local497 = inboundBuffer.g1();
 							local506 = inboundBuffer.g1();
-							if (Static378.setVerifyId(local220)) {
+							if (setVerifyId(local220)) {
 								Camera.moveto(local228, local497, local506, true, worldId, local74);
 							}
 							packet = null;
@@ -645,7 +647,7 @@ public class Protocol {
 									worldId = inboundBuffer.g2();
 									local497 = inboundBuffer.g1();
 									local506 = inboundBuffer.g1();
-									if (Static378.setVerifyId(local220)) {
+									if (setVerifyId(local220)) {
 										Camera.lookAt(local497, worldId, local228, local506, local74);
 									}
 									packet = null;
@@ -668,7 +670,7 @@ public class Protocol {
 									local220 = inboundBuffer.ig2add();
 									local74 = inboundBuffer.ig4();
 									local228 = inboundBuffer.g1sub();
-									if (Static378.setVerifyId(local220)) {
+									if (setVerifyId(local220)) {
 										Static17.method4208(local74, local228);
 									}
 									packet = null;
@@ -706,7 +708,7 @@ public class Protocol {
 									local220 = inboundBuffer.g4();
 									local74 = inboundBuffer.ig2();
 									local228 = inboundBuffer.g2add();
-									if (Static378.setVerifyId(local74)) {
+									if (setVerifyId(local74)) {
 										Static120.method2383(local228, local220);
 									}
 									packet = null;
@@ -724,7 +726,7 @@ public class Protocol {
 									local74 = inboundBuffer.img4();
 									local228 = inboundBuffer.g2();
 									worldId = inboundBuffer.ig2add();
-									if (Static378.setVerifyId(local228)) {
+									if (setVerifyId(local228)) {
 										Static375.method6282(local220 + (worldId << 16), local74);
 									}
 									packet = null;
@@ -734,7 +736,7 @@ public class Protocol {
 									local74 = inboundBuffer.img4();
 									local228 = inboundBuffer.g2add();
 									worldId = inboundBuffer.ig2();
-									if (Static378.setVerifyId(local228)) {
+									if (setVerifyId(local228)) {
 										Static190.method3501(worldId, local74, 5, local220);
 									}
 									packet = null;
@@ -825,11 +827,11 @@ public class Protocol {
 										local74 = inboundBuffer.g2();
 										local228 = inboundBuffer.g2();
 										worldId = inboundBuffer.g2();
-										if (Static378.setVerifyId(local220) && Static26.aClass161ArrayArray1[local74] != null) {
+										if (setVerifyId(local220) && Static26.components[local74] != null) {
 											for (local497 = local228; local497 < worldId; local497++) {
 												local506 = inboundBuffer.ig3();
-												if (local497 < Static26.aClass161ArrayArray1[local74].length && Static26.aClass161ArrayArray1[local74][local497] != null) {
-													Static26.aClass161ArrayArray1[local74][local497].anInt4246 = local506;
+												if (local497 < Static26.components[local74].length && Static26.components[local74][local497] != null) {
+													Static26.components[local74][local497].anInt4246 = local506;
 												}
 											}
 										}
@@ -854,7 +856,7 @@ public class Protocol {
 										worldId = inboundBuffer.g1();
 										local497 = inboundBuffer.g1();
 										local506 = inboundBuffer.g2();
-										if (Static378.setVerifyId(local220)) {
+										if (setVerifyId(local220)) {
 											Static189.aBooleanArray33[local74] = true;
 											Static134.anIntArray164[local74] = local228;
 											Static105.anIntArray134[local74] = worldId;
@@ -961,7 +963,7 @@ public class Protocol {
 											worldId = -1;
 										}
 										local497 = inboundBuffer.ig2();
-										if (Static378.setVerifyId(local497)) {
+										if (setVerifyId(local497)) {
 											for (local506 = local74; local506 <= worldId; local506++) {
 												local1101 = ((long) local220 << 32) + ((long) local506);
 												local1109 = (ServerActiveProperties) Static327.properties.get(local1101);
@@ -1018,7 +1020,7 @@ public class Protocol {
 										local220 = inboundBuffer.g2();
 										local74 = inboundBuffer.g2add();
 										local228 = inboundBuffer.g2add();
-										if (Static378.setVerifyId(local74)) {
+										if (setVerifyId(local74)) {
 											Camera.forceAngle(local220, local228);
 										}
 										packet = null;
@@ -1031,7 +1033,7 @@ public class Protocol {
 										}
 										local228 = inboundBuffer.mg4();
 										worldId = inboundBuffer.img4();
-										if (Static378.setVerifyId(local220)) {
+										if (setVerifyId(local220)) {
 											Static216.method3774(local74, worldId, local228);
 											@Pc(3499) ObjType local3499 = client.ObjTypes.get(local74);
 											Static277.method4680(local3499.yAngle2d, local3499.xAngle2d, worldId, local3499.zoom2d);
@@ -1177,7 +1179,7 @@ public class Protocol {
 											if (local228 == 65535) {
 												local228 = -1;
 											}
-											if (Static378.setVerifyId(local220)) {
+											if (setVerifyId(local220)) {
 												Static139.method2595(local74, local228);
 											}
 											packet = null;
@@ -1195,7 +1197,7 @@ public class Protocol {
 											local220 = inboundBuffer.g4();
 											local74 = inboundBuffer.ig2add();
 											local228 = inboundBuffer.g2();
-											if (Static378.setVerifyId(local228)) {
+											if (setVerifyId(local228)) {
 												DelayedStateChange.method2737(local220, local74);
 											}
 											packet = null;
@@ -1244,7 +1246,7 @@ public class Protocol {
 											local444 = inboundBuffer.gjstr();
 											local74 = inboundBuffer.ig2add();
 											local228 = inboundBuffer.ig2();
-											if (Static378.setVerifyId(local228)) {
+											if (setVerifyId(local228)) {
 												Static10.method239(local74, local444);
 											}
 											packet = null;
@@ -1342,7 +1344,7 @@ public class Protocol {
 												if (local228 == 65535) {
 													local228 = -1;
 												}
-												if (Static378.setVerifyId(local74)) {
+												if (setVerifyId(local74)) {
 													Static190.method3501(local228, -1, 1, local220);
 												}
 												packet = null;
@@ -1355,7 +1357,7 @@ public class Protocol {
 												local444 = inboundBuffer.gjstr();
 												local74 = inboundBuffer.ig2();
 												local228 = inboundBuffer.img4();
-												if (Static378.setVerifyId(local74)) {
+												if (setVerifyId(local74)) {
 													Static319.method5432(local228, local444);
 												}
 												packet = null;
@@ -1373,7 +1375,7 @@ public class Protocol {
 												local74 = inboundBuffer.ig2();
 												local228 = inboundBuffer.ig2s();
 												worldId = inboundBuffer.g2ssub();
-												if (Static378.setVerifyId(local74)) {
+												if (setVerifyId(local74)) {
 													Static129.method2438(worldId, local228, local220);
 												}
 												packet = null;
@@ -1401,7 +1403,7 @@ public class Protocol {
 													local74 = -1;
 												}
 												local228 = inboundBuffer.ig2add();
-												if (Static378.setVerifyId(local228)) {
+												if (setVerifyId(local228)) {
 													Static190.method3501(local74, -1, 2, local220);
 												}
 												packet = null;
@@ -1422,7 +1424,7 @@ public class Protocol {
 												local228 = inboundBuffer.g2();
 												worldId = inboundBuffer.ig2add();
 												local497 = inboundBuffer.ig4();
-												if (Static378.setVerifyId(local74)) {
+												if (setVerifyId(local74)) {
 													Static190.method3501(local228 | worldId << 16, local220, 7, local497);
 												}
 												packet = null;
@@ -1476,7 +1478,7 @@ public class Protocol {
 											} else if (packet == ServerProt.PACKET_78) {
 												local220 = inboundBuffer.g2add();
 												local74 = inboundBuffer.img4();
-												if (Static378.setVerifyId(local220)) {
+												if (setVerifyId(local220)) {
 													Static190.method3501(PlayerList.selfId, 0, 5, local74);
 												}
 												packet = null;
@@ -1512,7 +1514,7 @@ public class Protocol {
 												local220 = inboundBuffer.g2();
 												local74 = inboundBuffer.g4();
 												local228 = inboundBuffer.ig2();
-												if (Static378.setVerifyId(local220)) {
+												if (setVerifyId(local220)) {
 													Static322.method5481(local228, local74);
 												}
 												packet = null;
@@ -1537,7 +1539,7 @@ public class Protocol {
 												local220 = inboundBuffer.g2();
 												local452 = inboundBuffer.gjstr();
 												local228 = inboundBuffer.ig2();
-												if (Static378.setVerifyId(local228)) {
+												if (setVerifyId(local228)) {
 													Static10.method239(local220, local452);
 												}
 												packet = null;
@@ -1548,7 +1550,7 @@ public class Protocol {
 												local228 = inboundBuffer.g2add();
 												worldId = inboundBuffer.g2add();
 												local497 = inboundBuffer.g2add();
-												if (Static378.setVerifyId(local74)) {
+												if (setVerifyId(local74)) {
 													Static277.method4680(local497, worldId, local220, local228);
 												}
 												packet = null;
@@ -1653,7 +1655,7 @@ public class Protocol {
 													}
 												}
 												local5648[0] = Integer.valueOf(inboundBuffer.g4());
-												if (Static378.setVerifyId(local220)) {
+												if (setVerifyId(local220)) {
 													@Pc(5704) HookRequest local5704 = new HookRequest();
 													local5704.anObjectArray4 = local5648;
 													ScriptRunner.execute(local5704);
@@ -1663,7 +1665,7 @@ public class Protocol {
 											} else if (ServerProt.PACKET_28 == packet) {
 												local220 = inboundBuffer.g2();
 												local74 = inboundBuffer.g4();
-												if (Static378.setVerifyId(local220)) {
+												if (setVerifyId(local220)) {
 													@Pc(5735) SubInterface local5735 = (SubInterface) InterfaceList.subInterfaces.get((long) local74);
 													if (local5735 != null) {
 														Static276.method4655(false, local5735, true);
@@ -1683,7 +1685,7 @@ public class Protocol {
 												local220 = inboundBuffer.g4();
 												local74 = inboundBuffer.ig2();
 												local228 = inboundBuffer.ig2sadd();
-												if (Static378.setVerifyId(local74)) {
+												if (setVerifyId(local74)) {
 													Static53.method3952(local228, local220);
 												}
 												packet = null;
@@ -3854,9 +3856,9 @@ public class Protocol {
 											if (Static367.anInt6876 > 50) {
 												writeOpcode(ClientProt.NO_TIMEOUT);
 											}
-											if (Static1.verifyIdChanged) {
+											if (verifyIdChanged) {
 												method2432();
-												Static1.verifyIdChanged = false;
+												verifyIdChanged = false;
 											}
 											try {
 												if (socket != null && outboundBuffer.pos > 0) {
@@ -4252,5 +4254,12 @@ public class Protocol {
 			TracingException.report(null, "T3 - " + packet);
 			LoginManager.logout();
 		}
+	}
+
+	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(BI)Z")
+	public static boolean setVerifyId(@OriginalArg(1) int arg0) {
+		verifyIdChanged = true;
+		verifyId = arg0 + 1 & 0xFFFF;
+		return true;
 	}
 }
