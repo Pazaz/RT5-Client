@@ -6,14 +6,14 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class ServerActiveProperties extends Node {
 
 	@OriginalMember(owner = "client!eh", name = "A", descriptor = "I")
-	public final int anInt1759;
+	public final int targetParam;
 
 	@OriginalMember(owner = "client!eh", name = "z", descriptor = "I")
 	public final int events;
 
 	@OriginalMember(owner = "client!eh", name = "<init>", descriptor = "(II)V")
 	public ServerActiveProperties(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		this.anInt1759 = arg1;
+		this.targetParam = arg1;
 		this.events = arg0;
 	}
 
@@ -43,12 +43,12 @@ public final class ServerActiveProperties extends Node {
 	}
 
 	@OriginalMember(owner = "client!eh", name = "a", descriptor = "(II)Z")
-	public boolean method1854(@OriginalArg(0) int arg0) {
+	public boolean isButtonEnabled(@OriginalArg(0) int arg0) {
 		return (this.events >> arg0 + 1 & 0x1) != 0;
 	}
 
 	@OriginalMember(owner = "client!eh", name = "c", descriptor = "(I)Z")
-	public boolean method1855() {
+	public boolean isResumePauseButtonEnabled() {
 		return (this.events & 0x1) != 0;
 	}
 }

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ir")
-public final class Class5_Sub2 extends Class5 {
+public final class MillisTimer extends Timer {
 
 	@OriginalMember(owner = "client!ir", name = "h", descriptor = "I")
 	private int anInt2798 = 1;
@@ -41,7 +41,7 @@ public final class Class5_Sub2 extends Class5 {
 
 	@OriginalMember(owner = "client!ir", name = "a", descriptor = "(ZI)I")
 	@Override
-	public int method4409(@OriginalArg(1) int arg0) {
+	public int sleep(@OriginalArg(1) int arg0) {
 		@Pc(11) long local11 = (long) arg0 * 1000000L;
 		this.aLong87 += this.method2778();
 		if (this.aLong86 > this.aLong87) {

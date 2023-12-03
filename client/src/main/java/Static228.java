@@ -56,10 +56,10 @@ public final class Static228 {
 						if (local33 instanceof Npc) {
 							local217 = local17.anInt2028;
 							if (local217 == -1) {
-								local217 = local33.method4332().anInt6304;
+								local217 = local33.getBasType().anInt6304;
 							}
 						} else {
-							local217 = local33.method4332().anInt6304;
+							local217 = local33.getBasType().anInt6304;
 						}
 						if (local217 != -1) {
 							@Pc(246) Sprite[] local246 = (Sprite[]) Static306.aClass98_49.get((long) local217);
@@ -96,10 +96,10 @@ public final class Static228 {
 							if (local33 instanceof Npc) {
 								local310 = local17.anInt2042;
 								if (local310 == -1) {
-									local310 = local33.method4332().anInt6288;
+									local310 = local33.getBasType().anInt6288;
 								}
 							} else {
-								local310 = local33.method4332().anInt6288;
+								local310 = local33.getBasType().anInt6288;
 							}
 							if (local310 != -1) {
 								@Pc(420) Sprite[] local420 = (Sprite[]) Static139.aClass98_18.get((long) local310);

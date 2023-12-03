@@ -25,7 +25,7 @@ public final class Static162 {
 	public static void method2979(@OriginalArg(1) int arg0) {
 		if (arg0 != -1 && Static128.aBooleanArray21[arg0]) {
 			Static283.aClass197_68.discardUnpacked(arg0);
-			Static26.aClass161ArrayArray1[arg0] = null;
+			Static26.components[arg0] = null;
 			Static113.aClass161ArrayArray2[arg0] = null;
 			Static128.aBooleanArray21[arg0] = false;
 		}

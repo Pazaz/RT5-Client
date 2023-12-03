@@ -70,7 +70,7 @@ public final class Static230 {
 	}
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(IIIIIIIILclient!dg;II)Z")
-	public static boolean method4017(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) Class46 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
+	public static boolean method4017(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) CollisionMap arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
 		@Pc(7) int local7 = arg6;
 		@Pc(9) int local9 = arg0;
 		@Pc(18) int local18 = arg6 - 64;

@@ -34,8 +34,8 @@ public final class Static276 {
 			InterfaceList.redraw(local27);
 		}
 		Static227.method3989();
-		if (!arg0 && Static139.anInt2595 != -1) {
-			Static392.method6460(Static139.anInt2595, 1);
+		if (!arg0 && Static139.topLevelInterface != -1) {
+			Static392.method6460(Static139.topLevelInterface, 1);
 		}
 		@Pc(49) Class137 local49 = new Class137(InterfaceList.subInterfaces);
 		for (@Pc(54) SubInterface local54 = (SubInterface) local49.method3561(); local54 != null; local54 = (SubInterface) local49.method3560()) {

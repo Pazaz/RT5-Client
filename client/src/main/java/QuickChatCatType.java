@@ -65,7 +65,7 @@ public final class QuickChatCatType extends SecondaryNode {
 			for (local26 = 0; local26 < local16; local26++) {
 				this.subcategories[local26] = arg1.g2();
 				local39 = arg1.g1b();
-				this.subcategoryShortcuts[local26] = local39 == 0 ? 0 : Static78.method5698(local39);
+				this.subcategoryShortcuts[local26] = local39 == 0 ? 0 : Static78.forCharKey(local39);
 			}
 		} else if (arg0 == 3) {
 			local16 = arg1.g1();
@@ -74,7 +74,7 @@ public final class QuickChatCatType extends SecondaryNode {
 			for (local26 = 0; local26 < local16; local26++) {
 				this.phrases[local26] = arg1.g2();
 				local39 = arg1.g1b();
-				this.phraseShortcuts[local26] = local39 == 0 ? 0 : Static78.method5698(local39);
+				this.phraseShortcuts[local26] = local39 == 0 ? 0 : Static78.forCharKey(local39);
 			}
 		}
 	}

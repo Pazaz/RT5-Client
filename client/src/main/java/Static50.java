@@ -13,8 +13,8 @@ public final class Static50 {
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(ZZ)V")
 	public static void method1525(@OriginalArg(0) boolean arg0) {
 		if (arg0) {
-			if (Static139.anInt2595 != -1) {
-				Static162.method2979(Static139.anInt2595);
+			if (Static139.topLevelInterface != -1) {
+				Static162.method2979(Static139.topLevelInterface);
 			}
 			for (@Pc(19) SubInterface local19 = (SubInterface) InterfaceList.subInterfaces.head(); local19 != null; local19 = (SubInterface) InterfaceList.subInterfaces.next()) {
 				if (!local19.isLinked()) {
@@ -25,13 +25,13 @@ public final class Static50 {
 				}
 				Static276.method4655(false, local19, true);
 			}
-			Static139.anInt2595 = -1;
+			Static139.topLevelInterface = -1;
 			InterfaceList.subInterfaces = new HashTable(8);
 			Static210.method3720();
-			Static139.anInt2595 = Static391.anInt7216;
+			Static139.topLevelInterface = Static391.anInt7216;
 			Static60.method891(false);
 			Static98.method2107();
-			ScriptRunner.method3598(Static139.anInt2595);
+			ScriptRunner.method3598(Static139.topLevelInterface);
 		}
 		Static310.method5283();
 		Static107.anInt2219 = -1;
@@ -43,7 +43,7 @@ public final class Static50 {
 		PlayerList.self.movementQueueZ[0] = 52;
 		Static211.anInt3777 = 0;
 		Static136.anInt6778 = 0;
-		if (Camera.anInt5911 == 2) {
+		if (Camera.cameraType == 2) {
 			Static211.anInt3777 = Static19.anInt535 << 7;
 			Static136.anInt6778 = Static311.anInt5810 << 7;
 		} else {

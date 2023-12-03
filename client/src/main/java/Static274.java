@@ -11,7 +11,7 @@ public final class Static274 {
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(ZLclient!nk;I)I")
 	public static int method4631(@OriginalArg(1) Component arg0, @OriginalArg(2) int arg1) {
-		if (!InterfaceList.getServerActiveProperties(arg0).method1854(arg1) && arg0.onOp == null) {
+		if (!InterfaceList.getServerActiveProperties(arg0).isButtonEnabled(arg1) && arg0.onOp == null) {
 			return -1;
 		} else if (arg0.anIntArray279 == null || arg0.anIntArray279.length <= arg1) {
 			return -1;

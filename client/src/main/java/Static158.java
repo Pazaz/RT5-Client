@@ -21,7 +21,7 @@ public final class Static158 {
 		@Pc(9) StringBuffer local9 = new StringBuffer();
 		@Pc(11) int local11 = Static361.anInt6770;
 		for (@Pc(13) int local13 = 0; local13 < arg0.length; local13++) {
-			@Pc(27) Class230 local27 = client.aClass233_1.method5885(arg0[local13]);
+			@Pc(27) QuestType local27 = client.QuestTypes.get(arg0[local13]);
 			if (local27.anInt6454 != -1) {
 				@Pc(39) Sprite local39 = (Sprite) Static210.aClass98_31.get((long) local27.anInt6454);
 				if (local39 == null) {

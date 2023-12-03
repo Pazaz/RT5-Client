@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!op")
-public final class Class5_Sub3 extends Class5 {
+public final class NanoTimer extends Timer {
 
 	@OriginalMember(owner = "client!op", name = "g", descriptor = "J")
 	private long aLong139 = 0L;
@@ -25,7 +25,7 @@ public final class Class5_Sub3 extends Class5 {
 	private final long[] aLongArray8 = new long[10];
 
 	@OriginalMember(owner = "client!op", name = "<init>", descriptor = "()V")
-	public Class5_Sub3() {
+	public NanoTimer() {
 		this.aLong139 = System.nanoTime();
 		this.aLong140 = System.nanoTime();
 	}
@@ -51,7 +51,7 @@ public final class Class5_Sub3 extends Class5 {
 
 	@OriginalMember(owner = "client!op", name = "a", descriptor = "(ZI)I")
 	@Override
-	public int method4409(@OriginalArg(1) int arg0) {
+	public int sleep(@OriginalArg(1) int arg0) {
 		@Pc(4) long local4 = (long) arg0 * 1000000L;
 		this.aLong139 += this.method4410();
 		if (this.aLong139 < this.aLong140) {

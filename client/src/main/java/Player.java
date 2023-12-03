@@ -127,6 +127,20 @@ public final class Player extends PathingEntity {
 		}
 	}
 
+	@OriginalMember(owner = "client!wh", name = "a", descriptor = "(ZLclient!nh;)I")
+	public static int getSound(@OriginalArg(1) Player arg0) {
+		@Pc(8) int local8 = arg0.walkSound;
+		@Pc(12) BasType local12 = arg0.getBasType();
+		if (arg0.aBoolean317) {
+			local8 = arg0.crawlSound;
+		} else if (local12.anInt6263 == arg0.anInt4585 || local12.anInt6292 == arg0.anInt4585 || local12.anInt6301 == arg0.anInt4585 || local12.anInt6271 == arg0.anInt4585) {
+			local8 = arg0.runSound;
+		} else if (local12.anInt6265 == arg0.anInt4585 || local12.anInt6299 == arg0.anInt4585 || local12.anInt6267 == arg0.anInt4585 || local12.anInt6284 == arg0.anInt4585) {
+			local8 = arg0.idleSound;
+		}
+		return local8;
+	}
+	
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(Lclient!wm;B)V")
 	@Override
 	public void method6070(@OriginalArg(0) RasteriserBase arg0) {
@@ -306,7 +320,7 @@ public final class Player extends PathingEntity {
 		if (super.anInt4585 == -1 || !super.aBoolean317) {
 			return;
 		}
-		@Pc(513) BasType local513 = this.method4332();
+		@Pc(513) BasType local513 = this.getBasType();
 		if (!local513.method5692(super.anInt4585)) {
 			super.anInt4585 = -1;
 			super.aBoolean317 = false;
@@ -316,7 +330,7 @@ public final class Player extends PathingEntity {
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(ILclient!wm;I)Z")
 	private boolean method4067(@OriginalArg(1) RasteriserBase arg0, @OriginalArg(2) int arg1) {
 		@Pc(7) int local7 = arg1;
-		@Pc(13) BasType local13 = this.method4332();
+		@Pc(13) BasType local13 = this.getBasType();
 		@Pc(28) Class157 local28 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
 		@Pc(48) Class157 local48 = super.anInt4585 == -1 || this.aBoolean275 || super.aBoolean317 && local28 != null ? null : client.SeqTypes.method2371(super.anInt4585);
 		@Pc(51) int local51 = local13.anInt6287;
@@ -448,7 +462,7 @@ public final class Player extends PathingEntity {
 		@Pc(45) float local45 = arg0.method2802();
 		@Pc(48) float local48 = arg0.method2860();
 		if (client.preferences.characterShadows) {
-			@Pc(55) BasType local55 = this.method4332();
+			@Pc(55) BasType local55 = this.getBasType();
 			if (local55.aBoolean424 && (this.appearance.npcId == -1 || client.NpcTypes.get(this.appearance.npcId).aBoolean142)) {
 				@Pc(87) Class157 local87 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
 				@Pc(108) Class157 local108 = super.anInt4585 == -1 || this.aBoolean275 || super.aBoolean317 && local87 != null ? null : client.SeqTypes.method2371(super.anInt4585);

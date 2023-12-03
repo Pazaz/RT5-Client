@@ -18,7 +18,7 @@ public final class Npc extends PathingEntity {
 	@OriginalMember(owner = "client!oe", name = "a", descriptor = "(IILclient!wm;)Z")
 	private boolean method4335(@OriginalArg(1) int arg0, @OriginalArg(2) RasteriserBase arg1) {
 		@Pc(7) int local7 = arg0;
-		@Pc(11) BasType local11 = this.method4332();
+		@Pc(11) BasType local11 = this.getBasType();
 		@Pc(27) Class157 local27 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;
 		@Pc(45) Class157 local45 = super.anInt4585 == -1 || super.aBoolean317 && local27 != null ? null : client.SeqTypes.method2371(super.anInt4585);
 		@Pc(48) int local48 = local11.anInt6287;
@@ -187,7 +187,7 @@ public final class Npc extends PathingEntity {
 		@Pc(22) int local22 = super.aClass248_7.method6441();
 		local17.method3925(local22);
 		local17.method3936(super.xFine, super.anInt6782, super.zFine);
-		@Pc(37) BasType local37 = this.method4332();
+		@Pc(37) BasType local37 = this.getBasType();
 		@Pc(50) NpcType local50 = this.type.multiNpcs == null ? this.type : this.type.getMultiNpc(VarpDomain.instance);
 		if (client.preferences.characterShadows && local50.aBoolean142 && local37.aBoolean424) {
 			@Pc(75) Class157 local75 = super.anInt4597 != -1 && super.anInt4590 == 0 ? client.SeqTypes.method2371(super.anInt4597) : null;

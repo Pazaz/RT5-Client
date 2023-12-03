@@ -15,10 +15,10 @@ public final class Static281 {
 		}
 		@Pc(13) int local13 = arg1 >> 16;
 		@Pc(17) int local17 = arg1 & 0xFFFF;
-		if (Static26.aClass161ArrayArray1[local13] == null || Static26.aClass161ArrayArray1[local13][local17] == null) {
+		if (Static26.components[local13] == null || Static26.components[local13][local17] == null) {
 			return false;
 		}
-		@Pc(35) Component local35 = Static26.aClass161ArrayArray1[local13][local17];
+		@Pc(35) Component local35 = Static26.components[local13][local17];
 		@Pc(51) Class2_Sub5 local51;
 		if (arg0 == -1 && local35.type == 0) {
 			for (local51 = (Class2_Sub5) Static129.aClass135_19.head(); local51 != null; local51 = (Class2_Sub5) Static129.aClass135_19.next()) {

@@ -10,20 +10,6 @@ public final class Static384 {
 	@OriginalMember(owner = "client!wh", name = "s", descriptor = "I")
 	public static int anInt7174 = 0;
 
-	@OriginalMember(owner = "client!wh", name = "a", descriptor = "(ZLclient!nh;)I")
-	public static int method6415(@OriginalArg(1) Player arg0) {
-		@Pc(8) int local8 = arg0.walkSound;
-		@Pc(12) BasType local12 = arg0.method4332();
-		if (arg0.aBoolean317) {
-			local8 = arg0.crawlSound;
-		} else if (local12.anInt6263 == arg0.anInt4585 || local12.anInt6292 == arg0.anInt4585 || local12.anInt6301 == arg0.anInt4585 || local12.anInt6271 == arg0.anInt4585) {
-			local8 = arg0.runSound;
-		} else if (local12.anInt6265 == arg0.anInt4585 || local12.anInt6299 == arg0.anInt4585 || local12.anInt6267 == arg0.anInt4585 || local12.anInt6284 == arg0.anInt4585) {
-			local8 = arg0.idleSound;
-		}
-		return local8;
-	}
-
 	@OriginalMember(owner = "client!wh", name = "a", descriptor = "(IIIIIB)V")
 	public static void method6416(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		@Pc(18) int local18 = arg1 - arg2;

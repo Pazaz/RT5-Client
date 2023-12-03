@@ -15,9 +15,6 @@ public final class Static232 {
 	@OriginalMember(owner = "client!ng", name = "q", descriptor = "[Lclient!jd;")
 	public static Sprite[] aClass13Array17;
 
-	@OriginalMember(owner = "client!ng", name = "g", descriptor = "Lclient!ad;")
-	public static final HashTable aClass4_86 = new HashTable(16);
-
 	@OriginalMember(owner = "client!ng", name = "l", descriptor = "I")
 	public static int anInt4087 = 0;
 
@@ -26,8 +23,8 @@ public final class Static232 {
 
 	@OriginalMember(owner = "client!ng", name = "a", descriptor = "(II)V")
 	public static void method4028(@OriginalArg(1) int arg0) {
-		if (Static222.method3916(arg0)) {
-			Static181.method3378(Static26.aClass161ArrayArray1[arg0], -1);
+		if (Static222.load(arg0)) {
+			Static181.method3378(Static26.components[arg0], -1);
 		}
 	}
 }

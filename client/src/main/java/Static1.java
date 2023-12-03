@@ -7,9 +7,6 @@ public final class Static1 {
 	@OriginalMember(owner = "client!a", name = "d", descriptor = "J")
 	public static long aLong1 = 0L;
 
-	@OriginalMember(owner = "client!a", name = "f", descriptor = "Z")
-	public static boolean aBoolean1 = false;
-
 	@OriginalMember(owner = "client!a", name = "b", descriptor = "(I)V")
 	public static void method2() {
 		@Pc(8) int local8 = Static210.aByteArrayArray7.length;

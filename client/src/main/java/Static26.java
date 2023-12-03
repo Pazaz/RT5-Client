@@ -8,7 +8,7 @@ public final class Static26 {
 	public static byte[][] aByteArrayArray3;
 
 	@OriginalMember(owner = "client!bj", name = "g", descriptor = "[[Lclient!nk;")
-	public static Component[][] aClass161ArrayArray1;
+	public static Component[][] components;
 
 	@OriginalMember(owner = "client!bj", name = "d", descriptor = "Lclient!gd;")
 	public static final LocalizedString aClass79_18 = new LocalizedString("Loading defaults - ", "Lade Standardeinstellungen - ", "Chargement des paramètres par défaut - ", "Carregando padrões - ");

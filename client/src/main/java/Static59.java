@@ -38,7 +38,7 @@ public final class Static59 {
 		client.BasTypes.method242();
 		client.MsiType.method2705();
 		client.MelTypes.method3373();
-		client.aClass233_1.method5882();
+		client.QuestTypes.method5882();
 		client.ParamTypes.method564();
 		client.SkyboxTypes.method5422();
 		client.SkyboxSphereTypes.method4030();

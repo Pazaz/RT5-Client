@@ -116,7 +116,7 @@ public final class ScriptRunner {
 		@Pc(9) int local9 = arg0 >>> 16;
 		@Pc(13) Component[] local13 = Static113.aClass161ArrayArray2[local9];
 		if (local13 == null) {
-			@Pc(19) Component[] local19 = Static26.aClass161ArrayArray1[local9];
+			@Pc(19) Component[] local19 = Static26.components[local9];
 			@Pc(22) int local22 = local19.length;
 			local13 = Static113.aClass161ArrayArray2[local9] = new Component[local22];
 			Static404.method4609(local19, 0, local13, 0, local19.length);
@@ -2797,7 +2797,7 @@ public final class ScriptRunner {
 		@Pc(9) int local9 = arg0 >>> 16;
 		@Pc(13) Component[] local13 = Static113.aClass161ArrayArray2[local9];
 		if (local13 == null) {
-			@Pc(19) Component[] local19 = Static26.aClass161ArrayArray1[local9];
+			@Pc(19) Component[] local19 = Static26.components[local9];
 			@Pc(22) int local22 = local19.length;
 			local13 = Static113.aClass161ArrayArray2[local9] = new Component[local22];
 			Static404.method4609(local19, 0, local13, 0, local19.length);
@@ -2814,10 +2814,10 @@ public final class ScriptRunner {
 
 	@OriginalMember(owner = "client!lk", name = "d", descriptor = "(I)V")
 	public static void method3598(@OriginalArg(0) int arg0) {
-		if (arg0 == -1 || !Static222.method3916(arg0)) {
+		if (arg0 == -1 || !Static222.load(arg0)) {
 			return;
 		}
-		@Pc(12) Component[] local12 = Static26.aClass161ArrayArray1[arg0];
+		@Pc(12) Component[] local12 = Static26.components[arg0];
 		for (@Pc(14) int local14 = 0; local14 < local12.length; local14++) {
 			@Pc(19) Component local19 = local12[local14];
 			if (local19.anObjectArray22 != null) {
@@ -3905,7 +3905,7 @@ public final class ScriptRunner {
 								throw new RuntimeException();
 							}
 							Camera.anInt6398 = local95;
-							Camera.anInt5911 = 3;
+							Camera.cameraType = 3;
 							return;
 						}
 						if (opcode == 5503) {
@@ -3968,7 +3968,7 @@ public final class ScriptRunner {
 							}
 							Static394.anInt7264 = local192 * 128 + 64;
 							Static348.anInt6448 = local89 * 128 + 64;
-							Camera.anInt5911 = 4;
+							Camera.cameraType = 4;
 							return;
 						}
 						if (opcode == 5512) {
@@ -4807,7 +4807,7 @@ public final class ScriptRunner {
 						if (opcode == 6700) {
 							// todo
 							local157 = InterfaceList.subInterfaces.size();
-							if (Static139.anInt2595 != -1) {
+							if (Static139.topLevelInterface != -1) {
 								local157++;
 							}
 							intStack[isp++] = local157;
@@ -4816,9 +4816,9 @@ public final class ScriptRunner {
 						if (opcode == 6701) {
 							// todo
 							local157 = intStack[--isp];
-							if (Static139.anInt2595 != -1) {
+							if (Static139.topLevelInterface != -1) {
 								if (local157 == 0) {
-									intStack[isp++] = Static139.anInt2595;
+									intStack[isp++] = Static139.topLevelInterface;
 									return;
 								}
 								local157--;
@@ -4833,11 +4833,11 @@ public final class ScriptRunner {
 						if (opcode == 6702) {
 							// todo
 							local157 = intStack[--isp];
-							if (Static26.aClass161ArrayArray1[local157] == null) {
+							if (Static26.components[local157] == null) {
 								stringStack[ssp++] = "";
 								return;
 							}
-							local81 = Static26.aClass161ArrayArray1[local157][0].aString43;
+							local81 = Static26.components[local157][0].aString43;
 							if (local81 == null) {
 								stringStack[ssp++] = "";
 								return;
@@ -4848,11 +4848,11 @@ public final class ScriptRunner {
 						if (opcode == 6703) {
 							// todo
 							local157 = intStack[--isp];
-							if (Static26.aClass161ArrayArray1[local157] == null) {
+							if (Static26.components[local157] == null) {
 								intStack[isp++] = 0;
 								return;
 							}
-							intStack[isp++] = Static26.aClass161ArrayArray1[local157].length;
+							intStack[isp++] = Static26.components[local157].length;
 							return;
 						}
 						if (opcode == 6704) {
@@ -4860,11 +4860,11 @@ public final class ScriptRunner {
 							isp -= 2;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
-							if (Static26.aClass161ArrayArray1[local157] == null) {
+							if (Static26.components[local157] == null) {
 								stringStack[ssp++] = "";
 								return;
 							}
-							local3230 = Static26.aClass161ArrayArray1[local157][local192].aString43;
+							local3230 = Static26.components[local157][local192].aString43;
 							if (local3230 == null) {
 								stringStack[ssp++] = "";
 								return;
@@ -4877,11 +4877,11 @@ public final class ScriptRunner {
 							isp -= 2;
 							local157 = intStack[isp];
 							local192 = intStack[isp + 1];
-							if (Static26.aClass161ArrayArray1[local157] == null) {
+							if (Static26.components[local157] == null) {
 								intStack[isp++] = 0;
 								return;
 							}
-							intStack[isp++] = Static26.aClass161ArrayArray1[local157][local192].anInt4246;
+							intStack[isp++] = Static26.components[local157][local192].anInt4246;
 							return;
 						}
 						if (opcode == 6706) {
@@ -4987,7 +4987,7 @@ public final class ScriptRunner {
 							@Pc(7165) Component local7165 = InterfaceList.getCreatedComponent(local157 << 16 | local192, local89);
 							Static207.method3699();
 							@Pc(7170) ServerActiveProperties local7170 = InterfaceList.getServerActiveProperties(local7165);
-							Static185.method3400(local7165.anInt4238, local7170.getTargetMask(), local157 << 16 | local192, local89, local7165.anInt4286, local7170.anInt1759);
+							Static185.method3400(local7165.anInt4238, local7170.getTargetMask(), local157 << 16 | local192, local89, local7165.anInt4286, local7170.targetParam);
 							return;
 						}
 					} else if (opcode < 6900) {

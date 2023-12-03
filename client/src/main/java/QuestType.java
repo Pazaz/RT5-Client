@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ud")
-public final class Class230 {
+public final class QuestType {
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "Ljava/lang/String;")
 	private String aString63;
@@ -40,7 +40,7 @@ public final class Class230 {
 	private int[] anIntArray442;
 
 	@OriginalMember(owner = "client!ud", name = "u", descriptor = "Lclient!ad;")
-	private HashTable aClass4_134;
+	private HashTable params;
 
 	@OriginalMember(owner = "client!ud", name = "v", descriptor = "[I")
 	private int[] anIntArray443;
@@ -142,9 +142,9 @@ public final class Class230 {
 					}
 				} else if (arg1 == 249) {
 					local24 = arg0.g1();
-					if (this.aClass4_134 == null) {
+					if (this.params == null) {
 						local31 = Static162.method2977(local24);
-						this.aClass4_134 = new HashTable(local31);
+						this.params = new HashTable(local31);
 					}
 					for (local31 = 0; local31 < local24; local31++) {
 						@Pc(329) boolean local329 = arg0.g1() == 1;
@@ -155,7 +155,7 @@ public final class Class230 {
 						} else {
 							local342 = new Class2_Sub39(arg0.g4());
 						}
-						this.aClass4_134.put(local342, (long) local333);
+						this.params.put(local342, (long) local333);
 					}
 				}
 			}

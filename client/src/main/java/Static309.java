@@ -17,7 +17,7 @@ public final class Static309 {
 
 	@OriginalMember(owner = "client!rs", name = "a", descriptor = "(I)V")
 	public static void method5278() {
-		if (Static139.anInt2595 == -1) {
+		if (Static139.topLevelInterface == -1) {
 			return;
 		}
 		@Pc(20) int local20 = Mouse.instance.method3304();
@@ -26,7 +26,7 @@ public final class Static309 {
 			local20 = Mouse.clickButton.getY();
 			local24 = Mouse.clickButton.getX();
 		}
-		Static257.method3927(0, GameShell.canvasHeight, GameShell.canvasWidth, 0, 0, local20, Static139.anInt2595, local24, 0);
+		Static257.method3927(0, GameShell.canvasHeight, GameShell.canvasWidth, 0, 0, local20, Static139.topLevelInterface, local24, 0);
 		if (WorldMap.aClass161_11 != null) {
 			Static12.method280(local20, local24);
 		}

@@ -107,7 +107,7 @@ public final class Static182 {
 			}
 		}
 		Static302.method1458();
-		Camera.anInt5911 = 1;
+		Camera.cameraType = 1;
 		client.setGameState(30);
 		for (@Pc(76) int local76 = 0; local76 < 100; local76++) {
 			Static357.aBooleanArray59[local76] = true;

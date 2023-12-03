@@ -24,7 +24,7 @@ public final class Static322 {
 		if (local13 < 0 || Static373.buildAreaLimitX <= local13 || local18 < 0 || Static242.buildAreaLimitZ <= local18) {
 			return false;
 		} else if (arg5 >= 0 && arg5 < Static373.buildAreaLimitX && arg2 >= 0 && arg2 < Static242.buildAreaLimitZ) {
-			@Pc(88) int local88 = Static141.method2654(arg0, Static52.anIntArray99, arg6, arg1, arg7, arg3, Static171.aClass46Array1[PlayerList.self.plane], local13, arg4, arg5, Static59.anIntArray105, PlayerList.self.getSize(), arg2, local18);
+			@Pc(88) int local88 = Static141.method2654(arg0, Static52.anIntArray99, arg6, arg1, arg7, arg3, Static171.collisionMaps[PlayerList.self.plane], local13, arg4, arg5, Static59.anIntArray105, PlayerList.self.getSize(), arg2, local18);
 			if (local88 < 1) {
 				return false;
 			}

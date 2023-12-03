@@ -28,7 +28,7 @@ public final class Static78 {
 	}
 
 	@OriginalMember(owner = "client!ei", name = "a", descriptor = "(IB)C")
-	public static char method5698(@OriginalArg(1) byte arg0) {
+	public static char forCharKey(@OriginalArg(1) byte arg0) {
 		@Pc(12) int local12 = arg0 & 0xFF;
 		if (local12 == 0) {
 			throw new IllegalArgumentException("Non cp1252 character 0x" + Integer.toString(local12, 16) + " provided");

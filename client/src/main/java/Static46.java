@@ -10,7 +10,7 @@ public final class Static46 {
 	@OriginalMember(owner = "client!cm", name = "c", descriptor = "(I)V")
 	public static void method1421() {
 		Static57.aClass161Array1 = null;
-		Static199.method5246(0, GameShell.canvasHeight, GameShell.canvasWidth, Static139.anInt2595, -1, 0, 0, 0);
+		Static199.method5246(0, GameShell.canvasHeight, GameShell.canvasWidth, Static139.topLevelInterface, -1, 0, 0, 0);
 		if (Static57.aClass161Array1 != null) {
 			Static201.method3653(GameShell.canvasHeight, -1412584499, Static57.aClass161Array1, 0, Static253.anInt4689, 0, GameShell.canvasWidth, Static301.aClass161_13.anInt4257, Static48.anInt1256);
 			Static57.aClass161Array1 = null;

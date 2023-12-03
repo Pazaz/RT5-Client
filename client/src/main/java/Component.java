@@ -286,7 +286,7 @@ public final class Component {
 	public boolean objWearColor = false;
 
 	@OriginalMember(owner = "client!nk", name = "F", descriptor = "Lclient!eh;")
-	public ServerActiveProperties aClass2_Sub10_1 = Static367.aClass2_Sub10_2;
+	public ServerActiveProperties properties = Static367.aClass2_Sub10_2;
 
 	@OriginalMember(owner = "client!nk", name = "ic", descriptor = "I")
 	public int halign = 0;
@@ -728,7 +728,7 @@ public final class Component {
 				this.anInt4286 = -1;
 			}
 		}
-		this.aClass2_Sub10_1 = new ServerActiveProperties(local155, local556);
+		this.properties = new ServerActiveProperties(local155, local556);
 		this.anObjectArray22 = this.method4107(arg0);
 		this.onMouseOver = this.method4107(arg0);
 		this.onMouseLeave = this.method4107(arg0);

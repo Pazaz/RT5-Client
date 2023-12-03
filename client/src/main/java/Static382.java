@@ -74,8 +74,8 @@ public final class Static382 {
 		if (!arg2) {
 			ScriptRunner.method3598(arg3);
 		}
-		if (!arg2 && Static139.anInt2595 != -1) {
-			Static392.method6460(Static139.anInt2595, 1);
+		if (!arg2 && Static139.topLevelInterface != -1) {
+			Static392.method6460(Static139.topLevelInterface, 1);
 		}
 		return local7;
 	}

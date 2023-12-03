@@ -26,7 +26,7 @@ public class Camera {
 	@OriginalMember(owner = "client!ts", name = "q", descriptor = "I")
 	public static int anInt6398 = 0;
 	@OriginalMember(owner = "client!sd", name = "R", descriptor = "I")
-	public static int anInt5911;
+	public static int cameraType;
 	@OriginalMember(owner = "client!bp", name = "t", descriptor = "F")
 	public static float pitch = 1024.0F;
 	@OriginalMember(owner = "client!q", name = "q", descriptor = "F")
@@ -62,7 +62,7 @@ public class Camera {
 			Static211.anInt3777 = Static19.anInt535 * 128 + 64;
 			Static102.anInt3592 = Scene.getTileHeight(Static136.anInt6778, Static211.anInt3777, Static355.anInt6585) - Static180.anInt3404;
 		}
-		anInt5911 = 2;
+		cameraType = 2;
 	}
 
 	@OriginalMember(owner = "client!bs", name = "b", descriptor = "(IIIIII)V")
@@ -90,7 +90,7 @@ public class Camera {
 				Static265.anInt4857 = 3072;
 			}
 		}
-		anInt5911 = 2;
+		cameraType = 2;
 	}
 
 	@OriginalMember(owner = "client!gp", name = "b", descriptor = "(B)V")
@@ -101,7 +101,7 @@ public class Camera {
 		anInt2717 = -1;
 		anInt6455 = -1;
 		Static236.anInt4309 = 0;
-		anInt5911 = 1;
+		cameraType = 1;
 		Static33.anInt4463 = 0;
 	}
 
@@ -111,7 +111,7 @@ public class Camera {
 		@Pc(11) int local11 = arg1 << 3;
 		pitch = local3;
 		yaw = local11;
-		if (anInt5911 == 2) {
+		if (cameraType == 2) {
 			Static342.anInt5657 = 0;
 			Static265.anInt4857 = local3;
 			Static4.anInt87 = local11;
@@ -129,7 +129,7 @@ public class Camera {
         Static5.anInt105 = Static102.anInt3592;
         anInt6455 = -1;
         anInt2717 = -1;
-        anInt5911 = 5;
+        cameraType = 5;
         Static272.anInt5023 = Static4.anInt87;
         Static231.anInt4071 = Static265.anInt4857;
         Static196.anInt3318 = Static211.anInt3777;

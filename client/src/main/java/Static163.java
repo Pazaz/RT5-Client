@@ -96,7 +96,7 @@ public final class Static163 {
 		} else {
 			Static363.aBoolean464 = false;
 		}
-		if (Static139.anInt2595 != -1) {
+		if (Static139.topLevelInterface != -1) {
 			Static60.method891(true);
 		}
 		if (Protocol.socket != null && (client.gameState == 30 || client.gameState == 25)) {

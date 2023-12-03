@@ -13,7 +13,7 @@ public class VarpDomain {
 
 	@OriginalMember(owner = "client!ef", name = "a", descriptor = "(II)V")
 	public static void refreshMagicVarp(@OriginalArg(1) int arg0) {
-		Static12.method282();
+		AreaSoundManager.method282();
 		@Pc(15) int local15 = client.VarpTypes.method5114(arg0).anInt4700;
 		if (local15 == 0) {
 			return;

@@ -56,7 +56,7 @@ public final class Static210 {
 
 	@OriginalMember(owner = "client!mg", name = "b", descriptor = "(I)V")
 	public static void method3720() {
-		Static26.aClass161ArrayArray1 = new Component[Static283.aClass197_68.capacity()][];
+		Static26.components = new Component[Static283.aClass197_68.capacity()][];
 		Static113.aClass161ArrayArray2 = new Component[Static283.aClass197_68.capacity()][];
 		Static128.aBooleanArray21 = new boolean[Static283.aClass197_68.capacity()];
 	}

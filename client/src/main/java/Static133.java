@@ -13,15 +13,15 @@ public final class Static133 {
 	@OriginalMember(owner = "client!hl", name = "a", descriptor = "(BJ)V")
 	public static void method2503(@OriginalArg(1) long arg0) {
 		if (Scene.aClass67ArrayArrayArray3 != null) {
-			if (Camera.anInt5911 == 1 || Camera.anInt5911 == 5) {
+			if (Camera.cameraType == 1 || Camera.cameraType == 5) {
 				Static182.method3386(arg0);
-			} else if (Camera.anInt5911 == 4) {
+			} else if (Camera.cameraType == 4) {
 				Static256.method4395(arg0);
 			}
 		}
 		Static371.method6257((long) client.cycle, Rasteriser.instance);
-		if (Static139.anInt2595 != -1) {
-			Static232.method4028(Static139.anInt2595);
+		if (Static139.topLevelInterface != -1) {
+			Static232.method4028(Static139.topLevelInterface);
 		}
 		for (@Pc(42) int local42 = 0; local42 < Static154.anInt2806; local42++) {
 			if (Static357.aBooleanArray59[local42]) {
@@ -34,7 +34,7 @@ public final class Static133 {
 		if (Rasteriser.instance.hasHwAccel()) {
 			Static106.aBoolean164 = true;
 		}
-		if (Static139.anInt2595 != -1) {
+		if (Static139.topLevelInterface != -1) {
 			Static154.anInt2806 = 0;
 			Static46.method1421();
 		}
@@ -45,7 +45,7 @@ public final class Static133 {
 			local97 = Minimap.anInt7263;
 		}
 		Static307.method5255(local97);
-		Static56.method1616(PlayerList.self.xFine, PlayerList.self.zFine, client.sceneDelta, PlayerList.self.plane);
+		AreaSoundManager.redraw(PlayerList.self.xFine, PlayerList.self.zFine, client.sceneDelta, PlayerList.self.plane);
 		client.sceneDelta = 0;
 	}
 }

@@ -178,7 +178,7 @@ public final class client extends GameShell {
 	@OriginalMember(owner = "client!sb", name = "Q", descriptor = "Lclient!io;")
 	public static ObjTypeList ObjTypes;
 	@OriginalMember(owner = "client!ql", name = "g", descriptor = "Lclient!ui;")
-	public static Class233 aClass233_1;
+	public static QuestTypeList QuestTypes;
 	@OriginalMember(owner = "client!cf", name = "B", descriptor = "Lclient!gp;")
 	public static SeqTypeList SeqTypes;
 	@OriginalMember(owner = "client!ai", name = "R", descriptor = "Lclient!sj;")
@@ -192,7 +192,7 @@ public final class client extends GameShell {
 	@OriginalMember(owner = "client!kl", name = "m", descriptor = "Lclient!qo;")
 	public static Class193 aClass193_2;
 	@OriginalMember(owner = "client!jh", name = "l", descriptor = "Lclient!df;")
-	public static Class45 aClass45_1;
+	public static VarcTypeList VarcTypes;
 	@OriginalMember(owner = "client!so", name = "c", descriptor = "Lclient!km;")
 	public static VarbitTypeList VarbitTypes;
 	@OriginalMember(owner = "client!dd", name = "x", descriptor = "Lclient!rb;")
@@ -380,8 +380,8 @@ public final class client extends GameShell {
 				VarcDomain.varcs[local4521] = -1;
 			}
 		}
-		if (Static139.anInt2595 != -1) {
-			Static162.method2979(Static139.anInt2595);
+		if (Static139.topLevelInterface != -1) {
+			Static162.method2979(Static139.topLevelInterface);
 		}
 		for (@Pc(4552) SubInterface local4552 = (SubInterface) InterfaceList.subInterfaces.head(); local4552 != null; local4552 = (SubInterface) InterfaceList.subInterfaces.next()) {
 			if (!local4552.isLinked()) {
@@ -392,14 +392,14 @@ public final class client extends GameShell {
 			}
 			Static276.method4655(false, local4552, true);
 		}
-		Static139.anInt2595 = -1;
+		Static139.topLevelInterface = -1;
 		InterfaceList.subInterfaces = new HashTable(8);
 		Static210.method3720();
 		Static192.aClass161_8 = null;
 		for (@Pc(4594) int local4594 = 0; local4594 < 8; local4594++) {
-			Static243.aStringArray44[local4594] = null;
-			Static44.aBooleanArray11[local4594] = false;
-			Static207.anIntArray225[local4594] = -1;
+			Static243.options[local4594] = null;
+			Static44.secondaryOptions[local4594] = false;
+			Static207.cursors[local4594] = -1;
 		}
 		Static302.method1458();
 		Static17.aBoolean308 = true;
@@ -460,7 +460,7 @@ public final class client extends GameShell {
 		MelTypes.method3376();
 		MsiType.method2704();
 		ParamTypes.method566();
-		aClass233_1.method5884();
+		QuestTypes.method5884();
 		SkyboxTypes.method5423();
 		SkyboxSphereTypes.method4029();
 		LightTypes.method4879();
@@ -727,7 +727,7 @@ public final class client extends GameShell {
 		if (Static352.aBoolean446) {
 			method29();
 		}
-		if (preferences.safeMode && gameState == 10 && Static139.anInt2595 != -1) {
+		if (preferences.safeMode && gameState == 10 && Static139.topLevelInterface != -1) {
 			preferences.safeMode = false;
 			preferences.write(GameShell.signlink);
 		}
@@ -1021,7 +1021,7 @@ public final class client extends GameShell {
 							} else if (Static242.buildAreaLimitZ - local50 - 1 < local128) {
 								local128 = Static242.buildAreaLimitZ - local50 - 1;
 							}
-							@Pc(179) int local179 = Static141.method2654(true, Static52.anIntArray99, local50, -1, 0, 0, Static171.aClass46Array1[local33.plane], local33.movementQueueX[0], local50, local96, Static59.anIntArray105, local50, local128, local33.movementQueueZ[0]);
+							@Pc(179) int local179 = Static141.method2654(true, Static52.anIntArray99, local50, -1, 0, 0, Static171.collisionMaps[local33.plane], local33.movementQueueX[0], local50, local96, Static59.anIntArray105, local50, local128, local33.movementQueueZ[0]);
 							if (local179 > 0) {
 								if (local179 > 9) {
 									local179 = 9;
@@ -1043,7 +1043,7 @@ public final class client extends GameShell {
 			}
 		}
 		if (LoginManager.step == 0 && CreateManager.step == 0) {
-			if (Camera.anInt5911 == 2) {
+			if (Camera.cameraType == 2) {
 				Static222.method3917();
 			} else {
 				Static199.method5249();
@@ -1201,7 +1201,7 @@ public final class client extends GameShell {
 			Static43.aShortArray20 = Static131.aShortArray65;
 			Static10.aShortArray1 = Static78.aShortArray123;
 			PlayerAppearance.destinationBodyColors = Static25.aShortArrayArray2;
-			Static186.aShortArrayArray6 = Static386.aShortArrayArray9;
+			Static186.aShortArrayArray6 = Static386.GAME0_DESTINATION_SKIN_COLORS;
 		}
 		Keyboard.instance = Static18.method556(GameShell.canvas);
 		Mouse.instance = Static31.method948(GameShell.canvas);
@@ -1269,7 +1269,7 @@ public final class client extends GameShell {
 			}
 		} else if (mainLoadState == 10) {
 			for (local6 = 0; local6 < 4; local6++) {
-				Static171.aClass46Array1[local6] = Static24.method853(Static242.buildAreaLimitZ, Static373.buildAreaLimitX);
+				Static171.collisionMaps[local6] = Static24.method853(Static242.buildAreaLimitZ, Static373.buildAreaLimitX);
 			}
 			mainLoadSecondaryText = Static109.aClass79_46.getLocalized(language);
 			mainLoadState = 20;
@@ -1454,14 +1454,14 @@ public final class client extends GameShell {
 				MsiType = new MsiTypeList(game, language, jsArchive2, jsArchive8);
 				NpcTypes = new NpcTypeList(game, language, true, jsArchive18, jsArchive7);
 				ObjTypes = new ObjTypeList(game, language, true, ParamTypes, jsArchive19, jsArchive7);
-				aClass233_1 = new Class233(game, language, jsArchive2);
+				QuestTypes = new QuestTypeList(game, language, jsArchive2);
 				SeqTypes = new SeqTypeList(game, language, jsArchive20, jsArchive0, jsArchive1);
 				SkyboxTypes = new SkyboxTypeList(game, language, jsArchive2);
 				SkyboxSphereTypes = new SkyboxSphereTypeList(game, language, jsArchive2);
 				SpotAnimTypes = new SpotAnimTypeList(game, language, jsArchive21, jsArchive7);
 				StructTypes = new StructTypeList(game, language, jsArchive2);
 				aClass193_2 = new Class193(game, language, jsArchive2);
-				aClass45_1 = new Class45(game, language, jsArchive2);
+				VarcTypes = new VarcTypeList(game, language, jsArchive2);
 				VarbitTypes = new VarbitTypeList(game, language, jsArchive22);
 				VarpTypes = new VarpTypeList(game, language, jsArchive2);
 				InterfaceList.init(jsArchive13, jsArchive7, jsArchive3, jsArchive8);
@@ -1555,11 +1555,11 @@ public final class client extends GameShell {
 				setGameState(1000);
 			}
 		} else if (mainLoadState == 190) {
-			Static89.aBooleanArray18 = new boolean[aClass45_1.anInt1466];
+			Static89.aBooleanArray18 = new boolean[VarcTypes.anInt1466];
 			VarcDomain.varcstrs = new String[aClass193_2.anInt5494];
-			VarcDomain.varcs = new int[aClass45_1.anInt1466];
-			for (local6 = 0; local6 < aClass45_1.anInt1466; local6++) {
-				if (aClass45_1.method1623(local6).anInt1258 == 0) {
+			VarcDomain.varcs = new int[VarcTypes.anInt1466];
+			for (local6 = 0; local6 < VarcTypes.anInt1466; local6++) {
+				if (VarcTypes.get(local6).anInt1258 == 0) {
 					Static89.aBooleanArray18[local6] = true;
 					Static112.anInt2294++;
 				}

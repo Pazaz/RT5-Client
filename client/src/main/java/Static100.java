@@ -9,7 +9,7 @@ public final class Static100 {
 
 	@OriginalMember(owner = "client!fn", name = "a", descriptor = "(IIILclient!mr;I)V")
 	public static void method2160(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) PathingEntity arg3) {
-		@Pc(16) BasType local16 = arg3.method4332();
+		@Pc(16) BasType local16 = arg3.getBasType();
 		@Pc(26) int local26 = arg3.anInt4616 - arg3.aClass248_7.anInt7197 & 0x3FFF;
 		if (arg2 == -1) {
 			if (local26 != 0 || arg3.anInt4605 > 25) {

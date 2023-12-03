@@ -121,10 +121,10 @@ public final class Static160 {
 
 	@OriginalMember(owner = "client!jf", name = "a", descriptor = "(II)V")
 	public static void method2957(@OriginalArg(1) int arg0) {
-		if (!Static222.method3916(arg0)) {
+		if (!Static222.load(arg0)) {
 			return;
 		}
-		@Pc(14) Component[] local14 = Static26.aClass161ArrayArray1[arg0];
+		@Pc(14) Component[] local14 = Static26.components[arg0];
 		for (@Pc(16) int local16 = 0; local16 < local14.length; local16++) {
 			@Pc(22) Component local22 = local14[local16];
 			if (local22 != null) {

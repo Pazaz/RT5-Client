@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static327 {
 
 	@OriginalMember(owner = "client!ta", name = "b", descriptor = "Lclient!ad;")
-	public static final HashTable aClass4_127 = new HashTable(512);
+	public static final HashTable properties = new HashTable(512);
 
 	@OriginalMember(owner = "client!ta", name = "a", descriptor = "(Lclient!wm;III)V")
 	public static void method5574(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {

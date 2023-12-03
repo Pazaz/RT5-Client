@@ -10,9 +10,6 @@ public final class Static363 {
 	@OriginalMember(owner = "client!vf", name = "N", descriptor = "Z")
 	public static boolean aBoolean464 = true;
 
-	@OriginalMember(owner = "client!vf", name = "U", descriptor = "Lclient!ld;")
-	public static final LinkedList aClass135_39 = new LinkedList();
-
 	@OriginalMember(owner = "client!vf", name = "a", descriptor = "(IIIII)V")
 	public static void method6090(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(10) int local10;
@@ -51,7 +48,7 @@ public final class Static363 {
 			Static324.anIntArray409[local31] = 0;
 		}
 		@Pc(94) int local94;
-		if (Camera.anInt5911 != 1) {
+		if (Camera.cameraType != 1) {
 			local94 = Scene.getTileHeight(Static136.anInt6778, Static211.anInt3777, Static355.anInt6585);
 			if (local94 - Static102.anInt3592 < 800 && (Static359.aByteArrayArrayArray16[Static355.anInt6585][Static136.anInt6778 >> 7][Static211.anInt3777 >> 7] & 0x4) != 0) {
 				Static81.method3667(Scene.aClass67ArrayArrayArray3, false, Static136.anInt6778 >> 7, Static211.anInt3777 >> 7, 1);

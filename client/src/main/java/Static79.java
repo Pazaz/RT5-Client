@@ -160,13 +160,13 @@ public final class Static79 {
 		if (Scene.aClass67ArrayArrayArray3 == null) {
 			return;
 		}
-		Static190.aClass29_Sub1_63.method1108(arg0, arg1, Static171.aClass46Array1[arg0], arg4, arg7, Rasteriser.instance);
+		Static190.aClass29_Sub1_63.method1108(arg0, arg1, Static171.collisionMaps[arg0], arg4, arg7, Rasteriser.instance);
 		if (arg2 < 0) {
 			return;
 		}
 		@Pc(76) boolean local76 = client.preferences.groundDecoration;
 		client.preferences.groundDecoration = true;
-		Static190.aClass29_Sub1_63.method1105(arg3, arg1, arg7, arg2, local30, arg0, Rasteriser.instance, Static171.aClass46Array1[arg0], arg6, arg5);
+		Static190.aClass29_Sub1_63.method1105(arg3, arg1, arg7, arg2, local30, arg0, Rasteriser.instance, Static171.collisionMaps[arg0], arg6, arg5);
 		client.preferences.groundDecoration = local76;
 		return;
 	}

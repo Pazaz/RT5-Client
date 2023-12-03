@@ -91,7 +91,7 @@ public final class Static284 {
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(Lclient!nk;ZI)Ljava/lang/String;")
 	public static String method4883(@OriginalArg(0) Component arg0, @OriginalArg(2) int arg1) {
-		if (!InterfaceList.getServerActiveProperties(arg0).method1854(arg1) && arg0.onOp == null) {
+		if (!InterfaceList.getServerActiveProperties(arg0).isButtonEnabled(arg1) && arg0.onOp == null) {
 			return null;
 		} else if (arg0.ops == null || arg1 >= arg0.ops.length || arg0.ops[arg1] == null || arg0.ops[arg1].trim().length() == 0) {
 			return Static18.qa_op_test ? "Hidden-" + arg1 : null;

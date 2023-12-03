@@ -535,14 +535,14 @@ public class LoginManager {
 		Static211.method3721();
 		Static253.method4366();
 		for (@Pc(17) int local17 = 0; local17 < 4; local17++) {
-			Static171.aClass46Array1[local17].method1626();
+			Static171.collisionMaps[local17].method1626();
 		}
 		Static241.method4192(false);
 		System.gc();
 		MidiPlayer.playFadeOut();
 		MidiPlayer.jingle = false;
 		MusicPlayer.groupId = -1;
-		Static239.method4152(true);
+		AreaSoundManager.clear(true);
 		Camera.originX = 0;
 		Static9.anInt212 = 0;
 		Static220.aBoolean252 = false;
@@ -684,10 +684,10 @@ public class LoginManager {
 		}
 		Scene.method1381(Static373.buildAreaLimitX, Static242.buildAreaLimitZ, local268, local375, Rasteriser.instance.method2886() > 0);
 		for (local279 = 0; local279 < 4; local279++) {
-			Static171.aClass46Array1[local279].method1626();
+			Static171.collisionMaps[local279].method1626();
 		}
 		Static285.method4887();
-		Static239.method4152(false);
+		AreaSoundManager.clear(false);
 		Static20.method560();
 		client.audioLogic();
 		System.gc();
@@ -724,7 +724,7 @@ public class LoginManager {
 			Static7.aClass29_Sub1_120.method1085(null, null, Rasteriser.instance);
 			Scene.method5767(false);
 		}
-		Static190.aClass29_Sub1_63.method1085(local375 ? Static7.aClass29_Sub1_120.levelHeightmap : null, Static171.aClass46Array1, Rasteriser.instance);
+		Static190.aClass29_Sub1_63.method1085(local375 ? Static7.aClass29_Sub1_120.levelHeightmap : null, Static171.collisionMaps, Rasteriser.instance);
 		if (!Static220.aBoolean252) {
 			Protocol.method2973(true);
 			Static170.method3231(Static190.aClass29_Sub1_63, Static82.aByteArrayArray5);

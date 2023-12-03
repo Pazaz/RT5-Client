@@ -27,7 +27,7 @@ public class InterfaceList {
 		Static283.aClass197_68 = arg2;
 		Static142.aClass197_37 = arg1;
 		Static391.aClass197_95 = arg0;
-		Static26.aClass161ArrayArray1 = new Component[Static283.aClass197_68.capacity()][];
+		Static26.components = new Component[Static283.aClass197_68.capacity()][];
 		Static128.aBooleanArray21 = new boolean[Static283.aClass197_68.capacity()];
 	}
 
@@ -35,13 +35,13 @@ public class InterfaceList {
 	public static Component getComponent(@OriginalArg(1) int arg0) {
 		@Pc(15) int local15 = arg0 >> 16;
 		@Pc(19) int local19 = arg0 & 0xFFFF;
-		if (Static26.aClass161ArrayArray1[local15] == null || Static26.aClass161ArrayArray1[local15][local19] == null) {
-			@Pc(33) boolean local33 = Static222.method3916(local15);
+		if (Static26.components[local15] == null || Static26.components[local15][local19] == null) {
+			@Pc(33) boolean local33 = Static222.load(local15);
 			if (!local33) {
 				return null;
 			}
 		}
-		return Static26.aClass161ArrayArray1[local15][local19];
+		return Static26.components[local15][local19];
 	}
 
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(Lclient!nk;B)V")
@@ -81,8 +81,8 @@ public class InterfaceList {
 
     @OriginalMember(owner = "client!client", name = "b", descriptor = "(Lclient!nk;)Lclient!eh;")
     public static ServerActiveProperties getServerActiveProperties(@OriginalArg(0) Component arg0) {
-        @Pc(13) ServerActiveProperties local13 = (ServerActiveProperties) Static327.aClass4_127.get(((long) arg0.id << 32) + (long) arg0.activeComponentId);
-        return local13 == null ? arg0.aClass2_Sub10_1 : local13;
+        @Pc(13) ServerActiveProperties local13 = (ServerActiveProperties) Static327.properties.get(((long) arg0.id << 32) + (long) arg0.activeComponentId);
+        return local13 == null ? arg0.properties : local13;
     }
 
 	@OriginalMember(owner = "client!em", name = "a", descriptor = "(IZ)V")

@@ -53,7 +53,7 @@ public class Find {
 		@Pc(11) short[] local11 = new short[16];
 		@Pc(13) int local13 = 0;
 		@Pc(19) int local19 = arg0 ? 32768 : 0;
-		@Pc(27) int local27 = (arg0 ? Static361.anInt6769 : Static21.anInt554) + local19;
+		@Pc(27) int local27 = (arg0 ? QuickChatPhraseTypeList.anInt6769 : QuickChatPhraseTypeList.anInt554) + local19;
 		for (@Pc(34) int local34 = local19; local34 < local27; local34++) {
 			@Pc(40) QuickChatPhraseType local40 = QuickChatPhraseTypeList.get(local34);
 			if (local40.aBoolean413 && local40.getText().toLowerCase().indexOf(local4) != -1) {

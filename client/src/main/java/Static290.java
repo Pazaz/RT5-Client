@@ -21,17 +21,17 @@ public final class Static290 {
 
 	@OriginalMember(owner = "client!qp", name = "a", descriptor = "(I)V")
 	public static void method5025() {
-		Static212.anInt3785 = 0;
+		Static212.inTutorialIsland = 0;
 		@Pc(17) int local17 = (PlayerList.self.xFine >> 7) + Camera.originX;
 		@Pc(24) int local24 = Camera.originZ + (PlayerList.self.zFine >> 7);
 		if (local17 >= 3053 && local17 <= 3156 && local24 >= 3056 && local24 <= 3136) {
-			Static212.anInt3785 = 1;
+			Static212.inTutorialIsland = 1;
 		}
 		if (local17 >= 3072 && local17 <= 3118 && local24 >= 9492 && local24 <= 9535) {
-			Static212.anInt3785 = 1;
+			Static212.inTutorialIsland = 1;
 		}
-		if (Static212.anInt3785 == 1 && local17 >= 3139 && local17 <= 3199 && local24 >= 3008 && local24 <= 3062) {
-			Static212.anInt3785 = 0;
+		if (Static212.inTutorialIsland == 1 && local17 >= 3139 && local17 <= 3199 && local24 >= 3008 && local24 <= 3062) {
+			Static212.inTutorialIsland = 0;
 		}
 	}
 
