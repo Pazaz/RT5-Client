@@ -659,31 +659,30 @@ public final class Component {
 			this.aBoolean292 = arg0.g1() == 1;
 		}
 		local155 = arg0.ig3();
-		@Pc(449) int local449 = arg0.g1();
-		@Pc(474) int local474;
-		if (local449 != 0) {
+		@Pc(449) int value = arg0.g1();
+		if (value != 0) {
 			this.aByteArray49 = new byte[10];
 			this.anIntArray276 = new int[10];
 			this.aByteArray50 = new byte[10];
-			while (local449 != 0) {
-				local474 = (local449 >> 4) - 1;
-				local449 = local449 << 8 | arg0.g1();
-				local449 &= 0xFFF;
-				if (local449 == 4095) {
-					this.anIntArray276[local474] = -1;
+			while (value != 0) {
+				// opkey1=rate,val1,val2
+				int index = (value >> 4) - 1;
+				int rate = (value << 8 | arg0.g1()) & 0xFFF;
+				if (rate == 4095) {
+					this.anIntArray276[index] = -1;
 				} else {
-					this.anIntArray276[local474] = local449;
+					this.anIntArray276[index] = rate;
 				}
-				this.aByteArray49[local474] = arg0.g1b();
-				if (this.aByteArray49[local474] != 0) {
+				this.aByteArray49[index] = arg0.g1b();
+				if (this.aByteArray49[index] != 0) {
 					this.aBoolean282 = true;
 				}
-				this.aByteArray50[local474] = arg0.g1b();
-				local449 = arg0.g1();
+				this.aByteArray50[index] = arg0.g1b();
+				value = arg0.g1();
 			}
 		}
 		this.opBase = arg0.gjstr();
-		local474 = arg0.g1();
+		int local474 = arg0.g1();
 		@Pc(545) int local545 = local474 & 0xF;
 		@Pc(556) int local556;
 		if (local545 > 0) {
