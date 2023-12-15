@@ -7,6 +7,15 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!os")
 public abstract class Class57 {
 
+	@OriginalMember(owner = "client!q", name = "n", descriptor = "[I")
+	public static final int[] fadeCurves = new int[4096];
+
+	static {
+		for (@Pc(11) int local11 = 0; local11 < 4096; local11++) {
+			fadeCurves[local11] = fade(local11);
+		}
+	}
+
 	@OriginalMember(owner = "client!os", name = "j", descriptor = "[S")
 	private short[] powerOfTwo;
 
@@ -37,6 +46,22 @@ public abstract class Class57 {
 		this.anInt6716 = arg4;
 		this.initPerlin1();
 		this.initPerlin2();
+	}
+
+	@OriginalMember(owner = "client!jr", name = "a", descriptor = "(IIIII)I")
+	private static int grad(@OriginalArg(0) int z, @OriginalArg(2) int x, @OriginalArg(3) int y, @OriginalArg(4) int hash) {
+		@Pc(7) int h = hash & 0xF;
+		@Pc(16) int u = h < 8 ? x : y;
+		@Pc(40) int v = h < 4 ? y : (h == 12 || h == 14 ? x : z);
+		return ((h & 0x2) == 0 ? v : -v) + ((h & 0x1) == 0 ? u : -u);
+	}
+
+	@OriginalMember(owner = "client!pj", name = "b", descriptor = "(IB)I")
+	private static int fade(@OriginalArg(0) int t) {
+		@Pc(13) int depth = t * (t * t >> 12) >> 12;
+		@Pc(19) int x = t * 6 - 61440;
+		@Pc(32) int y = (t * x >> 12) + 40960;
+		return y * depth >> 12;
 	}
 
 	@OriginalMember(owner = "client!os", name = "a", descriptor = "(III)V")
@@ -109,27 +134,27 @@ public abstract class Class57 {
 						@Pc(249) int local249 = local137 - 4096;
 						@Pc(253) int local253 = local145 - 4096;
 						@Pc(258) short local258 = this.pImp[local188];
-						@Pc(262) int local262 = StockMarketOffer.fadeCurves[local145];
-						@Pc(266) int local266 = StockMarketOffer.fadeCurves[local137];
+						@Pc(262) int local262 = fadeCurves[local145];
+						@Pc(266) int local266 = fadeCurves[local137];
 						@Pc(271) short local271 = this.pImp[local192];
-						@Pc(275) int local275 = StockMarketOffer.fadeCurves[local129];
+						@Pc(275) int local275 = fadeCurves[local129];
 						@Pc(279) int local279 = local129 - 4096;
 						@Pc(287) short local287 = this.pImp[local180 + local258];
 						@Pc(294) short local294 = this.pImp[local271 + local180];
 						@Pc(302) short local302 = this.pImp[local184 + local271];
 						@Pc(309) short local309 = this.pImp[local184 + local258];
-						@Pc(321) int local321 = Static169.grad(local145, local129, local137, this.pImp[local309 + local172]);
-						@Pc(333) int local333 = Static169.grad(local145, local279, local137, this.pImp[local168 + local309]);
+						@Pc(321) int local321 = grad(local145, local129, local137, this.pImp[local309 + local172]);
+						@Pc(333) int local333 = grad(local145, local279, local137, this.pImp[local168 + local309]);
 						@Pc(344) int local344 = local321 + (local275 * (local333 - local321) >> 12);
-						@Pc(356) int local356 = Static169.grad(local145, local129, local249, this.pImp[local172 + local287]);
-						@Pc(368) int local368 = Static169.grad(local145, local279, local249, this.pImp[local287 + local168]);
+						@Pc(356) int local356 = grad(local145, local129, local249, this.pImp[local172 + local287]);
+						@Pc(368) int local368 = grad(local145, local279, local249, this.pImp[local287 + local168]);
 						@Pc(379) int local379 = ((local368 - local356) * local275 >> 12) + local356;
 						@Pc(390) int local390 = (local266 * (local379 - local344) >> 12) + local344;
-						@Pc(402) int local402 = Static169.grad(local253, local129, local137, this.pImp[local172 + local302]);
-						@Pc(415) int local415 = Static169.grad(local253, local279, local137, this.pImp[local168 + local302]);
+						@Pc(402) int local402 = grad(local253, local129, local137, this.pImp[local172 + local302]);
+						@Pc(415) int local415 = grad(local253, local279, local137, this.pImp[local168 + local302]);
 						@Pc(426) int local426 = (local275 * (local415 - local402) >> 12) + local402;
-						@Pc(438) int local438 = Static169.grad(local253, local129, local249, this.pImp[local294 + local172]);
-						@Pc(450) int local450 = Static169.grad(local253, local279, local249, this.pImp[local294 + local168]);
+						@Pc(438) int local438 = grad(local253, local129, local249, this.pImp[local294 + local172]);
+						@Pc(450) int local450 = grad(local253, local279, local249, this.pImp[local294 + local168]);
 						@Pc(461) int local461 = (local275 * (local450 - local438) >> 12) + local438;
 						@Pc(473) int local473 = local426 + (local266 * (local461 - local426) >> 12);
 						this.apply(local91, local390 + (local262 * (local473 - local390) >> 12));

@@ -7,14 +7,6 @@ public final class Static169 {
 	@OriginalMember(owner = "client!jr", name = "o", descriptor = "[Ljava/lang/String;")
 	public static final String[] MSG_SECONDARY = new String[100];
 
-	@OriginalMember(owner = "client!jr", name = "a", descriptor = "(IIIII)I")
-	public static int grad(@OriginalArg(0) int z, @OriginalArg(2) int x, @OriginalArg(3) int y, @OriginalArg(4) int hash) {
-		@Pc(7) int h = hash & 0xF;
-		@Pc(16) int u = h < 8 ? x : y;
-		@Pc(40) int v = h < 4 ? y : (h == 12 || h == 14 ? x : z);
-		return ((h & 0x2) == 0 ? v : -v) + ((h & 0x1) == 0 ? u : -u);
-	}
-
 	@OriginalMember(owner = "client!jr", name = "a", descriptor = "(Lclient!wm;)V")
 	public static void method3212(@OriginalArg(0) RasteriserBase arg0) {
 		for (@Pc(1) int local1 = Static66.anInt1624; local1 < Scene.anInt1914; local1++) {
