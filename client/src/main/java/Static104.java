@@ -15,7 +15,7 @@ public final class Static104 {
 		@Pc(11) byte[] local11;
 		if (aByteBuffer1 == null) {
 			@Pc(5) Class57_Sub2_Sub1 local5 = new Class57_Sub2_Sub1();
-			local11 = local5.method3538();
+			local11 = local5.generate();
 			aByteBuffer1 = ByteBuffer.allocateDirect(local11.length);
 			aByteBuffer1.position(0);
 			aByteBuffer1.put(local11);
@@ -25,7 +25,7 @@ public final class Static104 {
 			return;
 		}
 		@Pc(32) Class57_Sub1_Sub1 local32 = new Class57_Sub1_Sub1();
-		local11 = local32.method6022();
+		local11 = local32.generate();
 		aByteBuffer2 = ByteBuffer.allocateDirect(local11.length);
 		aByteBuffer2.position(0);
 		aByteBuffer2.put(local11);

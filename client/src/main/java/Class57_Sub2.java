@@ -9,13 +9,13 @@ public class Class57_Sub2 extends Class57 {
 	private int anInt3588;
 
 	@OriginalMember(owner = "client!fp", name = "t", descriptor = "[B")
-	private byte[] aByteArray36;
+	private byte[] subData;
 
 	@OriginalMember(owner = "client!fp", name = "v", descriptor = "I")
 	private int anInt3593;
 
 	@OriginalMember(owner = "client!fp", name = "x", descriptor = "I")
-	private int anInt3595;
+	private int writerIndex;
 
 	@OriginalMember(owner = "client!fp", name = "E", descriptor = "I")
 	private int anInt3599;
@@ -33,8 +33,8 @@ public class Class57_Sub2 extends Class57 {
 	private int anInt3587;
 
 	@OriginalMember(owner = "client!fp", name = "<init>", descriptor = "(IIIIIFFF)V")
-	protected Class57_Sub2(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5, @OriginalArg(6) float arg6, @OriginalArg(7) float arg7) {
-		super(arg0, arg1, arg2, arg3, arg4);
+	protected Class57_Sub2(@OriginalArg(0) int seed, @OriginalArg(1) int factorsOfTwo, @OriginalArg(2) int xFactor, @OriginalArg(3) int yFactor, @OriginalArg(4) int zFactor, @OriginalArg(5) float arg5, @OriginalArg(6) float arg6, @OriginalArg(7) float arg7) {
+		super(seed, factorsOfTwo, xFactor, yFactor, zFactor);
 		this.anInt3600 = (int) (arg7 * 4096.0F);
 		this.anInt3596 = (int) (arg6 * 4096.0F);
 		this.anInt3587 = this.anInt3589 = (int) (Math.pow(0.5D, (double) -arg5) * 4096.0D);
@@ -50,7 +50,7 @@ public class Class57_Sub2 extends Class57 {
 		} else if (this.anInt3599 > 255) {
 			this.anInt3599 = 255;
 		}
-		this.method3537(this.anInt3595++, (byte) this.anInt3599);
+		this.modify(this.writerIndex++, (byte) this.anInt3599);
 		this.anInt3599 = 0;
 	}
 
@@ -58,21 +58,21 @@ public class Class57_Sub2 extends Class57 {
 	@Override
 	protected final void setup() {
 		this.anInt3599 = 0;
-		this.anInt3595 = 0;
+		this.writerIndex = 0;
 	}
 
 	@OriginalMember(owner = "client!fp", name = "a", descriptor = "(III)V")
 	@Override
-	protected final void apply(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		if (arg0 == 0) {
-			this.anInt3588 = this.anInt3596 - (arg1 >= 0 ? arg1 : -arg1);
+	protected final void apply(@OriginalArg(1) int index, @OriginalArg(2) int noise) {
+		if (index == 0) {
+			this.anInt3588 = this.anInt3596 - (noise >= 0 ? noise : -noise);
 			this.anInt3588 = this.anInt3588 * this.anInt3588 >> 12;
 			this.anInt3593 = 4096;
 			this.anInt3599 = this.anInt3588;
 			return;
 		}
 		this.anInt3593 = this.anInt3588 * this.anInt3600 >> 12;
-		this.anInt3588 = this.anInt3596 - (arg1 < 0 ? -arg1 : arg1);
+		this.anInt3588 = this.anInt3596 - (noise < 0 ? -noise : noise);
 		if (this.anInt3593 < 0) {
 			this.anInt3593 = 0;
 		} else if (this.anInt3593 > 4096) {
@@ -85,7 +85,7 @@ public class Class57_Sub2 extends Class57 {
 	}
 
 	@OriginalMember(owner = "client!fp", name = "a", descriptor = "(IB)V")
-	protected void method3537(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1) {
-		this.aByteArray36[arg0] = arg1;
+	protected void modify(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1) {
+		this.subData[arg0] = arg1;
 	}
 }

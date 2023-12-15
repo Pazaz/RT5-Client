@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class57_Sub2_Sub1 extends Class57_Sub2 {
 
 	@OriginalMember(owner = "client!lc", name = "B", descriptor = "[B")
-	private byte[] aByteArray37;
+	private byte[] data;
 
 	@OriginalMember(owner = "client!lc", name = "<init>", descriptor = "()V")
 	public Class57_Sub2_Sub1() {
@@ -16,19 +16,19 @@ public final class Class57_Sub2_Sub1 extends Class57_Sub2 {
 
 	@OriginalMember(owner = "client!lc", name = "a", descriptor = "(IB)V")
 	@Override
-	protected void method3537(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1) {
+	protected void modify(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1) {
 		@Pc(3) int local3 = arg0 * 2;
 		@Pc(7) int local7 = arg1 & 0xFF;
 		@Pc(10) int local10 = local3;
 		@Pc(11) int local11 = local3 + 1;
-		this.aByteArray37[local10] = (byte) (local7 * 3 >> 5);
-		this.aByteArray37[local11] = (byte) (local7 * 3 >> 5);
+		this.data[local10] = (byte) (local7 * 3 >> 5);
+		this.data[local11] = (byte) (local7 * 3 >> 5);
 	}
 
 	@OriginalMember(owner = "client!lc", name = "b", descriptor = "(III)[B")
-	public byte[] method3538() {
-		this.aByteArray37 = new byte[524288];
+	public byte[] generate() {
+		this.data = new byte[524288];
 		this.noise();
-		return this.aByteArray37;
+		return this.data;
 	}
 }
