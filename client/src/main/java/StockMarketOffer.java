@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class StockMarketOffer {
 
 	@OriginalMember(owner = "client!q", name = "n", descriptor = "[I")
-	public static final int[] anIntArray360 = new int[4096];
+	public static final int[] fadeCurves = new int[4096];
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "I")
 	public int item;
@@ -29,7 +29,7 @@ public final class StockMarketOffer {
 
 	static {
 		for (@Pc(11) int local11 = 0; local11 < 4096; local11++) {
-			anIntArray360[local11] = Static271.method4567(local11);
+			fadeCurves[local11] = Static271.fade(local11);
 		}
 	}
 

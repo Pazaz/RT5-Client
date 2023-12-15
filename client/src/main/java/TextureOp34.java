@@ -74,7 +74,7 @@ public final class TextureOp34 extends TextureOp {
 		@Pc(30) int local30 = arg0 - 4096;
 		local13 &= 0xFF;
 		@Pc(38) int local38 = local26 - 4096;
-		@Pc(42) int local42 = StockMarketOffer.anIntArray360[local26];
+		@Pc(42) int local42 = StockMarketOffer.fadeCurves[local26];
 		@Pc(52) int local52 = this.aByteArray12[local17 + arg3] & 0x3;
 		@Pc(69) int local69;
 		if (local52 <= 1) {
@@ -166,7 +166,7 @@ public final class TextureOp34 extends TextureOp {
 				local74 = 0;
 			}
 			local96 = this.aByteArray12[local70 & 0xFF] & 0xFF;
-			local87 = StockMarketOffer.anIntArray360[local379];
+			local87 = StockMarketOffer.fadeCurves[local379];
 			local105 = this.aByteArray12[local74 & 0xFF] & 0xFF;
 			if (this.aBoolean85) {
 				for (local107 = 0; local107 < Texture.width; local107++) {
@@ -196,7 +196,7 @@ public final class TextureOp34 extends TextureOp {
 				local74 = 0;
 			}
 			local59 &= 0xFFF;
-			local87 = StockMarketOffer.anIntArray360[local59];
+			local87 = StockMarketOffer.fadeCurves[local59];
 			local96 = this.aByteArray12[local70 & 0xFF] & 0xFF;
 			local105 = this.aByteArray12[local74 & 0xFF] & 0xFF;
 			for (local107 = 0; local107 < Texture.width; local107++) {
@@ -218,7 +218,7 @@ public final class TextureOp34 extends TextureOp {
 					local74 = 0;
 				}
 				local59 &= 0xFFF;
-				local87 = StockMarketOffer.anIntArray360[local59];
+				local87 = StockMarketOffer.fadeCurves[local59];
 				local96 = this.aByteArray12[local70 & 0xFF] & 0xFF;
 				local105 = this.aByteArray12[local74 & 0xFF] & 0xFF;
 				if (this.aBoolean85 && local148 == this.anInt1043 - 1) {

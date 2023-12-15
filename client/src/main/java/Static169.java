@@ -8,11 +8,11 @@ public final class Static169 {
 	public static final String[] MSG_SECONDARY = new String[100];
 
 	@OriginalMember(owner = "client!jr", name = "a", descriptor = "(IIIII)I")
-	public static int method3211(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		@Pc(7) int local7 = arg3 & 0xF;
-		@Pc(16) int local16 = local7 < 8 ? arg1 : arg2;
-		@Pc(40) int local40 = local7 >= 4 ? (local7 == 12 || local7 == 14 ? arg1 : arg0) : arg2;
-		return ((local7 & 0x2) == 0 ? local40 : -local40) + ((local7 & 0x1) == 0 ? local16 : -local16);
+	public static int grad(@OriginalArg(0) int z, @OriginalArg(2) int x, @OriginalArg(3) int y, @OriginalArg(4) int hash) {
+		@Pc(7) int h = hash & 0xF;
+		@Pc(16) int u = h < 8 ? x : y;
+		@Pc(40) int v = h < 4 ? y : (h == 12 || h == 14 ? x : z);
+		return ((h & 0x2) == 0 ? v : -v) + ((h & 0x1) == 0 ? u : -u);
 	}
 
 	@OriginalMember(owner = "client!jr", name = "a", descriptor = "(Lclient!wm;)V")

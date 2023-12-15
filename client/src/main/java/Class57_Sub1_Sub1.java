@@ -28,7 +28,7 @@ public final class Class57_Sub1_Sub1 extends Class57_Sub1 {
 	@OriginalMember(owner = "client!v", name = "b", descriptor = "(III)[B")
 	public byte[] method6022() {
 		this.aByteArray96 = new byte[524288];
-		this.method6013();
+		this.noise();
 		return this.aByteArray96;
 	}
 }

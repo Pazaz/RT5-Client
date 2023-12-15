@@ -42,7 +42,7 @@ public class Class57_Sub2 extends Class57 {
 
 	@OriginalMember(owner = "client!fp", name = "a", descriptor = "(Z)V")
 	@Override
-	protected final void method6017() {
+	protected final void add() {
 		this.anInt3599 >>= 0x4;
 		this.anInt3587 = this.anInt3589;
 		if (this.anInt3599 < 0) {
@@ -56,14 +56,14 @@ public class Class57_Sub2 extends Class57 {
 
 	@OriginalMember(owner = "client!fp", name = "a", descriptor = "(I)V")
 	@Override
-	protected final void method6015() {
+	protected final void setup() {
 		this.anInt3599 = 0;
 		this.anInt3595 = 0;
 	}
 
 	@OriginalMember(owner = "client!fp", name = "a", descriptor = "(III)V")
 	@Override
-	protected final void method6011(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
+	protected final void apply(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		if (arg0 == 0) {
 			this.anInt3588 = this.anInt3596 - (arg1 >= 0 ? arg1 : -arg1);
 			this.anInt3588 = this.anInt3588 * this.anInt3588 >> 12;
