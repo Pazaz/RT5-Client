@@ -1,0 +1,140 @@
+---
+libraries:
+  client:
+    format: pack200
+    file: runescape-b667-2011-09-29-13-06-20-openrs2#31438.pack200
+  loader:
+    format: jar
+    file: loader-2011-09-29-13-13-26-openrs2#31087.jar
+dependencies:
+  stub:
+    format: jar
+    file: stub.jar
+excluded_classes:
+  - "*!client"
+  - "*!dxVertexLayout"
+  - "*!jaclib/**"
+  - "*!jagdx/**"
+  - "*!jagex3/**"
+  - "*!jaggl/**"
+  - "*!jagtheora/**"
+  - "*!loader"
+  - "*!unpack"
+excluded_methods:
+  - "*!**.<clinit> *"
+  - "*!**.<init> *"
+  - "*!**.main *"
+  - "*!**.quit *"
+  - "*!jaclib/**.* *"
+  - "*!jagdx/**.* *"
+  - "*!jagex3/**.* *"
+  - "*!jaggl/**.* *"
+  - "*!jagtheora/**.* *"
+  - "*!**.unpack *"
+  - "*!**.enter *"
+  - "*!**.listmodes *"
+  - "*!**.exit *"
+  - "*!**.provideLoaderApplet *"
+  - "*!**.createToolkit *"
+  - "*!**.showcursor *"
+  - "*!**.movemouse *"
+  - "*!**.setcustomcursor *"
+  - "*!**.httpProxyConnect *"
+  - "*!**.callback *"
+  - "*!**.callbackEnumModes *"
+excluded_fields:
+  - "*!jaclib/**.* *"
+  - "*!jagdx/**.* *"
+  - "*!jagex3/**.* *"
+  - "*!jaggl/**.* *"
+  - "*!jagtheora/**.* *"
+  - "*!**.nativeid *"
+  - "*!**.peer *"
+  - "*!**.bar *"
+  - "*!**.background *"
+  - "*!**.left *"
+  - "*!**.right *"
+  - "*!**.top *"
+  - "*!**.bottom *"
+  - "*!**.bodyLeft *"
+  - "*!**.bodyRight *"
+  - "*!**.bodyFill *"
+  - "*!**.bf *"
+  - "*!**.bfm *"
+  - "*!**.colourtext *"
+  - "*!**.lb *"
+  - "*!**.xMiddle *"
+  - "*!**.yMiddle *"
+  - "*!**.xOffset *"
+  - "*!**.yOffset *"
+  - "*!**.width *"
+  - "*!**.height *"
+  - "*!**.boxXOffset *"
+  - "*!**.boxYOffset *"
+  - "*!**.boxWidth *"
+  - "*!**.textYOffset *"
+  - "*!**.offsetPerTenCycles *"
+  - "*!**.canvas *"
+  - "*!**.barBuf *"
+  - "*!**.cache *"
+entry_points:
+  - "*!**.<clinit> *"
+  - "*!**.main *"
+  - "*!client.<init> *"
+  - "*!loader.<init> *"
+scrambled_libraries:
+  - client
+max_obfuscated_name_len: 3
+pre_transformers:
+  - OriginalPcSave
+  - OriginalName
+  - StringDecryption
+  - ClassLiteral
+  - InvokeSpecial
+  - MultipleAssignment
+  - RedundantGoto
+transformers:
+  - OpaquePredicate
+  - ExceptionObfuscation
+  - ExceptionTracing
+  - Monitor
+  - BitShift
+  - Canvas
+  - FieldOrder
+  - BitwiseOp
+  - ConstantArg
+  - CopyPropagation
+  - UnusedLocal
+  - UnusedArg
+  - Counter
+  - Reset
+  - EmptyClass
+  - MethodOrder
+  - Visibility
+  - FinalClass
+  - FinalMethod
+  - FinalField
+  - Override
+  - RedundantGoto
+  - OriginalPcRestore
+  - FernflowerException
+patches: []
+source_transformers:
+  - Unenclose
+  - NegativeLiteral
+  - Complement
+  - Not
+  - CharLiteral
+  - IfElse
+  - Ternary
+  - BinaryExprOrder
+  - AddSub
+  - Identity
+  - BitMask
+  - HexLiteral
+  - ValueOf
+  - NewInstance
+  - Increment
+  - ForLoopCondition
+  - Gl
+  - Enclose
