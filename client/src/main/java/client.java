@@ -759,7 +759,7 @@ public final class client extends Applet_Sub1 {
 			Static690.aClass243_5 = null;
 			Static172.aClass243_4 = null;
 		}
-		if (Static446.aClass355_5 != Static2.aClass355_1) {
+		if (Static446.aClass355_5 != Static2.aClass355_1 && !ClientConfig.DISABLE_DEFAULT_FPSON) {
 			Static105.aBoolean196 = true;
 		}
 		Static484.aString85 = Static32.aClass32_12.method877(Static51.anInt1052);
