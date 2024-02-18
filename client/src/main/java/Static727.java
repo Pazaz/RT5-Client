@@ -1,5 +1,4 @@
 import java.applet.Applet;
-import netscape.javascript.JSObject;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 
