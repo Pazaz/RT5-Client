@@ -6,6 +6,9 @@ import com.ms.directX.DirectDraw;
 import com.ms.directX.IEnumModesCallback;
 import com.ms.win32.User32;
 import java.awt.Frame;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -24,16 +27,22 @@ public final class Class15 implements IEnumModesCallback {
 
 	@OriginalMember(owner = "client!ak", name = "a", descriptor = "(Ljava/awt/Frame;IIIII)V")
 	public void method248(@OriginalArg(0) Frame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
-		arg0.setVisible(true);
-		@Pc(6) WComponentPeer local6 = (WComponentPeer) arg0.getPeer();
-		@Pc(9) int local9 = local6.getHwnd();
-		User32.SetWindowLong(local9, -16, Integer.MIN_VALUE);
-		User32.SetWindowLong(local9, -20, 8);
-		this.aDirectDraw1.setCooperativeLevel(arg0, 17);
-		this.aDirectDraw1.setDisplayMode(arg4, arg3, arg1, arg2, 0);
-		arg0.setBounds(0, 0, arg4, arg3);
-		arg0.toFront();
-		arg0.requestFocus();
+		try {
+			arg0.setVisible(true);
+			Method getPeer = Frame.class.getDeclaredMethod("getPeer");
+			getPeer.setAccessible(true);
+			@Pc(6) WComponentPeer local6 = (WComponentPeer) getPeer.invoke(arg0);
+			@Pc(9) int local9 = local6.getHwnd();
+			User32.SetWindowLong(local9, -16, Integer.MIN_VALUE);
+			User32.SetWindowLong(local9, -20, 8);
+			this.aDirectDraw1.setCooperativeLevel(arg0, 17);
+			this.aDirectDraw1.setDisplayMode(arg4, arg3, arg1, arg2, 0);
+			arg0.setBounds(0, 0, arg4, arg3);
+			arg0.toFront();
+			arg0.requestFocus();
+		} catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException ex) {
+			throw new RuntimeException(ex);
+		}
 	}
 
 	@OriginalMember(owner = "client!ak", name = "a", descriptor = "(Ljava/awt/Frame;I)V")
