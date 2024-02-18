@@ -43,7 +43,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	}
 
 	@OriginalMember(owner = "client!kh", name = "provideLoaderApplet", descriptor = "(Ljava/applet/Applet;)V")
-	private static void provideLoaderApplet(@OriginalArg(0) Applet arg0) {
+	public static void provideLoaderApplet(@OriginalArg(0) Applet arg0) {
 		Static166.anApplet1 = arg0;
 	}
 

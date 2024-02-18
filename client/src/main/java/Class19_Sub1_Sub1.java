@@ -102,7 +102,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	private final boolean[] aBooleanArray16;
 
 	@OriginalMember(owner = "client!kea", name = "createToolkit", descriptor = "(Ljava/awt/Canvas;Lclient!d;Lclient!sb;Ljava/lang/Integer;)Lclient!ha;")
-	private static Class19 createToolkit(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface4 arg1, @OriginalArg(2) Class330 arg2, @OriginalArg(3) Integer arg3) {
+	public static Class19 createToolkit(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface4 arg1, @OriginalArg(2) Class330 arg2, @OriginalArg(3) Integer arg3) {
 		@Pc(1) Class19_Sub1_Sub1 local1 = null;
 		try {
 			@Pc(3) byte local3 = 0;
