@@ -126,7 +126,7 @@ public final class Class2_Sub43 extends Class2 {
 		} else {
 			this.anInt7617 = 3;
 		}
-		@Pc(332) int local332 = 2;
+		@Pc(332) int local332 = Static689.aString124.startsWith("1.") ? 2 : 0;
 		@Pc(334) int local334 = 0;
 		@Pc(340) char local340;
 		try {
