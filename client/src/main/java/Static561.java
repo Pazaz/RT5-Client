@@ -24,7 +24,7 @@ public final class Static561 {
 		if (local11 != null) {
 			local5 = Static449.method6118(local11) & true;
 		}
-		local11 = (Interface25) Static578.method7623(arg2, arg0, arg1, aClass20 == null ? (aClass20 = Class324.a("uv")) : aClass20);
+		local11 = (Interface25) Static578.method7623(arg2, arg0, arg1, aClass20 == null ? (aClass20 = getClass("Interface25")) : aClass20);
 		if (local11 != null) {
 			local5 &= Static449.method6118(local11);
 		}
@@ -33,6 +33,16 @@ public final class Static561 {
 			local5 &= Static449.method6118(local11);
 		}
 		return local5;
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 
 	@OriginalMember(owner = "client!rla", name = "b", descriptor = "(I)V")

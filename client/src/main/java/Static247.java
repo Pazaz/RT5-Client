@@ -24,7 +24,7 @@ public final class Static247 {
 		}
 		if (arg0.length > 136 && !Static132.aBoolean208) {
 			try {
-				@Pc(25) Class175 local25 = (Class175) Class.forName("id").getDeclaredConstructor().newInstance();
+				@Pc(25) Class175 local25 = (Class175) Class.forName("Class175_Sub1").getDeclaredConstructor().newInstance();
 				local25.method3849(arg0);
 				return local25;
 			} catch (@Pc(32) Throwable local32) {

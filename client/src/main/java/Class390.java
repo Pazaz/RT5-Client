@@ -135,7 +135,7 @@ public final class Class390 implements Runnable {
 			}
 			if (this.aBoolean779) {
 				try {
-					this.anObject21 = Class.forName("ir").getDeclaredConstructor().newInstance();
+					this.anObject21 = Class.forName("Class183").getDeclaredConstructor().newInstance();
 				} catch (@Pc(267) Throwable local267) {
 				}
 			}
@@ -143,7 +143,7 @@ public final class Class390 implements Runnable {
 				if (this.aBoolean779) {
 					this.aClass15_1 = new Class15();
 				} else {
-					this.anObject19 = Class.forName("cia").getDeclaredConstructor().newInstance();
+					this.anObject19 = Class.forName("Class66").getDeclaredConstructor().newInstance();
 				}
 			} catch (@Pc(287) Throwable local287) {
 			}
@@ -151,7 +151,7 @@ public final class Class390 implements Runnable {
 				if (this.aBoolean779) {
 					this.aCallback_Sub1_1 = new Callback_Sub1();
 				} else {
-					this.anObject20 = Class.forName("me").getDeclaredConstructor().newInstance();
+					this.anObject20 = Class.forName("Class238").getDeclaredConstructor().newInstance();
 				}
 			} catch (@Pc(306) Throwable local306) {
 			}
@@ -418,7 +418,7 @@ public final class Class390 implements Runnable {
 							if (this.aBoolean779) {
 								local15.anObject13 = this.aClass15_1.method250();
 							} else {
-								local15.anObject13 = Class.forName("cia").getMethod("listmodes").invoke(this.anObject19);
+								local15.anObject13 = Class.forName("Class66").getMethod("listmodes").invoke(this.anObject19);
 							}
 						} else if (local42 == 6) {
 							@Pc(268) Frame local268 = new Frame("Jagex Full Screen");
@@ -427,7 +427,7 @@ public final class Class390 implements Runnable {
 							if (this.aBoolean779) {
 								this.aClass15_1.method248(local268, local15.anInt6787 >> 16, local15.anInt6787 & 0xFFFF, local15.anInt6788 & 0xFFFF, local15.anInt6788 >>> 16);
 							} else {
-								Class.forName("cia").getMethod("enter", Static689.aClass24 == null ? (Static689.aClass24 = a("java.awt.Frame")) : Static689.aClass24, Integer.TYPE, Integer.TYPE, Integer.TYPE, Integer.TYPE).invoke(this.anObject19, local268, Integer.valueOf(local15.anInt6788 >>> 16), new Integer(local15.anInt6788 & 0xFFFF), Integer.valueOf(local15.anInt6787 >> 16), new Integer(local15.anInt6787 & 0xFFFF));
+								Class.forName("Class66").getMethod("enter", Static689.aClass24 == null ? (Static689.aClass24 = Class.forName("java.awt.Frame")) : Static689.aClass24, Integer.TYPE, Integer.TYPE, Integer.TYPE, Integer.TYPE).invoke(this.anObject19, local268, Integer.valueOf(local15.anInt6788 >>> 16), new Integer(local15.anInt6788 & 0xFFFF), Integer.valueOf(local15.anInt6787 >> 16), new Integer(local15.anInt6787 & 0xFFFF));
 							}
 						} else if (local42 != 7) {
 							@Pc(438) Class83 local438;
@@ -443,7 +443,7 @@ public final class Class390 implements Runnable {
 								if (this.aBoolean779) {
 									this.aCallback_Sub1_1.method6431(local460, local463);
 								} else {
-									Class.forName("me").getDeclaredMethod("movemouse", Integer.TYPE, Integer.TYPE).invoke(this.anObject20, Integer.valueOf(local460), new Integer(local463));
+									Class.forName("Class238").getDeclaredMethod("movemouse", Integer.TYPE, Integer.TYPE).invoke(this.anObject20, Integer.valueOf(local460), new Integer(local463));
 								}
 							} else if (this.aBoolean781 && local42 == 15) {
 								@Pc(534) boolean local534 = local15.anInt6788 != 0;
@@ -451,11 +451,11 @@ public final class Class390 implements Runnable {
 								if (this.aBoolean779) {
 									this.aCallback_Sub1_1.method6432(local534, local538);
 								} else {
-									Class.forName("me").getDeclaredMethod("showcursor", Static689.aClass25 == null ? (Static689.aClass25 = a("java.awt.Component")) : Static689.aClass25, Boolean.TYPE).invoke(this.anObject20, local538, Boolean.valueOf(local534));
+									Class.forName("Class238").getDeclaredMethod("showcursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Boolean.TYPE).invoke(this.anObject20, local538, Boolean.valueOf(local534));
 								}
 							} else if (!this.aBoolean779 && local42 == 17) {
 								local102 = (Object[]) local15.anObject12;
-								Class.forName("me").getDeclaredMethod("setcustomcursor", Static689.aClass25 == null ? (Static689.aClass25 = a("java.awt.Component")) : Static689.aClass25, Static689.aClass26 == null ? (Static689.aClass26 = a("[I")) : Static689.aClass26, Integer.TYPE, Integer.TYPE, Static689.aClass27 == null ? (Static689.aClass27 = a("java.awt.Point")) : Static689.aClass27).invoke(this.anObject20, (Component) local102[0], (int[]) local102[1], Integer.valueOf(local15.anInt6788), new Integer(local15.anInt6787), (Point) local102[2]);
+								Class.forName("Class238").getDeclaredMethod("setcustomcursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Static689.aClass26 == null ? (Static689.aClass26 = Class.forName("[I")) : Static689.aClass26, Integer.TYPE, Integer.TYPE, Static689.aClass27 == null ? (Static689.aClass27 = Class.forName("java.awt.Point")) : Static689.aClass27).invoke(this.anObject20, (Component) local102[0], (int[]) local102[1], Integer.valueOf(local15.anInt6788), new Integer(local15.anInt6787), (Point) local102[2]);
 							} else if (local42 == 16) {
 								try {
 									if (!Static689.aString119.startsWith("win")) {
@@ -483,7 +483,7 @@ public final class Class390 implements Runnable {
 						} else if (this.aBoolean779) {
 							this.aClass15_1.method249((Frame) local15.anObject12);
 						} else {
-							Class.forName("cia").getMethod("exit").invoke(this.anObject19);
+							Class.forName("Class66").getMethod("exit").invoke(this.anObject19);
 						}
 					} else {
 						throw new Exception("");

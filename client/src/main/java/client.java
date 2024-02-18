@@ -793,7 +793,7 @@ public final class client extends Applet_Sub1 {
 					@Pc(284) Class local284 = Class.forName("java.lang.reflect.AccessibleObject");
 					@Pc(296) Method local296 = local284.getDeclaredMethod("setAccessible", Boolean.TYPE);
 					local296.invoke(local279, Boolean.TRUE);
-					@Pc(322) Vector local322 = (Vector) local279.get((Static84.aClass5 == null ? (Static84.aClass5 = a("client")) : Static84.aClass5).getClassLoader());
+					@Pc(322) Vector local322 = (Vector) local279.get((Static84.aClass5 == null ? (Static84.aClass5 = Class.forName("client")) : Static84.aClass5).getClassLoader());
 					for (@Pc(324) int local324 = 0; local324 < local322.size(); local324++) {
 						try {
 							@Pc(329) Object local329 = local322.elementAt(local324);

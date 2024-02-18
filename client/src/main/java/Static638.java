@@ -24,7 +24,7 @@ public final class Static638 {
 			throw new IllegalArgumentException();
 		} else {
 			try {
-				@Pc(41) Class56 local41 = (Class56) Class.forName("cb").getDeclaredConstructor().newInstance();
+				@Pc(41) Class56 local41 = (Class56) Class.forName("Class56_Sub1").getDeclaredConstructor().newInstance();
 				local41.anIntArray315 = new int[(Static316.aBoolean644 ? 2 : 1) * 256];
 				local41.anInt4098 = arg2;
 				local41.method3593(arg3);
@@ -88,7 +88,7 @@ public final class Static638 {
 	@OriginalMember(owner = "client!uca", name = "b", descriptor = "(Z)Lclient!gh;")
 	public static Class145 method8396() {
 		try {
-			return (Class145) Class.forName("jl").getDeclaredConstructor().newInstance();
+			return (Class145) Class.forName("Class145_Sub1").getDeclaredConstructor().newInstance();
 		} catch (@Pc(16) Throwable local16) {
 			return null;
 		}

@@ -22,7 +22,7 @@ public final class Static293 {
 			local9 = (Interface25) Static114.method2134(arg0.anInt4010, arg0.anInt4016, arg0.anInt4006);
 		}
 		if (arg0.anInt4011 == 2) {
-			local9 = (Interface25) Static578.method7623(arg0.anInt4010, arg0.anInt4016, arg0.anInt4006, aClass10 == null ? (aClass10 = Class2_Sub21_Sub1.a("uv")) : aClass10);
+			local9 = (Interface25) Static578.method7623(arg0.anInt4010, arg0.anInt4016, arg0.anInt4006, aClass10 == null ? (aClass10 = getClass("Interface25")) : aClass10);
 		}
 		if (arg0.anInt4011 == 3) {
 			local9 = (Interface25) Static687.method8959(arg0.anInt4010, arg0.anInt4016, arg0.anInt4006);
@@ -36,6 +36,16 @@ public final class Static293 {
 			arg0.anInt4009 = local9.method6858();
 			arg0.anInt4015 = local9.method6855(23796);
 		}
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 
 	@OriginalMember(owner = "client!jfa", name = "a", descriptor = "(III)Z")

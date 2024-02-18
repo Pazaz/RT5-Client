@@ -43,7 +43,7 @@ public final class Class58_Sub2 extends Class58 {
 			@Pc(34) String local34 = null;
 			try {
 				@Pc(39) Class local39 = Class.forName("sun.net.www.protocol.http.AuthenticationInfo");
-				@Pc(65) Method local65 = local39.getDeclaredMethod("getProxyAuth", Static447.aClass17 == null ? (Static447.aClass17 = a("java.lang.String")) : Static447.aClass17, Integer.TYPE);
+				@Pc(65) Method local65 = local39.getDeclaredMethod("getProxyAuth", Static447.aClass17 == null ? (Static447.aClass17 = Class.forName("java.lang.String")) : Static447.aClass17, Integer.TYPE);
 				local65.setAccessible(true);
 				@Pc(87) Object local87 = local65.invoke((Object) null, local28.getHostName(), Integer.valueOf(local28.getPort()));
 				if (local87 != null) {
@@ -52,7 +52,7 @@ public final class Class58_Sub2 extends Class58 {
 					if ((Boolean) local98.invoke(local87)) {
 						@Pc(119) Method local119 = local39.getDeclaredMethod("getHeaderName");
 						local119.setAccessible(true);
-						@Pc(158) Method local158 = local39.getDeclaredMethod("getHeaderValue", Static447.aClass18 == null ? (Static447.aClass18 = a("java.net.URL")) : Static447.aClass18, Static447.aClass17 == null ? (Static447.aClass17 = a("java.lang.String")) : Static447.aClass17);
+						@Pc(158) Method local158 = local39.getDeclaredMethod("getHeaderValue", Static447.aClass18 == null ? (Static447.aClass18 = Class.forName("java.net.URL")) : Static447.aClass18, Static447.aClass17 == null ? (Static447.aClass17 = Class.forName("java.lang.String")) : Static447.aClass17);
 						local158.setAccessible(true);
 						@Pc(168) String local168 = (String) local119.invoke(local87);
 						@Pc(200) String local200 = (String) local158.invoke(local87, new URL("https://" + this.aString74 + "/"), "https");

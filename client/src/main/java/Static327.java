@@ -14,7 +14,7 @@ public final class Static327 {
 	public static Class58 method4894(@OriginalArg(1) String arg0, @OriginalArg(2) int arg1) {
 		@Pc(10) Class58 local10;
 		try {
-			local10 = (Class58) Class.forName("ob").getDeclaredConstructor().newInstance();
+			local10 = (Class58) Class.forName("Class58_Sub2").getDeclaredConstructor().newInstance();
 		} catch (@Pc(12) Throwable local12) {
 			local10 = new Class58_Sub1();
 		}

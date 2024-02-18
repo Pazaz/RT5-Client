@@ -57,7 +57,7 @@ public final class Static358 {
 					}
 					for (@Pc(125) int local125 = local100; local125 <= local108; local125++) {
 						@Pc(128) byte local128 = 1;
-						@Pc(144) Class8_Sub2_Sub1 local144 = Static578.method7623(local16, local125, local78, aClass28 == null ? (aClass28 = Class222.a("qf")) : aClass28);
+						@Pc(144) Class8_Sub2_Sub1 local144 = Static578.method7623(local16, local125, local78, aClass28 == null ? (aClass28 = getClass("Class8_Sub2_Sub1")) : aClass28);
 						if (local144 != null && local144.aByte145 != 0) {
 							@Pc(169) boolean local169;
 							@Pc(179) boolean local179;
@@ -114,6 +114,16 @@ public final class Static358 {
 				Static246.aClass178Array1[local16].method7868(local13, local37);
 			}
 		}
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 
 	@OriginalMember(owner = "client!lf", name = "e", descriptor = "(I)V")

@@ -19,7 +19,7 @@ public final class Static70 {
 	@OriginalMember(owner = "client!ce", name = "a", descriptor = "(Ljava/awt/Component;IZ)Lclient!fb;")
 	public static Class120 method1513(@OriginalArg(0) Component arg0) {
 		try {
-			@Pc(34) Constructor local34 = Class.forName("ht").getDeclaredConstructor(aClass4 == null ? (aClass4 = Class59_Sub1.a("java.awt.Component")) : aClass4, Boolean.TYPE);
+			@Pc(34) Constructor local34 = Class.forName("Class120_Sub1").getDeclaredConstructor(aClass4 == null ? (aClass4 = Class.forName("java.awt.Component")) : aClass4, Boolean.TYPE);
 			return (Class120) local34.newInstance(arg0, Boolean.valueOf(true));
 		} catch (@Pc(52) Throwable local52) {
 			return new Class120_Sub2(arg0, true);

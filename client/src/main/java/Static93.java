@@ -96,11 +96,21 @@ public final class Static93 {
 				return true;
 			} catch (@Pc(133) NoSuchMethodException local133) {
 				System.load(local31.getPath());
-				Static137.aHashtable2.put(arg1, aClass6 == null ? (aClass6 = Class8_Sub2_Sub2_Sub1.a("sca")) : aClass6);
+				Static137.aHashtable2.put(arg1, aClass6 == null ? (aClass6 = getClass("Class332")) : aClass6);
 				return true;
 			} catch (@Pc(154) Throwable local154) {
 			}
 		}
 		return false;
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 }

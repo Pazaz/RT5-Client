@@ -15,6 +15,16 @@ public final class Static14 {
 
 	@OriginalMember(owner = "client!ai", name = "a", descriptor = "(ILjava/lang/String;)Z")
 	public static boolean method179(@OriginalArg(1) String arg0) {
-		return Static93.method1833(aClass1 == null ? (aClass1 = Class2_Sub1_Sub2.a("sca")) : aClass1, arg0);
+		return Static93.method1833(aClass1 == null ? (aClass1 = getClass("Class332")) : aClass1, arg0);
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 }

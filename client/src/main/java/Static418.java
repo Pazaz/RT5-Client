@@ -25,7 +25,7 @@ public final class Static418 {
 			return;
 		}
 		try {
-			@Pc(34) Method local34 = (aClass21 == null ? (aClass21 = Class8_Sub2_Sub5.a("java.lang.Runtime")) : aClass21).getMethod("maxMemory");
+			@Pc(34) Method local34 = (aClass21 == null ? (aClass21 = Class.forName("java.lang.Runtime")) : aClass21).getMethod("maxMemory");
 			if (local34 != null) {
 				try {
 					@Pc(38) Runtime local38 = Runtime.getRuntime();

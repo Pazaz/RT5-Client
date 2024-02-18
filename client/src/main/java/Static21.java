@@ -107,7 +107,7 @@ public final class Static21 {
 		}
 		try {
 			@Pc(28) Class local28 = Class.forName("com.sun.management.HotSpotDiagnosticMXBean");
-			@Pc(54) Method local54 = local28.getDeclaredMethod("dumpHeap", aClass23 == null ? (aClass23 = Class19_Sub1.a("java.lang.String")) : aClass23, Boolean.TYPE);
+			@Pc(54) Method local54 = local28.getDeclaredMethod("dumpHeap", aClass23 == null ? (aClass23 = Class.forName("java.lang.String")) : aClass23, Boolean.TYPE);
 			local54.invoke(Static210.anObject8, arg0.getAbsolutePath(), Boolean.valueOf(false));
 		} catch (@Pc(74) Exception local74) {
 			System.out.println("HeapDump error:");

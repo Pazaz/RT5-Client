@@ -29,7 +29,7 @@ public final class Static570 {
 			return new Class27_Sub3();
 		} catch (@Pc(8) Throwable local8) {
 			try {
-				return (Class27) Class.forName("di").getDeclaredConstructor().newInstance();
+				return (Class27) Class.forName("Class27_Sub2").getDeclaredConstructor().newInstance();
 			} catch (@Pc(16) Throwable local16) {
 				return new Class27_Sub1();
 			}

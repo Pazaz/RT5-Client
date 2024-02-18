@@ -25,7 +25,7 @@ public final class Static716 {
 			@Pc(20) Class local20 = Class.forName("java.lang.management.ManagementFactory");
 			@Pc(27) Method local27 = local20.getDeclaredMethod("getPlatformMBeanServer", (Class[]) null);
 			@Pc(32) Object local32 = local27.invoke((Object) null, (Object[]) null);
-			@Pc(75) Method local75 = local20.getMethod("newPlatformMXBeanProxy", Class.forName("javax.management.MBeanServerConnection"), aClass29 == null ? (aClass29 = Class405.a("java.lang.String")) : aClass29, aClass30 == null ? (aClass30 = Class405.a("java.lang.Class")) : aClass30);
+			@Pc(75) Method local75 = local20.getMethod("newPlatformMXBeanProxy", Class.forName("javax.management.MBeanServerConnection"), aClass29 == null ? (aClass29 = Class.forName("java.lang.String")) : aClass29, aClass30 == null ? (aClass30 = Class.forName("java.lang.Class")) : aClass30);
 			Static210.anObject8 = local75.invoke((Object) null, local32, "com.sun.management:type=HotSpotDiagnostic", Class.forName("com.sun.management.HotSpotDiagnosticMXBean"));
 		} catch (@Pc(100) Exception local100) {
 			System.out.println("HeapDump setup error:");

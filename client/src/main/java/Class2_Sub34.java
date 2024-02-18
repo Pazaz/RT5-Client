@@ -354,13 +354,23 @@ public final class Class2_Sub34 extends Class2 {
 			@Pc(7) Field[] local7 = this.getClass().getDeclaredFields();
 			for (@Pc(11) int local11 = 0; local11 < local7.length; local11++) {
 				@Pc(16) Field local16 = local7[local11];
-				if ((Static348.aClass12 == null ? (Static348.aClass12 = a("ta")) : Static348.aClass12).isAssignableFrom(local16.getType())) {
+				if ((Static348.aClass12 == null ? (Static348.aClass12 = getClass("Class57")) : Static348.aClass12).isAssignableFrom(local16.getType())) {
 					@Pc(36) Class57 local36 = (Class57) local16.get(this);
 					local36.method8350();
 				}
 			}
 		} catch (@Pc(58) IllegalAccessException local58) {
 		}
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 
 	@OriginalMember(owner = "client!kv", name = "d", descriptor = "(I)Lclient!ge;")

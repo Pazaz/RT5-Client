@@ -149,7 +149,7 @@ public final class Static484 {
 						if (Static696.method9036(local214, arg1, local211, local216)) {
 							@Pc(730) Interface25 local730 = (Interface25) Static687.method8959(local216, local211, local214);
 							if (local730 == null) {
-								local730 = (Interface25) Static578.method7623(local216, local211, local214, aClass19 == null ? (aClass19 = Class8_Sub7.a("uv")) : aClass19);
+								local730 = (Interface25) Static578.method7623(local216, local211, local214, aClass19 == null ? (aClass19 = getClass("Interface25")) : aClass19);
 							}
 							if (local730 == null) {
 								local730 = (Interface25) Static302.method4414(local216, local211, local214);
@@ -236,5 +236,15 @@ public final class Static484 {
 			}
 		}
 		return true;
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 }

@@ -790,7 +790,7 @@ public final class Class306_Sub1 extends Class306 {
 			local5 = (Interface25) Static114.method2134(arg2, arg0, arg1);
 		}
 		if (arg3 == 2) {
-			local5 = (Interface25) Static578.method7623(arg2, arg0, arg1, Static603.aClass22 == null ? (Static603.aClass22 = a("uv")) : Static603.aClass22);
+			local5 = (Interface25) Static578.method7623(arg2, arg0, arg1, Static603.aClass22 == null ? (Static603.aClass22 = getClass("Interface25")) : Static603.aClass22);
 		}
 		if (arg3 == 3) {
 			local5 = (Interface25) Static687.method8959(arg2, arg0, arg1);
@@ -941,7 +941,7 @@ public final class Class306_Sub1 extends Class306 {
 		} else if (arg0 == 1) {
 			Static173.method2692(arg3, arg4, arg1);
 		} else if (arg0 == 2) {
-			Static10.method130(arg3, arg4, arg1, Static603.aClass22 == null ? (Static603.aClass22 = a("uv")) : Static603.aClass22);
+			Static10.method130(arg3, arg4, arg1, Static603.aClass22 == null ? (Static603.aClass22 = getClass("Interface25")) : Static603.aClass22);
 			if (local22.anInt1242 != 0 && super.anInt8906 > local22.anInt1270 + arg4 && super.anInt8904 > local22.anInt1270 + arg1 && arg4 + local22.anInt1229 < super.anInt8906 && local22.anInt1229 + arg1 < super.anInt8904) {
 				arg2.method2468(local22.aBoolean99, !local22.aBoolean97, arg4, local22.anInt1270, local22.anInt1229, local30, arg1);
 			}
@@ -958,5 +958,15 @@ public final class Class306_Sub1 extends Class306 {
 				arg2.method2473(arg1, arg4);
 			}
 		}
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 }

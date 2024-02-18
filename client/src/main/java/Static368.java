@@ -16,14 +16,24 @@ public final class Static368 {
 	@OriginalMember(owner = "client!lka", name = "a", descriptor = "(B)I")
 	public static int method5269() {
 		@Pc(5) int local5 = 0;
-		@Pc(26) Field[] local26 = (aClass14 == null ? (aClass14 = Class231.a("kv")) : aClass14).getDeclaredFields();
+		@Pc(26) Field[] local26 = (aClass14 == null ? (aClass14 = getClass("Class2_Sub34")) : aClass14).getDeclaredFields();
 		for (@Pc(30) int local30 = 0; local30 < local26.length; local30++) {
 			@Pc(35) Field local35 = local26[local30];
-			if ((aClass15 == null ? (aClass15 = Class231.a("ta")) : aClass15).isAssignableFrom(local35.getType())) {
+			if ((aClass15 == null ? (aClass15 = getClass("Class57")) : aClass15).isAssignableFrom(local35.getType())) {
 				local5++;
 			}
 		}
 		return local5 + 1;
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 
 	@OriginalMember(owner = "client!lka", name = "a", descriptor = "(I[BIIIB)V")

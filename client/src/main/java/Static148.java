@@ -20,7 +20,7 @@ public final class Static148 {
 	@OriginalMember(owner = "client!el", name = "a", descriptor = "(Z)V")
 	public static void method2429() {
 		try {
-			@Pc(26) Method local26 = (aClass7 == null ? (aClass7 = Class105.a("java.lang.Runtime")) : aClass7).getMethod("availableProcessors");
+			@Pc(26) Method local26 = (aClass7 == null ? (aClass7 = Class.forName("java.lang.Runtime")) : aClass7).getMethod("availableProcessors");
 			if (local26 != null) {
 				try {
 					@Pc(30) Runtime local30 = Runtime.getRuntime();

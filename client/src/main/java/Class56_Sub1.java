@@ -40,7 +40,7 @@ public final class Class56_Sub1 extends Class56 {
 		}
 		this.aSourceDataLine1.close();
 		this.aSourceDataLine1 = null;
-		@Pc(38) Info local38 = new Info(Static64.aClass3 == null ? (Static64.aClass3 = a("javax.sound.sampled.SourceDataLine")) : Static64.aClass3, this.anAudioFormat1, this.anInt1519 << (Static316.aBoolean644 ? 2 : 1));
+		@Pc(38) Info local38 = new Info(Static64.aClass3 == null ? (Static64.aClass3 = getClass("javax.sound.sampled.SourceDataLine")) : Static64.aClass3, this.anAudioFormat1, this.anInt1519 << (Static316.aBoolean644 ? 2 : 1));
 		this.aSourceDataLine1 = (SourceDataLine) AudioSystem.getLine(local38);
 		this.aSourceDataLine1.open();
 		this.aSourceDataLine1.start();
@@ -68,7 +68,7 @@ public final class Class56_Sub1 extends Class56 {
 	@Override
 	public void method3588(@OriginalArg(0) int arg0) throws LineUnavailableException {
 		try {
-			@Pc(23) Info local23 = new Info(Static64.aClass3 == null ? (Static64.aClass3 = a("javax.sound.sampled.SourceDataLine")) : Static64.aClass3, this.anAudioFormat1, arg0 << (Static316.aBoolean644 ? 2 : 1));
+			@Pc(23) Info local23 = new Info(Static64.aClass3 == null ? (Static64.aClass3 = getClass("javax.sound.sampled.SourceDataLine")) : Static64.aClass3, this.anAudioFormat1, arg0 << (Static316.aBoolean644 ? 2 : 1));
 			this.aSourceDataLine1 = (SourceDataLine) AudioSystem.getLine(local23);
 			this.aSourceDataLine1.open();
 			this.aSourceDataLine1.start();
@@ -81,6 +81,16 @@ public final class Class56_Sub1 extends Class56 {
 				this.method3588(Static440.method5962(arg0));
 			}
 		}
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 
 	@OriginalMember(owner = "client!cb", name = "c", descriptor = "()V")

@@ -70,7 +70,7 @@ public final class Static185 {
 				Static452.method6173(local20, local26, arg0, arg4, arg5);
 			}
 		}
-		local9 = (Interface25) Static578.method7623(arg6, arg2, arg3, aClass8 == null ? (aClass8 = Class132_Sub1.a("uv")) : aClass8);
+		local9 = (Interface25) Static578.method7623(arg6, arg2, arg3, aClass8 == null ? (aClass8 = getClass("Interface25")) : aClass8);
 		if (local9 != null) {
 			local20 = Static354.aClass142_4.method3063(local9.method6859(-32136), 61);
 			local26 = local9.method6855(23796) & 0x3;
@@ -99,5 +99,15 @@ public final class Static185 {
 			Static452.method6173(local20, local26, arg0, arg4, arg5);
 			return;
 		}
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 }

@@ -16,7 +16,17 @@ public abstract class Peer {
 	protected PeerReference reference;
 
 	static {
-		init(a == null ? (a = a("jaclib.peer.PeerReference")) : a);
+		init(a == null ? (a = getClass("jaclib.peer.PeerReference")) : a);
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 
 	@OriginalMember(owner = "client!jaclib/peer/Peer", name = "init", descriptor = "(Ljava/lang/Class;)V")
