@@ -43,7 +43,7 @@ public final class Class50 {
 		local16 = new Class69();
 		local16.anInt1650 = arg0;
 		if (local43 != null) {
-			local16.method1585(new Class2_Sub21(local43));
+			local16.method1585(new Packet(local43));
 		}
 		local16.method1584();
 		@Pc(73) Class82 local73 = this.aClass82_22;

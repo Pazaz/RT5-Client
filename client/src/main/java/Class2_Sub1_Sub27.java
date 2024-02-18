@@ -177,34 +177,34 @@ public final class Class2_Sub1_Sub27 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!so", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg0) {
 			this.method9411(17, -97);
 		}
 		if (arg2 == 0) {
-			this.aBoolean667 = arg1.method7396() == 1;
+			this.aBoolean667 = arg1.g1() == 1;
 		} else if (arg2 == 1) {
-			this.anInt8803 = arg1.method7396();
+			this.anInt8803 = arg1.g1();
 		} else if (arg2 == 2) {
-			this.anInt8799 = arg1.method7356();
+			this.anInt8799 = arg1.g2s();
 			if (this.anInt8799 < 0) {
 				this.aShortArray127 = new short[this.anInt8803];
 				for (@Pc(103) int local103 = 0; local103 < this.anInt8803; local103++) {
-					this.aShortArray127[local103] = (short) arg1.method7356();
+					this.aShortArray127[local103] = (short) arg1.g2s();
 				}
 				return;
 			}
 		} else if (arg2 == 3) {
-			this.anInt8810 = this.anInt8805 = arg1.method7396();
+			this.anInt8810 = this.anInt8805 = arg1.g1();
 			return;
 		} else if (arg2 == 4) {
-			this.anInt8809 = arg1.method7396();
+			this.anInt8809 = arg1.g1();
 			return;
 		} else if (arg2 == 5) {
-			this.anInt8810 = arg1.method7396();
+			this.anInt8810 = arg1.g1();
 			return;
 		} else if (arg2 == 6) {
-			this.anInt8805 = arg1.method7396();
+			this.anInt8805 = arg1.g1();
 			return;
 		}
 	}

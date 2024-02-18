@@ -34,24 +34,24 @@ public final class Class2_Sub1_Sub20 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!nla", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg0) {
 			Static434.anInt6565 = -73;
 		}
 		if (arg2 == 0) {
-			this.anInt6578 = arg1.method7382();
+			this.anInt6578 = arg1.g2();
 		} else if (arg2 == 1) {
-			this.anInt6580 = arg1.method7382();
+			this.anInt6580 = arg1.g2();
 		} else if (arg2 == 2) {
-			this.anInt6574 = arg1.method7382();
+			this.anInt6574 = arg1.g2();
 		} else if (arg2 == 3) {
-			this.anInt6577 = arg1.method7382();
+			this.anInt6577 = arg1.g2();
 		} else if (arg2 == 4) {
-			this.anInt6573 = arg1.method7382();
+			this.anInt6573 = arg1.g2();
 		} else if (arg2 == 5) {
-			this.anInt6570 = arg1.method7382();
+			this.anInt6570 = arg1.g2();
 		} else if (arg2 == 6) {
-			this.anInt6566 = arg1.method7382();
+			this.anInt6566 = arg1.g2();
 		}
 	}
 

@@ -82,17 +82,17 @@ public final class Class2_Sub1_Sub5 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!bw", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
-			this.anInt1209 = arg1.method7382();
+			this.anInt1209 = arg1.g2();
 		} else if (arg2 == 1) {
-			this.anInt1205 = arg1.method7382();
+			this.anInt1205 = arg1.g2();
 		} else if (arg2 == 2) {
-			this.anInt1207 = arg1.method7382();
+			this.anInt1207 = arg1.g2();
 		} else if (arg2 == 3) {
-			this.anInt1204 = arg1.method7382();
+			this.anInt1204 = arg1.g2();
 		} else if (arg2 == 4) {
-			@Pc(72) int local72 = arg1.method7383();
+			@Pc(72) int local72 = arg1.g3();
 			this.anIntArray110[1] = local72 >> 4 & 0xFF0;
 			this.anIntArray110[2] = local72 >> 12 & 0x0;
 			this.anIntArray110[0] = (local72 & 0xFF0000) << 4;

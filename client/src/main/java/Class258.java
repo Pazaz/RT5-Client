@@ -76,48 +76,48 @@ public final class Class258 {
 	}
 
 	@OriginalMember(owner = "client!ng", name = "a", descriptor = "(Lclient!ge;)V")
-	public void method5775(@OriginalArg(0) Class2_Sub21 arg0) {
+	public void method5775(@OriginalArg(0) Packet arg0) {
 		this.aClass211_5 = new Class211();
 		this.aClass211_5.method4952(arg0);
 		this.aClass211_7 = new Class211();
 		this.aClass211_7.method4952(arg0);
-		@Pc(21) int local21 = arg0.method7396();
+		@Pc(21) int local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.anInt8388--;
+			arg0.pos--;
 			this.aClass211_6 = new Class211();
 			this.aClass211_6.method4952(arg0);
 			this.aClass211_1 = new Class211();
 			this.aClass211_1.method4952(arg0);
 		}
-		local21 = arg0.method7396();
+		local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.anInt8388--;
+			arg0.pos--;
 			this.aClass211_9 = new Class211();
 			this.aClass211_9.method4952(arg0);
 			this.aClass211_2 = new Class211();
 			this.aClass211_2.method4952(arg0);
 		}
-		local21 = arg0.method7396();
+		local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.anInt8388--;
+			arg0.pos--;
 			this.aClass211_3 = new Class211();
 			this.aClass211_3.method4952(arg0);
 			this.aClass211_4 = new Class211();
 			this.aClass211_4.method4952(arg0);
 		}
 		for (@Pc(109) int local109 = 0; local109 < 10; local109++) {
-			@Pc(114) int local114 = arg0.method7390();
+			@Pc(114) int local114 = arg0.gSamrt1or2();
 			if (local114 == 0) {
 				break;
 			}
 			this.anIntArray502[local109] = local114;
-			this.anIntArray510[local109] = arg0.method7360();
-			this.anIntArray504[local109] = arg0.method7390();
+			this.anIntArray510[local109] = arg0.gSmart1or2s();
+			this.anIntArray504[local109] = arg0.gSamrt1or2();
 		}
-		this.anInt6456 = arg0.method7390();
-		this.anInt6457 = arg0.method7390();
-		this.anInt6454 = arg0.method7382();
-		this.anInt6455 = arg0.method7382();
+		this.anInt6456 = arg0.gSamrt1or2();
+		this.anInt6457 = arg0.gSamrt1or2();
+		this.anInt6454 = arg0.g2();
+		this.anInt6455 = arg0.g2();
 		this.aClass228_1 = new Class228();
 		this.aClass211_8 = new Class211();
 		this.aClass228_1.method5257(arg0, this.aClass211_8);

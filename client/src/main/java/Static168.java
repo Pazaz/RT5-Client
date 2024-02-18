@@ -15,12 +15,12 @@ public final class Static168 {
 	public static final Class130 aClass130_5 = new Class130();
 
 	@OriginalMember(owner = "client!fda", name = "a", descriptor = "(Lclient!rka;I)V")
-	public static void method2633(@OriginalArg(0) Class2_Sub21_Sub2 arg0) {
-		arg0.method7417();
+	public static void method2633(@OriginalArg(0) PacketBit arg0) {
+		arg0.bits();
 		@Pc(10) int local10 = Static312.anInt5000;
 		@Pc(20) Class8_Sub2_Sub1_Sub2_Sub1 local20 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local10] = new Class8_Sub2_Sub1_Sub2_Sub1();
 		local20.anInt10740 = local10;
-		@Pc(28) int local28 = arg0.method7412(30);
+		@Pc(28) int local28 = arg0.gBit(30);
 		@Pc(33) byte local33 = (byte) (local28 >> 28);
 		@Pc(39) int local39 = local28 >> 14 & 0x3FFF;
 		local20.anIntArray879[0] = local39 - Static691.anInt10367;
@@ -32,8 +32,8 @@ public final class Static168 {
 		if (Static441.method5968(local20.anIntArray878[0], local20.anIntArray879[0])) {
 			local20.aByte143++;
 		}
-		if (Static462.aClass2_Sub21Array1[local10] != null) {
-			local20.method1420(Static462.aClass2_Sub21Array1[local10]);
+		if (Static462.A_PACKET_ARRAY_1[local10] != null) {
+			local20.method1420(Static462.A_PACKET_ARRAY_1[local10]);
 		}
 		Static338.anInt5564 = 0;
 		Static210.anIntArray280[Static338.anInt5564++] = local10;
@@ -41,7 +41,7 @@ public final class Static168 {
 		Static51.anInt1053 = 0;
 		for (@Pc(151) int local151 = 1; local151 < 2048; local151++) {
 			if (local10 != local151) {
-				@Pc(163) int local163 = arg0.method7412(18);
+				@Pc(163) int local163 = arg0.gBit(18);
 				@Pc(167) int local167 = local163 >> 16;
 				@Pc(173) int local173 = local163 >> 8 & 0xFF;
 				@Pc(177) int local177 = local163 & 0xFF;
@@ -55,7 +55,7 @@ public final class Static168 {
 				Static402.aByteArray68[local151] = 0;
 			}
 		}
-		arg0.method7411();
+		arg0.bytes();
 	}
 
 	@OriginalMember(owner = "client!fda", name = "a", descriptor = "(I[B)Lclient!st;")

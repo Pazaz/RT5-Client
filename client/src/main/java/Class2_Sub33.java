@@ -55,10 +55,10 @@ public final class Class2_Sub33 extends Class2 {
 	private final Interface1 anInterface1_2;
 
 	@OriginalMember(owner = "client!kia", name = "u", descriptor = "Lclient!ge;")
-	private Class2_Sub21 aClass2_Sub21_8;
+	private Packet aPacket_8;
 
 	@OriginalMember(owner = "client!kia", name = "l", descriptor = "Lclient!jfa;")
-	private Class2_Sub21_Sub1 aClass2_Sub21_Sub1_2;
+	private PacketGl aClass2_Sub21_Sub1_2;
 
 	@OriginalMember(owner = "client!kia", name = "B", descriptor = "Lclient!av;")
 	private Class28 aClass28_26;
@@ -132,8 +132,8 @@ public final class Class2_Sub33 extends Class2 {
 			this.aClass94_5 = null;
 			this.anInterface1_2 = null;
 		} else {
-			this.aClass2_Sub21_8 = new Class2_Sub21(this.anInt5447 * 2);
-			this.aClass2_Sub21_Sub1_2 = new Class2_Sub21_Sub1(this.anInt5447 * 16);
+			this.aPacket_8 = new Packet(this.anInt5447 * 2);
+			this.aClass2_Sub21_Sub1_2 = new PacketGl(this.anInt5447 * 16);
 			this.aClass28_26 = new Class28(Static440.method5962(this.anInt5447));
 			local148 = 0;
 			local121 = 0;
@@ -193,14 +193,14 @@ public final class Class2_Sub33 extends Class2 {
 				}
 				local148++;
 			}
-			this.anInterface1_2 = this.aClass19_Sub3_23.method7010(false, this.aClass2_Sub21_8.anInt8388, this.aClass2_Sub21_8.aByteArray93);
-			this.anInterface12_3 = this.aClass19_Sub3_23.method7024(false, this.aClass2_Sub21_Sub1_2.anInt8388, this.aClass2_Sub21_Sub1_2.aByteArray93, 16);
+			this.anInterface1_2 = this.aClass19_Sub3_23.method7010(false, this.aPacket_8.pos, this.aPacket_8.data);
+			this.anInterface12_3 = this.aClass19_Sub3_23.method7024(false, this.aClass2_Sub21_Sub1_2.pos, this.aClass2_Sub21_Sub1_2.data, 16);
 			this.aClass94_4 = new Class94(this.anInterface12_3, 5126, 3, 0);
 			this.aClass94_5 = new Class94(this.anInterface12_3, 5121, 4, 12);
 		}
 		this.aClass28_26 = null;
 		this.aClass2_Sub21_Sub1_2 = null;
-		this.aClass2_Sub21_8 = null;
+		this.aPacket_8 = null;
 		this.aFloatArrayArray11 = this.aFloatArrayArray9 = this.aFloatArrayArray10 = null;
 	}
 
@@ -300,21 +300,21 @@ public final class Class2_Sub33 extends Class2 {
 		}
 		@Pc(614) int local614 = (int) (local565 * (float) (local576 & 0xFF));
 		if (this.aClass19_Sub3_23.aBoolean618) {
-			this.aClass2_Sub21_Sub1_2.method4336((float) local15);
-			this.aClass2_Sub21_Sub1_2.method4336((float) local30);
-			this.aClass2_Sub21_Sub1_2.method4336((float) local23);
+			this.aClass2_Sub21_Sub1_2.pFloat((float) local15);
+			this.aClass2_Sub21_Sub1_2.pFloat((float) local30);
+			this.aClass2_Sub21_Sub1_2.pFloat((float) local23);
 		} else {
-			this.aClass2_Sub21_Sub1_2.method4337((float) local15);
-			this.aClass2_Sub21_Sub1_2.method4337((float) local30);
-			this.aClass2_Sub21_Sub1_2.method4337((float) local23);
+			this.aClass2_Sub21_Sub1_2.ipFloat((float) local15);
+			this.aClass2_Sub21_Sub1_2.ipFloat((float) local30);
+			this.aClass2_Sub21_Sub1_2.ipFloat((float) local23);
 		}
 		if (local614 > 255) {
 			local614 = 255;
 		}
-		this.aClass2_Sub21_Sub1_2.method7389(local586);
-		this.aClass2_Sub21_Sub1_2.method7389(local601);
-		this.aClass2_Sub21_Sub1_2.method7389(local614);
-		this.aClass2_Sub21_Sub1_2.method7389(255);
+		this.aClass2_Sub21_Sub1_2.p1(local586);
+		this.aClass2_Sub21_Sub1_2.p1(local601);
+		this.aClass2_Sub21_Sub1_2.p1(local614);
+		this.aClass2_Sub21_Sub1_2.p1(255);
 		this.method4934(local83);
 	}
 
@@ -340,9 +340,9 @@ public final class Class2_Sub33 extends Class2 {
 	@OriginalMember(owner = "client!kia", name = "a", descriptor = "(BS)V")
 	private void method4934(@OriginalArg(1) short arg0) {
 		if (this.aClass19_Sub3_23.aBoolean618) {
-			this.aClass2_Sub21_8.method7373(arg0);
+			this.aPacket_8.p2(arg0);
 		} else {
-			this.aClass2_Sub21_8.method7354(arg0);
+			this.aPacket_8.p2_alt1(arg0);
 		}
 	}
 }

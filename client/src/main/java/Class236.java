@@ -22,17 +22,17 @@ public final class Class236 {
 	public final int anInt5980;
 
 	@OriginalMember(owner = "client!lw", name = "<init>", descriptor = "(Lclient!ge;I)V")
-	public Class236(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(1) int arg1) {
+	public Class236(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1) {
 		this.anInt5985 = arg1;
-		@Pc(19) int local19 = arg0.method7396();
+		@Pc(19) int local19 = arg0.g1();
 		if (local19 == 0) {
-			this.anInt5980 = arg0.method7346();
+			this.anInt5980 = arg0.gSmart2or4null();
 		} else if (local19 == 1) {
 			this.anInt5980 = -1;
 		} else {
 			this.anInt5980 = -1;
 		}
-		arg0.method7358();
+		arg0.gjstr();
 	}
 
 	@OriginalMember(owner = "client!lw", name = "a", descriptor = "(IBII)V")
@@ -71,7 +71,7 @@ public final class Class236 {
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10739 = Static457.anInt6933++;
 			} else {
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1 = new Class8_Sub2_Sub1_Sub2_Sub1(25);
-				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.method1420(Static518.aClass2_Sub21_18);
+				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.method1420(Static518.aPacket_18);
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10751 = Static333.anInt5455;
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10739 = Static457.anInt6933++;
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10740 = this.anInt5985;

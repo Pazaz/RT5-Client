@@ -113,29 +113,29 @@ public final class Static81 {
 	@OriginalMember(owner = "client!cka", name = "a", descriptor = "(Ljava/lang/String;ILjava/lang/String;ZI)V")
 	public static void method1591(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) boolean arg3) {
 		@Pc(8) Class2_Sub19 local8 = Static273.method3962();
-		local8.aClass2_Sub21_Sub2_1.method7389(Static572.aClass167_58.anInt3973);
-		local8.aClass2_Sub21_Sub2_1.method7373(0);
-		@Pc(25) int local25 = local8.aClass2_Sub21_Sub2_1.anInt8388;
-		local8.aClass2_Sub21_Sub2_1.method7373(667);
+		local8.aPacketBit_1.p1(Static572.aClass167_58.anInt3973);
+		local8.aPacketBit_1.p2(0);
+		@Pc(25) int local25 = local8.aPacketBit_1.pos;
+		local8.aPacketBit_1.p2(667);
 		@Pc(38) int[] local38 = Static664.method8652(local8);
-		@Pc(42) int local42 = local8.aClass2_Sub21_Sub2_1.anInt8388;
-		local8.aClass2_Sub21_Sub2_1.method7391(arg0);
-		local8.aClass2_Sub21_Sub2_1.method7373(Static323.anInt5121);
-		local8.aClass2_Sub21_Sub2_1.method7391(arg2);
-		local8.aClass2_Sub21_Sub2_1.method7363(Static416.aLong208);
-		local8.aClass2_Sub21_Sub2_1.method7389(Static51.anInt1052);
-		local8.aClass2_Sub21_Sub2_1.method7389(Static392.aClass377_4.anInt9720);
-		Static176.method6690(local8.aClass2_Sub21_Sub2_1);
+		@Pc(42) int local42 = local8.aPacketBit_1.pos;
+		local8.aPacketBit_1.pjstr(arg0);
+		local8.aPacketBit_1.p2(Static323.anInt5121);
+		local8.aPacketBit_1.pjstr(arg2);
+		local8.aPacketBit_1.p8(Static416.aLong208);
+		local8.aPacketBit_1.p1(Static51.anInt1052);
+		local8.aPacketBit_1.p1(Static392.aClass377_4.anInt9720);
+		Static176.method6690(local8.aPacketBit_1);
 		@Pc(81) String local81 = Static389.aString64;
-		local8.aClass2_Sub21_Sub2_1.method7389(local81 == null ? 0 : 1);
+		local8.aPacketBit_1.p1(local81 == null ? 0 : 1);
 		if (local81 != null) {
-			local8.aClass2_Sub21_Sub2_1.method7391(local81);
+			local8.aPacketBit_1.pjstr(local81);
 		}
-		local8.aClass2_Sub21_Sub2_1.method7389(arg1);
-		local8.aClass2_Sub21_Sub2_1.method7389(arg3 ? 1 : 0);
-		local8.aClass2_Sub21_Sub2_1.anInt8388 += 7;
-		local8.aClass2_Sub21_Sub2_1.method7366(local38, local42, local8.aClass2_Sub21_Sub2_1.anInt8388);
-		local8.aClass2_Sub21_Sub2_1.method7357(local8.aClass2_Sub21_Sub2_1.anInt8388 - local25);
+		local8.aPacketBit_1.p1(arg1);
+		local8.aPacketBit_1.p1(arg3 ? 1 : 0);
+		local8.aPacketBit_1.pos += 7;
+		local8.aPacketBit_1.tinyenc(local38, local42, local8.aPacketBit_1.pos);
+		local8.aPacketBit_1.psize2(local8.aPacketBit_1.pos - local25);
 		Static405.aClass153_1.method3275(local8);
 		Static720.anInt10865 = 0;
 		Static580.anInt8621 = -3;

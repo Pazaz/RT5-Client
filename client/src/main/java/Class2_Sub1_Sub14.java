@@ -309,16 +309,16 @@ public final class Class2_Sub1_Sub14 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!kg", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
-			@Pc(14) int local14 = arg1.method7396();
+			@Pc(14) int local14 = arg1.g1();
 			if (local14 == 0) {
-				this.anIntArrayArray125 = new int[arg1.method7396()][4];
+				this.anIntArrayArray125 = new int[arg1.g1()][4];
 				for (@Pc(28) int local28 = 0; local28 < this.anIntArrayArray125.length; local28++) {
-					this.anIntArrayArray125[local28][0] = arg1.method7382();
-					this.anIntArrayArray125[local28][1] = arg1.method7396() << 4;
-					this.anIntArrayArray125[local28][2] = arg1.method7396() << 4;
-					this.anIntArrayArray125[local28][3] = arg1.method7396() << 4;
+					this.anIntArrayArray125[local28][0] = arg1.g2();
+					this.anIntArrayArray125[local28][1] = arg1.g1() << 4;
+					this.anIntArrayArray125[local28][2] = arg1.g1() << 4;
+					this.anIntArrayArray125[local28][3] = arg1.g1() << 4;
 				}
 			} else {
 				this.method4893(local14);

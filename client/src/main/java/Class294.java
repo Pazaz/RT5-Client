@@ -28,46 +28,46 @@ public final class Class294 {
 	private final int[] anIntArray603 = new int[] { -1, -1, -1, -1, -1 };
 
 	@OriginalMember(owner = "client!pka", name = "a", descriptor = "(BILclient!ge;)V")
-	private void method6612(@OriginalArg(1) int arg0, @OriginalArg(2) Class2_Sub21 arg1) {
+	private void method6612(@OriginalArg(1) int arg0, @OriginalArg(2) Packet arg1) {
 		if (arg0 == 1) {
-			arg1.method7396();
+			arg1.g1();
 			return;
 		}
 		@Pc(59) int local59;
 		@Pc(69) int local69;
 		if (arg0 == 2) {
-			local59 = arg1.method7396();
+			local59 = arg1.g1();
 			this.anIntArray602 = new int[local59];
 			for (local69 = 0; local69 < local59; local69++) {
-				this.anIntArray602[local69] = arg1.method7382();
+				this.anIntArray602[local69] = arg1.g2();
 			}
 		} else if (arg0 != 3) {
 			if (arg0 == 40) {
-				local59 = arg1.method7396();
+				local59 = arg1.g1();
 				this.aShortArray108 = new short[local59];
 				this.aShortArray105 = new short[local59];
 				for (local69 = 0; local69 < local59; local69++) {
-					this.aShortArray105[local69] = (short) arg1.method7382();
-					this.aShortArray108[local69] = (short) arg1.method7382();
+					this.aShortArray105[local69] = (short) arg1.g2();
+					this.aShortArray108[local69] = (short) arg1.g2();
 				}
 			} else if (arg0 == 41) {
-				local59 = arg1.method7396();
+				local59 = arg1.g1();
 				this.aShortArray106 = new short[local59];
 				this.aShortArray107 = new short[local59];
 				for (local69 = 0; local69 < local59; local69++) {
-					this.aShortArray107[local69] = (short) arg1.method7382();
-					this.aShortArray106[local69] = (short) arg1.method7382();
+					this.aShortArray107[local69] = (short) arg1.g2();
+					this.aShortArray106[local69] = (short) arg1.g2();
 				}
 			} else if (arg0 >= 60 && arg0 < 70) {
-				this.anIntArray603[arg0 - 60] = arg1.method7382();
+				this.anIntArray603[arg0 - 60] = arg1.g2();
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!pka", name = "a", descriptor = "(Lclient!ge;B)V")
-	public void method6613(@OriginalArg(0) Class2_Sub21 arg0) {
+	public void method6613(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(9) int local9 = arg0.method7396();
+			@Pc(9) int local9 = arg0.g1();
 			if (local9 == 0) {
 				return;
 			}

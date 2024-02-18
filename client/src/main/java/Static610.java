@@ -11,19 +11,19 @@ public final class Static610 {
 	public static Class158 aClass158_16 = null;
 
 	@OriginalMember(owner = "client!tf", name = "a", descriptor = "(ILclient!rka;I)V")
-	public static void method8217(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub21_Sub2 arg1) {
-		@Pc(16) boolean local16 = arg1.method7412(1) == 1;
+	public static void method8217(@OriginalArg(0) int arg0, @OriginalArg(1) PacketBit arg1) {
+		@Pc(16) boolean local16 = arg1.gBit(1) == 1;
 		if (local16) {
 			Static321.anIntArray388[Static652.anInt9713++] = arg0;
 		}
-		@Pc(33) int local33 = arg1.method7412(2);
+		@Pc(33) int local33 = arg1.gBit(2);
 		@Pc(37) Class8_Sub2_Sub1_Sub2_Sub1 local37 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[arg0];
 		if (local33 != 0) {
 			@Pc(165) int local165;
 			@Pc(170) int local170;
 			@Pc(175) int local175;
 			if (local33 == 1) {
-				local165 = arg1.method7412(3);
+				local165 = arg1.gBit(3);
 				local170 = local37.anIntArray879[0];
 				local175 = local37.anIntArray878[0];
 				if (local165 == 0) {
@@ -55,7 +55,7 @@ public final class Static610 {
 					local37.method1425(local175, local170, Static139.aByteArray30[arg0]);
 				}
 			} else if (local33 == 2) {
-				local165 = arg1.method7412(4);
+				local165 = arg1.gBit(4);
 				local170 = local37.anIntArray879[0];
 				local175 = local37.anIntArray878[0];
 				if (local165 == 0) {
@@ -111,13 +111,13 @@ public final class Static610 {
 					local37.method1425(local175, local170, Static139.aByteArray30[arg0]);
 				}
 			} else {
-				local165 = arg1.method7412(1);
+				local165 = arg1.gBit(1);
 				@Pc(539) int local539;
 				@Pc(551) int local551;
 				@Pc(566) int local566;
 				@Pc(573) int local573;
 				if (local165 == 0) {
-					local170 = arg1.method7412(12);
+					local170 = arg1.gBit(12);
 					local175 = local170 >> 10;
 					local539 = local170 >> 5 & 0x1F;
 					if (local539 > 15) {
@@ -147,7 +147,7 @@ public final class Static610 {
 						Static394.anInt6176 = local37.aByte144;
 					}
 				} else {
-					local170 = arg1.method7412(30);
+					local170 = arg1.gBit(30);
 					local175 = local170 >> 28;
 					local539 = local170 >> 14 & 0x3FFF;
 					local551 = local170 & 0x3FFF;
@@ -188,7 +188,7 @@ public final class Static610 {
 				Static76.method1552(local37);
 			}
 			Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[arg0] = null;
-			if (arg1.method7412(1) != 0) {
+			if (arg1.gBit(1) != 0) {
 				Static383.method5379(arg0, arg1);
 			}
 		}

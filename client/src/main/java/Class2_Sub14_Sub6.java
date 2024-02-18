@@ -37,11 +37,11 @@ public final class Class2_Sub14_Sub6 extends Class2_Sub14 {
 
 	@OriginalMember(owner = "client!ku", name = "a", descriptor = "(ILclient!ge;)V")
 	@Override
-	public void method8615(@OriginalArg(1) Class2_Sub21 arg0) {
-		this.aBoolean430 = arg0.method7396() == 1;
-		this.aByte92 = arg0.method7377();
-		this.aByte90 = arg0.method7377();
-		this.aByte93 = arg0.method7377();
-		this.aByte91 = arg0.method7377();
+	public void method8615(@OriginalArg(1) Packet arg0) {
+		this.aBoolean430 = arg0.g1() == 1;
+		this.aByte92 = arg0.g1b();
+		this.aByte90 = arg0.g1b();
+		this.aByte93 = arg0.g1b();
+		this.aByte91 = arg0.g1b();
 	}
 }

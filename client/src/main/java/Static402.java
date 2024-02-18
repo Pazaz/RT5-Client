@@ -34,7 +34,7 @@ public final class Static402 {
 		@Pc(21) byte[] local21 = Static331.aClass330_65.method7595(arg0, 0);
 		local10 = new Class376();
 		if (local21 != null) {
-			local10.method8511(arg0, new Class2_Sub21(local21));
+			local10.method8511(arg0, new Packet(local21));
 		}
 		Static153.aClass82_56.method2150(local10, (long) arg0);
 		return local10;

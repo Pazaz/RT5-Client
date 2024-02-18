@@ -38,7 +38,7 @@ public final class Static571 {
 						if (local66[0] != -1) {
 							throw new IllegalStateException("if1");
 						}
-						local78.method3390(new Class2_Sub21(local66));
+						local78.method3390(new Packet(local66));
 					}
 				}
 			}

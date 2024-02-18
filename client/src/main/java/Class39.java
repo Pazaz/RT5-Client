@@ -9,8 +9,8 @@ public abstract class Class39 {
 	public final int anInt10553;
 
 	@OriginalMember(owner = "client!pi", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39(@OriginalArg(0) Class2_Sub21 arg0) {
-		this.anInt10553 = arg0.method7382();
+	public Class39(@OriginalArg(0) Packet arg0) {
+		this.anInt10553 = arg0.g2();
 	}
 
 	@OriginalMember(owner = "client!pi", name = "a", descriptor = "(Z)Z")

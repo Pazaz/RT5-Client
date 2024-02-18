@@ -11,7 +11,7 @@ public final class Class2_Sub19 extends Class2 {
 	public int anInt2986;
 
 	@OriginalMember(owner = "client!fk", name = "s", descriptor = "Lclient!rka;")
-	public Class2_Sub21_Sub2 aClass2_Sub21_Sub2_1;
+	public PacketBit aPacketBit_1;
 
 	@OriginalMember(owner = "client!fk", name = "r", descriptor = "I")
 	public int anInt2989;

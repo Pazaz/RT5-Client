@@ -48,16 +48,16 @@ public final class Static502 {
 	}
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(BLclient!ge;)Lclient!il;")
-	public static Class138_Sub3 method6720(@OriginalArg(1) Class2_Sub21 arg0) {
+	public static Class138_Sub3 method6720(@OriginalArg(1) Packet arg0) {
 		@Pc(7) Class138 local7 = Static632.method8359(arg0);
-		@Pc(23) int local23 = arg0.method7349();
-		@Pc(27) int local27 = arg0.method7349();
+		@Pc(23) int local23 = arg0.g4();
+		@Pc(27) int local27 = arg0.g4();
 		return new Class138_Sub3(local7.aClass403_10, local7.aClass103_10, local7.anInt4423, local7.anInt4412, local7.anInt4418, local7.anInt4413, local7.anInt4416, local7.anInt4415, local7.anInt4421, local23, local27);
 	}
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(B[B)V")
 	public static void method6721(@OriginalArg(1) byte[] arg0) {
-		@Pc(10) Class2_Sub21 local10 = new Class2_Sub21(arg0);
+		@Pc(10) Packet local10 = new Packet(arg0);
 		while (true) {
 			@Pc(14) int local14;
 			@Pc(55) int local55;
@@ -65,26 +65,26 @@ public final class Static502 {
 			label46: do {
 				while (true) {
 					while (true) {
-						local14 = local10.method7396();
+						local14 = local10.g1();
 						if (local14 == 0) {
 							return;
 						}
 						if (local14 == 1) {
 							@Pc(137) int[] local137 = Static449.anIntArray546 = new int[6];
-							local137[0] = local10.method7382();
-							local137[1] = local10.method7382();
-							local137[2] = local10.method7382();
-							local137[3] = local10.method7382();
-							local137[4] = local10.method7382();
-							local137[5] = local10.method7382();
+							local137[0] = local10.g2();
+							local137[1] = local10.g2();
+							local137[2] = local10.g2();
+							local137[3] = local10.g2();
+							local137[4] = local10.g2();
+							local137[5] = local10.g2();
 						} else {
 							if (local14 != 4) {
 								continue label46;
 							}
-							local50 = local10.method7396();
+							local50 = local10.g1();
 							Static406.anIntArray484 = new int[local50];
 							for (local55 = 0; local55 < local50; local55++) {
-								Static406.anIntArray484[local55] = local10.method7382();
+								Static406.anIntArray484[local55] = local10.g2();
 								if (Static406.anIntArray484[local55] == 65535) {
 									Static406.anIntArray484[local55] = -1;
 								}
@@ -93,10 +93,10 @@ public final class Static502 {
 					}
 				}
 			} while (local14 != 5);
-			local50 = local10.method7396();
+			local50 = local10.g1();
 			Static150.anIntArray233 = new int[local50];
 			for (local55 = 0; local55 < local50; local55++) {
-				Static150.anIntArray233[local55] = local10.method7382();
+				Static150.anIntArray233[local55] = local10.g2();
 				if (Static150.anIntArray233[local55] == 65535) {
 					Static150.anIntArray233[local55] = -1;
 				}

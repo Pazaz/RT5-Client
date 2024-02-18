@@ -6,9 +6,9 @@ public final class Static277 {
 
 	@OriginalMember(owner = "client!im", name = "a", descriptor = "(IIILclient!fk;I)V")
 	public static void method4040(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class2_Sub19 arg2, @OriginalArg(4) int arg3) {
-		arg2.aClass2_Sub21_Sub2_1.method7347(arg0);
-		arg2.aClass2_Sub21_Sub2_1.method7370(arg1);
-		arg2.aClass2_Sub21_Sub2_1.method7373(arg3);
+		arg2.aPacketBit_1.p4_alt3(arg0);
+		arg2.aPacketBit_1.p2_alt3(arg1);
+		arg2.aPacketBit_1.p2(arg3);
 	}
 
 	@OriginalMember(owner = "client!im", name = "a", descriptor = "(Lclient!uv;IIZ)J")

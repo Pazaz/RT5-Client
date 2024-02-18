@@ -7,7 +7,7 @@ public final class Static339 {
 	public static short[][][] aShortArrayArrayArray2;
 
 	@OriginalMember(owner = "client!kma", name = "m", descriptor = "Lclient!ge;")
-	public static Class2_Sub21 aClass2_Sub21_9;
+	public static Packet aPacket_9;
 
 	@OriginalMember(owner = "client!kma", name = "a", descriptor = "(II)I")
 	public static int method5005(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {

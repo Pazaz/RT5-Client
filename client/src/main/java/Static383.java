@@ -11,20 +11,20 @@ public final class Static383 {
 	public static final Class225 aClass225_155 = new Class225(50, -2);
 
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "(ILclient!rka;I)Z")
-	public static boolean method5379(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub21_Sub2 arg1) {
-		@Pc(18) int local18 = arg1.method7412(2);
+	public static boolean method5379(@OriginalArg(0) int arg0, @OriginalArg(1) PacketBit arg1) {
+		@Pc(18) int local18 = arg1.gBit(2);
 		@Pc(45) int local45;
 		@Pc(50) int local50;
 		@Pc(127) int local127;
 		@Pc(131) int local131;
 		@Pc(137) int local137;
 		if (local18 == 0) {
-			if (arg1.method7412(1) != 0) {
+			if (arg1.gBit(1) != 0) {
 				method5379(arg0, arg1);
 			}
-			local45 = arg1.method7412(6);
-			local50 = arg1.method7412(6);
-			@Pc(63) boolean local63 = arg1.method7412(1) == 1;
+			local45 = arg1.gBit(6);
+			local50 = arg1.gBit(6);
+			@Pc(63) boolean local63 = arg1.gBit(1) == 1;
 			if (local63) {
 				Static321.anIntArray388[Static652.anInt9713++] = arg0;
 			}
@@ -34,8 +34,8 @@ public final class Static383 {
 			@Pc(91) Class350 local91 = Static246.aClass350Array1[arg0];
 			@Pc(99) Class8_Sub2_Sub1_Sub2_Sub1 local99 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[arg0] = new Class8_Sub2_Sub1_Sub2_Sub1();
 			local99.anInt10740 = arg0;
-			if (Static462.aClass2_Sub21Array1[arg0] != null) {
-				local99.method1420(Static462.aClass2_Sub21Array1[arg0]);
+			if (Static462.A_PACKET_ARRAY_1[arg0] != null) {
+				local99.method1420(Static462.A_PACKET_ARRAY_1[arg0]);
 			}
 			local99.method9298(local91.anInt9326, true);
 			local99.anInt10722 = local91.anInt9322;
@@ -57,7 +57,7 @@ public final class Static383 {
 			Static246.aClass350Array1[arg0] = null;
 			return true;
 		} else if (local18 == 1) {
-			local45 = arg1.method7412(2);
+			local45 = arg1.gBit(2);
 			local50 = Static246.aClass350Array1[arg0].anInt9324;
 			Static246.aClass350Array1[arg0].anInt9324 = (((local50 >> 28) + local45 & 0x3) << 28) + (local50 & 0xFFFFFFF);
 			return false;
@@ -66,7 +66,7 @@ public final class Static383 {
 			@Pc(262) int local262;
 			@Pc(271) int local271;
 			if (local18 != 2) {
-				local45 = arg1.method7412(18);
+				local45 = arg1.gBit(18);
 				local50 = local45 >> 16;
 				local257 = local45 >> 8 & 0xFF;
 				local262 = local45 & 0xFF;
@@ -77,7 +77,7 @@ public final class Static383 {
 				Static246.aClass350Array1[arg0].anInt9324 = local137 + (local131 << 14) + (local127 << 28);
 				return false;
 			}
-			local45 = arg1.method7412(5);
+			local45 = arg1.gBit(5);
 			local50 = local45 >> 3;
 			local257 = local45 & 0x7;
 			local262 = Static246.aClass350Array1[arg0].anInt9324;

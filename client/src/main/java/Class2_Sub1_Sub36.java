@@ -25,18 +25,18 @@ public final class Class2_Sub1_Sub36 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!via", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
-			this.anInt10255 = arg1.method7382();
+			this.anInt10255 = arg1.g2();
 		} else if (arg2 == 1) {
-			this.anInt10254 = arg1.method7382();
+			this.anInt10254 = arg1.g2();
 		} else if (arg2 == 2) {
-			this.anInt10256 = arg1.method7382();
+			this.anInt10256 = arg1.g2();
 		} else if (arg2 == 3) {
-			this.anInt10258 = arg1.method7382();
+			this.anInt10258 = arg1.g2();
 		}
 		if (arg0) {
-			Static678.method8901(-90, (Class2_Sub21) null);
+			Static678.method8901(-90, (Packet) null);
 		}
 	}
 
@@ -64,7 +64,7 @@ public final class Class2_Sub1_Sub36 extends Class2_Sub1 {
 			}
 		}
 		if (arg0 < 107) {
-			Static678.method8901(-124, (Class2_Sub21) null);
+			Static678.method8901(-124, (Packet) null);
 		}
 		return local11;
 	}

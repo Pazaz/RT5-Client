@@ -324,36 +324,36 @@ public final class Static466 {
 
 	@OriginalMember(owner = "client!om", name = "b", descriptor = "(Z)V")
 	public static void method6325() {
-		@Pc(8) Class2_Sub21_Sub2 local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
-		@Pc(12) int local12 = local8.method7382();
-		@Pc(16) int local16 = local8.method7396();
-		@Pc(28) boolean local28 = local8.method7376() == 1;
-		Static117.anInt2282 = local8.method7376();
-		@Pc(36) int local36 = local8.method7372();
+		@Pc(8) PacketBit local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
+		@Pc(12) int local12 = local8.g2();
+		@Pc(16) int local16 = local8.g1();
+		@Pc(28) boolean local28 = local8.g1_alt3() == 1;
+		Static117.anInt2282 = local8.g1_alt3();
+		@Pc(36) int local36 = local8.ig2();
 		Static165.method2607();
 		Static342.method4465(local16);
-		local8.method7417();
+		local8.bits();
 		@Pc(50) int local50;
 		@Pc(54) int local54;
 		@Pc(61) int local61;
 		for (@Pc(46) int local46 = 0; local46 < 4; local46++) {
 			for (local50 = 0; local50 < Static720.anInt10859 >> 3; local50++) {
 				for (local54 = 0; local54 < Static501.anInt7568 >> 3; local54++) {
-					local61 = local8.method7412(1);
+					local61 = local8.gBit(1);
 					if (local61 == 1) {
-						Static623.anIntArrayArrayArray19[local46][local50][local54] = local8.method7412(26);
+						Static623.anIntArrayArrayArray19[local46][local50][local54] = local8.gBit(26);
 					} else {
 						Static623.anIntArrayArrayArray19[local46][local50][local54] = -1;
 					}
 				}
 			}
 		}
-		local8.method7411();
-		local50 = (Static405.aClass153_2.anInt3648 - local8.anInt8388) / 16;
+		local8.bytes();
+		local50 = (Static405.aClass153_2.anInt3648 - local8.pos) / 16;
 		Static22.anIntArrayArray11 = new int[local50][4];
 		for (local54 = 0; local54 < local50; local54++) {
 			for (local61 = 0; local61 < 4; local61++) {
-				Static22.anIntArrayArray11[local54][local61] = local8.method7349();
+				Static22.anIntArrayArray11[local54][local61] = local8.g4();
 			}
 		}
 		Static118.aByteArrayArray3 = new byte[local50][];

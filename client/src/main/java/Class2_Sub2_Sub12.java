@@ -30,9 +30,9 @@ public final class Class2_Sub2_Sub12 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(Lclient!ge;I)V")
-	public void method3899(@OriginalArg(0) Class2_Sub21 arg0) {
+	public void method3899(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method7396();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}
@@ -66,12 +66,12 @@ public final class Class2_Sub2_Sub12 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(BLclient!ge;)Ljava/lang/String;")
-	public String method3903(@OriginalArg(1) Class2_Sub21 arg0) {
+	public String method3903(@OriginalArg(1) Packet arg0) {
 		@Pc(10) StringBuffer local10 = new StringBuffer(80);
 		if (this.anIntArray331 != null) {
 			for (@Pc(15) int local15 = 0; local15 < this.anIntArray331.length; local15++) {
 				local10.append(this.aStringArray23[local15]);
-				local10.append(this.aClass139_1.method2948(this.method3898(local15), arg0.method7407(Static446.method6091(this.anIntArray331[local15]).anInt4577), this.anIntArrayArray101[local15]));
+				local10.append(this.aClass139_1.method2948(this.method3898(local15), arg0.gVarLong(Static446.method6091(this.anIntArray331[local15]).anInt4577), this.anIntArrayArray101[local15]));
 			}
 		}
 		local10.append(this.aStringArray23[this.aStringArray23.length - 1]);
@@ -79,7 +79,7 @@ public final class Class2_Sub2_Sub12 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(Lclient!ge;[II)V")
-	public void method3904(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(1) int[] arg1) {
+	public void method3904(@OriginalArg(0) Packet arg0, @OriginalArg(1) int[] arg1) {
 		if (this.anIntArray331 == null) {
 			return;
 		}
@@ -89,7 +89,7 @@ public final class Class2_Sub2_Sub12 extends Class2_Sub2 {
 			}
 			@Pc(22) int local22 = this.method3898(local15).anInt4576;
 			if (local22 > 0) {
-				arg0.method7369(local22, (long) arg1[local15]);
+				arg0.pVarLong(local22, (long) arg1[local15]);
 			}
 		}
 	}
@@ -109,31 +109,31 @@ public final class Class2_Sub2_Sub12 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!ih", name = "a", descriptor = "(Lclient!ge;II)V")
-	private void method3907(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(2) int arg1) {
+	private void method3907(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.aStringArray23 = Static189.method2861(arg0.method7358(), '<');
+			this.aStringArray23 = Static189.method2861(arg0.gjstr(), '<');
 			return;
 		}
 		@Pc(21) int local21;
 		@Pc(27) int local27;
 		if (arg1 == 2) {
-			local21 = arg0.method7396();
+			local21 = arg0.g1();
 			this.anIntArray333 = new int[local21];
 			for (local27 = 0; local27 < local21; local27++) {
-				this.anIntArray333[local27] = arg0.method7382();
+				this.anIntArray333[local27] = arg0.g2();
 			}
 		} else if (arg1 == 3) {
-			local21 = arg0.method7396();
+			local21 = arg0.g1();
 			this.anIntArrayArray101 = new int[local21][];
 			this.anIntArray331 = new int[local21];
 			for (local27 = 0; local27 < local21; local27++) {
-				@Pc(71) int local71 = arg0.method7382();
+				@Pc(71) int local71 = arg0.g2();
 				@Pc(75) Class184 local75 = Static446.method6091(local71);
 				if (local75 != null) {
 					this.anIntArray331[local27] = local71;
 					this.anIntArrayArray101[local27] = new int[local75.anInt4573];
 					for (@Pc(91) int local91 = 0; local91 < local75.anInt4573; local91++) {
-						this.anIntArrayArray101[local27][local91] = arg0.method7382();
+						this.anIntArrayArray101[local27][local91] = arg0.g2();
 					}
 				}
 			}

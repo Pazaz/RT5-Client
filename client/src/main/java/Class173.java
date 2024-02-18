@@ -51,11 +51,11 @@ public final class Class173 {
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IILclient!ge;)V")
-	private void method3691(@OriginalArg(1) int arg0, @OriginalArg(2) Class2_Sub21 arg1) {
+	private void method3691(@OriginalArg(1) int arg0, @OriginalArg(2) Packet arg1) {
 		if (arg0 == 1) {
-			this.anInt4167 = arg1.method7382();
+			this.anInt4167 = arg1.g2();
 		} else if (arg0 == 2) {
-			this.anInt4165 = arg1.method7383();
+			this.anInt4165 = arg1.g3();
 		} else if (arg0 == 3) {
 			this.aBoolean329 = true;
 		} else if (arg0 == 4) {
@@ -64,9 +64,9 @@ public final class Class173 {
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(Lclient!ge;I)V")
-	public void method3694(@OriginalArg(0) Class2_Sub21 arg0) {
+	public void method3694(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(7) int local7 = arg0.method7396();
+			@Pc(7) int local7 = arg0.g1();
 			if (local7 == 0) {
 				return;
 			}

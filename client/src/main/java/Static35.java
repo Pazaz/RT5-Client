@@ -125,26 +125,26 @@ public final class Static35 {
 			Static8.aClass2_Sub6_Sub1_1 = null;
 			Static501.aBoolean575 = false;
 		} else if (Static400.aClass2_Sub34_28.aClass57_Sub25_2.method7208() != 0 && Static588.anInt8692 != -1 && !Static52.method1157(125)) {
-			@Pc(551) Class2_Sub19 local551 = Static293.method4335(Static235.aClass345_49, Static405.aClass153_2.aClass186_1);
-			local551.aClass2_Sub21_Sub2_1.method7342(Static588.anInt8692);
+			@Pc(551) Class2_Sub19 local551 = Static293.method4335(Static235.aClass345_49, Static405.aClass153_2.aIsaacRandom_1);
+			local551.aPacketBit_1.p4(Static588.anInt8692);
 			Static405.aClass153_2.method3275(local551);
 			Static588.anInt8692 = -1;
 		}
 	}
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "(Lclient!ge;I)Lclient!lv;")
-	public static Class235 method935(@OriginalArg(0) Class2_Sub21 arg0) {
-		@Pc(7) int local7 = arg0.method7396();
-		@Pc(16) Class403 local16 = Static33.method882()[arg0.method7396()];
-		@Pc(25) Class103 local25 = Static313.method4544()[arg0.method7396()];
-		@Pc(29) int local29 = arg0.method7356();
-		@Pc(33) int local33 = arg0.method7356();
-		@Pc(39) int local39 = arg0.method7382();
-		@Pc(43) int local43 = arg0.method7382();
-		@Pc(49) int local49 = arg0.method7349();
-		@Pc(53) int local53 = arg0.method7349();
-		@Pc(59) int local59 = arg0.method7349();
-		@Pc(69) boolean local69 = arg0.method7396() == 1;
+	public static Class235 method935(@OriginalArg(0) Packet arg0) {
+		@Pc(7) int local7 = arg0.g1();
+		@Pc(16) Class403 local16 = Static33.method882()[arg0.g1()];
+		@Pc(25) Class103 local25 = Static313.method4544()[arg0.g1()];
+		@Pc(29) int local29 = arg0.g2s();
+		@Pc(33) int local33 = arg0.g2s();
+		@Pc(39) int local39 = arg0.g2();
+		@Pc(43) int local43 = arg0.g2();
+		@Pc(49) int local49 = arg0.g4();
+		@Pc(53) int local53 = arg0.g4();
+		@Pc(59) int local59 = arg0.g4();
+		@Pc(69) boolean local69 = arg0.g1() == 1;
 		return new Class235(local7, local16, local25, local29, local33, local39, local43, local49, local53, local59, local69);
 	}
 }

@@ -14,7 +14,7 @@ public final class Class153 {
 	public Class270 aClass270_1;
 
 	@OriginalMember(owner = "client!gw", name = "l", descriptor = "Lclient!iv;")
-	public Class186 aClass186_1;
+	public IsaacRandom aIsaacRandom_1;
 
 	@OriginalMember(owner = "client!gw", name = "t", descriptor = "I")
 	public int anInt3643;
@@ -44,10 +44,10 @@ public final class Class153 {
 	private int anInt3640 = 0;
 
 	@OriginalMember(owner = "client!gw", name = "d", descriptor = "Lclient!ge;")
-	private final Class2_Sub21 aClass2_Sub21_6 = new Class2_Sub21(1350);
+	private final Packet aPacket_6 = new Packet(1350);
 
 	@OriginalMember(owner = "client!gw", name = "y", descriptor = "Lclient!rka;")
-	public final Class2_Sub21_Sub2 aClass2_Sub21_Sub2_2 = new Class2_Sub21_Sub2(15000);
+	public final PacketBit aClass2_Sub21_Sub2_2 = new PacketBit(15000);
 
 	@OriginalMember(owner = "client!gw", name = "j", descriptor = "Lclient!lga;")
 	public Class225 aClass225_93 = null;
@@ -88,19 +88,19 @@ public final class Class153 {
 		if (this.aClass348_1 == null || this.anInt3640 <= 0) {
 			return;
 		}
-		this.aClass2_Sub21_6.anInt8388 = 0;
+		this.aPacket_6.pos = 0;
 		while (true) {
 			@Pc(23) Class2_Sub19 local23 = (Class2_Sub19) this.aClass339_17.method7699(65280);
-			if (local23 == null || local23.anInt2989 > this.aClass2_Sub21_6.aByteArray93.length - this.aClass2_Sub21_6.anInt8388) {
-				this.aClass348_1.method7931(this.aClass2_Sub21_6.aByteArray93, this.aClass2_Sub21_6.anInt8388);
+			if (local23 == null || local23.anInt2989 > this.aPacket_6.data.length - this.aPacket_6.pos) {
+				this.aClass348_1.method7931(this.aPacket_6.data, this.aPacket_6.pos);
 				this.anInt3647 = 0;
-				this.anInt3649 += this.aClass2_Sub21_6.anInt8388;
+				this.anInt3649 += this.aPacket_6.pos;
 				break;
 			}
-			this.aClass2_Sub21_6.method7386(local23.anInt2989, local23.aClass2_Sub21_Sub2_1.aByteArray93, 0);
+			this.aPacket_6.pdata(local23.aPacketBit_1.data, 0, local23.anInt2989);
 			this.anInt3640 -= local23.anInt2989;
 			local23.method9457();
-			local23.aClass2_Sub21_Sub2_1.method7365();
+			local23.aPacketBit_1.release();
 			local23.method2768();
 		}
 	}
@@ -116,8 +116,8 @@ public final class Class153 {
 	@OriginalMember(owner = "client!gw", name = "a", descriptor = "(ILclient!fk;)V")
 	public void method3275(@OriginalArg(1) Class2_Sub19 arg0) {
 		this.aClass339_17.method7711(arg0);
-		arg0.anInt2989 = arg0.aClass2_Sub21_Sub2_1.anInt8388;
-		arg0.aClass2_Sub21_Sub2_1.anInt8388 = 0;
+		arg0.anInt2989 = arg0.aPacketBit_1.pos;
+		arg0.aPacketBit_1.pos = 0;
 		this.anInt3640 += arg0.anInt2989;
 	}
 }

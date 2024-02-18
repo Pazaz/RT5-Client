@@ -41,7 +41,7 @@ public final class Class151 {
 		}
 		local11 = new Class2_Sub2_Sub3();
 		if (local28 != null) {
-			local11.method1180(new Class2_Sub21(local28));
+			local11.method1180(new Packet(local28));
 		}
 		if (arg0 >= 32768) {
 			local11.method1186();

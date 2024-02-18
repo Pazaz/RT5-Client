@@ -17,9 +17,9 @@ public final class Static464 {
 	public static boolean aBoolean533 = false;
 
 	@OriginalMember(owner = "client!ol", name = "a", descriptor = "(Lclient!ge;Z)Lclient!hea;")
-	public static Class160_Sub1 method6301(@OriginalArg(0) Class2_Sub21 arg0) {
+	public static Class160_Sub1 method6301(@OriginalArg(0) Packet arg0) {
 		@Pc(16) Class160 local16 = Static515.method6803(arg0);
-		@Pc(20) int local20 = arg0.method7392();
+		@Pc(20) int local20 = arg0.g3s();
 		return new Class160_Sub1(local16.anInt3851, local16.aClass403_9, local16.aClass103_9, local16.anInt3850, local16.anInt3845, local20);
 	}
 }

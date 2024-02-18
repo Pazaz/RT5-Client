@@ -51,7 +51,7 @@ public final class Class214 {
 		}
 		local16 = new Class2_Sub2_Sub1();
 		if (local39 != null) {
-			local16.method90(new Class2_Sub21(local39));
+			local16.method90(new Packet(local39));
 		}
 		@Pc(71) Class82 local71 = this.aClass82_114;
 		synchronized (this.aClass82_114) {

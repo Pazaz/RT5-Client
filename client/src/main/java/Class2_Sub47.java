@@ -34,7 +34,7 @@ public final class Class2_Sub47 extends Class2 {
 	public String aString101 = null;
 
 	@OriginalMember(owner = "client!rfa", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class2_Sub47(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class2_Sub47(@OriginalArg(0) Packet arg0) {
 		this.method7274(arg0);
 	}
 
@@ -63,21 +63,21 @@ public final class Class2_Sub47 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!rfa", name = "a", descriptor = "(ILclient!ge;)V")
-	private void method7274(@OriginalArg(1) Class2_Sub21 arg0) {
-		@Pc(9) int local9 = arg0.method7396();
+	private void method7274(@OriginalArg(1) Packet arg0) {
+		@Pc(9) int local9 = arg0.g1();
 		if ((local9 & 0x2) != 0) {
 			this.aBoolean633 = true;
 		}
 		if ((local9 & 0x1) != 0) {
 			this.aBoolean632 = true;
 		}
-		super.aLong328 = arg0.method7398();
-		this.aLong256 = arg0.method7398();
-		this.aString101 = arg0.method7358();
-		arg0.method7396();
-		this.aByte127 = arg0.method7377();
-		this.aByte128 = arg0.method7377();
-		this.anInt8286 = arg0.method7382();
+		super.aLong328 = arg0.g8();
+		this.aLong256 = arg0.g8();
+		this.aString101 = arg0.gjstr();
+		arg0.g1();
+		this.aByte127 = arg0.g1b();
+		this.aByte128 = arg0.g1b();
+		this.anInt8286 = arg0.g2();
 		if (this.anInt8286 <= 0) {
 			return;
 		}
@@ -85,13 +85,13 @@ public final class Class2_Sub47 extends Class2 {
 		for (@Pc(82) int local82 = 0; local82 < this.anInt8286; local82++) {
 			@Pc(88) Class34 local88 = new Class34();
 			if (this.aBoolean632) {
-				arg0.method7398();
+				arg0.g8();
 			}
 			if (this.aBoolean633) {
-				local88.aString2 = arg0.method7358();
+				local88.aString2 = arg0.gjstr();
 			}
-			local88.aByte9 = arg0.method7377();
-			local88.anInt783 = arg0.method7382();
+			local88.aByte9 = arg0.g1b();
+			local88.anInt783 = arg0.g2();
 			this.aClass34Array1[local82] = local88;
 		}
 	}

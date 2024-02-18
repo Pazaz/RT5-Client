@@ -15,11 +15,11 @@ public final class Static517 {
 
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(Lclient!sb;III)Lclient!ip;")
 	public static Class2_Sub2_Sub13 method6820(@OriginalArg(0) Class330 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(14) Class2_Sub21 local14 = new Class2_Sub21(arg0.method7595(arg2, arg1));
-		@Pc(50) Class2_Sub2_Sub13 local50 = new Class2_Sub2_Sub13(arg2, local14.method7358(), local14.method7358(), local14.method7349(), local14.method7349(), local14.method7396() == 1, local14.method7396(), local14.method7396());
-		@Pc(54) int local54 = local14.method7396();
+		@Pc(14) Packet local14 = new Packet(arg0.method7595(arg2, arg1));
+		@Pc(50) Class2_Sub2_Sub13 local50 = new Class2_Sub2_Sub13(arg2, local14.gjstr(), local14.gjstr(), local14.g4(), local14.g4(), local14.g1() == 1, local14.g1(), local14.g1());
+		@Pc(54) int local54 = local14.g1();
 		for (@Pc(56) int local56 = 0; local56 < local54; local56++) {
-			local50.aClass339_26.method7711(new Class2_Sub56(local14.method7396(), local14.method7382(), local14.method7382(), local14.method7382(), local14.method7382(), local14.method7382(), local14.method7382(), local14.method7382(), local14.method7382()));
+			local50.aClass339_26.method7711(new Class2_Sub56(local14.g1(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2()));
 		}
 		local50.method4090();
 		return local50;

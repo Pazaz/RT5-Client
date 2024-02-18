@@ -61,8 +61,8 @@ public final class Class2_Sub39 extends Class2 {
 	@OriginalMember(owner = "client!nm", name = "a", descriptor = "(I[II)V")
 	public void method5861(@OriginalArg(1) int[] arg0, @OriginalArg(2) int arg1) {
 		@Pc(7) int local7 = 0;
-		@Pc(11) Class2_Sub21_Sub1 local11 = this.aClass19_Sub3_31.aClass2_Sub21_Sub1_3;
-		local11.anInt8388 = 0;
+		@Pc(11) PacketGl local11 = this.aClass19_Sub3_31.aPacketGl_3;
+		local11.pos = 0;
 		@Pc(32) short[] local32;
 		@Pc(26) int local26;
 		@Pc(37) int local37;
@@ -81,11 +81,11 @@ public final class Class2_Sub39 extends Class2 {
 						if ((local37 & 0x1 << local48++) == 0) {
 							local50 += 3;
 						} else {
-							local11.method7373(local32[local50++] & 0xFFFF);
+							local11.p2(local32[local50++] & 0xFFFF);
 							local7++;
 							local7++;
-							local11.method7373(local32[local50++] & 0xFFFF);
-							local11.method7373(local32[local50++] & 0xFFFF);
+							local11.p2(local32[local50++] & 0xFFFF);
+							local11.p2(local32[local50++] & 0xFFFF);
 							local7++;
 						}
 					}
@@ -104,10 +104,10 @@ public final class Class2_Sub39 extends Class2 {
 							local50 += 3;
 						} else {
 							local7++;
-							local11.method7354(local32[local50++] & 0xFFFF);
+							local11.p2_alt1(local32[local50++] & 0xFFFF);
 							local7++;
-							local11.method7354(local32[local50++] & 0xFFFF);
-							local11.method7354(local32[local50++] & 0xFFFF);
+							local11.p2_alt1(local32[local50++] & 0xFFFF);
+							local11.p2_alt1(local32[local50++] & 0xFFFF);
 							local7++;
 						}
 					}
@@ -117,7 +117,7 @@ public final class Class2_Sub39 extends Class2 {
 		if (local7 <= 0) {
 			return;
 		}
-		this.aClass134_Sub2_1.method9355(local11.anInt8388, local11.aByteArray93);
+		this.aClass134_Sub2_1.method9355(local11.pos, local11.data);
 		this.aClass19_Sub3_31.method7039(this.aClass94_10, this.aClass178_Sub2_3.aClass94_13, this.aClass178_Sub2_3.aClass94_11, this.aClass178_Sub2_3.aClass94_14);
 		this.aClass19_Sub3_31.method7015(this.anInt6592, (this.aClass178_Sub2_3.anInt7486 & 0x7) != 0, (this.aClass178_Sub2_3.anInt7486 & 0x8) != 0);
 		if (this.aClass19_Sub3_31.aBoolean605) {

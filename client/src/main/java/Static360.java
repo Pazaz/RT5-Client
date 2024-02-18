@@ -26,33 +26,33 @@ public final class Static360 {
 			if (local36 == null) {
 				return false;
 			}
-			@Pc(46) Class2_Sub21 local46 = new Class2_Sub21(local36);
+			@Pc(46) Packet local46 = new Packet(local36);
 			Static12.method5164(local46);
-			local53 = local46.method7396();
+			local53 = local46.g1();
 			for (@Pc(55) int local55 = 0; local55 < local53; local55++) {
 				Static391.aClass339_34.method7711(new Class2_Sub35(local46));
 			}
-			@Pc(78) int local78 = local46.method7390();
+			@Pc(78) int local78 = local46.gSamrt1or2();
 			Static75.aClass357Array2 = new Class357[local78];
 			for (@Pc(83) int local83 = 0; local83 < local78; local83++) {
 				Static75.aClass357Array2[local83] = new Class357(local46);
 			}
-			@Pc(108) int local108 = local46.method7390();
+			@Pc(108) int local108 = local46.gSamrt1or2();
 			Static219.aClass236Array1 = new Class236[local108];
 			for (@Pc(113) int local113 = 0; local113 < local108; local113++) {
 				Static219.aClass236Array1[local113] = new Class236(local46, local113);
 			}
-			@Pc(139) int local139 = local46.method7390();
+			@Pc(139) int local139 = local46.gSamrt1or2();
 			Static507.aClass394Array1 = new Class394[local139];
 			for (@Pc(144) int local144 = 0; local144 < local139; local144++) {
 				Static507.aClass394Array1[local144] = new Class394(local46);
 			}
-			@Pc(169) int local169 = local46.method7390();
+			@Pc(169) int local169 = local46.gSamrt1or2();
 			Static183.aClass231Array1 = new Class231[local169];
 			for (@Pc(174) int local174 = 0; local174 < local169; local174++) {
 				Static183.aClass231Array1[local174] = new Class231(local46);
 			}
-			@Pc(195) int local195 = local46.method7390();
+			@Pc(195) int local195 = local46.gSamrt1or2();
 			Static401.aClass39Array1 = new Class39[local195];
 			for (@Pc(200) int local200 = 0; local200 < local195; local200++) {
 				Static401.aClass39Array1[local200] = Static235.method3425(local46);

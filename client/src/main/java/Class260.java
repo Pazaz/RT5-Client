@@ -50,7 +50,7 @@ public final class Class260 {
 		}
 		local16 = new Class321();
 		if (local39 != null) {
-			local16.method7294(new Class2_Sub21(local39));
+			local16.method7294(new Packet(local39));
 		}
 		@Pc(63) Class82 local63 = this.aClass82_138;
 		synchronized (this.aClass82_138) {

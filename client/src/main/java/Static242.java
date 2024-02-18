@@ -76,9 +76,9 @@ public final class Static242 {
 					local47 = Static571.aClass345_103;
 				}
 				if (local47 != null) {
-					@Pc(108) Class2_Sub19 local108 = Static293.method4335(local47, Static405.aClass153_2.aClass186_1);
-					local108.aClass2_Sub21_Sub2_1.method7389(0);
-					local108.aClass2_Sub21_Sub2_1.method7373(local7[local19]);
+					@Pc(108) Class2_Sub19 local108 = Static293.method4335(local47, Static405.aClass153_2.aIsaacRandom_1);
+					local108.aPacketBit_1.p1(0);
+					local108.aPacketBit_1.p2(local7[local19]);
 					Static405.aClass153_2.method3275(local108);
 				}
 				local9 = true;

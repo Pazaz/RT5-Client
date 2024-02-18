@@ -63,8 +63,8 @@ public final class Static76 {
 				Static6.anInt95 = 4;
 			}
 			if (Static6.anInt95 == 4 && Static405.aClass153_1.aClass348_1.method7932(1)) {
-				Static405.aClass153_1.aClass348_1.method7929(Static405.aClass153_1.aClass2_Sub21_Sub2_2.aByteArray93, 1, 0);
-				@Pc(139) int local139 = Static405.aClass153_1.aClass2_Sub21_Sub2_2.aByteArray93[0] & 0xFF;
+				Static405.aClass153_1.aClass348_1.method7929(Static405.aClass153_1.aClass2_Sub21_Sub2_2.data, 1, 0);
+				@Pc(139) int local139 = Static405.aClass153_1.aClass2_Sub21_Sub2_2.data[0] & 0xFF;
 				Static6.anInt95 = 0;
 				Static580.anInt8621 = local139;
 				Static405.aClass153_1.method3274();

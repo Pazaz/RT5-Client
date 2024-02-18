@@ -27,53 +27,53 @@ public final class Static120 {
 		}
 		@Pc(64) Class2_Sub19 local64;
 		if (arg3 == 1) {
-			local64 = Static293.method4335(Static546.aClass345_98, Static405.aClass153_2.aClass186_1);
+			local64 = Static293.method4335(Static546.aClass345_98, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local64, arg1);
 			Static405.aClass153_2.method3275(local64);
 		}
 		if (arg3 == 2) {
-			local64 = Static293.method4335(Static323.aClass345_65, Static405.aClass153_2.aClass186_1);
+			local64 = Static293.method4335(Static323.aClass345_65, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local64, arg1);
 			Static405.aClass153_2.method3275(local64);
 		}
 		if (arg3 == 3) {
-			local64 = Static293.method4335(Static255.aClass345_54, Static405.aClass153_2.aClass186_1);
+			local64 = Static293.method4335(Static255.aClass345_54, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local64, arg1);
 			Static405.aClass153_2.method3275(local64);
 		}
 		@Pc(148) Class2_Sub19 local148;
 		if (arg3 == 4) {
-			local148 = Static293.method4335(Static710.aClass345_93, Static405.aClass153_2.aClass186_1);
+			local148 = Static293.method4335(Static710.aClass345_93, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}
 		if (arg3 == 5) {
-			local148 = Static293.method4335(Static693.aClass345_121, Static405.aClass153_2.aClass186_1);
+			local148 = Static293.method4335(Static693.aClass345_121, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}
 		if (arg3 == 6) {
-			local148 = Static293.method4335(Static126.aClass345_23, Static405.aClass153_2.aClass186_1);
+			local148 = Static293.method4335(Static126.aClass345_23, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}
 		if (arg3 == 7) {
-			local148 = Static293.method4335(Static358.aClass345_124, Static405.aClass153_2.aClass186_1);
+			local148 = Static293.method4335(Static358.aClass345_124, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}
 		if (arg3 == 8) {
-			local148 = Static293.method4335(Static700.aClass345_123, Static405.aClass153_2.aClass186_1);
+			local148 = Static293.method4335(Static700.aClass345_123, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}
 		if (arg3 == 9) {
-			local148 = Static293.method4335(Static372.aClass345_69, Static405.aClass153_2.aClass186_1);
+			local148 = Static293.method4335(Static372.aClass345_69, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}
 		if (arg3 == 10) {
-			local148 = Static293.method4335(Static713.aClass345_125, Static405.aClass153_2.aClass186_1);
+			local148 = Static293.method4335(Static713.aClass345_125, Static405.aClass153_2.aIsaacRandom_1);
 			Static277.method4040(arg0, local8.anInt3760, local148, arg1);
 			Static405.aClass153_2.method3275(local148);
 		}

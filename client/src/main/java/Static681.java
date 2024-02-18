@@ -10,12 +10,12 @@ public final class Static681 {
 
 	@OriginalMember(owner = "client!vk", name = "a", descriptor = "(I[B)Z")
 	public static boolean method8919(@OriginalArg(1) byte[] arg0) {
-		@Pc(8) Class2_Sub21 local8 = new Class2_Sub21(arg0);
-		@Pc(12) int local12 = local8.method7396();
+		@Pc(8) Packet local8 = new Packet(arg0);
+		@Pc(12) int local12 = local8.g1();
 		if (local12 != 2) {
 			return false;
 		}
-		@Pc(30) boolean local30 = local8.method7396() == 1;
+		@Pc(30) boolean local30 = local8.g1() == 1;
 		if (local30) {
 			Static300.method4392(local8);
 		}

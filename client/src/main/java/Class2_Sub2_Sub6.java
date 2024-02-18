@@ -10,16 +10,16 @@ public final class Class2_Sub2_Sub6 extends Class2_Sub2 {
 	public int anInt2072 = 0;
 
 	@OriginalMember(owner = "client!dba", name = "a", descriptor = "(ILclient!ge;B)V")
-	private void method1978(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub21 arg1) {
+	private void method1978(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		if (arg0 == 2) {
-			this.anInt2072 = arg1.method7382();
+			this.anInt2072 = arg1.g2();
 		}
 	}
 
 	@OriginalMember(owner = "client!dba", name = "a", descriptor = "(Lclient!ge;I)V")
-	public void method1979(@OriginalArg(0) Class2_Sub21 arg0) {
+	public void method1979(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(11) int local11 = arg0.method7396();
+			@Pc(11) int local11 = arg0.g1();
 			if (local11 == 0) {
 				return;
 			}

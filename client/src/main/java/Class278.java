@@ -49,20 +49,20 @@ public final class Class278 {
 	private boolean aBoolean530 = false;
 
 	@OriginalMember(owner = "client!ok", name = "a", descriptor = "(Lclient!ge;II)V")
-	private void method6271(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(2) int arg1) {
+	private void method6271(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.anInt6988 = arg0.method7382();
+			this.anInt6988 = arg0.g2();
 		} else if (arg1 == 2) {
-			arg0.method7396();
+			arg0.g1();
 		} else if (arg1 == 3) {
-			this.anInt6979 = arg0.method7349();
-			this.anInt6987 = arg0.method7349();
-			this.anInt6975 = arg0.method7349();
+			this.anInt6979 = arg0.g4();
+			this.anInt6987 = arg0.g4();
+			this.anInt6975 = arg0.g4();
 		} else if (arg1 == 4) {
-			this.anInt6985 = arg0.method7396();
-			this.anInt6973 = arg0.method7349();
+			this.anInt6985 = arg0.g1();
+			this.anInt6973 = arg0.g4();
 		} else if (arg1 == 6) {
-			this.anInt6982 = arg0.method7396();
+			this.anInt6982 = arg0.g1();
 		} else if (arg1 == 8) {
 			this.anInt6978 = 1;
 		} else if (arg1 == 9) {
@@ -96,9 +96,9 @@ public final class Class278 {
 	}
 
 	@OriginalMember(owner = "client!ok", name = "a", descriptor = "(BLclient!ge;)V")
-	public void method6274(@OriginalArg(1) Class2_Sub21 arg0) {
+	public void method6274(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(17) int local17 = arg0.method7396();
+			@Pc(17) int local17 = arg0.g1();
 			if (local17 == 0) {
 				return;
 			}

@@ -65,8 +65,8 @@ public final class Static346 {
 			Static416.anInt6378 = Static18.aClass28_2.method739();
 			Static18.aClass28_2.method743(Static592.aClass2_Sub45Array1);
 		}
-		if (Static405.aClass153_2.aClass2_Sub21_Sub2_2.anInt8388 != Static405.aClass153_2.anInt3648) {
-			throw new RuntimeException("gnp1 pos:" + Static405.aClass153_2.aClass2_Sub21_Sub2_2.anInt8388 + " psize:" + Static405.aClass153_2.anInt3648);
+		if (Static405.aClass153_2.aClass2_Sub21_Sub2_2.pos != Static405.aClass153_2.anInt3648) {
+			throw new RuntimeException("gnp1 pos:" + Static405.aClass153_2.aClass2_Sub21_Sub2_2.pos + " psize:" + Static405.aClass153_2.anInt3648);
 		}
 		for (local33 = 0; local33 < Static390.anInt6126; local33++) {
 			if (Static18.aClass28_2.method738((long) Static103.anIntArray187[local33]) == null) {

@@ -19,12 +19,12 @@ public final class Class389 {
 	public int anInt10308;
 
 	@OriginalMember(owner = "client!vla", name = "a", descriptor = "(Lclient!ge;II)V")
-	private void method8933(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(2) int arg1) {
+	private void method8933(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.anInt10305 = arg0.method7382();
+			this.anInt10305 = arg0.g2();
 		} else if (arg1 == 2) {
-			this.anInt10303 = arg0.method7396();
-			this.anInt10308 = arg0.method7396();
+			this.anInt10303 = arg0.g1();
+			this.anInt10308 = arg0.g1();
 		}
 	}
 
@@ -42,9 +42,9 @@ public final class Class389 {
 	}
 
 	@OriginalMember(owner = "client!vla", name = "a", descriptor = "(Lclient!ge;I)V")
-	public void method8935(@OriginalArg(0) Class2_Sub21 arg0) {
+	public void method8935(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(16) int local16 = arg0.method7396();
+			@Pc(16) int local16 = arg0.g1();
 			if (local16 == 0) {
 				return;
 			}

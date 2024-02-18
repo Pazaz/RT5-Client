@@ -21,13 +21,13 @@ public final class Class39_Sub6 extends Class39 {
 	private final int anInt3021;
 
 	@OriginalMember(owner = "client!fm", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub6(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class39_Sub6(@OriginalArg(0) Packet arg0) {
 		super(arg0);
-		this.anInt3025 = arg0.method7382();
-		this.anInt3020 = arg0.method7382();
-		this.aString33 = arg0.method7358();
-		this.anInt3026 = arg0.method7349();
-		this.anInt3021 = arg0.method7382();
+		this.anInt3025 = arg0.g2();
+		this.anInt3020 = arg0.g2();
+		this.aString33 = arg0.gjstr();
+		this.anInt3026 = arg0.g4();
+		this.anInt3021 = arg0.g2();
 	}
 
 	@OriginalMember(owner = "client!fm", name = "b", descriptor = "(I)V")

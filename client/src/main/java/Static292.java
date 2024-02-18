@@ -81,9 +81,9 @@ public final class Static292 {
 		Static299.anInt4825 = 1;
 		@Pc(16) String local16 = null;
 		if (Static265.aByteArray44 != null) {
-			@Pc(23) Class2_Sub21 local23 = new Class2_Sub21(Static265.aByteArray44);
-			local16 = Static287.method4154(local23.method7398());
-			Static430.aLong209 = local23.method7398();
+			@Pc(23) Packet local23 = new Packet(Static265.aByteArray44);
+			local16 = Static287.method4154(local23.g8());
+			Static430.aLong209 = local23.g8();
 		}
 		if (local16 == null) {
 			Static342.method4464(35);

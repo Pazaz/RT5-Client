@@ -34,17 +34,17 @@ public final class Class264 {
 	public boolean aBoolean498 = true;
 
 	@OriginalMember(owner = "client!nq", name = "a", descriptor = "(ILclient!ge;I)V")
-	private void method5920(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub21 arg1) {
+	private void method5920(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		if (arg0 == 1) {
-			this.anInt6634 = arg1.method7383();
+			this.anInt6634 = arg1.g3();
 			this.method5922(this.anInt6634);
 		} else if (arg0 == 2) {
-			this.anInt6633 = arg1.method7382();
+			this.anInt6633 = arg1.g2();
 			if (this.anInt6633 == 65535) {
 				this.anInt6633 = -1;
 			}
 		} else if (arg0 == 3) {
-			this.anInt6635 = arg1.method7382() << 2;
+			this.anInt6635 = arg1.g2() << 2;
 		} else if (arg0 == 4) {
 			this.aBoolean498 = false;
 		} else if (arg0 == 5) {
@@ -53,9 +53,9 @@ public final class Class264 {
 	}
 
 	@OriginalMember(owner = "client!nq", name = "a", descriptor = "(Lclient!ge;I)V")
-	public void method5921(@OriginalArg(0) Class2_Sub21 arg0) {
+	public void method5921(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(3) int local3 = arg0.method7396();
+			@Pc(3) int local3 = arg0.g1();
 			if (local3 == 0) {
 				return;
 			}

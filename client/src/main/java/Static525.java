@@ -22,11 +22,11 @@ public final class Static525 {
 		}
 		@Pc(53) String local53 = local43.aString2;
 		@Pc(56) Class153 local56 = Static668.method8701();
-		@Pc(62) Class2_Sub19 local62 = Static293.method4335(Static457.aClass345_86, local56.aClass186_1);
-		local62.aClass2_Sub21_Sub2_1.method7389(Static231.method3379(local53) + 3);
-		local62.aClass2_Sub21_Sub2_1.method7389(arg0 ? 1 : 0);
-		local62.aClass2_Sub21_Sub2_1.method7373(arg1);
-		local62.aClass2_Sub21_Sub2_1.method7391(local53);
+		@Pc(62) Class2_Sub19 local62 = Static293.method4335(Static457.aClass345_86, local56.aIsaacRandom_1);
+		local62.aPacketBit_1.p1(Static231.method3379(local53) + 3);
+		local62.aPacketBit_1.p1(arg0 ? 1 : 0);
+		local62.aPacketBit_1.p2(arg1);
+		local62.aPacketBit_1.pjstr(local53);
 		local56.method3275(local62);
 	}
 }

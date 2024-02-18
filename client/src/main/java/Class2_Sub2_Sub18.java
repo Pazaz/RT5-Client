@@ -43,9 +43,9 @@ public final class Class2_Sub2_Sub18 extends Class2_Sub2 {
 		@Pc(69) boolean local69 = true;
 		for (@Pc(71) int local71 = 0; local71 < this.aByteArrayArray32.length; local71++) {
 			@Pc(77) byte[] local77 = this.aByteArrayArray32[local71];
-			@Pc(82) Class2_Sub21 local82 = new Class2_Sub21(local77);
-			local82.anInt8388 = 1;
-			local43 = local82.method7382();
+			@Pc(82) Packet local82 = new Packet(local77);
+			local82.pos = 1;
+			local43 = local82.g2();
 			@Pc(91) Class330 local91 = Static269.aClass330_58;
 			synchronized (Static269.aClass330_58) {
 				local69 &= Static269.aClass330_58.method7581(local43);
@@ -63,9 +63,9 @@ public final class Class2_Sub2_Sub18 extends Class2_Sub2 {
 		}
 		for (local43 = 0; local43 < local36.length; local43++) {
 			@Pc(167) byte[] local167 = this.aByteArrayArray32[local43];
-			@Pc(172) Class2_Sub21 local172 = new Class2_Sub21(local167);
-			local172.anInt8388 = 1;
-			@Pc(179) int local179 = local172.method7382();
+			@Pc(172) Packet local172 = new Packet(local167);
+			local172.pos = 1;
+			@Pc(179) int local179 = local172.g2();
 			@Pc(181) Class2_Sub44 local181 = null;
 			for (@Pc(188) Class2_Sub44 local188 = (Class2_Sub44) local123.method7699(65280); local188 != null; local188 = (Class2_Sub44) local123.method7706()) {
 				if (local188.anInt7692 == local179) {

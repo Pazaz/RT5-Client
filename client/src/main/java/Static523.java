@@ -27,12 +27,12 @@ public final class Static523 {
 	}
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(ILclient!ge;Ljava/lang/String;)I")
-	public static int method3446(@OriginalArg(1) Class2_Sub21 arg0, @OriginalArg(2) String arg1) {
-		@Pc(12) int local12 = arg0.anInt8388;
+	public static int method3446(@OriginalArg(1) Packet arg0, @OriginalArg(2) String arg1) {
+		@Pc(12) int local12 = arg0.pos;
 		@Pc(16) byte[] local16 = Static469.method6361(arg1);
-		arg0.method7352(local16.length);
-		arg0.anInt8388 += Static636.aClass197_1.method4440(arg0.anInt8388, 0, local16.length, arg0.aByteArray93, local16);
-		return arg0.anInt8388 - local12;
+		arg0.pSmart1or2(local16.length);
+		arg0.pos += Static636.aClass197_1.method4440(arg0.pos, 0, local16.length, arg0.data, local16);
+		return arg0.pos - local12;
 	}
 
 	@OriginalMember(owner = "client!qi", name = "a", descriptor = "(ZI)V")

@@ -55,7 +55,7 @@ public final class Static15 {
 	}
 
 	@OriginalMember(owner = "client!aia", name = "a", descriptor = "(BLclient!ge;)Ljava/lang/String;")
-	public static String method189(@OriginalArg(1) Class2_Sub21 arg0) {
+	public static String method189(@OriginalArg(1) Packet arg0) {
 		return Static387.method5441(arg0);
 	}
 }

@@ -226,7 +226,7 @@ public final class Class112 {
 		local26.aStringArray46 = (String[]) this.aStringArray11.clone();
 		local26.aStringArray45 = (String[]) this.aStringArray10.clone();
 		if (local53 != null) {
-			local26.method8791(new Class2_Sub21(local53));
+			local26.method8791(new Packet(local53));
 		}
 		local26.method8807();
 		if (local26.anInt10087 != -1) {

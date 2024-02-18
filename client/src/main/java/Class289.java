@@ -226,10 +226,10 @@ public final class Class289 {
 	}
 
 	@OriginalMember(owner = "client!pda", name = "a", descriptor = "(ILclient!ge;I)V")
-	private void method6482(@OriginalArg(1) Class2_Sub21 arg0, @OriginalArg(2) int arg1) {
+	private void method6482(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.anInt7232 = arg0.method7382();
-			this.anInt7245 = arg0.method7382();
+			this.anInt7232 = arg0.g2();
+			this.anInt7245 = arg0.g2();
 			if (this.anInt7232 == 65535) {
 				this.anInt7232 = -1;
 			}
@@ -237,24 +237,24 @@ public final class Class289 {
 				this.anInt7245 = -1;
 			}
 		} else if (arg1 == 2) {
-			this.anInt7235 = arg0.method7382();
+			this.anInt7235 = arg0.g2();
 		} else if (arg1 == 3) {
-			this.anInt7262 = arg0.method7382();
+			this.anInt7262 = arg0.g2();
 		} else if (arg1 == 4) {
-			this.anInt7239 = arg0.method7382();
+			this.anInt7239 = arg0.g2();
 		} else if (arg1 == 5) {
-			this.anInt7268 = arg0.method7382();
+			this.anInt7268 = arg0.g2();
 		} else if (arg1 == 6) {
-			this.anInt7226 = arg0.method7382();
+			this.anInt7226 = arg0.g2();
 		} else if (arg1 == 7) {
-			this.anInt7241 = arg0.method7382();
+			this.anInt7241 = arg0.g2();
 		} else if (arg1 == 8) {
-			this.anInt7240 = arg0.method7382();
+			this.anInt7240 = arg0.g2();
 		} else if (arg1 == 9) {
-			this.anInt7260 = arg0.method7382();
+			this.anInt7260 = arg0.g2();
 		} else if (arg1 == 26) {
-			this.anInt7234 = (short) (arg0.method7396() * 4);
-			this.anInt7238 = (short) (arg0.method7396() * 4);
+			this.anInt7234 = (short) (arg0.g1() * 4);
+			this.anInt7238 = (short) (arg0.g1() * 4);
 		} else {
 			@Pc(128) int local128;
 			@Pc(136) int local136;
@@ -262,104 +262,104 @@ public final class Class289 {
 				if (this.anIntArrayArray181 == null) {
 					this.anIntArrayArray181 = new int[this.aClass310_1.aClass388_2.anIntArray821.length][];
 				}
-				local128 = arg0.method7396();
+				local128 = arg0.g1();
 				this.anIntArrayArray181[local128] = new int[6];
 				for (local136 = 0; local136 < 6; local136++) {
-					this.anIntArrayArray181[local128][local136] = arg0.method7356();
+					this.anIntArrayArray181[local128][local136] = arg0.g2s();
 				}
 			} else if (arg1 == 28) {
-				local128 = arg0.method7396();
+				local128 = arg0.g1();
 				this.anIntArray586 = new int[local128];
 				for (local136 = 0; local136 < local128; local136++) {
-					this.anIntArray586[local136] = arg0.method7396();
+					this.anIntArray586[local136] = arg0.g1();
 					if (this.anIntArray586[local136] == 255) {
 						this.anIntArray586[local136] = -1;
 					}
 				}
 			} else if (arg1 == 29) {
-				this.anInt7231 = arg0.method7396();
+				this.anInt7231 = arg0.g1();
 			} else if (arg1 == 30) {
-				this.anInt7250 = arg0.method7382();
+				this.anInt7250 = arg0.g2();
 			} else if (arg1 == 31) {
-				this.anInt7246 = arg0.method7396();
+				this.anInt7246 = arg0.g1();
 			} else if (arg1 == 32) {
-				this.anInt7251 = arg0.method7382();
+				this.anInt7251 = arg0.g2();
 			} else if (arg1 == 33) {
-				this.anInt7224 = arg0.method7356();
+				this.anInt7224 = arg0.g2s();
 			} else if (arg1 == 34) {
-				this.anInt7242 = arg0.method7396();
+				this.anInt7242 = arg0.g1();
 			} else if (arg1 == 35) {
-				this.anInt7256 = arg0.method7382();
+				this.anInt7256 = arg0.g2();
 			} else if (arg1 == 36) {
-				this.anInt7252 = arg0.method7356();
+				this.anInt7252 = arg0.g2s();
 			} else if (arg1 == 37) {
-				this.anInt7229 = arg0.method7396();
+				this.anInt7229 = arg0.g1();
 			} else if (arg1 == 38) {
-				this.anInt7264 = arg0.method7382();
+				this.anInt7264 = arg0.g2();
 			} else if (arg1 == 39) {
-				this.anInt7243 = arg0.method7382();
+				this.anInt7243 = arg0.g2();
 			} else if (arg1 == 40) {
-				this.anInt7253 = arg0.method7382();
+				this.anInt7253 = arg0.g2();
 			} else if (arg1 == 41) {
-				this.anInt7266 = arg0.method7382();
+				this.anInt7266 = arg0.g2();
 			} else if (arg1 == 42) {
-				this.anInt7254 = arg0.method7382();
+				this.anInt7254 = arg0.g2();
 			} else if (arg1 == 43) {
-				this.anInt7257 = arg0.method7382();
+				this.anInt7257 = arg0.g2();
 			} else if (arg1 == 44) {
-				this.anInt7259 = arg0.method7382();
+				this.anInt7259 = arg0.g2();
 			} else if (arg1 == 45) {
-				this.anInt7267 = arg0.method7382();
+				this.anInt7267 = arg0.g2();
 			} else if (arg1 == 46) {
-				this.anInt7244 = arg0.method7382();
+				this.anInt7244 = arg0.g2();
 			} else if (arg1 == 47) {
-				this.anInt7233 = arg0.method7382();
+				this.anInt7233 = arg0.g2();
 			} else if (arg1 == 48) {
-				this.anInt7249 = arg0.method7382();
+				this.anInt7249 = arg0.g2();
 			} else if (arg1 == 49) {
-				this.anInt7227 = arg0.method7382();
+				this.anInt7227 = arg0.g2();
 			} else if (arg1 == 50) {
-				this.anInt7263 = arg0.method7382();
+				this.anInt7263 = arg0.g2();
 			} else if (arg1 == 51) {
-				this.anInt7269 = arg0.method7382();
+				this.anInt7269 = arg0.g2();
 			} else if (arg1 == 52) {
-				local128 = arg0.method7396();
+				local128 = arg0.g1();
 				this.anIntArray587 = new int[local128];
 				this.anIntArray589 = new int[local128];
 				for (local136 = 0; local136 < local128; local136++) {
-					this.anIntArray587[local136] = arg0.method7382();
-					@Pc(395) int local395 = arg0.method7396();
+					this.anIntArray587[local136] = arg0.g2();
+					@Pc(395) int local395 = arg0.g1();
 					this.anIntArray589[local136] = local395;
 					this.anInt7248 += local395;
 				}
 			} else if (arg1 == 53) {
 				this.aBoolean545 = false;
 			} else if (arg1 == 54) {
-				this.anInt7236 = arg0.method7396() << 6;
-				this.anInt7258 = arg0.method7396() << 6;
+				this.anInt7236 = arg0.g1() << 6;
+				this.anInt7258 = arg0.g1() << 6;
 			} else if (arg1 == 55) {
 				if (this.anIntArray585 == null) {
 					this.anIntArray585 = new int[this.aClass310_1.aClass388_2.anIntArray821.length];
 				}
-				local128 = arg0.method7396();
-				this.anIntArray585[local128] = arg0.method7382();
+				local128 = arg0.g1();
+				this.anIntArray585[local128] = arg0.g2();
 			} else if (arg1 == 56) {
 				if (this.anIntArrayArray180 == null) {
 					this.anIntArrayArray180 = new int[this.aClass310_1.aClass388_2.anIntArray821.length][];
 				}
-				local128 = arg0.method7396();
+				local128 = arg0.g1();
 				this.anIntArrayArray180[local128] = new int[3];
 				for (local136 = 0; local136 < 3; local136++) {
-					this.anIntArrayArray180[local128][local136] = arg0.method7356();
+					this.anIntArrayArray180[local128][local136] = arg0.g2s();
 				}
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!pda", name = "a", descriptor = "(BLclient!ge;)V")
-	public void method6483(@OriginalArg(1) Class2_Sub21 arg0) {
+	public void method6483(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(5) int local5 = arg0.method7396();
+			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
 				return;
 			}

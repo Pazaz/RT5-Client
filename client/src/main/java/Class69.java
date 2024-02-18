@@ -86,9 +86,9 @@ public final class Class69 {
 	}
 
 	@OriginalMember(owner = "client!cka", name = "a", descriptor = "(Lclient!ge;I)V")
-	public void method1585(@OriginalArg(0) Class2_Sub21 arg0) {
+	public void method1585(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(3) int local3 = arg0.method7396();
+			@Pc(3) int local3 = arg0.g1();
 			if (local3 == 0) {
 				return;
 			}
@@ -97,65 +97,65 @@ public final class Class69 {
 	}
 
 	@OriginalMember(owner = "client!cka", name = "a", descriptor = "(IBLclient!ge;)V")
-	private void method1588(@OriginalArg(0) int arg0, @OriginalArg(2) Class2_Sub21 arg1) {
+	private void method1588(@OriginalArg(0) int arg0, @OriginalArg(2) Packet arg1) {
 		@Pc(20) int local20;
 		@Pc(26) int local26;
 		@Pc(44) int local44;
 		@Pc(58) int local58;
 		if (arg0 == 1) {
-			local20 = arg1.method7382();
+			local20 = arg1.g2();
 			this.anIntArray157 = new int[local20];
 			for (local26 = 0; local26 < local20; local26++) {
-				this.anIntArray157[local26] = arg1.method7382();
+				this.anIntArray157[local26] = arg1.g2();
 			}
 			this.anIntArray159 = new int[local20];
 			for (local44 = 0; local44 < local20; local44++) {
-				this.anIntArray159[local44] = arg1.method7382();
+				this.anIntArray159[local44] = arg1.g2();
 			}
 			for (local58 = 0; local58 < local20; local58++) {
-				this.anIntArray159[local58] = (arg1.method7382() << 16) + this.anIntArray159[local58];
+				this.anIntArray159[local58] = (arg1.g2() << 16) + this.anIntArray159[local58];
 			}
 		} else if (arg0 == 2) {
-			this.anInt1640 = arg1.method7382();
+			this.anInt1640 = arg1.g2();
 		} else if (arg0 == 3) {
 			this.aBooleanArray3 = new boolean[256];
-			local20 = arg1.method7396();
+			local20 = arg1.g1();
 			for (local26 = 0; local26 < local20; local26++) {
-				this.aBooleanArray3[arg1.method7396()] = true;
+				this.aBooleanArray3[arg1.g1()] = true;
 			}
 		} else if (arg0 == 5) {
-			this.anInt1649 = arg1.method7396();
+			this.anInt1649 = arg1.g1();
 		} else if (arg0 == 6) {
-			this.anInt1652 = arg1.method7382();
+			this.anInt1652 = arg1.g2();
 		} else if (arg0 == 7) {
-			this.anInt1651 = arg1.method7382();
+			this.anInt1651 = arg1.g2();
 		} else if (arg0 == 8) {
-			this.anInt1647 = arg1.method7396();
+			this.anInt1647 = arg1.g1();
 		} else if (arg0 == 9) {
-			this.anInt1642 = arg1.method7396();
+			this.anInt1642 = arg1.g1();
 		} else if (arg0 == 10) {
-			this.anInt1654 = arg1.method7396();
+			this.anInt1654 = arg1.g1();
 		} else if (arg0 == 11) {
-			this.anInt1646 = arg1.method7396();
+			this.anInt1646 = arg1.g1();
 		} else if (arg0 == 12) {
-			local20 = arg1.method7396();
+			local20 = arg1.g1();
 			this.anIntArray158 = new int[local20];
 			for (local26 = 0; local26 < local20; local26++) {
-				this.anIntArray158[local26] = arg1.method7382();
+				this.anIntArray158[local26] = arg1.g2();
 			}
 			for (local44 = 0; local44 < local20; local44++) {
-				this.anIntArray158[local44] += arg1.method7382() << 16;
+				this.anIntArray158[local44] += arg1.g2() << 16;
 			}
 		} else if (arg0 == 13) {
-			local20 = arg1.method7382();
+			local20 = arg1.g2();
 			this.anIntArrayArray38 = new int[local20][];
 			for (local26 = 0; local26 < local20; local26++) {
-				local44 = arg1.method7396();
+				local44 = arg1.g1();
 				if (local44 > 0) {
 					this.anIntArrayArray38[local26] = new int[local44];
-					this.anIntArrayArray38[local26][0] = arg1.method7383();
+					this.anIntArrayArray38[local26][0] = arg1.g3();
 					for (local58 = 1; local58 < local44; local58++) {
-						this.anIntArrayArray38[local26][local58] = arg1.method7382();
+						this.anIntArrayArray38[local26][local58] = arg1.g2();
 					}
 				}
 			}
@@ -173,7 +173,7 @@ public final class Class69 {
 						this.anIntArray156[local20] = 255;
 					}
 				}
-				this.anIntArray156[arg1.method7396()] = arg1.method7396();
+				this.anIntArray156[arg1.g1()] = arg1.g1();
 				return;
 			} else if (arg0 == 20) {
 				if (this.anIntArray154 == null || this.anIntArray155 == null) {
@@ -184,9 +184,9 @@ public final class Class69 {
 						this.anIntArray155[local20] = 256;
 					}
 				}
-				local20 = arg1.method7396();
-				this.anIntArray154[local20] = arg1.method7382();
-				this.anIntArray155[local20] = arg1.method7382();
+				local20 = arg1.g1();
+				this.anIntArray154[local20] = arg1.g2();
+				this.anIntArray155[local20] = arg1.g2();
 				return;
 			}
 			return;

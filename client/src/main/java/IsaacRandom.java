@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!iv")
-public final class Class186 {
+public final class IsaacRandom {
 
 	@OriginalMember(owner = "client!iv", name = "a", descriptor = "I")
 	private int anInt4584;
@@ -25,11 +25,11 @@ public final class Class186 {
 	private int anInt4591;
 
 	@OriginalMember(owner = "client!iv", name = "<init>", descriptor = "()V")
-	private Class186() {
+	private IsaacRandom() {
 	}
 
 	@OriginalMember(owner = "client!iv", name = "<init>", descriptor = "([I)V")
-	public Class186(@OriginalArg(0) int[] arg0) {
+	public IsaacRandom(@OriginalArg(0) int[] arg0) {
 		this.anIntArray356 = new int[256];
 		this.anIntArray357 = new int[256];
 		for (@Pc(13) int local13 = 0; local13 < arg0.length; local13++) {
@@ -164,7 +164,7 @@ public final class Class186 {
 	}
 
 	@OriginalMember(owner = "client!iv", name = "b", descriptor = "(B)I")
-	public int method4105() {
+	public int nextInt() {
 		if (this.anInt4585 == 0) {
 			this.method4106();
 			this.anInt4585 = 256;
@@ -196,7 +196,7 @@ public final class Class186 {
 	}
 
 	@OriginalMember(owner = "client!iv", name = "a", descriptor = "(B)I")
-	public int method4108() {
+	public int peekNext() {
 		if (this.anInt4585 == 0) {
 			this.method4106();
 			this.anInt4585 = 256;

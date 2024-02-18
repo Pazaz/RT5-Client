@@ -14,13 +14,13 @@ public final class Static396 {
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(I)V")
 	public static void method5551() {
 		@Pc(10) Class153 local10 = Static668.method8701();
-		@Pc(18) Class2_Sub19 local18 = Static293.method4335(Static244.aClass345_53, local10.aClass186_1);
-		local18.aClass2_Sub21_Sub2_1.method7389(0);
+		@Pc(18) Class2_Sub19 local18 = Static293.method4335(Static244.aClass345_53, local10.aIsaacRandom_1);
+		local18.aPacketBit_1.p1(0);
 		local10.method3275(local18);
 	}
 
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(Lclient!ge;B)Lclient!pfa;")
-	public static Class154_Sub3 method5552(@OriginalArg(0) Class2_Sub21 arg0) {
-		return new Class154_Sub3(arg0.method7356(), arg0.method7356(), arg0.method7356(), arg0.method7356(), arg0.method7356(), arg0.method7356(), arg0.method7356(), arg0.method7356(), arg0.method7383(), arg0.method7396());
+	public static Class154_Sub3 method5552(@OriginalArg(0) Packet arg0) {
+		return new Class154_Sub3(arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g3(), arg0.g1());
 	}
 }

@@ -47,12 +47,12 @@ public final class Class2_Sub1_Sub16 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!ko", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg0) {
 			Static341.method5033(111);
 		}
 		if (arg2 == 0) {
-			super.aBoolean824 = arg1.method7396() == 1;
+			super.aBoolean824 = arg1.g1() == 1;
 		}
 	}
 }

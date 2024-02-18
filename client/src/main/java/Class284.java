@@ -13,18 +13,18 @@ public final class Class284 {
 	public int anInt7174 = 1;
 
 	@OriginalMember(owner = "client!paa", name = "a", descriptor = "(ILclient!ge;B)V")
-	private void method6447(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub21 arg1) {
+	private void method6447(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		if (arg0 == 1) {
-			this.aChar5 = Static346.method5084(arg1.method7377());
+			this.aChar5 = Static346.method5084(arg1.g1b());
 		} else if (arg0 == 2) {
 			this.anInt7174 = 0;
 		}
 	}
 
 	@OriginalMember(owner = "client!paa", name = "a", descriptor = "(BLclient!ge;)V")
-	public void method6449(@OriginalArg(1) Class2_Sub21 arg0) {
+	public void method6449(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(13) int local13 = arg0.method7396();
+			@Pc(13) int local13 = arg0.g1();
 			if (local13 == 0) {
 				return;
 			}

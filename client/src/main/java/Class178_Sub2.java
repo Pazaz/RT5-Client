@@ -231,13 +231,13 @@ public final class Class178_Sub2 extends Class178 {
 			this.aClass19_Sub3_33.method6987();
 		}
 		this.aClass19_Sub3_33.method7039(this.aClass94_12, this.aClass94_13, this.aClass94_11, this.aClass94_14);
-		if (this.aClass19_Sub3_33.aClass2_Sub21_Sub1_3.aByteArray93.length >= this.anInt7491 * 2) {
-			this.aClass19_Sub3_33.aClass2_Sub21_Sub1_3.anInt8388 = 0;
+		if (this.aClass19_Sub3_33.aPacketGl_3.data.length >= this.anInt7491 * 2) {
+			this.aClass19_Sub3_33.aPacketGl_3.pos = 0;
 		} else {
-			this.aClass19_Sub3_33.aClass2_Sub21_Sub1_3 = new Class2_Sub21_Sub1(this.anInt7491 * 2);
+			this.aClass19_Sub3_33.aPacketGl_3 = new PacketGl(this.anInt7491 * 2);
 		}
 		@Pc(317) int local317 = 0;
-		@Pc(321) Class2_Sub21_Sub1 local321 = this.aClass19_Sub3_33.aClass2_Sub21_Sub1_3;
+		@Pc(321) PacketGl local321 = this.aClass19_Sub3_33.aPacketGl_3;
 		@Pc(327) int local327;
 		@Pc(337) int local337;
 		@Pc(339) int local339;
@@ -252,7 +252,7 @@ public final class Class178_Sub2 extends Class178 {
 						if (local360 != null) {
 							for (local364 = 0; local364 < local360.length; local364++) {
 								local317++;
-								local321.method7373(local360[local364] & 0xFFFF);
+								local321.p2(local360[local364] & 0xFFFF);
 							}
 						}
 					}
@@ -267,7 +267,7 @@ public final class Class178_Sub2 extends Class178 {
 						local360 = this.aShortArrayArray6[local337];
 						if (local360 != null) {
 							for (local364 = 0; local364 < local360.length; local364++) {
-								local321.method7354(local360[local364] & 0xFFFF);
+								local321.p2_alt1(local360[local364] & 0xFFFF);
 								local317++;
 							}
 						}
@@ -277,7 +277,7 @@ public final class Class178_Sub2 extends Class178 {
 			}
 		}
 		if (local317 > 0) {
-			@Pc(502) Class134_Sub2 local502 = new Class134_Sub2(this.aClass19_Sub3_33, 5123, local321.aByteArray93, local321.anInt8388);
+			@Pc(502) Class134_Sub2 local502 = new Class134_Sub2(this.aClass19_Sub3_33, 5123, local321.data, local321.pos);
 			this.aClass19_Sub3_33.method7034(0, local502, local317);
 		}
 	}
@@ -732,8 +732,8 @@ public final class Class178_Sub2 extends Class178 {
 		if (local18 > this.aClass19_Sub3_33.anIntArray624.length) {
 			this.aClass19_Sub3_33.anIntArray624 = new int[local18];
 		}
-		if (this.aClass19_Sub3_33.aClass2_Sub21_Sub1_3.aByteArray93.length < this.anInt7491 * 2) {
-			this.aClass19_Sub3_33.aClass2_Sub21_Sub1_3 = new Class2_Sub21_Sub1(this.anInt7491 * 2);
+		if (this.aClass19_Sub3_33.aPacketGl_3.data.length < this.anInt7491 * 2) {
+			this.aClass19_Sub3_33.aPacketGl_3 = new PacketGl(this.anInt7491 * 2);
 		}
 		@Pc(61) int local61 = arg2 - arg4;
 		@Pc(63) int local63 = local61;

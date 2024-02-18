@@ -16,15 +16,15 @@ public final class Class68 {
 	private final Class339 aClass339_10 = new Class339();
 
 	@OriginalMember(owner = "client!ck", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class68(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class68(@OriginalArg(0) Packet arg0) {
 		this.method1580(arg0);
 	}
 
 	@OriginalMember(owner = "client!ck", name = "a", descriptor = "(Lclient!ge;I)V")
-	private void method1580(@OriginalArg(0) Class2_Sub21 arg0) {
-		this.aLong57 = arg0.method7398();
-		this.aLong56 = arg0.method7398();
-		for (@Pc(21) int local21 = arg0.method7396(); local21 != 0; local21 = arg0.method7396()) {
+	private void method1580(@OriginalArg(0) Packet arg0) {
+		this.aLong57 = arg0.g8();
+		this.aLong56 = arg0.g8();
+		for (@Pc(21) int local21 = arg0.g1(); local21 != 0; local21 = arg0.g1()) {
 			@Pc(44) Class2_Sub30 local44;
 			if (local21 == 1) {
 				local44 = new Class2_Sub30_Sub1();

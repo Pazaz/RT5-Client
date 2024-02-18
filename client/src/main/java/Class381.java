@@ -23,22 +23,22 @@ public final class Class381 {
 
 	@OriginalMember(owner = "client!ve", name = "<init>", descriptor = "([B)V")
 	public Class381(@OriginalArg(0) byte[] arg0) {
-		@Pc(6) Class2_Sub21 local6 = new Class2_Sub21(arg0);
-		@Pc(10) int local10 = local6.method7396();
+		@Pc(6) Packet local6 = new Packet(arg0);
+		@Pc(10) int local10 = local6.g1();
 		if (local10 != 0) {
 			throw new RuntimeException("");
 		}
-		@Pc(30) boolean local30 = local6.method7396() == 1;
+		@Pc(30) boolean local30 = local6.g1() == 1;
 		this.aByteArray106 = new byte[256];
-		local6.method7344(0, 256, this.aByteArray106);
+		local6.gdata(this.aByteArray106, 0, 256);
 		if (local30) {
 			@Pc(46) int[] local46 = new int[256];
 			for (@Pc(48) int local48 = 0; local48 < 256; local48++) {
-				local46[local48] = local6.method7396();
+				local46[local48] = local6.g1();
 			}
 			@Pc(62) int[] local62 = new int[256];
 			for (@Pc(64) int local64 = 0; local64 < 256; local64++) {
-				local62[local64] = local6.method7396();
+				local62[local64] = local6.g1();
 			}
 			@Pc(78) byte[][] local78 = new byte[256][];
 			@Pc(92) int local92;
@@ -46,7 +46,7 @@ public final class Class381 {
 				local78[local80] = new byte[local46[local80]];
 				@Pc(90) byte local90 = 0;
 				for (local92 = 0; local92 < local78[local80].length; local92++) {
-					local90 += local6.method7377();
+					local90 += local6.g1b();
 					local78[local80][local92] = local90;
 				}
 			}
@@ -56,7 +56,7 @@ public final class Class381 {
 				local128[local92] = new byte[local46[local92]];
 				@Pc(140) byte local140 = 0;
 				for (local142 = 0; local142 < local128[local92].length; local142++) {
-					local140 += local6.method7377();
+					local140 += local6.g1b();
 					local128[local92][local142] = local140;
 				}
 			}
@@ -72,12 +72,12 @@ public final class Class381 {
 			}
 			this.anInt10027 = local62[32] + local46[32];
 		} else {
-			this.anInt10027 = local6.method7396();
+			this.anInt10027 = local6.g1();
 		}
-		local6.method7396();
-		local6.method7396();
-		this.anInt10030 = local6.method7396();
-		this.anInt10036 = local6.method7396();
+		local6.g1();
+		local6.g1();
+		this.anInt10030 = local6.g1();
+		this.anInt10036 = local6.g1();
 	}
 
 	@OriginalMember(owner = "client!ve", name = "a", descriptor = "(CII)I")

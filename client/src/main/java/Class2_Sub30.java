@@ -9,5 +9,5 @@ public abstract class Class2_Sub30 extends Class2 {
 	public abstract void method7642(@OriginalArg(0) Class2_Sub47 arg0);
 
 	@OriginalMember(owner = "client!op", name = "a", descriptor = "(Lclient!ge;I)V")
-	public abstract void method7647(@OriginalArg(0) Class2_Sub21 arg0);
+	public abstract void method7647(@OriginalArg(0) Packet arg0);
 }

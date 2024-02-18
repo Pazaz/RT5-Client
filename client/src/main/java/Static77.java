@@ -18,7 +18,7 @@ public final class Static77 {
 
 	@OriginalMember(owner = "client!ci", name = "a", descriptor = "(IZ)V")
 	public static void method1557() {
-		@Pc(13) Class2_Sub19 local13 = Static293.method4335(Static317.aClass345_62, Static405.aClass153_2.aClass186_1);
+		@Pc(13) Class2_Sub19 local13 = Static293.method4335(Static317.aClass345_62, Static405.aClass153_2.aIsaacRandom_1);
 		Static405.aClass153_2.method3275(local13);
 		for (@Pc(22) Class2_Sub4 local22 = (Class2_Sub4) Static548.aClass28_40.method736(); local22 != null; local22 = (Class2_Sub4) Static548.aClass28_40.method740()) {
 			if (!local22.method9458()) {

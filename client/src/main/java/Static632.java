@@ -23,16 +23,16 @@ public final class Static632 {
 	public static final Class225 aClass225_229 = new Class225(89, -1);
 
 	@OriginalMember(owner = "client!u", name = "a", descriptor = "(Lclient!ge;I)Lclient!is;")
-	public static Class138 method8359(@OriginalArg(0) Class2_Sub21 arg0) {
-		@Pc(10) Class403 local10 = Static33.method882()[arg0.method7396()];
-		@Pc(17) Class103 local17 = Static313.method4544()[arg0.method7396()];
-		@Pc(21) int local21 = arg0.method7356();
-		@Pc(25) int local25 = arg0.method7356();
-		@Pc(29) int local29 = arg0.method7382();
-		@Pc(33) int local33 = arg0.method7382();
-		@Pc(37) int local37 = arg0.method7356();
-		@Pc(47) int local47 = arg0.method7349();
-		@Pc(51) int local51 = arg0.method7349();
+	public static Class138 method8359(@OriginalArg(0) Packet arg0) {
+		@Pc(10) Class403 local10 = Static33.method882()[arg0.g1()];
+		@Pc(17) Class103 local17 = Static313.method4544()[arg0.g1()];
+		@Pc(21) int local21 = arg0.g2s();
+		@Pc(25) int local25 = arg0.g2s();
+		@Pc(29) int local29 = arg0.g2();
+		@Pc(33) int local33 = arg0.g2();
+		@Pc(37) int local37 = arg0.g2s();
+		@Pc(47) int local47 = arg0.g4();
+		@Pc(51) int local51 = arg0.g4();
 		return new Class138(local10, local17, local21, local25, local29, local33, local37, local47, local51);
 	}
 

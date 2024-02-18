@@ -63,7 +63,7 @@ public final class Class139 {
 		local11 = new Class2_Sub2_Sub12();
 		local11.aClass139_1 = this;
 		if (local28 != null) {
-			local11.method3899(new Class2_Sub21(local28));
+			local11.method3899(new Packet(local28));
 		}
 		if (arg0 >= 32768) {
 			local11.method3902();

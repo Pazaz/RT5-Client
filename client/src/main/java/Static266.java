@@ -135,16 +135,16 @@ public final class Static266 {
 		@Pc(5) Class83 local5 = null;
 		try {
 			local5 = Static689.method8983("2");
-			@Pc(25) Class2_Sub21 local25 = new Class2_Sub21(Static319.anInt5078 * 6 + 3);
-			local25.method7389(1);
-			local25.method7373(Static319.anInt5078);
+			@Pc(25) Packet local25 = new Packet(Static319.anInt5078 * 6 + 3);
+			local25.p1(1);
+			local25.p2(Static319.anInt5078);
 			for (@Pc(35) int local35 = 0; local35 < Static511.anIntArray614.length; local35++) {
 				if (Static118.aBooleanArray4[local35]) {
-					local25.method7373(local35);
-					local25.method7342(Static511.anIntArray614[local35]);
+					local25.p2(local35);
+					local25.p4(Static511.anIntArray614[local35]);
 				}
 			}
-			local5.method2162(local25.aByteArray93, 0, local25.anInt8388);
+			local5.method2162(local25.data, 0, local25.pos);
 		} catch (@Pc(67) Exception local67) {
 		}
 		try {

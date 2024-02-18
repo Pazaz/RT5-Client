@@ -565,13 +565,13 @@ public final class Static231 {
 				}
 				if (arg2.startsWith("pc")) {
 					@Pc(1833) Class153 local1833 = Static668.method8701();
-					@Pc(1839) Class2_Sub19 local1839 = Static293.method4335(Static243.aClass345_52, local1833.aClass186_1);
-					local1839.aClass2_Sub21_Sub2_1.method7389(0);
-					local521 = local1839.aClass2_Sub21_Sub2_1.anInt8388;
+					@Pc(1839) Class2_Sub19 local1839 = Static293.method4335(Static243.aClass345_52, local1833.aIsaacRandom_1);
+					local1839.aPacketBit_1.p1(0);
+					local521 = local1839.aPacketBit_1.pos;
 					local582 = arg2.indexOf(" ", 4);
-					local1839.aClass2_Sub21_Sub2_1.method7391(arg2.substring(3, local582));
-					Static523.method3446(local1839.aClass2_Sub21_Sub2_1, arg2.substring(local582));
-					local1839.aClass2_Sub21_Sub2_1.method7380(local1839.aClass2_Sub21_Sub2_1.anInt8388 - local521);
+					local1839.aPacketBit_1.pjstr(arg2.substring(3, local582));
+					Static523.method3446(local1839.aPacketBit_1, arg2.substring(local582));
+					local1839.aPacketBit_1.psize1(local1839.aPacketBit_1.pos - local521);
 					local1833.method3275(local1839);
 					return;
 				}
@@ -805,11 +805,11 @@ public final class Static231 {
 					return;
 				}
 				if (Static283.anInt4574 == 11) {
-					@Pc(2836) Class2_Sub19 local2836 = Static293.method4335(Static459.aClass345_87, Static405.aClass153_2.aClass186_1);
-					local2836.aClass2_Sub21_Sub2_1.method7389(arg2.length() + 3);
-					local2836.aClass2_Sub21_Sub2_1.method7389(arg0 ? 1 : 0);
-					local2836.aClass2_Sub21_Sub2_1.method7389(arg1 ? 1 : 0);
-					local2836.aClass2_Sub21_Sub2_1.method7391(arg2);
+					@Pc(2836) Class2_Sub19 local2836 = Static293.method4335(Static459.aClass345_87, Static405.aClass153_2.aIsaacRandom_1);
+					local2836.aPacketBit_1.p1(arg2.length() + 3);
+					local2836.aPacketBit_1.p1(arg0 ? 1 : 0);
+					local2836.aPacketBit_1.p1(arg1 ? 1 : 0);
+					local2836.aPacketBit_1.pjstr(arg2);
 					Static405.aClass153_2.method3275(local2836);
 				}
 				if (arg2.startsWith("fps ") && Static2.aClass355_1 != Static446.aClass355_5) {
@@ -873,10 +873,10 @@ public final class Static231 {
 			return;
 		}
 		@Pc(216) Class153 local216 = Static668.method8701();
-		@Pc(222) Class2_Sub19 local222 = Static293.method4335(Static113.aClass345_22, local216.aClass186_1);
-		local222.aClass2_Sub21_Sub2_1.method7389(method3379(arg1) + 1);
-		local222.aClass2_Sub21_Sub2_1.method7391(arg1);
-		local222.aClass2_Sub21_Sub2_1.method7389(arg0 ? 1 : 0);
+		@Pc(222) Class2_Sub19 local222 = Static293.method4335(Static113.aClass345_22, local216.aIsaacRandom_1);
+		local222.aPacketBit_1.p1(method3379(arg1) + 1);
+		local222.aPacketBit_1.pjstr(arg1);
+		local222.aPacketBit_1.p1(arg0 ? 1 : 0);
 		local216.method3275(local222);
 	}
 }

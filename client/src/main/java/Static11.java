@@ -13,7 +13,7 @@ public final class Static11 {
 	public static void method146() {
 		Static338.anInt5564 = 0;
 		for (@Pc(15) int local15 = 0; local15 < 2048; local15++) {
-			Static462.aClass2_Sub21Array1[local15] = null;
+			Static462.A_PACKET_ARRAY_1[local15] = null;
 			Static139.aByteArray30[local15] = 1;
 			Static246.aClass350Array1[local15] = null;
 		}

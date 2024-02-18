@@ -13,15 +13,15 @@ public final class Class39_Sub19 extends Class39 {
 	private final int anInt8296;
 
 	@OriginalMember(owner = "client!rga", name = "<init>", descriptor = "(Lclient!ge;Z)V")
-	public Class39_Sub19(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(1) boolean arg1) {
+	public Class39_Sub19(@OriginalArg(0) Packet arg0, @OriginalArg(1) boolean arg1) {
 		super(arg0);
-		@Pc(6) int local6 = arg0.method7382();
+		@Pc(6) int local6 = arg0.g2();
 		if (arg1) {
 			this.aLong257 = (long) local6 | 0x100000000L;
 		} else {
 			this.aLong257 = (long) local6;
 		}
-		this.anInt8296 = arg0.method7349();
+		this.anInt8296 = arg0.g4();
 	}
 
 	@OriginalMember(owner = "client!rga", name = "b", descriptor = "(I)V")

@@ -44,9 +44,9 @@ public final class Class53 {
 	}
 
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(BLclient!ge;)V")
-	public void method1222(@OriginalArg(1) Class2_Sub21 arg0) {
+	public void method1222(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(12) int local12 = arg0.method7396();
+			@Pc(12) int local12 = arg0.g1();
 			if (local12 == 0) {
 				return;
 			}
@@ -191,27 +191,27 @@ public final class Class53 {
 	}
 
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(IILclient!ge;)V")
-	private void method1234(@OriginalArg(0) int arg0, @OriginalArg(2) Class2_Sub21 arg1) {
+	private void method1234(@OriginalArg(0) int arg0, @OriginalArg(2) Packet arg1) {
 		if (arg0 == 1) {
-			this.aChar2 = Static346.method5084(arg1.method7377());
+			this.aChar2 = Static346.method5084(arg1.g1b());
 		} else if (arg0 == 2) {
-			this.aChar1 = Static346.method5084(arg1.method7377());
+			this.aChar1 = Static346.method5084(arg1.g1b());
 		} else if (arg0 == 3) {
-			this.aString5 = arg1.method7358();
+			this.aString5 = arg1.gjstr();
 		} else if (arg0 == 4) {
-			this.anInt1142 = arg1.method7349();
+			this.anInt1142 = arg1.g4();
 		} else {
 			@Pc(69) int local69;
 			if (arg0 == 5 || arg0 == 6) {
-				this.anInt1144 = arg1.method7382();
+				this.anInt1144 = arg1.g2();
 				@Pc(62) Class28 local62 = new Class28(Static440.method5962(this.anInt1144));
 				for (@Pc(64) int local64 = 0; local64 < this.anInt1144; local64++) {
-					local69 = arg1.method7349();
+					local69 = arg1.g4();
 					@Pc(79) Class2 local79;
 					if (arg0 == 5) {
-						local79 = new Class2_Sub24(arg1.method7358());
+						local79 = new Class2_Sub24(arg1.gjstr());
 					} else {
-						local79 = new Class2_Sub38(arg1.method7349());
+						local79 = new Class2_Sub38(arg1.g4());
 					}
 					local62.method735((long) local69, local79);
 				}
@@ -220,21 +220,21 @@ public final class Class53 {
 				@Pc(114) int local114;
 				@Pc(131) int local131;
 				if (arg0 == 7) {
-					local114 = arg1.method7382();
-					this.anInt1144 = arg1.method7382();
+					local114 = arg1.g2();
+					this.anInt1144 = arg1.g2();
 					@Pc(124) String[] local124 = new String[local114];
 					for (local69 = 0; local69 < this.anInt1144; local69++) {
-						local131 = arg1.method7382();
-						local124[local131] = arg1.method7358();
+						local131 = arg1.g2();
+						local124[local131] = arg1.gjstr();
 					}
 					this.anObject3 = local124;
 				} else if (arg0 == 8) {
-					local114 = arg1.method7382();
-					this.anInt1144 = arg1.method7382();
+					local114 = arg1.g2();
+					this.anInt1144 = arg1.g2();
 					@Pc(164) Integer[] local164 = new Integer[local114];
 					for (local69 = 0; local69 < this.anInt1144; local69++) {
-						local131 = arg1.method7382();
-						local164[local131] = Integer.valueOf(arg1.method7349());
+						local131 = arg1.g2();
+						local164[local131] = Integer.valueOf(arg1.g4());
 					}
 					this.anObject3 = local164;
 				}

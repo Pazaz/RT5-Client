@@ -19,21 +19,21 @@ public final class Class122 {
 	public int anInt2817;
 
 	@OriginalMember(owner = "client!fc", name = "a", descriptor = "(ILclient!ge;B)V")
-	private void method2609(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub21 arg1) {
+	private void method2609(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		if (arg0 == 1) {
-			this.aChar3 = Static346.method5084(arg1.method7377());
+			this.aChar3 = Static346.method5084(arg1.g1b());
 		} else if (arg0 == 3) {
-			this.anInt2816 = arg1.method7382();
-			this.anInt2812 = arg1.method7396();
-			this.anInt2817 = arg1.method7396();
+			this.anInt2816 = arg1.g2();
+			this.anInt2812 = arg1.g1();
+			this.anInt2817 = arg1.g1();
 			return;
 		}
 	}
 
 	@OriginalMember(owner = "client!fc", name = "a", descriptor = "(BLclient!ge;)V")
-	public void method2610(@OriginalArg(1) Class2_Sub21 arg0) {
+	public void method2610(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(3) int local3 = arg0.method7396();
+			@Pc(3) int local3 = arg0.g1();
 			if (local3 == 0) {
 				return;
 			}

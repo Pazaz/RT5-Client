@@ -22,13 +22,13 @@ public final class Class2_Sub14_Sub7 extends Class2_Sub14 {
 
 	@OriginalMember(owner = "client!lda", name = "a", descriptor = "(ILclient!ge;)V")
 	@Override
-	public void method8615(@OriginalArg(1) Class2_Sub21 arg0) {
-		if (arg0.method7396() != 255) {
-			arg0.anInt8388--;
-			this.aLong176 = arg0.method7398();
+	public void method8615(@OriginalArg(1) Packet arg0) {
+		if (arg0.g1() != 255) {
+			arg0.pos--;
+			this.aLong176 = arg0.g8();
 		}
-		this.aString57 = arg0.method7403();
-		this.anInt5770 = arg0.method7382();
+		this.aString57 = arg0.fastgjstr();
+		this.anInt5770 = arg0.g2();
 		if (Static148.aBoolean215) {
 			System.out.println("memberhash:" + this.aLong176 + " membername:" + this.aString57);
 		}

@@ -29,17 +29,17 @@ public final class Class2_Sub1_Sub15 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!kga", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
-			this.anInt5419 = arg1.method7396();
+			this.anInt5419 = arg1.g1();
 		} else if (arg2 == 1) {
-			this.anInt5420 = arg1.method7382();
+			this.anInt5420 = arg1.g2();
 		} else if (arg2 == 2) {
-			this.anInt5422 = arg1.method7396();
+			this.anInt5422 = arg1.g1();
 		} else if (arg2 == 3) {
-			this.anInt5418 = arg1.method7382();
+			this.anInt5418 = arg1.g2();
 		} else if (arg2 == 4) {
-			this.anInt5424 = arg1.method7382();
+			this.anInt5424 = arg1.g2();
 		}
 		if (arg0) {
 			this.method9411(-52, 90);

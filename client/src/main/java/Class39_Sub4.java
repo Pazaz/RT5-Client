@@ -22,14 +22,14 @@ public final class Class39_Sub4 extends Class39 {
 	private final int anInt2531;
 
 	@OriginalMember(owner = "client!ega", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub4(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class39_Sub4(@OriginalArg(0) Packet arg0) {
 		super(arg0);
-		this.anInt2532 = arg0.method7382();
-		@Pc(11) int local11 = arg0.method7349();
+		this.anInt2532 = arg0.g2();
+		@Pc(11) int local11 = arg0.g4();
 		this.anInt2527 = local11 >>> 16;
 		this.anInt2529 = local11 & 0xFFFF;
-		this.anInt2528 = arg0.method7396();
-		this.anInt2531 = arg0.method7360();
+		this.anInt2528 = arg0.g1();
+		this.anInt2531 = arg0.gSmart1or2s();
 	}
 
 	@OriginalMember(owner = "client!ega", name = "b", descriptor = "(I)V")

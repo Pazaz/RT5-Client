@@ -190,10 +190,10 @@ public final class client extends Applet_Sub1 {
 			}
 			if (Static92.anInt1874 == 2) {
 				Static672.aClass263_2 = new Class263((Socket) Static514.aClass270_6.anObject13, Static446.aClass390_6, 25000);
-				@Pc(251) Class2_Sub21 local251 = new Class2_Sub21(5);
-				local251.method7389(Static572.aClass167_54.anInt3973);
-				local251.method7342(667);
-				Static672.aClass263_2.method5829(5, local251.aByteArray93);
+				@Pc(251) Packet local251 = new Packet(5);
+				local251.p1(Static572.aClass167_54.anInt3973);
+				local251.p4(667);
+				Static672.aClass263_2.method5829(5, local251.data);
 				Static92.anInt1874++;
 				Static678.aLong310 = Static588.method7715();
 			}
@@ -213,10 +213,10 @@ public final class client extends Applet_Sub1 {
 			if (Static92.anInt1874 == 4) {
 				@Pc(356) boolean local356 = Static181.method2778(Static283.anInt4574) || Static41.method1027(Static283.anInt4574) || Static620.method8321(Static283.anInt4574);
 				@Pc(359) Class326[] local359 = Static566.method7467();
-				@Pc(367) Class2_Sub21 local367 = new Class2_Sub21(local359.length * 4);
-				Static672.aClass263_2.method5825(local367.aByteArray93.length, 0, local367.aByteArray93);
+				@Pc(367) Packet local367 = new Packet(local359.length * 4);
+				Static672.aClass263_2.method5825(local367.data.length, 0, local367.data);
 				for (@Pc(378) int local378 = 0; local378 < local359.length; local378++) {
-					local359[local378].method7468(local367.method7349());
+					local359[local378].method7468(local367.g4());
 				}
 				Static500.aClass295_3.method6627(!local356, Static672.aClass263_2);
 				Static92.anInt1874 = 0;
@@ -350,7 +350,7 @@ public final class client extends Applet_Sub1 {
 												if (Static405.aClass153_1 != null) {
 													Static405.aClass153_1.anInt3647++;
 													if (Static405.aClass153_1.anInt3647 > 50) {
-														@Pc(823) Class2_Sub19 local823 = Static293.method4335(Static415.aClass345_75, Static405.aClass153_1.aClass186_1);
+														@Pc(823) Class2_Sub19 local823 = Static293.method4335(Static415.aClass345_75, Static405.aClass153_1.aIsaacRandom_1);
 														Static405.aClass153_1.method3275(local823);
 													}
 													try {

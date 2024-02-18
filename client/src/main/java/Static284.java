@@ -28,10 +28,10 @@ public final class Static284 {
 		@Pc(34) int local34 = 0;
 		while (true) {
 			while (local30.anInt6373 > local32) {
-				@Pc(47) Class2_Sub21 local47 = new Class2_Sub21(arg1.method7595(local24[local34++], local8));
-				@Pc(51) int local51 = local47.method7349();
-				@Pc(57) int local57 = local47.method7382();
-				@Pc(61) int local61 = local47.method7396();
+				@Pc(47) Packet local47 = new Packet(arg1.method7595(local24[local34++], local8));
+				@Pc(51) int local51 = local47.g4();
+				@Pc(57) int local57 = local47.g2();
+				@Pc(61) int local61 = local47.g1();
 				if (!arg0 && local61 == 1) {
 					local30.anInt6373--;
 				} else {

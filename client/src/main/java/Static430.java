@@ -65,10 +65,10 @@ public final class Static430 {
 	@OriginalMember(owner = "client!nja", name = "a", descriptor = "(Ljava/lang/String;II)V")
 	public static void method5819(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
 		@Pc(10) Class153 local10 = Static668.method8701();
-		@Pc(16) Class2_Sub19 local16 = Static293.method4335(Static425.aClass345_80, local10.aClass186_1);
-		local16.aClass2_Sub21_Sub2_1.method7389(Static231.method3379(arg0) + 1);
-		local16.aClass2_Sub21_Sub2_1.method7391(arg0);
-		local16.aClass2_Sub21_Sub2_1.method7341(arg1);
+		@Pc(16) Class2_Sub19 local16 = Static293.method4335(Static425.aClass345_80, local10.aIsaacRandom_1);
+		local16.aPacketBit_1.p1(Static231.method3379(arg0) + 1);
+		local16.aPacketBit_1.pjstr(arg0);
+		local16.aPacketBit_1.p1_alt2(arg1);
 		local10.method3275(local16);
 	}
 }

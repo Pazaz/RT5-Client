@@ -25,16 +25,16 @@ public final class Class2_Sub1_Sub32 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!vda", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg0) {
-			this.method9416(false, (Class2_Sub21) null, 34);
+			this.method9416(false, (Packet) null, 34);
 		}
 		if (arg2 == 0) {
-			this.anInt10015 = arg1.method7382();
+			this.anInt10015 = arg1.g2();
 		} else if (arg2 == 1) {
-			this.anInt10016 = arg1.method7382();
+			this.anInt10016 = arg1.g2();
 		} else if (arg2 == 2) {
-			this.anInt10017 = arg1.method7382();
+			this.anInt10017 = arg1.g2();
 		}
 	}
 

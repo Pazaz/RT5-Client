@@ -23,21 +23,21 @@ public final class Class279 {
 	public Class279(@OriginalArg(0) Class377 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class330 arg2) {
 		this.aClass330_92 = arg2;
 		this.aClass330_92.method7608(1);
-		@Pc(22) Class2_Sub21 local22 = new Class2_Sub21(this.aClass330_92.method7595(0, 0));
-		@Pc(26) int local26 = local22.method7396();
+		@Pc(22) Packet local22 = new Packet(this.aClass330_92.method7595(0, 0));
+		@Pc(26) int local26 = local22.g1();
 		if (local26 > 3) {
 			this.aBooleanArray22 = new boolean[0];
 			this.anInt6994 = -1;
 			this.anIntArrayArray171 = new int[0][];
 		} else {
-			@Pc(33) int local33 = local22.method7396();
+			@Pc(33) int local33 = local22.g1();
 			@Pc(36) Class204[] local36 = Static370.method5281();
 			@Pc(38) boolean local38 = true;
 			@Pc(44) int local44;
 			@Pc(50) int local50;
 			if (local33 == local36.length) {
 				for (local44 = 0; local44 < local36.length; local44++) {
-					local50 = local22.method7396();
+					local50 = local22.g1();
 					if (local50 != local36[local44].anInt5114) {
 						local38 = false;
 						break;
@@ -47,10 +47,10 @@ public final class Class279 {
 				local38 = false;
 			}
 			if (local38) {
-				local44 = local22.method7396();
-				local50 = local22.method7396();
+				local44 = local22.g1();
+				local50 = local22.g1();
 				if (local26 > 2) {
-					this.anInt6994 = local22.method7356();
+					this.anInt6994 = local22.g2s();
 				} else {
 					this.anInt6994 = -1;
 				}
@@ -58,20 +58,20 @@ public final class Class279 {
 				this.aBooleanArray22 = new boolean[local50 + 1];
 				@Pc(128) int local128;
 				for (@Pc(122) int local122 = 0; local122 < local44; local122++) {
-					local128 = local22.method7396();
-					this.aBooleanArray22[local128] = local22.method7396() == 1;
-					@Pc(147) int local147 = local22.method7382();
+					local128 = local22.g1();
+					this.aBooleanArray22[local128] = local22.g1() == 1;
+					@Pc(147) int local147 = local22.g2();
 					@Pc(169) int local169;
 					if (this.anInt6994 == -1) {
 						this.anIntArrayArray171[local128] = new int[local147];
 						for (local169 = 0; local169 < local147; local169++) {
-							this.anIntArrayArray171[local128][local169] = local22.method7382();
+							this.anIntArrayArray171[local128][local169] = local22.g2();
 						}
 					} else {
 						this.anIntArrayArray171[local128] = new int[local147 + 1];
 						this.anIntArrayArray171[local128][0] = this.anInt6994;
 						for (local169 = 0; local169 < local147; local169++) {
-							this.anIntArrayArray171[local128][local169 + 1] = local22.method7382();
+							this.anIntArrayArray171[local128][local169 + 1] = local22.g2();
 						}
 					}
 				}
@@ -122,7 +122,7 @@ public final class Class279 {
 	public Class76 method6277(@OriginalArg(0) int arg0) {
 		@Pc(10) byte[] local10 = this.aClass330_92.method7595(arg0, 1);
 		@Pc(14) Class76 local14 = new Class76();
-		local14.method2032(new Class2_Sub21(local10));
+		local14.method2032(new Packet(local10));
 		return local14;
 	}
 }

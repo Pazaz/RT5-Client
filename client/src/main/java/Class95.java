@@ -16,9 +16,9 @@ public final class Class95 {
 	public int anInt2501;
 
 	@OriginalMember(owner = "client!eea", name = "a", descriptor = "(ILclient!ge;)V")
-	public void method2346(@OriginalArg(1) Class2_Sub21 arg0) {
+	public void method2346(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(11) int local11 = arg0.method7396();
+			@Pc(11) int local11 = arg0.g1();
 			if (local11 == 0) {
 				return;
 			}
@@ -27,11 +27,11 @@ public final class Class95 {
 	}
 
 	@OriginalMember(owner = "client!eea", name = "a", descriptor = "(ILclient!ge;I)V")
-	private void method2348(@OriginalArg(1) Class2_Sub21 arg0, @OriginalArg(2) int arg1) {
+	private void method2348(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.anInt2501 = arg0.method7382();
-			this.anInt2497 = arg0.method7396();
-			this.anInt2499 = arg0.method7396();
+			this.anInt2501 = arg0.g2();
+			this.anInt2497 = arg0.g1();
+			this.anInt2499 = arg0.g1();
 		}
 	}
 }

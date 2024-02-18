@@ -15,7 +15,7 @@ public final class Static408 {
 		Static524.aClass153_3.aClass225_91 = null;
 		Static524.aClass153_3.aClass225_94 = null;
 		Static524.aClass153_3.aClass225_92 = null;
-		Static524.aClass153_3.aClass2_Sub21_Sub2_2.anInt8388 = 0;
+		Static524.aClass153_3.aClass2_Sub21_Sub2_2.pos = 0;
 		Static102.method2022();
 		Static251.anInt4036 = 0;
 		Static723.aString129 = null;

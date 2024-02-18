@@ -45,11 +45,11 @@ public final class Class3 {
 	@OriginalMember(owner = "client!aba", name = "<init>", descriptor = "(Lclient!sb;)V")
 	public Class3(@OriginalArg(0) Class330 arg0) {
 		@Pc(30) byte[] local30 = arg0.method7589(3);
-		this.method93(new Class2_Sub21(local30));
+		this.method93(new Packet(local30));
 	}
 
 	@OriginalMember(owner = "client!aba", name = "a", descriptor = "(Lclient!ge;I)V")
-	private void method93(@OriginalArg(0) Class2_Sub21 arg0) {
+	private void method93(@OriginalArg(0) Packet arg0) {
 		@Pc(7) boolean local7 = false;
 		while (true) {
 			while (true) {
@@ -59,7 +59,7 @@ public final class Class3 {
 					while (true) {
 						while (true) {
 							while (true) {
-								local13 = arg0.method7396();
+								local13 = arg0.g1();
 								if (local13 == 0) {
 									if (!local7) {
 										if (this.anIntArray16 == null) {
@@ -82,16 +82,16 @@ public final class Class3 {
 									}
 									local7 = true;
 									for (local93 = 0; local93 < this.anIntArray16.length; local93++) {
-										this.anIntArray16[local93] = arg0.method7356();
-										this.anIntArray14[local93] = arg0.method7356();
+										this.anIntArray16[local93] = arg0.g2s();
+										this.anIntArray14[local93] = arg0.g2s();
 									}
 								} else if (local13 == 2) {
-									this.anInt81 = arg0.method7382();
+									this.anInt81 = arg0.g2();
 								} else {
 									if (local13 != 3) {
 										continue label95;
 									}
-									this.anInt86 = arg0.method7396();
+									this.anInt86 = arg0.g1();
 									this.anIntArray14 = new int[this.anInt86];
 									this.anIntArray16 = new int[this.anInt86];
 								}
@@ -100,23 +100,23 @@ public final class Class3 {
 					}
 				} while (local13 == 4);
 				if (local13 == 5) {
-					this.anInt88 = arg0.method7383();
+					this.anInt88 = arg0.g3();
 				} else if (local13 == 6) {
-					this.anInt82 = arg0.method7383();
+					this.anInt82 = arg0.g3();
 				} else if (local13 == 7) {
 					this.aShortArrayArrayArray1 = new short[10][4][];
 					this.aShortArrayArray1 = new short[10][4];
 					for (local93 = 0; local93 < 10; local93++) {
 						for (@Pc(97) int local97 = 0; local97 < 4; local97++) {
-							@Pc(103) int local103 = arg0.method7382();
+							@Pc(103) int local103 = arg0.g2();
 							if (local103 == 65535) {
 								local103 = -1;
 							}
 							this.aShortArrayArray1[local93][local97] = (short) local103;
-							@Pc(122) int local122 = arg0.method7382();
+							@Pc(122) int local122 = arg0.g2();
 							this.aShortArrayArrayArray1[local93][local97] = new short[local122];
 							for (@Pc(132) int local132 = 0; local132 < local122; local132++) {
-								@Pc(140) int local140 = arg0.method7382();
+								@Pc(140) int local140 = arg0.g2();
 								if (local140 == 65535) {
 									local140 = -1;
 								}
@@ -127,11 +127,11 @@ public final class Class3 {
 				} else if (local13 == 8) {
 					this.aBoolean5 = false;
 				} else if (local13 == 9) {
-					this.anInt85 = arg0.method7396();
+					this.anInt85 = arg0.g1();
 				} else if (local13 == 10) {
 					this.aBoolean6 = false;
 				} else if (local13 == 11) {
-					this.anInt87 = arg0.method7396();
+					this.anInt87 = arg0.g1();
 				}
 			}
 		}

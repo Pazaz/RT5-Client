@@ -8,7 +8,7 @@ public final class Static462 {
 	public static final int[] anIntArray556 = new int[] { 4, 4, 1, 2, 6, 4, 2, 44, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1 };
 
 	@OriginalMember(owner = "client!ok", name = "q", descriptor = "[Lclient!ge;")
-	public static final Class2_Sub21[] aClass2_Sub21Array1 = new Class2_Sub21[2048];
+	public static final Packet[] A_PACKET_ARRAY_1 = new Packet[2048];
 
 	@OriginalMember(owner = "client!ok", name = "a", descriptor = "(IIB)I")
 	public static int method6270(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {

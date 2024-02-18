@@ -16,17 +16,17 @@ public final class Class89 {
 	private int anInt2382;
 
 	@OriginalMember(owner = "client!dw", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class89(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class89(@OriginalArg(0) Packet arg0) {
 		for (@Pc(7) int local7 = 0; local7 < 10; local7++) {
-			@Pc(12) int local12 = arg0.method7396();
+			@Pc(12) int local12 = arg0.g1();
 			if (local12 != 0) {
-				arg0.anInt8388--;
+				arg0.pos--;
 				this.aClass258Array1[local7] = new Class258();
 				this.aClass258Array1[local7].method5775(arg0);
 			}
 		}
-		this.anInt2381 = arg0.method7382();
-		this.anInt2382 = arg0.method7382();
+		this.anInt2381 = arg0.g2();
+		this.anInt2382 = arg0.g2();
 	}
 
 	@OriginalMember(owner = "client!dw", name = "<init>", descriptor = "()V")

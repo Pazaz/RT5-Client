@@ -16,12 +16,12 @@ public final class Class2_Sub1_Sub22 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!ola", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg0) {
-			this.method9416(true, (Class2_Sub21) null, 2);
+			this.method9416(true, (Packet) null, 2);
 		}
 		if (arg2 == 0) {
-			this.anInt7034 = arg1.method7382();
+			this.anInt7034 = arg1.g2();
 		}
 	}
 

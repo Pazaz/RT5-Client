@@ -67,7 +67,7 @@ public final class Static314 {
 			}
 			local20.anInt3647 = 0;
 			if (!local20.aBoolean278 && local20.aClass348_1 != null) {
-				@Pc(59) Class2_Sub19 local59 = Static293.method4335(Static415.aClass345_75, local20.aClass186_1);
+				@Pc(59) Class2_Sub19 local59 = Static293.method4335(Static415.aClass345_75, local20.aIsaacRandom_1);
 				local20.method3275(local59);
 				try {
 					local20.method3273();

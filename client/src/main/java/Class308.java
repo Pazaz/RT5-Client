@@ -142,7 +142,7 @@ public final class Class308 {
 		local24.anInt6744 = arg0;
 		local24.aStringArray34 = (String[]) this.aStringArray39.clone();
 		if (local51 != null) {
-			local24.method5986(new Class2_Sub21(local51));
+			local24.method5986(new Packet(local51));
 		}
 		local24.method5983();
 		@Pc(90) Class82 local90 = this.aClass82_169;

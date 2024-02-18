@@ -79,7 +79,7 @@ public final class Class164 {
 	public int anInt3956 = -1;
 
 	@OriginalMember(owner = "client!hi", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class164(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class164(@OriginalArg(0) Packet arg0) {
 		this.method3494(arg0);
 	}
 
@@ -437,12 +437,12 @@ public final class Class164 {
 	}
 
 	@OriginalMember(owner = "client!hi", name = "a", descriptor = "(ILclient!ge;)V")
-	private void method3494(@OriginalArg(1) Class2_Sub21 arg0) {
-		@Pc(9) int local9 = arg0.method7396();
+	private void method3494(@OriginalArg(1) Packet arg0) {
+		@Pc(9) int local9 = arg0.g1();
 		if (local9 < 1 || local9 > 5) {
 			throw new RuntimeException("Unsupported ClanSettings version: " + local9);
 		}
-		@Pc(37) int local37 = arg0.method7396();
+		@Pc(37) int local37 = arg0.g1();
 		if ((local37 & 0x2) != 0) {
 			this.aBoolean306 = true;
 		}
@@ -457,22 +457,22 @@ public final class Class164 {
 			this.aLongArray7 = null;
 			this.aLongArray8 = null;
 		}
-		this.anInt3950 = arg0.method7349();
-		this.anInt3944 = arg0.method7349();
+		this.anInt3950 = arg0.g4();
+		this.anInt3944 = arg0.g4();
 		if (local9 <= 3 && this.anInt3944 != 0) {
 			this.anInt3944 += 16912800;
 		}
-		this.anInt3939 = arg0.method7382();
-		this.anInt3941 = arg0.method7396();
-		this.aString45 = arg0.method7358();
+		this.anInt3939 = arg0.g2();
+		this.anInt3941 = arg0.g1();
+		this.aString45 = arg0.gjstr();
 		if (local9 >= 4) {
-			arg0.method7349();
+			arg0.g4();
 		}
-		this.aBoolean307 = arg0.method7396() == 1;
-		this.aByte68 = arg0.method7377();
-		this.aByte67 = arg0.method7377();
-		this.aByte66 = arg0.method7377();
-		this.aByte65 = arg0.method7377();
+		this.aBoolean307 = arg0.g1() == 1;
+		this.aByte68 = arg0.g1b();
+		this.aByte67 = arg0.g1b();
+		this.aByte66 = arg0.g1b();
+		this.aByte65 = arg0.g1b();
 		@Pc(282) int local282;
 		if (this.anInt3939 > 0) {
 			if (this.aBoolean308 && (this.aLongArray8 == null || this.aLongArray8.length < this.anInt3939)) {
@@ -492,17 +492,17 @@ public final class Class164 {
 			}
 			for (local282 = 0; local282 < this.anInt3939; local282++) {
 				if (this.aBoolean308) {
-					this.aLongArray8[local282] = arg0.method7398();
+					this.aLongArray8[local282] = arg0.g8();
 				}
 				if (this.aBoolean306) {
-					this.aStringArray18[local282] = arg0.method7403();
+					this.aStringArray18[local282] = arg0.fastgjstr();
 				}
-				this.aByteArray40[local282] = arg0.method7377();
+				this.aByteArray40[local282] = arg0.g1b();
 				if (local9 >= 2) {
-					this.anIntArray309[local282] = arg0.method7349();
+					this.anIntArray309[local282] = arg0.g4();
 				}
 				if (local9 >= 5) {
-					this.anIntArray308[local282] = arg0.method7382();
+					this.anIntArray308[local282] = arg0.g2();
 				} else {
 					this.anIntArray308[local282] = 0;
 				}
@@ -518,33 +518,33 @@ public final class Class164 {
 			}
 			for (local282 = 0; local282 < this.anInt3941; local282++) {
 				if (this.aBoolean308) {
-					this.aLongArray7[local282] = arg0.method7398();
+					this.aLongArray7[local282] = arg0.g8();
 				}
 				if (this.aBoolean306) {
-					this.aStringArray19[local282] = arg0.method7403();
+					this.aStringArray19[local282] = arg0.fastgjstr();
 				}
 			}
 		}
 		if (local9 < 3) {
 			return;
 		}
-		local282 = arg0.method7382();
+		local282 = arg0.g2();
 		if (local282 <= 0) {
 			return;
 		}
 		this.aClass28_19 = new Class28(local282 >= 16 ? 16 : Static440.method5962(local282));
 		while (local282-- > 0) {
-			@Pc(493) int local493 = arg0.method7349();
+			@Pc(493) int local493 = arg0.g4();
 			@Pc(497) int local497 = local493 & 0x3FFFFFFF;
 			@Pc(501) int local501 = local493 >>> 30;
 			if (local501 == 0) {
-				@Pc(510) int local510 = arg0.method7349();
+				@Pc(510) int local510 = arg0.g4();
 				this.aClass28_19.method735((long) local497, new Class2_Sub38(local510));
 			} else if (local501 == 1) {
-				@Pc(533) long local533 = arg0.method7398();
+				@Pc(533) long local533 = arg0.g8();
 				this.aClass28_19.method735((long) local497, new Class2_Sub48(local533));
 			} else if (local501 == 2) {
-				@Pc(556) String local556 = arg0.method7358();
+				@Pc(556) String local556 = arg0.gjstr();
 				this.aClass28_19.method735((long) local497, new Class2_Sub24(local556));
 			}
 		}

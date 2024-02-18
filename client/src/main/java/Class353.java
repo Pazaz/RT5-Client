@@ -48,23 +48,23 @@ public final class Class353 {
 	}
 
 	@OriginalMember(owner = "client!th", name = "<init>", descriptor = "(Lclient!ha;Lclient!ge;I)V")
-	public Class353(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public Class353(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (Static695.anIntArray868 == null) {
 			Static344.method5043();
 		}
-		this.anInt9369 = arg1.method7396();
+		this.anInt9369 = arg1.g1();
 		this.aBoolean716 = (this.anInt9369 & 0x10) != 0;
 		this.aBoolean717 = (this.anInt9369 & 0x8) != 0;
 		this.anInt9369 &= 0x7;
-		@Pc(47) int local47 = arg1.method7382() << arg2;
-		@Pc(53) int local53 = arg1.method7382() << arg2;
-		@Pc(59) int local59 = arg1.method7382() << arg2;
-		@Pc(63) int local63 = arg1.method7396();
+		@Pc(47) int local47 = arg1.g2() << arg2;
+		@Pc(53) int local53 = arg1.g2() << arg2;
+		@Pc(59) int local59 = arg1.g2() << arg2;
+		@Pc(63) int local63 = arg1.g1();
 		@Pc(69) int local69 = local63 * 2 + 1;
 		this.aShortArray131 = new short[local69];
 		@Pc(85) int local85;
 		for (@Pc(75) int local75 = 0; local75 < this.aShortArray131.length; local75++) {
-			@Pc(81) short local81 = (short) arg1.method7382();
+			@Pc(81) short local81 = (short) arg1.g2();
 			local85 = local81 >>> 8;
 			if (local85 >= local69) {
 				local85 = local69 - 1;
@@ -76,8 +76,8 @@ public final class Class353 {
 			this.aShortArray131[local75] = (short) (local100 | local85 << 8);
 		}
 		local63 = (local63 << Static52.anInt1066) + Static247.anInt3993;
-		@Pc(160) int local160 = Static154.anIntArray237 == null ? Static323.anIntArray389[Static105.method2043(arg1.method7382()) & 0xFFFF] : Static154.anIntArray237[arg1.method7382()];
-		local85 = arg1.method7396();
+		@Pc(160) int local160 = Static154.anIntArray237 == null ? Static323.anIntArray389[Static105.method2043(arg1.g2()) & 0xFFFF] : Static154.anIntArray237[arg1.g2()];
+		local85 = arg1.g1();
 		this.anInt9371 = (local85 & 0xE0) << 3;
 		this.anInt9380 = local85 & 0x1F;
 		if (this.anInt9380 != 31) {

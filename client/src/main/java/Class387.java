@@ -34,7 +34,7 @@ public final class Class387 {
 		@Pc(40) byte[] local40 = this.aClass330_122.method7595(Static61.method1313(arg0), Static188.method2857(arg0));
 		local16 = new Class53();
 		if (local40 != null) {
-			local16.method1222(new Class2_Sub21(local40));
+			local16.method1222(new Packet(local40));
 		}
 		@Pc(66) Class82 local66 = this.aClass82_223;
 		synchronized (this.aClass82_223) {

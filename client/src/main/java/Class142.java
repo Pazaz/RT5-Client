@@ -144,7 +144,7 @@ public final class Class142 {
 		local22.aClass142_2 = this;
 		local22.aStringArray6 = (String[]) this.aStringArray15.clone();
 		if (local49 != null) {
-			local22.method1305(new Class2_Sub21(local49));
+			local22.method1305(new Packet(local49));
 		}
 		local22.method1306();
 		if (local22.aBoolean97) {

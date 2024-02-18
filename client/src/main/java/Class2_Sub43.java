@@ -224,29 +224,29 @@ public final class Class2_Sub43 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!pw", name = "a", descriptor = "(Lclient!ge;I)V")
-	public void method6742(@OriginalArg(0) Class2_Sub21 arg0) {
-		arg0.method7389(5);
-		arg0.method7389(this.anInt7611);
-		arg0.method7389(this.aBoolean580 ? 1 : 0);
-		arg0.method7389(this.anInt7612);
-		arg0.method7389(this.anInt7617);
-		arg0.method7389(this.anInt7603);
-		arg0.method7389(this.anInt7599);
-		arg0.method7389(this.anInt7607);
-		arg0.method7389(this.aBoolean581 ? 1 : 0);
-		arg0.method7373(this.anInt7613);
-		arg0.method7389(this.anInt7609);
-		arg0.method7388(this.anInt7610);
-		arg0.method7373(this.anInt7604);
-		arg0.method7389(this.anInt7605);
-		arg0.method7389(this.anInt7614);
-		arg0.method7389(this.anInt7598);
-		arg0.method7361(this.aString95);
-		arg0.method7361(this.aString93);
-		arg0.method7361(this.aString94);
-		arg0.method7361(this.aString92);
-		arg0.method7389(this.anInt7615);
-		arg0.method7373(this.anInt7616);
+	public void method6742(@OriginalArg(0) Packet arg0) {
+		arg0.p1(5);
+		arg0.p1(this.anInt7611);
+		arg0.p1(this.aBoolean580 ? 1 : 0);
+		arg0.p1(this.anInt7612);
+		arg0.p1(this.anInt7617);
+		arg0.p1(this.anInt7603);
+		arg0.p1(this.anInt7599);
+		arg0.p1(this.anInt7607);
+		arg0.p1(this.aBoolean581 ? 1 : 0);
+		arg0.p2(this.anInt7613);
+		arg0.p1(this.anInt7609);
+		arg0.p3(this.anInt7610);
+		arg0.p2(this.anInt7604);
+		arg0.p1(this.anInt7605);
+		arg0.p1(this.anInt7614);
+		arg0.p1(this.anInt7598);
+		arg0.pjstr2(this.aString95);
+		arg0.pjstr2(this.aString93);
+		arg0.pjstr2(this.aString94);
+		arg0.pjstr2(this.aString92);
+		arg0.p1(this.anInt7615);
+		arg0.p2(this.anInt7616);
 	}
 
 	@OriginalMember(owner = "client!pw", name = "b", descriptor = "(B)I")

@@ -18,8 +18,8 @@ public final class Static143 {
 
 	@OriginalMember(owner = "client!eia", name = "f", descriptor = "(B)V")
 	public static void method3571() {
-		@Pc(20) Class2_Sub19 local20 = Static293.method4335(Static442.aClass345_83, Static405.aClass153_2.aClass186_1);
-		local20.aClass2_Sub21_Sub2_1.method7342(Static334.anInt5456);
+		@Pc(20) Class2_Sub19 local20 = Static293.method4335(Static442.aClass345_83, Static405.aClass153_2.aIsaacRandom_1);
+		local20.aPacketBit_1.p4(Static334.anInt5456);
 		Static405.aClass153_2.method3275(local20);
 	}
 

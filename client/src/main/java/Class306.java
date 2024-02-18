@@ -68,7 +68,7 @@ public class Class306 {
 	}
 
 	@OriginalMember(owner = "client!qja", name = "a", descriptor = "(Lclient!ge;I[Lclient!eq;IBII)V")
-	public final void method7879(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class110[] arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
+	public final void method7879(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class110[] arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		@Pc(4) int local4;
 		@Pc(11) int local11;
 		@Pc(14) int local14;
@@ -581,7 +581,7 @@ public class Class306 {
 	}
 
 	@OriginalMember(owner = "client!qja", name = "a", descriptor = "(IIIIILclient!ge;IIIIZ)V")
-	private void method7887(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) Class2_Sub21 arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(10) boolean arg9) {
+	private void method7887(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) Packet arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(10) boolean arg9) {
 		if (arg0 == 1) {
 			arg2 = 1;
 		} else if (arg0 == 2) {
@@ -593,16 +593,16 @@ public class Class306 {
 		@Pc(50) int local50;
 		if (arg3 < 0 || this.anInt8906 <= arg3 || arg1 < 0 || arg1 >= this.anInt8904) {
 			while (true) {
-				local50 = arg5.method7396();
+				local50 = arg5.g1();
 				if (local50 == 0) {
 					break;
 				}
 				if (local50 == 1) {
-					arg5.method7396();
+					arg5.g1();
 					break;
 				}
 				if (local50 <= 49) {
-					arg5.method7396();
+					arg5.g1();
 				}
 			}
 			return;
@@ -611,7 +611,7 @@ public class Class306 {
 			Static280.aByteArrayArrayArray3[arg8][arg3][arg1] = 0;
 		}
 		while (true) {
-			local50 = arg5.method7396();
+			local50 = arg5.g1();
 			if (local50 == 0) {
 				if (this.aBoolean673) {
 					this.anIntArrayArrayArray17[0][arg6 + arg3][arg1 + arg2] = 0;
@@ -623,7 +623,7 @@ public class Class306 {
 				break;
 			}
 			if (local50 == 1) {
-				@Pc(194) int local194 = arg5.method7396();
+				@Pc(194) int local194 = arg5.g1();
 				if (this.aBoolean673) {
 					this.anIntArrayArrayArray17[0][arg6 + arg3][arg2 + arg1] = local194 * 8 << 2;
 				} else {
@@ -640,9 +640,9 @@ public class Class306 {
 			}
 			if (local50 <= 49) {
 				if (arg9) {
-					arg5.method7396();
+					arg5.g1();
 				} else {
-					this.aByteArrayArrayArray15[arg8][arg3][arg1] = arg5.method7377();
+					this.aByteArrayArrayArray15[arg8][arg3][arg1] = arg5.g1b();
 					this.aByteArrayArrayArray16[arg8][arg3][arg1] = (byte) ((local50 - 2) / 4);
 					this.aByteArrayArrayArray13[arg8][arg3][arg1] = (byte) (local50 + arg0 - 2 & 0x3);
 				}
@@ -1321,7 +1321,7 @@ public class Class306 {
 	}
 
 	@OriginalMember(owner = "client!qja", name = "a", descriptor = "(IIIIILclient!ge;II[Lclient!eq;B)V")
-	public final void method7891(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) Class2_Sub21 arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Class110[] arg8) {
+	public final void method7891(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) Packet arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) Class110[] arg8) {
 		@Pc(17) int local17 = (arg7 & 0x7) * 8;
 		@Pc(23) int local23 = (arg3 & 0x7) * 8;
 		@Pc(32) int local32;

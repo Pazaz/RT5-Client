@@ -33,8 +33,8 @@ public final class Static305 {
 	public static boolean aBoolean372 = false;
 
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(Lclient!ge;B)Lclient!qba;")
-	public static Class154_Sub4 method4437(@OriginalArg(0) Class2_Sub21 arg0) {
-		return new Class154_Sub4(arg0.method7356(), arg0.method7356(), arg0.method7356(), arg0.method7356(), arg0.method7383(), arg0.method7396());
+	public static Class154_Sub4 method4437(@OriginalArg(0) Packet arg0) {
+		return new Class154_Sub4(arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g3(), arg0.g1());
 	}
 
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(ILjava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/lang/String;B)V")

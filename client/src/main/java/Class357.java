@@ -28,8 +28,8 @@ public final class Class357 {
 	private final int[] anIntArray730;
 
 	@OriginalMember(owner = "client!tn", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class357(@OriginalArg(0) Class2_Sub21 arg0) {
-		@Pc(7) int local7 = arg0.method7390();
+	public Class357(@OriginalArg(0) Packet arg0) {
+		@Pc(7) int local7 = arg0.gSamrt1or2();
 		this.anIntArray735 = new int[local7];
 		this.anIntArray734 = new int[local7];
 		this.anIntArray729 = new int[local7];
@@ -38,13 +38,13 @@ public final class Class357 {
 		this.anIntArray732 = new int[local7];
 		this.anIntArray730 = new int[local7];
 		for (@Pc(37) int local37 = 0; local37 < local7; local37++) {
-			this.anIntArray733[local37] = arg0.method7382() - 5120;
-			this.anIntArray732[local37] = arg0.method7382() - 5120;
-			this.anIntArray735[local37] = arg0.method7356();
-			this.anIntArray729[local37] = arg0.method7382() - 5120;
-			this.anIntArray734[local37] = arg0.method7382() - 5120;
-			this.anIntArray731[local37] = arg0.method7356();
-			this.anIntArray730[local37] = arg0.method7356();
+			this.anIntArray733[local37] = arg0.g2() - 5120;
+			this.anIntArray732[local37] = arg0.g2() - 5120;
+			this.anIntArray735[local37] = arg0.g2s();
+			this.anIntArray729[local37] = arg0.g2() - 5120;
+			this.anIntArray734[local37] = arg0.g2() - 5120;
+			this.anIntArray731[local37] = arg0.g2s();
+			this.anIntArray730[local37] = arg0.g2s();
 		}
 	}
 

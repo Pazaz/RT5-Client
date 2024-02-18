@@ -11,20 +11,20 @@ public final class Class2_Sub2_Sub17_Sub1 extends Class2_Sub2_Sub17 {
 	public int anInt8331;
 
 	@OriginalMember(owner = "client!rja", name = "A", descriptor = "Lclient!ge;")
-	public Class2_Sub21 aClass2_Sub21_15;
+	public Packet aPacket_15;
 
 	@OriginalMember(owner = "client!rja", name = "a", descriptor = "(I)[B")
 	@Override
 	public byte[] method8971() {
-		if (super.aBoolean778 || this.aClass2_Sub21_15.aByteArray93.length - this.aByte129 > this.aClass2_Sub21_15.anInt8388) {
+		if (super.aBoolean778 || this.aPacket_15.data.length - this.aByte129 > this.aPacket_15.pos) {
 			throw new RuntimeException();
 		}
-		return this.aClass2_Sub21_15.aByteArray93;
+		return this.aPacket_15.data;
 	}
 
 	@OriginalMember(owner = "client!rja", name = "c", descriptor = "(B)I")
 	@Override
 	public int method8972() {
-		return this.aClass2_Sub21_15 == null ? 0 : this.aClass2_Sub21_15.anInt8388 * 100 / (this.aClass2_Sub21_15.aByteArray93.length - this.aByte129);
+		return this.aPacket_15 == null ? 0 : this.aPacket_15.pos * 100 / (this.aPacket_15.data.length - this.aByte129);
 	}
 }

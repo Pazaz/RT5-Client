@@ -48,7 +48,7 @@ public final class Class128 {
 		local24.anInt5833 = arg0;
 		local24.aClass128_2 = this;
 		if (local51 != null) {
-			local24.method5246(new Class2_Sub21(local51));
+			local24.method5246(new Packet(local51));
 		}
 		@Pc(81) Class82 local81 = this.aClass82_61;
 		synchronized (this.aClass82_61) {

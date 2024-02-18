@@ -22,21 +22,21 @@ public final class Static618 {
 	}
 
 	@OriginalMember(owner = "client!tja", name = "a", descriptor = "(BLclient!ge;)V")
-	public static void method8317(@OriginalArg(1) Class2_Sub21 arg0) {
-		if (arg0.aByteArray93.length - arg0.anInt8388 < 1) {
+	public static void method8317(@OriginalArg(1) Packet arg0) {
+		if (arg0.data.length - arg0.pos < 1) {
 			return;
 		}
-		@Pc(21) int local21 = arg0.method7396();
-		if (local21 < 0 || local21 > 1 || arg0.aByteArray93.length - arg0.anInt8388 < 2) {
+		@Pc(21) int local21 = arg0.g1();
+		if (local21 < 0 || local21 > 1 || arg0.data.length - arg0.pos < 2) {
 			return;
 		}
-		@Pc(62) int local62 = arg0.method7382();
-		if (local62 * 6 > arg0.aByteArray93.length - arg0.anInt8388) {
+		@Pc(62) int local62 = arg0.g2();
+		if (local62 * 6 > arg0.data.length - arg0.pos) {
 			return;
 		}
 		for (@Pc(80) int local80 = 0; local80 < local62; local80++) {
-			@Pc(86) int local86 = arg0.method7382();
-			@Pc(90) int local90 = arg0.method7349();
+			@Pc(86) int local86 = arg0.g2();
+			@Pc(90) int local90 = arg0.g4();
 			if (local86 < Static511.anIntArray614.length && Static118.aBooleanArray4[local86] && (Static691.aClass210_1.method4947(local86).aChar5 != '1' || local90 >= -1 && local90 <= 1)) {
 				Static511.anIntArray614[local86] = local90;
 			}
@@ -63,16 +63,16 @@ public final class Static618 {
 	}
 
 	@OriginalMember(owner = "client!tja", name = "a", descriptor = "(Lclient!rka;B)V")
-	public static void method8319(@OriginalArg(0) Class2_Sub21_Sub2 arg0) {
+	public static void method8319(@OriginalArg(0) PacketBit arg0) {
 		for (@Pc(10) int local10 = 0; local10 < Static652.anInt9713; local10++) {
 			@Pc(18) int local18 = Static321.anIntArray388[local10];
 			@Pc(22) Class8_Sub2_Sub1_Sub2_Sub1 local22 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local18];
-			@Pc(26) int local26 = arg0.method7396();
+			@Pc(26) int local26 = arg0.g1();
 			if ((local26 & 0x80) != 0) {
-				local26 += arg0.method7396() << 8;
+				local26 += arg0.g1() << 8;
 			}
 			if ((local26 & 0x800) != 0) {
-				local26 += arg0.method7396() << 16;
+				local26 += arg0.g1() << 16;
 			}
 			Static161.method2585(local22, local18, arg0, local26);
 		}

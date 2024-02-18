@@ -65,22 +65,22 @@ public final class Class228 {
 	}
 
 	@OriginalMember(owner = "client!lj", name = "a", descriptor = "(Lclient!ge;Lclient!kl;)V")
-	public void method5257(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(1) Class211 arg1) {
-		@Pc(3) int local3 = arg0.method7396();
+	public void method5257(@OriginalArg(0) Packet arg0, @OriginalArg(1) Class211 arg1) {
+		@Pc(3) int local3 = arg0.g1();
 		this.anIntArray452[0] = local3 >> 4;
 		this.anIntArray452[1] = local3 & 0xF;
 		if (local3 == 0) {
 			this.anIntArray451[0] = this.anIntArray451[1] = 0;
 			return;
 		}
-		this.anIntArray451[0] = arg0.method7382();
-		this.anIntArray451[1] = arg0.method7382();
-		@Pc(37) int local37 = arg0.method7396();
+		this.anIntArray451[0] = arg0.g2();
+		this.anIntArray451[1] = arg0.g2();
+		@Pc(37) int local37 = arg0.g1();
 		@Pc(42) int local42;
 		for (@Pc(39) int local39 = 0; local39 < 2; local39++) {
 			for (local42 = 0; local42 < this.anIntArray452[local39]; local42++) {
-				this.anIntArrayArrayArray8[local39][0][local42] = arg0.method7382();
-				this.anIntArrayArrayArray7[local39][0][local42] = arg0.method7382();
+				this.anIntArrayArrayArray8[local39][0][local42] = arg0.g2();
+				this.anIntArrayArrayArray7[local39][0][local42] = arg0.g2();
 			}
 		}
 		for (local42 = 0; local42 < 2; local42++) {
@@ -89,8 +89,8 @@ public final class Class228 {
 					this.anIntArrayArrayArray8[local42][1][local81] = this.anIntArrayArrayArray8[local42][0][local81];
 					this.anIntArrayArrayArray7[local42][1][local81] = this.anIntArrayArrayArray7[local42][0][local81];
 				} else {
-					this.anIntArrayArrayArray8[local42][1][local81] = arg0.method7382();
-					this.anIntArrayArrayArray7[local42][1][local81] = arg0.method7382();
+					this.anIntArrayArrayArray8[local42][1][local81] = arg0.g2();
+					this.anIntArrayArrayArray7[local42][1][local81] = arg0.g2();
 				}
 			}
 		}

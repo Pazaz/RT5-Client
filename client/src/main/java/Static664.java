@@ -12,22 +12,22 @@ public final class Static664 {
 
 	@OriginalMember(owner = "client!vaa", name = "a", descriptor = "(ILclient!fk;)[I")
 	public static int[] method8652(@OriginalArg(1) Class2_Sub19 arg0) {
-		@Pc(8) Class2_Sub21 local8 = new Class2_Sub21(518);
+		@Pc(8) Packet local8 = new Packet(518);
 		@Pc(11) int[] local11 = new int[4];
 		for (@Pc(13) int local13 = 0; local13 < 4; local13++) {
 			local11[local13] = (int) (Math.random() * 9.9999999E7D);
 		}
-		local8.method7389(10);
-		local8.method7342(local11[0]);
-		local8.method7342(local11[1]);
-		local8.method7342(local11[2]);
-		local8.method7342(local11[3]);
+		local8.p1(10);
+		local8.p4(local11[0]);
+		local8.p4(local11[1]);
+		local8.p4(local11[2]);
+		local8.p4(local11[3]);
 		for (@Pc(70) int local70 = 0; local70 < 10; local70++) {
-			local8.method7342((int) (Math.random() * 9.9999999E7D));
+			local8.p4((int) (Math.random() * 9.9999999E7D));
 		}
-		local8.method7373((int) (Math.random() * 9.9999999E7D));
-		local8.method7385(ClientConfig.aBigInteger2, ClientConfig.aBigInteger1);
-		arg0.aClass2_Sub21_Sub2_1.method7386(local8.anInt8388, local8.aByteArray93, 0);
+		local8.p2((int) (Math.random() * 9.9999999E7D));
+		local8.rsaenc(ClientConfig.aBigInteger2, ClientConfig.aBigInteger1);
+		arg0.aPacketBit_1.pdata(local8.data, 0, local8.pos);
 		return local11;
 	}
 

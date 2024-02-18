@@ -14,14 +14,14 @@ public final class Static715 {
 	public static final int[] anIntArray881 = new int[200];
 
 	@OriginalMember(owner = "client!wla", name = "a", descriptor = "(BLclient!ge;)Lclient!rk;")
-	public static Class138_Sub1 method9346(@OriginalArg(1) Class2_Sub21 arg0) {
+	public static Class138_Sub1 method9346(@OriginalArg(1) Packet arg0) {
 		@Pc(7) Class138 local7 = Static632.method8359(arg0);
-		@Pc(13) int local13 = arg0.method7382();
-		@Pc(19) int local19 = arg0.method7382();
-		@Pc(25) int local25 = arg0.method7382();
-		@Pc(29) int local29 = arg0.method7382();
-		@Pc(33) int local33 = arg0.method7382();
-		@Pc(43) int local43 = arg0.method7382();
+		@Pc(13) int local13 = arg0.g2();
+		@Pc(19) int local19 = arg0.g2();
+		@Pc(25) int local25 = arg0.g2();
+		@Pc(29) int local29 = arg0.g2();
+		@Pc(33) int local33 = arg0.g2();
+		@Pc(43) int local43 = arg0.g2();
 		return new Class138_Sub1(local7.aClass403_10, local7.aClass103_10, local7.anInt4423, local7.anInt4412, local7.anInt4418, local7.anInt4413, local7.anInt4416, local7.anInt4415, local7.anInt4421, local13, local19, local25, local29, local33, local43);
 	}
 

@@ -440,7 +440,7 @@ public final class Class19_Sub3 extends Class19 {
 	private final float[] aFloatArray54;
 
 	@OriginalMember(owner = "client!qha", name = "qb", descriptor = "Lclient!jfa;")
-	public Class2_Sub21_Sub1 aClass2_Sub21_Sub1_3;
+	public PacketGl aPacketGl_3;
 
 	@OriginalMember(owner = "client!qha", name = "W", descriptor = "[B")
 	public final byte[] aByteArray90;
@@ -572,7 +572,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.anInt8032 = 0;
 		this.anInt8016 = 0;
 		this.aFloatArray54 = new float[4];
-		this.aClass2_Sub21_Sub1_3 = new Class2_Sub21_Sub1(8192);
+		this.aPacketGl_3 = new PacketGl(8192);
 		this.aByteArray90 = new byte[16384];
 		this.anIntArray624 = new int[1];
 		this.anIntArray625 = new int[1];
@@ -1415,51 +1415,51 @@ public final class Class19_Sub3 extends Class19 {
 		if (this.anInterface12_7 != null) {
 			return;
 		}
-		@Pc(16) Class2_Sub21_Sub1 local16 = new Class2_Sub21_Sub1(80);
+		@Pc(16) PacketGl local16 = new PacketGl(80);
 		if (this.aBoolean618) {
-			local16.method4336(-1.0F);
-			local16.method4336(-1.0F);
-			local16.method4336(0.0F);
-			local16.method4336(0.0F);
-			local16.method4336(1.0F);
-			local16.method4336(1.0F);
-			local16.method4336(-1.0F);
-			local16.method4336(0.0F);
-			local16.method4336(1.0F);
-			local16.method4336(1.0F);
-			local16.method4336(1.0F);
-			local16.method4336(1.0F);
-			local16.method4336(0.0F);
-			local16.method4336(1.0F);
-			local16.method4336(0.0F);
-			local16.method4336(-1.0F);
-			local16.method4336(1.0F);
-			local16.method4336(0.0F);
-			local16.method4336(0.0F);
-			local16.method4336(0.0F);
+			local16.pFloat(-1.0F);
+			local16.pFloat(-1.0F);
+			local16.pFloat(0.0F);
+			local16.pFloat(0.0F);
+			local16.pFloat(1.0F);
+			local16.pFloat(1.0F);
+			local16.pFloat(-1.0F);
+			local16.pFloat(0.0F);
+			local16.pFloat(1.0F);
+			local16.pFloat(1.0F);
+			local16.pFloat(1.0F);
+			local16.pFloat(1.0F);
+			local16.pFloat(0.0F);
+			local16.pFloat(1.0F);
+			local16.pFloat(0.0F);
+			local16.pFloat(-1.0F);
+			local16.pFloat(1.0F);
+			local16.pFloat(0.0F);
+			local16.pFloat(0.0F);
+			local16.pFloat(0.0F);
 		} else {
-			local16.method4337(-1.0F);
-			local16.method4337(-1.0F);
-			local16.method4337(0.0F);
-			local16.method4337(0.0F);
-			local16.method4337(1.0F);
-			local16.method4337(1.0F);
-			local16.method4337(-1.0F);
-			local16.method4337(0.0F);
-			local16.method4337(1.0F);
-			local16.method4337(1.0F);
-			local16.method4337(1.0F);
-			local16.method4337(1.0F);
-			local16.method4337(0.0F);
-			local16.method4337(1.0F);
-			local16.method4337(0.0F);
-			local16.method4337(-1.0F);
-			local16.method4337(1.0F);
-			local16.method4337(0.0F);
-			local16.method4337(0.0F);
-			local16.method4337(0.0F);
+			local16.ipFloat(-1.0F);
+			local16.ipFloat(-1.0F);
+			local16.ipFloat(0.0F);
+			local16.ipFloat(0.0F);
+			local16.ipFloat(1.0F);
+			local16.ipFloat(1.0F);
+			local16.ipFloat(-1.0F);
+			local16.ipFloat(0.0F);
+			local16.ipFloat(1.0F);
+			local16.ipFloat(1.0F);
+			local16.ipFloat(1.0F);
+			local16.ipFloat(1.0F);
+			local16.ipFloat(0.0F);
+			local16.ipFloat(1.0F);
+			local16.ipFloat(0.0F);
+			local16.ipFloat(-1.0F);
+			local16.ipFloat(1.0F);
+			local16.ipFloat(0.0F);
+			local16.ipFloat(0.0F);
+			local16.ipFloat(0.0F);
 		}
-		this.anInterface12_7 = this.method7024(false, local16.anInt8388, local16.aByteArray93, 20);
+		this.anInterface12_7 = this.method7024(false, local16.pos, local16.data, 20);
 		this.aClass94_15 = new Class94(this.anInterface12_7, 5126, 3, 0);
 		this.aClass94_16 = new Class94(this.anInterface12_7, 5126, 2, 12);
 		this.aClass42_1.method1081(this);

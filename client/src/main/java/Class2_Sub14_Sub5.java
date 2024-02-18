@@ -19,8 +19,8 @@ public final class Class2_Sub14_Sub5 extends Class2_Sub14 {
 
 	@OriginalMember(owner = "client!ij", name = "a", descriptor = "(ILclient!ge;)V")
 	@Override
-	public void method8615(@OriginalArg(1) Class2_Sub21 arg0) {
-		this.anInt4361 = arg0.method7382();
-		this.aByte72 = arg0.method7377();
+	public void method8615(@OriginalArg(1) Packet arg0) {
+		this.anInt4361 = arg0.g2();
+		this.aByte72 = arg0.g1b();
 	}
 }

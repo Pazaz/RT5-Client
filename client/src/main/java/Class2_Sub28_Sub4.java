@@ -54,23 +54,23 @@ public final class Class2_Sub28_Sub4 extends Class2_Sub28 {
 		if (super.anInt9753 > 0 && !"SUB".equals(this.aString117)) {
 			return;
 		}
-		@Pc(31) Class2_Sub21 local31 = new Class2_Sub21(arg0.getData());
-		@Pc(35) int local35 = local31.method7396();
+		@Pc(31) Packet local31 = new Packet(arg0.getData());
+		@Pc(35) int local35 = local31.g1();
 		if (super.anInt9753 > 8) {
 			if (local35 == 0) {
-				@Pc(47) long local47 = local31.method7359();
-				@Pc(51) long local51 = local31.method7359();
-				@Pc(55) long local55 = local31.method7359();
+				@Pc(47) long local47 = local31.ig8();
+				@Pc(51) long local51 = local31.ig8();
+				@Pc(55) long local55 = local31.ig8();
 				if (local47 < 0L || local51 < 0L || local55 < 0L || local47 < local55) {
 					throw new IllegalStateException();
 				}
 				this.aFloat211 = (float) ((long) this.anInt9757 * (local47 + local51)) / (float) this.anInt9764;
 				this.aFloat212 = (float) ((long) this.anInt9757 * local47) / (float) this.anInt9764;
-				@Pc(121) int local121 = local31.method7351();
-				if (local121 < 0 || local31.aByteArray93.length - local31.anInt8388 < local121) {
+				@Pc(121) int local121 = local31.ig4();
+				if (local121 < 0 || local31.data.length - local31.pos < local121) {
 					throw new IllegalStateException();
 				}
-				this.aString115 = Static366.method5264(local121, local31.aByteArray93, local31.anInt8388);
+				this.aString115 = Static366.method5264(local121, local31.data, local31.pos);
 			}
 			if ((local35 | 0x80) != 0) {
 				return;
@@ -83,18 +83,18 @@ public final class Class2_Sub28_Sub4 extends Class2_Sub28 {
 		if (super.anInt9753 != 0) {
 			return;
 		}
-		local31.anInt8388 += 23;
-		this.anInt9764 = local31.method7351();
-		this.anInt9757 = local31.method7351();
+		local31.pos += 23;
+		this.anInt9764 = local31.ig4();
+		this.anInt9757 = local31.ig4();
 		if (this.anInt9764 == 0 || this.anInt9757 == 0) {
 			throw new IllegalStateException();
 		}
-		@Pc(211) Class2_Sub21 local211 = new Class2_Sub21(16);
-		local31.method7344(0, 16, local211.aByteArray93);
-		this.aString116 = local211.method7358();
-		local211.anInt8388 = 0;
-		local31.method7344(0, 16, local211.aByteArray93);
-		this.aString117 = local211.method7358();
+		@Pc(211) Packet local211 = new Packet(16);
+		local31.gdata(local211.data, 0, 16);
+		this.aString116 = local211.gjstr();
+		local211.pos = 0;
+		local31.gdata(local211.data, 0, 16);
+		this.aString117 = local211.gjstr();
 	}
 
 	@OriginalMember(owner = "client!un", name = "g", descriptor = "(I)Ljava/lang/String;")

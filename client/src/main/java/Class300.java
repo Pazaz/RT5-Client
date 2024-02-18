@@ -20,15 +20,15 @@ public final class Class300 {
 	}
 
 	@OriginalMember(owner = "client!qaa", name = "a", descriptor = "(ILclient!ge;[B)V")
-	public void method6761(@OriginalArg(1) Class2_Sub21 arg0, @OriginalArg(2) byte[] arg1) {
-		if (arg0.aByteArray93[arg0.anInt8388] != 31 || arg0.aByteArray93[arg0.anInt8388 + 1] != -117) {
+	public void method6761(@OriginalArg(1) Packet arg0, @OriginalArg(2) byte[] arg1) {
+		if (arg0.data[arg0.pos] != 31 || arg0.data[arg0.pos + 1] != -117) {
 			throw new RuntimeException("Invalid GZIP header!");
 		}
 		if (this.anInflater1 == null) {
 			this.anInflater1 = new Inflater(true);
 		}
 		try {
-			this.anInflater1.setInput(arg0.aByteArray93, arg0.anInt8388 + 10, -8 - arg0.anInt8388 - (10 - arg0.aByteArray93.length));
+			this.anInflater1.setInput(arg0.data, arg0.pos + 10, -8 - arg0.pos - (10 - arg0.data.length));
 			this.anInflater1.inflate(arg1);
 		} catch (@Pc(68) Exception local68) {
 			this.anInflater1.reset();
@@ -39,11 +39,11 @@ public final class Class300 {
 
 	@OriginalMember(owner = "client!qaa", name = "a", descriptor = "([BZ)[B")
 	public byte[] method6762(@OriginalArg(0) byte[] arg0) {
-		@Pc(8) Class2_Sub21 local8 = new Class2_Sub21(arg0);
-		local8.anInt8388 = arg0.length - 4;
-		@Pc(24) int local24 = local8.method7351();
+		@Pc(8) Packet local8 = new Packet(arg0);
+		local8.pos = arg0.length - 4;
+		@Pc(24) int local24 = local8.ig4();
 		@Pc(27) byte[] local27 = new byte[local24];
-		local8.anInt8388 = 0;
+		local8.pos = 0;
 		this.method6761(local8, local27);
 		return local27;
 	}

@@ -95,7 +95,7 @@ public final class Static73 {
 		for (@Pc(8) int local8 = 0; local8 < local6; local8++) {
 			@Pc(13) byte[] local13 = arg0[local8];
 			if (local13 != null) {
-				@Pc(20) Class2_Sub21 local20 = new Class2_Sub21(local13);
+				@Pc(20) Packet local20 = new Packet(local13);
 				local26 = Static89.anIntArray169[local8] >> 8;
 				@Pc(32) int local32 = Static89.anIntArray169[local8] & 0xFF;
 				@Pc(38) int local38 = local26 * 64 - Static691.anInt10367;

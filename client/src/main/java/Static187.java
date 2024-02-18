@@ -23,7 +23,7 @@ public final class Static187 {
 		Static117.anInt2282 = 0;
 		Static102.anInt2129 = 0;
 		Static1.anInt10798 = 0;
-		Static518.aClass2_Sub21_18 = null;
+		Static518.aPacket_18 = null;
 		Static298.method4385();
 		Static525.anInt8907 = 0;
 		Static691.anInt10367 = 0;

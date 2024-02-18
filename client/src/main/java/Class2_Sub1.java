@@ -56,7 +56,7 @@ public abstract class Class2_Sub1 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(ZLclient!ge;I)V")
-	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg0) {
 			Static485.method9420(true, (float[]) null, 33);
 		}

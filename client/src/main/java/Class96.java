@@ -59,7 +59,7 @@ public final class Class96 {
 		local25.aClass96_5 = this;
 		local25.anInt8253 = arg0;
 		if (local48 != null) {
-			local25.method7256(new Class2_Sub21(local48));
+			local25.method7256(new Packet(local48));
 		}
 		local25.method7254();
 		@Pc(81) Class82 local81 = this.aClass82_55;

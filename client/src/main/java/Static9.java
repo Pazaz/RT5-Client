@@ -26,14 +26,14 @@ public final class Static9 {
 
 	@OriginalMember(owner = "client!af", name = "a", descriptor = "([BZ)V")
 	public static void method124(@OriginalArg(0) byte[] arg0) {
-		@Pc(15) Class2_Sub21 local15 = new Class2_Sub21(arg0);
+		@Pc(15) Packet local15 = new Packet(arg0);
 		while (true) {
-			@Pc(19) int local19 = local15.method7396();
+			@Pc(19) int local19 = local15.g1();
 			if (local19 == 0) {
 				return;
 			}
 			if (local19 == 1) {
-				@Pc(34) int local34 = local15.method7382();
+				@Pc(34) int local34 = local15.g2();
 				if (Static597.anInt8821 == -1) {
 					Static597.anInt8821 = local34;
 				}

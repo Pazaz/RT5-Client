@@ -16,15 +16,15 @@ public final class Class20 {
 	private final Class339 aClass339_4 = new Class339();
 
 	@OriginalMember(owner = "client!ama", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class20(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class20(@OriginalArg(0) Packet arg0) {
 		this.method585(arg0);
 	}
 
 	@OriginalMember(owner = "client!ama", name = "a", descriptor = "(Lclient!ge;B)V")
-	private void method585(@OriginalArg(0) Class2_Sub21 arg0) {
-		this.aLong15 = arg0.method7398();
-		this.anInt519 = arg0.method7349();
-		for (@Pc(28) int local28 = arg0.method7396(); local28 != 0; local28 = arg0.method7396()) {
+	private void method585(@OriginalArg(0) Packet arg0) {
+		this.aLong15 = arg0.g8();
+		this.anInt519 = arg0.g4();
+		for (@Pc(28) int local28 = arg0.g1(); local28 != 0; local28 = arg0.g1()) {
 			if (Static148.aBoolean215) {
 				System.out.println("t:" + local28);
 			}

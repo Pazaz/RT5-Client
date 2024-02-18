@@ -22,9 +22,9 @@ public final class Class2_Sub2_Sub3 extends Class2_Sub2 {
 	public char[] aCharArray3;
 
 	@OriginalMember(owner = "client!bq", name = "a", descriptor = "(Lclient!ge;Z)V")
-	public void method1180(@OriginalArg(0) Class2_Sub21 arg0) {
+	public void method1180(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(3) int local3 = arg0.method7396();
+			@Pc(3) int local3 = arg0.g1();
 			if (local3 == 0) {
 				return;
 			}
@@ -33,30 +33,30 @@ public final class Class2_Sub2_Sub3 extends Class2_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!bq", name = "a", descriptor = "(ILclient!ge;I)V")
-	private void method1181(@OriginalArg(1) Class2_Sub21 arg0, @OriginalArg(2) int arg1) {
+	private void method1181(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.aString4 = arg0.method7358();
+			this.aString4 = arg0.gjstr();
 			return;
 		}
 		@Pc(22) int local22;
 		@Pc(32) int local32;
 		@Pc(44) byte local44;
 		if (arg1 == 2) {
-			local22 = arg0.method7396();
+			local22 = arg0.g1();
 			this.anIntArray93 = new int[local22];
 			this.aCharArray2 = new char[local22];
 			for (local32 = 0; local32 < local22; local32++) {
-				this.anIntArray93[local32] = arg0.method7382();
-				local44 = arg0.method7377();
+				this.anIntArray93[local32] = arg0.g2();
+				local44 = arg0.g1b();
 				this.aCharArray2[local32] = local44 == 0 ? 0 : Static346.method5084(local44);
 			}
 		} else if (arg1 == 3) {
-			local22 = arg0.method7396();
+			local22 = arg0.g1();
 			this.aCharArray3 = new char[local22];
 			this.anIntArray94 = new int[local22];
 			for (local32 = 0; local32 < local22; local32++) {
-				this.anIntArray94[local32] = arg0.method7382();
-				local44 = arg0.method7377();
+				this.anIntArray94[local32] = arg0.g2();
+				local44 = arg0.g1b();
 				this.aCharArray3[local32] = local44 == 0 ? 0 : Static346.method5084(local44);
 			}
 		}

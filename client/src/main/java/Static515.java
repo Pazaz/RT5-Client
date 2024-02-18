@@ -103,12 +103,12 @@ public final class Static515 {
 	}
 
 	@OriginalMember(owner = "client!qda", name = "a", descriptor = "(Lclient!ge;B)Lclient!no;")
-	public static Class160 method6803(@OriginalArg(0) Class2_Sub21 arg0) {
-		@Pc(15) int local15 = arg0.method7382();
-		@Pc(22) Class403 local22 = Static33.method882()[arg0.method7396()];
-		@Pc(29) Class103 local29 = Static313.method4544()[arg0.method7396()];
-		@Pc(35) int local35 = arg0.method7356();
-		@Pc(39) int local39 = arg0.method7356();
+	public static Class160 method6803(@OriginalArg(0) Packet arg0) {
+		@Pc(15) int local15 = arg0.g2();
+		@Pc(22) Class403 local22 = Static33.method882()[arg0.g1()];
+		@Pc(29) Class103 local29 = Static313.method4544()[arg0.g1()];
+		@Pc(35) int local35 = arg0.g2s();
+		@Pc(39) int local39 = arg0.g2s();
 		return new Class160(local15, local22, local29, local35, local39);
 	}
 

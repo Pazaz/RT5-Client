@@ -123,35 +123,35 @@ public final class Class285 {
 	}
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "(Lclient!ge;BI)V")
-	private void method6456(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(2) int arg1) {
+	private void method6456(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.anInt7196 = arg0.method7382();
+			this.anInt7196 = arg0.g2();
 		} else if (arg1 == 2) {
-			this.anInt7190 = arg0.method7383();
+			this.anInt7190 = arg0.g3();
 		} else if (arg1 == 3) {
-			this.anInt7183 = arg0.method7382();
+			this.anInt7183 = arg0.g2();
 		} else if (arg1 == 4) {
-			this.anInt7180 = arg0.method7382();
+			this.anInt7180 = arg0.g2();
 		} else if (arg1 == 5) {
-			this.anInt7181 = arg0.method7382();
+			this.anInt7181 = arg0.g2();
 		} else if (arg1 == 6) {
-			this.anInt7187 = arg0.method7382();
+			this.anInt7187 = arg0.g2();
 		} else if (arg1 == 7) {
-			this.anInt7184 = arg0.method7356();
+			this.anInt7184 = arg0.g2s();
 		} else if (arg1 == 8) {
-			this.aString82 = arg0.method7343();
+			this.aString82 = arg0.gjstr2();
 		} else if (arg1 == 9) {
-			this.anInt7192 = arg0.method7382();
+			this.anInt7192 = arg0.g2();
 		} else if (arg1 == 10) {
-			this.anInt7191 = arg0.method7356();
+			this.anInt7191 = arg0.g2s();
 		} else if (arg1 == 11) {
 			this.anInt7179 = 0;
 		} else if (arg1 == 12) {
-			this.anInt7195 = arg0.method7396();
+			this.anInt7195 = arg0.g1();
 		} else if (arg1 == 13) {
-			this.anInt7178 = arg0.method7356();
+			this.anInt7178 = arg0.g2s();
 		} else if (arg1 == 14) {
-			this.anInt7179 = arg0.method7382();
+			this.anInt7179 = arg0.g2();
 		}
 	}
 
@@ -168,9 +168,9 @@ public final class Class285 {
 	}
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "(ZLclient!ge;)V")
-	public void method6458(@OriginalArg(1) Class2_Sub21 arg0) {
+	public void method6458(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(3) int local3 = arg0.method7396();
+			@Pc(3) int local3 = arg0.g1();
 			if (local3 == 0) {
 				return;
 			}

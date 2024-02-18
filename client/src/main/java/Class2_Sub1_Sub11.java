@@ -95,23 +95,23 @@ public final class Class2_Sub1_Sub11 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!in", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9416(@OriginalArg(0) boolean arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
-			this.anInt4540 = arg1.method7396();
+			this.anInt4540 = arg1.g1();
 		} else if (arg2 == 1) {
-			this.anInt4527 = arg1.method7396();
+			this.anInt4527 = arg1.g1();
 		} else if (arg2 == 2) {
-			this.anInt4539 = arg1.method7382();
+			this.anInt4539 = arg1.g2();
 		} else if (arg2 == 3) {
-			this.anInt4525 = arg1.method7382();
+			this.anInt4525 = arg1.g2();
 		} else if (arg2 == 4) {
-			this.anInt4535 = arg1.method7382();
+			this.anInt4535 = arg1.g2();
 		} else if (arg2 == 5) {
-			this.anInt4531 = arg1.method7382();
+			this.anInt4531 = arg1.g2();
 		} else if (arg2 == 6) {
-			this.anInt4528 = arg1.method7382();
+			this.anInt4528 = arg1.g2();
 		} else if (arg2 == 7) {
-			this.anInt4532 = arg1.method7382();
+			this.anInt4532 = arg1.g2();
 		}
 		if (arg0) {
 			Static278.aClass345_57 = null;
@@ -122,7 +122,7 @@ public final class Class2_Sub1_Sub11 extends Class2_Sub1 {
 	@Override
 	public void method9421(@OriginalArg(0) int arg0) {
 		if (arg0 != 7) {
-			this.method9416(true, (Class2_Sub21) null, 83);
+			this.method9416(true, (Packet) null, 83);
 		}
 		this.method4069(arg0 + 25421);
 	}
