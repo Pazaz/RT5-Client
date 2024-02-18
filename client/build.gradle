@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+dependencies {
+    compileOnly project(':deob-annotations')
+    compileOnly 'lib:stub'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+}
+
+application {
+    mainClass = "RS2Loader"
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'RS2Loader'
+        )
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    // options.compilerArgs << '-Xlint:unchecked' << '-Xlint:deprecation'
+}
+
+tasks.withType(JavaExec) {
+    workingDir = project.rootDir
+}

@@ -1,0 +1,16 @@
+rootProject.name = "rt5-client"
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        flatDir {
+            dirs 'lib'
+        }
+    }
+}
+
+include(
+    "deob-annotations",
+    "client",
+    "loader"
+)
