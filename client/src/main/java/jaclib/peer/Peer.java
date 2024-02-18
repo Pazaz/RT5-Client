@@ -80,7 +80,7 @@ public abstract class Peer {
 	}
 
 	@OriginalMember(owner = "client!jaclib/peer/Peer", name = "a", descriptor = "(B)Z")
-	protected final boolean a(@OriginalArg(0) byte arg0) {
+	public final boolean a(@OriginalArg(0) byte arg0) {
 		return this.reference.a(0);
 	}
 }
