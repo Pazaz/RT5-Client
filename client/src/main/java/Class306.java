@@ -375,7 +375,7 @@ public class Class306 {
 					local50 = this.aClass96_6.method2352(local37 - 1);
 					if (local50.anInt8249 != -1 && local50.aBoolean628) {
 						local70 = arg11[arg4 + 1][arg8 + 1];
-						local86 = --(arg2[arg4 + 1][arg8 + 1] * 2) & 0x7;
+						local86 = (arg2[arg4 + 1][arg8 + 1] * 2) & 0x7;
 						local91 = Static718.method9367(local50, arg7);
 						if (Static499.aBooleanArrayArray7[local70][local86]) {
 							Static319.anIntArray385[4] = local50.anInt8249;

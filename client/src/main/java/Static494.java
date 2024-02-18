@@ -121,7 +121,7 @@ public final class Static494 {
 					if (local410 < 0.0F) {
 						local410 *= -1.0F;
 					}
-					if (!(float) Static86.anInt1803 > local410 && (Static219.method3190(0, arg1) && (Static219.method3190(1, arg1) && (Static219.method3190(2, arg1) && Static219.method3190(3, arg1))))) {
+					if (!((float) Static86.anInt1803 > local410) && (Static219.method3190(0, arg1) && (Static219.method3190(1, arg1) && (Static219.method3190(2, arg1) && Static219.method3190(3, arg1))))) {
 						Static560.aClass75Array3[Static469.anInt7072++] = arg1;
 					}
 				}
