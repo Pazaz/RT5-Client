@@ -10,12 +10,8 @@ public abstract class SimplePeer {
 	@OriginalMember(owner = "client!jagtheora/misc/SimplePeer", name = "peer", descriptor = "J")
 	private long peer;
 
-	static {
-		init();
-	}
-
 	@OriginalMember(owner = "client!jagtheora/misc/SimplePeer", name = "init", descriptor = "()V")
-	protected static native void init();
+	protected native void init();
 
 	@OriginalMember(owner = "client!jagtheora/misc/SimplePeer", name = "clear", descriptor = "()V")
 	protected abstract void clear();

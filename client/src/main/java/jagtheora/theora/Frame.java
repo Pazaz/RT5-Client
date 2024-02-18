@@ -17,12 +17,8 @@ public final class Frame extends SimplePeer {
 	@OriginalMember(owner = "client!jagtheora/theora/Frame", name = "pixels", descriptor = "[I")
 	public final int[] pixels;
 
-	static {
-		init();
-	}
-
 	@OriginalMember(owner = "client!jagtheora/theora/Frame", name = "init", descriptor = "()V")
-	private static native void init();
+	protected native void init();
 
 	@OriginalMember(owner = "client!jagtheora/theora/Frame", name = "<init>", descriptor = "(II)V")
 	public Frame(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
