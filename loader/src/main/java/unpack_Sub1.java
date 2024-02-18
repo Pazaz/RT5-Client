@@ -1,9 +1,5 @@
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.util.jar.JarOutputStream;
-import java.util.jar.Pack200;
-import java.util.zip.GZIPInputStream;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -19,7 +15,8 @@ public final class unpack_Sub1 extends unpack {
 		local5[1] = -117;
 		System.arraycopy(arg0, 0, local5, 2, arg0.length);
 		@Pc(30) ByteArrayOutputStream local30 = new ByteArrayOutputStream();
-		Pack200.newUnpacker().unpack(new GZIPInputStream(new ByteArrayInputStream(local5)), new JarOutputStream(local30));
+		// todo: use reflection so (Un)Pack200 can still function in a compatible JVM
+		// Pack200.newUnpacker().unpack(new GZIPInputStream(new ByteArrayInputStream(local5)), new JarOutputStream(local30));
 		return local30.toByteArray();
 	}
 
