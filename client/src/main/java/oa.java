@@ -308,7 +308,7 @@ public final class oa extends Class19 implements Interface5 {
 	public native void KA(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!oa", name = "c", descriptor = "(S)Z")
-	private boolean method6086(@OriginalArg(0) short arg0) {
+	private boolean c(@OriginalArg(0) short arg0) {
 		synchronized (this) {
 			@Pc(9) Class118 local9 = super.anInterface4_10.method6817(arg0);
 			if (local9 == null) {
@@ -580,7 +580,7 @@ public final class oa extends Class19 implements Interface5 {
 	private native void wa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5);
 
 	@OriginalMember(owner = "client!oa", name = "WA", descriptor = "(S)Z")
-	private boolean method6088(@OriginalArg(0) short arg0) {
+	private boolean WA(@OriginalArg(0) short arg0) {
 		@Pc(2) Interface4 local2 = super.anInterface4_10;
 		synchronized (super.anInterface4_10) {
 			if (!super.anInterface4_10.method6814(arg0)) {
@@ -673,7 +673,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "OA", descriptor = "()Ljava/lang/Object;")
-	private Object method6089() {
+	private Object OA() {
 		return new ba(this);
 	}
 
@@ -730,7 +730,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "g", descriptor = "()V")
-	private void method6090() {
+	private void g() {
 		System.gc();
 		System.runFinalization();
 		Static307.method4478();
@@ -787,7 +787,7 @@ public final class oa extends Class19 implements Interface5 {
 			Static300.method4390(false, true);
 			this.aBoolean510 = false;
 		}
-		this.method6090();
+		this.g();
 		Static307.method4481();
 		this.aBoolean509 = true;
 	}
