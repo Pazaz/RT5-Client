@@ -75,7 +75,7 @@ public final class Static523 {
 		}
 		if (Static198.aClass140_2 == Static473.aClass140_22) {
 			if (Static228.aClass262_1 == null) {
-				Static228.aClass262_1 = new Class262(Static500.aClass295_3, Static66.aClass174_1, Static442.aBigInteger5, Static670.aBigInteger6);
+				Static228.aClass262_1 = new Class262(Static500.aClass295_3, Static66.aClass174_1, ClientConfig.aBigInteger5, ClientConfig.aBigInteger6);
 			}
 			if (!Static228.aClass262_1.method5800()) {
 				return 0;

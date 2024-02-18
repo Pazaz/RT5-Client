@@ -1,4 +1,3 @@
-import java.math.BigInteger;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
@@ -9,9 +8,6 @@ public final class Static262 {
 
 	@OriginalMember(owner = "client!ica", name = "n", descriptor = "[I")
 	public static final int[] anIntArray326 = new int[13];
-
-	@OriginalMember(owner = "client!ica", name = "j", descriptor = "Ljava/math/BigInteger;")
-	public static final BigInteger aBigInteger1 = new BigInteger("10001", 16);
 
 	@OriginalMember(owner = "client!ica", name = "c", descriptor = "(Z)V")
 	public static void method3839() {

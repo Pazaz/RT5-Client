@@ -1,4 +1,3 @@
-import java.math.BigInteger;
 import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static442 {
@@ -8,9 +7,6 @@ public final class Static442 {
 
 	@OriginalMember(owner = "client!nv", name = "l", descriptor = "Z")
 	public static boolean aBoolean500;
-
-	@OriginalMember(owner = "client!nv", name = "p", descriptor = "Ljava/math/BigInteger;")
-	public static final BigInteger aBigInteger5 = new BigInteger("10001", 16);
 
 	@OriginalMember(owner = "client!nv", name = "o", descriptor = "I")
 	public static int anInt6699 = -1;

@@ -22,6 +22,13 @@ public final class Static342 {
 
 	@OriginalMember(owner = "client!kp", name = "a", descriptor = "(IZ)V")
 	public static void method4464(@OriginalArg(0) int arg0) {
+		if (ClientConfig.DISABLE_LOBBY) {
+			Static284.anInt4583 = arg0;
+			Static344.aClass229_1.anInt5856 = 15;
+			Static344.aClass229_1.anInt5853 = 50015;
+			return;
+		}
+
 		if (Static299.anInt4825 == 1) {
 			Static284.anInt4583 = arg0;
 		} else if (Static299.anInt4825 == 2) {

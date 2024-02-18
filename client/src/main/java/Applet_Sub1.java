@@ -403,7 +403,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	@OriginalMember(owner = "client!kh", name = "d", descriptor = "(B)Z")
 	protected final boolean method1643() {
 		@Pc(16) String local16 = this.getDocumentBase().getHost().toLowerCase();
-		if (local16.equals("jagex.com") || local16.endsWith(".jagex.com")) {
+		if (ClientConfig.SKIP_HOST_CHECK) {
+			return true;
+		} else if (local16.equals("jagex.com") || local16.endsWith(".jagex.com")) {
 			return true;
 		} else if (local16.equals("runescape.com") || local16.endsWith(".runescape.com")) {
 			return true;

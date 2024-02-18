@@ -45,7 +45,7 @@ public final class Static659 {
 		local6.method7391(Static59.aString63);
 		local6.method7363(Static430.aLong209);
 		local6.method7363(Static571.aLong269);
-		local6.method7385(Static374.aBigInteger2, Static262.aBigInteger1);
+		local6.method7385(ClientConfig.aBigInteger2, ClientConfig.aBigInteger1);
 		return local6;
 	}
 }
