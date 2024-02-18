@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!tla")
-public abstract class Class8_Sub2_Sub4 extends Class8_Sub2 {
+public abstract class Class8_Sub2_Sub4 extends Class8_Sub2 implements Interface25 {
 
 	@OriginalMember(owner = "client!tla", name = "B", descriptor = "S")
 	public short aShort101;
