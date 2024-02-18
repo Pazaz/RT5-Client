@@ -526,28 +526,27 @@ public final class Class114_Sub3 extends Class114 {
 							Static397.method5556(local1008, this.anIntArray658[local638], this.anIntArray675[local638], local508, local1018, local671, local1023, local1028, this.anIntArray666[local638], local1013);
 							local573[2] = local508[0];
 							local581[2] = local508[1];
-							@Pc(1746) int local1746;
 							if ((local1028 & 0x1) == 0) {
 								if (local573[1] - local573[0] > 0.5F) {
-									local1746 = local573[1]--;
+									local573[1]--;
 								} else if (local573[0] - local573[1] > 0.5F) {
-									local1746 = local573[1]++;
+									local573[1]++;
 								}
 								if (local573[2] - local573[0] > 0.5F) {
-									local1746 = local573[2]--;
+									local573[2]--;
 								} else if (local573[0] - local573[2] > 0.5F) {
-									local1746 = local573[2]++;
+									local573[2]++;
 								}
 							} else {
 								if (local581[1] - local581[0] > 0.5F) {
-									local1746 = local581[1]--;
+									local581[1]--;
 								} else if (local581[0] - local581[1] > 0.5F) {
-									local1746 = local581[1]++;
+									local581[1]++;
 								}
 								if (local581[2] - local581[0] > 0.5F) {
-									local1746 = local581[2]--;
+									local581[2]--;
 								} else if (local581[0] - local581[2] > 0.5F) {
-									local1746 = local581[2]++;
+									local581[2]++;
 								}
 							}
 						}
