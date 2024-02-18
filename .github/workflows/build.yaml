@@ -19,12 +19,18 @@ jobs:
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
 
+    - name: Replace ClientConfig.HOST_ADDRESS with PROD_IP
+      run: sed -i "s/127.0.0.1/${{ secrets.PROD_IP }}/g" client/src/main/java/ClientConfig.java
+
     - name: Run Gradle build
       run: gradle build
+
+    - name: Rename jar to 2011Scape-Client.jar
+      run: mv client/build/libs/client.jar client/build/libs/2011Scape-Client.jar
 
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: loader-client
+        name: 2011Scape Client
         path: |
           client/build/libs/*
