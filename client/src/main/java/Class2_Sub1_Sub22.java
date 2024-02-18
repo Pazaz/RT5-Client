@@ -28,9 +28,6 @@ public final class Class2_Sub1_Sub22 extends Class2_Sub1 {
 	@OriginalMember(owner = "client!ola", name = "a", descriptor = "(II)[I")
 	@Override
 	public int[] method9411(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (arg0 <= 107) {
-			Static465.method6321((byte) 37);
-		}
 		@Pc(18) int[] local18 = super.aClass180_41.method3935(arg1);
 		if (super.aClass180_41.aBoolean338) {
 			@Pc(32) int[] local32 = this.method9422(Static489.anInt7343 & arg1 - 1, 0);

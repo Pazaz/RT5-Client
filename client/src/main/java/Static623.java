@@ -16,9 +16,6 @@ public final class Static623 {
 
 	@OriginalMember(owner = "client!tm", name = "a", descriptor = "(IILjava/util/Random;)I")
 	public static int method8326(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Random arg2) {
-		if (arg0 != -5208) {
-			method8327((byte) 25);
-		}
 		if (arg1 <= 0) {
 			throw new IllegalArgumentException();
 		} else if (Static700.method9150(arg1)) {

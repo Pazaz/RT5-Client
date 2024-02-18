@@ -42,9 +42,6 @@ public final class Class8_Sub2_Sub1_Sub2_Sub2 extends Class8_Sub2_Sub1_Sub2 {
 	@OriginalMember(owner = "client!wj", name = "j", descriptor = "(I)V")
 	@Override
 	public void method9280(@OriginalArg(0) int arg0) {
-		if (arg0 != 27811) {
-			Static712.method9321(true);
-		}
 		throw new IllegalStateException();
 	}
 

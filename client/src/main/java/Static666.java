@@ -17,9 +17,6 @@ public final class Static666 {
 	public static void method8693(@OriginalArg(0) int arg0) {
 		@Pc(5) Class83 local5 = null;
 		try {
-			if (arg0 != 1) {
-				method8692(1);
-			}
 			@Pc(18) Class270 local18 = Static446.aClass390_6.method8981("");
 			while (local18.anInt6789 == 0) {
 				Static638.method8395(1L);
