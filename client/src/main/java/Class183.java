@@ -166,7 +166,10 @@ public final class Class183 implements Interface7 {
 	@OriginalMember(owner = "client!ir", name = "a", descriptor = "(IB)V")
 	@Override
 	public void method4097(@OriginalArg(0) int arg0) {
-		this.aDirectSoundBufferArray1[arg0].stop();
+		try {
+		    this.aDirectSoundBufferArray1[arg0].stop();
+		} catch (@Pc(12) ComFailException ignored) {
+		}
 		this.aBooleanArray12[arg0] = false;
 		this.aDirectSoundBufferArray1[arg0].setCurrentPosition(0);
 		this.anIntArray353[arg0] = 0;
