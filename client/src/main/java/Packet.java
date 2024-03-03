@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 // legend:
 // "p" prefix - put value
 // "g" prefix - get value
-// "i" prefix" - inverse (little-endian)
+// "i" prefix - inverse (little-endian)
 // byte suffix - size/data type
 // "alt" suffix - packet obfuscation type (alt read/write methods)
 
@@ -158,7 +158,7 @@ public class Packet extends Node {
 		return ((this.data[this.pos - 2] & 0xFF) << 8) | (this.data[this.pos - 1] - 128 & 0xFF);
 	}
 
-	// put, VarLong
+	// put, variable length long
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(IIJ)V")
 	public void pVarLong(@OriginalArg(1) int length, @OriginalArg(2) long value) {
 		@Pc(2) int bytes = length - 1;
@@ -196,7 +196,7 @@ public class Packet extends Node {
 		return 128 - this.data[this.pos++] & 0xFF;
 	}
 
-	// get, VarInt
+	// get, variable length int
 	@OriginalMember(owner = "client!bt", name = "d", descriptor = "(B)I")
 	public int gVarInt() {
 		@Pc(21) byte b = this.data[this.pos++];
@@ -510,7 +510,7 @@ public class Packet extends Node {
 		this.data[this.pos++] = (byte) (value >> 24);
 	}
 
-	// put, VarInt
+	// put, variable length int
 	@OriginalMember(owner = "client!bt", name = "g", descriptor = "(BI)V")
 	public void pVarInt(@OriginalArg(1) int value) {
 		if ((value & 0xFFFFFF80) != 0) {
