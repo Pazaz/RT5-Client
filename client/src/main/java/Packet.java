@@ -7,8 +7,8 @@ import org.openrs2.deob.annotation.Pc;
 // legend:
 // "p" prefix - put value
 // "g" prefix - get value
-// "i" prefix - inverse (little-endian)
-// byte suffix - size/data type
+// "i" prefix - inverse (little-endian) dealing with other libraries (i.e. audio or OpenGL)
+// byte suffix - size/data type - b means "byte" (signed -128 to 127) and s means signed (for its data type)
 // "alt" suffix - packet obfuscation type (alt read/write methods)
 
 // alt methods can appear to be "missing" as the *original* obfuscator will remove unused methods
@@ -71,7 +71,7 @@ public class Packet extends Node {
 
 	// calculate size of pjstr output
 	@OriginalMember(owner = "client!bk", name = "a", descriptor = "(BLjava/lang/String;)I")
-	public static int calcPjstrLen(@OriginalArg(1) String str) {
+	public static int pjstrlen(@OriginalArg(1) String str) {
 		return str.length() + 1;
 	}
 
@@ -103,7 +103,7 @@ public class Packet extends Node {
 		}
 	}
 
-	// get, 2 bytes, signed, alt method 2
+	// get, 2 bytes signed, alt method 2
 	@OriginalMember(owner = "client!bt", name = "c", descriptor = "(I)I")
 	public int g2s_alt2() {
 		this.pos += 2;
@@ -231,7 +231,7 @@ public class Packet extends Node {
 		return this.data[this.pos++] & 0xFF;
 	}
 
-	// get, 2 bytes, signed, alt method 3
+	// get, 2 bytes signed, alt method 3
 	@OriginalMember(owner = "client!bt", name = "f", descriptor = "(B)I")
 	public int g2s_alt3() {
 		this.pos += 2;
@@ -242,14 +242,14 @@ public class Packet extends Node {
 		return value;
 	}
 
-	// get, smart
+	// get, smart (range of 0 to 32767)
 	@OriginalMember(owner = "client!bt", name = "g", descriptor = "(B)I")
 	public int gsmart() {
 		@Pc(16) int value = this.data[this.pos] & 0xFF;
 		return value >= 128 ? this.g2() - 32768 : this.g1();
 	}
 
-	// get, smart, signed
+	// get, smart signed (range of -16384 to 16383)
 	@OriginalMember(owner = "client!bt", name = "h", descriptor = "(B)I")
 	public int gsmarts() {
 		@Pc(19) int value = this.data[this.pos] & 0xFF;
@@ -264,8 +264,8 @@ public class Packet extends Node {
 
 	// (extended) tiny (encryption algorithm) (XTEA), decrypt
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(II[II)V")
-	public void tinydec(@OriginalArg(2) int[] key, @OriginalArg(3) int len) {
-		@Pc(25) int blocks = (len - 5) / 8;
+	public void tinydec(@OriginalArg(0) int off, @OriginalArg(2) int[] key, @OriginalArg(3) int len) {
+		@Pc(25) int blocks = (len - off) / 8;
 		@Pc(16) int start = this.pos;
 		this.pos = 5;
 
@@ -301,7 +301,7 @@ public class Packet extends Node {
 		this.data[this.pos++] = 0;
 	}
 
-	// get, 2 bytes, signed
+	// get, 2 bytes signed
 	@OriginalMember(owner = "client!bt", name = "i", descriptor = "(B)I")
 	public int g2s() {
 		this.pos += 2;
@@ -460,7 +460,7 @@ public class Packet extends Node {
 		this.data[this.pos++] = (byte) (value >> 16);
 	}
 
-	// get, 1 byte, signed, alt method 3
+	// get, 1 byte signed, alt method 3
 	@OriginalMember(owner = "client!bt", name = "j", descriptor = "(I)B")
 	public byte g1b_alt3() {
 		return (byte) (128 - this.data[this.pos++]);
@@ -528,7 +528,7 @@ public class Packet extends Node {
 		this.p1(value & 0x7F);
 	}
 
-	// get, 2 bytes, signed, alt method 1
+	// get, 2 bytes signed, alt method 1
 	@OriginalMember(owner = "client!bt", name = "m", descriptor = "(B)I")
 	public int g2s_alt1() {
 		this.pos += 2;
@@ -564,7 +564,7 @@ public class Packet extends Node {
 				(this.data[this.pos - 2] - 128 & 0xFF);
 	}
 
-	// get, 1 byte, signed, alt method 1
+	// get, 1 byte signed, alt method 1
 	@OriginalMember(owner = "client!bt", name = "o", descriptor = "(B)B")
 	public byte g1b_alt1() {
 		return (byte) (this.data[this.pos++] - 128);

@@ -26,7 +26,7 @@ public class ClanChat {
 	public static void join(@OriginalArg(0) String arg0) {
 		if (!arg0.equals("")) {
 			Protocol.writeOpcode(ClientProt.PACKET_64);
-			Protocol.outboundBuffer.p1(Packet.calcPjstrLen(arg0));
+			Protocol.outboundBuffer.p1(Packet.pjstrlen(arg0));
 			Protocol.outboundBuffer.pjstr(arg0);
 		}
 	}
@@ -35,7 +35,7 @@ public class ClanChat {
 	public static void kick(@OriginalArg(1) String arg0) {
 		if (members != null) {
 			Protocol.writeOpcode(ClientProt.PACKET_15);
-			Protocol.outboundBuffer.p1(Packet.calcPjstrLen(arg0));
+			Protocol.outboundBuffer.p1(Packet.pjstrlen(arg0));
 			Protocol.outboundBuffer.pjstr(arg0);
 		}
 	}

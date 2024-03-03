@@ -141,7 +141,7 @@ public class CreateManager {
 		rsaBuffer.rsaenc(Protocol.EXPONENT, Protocol.MODULUS);
 		@Pc(118) Packet xteaBuffer = new Packet(350);
 		xteaBuffer.pjstr(email);
-		@Pc(131) int padding = 8 - Packet.calcPjstrLen(email) % 8;
+		@Pc(131) int padding = 8 - Packet.pjstrlen(email) % 8;
 		for (@Pc(133) int i = 0; i < padding; i++) {
 			xteaBuffer.p1((int) (Math.random() * 255.0D));
 		}

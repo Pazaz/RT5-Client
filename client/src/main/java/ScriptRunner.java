@@ -2874,7 +2874,7 @@ public final class ScriptRunner {
 					local81 = local81.substring(0, 80);
 				}
 				Protocol.writeOpcode(ClientProt.BUG_REPORT);
-				Protocol.outboundBuffer.p1(Packet.calcPjstrLen(local75) + Packet.calcPjstrLen(local81) + 2);
+				Protocol.outboundBuffer.p1(Packet.pjstrlen(local75) + Packet.pjstrlen(local81) + 2);
 				Protocol.outboundBuffer.pjstr(local75);
 				Protocol.outboundBuffer.p1(local89 - 1);
 				Protocol.outboundBuffer.p1(local95);
@@ -3680,7 +3680,7 @@ public final class ScriptRunner {
 							local81 = stringStack[ssp + 1];
 							local89 = intStack[--isp];
 							Protocol.writeOpcode(ClientProt.URL_REQUEST);
-							Protocol.outboundBuffer.p1(Packet.calcPjstrLen(local75) + Packet.calcPjstrLen(local81) + 1);
+							Protocol.outboundBuffer.p1(Packet.pjstrlen(local75) + Packet.pjstrlen(local81) + 1);
 							Protocol.outboundBuffer.pjstr(local75);
 							Protocol.outboundBuffer.pjstr(local81);
 							Protocol.outboundBuffer.p1(local89);

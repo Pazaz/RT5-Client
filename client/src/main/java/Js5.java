@@ -155,7 +155,7 @@ public final class Js5 {
 			} else {
 				local128 = ByteArray.unwrap(true, this.packed[arg1]);
 				@Pc(133) Packet local133 = new Packet(local128);
-				local133.tinydec(arg2, local133.data.length);
+				local133.tinydec(5, arg2, local133.data.length);
 			}
 			@Pc(157) byte[] local157;
 			try {
