@@ -13,7 +13,7 @@ public final class Song extends Node {
 	public final byte[] aByteArray77;
 
 	@OriginalMember(owner = "client!sl", name = "<init>", descriptor = "(Lclient!bt;)V")
-	public Song(@OriginalArg(0) Buffer arg0) {
+	public Song(@OriginalArg(0) Packet arg0) {
 		arg0.pos = arg0.data.length - 3;
 		@Pc(12) int local12 = arg0.g1();
 		@Pc(16) int local16 = arg0.g2();
@@ -158,7 +158,7 @@ public final class Song extends Node {
 		@Pc(481) int local481 = arg0.pos;
 		arg0.pos += local27 * 3;
 		this.aByteArray77 = new byte[local22];
-		@Pc(499) Buffer local499 = new Buffer(this.aByteArray77);
+		@Pc(499) Packet local499 = new Packet(this.aByteArray77);
 		local499.p4(1297377380);
 		local499.p4(6);
 		local499.p2(local12 > 1 ? 1 : 0);

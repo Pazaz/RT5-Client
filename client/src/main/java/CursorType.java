@@ -32,7 +32,7 @@ public final class CursorType {
 	}
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void decode(@OriginalArg(0) Buffer arg0) {
+	public void decode(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
@@ -43,7 +43,7 @@ public final class CursorType {
 	}
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void decode(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
+	private void decode(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.anInt6201 = arg0.g2();
 		} else if (arg1 == 2) {

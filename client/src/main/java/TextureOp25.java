@@ -28,7 +28,7 @@ public final class TextureOp25 extends TextureOp {
 
 	@OriginalMember(owner = "client!hr", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		if (arg0 == 0) {
 			this.anInt2576 = arg1.g2();
 		} else if (arg0 == 1) {
@@ -38,7 +38,7 @@ public final class TextureOp25 extends TextureOp {
 		} else if (arg0 == 3) {
 			this.anInt2569 = arg1.g2();
 		} else if (arg0 == 4) {
-			@Pc(62) int local62 = arg1.ig3();
+			@Pc(62) int local62 = arg1.g3();
 			this.anIntArray165[2] = local62 >> 12 & 0x0;
 			this.anIntArray165[0] = (local62 & 0xFF0000) << 4;
 			this.anIntArray165[1] = local62 >> 4 & 0xFF0;

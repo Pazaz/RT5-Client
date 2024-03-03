@@ -187,7 +187,7 @@ public final class ObjType {
 	public int anInt5250 = -1;
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void method4768(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	private void method4768(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		if (arg0 == 1) {
 			this.anInt5237 = arg1.g2();
 		} else if (arg0 == 2) {
@@ -330,7 +330,7 @@ public final class ObjType {
 				}
 				for (local172 = 0; local172 < local162; local172++) {
 					@Pc(503) boolean local503 = arg1.g1() == 1;
-					@Pc(507) int local507 = arg1.ig3();
+					@Pc(507) int local507 = arg1.g3();
 					@Pc(516) Node local516;
 					if (local503) {
 						local516 = new Class2_Sub40(arg1.gjstr());
@@ -370,7 +370,7 @@ public final class ObjType {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(ZLclient!bt;)V")
-	public void decode(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(11) int local11 = arg0.g1();
 			if (local11 == 0) {

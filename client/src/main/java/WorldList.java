@@ -95,7 +95,7 @@ public class WorldList {
 
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(I[B)Z")
 	public static boolean decode(@OriginalArg(1) byte[] src) {
-		@Pc(8) Buffer buffer = new Buffer(src);
+		@Pc(8) Packet buffer = new Packet(src);
 		@Pc(12) int version = buffer.g1();
 		if (version != 1) {
 			return false;
@@ -109,7 +109,7 @@ public class WorldList {
 	}
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!bt;I)V")
-	public static void decodeWorlds(@OriginalArg(0) Buffer buffer) {
+	public static void decodeWorlds(@OriginalArg(0) Packet buffer) {
 		@Pc(9) int countryCount = buffer.gsmart();
 		countries = new Country[countryCount];
 		for (@Pc(22) int i = 0; i < countryCount; i++) {
@@ -135,7 +135,7 @@ public class WorldList {
 	}
 
 	@OriginalMember(owner = "client!ac", name = "a", descriptor = "(ZLclient!bt;)V")
-	public static void decodePlayers(@OriginalArg(1) Buffer buffer) {
+	public static void decodePlayers(@OriginalArg(1) Packet buffer) {
 		for (@Pc(16) int i = 0; i < size; i++) {
 			@Pc(22) int offset = buffer.gsmart();
 			@Pc(26) int players = buffer.g2();

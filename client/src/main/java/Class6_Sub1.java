@@ -295,7 +295,7 @@ public final class Class6_Sub1 extends Class6 {
 			Static8.anIntArray10 = new int[local20];
 		}
 		if (Static8.aClass2_Sub4_1.data.length < this.anInt180 * 2) {
-			Static8.aClass2_Sub4_1 = new Buffer(this.anInt180 * 2);
+			Static8.aClass2_Sub4_1 = new Packet(this.anInt180 * 2);
 		}
 		@Pc(47) int local47 = arg0 - arg2;
 		@Pc(49) int local49 = local47;
@@ -807,7 +807,7 @@ public final class Class6_Sub1 extends Class6 {
 		}
 		this.aClass19_Sub1_1.method790(this.aClass126_1, this.aClass126_4, this.aClass126_3, this.aClass126_2);
 		if (Static8.aClass2_Sub4_1.data.length < this.anInt180 * 2) {
-			Static8.aClass2_Sub4_1 = new Buffer(this.anInt180 * 2);
+			Static8.aClass2_Sub4_1 = new Packet(this.anInt180 * 2);
 		} else {
 			Static8.aClass2_Sub4_1.pos = 0;
 		}

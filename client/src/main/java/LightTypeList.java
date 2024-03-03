@@ -31,7 +31,7 @@ public final class LightTypeList {
 		@Pc(38) byte[] local38 = this.aClass197_69.fetchFile(arg0, 31);
 		local21 = new LightType();
 		if (local38 != null) {
-			local21.decode(new Buffer(local38));
+			local21.decode(new Packet(local38));
 		}
 		@Pc(54) LruHashTable local54 = this.aClass98_41;
 		synchronized (this.aClass98_41) {

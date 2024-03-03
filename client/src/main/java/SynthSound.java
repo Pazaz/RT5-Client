@@ -16,7 +16,7 @@ public final class SynthSound {
 	private int end;
 
 	@OriginalMember(owner = "client!wk", name = "<init>", descriptor = "(Lclient!bt;)V")
-	public SynthSound(@OriginalArg(0) Buffer arg0) {
+	public SynthSound(@OriginalArg(0) Packet arg0) {
 		for (@Pc(7) int local7 = 0; local7 < 10; local7++) {
 			@Pc(12) int local12 = arg0.g1();
 			if (local12 != 0) {
@@ -32,7 +32,7 @@ public final class SynthSound {
 	@OriginalMember(owner = "client!wk", name = "a", descriptor = "(Lclient!r;II)Lclient!wk;")
 	public static SynthSound create(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(5) byte[] local5 = arg0.fetchFile(arg2, arg1);
-		return local5 == null ? null : new SynthSound(new Buffer(local5));
+		return local5 == null ? null : new SynthSound(new Packet(local5));
 	}
 
 	@OriginalMember(owner = "client!wk", name = "a", descriptor = "()[B")

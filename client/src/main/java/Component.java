@@ -567,7 +567,7 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(ILclient!bt;)V")
-	public void method4106(@OriginalArg(1) Buffer arg0) {
+	public void method4106(@OriginalArg(1) Packet arg0) {
 		arg0.pos++;
 		this.type = arg0.g1();
 		if ((this.type & 0x80) != 0) {
@@ -658,7 +658,7 @@ public final class Component {
 			this.color = arg0.g4();
 			this.aBoolean292 = arg0.g1() == 1;
 		}
-		local155 = arg0.ig3();
+		local155 = arg0.g3();
 		@Pc(449) int value = arg0.g1();
 		if (value != 0) {
 			this.aByteArray49 = new byte[10];
@@ -756,7 +756,7 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "b", descriptor = "(ILclient!bt;)[Ljava/lang/Object;")
-	private Object[] method4107(@OriginalArg(1) Buffer arg0) {
+	private Object[] method4107(@OriginalArg(1) Packet arg0) {
 		@Pc(9) int local9 = arg0.g1();
 		if (local9 == 0) {
 			return null;
@@ -775,7 +775,7 @@ public final class Component {
 	}
 
 	@OriginalMember(owner = "client!nk", name = "a", descriptor = "(BLclient!bt;)[I")
-	private int[] method4108(@OriginalArg(1) Buffer arg0) {
+	private int[] method4108(@OriginalArg(1) Packet arg0) {
 		@Pc(9) int local9 = arg0.g1();
 		if (local9 == 0) {
 			return null;

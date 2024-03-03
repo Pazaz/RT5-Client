@@ -59,7 +59,7 @@ public final class VarbitTypeList {
 		@Pc(45) byte[] local45 = this.aClass197_51.fetchFile(Static75.method1837(arg0), Static319.method5431(arg0));
 		local24 = new VarbitType();
 		if (local45 != null) {
-			local24.decode(new Buffer(local45));
+			local24.decode(new Packet(local45));
 		}
 		@Pc(61) LruHashTable local61 = this.aClass98_28;
 		synchronized (this.aClass98_28) {

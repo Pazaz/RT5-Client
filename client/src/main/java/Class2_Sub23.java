@@ -43,10 +43,10 @@ public final class Class2_Sub23 extends Node {
 	private float[][] aFloatArrayArray6;
 
 	@OriginalMember(owner = "client!lb", name = "B", descriptor = "Lclient!bt;")
-	private Buffer aClass2_Sub4_5;
+	private Packet aClass2_Sub4_5;
 
 	@OriginalMember(owner = "client!lb", name = "C", descriptor = "Lclient!ji;")
-	private GlBuffer aClass2_Sub4_Sub1_1;
+	private GlPacket aClass2_Sub4_Sub1_1;
 
 	@OriginalMember(owner = "client!lb", name = "t", descriptor = "Lclient!ad;")
 	private HashTable aClass4_78;
@@ -123,8 +123,8 @@ public final class Class2_Sub23 extends Node {
 			}
 		}
 		if (local108 > 0) {
-			this.aClass2_Sub4_5 = new Buffer(local108 * 2);
-			this.aClass2_Sub4_Sub1_1 = new GlBuffer(local108 * 16);
+			this.aClass2_Sub4_5 = new Packet(local108 * 2);
+			this.aClass2_Sub4_Sub1_1 = new GlPacket(local108 * 16);
 			this.aClass4_78 = new HashTable(Static162.method2977(local108));
 			local131 = 0;
 			local116 = 0;

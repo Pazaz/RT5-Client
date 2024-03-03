@@ -45,7 +45,7 @@ public final class Texture extends SecondaryNode {
 	private final TextureOp[] textureOps;
 
 	@OriginalMember(owner = "client!qm", name = "<init>", descriptor = "(Lclient!bt;)V")
-	public Texture(@OriginalArg(0) Buffer buffer) {
+	public Texture(@OriginalArg(0) Packet buffer) {
 		@Pc(7) int local7 = buffer.g1();
 		@Pc(9) int local9 = 0;
 		@Pc(11) int local11 = 0;

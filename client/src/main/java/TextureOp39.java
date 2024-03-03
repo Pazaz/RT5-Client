@@ -25,7 +25,7 @@ public class TextureOp39 extends TextureOp {
 
 	@OriginalMember(owner = "client!ek", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public final void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public final void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		if (arg0 == 0) {
 			this.anInt6675 = arg1.g2();
 		}

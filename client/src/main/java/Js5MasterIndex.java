@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Js5MasterIndex {
 
 	@OriginalMember(owner = "client!mq", name = "h", descriptor = "Lclient!bt;")
-	private Buffer buffer;
+	private Packet buffer;
 
 	@OriginalMember(owner = "client!mq", name = "j", descriptor = "[Lclient!bl;")
 	private Js5CachedResourceProvider[] resourceProviders;
@@ -49,7 +49,7 @@ public final class Js5MasterIndex {
 		if (this.request.incomplete) {
 			return false;
 		} else {
-			this.buffer = new Buffer(this.request.getData());
+			this.buffer = new Packet(this.request.getData());
 			this.resourceProviders = new Js5CachedResourceProvider[(this.buffer.data.length - 5) / 8];
 			return true;
 		}

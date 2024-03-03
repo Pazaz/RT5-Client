@@ -31,7 +31,7 @@ public final class StructTypeList {
 		@Pc(38) byte[] local38 = this.aClass197_53.fetchFile(arg0, 26);
 		local16 = new StructType();
 		if (local38 != null) {
-			local16.decode(new Buffer(local38));
+			local16.decode(new Packet(local38));
 		}
 		@Pc(54) LruHashTable local54 = this.aClass98_29;
 		synchronized (this.aClass98_29) {

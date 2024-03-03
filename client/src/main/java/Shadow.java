@@ -61,7 +61,7 @@ public final class Shadow {
 		if (local25 <= 0) {
 			this.aClass8_Sub1_5 = null;
 		} else {
-			@Pc(91) Buffer local91 = new Buffer(local25 * 2);
+			@Pc(91) Packet local91 = new Packet(local25 * 2);
 			@Pc(126) short[] local126;
 			@Pc(131) int local131;
 			@Pc(117) int local117;

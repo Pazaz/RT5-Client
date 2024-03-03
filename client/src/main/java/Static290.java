@@ -36,7 +36,7 @@ public final class Static290 {
 	}
 
 	@OriginalMember(owner = "client!qp", name = "a", descriptor = "(ILclient!bt;)Lclient!gr;")
-	public static QuickChatPhrase method5027(@OriginalArg(1) Buffer arg0) {
+	public static QuickChatPhrase method5027(@OriginalArg(1) Packet arg0) {
 		@Pc(15) QuickChatPhrase local15 = new QuickChatPhrase();
 		local15.id = arg0.g2();
 		local15.type = QuickChatPhraseTypeList.get(local15.id);

@@ -228,7 +228,7 @@ public final class Static317 {
 		@Pc(38) int local38 = 0;
 		while (true) {
 			while (local36 < local34.anInt2702) {
-				@Pc(52) Buffer local52 = new Buffer(arg0.fetchFile(local28[local38++], local10));
+				@Pc(52) Packet local52 = new Packet(arg0.fetchFile(local28[local38++], local10));
 				@Pc(58) int local58 = local52.g4();
 				@Pc(62) int local62 = local52.g2();
 				@Pc(66) int local66 = local52.g1();

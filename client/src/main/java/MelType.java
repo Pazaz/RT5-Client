@@ -135,7 +135,7 @@ public final class MelType {
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(BLclient!bt;)V")
-	public void decode(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
@@ -171,7 +171,7 @@ public final class MelType {
 	}
 
 	@OriginalMember(owner = "client!np", name = "a", descriptor = "(IILclient!bt;)V")
-	private void decode(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
+	private void decode(@OriginalArg(0) int arg0, @OriginalArg(2) Packet arg1) {
 		if (arg0 == 1) {
 			this.sprite = arg1.g2();
 		} else if (arg0 == 2) {
@@ -179,9 +179,9 @@ public final class MelType {
 		} else if (arg0 == 3) {
 			this.text = arg1.gjstr();
 		} else if (arg0 == 4) {
-			this.anInt4431 = arg1.ig3();
+			this.anInt4431 = arg1.g3();
 		} else if (arg0 == 5) {
-			this.anInt4406 = arg1.ig3();
+			this.anInt4406 = arg1.g3();
 		} else if (arg0 == 6) {
 			this.textSize = arg1.g1();
 		} else {
@@ -250,7 +250,7 @@ public final class MelType {
 					}
 					for (local196 = 0; local196 < local57; local196++) {
 						@Pc(215) boolean local215 = arg1.g1() == 1;
-						@Pc(219) int local219 = arg1.ig3();
+						@Pc(219) int local219 = arg1.g3();
 						@Pc(228) Node local228;
 						if (local215) {
 							local228 = new Class2_Sub40(arg1.gjstr());

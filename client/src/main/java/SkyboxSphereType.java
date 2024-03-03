@@ -31,7 +31,7 @@ public final class SkyboxSphereType {
 	public int anInt2687 = 0xffffff;
 
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(Lclient!bt;II)V")
-	private void decode(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
+	private void decode(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.anInt2690 = arg0.g2();
 		} else if (arg1 == 2) {
@@ -45,12 +45,12 @@ public final class SkyboxSphereType {
 		} else if (arg1 == 5) {
 			this.anInt2686 = arg0.g2();
 		} else if (arg1 == 6) {
-			this.anInt2687 = arg0.ig3();
+			this.anInt2687 = arg0.g3();
 		}
 	}
 
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(ILclient!bt;)V")
-	public void decode(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(17) int local17 = arg0.g1();
 			if (local17 == 0) {

@@ -130,7 +130,7 @@ public final class BasType {
 	public int anInt6295 = -1;
 
 	@OriginalMember(owner = "client!ti", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void decode(@OriginalArg(0) Buffer arg0) {
+	public void decode(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(13) int local13 = arg0.g1();
 			if (local13 == 0) {
@@ -141,7 +141,7 @@ public final class BasType {
 	}
 
 	@OriginalMember(owner = "client!ti", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void decodeo(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	private void decodeo(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		if (arg0 == 1) {
 			this.anInt6291 = arg1.g2();
 			this.anInt6270 = arg1.g2();

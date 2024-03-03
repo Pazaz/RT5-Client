@@ -69,7 +69,7 @@ public final class Class28 {
 	}
 
 	@OriginalMember(owner = "client!bp", name = "a", descriptor = "(Lclient!bt;ZI)V")
-	private void decode(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
+	private void decode(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.anInt736 = arg0.g2();
 		} else if (arg1 == 2) {
@@ -93,7 +93,7 @@ public final class Class28 {
 	}
 
 	@OriginalMember(owner = "client!bp", name = "a", descriptor = "(ZLclient!bt;)V")
-	public void decode(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(14) int local14 = arg0.g1();
 			if (local14 == 0) {

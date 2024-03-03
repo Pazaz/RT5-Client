@@ -613,7 +613,7 @@ public final class NpcType {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(Lclient!bt;II)V")
-	private void method2094(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
+	private void method2094(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		@Pc(50) int local50;
 		@Pc(60) int local60;
 		if (arg1 == 1) {
@@ -798,7 +798,7 @@ public final class NpcType {
 				}
 				for (local60 = 0; local60 < local50; local60++) {
 					@Pc(539) boolean local539 = arg0.g1() == 1;
-					@Pc(543) int local543 = arg0.ig3();
+					@Pc(543) int local543 = arg0.g3();
 					@Pc(552) Node local552;
 					if (local539) {
 						local552 = new Class2_Sub40(arg0.gjstr());
@@ -812,7 +812,7 @@ public final class NpcType {
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(BLclient!bt;)V")
-	public void decode(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(15) int local15 = arg0.g1();
 			if (local15 == 0) {

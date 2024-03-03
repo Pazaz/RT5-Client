@@ -31,7 +31,7 @@ public final class InvTypeList {
 		@Pc(38) byte[] local38 = this.aClass197_15.fetchFile(arg0, 5);
 		local16 = new InvType();
 		if (local38 != null) {
-			local16.decode(new Buffer(local38));
+			local16.decode(new Packet(local38));
 		}
 		@Pc(54) LruHashTable local54 = this.aClass98_6;
 		synchronized (this.aClass98_6) {

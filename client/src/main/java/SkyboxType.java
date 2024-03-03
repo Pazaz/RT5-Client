@@ -16,7 +16,7 @@ public final class SkyboxType {
 	public int anInt7078 = -1;
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(Lclient!bt;II)V")
-	private void decode(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
+	private void decode(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 1) {
 			this.anInt7072 = arg0.g2();
 		} else if (arg1 == 2) {
@@ -30,7 +30,7 @@ public final class SkyboxType {
 	}
 
 	@OriginalMember(owner = "client!wa", name = "a", descriptor = "(Lclient!bt;B)V")
-	public void decode(@OriginalArg(0) Buffer arg0) {
+	public void decode(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {

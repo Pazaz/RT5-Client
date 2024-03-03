@@ -62,7 +62,7 @@ public final class VarpTypeList {
 		@Pc(33) byte[] local33 = this.aClass197_76.fetchFile(arg0, 16);
 		local16 = new Class171();
 		if (local33 != null) {
-			local16.method4370(new Buffer(local33));
+			local16.method4370(new Packet(local33));
 		}
 		@Pc(49) LruHashTable local49 = this.aClass98_43;
 		synchronized (this.aClass98_43) {

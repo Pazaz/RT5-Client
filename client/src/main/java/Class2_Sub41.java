@@ -150,7 +150,7 @@ public final class Class2_Sub41 extends Node {
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "([II[IZI)J")
 	private long method6363(@OriginalArg(0) int[] arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {
-		@Pc(7) long[] local7 = Buffer.CRC64_TABLE;
+		@Pc(7) long[] local7 = Packet.CRC64_TABLE;
 		@Pc(9) long local9 = -1L;
 		@Pc(25) long local25 = local9 >>> 8 ^ local7[(int) ((local9 ^ (long) (arg3 >> 8)) & 0xFFL)];
 		local9 = local25 >>> 8 ^ local7[(int) (((long) arg3 ^ local25) & 0xFFL)];

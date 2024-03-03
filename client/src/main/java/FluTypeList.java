@@ -55,7 +55,7 @@ public final class FluTypeList {
 		@Pc(33) byte[] local33 = this.aClass197_93.fetchFile(arg0, 1);
 		local16 = new FluType();
 		if (local33 != null) {
-			local16.decode(new Buffer(local33));
+			local16.decode(new Packet(local33));
 		}
 		@Pc(49) LruHashTable local49 = this.aClass98_64;
 		synchronized (this.aClass98_64) {

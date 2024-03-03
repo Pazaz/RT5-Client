@@ -67,9 +67,9 @@ public final class FloType {
 	}
 
 	@OriginalMember(owner = "client!mg", name = "a", descriptor = "(ILclient!bt;Z)V")
-	private void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer buf) {
+	private void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Packet buf) {
 		if (arg0 == 1) {
-			this.baseColor = method2101(buf.ig3());
+			this.baseColor = method2101(buf.g3());
 		} else if (arg0 == 2) {
 			this.texture = buf.g1();
 		} else if (arg0 == 3) {
@@ -80,7 +80,7 @@ public final class FloType {
 		} else if (arg0 == 5) {
 			this.occludeUnderlay = false;
 		} else if (arg0 == 7) {
-			this.secondaryColor = method2101(buf.ig3());
+			this.secondaryColor = method2101(buf.g3());
 		} else if (arg0 == 8) {
 			this.aClass72_4.anInt2060 = this.id;
 		} else if (arg0 == 9) {
@@ -92,7 +92,7 @@ public final class FloType {
 		} else if (arg0 == 12) {
 			this.blendTexture = true;
 		} else if (arg0 == 13) {
-			this.waterColor = buf.ig3();
+			this.waterColor = buf.g3();
 		} else if (arg0 == 14) {
 			this.waterOpacity = buf.g1();
 		} else if (arg0 == 15) {
@@ -114,7 +114,7 @@ public final class FloType {
 	}
 
 	@OriginalMember(owner = "client!mg", name = "a", descriptor = "(ILclient!bt;)V")
-	public void decode(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {

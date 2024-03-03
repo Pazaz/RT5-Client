@@ -52,8 +52,8 @@ public final class AnimFrame {
 	public AnimFrame(@OriginalArg(0) byte[] arg0, @OriginalArg(1) AnimBase arg1) {
 		this.base = arg1;
 		try {
-			@Pc(21) Buffer local21 = new Buffer(arg0);
-			@Pc(26) Buffer local26 = new Buffer(arg0);
+			@Pc(21) Packet local21 = new Packet(arg0);
+			@Pc(26) Packet local26 = new Packet(arg0);
 			local21.pos = 2;
 			@Pc(33) int local33 = local21.g1();
 			@Pc(35) int local35 = 0;

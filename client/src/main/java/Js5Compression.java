@@ -11,7 +11,7 @@ public class Js5Compression {
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "([BI)[B")
 	public static byte[] uncompress(@OriginalArg(0) byte[] arg0) {
-		@Pc(8) Buffer local8 = new Buffer(arg0);
+		@Pc(8) Packet local8 = new Packet(arg0);
 		@Pc(12) int local12 = local8.g1();
 		@Pc(23) int local23 = local8.g4();
 		if (local23 < 0 || MAX_LENGTH != 0 && MAX_LENGTH < local23) {

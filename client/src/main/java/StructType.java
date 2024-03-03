@@ -10,7 +10,7 @@ public final class StructType extends SecondaryNode {
 	private HashTable aClass4_20;
 
 	@OriginalMember(owner = "client!ck", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void decode(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
+	private void decode(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 != 249) {
 			return;
 		}
@@ -22,7 +22,7 @@ public final class StructType extends SecondaryNode {
 		}
 		for (local30 = 0; local30 < local23; local30++) {
 			@Pc(49) boolean local49 = arg0.g1() == 1;
-			@Pc(53) int local53 = arg0.ig3();
+			@Pc(53) int local53 = arg0.g3();
 			@Pc(62) Node local62;
 			if (local49) {
 				local62 = new Class2_Sub40(arg0.gjstr());
@@ -44,7 +44,7 @@ public final class StructType extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!ck", name = "a", descriptor = "(Lclient!bt;B)V")
-	public void decode(@OriginalArg(0) Buffer arg0) {
+	public void decode(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(16) int local16 = arg0.g1();
 			if (local16 == 0) {

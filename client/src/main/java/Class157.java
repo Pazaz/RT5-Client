@@ -179,7 +179,7 @@ public final class Class157 {
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Lclient!bt;II)V")
-	private void method3988(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
+	private void method3988(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1) {
 		@Pc(16) int local16;
 		@Pc(22) int local22;
 		@Pc(45) int local45;
@@ -237,7 +237,7 @@ public final class Class157 {
 				local45 = arg0.g1();
 				if (local45 > 0) {
 					this.anIntArrayArray33[local22] = new int[local45];
-					this.anIntArrayArray33[local22][0] = arg0.ig3();
+					this.anIntArrayArray33[local22][0] = arg0.g3();
 					for (local60 = 1; local60 < local45; local60++) {
 						this.anIntArrayArray33[local22][local60] = arg0.g2();
 					}
@@ -346,7 +346,7 @@ public final class Class157 {
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method3993(@OriginalArg(0) Buffer arg0) {
+	public void method3993(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {

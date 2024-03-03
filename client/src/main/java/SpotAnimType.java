@@ -52,7 +52,7 @@ public final class SpotAnimType {
 	public boolean aBoolean178 = false;
 
 	@OriginalMember(owner = "client!hf", name = "a", descriptor = "(BLclient!bt;)V")
-	public void decode(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(17) int local17 = arg0.g1();
 			if (local17 == 0) {
@@ -63,7 +63,7 @@ public final class SpotAnimType {
 	}
 
 	@OriginalMember(owner = "client!hf", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void method2431(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
+	private void method2431(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.anInt2452 = arg0.g2();
 		} else if (arg1 == 2) {

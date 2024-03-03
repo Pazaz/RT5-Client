@@ -27,7 +27,7 @@ public final class Class143 {
 	private final float[] aFloatArray17 = new float[16];
 
 	@OriginalMember(owner = "client!lu", name = "b", descriptor = "Lclient!ji;")
-	private final GlBuffer aClass2_Sub4_Sub1_2 = new GlBuffer(786336);
+	private final GlPacket aClass2_Sub4_Sub1_2 = new GlPacket(786336);
 
 	@OriginalMember(owner = "client!lu", name = "i", descriptor = "[[Lclient!at;")
 	private final Class12_Sub1_Sub1[][] aClass12_Sub1_Sub1ArrayArray2 = new Class12_Sub1_Sub1[1600][64];

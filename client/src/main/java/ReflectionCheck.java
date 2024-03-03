@@ -38,7 +38,7 @@ public final class ReflectionCheck extends Node {
 	public byte[][][] methodArguments;
 
 	@OriginalMember(owner = "client!ad", name = "a", descriptor = "(ILclient!qg;I)V")
-	public static void mainLogic(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
+	public static void mainLogic(@OriginalArg(1) PacketBit arg0, @OriginalArg(2) int arg1) {
 		while (true) {
 			@Pc(16) ReflectionCheck local16 = (ReflectionCheck) queue.head();
 			if (local16 == null) {
@@ -154,7 +154,7 @@ public final class ReflectionCheck extends Node {
 	}
 
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(Lclient!ml;IILclient!bt;)V")
-	public static void push(@OriginalArg(0) Signlink arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Buffer arg2) {
+	public static void push(@OriginalArg(0) Signlink arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Packet arg2) {
 		@Pc(9) ReflectionCheck local9 = new ReflectionCheck();
 		local9.size = arg2.g1();
 		local9.id = arg2.g4();

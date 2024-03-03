@@ -70,7 +70,7 @@ public final class MelTypeList {
 		local16.anInt4430 = arg0;
 		local16.aClass125_2 = this;
 		if (local33 != null) {
-			local16.decode(new Buffer(local33));
+			local16.decode(new Packet(local33));
 		}
 		local16.method4187();
 		@Pc(65) LruHashTable local65 = this.aClass98_26;

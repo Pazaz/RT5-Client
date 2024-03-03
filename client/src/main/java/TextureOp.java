@@ -83,7 +83,7 @@ public abstract class TextureOp extends Node {
 	}
 
 	@OriginalMember(owner = "client!jq", name = "a", descriptor = "(ILclient!bt;I)V")
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 	}
 
 	@OriginalMember(owner = "client!jq", name = "a", descriptor = "(BI)[I")

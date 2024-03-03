@@ -349,13 +349,13 @@ public final class Class185 {
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(B[B)V")
 	private void method4652(@OriginalArg(1) byte[] arg0) {
-		@Pc(10) Buffer local10 = new Buffer(arg0);
-		@Pc(15) Buffer local15 = new Buffer(arg0);
-		@Pc(20) Buffer local20 = new Buffer(arg0);
-		@Pc(25) Buffer local25 = new Buffer(arg0);
-		@Pc(30) Buffer local30 = new Buffer(arg0);
-		@Pc(35) Buffer local35 = new Buffer(arg0);
-		@Pc(48) Buffer local48 = new Buffer(arg0);
+		@Pc(10) Packet local10 = new Packet(arg0);
+		@Pc(15) Packet local15 = new Packet(arg0);
+		@Pc(20) Packet local20 = new Packet(arg0);
+		@Pc(25) Packet local25 = new Packet(arg0);
+		@Pc(30) Packet local30 = new Packet(arg0);
+		@Pc(35) Packet local35 = new Packet(arg0);
+		@Pc(48) Packet local48 = new Packet(arg0);
 		local10.pos = arg0.length - 23;
 		this.anInt5075 = local10.g2();
 		this.anInt5071 = local10.g2();
@@ -736,11 +736,11 @@ public final class Class185 {
 	private void method4654(@OriginalArg(1) byte[] arg0) {
 		@Pc(7) boolean local7 = false;
 		@Pc(9) boolean local9 = false;
-		@Pc(14) Buffer local14 = new Buffer(arg0);
-		@Pc(19) Buffer local19 = new Buffer(arg0);
-		@Pc(24) Buffer local24 = new Buffer(arg0);
-		@Pc(29) Buffer local29 = new Buffer(arg0);
-		@Pc(34) Buffer local34 = new Buffer(arg0);
+		@Pc(14) Packet local14 = new Packet(arg0);
+		@Pc(19) Packet local19 = new Packet(arg0);
+		@Pc(24) Packet local24 = new Packet(arg0);
+		@Pc(29) Packet local29 = new Packet(arg0);
+		@Pc(34) Packet local34 = new Packet(arg0);
 		local14.pos = arg0.length - 18;
 		this.anInt5075 = local14.g2();
 		this.anInt5071 = local14.g2();

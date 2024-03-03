@@ -27,7 +27,7 @@ public final class AnimBase extends Node {
 	@OriginalMember(owner = "client!ib", name = "<init>", descriptor = "(I[B)V")
 	public AnimBase(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1) {
 		this.id = arg0;
-		@Pc(11) Buffer local11 = new Buffer(arg1);
+		@Pc(11) Packet local11 = new Packet(arg1);
 		this.transforms = local11.g1();
 		this.parts = new int[this.transforms];
 		this.shadow = new boolean[this.transforms];

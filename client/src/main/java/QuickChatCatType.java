@@ -50,7 +50,7 @@ public final class QuickChatCatType extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!mn", name = "a", descriptor = "(BILclient!bt;)V")
-	private void method3796(@OriginalArg(1) int arg0, @OriginalArg(2) Buffer arg1) {
+	private void method3796(@OriginalArg(1) int arg0, @OriginalArg(2) Packet arg1) {
 		if (arg0 == 1) {
 			this.aString37 = arg1.gjstr();
 			return;
@@ -80,7 +80,7 @@ public final class QuickChatCatType extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!mn", name = "a", descriptor = "(Lclient!bt;B)V")
-	public void method3797(@OriginalArg(0) Buffer arg0) {
+	public void method3797(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {

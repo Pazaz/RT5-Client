@@ -37,7 +37,7 @@ public final class Class2_Sub26_Sub1 extends Class2_Sub26 {
 	private int anInt4386;
 
 	@OriginalMember(owner = "client!nn", name = "<init>", descriptor = "(Lclient!bt;)V")
-	public Class2_Sub26_Sub1(@OriginalArg(0) Buffer arg0) {
+	public Class2_Sub26_Sub1(@OriginalArg(0) Packet arg0) {
 		if (Static202.anIntArray220 == null) {
 			Static241.method4194();
 		}

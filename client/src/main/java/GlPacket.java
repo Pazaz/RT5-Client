@@ -4,10 +4,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!ji")
-public final class GlBuffer extends Buffer {
+public final class GlPacket extends Packet {
 
 	@OriginalMember(owner = "client!ji", name = "<init>", descriptor = "(I)V")
-	public GlBuffer(@OriginalArg(0) int size) {
+	public GlPacket(@OriginalArg(0) int size) {
 		super(size);
 	}
 

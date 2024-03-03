@@ -31,7 +31,7 @@ public final class Static180 {
 	}
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(ILclient!bt;)V")
-	public static void method3368(@OriginalArg(1) Buffer arg0) {
+	public static void method3368(@OriginalArg(1) Packet arg0) {
 		if (arg0.data.length - arg0.pos < 1) {
 			return;
 		}

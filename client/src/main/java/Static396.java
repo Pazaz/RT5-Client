@@ -18,7 +18,7 @@ public final class Static396 {
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "([B)[Lclient!dk;")
 	private static Class48[] method1679(@OriginalArg(0) byte[] arg0) {
-		@Pc(4) Buffer local4 = new Buffer(arg0);
+		@Pc(4) Packet local4 = new Packet(arg0);
 		local4.pos = arg0.length - 2;
 		@Pc(14) int local14 = local4.g2();
 		@Pc(17) Class48[] local17 = new Class48[local14];
@@ -49,7 +49,7 @@ public final class Static396 {
 		local4.pos = arg0.length - local14 * 8 - (local56 - 1) * 3 - 7;
 		@Pc(160) int[] local160 = new int[local56];
 		for (@Pc(162) int local162 = 1; local162 < local56; local162++) {
-			local160[local162] = local4.ig3();
+			local160[local162] = local4.g3();
 			if (local160[local162] == 0) {
 				local160[local162] = 1;
 			}

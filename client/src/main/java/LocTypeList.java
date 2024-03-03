@@ -157,7 +157,7 @@ public final class LocTypeList {
 		local16.anInt1351 = arg0;
 		local16.aClass202_1 = this;
 		if (local37 != null) {
-			local16.decode(new Buffer(local37));
+			local16.decode(new Packet(local37));
 		}
 		local16.method1516();
 		if (local16.aBoolean105) {

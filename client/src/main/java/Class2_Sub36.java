@@ -154,7 +154,7 @@ public final class Class2_Sub36 extends Node {
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "([IZI)V")
 	public void method5569(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1) {
 		@Pc(1) int local1 = 0;
-		@Pc(3) Buffer local3 = Static8.aClass2_Sub4_1;
+		@Pc(3) Packet local3 = Static8.aClass2_Sub4_1;
 		local3.pos = 0;
 		@Pc(33) short[] local33;
 		@Pc(22) int local22;

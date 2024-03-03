@@ -32,7 +32,7 @@ public final class Static222 {
 						if (local59[0] != -1) {
 							throw new IllegalStateException("if1");
 						}
-						local71.method4106(new Buffer(local59));
+						local71.method4106(new Packet(local59));
 					}
 				}
 			}

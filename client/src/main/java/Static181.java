@@ -31,10 +31,10 @@ public final class Static181 {
 		@Pc(52) int local52;
 		@Pc(59) int local59;
 		if (!Static220.aBoolean252) {
-			local13 = Protocol.inboundBuffer.ig2();
+			local13 = Protocol.inboundBuffer.g2_alt1();
 			local17 = Protocol.inboundBuffer.g2();
 			local23 = Protocol.inboundBuffer.g1();
-			local36 = Protocol.inboundBuffer.g1bneg() == 1;
+			local36 = Protocol.inboundBuffer.g1_alt2() == 1;
 			Static217.method3795(local23);
 			local44 = (Protocol.packetSize - Protocol.inboundBuffer.pos) / 16;
 			Static277.anIntArrayArray43 = new int[local44][4];
@@ -69,9 +69,9 @@ public final class Static181 {
 			return;
 		}
 		local13 = Protocol.inboundBuffer.g2();
-		local17 = Protocol.inboundBuffer.ig2();
-		local23 = Protocol.inboundBuffer.g1bneg();
-		local36 = Protocol.inboundBuffer.g1bneg() == 1;
+		local17 = Protocol.inboundBuffer.g2_alt1();
+		local23 = Protocol.inboundBuffer.g1_alt2();
+		local36 = Protocol.inboundBuffer.g1_alt2() == 1;
 		Static217.method3795(local23);
 		Protocol.inboundBuffer.accessBits();
 		for (local44 = 0; local44 < 4; local44++) {

@@ -13,7 +13,7 @@ public final class TextureOp22 extends TextureOp {
 
 	@OriginalMember(owner = "client!dq", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		if (arg0 == 0) {
 			super.monochrome = arg1.g1() == 1;
 		}

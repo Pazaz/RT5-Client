@@ -81,7 +81,7 @@ public final class MsiTypeList {
 		local16 = new MsiType();
 		local16.aClass104_1 = this;
 		if (local33 != null) {
-			local16.decode(new Buffer(local33));
+			local16.decode(new Packet(local33));
 		}
 		@Pc(52) LruHashTable local52 = this.aClass98_19;
 		synchronized (this.aClass98_19) {

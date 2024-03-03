@@ -42,7 +42,7 @@ public class QuickChatPhraseTypeList {
 		}
 		local10 = new QuickChatPhraseType();
 		if (local28 != null) {
-			local10.method5599(new Buffer(local28));
+			local10.method5599(new Packet(local28));
 		}
 		if (arg0 >= 32768) {
 			local10.method5604();

@@ -69,7 +69,7 @@ public final class SkyboxTypeList {
 		@Pc(41) byte[] local41 = this.aClass197_83.fetchFile(arg0, 29);
 		local24 = new SkyboxType();
 		if (local41 != null) {
-			local24.decode(new Buffer(local41));
+			local24.decode(new Packet(local41));
 		}
 		local6 = this.aClass98_52;
 		synchronized (this.aClass98_52) {

@@ -22,7 +22,7 @@ public final class Js5GlTextureProvider implements TextureProviderInterface {
 	public Js5GlTextureProvider(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2) {
 		this.aClass197_36 = arg2;
 		this.aClass197_38 = arg1;
-		@Pc(24) Buffer local24 = new Buffer(arg0.fetchFile(0, 0));
+		@Pc(24) Packet local24 = new Packet(arg0.fetchFile(0, 0));
 		@Pc(28) int local28 = local24.g2();
 		this.aClass229Array1 = new Class229[local28];
 		for (@Pc(34) int local34 = 0; local34 < local28; local34++) {
@@ -140,7 +140,7 @@ public final class Js5GlTextureProvider implements TextureProviderInterface {
 		if (local26 == null) {
 			return null;
 		} else {
-			@Pc(38) Texture local38 = new Texture(new Buffer(local26));
+			@Pc(38) Texture local38 = new Texture(new Packet(local26));
 			this.aClass116_4.method3155(local38, (long) arg0);
 			return local38;
 		}

@@ -1985,7 +1985,7 @@ public final class ScriptRunner {
 									return;
 								}
 								if (opcode == 3628) {
-									// firned_getslotfromname
+									// friend_getslotfromname
 									local3493 = stringStack[--ssp];
 									if (local3493.startsWith("<img=0>") || local3493.startsWith("<img=1>")) {
 										local3493 = local3493.substring(7);
@@ -2874,7 +2874,7 @@ public final class ScriptRunner {
 					local81 = local81.substring(0, 80);
 				}
 				Protocol.writeOpcode(ClientProt.BUG_REPORT);
-				Protocol.outboundBuffer.p1(Buffer.getStringLength(local75) + Buffer.getStringLength(local81) + 2);
+				Protocol.outboundBuffer.p1(Packet.calcPjstrLen(local75) + Packet.calcPjstrLen(local81) + 2);
 				Protocol.outboundBuffer.pjstr(local75);
 				Protocol.outboundBuffer.p1(local89 - 1);
 				Protocol.outboundBuffer.p1(local95);
@@ -3680,7 +3680,7 @@ public final class ScriptRunner {
 							local81 = stringStack[ssp + 1];
 							local89 = intStack[--isp];
 							Protocol.writeOpcode(ClientProt.URL_REQUEST);
-							Protocol.outboundBuffer.p1(Buffer.getStringLength(local75) + Buffer.getStringLength(local81) + 1);
+							Protocol.outboundBuffer.p1(Packet.calcPjstrLen(local75) + Packet.calcPjstrLen(local81) + 1);
 							Protocol.outboundBuffer.pjstr(local75);
 							Protocol.outboundBuffer.pjstr(local81);
 							Protocol.outboundBuffer.p1(local89);
@@ -3945,7 +3945,7 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 5510) {
-							// cam_dec_y
+							// cam_dec_x
 							Camera.decX();
 							return;
 						}
@@ -4054,7 +4054,7 @@ public final class ScriptRunner {
 							return;
 						}
 						if (opcode == 5608) {
-							// login-hoptime
+							// login_hoptime
 							intStack[isp++] = LoginManager.hopTime;
 							return;
 						}

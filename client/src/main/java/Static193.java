@@ -19,10 +19,10 @@ public final class Static193 {
 	@OriginalMember(owner = "client!la", name = "a", descriptor = "(II[BIII)Z")
 	public static boolean method3511(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		@Pc(7) boolean local7 = true;
-		@Pc(17) Buffer local17 = new Buffer(arg2);
+		@Pc(17) Packet local17 = new Packet(arg2);
 		@Pc(19) int local19 = -1;
 		label56: while (true) {
-			@Pc(23) int local23 = local17.gVarSmart();
+			@Pc(23) int local23 = local17.gExtended1or2();
 			if (local23 == 0) {
 				return local7;
 			}

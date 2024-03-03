@@ -57,7 +57,7 @@ public final class QuestTypeList {
 		@Pc(33) byte[] local33 = this.aClass197_91.fetchFile(arg0, 35);
 		local16 = new QuestType();
 		if (local33 != null) {
-			local16.decode(new Buffer(local33));
+			local16.decode(new Packet(local33));
 		}
 		local16.method5834();
 		@Pc(52) LruHashTable local52 = this.aClass98_60;

@@ -1207,7 +1207,7 @@ public final class GlModel extends Model {
 		if (local105 * this.anInt3841 <= Static219.aClass2_Sub4_Sub1_3.data.length) {
 			Static219.aClass2_Sub4_Sub1_3.pos = 0;
 		} else {
-			Static219.aClass2_Sub4_Sub1_3 = new GlBuffer((this.anInt3841 + 100) * local105);
+			Static219.aClass2_Sub4_Sub1_3 = new GlPacket((this.anInt3841 + 100) * local105);
 		}
 		@Pc(192) int local192;
 		@Pc(207) int local207;
@@ -1858,7 +1858,7 @@ public final class GlModel extends Model {
 	@OriginalMember(owner = "client!mp", name = "a", descriptor = "(ZI)V")
 	private void method3856(@OriginalArg(0) boolean arg0) {
 		if (Static219.aClass2_Sub4_Sub1_3.data.length < this.anInt3843 * 6) {
-			Static219.aClass2_Sub4_Sub1_3 = new GlBuffer((this.anInt3843 + 100) * 6);
+			Static219.aClass2_Sub4_Sub1_3 = new GlPacket((this.anInt3843 + 100) * 6);
 		} else {
 			Static219.aClass2_Sub4_Sub1_3.pos = 0;
 		}

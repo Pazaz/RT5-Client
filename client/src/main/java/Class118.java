@@ -28,7 +28,7 @@ public final class Class118 {
 	private int[] anIntArray198;
 
 	@OriginalMember(owner = "client!jp", name = "b", descriptor = "Lclient!bt;")
-	private final Buffer aClass2_Sub4_4 = new Buffer(null);
+	private final Packet aClass2_Sub4_4 = new Packet(null);
 
 	@OriginalMember(owner = "client!jp", name = "<init>", descriptor = "()V")
 	public Class118() {
@@ -115,7 +115,7 @@ public final class Class118 {
 			this.aClass2_Sub4_4.pos += local12;
 			return 1;
 		} else if (local7 == 81) {
-			@Pc(32) int local32 = this.aClass2_Sub4_4.ig3();
+			@Pc(32) int local32 = this.aClass2_Sub4_4.g3();
 			local12 -= 3;
 			@Pc(38) int local38 = this.anIntArray195[arg0];
 			this.aLong108 += (long) local38 * (long) (this.anInt3195 - local32);

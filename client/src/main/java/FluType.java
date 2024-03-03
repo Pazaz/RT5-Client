@@ -92,7 +92,7 @@ public final class FluType {
 	}
 
 	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void decode(@OriginalArg(0) Buffer arg0) {
+	public void decode(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
@@ -103,9 +103,9 @@ public final class FluType {
 	}
 
 	@OriginalMember(owner = "client!tq", name = "a", descriptor = "(Lclient!bt;IZ)V")
-	private void decode(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
+	private void decode(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 1) {
-			this.anInt6374 = arg0.ig3();
+			this.anInt6374 = arg0.g3();
 			this.method5771(this.anInt6374);
 		} else if (arg1 == 2) {
 			this.anInt6384 = arg0.g2();

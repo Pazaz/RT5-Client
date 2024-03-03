@@ -62,7 +62,7 @@ public final class IdkTypeList {
 		local16 = new IdkType();
 		local16.aClass55_2 = this;
 		if (local33 != null) {
-			local16.method2271(new Buffer(local33));
+			local16.method2271(new Packet(local33));
 		}
 		@Pc(57) LruHashTable local57 = this.aClass98_7;
 		synchronized (this.aClass98_7) {

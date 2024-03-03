@@ -7,7 +7,7 @@ public final class Static185 {
 	@OriginalMember(owner = "client!kn", name = "a", descriptor = "(IIII)V")
 	public static void method3398(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
 		Protocol.outboundBuffer.p4(arg2);
-		Protocol.outboundBuffer.p2add(arg1);
+		Protocol.outboundBuffer.p2_alt2(arg1);
 		Protocol.outboundBuffer.p2(arg0);
 	}
 

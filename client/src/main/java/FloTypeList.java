@@ -52,7 +52,7 @@ public final class FloTypeList {
 		flo.aClass72_4 = this;
 		flo.id = id;
 		if (data != null) {
-			flo.decode(new Buffer(data));
+			flo.decode(new Packet(data));
 		}
 		flo.method3716();
 		synchronized (this.types) {

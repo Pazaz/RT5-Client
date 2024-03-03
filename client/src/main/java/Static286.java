@@ -383,7 +383,7 @@ public final class Static286 {
 	}
 
 	@OriginalMember(owner = "client!qk", name = "a", descriptor = "(Lclient!bt;I)Lclient!jq;")
-	public static TextureOp method4928(@OriginalArg(0) Buffer arg0) {
+	public static TextureOp method4928(@OriginalArg(0) Packet arg0) {
 		arg0.g1();
 		@Pc(13) int local13 = arg0.g1();
 		@Pc(17) TextureOp local17 = Texture.create(local13);

@@ -49,7 +49,7 @@ public final class ParamTypeList {
 		@Pc(38) byte[] local38 = this.aClass197_2.fetchFile(arg0, 11);
 		local21 = new ParamType();
 		if (local38 != null) {
-			local21.decode(new Buffer(local38));
+			local21.decode(new Packet(local38));
 		}
 		@Pc(54) LruHashTable local54 = this.aClass98_2;
 		synchronized (this.aClass98_2) {

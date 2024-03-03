@@ -47,7 +47,7 @@ public final class SkyboxSphereTypeList {
 		@Pc(38) byte[] local38 = this.aClass197_62.fetchFile(arg0, 30);
 		local16 = new SkyboxSphereType();
 		if (local38 != null) {
-			local16.decode(new Buffer(local38));
+			local16.decode(new Packet(local38));
 		}
 		@Pc(56) LruHashTable local56 = this.aClass98_35;
 		synchronized (this.aClass98_35) {

@@ -13,7 +13,7 @@ public final class Static214 {
 	@OriginalMember(owner = "client!mk", name = "a", descriptor = "([BI)Lclient!js;")
 	public static Class2_Sub2_Sub11 method3745(@OriginalArg(0) byte[] arg0) {
 		@Pc(16) Class2_Sub2_Sub11 local16 = new Class2_Sub2_Sub11();
-		@Pc(21) Buffer local21 = new Buffer(arg0);
+		@Pc(21) Packet local21 = new Packet(arg0);
 		local21.pos = local21.data.length - 2;
 		@Pc(32) int local32 = local21.g2();
 		@Pc(43) int local43 = local21.data.length - local32 - 2 - 12;
@@ -40,7 +40,7 @@ public final class Static214 {
 			}
 		}
 		local21.pos = 0;
-		local16.aString27 = local21.fastgstr();
+		local16.aString27 = local21.fastgjstr();
 		local16.aStringArray27 = new String[local50];
 		local16.anIntArray200 = new int[local50];
 		local16.anIntArray199 = new int[local50];

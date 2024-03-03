@@ -51,7 +51,7 @@ public final class CursorTypeList {
 		local16 = new CursorType();
 		local16.aClass150_4 = this;
 		if (local33 != null) {
-			local16.decode(new Buffer(local33));
+			local16.decode(new Packet(local33));
 		}
 		@Pc(60) LruHashTable local60 = this.aClass98_32;
 		synchronized (this.aClass98_32) {

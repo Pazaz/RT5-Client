@@ -19,7 +19,7 @@ public final class MsiType {
 	public boolean aBoolean243 = false;
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(ILclient!bt;)V")
-	public void decode(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(13) int local13 = arg0.g1();
 			if (local13 == 0) {
@@ -35,11 +35,11 @@ public final class MsiType {
 	}
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	private void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		if (arg0 == 1) {
 			this.anInt3751 = arg1.g2();
 		} else if (arg0 == 2) {
-			this.anInt3752 = arg1.ig3();
+			this.anInt3752 = arg1.g3();
 		} else if (arg0 == 3) {
 			this.aBoolean243 = true;
 		} else if (arg0 == 4) {

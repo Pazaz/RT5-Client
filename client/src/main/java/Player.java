@@ -203,7 +203,7 @@ public final class Player extends PathingEntity {
 	}
 
 	@OriginalMember(owner = "client!nh", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void decodeAppearance(@OriginalArg(0) Buffer buffer) {
+	public void decodeAppearance(@OriginalArg(0) Packet buffer) {
 		buffer.pos = 0;
 		@Pc(12) int flags = buffer.g1();
 		this.gender = (byte) (flags & 0x1);

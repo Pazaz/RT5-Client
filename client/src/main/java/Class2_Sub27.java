@@ -279,7 +279,7 @@ public final class Class2_Sub27 extends Node {
 
 	@OriginalMember(owner = "client!pf", name = "b", descriptor = "([B)V")
 	private void method4516(@OriginalArg(0) byte[] arg0) {
-		@Pc(4) Buffer local4 = new Buffer(arg0);
+		@Pc(4) Packet local4 = new Packet(arg0);
 		this.anInt4927 = local4.g4();
 		this.anInt4920 = local4.g4();
 		this.anInt4921 = local4.g4();

@@ -19,7 +19,7 @@ public final class SynthFilter {
 	private final int[][][] anIntArrayArrayArray11 = new int[2][2][4];
 
 	@OriginalMember(owner = "client!pc", name = "a", descriptor = "(Lclient!bt;Lclient!uf;)V")
-	public void method4468(@OriginalArg(0) Buffer arg0, @OriginalArg(1) SynthEnvelope arg1) {
+	public void method4468(@OriginalArg(0) Packet arg0, @OriginalArg(1) SynthEnvelope arg1) {
 		@Pc(3) int local3 = arg0.g1();
 		this.anIntArray332[0] = local3 >> 4;
 		this.anIntArray332[1] = local3 & 0xF;

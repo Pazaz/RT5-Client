@@ -56,7 +56,7 @@ public final class SeqTypeList {
 		local16.anInt4028 = arg0;
 		local16.aClass85_2 = this;
 		if (local37 != null) {
-			local16.method3993(new Buffer(local37));
+			local16.method3993(new Packet(local37));
 		}
 		local16.method3991();
 		@Pc(64) LruHashTable local64 = this.aClass98_14;

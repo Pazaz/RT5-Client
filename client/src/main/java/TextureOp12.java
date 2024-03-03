@@ -22,7 +22,7 @@ public final class TextureOp12 extends TextureOp {
 
 	@OriginalMember(owner = "client!jl", name = "a", descriptor = "(ILclient!bt;I)V")
 	@Override
-	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
+	public void decode(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		if (arg0 == 0) {
 			this.anInt3132 = arg1.g1();
 		} else if (arg0 == 1) {

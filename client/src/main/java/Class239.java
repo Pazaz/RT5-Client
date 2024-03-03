@@ -27,7 +27,7 @@ public final class Class239 {
 
 	@OriginalMember(owner = "client!vi", name = "<init>", descriptor = "([B)V")
 	public Class239(@OriginalArg(0) byte[] arg0) {
-		@Pc(8) Buffer local8 = new Buffer(arg0);
+		@Pc(8) Packet local8 = new Packet(arg0);
 		@Pc(12) int local12 = local8.g1();
 		if (local12 != 0) {
 			throw new RuntimeException("");

@@ -37,7 +37,7 @@ public final class MaterialRenderer2 extends MaterialRenderer {
 			}
 			@Pc(36) int[][] local36 = Static225.method3956(0.4F);
 			@Pc(47) int[][] local47 = Static225.method3956(0.4F);
-			@Pc(52) GlBuffer local52 = new GlBuffer(262144);
+			@Pc(52) GlPacket local52 = new GlPacket(262144);
 			for (@Pc(54) int local54 = 0; local54 < 256; local54++) {
 				@Pc(61) int[] local61 = local36[local54];
 				@Pc(65) int[] local65 = local47[local54];

@@ -31,7 +31,7 @@ public class QuickChatCatTypeList {
 		}
 		local10 = new QuickChatCatType();
 		if (local25 != null) {
-			local10.method3797(new Buffer(local25));
+			local10.method3797(new Packet(local25));
 		}
 		if (arg0 >= 32768) {
 			local10.method3793();

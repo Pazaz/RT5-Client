@@ -59,7 +59,7 @@ public final class Js5Index {
 
 	@OriginalMember(owner = "client!ra", name = "a", descriptor = "([BI)V")
 	private void method5105(@OriginalArg(0) byte[] arg0) {
-		@Pc(12) Buffer local12 = new Buffer(Js5Compression.uncompress(arg0));
+		@Pc(12) Packet local12 = new Packet(Js5Compression.uncompress(arg0));
 		@Pc(16) int local16 = local12.g1();
 		if (local16 != 5 && local16 != 6) {
 			throw new RuntimeException();

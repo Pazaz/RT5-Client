@@ -213,7 +213,7 @@ public final class MapList {
 	}
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;Lclient!bt;IIII[I[I)V")
-	private static void method5510(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6, @OriginalArg(7) int[] arg7) {
+	private static void method5510(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6, @OriginalArg(7) int[] arg7) {
 		@Pc(3) int local3 = arg1.g1();
 		if ((local3 & 0x1) == 0) {
 			@Pc(15) boolean local15 = (local3 & 0x2) == 0;
@@ -510,7 +510,7 @@ public final class MapList {
 
 	@OriginalMember(owner = "client!tt", name = "a", descriptor = "(Lclient!wm;II)V")
 	public static void method5521(@OriginalArg(0) RasteriserBase arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(9) Buffer local9 = new Buffer(aClass197_85.fetchFile(WorldMap.currentMap.aString67, "area"));
+		@Pc(9) Packet local9 = new Packet(aClass197_85.fetchFile(WorldMap.currentMap.aString67, "area"));
 		@Pc(13) int local13 = local9.g1();
 		@Pc(16) int[] local16 = new int[local13];
 		for (@Pc(18) int local18 = 0; local18 < local13; local18++) {

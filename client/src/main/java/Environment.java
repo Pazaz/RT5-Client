@@ -60,7 +60,7 @@ public final class Environment {
 	}
 
 	@OriginalMember(owner = "client!bh", name = "<init>", descriptor = "(Lclient!bt;)V")
-	public Environment(@OriginalArg(0) Buffer arg0) {
+	public Environment(@OriginalArg(0) Packet arg0) {
 		@Pc(16) int local16 = arg0.g1();
 		if (client.preferences.highDetailLighting && Static65.aClass19_3.method2886() > 0) {
 			if ((local16 & 0x1) == 0) {
@@ -128,7 +128,7 @@ public final class Environment {
 	}
 
 	@OriginalMember(owner = "client!bh", name = "a", descriptor = "(ILclient!bt;)V")
-	public void method851(@OriginalArg(1) Buffer arg0) {
+	public void method851(@OriginalArg(1) Packet arg0) {
 		this.aFloat27 = (float) (arg0.g1() * 8) / 255.0F;
 		this.aFloat26 = (float) (arg0.g1() * 8) / 255.0F;
 		this.aFloat22 = (float) (arg0.g1() * 8) / 255.0F;

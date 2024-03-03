@@ -38,7 +38,7 @@ public final class Static219 {
 	public static int anInt3847;
 
 	@OriginalMember(owner = "client!mp", name = "gb", descriptor = "Lclient!ji;")
-	public static GlBuffer aClass2_Sub4_Sub1_3 = new GlBuffer(8192);
+	public static GlPacket aClass2_Sub4_Sub1_3 = new GlPacket(8192);
 
 	@OriginalMember(owner = "client!mp", name = "ub", descriptor = "[I")
 	public static final int[] anIntArray240 = new int[8];

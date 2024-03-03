@@ -124,7 +124,7 @@ public class CreateManager {
 		for (@Pc(10) int i = 0; i < 3; i++) {
 			key[i] = (int) (Math.random() * 9.9999999E7D);
 		}
-		@Pc(28) Buffer rsaBuffer = new Buffer(128);
+		@Pc(28) Packet rsaBuffer = new Packet(128);
 		rsaBuffer.p1(10);
 		rsaBuffer.p2((shareDetailsWithBusinessPartners ? 4 : 0) | (otherNewsletters ? 2 : 0) | (runeScapeNewsletters ? 1 : 0));
 		rsaBuffer.p8(username);
@@ -139,9 +139,9 @@ public class CreateManager {
 		rsaBuffer.p2(country);
 		rsaBuffer.p4(key[3]);
 		rsaBuffer.rsaenc(Protocol.EXPONENT, Protocol.MODULUS);
-		@Pc(118) Buffer xteaBuffer = new Buffer(350);
+		@Pc(118) Packet xteaBuffer = new Packet(350);
 		xteaBuffer.pjstr(email);
-		@Pc(131) int padding = 8 - Buffer.getStringLength(email) % 8;
+		@Pc(131) int padding = 8 - Packet.calcPjstrLen(email) % 8;
 		for (@Pc(133) int i = 0; i < padding; i++) {
 			xteaBuffer.p1((int) (Math.random() * 255.0D));
 		}

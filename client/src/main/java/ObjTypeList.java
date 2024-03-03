@@ -107,7 +107,7 @@ public final class ObjTypeList {
 		local18.ops = new String[] { null, null, Static220.aClass79_83.getLocalized(this.anInt2781), null, null };
 		local18.iops = new String[] { null, null, null, null, Static239.aClass79_95.getLocalized(this.anInt2781) };
 		if (local44 != null) {
-			local18.decode(new Buffer(local44));
+			local18.decode(new Packet(local44));
 		}
 		local18.method4777();
 		if (local18.certtemplate != -1) {

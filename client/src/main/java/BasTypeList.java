@@ -55,7 +55,7 @@ public final class BasTypeList {
 		@Pc(33) byte[] local33 = this.aClass197_1.fetchFile(arg0, 32);
 		local16 = new BasType();
 		if (local33 != null) {
-			local16.decode(new Buffer(local33));
+			local16.decode(new Packet(local33));
 		}
 		@Pc(49) LruHashTable local49 = this.aClass98_1;
 		synchronized (this.aClass98_1) {

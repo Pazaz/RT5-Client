@@ -261,7 +261,7 @@ public final class SynthInstrument {
 	}
 
 	@OriginalMember(owner = "client!ph", name = "a", descriptor = "(Lclient!bt;)V")
-	public void method4552(@OriginalArg(0) Buffer arg0) {
+	public void method4552(@OriginalArg(0) Packet arg0) {
 		this.aClass232_9 = new SynthEnvelope();
 		this.aClass232_9.method5841(arg0);
 		this.aClass232_8 = new SynthEnvelope();

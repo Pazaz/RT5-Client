@@ -296,7 +296,7 @@ public final class client extends GameShell {
 	}
 
 	@OriginalMember(owner = "client!bk", name = "a", descriptor = "(Lclient!bt;B)V")
-	public static void writeUid(@OriginalArg(0) Buffer arg0) {
+	public static void writeUid(@OriginalArg(0) Packet arg0) {
 		@Pc(8) byte[] local8 = new byte[24];
 		if (Static317.aClass205_6 != null) {
 			@Pc(20) int local20;
@@ -959,7 +959,7 @@ public final class client extends GameShell {
 			}
 			if (js5ConnectState == 2) {
 				js5Socket = new BufferedSocket((Socket) js5SocketRequest.result, GameShell.signlink);
-				@Pc(186) Buffer local186 = new Buffer(5);
+				@Pc(186) Packet local186 = new Packet(5);
 				local186.p1(LoginProt.JS5.opcode);
 				local186.p4(578);
 				js5Socket.write(5, local186.data);
@@ -1110,7 +1110,7 @@ public final class client extends GameShell {
 
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "(B[B)V")
 	private void method1406(@OriginalArg(1) byte[] arg0) {
-		@Pc(14) Buffer local14 = new Buffer(arg0);
+		@Pc(14) Packet local14 = new Packet(arg0);
 		while (true) {
 			while (true) {
 				while (true) {

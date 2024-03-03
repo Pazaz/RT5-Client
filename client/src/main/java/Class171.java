@@ -10,7 +10,7 @@ public final class Class171 {
 	public int anInt4700 = 0;
 
 	@OriginalMember(owner = "client!ok", name = "a", descriptor = "(ILclient!bt;)V")
-	public void method4370(@OriginalArg(1) Buffer arg0) {
+	public void method4370(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(12) int local12 = arg0.g1();
 			if (local12 == 0) {
@@ -21,7 +21,7 @@ public final class Class171 {
 	}
 
 	@OriginalMember(owner = "client!ok", name = "a", descriptor = "(IILclient!bt;)V")
-	private void method4374(@OriginalArg(1) int arg0, @OriginalArg(2) Buffer arg1) {
+	private void method4374(@OriginalArg(1) int arg0, @OriginalArg(2) Packet arg1) {
 		if (arg0 == 5) {
 			this.anInt4700 = arg1.g2();
 		}

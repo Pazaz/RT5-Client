@@ -65,7 +65,7 @@ public final class SynthEnvelope {
 	}
 
 	@OriginalMember(owner = "client!uf", name = "a", descriptor = "(Lclient!bt;)V")
-	public void method5841(@OriginalArg(0) Buffer arg0) {
+	public void method5841(@OriginalArg(0) Packet arg0) {
 		this.anInt6459 = arg0.g1();
 		this.anInt6462 = arg0.g4();
 		this.anInt6460 = arg0.g4();
@@ -82,7 +82,7 @@ public final class SynthEnvelope {
 	}
 
 	@OriginalMember(owner = "client!uf", name = "b", descriptor = "(Lclient!bt;)V")
-	public void method5843(@OriginalArg(0) Buffer arg0) {
+	public void method5843(@OriginalArg(0) Packet arg0) {
 		this.anInt6461 = arg0.g1();
 		this.anIntArray445 = new int[this.anInt6461];
 		this.anIntArray446 = new int[this.anInt6461];

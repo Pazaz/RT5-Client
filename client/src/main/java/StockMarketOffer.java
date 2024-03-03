@@ -29,7 +29,7 @@ public final class StockMarketOffer {
 	}
 
 	@OriginalMember(owner = "client!q", name = "<init>", descriptor = "(Lclient!bt;)V")
-	public StockMarketOffer(@OriginalArg(0) Buffer arg0) {
+	public StockMarketOffer(@OriginalArg(0) Packet arg0) {
 		this.statusAndType = arg0.g1b();
 		this.item = arg0.g2();
 		this.price = arg0.g4();

@@ -32,7 +32,7 @@ public final class Js5NetQueue {
 	private final SecondaryLinkedList inFlightPrefetchRequests = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!pp", name = "B", descriptor = "Lclient!bt;")
-	private final Buffer outBuffer = new Buffer(4);
+	private final Packet outBuffer = new Packet(4);
 
 	@OriginalMember(owner = "client!pp", name = "E", descriptor = "B")
 	private byte encryptionKey = 0;
@@ -44,7 +44,7 @@ public final class Js5NetQueue {
 	public volatile int response = 0;
 
 	@OriginalMember(owner = "client!pp", name = "C", descriptor = "Lclient!bt;")
-	private final Buffer inBuffer = new Buffer(8);
+	private final Packet inBuffer = new Packet(8);
 
 	@OriginalMember(owner = "client!pp", name = "a", descriptor = "(B)V")
 	private void writeInitiating() {
@@ -244,7 +244,7 @@ public final class Js5NetQueue {
 							}
 							this.current = local343;
 							@Pc(399) int local399 = local315 == 0 ? 5 : 9;
-							this.current.buffer = new Buffer(local311 + local399 + this.current.trailerLen);
+							this.current.buffer = new Packet(local311 + local399 + this.current.trailerLen);
 							this.current.buffer.p1(local315);
 							this.current.buffer.p4(local311);
 							this.current.blockPosition = 8;

@@ -42,7 +42,7 @@ public final class IdkType {
 	}
 
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(IILclient!bt;)V")
-	private void method2269(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
+	private void method2269(@OriginalArg(0) int arg0, @OriginalArg(2) Packet arg1) {
 		if (arg0 == 1) {
 			arg1.g1();
 			return;
@@ -96,7 +96,7 @@ public final class IdkType {
 	}
 
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void method2271(@OriginalArg(0) Buffer arg0) {
+	public void method2271(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {

@@ -272,7 +272,7 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(I[Lclient!dg;ILclient!bt;III)V")
-	public final void method1087(@OriginalArg(0) int arg0, @OriginalArg(1) CollisionMap[] arg1, @OriginalArg(3) Buffer arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
+	public final void method1087(@OriginalArg(0) int arg0, @OriginalArg(1) CollisionMap[] arg1, @OriginalArg(3) Packet arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		@Pc(10) int local10;
 		@Pc(18) int local18;
 		@Pc(22) int local22;
@@ -303,7 +303,7 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(IIIZIIZLclient!bt;III)V")
-	private void method1089(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(7) Buffer arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
+	private void method1089(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(7) Packet arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
 		if (arg9 == 1) {
 			arg2 = 1;
 		} else if (arg9 == 2) {
@@ -380,7 +380,7 @@ public class Class29 {
 	}
 
 	@OriginalMember(owner = "client!mo", name = "a", descriptor = "(IILclient!bt;[Lclient!dg;IIIIII)V")
-	public final void method1091(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Buffer arg2, @OriginalArg(3) CollisionMap[] arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8) {
+	public final void method1091(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Packet arg2, @OriginalArg(3) CollisionMap[] arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8) {
 		@Pc(11) int local11 = (arg4 & 0x7) * 8;
 		@Pc(20) int local20;
 		@Pc(50) int local50;

@@ -415,7 +415,7 @@ public final class LocType {
 	}
 
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void decode(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
+	private void decode(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		@Pc(12) int local12;
 		@Pc(31) int local31;
 		if (arg1 == 1) {
@@ -637,7 +637,7 @@ public final class LocType {
 				}
 				for (local31 = 0; local31 < local12; local31++) {
 					@Pc(760) boolean local760 = arg0.g1() == 1;
-					@Pc(764) int local764 = arg0.ig3();
+					@Pc(764) int local764 = arg0.g3();
 					@Pc(775) Node local775;
 					if (local760) {
 						local775 = new Class2_Sub40(arg0.gjstr());
@@ -831,7 +831,7 @@ public final class LocType {
 	}
 
 	@OriginalMember(owner = "client!ct", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void decode(@OriginalArg(0) Buffer arg0) {
+	public void decode(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(9) int local9 = arg0.g1();
 			if (local9 == 0) {

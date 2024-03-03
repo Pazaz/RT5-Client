@@ -154,7 +154,7 @@ public final class Js5 {
 				local128 = ByteArray.unwrap(false, this.packed[arg1]);
 			} else {
 				local128 = ByteArray.unwrap(true, this.packed[arg1]);
-				@Pc(133) Buffer local133 = new Buffer(local128);
+				@Pc(133) Packet local133 = new Packet(local128);
 				local133.tinydec(arg2, local133.data.length);
 			}
 			@Pc(157) byte[] local157;
@@ -169,7 +169,7 @@ public final class Js5 {
 			@Pc(232) int local232;
 			if (local25 > 1) {
 				@Pc(239) int local239;
-				@Pc(252) Buffer local252;
+				@Pc(252) Packet local252;
 				@Pc(260) int local260;
 				@Pc(264) int local264;
 				@Pc(266) int local266;
@@ -182,7 +182,7 @@ public final class Js5 {
 					local232--;
 					local239 = local157[local232] & 0xFF;
 					local232 -= local239 * local25 * 4;
-					local252 = new Buffer(local157);
+					local252 = new Packet(local157);
 					@Pc(437) int local437 = 0;
 					local252.pos = local232;
 					local260 = 0;
@@ -231,7 +231,7 @@ public final class Js5 {
 					@Pc(235) int local235 = local232 - 1;
 					local239 = local157[local235] & 0xFF;
 					@Pc(247) int local247 = local235 - local239 * local25 * 4;
-					local252 = new Buffer(local157);
+					local252 = new Packet(local157);
 					@Pc(255) int[] local255 = new int[local25];
 					local252.pos = local247;
 					for (local260 = 0; local260 < local239; local260++) {

@@ -13,7 +13,7 @@ public final class VarcType {
 	public int anInt1258 = 1;
 
 	@OriginalMember(owner = "client!cr", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void decode(@OriginalArg(0) Buffer arg0) {
+	public void decode(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(17) int local17 = arg0.g1();
 			if (local17 == 0) {
@@ -24,7 +24,7 @@ public final class VarcType {
 	}
 
 	@OriginalMember(owner = "client!cr", name = "a", descriptor = "(Lclient!bt;II)V")
-	private void decode(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
+	private void decode(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 1) {
 			this.aChar2 = Static78.forCharKey(arg0.g1b());
 		} else if (arg1 == 2) {

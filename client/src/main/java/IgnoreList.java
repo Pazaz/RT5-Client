@@ -38,7 +38,7 @@ public class IgnoreList {
 				}
 				Static53.anInt3971 = InterfaceList.transmitTimer;
 				Protocol.writeOpcode(ClientProt.PACKET_24);
-				Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
+				Protocol.outboundBuffer.p1(Packet.calcPjstrLen(arg0));
 				Protocol.outboundBuffer.pjstr(arg0);
 				break;
 			}
@@ -91,7 +91,7 @@ public class IgnoreList {
 			Chat.add(Static47.aClass79_27.getLocalized(client.language));
 		} else {
 			Protocol.writeOpcode(ClientProt.PACKET_16);
-			Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0) + 1);
+			Protocol.outboundBuffer.p1(Packet.calcPjstrLen(arg0) + 1);
 			Protocol.outboundBuffer.pjstr(arg0);
 			Protocol.outboundBuffer.p1(arg1 ? 1 : 0);
 		}

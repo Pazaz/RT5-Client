@@ -63,7 +63,7 @@ public class FriendsList {
 				}
 				Static53.anInt3971 = InterfaceList.transmitTimer;
 				Protocol.writeOpcode(ClientProt.PACKET_53);
-				Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
+				Protocol.outboundBuffer.p1(Packet.calcPjstrLen(arg0));
 				Protocol.outboundBuffer.pjstr(arg0);
 				return;
 			}
@@ -116,7 +116,7 @@ public class FriendsList {
 			Chat.add(Static122.aClass79_54.getLocalized(client.language));
 		} else {
 			Protocol.writeOpcode(ClientProt.PACKET_18);
-			Protocol.outboundBuffer.p1(Buffer.getStringLength(arg0));
+			Protocol.outboundBuffer.p1(Packet.calcPjstrLen(arg0));
 			Protocol.outboundBuffer.pjstr(arg0);
 		}
 	}
@@ -124,8 +124,8 @@ public class FriendsList {
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "(IILjava/lang/String;)V")
 	public static void setRank(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
 		Protocol.writeOpcode(ClientProt.PACKET_49);
-		Protocol.outboundBuffer.p1(Buffer.getStringLength(arg1) + 1);
-		Protocol.outboundBuffer.p1add(arg0);
+		Protocol.outboundBuffer.p1(Packet.calcPjstrLen(arg1) + 1);
+		Protocol.outboundBuffer.p1_alt1(arg0);
 		Protocol.outboundBuffer.pjstr(arg1);
 	}
 

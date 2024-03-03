@@ -32,7 +32,7 @@ public final class Static318 {
 						throw new IOException("EOF");
 					}
 				}
-				Static180.method3368(new Buffer(local40));
+				Static180.method3368(new Packet(local40));
 			}
 		} catch (@Pc(82) Exception local82) {
 		}

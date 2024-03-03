@@ -19,7 +19,7 @@ public final class ParamType {
 	public boolean aBoolean476 = true;
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void decode(@OriginalArg(0) Buffer arg0) {
+	public void decode(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
@@ -35,7 +35,7 @@ public final class ParamType {
 	}
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(IILclient!bt;)V")
-	private void decode(@OriginalArg(0) int arg0, @OriginalArg(2) Buffer arg1) {
+	private void decode(@OriginalArg(0) int arg0, @OriginalArg(2) Packet arg1) {
 		if (arg0 == 1) {
 			this.aChar5 = Static78.forCharKey(arg1.g1b());
 		} else if (arg0 == 2) {

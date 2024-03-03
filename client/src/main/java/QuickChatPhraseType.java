@@ -22,7 +22,7 @@ public final class QuickChatPhraseType extends SecondaryNode {
 	public boolean aBoolean413 = true;
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(ILclient!bt;I)V")
-	private void method5594(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
+	private void method5594(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.aStringArray56 = Static200.method3643('<', arg0.gjstr());
 			return;
@@ -58,7 +58,7 @@ public final class QuickChatPhraseType extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(Lclient!bt;I[I)V")
-	public void encodeMessage(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int[] arg1) {
+	public void encodeMessage(@OriginalArg(0) Packet arg0, @OriginalArg(2) int[] arg1) {
 		if (this.anIntArray417 == null) {
 			return;
 		}
@@ -74,7 +74,7 @@ public final class QuickChatPhraseType extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(BLclient!bt;)V")
-	public void method5599(@OriginalArg(1) Buffer arg0) {
+	public void method5599(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(5) int local5 = arg0.g1();
 			if (local5 == 0) {
@@ -110,7 +110,7 @@ public final class QuickChatPhraseType extends SecondaryNode {
 	}
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(Lclient!bt;B)Ljava/lang/String;")
-	public String method5602(@OriginalArg(0) Buffer arg0) {
+	public String method5602(@OriginalArg(0) Packet arg0) {
 		@Pc(10) StringBuffer local10 = new StringBuffer(80);
 		if (this.anIntArray417 != null) {
 			for (@Pc(15) int local15 = 0; local15 < this.anIntArray417.length; local15++) {

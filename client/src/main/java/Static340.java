@@ -67,7 +67,7 @@ public final class Static340 {
 			}
 			if (local11.status == 1) {
 				local7 = (FileOnDisk) local11.result;
-				@Pc(41) Buffer local41 = new Buffer(Static112.anInt2294 * 6 + 3);
+				@Pc(41) Packet local41 = new Packet(Static112.anInt2294 * 6 + 3);
 				local41.p1(1);
 				local41.p2(Static112.anInt2294);
 				for (@Pc(51) int local51 = 0; local51 < VarcDomain.varcs.length; local51++) {

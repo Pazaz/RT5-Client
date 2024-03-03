@@ -35,7 +35,7 @@ public final class EnumType {
 	}
 
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(Lclient!bt;BI)V")
-	private void decode(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
+	private void decode(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.keyType = Static78.forCharKey(arg0.g1b());
 		} else if (arg1 == 2) {
@@ -107,7 +107,7 @@ public final class EnumType {
 	}
 
 	@OriginalMember(owner = "client!ds", name = "a", descriptor = "(ILclient!bt;)V")
-	public void decode(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(11) int local11 = arg0.g1();
 			if (local11 == 0) {

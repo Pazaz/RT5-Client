@@ -11,7 +11,7 @@ public final class Js5NetRequest extends Js5Request {
 	public byte trailerLen;
 
 	@OriginalMember(owner = "client!jj", name = "T", descriptor = "Lclient!bt;")
-	public Buffer buffer;
+	public Packet buffer;
 
 	@OriginalMember(owner = "client!jj", name = "e", descriptor = "(B)[B")
 	@Override

@@ -34,7 +34,7 @@ public final class VarcTypeList {
 		@Pc(33) byte[] local33 = this.aClass197_10.fetchFile(arg0, 19);
 		local16 = new VarcType();
 		if (local33 != null) {
-			local16.decode(new Buffer(local33));
+			local16.decode(new Packet(local33));
 		}
 		@Pc(54) LruHashTable local54 = this.aClass98_4;
 		synchronized (this.aClass98_4) {

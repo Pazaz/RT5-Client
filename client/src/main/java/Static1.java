@@ -23,7 +23,7 @@ public final class Static1 {
 					Static266.anIntArray334[Static48.anInt1254] = Static291.mapSquares[local10];
 					local23 = Static48.anInt1254++;
 				}
-				@Pc(65) Buffer local65 = new Buffer(Static210.aByteArrayArray7[local10]);
+				@Pc(65) Packet local65 = new Packet(Static210.aByteArrayArray7[local10]);
 				@Pc(67) int local67 = 0;
 				while (Static210.aByteArrayArray7[local10].length > local65.pos && local67 < 511 && NpcList.size < 1023) {
 					@Pc(88) int local88 = local23 | local67++ << 6;

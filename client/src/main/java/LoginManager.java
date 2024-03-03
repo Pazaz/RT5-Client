@@ -148,7 +148,7 @@ public class LoginManager {
 				Protocol.socket.read(Protocol.inboundBuffer.data, 8, 0);
 				Protocol.inboundBuffer.pos = 0;
 				serverKey = Protocol.inboundBuffer.g8();
-				@Pc(208) Buffer rsaBuffer = new Buffer(70);
+				@Pc(208) Packet rsaBuffer = new Packet(70);
 				@Pc(211) int[] key = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (serverKey >> 32), (int) serverKey };
 				rsaBuffer.p1(10);
 				rsaBuffer.p4(key[0]);
@@ -175,7 +175,7 @@ public class LoginManager {
 				client.writeUid(Protocol.outboundBuffer);
 				Protocol.outboundBuffer.pjstr(client.settings);
 				Protocol.outboundBuffer.p4(client.affiliate);
-				@Pc(354) Buffer preferences = client.preferences.encode();
+				@Pc(354) Packet preferences = client.preferences.encode();
 				Protocol.outboundBuffer.p1(preferences.pos);
 				Protocol.outboundBuffer.pdata(preferences.data, preferences.pos);
 				Preferences.sentToServer = true;
@@ -391,7 +391,7 @@ public class LoginManager {
 	}
 
 	@OriginalMember(owner = "client!vi", name = "a", descriptor = "(ILclient!qg;)V")
-	public static void lswpRenderLoginDecoder(@OriginalArg(1) Packet buffer) {
+	public static void lswpRenderLoginDecoder(@OriginalArg(1) PacketBit buffer) {
 		buffer.accessBits();
 		@Pc(10) int local10 = PlayerList.selfId;
 		@Pc(20) Player local20 = PlayerList.self = PlayerList.players[local10] = new Player();
@@ -828,7 +828,7 @@ public class LoginManager {
 			autoStep = 1;
 			loginResult = -3;
 			Static193.anInt3557 = 0;
-			@Pc(40) Buffer encrypted = new Buffer(128);
+			@Pc(40) Packet encrypted = new Packet(128);
 			encrypted.p1(10);
 			encrypted.p4((int) (Math.random() * 9.9999999E7D));
 			encrypted.p8(StringUtils.toBase37(usernameInput));

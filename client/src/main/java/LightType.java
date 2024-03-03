@@ -19,7 +19,7 @@ public final class LightType {
 	public int anInt1883 = 2048;
 
 	@OriginalMember(owner = "client!et", name = "a", descriptor = "(Lclient!bt;I)V")
-	public void decode(@OriginalArg(0) Buffer arg0) {
+	public void decode(@OriginalArg(0) Packet arg0) {
 		while (true) {
 			@Pc(9) int local9 = arg0.g1();
 			if (local9 == 0) {
@@ -30,7 +30,7 @@ public final class LightType {
 	}
 
 	@OriginalMember(owner = "client!et", name = "a", descriptor = "(Lclient!bt;IZ)V")
-	private void decode(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
+	private void decode(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1) {
 		if (arg1 == 1) {
 			this.anInt1877 = arg0.g1();
 		} else if (arg1 == 2) {

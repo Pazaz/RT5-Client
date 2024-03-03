@@ -34,7 +34,7 @@ public final class EnumTypeList {
 		@Pc(37) byte[] local37 = this.aClass197_43.fetchFile(Static121.method2393(arg0), Static266.method4498(arg0));
 		local16 = new EnumType();
 		if (local37 != null) {
-			local16.decode(new Buffer(local37));
+			local16.decode(new Packet(local37));
 		}
 		@Pc(61) LruHashTable local61 = this.aClass98_23;
 		synchronized (this.aClass98_23) {

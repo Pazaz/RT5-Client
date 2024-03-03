@@ -32,7 +32,7 @@ public final class MidiInstrument extends Node {
 
 	@OriginalMember(owner = "client!ne", name = "<init>", descriptor = "([B)V")
 	public MidiInstrument(@OriginalArg(0) byte[] arg0) {
-		@Pc(36) Buffer local36 = new Buffer(arg0);
+		@Pc(36) Packet local36 = new Packet(arg0);
 		@Pc(38) int local38;
 		for (local38 = 0; local36.data[local36.pos + local38] != 0; local38++) {
 		}

@@ -69,7 +69,7 @@ public final class Preferences extends Class177 {
 						throw new IOException("EOF");
 					}
 				}
-				this.method4499(new Buffer(local153));
+				this.method4499(new Packet(local153));
 			}
 		} catch (@Pc(193) Exception local193) {
 		}
@@ -114,8 +114,8 @@ public final class Preferences extends Class177 {
 	}
 
 	@OriginalMember(owner = "client!pe", name = "d", descriptor = "(I)Lclient!bt;")
-	public Buffer encode() {
-		@Pc(8) Buffer buf = new Buffer(39);
+	public Packet encode() {
+		@Pc(8) Packet buf = new Packet(39);
 		buf.p1(16); // version
 		buf.p1(super.brightness);
 		buf.p1(super.allLevelsVisible ? 1 : 0);
@@ -173,7 +173,7 @@ public final class Preferences extends Class177 {
 			}
 			if (local17.status == 1) {
 				local7 = (FileOnDisk) local17.result;
-				@Pc(39) Buffer local39 = this.encode();
+				@Pc(39) Packet local39 = this.encode();
 				local7.write(local39.data, local39.pos, 0);
 			}
 		} catch (@Pc(49) Exception local49) {
@@ -187,7 +187,7 @@ public final class Preferences extends Class177 {
 	}
 
 	@OriginalMember(owner = "client!pe", name = "a", descriptor = "(ILclient!bt;)V")
-	private void method4499(@OriginalArg(1) Buffer arg0) {
+	private void method4499(@OriginalArg(1) Packet arg0) {
 		if (arg0.data.length - arg0.pos < 1) {
 			return;
 		}

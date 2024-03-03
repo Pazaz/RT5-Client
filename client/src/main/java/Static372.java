@@ -70,7 +70,7 @@ public final class Static372 {
 	}
 
 	@OriginalMember(owner = "client!vp", name = "a", descriptor = "(BLclient!bt;)Lclient!rm;")
-	public static Class173_Sub3 method6266(@OriginalArg(1) Buffer arg0) {
-		return new Class173_Sub3(arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.ig3(), arg0.ig3(), arg0.g1());
+	public static Class173_Sub3 method6266(@OriginalArg(1) Packet arg0) {
+		return new Class173_Sub3(arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g2s(), arg0.g3(), arg0.g3(), arg0.g1());
 	}
 }

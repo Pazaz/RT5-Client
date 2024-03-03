@@ -58,7 +58,7 @@ public final class QuestType {
 	public int anInt6454 = -1;
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(BLclient!bt;I)V")
-	private void decode(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
+	private void decode(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.aString64 = arg0.gjstr2();
 		} else if (arg1 == 2) {
@@ -148,7 +148,7 @@ public final class QuestType {
 					}
 					for (local31 = 0; local31 < local24; local31++) {
 						@Pc(329) boolean local329 = arg0.g1() == 1;
-						@Pc(333) int local333 = arg0.ig3();
+						@Pc(333) int local333 = arg0.g3();
 						@Pc(342) Node local342;
 						if (local329) {
 							local342 = new Class2_Sub40(arg0.gjstr());
@@ -170,7 +170,7 @@ public final class QuestType {
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(BLclient!bt;)V")
-	public void decode(@OriginalArg(1) Buffer arg0) {
+	public void decode(@OriginalArg(1) Packet arg0) {
 		while (true) {
 			@Pc(13) int local13 = arg0.g1();
 			if (local13 == 0) {

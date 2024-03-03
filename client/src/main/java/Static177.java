@@ -21,7 +21,7 @@ public final class Static177 {
 		for (@Pc(21) int local21 = 0; local21 < local19; local21++) {
 			@Pc(27) byte[] local27 = arg1[local21];
 			if (local27 != null) {
-				@Pc(34) Buffer local34 = new Buffer(local27);
+				@Pc(34) Packet local34 = new Packet(local27);
 				local40 = Static291.mapSquares[local21] >> 8;
 				@Pc(46) int local46 = Static291.mapSquares[local21] & 0xFF;
 				@Pc(53) int local53 = local40 * 64 - Camera.originX;
