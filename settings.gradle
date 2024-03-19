@@ -1,0 +1,16 @@
+rootProject.name = "2019Scape-Client"
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        flatDir {
+            dirs 'lib'
+        }
+    }
+}
+
+include(
+    "deob-annotations",
+    "loader",
+    "client"
+)

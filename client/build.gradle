@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+dependencies {
+    compileOnly project(':deob-annotations')
+    compileOnly 'lib:stub'
+}
+
+application {
+    mainClass = "client"
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'client'
+        )
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    // options.compilerArgs << '-Xlint:unchecked' << '-Xlint:deprecation'
+}
+
+tasks.withType(JavaExec) {
+    workingDir = project.rootDir
+    jvmArgs = ['-Xms1G', '-Xmx1G', '-Xss2m', '-Dsun.java2d.noddraw=true', '-XX:CompileThreshold=1500']
+}

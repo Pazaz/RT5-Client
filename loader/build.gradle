@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    compileOnly project(':deob-annotations')
+    compileOnly 'lib:stub'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    // options.compilerArgs << '-Xlint:unchecked' << '-Xlint:deprecation'
+}
